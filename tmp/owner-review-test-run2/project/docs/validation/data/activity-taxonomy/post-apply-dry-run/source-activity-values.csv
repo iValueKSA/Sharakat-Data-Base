@@ -1,0 +1,74 @@
+﻿source,raw_activity,raw_sub_activity,count,dimension,canonical_activity,canonical_sub_activity,status
+alahsa-opportunities,تجاري,,39,source Activity,تجاري,,explicit source value
+alahsa-opportunities,خدمي,,5,source Activity,خدمي,,explicit source value
+alahsa-opportunities,صناعي,,59,source Activity,صناعي,,explicit source value
+furas,أخرى,,1,source Activity,أخرى,,explicit source value
+furas,أنشطة الصيانة والتصليح والتركيب,,3,source Activity,أنشطة الصيانة والتصليح والتركيب,,explicit source value
+furas,أنشطة المرافق العامة,,1,source Activity,أنشطة المرافق العامة,,explicit source value
+furas,الأنشطة التجارية,,30,source Activity,الأنشطة التجارية,,explicit source value
+furas,الأنشطة التعليمية,,1,source Activity,الأنشطة التعليمية,,explicit source value
+furas,الأنشطة الرياضية و الترفيهية,,1,source Activity,الأنشطة الرياضية والترفيهية,,explicit source value
+furas,الأنشطة الزراعية والحيوانية,,1,source Activity,الأنشطة الزراعية والحيوانية,,explicit source value
+furas,الأنشطة الصناعية,,5,source Activity,الأنشطة الصناعية,,explicit source value
+furas,الأنشطة المالية,,6,source Activity,الأنشطة المالية,,explicit source value
+invest-saudi,أنشطة التشييد و إدارة العقارات,,4,source Activity,أنشطة التشييد و إدارة العقارات,,explicit source value
+invest-saudi,أنشطة الخدمات العامة,,9,source Activity,أنشطة الخدمات العامة,,explicit source value
+invest-saudi,أنشطة المرافق العامة,,8,source Activity,أنشطة المرافق العامة,,explicit source value
+invest-saudi,أنشطة المركبات,,23,source Activity,أنشطة المركبات,,explicit source value
+invest-saudi,أنشطة الملبوسات و المنسوجات,,1,source Activity,أنشطة الملبوسات و المنسوجات,,explicit source value
+invest-saudi,أنشطة النقل,,21,source Activity,أنشطة النقل,,explicit source value
+invest-saudi,أنشطة تنفيذ أعمال البنية التحتية,,1,source Activity,أنشطة تنفيذ أعمال البنية التحتية,,explicit source value
+invest-saudi,الأنشطة الاجتماعية,,4,source Activity,الأنشطة الاجتماعية,,explicit source value
+invest-saudi,الأنشطة البيئية,,34,source Activity,الأنشطة البيئية,,explicit source value
+invest-saudi,الأنشطة التجارية,,216,source Activity,الأنشطة التجارية,,explicit source value
+invest-saudi,الأنشطة التعليمية,,6,source Activity,الأنشطة التعليمية,,explicit source value
+invest-saudi,الأنشطة الرياضية و الترفيهية,,31,source Activity,الأنشطة الرياضية والترفيهية,,explicit source value
+invest-saudi,الأنشطة الزراعية والحيوانية,,25,source Activity,الأنشطة الزراعية والحيوانية,,explicit source value
+invest-saudi,الأنشطة السياحية,,21,source Activity,الأنشطة السياحية,,explicit source value
+invest-saudi,الأنشطة الصحية,,2,source Activity,الأنشطة الصحية,,explicit source value
+invest-saudi,الأنشطة الصناعية,,47,source Activity,الأنشطة الصناعية,,explicit source value
+invest-saudi,الأنشطة المالية,,8,source Activity,الأنشطة المالية,,explicit source value
+invest-saudi,برج مياه,,1,source Activity,برج مياه,,explicit source value
+furas,,أخرى,20,source Sub-Activity,,أخرى,explicit source sub-activity
+furas,,أنشطة التجارة العامة,8,source Sub-Activity,,أنشطة التجارة العامة,explicit source sub-activity
+furas,,أنشطة تجارة المواد الغذائية,5,source Sub-Activity,,أنشطة تجارة المواد الغذائية,explicit source sub-activity
+furas,,أنشطة و تجارة المعدات الثقيلة,1,source Sub-Activity,,أنشطة و تجارة المعدات الثقيلة,explicit source sub-activity
+furas,,أنشطة وخدمات انتاج المواد غير الغذائية,1,source Sub-Activity,,أنشطة وخدمات انتاج المواد غير الغذائية,explicit source sub-activity
+furas,,خدمات الصرافة,6,source Sub-Activity,,خدمات الصرافة,explicit source sub-activity
+furas,,خدمات تعليمية أخرى,1,source Sub-Activity,,خدمات تعليمية أخرى,explicit source sub-activity
+furas,,محلات تجارية,3,source Sub-Activity,,محلات تجارية,explicit source sub-activity
+furas,,منتزه,1,source Sub-Activity,,منتزه,explicit source sub-activity
+furas,,منشآت تقديم الغذاء,2,source Sub-Activity,,منشآت تقديم الغذاء,explicit source sub-activity
+invest-saudi,,أخرى,220,source Sub-Activity,,أخرى,explicit source sub-activity
+invest-saudi,,أنشطة التجارة العامة,65,source Sub-Activity,,أنشطة التجارة العامة,explicit source sub-activity
+invest-saudi,,أنشطة السكن الجماعي,1,source Sub-Activity,,أنشطة السكن الجماعي,explicit source sub-activity
+invest-saudi,,أنشطة تجارة الأجهزة والأدوات والأثاث المنزلي,1,source Sub-Activity,,أنشطة تجارة الأجهزة والأدوات والأثاث المنزلي,explicit source sub-activity
+invest-saudi,,أنشطة تجارة المواد الزراعية (غير الغذائية),1,source Sub-Activity,,أنشطة تجارة المواد الزراعية (غير الغذائية),explicit source sub-activity
+invest-saudi,,أنشطة تجارة المواد الغذائية,12,source Sub-Activity,,أنشطة تجارة المواد الغذائية,explicit source sub-activity
+invest-saudi,,أنشطة تجارة مواد البناء,6,source Sub-Activity,,أنشطة تجارة مواد البناء,explicit source sub-activity
+invest-saudi,,أنشطة تجارة مواد وصناعات النسيج والخياطة,1,source Sub-Activity,,أنشطة تجارة مواد وصناعات النسيج والخياطة,explicit source sub-activity
+invest-saudi,,أنشطة تنفيذ أعمال السفلتة والإنارة وشبكة الكهرباء وشبكة تصريف السيول,1,source Sub-Activity,,أنشطة تنفيذ أعمال السفلتة والإنارة وشبكة الكهرباء وشبكة تصريف السيول,explicit source sub-activity
+invest-saudi,,أنشطة وخدمات الدعاية والاعلان والتسويق,8,source Sub-Activity,,أنشطة وخدمات الدعاية والاعلان والتسويق,explicit source sub-activity
+invest-saudi,,أنشطة وخدمات الزراعات الغذائية,5,source Sub-Activity,,أنشطة وخدمات الزراعات الغذائية,explicit source sub-activity
+invest-saudi,,أنشطة وخدمات المزارع,3,source Sub-Activity,,أنشطة وخدمات المزارع,explicit source sub-activity
+invest-saudi,,أنشطة وخدمات انتاج المواد الغذائية,9,source Sub-Activity,,أنشطة وخدمات انتاج المواد الغذائية,explicit source sub-activity
+invest-saudi,,أنشطة وخدمات انتاج المواد غير الغذائية,1,source Sub-Activity,,أنشطة وخدمات انتاج المواد غير الغذائية,explicit source sub-activity
+invest-saudi,,أنشطة وخدمات تربية الحيوانات,4,source Sub-Activity,,أنشطة وخدمات تربية الحيوانات,explicit source sub-activity
+invest-saudi,,إنشاء وإقامة محطات وأبراج الاتصالات السلكية واللاسلكية والرادار,2,source Sub-Activity,,إنشاء وإقامة محطات وأبراج الاتصالات السلكية واللاسلكية والرادار,explicit source sub-activity
+invest-saudi,,الأنشطة الزراعية,1,source Sub-Activity,,الأنشطة الزراعية,explicit source sub-activity
+invest-saudi,,التعليم الأكاديمي,1,source Sub-Activity,,التعليم الأكاديمي,explicit source sub-activity
+invest-saudi,,الخدمات الطبية,1,source Sub-Activity,,الخدمات الطبية,explicit source sub-activity
+invest-saudi,,المتنزهات الوطنية,28,source Sub-Activity,,المتنزهات الوطنية,explicit source sub-activity
+invest-saudi,,تجاري سياحي متعدد الانشطة,1,source Sub-Activity,,تجاري سياحي متعدد الانشطة,explicit source sub-activity
+invest-saudi,,خدمات التنظيف والغسيل,1,source Sub-Activity,,خدمات التنظيف والغسيل,explicit source sub-activity
+invest-saudi,,خدمات الصرافة,6,source Sub-Activity,,خدمات الصرافة,explicit source sub-activity
+invest-saudi,,خدمات تعليمية أخرى,1,source Sub-Activity,,خدمات تعليمية أخرى,explicit source sub-activity
+invest-saudi,,شاليهات/منتجعات,15,source Sub-Activity,,شاليهات/منتجعات,explicit source sub-activity
+invest-saudi,,محطة نقل بضائع,17,source Sub-Activity,,محطة نقل بضائع,explicit source sub-activity
+invest-saudi,,محطة وقود وملحقاتها,2,source Sub-Activity,,محطة وقود وملحقاتها,explicit source sub-activity
+invest-saudi,,محلات تجارية,16,source Sub-Activity,,محلات تجارية,explicit source sub-activity
+invest-saudi,,ملاعب رياضية,1,source Sub-Activity,,ملاعب رياضية,explicit source sub-activity
+invest-saudi,,منتزه,3,source Sub-Activity,,منتزه,explicit source sub-activity
+invest-saudi,,منحل,1,source Sub-Activity,,منحل,explicit source sub-activity
+invest-saudi,,منشآت تقديم الغذاء,26,source Sub-Activity,,منشآت تقديم الغذاء,explicit source sub-activity
+invest-saudi,,مواقف,1,source Sub-Activity,,مواقف,explicit source sub-activity

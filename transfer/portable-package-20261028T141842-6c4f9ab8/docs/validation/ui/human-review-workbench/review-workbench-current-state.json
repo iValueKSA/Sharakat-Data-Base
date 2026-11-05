@@ -1,0 +1,145 @@
+{
+  "captured_at": "2026-10-22T15:03:41.351215+03:00",
+  "environment": "Live local PostgreSQL; transaction READ ONLY",
+  "open_reviews": 498,
+  "human_review_required": 489,
+  "source_recheck_required": 9,
+  "disposition_counts": {
+    "RETAIN_OPEN": 410,
+    "HUMAN_REVIEW_REQUIRED": 72,
+    "SOURCE_RECHECK_REQUIRED": 9,
+    "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED": 7
+  },
+  "open_by_priority": {
+    "P1": 0,
+    "P2": 428,
+    "P3": 57,
+    "P4": 13
+  },
+  "open_by_type": {
+    "taxonomy_conflict": 50,
+    "field_conflict": 423,
+    "location": 15,
+    "duplicate": 10
+  },
+  "sync_jobs_previous": 436,
+  "sync_jobs_current": 441,
+  "scheduled_jobs_since_previous_snapshot": [
+    {
+      "job_id": 437,
+      "source": "mwan",
+      "status": "FAILED",
+      "trigger_type": "scheduled",
+      "started_at": "2026-10-22T14:28:09.235298+03:00",
+      "finished_at": "2026-10-22T14:28:10.211427+03:00",
+      "master_new_delta": 0,
+      "master_update_delta": 0,
+      "source_removed_records_reported": 0,
+      "source_delta": null,
+      "observation_delta": null,
+      "review_delta": null,
+      "master_delta": {
+        "updated": 0,
+        "new": 0
+      }
+    },
+    {
+      "job_id": 438,
+      "source": "pif",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "started_at": "2026-10-22T14:28:09.480705+03:00",
+      "finished_at": "2026-10-22T14:28:25.474901+03:00",
+      "master_new_delta": 0,
+      "master_update_delta": 0,
+      "source_removed_records_reported": 0,
+      "source_delta": null,
+      "observation_delta": null,
+      "review_delta": null,
+      "master_delta": {
+        "updated": 0,
+        "new": 0
+      }
+    },
+    {
+      "job_id": 439,
+      "source": "invest-saudi",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "started_at": "2026-10-22T15:01:09.186402+03:00",
+      "finished_at": "2026-10-22T15:03:25.553162+03:00",
+      "master_new_delta": 0,
+      "master_update_delta": 0,
+      "source_removed_records_reported": 2423,
+      "source_delta": null,
+      "observation_delta": null,
+      "review_delta": null,
+      "master_delta": {
+        "updated": 0,
+        "new": 0
+      }
+    },
+    {
+      "job_id": 440,
+      "source": "ahda",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "started_at": "2026-10-22T15:01:09.389664+03:00",
+      "finished_at": "2026-10-22T15:01:41.672836+03:00",
+      "master_new_delta": 0,
+      "master_update_delta": 0,
+      "source_removed_records_reported": 0,
+      "source_delta": null,
+      "observation_delta": null,
+      "review_delta": null,
+      "master_delta": {
+        "updated": 0,
+        "new": 0
+      }
+    },
+    {
+      "job_id": 441,
+      "source": "modon",
+      "status": "FAILED",
+      "trigger_type": "scheduled",
+      "started_at": "2026-10-22T15:02:09.031783+03:00",
+      "finished_at": "2026-10-22T15:02:09.350544+03:00",
+      "master_new_delta": 0,
+      "master_update_delta": 0,
+      "source_removed_records_reported": 0,
+      "source_delta": null,
+      "observation_delta": null,
+      "review_delta": null,
+      "master_delta": {
+        "updated": 0,
+        "new": 0
+      }
+    }
+  ],
+  "manual_source_sync_started": false,
+  "live_reviews_resolved_during_build": 0,
+  "live_reviews_reopened_during_build": 0,
+  "live_batch_resolutions_during_build": 0,
+  "live_business_data_changes_from_workbench": 0,
+  "dq_summary": {
+    "total": 92,
+    "pass": 87,
+    "warning": 5,
+    "fail": 0,
+    "failed_gate_keys": [],
+    "warning_gate_keys": [
+      "GENERIC_SOURCE_PAGE_AS_OPPORTUNITY_ACTION",
+      "OPEN_REVIEW_BACKLOG",
+      "HISTORICAL_REVIEW_AUDIT_INCOMPLETE",
+      "SOURCE_LAST_SUCCESS_TOO_OLD",
+      "SYNC_RUNTIME_ANOMALY"
+    ]
+  },
+  "transaction_read_only": true,
+  "api_readiness_http": 200,
+  "post_closeout_runtime": {
+    "manual_source_sync_started": false,
+    "observed_services": "unchanged",
+    "api_readiness_http": 200
+  }
+}

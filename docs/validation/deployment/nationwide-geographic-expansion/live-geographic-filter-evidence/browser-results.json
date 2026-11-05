@@ -1,0 +1,113 @@
+{
+  "status": "PASSED",
+  "all_regions_total": 6623,
+  "region_options_count": 13,
+  "governorate_options_count": 79,
+  "alahsa": {
+    "name": "الأحساء",
+    "reference_name": "الاحساء",
+    "id": "501",
+    "option_count": 518,
+    "api_count": 518,
+    "ui_count": 518,
+    "false_positives": 0,
+    "false_negatives": 0
+  },
+  "riyadh": {
+    "level": "REGION",
+    "id": "1",
+    "name": "منطقة الرياض",
+    "api_count": 800,
+    "ui_count": 800
+  },
+  "exports": [
+    {
+      "filter": "alahsa",
+      "uiTotal": 518,
+      "apiTotal": 518,
+      "csvPath": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\live-geographic-filter-evidence\\live-export-alahsa.csv",
+      "xlsxPath": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\live-geographic-filter-evidence\\live-export-alahsa.xlsx"
+    },
+    {
+      "filter": "riyadh-region",
+      "uiTotal": 800,
+      "apiTotal": 800,
+      "csvPath": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\live-geographic-filter-evidence\\live-export-riyadh-region1.csv",
+      "xlsxPath": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\live-geographic-filter-evidence\\live-export-riyadh-region1.xlsx"
+    }
+  ],
+  "viewports": [
+    {
+      "width": 1920,
+      "documentWidth": 1920,
+      "rtl": true,
+      "visible": true,
+      "contained": true,
+      "height": 1080
+    },
+    {
+      "width": 1440,
+      "documentWidth": 1440,
+      "rtl": true,
+      "visible": true,
+      "contained": true,
+      "height": 900
+    },
+    {
+      "width": 1366,
+      "documentWidth": 1366,
+      "rtl": true,
+      "visible": true,
+      "contained": true,
+      "height": 768
+    },
+    {
+      "width": 768,
+      "documentWidth": 768,
+      "rtl": true,
+      "visible": true,
+      "contained": true,
+      "height": 900
+    },
+    {
+      "width": 390,
+      "documentWidth": 390,
+      "rtl": true,
+      "visible": true,
+      "contained": true,
+      "height": 844
+    }
+  ],
+  "checks": [
+    "Filter visible",
+    "Label is المنطقة",
+    "All regions option",
+    "Al-Ahsa selectable with reference Arabic alias and canonical Governorate 501",
+    "Al-Ahsa dropdown displays the preferred Arabic alias",
+    "Riyadh selectable as canonical Region 1",
+    "All-regions baseline 6623",
+    "Al-Ahsa API count and complete pages 518/518",
+    "Al-Ahsa false positives 0",
+    "Al-Ahsa false negatives 0",
+    "Al-Ahsa visible UI count 518",
+    "Al-Ahsa pagination enabled",
+    "Pagination preserves filter",
+    "No duplicate Masters across pages {\"first\":50,\"second\":50,\"firstIds\":[\"164\",\"163\",\"226\"],\"secondIds\":[\"504\",\"503\",\"441\"],\"duplicates\":0}",
+    "Riyadh Region 1 UI/API parity 800/800",
+    "Filter composition preserves Governorate",
+    "Composed geography/status UI/API parity 60",
+    "Reset clears selection and URL",
+    "Default geography is not shown as an active filter",
+    "Reset restores all-region Master total 6623",
+    "Responsive RTL 1920x1080 {\"width\":1920,\"documentWidth\":1920,\"rtl\":true,\"visible\":true,\"contained\":true}",
+    "Responsive RTL 1440x900 {\"width\":1440,\"documentWidth\":1440,\"rtl\":true,\"visible\":true,\"contained\":true}",
+    "Responsive RTL 1366x768 {\"width\":1366,\"documentWidth\":1366,\"rtl\":true,\"visible\":true,\"contained\":true}",
+    "Responsive RTL 768x900 {\"width\":768,\"documentWidth\":768,\"rtl\":true,\"visible\":true,\"contained\":true}",
+    "Responsive RTL 390x844 {\"width\":390,\"documentWidth\":390,\"rtl\":true,\"visible\":true,\"contained\":true}",
+    "National dashboard/map gates unchanged",
+    "JavaScript errors 0",
+    "Unexpected HTTP 5xx 0"
+  ],
+  "js_errors": [],
+  "http_5xx": []
+}

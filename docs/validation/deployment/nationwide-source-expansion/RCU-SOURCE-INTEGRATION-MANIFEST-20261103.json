@@ -1,0 +1,214 @@
+{
+  "artifact_type": "RCU_SOURCE_INTEGRATION_MANIFEST",
+  "version": 1,
+  "generated_at_utc": "2026-11-03T09:54:19.793583Z",
+  "project": "C:\\Sharakat Data Base",
+  "environment": "local_user",
+  "compose_project": "alahsa-local",
+  "base_url": "http://localhost:8080",
+  "result": "COMPLETE",
+  "source": {
+    "key": "rcu-investment-opportunities",
+    "name_ar": "الهيئة الملكية لمحافظة العلا",
+    "name_en": "Royal Commission for AlUla",
+    "public_catalog_url": "https://eservices.rcu.gov.sa/opportunities",
+    "endpoint": "https://eservices.rcu.gov.sa/api/investment-opportunities/list",
+    "extraction_method": "PUBLIC_JSON_XHR",
+    "records_found": 6,
+    "reported_total": 6,
+    "pages_requested": 1,
+    "pagination_complete": true,
+    "provider_id_field": "id (UUID)",
+    "provider_ids_unique": true,
+    "duplicate_provider_keys": 0,
+    "lifecycle_mapping": "CURRENT/HISTORICAL determined from explicit source flags and dates; no inference from missing deadline, 404, or absence",
+    "technical_health": "HEALTHY",
+    "freshness": "FRESH",
+    "public_coverage": "COMPLETE_FOR_DEFINED_SCOPE",
+    "next_expected_check": "2026-11-04T09:29:17.553290Z"
+  },
+  "identity_and_dedup": {
+    "comparison_master_count": 6626,
+    "comparison_source_opportunity_count": 9293,
+    "existing_source_keys_examined": [
+      "ahda",
+      "alahsa-opportunities",
+      "furas",
+      "invest-saudi",
+      "kfu",
+      "mwan",
+      "ncp",
+      "rcjy-investment-opportunities"
+    ],
+    "action_counts": {
+      "A_READY_NEW_MASTER": 6,
+      "B_MATCH_EXISTING_MASTER": 0,
+      "C_IDENTITY_REVIEW": 0,
+      "D_NOT_QUALIFYING": 0,
+      "E_HISTORICAL_OR_NONCURRENT": 0,
+      "F_SAME_SOURCE_DUPLICATE_REVIEW": 0
+    },
+    "title_only_matches_authorized": false,
+    "masters_created": 6,
+    "existing_masters_linked": 0,
+    "duplicates_prevented": 0,
+    "duplicate_provider_keys": 0,
+    "masters_without_source": 0,
+    "masters_without_audit": 0,
+    "promotion_audits": 6,
+    "sector_standardization_audits": 6
+  },
+  "capture": {
+    "manual_sync_count": 1,
+    "job_id": 752,
+    "job_status": "SUCCESS",
+    "trigger": "manual",
+    "source_rows_inserted": 6,
+    "source_rows_updated_during_sync": 0,
+    "source_rows_removed": 0,
+    "bootstrap_removals": 0,
+    "masters_created_during_raw_capture": 0,
+    "post_capture_detail_url_normalizations": 6,
+    "detail_url_template": "https://eservices.rcu.gov.sa/opportunities/detail/{uuid}",
+    "source_observations_appended_for_url_normalization": 6,
+    "additional_manual_source_syncs": 0
+  },
+  "geography": {
+    "reference_dataset": "saudi_administrative_units",
+    "reference_version": "taadeen-public-gis-20261102-v3",
+    "evidence_rule": "AlUla derived from each opportunity title/description, not publisher identity",
+    "region": {
+      "id": 330,
+      "external_id": "3",
+      "name_ar": "منطقة المدينة المنورة",
+      "name_en": "Al-Madinah Region"
+    },
+    "governorate": {
+      "id": 379,
+      "external_id": "302",
+      "name_ar": "العلا",
+      "name_en": "Al Ula"
+    },
+    "city": "UNSPECIFIED",
+    "city_coverage_in_reference": false,
+    "source_filter_count": 6,
+    "region_governorate_filter_count": 6,
+    "region_filter_options_count": 13
+  },
+  "coordinates": {
+    "source_coordinate_pairs": 6,
+    "numeric_and_range_valid": 6,
+    "canonical_coordinates_projected": 0,
+    "fabricated_coordinates": 0,
+    "verification": "DIRECT_SOURCE_RAW_ONLY; repeated/shared pairs were retained as source evidence and not accepted as canonical project coordinates",
+    "pair_frequencies": {
+      "26.606149,37.927985": 3,
+      "26.605954,37.928046": 2,
+      "26.480579,38.118554": 1
+    }
+  },
+  "backup": {
+    "path": "C:\\Sharakat Data Base\\backups\\20261103T091708Z-fd5d733d.dump",
+    "sha256": "1fe3c0199fedb6dea469df565220adc129714b4bab9292d7139110807e1d14c2",
+    "timestamp_utc": "2026-11-03T09:17:08Z",
+    "alembic_head": "0025_source_geographic_coverage",
+    "current_masters_before": 6626,
+    "source_opportunities_before": 9293,
+    "configured_sources_before": 12,
+    "verified": true,
+    "restore_test": "PASSED",
+    "restore_counts_matched": true
+  },
+  "validation": {
+    "isolated_adapter_tests": {
+      "passed": 5,
+      "failed": 0
+    },
+    "full_regression": {
+      "passed": 678,
+      "skipped": 1,
+      "failed": 0,
+      "skip_reason": "Existing isolated PostgreSQL advisory-lock test skipped because test DB environment is not configured"
+    },
+    "full_data_quality": {
+      "run_id": "9a126eea2664421a8e0e9f06f57cde6c",
+      "pass": 128,
+      "warning": 6,
+      "fail": 0,
+      "warning_gate_keys": [
+        "GENERIC_SOURCE_PAGE_AS_OPPORTUNITY",
+        "HISTORICAL_REVIEW_AUDIT_INCOMPLETE",
+        "SOURCE_LAST_SUCCESS_TOO_OLD",
+        "SYNC_RUNTIME_ANOMALY",
+        "SOURCE_ABSENCE_CLASSIFICATION",
+        "UNKNOWN_AREA_STORED_AS_ZERO"
+      ],
+      "rcu_specific_warning": false
+    },
+    "source_filter_rcu": "PASSED",
+    "geographic_filter": "PASSED",
+    "api_health": 200,
+    "api_readiness": 200,
+    "postgres": "HEALTHY",
+    "redis": "HEALTHY",
+    "worker": "HEALTHY",
+    "beat": "HEALTHY",
+    "active_rcu_jobs": 0,
+    "rcu_schedule_enabled": true,
+    "schedule_interval_minutes": 1440
+  },
+  "final_state": {
+    "configured_sources": 13,
+    "enabled_sources": 12,
+    "all_masters": 6653,
+    "current_masters": 6632,
+    "merged_masters": 21,
+    "source_opportunities": 9299,
+    "rcjy_source_opportunities": 3,
+    "rcjy_masters": 3,
+    "rcjy_modified": false,
+    "other_manual_source_syncs": 0
+  },
+  "scope_stop": {
+    "ncp_investors_portal_started": false,
+    "taadeen_started": false,
+    "tourism_started": false,
+    "furas_manually_synced": false,
+    "rcjy_manually_synced": false,
+    "stopped_after_rcu": true
+  },
+  "current_workspace_followup_verification": {
+    "verified_at_local": "2026-11-03",
+    "live_rcu_state": {
+      "source_rows": 6,
+      "linked_current_masters": 6,
+      "rcu_master_creation_audits": 6,
+      "rcu_sector_standardization_audits": 6,
+      "source_filter_count": 6,
+      "region_governorate_filter_count": 6,
+      "active_rcu_jobs": 0,
+      "technical_health": "HEALTHY",
+      "freshness": "FRESH",
+      "public_coverage": "COMPLETE_FOR_DEFINED_SCOPE"
+    },
+    "focused_rcu_tests": {"passed": 5, "failed": 0},
+    "full_data_quality": {
+      "run_id": "74b9566f82784fe781b8f2e235a7a3f7",
+      "pass": 128,
+      "warning": 6,
+      "fail": 0,
+      "rcu_specific_warning": false
+    },
+    "current_full_workspace_regression": {
+      "passed": 683,
+      "skipped": 1,
+      "failed": 1,
+      "failing_test": "tests/test_wave3_adapters.py::test_ncp_public_archive_scope_is_separate_from_private_pipeline",
+      "reason": "Stale NCP docstring assertion expects the private portal API description; current adapter describes its public unauthenticated Investors Portal feed.",
+      "rcu_related": false,
+      "changed_out_of_scope_ncp_code_or_tests": false
+    },
+    "overall_current_validation": "PARTIAL",
+    "rcu_live_deployment": "COMPLETE"
+  }
+}

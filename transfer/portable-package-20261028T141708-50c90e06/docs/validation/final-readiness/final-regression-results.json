@@ -1,0 +1,16 @@
+{
+  "accepted_full_regression": {
+    "passed": 536,
+    "failed": 0,
+    "suite": "full isolated regression",
+    "completed_before_this_closeout": true
+  },
+  "rerun_for_closeout": false,
+  "reason_not_rerun": "No application code or migration changed; task explicitly permits reuse of the accepted result.",
+  "focused_tests": {
+    "passed": 10,
+    "failed": 0,
+    "test_file": "tests/test_production_security.py",
+    "environment": "isolated SQLite/TestClient; no live database writes"
+  }
+}

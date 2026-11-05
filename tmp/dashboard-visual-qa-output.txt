@@ -1,0 +1,252 @@
+{
+  "results": [
+    {
+      "viewport": "1920x1080",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "height": 1080,
+      "dir": "rtl",
+      "total": "289",
+      "panelCount": 10,
+      "sourceLogos": 6,
+      "menuButton": "none",
+      "activeLabel": "آخر مزامنة مصدر: 14‏/10‏/2026، 12:01 م"
+    },
+    {
+      "viewport": "1440x900",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 900,
+      "dir": "rtl",
+      "total": "289",
+      "panelCount": 10,
+      "sourceLogos": 6,
+      "menuButton": "none",
+      "activeLabel": "آخر مزامنة مصدر: 14‏/10‏/2026، 12:01 م"
+    },
+    {
+      "viewport": "1366x768",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "height": 768,
+      "dir": "rtl",
+      "total": "289",
+      "panelCount": 10,
+      "sourceLogos": 6,
+      "menuButton": "none",
+      "activeLabel": "آخر مزامنة مصدر: 14‏/10‏/2026، 12:01 م"
+    },
+    {
+      "mobileDrawer": true,
+      "focusInsideDrawer": true,
+      "escapeClosedAndRestoredFocus": true
+    },
+    {
+      "viewport": "390x844",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 844,
+      "dir": "rtl",
+      "total": "289",
+      "panelCount": 10,
+      "sourceLogos": 6,
+      "menuButton": "flex",
+      "activeLabel": "آخر مزامنة مصدر: 14‏/10‏/2026، 12:01 م"
+    },
+    {
+      "tabletDrawer": true,
+      "focusInsideDrawer": true,
+      "escapeClosedAndRestoredFocus": true
+    },
+    {
+      "viewport": "768x900",
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 900,
+      "dir": "rtl",
+      "total": "289",
+      "panelCount": 10,
+      "sourceLogos": 6,
+      "menuButton": "flex",
+      "activeLabel": "آخر مزامنة مصدر: 14‏/10‏/2026، 12:01 م"
+    },
+    {
+      "filterUrl": "http://localhost:8080/?view=data-dashboard&sector=sector%3Aindustrial",
+      "filteredTotal": "59",
+      "originalTotal": "289",
+      "activeTotal": "عرض 1–50 من 283 فرصة",
+      "page2": "صفحة 2 من 6",
+      "searchCount": "عرض 1–16 من 16 فرصة",
+      "detailOpen": true,
+      "detailEscapeClose": true,
+      "sourceCards": 10,
+      "csvBytes": 157024,
+      "xlsxBytes": 212102,
+      "xlsxZipSignature": "PK",
+      "apiCounts": {
+        "total": 289,
+        "active": 283,
+        "historical": 6,
+        "sources": 10,
+        "deadline30": 111,
+        "bySector": [
+          [
+            "قيمة مفقودة",
+            124
+          ],
+          [
+            "صناعي",
+            59
+          ],
+          [
+            "تجاري",
+            39
+          ],
+          [
+            "أخرى",
+            17
+          ],
+          [
+            "أنشطة التجارة العامة",
+            8
+          ],
+          [
+            "فرصة استثمارية",
+            7
+          ],
+          [
+            "البيئة",
+            6
+          ],
+          [
+            "خدمات الصرافة",
+            6
+          ],
+          [
+            "خدمي",
+            5
+          ],
+          [
+            "أنشطة تجارة المواد الغذائية",
+            4
+          ],
+          [
+            "محلات تجارية",
+            3
+          ],
+          [
+            "العربات المتنقلة",
+            2
+          ]
+        ],
+        "byStatus": [
+          [
+            "Announced",
+            168
+          ],
+          [
+            "متاحة",
+            101
+          ],
+          [
+            "غير محددة",
+            13
+          ],
+          [
+            "REMOVED_FROM_SOURCE",
+            4
+          ],
+          [
+            "EXPIRED",
+            2
+          ],
+          [
+            "Unknown",
+            1
+          ]
+        ],
+        "byOwner": [
+          [
+            "أمانة الأحساء",
+            267
+          ],
+          [
+            "هيئة تطوير الأحساء",
+            7
+          ],
+          [
+            "وزارة الاستثمار",
+            6
+          ],
+          [
+            "وزارة البلديات والإسكان",
+            5
+          ],
+          [
+            "جامعة الملك فيصل",
+            2
+          ],
+          [
+            "وزارة البيئة والمياه والزراعة",
+            1
+          ],
+          [
+            "وزارة الحرس الوطني",
+            1
+          ]
+        ],
+        "byType": [
+          [
+            "قيمة مفقودة",
+            124
+          ],
+          [
+            "صناعي",
+            65
+          ],
+          [
+            "تجاري",
+            38
+          ],
+          [
+            "أخرى",
+            16
+          ],
+          [
+            "أنشطة التجارة العامة",
+            8
+          ],
+          [
+            "INVESTMENT_OPPORTUNITY",
+            7
+          ],
+          [
+            "Environment",
+            6
+          ],
+          [
+            "خدمات الصرافة",
+            6
+          ],
+          [
+            "أنشطة تجارة المواد الغذائية",
+            4
+          ],
+          [
+            "محلات تجارية",
+            3
+          ]
+        ],
+        "byActivity": [
+          [
+            "قيمة مفقودة",
+            289
+          ]
+        ]
+      }
+    }
+  ],
+  "issues": [],
+  "failures": [],
+  "outDir": "C:\\Sharakat Data Base\\docs\\validation\\ui\\nextadmin-ahda-dashboard\\screenshots"
+}

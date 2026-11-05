@@ -1,0 +1,826 @@
+{
+  "duration_furas_non_null": 103,
+  "duration_master_cases": {
+    "18": [
+      {
+        "source_record_id": 18,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "19": [
+      {
+        "source_record_id": 19,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "20": [
+      {
+        "source_record_id": 20,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "21": [
+      {
+        "source_record_id": 21,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "25": [
+      {
+        "source_record_id": 25,
+        "type": "TemporaryRental",
+        "duration_raw": 348
+      }
+    ],
+    "28": [
+      {
+        "source_record_id": 28,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "29": [
+      {
+        "source_record_id": 29,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "30": [
+      {
+        "source_record_id": 30,
+        "type": "Investment",
+        "duration_raw": 60
+      }
+    ],
+    "54": [
+      {
+        "source_record_id": 54,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "62": [
+      {
+        "source_record_id": 62,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "72": [
+      {
+        "source_record_id": 72,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "73": [
+      {
+        "source_record_id": 73,
+        "type": "TemporaryRental",
+        "duration_raw": 367
+      }
+    ],
+    "76": [
+      {
+        "source_record_id": 76,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "77": [
+      {
+        "source_record_id": 77,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "78": [
+      {
+        "source_record_id": 78,
+        "type": "Investment",
+        "duration_raw": 180
+      }
+    ],
+    "79": [
+      {
+        "source_record_id": 79,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "80": [
+      {
+        "source_record_id": 80,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "81": [
+      {
+        "source_record_id": 81,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "82": [
+      {
+        "source_record_id": 82,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "83": [
+      {
+        "source_record_id": 83,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "84": [
+      {
+        "source_record_id": 84,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "85": [
+      {
+        "source_record_id": 85,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "86": [
+      {
+        "source_record_id": 86,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "87": [
+      {
+        "source_record_id": 87,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "88": [
+      {
+        "source_record_id": 88,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "89": [
+      {
+        "source_record_id": 89,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "90": [
+      {
+        "source_record_id": 90,
+        "type": "Investment",
+        "duration_raw": 60
+      }
+    ],
+    "91": [
+      {
+        "source_record_id": 91,
+        "type": "Investment",
+        "duration_raw": 60
+      }
+    ],
+    "92": [
+      {
+        "source_record_id": 92,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "93": [
+      {
+        "source_record_id": 93,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "94": [
+      {
+        "source_record_id": 94,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "95": [
+      {
+        "source_record_id": 95,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "96": [
+      {
+        "source_record_id": 96,
+        "type": "Investment",
+        "duration_raw": 60
+      }
+    ],
+    "97": [
+      {
+        "source_record_id": 97,
+        "type": "Investment",
+        "duration_raw": 60
+      }
+    ],
+    "98": [
+      {
+        "source_record_id": 98,
+        "type": "Investment",
+        "duration_raw": 60
+      }
+    ],
+    "99": [
+      {
+        "source_record_id": 99,
+        "type": "Investment",
+        "duration_raw": 60
+      }
+    ],
+    "100": [
+      {
+        "source_record_id": 100,
+        "type": "Investment",
+        "duration_raw": 60
+      }
+    ],
+    "101": [
+      {
+        "source_record_id": 101,
+        "type": "Investment",
+        "duration_raw": 60
+      }
+    ],
+    "102": [
+      {
+        "source_record_id": 102,
+        "type": "Investment",
+        "duration_raw": 60
+      }
+    ],
+    "103": [
+      {
+        "source_record_id": 103,
+        "type": "Investment",
+        "duration_raw": 60
+      }
+    ],
+    "104": [
+      {
+        "source_record_id": 104,
+        "type": "Investment",
+        "duration_raw": 60
+      }
+    ],
+    "105": [
+      {
+        "source_record_id": 105,
+        "type": "Investment",
+        "duration_raw": 60
+      }
+    ],
+    "106": [
+      {
+        "source_record_id": 106,
+        "type": "Investment",
+        "duration_raw": 300
+      }
+    ],
+    "107": [
+      {
+        "source_record_id": 107,
+        "type": "Investment",
+        "duration_raw": 36
+      }
+    ],
+    "127": [
+      {
+        "source_record_id": 127,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "129": [
+      {
+        "source_record_id": 129,
+        "type": "TemporaryRental",
+        "duration_raw": 213
+      }
+    ],
+    "130": [
+      {
+        "source_record_id": 130,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "131": [
+      {
+        "source_record_id": 131,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "132": [
+      {
+        "source_record_id": 132,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "133": [
+      {
+        "source_record_id": 133,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "134": [
+      {
+        "source_record_id": 134,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "136": [
+      {
+        "source_record_id": 136,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "137": [
+      {
+        "source_record_id": 137,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "138": [
+      {
+        "source_record_id": 138,
+        "type": "Investment",
+        "duration_raw": 60
+      }
+    ],
+    "139": [
+      {
+        "source_record_id": 139,
+        "type": "Investment",
+        "duration_raw": 60
+      }
+    ],
+    "141": [
+      {
+        "source_record_id": 141,
+        "type": "Investment",
+        "duration_raw": 60
+      }
+    ],
+    "142": [
+      {
+        "source_record_id": 142,
+        "type": "Investment",
+        "duration_raw": 60
+      }
+    ],
+    "164": [
+      {
+        "source_record_id": 140,
+        "type": "Investment",
+        "duration_raw": 300
+      }
+    ],
+    "192": [
+      {
+        "source_record_id": 135,
+        "type": "Investment",
+        "duration_raw": 300
+      }
+    ],
+    "193": [
+      {
+        "source_record_id": 75,
+        "type": "Investment",
+        "duration_raw": 180
+      }
+    ],
+    "195": [
+      {
+        "source_record_id": 74,
+        "type": "Investment",
+        "duration_raw": 180
+      }
+    ],
+    "207": [
+      {
+        "source_record_id": 210,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "226": [
+      {
+        "source_record_id": 2778,
+        "type": "Investment",
+        "duration_raw": 300
+      }
+    ],
+    "227": [
+      {
+        "source_record_id": 2779,
+        "type": "Investment",
+        "duration_raw": 600
+      }
+    ],
+    "230": [
+      {
+        "source_record_id": 2831,
+        "type": "Investment",
+        "duration_raw": 60
+      }
+    ],
+    "231": [
+      {
+        "source_record_id": 2832,
+        "type": "Investment",
+        "duration_raw": 180
+      }
+    ],
+    "232": [
+      {
+        "source_record_id": 2833,
+        "type": "Investment",
+        "duration_raw": 180
+      }
+    ],
+    "233": [
+      {
+        "source_record_id": 2834,
+        "type": "Investment",
+        "duration_raw": 300
+      }
+    ],
+    "234": [
+      {
+        "source_record_id": 2835,
+        "type": "Investment",
+        "duration_raw": 180
+      }
+    ],
+    "235": [
+      {
+        "source_record_id": 2836,
+        "type": "Investment",
+        "duration_raw": 180
+      }
+    ],
+    "237": [
+      {
+        "source_record_id": 2838,
+        "type": "Investment",
+        "duration_raw": 300
+      }
+    ],
+    "239": [
+      {
+        "source_record_id": 2840,
+        "type": "Investment",
+        "duration_raw": 180
+      }
+    ],
+    "240": [
+      {
+        "source_record_id": 2841,
+        "type": "Investment",
+        "duration_raw": 180
+      }
+    ],
+    "242": [
+      {
+        "source_record_id": 2843,
+        "type": "Investment",
+        "duration_raw": 120
+      }
+    ],
+    "244": [
+      {
+        "source_record_id": 2845,
+        "type": "Investment",
+        "duration_raw": 300
+      }
+    ],
+    "246": [
+      {
+        "source_record_id": 2847,
+        "type": "Investment",
+        "duration_raw": 120
+      }
+    ],
+    "248": [
+      {
+        "source_record_id": 2849,
+        "type": "Investment",
+        "duration_raw": 120
+      }
+    ],
+    "249": [
+      {
+        "source_record_id": 2850,
+        "type": "Investment",
+        "duration_raw": 300
+      }
+    ],
+    "251": [
+      {
+        "source_record_id": 2852,
+        "type": "Investment",
+        "duration_raw": 120
+      }
+    ],
+    "253": [
+      {
+        "source_record_id": 2854,
+        "type": "Investment",
+        "duration_raw": 300
+      }
+    ],
+    "255": [
+      {
+        "source_record_id": 2856,
+        "type": "Investment",
+        "duration_raw": 180
+      }
+    ],
+    "257": [
+      {
+        "source_record_id": 2858,
+        "type": "Investment",
+        "duration_raw": 300
+      }
+    ],
+    "258": [
+      {
+        "source_record_id": 2859,
+        "type": "Investment",
+        "duration_raw": 120
+      }
+    ],
+    "260": [
+      {
+        "source_record_id": 2861,
+        "type": "Investment",
+        "duration_raw": 180
+      }
+    ],
+    "262": [
+      {
+        "source_record_id": 2863,
+        "type": "Investment",
+        "duration_raw": 180
+      }
+    ],
+    "308": [
+      {
+        "source_record_id": 2910,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "309": [
+      {
+        "source_record_id": 2911,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "310": [
+      {
+        "source_record_id": 2912,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "311": [
+      {
+        "source_record_id": 2913,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "312": [
+      {
+        "source_record_id": 2914,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "313": [
+      {
+        "source_record_id": 2915,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "314": [
+      {
+        "source_record_id": 2916,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "315": [
+      {
+        "source_record_id": 2917,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "316": [
+      {
+        "source_record_id": 2918,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "317": [
+      {
+        "source_record_id": 2919,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "318": [
+      {
+        "source_record_id": 2920,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "319": [
+      {
+        "source_record_id": 2921,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "320": [
+      {
+        "source_record_id": 2922,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "321": [
+      {
+        "source_record_id": 2923,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "322": [
+      {
+        "source_record_id": 2924,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "323": [
+      {
+        "source_record_id": 2925,
+        "type": "TemporaryRental",
+        "duration_raw": 366
+      }
+    ],
+    "324": [
+      {
+        "source_record_id": 2926,
+        "type": "TemporaryRental",
+        "duration_raw": 732
+      }
+    ],
+    "325": [
+      {
+        "source_record_id": 2927,
+        "type": "Investment",
+        "duration_raw": 60
+      }
+    ]
+  },
+  "investsaudi_area_linked": [
+    {
+      "master_id": 102,
+      "area_canonical": 2.0,
+      "source_record_id": 2357,
+      "siteArea_raw": "2",
+      "ref": "06-26-183737-46013",
+      "area_furas": [
+        [
+          102,
+          "2"
+        ]
+      ]
+    },
+    {
+      "master_id": 230,
+      "area_canonical": 160.0,
+      "source_record_id": 2368,
+      "siteArea_raw": "64",
+      "ref": "06-26-183737-49010",
+      "area_furas": [
+        [
+          2831,
+          "160"
+        ]
+      ]
+    }
+  ],
+  "investsaudi_wrong_reference_linked": [
+    {
+      "master_id": 218,
+      "source_record_id": 389,
+      "family": "opportunity",
+      "source_ref": "44865",
+      "canonical_ref": "44865",
+      "api_id": 44865
+    },
+    {
+      "master_id": 219,
+      "source_record_id": 390,
+      "family": "opportunity",
+      "source_ref": "44864",
+      "canonical_ref": "44864",
+      "api_id": 44864
+    },
+    {
+      "master_id": 220,
+      "source_record_id": 391,
+      "family": "opportunity",
+      "source_ref": "44863",
+      "canonical_ref": "44863",
+      "api_id": 44863
+    },
+    {
+      "master_id": 221,
+      "source_record_id": 426,
+      "family": "opportunity",
+      "source_ref": "44828",
+      "canonical_ref": "44828",
+      "api_id": 44828
+    },
+    {
+      "master_id": 222,
+      "source_record_id": 427,
+      "family": "opportunity",
+      "source_ref": "44827",
+      "canonical_ref": "44827",
+      "api_id": 44827
+    },
+    {
+      "master_id": 223,
+      "source_record_id": 428,
+      "family": "opportunity",
+      "source_ref": "44826",
+      "canonical_ref": "44826",
+      "api_id": 44826
+    }
+  ],
+  "open_relevant_conflicts": [
+    {
+      "master_id": 230,
+      "field": "land_area_sqm",
+      "type": "FIELD_VALUE_CONFLICT",
+      "selected": "160.0",
+      "conflicting": "64.0",
+      "source": "invest-saudi",
+      "status": "OPEN"
+    }
+  ],
+  "open_conflict_counts": {
+    "sector": 48,
+    "opportunity_type": 14,
+    "location_description": 4,
+    "opportunity_owner": 3,
+    "activity": 20,
+    "investment_model": 4,
+    "title_ar": 2,
+    "sub_activity": 1,
+    "land_area_sqm": 1
+  }
+}

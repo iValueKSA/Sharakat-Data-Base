@@ -1,0 +1,98 @@
+{
+  "validated_at_utc": "2026-10-19T08:13:59.152894+00:00",
+  "standardization_engine_version": "16",
+  "base_url": "http://frontend:8080",
+  "options": {
+    "العربات المتنقلة": {
+      "canonical_id": "asset_facility_type:mobile_vending_site",
+      "filter_count": 69,
+      "api_query_count": 69,
+      "csv_count": 69,
+      "xlsx_count": 69,
+      "consistent": true
+    },
+    "الحدائق": {
+      "canonical_id": "asset_facility_type:public_park",
+      "filter_count": 23,
+      "api_query_count": 23,
+      "csv_count": 23,
+      "xlsx_count": 23,
+      "consistent": true
+    },
+    "الشواطئ والواجهات": {
+      "canonical_id": "asset_facility_type:waterfront",
+      "filter_count": 11,
+      "api_query_count": 11,
+      "csv_count": 11,
+      "xlsx_count": 11,
+      "consistent": true
+    },
+    "أخرى": {
+      "canonical_id": "asset_facility_type:other",
+      "filter_count": 10,
+      "api_query_count": 10,
+      "csv_count": 10,
+      "xlsx_count": 10,
+      "consistent": true
+    },
+    "الاراضي": {
+      "canonical_id": "asset_facility_type:land",
+      "filter_count": 8,
+      "api_query_count": 8,
+      "csv_count": 8,
+      "xlsx_count": 8,
+      "consistent": true
+    },
+    "الساحات الميادين": {
+      "canonical_id": "asset_facility_type:public_square",
+      "filter_count": 5,
+      "api_query_count": 5,
+      "csv_count": 5,
+      "xlsx_count": 5,
+      "consistent": true
+    },
+    "الطرق والارصفة": {
+      "canonical_id": "asset_facility_type:road_sidewalk",
+      "filter_count": 4,
+      "api_query_count": 4,
+      "csv_count": 4,
+      "xlsx_count": 4,
+      "consistent": true
+    },
+    "المباني": {
+      "canonical_id": "asset_facility_type:building",
+      "filter_count": 1,
+      "api_query_count": 1,
+      "csv_count": 1,
+      "xlsx_count": 1,
+      "consistent": true
+    },
+    "غير محدد": {
+      "canonical_id": "asset_facility_type:missing",
+      "filter_count": 162,
+      "api_query_count": 162,
+      "csv_count": 162,
+      "xlsx_count": 162,
+      "consistent": true
+    }
+  },
+  "xls_structure": {
+    "column_count": 24,
+    "right_to_left": true,
+    "freeze_panes": "A7",
+    "auto_filter": "A6:X7",
+    "asset_column": 24,
+    "asset_column_width": 24.0,
+    "print_area": "'الفرص الاستثمارية'!$A$1:$X$7"
+  },
+  "details": {
+    "asset_facility_type": "المباني",
+    "canonical_types": [
+      {
+        "id": "asset_facility_type:building",
+        "label": "المباني"
+      }
+    ]
+  },
+  "dashboard_filtered_total": 1
+}

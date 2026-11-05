@@ -1,0 +1,51 @@
+{
+  "compared_at_local_date": "2026-10-28",
+  "comparison": {
+    "previous_video": {
+      "path": "app/static/media/ahsa-investment-hero.webm (before map-removal revision)",
+      "size_bytes": 9790340,
+      "size_mb_decimal": 9.79034,
+      "duration_seconds": 22.093396,
+      "dimensions": "1920x540",
+      "format": "WebM VP9",
+      "landscape_scene_count": 4,
+      "map_scene_count": 2,
+      "map_scene_time_ranges": ["03.65–07.65 seconds", "18.25–22.09 seconds"],
+      "visual_style": "Oasis/heritage/development footage interrupted by two stylized boundary-map graphics."
+    },
+    "revised_video": {
+      "path": "app/static/media/ahsa-investment-hero.webm",
+      "size_bytes": 9790136,
+      "size_mb_decimal": 9.790136,
+      "duration_seconds": 22.131582,
+      "dimensions": "1920x540",
+      "format": "WebM VP9",
+      "landscape_scene_count": 6,
+      "map_scene_count": 0,
+      "visual_style": "Cinematic oasis opening, irrigation-channel pass through palms, closer cultivated oasis, heritage street, modern investment district, and palm-lined development road at twilight.",
+      "replacements": [
+        "Former 03.65–07.65 second map overview replaced by the irrigation-channel scene.",
+        "Former 18.25–22.09 second map close-up replaced by the development-road scene."
+      ],
+      "poster_path": "app/static/media/ahsa-investment-hero-poster.webp",
+      "poster_bytes": 243874,
+      "poster_contains_map": false,
+      "sha256": "2bdb92251b0f4fc3f131ce375877d0095cac0aff5607668885f2bb22df521455"
+    }
+  },
+  "no_map_visuals_present": true,
+  "replacement_scenes_are_cinematic_and_location_specific": true,
+  "smooth_loop_and_live_playback_verified": true,
+  "why_revision_is_better": [
+    "Both graphic map sequences are gone, with no boundary outlines, pulses, or map overlays left in the Hero asset.",
+    "The irrigation shot introduces reflective water, agriculture, and palm grove detail, while the road shot introduces infrastructure and low-rise investment development at twilight.",
+    "The sequence now maintains six distinct landscape scenes without infographic-style interruption.",
+    "The revised local video remains finite-duration, muted, inline, and natively loopable."
+  ],
+  "limitations_and_provenance": {
+    "generated_landscape_scenes_are_illustrative": true,
+    "named_real_investment_sites_are_not_claimed": true,
+    "reference_video_copied": false,
+    "runtime_reference_site_dependency": false
+  }
+}

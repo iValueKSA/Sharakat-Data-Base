@@ -1,0 +1,57 @@
+{
+  "auto_event_count": 519,
+  "entity_counts": {
+    "opportunity_conflict": 494,
+    "location_review": 15,
+    "duplicate_candidate": 10
+  },
+  "audit_field_missing_counts": {},
+  "audit_field_completeness_pass": true,
+  "job_504": {
+    "id": 504,
+    "source": "furas",
+    "status": "SUCCESS",
+    "job_state": "COMPLETED",
+    "started_at": "2026-10-26 07:03:02.430806+00:00",
+    "finished_at": "2026-10-26 07:03:19.900791+00:00",
+    "new_count": 0,
+    "update_count": 0,
+    "unchanged_count": 396,
+    "metrics_json": {
+      "source_total_reported": 396,
+      "pages_requested": 5,
+      "pages_successful": 5,
+      "records_received": 396,
+      "records_parsed": 396,
+      "unique_records": 396,
+      "pagination_complete": true,
+      "active_count": 396,
+      "expired_count": 0,
+      "page_size": 100,
+      "city_filter_ids": [
+        "1949",
+        "1945",
+        "1950",
+        "005011001",
+        "9",
+        "1264",
+        "1315",
+        "1299",
+        "1298",
+        "104",
+        "005020001"
+      ],
+      "where": "CITY_ID IN ('1949','1945','1950','005011001','9','1264','1315','1299','1298','104','005020001') AND LASTRFPSELLDATE >= DATE '2026-10-26' AND OPPORTUNITYACTIVESTATUS='Announced' AND QualifyingOpportunity=0",
+      "standardization": {
+        "version": "21",
+        "records_processed": 396,
+        "fields_standardized": 7061,
+        "approved_alias_matches": 416,
+        "unmapped_values": 756,
+        "validation_issues": 357
+      }
+    }
+  },
+  "job_total": 504,
+  "active_jobs": 0
+}

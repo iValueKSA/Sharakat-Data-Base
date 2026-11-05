@@ -1,0 +1,18 @@
+{
+  "pilot_id": "AHSA-HUMAN-REVIEW-PILOT-2026-10",
+  "metrics_purpose": "WORKFLOW_CALIBRATION_ONLY",
+  "status": "WAITING_FOR_HUMAN_ANALYST",
+  "results_available": false,
+  "human_decisions_recorded": 0,
+  "observed_case_count": 0,
+  "expected_case_count": 40,
+  "updated_at": "2026-10-25",
+  "note": "No pilot start event or human outcomes exist yet. Unknown metrics remain null.",
+  "open_reviews_before_pilot": 498,
+  "pilot_outcomes": null,
+  "natural_sync_review_delta": "UNKNOWN",
+  "reconciliation_status": "PENDING_PILOT_START",
+  "open_reviews_after_pilot": null,
+  "preflight_human_review_required": 489,
+  "preflight_source_recheck_required": 9
+}

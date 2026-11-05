@@ -1,0 +1,108 @@
+{
+  "captured_at": "2026-10-26T10:27:50.269068+03:00",
+  "open_reviews_after": 0,
+  "reviews": {
+    "duplicate_candidate": {
+      "total": 47,
+      "by_status": {
+        "MERGED": 21,
+        "REJECTED": 26
+      }
+    },
+    "location_review": {
+      "total": 26,
+      "by_status": {
+        "REJECTED": 15,
+        "ACCEPTED": 11
+      }
+    },
+    "qualification_review": {
+      "total": 0,
+      "by_status": {}
+    },
+    "opportunity_conflict": {
+      "total": 717,
+      "by_status": {
+        "RESOLVED_KEEP": 541,
+        "RESOLVED_CANONICAL": 119,
+        "RESOLVED": 40,
+        "RESOLVED_INFERENCE": 5,
+        "SUPERSEDED": 12
+      }
+    }
+  },
+  "autonomous_audits": {
+    "events": 519,
+    "by_entity_type": {
+      "opportunity_conflict": 494,
+      "location_review": 15,
+      "duplicate_candidate": 10
+    },
+    "by_event_type": {
+      "REVIEW_FIELD_KEEP": 493,
+      "REVIEW_LOCATION_REJECTED": 15,
+      "REVIEW_AUTONOMOUS_SUPERSEDED": 1,
+      "REVIEW_DUPLICATE_REJECTED": 10
+    },
+    "actors": {
+      "SYSTEM": 519
+    },
+    "duplicate_review_audit_pairs": [],
+    "non_system_actor_events": [],
+    "one_audit_per_resolved_review": true,
+    "expected_reviews": 519,
+    "matched_unique_review_pairs": 519,
+    "missing_audits": [],
+    "duplicate_audit_pairs": [],
+    "still_open_reviews": []
+  },
+  "business_state": {
+    "sha256": "5b49c491c8841a4b1396471869aefcdcfe830aef0941fb56f0afaefdbb96acc2",
+    "tables": {
+      "opportunities": {
+        "row_count": 587,
+        "sha256": "0e373da0a46f0c27396d91c60c985ee9c7d037c7a56ea4a8fca9144e972ff582"
+      },
+      "source_opportunities": {
+        "row_count": 3178,
+        "sha256": "251f19446e09c1ab359be5ec5ed4749e23f9f193baaa2fd69709c8dd4ed69453"
+      },
+      "source_observations": {
+        "row_count": 25180,
+        "sha256": "6d0766001f77f44cd873884d651ae9c71247572496eabb69aa2c1b94fd2ec97e"
+      }
+    }
+  },
+  "masters": {
+    "current_count": 566,
+    "unique_current_master_ids": 566,
+    "merged_count": 21
+  },
+  "source_reconciliation": {
+    "source_opportunities": 3178,
+    "observations": 25180,
+    "broken_source_links": [],
+    "broken_master_links": [],
+    "broken_observation_links": []
+  },
+  "sync_jobs": {
+    "total": 504,
+    "max_id": 504,
+    "active": 0
+  },
+  "active_merge_audits": 21,
+  "pilot_status": "SUPERSEDED_BY_AUTONOMOUS_RESOLUTION",
+  "pilot_superseded_events": 1,
+  "business_state_matches_dry_run_before": true,
+  "business_data_changes": 0,
+  "frozen_pilot": {
+    "sample_size": 40,
+    "duplicate_cases": 6,
+    "source_recheck_in_pilot": 0,
+    "cases_replaced_with_audit": 0,
+    "cohort_sha256": "e72cb979ebd28e18f302ffa9c1453b2b290496679b83b8ed4cef34aac6815c8c",
+    "prior_frozen_sha256": "e72cb979ebd28e18f302ffa9c1453b2b290496679b83b8ed4cef34aac6815c8c",
+    "hash_matches": true,
+    "status": "SUPERSEDED_BY_AUTONOMOUS_RESOLUTION"
+  }
+}

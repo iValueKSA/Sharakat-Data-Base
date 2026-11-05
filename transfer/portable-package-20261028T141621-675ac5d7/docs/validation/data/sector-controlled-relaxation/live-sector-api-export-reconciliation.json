@@ -1,0 +1,145 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-21T11:47:02.367331+00:00",
+  "current_opportunities": 525,
+  "sector_bucket_sum": 525,
+  "sector_dashboard_reconciliation": "PASSED",
+  "sector_filter_reconciliation": "PASSED",
+  "csv_sector_reconciliation": "PASSED",
+  "xlsx_sector_reconciliation": "PASSED",
+  "buckets": {
+    "sector:agriculture": {
+      "label": "الزراعة",
+      "dashboard_count": 1,
+      "api_filter_count": 1,
+      "api_filter_total": 1,
+      "csv_rows": 1,
+      "xlsx_rows": 1,
+      "api_filter_pass": true,
+      "csv_pass": true,
+      "xlsx_pass": true
+    },
+    "sector:commercial": {
+      "label": "تجاري",
+      "dashboard_count": 77,
+      "api_filter_count": 77,
+      "api_filter_total": 77,
+      "csv_rows": 77,
+      "xlsx_rows": 77,
+      "api_filter_pass": true,
+      "csv_pass": true,
+      "xlsx_pass": true
+    },
+    "sector:education": {
+      "label": "التعليم",
+      "dashboard_count": 3,
+      "api_filter_count": 3,
+      "api_filter_total": 3,
+      "csv_rows": 3,
+      "xlsx_rows": 3,
+      "api_filter_pass": true,
+      "csv_pass": true,
+      "xlsx_pass": true
+    },
+    "sector:environment": {
+      "label": "البيئة",
+      "dashboard_count": 8,
+      "api_filter_count": 8,
+      "api_filter_total": 8,
+      "csv_rows": 8,
+      "xlsx_rows": 8,
+      "api_filter_pass": true,
+      "csv_pass": true,
+      "xlsx_pass": true
+    },
+    "sector:financial_services": {
+      "label": "الخدمات المالية",
+      "dashboard_count": 5,
+      "api_filter_count": 5,
+      "api_filter_total": 5,
+      "csv_rows": 5,
+      "xlsx_rows": 5,
+      "api_filter_pass": true,
+      "csv_pass": true,
+      "xlsx_pass": true
+    },
+    "sector:healthcare": {
+      "label": "الرعاية الصحية",
+      "dashboard_count": 4,
+      "api_filter_count": 4,
+      "api_filter_total": 4,
+      "csv_rows": 4,
+      "xlsx_rows": 4,
+      "api_filter_pass": true,
+      "csv_pass": true,
+      "xlsx_pass": true
+    },
+    "sector:industrial": {
+      "label": "صناعي",
+      "dashboard_count": 59,
+      "api_filter_count": 59,
+      "api_filter_total": 59,
+      "csv_rows": 59,
+      "xlsx_rows": 59,
+      "api_filter_pass": true,
+      "csv_pass": true,
+      "xlsx_pass": true
+    },
+    "sector:logistics": {
+      "label": "الخدمات اللوجستية",
+      "dashboard_count": 4,
+      "api_filter_count": 4,
+      "api_filter_total": 4,
+      "csv_rows": 4,
+      "xlsx_rows": 4,
+      "api_filter_pass": true,
+      "csv_pass": true,
+      "xlsx_pass": true
+    },
+    "sector:other": {
+      "label": "أخرى",
+      "dashboard_count": 13,
+      "api_filter_count": 13,
+      "api_filter_total": 13,
+      "csv_rows": 13,
+      "xlsx_rows": 13,
+      "api_filter_pass": true,
+      "csv_pass": true,
+      "xlsx_pass": true
+    },
+    "sector:real_estate": {
+      "label": "العقارات والإنشاءات",
+      "dashboard_count": 7,
+      "api_filter_count": 7,
+      "api_filter_total": 7,
+      "csv_rows": 7,
+      "xlsx_rows": 7,
+      "api_filter_pass": true,
+      "csv_pass": true,
+      "xlsx_pass": true
+    },
+    "sector:tourism": {
+      "label": "السياحة",
+      "dashboard_count": 1,
+      "api_filter_count": 1,
+      "api_filter_total": 1,
+      "csv_rows": 1,
+      "xlsx_rows": 1,
+      "api_filter_pass": true,
+      "csv_pass": true,
+      "xlsx_pass": true
+    },
+    "sector:unspecified": {
+      "label": "غير محدد",
+      "dashboard_count": 343,
+      "api_filter_count": 343,
+      "api_filter_total": 343,
+      "csv_rows": 343,
+      "xlsx_rows": 343,
+      "api_filter_pass": true,
+      "csv_pass": true,
+      "xlsx_pass": true
+    }
+  },
+  "failures": []
+}

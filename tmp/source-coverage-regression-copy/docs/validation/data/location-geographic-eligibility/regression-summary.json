@@ -1,0 +1,16 @@
+{
+  "test_command": "docker run --rm with project mounted; isolated SQLite DATABASE_URL=sqlite:// and REDIS_URL empty",
+  "passed": 143,
+  "failed": 0,
+  "warnings": [
+    "Starlette httpx TestClient deprecation"
+  ],
+  "new_geography_tests": 3,
+  "taxonomy_regressions": {
+    "activity": "PASSED",
+    "investment_model": "PASSED",
+    "asset_facility_type": "PASSED",
+    "sector": "PASSED",
+    "opportunity_type": "PASSED"
+  }
+}

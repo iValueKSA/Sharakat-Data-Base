@@ -1,0 +1,1 @@
+{"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"errors":{"PageNumber":["The value '1&pageSize=1' is not valid for PageNumber."]},"traceId":"00-daa1f602d696ee69ade5a8f7796469aa-f4163cd8c1b09691-00"}

@@ -1,0 +1,40 @@
+# Controlled LIVE USER ENVIRONMENT runtime. Use with --no-deps and --no-build.
+# Migrations are an explicit one-off step; this service is intentionally inert.
+services:
+  migrate:
+    image: alahsa-api:furas-national-live-20261102
+    build: !reset null
+    command: ["python", "-c", "print('Controlled live deployment: automatic migrations disabled')"]
+  api:
+    image: alahsa-api:furas-national-live-20261102
+    build: !reset null
+    environment:
+      ENVIRONMENT: local_user
+      NATIONAL_UI_ENABLED: "false"
+      NATIONAL_MAP_ENABLED: "false"
+      NATIONAL_DASHBOARD_ENABLED: "false"
+      FURAS_NATIONAL_ENUMERATION_ENABLED: "false"
+      FURAS_NATIONAL_REMOVAL_RECONCILIATION_ENABLED: "false"
+  worker:
+    image: alahsa-worker:furas-national-live-20261102
+    build: !reset null
+    environment:
+      ENVIRONMENT: local_user
+      NATIONAL_UI_ENABLED: "false"
+      NATIONAL_MAP_ENABLED: "false"
+      NATIONAL_DASHBOARD_ENABLED: "false"
+      FURAS_NATIONAL_ENUMERATION_ENABLED: "false"
+      FURAS_NATIONAL_REMOVAL_RECONCILIATION_ENABLED: "false"
+  scheduler:
+    image: alahsa-beat:furas-national-live-20261102
+    build: !reset null
+    environment:
+      ENVIRONMENT: local_user
+      NATIONAL_UI_ENABLED: "false"
+      NATIONAL_MAP_ENABLED: "false"
+      NATIONAL_DASHBOARD_ENABLED: "false"
+      FURAS_NATIONAL_ENUMERATION_ENABLED: "false"
+      FURAS_NATIONAL_REMOVAL_RECONCILIATION_ENABLED: "false"
+  frontend:
+    image: alahsa-local-frontend:furas-national-live-20261102
+    build: !reset null

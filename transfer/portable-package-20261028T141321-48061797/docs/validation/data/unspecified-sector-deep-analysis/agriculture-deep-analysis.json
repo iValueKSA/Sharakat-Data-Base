@@ -1,0 +1,16 @@
+{
+  "strong_candidates": 0,
+  "ambiguous_candidates": 1,
+  "false_positive_risk_groups": [
+    "food retail",
+    "food manufacturing",
+    "warehouses",
+    "general land",
+    "date or palm place names without cultivation/production"
+  ],
+  "strong_sample_ids": [],
+  "ambiguous_sample_ids": [
+    78
+  ],
+  "current_labeled_references": 1
+}

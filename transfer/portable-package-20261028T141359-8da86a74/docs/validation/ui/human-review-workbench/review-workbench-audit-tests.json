@@ -1,0 +1,21 @@
+{
+  "captured_at": "2026-10-22T14:03:38+03:00",
+  "current_human_decisions_without_audit": 0,
+  "new_reopen_without_audit": 0,
+  "recommendation_override_without_reason": 0,
+  "recommendation_override_without_audit": 0,
+  "batch_resolved_without_individual_audit": 0,
+  "recommendation_snapshot_stored_at_decision": true,
+  "historical_incomplete_decision_audits": 120,
+  "historical_records": "Documented WARNING; actor/time/reason not fabricated",
+  "new_live_audit_events_created_during_validation": 0,
+  "tests": [
+    "test_authoritative_source_recommendation_snapshot_and_follow_audit",
+    "test_recommendation_override_requires_reason_and_is_audited",
+    "test_reopen_preview_and_governed_reopen_preserve_resolution_history",
+    "test_deterministic_batch_preview_commit_has_individual_audits_and_is_idempotent"
+  ],
+  "dq_gate_status": "All current related live DQ gates PASS with observed=0",
+  "result": "PASSED",
+  "focused_suite_collected_cases": 45
+}

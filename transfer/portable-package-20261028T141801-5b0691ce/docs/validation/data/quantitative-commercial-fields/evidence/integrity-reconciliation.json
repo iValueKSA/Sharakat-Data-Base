@@ -1,0 +1,27 @@
+{
+  "captured_at_utc": "2026-10-20T07:57:58.266914+00:00",
+  "master_identity": {
+    "pre_write_sha256": "49354c79fb7dfcb335b155a73bc6b6203bbfe77a29b96174886a06c14e638dc7",
+    "post_write_sha256": "49354c79fb7dfcb335b155a73bc6b6203bbfe77a29b96174886a06c14e638dc7",
+    "match": true
+  },
+  "source_links": {
+    "pre_write_rows": 2899,
+    "post_write_rows": 2899,
+    "exact_record_and_master_link_match": true
+  },
+  "raw_source_payloads": {
+    "pre_write_sha256": "dab212e4beb90c8e0fda4e19ec42d26be7314ed35fff75ddcb37947f78958904",
+    "post_write_sha256": "dab212e4beb90c8e0fda4e19ec42d26be7314ed35fff75ddcb37947f78958904",
+    "match": true
+  },
+  "observations": {
+    "pre_write_count": 11124,
+    "post_write_count": 11124,
+    "count_match": true,
+    "observation_rows_or_raw_payloads_updated_by_this_task": false,
+    "scheduled_syncs_after_fixed_baseline": 0
+  },
+  "master_rows": 297,
+  "source_rows": 2899
+}

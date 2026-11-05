@@ -1,0 +1,159 @@
+{
+  "status": "PASSED",
+  "verified_at": "2026-10-25T07:15:06.205Z",
+  "url": "http://127.0.0.1:8080",
+  "workflow_started": false,
+  "decisions_submitted": 0,
+  "pilot_state": {
+    "http_status": 200,
+    "pilot_id": "AHSA-HUMAN-REVIEW-PILOT-2026-10",
+    "started": false,
+    "events": 0,
+    "cases": 40,
+    "phase_counts": {
+      "A": 20,
+      "B": 20
+    }
+  },
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "pilot_start_visible": true,
+      "pilot_start_text": "بدء الطيار — المرحلة أ",
+      "pilot_controls_rect": {
+        "x": 94,
+        "y": 364.96875,
+        "width": 1465,
+        "height": 38
+      },
+      "buttons": [
+        {
+          "id": "pilotStartButton",
+          "left": 1427.59375,
+          "right": 1559,
+          "top": 364.96875,
+          "bottom": 402.96875,
+          "width": 131.40625,
+          "height": 38
+        }
+      ],
+      "button_overlaps": [],
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "pilot_start_visible": true,
+      "pilot_start_text": "بدء الطيار — المرحلة أ",
+      "pilot_controls_rect": {
+        "x": 63.1875,
+        "y": 364.96875,
+        "width": 1046.625,
+        "height": 38
+      },
+      "buttons": [
+        {
+          "id": "pilotStartButton",
+          "left": 978.40625,
+          "right": 1109.8125,
+          "top": 364.96875,
+          "bottom": 402.96875,
+          "width": 131.40625,
+          "height": 38
+        }
+      ],
+      "button_overlaps": [],
+      "passed": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "pilot_start_visible": true,
+      "pilot_start_text": "بدء الطيار — المرحلة أ",
+      "pilot_controls_rect": {
+        "x": 60.96875,
+        "y": 364.96875,
+        "width": 977.0625,
+        "height": 38
+      },
+      "buttons": [
+        {
+          "id": "pilotStartButton",
+          "left": 906.625,
+          "right": 1038.03125,
+          "top": 364.96875,
+          "bottom": 402.96875,
+          "width": 131.40625,
+          "height": 38
+        }
+      ],
+      "button_overlaps": [],
+      "passed": true
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "pilot_start_visible": true,
+      "pilot_start_text": "بدء الطيار — المرحلة أ",
+      "pilot_controls_rect": {
+        "x": 45,
+        "y": 360.96875,
+        "width": 675,
+        "height": 38
+      },
+      "buttons": [
+        {
+          "id": "pilotStartButton",
+          "left": 588.59375,
+          "right": 720,
+          "top": 360.96875,
+          "bottom": 398.96875,
+          "width": 131.40625,
+          "height": 38
+        }
+      ],
+      "button_overlaps": [],
+      "passed": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "pilot_start_visible": true,
+      "pilot_start_text": "بدء الطيار — المرحلة أ",
+      "pilot_controls_rect": {
+        "x": 25,
+        "y": 356.5625,
+        "width": 337,
+        "height": 38
+      },
+      "buttons": [
+        {
+          "id": "pilotStartButton",
+          "left": 25,
+          "right": 362,
+          "top": 356.5625,
+          "bottom": 394.5625,
+          "width": 337,
+          "height": 38
+        }
+      ],
+      "button_overlaps": [],
+      "passed": true
+    }
+  ],
+  "console_errors": [],
+  "unauthorized_responses": [
+    "http://127.0.0.1:8080/api/auth/me"
+  ]
+}

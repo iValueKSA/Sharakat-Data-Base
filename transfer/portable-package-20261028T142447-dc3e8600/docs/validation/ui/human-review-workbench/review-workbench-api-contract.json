@@ -1,0 +1,14 @@
+{
+  "list": {"method": "GET", "path": "/api/admin/review-queue", "filters": ["domain", "status", "priority", "source_filter", "disposition", "min_age", "max_age", "exclude_source_recheck", "master_status", "evidence_status"]},
+  "detail": {"method": "GET", "path": "/api/admin/review-workbench/{domain}/{review_id}", "query": ["include_raw"], "returns": ["review metadata", "master context", "comparison", "competing values", "canonical provenance", "source cards", "observation history", "recommendation", "allowed_actions", "audit history", "priority", "version_token"]},
+  "preview": {"method": "POST", "path": "/api/admin/review-workbench/{domain}/{review_id}/preview", "query": ["action", "version_token"], "writes_business_data": false},
+  "metrics": {"method": "GET", "path": "/api/admin/review-workbench/metrics", "returns": ["resolved per day", "average and median handling duration", "recommendation acceptance and override rates", "reopens", "backlog by priority"]},
+  "decision_routes": [
+    {"method": "POST", "path": "/api/admin/conflicts/{id}/{keep|use_source|accept_inference}"},
+    {"method": "POST", "path": "/api/admin/duplicates/{id}/{merge|reject|undo}"},
+    {"method": "POST", "path": "/api/admin/location-reviews/{id}/{accept|reject}"},
+    {"method": "POST", "path": "/api/admin/qualification-reviews/{id}/{accept|reject}"}
+  ],
+  "mutation_contract": {"requires_authenticated_reviewer": true, "requires_note_min_8_chars": true, "requires_current_version_token": true, "action_validated_server_side": true, "stale_response_http": 409},
+  "not_implemented": ["review assignment API", "batch decision API", "manual free-text taxonomy creation"]
+}

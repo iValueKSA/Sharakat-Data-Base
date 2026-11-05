@@ -1,0 +1,26 @@
+{
+  "root_cause": "DQ_GATE_NULL_HANDLING_BUG",
+  "files_changed": [
+    "app/data_quality.py",
+    "app/sector_inference_relaxed.py",
+    "app/service.py",
+    "tests/test_medium_inference_dq_root_cause.py",
+    "tests/test_sector_controlled_relaxation.py",
+    "tests/test_ingestion.py"
+  ],
+  "business_data_changed": false,
+  "master_577_changed": false,
+  "source_sync_started": false,
+  "fabricated_confidence_margins": 0,
+  "previous_gate": "A missing margin was coerced to zero and failed the contradiction gate.",
+  "new_gate": "Uses actual negative/competing evidence and an applicable scored margin only; integrity is checked separately.",
+  "margin_policy": "A single-candidate decision stores confidence_margin=null and confidence_margin_applicability=NOT_APPLICABLE; no second score is fabricated.",
+  "runtime_deployment": {
+    "api_worker_recreated": true,
+    "api_and_worker_rebuilt": true,
+    "redis_restarted": false,
+    "postgres_restarted": false,
+    "scheduler_restarted": false
+  },
+  "lifecycle_test_note": "Made one stale hardcoded deadline test date-relative after the 2026-10-22 run exposed its 2026-10-21 fixture date as already expired."
+}

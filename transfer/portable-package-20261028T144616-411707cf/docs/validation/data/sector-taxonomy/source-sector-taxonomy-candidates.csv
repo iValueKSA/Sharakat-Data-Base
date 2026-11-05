@@ -1,0 +1,135 @@
+﻿source_key,raw_sector,source_record_count,classification,canonical_id,proposed_business_label,auto_mapping_applied_to_source_row
+ahda,INVESTMENT_OPPORTUNITY,7,wrong_dimension_opportunity_type,sector:unspecified,غير محدد,False
+alahsa-opportunities,تجاري,39,canonical_sector,sector:commercial,تجاري,False
+alahsa-opportunities,خدمي,5,possible_activity_review,unmapped:sector:خدمي,غير محدد,False
+alahsa-opportunities,صناعي,59,canonical_sector,sector:industrial,صناعي,False
+furas,"""أخرى""",1,approved_alias,sector:other,أخرى,False
+furas,"""الساحات الميادين""",1,possible_activity_review,"unmapped:sector:""الساحات الميادين""",غير محدد,False
+furas,"""العربات المتنقلة""",2,possible_activity_review,"unmapped:sector:""العربات المتنقلة""",غير محدد,False
+furas,"""المباني""",1,possible_activity_review,"unmapped:sector:""المباني""",غير محدد,False
+furas,أخرى,20,canonical_sector,sector:other,أخرى,False
+furas,أنشطة التجارة العامة,8,possible_activity_review,unmapped:sector:أنشطة التجارة العامة,غير محدد,False
+furas,أنشطة تجارة المواد الغذائية,5,possible_activity_review,unmapped:sector:أنشطة تجارة المواد الغذائية,غير محدد,False
+furas,أنشطة و تجارة المعدات الثقيلة,1,unmapped_arabic_review,unmapped:sector:أنشطة و تجارة المعدات الثقيلة,أنشطة و تجارة المعدات الثقيلة,False
+furas,أنشطة وخدمات انتاج المواد غير الغذائية,1,possible_activity_review,unmapped:sector:أنشطة وخدمات انتاج المواد غير الغذائية,غير محدد,False
+furas,خدمات الصرافة,6,possible_activity_review,unmapped:sector:خدمات الصرافة,غير محدد,False
+furas,خدمات تعليمية أخرى,1,possible_activity_review,unmapped:sector:خدمات تعليمية أخرى,غير محدد,False
+furas,محلات تجارية,3,possible_activity_review,unmapped:sector:محلات تجارية,غير محدد,False
+furas,منتزه,1,unmapped_arabic_review,unmapped:sector:منتزه,منتزه,False
+furas,منشآت تقديم الغذاء,2,possible_activity_review,unmapped:sector:منشآت تقديم الغذاء,غير محدد,False
+furas,,124,missing_raw_sector,sector:unspecified,غير محدد,False
+invest-saudi,Administrative Real Estate,1,unmapped_english_or_source_label,unmapped:sector:Administrative Real Estate,Administrative Real Estate,False
+invest-saudi,Adventure Tourism,1,unmapped_english_or_source_label,unmapped:sector:Adventure Tourism,Adventure Tourism,False
+invest-saudi,Adventure Tourism/ Sports and Entertainment,1,unmapped_english_or_source_label,unmapped:sector:Adventure Tourism/ Sports and Entertainment,Adventure Tourism/ Sports and Entertainment,False
+invest-saudi,Adventure Tourism/ Tourism,2,unmapped_english_or_source_label,unmapped:sector:Adventure Tourism/ Tourism,Adventure Tourism/ Tourism,False
+invest-saudi,Aerospace and Defense,1,unmapped_english_or_source_label,unmapped:sector:Aerospace and Defense,Aerospace and Defense,False
+invest-saudi,Agriculture,3,approved_alias,sector:agriculture,الزراعة,False
+invest-saudi,Agriculture and Food Processing,57,approved_alias,sector:agriculture,الزراعة,False
+invest-saudi,Agriculture and Livestock,3,unmapped_english_or_source_label,unmapped:sector:Agriculture and Livestock,Agriculture and Livestock,False
+invest-saudi,Automotive,23,unmapped_english_or_source_label,unmapped:sector:Automotive,Automotive,False
+invest-saudi,Biotechnology and Pharma,30,approved_alias,sector:healthcare,الرعاية الصحية,False
+invest-saudi,Building Materials,5,unmapped_english_or_source_label,unmapped:sector:Building Materials,Building Materials,False
+invest-saudi,Building Products & Porcelain and Sanitary Ware,1,unmapped_english_or_source_label,unmapped:sector:Building Products & Porcelain and Sanitary Ware,Building Products & Porcelain and Sanitary Ware,False
+invest-saudi,Chemical Industries,2,unmapped_english_or_source_label,unmapped:sector:Chemical Industries,Chemical Industries,False
+invest-saudi,Chemical and Cleaning Industries,1,unmapped_english_or_source_label,unmapped:sector:Chemical and Cleaning Industries,Chemical and Cleaning Industries,False
+invest-saudi,Chemical/Cosmetic Industries,1,unmapped_english_or_source_label,unmapped:sector:Chemical/Cosmetic Industries,Chemical/Cosmetic Industries,False
+invest-saudi,Commercial Residential,1,unmapped_english_or_source_label,unmapped:sector:Commercial Residential,Commercial Residential,False
+invest-saudi,Commercial Service,1,unmapped_english_or_source_label,unmapped:sector:Commercial Service,Commercial Service,False
+invest-saudi,Commercial and Entertainment,1,unmapped_english_or_source_label,unmapped:sector:Commercial and Entertainment,Commercial and Entertainment,False
+invest-saudi,"Commercial, Hotel, and Entertainment",1,unmapped_english_or_source_label,"unmapped:sector:Commercial, Hotel, and Entertainment","Commercial, Hotel, and Entertainment",False
+invest-saudi,Compound Feed Manufacturing,1,unmapped_english_or_source_label,unmapped:sector:Compound Feed Manufacturing,Compound Feed Manufacturing,False
+invest-saudi,"Construction, Building Components & Services",25,unmapped_english_or_source_label,"unmapped:sector:Construction, Building Components & Services","Construction, Building Components & Services",False
+invest-saudi,Consumer Goods and Retail,4,unmapped_english_or_source_label,unmapped:sector:Consumer Goods and Retail,Consumer Goods and Retail,False
+invest-saudi,Culture,58,approved_alias,sector:culture,الثقافة,False
+invest-saudi,Culture and Entertainment,2,unmapped_english_or_source_label,unmapped:sector:Culture and Entertainment,Culture and Entertainment,False
+invest-saudi,Culture and Entertainment/ Tourism,2,unmapped_english_or_source_label,unmapped:sector:Culture and Entertainment/ Tourism,Culture and Entertainment/ Tourism,False
+invest-saudi,Culture and Knowledge / Technology and Innovation,1,unmapped_english_or_source_label,unmapped:sector:Culture and Knowledge / Technology and Innovation,Culture and Knowledge / Technology and Innovation,False
+invest-saudi,Dairy Products,1,unmapped_english_or_source_label,unmapped:sector:Dairy Products,Dairy Products,False
+invest-saudi,Defense and Space,19,approved_alias,sector:technology,التقنية والاتصالات,False
+invest-saudi,Digital Entertainment,1,unmapped_english_or_source_label,unmapped:sector:Digital Entertainment,Digital Entertainment,False
+invest-saudi,Education,75,approved_alias,sector:education,التعليم,False
+invest-saudi,Electrical Appliance Manufacturing,1,unmapped_english_or_source_label,unmapped:sector:Electrical Appliance Manufacturing,Electrical Appliance Manufacturing,False
+invest-saudi,Electrical Lighting Equipment Manufacturing,1,unmapped_english_or_source_label,unmapped:sector:Electrical Lighting Equipment Manufacturing,Electrical Lighting Equipment Manufacturing,False
+invest-saudi,Electronic and Electrical Wire and Cable Manufacturing,1,unmapped_english_or_source_label,unmapped:sector:Electronic and Electrical Wire and Cable Manufacturing,Electronic and Electrical Wire and Cable Manufacturing,False
+invest-saudi,Energy,47,approved_alias,sector:energy,الطاقة,False
+invest-saudi,Entertainment,17,unmapped_english_or_source_label,unmapped:sector:Entertainment,Entertainment,False
+invest-saudi,Entertainment and Motorsports,1,unmapped_english_or_source_label,unmapped:sector:Entertainment and Motorsports,Entertainment and Motorsports,False
+invest-saudi,"Entertainment, Leisure and Sports",4,unmapped_english_or_source_label,"unmapped:sector:Entertainment, Leisure and Sports","Entertainment, Leisure and Sports",False
+invest-saudi,Environment,15,approved_alias,sector:environment,البيئة,False
+invest-saudi,Exhibition and Conference Centers,2,unmapped_english_or_source_label,unmapped:sector:Exhibition and Conference Centers,Exhibition and Conference Centers,False
+invest-saudi,Exhibition and Conference Centers/ Entertainment,1,unmapped_english_or_source_label,unmapped:sector:Exhibition and Conference Centers/ Entertainment,Exhibition and Conference Centers/ Entertainment,False
+invest-saudi,Financial Services,6,approved_alias,sector:financial_services,الخدمات المالية,False
+invest-saudi,Food Industries,2,unmapped_english_or_source_label,unmapped:sector:Food Industries,Food Industries,False
+invest-saudi,Food and Agriculture,3,unmapped_english_or_source_label,unmapped:sector:Food and Agriculture,Food and Agriculture,False
+invest-saudi,Food and Agriculture/ Tourism,3,unmapped_english_or_source_label,unmapped:sector:Food and Agriculture/ Tourism,Food and Agriculture/ Tourism,False
+invest-saudi,Food and Beverage (F&B),1,unmapped_english_or_source_label,unmapped:sector:Food and Beverage (F&B),Food and Beverage (F&B),False
+invest-saudi,Food and Beverage (F&B)/ Culture and Entertainment,1,unmapped_english_or_source_label,unmapped:sector:Food and Beverage (F&B)/ Culture and Entertainment,Food and Beverage (F&B)/ Culture and Entertainment,False
+invest-saudi,Food and Beverage Industries,1,unmapped_english_or_source_label,unmapped:sector:Food and Beverage Industries,Food and Beverage Industries,False
+invest-saudi,Furniture,1,unmapped_english_or_source_label,unmapped:sector:Furniture,Furniture,False
+invest-saudi,Glass Industries,1,unmapped_english_or_source_label,unmapped:sector:Glass Industries,Glass Industries,False
+invest-saudi,Glass and Solar Industry,1,unmapped_english_or_source_label,unmapped:sector:Glass and Solar Industry,Glass and Solar Industry,False
+invest-saudi,Grain Milling and Flour Industry,1,unmapped_english_or_source_label,unmapped:sector:Grain Milling and Flour Industry,Grain Milling and Flour Industry,False
+invest-saudi,Health and Wellness Tourism,1,unmapped_english_or_source_label,unmapped:sector:Health and Wellness Tourism,Health and Wellness Tourism,False
+invest-saudi,Health and Wellness Tourism/ Hospitality,1,unmapped_english_or_source_label,unmapped:sector:Health and Wellness Tourism/ Hospitality,Health and Wellness Tourism/ Hospitality,False
+invest-saudi,Health and Wellness Tourism/ Sports and Entertainment,1,unmapped_english_or_source_label,unmapped:sector:Health and Wellness Tourism/ Sports and Entertainment,Health and Wellness Tourism/ Sports and Entertainment,False
+invest-saudi,Healthcare,32,approved_alias,sector:healthcare,الرعاية الصحية,False
+invest-saudi,Healthcare & Medical Devices,53,approved_alias,sector:healthcare,الرعاية الصحية,False
+invest-saudi,Hospitality,5,unmapped_english_or_source_label,unmapped:sector:Hospitality,Hospitality,False
+invest-saudi,Hospitality and Entertainment,2,unmapped_english_or_source_label,unmapped:sector:Hospitality and Entertainment,Hospitality and Entertainment,False
+invest-saudi,Hospitality/ Adventure Tourism,1,unmapped_english_or_source_label,unmapped:sector:Hospitality/ Adventure Tourism,Hospitality/ Adventure Tourism,False
+invest-saudi,Hospitality/ Culture and Entertainment,2,unmapped_english_or_source_label,unmapped:sector:Hospitality/ Culture and Entertainment,Hospitality/ Culture and Entertainment,False
+invest-saudi,Hospitality/ Tourism,1,unmapped_english_or_source_label,unmapped:sector:Hospitality/ Tourism,Hospitality/ Tourism,False
+invest-saudi,Hospitality/ Tourismand Entertainment,1,unmapped_english_or_source_label,unmapped:sector:Hospitality/ Tourismand Entertainment,Hospitality/ Tourismand Entertainment,False
+invest-saudi,Industry,4,unmapped_english_or_source_label,unmapped:sector:Industry,Industry,False
+invest-saudi,Information and Communication Technology,53,approved_alias,sector:technology,التقنية والاتصالات,False
+invest-saudi,Investment Offices,1,unmapped_english_or_source_label,unmapped:sector:Investment Offices,Investment Offices,False
+invest-saudi,Jewelry and Gold Accessories Industry,1,unmapped_english_or_source_label,unmapped:sector:Jewelry and Gold Accessories Industry,Jewelry and Gold Accessories Industry,False
+invest-saudi,Land Transport,3,unmapped_english_or_source_label,unmapped:sector:Land Transport,Land Transport,False
+invest-saudi,Livestock,1,unmapped_english_or_source_label,unmapped:sector:Livestock,Livestock,False
+invest-saudi,Logistics and Commercial Services,3,unmapped_english_or_source_label,unmapped:sector:Logistics and Commercial Services,Logistics and Commercial Services,False
+invest-saudi,Logistics and Storage,3,unmapped_english_or_source_label,unmapped:sector:Logistics and Storage,Logistics and Storage,False
+invest-saudi,Logistics and Transport Services,2,unmapped_english_or_source_label,unmapped:sector:Logistics and Transport Services,Logistics and Transport Services,False
+invest-saudi,Machinery and Equipment,192,approved_alias,sector:industrial,صناعي,False
+invest-saudi,Manufacturing,5,approved_alias,sector:industrial,صناعي,False
+invest-saudi,Meat Industry,2,unmapped_english_or_source_label,unmapped:sector:Meat Industry,Meat Industry,False
+invest-saudi,Medical Supplies,1,unmapped_english_or_source_label,unmapped:sector:Medical Supplies,Medical Supplies,False
+invest-saudi,Metal Industries,5,unmapped_english_or_source_label,unmapped:sector:Metal Industries,Metal Industries,False
+invest-saudi,Metals and Mining,18,unmapped_english_or_source_label,unmapped:sector:Metals and Mining,Metals and Mining,False
+invest-saudi,Mining and Metals,78,approved_alias,sector:industrial,صناعي,False
+invest-saudi,Mixed Commercial Service,1,unmapped_english_or_source_label,unmapped:sector:Mixed Commercial Service,Mixed Commercial Service,False
+invest-saudi,PV factory,1,approved_alias,sector:energy,الطاقة,False
+invest-saudi,Packaging,1,unmapped_english_or_source_label,unmapped:sector:Packaging,Packaging,False
+invest-saudi,Petrochemical and Convention industries,527,approved_alias,sector:industrial,صناعي,False
+invest-saudi,Plastic Packaging Industries,1,unmapped_english_or_source_label,unmapped:sector:Plastic Packaging Industries,Plastic Packaging Industries,False
+invest-saudi,Plastic and Agricultural Industries,2,unmapped_english_or_source_label,unmapped:sector:Plastic and Agricultural Industries,Plastic and Agricultural Industries,False
+invest-saudi,Plastic and Recycling Industries,2,unmapped_english_or_source_label,unmapped:sector:Plastic and Recycling Industries,Plastic and Recycling Industries,False
+invest-saudi,Real Estate,29,approved_alias,sector:real_estate,العقارات والإنشاءات,False
+invest-saudi,Real Estate & Construction,462,unmapped_english_or_source_label,unmapped:sector:Real Estate & Construction,Real Estate & Construction,False
+invest-saudi,Real Estate and Construction,64,approved_alias,sector:real_estate,العقارات والإنشاءات,False
+invest-saudi,Real Estate and Residential Development,1,unmapped_english_or_source_label,unmapped:sector:Real Estate and Residential Development,Real Estate and Residential Development,False
+invest-saudi,Recycling,163,approved_alias,sector:environment,البيئة,False
+invest-saudi,Renewable Energy,6,unmapped_english_or_source_label,unmapped:sector:Renewable Energy,Renewable Energy,False
+invest-saudi,Services,3,unmapped_english_or_source_label,unmapped:sector:Services,Services,False
+invest-saudi,Sports,3,approved_alias,sector:sports,الرياضة,False
+invest-saudi,Sports and Entertainment,1,unmapped_english_or_source_label,unmapped:sector:Sports and Entertainment,Sports and Entertainment,False
+invest-saudi,Sports and Entertainment/ Adventure Tourism,1,unmapped_english_or_source_label,unmapped:sector:Sports and Entertainment/ Adventure Tourism,Sports and Entertainment/ Adventure Tourism,False
+invest-saudi,Sports and Entertainment/ Tourism,2,unmapped_english_or_source_label,unmapped:sector:Sports and Entertainment/ Tourism,Sports and Entertainment/ Tourism,False
+invest-saudi,"Telecom, Media, and Technology",9,unmapped_english_or_source_label,"unmapped:sector:Telecom, Media, and Technology","Telecom, Media, and Technology",False
+invest-saudi,Textile and Apparel,1,unmapped_english_or_source_label,unmapped:sector:Textile and Apparel,Textile and Apparel,False
+invest-saudi,Tourism,152,approved_alias,sector:tourism,السياحة,False
+invest-saudi,Tourism and Hospitality/ Sport,1,unmapped_english_or_source_label,unmapped:sector:Tourism and Hospitality/ Sport,Tourism and Hospitality/ Sport,False
+invest-saudi,Tourism/ Hospitality,3,unmapped_english_or_source_label,unmapped:sector:Tourism/ Hospitality,Tourism/ Hospitality,False
+invest-saudi,Tourism/Hospitality and Entertainment,1,unmapped_english_or_source_label,unmapped:sector:Tourism/Hospitality and Entertainment,Tourism/Hospitality and Entertainment,False
+invest-saudi,Training and Professional Development,1,unmapped_english_or_source_label,unmapped:sector:Training and Professional Development,Training and Professional Development,False
+invest-saudi,Transport and Logistics,96,approved_alias,sector:logistics,الخدمات اللوجستية,False
+invest-saudi,Traveler Services,1,unmapped_english_or_source_label,unmapped:sector:Traveler Services,Traveler Services,False
+invest-saudi,Utilities and Renewables,25,unmapped_english_or_source_label,unmapped:sector:Utilities and Renewables,Utilities and Renewables,False
+invest-saudi,Veterinary Medicines,1,unmapped_english_or_source_label,unmapped:sector:Veterinary Medicines,Veterinary Medicines,False
+invest-saudi,Water,84,approved_alias,sector:environment,البيئة,False
+invest-saudi,Wood or Plastic Industries,1,unmapped_english_or_source_label,unmapped:sector:Wood or Plastic Industries,Wood or Plastic Industries,False
+invest-saudi,Wooden Furniture,1,unmapped_english_or_source_label,unmapped:sector:Wooden Furniture,Wooden Furniture,False
+kfu,COMMERCIAL_FACILITY_OPPORTUNITY,1,wrong_dimension_opportunity_type,sector:unspecified,غير محدد,False
+kfu,GENERAL_ANNOUNCEMENT,3,wrong_dimension_opportunity_type,sector:unspecified,غير محدد,False
+kfu,LEASE_OPPORTUNITY,2,wrong_dimension_opportunity_type,sector:unspecified,غير محدد,False
+mwan,WASTE_SECTOR_INVESTMENT,5,wrong_dimension_opportunity_type,sector:unspecified,غير محدد,False
+ncp,PPP_PROJECT,45,wrong_dimension_opportunity_type,sector:unspecified,غير محدد,False

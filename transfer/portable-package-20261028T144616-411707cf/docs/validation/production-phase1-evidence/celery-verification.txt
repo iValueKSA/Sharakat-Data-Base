@@ -1,0 +1,16 @@
+Local Celery, Redis, and Beat evidence
+Captured: 2026-10-13 Asia/Amman
+
+Result: PASS for local operation
+
+- API readiness reported database, Redis, and worker all ok.
+- Celery worker ping returned pong.
+- worker_heartbeat task reached SUCCESS and stored its Redis heartbeat.
+- Beat logs showed periodic heartbeat, due-source, alert, and stale-recovery dispatches.
+- A KFU task completed with real broker/result-backend state.
+- Concurrent KFU requests produced QUEUED and SKIPPED_ALREADY_RUNNING.
+- A task child killed during a Redis-only probe was redelivered and completed on attempt 2.
+- A synthetic stale database job became ABANDONED and the KFU retry completed.
+- Docker Desktop stop/Start Platform restarted Redis, worker, API, and Beat; health returned ready.
+
+No dedicated Redis-only outage test, long-duration load test, or real external transient-source failure was forced.

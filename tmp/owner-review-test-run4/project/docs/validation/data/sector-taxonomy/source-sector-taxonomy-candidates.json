@@ -1,0 +1,1232 @@
+{
+  "standardization_version_for_future_ingestion": "6",
+  "source_opportunity_count": 2898,
+  "source_rows_with_sector": 2774,
+  "source_rows_missing_sector": 124,
+  "distinct_nonempty_raw_source_sector_values": 133,
+  "distinct_value_classification_counts": {
+    "approved_alias": 25,
+    "canonical_sector": 3,
+    "possible_activity_review": 11,
+    "unmapped_arabic_review": 2,
+    "unmapped_english_or_source_label": 86,
+    "wrong_dimension_opportunity_type": 6
+  },
+  "classification_record_counts": {
+    "approved_alias": 1843,
+    "canonical_sector": 118,
+    "missing_raw_sector": 124,
+    "possible_activity_review": 35,
+    "unmapped_arabic_review": 2,
+    "unmapped_english_or_source_label": 713,
+    "wrong_dimension_opportunity_type": 63
+  },
+  "values": [
+    {
+      "source_key": "ahda",
+      "raw_sector": "INVESTMENT_OPPORTUNITY",
+      "source_record_count": 7,
+      "classification": "wrong_dimension_opportunity_type",
+      "canonical_id": "sector:unspecified",
+      "proposed_business_label": "غير محدد",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "alahsa-opportunities",
+      "raw_sector": "تجاري",
+      "source_record_count": 39,
+      "classification": "canonical_sector",
+      "canonical_id": "sector:commercial",
+      "proposed_business_label": "تجاري",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "alahsa-opportunities",
+      "raw_sector": "خدمي",
+      "source_record_count": 5,
+      "classification": "possible_activity_review",
+      "canonical_id": "unmapped:sector:خدمي",
+      "proposed_business_label": "غير محدد",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "alahsa-opportunities",
+      "raw_sector": "صناعي",
+      "source_record_count": 59,
+      "classification": "canonical_sector",
+      "canonical_id": "sector:industrial",
+      "proposed_business_label": "صناعي",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "furas",
+      "raw_sector": "\"أخرى\"",
+      "source_record_count": 1,
+      "classification": "approved_alias",
+      "canonical_id": "sector:other",
+      "proposed_business_label": "أخرى",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "furas",
+      "raw_sector": "\"الساحات الميادين\"",
+      "source_record_count": 1,
+      "classification": "possible_activity_review",
+      "canonical_id": "unmapped:sector:\"الساحات الميادين\"",
+      "proposed_business_label": "غير محدد",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "furas",
+      "raw_sector": "\"العربات المتنقلة\"",
+      "source_record_count": 2,
+      "classification": "possible_activity_review",
+      "canonical_id": "unmapped:sector:\"العربات المتنقلة\"",
+      "proposed_business_label": "غير محدد",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "furas",
+      "raw_sector": "\"المباني\"",
+      "source_record_count": 1,
+      "classification": "possible_activity_review",
+      "canonical_id": "unmapped:sector:\"المباني\"",
+      "proposed_business_label": "غير محدد",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "furas",
+      "raw_sector": "أخرى",
+      "source_record_count": 20,
+      "classification": "canonical_sector",
+      "canonical_id": "sector:other",
+      "proposed_business_label": "أخرى",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "furas",
+      "raw_sector": "أنشطة التجارة العامة",
+      "source_record_count": 8,
+      "classification": "possible_activity_review",
+      "canonical_id": "unmapped:sector:أنشطة التجارة العامة",
+      "proposed_business_label": "غير محدد",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "furas",
+      "raw_sector": "أنشطة تجارة المواد الغذائية",
+      "source_record_count": 5,
+      "classification": "possible_activity_review",
+      "canonical_id": "unmapped:sector:أنشطة تجارة المواد الغذائية",
+      "proposed_business_label": "غير محدد",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "furas",
+      "raw_sector": "أنشطة و تجارة المعدات الثقيلة",
+      "source_record_count": 1,
+      "classification": "unmapped_arabic_review",
+      "canonical_id": "unmapped:sector:أنشطة و تجارة المعدات الثقيلة",
+      "proposed_business_label": "أنشطة و تجارة المعدات الثقيلة",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "furas",
+      "raw_sector": "أنشطة وخدمات انتاج المواد غير الغذائية",
+      "source_record_count": 1,
+      "classification": "possible_activity_review",
+      "canonical_id": "unmapped:sector:أنشطة وخدمات انتاج المواد غير الغذائية",
+      "proposed_business_label": "غير محدد",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "furas",
+      "raw_sector": "خدمات الصرافة",
+      "source_record_count": 6,
+      "classification": "possible_activity_review",
+      "canonical_id": "unmapped:sector:خدمات الصرافة",
+      "proposed_business_label": "غير محدد",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "furas",
+      "raw_sector": "خدمات تعليمية أخرى",
+      "source_record_count": 1,
+      "classification": "possible_activity_review",
+      "canonical_id": "unmapped:sector:خدمات تعليمية أخرى",
+      "proposed_business_label": "غير محدد",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "furas",
+      "raw_sector": "محلات تجارية",
+      "source_record_count": 3,
+      "classification": "possible_activity_review",
+      "canonical_id": "unmapped:sector:محلات تجارية",
+      "proposed_business_label": "غير محدد",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "furas",
+      "raw_sector": "منتزه",
+      "source_record_count": 1,
+      "classification": "unmapped_arabic_review",
+      "canonical_id": "unmapped:sector:منتزه",
+      "proposed_business_label": "منتزه",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "furas",
+      "raw_sector": "منشآت تقديم الغذاء",
+      "source_record_count": 2,
+      "classification": "possible_activity_review",
+      "canonical_id": "unmapped:sector:منشآت تقديم الغذاء",
+      "proposed_business_label": "غير محدد",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "furas",
+      "raw_sector": null,
+      "source_record_count": 124,
+      "classification": "missing_raw_sector",
+      "canonical_id": "sector:unspecified",
+      "proposed_business_label": "غير محدد",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Administrative Real Estate",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Administrative Real Estate",
+      "proposed_business_label": "Administrative Real Estate",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Adventure Tourism",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Adventure Tourism",
+      "proposed_business_label": "Adventure Tourism",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Adventure Tourism/ Sports and Entertainment",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Adventure Tourism/ Sports and Entertainment",
+      "proposed_business_label": "Adventure Tourism/ Sports and Entertainment",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Adventure Tourism/ Tourism",
+      "source_record_count": 2,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Adventure Tourism/ Tourism",
+      "proposed_business_label": "Adventure Tourism/ Tourism",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Aerospace and Defense",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Aerospace and Defense",
+      "proposed_business_label": "Aerospace and Defense",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Agriculture",
+      "source_record_count": 3,
+      "classification": "approved_alias",
+      "canonical_id": "sector:agriculture",
+      "proposed_business_label": "الزراعة",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Agriculture and Food Processing",
+      "source_record_count": 57,
+      "classification": "approved_alias",
+      "canonical_id": "sector:agriculture",
+      "proposed_business_label": "الزراعة",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Agriculture and Livestock",
+      "source_record_count": 3,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Agriculture and Livestock",
+      "proposed_business_label": "Agriculture and Livestock",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Automotive",
+      "source_record_count": 23,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Automotive",
+      "proposed_business_label": "Automotive",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Biotechnology and Pharma",
+      "source_record_count": 30,
+      "classification": "approved_alias",
+      "canonical_id": "sector:healthcare",
+      "proposed_business_label": "الرعاية الصحية",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Building Materials",
+      "source_record_count": 5,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Building Materials",
+      "proposed_business_label": "Building Materials",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Building Products & Porcelain and Sanitary Ware",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Building Products & Porcelain and Sanitary Ware",
+      "proposed_business_label": "Building Products & Porcelain and Sanitary Ware",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Chemical Industries",
+      "source_record_count": 2,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Chemical Industries",
+      "proposed_business_label": "Chemical Industries",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Chemical and Cleaning Industries",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Chemical and Cleaning Industries",
+      "proposed_business_label": "Chemical and Cleaning Industries",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Chemical/Cosmetic Industries",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Chemical/Cosmetic Industries",
+      "proposed_business_label": "Chemical/Cosmetic Industries",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Commercial Residential",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Commercial Residential",
+      "proposed_business_label": "Commercial Residential",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Commercial Service",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Commercial Service",
+      "proposed_business_label": "Commercial Service",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Commercial and Entertainment",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Commercial and Entertainment",
+      "proposed_business_label": "Commercial and Entertainment",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Commercial, Hotel, and Entertainment",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Commercial, Hotel, and Entertainment",
+      "proposed_business_label": "Commercial, Hotel, and Entertainment",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Compound Feed Manufacturing",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Compound Feed Manufacturing",
+      "proposed_business_label": "Compound Feed Manufacturing",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Construction, Building Components & Services",
+      "source_record_count": 25,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Construction, Building Components & Services",
+      "proposed_business_label": "Construction, Building Components & Services",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Consumer Goods and Retail",
+      "source_record_count": 4,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Consumer Goods and Retail",
+      "proposed_business_label": "Consumer Goods and Retail",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Culture",
+      "source_record_count": 58,
+      "classification": "approved_alias",
+      "canonical_id": "sector:culture",
+      "proposed_business_label": "الثقافة",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Culture and Entertainment",
+      "source_record_count": 2,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Culture and Entertainment",
+      "proposed_business_label": "Culture and Entertainment",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Culture and Entertainment/ Tourism",
+      "source_record_count": 2,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Culture and Entertainment/ Tourism",
+      "proposed_business_label": "Culture and Entertainment/ Tourism",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Culture and Knowledge / Technology and Innovation",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Culture and Knowledge / Technology and Innovation",
+      "proposed_business_label": "Culture and Knowledge / Technology and Innovation",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Dairy Products",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Dairy Products",
+      "proposed_business_label": "Dairy Products",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Defense and Space",
+      "source_record_count": 19,
+      "classification": "approved_alias",
+      "canonical_id": "sector:technology",
+      "proposed_business_label": "التقنية والاتصالات",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Digital Entertainment",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Digital Entertainment",
+      "proposed_business_label": "Digital Entertainment",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Education",
+      "source_record_count": 75,
+      "classification": "approved_alias",
+      "canonical_id": "sector:education",
+      "proposed_business_label": "التعليم",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Electrical Appliance Manufacturing",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Electrical Appliance Manufacturing",
+      "proposed_business_label": "Electrical Appliance Manufacturing",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Electrical Lighting Equipment Manufacturing",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Electrical Lighting Equipment Manufacturing",
+      "proposed_business_label": "Electrical Lighting Equipment Manufacturing",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Electronic and Electrical Wire and Cable Manufacturing",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Electronic and Electrical Wire and Cable Manufacturing",
+      "proposed_business_label": "Electronic and Electrical Wire and Cable Manufacturing",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Energy",
+      "source_record_count": 47,
+      "classification": "approved_alias",
+      "canonical_id": "sector:energy",
+      "proposed_business_label": "الطاقة",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Entertainment",
+      "source_record_count": 17,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Entertainment",
+      "proposed_business_label": "Entertainment",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Entertainment and Motorsports",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Entertainment and Motorsports",
+      "proposed_business_label": "Entertainment and Motorsports",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Entertainment, Leisure and Sports",
+      "source_record_count": 4,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Entertainment, Leisure and Sports",
+      "proposed_business_label": "Entertainment, Leisure and Sports",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Environment",
+      "source_record_count": 15,
+      "classification": "approved_alias",
+      "canonical_id": "sector:environment",
+      "proposed_business_label": "البيئة",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Exhibition and Conference Centers",
+      "source_record_count": 2,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Exhibition and Conference Centers",
+      "proposed_business_label": "Exhibition and Conference Centers",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Exhibition and Conference Centers/ Entertainment",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Exhibition and Conference Centers/ Entertainment",
+      "proposed_business_label": "Exhibition and Conference Centers/ Entertainment",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Financial Services",
+      "source_record_count": 6,
+      "classification": "approved_alias",
+      "canonical_id": "sector:financial_services",
+      "proposed_business_label": "الخدمات المالية",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Food Industries",
+      "source_record_count": 2,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Food Industries",
+      "proposed_business_label": "Food Industries",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Food and Agriculture",
+      "source_record_count": 3,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Food and Agriculture",
+      "proposed_business_label": "Food and Agriculture",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Food and Agriculture/ Tourism",
+      "source_record_count": 3,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Food and Agriculture/ Tourism",
+      "proposed_business_label": "Food and Agriculture/ Tourism",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Food and Beverage (F&B)",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Food and Beverage (F&B)",
+      "proposed_business_label": "Food and Beverage (F&B)",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Food and Beverage (F&B)/ Culture and Entertainment",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Food and Beverage (F&B)/ Culture and Entertainment",
+      "proposed_business_label": "Food and Beverage (F&B)/ Culture and Entertainment",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Food and Beverage Industries",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Food and Beverage Industries",
+      "proposed_business_label": "Food and Beverage Industries",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Furniture",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Furniture",
+      "proposed_business_label": "Furniture",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Glass Industries",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Glass Industries",
+      "proposed_business_label": "Glass Industries",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Glass and Solar Industry",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Glass and Solar Industry",
+      "proposed_business_label": "Glass and Solar Industry",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Grain Milling and Flour Industry",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Grain Milling and Flour Industry",
+      "proposed_business_label": "Grain Milling and Flour Industry",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Health and Wellness Tourism",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Health and Wellness Tourism",
+      "proposed_business_label": "Health and Wellness Tourism",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Health and Wellness Tourism/ Hospitality",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Health and Wellness Tourism/ Hospitality",
+      "proposed_business_label": "Health and Wellness Tourism/ Hospitality",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Health and Wellness Tourism/ Sports and Entertainment",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Health and Wellness Tourism/ Sports and Entertainment",
+      "proposed_business_label": "Health and Wellness Tourism/ Sports and Entertainment",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Healthcare",
+      "source_record_count": 32,
+      "classification": "approved_alias",
+      "canonical_id": "sector:healthcare",
+      "proposed_business_label": "الرعاية الصحية",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Healthcare & Medical Devices",
+      "source_record_count": 53,
+      "classification": "approved_alias",
+      "canonical_id": "sector:healthcare",
+      "proposed_business_label": "الرعاية الصحية",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Hospitality",
+      "source_record_count": 5,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Hospitality",
+      "proposed_business_label": "Hospitality",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Hospitality and Entertainment",
+      "source_record_count": 2,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Hospitality and Entertainment",
+      "proposed_business_label": "Hospitality and Entertainment",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Hospitality/ Adventure Tourism",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Hospitality/ Adventure Tourism",
+      "proposed_business_label": "Hospitality/ Adventure Tourism",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Hospitality/ Culture and Entertainment",
+      "source_record_count": 2,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Hospitality/ Culture and Entertainment",
+      "proposed_business_label": "Hospitality/ Culture and Entertainment",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Hospitality/ Tourism",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Hospitality/ Tourism",
+      "proposed_business_label": "Hospitality/ Tourism",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Hospitality/ Tourismand Entertainment",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Hospitality/ Tourismand Entertainment",
+      "proposed_business_label": "Hospitality/ Tourismand Entertainment",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Industry",
+      "source_record_count": 4,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Industry",
+      "proposed_business_label": "Industry",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Information and Communication Technology",
+      "source_record_count": 53,
+      "classification": "approved_alias",
+      "canonical_id": "sector:technology",
+      "proposed_business_label": "التقنية والاتصالات",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Investment Offices",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Investment Offices",
+      "proposed_business_label": "Investment Offices",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Jewelry and Gold Accessories Industry",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Jewelry and Gold Accessories Industry",
+      "proposed_business_label": "Jewelry and Gold Accessories Industry",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Land Transport",
+      "source_record_count": 3,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Land Transport",
+      "proposed_business_label": "Land Transport",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Livestock",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Livestock",
+      "proposed_business_label": "Livestock",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Logistics and Commercial Services",
+      "source_record_count": 3,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Logistics and Commercial Services",
+      "proposed_business_label": "Logistics and Commercial Services",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Logistics and Storage",
+      "source_record_count": 3,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Logistics and Storage",
+      "proposed_business_label": "Logistics and Storage",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Logistics and Transport Services",
+      "source_record_count": 2,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Logistics and Transport Services",
+      "proposed_business_label": "Logistics and Transport Services",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Machinery and Equipment",
+      "source_record_count": 192,
+      "classification": "approved_alias",
+      "canonical_id": "sector:industrial",
+      "proposed_business_label": "صناعي",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Manufacturing",
+      "source_record_count": 5,
+      "classification": "approved_alias",
+      "canonical_id": "sector:industrial",
+      "proposed_business_label": "صناعي",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Meat Industry",
+      "source_record_count": 2,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Meat Industry",
+      "proposed_business_label": "Meat Industry",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Medical Supplies",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Medical Supplies",
+      "proposed_business_label": "Medical Supplies",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Metal Industries",
+      "source_record_count": 5,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Metal Industries",
+      "proposed_business_label": "Metal Industries",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Metals and Mining",
+      "source_record_count": 18,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Metals and Mining",
+      "proposed_business_label": "Metals and Mining",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Mining and Metals",
+      "source_record_count": 78,
+      "classification": "approved_alias",
+      "canonical_id": "sector:industrial",
+      "proposed_business_label": "صناعي",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Mixed Commercial Service",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Mixed Commercial Service",
+      "proposed_business_label": "Mixed Commercial Service",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "PV factory",
+      "source_record_count": 1,
+      "classification": "approved_alias",
+      "canonical_id": "sector:energy",
+      "proposed_business_label": "الطاقة",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Packaging",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Packaging",
+      "proposed_business_label": "Packaging",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Petrochemical and Convention industries",
+      "source_record_count": 527,
+      "classification": "approved_alias",
+      "canonical_id": "sector:industrial",
+      "proposed_business_label": "صناعي",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Plastic Packaging Industries",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Plastic Packaging Industries",
+      "proposed_business_label": "Plastic Packaging Industries",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Plastic and Agricultural Industries",
+      "source_record_count": 2,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Plastic and Agricultural Industries",
+      "proposed_business_label": "Plastic and Agricultural Industries",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Plastic and Recycling Industries",
+      "source_record_count": 2,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Plastic and Recycling Industries",
+      "proposed_business_label": "Plastic and Recycling Industries",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Real Estate",
+      "source_record_count": 29,
+      "classification": "approved_alias",
+      "canonical_id": "sector:real_estate",
+      "proposed_business_label": "العقارات والإنشاءات",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Real Estate & Construction",
+      "source_record_count": 462,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Real Estate & Construction",
+      "proposed_business_label": "Real Estate & Construction",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Real Estate and Construction",
+      "source_record_count": 64,
+      "classification": "approved_alias",
+      "canonical_id": "sector:real_estate",
+      "proposed_business_label": "العقارات والإنشاءات",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Real Estate and Residential Development",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Real Estate and Residential Development",
+      "proposed_business_label": "Real Estate and Residential Development",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Recycling",
+      "source_record_count": 163,
+      "classification": "approved_alias",
+      "canonical_id": "sector:environment",
+      "proposed_business_label": "البيئة",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Renewable Energy",
+      "source_record_count": 6,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Renewable Energy",
+      "proposed_business_label": "Renewable Energy",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Services",
+      "source_record_count": 3,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Services",
+      "proposed_business_label": "Services",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Sports",
+      "source_record_count": 3,
+      "classification": "approved_alias",
+      "canonical_id": "sector:sports",
+      "proposed_business_label": "الرياضة",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Sports and Entertainment",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Sports and Entertainment",
+      "proposed_business_label": "Sports and Entertainment",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Sports and Entertainment/ Adventure Tourism",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Sports and Entertainment/ Adventure Tourism",
+      "proposed_business_label": "Sports and Entertainment/ Adventure Tourism",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Sports and Entertainment/ Tourism",
+      "source_record_count": 2,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Sports and Entertainment/ Tourism",
+      "proposed_business_label": "Sports and Entertainment/ Tourism",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Telecom, Media, and Technology",
+      "source_record_count": 9,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Telecom, Media, and Technology",
+      "proposed_business_label": "Telecom, Media, and Technology",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Textile and Apparel",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Textile and Apparel",
+      "proposed_business_label": "Textile and Apparel",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Tourism",
+      "source_record_count": 152,
+      "classification": "approved_alias",
+      "canonical_id": "sector:tourism",
+      "proposed_business_label": "السياحة",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Tourism and Hospitality/ Sport",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Tourism and Hospitality/ Sport",
+      "proposed_business_label": "Tourism and Hospitality/ Sport",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Tourism/ Hospitality",
+      "source_record_count": 3,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Tourism/ Hospitality",
+      "proposed_business_label": "Tourism/ Hospitality",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Tourism/Hospitality and Entertainment",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Tourism/Hospitality and Entertainment",
+      "proposed_business_label": "Tourism/Hospitality and Entertainment",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Training and Professional Development",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Training and Professional Development",
+      "proposed_business_label": "Training and Professional Development",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Transport and Logistics",
+      "source_record_count": 96,
+      "classification": "approved_alias",
+      "canonical_id": "sector:logistics",
+      "proposed_business_label": "الخدمات اللوجستية",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Traveler Services",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Traveler Services",
+      "proposed_business_label": "Traveler Services",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Utilities and Renewables",
+      "source_record_count": 25,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Utilities and Renewables",
+      "proposed_business_label": "Utilities and Renewables",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Veterinary Medicines",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Veterinary Medicines",
+      "proposed_business_label": "Veterinary Medicines",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Water",
+      "source_record_count": 84,
+      "classification": "approved_alias",
+      "canonical_id": "sector:environment",
+      "proposed_business_label": "البيئة",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Wood or Plastic Industries",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Wood or Plastic Industries",
+      "proposed_business_label": "Wood or Plastic Industries",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "invest-saudi",
+      "raw_sector": "Wooden Furniture",
+      "source_record_count": 1,
+      "classification": "unmapped_english_or_source_label",
+      "canonical_id": "unmapped:sector:Wooden Furniture",
+      "proposed_business_label": "Wooden Furniture",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "kfu",
+      "raw_sector": "COMMERCIAL_FACILITY_OPPORTUNITY",
+      "source_record_count": 1,
+      "classification": "wrong_dimension_opportunity_type",
+      "canonical_id": "sector:unspecified",
+      "proposed_business_label": "غير محدد",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "kfu",
+      "raw_sector": "GENERAL_ANNOUNCEMENT",
+      "source_record_count": 3,
+      "classification": "wrong_dimension_opportunity_type",
+      "canonical_id": "sector:unspecified",
+      "proposed_business_label": "غير محدد",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "kfu",
+      "raw_sector": "LEASE_OPPORTUNITY",
+      "source_record_count": 2,
+      "classification": "wrong_dimension_opportunity_type",
+      "canonical_id": "sector:unspecified",
+      "proposed_business_label": "غير محدد",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "mwan",
+      "raw_sector": "WASTE_SECTOR_INVESTMENT",
+      "source_record_count": 5,
+      "classification": "wrong_dimension_opportunity_type",
+      "canonical_id": "sector:unspecified",
+      "proposed_business_label": "غير محدد",
+      "auto_mapping_applied_to_source_row": false
+    },
+    {
+      "source_key": "ncp",
+      "raw_sector": "PPP_PROJECT",
+      "source_record_count": 45,
+      "classification": "wrong_dimension_opportunity_type",
+      "canonical_id": "sector:unspecified",
+      "proposed_business_label": "غير محدد",
+      "auto_mapping_applied_to_source_row": false
+    }
+  ]
+}

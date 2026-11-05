@@ -1,0 +1,254 @@
+{
+  "generated_at_utc": "2026-10-18T16:23:28.356773+03:00",
+  "standardization_engine_version": "11",
+  "total_eligible_masters": 291,
+  "masters_with_current_type": 129,
+  "masters_planned_to_unspecified": 0,
+  "masters_planned_to_canonical": 0,
+  "masters_already_unspecified": 162,
+  "masters_requiring_review": 14,
+  "deterministic_canonical_type_changes": 0,
+  "planned_canonical_bucket_counts": {
+    "تأجير مؤقت": 129
+  },
+  "planned_unspecified_masters": 162,
+  "moved_to_investment_model_source_records": 46,
+  "moved_to_investment_model_unique_masters": 3,
+  "moved_to_asset_type": 0,
+  "asset_type_dimension_required": false,
+  "asset_candidates_retained_for_review": 130,
+  "investment_model_review_records": 1,
+  "remaining_review_required": 14,
+  "no_change": 291,
+  "open_conflict_rows": 14,
+  "unique_masters_with_open_conflicts": 14,
+  "actionable_unique_open_conflicts": 14,
+  "current_non_type_master_values": {
+    "تأجير مؤقت": 129
+  },
+  "investment_model_inputs": [
+    {
+      "value": "BOOT",
+      "source": "ncp",
+      "source_records": 4,
+      "master_count": 0
+    },
+    {
+      "value": "DBFOM",
+      "source": "ncp",
+      "source_records": 4,
+      "master_count": 0
+    },
+    {
+      "value": "EOMT",
+      "source": "ncp",
+      "source_records": 2,
+      "master_count": 1
+    },
+    {
+      "value": "PPP",
+      "source": "ncp",
+      "source_records": 33,
+      "master_count": 0
+    },
+    {
+      "value": "ROMT",
+      "source": "ncp",
+      "source_records": 1,
+      "master_count": 0
+    },
+    {
+      "value": "تأجير",
+      "source": "kfu",
+      "source_records": 2,
+      "master_count": 2
+    }
+  ],
+  "investment_model_review_candidates": [
+    {
+      "value": "COMMERCIAL_FACILITY_OPPORTUNITY",
+      "source": "kfu",
+      "source_records": 1,
+      "master_count": 1,
+      "proposed_model": null,
+      "status": "REVIEW_REQUIRED"
+    }
+  ],
+  "asset_candidates": [
+    {
+      "value": "\"أخرى\"",
+      "source": "furas",
+      "source_records": 10,
+      "master_count": 10
+    },
+    {
+      "value": "\"الاراضي\"",
+      "source": "furas",
+      "source_records": 8,
+      "master_count": 8
+    },
+    {
+      "value": "\"الحدائق\"",
+      "source": "furas",
+      "source_records": 23,
+      "master_count": 23
+    },
+    {
+      "value": "\"الساحات الميادين\"",
+      "source": "furas",
+      "source_records": 3,
+      "master_count": 3
+    },
+    {
+      "value": "\"الساحات الميادين\",\"الطرق والارصفة\"",
+      "source": "furas",
+      "source_records": 2,
+      "master_count": 2
+    },
+    {
+      "value": "\"الشواطئ والواجهات\"",
+      "source": "furas",
+      "source_records": 11,
+      "master_count": 11
+    },
+    {
+      "value": "\"الطرق والارصفة\"",
+      "source": "furas",
+      "source_records": 2,
+      "master_count": 2
+    },
+    {
+      "value": "\"العربات المتنقلة\"",
+      "source": "furas",
+      "source_records": 69,
+      "master_count": 69
+    },
+    {
+      "value": "\"المباني\"",
+      "source": "furas",
+      "source_records": 1,
+      "master_count": 1
+    },
+    {
+      "value": "مرفق تجاري",
+      "source": "kfu",
+      "source_records": 1,
+      "master_count": 1
+    }
+  ],
+  "source_projection_records": 2898,
+  "source_coverage": [
+    {
+      "source_key": "furas",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "records": 177,
+      "type_evidence_present": 177,
+      "canonical_type": 129,
+      "unspecified": 48,
+      "wrong_dimension": 0,
+      "review": 6
+    },
+    {
+      "source_key": "alahsa-opportunities",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "records": 103,
+      "type_evidence_present": 0,
+      "canonical_type": 0,
+      "unspecified": 103,
+      "wrong_dimension": 0,
+      "review": 6
+    },
+    {
+      "source_key": "ahda",
+      "source": "هيئة تطوير الأحساء",
+      "records": 7,
+      "type_evidence_present": 7,
+      "canonical_type": 0,
+      "unspecified": 7,
+      "wrong_dimension": 0,
+      "review": 0
+    },
+    {
+      "source_key": "invest-saudi",
+      "source": "استثمر في السعودية",
+      "records": 2555,
+      "type_evidence_present": 2555,
+      "canonical_type": 0,
+      "unspecified": 2555,
+      "wrong_dimension": 808,
+      "review": 2
+    },
+    {
+      "source_key": "kfu",
+      "source": "جامعة الملك فيصل",
+      "records": 6,
+      "type_evidence_present": 6,
+      "canonical_type": 0,
+      "unspecified": 6,
+      "wrong_dimension": 1,
+      "review": 0
+    },
+    {
+      "source_key": "modon",
+      "source": "مدن",
+      "records": 0,
+      "type_evidence_present": 0,
+      "canonical_type": 0,
+      "unspecified": 0,
+      "wrong_dimension": 0,
+      "review": 0
+    },
+    {
+      "source_key": "ncp",
+      "source": "المركز الوطني للتخصيص",
+      "records": 45,
+      "type_evidence_present": 45,
+      "canonical_type": 0,
+      "unspecified": 45,
+      "wrong_dimension": 0,
+      "review": 0
+    },
+    {
+      "source_key": "nhc",
+      "source": "NHC الاستثمار",
+      "records": 0,
+      "type_evidence_present": 0,
+      "canonical_type": 0,
+      "unspecified": 0,
+      "wrong_dimension": 0,
+      "review": 0
+    },
+    {
+      "source_key": "pif",
+      "source": "بوابة القطاع الخاص لصندوق الاستثمارات العامة",
+      "records": 0,
+      "type_evidence_present": 0,
+      "canonical_type": 0,
+      "unspecified": 0,
+      "wrong_dimension": 0,
+      "review": 0
+    },
+    {
+      "source_key": "mwan",
+      "source": "موان",
+      "records": 5,
+      "type_evidence_present": 5,
+      "canonical_type": 0,
+      "unspecified": 5,
+      "wrong_dimension": 0,
+      "review": 0
+    }
+  ],
+  "decision": "Furas OPPORTUNITYTYPE=TemporaryRental/TempRental is a source-supported canonical Opportunity Type (تأجير مؤقت). Other generic, model, asset, and wrong-dimension values remain unspecified or in review. Asset candidates remain review metadata because no cross-source Asset Type taxonomy is approved.",
+  "source_evidence_conflict_rows_proposed_resolved": 0,
+  "open_conflict_rows_after_apply": 14,
+  "actionable_unique_open_conflicts_after_apply": 14,
+  "canonical_business_type_total": 129,
+  "canonical_type_filter_bucket_counts": {
+    "تأجير مؤقت": 129,
+    "غير محدد": 162
+  },
+  "total_canonical_type_buckets": 291,
+  "sum_of_canonical_opportunity_type_buckets": 291,
+  "canonical_plus_unspecified_reconciles": true
+}

@@ -1,0 +1,143 @@
+{
+  "baseline_label": "ALAHSA_PLATFORM_BASELINE_2026_10",
+  "generated_at": "2026-10-26T09:29:29.150924+00:00",
+  "result": "PASS_WITH_LIMITATIONS",
+  "has_fail": false,
+  "items": [
+    {
+      "item": "Platform start",
+      "status": "PASS",
+      "evidence": "Start Platform.bat and readiness endpoint; service stack healthy."
+    },
+    {
+      "item": "Platform stop",
+      "status": "PASS_WITH_LIMITATION",
+      "evidence": "Stop Platform.bat procedure documented; not run during closeout to preserve the healthy stack."
+    },
+    {
+      "item": "Platform restart",
+      "status": "PASS",
+      "evidence": "Restart succeeded in accepted final-readiness evidence."
+    },
+    {
+      "item": "Platform status",
+      "status": "PASS",
+      "evidence": "Current /health/ready passed; all six local services running."
+    },
+    {
+      "item": "Database persistence",
+      "status": "PASS",
+      "evidence": "Named PostgreSQL volume retained; counts stable against accepted snapshot."
+    },
+    {
+      "item": "Login",
+      "status": "PASS",
+      "evidence": "Controlled Admin normal UI/API login returned 200."
+    },
+    {
+      "item": "Logout",
+      "status": "PASS",
+      "evidence": "UI and API logout invalidated the session; protected mutation probe returned 401."
+    },
+    {
+      "item": "Session",
+      "status": "PASS",
+      "evidence": "HTTP-only, SameSite=Lax, eight-hour server-side expiry verified."
+    },
+    {
+      "item": "Throttling",
+      "status": "PASS",
+      "evidence": "Eight failed test identifier attempts allowed; ninth was rate-limited with 429."
+    },
+    {
+      "item": "RBAC",
+      "status": "PASS",
+      "evidence": "Admin live read smoke plus isolated Admin/Analyst/Viewer security tests; 10 passed."
+    },
+    {
+      "item": "Opportunities",
+      "status": "PASS",
+      "evidence": "566 current Masters reconcile with prior API/UI/export evidence."
+    },
+    {
+      "item": "Dashboard",
+      "status": "PASS",
+      "evidence": "Dashboard current total 566; prior viewport validation retained."
+    },
+    {
+      "item": "Map",
+      "status": "PASS",
+      "evidence": "435 mapped Masters, 433 point groups, zero duplicate Masters on map."
+    },
+    {
+      "item": "Sources",
+      "status": "PASS_WITH_LIMITATION",
+      "evidence": "10 enabled of 11 configured; freshness warnings remain for MODON/NHC/MWAN."
+    },
+    {
+      "item": "Review Workbench",
+      "status": "PASS",
+      "evidence": "Empty queue, filters, resolved history, RTL, and five viewports passed."
+    },
+    {
+      "item": "Scheduled sync",
+      "status": "PASS_WITH_LIMITATION",
+      "evidence": "No active/nonterminal jobs; no manual sync; scheduled source freshness remains monitored."
+    },
+    {
+      "item": "Post-sync autonomous resolution",
+      "status": "PASS",
+      "evidence": "Open actionable review count is zero; no resolution was initiated in this closeout."
+    },
+    {
+      "item": "CSV export",
+      "status": "PASS",
+      "evidence": "Existing accepted export has 566 rows and matches API; business data stayed stable."
+    },
+    {
+      "item": "XLSX export",
+      "status": "PASS",
+      "evidence": "Existing accepted export has 566 rows and matches API; business data stayed stable."
+    },
+    {
+      "item": "DQ",
+      "status": "PASS_WITH_LIMITATION",
+      "evidence": "121 gates: 117 PASS, 4 WARNING, 0 FAIL; all four warnings classified."
+    },
+    {
+      "item": "Backup",
+      "status": "PASS",
+      "evidence": "Existing PostgreSQL dump checksum reverified."
+    },
+    {
+      "item": "Restore",
+      "status": "PASS",
+      "evidence": "Prior isolated restore succeeded and recovery environment was cleaned."
+    },
+    {
+      "item": "Logs",
+      "status": "PASS",
+      "evidence": "Service/startup log paths and incident correlation procedure documented."
+    },
+    {
+      "item": "Metrics",
+      "status": "PASS",
+      "evidence": "Health/readiness and local metrics endpoints available."
+    },
+    {
+      "item": "Known limitations",
+      "status": "PASS_WITH_LIMITATION",
+      "evidence": "Four accepted/monitored DQ warning groups documented with actions."
+    },
+    {
+      "item": "Future change process",
+      "status": "PASS",
+      "evidence": "Change types and Levels 1–3 documented with baseline comparison."
+    },
+    {
+      "item": "Security repository scan",
+      "status": "PASS",
+      "evidence": "Workspace source/docs scan found zero hard-coded production secret values; local-only ignored credential/config artifacts excluded."
+    }
+  ]
+}

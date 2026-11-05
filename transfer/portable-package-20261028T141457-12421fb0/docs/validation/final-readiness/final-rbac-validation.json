@@ -1,0 +1,89 @@
+{
+  "validated_at": "2026-10-26T09:29:29.150924+00:00",
+  "initial_admin_credential_401_root_cause": "STALE_INITIAL_BOOTSTRAP_PASSWORD: credential file email matched enabled admin@local, but its password did not verify against the current scrypt hash. The normal authentication endpoint and UI login succeed with the controlled credential; no authentication regression was found. Existing audit history did not establish when the initial file became stale.",
+  "password_hash_disclosed": false,
+  "plaintext_password_in_artifacts": 0,
+  "local_admin": {
+    "username_email": "admin@local",
+    "role": "admin",
+    "enabled": true
+  },
+  "analyst_account_available_live": false,
+  "viewer_account_available_live": false,
+  "users_created_for_closeout": 0,
+  "authentication_only_password_reset_events_recorded_during_closeout": 5,
+  "temporary_password_stored_in_repository_or_artifacts": false,
+  "temporary_password_rotation_required_for_operator": true,
+  "repository_secret_scan": {
+    "plaintext_production_secret_values_found": 0,
+    "git_history_available": false,
+    "scan_scope": "application, migrations, scripts, docs, and runtime configuration definitions",
+    "excluded": [
+      ".env.local",
+      "Local Admin Credentials.txt",
+      "backups/",
+      "tmp/",
+      "environment templates",
+      "test fixtures"
+    ],
+    "notes": "The local bootstrap credential file is a gitignored first-run artifact and has been proven stale; assignment matches in source are runtime variables/generated values, not hard-coded production secrets."
+  },
+  "valid_admin_login": true,
+  "invalid_password_rejected": true,
+  "logout_invalidates_session": true,
+  "logout_mutation_probe_status": 401,
+  "session_cookie": {
+    "name": "alahsa_session",
+    "httponly": true,
+    "secure": false,
+    "samesite": "Lax",
+    "max_age_seconds": 28800,
+    "local_http_secure_false_accepted": true
+  },
+  "session_expiry": {
+    "configured_hours": 8,
+    "enforced": true,
+    "method": "Expired only the isolated test session in PostgreSQL; /api/auth/me returned 401"
+  },
+  "login_throttling": {
+    "enabled": true,
+    "limit": "8 attempts / 300 seconds per client and account",
+    "isolated_test_statuses": [
+      401,
+      401,
+      401,
+      401,
+      401,
+      401,
+      401,
+      401,
+      429
+    ],
+    "only_ninth_attempt_throttled": true
+  },
+  "rbac": {
+    "admin_allowed_actions": "PASSED: authenticated Admin GET /api/admin/users and Review Workbench APIs returned 200; protected mutation authorization exercised by focused isolated suite",
+    "analyst_allowed_actions": "PASSED: focused isolated test allowed a review decision and denied user management",
+    "viewer_mutation_blocked": "TRUE: focused isolated test returned 403 for protected review mutation",
+    "mutation_violations": 0,
+    "focused_isolated_tests": {
+      "passed": 10,
+      "failed": 0,
+      "test_file": "tests/test_production_security.py",
+      "environment": "isolated SQLite/TestClient; no live database writes"
+    }
+  },
+  "test_session_cleanup": {
+    "abandoned_test_sessions_revoked": 2,
+    "final_ui_login_logged_out": true,
+    "pre-existing_sessions_preserved": true
+  },
+  "workbench_history_view_audit": {
+    "recommendation_shown_events": 3,
+    "review_decisions_or_state_changes": 0,
+    "note": "Opening one resolved historical case automatically writes REVIEW_RECOMMENDATION_SHOWN and ADMIN_ACTION audit records; no decision, reopen, merge, or review status changed."
+  },
+  "business_data_changes": 0,
+  "review_state_changes": 0,
+  "manual_source_sync_started": false
+}

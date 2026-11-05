@@ -1,0 +1,2769 @@
+{
+  "captured_at": "2026-10-20T15:16:45+03:00",
+  "validation": {
+    "generated_at": "2026-10-20T15:16:56.257482+03:00",
+    "metrics": {
+      "total_master_opportunities": 287,
+      "total_source_records": 2899,
+      "masters_with_multiple_sources": 24,
+      "duplicate_candidates_pending": 10,
+      "location_reviews_pending": 15,
+      "qualification_reviews_pending": 0,
+      "opportunity_locations": 29,
+      "missing_reference_number": 105,
+      "missing_deadline": 182,
+      "missing_area": 29,
+      "missing_owner": 96,
+      "low_location_confidence": 0,
+      "low_data_quality": 0,
+      "open_conflicts": 185,
+      "taxonomy_conflicts": 103,
+      "field_conflicts": 82,
+      "taxonomy_mappings": 110,
+      "discovered_content_items": 348,
+      "expired_opportunities": 2,
+      "cancelled_opportunities": 0,
+      "possibly_removed_opportunities": 14,
+      "incomplete_sources": 3,
+      "limited_coverage_sources": 3,
+      "source_errors": 137
+    }
+  },
+  "duplicates": [
+    {
+      "id": 32,
+      "left_id": 155,
+      "right_id": 156,
+      "left_title": "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+      "right_title": "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+      "score": 0.75,
+      "status": "PENDING",
+      "explanation": {
+        "identity_review_decision": {
+          "decision": "REVIEW_REQUIRED",
+          "review_reason": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+          "same_source": true,
+          "source_key": "alahsa-opportunities",
+          "source_record_ids": [
+            155,
+            156
+          ],
+          "external_ids": [
+            "484",
+            "483"
+          ],
+          "master_ids": [
+            155,
+            156
+          ],
+          "source_urls": [
+            "https://alahsa-opportunities.com/opportunities/484",
+            "https://alahsa-opportunities.com/opportunities/483"
+          ],
+          "source_titles": [
+            "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+            "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه"
+          ],
+          "same_plot_plan_screen": true,
+          "auto_merge_safe": false,
+          "reviewed_at": "2026-10-20T12:31:29.027225+03:00"
+        }
+      }
+    },
+    {
+      "id": 33,
+      "left_id": 155,
+      "right_id": 159,
+      "left_title": "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+      "right_title": "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+      "score": 0.75,
+      "status": "PENDING",
+      "explanation": {
+        "identity_review_decision": {
+          "decision": "REVIEW_REQUIRED",
+          "review_reason": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+          "same_source": true,
+          "source_key": "alahsa-opportunities",
+          "source_record_ids": [
+            155,
+            159
+          ],
+          "external_ids": [
+            "484",
+            "480"
+          ],
+          "master_ids": [
+            155,
+            159
+          ],
+          "source_urls": [
+            "https://alahsa-opportunities.com/opportunities/484",
+            "https://alahsa-opportunities.com/opportunities/480"
+          ],
+          "source_titles": [
+            "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+            "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه"
+          ],
+          "same_plot_plan_screen": true,
+          "auto_merge_safe": false,
+          "reviewed_at": "2026-10-20T12:31:29.027225+03:00"
+        }
+      }
+    },
+    {
+      "id": 34,
+      "left_id": 156,
+      "right_id": 159,
+      "left_title": "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+      "right_title": "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+      "score": 0.75,
+      "status": "PENDING",
+      "explanation": {
+        "identity_review_decision": {
+          "decision": "REVIEW_REQUIRED",
+          "review_reason": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+          "same_source": true,
+          "source_key": "alahsa-opportunities",
+          "source_record_ids": [
+            156,
+            159
+          ],
+          "external_ids": [
+            "483",
+            "480"
+          ],
+          "master_ids": [
+            156,
+            159
+          ],
+          "source_urls": [
+            "https://alahsa-opportunities.com/opportunities/483",
+            "https://alahsa-opportunities.com/opportunities/480"
+          ],
+          "source_titles": [
+            "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+            "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه"
+          ],
+          "same_plot_plan_screen": true,
+          "auto_merge_safe": false,
+          "reviewed_at": "2026-10-20T12:31:29.027225+03:00"
+        }
+      }
+    },
+    {
+      "id": 35,
+      "left_id": 157,
+      "right_id": 160,
+      "left_title": "أنشاء وتشغيل و صيانة القطعة رقم 61/3 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+      "right_title": "أنشاء وتشغيل و صيانة القطعة رقم 61/3 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+      "score": 0.75,
+      "status": "PENDING",
+      "explanation": {
+        "identity_review_decision": {
+          "decision": "REVIEW_REQUIRED",
+          "review_reason": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+          "same_source": true,
+          "source_key": "alahsa-opportunities",
+          "source_record_ids": [
+            157,
+            160
+          ],
+          "external_ids": [
+            "482",
+            "479"
+          ],
+          "master_ids": [
+            157,
+            160
+          ],
+          "source_urls": [
+            "https://alahsa-opportunities.com/opportunities/482",
+            "https://alahsa-opportunities.com/opportunities/479"
+          ],
+          "source_titles": [
+            "أنشاء وتشغيل و صيانة القطعة رقم 61/3 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+            "أنشاء وتشغيل و صيانة القطعة رقم 61/3 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه"
+          ],
+          "same_plot_plan_screen": true,
+          "auto_merge_safe": false,
+          "reviewed_at": "2026-10-20T12:31:29.027225+03:00"
+        }
+      }
+    },
+    {
+      "id": 36,
+      "left_id": 158,
+      "right_id": 161,
+      "left_title": "أنشاء وتشغيل و صيانة القطعة رقم 61/2 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+      "right_title": "أنشاء وتشغيل و صيانة القطعة رقم 61/2 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+      "score": 0.75,
+      "status": "PENDING",
+      "explanation": {
+        "identity_review_decision": {
+          "decision": "REVIEW_REQUIRED",
+          "review_reason": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+          "same_source": true,
+          "source_key": "alahsa-opportunities",
+          "source_record_ids": [
+            158,
+            161
+          ],
+          "external_ids": [
+            "481",
+            "478"
+          ],
+          "master_ids": [
+            158,
+            161
+          ],
+          "source_urls": [
+            "https://alahsa-opportunities.com/opportunities/481",
+            "https://alahsa-opportunities.com/opportunities/478"
+          ],
+          "source_titles": [
+            "أنشاء وتشغيل و صيانة القطعة رقم 61/2 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+            "أنشاء وتشغيل و صيانة القطعة رقم 61/2 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه"
+          ],
+          "same_plot_plan_screen": true,
+          "auto_merge_safe": false,
+          "reviewed_at": "2026-10-20T12:31:29.027225+03:00"
+        }
+      }
+    },
+    {
+      "id": 37,
+      "left_id": 163,
+      "right_id": 254,
+      "left_title": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19/149 مثلث القرى الشرقية",
+      "right_title": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19/149 مثلث القرى الشرقية",
+      "score": 0.75,
+      "status": "PENDING",
+      "explanation": {
+        "identity_review_decision": {
+          "decision": "REVIEW_REQUIRED",
+          "review_reason": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+          "same_source": true,
+          "source_key": "alahsa-opportunities",
+          "source_record_ids": [
+            163,
+            2855
+          ],
+          "external_ids": [
+            "476",
+            "527"
+          ],
+          "master_ids": [
+            163,
+            254
+          ],
+          "source_urls": [
+            "https://alahsa-opportunities.com/opportunities/476",
+            "https://alahsa-opportunities.com/opportunities/527"
+          ],
+          "source_titles": [
+            "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19/149 مثلث القرى الشرقية",
+            "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19/149 مثلث القرى الشرقية"
+          ],
+          "same_plot_plan_screen": true,
+          "auto_merge_safe": false,
+          "reviewed_at": "2026-10-20T12:31:29.027225+03:00"
+        }
+      }
+    },
+    {
+      "id": 38,
+      "left_id": 197,
+      "right_id": 198,
+      "left_title": "انشاء و تشغيل و صيانة مصنع طابوق وخرسانة للقطعة رقم ت 64 ت 65 بمخطط رقم 4/1082",
+      "right_title": "انشاء و تشغيل و صيانة مصنع طابوق وخرسانة للقطعة رقم ت 64 ت 65 بمخطط رقم 4/1082",
+      "score": 0.75,
+      "status": "PENDING",
+      "explanation": {
+        "identity_review_decision": {
+          "decision": "REVIEW_REQUIRED",
+          "review_reason": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+          "same_source": true,
+          "source_key": "alahsa-opportunities",
+          "source_record_ids": [
+            200,
+            201
+          ],
+          "external_ids": [
+            "439",
+            "438"
+          ],
+          "master_ids": [
+            197,
+            198
+          ],
+          "source_urls": [
+            "https://alahsa-opportunities.com/opportunities/439",
+            "https://alahsa-opportunities.com/opportunities/438"
+          ],
+          "source_titles": [
+            "انشاء و تشغيل و صيانة مصنع طابوق وخرسانة للقطعة رقم ت 64 ت 65 بمخطط رقم 4/1082",
+            "انشاء و تشغيل و صيانة مصنع طابوق وخرسانة للقطعة رقم ت 64 ت 65 بمخطط رقم 4/1082"
+          ],
+          "same_plot_plan_screen": true,
+          "auto_merge_safe": false,
+          "reviewed_at": "2026-10-20T12:31:29.027225+03:00"
+        }
+      }
+    },
+    {
+      "id": 39,
+      "left_id": 263,
+      "right_id": 264,
+      "left_title": "انشاء و تشغيل و صيانة سكن جماعي بالقطعة رقم ت 15 بالمخطط رقم 4 1082 الطابوق والخرسانة",
+      "right_title": "انشاء و تشغيل و صيانة سكن جماعي بالقطعة رقم ت 15 بالمخطط رقم 4 1082 الطابوق والخرسانة",
+      "score": 0.75,
+      "status": "PENDING",
+      "explanation": {
+        "identity_review_decision": {
+          "decision": "REVIEW_REQUIRED",
+          "review_reason": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+          "same_source": true,
+          "source_key": "alahsa-opportunities",
+          "source_record_ids": [
+            2864,
+            2865
+          ],
+          "external_ids": [
+            "523",
+            "522"
+          ],
+          "master_ids": [
+            263,
+            264
+          ],
+          "source_urls": [
+            "https://alahsa-opportunities.com/opportunities/523",
+            "https://alahsa-opportunities.com/opportunities/522"
+          ],
+          "source_titles": [
+            "انشاء و تشغيل و صيانة سكن جماعي بالقطعة رقم ت 15 بالمخطط رقم 4 1082 الطابوق والخرسانة",
+            "انشاء و تشغيل و صيانة سكن جماعي بالقطعة رقم ت 15 بالمخطط رقم 4 1082 الطابوق والخرسانة"
+          ],
+          "same_plot_plan_screen": true,
+          "auto_merge_safe": false,
+          "reviewed_at": "2026-10-20T12:31:29.027225+03:00"
+        }
+      }
+    },
+    {
+      "id": 46,
+      "left_id": 107,
+      "right_id": 186,
+      "left_title": "انشاء و تشغيل و صيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل - الأنشطة الرياضية و الترفيهية - كشك لنشاط رياضي ذكي - نادي",
+      "right_title": "إنشاء وتشغيل وصيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل",
+      "score": 0.8194,
+      "status": "PENDING",
+      "explanation": {
+        "identity_review_decision": {
+          "decision": "REVIEW_REQUIRED",
+          "reviewed_at": "2026-10-20T12:46:07.635669+03:00",
+          "basis": "Furas and Al-Ahsa listings both describe a 15 m² smart-gym kiosk on a King Faisal University promenade and have highly similar titles. Al-Ahsa has no official reference or owner, and its location is only Hawfuf while Furas includes a more specific street. Keep separate pending source-detail confirmation.",
+          "same_source": false,
+          "source_record_ids": [
+            107,
+            189
+          ],
+          "source_keys": [
+            "furas",
+            "alahsa-opportunities"
+          ],
+          "auto_merge_safe": false,
+          "review_snapshot": "2026-10-20T09:27:35.377973Z",
+          "generator": "broad-title-area-location-screen"
+        }
+      }
+    },
+    {
+      "id": 47,
+      "left_id": 107,
+      "right_id": 187,
+      "left_title": "انشاء و تشغيل و صيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل - الأنشطة الرياضية و الترفيهية - كشك لنشاط رياضي ذكي - نادي",
+      "right_title": "إنشاء وتشغيل وصيانة كشك لنشاط جم ذكي على ممشى ديار الاحساء مقابل جامعة الملك فيصل",
+      "score": 0.7743,
+      "status": "PENDING",
+      "explanation": {
+        "identity_review_decision": {
+          "decision": "REVIEW_REQUIRED",
+          "reviewed_at": "2026-10-20T12:46:07.635669+03:00",
+          "basis": "Furas lists a 15 m² smart-gym kiosk on a King Faisal University walkway; the Al-Ahsa listing says Diyar Al-Ahsa promenade opposite the university. The shared area and nearby locality are insufficient to establish the same exact site; keep separate pending source-detail confirmation.",
+          "same_source": false,
+          "source_record_ids": [
+            107,
+            190
+          ],
+          "source_keys": [
+            "furas",
+            "alahsa-opportunities"
+          ],
+          "auto_merge_safe": false,
+          "review_snapshot": "2026-10-20T09:27:35.377973Z",
+          "generator": "broad-title-area-location-screen"
+        }
+      }
+    }
+  ],
+  "merged": [
+    {
+      "id": 1,
+      "left_title": "انشاء و تشغيل وصيانة القطعة رقم 461 1و 461 2 لنشاط صناعات خفيفة أو ورشة بالمخطط رقم 14-16 بصناعية العيون",
+      "right_title": "انشاء و تشغيل و صيانة القطعة رقم 461 1و 461 2 لنشاط صناعات خفيفة أو ورشة بالمخطط رقم 14  16 بصناعية العيون - الأنشطة الصناعية - صناعات خفيفة أو متوسطة - مصنع"
+    },
+    {
+      "id": 2,
+      "left_title": "انشاء وتشغيل وصيانة مستودع غاز  بالمخطط رقم (14/53) بمدينة الجرن بنشاط بيع وتوزيع أسطوانات الغاز",
+      "right_title": "انشاء و تشغيل و صيانة مستودع غاز  بالمخطط رقم  14   53  بمدينة الجرن بنشاط بيع وتوزيع أسطوانات الغاز - الأنشطة التجارية - بيع وتوزيع أسطوانات الغاز - مستودع"
+    },
+    {
+      "id": 3,
+      "left_title": "انشاء وتشغيل وصيانة القطعة رقم 471  لنشاط صناعات خفيفة أو ورشة بالمخطط رقم 14  16  بصناعية العيون",
+      "right_title": "انشاء و تشغيل و صيانة القطعة رقم 471  لنشاط صناعات خفيفة أو ورشة بالمخطط رقم 14  16  بصناعية العيون - الأنشطة الصناعية - صناعات خفيفة أو متوسطة - مصنع"
+    },
+    {
+      "id": 4,
+      "left_title": "إنشاء وتشغيل وصيانة مواقف للمعدات والنقليات وورشة ومستودع ومكاتب إدارية وسكن للموظفين للقطع رقم 405/ت الى 409/ت بالمخطط رقم 14/154 الصناعية الشمالية بالعيون",
+      "right_title": "انشاء و تشغيل و صيانة مواقف للمعدات والنقليات وورشة ومستودع ومكاتب إدارية وسكن للموظفين للقطع رقم 405 ت الى 409 ت بالمخطط رقم 14 154 الصناعية الشمالية ب - الأنشطة التجارية - أنشطة و تجارة المعدات الثقيلة - ورشة"
+    },
+    {
+      "id": 5,
+      "left_title": "MOMAH and NCP Launch EOI to Municipal Food Safety Labs Across Five Municipalities in Saudi Arabia",
+      "right_title": "MOMAH and NCP Launch EOI to Municipal Food Safety Labs Across Five Municipalities in Saudi Arabia"
+    },
+    {
+      "id": 28,
+      "left_title": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "right_title": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف"
+    },
+    {
+      "id": 7,
+      "left_title": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19/149 مثلث القرى الشرقية",
+      "right_title": "انشاء و تشغيل و صيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19  149 مثلث القرى الشرقية - الأنشطة التجارية - أنشطة التجارة العامة - عام"
+    },
+    {
+      "id": 20,
+      "left_title": "انشاء و تشغيل و صيانة انشاء وتشغيل وصيانة محلات تجارية بالقطعة رقم  ت 20 في مخطط رقم  4   1082 الطابوق والخرسانة - الأنشطة التجارية - محلات تجارية - مجمع تجاري",
+      "right_title": "انشاء و تشغيل و صيانة انشاء وتشغيل وصيانة محلات تجارية بالقطعة رقم ت 20 في مخطط رقم 4 1082 الطابوق والخرسانة"
+    },
+    {
+      "id": 21,
+      "left_title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  طريق الملك فهد بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "right_title": "إنشاء وتشغيل كشك درايف ثرو (DRIVE THRO) طريق الملك فهد بمدينة المبرز"
+    },
+    {
+      "id": 22,
+      "left_title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  طريق الخليج بمدينة الهفوف - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "right_title": "إنشاء وتشغيل كشك درايف ثرو (DRIVE THRO) طريق الخليج بمدينة الهفوف"
+    },
+    {
+      "id": 23,
+      "left_title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO   طريق الملك عبدالله امتداد مجمع العامر مول بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "right_title": "إنشاء وتشغيل كشك درايف ثرو (DRIVE THRO)  طريق الملك عبدالله امتداد مجمع العامر مول بمدينة المبرز"
+    },
+    {
+      "id": 24,
+      "left_title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  رقم  2  طريق الامير عبدالله بن جلوي بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "right_title": "إنشاء وتشغيل كشك درايف ثرو (DRIVE THRO) رقم (2) طريق الامير عبدالله بن جلوي بمدينة المبرز"
+    },
+    {
+      "id": 25,
+      "left_title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  رقم  1  طريق الامير عبدالله بن جلوي بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "right_title": "إنشاء وتشغيل كشك درايف ثرو (DRIVE THRO) رقم (1) طريق الامير عبدالله بن جلوي بمدينة المبرز"
+    },
+    {
+      "id": 29,
+      "left_title": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "right_title": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف"
+    },
+    {
+      "id": 30,
+      "left_title": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 485بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+      "right_title": "إنشاء وتشغيل وصيانة مستودع بالقطعة رقم 485بالمخطط رقم 14/16 بصناعية العيون"
+    },
+    {
+      "id": 40,
+      "left_title": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 484بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+      "right_title": "إنشاء وتشغيل وصيانة مستودع بالقطعة رقم 484بالمخطط رقم 14/16 بصناعية العيون"
+    },
+    {
+      "id": 41,
+      "left_title": "انشاء و تشغيل و صيانة محلات تجارية  للقطعة رقم ب1 بمخطط جواثا 15  28 - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "right_title": "انشاء وتشغيل وصيانة محلات تجارية  للقطعة رقم تجاري (ب1) بمخطط جواثا 15_28"
+    },
+    {
+      "id": 42,
+      "left_title": "انشاء و تشغيل و صيانة مصنع صناعات خفيفة او ورشة للقطعة رقم 214 بالمخطط رقم 14  16 بصناعية العيون - الأنشطة الصناعية - صناعات خفيفة - مصنع",
+      "right_title": "انشاء وتشغيل وصيانة مصنع صناعات خفيفة او ورشة للقطعة رقم 214 بالمخطط رقم 14/16 بصناعية العيون"
+    },
+    {
+      "id": 43,
+      "left_title": "انشاء و تشغيل و صيانة مصنع صناعات خفيفة او ورشة للقطعة رقم 54 بالمخطط رقم 14   16 بصناعية العيون - الأنشطة الصناعية - صناعات خفيفة - مصنع",
+      "right_title": "انشاء وتشغيل وصيانة مصنع صناعات خفيفة او ورشة للقطعة رقم 54 بالمخطط رقم 14/16 بصناعية العيون"
+    },
+    {
+      "id": 44,
+      "left_title": "إنشاء وتشغيل وصيانة مبنى سكني تجاري إداري على القطعة رقم (2030) بالمخطط رقم (187)بالسيفة بمدينة الهفوف",
+      "right_title": "انشاء و تشغيل و صيانة مبنى سكني تجاري إداري على القطعة رقم  2030  بالمخطط رقم  187 بحي السيفة بمدينة الهفوف - الأنشطة التجارية - أنشطة التجارة العامة - عام"
+    },
+    {
+      "id": 45,
+      "left_title": "انشاء و تشغيل و صيانة مبنى تجاري سكني بالقطعة رقم 12 بالمخطط رقم 4 253 بحي منسوب التعليم الثاني بمدينة الهفوف - الأنشطة التجارية - تجاري سكني - مبنى سكني تجاري",
+      "right_title": "انشاء و تشغيل و صيانة مبنى تجاري سكني بالقطعة رقم 12 بالمخطط رقم 4 253 بحي منسوب التعليم الثاني بمدينة الهفوف"
+    }
+  ],
+  "locations": [
+    {
+      "id": 6,
+      "source": "استثمر في السعودية",
+      "title": "Ras Al Khair – Khafji – Hafr Al Batin transmission line project water transmission system (WTS)",
+      "sector": "Water",
+      "location": null,
+      "description": "The project consists in the development of strategic potable water reservoirs located in Al Ahsaa and WTTCO intends to procure the construction of water transmission system from Ras Al Khair to Khafji to Hafr Al Batin Region using a Public-Private Partnership (PPP) Model",
+      "latitude": null,
+      "longitude": null,
+      "evidence": "The project consists in the development of strategic potable water reservoirs located in Al Ahsaa and WTTCO intends to procure the construction of water transmission system from Ras Al Khair to Khafji to Hafr Al Batin Region using a Public-Private Partnership (PPP) Model",
+      "score": 0.8,
+      "reason": "Explicit Al-Ahsa evidence appears in descriptive text; verify that the asset itself is located in Al-Ahsa.",
+      "url": "https://investsaudi.sa/backend/opportunity/ras-al-khair-khafji-hafr-al-batin-transmission-line-project-water-transmission-system-wts/"
+    },
+    {
+      "id": 7,
+      "source": "استثمر في السعودية",
+      "title": "Tabuk – Al Ula transmission line project water transmission system (WTS)",
+      "sector": "Water",
+      "location": null,
+      "description": "The project consists in the development of strategic potable water reservoirs located in Al Ahsaa and WTTCO intends to procure the construction of water transmission system from Tabuk to Al-Ula Region using a Public-Private Partnership (PPP) Model.",
+      "latitude": null,
+      "longitude": null,
+      "evidence": "The project consists in the development of strategic potable water reservoirs located in Al Ahsaa and WTTCO intends to procure the construction of water transmission system from Tabuk to Al-Ula Region using a Public-Private Partnership (PPP) Model.",
+      "score": 0.8,
+      "reason": "Explicit Al-Ahsa evidence appears in descriptive text; verify that the asset itself is located in Al-Ahsa.",
+      "url": "https://investsaudi.sa/backend/opportunity/tabuk-al-ula-transmission-line-project-water-transmission-system-wts/"
+    },
+    {
+      "id": 8,
+      "source": "استثمر في السعودية",
+      "title": "Shuqaiq (SHQ) – Jazan (JAZ) phase 4 transmission line project water transmission system (WTS)",
+      "sector": "Water",
+      "location": null,
+      "description": "The project consists in the development of strategic potable water reservoirs located in Al Ahsaa and WTTCO intends to procure the construction of the water transmission system from SHUQAIQ to JAZAN Region using a Public-Private Partnership (PPP) Model.",
+      "latitude": null,
+      "longitude": null,
+      "evidence": "The project consists in the development of strategic potable water reservoirs located in Al Ahsaa and WTTCO intends to procure the construction of the water transmission system from SHUQAIQ to JAZAN Region using a Public-Private Partnership (PPP) Model.",
+      "score": 0.8,
+      "reason": "Explicit Al-Ahsa evidence appears in descriptive text; verify that the asset itself is located in Al-Ahsa.",
+      "url": "https://investsaudi.sa/backend/opportunity/shuqaiq-shq-jazan-jaz-phase-4-transmission-line-project-water-transmission-system-wts/"
+    },
+    {
+      "id": 17,
+      "source": "استثمر في السعودية",
+      "title": "تأجير مواقع مكائن بيع ذاتي لعدد (32) موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي",
+      "sector": "Real Estate & Construction",
+      "location": "Municipality",
+      "description": "تأجير مواقع مكائن بيع ذاتي لعدد (32) موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي منصة فرص تأجير مواقع مكائن بيع ذاتي لعدد (32) موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي",
+      "latitude": null,
+      "longitude": null,
+      "evidence": "تأجير مواقع مكائن بيع ذاتي لعدد (32) موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي منصة فرص تأجير مواقع مكائن بيع ذاتي لعدد (32) موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي",
+      "score": 0.8,
+      "reason": "Explicit Al-Ahsa evidence appears in descriptive text; verify that the asset itself is located in Al-Ahsa.",
+      "url": ""
+    },
+    {
+      "id": 4,
+      "source": "استثمر في السعودية",
+      "title": "Activation of Al-Uqair Port Heritage Site",
+      "sector": "Culture",
+      "location": null,
+      "description": "Establish a company that activates the Al-Uqair port heritage site in Al-Hasa by setting up a visitor center, museum, F and B outlet, and accommodations, and by leasing some areas of the site for diverse purposes (e.g., retail spaces)",
+      "latitude": null,
+      "longitude": null,
+      "evidence": "Establish a company that activates the Al-Uqair port heritage site in Al-Hasa by setting up a visitor center, museum, F and B outlet, and accommodations, and by leasing some areas of the site for diverse purposes (e.g., retail spaces)",
+      "score": 0.8,
+      "reason": "Explicit Al-Ahsa evidence appears in descriptive text; verify that the asset itself is located in Al-Ahsa.",
+      "url": "https://investsaudi.sa/backend/opportunity/activation-of-al-uqair-port-heritage-site/"
+    },
+    {
+      "id": 3,
+      "source": "استثمر في السعودية",
+      "title": "Date Experience in Al Hasa",
+      "sector": "Culture",
+      "location": null,
+      "description": "Develop a small palm tree farm that would provide tours that showcase the significance and heritage of dates in Al Hasa, through multiple services including farm and museum visits, date tasting experiences, workshops, F and B, and a gift shop",
+      "latitude": null,
+      "longitude": null,
+      "evidence": "Develop a small palm tree farm that would provide tours that showcase the significance and heritage of dates in Al Hasa, through multiple services including farm and museum visits, date tasting experiences, workshops, F and B, and a gift shop",
+      "score": 0.8,
+      "reason": "Explicit Al-Ahsa evidence appears in descriptive text; verify that the asset itself is located in Al-Ahsa.",
+      "url": "https://investsaudi.sa/backend/opportunity/date-experience-in-al-hasa/"
+    },
+    {
+      "id": 25,
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "title": "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  سلوى فود ترك",
+      "sector": null,
+      "location": "",
+      "description": "",
+      "latitude": 24.767819999999972,
+      "longitude": 50.745813999999996,
+      "evidence": "source=furas; source_record=70; master=70; city_id=104; coordinates=24.767819999999972, 50.745813999999996; local_boundary=outside",
+      "score": 0.5,
+      "reason": "COORDINATE_TEXT_CONFLICT: Furas source filter includes CITY_ID=104 and the title names Salwa, while the exact source point falls outside the local reference polygon. The polygon is not an official cadastral/planning limit; retain both claims for review.",
+      "url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-26-017704-1001?type=TempRental"
+    },
+    {
+      "id": 24,
+      "source": "هيئة تطوير الأحساء",
+      "title": "تطوير فنادق 5 نجوم في المنطقة الشرقية",
+      "sector": null,
+      "location": null,
+      "description": "الرئيسية استثمر في الأحساء الفرص الاستثمارية تطوير فنادق 5 نجوم في المنطقة الشرقية تطوير فنادق 5 نجوم في المنطقة الشرقية السياحة وجودة الحياة حجم السوق الرحلات السياحية (2019): 7.5 مليون رحلة الإيرادات السياحية (2019): 15.7 مليار ريال متوسط إنفاق الزائر: 2,535 ريال معدل إشغال الفنادق: 65% العائد المتوقع من الاستثمار حجم الاستثمار: 40 – 60 مليون ريال سعودي معدل العائد الداخلي : 11% – 14% تقريباً إنشاء وتطوير منتجع فاخر من فئة 5 نجوم، بطاقة استيعابية 300-400 غرفة، لتلبية الطلب المتنامي على السياحة الداخلية والدولية، وتعزيز مكانة المملكة كوجهة عالمية مميزة. الارتباط برؤية 2030 رفع الطاقة الاستيعابية لتحقيق مستهدف 100 مليون زيارة سنويًا بحلول 2030. تعزيز البنية التحتية السياحية وتسهيل الحصول على التأشيرات السياحية. دعم مشاريع جودة الحياة والتنمية (مثل موسم الشرقية، المهرجانات السياحية، والمراكز الثقافية مثل إثراء). الممكنات منظومة متكاملة يقودها وزارة السياحة (صندوق التنمية السياحية، الهيئة السعودية للسياحة، ووزارة الاستثمار) لدعم المستثمرين. مشاريع تطوير البنية التحتية والطرق التي تربط المنطقة الشرقية ببقية مدن المملكة. تسهيلات التأشيرات السياحية وزيادة الجاذبية الدولية للمنطقة الشرقية. المواصفات التقنية نوع المشروع: منتجع فاخر 5 نجوم. الطاقة الاستيعابية: 300–400 مفتاح (غرفة/جناح). الموقع: المنطقة الشرقية – وجهات ثقافية وتراثية (قصر إبراهيم، بيت البيعة، مدرسة الأمراء) + ترفيهية (موسم الشرقية، المهرجانات، المولات الكبرى). نموذج الاستثمار: خيارات متعددة (تأجير، مشاركة إيرادات، أو ملكية كاملة). استثمر في السعودية",
+      "latitude": null,
+      "longitude": null,
+      "evidence": "source=ahda; source_record=212; master=212; source_location=None; evidence_basis=REGION_ONLY",
+      "score": 0.3,
+      "reason": "REGION_ONLY: The source title says Eastern Province only; the project location within the region is not specified.",
+      "url": "https://ahda.gov.sa/invest-al-ahsa/investment-opportunities/hotel-development-eastern-province"
+    },
+    {
+      "id": 26,
+      "source": "استثمر في السعودية",
+      "title": "Multipurpose venues In Madina, Al jouf, Ha’il, Najran and Al Ahsa",
+      "sector": "السياحة",
+      "location": "Al Madinah",
+      "description": "Venue can host a variety of events of entertainment, sports, etc.",
+      "latitude": null,
+      "longitude": null,
+      "evidence": "INSUFFICIENT_EVIDENCE_REVIEW. The title lists Al-Ahsa among several city venues, but the structured region is Al Madinah and the referenced PDF is a generic placeholder with no populated location or opportunity details. Do not infer an Al-Ahsa asset from the city list alone.",
+      "score": 0.0,
+      "reason": "Structured location conflicts with a multi-city title; verify a project/site in Al-Ahsa.",
+      "url": "https://investsaudi.sa/backend/opportunity/multipurpose-venues-in-madina-al-jouf-hail-najran-and-al-ahsa/"
+    },
+    {
+      "id": 18,
+      "source": "هيئة تطوير الأحساء",
+      "title": "الخدمات الرقمية للإرشاد والتوجيه المهني",
+      "sector": null,
+      "location": null,
+      "description": "الرئيسية استثمر في الأحساء الفرص الاستثمارية الخدمات الرقمية للإرشاد والتوجيه المهني الخدمات الرقمية للإرشاد والتوجيه المهني قطاع التعليم التقنية (EdTech) حجم السوق إجمالي السوق القابل للاستهداف: 2-2.2 مليون مستخدم عدد طلاب التعليم العالي (2030): 1.3-1.5 مليون طالب عدد العاملين (2030): 11-12 مليون شخص نسبة انتشار الإنترنت: 95-100% نسبة التبني الرقمي المدفوع الطلاب: 21-23% العاملين: 15-17% العائد المتوقع من الاستثمار حجم الاستثمار: 40-60 مليون ريال سعودي معدل العائد الداخلي: 11-14% تقريباً تأسيس منصة رقمية شاملة للإرشاد والتوجيه المهني تستهدف الطلاب والمهنيين في المملكة، تقدم خدمات التقييم، الاستشارات، إعداد السيرة الذاتية، والبرامج الإرشادية عبر الإنترنت.تهدف المنصة إلى سد فجوة الإرشاد المهني في السوق المحلي ودعم تطوير رأس المال البشري بما يتماشى مع متطلبات سوق العمل المتغير. الارتباط برؤية 2030 دعم برنامج تنمية القدرات البشرية (HCDP) لتهيئة المواطنين لسوق العمل المحلي والعالمي. مبادرات حكومية مثل سبل (Subol) من صندوق تنمية الموارد البشرية (HRDF) لدعم الإرشاد المهني الرقمي. تعزيز فرص التعلم مدى الحياة وتوفير خدمات الإرشاد للطلاب والباحثين عن عمل. المساهمة في رفع مشاركة المرأة في القوى العاملة، وتحسين المواءمة بين التعليم وسوق العمل. الممكنات دعم حكومي من خلال وزارة التعليم، وزارة الاستثمار وصندوق تنمية الموارد البشرية (HRDF). ارتفاع معدلات الوعي المهني وتزايد الطلب على التدريب المهني والانتقال الوظيفي. بنية رقمية قوية ونسبة انتشار إنترنت تتجاوز 95%. امكانية التكامل مع الجامعات والمؤسسات لتقديم خدمات موجهة (B2C) و (B2B). المواصفات التقنية نوع المشروع: تطبيق ومنصة رقمية للإرشاد والتوجيه المهني. نموذج الاستثمار: مرن- شراكات جامعية (B2B) أو اشتراكات للأفراد (B2C). الفئة المستهدفة: طلاب التعليم الحالي والمهنيين في مختلف القطاعات. قنوات التواصل: تطبيق جوال، منصة ويب متكاملة مع مبادرات حكومية مثل (سبل). الخدمات المقدمة: تقييمات مهنية واختبارات فردية وجماعية. استشارات فردية وجماعية. إعداد السير الذاتية ورسائل التقديم. ورش عمل ودورات توجيهية للطلاب والموظفين. تدريب مهني على المقابلات الشخصية. استثمر في السعودية",
+      "latitude": null,
+      "longitude": null,
+      "evidence": "source=ahda; source_record=211; master=211; source_location=None; evidence_basis=LOCATION_UNSPECIFIED",
+      "score": 0.0,
+      "reason": "LOCATION_UNSPECIFIED: Project-level locality is absent. The AHDA page breadcrumb/publisher scope does not establish the asset location.",
+      "url": "https://ahda.gov.sa/invest-al-ahsa/investment-opportunities/digital-career-guidance-services"
+    },
+    {
+      "id": 19,
+      "source": "هيئة تطوير الأحساء",
+      "title": "مستشفيات الأمومة والأطفال",
+      "sector": null,
+      "location": null,
+      "description": "الرئيسية استثمر في الأحساء الفرص الاستثمارية مستشفيات الأمومة والأطفال مستشفيات الأمومة والأطفال قطاع الخدمات الصحية حجم السوق معدل النمو: +8% سنويًا السوق المحلي: نمو من 1 مليار دولار (2022) إلى 8.1 مليار (2030) العائد المتوقع من الاستثمار حجم الاستثمار: 300–500 مليون ريال معدل العائد الداخلي : 5%–15% تصميم وبناء وتشغيل وصيانة مستشفى للولادة والأطفال، وتقديم الخدمات في طب الأطفال وأمراض النساء والولادة. الارتباط برؤية 2030 تخصيص الرعاية الصحية: هدف زيادة التخصيص من 25% إلى 35% بحلول 2030. نظام رعاية الطفل والأمومة: تطوير نظام رعاية متخصص حول رعاية الطفل والأمومة. التحول الصحي: التركيز على تحسين جودة الرعاية للحمل والولادة ورعاية الأطفال حديثي الولادة. الممكنات سهولة الحصول على التمويل: تقييم 50 من 100 في مؤشر سهولة الحصول على الائتمان. النظام الصحي المتطور: أكبر ميزانية رعاية صحية في منطقة الشرق الأوسط وشمال أفريقيا (36.7 مليار دولار في 2022). البنية التحتية المتطورة: مؤشر الأداء اللوجستي 3.2 من 5. شبكة مستشفيات موجودة: 25 مستشفى للنساء والولادة/الأطفال عبر المملكة. إعفاء ضريبي: حتى 50% على رواتب الموظفين السعوديين وتكاليف التدريب لمدة 10 سنوات. تغطية صندوق تنمية الموارد البشرية: 30-50% من الرواتب الشهرية للموظفين السعوديين لمدة سنتين. برامج التدريب: برامج التدريب أثناء العمل للمواطنين السعوديين تحت برنامج تمهير. المواصفات التقنية مساحة المنشأة: 5,000–8,500 متر مربع. عدد الأسرّة: 150–250 سرير (للمنشأة الواحدة). استثمر في السعودية",
+      "latitude": null,
+      "longitude": null,
+      "evidence": "source=ahda; source_record=213; master=213; source_location=None; evidence_basis=LOCATION_UNSPECIFIED",
+      "score": 0.0,
+      "reason": "LOCATION_UNSPECIFIED: Project-level locality is absent. The AHDA page breadcrumb/publisher scope does not establish the asset location.",
+      "url": "https://ahda.gov.sa/invest-al-ahsa/investment-opportunities/maternity-and-childrens-hospitals"
+    },
+    {
+      "id": 20,
+      "source": "هيئة تطوير الأحساء",
+      "title": "الخدمات الطبية للمدارس",
+      "sector": null,
+      "location": null,
+      "description": "الرئيسية استثمر في الأحساء الفرص الاستثمارية الخدمات الطبية للمدارس الخدمات الطبية للمدارس قطاع التعليم حجم السوق عدد الطلاب في التعليم العالي(2022): 5.8 - 6.2 مليون عدد الطلاب في التعليم العالي(2030): 6.6 - 7.6 مليون الكـــوادر الطبية (2022): 5 آلاف ممرضة الكـــوادر الطبية (2030): 8 آلاف العائد المتوقع من الاستثمار حجم الاستثمار : يختلف حسب نطاق الخدمات معدل العائد الداخلي: + 250% زيادة في الحاجة للكوادر الطبية حتى 2030 تقديم خدمات طبية شاملة داخل المدارس (طلاب، معلمين، كوادر مساندة) تشمل الرعاية الطارئة، متابعة الأمراض المزمنة، التوعية الصحية، والتنسيق مع الأسر لتحسين صحة المجتمع المدرسي. الارتباط برؤية 2030 برنامج التحول الصحي: تعزيز الوقاية والكشف المبكر داخل المدارس. شراكات بين وزارتي الصحة والتعليم عبر مبادرات Healthy Living Program – School (Health Awareness). رفع الوعي الصحي والسلوكيات الإيجابية لدى الطلاب وأسرهم. الممكنات دعم حكومي من وزارة الصحة + وزارة التعليم. برامج ومبادرات وطنية. شركات متخصصة تقدم عيادات متنقلة وخدمات متكاملة داخل المدارس. المواصفات التقنية خدمات أساسية: رعاية طارئة، متابعة الأمراض المزمنة، التثقيف الصحي، مشاركة الأسرة. عيادات مدرسية مُدمجة + عيادات متنقلة حسب الحاجة. حلول تقنية لمتابعة الحالات والتواصل مع الأسر والجهات الصحية. استثمر في السعودية",
+      "latitude": null,
+      "longitude": null,
+      "evidence": "source=ahda; source_record=214; master=214; source_location=None; evidence_basis=LOCATION_UNSPECIFIED",
+      "score": 0.0,
+      "reason": "LOCATION_UNSPECIFIED: Project-level locality is absent. The AHDA page breadcrumb/publisher scope does not establish the asset location.",
+      "url": "https://ahda.gov.sa/invest-al-ahsa/investment-opportunities/medical-services-schools"
+    },
+    {
+      "id": 21,
+      "source": "هيئة تطوير الأحساء",
+      "title": "المعالجة الأولية للتمور",
+      "sector": null,
+      "location": null,
+      "description": "الرئيسية استثمر في الأحساء الفرص الاستثمارية المعالجة الأولية للتمور المعالجة الأولية للتمور قطاع الزراعة ومعالجة الأغذية حجم السوق نمو السوق المحلي: +11% نمو السوق العالمي: +10% العائد المتوقع من الاستثمار حجم الاستثمار : 20 مليون دولار أمريكي معدل العائد الداخلي: 15% الاستحواذ على مزرعة تمور وإنشاء منشأة معالجة أولية بطاقة إنتاجية للاستفادة من الطلب المحلي والدولي على التمور السعودية. الارتباط برؤية 2030 الأمن الغذائي: دعم أهداف الحكومة في تنويع الاقتصاد والأمن الغذائي. التصنيع المحلي: الاستفادة من المدخلات المحلية وفتح آفاق معالجة الأغذية. مكانة المملكة الدينية: الاستفادة من قيمة \"صنع في السعودية\" كونها حارس الحرمين الشريفين. الممكنات إجمالي الوظائف المتوقعة: ~600 وظيفة. الموقع الاستراتيجي: للتصدير. الدعم الحكومي المتخصص. توفر المواد الخام المحلية. استثمر في السعودية",
+      "latitude": null,
+      "longitude": null,
+      "evidence": "source=ahda; source_record=215; master=215; source_location=None; evidence_basis=LOCATION_UNSPECIFIED",
+      "score": 0.0,
+      "reason": "LOCATION_UNSPECIFIED: Project-level locality is absent. The AHDA page breadcrumb/publisher scope does not establish the asset location.",
+      "url": "https://ahda.gov.sa/invest-al-ahsa/investment-opportunities/pre-treatment-dates"
+    },
+    {
+      "id": 22,
+      "source": "هيئة تطوير الأحساء",
+      "title": "تطوير مراكز الرعاية الصحية الأولية",
+      "sector": null,
+      "location": null,
+      "description": "الرئيسية استثمر في الأحساء الفرص الاستثمارية تطوير مراكز الرعاية الصحية الأولية تطوير مراكز الرعاية الصحية الأولية قطاع الخدمات الصحية حجم السوق معدل النمو السنوي: 4.14% سنويًا حجم السوق (2022): 20 مليار ريال سعودي حجم السوق المتوقع (2030): 28 مليار ريال سعودي العائد المتوقع من الاستثمار حجم الاستثمار : 5 - 20 مليون ريال سعودي معدل العائد الداخلي: 10 - 20 % تطوير مراکز الرعایة الصحیة الأولیة الحالیة من خلال تجدید المبانی، تحسین الخدمات، تطویر القوی العاملة وتقدیم الخدمات السریریة. الارتباط برؤية 2030 برنامج التحول الصحي: التركيز على الرعاية المتكاملة والانتقال من الرعاية المستشفوية إلى الرعاية المجتمعية. الوقاية والرعاية المزمنة: الرعاية الأولية محور أساسي في نموذج الرعاية الجديد \"البقاء بصحة جيدة\" و \"الرعاية المزمنة\". جودة الخدمات: استهداف 4 زيارات للشخص الواحد سنويًا متماشيًا مع المؤشرات العالمية. الممكنات سهولة الحصول على التمويل. الأجور التنافسية إقليمياً. النظام الصحي المتقدم. البنية التحتية المتطورة. المواصفات التقنية مساحة المنشأة: 1,000-4,000 متر مربع. الطاقة الاستيعابية: 10,000-50,000 زيارة سنوية. استثمر في السعودية",
+      "latitude": null,
+      "longitude": null,
+      "evidence": "source=ahda; source_record=216; master=216; source_location=None; evidence_basis=LOCATION_UNSPECIFIED",
+      "score": 0.0,
+      "reason": "LOCATION_UNSPECIFIED: Project-level locality is absent. The AHDA page breadcrumb/publisher scope does not establish the asset location.",
+      "url": "https://ahda.gov.sa/invest-al-ahsa/investment-opportunities/primary-healthcare-centers-development"
+    },
+    {
+      "id": 23,
+      "source": "هيئة تطوير الأحساء",
+      "title": "مراكز التدريب التقني والمهني في السياحة والضيافة",
+      "sector": null,
+      "location": null,
+      "description": "الرئيسية استثمر في الأحساء الفرص الاستثمارية مراكز التدريب التقني والمهني في السياحة والضيافة مراكز التدريب التقني والمهني في السياحة والضيافة قطاع التعليم حجم السوق الزيارات: 100 مليون زيارة بحلول 2023 الإنفاق السياحي (2015): 131 مليار ريال الإنفاق السياحي (2023): 455 مليار ريال حاجة العمالة المتوقعة حتى 2030 : 500-475 الف عامل العائد المتوقع من الاستثمار حجم الاستثمار : 50-40 مليون ريال مساهمة الناتج المحلي: 10-5.3% بحلول 2023 إنشاء وتطوير مراكز تدريب سياحي وفندقي لتأهيل الكوادر الوطنية عبر برامج تعليمية معتمدة دوليا، تلبي احتياجات سوق العمل وتدعم مستهدفات رؤية 2030. الارتباط برؤية 2030 رفع مساهمة السياحة في الناتج المحلي من 5.3% (في 2022) إلى أكثر من 10% بحلول 2030. دعم مشاريع السياحة العملاقة (القدية، البحر الأحمر، العلا، نيوم) من خلال توفير كوادر مؤهلة. تمكين الشباب السعودي عبر التدريب التقني والمهني المعتمد دولياً. جذب الاستثمارات الخاصة بدعم صندوق التنمية السياحية. الممكنات تسهيلات تمويلية من صندوق التنمية السياحية. دعم حكومي مباشر عبر وزارة السياحة،والمؤسسة العامة للتدريب التقني والمهني. تسهيل دخول السياح عبر سياسات التأشيرات. فرص شراكات استراتيجية مع معاهد تدريب عالمية. المواصفات التقنية الطاقة الاستيعابية: 1,000 متدرب لكل مركز. برامج تدريبية معتمدة محليا ودوليا. بنية تحتية تعليمية متطورة بمرافق منفصلة للذكور والإناث. استثمر في السعودية",
+      "latitude": null,
+      "longitude": null,
+      "evidence": "source=ahda; source_record=217; master=217; source_location=None; evidence_basis=LOCATION_UNSPECIFIED",
+      "score": 0.0,
+      "reason": "LOCATION_UNSPECIFIED: Project-level locality is absent. The AHDA page breadcrumb/publisher scope does not establish the asset location.",
+      "url": "https://ahda.gov.sa/invest-al-ahsa/investment-opportunities/tourism-and-hospitality-training"
+    }
+  ],
+  "qualifications": [],
+  "fields": [
+    {
+      "id": 303,
+      "opportunity_id": 262,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "title_ar",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "conflicting": "انشاء و تشغيل و صيانة القطعة رقم 67 1 المخطط رقم 518 4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف - أنشطة الصيانة والتصليح والتركيب - تشاليح سيارات - معمل",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T13:05:39.883214+03:00"
+    },
+    {
+      "id": 305,
+      "opportunity_id": 262,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "short_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "conflicting": "انشاء و تشغيل و صيانة القطعة رقم 67 1 المخطط رقم 518 4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف - أنشطة الصيانة والتصليح والتركيب - تشاليح سيارات - معمل",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T13:05:39.883214+03:00"
+    },
+    {
+      "id": 304,
+      "opportunity_id": 262,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "الهفوف",
+      "conflicting": "الاحساء ابن فرحون",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T13:05:39.883214+03:00"
+    },
+    {
+      "id": 300,
+      "opportunity_id": 260,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "title_ar",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "conflicting": "انشاء و تشغيل و صيانة القطعة رقم 60 المخطط رقم 518 4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف - أنشطة الصيانة والتصليح والتركيب - تشاليح سيارات - معمل",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T13:05:39.848979+03:00"
+    },
+    {
+      "id": 302,
+      "opportunity_id": 260,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "short_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "conflicting": "انشاء و تشغيل و صيانة القطعة رقم 60 المخطط رقم 518 4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف - أنشطة الصيانة والتصليح والتركيب - تشاليح سيارات - معمل",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T13:05:39.848979+03:00"
+    },
+    {
+      "id": 301,
+      "opportunity_id": 260,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "الهفوف",
+      "conflicting": "الاحساء أحمد بن ناصر الكناني",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T13:05:39.848979+03:00"
+    },
+    {
+      "id": 299,
+      "opportunity_id": 258,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO   طريق الملك عبدالله امتداد مجمع العامر مول بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "المبرز",
+      "conflicting": "الاحساء الشراع الجنوبي طريق الملك عبدالله الدائري - الضلع الشرقي",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T13:05:39.820586+03:00"
+    },
+    {
+      "id": 297,
+      "opportunity_id": 253,
+      "title": "انشاء و تشغيل و صيانة مبنى تجاري سكني بالقطعة رقم 12 بالمخطط رقم 4 253 بحي منسوب التعليم الثاني بمدينة الهفوف - الأنشطة التجارية - تجاري سكني - مبنى سكني تجاري",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "الهفوف",
+      "conflicting": "الاحساء منسوبي التعليم الثاني",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T13:05:39.043333+03:00"
+    },
+    {
+      "id": 296,
+      "opportunity_id": 251,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  طريق الخليج بمدينة الهفوف - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "الهفوف",
+      "conflicting": "الاحساء الروضة طريق الخليج العربي",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T13:05:38.226029+03:00"
+    },
+    {
+      "id": 295,
+      "opportunity_id": 248,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  طريق الملك فهد بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "المبرز",
+      "conflicting": "الاحساء المسعودي طريق الملك فهد بن عبد العزيز",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T13:05:38.118021+03:00"
+    },
+    {
+      "id": 294,
+      "opportunity_id": 246,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  رقم  2  طريق الامير عبدالله بن جلوي بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "المبرز",
+      "conflicting": "الاحساء عين مرجان محمد بن إبراهيم آل الشيخ",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T13:05:38.084275+03:00"
+    },
+    {
+      "id": 293,
+      "opportunity_id": 242,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  رقم  1  طريق الامير عبدالله بن جلوي بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "المبرز",
+      "conflicting": "الاحساء عين مرجان محمد بن إبراهيم آل الشيخ",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T13:05:38.050612+03:00"
+    },
+    {
+      "id": 292,
+      "opportunity_id": 240,
+      "title": "انشاء و تشغيل و صيانة مصنع صناعات خفيفة او ورشة للقطعة رقم 54 بالمخطط رقم 14   16 بصناعية العيون - الأنشطة الصناعية - صناعات خفيفة - مصنع",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "العيون",
+      "conflicting": "العيون الصناعية صهيب بن سنان",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T13:05:37.376201+03:00"
+    },
+    {
+      "id": 291,
+      "opportunity_id": 239,
+      "title": "انشاء و تشغيل و صيانة مصنع صناعات خفيفة او ورشة للقطعة رقم 214 بالمخطط رقم 14  16 بصناعية العيون - الأنشطة الصناعية - صناعات خفيفة - مصنع",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "العيون",
+      "conflicting": "العيون الصناعية الأنبار",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T13:05:37.350986+03:00"
+    },
+    {
+      "id": 290,
+      "opportunity_id": 237,
+      "title": "انشاء و تشغيل و صيانة محلات تجارية  للقطعة رقم ب1 بمخطط جواثا 15  28 - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "جواثا",
+      "conflicting": "الاحساء جواثا",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T13:05:37.209402+03:00"
+    },
+    {
+      "id": 289,
+      "opportunity_id": 235,
+      "title": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 485بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "العيون",
+      "conflicting": "العيون الصناعية أسلم بن الحارث الهاشمي",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T13:05:37.1045+03:00"
+    },
+    {
+      "id": 288,
+      "opportunity_id": 234,
+      "title": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 484بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "العيون",
+      "conflicting": "العيون الصناعية أسلم بن الحارث الهاشمي",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T13:05:37.086323+03:00"
+    },
+    {
+      "id": 286,
+      "opportunity_id": 231,
+      "title": "انشاء و تشغيل و صيانة انشاء وتشغيل وصيانة محلات تجارية بالقطعة رقم  ت 20 في مخطط رقم  4   1082 الطابوق والخرسانة - الأنشطة التجارية - محلات تجارية - مجمع تجاري",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "الاحساء",
+      "conflicting": "العيون الباهية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T13:05:36.965505+03:00"
+    },
+    {
+      "id": 283,
+      "opportunity_id": 253,
+      "title": "انشاء و تشغيل و صيانة مبنى تجاري سكني بالقطعة رقم 12 بالمخطط رقم 4 253 بحي منسوب التعليم الثاني بمدينة الهفوف - الأنشطة التجارية - تجاري سكني - مبنى سكني تجاري",
+      "field": "normalized_title",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "انشاء و تشغيل و صيانة مبني تجاري سكني بالقطعة رقم 12 بالمخطط رقم 4 253 بحي منسوب التعليم الثاني بمدينة الهفوف",
+      "conflicting": "انشاء و تشغيل و صيانة مبني تجاري سكني بالقطعة رقم 12 بالمخطط رقم 4 253 بحي منسوب التعليم الثاني بمدينة الهفوف الانشطة التجارية تجاري سكني مبني سكني تجاري",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:46:07.958821+03:00"
+    },
+    {
+      "id": 285,
+      "opportunity_id": 253,
+      "title": "انشاء و تشغيل و صيانة مبنى تجاري سكني بالقطعة رقم 12 بالمخطط رقم 4 253 بحي منسوب التعليم الثاني بمدينة الهفوف - الأنشطة التجارية - تجاري سكني - مبنى سكني تجاري",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "الهفوف",
+      "conflicting": "الاحساء منسوبي التعليم الثاني",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:46:07.958821+03:00"
+    },
+    {
+      "id": 284,
+      "opportunity_id": 253,
+      "title": "انشاء و تشغيل و صيانة مبنى تجاري سكني بالقطعة رقم 12 بالمخطط رقم 4 253 بحي منسوب التعليم الثاني بمدينة الهفوف - الأنشطة التجارية - تجاري سكني - مبنى سكني تجاري",
+      "field": "sector",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "أخرى",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:46:07.958821+03:00"
+    },
+    {
+      "id": 282,
+      "opportunity_id": 241,
+      "title": "إنشاء وتشغيل وصيانة مبنى سكني تجاري إداري على القطعة رقم (2030) بالمخطط رقم (187)بالسيفة بمدينة الهفوف",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "الهفوف",
+      "conflicting": "الاحساء السيفة أبي المحاسن الخياط",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T12:46:07.894849+03:00"
+    },
+    {
+      "id": 281,
+      "opportunity_id": 241,
+      "title": "إنشاء وتشغيل وصيانة مبنى سكني تجاري إداري على القطعة رقم (2030) بالمخطط رقم (187)بالسيفة بمدينة الهفوف",
+      "field": "sector",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "غير محدد",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T12:46:07.894849+03:00"
+    },
+    {
+      "id": 280,
+      "opportunity_id": 241,
+      "title": "إنشاء وتشغيل وصيانة مبنى سكني تجاري إداري على القطعة رقم (2030) بالمخطط رقم (187)بالسيفة بمدينة الهفوف",
+      "field": "normalized_title",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "انشاء وتشغيل وصيانة مبني سكني تجاري اداري علي القطعة رقم 2030 بالمخطط رقم 187 بالسيفة بمدينة الهفوف",
+      "conflicting": "انشاء و تشغيل و صيانة مبني سكني تجاري اداري علي القطعة رقم 2030 بالمخطط رقم 187 بحي السيفة بمدينة الهفوف الانشطة التجارية انشطة التجارة العامة عام",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T12:46:07.894849+03:00"
+    },
+    {
+      "id": 277,
+      "opportunity_id": 240,
+      "title": "انشاء و تشغيل و صيانة مصنع صناعات خفيفة او ورشة للقطعة رقم 54 بالمخطط رقم 14   16 بصناعية العيون - الأنشطة الصناعية - صناعات خفيفة - مصنع",
+      "field": "normalized_title",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "انشاء وتشغيل وصيانة مصنع صناعات خفيفة او ورشة للقطعة رقم 54 بالمخطط رقم 14 16 بصناعية العيون",
+      "conflicting": "انشاء و تشغيل و صيانة مصنع صناعات خفيفة او ورشة للقطعة رقم 54 بالمخطط رقم 14 16 بصناعية العيون الانشطة الصناعية صناعات خفيفة مصنع",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:46:07.845007+03:00"
+    },
+    {
+      "id": 279,
+      "opportunity_id": 240,
+      "title": "انشاء و تشغيل و صيانة مصنع صناعات خفيفة او ورشة للقطعة رقم 54 بالمخطط رقم 14   16 بصناعية العيون - الأنشطة الصناعية - صناعات خفيفة - مصنع",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "العيون",
+      "conflicting": "العيون الصناعية صهيب بن سنان",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:46:07.845007+03:00"
+    },
+    {
+      "id": 278,
+      "opportunity_id": 240,
+      "title": "انشاء و تشغيل و صيانة مصنع صناعات خفيفة او ورشة للقطعة رقم 54 بالمخطط رقم 14   16 بصناعية العيون - الأنشطة الصناعية - صناعات خفيفة - مصنع",
+      "field": "sector",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "صناعي",
+      "conflicting": "أخرى",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:46:07.845007+03:00"
+    },
+    {
+      "id": 275,
+      "opportunity_id": 239,
+      "title": "انشاء و تشغيل و صيانة مصنع صناعات خفيفة او ورشة للقطعة رقم 214 بالمخطط رقم 14  16 بصناعية العيون - الأنشطة الصناعية - صناعات خفيفة - مصنع",
+      "field": "sector",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "صناعي",
+      "conflicting": "أخرى",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:46:07.790662+03:00"
+    },
+    {
+      "id": 276,
+      "opportunity_id": 239,
+      "title": "انشاء و تشغيل و صيانة مصنع صناعات خفيفة او ورشة للقطعة رقم 214 بالمخطط رقم 14  16 بصناعية العيون - الأنشطة الصناعية - صناعات خفيفة - مصنع",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "العيون",
+      "conflicting": "العيون الصناعية الأنبار",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:46:07.790662+03:00"
+    },
+    {
+      "id": 274,
+      "opportunity_id": 239,
+      "title": "انشاء و تشغيل و صيانة مصنع صناعات خفيفة او ورشة للقطعة رقم 214 بالمخطط رقم 14  16 بصناعية العيون - الأنشطة الصناعية - صناعات خفيفة - مصنع",
+      "field": "normalized_title",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "انشاء وتشغيل وصيانة مصنع صناعات خفيفة او ورشة للقطعة رقم 214 بالمخطط رقم 14 16 بصناعية العيون",
+      "conflicting": "انشاء و تشغيل و صيانة مصنع صناعات خفيفة او ورشة للقطعة رقم 214 بالمخطط رقم 14 16 بصناعية العيون الانشطة الصناعية صناعات خفيفة مصنع",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:46:07.790662+03:00"
+    },
+    {
+      "id": 272,
+      "opportunity_id": 237,
+      "title": "انشاء و تشغيل و صيانة محلات تجارية  للقطعة رقم ب1 بمخطط جواثا 15  28 - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "sector",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "غير محدد",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:46:07.734954+03:00"
+    },
+    {
+      "id": 273,
+      "opportunity_id": 237,
+      "title": "انشاء و تشغيل و صيانة محلات تجارية  للقطعة رقم ب1 بمخطط جواثا 15  28 - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "جواثا",
+      "conflicting": "الاحساء جواثا",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:46:07.734954+03:00"
+    },
+    {
+      "id": 271,
+      "opportunity_id": 237,
+      "title": "انشاء و تشغيل و صيانة محلات تجارية  للقطعة رقم ب1 بمخطط جواثا 15  28 - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "normalized_title",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "انشاء وتشغيل وصيانة محلات تجارية للقطعة رقم تجاري ب1 بمخطط جواثا 15_28",
+      "conflicting": "انشاء و تشغيل و صيانة محلات تجارية للقطعة رقم ب1 بمخطط جواثا 15 28 الانشطة التجارية انشطة التجارة العامة عام",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:46:07.734954+03:00"
+    },
+    {
+      "id": 269,
+      "opportunity_id": 234,
+      "title": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 484بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+      "field": "sector",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "أخرى",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:46:07.650378+03:00"
+    },
+    {
+      "id": 270,
+      "opportunity_id": 234,
+      "title": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 484بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "العيون",
+      "conflicting": "العيون الصناعية أسلم بن الحارث الهاشمي",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:46:07.650378+03:00"
+    },
+    {
+      "id": 268,
+      "opportunity_id": 234,
+      "title": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 484بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+      "field": "normalized_title",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "انشاء وتشغيل وصيانة مستودع بالقطعة رقم 484بالمخطط رقم 14 16 بصناعية العيون",
+      "conflicting": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 484بالمخطط رقم 14 16 بصناعية العيون الانشطة التجارية مستودع مستودع",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:46:07.650378+03:00"
+    },
+    {
+      "id": 267,
+      "opportunity_id": 235,
+      "title": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 485بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "العيون",
+      "conflicting": "العيون الصناعية أسلم بن الحارث الهاشمي",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.985944+03:00"
+    },
+    {
+      "id": 265,
+      "opportunity_id": 235,
+      "title": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 485بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+      "field": "normalized_title",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "انشاء وتشغيل وصيانة مستودع بالقطعة رقم 485بالمخطط رقم 14 16 بصناعية العيون",
+      "conflicting": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 485بالمخطط رقم 14 16 بصناعية العيون الانشطة التجارية مستودع مستودع",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.985944+03:00"
+    },
+    {
+      "id": 266,
+      "opportunity_id": 235,
+      "title": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 485بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+      "field": "sector",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "أخرى",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.985944+03:00"
+    },
+    {
+      "id": 263,
+      "opportunity_id": 260,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "short_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "conflicting": "انشاء و تشغيل و صيانة القطعة رقم 60 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف - أنشطة الصيانة والتصليح والتركيب - تشاليح سيارات - معمل",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.905921+03:00"
+    },
+    {
+      "id": 259,
+      "opportunity_id": 260,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "title_ar",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "conflicting": "انشاء و تشغيل و صيانة القطعة رقم 60 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف - أنشطة الصيانة والتصليح والتركيب - تشاليح سيارات - معمل",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.905921+03:00"
+    },
+    {
+      "id": 260,
+      "opportunity_id": 260,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "normalized_title",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "انشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518 4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "conflicting": "انشاء و تشغيل و صيانة القطعة رقم 60 المخطط رقم 518 4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف انشطة الصيانة والتصليح والتركيب تشاليح سيارات معمل",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.905921+03:00"
+    },
+    {
+      "id": 261,
+      "opportunity_id": 260,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "sector",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "أخرى",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.905921+03:00"
+    },
+    {
+      "id": 262,
+      "opportunity_id": 260,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "الهفوف",
+      "conflicting": "الاحساء أحمد بن ناصر الكناني",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.905921+03:00"
+    },
+    {
+      "id": 264,
+      "opportunity_id": 260,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "full_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "conflicting": "انشاء و تشغيل و صيانة القطعة رقم 60 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف - أنشطة الصيانة والتصليح والتركيب - تشاليح سيارات - معمل",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.905921+03:00"
+    },
+    {
+      "id": 253,
+      "opportunity_id": 262,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "title_ar",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "conflicting": "انشاء و تشغيل و صيانة القطعة رقم 67  1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف - أنشطة الصيانة والتصليح والتركيب - تشاليح سيارات - معمل",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.791082+03:00"
+    },
+    {
+      "id": 258,
+      "opportunity_id": 262,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "full_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "conflicting": "انشاء و تشغيل و صيانة القطعة رقم 67  1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف - أنشطة الصيانة والتصليح والتركيب - تشاليح سيارات - معمل",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.791082+03:00"
+    },
+    {
+      "id": 257,
+      "opportunity_id": 262,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "short_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "conflicting": "انشاء و تشغيل و صيانة القطعة رقم 67  1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف - أنشطة الصيانة والتصليح والتركيب - تشاليح سيارات - معمل",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.791082+03:00"
+    },
+    {
+      "id": 256,
+      "opportunity_id": 262,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "الهفوف",
+      "conflicting": "الاحساء ابن فرحون",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.791082+03:00"
+    },
+    {
+      "id": 255,
+      "opportunity_id": 262,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "sector",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "أخرى",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.791082+03:00"
+    },
+    {
+      "id": 254,
+      "opportunity_id": 262,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "normalized_title",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "انشاء وتشغيل وصيانة القطعة رقم 67 1 المخطط رقم 518 4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "conflicting": "انشاء و تشغيل و صيانة القطعة رقم 67 1 المخطط رقم 518 4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف انشطة الصيانة والتصليح والتركيب تشاليح سيارات معمل",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.791082+03:00"
+    },
+    {
+      "id": 251,
+      "opportunity_id": 242,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  رقم  1  طريق الامير عبدالله بن جلوي بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "sector",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "غير محدد",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.732133+03:00"
+    },
+    {
+      "id": 252,
+      "opportunity_id": 242,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  رقم  1  طريق الامير عبدالله بن جلوي بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "المبرز",
+      "conflicting": "الاحساء عين مرجان محمد بن إبراهيم آل الشيخ",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.732133+03:00"
+    },
+    {
+      "id": 250,
+      "opportunity_id": 242,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  رقم  1  طريق الامير عبدالله بن جلوي بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "normalized_title",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "انشاء وتشغيل كشك درايف ثرو drive thro رقم 1 طريق الامير عبدالله بن جلوي بمدينة المبرز",
+      "conflicting": "انشاء و تشغيل و صيانة كشك درايف ثرو drive thro رقم 1 طريق الامير عبدالله بن جلوي بمدينة المبرز الانشطة التجارية انشطة التجارة العامة عام",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.732133+03:00"
+    },
+    {
+      "id": 248,
+      "opportunity_id": 246,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  رقم  2  طريق الامير عبدالله بن جلوي بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "sector",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "غير محدد",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.668685+03:00"
+    },
+    {
+      "id": 249,
+      "opportunity_id": 246,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  رقم  2  طريق الامير عبدالله بن جلوي بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "المبرز",
+      "conflicting": "الاحساء عين مرجان محمد بن إبراهيم آل الشيخ",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.668685+03:00"
+    },
+    {
+      "id": 247,
+      "opportunity_id": 246,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  رقم  2  طريق الامير عبدالله بن جلوي بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "normalized_title",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "انشاء وتشغيل كشك درايف ثرو drive thro رقم 2 طريق الامير عبدالله بن جلوي بمدينة المبرز",
+      "conflicting": "انشاء و تشغيل و صيانة كشك درايف ثرو drive thro رقم 2 طريق الامير عبدالله بن جلوي بمدينة المبرز الانشطة التجارية انشطة التجارة العامة عام",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.668685+03:00"
+    },
+    {
+      "id": 245,
+      "opportunity_id": 258,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO   طريق الملك عبدالله امتداد مجمع العامر مول بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "sector",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "غير محدد",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.603104+03:00"
+    },
+    {
+      "id": 246,
+      "opportunity_id": 258,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO   طريق الملك عبدالله امتداد مجمع العامر مول بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "المبرز",
+      "conflicting": "الاحساء الشراع الجنوبي طريق الملك عبدالله الدائري - الضلع الشرقي",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.603104+03:00"
+    },
+    {
+      "id": 244,
+      "opportunity_id": 258,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO   طريق الملك عبدالله امتداد مجمع العامر مول بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "normalized_title",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "انشاء وتشغيل كشك درايف ثرو drive thro طريق الملك عبدالله امتداد مجمع العامر مول بمدينة المبرز",
+      "conflicting": "انشاء و تشغيل و صيانة كشك درايف ثرو drive thro طريق الملك عبدالله امتداد مجمع العامر مول بمدينة المبرز الانشطة التجارية انشطة التجارة العامة عام",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.603104+03:00"
+    },
+    {
+      "id": 242,
+      "opportunity_id": 251,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  طريق الخليج بمدينة الهفوف - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "sector",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "غير محدد",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.542066+03:00"
+    },
+    {
+      "id": 243,
+      "opportunity_id": 251,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  طريق الخليج بمدينة الهفوف - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "الهفوف",
+      "conflicting": "الاحساء الروضة طريق الخليج العربي",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.542066+03:00"
+    },
+    {
+      "id": 241,
+      "opportunity_id": 251,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  طريق الخليج بمدينة الهفوف - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "normalized_title",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "انشاء وتشغيل كشك درايف ثرو drive thro طريق الخليج بمدينة الهفوف",
+      "conflicting": "انشاء و تشغيل و صيانة كشك درايف ثرو drive thro طريق الخليج بمدينة الهفوف الانشطة التجارية انشطة التجارة العامة عام",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.542066+03:00"
+    },
+    {
+      "id": 239,
+      "opportunity_id": 248,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  طريق الملك فهد بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "sector",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "غير محدد",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.489847+03:00"
+    },
+    {
+      "id": 240,
+      "opportunity_id": 248,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  طريق الملك فهد بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "المبرز",
+      "conflicting": "الاحساء المسعودي طريق الملك فهد بن عبد العزيز",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.489847+03:00"
+    },
+    {
+      "id": 238,
+      "opportunity_id": 248,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  طريق الملك فهد بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "normalized_title",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "انشاء وتشغيل كشك درايف ثرو drive thro طريق الملك فهد بمدينة المبرز",
+      "conflicting": "انشاء و تشغيل و صيانة كشك درايف ثرو drive thro طريق الملك فهد بمدينة المبرز الانشطة التجارية انشطة التجارة العامة عام",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.489847+03:00"
+    },
+    {
+      "id": 236,
+      "opportunity_id": 231,
+      "title": "انشاء و تشغيل و صيانة انشاء وتشغيل وصيانة محلات تجارية بالقطعة رقم  ت 20 في مخطط رقم  4   1082 الطابوق والخرسانة - الأنشطة التجارية - محلات تجارية - مجمع تجاري",
+      "field": "sector",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "أخرى",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.426838+03:00"
+    },
+    {
+      "id": 237,
+      "opportunity_id": 231,
+      "title": "انشاء و تشغيل و صيانة انشاء وتشغيل وصيانة محلات تجارية بالقطعة رقم  ت 20 في مخطط رقم  4   1082 الطابوق والخرسانة - الأنشطة التجارية - محلات تجارية - مجمع تجاري",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "الاحساء",
+      "conflicting": "العيون الباهية",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.426838+03:00"
+    },
+    {
+      "id": 235,
+      "opportunity_id": 231,
+      "title": "انشاء و تشغيل و صيانة انشاء وتشغيل وصيانة محلات تجارية بالقطعة رقم  ت 20 في مخطط رقم  4   1082 الطابوق والخرسانة - الأنشطة التجارية - محلات تجارية - مجمع تجاري",
+      "field": "normalized_title",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "انشاء و تشغيل و صيانة انشاء وتشغيل وصيانة محلات تجارية بالقطعة رقم ت 20 في مخطط رقم 4 1082 الطابوق والخرسانة",
+      "conflicting": "انشاء و تشغيل و صيانة انشاء وتشغيل وصيانة محلات تجارية بالقطعة رقم ت 20 في مخطط رقم 4 1082 الطابوق والخرسانة الانشطة التجارية محلات تجارية مجمع تجاري",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-20T12:31:28.426838+03:00"
+    },
+    {
+      "id": 232,
+      "opportunity_id": 163,
+      "title": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19/149 مثلث القرى الشرقية",
+      "field": "normalized_title",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الانشطة للقطعة رقم 5 بالمخطط رقم 19 149 مثلث القري الشرقية",
+      "conflicting": "انشاء و تشغيل و صيانة مجمع تجاري متعدد الانشطة للقطعة رقم 5 بالمخطط رقم 19 149 مثلث القري الشرقية الانشطة التجارية انشطة التجارة العامة عام",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T12:31:28.330277+03:00"
+    },
+    {
+      "id": 234,
+      "opportunity_id": 163,
+      "title": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19/149 مثلث القرى الشرقية",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "الاحساء",
+      "conflicting": "الاحساء مثلث الشرقية الامير مشاري بن عبد العزيز",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T12:31:28.330277+03:00"
+    },
+    {
+      "id": 233,
+      "opportunity_id": 163,
+      "title": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19/149 مثلث القرى الشرقية",
+      "field": "sector",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "غير محدد",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T12:31:28.330277+03:00"
+    },
+    {
+      "id": 120,
+      "opportunity_id": 228,
+      "title": "MOMAH and NCP Launch EOI to Municipal Food Safety Labs Across Five Municipalities in Saudi Arabia",
+      "field": "opportunity_owner",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "the Ministry of Municipalities",
+      "conflicting": "وزارة البلديات والإسكان",
+      "source": "المركز الوطني للتخصيص",
+      "date": "2026-10-14T21:44:47.936341+03:00"
+    },
+    {
+      "id": 119,
+      "opportunity_id": 230,
+      "title": "تأجير مواقع مكائن بيع ذاتي لعدد (80) موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي تأجير مواقع مكائن بيع ذاتي لعدد 80 موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي - الأنشطة التجارية - أنشطة تجارة المواد الغذائية - جهاز بيع ذاتي",
+      "field": "title_ar",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "تأجير مواقع مكائن بيع ذاتي لعدد (80) موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي تأجير مواقع مكائن بيع ذاتي لعدد 80 موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي - الأنشطة التجارية - أنشطة تجارة المواد الغذائية - جهاز بيع ذاتي",
+      "conflicting": "تأجير مواقع مكائن بيع ذاتي لعدد (32) موقعا بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي",
+      "source": "استثمر في السعودية",
+      "date": "2026-10-14T15:03:33.663626+03:00"
+    },
+    {
+      "id": 107,
+      "opportunity_id": 249,
+      "title": "انشاء و تشغيل و صيانة مركز تجاري متعدد الأنشطة على القطعة رقم 12 بالمخطط رقم 4  1111 بحي الريان بمدينة الهفوف - الأنشطة التجارية - مركز تجاري - مجمع تجاري",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "الهفوف",
+      "conflicting": "الاحساء الريان الجيبه",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-13T13:20:32.408062+03:00"
+    },
+    {
+      "id": 98,
+      "opportunity_id": 230,
+      "title": "تأجير مواقع مكائن بيع ذاتي لعدد (80) موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي تأجير مواقع مكائن بيع ذاتي لعدد 80 موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي - الأنشطة التجارية - أنشطة تجارة المواد الغذائية - جهاز بيع ذاتي",
+      "field": "title_ar",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "تأجير مواقع مكائن بيع ذاتي لعدد (80) موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي تأجير مواقع مكائن بيع ذاتي لعدد 80 موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي - الأنشطة التجارية - أنشطة تجارة المواد الغذائية - جهاز بيع ذاتي",
+      "conflicting": "تأجير مواقع مكائن بيع ذاتي لعدد (32) موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي",
+      "source": "استثمر في السعودية",
+      "date": "2026-10-12T15:10:18.518954+03:00"
+    },
+    {
+      "id": 104,
+      "opportunity_id": 230,
+      "title": "تأجير مواقع مكائن بيع ذاتي لعدد (80) موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي تأجير مواقع مكائن بيع ذاتي لعدد 80 موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي - الأنشطة التجارية - أنشطة تجارة المواد الغذائية - جهاز بيع ذاتي",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "الاحساء السلمانية الثاني زياد الحارثي",
+      "conflicting": "Municipality",
+      "source": "استثمر في السعودية",
+      "date": "2026-10-12T15:10:18.518954+03:00"
+    },
+    {
+      "id": 100,
+      "opportunity_id": 230,
+      "title": "تأجير مواقع مكائن بيع ذاتي لعدد (80) موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي تأجير مواقع مكائن بيع ذاتي لعدد 80 موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي - الأنشطة التجارية - أنشطة تجارة المواد الغذائية - جهاز بيع ذاتي",
+      "field": "land_area_sqm",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "160.0",
+      "conflicting": "64.0",
+      "source": "استثمر في السعودية",
+      "date": "2026-10-12T15:10:18.518954+03:00"
+    },
+    {
+      "id": 99,
+      "opportunity_id": 230,
+      "title": "تأجير مواقع مكائن بيع ذاتي لعدد (80) موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي تأجير مواقع مكائن بيع ذاتي لعدد 80 موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي - الأنشطة التجارية - أنشطة تجارة المواد الغذائية - جهاز بيع ذاتي",
+      "field": "opportunity_owner",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "أمانة الأحساء",
+      "conflicting": "Municipality",
+      "source": "استثمر في السعودية",
+      "date": "2026-10-12T15:10:18.518954+03:00"
+    },
+    {
+      "id": 73,
+      "opportunity_id": 226,
+      "title": "انشاء و تشغيل و صيانة حديقة بحي الامراء بالمخطط رقم 416 4 بمدينة الهفوف - أنشطة المرافق العامة - منتزه - حديقة",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "الهفوف",
+      "conflicting": "الاحساء الأمراء",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-12T11:02:08.750891+03:00"
+    },
+    {
+      "id": 55,
+      "opportunity_id": 102,
+      "title": "مزايدة تأجير موقع صراف الي بمستشفى الملك فهد بالهفوف مزايدة تأجير موقع صراف الي بمستشفى الملك فهد بالهفوف - الأنشطة المالية - خدمات الصرافة - صراف آلي",
+      "field": "location_description",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "الاحساء الحفيرة",
+      "conflicting": "Municipality",
+      "source": "استثمر في السعودية",
+      "date": "2026-10-11T16:45:46.726046+03:00"
+    },
+    {
+      "id": 51,
+      "opportunity_id": 102,
+      "title": "مزايدة تأجير موقع صراف الي بمستشفى الملك فهد بالهفوف مزايدة تأجير موقع صراف الي بمستشفى الملك فهد بالهفوف - الأنشطة المالية - خدمات الصرافة - صراف آلي",
+      "field": "opportunity_owner",
+      "conflict_type": "FIELD_VALUE_CONFLICT",
+      "selected": "أمانة الاحساء",
+      "conflicting": "Municipality",
+      "source": "استثمر في السعودية",
+      "date": "2026-10-11T16:45:46.726046+03:00"
+    }
+  ],
+  "taxonomy": [
+    {
+      "id": 319,
+      "opportunity_id": 262,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "خدمي",
+      "conflicting": "أنشطة الصيانة والتصليح والتركيب",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T14:06:43.092882+03:00"
+    },
+    {
+      "id": 318,
+      "opportunity_id": 260,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "خدمي",
+      "conflicting": "أنشطة الصيانة والتصليح والتركيب",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T14:06:43.060367+03:00"
+    },
+    {
+      "id": 317,
+      "opportunity_id": 258,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO   طريق الملك عبدالله امتداد مجمع العامر مول بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "الأنشطة التجارية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T14:06:43.030963+03:00"
+    },
+    {
+      "id": 316,
+      "opportunity_id": 253,
+      "title": "انشاء و تشغيل و صيانة مبنى تجاري سكني بالقطعة رقم 12 بالمخطط رقم 4 253 بحي منسوب التعليم الثاني بمدينة الهفوف - الأنشطة التجارية - تجاري سكني - مبنى سكني تجاري",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "الأنشطة التجارية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T14:06:42.314397+03:00"
+    },
+    {
+      "id": 315,
+      "opportunity_id": 251,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  طريق الخليج بمدينة الهفوف - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "الأنشطة التجارية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T14:06:41.579316+03:00"
+    },
+    {
+      "id": 314,
+      "opportunity_id": 248,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  طريق الملك فهد بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "الأنشطة التجارية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T14:06:41.481594+03:00"
+    },
+    {
+      "id": 313,
+      "opportunity_id": 246,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  رقم  2  طريق الامير عبدالله بن جلوي بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "الأنشطة التجارية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T14:06:41.449289+03:00"
+    },
+    {
+      "id": 312,
+      "opportunity_id": 242,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  رقم  1  طريق الامير عبدالله بن جلوي بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "الأنشطة التجارية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T14:06:41.413236+03:00"
+    },
+    {
+      "id": 311,
+      "opportunity_id": 240,
+      "title": "انشاء و تشغيل و صيانة مصنع صناعات خفيفة او ورشة للقطعة رقم 54 بالمخطط رقم 14   16 بصناعية العيون - الأنشطة الصناعية - صناعات خفيفة - مصنع",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "صناعي",
+      "conflicting": "الأنشطة الصناعية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T14:06:40.768606+03:00"
+    },
+    {
+      "id": 310,
+      "opportunity_id": 239,
+      "title": "انشاء و تشغيل و صيانة مصنع صناعات خفيفة او ورشة للقطعة رقم 214 بالمخطط رقم 14  16 بصناعية العيون - الأنشطة الصناعية - صناعات خفيفة - مصنع",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "صناعي",
+      "conflicting": "الأنشطة الصناعية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T14:06:40.738501+03:00"
+    },
+    {
+      "id": 309,
+      "opportunity_id": 237,
+      "title": "انشاء و تشغيل و صيانة محلات تجارية  للقطعة رقم ب1 بمخطط جواثا 15  28 - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "الأنشطة التجارية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T14:06:40.617846+03:00"
+    },
+    {
+      "id": 308,
+      "opportunity_id": 235,
+      "title": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 485بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "خدمي",
+      "conflicting": "الأنشطة التجارية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T14:06:40.536348+03:00"
+    },
+    {
+      "id": 307,
+      "opportunity_id": 234,
+      "title": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 484بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "خدمي",
+      "conflicting": "الأنشطة التجارية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T14:06:40.519438+03:00"
+    },
+    {
+      "id": 306,
+      "opportunity_id": 231,
+      "title": "انشاء و تشغيل و صيانة انشاء وتشغيل وصيانة محلات تجارية بالقطعة رقم  ت 20 في مخطط رقم  4   1082 الطابوق والخرسانة - الأنشطة التجارية - محلات تجارية - مجمع تجاري",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "الأنشطة التجارية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T14:06:39.959876+03:00"
+    },
+    {
+      "id": 298,
+      "opportunity_id": 241,
+      "title": "إنشاء وتشغيل وصيانة مبنى سكني تجاري إداري على القطعة رقم (2030) بالمخطط رقم (187)بالسيفة بمدينة الهفوف",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "الأنشطة التجارية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T13:05:39.78807+03:00"
+    },
+    {
+      "id": 287,
+      "opportunity_id": 163,
+      "title": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19/149 مثلث القرى الشرقية",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "الأنشطة التجارية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-20T13:05:37.045761+03:00"
+    },
+    {
+      "id": 195,
+      "opportunity_id": 224,
+      "title": "مزايدة تقديم الخدمات الغذائية والعامة ( مطاعم ومتاجر عامة) إضافة \"مزايدة تقديم الخدمات الغذائية والعامة ( مطاعم ومتاجر عامة ) بمباني كليات الجامعة\".",
+      "field": "investment_model",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "COMMERCIAL_FACILITY_OPPORTUNITY",
+      "source": "جامعة الملك فيصل",
+      "date": "2026-10-19T21:46:53.249887+03:00"
+    },
+    {
+      "id": 194,
+      "opportunity_id": 212,
+      "title": "تطوير فنادق 5 نجوم في المنطقة الشرقية",
+      "field": "investment_model",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "['تأجير', 'مشاركة إيرادات', 'ملكية كاملة']",
+      "source": "هيئة تطوير الأحساء",
+      "date": "2026-10-19T15:47:12.029792+03:00"
+    },
+    {
+      "id": 193,
+      "opportunity_id": 212,
+      "title": "تطوير فنادق 5 نجوم في المنطقة الشرقية",
+      "field": "investment_model",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "المصدر يصرح بخيارات نموذج متعددة: تأجير، مشاركة إيرادات، أو ملكية كاملة",
+      "source": "هيئة تطوير الأحساء",
+      "date": "2026-10-19T10:25:30.41058+03:00"
+    },
+    {
+      "id": 192,
+      "opportunity_id": 224,
+      "title": "مزايدة تقديم الخدمات الغذائية والعامة ( مطاعم ومتاجر عامة) إضافة \"مزايدة تقديم الخدمات الغذائية والعامة ( مطاعم ومتاجر عامة ) بمباني كليات الجامعة\".",
+      "field": "investment_model",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "مرفق تجاري؛ آلية التعاقد غير محددة",
+      "source": "جامعة الملك فيصل",
+      "date": "2026-10-19T10:12:46.019637+03:00"
+    },
+    {
+      "id": 191,
+      "opportunity_id": 230,
+      "title": "تأجير مواقع مكائن بيع ذاتي لعدد (80) موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي تأجير مواقع مكائن بيع ذاتي لعدد 80 موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي - الأنشطة التجارية - أنشطة تجارة المواد الغذائية - جهاز بيع ذاتي",
+      "field": "sub_activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "أنشطة تجارة المواد الغذائية",
+      "conflicting": "أنشطة تجارة المواد الزراعية (غير الغذائية)",
+      "source": "استثمر في السعودية",
+      "date": "2026-10-18T15:56:58.303341+03:00"
+    },
+    {
+      "id": 190,
+      "opportunity_id": 164,
+      "title": "انشاء وتشغيل وصيانة مستودع غاز  بالمخطط رقم (14/53) بمدينة الجرن بنشاط بيع وتوزيع أسطوانات الغاز",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "الأنشطة التجارية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T13:58:27.65571+03:00"
+    },
+    {
+      "id": 189,
+      "opportunity_id": 192,
+      "title": "إنشاء وتشغيل وصيانة مواقف للمعدات والنقليات وورشة ومستودع ومكاتب إدارية وسكن للموظفين للقطع رقم 405/ت الى 409/ت بالمخطط رقم 14/154 الصناعية الشمالية بالعيون",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "صناعي",
+      "conflicting": "الأنشطة التجارية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T13:58:27.587157+03:00"
+    },
+    {
+      "id": 186,
+      "opportunity_id": 226,
+      "title": "انشاء و تشغيل و صيانة حديقة بحي الامراء بالمخطط رقم 416 4 بمدينة الهفوف - أنشطة المرافق العامة - منتزه - حديقة",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "أنشطة المرافق العامة",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T13:58:26.725343+03:00"
+    },
+    {
+      "id": 185,
+      "opportunity_id": 249,
+      "title": "انشاء و تشغيل و صيانة مركز تجاري متعدد الأنشطة على القطعة رقم 12 بالمخطط رقم 4  1111 بحي الريان بمدينة الهفوف - الأنشطة التجارية - مركز تجاري - مجمع تجاري",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "الأنشطة التجارية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T13:58:26.698444+03:00"
+    },
+    {
+      "id": 184,
+      "opportunity_id": 107,
+      "title": "انشاء و تشغيل و صيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل - الأنشطة الرياضية و الترفيهية - كشك لنشاط رياضي ذكي - نادي",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "الأنشطة الرياضية و الترفيهية",
+      "conflicting": "الأنشطة الرياضية والترفيهية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T13:58:26.62733+03:00"
+    },
+    {
+      "id": 183,
+      "opportunity_id": 193,
+      "title": "انشاء وتشغيل وصيانة القطعة رقم 471  لنشاط صناعات خفيفة أو ورشة بالمخطط رقم 14  16  بصناعية العيون",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "صناعي",
+      "conflicting": "الأنشطة الصناعية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T13:58:26.059388+03:00"
+    },
+    {
+      "id": 182,
+      "opportunity_id": 195,
+      "title": "انشاء و تشغيل وصيانة القطعة رقم 461 1و 461 2 لنشاط صناعات خفيفة أو ورشة بالمخطط رقم 14-16 بصناعية العيون",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "صناعي",
+      "conflicting": "الأنشطة الصناعية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T13:58:26.029568+03:00"
+    },
+    {
+      "id": 178,
+      "opportunity_id": 235,
+      "title": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 485بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "خدمي",
+      "conflicting": "{\"proposed_activity\": \"خدمي\", \"proposed_sub_activity\": \"\", \"reason\": \"The source explicitly labels this broad activity family as خدمي; preserve it but review whether the platform taxonomy should retain it as a top-level Activity or classify it more narrowly.\"}",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-18T13:21:51.671614+03:00"
+    },
+    {
+      "id": 177,
+      "opportunity_id": 260,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "خدمي",
+      "conflicting": "{\"proposed_activity\": \"خدمي\", \"proposed_sub_activity\": \"\", \"reason\": \"The source explicitly labels this broad activity family as خدمي; preserve it but review whether the platform taxonomy should retain it as a top-level Activity or classify it more narrowly.\"}",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-18T13:21:51.670006+03:00"
+    },
+    {
+      "id": 176,
+      "opportunity_id": 262,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "خدمي",
+      "conflicting": "{\"proposed_activity\": \"خدمي\", \"proposed_sub_activity\": \"\", \"reason\": \"The source explicitly labels this broad activity family as خدمي; preserve it but review whether the platform taxonomy should retain it as a top-level Activity or classify it more narrowly.\"}",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-18T13:21:51.668426+03:00"
+    },
+    {
+      "id": 175,
+      "opportunity_id": 238,
+      "title": "إنشاء وتشغيل وصيانة مستودع بالقطعة رقم 483بالمخطط رقم 14/16 بصناعية العيون",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "خدمي",
+      "conflicting": "{\"proposed_activity\": \"خدمي\", \"proposed_sub_activity\": \"\", \"reason\": \"The source explicitly labels this broad activity family as خدمي; preserve it but review whether the platform taxonomy should retain it as a top-level Activity or classify it more narrowly.\"}",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-18T13:21:51.666914+03:00"
+    },
+    {
+      "id": 174,
+      "opportunity_id": 234,
+      "title": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 484بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "خدمي",
+      "conflicting": "{\"proposed_activity\": \"خدمي\", \"proposed_sub_activity\": \"\", \"reason\": \"The source explicitly labels this broad activity family as خدمي; preserve it but review whether the platform taxonomy should retain it as a top-level Activity or classify it more narrowly.\"}",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-18T13:21:51.665159+03:00"
+    },
+    {
+      "id": 173,
+      "opportunity_id": 249,
+      "title": "انشاء و تشغيل و صيانة مركز تجاري متعدد الأنشطة على القطعة رقم 12 بالمخطط رقم 4  1111 بحي الريان بمدينة الهفوف - الأنشطة التجارية - مركز تجاري - مجمع تجاري",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "{\"proposed_activity\": \"تجاري\", \"proposed_sub_activity\": \"أخرى\", \"reason\": \"Cross-source Activity evidence conflicts; no parent value selected. Furas names SUBACTIVITYTYPE explicitly; store it in the separate Sub-Activity field.\"}",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T13:21:51.662975+03:00"
+    },
+    {
+      "id": 172,
+      "opportunity_id": 230,
+      "title": "تأجير مواقع مكائن بيع ذاتي لعدد (80) موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي تأجير مواقع مكائن بيع ذاتي لعدد 80 موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي - الأنشطة التجارية - أنشطة تجارة المواد الغذائية - جهاز بيع ذاتي",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "أنشطة تجارة المواد الغذائية",
+      "conflicting": "{\"proposed_activity\": \"الأنشطة التجارية\", \"proposed_sub_activity\": \"\", \"reason\": \"Top-level Activity is corroborated by Furas and another source. The linked sources disagree on Sub-Activity; leave that field unchanged for review. Furas names SUBACTIVITYTYPE explicitly; store it in the separate Sub-Activity field.\"}",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T13:21:51.660997+03:00"
+    },
+    {
+      "id": 171,
+      "opportunity_id": 226,
+      "title": "انشاء و تشغيل و صيانة حديقة بحي الامراء بالمخطط رقم 416 4 بمدينة الهفوف - أنشطة المرافق العامة - منتزه - حديقة",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "{\"proposed_activity\": \"تجاري\", \"proposed_sub_activity\": \"منتزه\", \"reason\": \"Cross-source Activity evidence conflicts; no parent value selected. Furas names SUBACTIVITYTYPE explicitly; store it in the separate Sub-Activity field.\"}",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T13:21:51.658851+03:00"
+    },
+    {
+      "id": 170,
+      "opportunity_id": 195,
+      "title": "انشاء و تشغيل وصيانة القطعة رقم 461 1و 461 2 لنشاط صناعات خفيفة أو ورشة بالمخطط رقم 14-16 بصناعية العيون",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "صناعي",
+      "conflicting": "{\"proposed_activity\": \"صناعي\", \"proposed_sub_activity\": \"أخرى\", \"reason\": \"Cross-source Activity evidence conflicts; no parent value selected. Furas names SUBACTIVITYTYPE explicitly; store it in the separate Sub-Activity field.\"}",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T13:21:51.656827+03:00"
+    },
+    {
+      "id": 169,
+      "opportunity_id": 193,
+      "title": "انشاء وتشغيل وصيانة القطعة رقم 471  لنشاط صناعات خفيفة أو ورشة بالمخطط رقم 14  16  بصناعية العيون",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "صناعي",
+      "conflicting": "{\"proposed_activity\": \"صناعي\", \"proposed_sub_activity\": \"أخرى\", \"reason\": \"Cross-source Activity evidence conflicts; no parent value selected. Furas names SUBACTIVITYTYPE explicitly; store it in the separate Sub-Activity field.\"}",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T13:21:51.654808+03:00"
+    },
+    {
+      "id": 168,
+      "opportunity_id": 192,
+      "title": "إنشاء وتشغيل وصيانة مواقف للمعدات والنقليات وورشة ومستودع ومكاتب إدارية وسكن للموظفين للقطع رقم 405/ت الى 409/ت بالمخطط رقم 14/154 الصناعية الشمالية بالعيون",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "صناعي",
+      "conflicting": "{\"proposed_activity\": \"صناعي\", \"proposed_sub_activity\": \"أنشطة و تجارة المعدات الثقيلة\", \"reason\": \"Cross-source Activity evidence conflicts; no parent value selected. Furas names SUBACTIVITYTYPE explicitly; store it in the separate Sub-Activity field.\"}",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T13:21:51.652564+03:00"
+    },
+    {
+      "id": 167,
+      "opportunity_id": 164,
+      "title": "انشاء وتشغيل وصيانة مستودع غاز  بالمخطط رقم (14/53) بمدينة الجرن بنشاط بيع وتوزيع أسطوانات الغاز",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "{\"proposed_activity\": \"تجاري\", \"proposed_sub_activity\": \"أخرى\", \"reason\": \"Cross-source Activity evidence conflicts; no parent value selected. Furas names SUBACTIVITYTYPE explicitly; store it in the separate Sub-Activity field.\"}",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T13:21:51.645163+03:00"
+    },
+    {
+      "id": 164,
+      "opportunity_id": 275,
+      "title": "انشاء وتشغيل وصيانة مستودع وسكن للموظفين بالقطعة رقم 1/8 بالمخطط رقم 4/1082 بالطابوق والخرسانة",
+      "field": "activity",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "صناعي",
+      "conflicting": "تجاري",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-18T12:57:33.925126+03:00"
+    },
+    {
+      "id": 146,
+      "opportunity_id": 163,
+      "title": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19/149 مثلث القرى الشرقية",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "أنشطة التجارة العامة",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 157,
+      "opportunity_id": 260,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "خدمي",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 121,
+      "opportunity_id": 18,
+      "title": "تاجير مؤقت لموقع من نوع الساحات الميادين بحي  جبل الشعبة جبل الشعبة لنشاط دبابات هوائية (4 كفرات )",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "الساحات الميادين",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 122,
+      "opportunity_id": 19,
+      "title": "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  جبل الشعبة بيع الالعاب الهدايا والتحف رقم 26",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "العربات المتنقلة",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 123,
+      "opportunity_id": 20,
+      "title": "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  جبل الشعبة عربة اطعمة رقم 27",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "العربات المتنقلة",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 124,
+      "opportunity_id": 30,
+      "title": "تأجير وتشغيل نشاط تموينات بمساحة (270م2) بحي أحد بمدينة الملك عبدالله بالأحساء \"إعادة طرح\"",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "أنشطة تجارة المواد الغذائية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 125,
+      "opportunity_id": 78,
+      "title": "منشأة تحويلية للمنتجات الثانوية للنخيل بمحافظة الأحساء بالمنطقة الشرقية",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "أنشطة وخدمات انتاج المواد غير الغذائية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 126,
+      "opportunity_id": 90,
+      "title": "تأجير وتشغيل نشاط تموينات بمساحة (270م2) بحي القادسية بمدينة الملك عبدالله السكنية بالأحساء (إعادة طرح)",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "محلات تجارية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 127,
+      "opportunity_id": 91,
+      "title": "تأجير وتشغيل نشاط تموينات بمساحة (270م2) بحي حطين بمدينة الملك عبدالله بالأحساء \"إعادة طرح\"",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "أنشطة تجارة المواد الغذائية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 128,
+      "opportunity_id": 96,
+      "title": "مزايدة تأجير موقع مقهى مستشفى الصحة النفسية بالأحساء مزايدة تأجير موقع مقهى مستشفى الصحة النفسية بالأحساء - الأنشطة التجارية - منشآت تقديم الغذاء - مقهى",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "منشآت تقديم الغذاء",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 129,
+      "opportunity_id": 97,
+      "title": "مزايدة تأجير موقع مقهى مستشفى العمران العام بالأحساء مزايدة تأجير موقع مقهى مستشفى العمران العام بالأحساء - الأنشطة التجارية - منشآت تقديم الغذاء - مقهى",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "منشآت تقديم الغذاء",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 130,
+      "opportunity_id": 98,
+      "title": "ميني ماركت العيادات الخارجية لمستشفى الأمير سعود بن جلوي بالأحساء ميني ماركت العيادات الخارجية لمستشفى الأمير سعود بن جلوي بالأحساء - الأنشطة التجارية - أنشطة تجارة المواد الغذائية - محل",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "أنشطة تجارة المواد الغذائية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 131,
+      "opportunity_id": 102,
+      "title": "مزايدة تأجير موقع صراف الي بمستشفى الملك فهد بالهفوف مزايدة تأجير موقع صراف الي بمستشفى الملك فهد بالهفوف - الأنشطة المالية - خدمات الصرافة - صراف آلي",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "خدمات الصرافة",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 132,
+      "opportunity_id": 103,
+      "title": "مزايدة تأجير موقع صراف الي بمستشفى الولادة والأطفال بالأحساء مزايدة تأجير موقع صراف الي بمستشفى الولادة والأطفال بالأحساء - الأنشطة المالية - خدمات الصرافة - صراف آلي",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "خدمات الصرافة",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 133,
+      "opportunity_id": 104,
+      "title": "مزايدة تأجير موقع صراف الي بمستشفى الملك فيصل بالأحساء مزايدة تأجير موقع صراف الي بمستشفى الملك فيصل بالأحساء - الأنشطة المالية - خدمات الصرافة - صراف آلي",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "خدمات الصرافة",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 134,
+      "opportunity_id": 105,
+      "title": "مزايدة تأجير موقع صراف الي بمستشفى العمران العام بالأحساء مزايدة تأجير موقع صراف الي بمستشفى العمران العام بالأحساء - الأنشطة المالية - خدمات الصرافة - صراف آلي",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "خدمات الصرافة",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 135,
+      "opportunity_id": 106,
+      "title": "فرصة استثمارية مبنى تعليمي بمدينة الهفوف حي العليا - الأنشطة التعليمية - خدمات تعليمية أخرى - جامعة",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "خدمات تعليمية أخرى",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 136,
+      "opportunity_id": 138,
+      "title": "تأجير وتشغيل نشاط تموينات بمساحة (270م2) بحي اليرموك بمدينة الملك عبدالله بالأحساء \"إعادة طرح\"",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "محلات تجارية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 137,
+      "opportunity_id": 139,
+      "title": "تأجير وتشغيل نشاط تموينات بمساحة (270م2) بحي بدر بمدينة الملك عبدالله السكنية بالأحساء (إعادة طرح)",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "محلات تجارية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 138,
+      "opportunity_id": 141,
+      "title": "مزايدة تأجير موقع صراف الي بمستشفى الأمير سعود بن جلوي بالأحساء مزايدة تأجير موقع صراف الي بمستشفى الأمير سعود بن جلوي بالأحساء - الأنشطة المالية - خدمات الصرافة - صراف آلي",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "خدمات الصرافة",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 139,
+      "opportunity_id": 142,
+      "title": "مزايدة تأجير موقع صراف الي بمستشفى الصحة النفسية بالأحساء مزايدة تأجير موقع صراف الي بمستشفى الصحة النفسية بالأحساء - الأنشطة المالية - خدمات الصرافة - صراف آلي",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "خدمات الصرافة",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 140,
+      "opportunity_id": 207,
+      "title": "تاجير مؤقت لموقع من نوع المباني بحي  مجمع الدوائر الحكومية في بهو الامانة",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "المباني",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 141,
+      "opportunity_id": 211,
+      "title": "الخدمات الرقمية للإرشاد والتوجيه المهني",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "فرصة استثمارية",
+      "source": "هيئة تطوير الأحساء",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 142,
+      "opportunity_id": 224,
+      "title": "مزايدة تقديم الخدمات الغذائية والعامة ( مطاعم ومتاجر عامة) إضافة \"مزايدة تقديم الخدمات الغذائية والعامة ( مطاعم ومتاجر عامة ) بمباني كليات الجامعة\".",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "COMMERCIAL_FACILITY_OPPORTUNITY",
+      "source": "جامعة الملك فيصل",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 143,
+      "opportunity_id": 225,
+      "title": "فرصة استثمارية \" لتأجير مواقع مؤقته لتقديم الخدمات الغذائية بكليات جامعة الملك فيصل فرصة استثمارية \" لتأجير مواقع مؤقته لتقديم الخدمات الغذائية بكليات جامعة الملك فيصل للتقديم على الفرصة",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "LEASE_OPPORTUNITY",
+      "source": "جامعة الملك فيصل",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 144,
+      "opportunity_id": 228,
+      "title": "MOMAH and NCP Launch EOI to Municipal Food Safety Labs Across Five Municipalities in Saudi Arabia",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "PPP_PROJECT",
+      "source": "المركز الوطني للتخصيص",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 145,
+      "opportunity_id": 230,
+      "title": "تأجير مواقع مكائن بيع ذاتي لعدد (80) موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي تأجير مواقع مكائن بيع ذاتي لعدد 80 موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي - الأنشطة التجارية - أنشطة تجارة المواد الغذائية - جهاز بيع ذاتي",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "أنشطة تجارة المواد الغذائية",
+      "source": "استثمر في السعودية",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 148,
+      "opportunity_id": 237,
+      "title": "انشاء و تشغيل و صيانة محلات تجارية  للقطعة رقم ب1 بمخطط جواثا 15  28 - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "أنشطة التجارة العامة",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 149,
+      "opportunity_id": 238,
+      "title": "إنشاء وتشغيل وصيانة مستودع بالقطعة رقم 483بالمخطط رقم 14/16 بصناعية العيون",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "خدمي",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 150,
+      "opportunity_id": 242,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  رقم  1  طريق الامير عبدالله بن جلوي بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "أنشطة التجارة العامة",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 152,
+      "opportunity_id": 246,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  رقم  2  طريق الامير عبدالله بن جلوي بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "أنشطة التجارة العامة",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 153,
+      "opportunity_id": 248,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  طريق الملك فهد بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "أنشطة التجارة العامة",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 154,
+      "opportunity_id": 251,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  طريق الخليج بمدينة الهفوف - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "أنشطة التجارة العامة",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 155,
+      "opportunity_id": 258,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO   طريق الملك عبدالله امتداد مجمع العامر مول بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "أنشطة التجارة العامة",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 156,
+      "opportunity_id": 262,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "خدمي",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 147,
+      "opportunity_id": 234,
+      "title": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 484بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "خدمي",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 151,
+      "opportunity_id": 241,
+      "title": "إنشاء وتشغيل وصيانة مبنى سكني تجاري إداري على القطعة رقم (2030) بالمخطط رقم (187)بالسيفة بمدينة الهفوف",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "أنشطة التجارة العامة",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 159,
+      "opportunity_id": 325,
+      "title": "تأجير لإنشاء كشك شاي بالكلية التقنية للبنين بالأحساء - الأنشطة التجارية - أنشطة تجارة المواد الغذائية - كشك",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "أنشطة تجارة المواد الغذائية",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 160,
+      "opportunity_id": 326,
+      "title": "فرصة استثمارية \" لتأجير مواقع مؤقته لتقديم الخدمات الغذائية بكليات جامعة الملك فيصل فرصة استثمارية \" لتأجير مواقع مؤقته لتقديم الخدمات الغذائية بكليات جامعة الملك فيصل للتقديم على الفرصة",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "LEASE_OPPORTUNITY",
+      "source": "جامعة الملك فيصل",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 158,
+      "opportunity_id": 235,
+      "title": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 485بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "غير محدد",
+      "conflicting": "خدمي",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    },
+    {
+      "id": 113,
+      "opportunity_id": 238,
+      "title": "إنشاء وتشغيل وصيانة مستودع بالقطعة رقم 483بالمخطط رقم 14/16 بصناعية العيون",
+      "field": "opportunity_type",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "صناعي",
+      "conflicting": "خدمي",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-13T13:20:35.712534+03:00"
+    },
+    {
+      "id": 112,
+      "opportunity_id": 234,
+      "title": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 484بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+      "field": "opportunity_type",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "صناعي",
+      "conflicting": "خدمي",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-13T13:20:35.698585+03:00"
+    },
+    {
+      "id": 111,
+      "opportunity_id": 235,
+      "title": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 485بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+      "field": "opportunity_type",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "صناعي",
+      "conflicting": "خدمي",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-13T13:20:35.685877+03:00"
+    },
+    {
+      "id": 110,
+      "opportunity_id": 275,
+      "title": "انشاء وتشغيل وصيانة مستودع وسكن للموظفين بالقطعة رقم 1/8 بالمخطط رقم 4/1082 بالطابوق والخرسانة",
+      "field": "opportunity_type",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "صناعي",
+      "conflicting": "تجاري",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-13T13:20:35.672052+03:00"
+    },
+    {
+      "id": 109,
+      "opportunity_id": 260,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "opportunity_type",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "صناعي",
+      "conflicting": "خدمي",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-13T13:20:35.657635+03:00"
+    },
+    {
+      "id": 108,
+      "opportunity_id": 262,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "field": "opportunity_type",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "صناعي",
+      "conflicting": "خدمي",
+      "source": "منصة الفرص الاستثمارية بالأحساء",
+      "date": "2026-10-13T13:20:35.636763+03:00"
+    },
+    {
+      "id": 106,
+      "opportunity_id": 249,
+      "title": "انشاء و تشغيل و صيانة مركز تجاري متعدد الأنشطة على القطعة رقم 12 بالمخطط رقم 4  1111 بحي الريان بمدينة الهفوف - الأنشطة التجارية - مركز تجاري - مجمع تجاري",
+      "field": "opportunity_type",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "أخرى",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-13T13:20:32.408062+03:00"
+    },
+    {
+      "id": 105,
+      "opportunity_id": 249,
+      "title": "انشاء و تشغيل و صيانة مركز تجاري متعدد الأنشطة على القطعة رقم 12 بالمخطط رقم 4  1111 بحي الريان بمدينة الهفوف - الأنشطة التجارية - مركز تجاري - مجمع تجاري",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "أخرى",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-13T13:20:32.408062+03:00"
+    },
+    {
+      "id": 102,
+      "opportunity_id": 230,
+      "title": "تأجير مواقع مكائن بيع ذاتي لعدد (80) موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي تأجير مواقع مكائن بيع ذاتي لعدد 80 موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي - الأنشطة التجارية - أنشطة تجارة المواد الغذائية - جهاز بيع ذاتي",
+      "field": "opportunity_type",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "أنشطة تجارة المواد الغذائية",
+      "conflicting": "Real Estate",
+      "source": "استثمر في السعودية",
+      "date": "2026-10-12T15:10:18.518954+03:00"
+    },
+    {
+      "id": 101,
+      "opportunity_id": 230,
+      "title": "تأجير مواقع مكائن بيع ذاتي لعدد (80) موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي تأجير مواقع مكائن بيع ذاتي لعدد 80 موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي - الأنشطة التجارية - أنشطة تجارة المواد الغذائية - جهاز بيع ذاتي",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "أنشطة تجارة المواد الغذائية",
+      "conflicting": "Real Estate",
+      "source": "استثمر في السعودية",
+      "date": "2026-10-12T15:10:18.518954+03:00"
+    },
+    {
+      "id": 72,
+      "opportunity_id": 226,
+      "title": "انشاء و تشغيل و صيانة حديقة بحي الامراء بالمخطط رقم 416 4 بمدينة الهفوف - أنشطة المرافق العامة - منتزه - حديقة",
+      "field": "opportunity_type",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "منتزه",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-12T11:02:08.750891+03:00"
+    },
+    {
+      "id": 71,
+      "opportunity_id": 226,
+      "title": "انشاء و تشغيل و صيانة حديقة بحي الامراء بالمخطط رقم 416 4 بمدينة الهفوف - أنشطة المرافق العامة - منتزه - حديقة",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "منتزه",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-12T11:02:08.750891+03:00"
+    },
+    {
+      "id": 53,
+      "opportunity_id": 102,
+      "title": "مزايدة تأجير موقع صراف الي بمستشفى الملك فهد بالهفوف مزايدة تأجير موقع صراف الي بمستشفى الملك فهد بالهفوف - الأنشطة المالية - خدمات الصرافة - صراف آلي",
+      "field": "opportunity_type",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "خدمات الصرافة",
+      "conflicting": "Real Estate",
+      "source": "استثمر في السعودية",
+      "date": "2026-10-11T16:45:46.726046+03:00"
+    },
+    {
+      "id": 52,
+      "opportunity_id": 102,
+      "title": "مزايدة تأجير موقع صراف الي بمستشفى الملك فهد بالهفوف مزايدة تأجير موقع صراف الي بمستشفى الملك فهد بالهفوف - الأنشطة المالية - خدمات الصرافة - صراف آلي",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "خدمات الصرافة",
+      "conflicting": "Real Estate",
+      "source": "استثمر في السعودية",
+      "date": "2026-10-11T16:45:46.726046+03:00"
+    },
+    {
+      "id": 35,
+      "opportunity_id": 192,
+      "title": "إنشاء وتشغيل وصيانة مواقف للمعدات والنقليات وورشة ومستودع ومكاتب إدارية وسكن للموظفين للقطع رقم 405/ت الى 409/ت بالمخطط رقم 14/154 الصناعية الشمالية بالعيون",
+      "field": "opportunity_type",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "صناعي",
+      "conflicting": "أنشطة و تجارة المعدات الثقيلة",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-11T15:41:43.337815+03:00"
+    },
+    {
+      "id": 34,
+      "opportunity_id": 192,
+      "title": "إنشاء وتشغيل وصيانة مواقف للمعدات والنقليات وورشة ومستودع ومكاتب إدارية وسكن للموظفين للقطع رقم 405/ت الى 409/ت بالمخطط رقم 14/154 الصناعية الشمالية بالعيون",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "صناعي",
+      "conflicting": "أنشطة و تجارة المعدات الثقيلة",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-11T15:41:43.337815+03:00"
+    },
+    {
+      "id": 25,
+      "opportunity_id": 193,
+      "title": "انشاء وتشغيل وصيانة القطعة رقم 471  لنشاط صناعات خفيفة أو ورشة بالمخطط رقم 14  16  بصناعية العيون",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "صناعي",
+      "conflicting": "أخرى",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-11T15:41:43.313224+03:00"
+    },
+    {
+      "id": 26,
+      "opportunity_id": 193,
+      "title": "انشاء وتشغيل وصيانة القطعة رقم 471  لنشاط صناعات خفيفة أو ورشة بالمخطط رقم 14  16  بصناعية العيون",
+      "field": "opportunity_type",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "صناعي",
+      "conflicting": "أخرى",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-11T15:41:43.313224+03:00"
+    },
+    {
+      "id": 14,
+      "opportunity_id": 164,
+      "title": "انشاء وتشغيل وصيانة مستودع غاز  بالمخطط رقم (14/53) بمدينة الجرن بنشاط بيع وتوزيع أسطوانات الغاز",
+      "field": "opportunity_type",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "أخرى",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-11T15:41:43.287536+03:00"
+    },
+    {
+      "id": 13,
+      "opportunity_id": 164,
+      "title": "انشاء وتشغيل وصيانة مستودع غاز  بالمخطط رقم (14/53) بمدينة الجرن بنشاط بيع وتوزيع أسطوانات الغاز",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "تجاري",
+      "conflicting": "أخرى",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-11T15:41:43.287536+03:00"
+    },
+    {
+      "id": 4,
+      "opportunity_id": 195,
+      "title": "انشاء و تشغيل وصيانة القطعة رقم 461 1و 461 2 لنشاط صناعات خفيفة أو ورشة بالمخطط رقم 14-16 بصناعية العيون",
+      "field": "sector",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "صناعي",
+      "conflicting": "أخرى",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-11T15:41:43.237686+03:00"
+    },
+    {
+      "id": 5,
+      "opportunity_id": 195,
+      "title": "انشاء و تشغيل وصيانة القطعة رقم 461 1و 461 2 لنشاط صناعات خفيفة أو ورشة بالمخطط رقم 14-16 بصناعية العيون",
+      "field": "opportunity_type",
+      "conflict_type": "TAXONOMY_CONFLICT",
+      "selected": "صناعي",
+      "conflicting": "أخرى",
+      "source": "فرص – البوابة الموحدة للاستثمار",
+      "date": "2026-10-11T15:41:43.237686+03:00"
+    }
+  ]
+}

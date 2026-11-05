@@ -1,0 +1,385 @@
+{
+  "artifact_type": "RCU_MASTER_ELIGIBILITY_DRY_RUN",
+  "version": 1,
+  "generated_at_utc": "2026-11-03T12:25:31.121139+03:00",
+  "source_key": "rcu-investment-opportunities",
+  "public_endpoint": "https://eservices.rcu.gov.sa/api/investment-opportunities/list",
+  "enumeration": {
+    "method": "PUBLIC_JSON_XHR",
+    "records_found": 6,
+    "source_total_reported": 6,
+    "pages_requested": 1,
+    "pagination_complete": true,
+    "provider_id_field": "id (UUID)",
+    "provider_ids_unique": true,
+    "provider_ids": [
+      "8fd18e92-054a-40c3-9de7-33d7dc23f5db",
+      "f482f6c3-21f1-4dc6-a2c5-d318ead27a38",
+      "6645c6e9-6bd4-4a93-88bc-baef67a77607",
+      "b7941434-d0e8-4ddc-8857-49943f3b368f",
+      "cea3d684-d766-4a97-b4f9-fbccaa72b187",
+      "0b54170e-49f1-4d95-925b-225e486d8eb2"
+    ],
+    "duplicate_provider_ids": 0,
+    "coordinate_values_supplied": 6,
+    "coordinate_pairs_valid_numeric": 6,
+    "coordinate_pair_frequencies": {
+      "26.606149,37.927985": 3,
+      "26.605954,37.928046": 2,
+      "26.480579,38.118554": 1
+    }
+  },
+  "comparison_scope": {
+    "current_master_count": 6626,
+    "source_opportunity_count": 9293,
+    "source_keys_examined": [
+      "ahda",
+      "alahsa-opportunities",
+      "furas",
+      "invest-saudi",
+      "kfu",
+      "mwan",
+      "ncp",
+      "rcjy-investment-opportunities"
+    ],
+    "publication_count_examined": 9293,
+    "rule": "Official ID, project/site identity, location and corroborating project evidence considered. Title-only similarity produces candidate evidence only and never authorizes a link."
+  },
+  "geography_reference": {
+    "dataset_key": "saudi_administrative_units",
+    "dataset_version": "taadeen-public-gis-20261102-v3",
+    "governorate": {
+      "id": 379,
+      "external_id": "302",
+      "name_ar": "العلا",
+      "name_en": "Al Ula"
+    },
+    "region": {
+      "id": 330,
+      "external_id": "3",
+      "name_ar": "منطقة المدينة المنورة",
+      "name_en": "Al-Madinah Region"
+    },
+    "city": "UNSPECIFIED"
+  },
+  "disposition_counts": {
+    "A_READY_NEW_MASTER": 6,
+    "B_MATCH_EXISTING_MASTER": 0,
+    "C_IDENTITY_REVIEW": 0,
+    "D_NOT_QUALIFYING": 0,
+    "E_HISTORICAL_OR_NONCURRENT": 0,
+    "F_SAME_SOURCE_DUPLICATE_REVIEW": 0
+  },
+  "records": [
+    {
+      "provider_id": "8fd18e92-054a-40c3-9de7-33d7dc23f5db",
+      "provider_id_field": "id",
+      "display_reference": "RCU-OPP-000260",
+      "title_ar": "تطوير وتشغيل الخزن الاستراتيجي للمياه: فرصة للشراكة بين القطاع العام والخاص",
+      "title_en": "Development and Operation of Strategic Water Storage Tanks – PPP Investment Opportunity",
+      "source_location_text": null,
+      "source_geography_evidence": "In alignment with the Privatization Plan approved by the National Center for Privatization, the Royal Commission for AlUla is advancing the development of a strategic potable water storage system to ensure reliable and sustainable water supply and support AlUla’s economic and tourism growth and future development needs.\nThe project includes the development and operation of five strategic water storage tanks with a combined capacity of 295,000 m³, providing approximately 3 to 4 days of potable water reserves, alongside pumping stations, connection networks, and supporting infrastructure serving urban districts, heritage sites, the airport, and new development areas.\nThe project is planned to be delivered under a Design–Build–Finance–Operate–Maintain (DBFOM) model, with a concession period o",
+      "candidate_existing_master_ids": [
+        6677
+      ],
+      "identity_evidence": {
+        "provider_uuid_unique": true,
+        "display_reference_unique_in_rcu": true,
+        "exact_reference_matches": [],
+        "title_similarity_candidates": [
+          {
+            "source_key": "rcjy-investment-opportunities",
+            "source_record_id": 9321,
+            "master_id": 6677,
+            "title": "إنشاء وتشغيل شقق فندقية بحي النخيل",
+            "title_ar_similarity": 0.259,
+            "title_en_similarity": 0.637,
+            "reference": "CS-26-00269",
+            "evidence_kind": "TITLE_SIMILARITY_ONLY"
+          }
+        ],
+        "title_similarity_is_not_merge_authority": true
+      },
+      "proposed_disposition": "A_READY_NEW_MASTER",
+      "disposition": "A_READY_NEW_MASTER",
+      "confidence": 0.95,
+      "reason": "Official itemized public RCU opportunity; provider UUID and display reference are unique; no exact official reference or high-confidence project identity match was found among existing publications. Title-only candidates were retained as review evidence and not linked.",
+      "review_required": false,
+      "lifecycle": {
+        "isClosed": false,
+        "isApplicable": true,
+        "canApply": false,
+        "submissionDeadline": "2027-11-30T17:00:00",
+        "classification": "CURRENT"
+      },
+      "coordinate_evidence": {
+        "raw_latitude": 26.606149,
+        "raw_longitude": 37.927985,
+        "verification": "DIRECT_SOURCE_RAW_ONLY",
+        "coordinate_pair_frequency": 3,
+        "canonical_coordinates_proposed": false
+      },
+      "reason_review_required": false,
+      "actual_source_opportunity_id": 9324,
+      "actual_master_id": 6680,
+      "proposed_sector_category_source_field": "realEstateCategory.name",
+      "proposed_sector_category_source_value": "Water & Waste",
+      "proposed_canonical_sector": "البيئة",
+      "proposed_canonical_sector_id": "sector:environment"
+    },
+    {
+      "provider_id": "f482f6c3-21f1-4dc6-a2c5-d318ead27a38",
+      "provider_id_field": "id",
+      "display_reference": "RCU-OPP-000259",
+      "title_ar": "تحسين وتشغيل محطات معالجة مياه الصرف الصحي: فرصة للشراكة بين القطاع العام والخاص",
+      "title_en": "Enhancement and operation of Wastewater Treatment Plants – PPP Investment Opportunity",
+      "source_location_text": null,
+      "source_geography_evidence": "In alignment with the Privatization Plan approved by the National Center for Privatization, the Royal Commission for AlUla is advancing the rehabilitation and expansion of the Wastewater Treatment Plant to increase treatment capacity, support economic growth, and enhance environmental sustainability.\nThe project includes the rehabilitation of the existing plant with a capacity of 8,000 m³/day and its expansion using Moving Bed Biofilm Reactor (MBBR) technology in two phases, adding 18,000 m³/day in Phase I and 36,000 m³/day in Phase II, bringing the total treatment capacity to 62,000 m³/day, alongside treated wastewater storage and pumping facilities, control systems, and supporting infrastructure.\nThe project is planned to be delivered under a Build–Own–Operate–Transfer (BOOT) model, with",
+      "candidate_existing_master_ids": [],
+      "identity_evidence": {
+        "provider_uuid_unique": true,
+        "display_reference_unique_in_rcu": true,
+        "exact_reference_matches": [],
+        "title_similarity_candidates": [],
+        "title_similarity_is_not_merge_authority": true
+      },
+      "proposed_disposition": "A_READY_NEW_MASTER",
+      "disposition": "A_READY_NEW_MASTER",
+      "confidence": 0.95,
+      "reason": "Official itemized public RCU opportunity; provider UUID and display reference are unique; no exact official reference or high-confidence project identity match was found among existing publications. Title-only candidates were retained as review evidence and not linked.",
+      "review_required": false,
+      "lifecycle": {
+        "isClosed": false,
+        "isApplicable": true,
+        "canApply": false,
+        "submissionDeadline": "2027-05-31T17:00:00",
+        "classification": "CURRENT"
+      },
+      "coordinate_evidence": {
+        "raw_latitude": 26.606149,
+        "raw_longitude": 37.927985,
+        "verification": "DIRECT_SOURCE_RAW_ONLY",
+        "coordinate_pair_frequency": 3,
+        "canonical_coordinates_proposed": false
+      },
+      "reason_review_required": false,
+      "actual_source_opportunity_id": 9325,
+      "actual_master_id": 6683,
+      "proposed_sector_category_source_field": "realEstateCategory.name",
+      "proposed_sector_category_source_value": "Water & Waste",
+      "proposed_canonical_sector": "البيئة",
+      "proposed_canonical_sector_id": "sector:environment"
+    },
+    {
+      "provider_id": "6645c6e9-6bd4-4a93-88bc-baef67a77607",
+      "provider_id_field": "id",
+      "display_reference": "RCU-OPP-000258",
+      "title_ar": "تطوير وتشغيل وإدارة النفايات الصلبة: فرصة للشراكة بين القطاع العام والخاص",
+      "title_en": "Development and Operation of a Solid Waste Management System – PPP Investment Opportunity",
+      "source_location_text": null,
+      "source_geography_evidence": "In alignment with the Privatization Plan approved by the National Center for Privatization, the Royal Commission for AlUla is advancing the development of an integrated solid waste management system in AlUla to enhance environmental sustainability, increase recycling rates, and support a sustainable economy.\nThe project includes the development of a Resource Management Park and a waste transfer station with a capacity of 76,000 tonnes annually, recycling facilities with a capacity of 45,000 tonnes annually, organic waste treatment facilities, construction and demolition waste processing facilities with a capacity of 220,000 tonnes annually, and engineered landfill cells with a total capacity of 5 million cubic metres, alongside supporting infrastructure.\nThe project is planned to be delive",
+      "candidate_existing_master_ids": [
+        6677
+      ],
+      "identity_evidence": {
+        "provider_uuid_unique": true,
+        "display_reference_unique_in_rcu": true,
+        "exact_reference_matches": [],
+        "title_similarity_candidates": [
+          {
+            "source_key": "rcjy-investment-opportunities",
+            "source_record_id": 9321,
+            "master_id": 6677,
+            "title": "إنشاء وتشغيل شقق فندقية بحي النخيل",
+            "title_ar_similarity": 0.302,
+            "title_en_similarity": 0.613,
+            "reference": "CS-26-00269",
+            "evidence_kind": "TITLE_SIMILARITY_ONLY"
+          }
+        ],
+        "title_similarity_is_not_merge_authority": true
+      },
+      "proposed_disposition": "A_READY_NEW_MASTER",
+      "disposition": "A_READY_NEW_MASTER",
+      "confidence": 0.95,
+      "reason": "Official itemized public RCU opportunity; provider UUID and display reference are unique; no exact official reference or high-confidence project identity match was found among existing publications. Title-only candidates were retained as review evidence and not linked.",
+      "review_required": false,
+      "lifecycle": {
+        "isClosed": false,
+        "isApplicable": true,
+        "canApply": false,
+        "submissionDeadline": "2027-05-31T17:00:00",
+        "classification": "CURRENT"
+      },
+      "coordinate_evidence": {
+        "raw_latitude": 26.606149,
+        "raw_longitude": 37.927985,
+        "verification": "DIRECT_SOURCE_RAW_ONLY",
+        "coordinate_pair_frequency": 3,
+        "canonical_coordinates_proposed": false
+      },
+      "reason_review_required": false,
+      "actual_source_opportunity_id": 9326,
+      "actual_master_id": 6679,
+      "proposed_sector_category_source_field": "realEstateCategory.name",
+      "proposed_sector_category_source_value": "Water & Waste",
+      "proposed_canonical_sector": "البيئة",
+      "proposed_canonical_sector_id": "sector:environment"
+    },
+    {
+      "provider_id": "b7941434-d0e8-4ddc-8857-49943f3b368f",
+      "provider_id_field": "id",
+      "display_reference": "RCU-OPP-000257",
+      "title_ar": "توسعة الطرق الفرعية : فرصة استثمارية للشراكة بين القطاعين العام والخاص",
+      "title_en": "Expansion of Secondary Roads– PPP Investment Opportunity",
+      "source_location_text": null,
+      "source_geography_evidence": "تماشيًا مع خطة التخصيص المعتمدة من المركز الوطني للتخصيص، تعمل الهيئة الملكية على تطوير شبكة الطرق الثانوية بهدف تعزيز الربط ودعم النمو الاقتصادي والسياحي العلا. وتسهيل الوصول إلى مناطق التطوير الجديدة والمواقع التراثية والمحميات الطبيعية.\nيشمل المشروع تطوير 18 مسارًا للطرق الثانوية وشبكات المرافق والخدمات، بإجمالي أطوال يبلغ نحو 1,400 كيلومتر، بما في ذلك إنشاء طرق جديدة وتطوير البنية التحتية المتكاملة لشبكات المياه والكهرباء والاتصالات وإنارة الطرق وتصريف مياه الأمطار.\nمن المخطط تنفيذ المشروع وفق نموذج التصميم والبناء والتمويل والتشغيل والصيانة بآلية مدفوعات قائمة على الإتاحة، ومدة امتياز تبلغ نحو 20 عامًا. ويقتصر نطاق التشغيل والصيانة على الطرق فقط، على أن تُسلّم شبكات المرافق والخدمات إلى الجهات المختصة.\nمن المخطط البدء في طرح طلبات تقديم العروض للحزم في بداية 2028، على أن يتم إنجاز الم",
+      "candidate_existing_master_ids": [],
+      "identity_evidence": {
+        "provider_uuid_unique": true,
+        "display_reference_unique_in_rcu": true,
+        "exact_reference_matches": [],
+        "title_similarity_candidates": [],
+        "title_similarity_is_not_merge_authority": true
+      },
+      "proposed_disposition": "A_READY_NEW_MASTER",
+      "disposition": "A_READY_NEW_MASTER",
+      "confidence": 0.95,
+      "reason": "Official itemized public RCU opportunity; provider UUID and display reference are unique; no exact official reference or high-confidence project identity match was found among existing publications. Title-only candidates were retained as review evidence and not linked.",
+      "review_required": false,
+      "lifecycle": {
+        "isClosed": false,
+        "isApplicable": true,
+        "canApply": false,
+        "submissionDeadline": "2027-09-30T17:00:00",
+        "classification": "CURRENT"
+      },
+      "coordinate_evidence": {
+        "raw_latitude": 26.605954,
+        "raw_longitude": 37.928046,
+        "verification": "DIRECT_SOURCE_RAW_ONLY",
+        "coordinate_pair_frequency": 2,
+        "canonical_coordinates_proposed": false
+      },
+      "reason_review_required": false,
+      "actual_source_opportunity_id": 9327,
+      "actual_master_id": 6681,
+      "proposed_sector_category_source_field": "realEstateCategory.name",
+      "proposed_sector_category_source_value": "Transport (e.g., Roads, Rail, Airports)",
+      "proposed_canonical_sector": "الخدمات اللوجستية",
+      "proposed_canonical_sector_id": "sector:logistics"
+    },
+    {
+      "provider_id": "cea3d684-d766-4a97-b4f9-fbccaa72b187",
+      "provider_id_field": "id",
+      "display_reference": "RCU-OPP-000256",
+      "title_ar": "مشاريع توسعة الطرق الرئيسية - فرصة استثمارية للشراكة بين القطاع العام والخاص",
+      "title_en": "Expansion of Highways and Primary Roads – PPP investment opportunity",
+      "source_location_text": null,
+      "source_geography_evidence": "تماشيًا مع خطة التخصيص المعتمدة من المركز الوطني للتخصيص، تعمل الهيئة الملكية على تطوير وتحديث شبكة الطرق الرئيسية بهدف تعزيز الربط ودعم النمو الاقتصادي والسياحي  في العلا\nيشمل المشروع تطوير وتحديث خمسة طرق رئيسية وشبكات المرافق والخدمات التابعة، بإجمالي أطوال 204 كيلومترات، بما في ذلك الإنشاء وإعادة التأهيل، وتوفير مسارات للدراجات الهوائية، وتطبيق إجراءات تهدئة الحركة المرورية، إلى جانب تطوير البنية التحتية المتكاملة لشبكات المياه والكهرباء والاتصالات وتصريف مياه الأمطار\nمن المخطط تنفيذ المشروع وفق نموذج التصميم والبناء والتمويل والتشغيل والصيانة بآلية مدفوعات قائمة على الإتاحة، ومدة امتياز 15 عامًا. ويقتصر نطاق التشغيل والصيانة على الطرق، على أن تُسلّم شبكات المرافق والخدمات إلى الجهات المختصة\nمن المخطط البدء في طرح طلبات تقديم العروض للحزم في بداية 2028، على أن يتم إنجاز المشروع على مرا",
+      "candidate_existing_master_ids": [],
+      "identity_evidence": {
+        "provider_uuid_unique": true,
+        "display_reference_unique_in_rcu": true,
+        "exact_reference_matches": [],
+        "title_similarity_candidates": [],
+        "title_similarity_is_not_merge_authority": true
+      },
+      "proposed_disposition": "A_READY_NEW_MASTER",
+      "disposition": "A_READY_NEW_MASTER",
+      "confidence": 0.95,
+      "reason": "Official itemized public RCU opportunity; provider UUID and display reference are unique; no exact official reference or high-confidence project identity match was found among existing publications. Title-only candidates were retained as review evidence and not linked.",
+      "review_required": false,
+      "lifecycle": {
+        "isClosed": false,
+        "isApplicable": true,
+        "canApply": false,
+        "submissionDeadline": "2027-09-30T17:00:00",
+        "classification": "CURRENT"
+      },
+      "coordinate_evidence": {
+        "raw_latitude": 26.605954,
+        "raw_longitude": 37.928046,
+        "verification": "DIRECT_SOURCE_RAW_ONLY",
+        "coordinate_pair_frequency": 2,
+        "canonical_coordinates_proposed": false
+      },
+      "reason_review_required": false,
+      "actual_source_opportunity_id": 9328,
+      "actual_master_id": 6682,
+      "proposed_sector_category_source_field": "realEstateCategory.name",
+      "proposed_sector_category_source_value": "Transport (e.g., Roads, Rail, Airports)",
+      "proposed_canonical_sector": "الخدمات اللوجستية",
+      "proposed_canonical_sector_id": "sector:logistics"
+    },
+    {
+      "provider_id": "0b54170e-49f1-4d95-925b-225e486d8eb2",
+      "provider_id_field": "id",
+      "display_reference": "RCU-OPP-000255",
+      "title_ar": "توسعة وتطوير مطار العلا الدولي: فرصة استثمارية للشراكة بين القطاع العام والخاص",
+      "title_en": "AlUla international Airport Expansion – PPP Investment Opportunity",
+      "source_location_text": null,
+      "source_geography_evidence": "توسعة وتطوير مطار العلا الدولي: فرصة استثمارية للشراكة بين القطاع العام والخاص؛ AlUla international Airport Expansion – PPP Investment Opportunity؛ تماشيًا مع خطة التخصيص المعتمدة من المركز الوطني للتخصيص، تعمل الهيئة الملكية لمحافظة العلا على توسعة مطار العلا الدولي لدعم النمو السياحي وتعزيز الربط الجوي للعلا\n\nيشمل المشروع مبنى ركاب جديدًا بمساحة تقارب 30 ألف م² وبطاقة استيعابية تصل إلى 3 ملايين مسافر سنويًا، ومبنى للشحن الجوي بمساحة 5 آلاف م² يضم مرافق مخصصة للخيول والفروسية  وفق أعلى المعاييرالعالمية، ومبنى للطيران الخاص بمساحة تقارب 10 آلاف م²، ومرافق للطيران العام والمروحيات، وتمديد المدرج إلى 3 آلاف متر، إضافة إلى الطرق ومواقف السيارات ومرافق الصيانة والخدمات والوقود\n\nكما تتوفر نحو مليون م² من الأراضي لاستخدامات تجارية مكملة، تشمل الخدمات اللوجستية والتجزئة والضيافة وخدمات الطيران\n\nم",
+      "candidate_existing_master_ids": [],
+      "identity_evidence": {
+        "provider_uuid_unique": true,
+        "display_reference_unique_in_rcu": true,
+        "exact_reference_matches": [],
+        "title_similarity_candidates": [],
+        "title_similarity_is_not_merge_authority": true
+      },
+      "proposed_disposition": "A_READY_NEW_MASTER",
+      "disposition": "A_READY_NEW_MASTER",
+      "confidence": 0.95,
+      "reason": "Official itemized public RCU opportunity; provider UUID and display reference are unique; no exact official reference or high-confidence project identity match was found among existing publications. Title-only candidates were retained as review evidence and not linked.",
+      "review_required": false,
+      "lifecycle": {
+        "isClosed": false,
+        "isApplicable": true,
+        "canApply": false,
+        "submissionDeadline": "2027-06-30T17:00:00",
+        "classification": "CURRENT"
+      },
+      "coordinate_evidence": {
+        "raw_latitude": 26.480579,
+        "raw_longitude": 38.118554,
+        "verification": "DIRECT_SOURCE_RAW_ONLY",
+        "coordinate_pair_frequency": 1,
+        "canonical_coordinates_proposed": false
+      },
+      "reason_review_required": false,
+      "actual_source_opportunity_id": 9329,
+      "actual_master_id": 6678,
+      "proposed_sector_category_source_field": "realEstateCategory.name",
+      "proposed_sector_category_source_value": "Transport (e.g., Roads, Rail, Airports)",
+      "proposed_canonical_sector": "الخدمات اللوجستية",
+      "proposed_canonical_sector_id": "sector:logistics"
+    }
+  ],
+  "projection": {
+    "projected_rcu_masters_created": 6,
+    "projected_rcu_existing_links": 0,
+    "projected_duplicates_prevented": 0,
+    "projected_master_without_source": 0,
+    "projected_invalid_multi_master_link": 0,
+    "projected_dq_fail": 0,
+    "rcu_duplicate_provider_keys": 0
+  },
+  "post_capture_execution": {
+    "source_rows_inserted": 6,
+    "source_rows_updated": 0,
+    "bootstrap_removals": 0,
+    "masters_created": 6,
+    "existing_masters_linked": 0,
+    "masters_without_source": 0,
+    "masters_without_audit": 0,
+    "canonical_coordinates_projected": 0,
+    "governed_sector_mapping": "rcu_realEstateCategory_to_canonical_sector_v1",
+    "dq_projection_after_explicit_sector_mapping": {
+      "actual_full_dq_warning": 6,
+      "actual_full_dq_pass": 128,
+      "projected_dq_fail": 0,
+      "actual_full_dq_fail": 0
+    }
+  }
+}

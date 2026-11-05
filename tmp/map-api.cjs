@@ -1,0 +1,1 @@
+(async()=>{const r=await fetch('http://localhost:8080/api/data-dashboard/geography');const j=await r.json();console.log(JSON.stringify({status:r.status,keys:Object.keys(j),counts:j.counts,points:j.points?.length},null,2))})()

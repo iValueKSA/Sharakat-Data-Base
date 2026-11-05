@@ -1,0 +1,69 @@
+{
+  "all_parity": true,
+  "cases": [
+    {
+      "filter": "city-reference-export-governorate-status.csv",
+      "ui_count": 20,
+      "api_count": 20,
+      "csv_count": 20,
+      "xlsx_count": 20,
+      "parity": true
+    },
+    {
+      "filter": "city-reference-export-governorate.csv",
+      "ui_count": 29,
+      "api_count": 29,
+      "csv_count": 29,
+      "xlsx_count": 29,
+      "parity": true
+    },
+    {
+      "filter": "city-reference-export-region-sector.csv",
+      "ui_count": 28,
+      "api_count": 28,
+      "csv_count": 28,
+      "xlsx_count": 28,
+      "parity": true
+    },
+    {
+      "filter": "city-reference-export-region.csv",
+      "ui_count": 57,
+      "api_count": 57,
+      "csv_count": 57,
+      "xlsx_count": 57,
+      "parity": true
+    },
+    {
+      "filter": "no-city-reference-export-governorate-status.csv",
+      "ui_count": 19,
+      "api_count": 19,
+      "csv_count": 19,
+      "xlsx_count": 19,
+      "parity": true
+    },
+    {
+      "filter": "no-city-reference-export-governorate.csv",
+      "ui_count": 28,
+      "api_count": 28,
+      "csv_count": 28,
+      "xlsx_count": 28,
+      "parity": true
+    },
+    {
+      "filter": "no-city-reference-export-region-sector.csv",
+      "ui_count": 28,
+      "api_count": 28,
+      "csv_count": 28,
+      "xlsx_count": 28,
+      "parity": true
+    },
+    {
+      "filter": "no-city-reference-export-region.csv",
+      "ui_count": 57,
+      "api_count": 57,
+      "csv_count": 57,
+      "xlsx_count": 57,
+      "parity": true
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "snapshot_at": "2026-10-22T08:00:44.042388+00:00",
+  "counts": {
+    "current_masters": 526,
+    "total_masters": 547,
+    "source_opportunities": 3138,
+    "observations": 16298,
+    "merged_masters": 21,
+    "sync_jobs": 428,
+    "open_reviews": 498
+  },
+  "latest_sync_jobs": [
+    {
+      "job_id": 428,
+      "source_id": 2,
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "finished_at": "2026-10-22T07:02:16.595074+00:00"
+    },
+    {
+      "job_id": 427,
+      "source_id": 1,
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "finished_at": "2026-10-22T07:01:21.711085+00:00"
+    },
+    {
+      "job_id": 426,
+      "source_id": 2,
+      "trigger_type": "retry",
+      "status": "SKIPPED_ALREADY_RUNNING",
+      "finished_at": "2026-10-22T06:01:54.021776+00:00"
+    },
+    {
+      "job_id": 425,
+      "source_id": 7,
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "finished_at": "2026-10-22T06:02:22.687159+00:00"
+    },
+    {
+      "job_id": 424,
+      "source_id": 8,
+      "trigger_type": "scheduled",
+      "status": "WARNING",
+      "finished_at": "2026-10-22T06:01:41.862148+00:00"
+    }
+  ],
+  "live_sync_jobs_after_capture": [
+    {
+      "job_id": 428,
+      "source_id": 2,
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "finished_at": "2026-10-22T07:02:16.595074+00:00"
+    },
+    {
+      "job_id": 427,
+      "source_id": 1,
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "finished_at": "2026-10-22T07:01:21.711085+00:00"
+    },
+    {
+      "job_id": 426,
+      "source_id": 2,
+      "trigger_type": "retry",
+      "status": "SKIPPED_ALREADY_RUNNING",
+      "finished_at": "2026-10-22T06:01:54.021776+00:00"
+    },
+    {
+      "job_id": 425,
+      "source_id": 7,
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "finished_at": "2026-10-22T06:02:22.687159+00:00"
+    },
+    {
+      "job_id": 424,
+      "source_id": 8,
+      "trigger_type": "scheduled",
+      "status": "WARNING",
+      "finished_at": "2026-10-22T06:01:41.862148+00:00"
+    }
+  ],
+  "business_data_delta": {
+    "current_masters": 0,
+    "total_masters": 0,
+    "source_opportunities": 0,
+    "observations": 0,
+    "merged_masters": 0,
+    "sync_jobs": 0,
+    "open_reviews": 0
+  },
+  "source_sync_jobs_at_capture": 428
+}

@@ -1,0 +1,47 @@
+{
+  "verified_at_utc": "2026-10-19T07:34:56.714327+00:00",
+  "engine_version": "15",
+  "initial_v12_application": {
+    "applied_at_utc": "2026-10-19T07:12:46Z",
+    "masters_updated": 5,
+    "change_history_rows_added": 13,
+    "source_projection_records_updated": 2898,
+    "open_model_reviews_created": 1,
+    "review_case": "KFU Master 224: commercial facility classification has no explicit contract model"
+  },
+  "v13_review_extension": {
+    "applied_at_utc": "2026-10-19T07:25:30.410580+00:00",
+    "masters_updated": 0,
+    "change_history_rows_added": 0,
+    "source_projection_records_updated": 2898,
+    "open_model_reviews_created": 1,
+    "review_case": "AHDA Master 212: explicit alternatives include lease, revenue share, or full ownership"
+  },
+  "v13_idempotency_pass": {
+    "applied_at_utc": "2026-10-19T07:26:17.869962+00:00",
+    "masters_updated": 0,
+    "change_history_rows_added": 0,
+    "source_projection_records_updated": 2898,
+    "open_model_reviews_created": 0
+  },
+  "v14_idempotency_pass": {
+    "applied_at_utc": "2026-10-19T07:30:14.883660+00:00",
+    "masters_updated": 0,
+    "change_history_rows_added": 0,
+    "source_projection_records_updated": 2898,
+    "open_model_reviews_created": 0
+  },
+  "v15_idempotency_pass": {
+    "applied_at_utc": "2026-10-19T07:34:45.564198+00:00",
+    "masters_updated": 0,
+    "change_history_rows_added": 0,
+    "source_projection_records_updated": 2898,
+    "open_model_reviews_created": 0
+  },
+  "raw_provenance_checks": {
+    "raw_payloads_unchanged": true,
+    "master_identity_unchanged": true,
+    "source_links_unchanged": true,
+    "source_record_count": 2898
+  }
+}

@@ -1,0 +1,1 @@
+const fs=require('fs'); const g=JSON.parse(fs.readFileSync('tmp/geoBoundaries-SAU-ADM2_simplified.geojson','utf8')); console.log('feature_count',g.features.length); for(const f of g.features){const p=f.properties||{};if(JSON.stringify(p).match(/ahsa|hasa|الأحساء/i))console.log(JSON.stringify(p));}

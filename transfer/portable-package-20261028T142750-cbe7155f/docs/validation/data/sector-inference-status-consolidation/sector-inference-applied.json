@@ -1,0 +1,24 @@
+{
+  "agriculture_current_count": 1,
+  "auto_classified_high_confidence": 10,
+  "benchmark_acceptance": "PASS",
+  "classified_to_sector": {
+    "التعليم": 1,
+    "الخدمات اللوجستية": 1,
+    "العقارات والإنشاءات": 7,
+    "تجاري": 1
+  },
+  "duplicate_sector_review_cases_created": 0,
+  "engine_version": "ahda-sector-rules-1.0.0",
+  "existing_classified_sector_values_changed": 0,
+  "forced_low_confidence_classifications": 0,
+  "inferred_sector_without_traceable_evidence": 0,
+  "review_required": 26,
+  "sector_specified_after": 135,
+  "sector_specified_before": 125,
+  "source_explicit_sector_overridden_by_inference": 0,
+  "tourism_current_count": 1,
+  "unclassifiable_remaining": 364,
+  "unspecified_after": 390,
+  "unspecified_before": 400
+}

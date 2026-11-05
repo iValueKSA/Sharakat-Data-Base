@@ -1,0 +1,40 @@
+{
+  "captured_at": "2026-10-26T08:36:19.7335974Z",
+  "focused_tests": {
+    "passed": 107,
+    "failed": 0,
+    "suites": [
+      "test_ingestion.py",
+      "test_review_lifecycle_triage.py",
+      "test_autonomous_review_resolution.py",
+      "test_sync_lifecycle_reliability.py",
+      "test_data_quality.py",
+      "test_review_queues_governance.py"
+    ]
+  },
+  "full_isolated_regression": {
+    "passed": 536,
+    "failed": 0,
+    "suite": "tests/",
+    "database": "temporary SQLite",
+    "network": "disabled",
+    "live_postgres_used": false
+  },
+  "coverage": [
+    "resolved conflict recurrence idempotency",
+    "timestamp-only recurrence",
+    "same normalized value",
+    "missing values",
+    "formatting-only changes",
+    "material canonical change",
+    "scheduled post-sync resolver",
+    "SYSTEM audit",
+    "resolver idempotency",
+    "post-sync DQ gates",
+    "immutable mapping evidence-version snapshot and material-change audit"
+  ],
+  "warnings": [
+    "Starlette/httpx TestClient deprecation",
+    "Alembic path_separator deprecation; tests passed"
+  ]
+}

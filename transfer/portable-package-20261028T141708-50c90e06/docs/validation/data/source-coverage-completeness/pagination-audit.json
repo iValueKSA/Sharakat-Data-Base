@@ -1,0 +1,125 @@
+{
+  "captured": "2026-10-20T14:18:03+03:00",
+  "auditedSources": 8,
+  "remainingCanonicalScopeGaps": 0,
+  "knownNoncanonicalMirrorGapCount": 1,
+  "duplicateCounts": {
+    "furas": 0,
+    "alahsaOpportunities": 0,
+    "investSaudiCrossDataset": 0,
+    "externalIdsAcrossCurrentPlatform": 0
+  },
+  "sources": [
+    {
+      "source": "furas",
+      "method": "ID query then OBJECTID batches of 100",
+      "pageSize": 100,
+      "pagesExpected": 3,
+      "pagesFetched": 3,
+      "pagesSuccessful": 3,
+      "reportedTotal": 164,
+      "uniqueEnumerated": 164,
+      "duplicates": 0,
+      "gaps": 0,
+      "complete": true,
+      "notes": "IDs enumerated first, batches fetched once; date/status/qualification and Al-Ahsa city filters applied."
+    },
+    {
+      "source": "alahsa-opportunities",
+      "method": "HTML pagination",
+      "pageSize": 9,
+      "pagesExpected": 12,
+      "pagesFetched": 12,
+      "pagesSuccessful": 12,
+      "reportedTotal": 103,
+      "uniqueEnumerated": 103,
+      "duplicates": 0,
+      "gaps": 0,
+      "complete": true
+    },
+    {
+      "source": "ahda",
+      "method": "Sitemap discovery + individual page fetch",
+      "pagesExpected": 215,
+      "pagesFetched": 215,
+      "pagesSuccessful": 215,
+      "qualifiedItems": 8,
+      "duplicates": 0,
+      "gaps": 0,
+      "complete": true,
+      "notes": "Plus sitemap discovery request; source does not publish authoritative opportunity count."
+    },
+    {
+      "source": "invest-saudi",
+      "method": "REST page/page-size per dataset; page size 100",
+      "pageSize": 100,
+      "pagesExpected": {
+        "opportunities": 18,
+        "investmentProjects": 4,
+        "pifOpportunities": 2,
+        "regionalOpportunities": 2
+      },
+      "pagesFetched": 26,
+      "pagesSuccessful": 26,
+      "reportedTotal": 2440,
+      "uniqueEnumerated": 2440,
+      "crossDatasetDuplicateMemberships": 0,
+      "gaps": 0,
+      "complete": true
+    },
+    {
+      "source": "kfu",
+      "method": "Public listing pagination",
+      "pagesExpected": 1,
+      "pagesFetched": 1,
+      "pagesSuccessful": 1,
+      "reportedTotal": 2,
+      "uniqueEnumerated": 2,
+      "gaps": 0,
+      "complete": true
+    },
+    {
+      "source": "ncp",
+      "method": "English news archive pagination plus article pages",
+      "requests": 83,
+      "successfulRequests": 82,
+      "englishUniqueArticles": 46,
+      "englishScopeComplete": true,
+      "canonicalScopeGaps": 0,
+      "arabicMirrorFinalContinuationGap": 1,
+      "completeForEnglishDefinedScope": true
+    },
+    {
+      "source": "nhc",
+      "method": "Public route monitor; no item pagination exposed",
+      "routesRequested": 6,
+      "routesSuccessful": 0,
+      "blockedRoutes": 6,
+      "complete": false,
+      "notes": "HTTP 403 across unauthenticated surfaces; no inventory count inferred."
+    },
+    {
+      "source": "pif",
+      "method": "Public route + sitemap monitor; no pagination or load-more controls exposed",
+      "routesRequested": 13,
+      "routesSuccessful": 12,
+      "visibleItems": 0,
+      "completeForPublicMonitoring": true,
+      "inventoryCompleteness": false
+    },
+    {
+      "source": "modon",
+      "method": "No itemized public listing; current source fetch unavailable",
+      "pagesFetched": null,
+      "complete": false,
+      "reason": "TLS failure"
+    },
+    {
+      "source": "mwan",
+      "method": "Public project listings/details; current source fetch unavailable",
+      "pagesFetched": null,
+      "complete": false,
+      "reason": "TLS failure; last successful 2026-10-12"
+    }
+  ]
+}

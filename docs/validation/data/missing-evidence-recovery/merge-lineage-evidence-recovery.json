@@ -1,0 +1,480 @@
+{
+  "snapshot_at": "2026-10-22T07:42:21.338046+00:00",
+  "count": 14,
+  "cases": [
+    {
+      "review_id": 379,
+      "master_id": 231,
+      "field": "contract_duration_years",
+      "merge_lineage": [
+        {
+          "merged_master_id": 265,
+          "survivor_master_id": 231,
+          "source_record_ids": [
+            2866
+          ],
+          "source_history_ids": [
+            649,
+            650
+          ],
+          "source_provenance_ids": [
+            2897,
+            2898,
+            2899,
+            2900,
+            2901,
+            2902,
+            2903,
+            2904,
+            2905,
+            3627
+          ],
+          "created_at": "2026-10-20T09:31:28.426838+00:00"
+        }
+      ],
+      "evidence_inherited": false,
+      "reason": "Current linked source evidence suffices for review context; no predecessor-only business value was inherited."
+    },
+    {
+      "review_id": 382,
+      "master_id": 234,
+      "field": "contract_duration_years",
+      "merge_lineage": [
+        {
+          "merged_master_id": 236,
+          "survivor_master_id": 234,
+          "source_record_ids": [
+            2837
+          ],
+          "source_history_ids": [
+            177,
+            582,
+            583,
+            584
+          ],
+          "source_provenance_ids": [
+            2576,
+            2577,
+            2578,
+            2579,
+            2580,
+            2581,
+            2582,
+            2583,
+            2584,
+            3024,
+            3610
+          ],
+          "created_at": "2026-10-20T09:46:07.650378+00:00"
+        }
+      ],
+      "evidence_inherited": false,
+      "reason": "Current linked source evidence suffices for review context; no predecessor-only business value was inherited."
+    },
+    {
+      "review_id": 383,
+      "master_id": 235,
+      "field": "contract_duration_years",
+      "merge_lineage": [
+        {
+          "merged_master_id": 276,
+          "survivor_master_id": 235,
+          "source_record_ids": [
+            2878
+          ],
+          "source_history_ids": [
+            176,
+            673,
+            674,
+            675
+          ],
+          "source_provenance_ids": [
+            3002,
+            3003,
+            3004,
+            3005,
+            3006,
+            3007,
+            3008,
+            3009,
+            3010,
+            3023,
+            3609
+          ],
+          "created_at": "2026-10-20T09:31:28.985944+00:00"
+        }
+      ],
+      "evidence_inherited": false,
+      "reason": "Current linked source evidence suffices for review context; no predecessor-only business value was inherited."
+    },
+    {
+      "review_id": 384,
+      "master_id": 237,
+      "field": "contract_duration_years",
+      "merge_lineage": [
+        {
+          "merged_master_id": 252,
+          "survivor_master_id": 237,
+          "source_record_ids": [
+            2853
+          ],
+          "source_history_ids": [
+            622,
+            623
+          ],
+          "source_provenance_ids": [
+            2756,
+            2757,
+            2758,
+            2759,
+            2760,
+            2761,
+            2762,
+            2763,
+            2764,
+            3618
+          ],
+          "created_at": "2026-10-20T09:46:07.734954+00:00"
+        }
+      ],
+      "evidence_inherited": false,
+      "reason": "Current linked source evidence suffices for review context; no predecessor-only business value was inherited."
+    },
+    {
+      "review_id": 385,
+      "master_id": 239,
+      "field": "contract_duration_years",
+      "merge_lineage": [
+        {
+          "merged_master_id": 247,
+          "survivor_master_id": 239,
+          "source_record_ids": [
+            2848
+          ],
+          "source_history_ids": [
+            610,
+            611
+          ],
+          "source_provenance_ids": [
+            2699,
+            2700,
+            2701,
+            2702,
+            2703,
+            2704,
+            2705,
+            2706,
+            2707,
+            3615
+          ],
+          "created_at": "2026-10-20T09:46:07.790662+00:00"
+        }
+      ],
+      "evidence_inherited": false,
+      "reason": "Current linked source evidence suffices for review context; no predecessor-only business value was inherited."
+    },
+    {
+      "review_id": 386,
+      "master_id": 240,
+      "field": "contract_duration_years",
+      "merge_lineage": [
+        {
+          "merged_master_id": 243,
+          "survivor_master_id": 240,
+          "source_record_ids": [
+            2844
+          ],
+          "source_history_ids": [
+            600,
+            601
+          ],
+          "source_provenance_ids": [
+            2655,
+            2656,
+            2657,
+            2658,
+            2659,
+            2660,
+            2661,
+            2662,
+            2663,
+            3613
+          ],
+          "created_at": "2026-10-20T09:46:07.845007+00:00"
+        }
+      ],
+      "evidence_inherited": false,
+      "reason": "Current linked source evidence suffices for review context; no predecessor-only business value was inherited."
+    },
+    {
+      "review_id": 387,
+      "master_id": 242,
+      "field": "contract_duration_years",
+      "merge_lineage": [
+        {
+          "merged_master_id": 270,
+          "survivor_master_id": 242,
+          "source_record_ids": [
+            2871
+          ],
+          "source_history_ids": [
+            659,
+            660
+          ],
+          "source_provenance_ids": [
+            2942,
+            2943,
+            2944,
+            2945,
+            2946,
+            2947,
+            2948,
+            2949,
+            2950,
+            3633
+          ],
+          "created_at": "2026-10-20T09:31:28.732133+00:00"
+        }
+      ],
+      "evidence_inherited": false,
+      "reason": "Current linked source evidence suffices for review context; no predecessor-only business value was inherited."
+    },
+    {
+      "review_id": 389,
+      "master_id": 246,
+      "field": "contract_duration_years",
+      "merge_lineage": [
+        {
+          "merged_master_id": 269,
+          "survivor_master_id": 246,
+          "source_record_ids": [
+            2870
+          ],
+          "source_history_ids": [
+            657,
+            658
+          ],
+          "source_provenance_ids": [
+            2933,
+            2934,
+            2935,
+            2936,
+            2937,
+            2938,
+            2939,
+            2940,
+            2941,
+            3632
+          ],
+          "created_at": "2026-10-20T09:31:28.668685+00:00"
+        }
+      ],
+      "evidence_inherited": false,
+      "reason": "Current linked source evidence suffices for review context; no predecessor-only business value was inherited."
+    },
+    {
+      "review_id": 390,
+      "master_id": 248,
+      "field": "contract_duration_years",
+      "merge_lineage": [
+        {
+          "merged_master_id": 266,
+          "survivor_master_id": 248,
+          "source_record_ids": [
+            2867
+          ],
+          "source_history_ids": [
+            651,
+            652
+          ],
+          "source_provenance_ids": [
+            2906,
+            2907,
+            2908,
+            2909,
+            2910,
+            2911,
+            2912,
+            2913,
+            2914,
+            3628
+          ],
+          "created_at": "2026-10-20T09:31:28.489847+00:00"
+        }
+      ],
+      "evidence_inherited": false,
+      "reason": "Current linked source evidence suffices for review context; no predecessor-only business value was inherited."
+    },
+    {
+      "review_id": 392,
+      "master_id": 251,
+      "field": "contract_duration_years",
+      "merge_lineage": [
+        {
+          "merged_master_id": 267,
+          "survivor_master_id": 251,
+          "source_record_ids": [
+            2868
+          ],
+          "source_history_ids": [
+            653,
+            654
+          ],
+          "source_provenance_ids": [
+            2915,
+            2916,
+            2917,
+            2918,
+            2919,
+            2920,
+            2921,
+            2922,
+            2923,
+            3629
+          ],
+          "created_at": "2026-10-20T09:31:28.542066+00:00"
+        }
+      ],
+      "evidence_inherited": false,
+      "reason": "Current linked source evidence suffices for review context; no predecessor-only business value was inherited."
+    },
+    {
+      "review_id": 393,
+      "master_id": 253,
+      "field": "contract_duration_years",
+      "merge_lineage": [
+        {
+          "merged_master_id": 261,
+          "survivor_master_id": 253,
+          "source_record_ids": [
+            2862
+          ],
+          "source_history_ids": [
+            641,
+            642
+          ],
+          "source_provenance_ids": [
+            2857,
+            2858,
+            2859,
+            2860,
+            2861,
+            2862,
+            2863,
+            2864,
+            2865,
+            3624
+          ],
+          "created_at": "2026-10-20T09:46:07.958821+00:00"
+        }
+      ],
+      "evidence_inherited": false,
+      "reason": "Current linked source evidence suffices for review context; no predecessor-only business value was inherited."
+    },
+    {
+      "review_id": 396,
+      "master_id": 258,
+      "field": "contract_duration_years",
+      "merge_lineage": [
+        {
+          "merged_master_id": 268,
+          "survivor_master_id": 258,
+          "source_record_ids": [
+            2869
+          ],
+          "source_history_ids": [
+            655,
+            656
+          ],
+          "source_provenance_ids": [
+            2924,
+            2925,
+            2926,
+            2927,
+            2928,
+            2929,
+            2930,
+            2931,
+            2932,
+            3630
+          ],
+          "created_at": "2026-10-20T09:31:28.603104+00:00"
+        }
+      ],
+      "evidence_inherited": false,
+      "reason": "Current linked source evidence suffices for review context; no predecessor-only business value was inherited."
+    },
+    {
+      "review_id": 397,
+      "master_id": 260,
+      "field": "contract_duration_years",
+      "merge_lineage": [
+        {
+          "merged_master_id": 274,
+          "survivor_master_id": 260,
+          "source_record_ids": [
+            2876
+          ],
+          "source_history_ids": [
+            174,
+            668,
+            669,
+            670
+          ],
+          "source_provenance_ids": [
+            2984,
+            2985,
+            2986,
+            2987,
+            2988,
+            2989,
+            2990,
+            2991,
+            2992,
+            3021,
+            3608
+          ],
+          "created_at": "2026-10-20T09:31:28.905921+00:00"
+        }
+      ],
+      "evidence_inherited": false,
+      "reason": "Current linked source evidence suffices for review context; no predecessor-only business value was inherited."
+    },
+    {
+      "review_id": 398,
+      "master_id": 262,
+      "field": "contract_duration_years",
+      "merge_lineage": [
+        {
+          "merged_master_id": 273,
+          "survivor_master_id": 262,
+          "source_record_ids": [
+            2875
+          ],
+          "source_history_ids": [
+            173,
+            665,
+            666,
+            667
+          ],
+          "source_provenance_ids": [
+            2979,
+            2975,
+            2976,
+            2977,
+            2978,
+            2980,
+            2981,
+            2982,
+            2983,
+            3020,
+            3607
+          ],
+          "created_at": "2026-10-20T09:31:28.791082+00:00"
+        }
+      ],
+      "evidence_inherited": false,
+      "reason": "Current linked source evidence suffices for review context; no predecessor-only business value was inherited."
+    }
+  ]
+}

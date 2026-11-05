@@ -1,0 +1,55 @@
+{
+  "snapshot_at": "2026-10-26 09:59:39.945317+00:00",
+  "current_masters": 566,
+  "before": {
+    "counts_by_canonical_label": {
+      "تجاري": 98,
+      "صناعي": 59,
+      "أخرى": 13,
+      "العقارات والإنشاءات": 7,
+      "الخدمات المالية": 5,
+      "التعليم": 3,
+      "السياحة": 1,
+      "الرعاية الصحية": 4,
+      "الزراعة": 1,
+      "البيئة": 8,
+      "الخدمات اللوجستية": 4,
+      "الرياضة": 1,
+      "غير محدد": 362
+    },
+    "total": 566,
+    "unspecified": 362
+  },
+  "after": {
+    "counts_by_canonical_id": {
+      "sector:logistics": 5,
+      "sector:environment": 8,
+      "sector:other": 34,
+      "sector:commercial": 433,
+      "sector:real_estate": 9,
+      "sector:education": 4,
+      "sector:sports": 1,
+      "sector:industrial": 60,
+      "sector:healthcare": 4,
+      "sector:financial_services": 5,
+      "sector:tourism": 2,
+      "sector:agriculture": 1
+    },
+    "total": 566,
+    "unspecified": 0
+  },
+  "newly_classified": {
+    "count": 362,
+    "confidence": {
+      "MEDIUM": 41,
+      "LOW": 299,
+      "HIGH": 22
+    },
+    "method": {
+      "MEDIUM_CONFIDENCE": 41,
+      "FORCED_BEST_FIT": 299,
+      "HIGH_CONFIDENCE": 22
+    }
+  },
+  "classification_reconciliation": true
+}

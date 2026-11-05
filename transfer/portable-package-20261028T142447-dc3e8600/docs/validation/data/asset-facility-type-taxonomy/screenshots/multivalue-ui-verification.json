@@ -1,0 +1,19 @@
+{
+  "validatedAt": "2026-10-19T08:42:43.310Z",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "direction": "rtl",
+  "masterReferences": [
+    "02-25-017001-73002",
+    "02-25-017001-73001"
+  ],
+  "filter": "asset_facility_type:public_square",
+  "apiTotal": 5,
+  "uiRows": 5,
+  "multivalueRows": 2,
+  "labelsVisible": true,
+  "resetWorks": true,
+  "screenshot": "asset-facility-type-multivalue.png"
+}

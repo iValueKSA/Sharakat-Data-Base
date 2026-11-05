@@ -1,0 +1,186 @@
+{
+  "read_only": true,
+  "total_eligible_masters": 291,
+  "master_raw_value_counts": [
+    {
+      "raw_value": null,
+      "count": 116,
+      "current_canonical_id": "opportunity_type:missing",
+      "current_display": "قيمة مفقودة"
+    },
+    {
+      "raw_value": "TemporaryRental",
+      "count": 116,
+      "current_canonical_id": "unmapped:opportunity_type:c54099583d8e1146",
+      "current_display": "TemporaryRental"
+    },
+    {
+      "raw_value": "Investment",
+      "count": 43,
+      "current_canonical_id": "unmapped:opportunity_type:f9b21c4bda58a631",
+      "current_display": "Investment"
+    },
+    {
+      "raw_value": "INVESTMENT_OPPORTUNITY",
+      "count": 7,
+      "current_canonical_id": "unmapped:opportunity_type:c7dabee0ed4937c9",
+      "current_display": "INVESTMENT_OPPORTUNITY"
+    },
+    {
+      "raw_value": "\"العربات المتنقلة\"",
+      "count": 2,
+      "current_canonical_id": "unmapped:opportunity_type:ed3272cc8fa2a73b",
+      "current_display": "العربات المتنقلة"
+    },
+    {
+      "raw_value": "LEASE_OPPORTUNITY",
+      "count": 2,
+      "current_canonical_id": "unmapped:opportunity_type:2ceb43d708079120",
+      "current_display": "LEASE_OPPORTUNITY"
+    },
+    {
+      "raw_value": "\"الساحات الميادين\"",
+      "count": 1,
+      "current_canonical_id": "unmapped:opportunity_type:dadd03693a594466",
+      "current_display": "الساحات الميادين"
+    },
+    {
+      "raw_value": "\"أخرى\"",
+      "count": 1,
+      "current_canonical_id": "opportunity_type:other",
+      "current_display": "أخرى"
+    },
+    {
+      "raw_value": "\"المباني\"",
+      "count": 1,
+      "current_canonical_id": "unmapped:opportunity_type:abc23e22ff22c3cb",
+      "current_display": "المباني"
+    },
+    {
+      "raw_value": "COMMERCIAL_FACILITY_OPPORTUNITY",
+      "count": 1,
+      "current_canonical_id": "unmapped:opportunity_type:45103176229e8e8e",
+      "current_display": "COMMERCIAL_FACILITY_OPPORTUNITY"
+    },
+    {
+      "raw_value": "PPP_PROJECT",
+      "count": 1,
+      "current_canonical_id": "unmapped:opportunity_type:d3e5463c0a052382",
+      "current_display": "PPP_PROJECT"
+    }
+  ],
+  "open_opportunity_type_taxonomy_conflict_rows": 24,
+  "unique_masters_with_open_type_conflicts": 19,
+  "source_coverage": [
+    {
+      "source_key": "furas",
+      "source_name": "فرص – البوابة الموحدة للاستثمار",
+      "source_records": 177,
+      "linked_source_records": 177,
+      "unique_linked_masters": 177,
+      "source_type_present_records": 177,
+      "unique_masters_with_type_evidence": 177,
+      "observed_type_values": "Investment (48) | TemporaryRental (129) | Investment (43) | TemporaryRental (121) | أنشطة تجارة المواد الغذائية (2) | محلات تجارية (3)",
+      "review_note": "See source-values.csv; raw payload and standardized projections are kept distinct."
+    },
+    {
+      "source_key": "alahsa-opportunities",
+      "source_name": "منصة الفرص الاستثمارية بالأحساء",
+      "source_records": 103,
+      "linked_source_records": 103,
+      "unique_linked_masters": 103,
+      "source_type_present_records": 0,
+      "unique_masters_with_type_evidence": 0,
+      "observed_type_values": "",
+      "review_note": "See source-values.csv; raw payload and standardized projections are kept distinct."
+    },
+    {
+      "source_key": "ahda",
+      "source_name": "هيئة تطوير الأحساء",
+      "source_records": 7,
+      "linked_source_records": 7,
+      "unique_linked_masters": 7,
+      "source_type_present_records": 7,
+      "unique_masters_with_type_evidence": 7,
+      "observed_type_values": "INVESTMENT_OPPORTUNITY (7)",
+      "review_note": "See source-values.csv; raw payload and standardized projections are kept distinct."
+    },
+    {
+      "source_key": "invest-saudi",
+      "source_name": "استثمر في السعودية",
+      "source_records": 2555,
+      "linked_source_records": 8,
+      "unique_linked_masters": 8,
+      "source_type_present_records": 2555,
+      "unique_masters_with_type_evidence": 8,
+      "observed_type_values": "Agriculture (71) | Commercial (6) | Culture (99) | Education (75) | Energy (55) | Environment (264) | Healthcare (116) | Industrial (828) | Logistics (107) | Other (95) | Real Estate (543) | Real Estate & Construction (39) | Technology (73) | Tourism (184)",
+      "review_note": "See source-values.csv; raw payload and standardized projections are kept distinct."
+    },
+    {
+      "source_key": "kfu",
+      "source_name": "جامعة الملك فيصل",
+      "source_records": 6,
+      "linked_source_records": 3,
+      "unique_linked_masters": 3,
+      "source_type_present_records": 6,
+      "unique_masters_with_type_evidence": 3,
+      "observed_type_values": "COMMERCIAL_FACILITY_OPPORTUNITY (1) | GENERAL_ANNOUNCEMENT (3) | LEASE_OPPORTUNITY (2) | COMMERCIAL_FACILITY_OPPORTUNITY (1) | GENERAL_ANNOUNCEMENT (3) | LEASE_OPPORTUNITY (2)",
+      "review_note": "See source-values.csv; raw payload and standardized projections are kept distinct."
+    },
+    {
+      "source_key": "modon",
+      "source_name": "مدن",
+      "source_records": 0,
+      "linked_source_records": 0,
+      "unique_linked_masters": 0,
+      "source_type_present_records": 0,
+      "unique_masters_with_type_evidence": 0,
+      "observed_type_values": "",
+      "review_note": "See source-values.csv; raw payload and standardized projections are kept distinct."
+    },
+    {
+      "source_key": "ncp",
+      "source_name": "المركز الوطني للتخصيص",
+      "source_records": 45,
+      "linked_source_records": 1,
+      "unique_linked_masters": 1,
+      "source_type_present_records": 45,
+      "unique_masters_with_type_evidence": 1,
+      "observed_type_values": "PPP_PROJECT (45)",
+      "review_note": "See source-values.csv; raw payload and standardized projections are kept distinct."
+    },
+    {
+      "source_key": "nhc",
+      "source_name": "NHC الاستثمار",
+      "source_records": 0,
+      "linked_source_records": 0,
+      "unique_linked_masters": 0,
+      "source_type_present_records": 0,
+      "unique_masters_with_type_evidence": 0,
+      "observed_type_values": "",
+      "review_note": "See source-values.csv; raw payload and standardized projections are kept distinct."
+    },
+    {
+      "source_key": "pif",
+      "source_name": "بوابة القطاع الخاص لصندوق الاستثمارات العامة",
+      "source_records": 0,
+      "linked_source_records": 0,
+      "unique_linked_masters": 0,
+      "source_type_present_records": 0,
+      "unique_masters_with_type_evidence": 0,
+      "observed_type_values": "",
+      "review_note": "See source-values.csv; raw payload and standardized projections are kept distinct."
+    },
+    {
+      "source_key": "mwan",
+      "source_name": "موان",
+      "source_records": 5,
+      "linked_source_records": 0,
+      "unique_linked_masters": 0,
+      "source_type_present_records": 5,
+      "unique_masters_with_type_evidence": 0,
+      "observed_type_values": "WASTE_SECTOR_INVESTMENT (5)",
+      "review_note": "See source-values.csv; raw payload and standardized projections are kept distinct."
+    }
+  ]
+}

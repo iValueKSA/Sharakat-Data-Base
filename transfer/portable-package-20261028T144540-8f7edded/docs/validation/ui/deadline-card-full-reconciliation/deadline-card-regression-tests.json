@@ -1,0 +1,21 @@
+{
+  "focused": {
+    "command_scope": [
+      "tests/test_deadline_distribution.py",
+      "tests/test_data_dashboard.py",
+      "tests/test_dashboard_video_hero.py"
+    ],
+    "passed": 15,
+    "failed": 0,
+    "status": "PASSED"
+  },
+  "full_isolated_regression": {
+    "command_scope": "tests/ (complete canonical test suite)",
+    "database": "temporary isolated SQLite",
+    "network": "disabled",
+    "passed": 599,
+    "failed": 0,
+    "status": "PASSED"
+  },
+  "collection_note": "A root-level pytest attempt also collected archival duplicate test trees under tmp/ and failed collection with imported-module path collisions. No functional tests were skipped in the passing canonical tests/ run."
+}

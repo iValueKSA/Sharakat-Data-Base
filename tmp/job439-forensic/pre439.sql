@@ -1,0 +1,30 @@
+SELECT json_build_object(
+ 'backup_created_at','2026-10-22T07:40:05.486297+00:00',
+ 'source_key','invest-saudi',
+ 'masters_total',(SELECT count(*) FROM opportunities),
+ 'masters_current',(SELECT count(*) FROM opportunities WHERE merged_into_id IS NULL),
+ 'masters_merged',(SELECT count(*) FROM opportunities WHERE merged_into_id IS NOT NULL),
+ 'source_opportunities_total',(SELECT count(*) FROM source_opportunities),
+ 'invest_saudi_source_opportunities',(SELECT count(*) FROM source_opportunities so JOIN sources s ON s.id=so.source_id WHERE s.source_key='invest-saudi'),
+ 'invest_saudi_lifecycle',(SELECT json_object_agg(canonical_status,n) FROM (SELECT so.canonical_status,count(*) n FROM source_opportunities so JOIN sources s ON s.id=so.source_id WHERE s.source_key='invest-saudi' GROUP BY so.canonical_status) q),
+ 'invest_saudi_linkage',(SELECT json_build_object('unlinked',count(*) FILTER (WHERE so.master_opportunity_id IS NULL),'linked',count(*) FILTER (WHERE so.master_opportunity_id IS NOT NULL)) FROM source_opportunities so JOIN sources s ON s.id=so.source_id WHERE s.source_key='invest-saudi'),
+ 'invest_saudi_missing_checks',(SELECT json_object_agg(missing_successful_checks,n) FROM (SELECT so.missing_successful_checks,count(*) n FROM source_opportunities so JOIN sources s ON s.id=so.source_id WHERE s.source_key='invest-saudi' GROUP BY so.missing_successful_checks) q),
+ 'source_observations_total',(SELECT count(*) FROM source_observations),
+ 'invest_saudi_rows',(SELECT json_agg(json_build_object(
+    'source_opportunity_id',so.id,
+    'source_opportunity_key',so.source_opportunity_id,
+    'official_id_original',so.official_source_id_original,
+    'official_id_normalized',so.official_source_id_normalized,
+    'canonical_status',so.canonical_status,
+    'missing_successful_checks',so.missing_successful_checks,
+    'last_missing_at',so.last_missing_at,
+    'last_seen_at',so.last_seen_at,
+    'master_id',so.master_opportunity_id,
+    'source_record_family',so.raw_data_json->>'source_record_family',
+    'dataset_name',so.raw_data_json->>'dataset_name',
+    'qualified_location',so.raw_data_json->>'qualified_location',
+    'location_detection_method',so.raw_data_json->>'location_detection_method',
+    'raw_status',so.raw_status,
+    'dataset_memberships',(SELECT json_agg(json_build_object('dataset_name',m.dataset_name,'endpoint',m.endpoint,'last_seen_at',m.last_seen_at,'missing_successful_checks',m.missing_successful_checks,'is_current',m.is_current)) FROM source_opportunity_dataset_memberships m WHERE m.source_opportunity_id=so.id)
+  ) ORDER BY so.id) FROM source_opportunities so JOIN sources s ON s.id=so.source_id WHERE s.source_key='invest-saudi')
+)::text;

@@ -1,0 +1,2065 @@
+{
+  "previewed_at": "2026-10-19T10:33:43.650630+00:00",
+  "master_count": 291,
+  "source_record_count": 2898,
+  "masters_without_linked_source": 0,
+  "source_status_counts": {
+    "متاحة": 103,
+    "منشورة": 169,
+    "أزيلت من المصدر": 14,
+    "غير محددة": 2562,
+    "منتهية": 5,
+    "حالة غير معروفة": 44,
+    "تمت الترسية": 1
+  },
+  "source_status_counts_by_source": {
+    "alahsa-opportunities": {
+      "متاحة": 103
+    },
+    "furas": {
+      "منشورة": 164,
+      "أزيلت من المصدر": 13
+    },
+    "ahda": {
+      "غير محددة": 7
+    },
+    "invest-saudi": {
+      "غير محددة": 2555
+    },
+    "kfu": {
+      "منتهية": 1,
+      "أزيلت من المصدر": 1,
+      "حالة غير معروفة": 4
+    },
+    "ncp": {
+      "منتهية": 4,
+      "حالة غير معروفة": 40,
+      "تمت الترسية": 1
+    },
+    "mwan": {
+      "منشورة": 5
+    }
+  },
+  "raw_status_values": [
+    {
+      "source": "alahsa-opportunities",
+      "raw_status": "متاحة",
+      "count": 103
+    },
+    {
+      "source": "furas",
+      "raw_status": "Announced",
+      "count": 173
+    },
+    {
+      "source": "furas",
+      "raw_status": "Deleted",
+      "count": 4
+    },
+    {
+      "source": "ahda",
+      "raw_status": null,
+      "count": 7
+    },
+    {
+      "source": "invest-saudi",
+      "raw_status": null,
+      "count": 2555
+    },
+    {
+      "source": "kfu",
+      "raw_status": "EXPIRED",
+      "count": 1
+    },
+    {
+      "source": "kfu",
+      "raw_status": "UNKNOWN",
+      "count": 5
+    },
+    {
+      "source": "ncp",
+      "raw_status": "EXPIRED",
+      "count": 3
+    },
+    {
+      "source": "ncp",
+      "raw_status": "UNKNOWN",
+      "count": 40
+    },
+    {
+      "source": "ncp",
+      "raw_status": "IDENTITY_ALIAS",
+      "count": 1
+    },
+    {
+      "source": "ncp",
+      "raw_status": "AWARDED",
+      "count": 1
+    },
+    {
+      "source": "mwan",
+      "raw_status": "ANNOUNCED",
+      "count": 5
+    }
+  ],
+  "master_corrections": [
+    {
+      "master_id": 10,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        10
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 11,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        11
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 12,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        12
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 13,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        13
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 14,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        14
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 15,
+      "before": "REMOVED_FROM_SOURCE",
+      "after": "أزيلت من المصدر",
+      "source_record_ids": [
+        15
+      ],
+      "source_states": [
+        "أزيلت من المصدر"
+      ]
+    },
+    {
+      "master_id": 16,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        16
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 17,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        17
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 18,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        18
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 19,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        19
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 20,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        20
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 21,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        21
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 22,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        22
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 23,
+      "before": "REMOVED_FROM_SOURCE",
+      "after": "أزيلت من المصدر",
+      "source_record_ids": [
+        23
+      ],
+      "source_states": [
+        "أزيلت من المصدر"
+      ]
+    },
+    {
+      "master_id": 24,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        24
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 25,
+      "before": "REMOVED_FROM_SOURCE",
+      "after": "أزيلت من المصدر",
+      "source_record_ids": [
+        25
+      ],
+      "source_states": [
+        "أزيلت من المصدر"
+      ]
+    },
+    {
+      "master_id": 26,
+      "before": "REMOVED_FROM_SOURCE",
+      "after": "أزيلت من المصدر",
+      "source_record_ids": [
+        26
+      ],
+      "source_states": [
+        "أزيلت من المصدر"
+      ]
+    },
+    {
+      "master_id": 27,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        27
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 28,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        28
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 29,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        29
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 30,
+      "before": "REMOVED_FROM_SOURCE",
+      "after": "أزيلت من المصدر",
+      "source_record_ids": [
+        30
+      ],
+      "source_states": [
+        "أزيلت من المصدر"
+      ]
+    },
+    {
+      "master_id": 31,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        31
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 32,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        32
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 33,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        33
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 34,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        34
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 35,
+      "before": "REMOVED_FROM_SOURCE",
+      "after": "أزيلت من المصدر",
+      "source_record_ids": [
+        35
+      ],
+      "source_states": [
+        "أزيلت من المصدر"
+      ]
+    },
+    {
+      "master_id": 36,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        36
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 37,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        37
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 38,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        38
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 39,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        39
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 40,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        40
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 41,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        41
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 42,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        42
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 43,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        43
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 44,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        44
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 45,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        45
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 46,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        46
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 47,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        47
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 48,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        48
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 49,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        49
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 50,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        50
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 51,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        51
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 52,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        52
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 53,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        53
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 54,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        54
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 55,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        55
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 56,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        56
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 57,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        57
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 58,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        58
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 59,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        59
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 60,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        60
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 61,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        61
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 62,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        62
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 63,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        63
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 64,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        64
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 65,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        65
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 66,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        66
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 67,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        67
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 68,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        68
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 69,
+      "before": "REMOVED_FROM_SOURCE",
+      "after": "أزيلت من المصدر",
+      "source_record_ids": [
+        69
+      ],
+      "source_states": [
+        "أزيلت من المصدر"
+      ]
+    },
+    {
+      "master_id": 70,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        70
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 71,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        71
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 72,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        72
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 73,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        73
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 76,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        76
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 77,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        77
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 78,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        78
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 79,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        79
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 80,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        80
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 81,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        81
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 82,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        82
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 83,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        83
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 84,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        84
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 85,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        85
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 86,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        86
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 87,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        87
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 88,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        88
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 89,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        89
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 90,
+      "before": "REMOVED_FROM_SOURCE",
+      "after": "أزيلت من المصدر",
+      "source_record_ids": [
+        90
+      ],
+      "source_states": [
+        "أزيلت من المصدر"
+      ]
+    },
+    {
+      "master_id": 91,
+      "before": "REMOVED_FROM_SOURCE",
+      "after": "أزيلت من المصدر",
+      "source_record_ids": [
+        91
+      ],
+      "source_states": [
+        "أزيلت من المصدر"
+      ]
+    },
+    {
+      "master_id": 92,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        92
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 93,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        93
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 94,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        94
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 95,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        95
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 96,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        96
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 97,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        97
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 98,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        98
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 99,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        99
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 100,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        100
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 101,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        101
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 102,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        102,
+        2357
+      ],
+      "source_states": [
+        "منشورة",
+        "غير محددة"
+      ]
+    },
+    {
+      "master_id": 103,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        103
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 104,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        104
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 105,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        105
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 106,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        106
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 107,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        107
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 108,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        108
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 109,
+      "before": "REMOVED_FROM_SOURCE",
+      "after": "أزيلت من المصدر",
+      "source_record_ids": [
+        109
+      ],
+      "source_states": [
+        "أزيلت من المصدر"
+      ]
+    },
+    {
+      "master_id": 110,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        110
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 111,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        111
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 112,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        112
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 113,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        113
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 114,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        114
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 115,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        115
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 116,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        116
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 117,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        117
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 118,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        118
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 119,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        119
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 120,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        120
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 121,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        121
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 122,
+      "before": "REMOVED_FROM_SOURCE",
+      "after": "أزيلت من المصدر",
+      "source_record_ids": [
+        122
+      ],
+      "source_states": [
+        "أزيلت من المصدر"
+      ]
+    },
+    {
+      "master_id": 123,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        123
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 124,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        124
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 125,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        125
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 126,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        126
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 127,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        127
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 128,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        128
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 129,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        129
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 130,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        130
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 131,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        131
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 132,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        132
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 133,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        133
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 134,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        134
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 136,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        136
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 137,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        137
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 138,
+      "before": "REMOVED_FROM_SOURCE",
+      "after": "أزيلت من المصدر",
+      "source_record_ids": [
+        138
+      ],
+      "source_states": [
+        "أزيلت من المصدر"
+      ]
+    },
+    {
+      "master_id": 139,
+      "before": "REMOVED_FROM_SOURCE",
+      "after": "أزيلت من المصدر",
+      "source_record_ids": [
+        139
+      ],
+      "source_states": [
+        "أزيلت من المصدر"
+      ]
+    },
+    {
+      "master_id": 141,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        141
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 142,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        142
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 205,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        208
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 206,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        209
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 207,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        210
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 224,
+      "before": "EXPIRED",
+      "after": "منتهية",
+      "source_record_ids": [
+        2773
+      ],
+      "source_states": [
+        "منتهية"
+      ]
+    },
+    {
+      "master_id": 225,
+      "before": "REMOVED_FROM_SOURCE",
+      "after": "أزيلت من المصدر",
+      "source_record_ids": [
+        2774
+      ],
+      "source_states": [
+        "أزيلت من المصدر"
+      ]
+    },
+    {
+      "master_id": 226,
+      "before": "Announced",
+      "after": "متاحة",
+      "source_record_ids": [
+        2778,
+        2780
+      ],
+      "source_states": [
+        "منشورة",
+        "متاحة"
+      ]
+    },
+    {
+      "master_id": 227,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2779
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 228,
+      "before": "EXPIRED",
+      "after": "منتهية",
+      "source_record_ids": [
+        2781
+      ],
+      "source_states": [
+        "منتهية"
+      ]
+    },
+    {
+      "master_id": 230,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2368,
+        2831
+      ],
+      "source_states": [
+        "غير محددة",
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 231,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2832
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 232,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2833
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 233,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2834
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 234,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2835
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 235,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2836
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 237,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2838
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 239,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2840
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 240,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2841
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 242,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2843
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 244,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2845
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 246,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2847
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 248,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2849
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 249,
+      "before": "Announced",
+      "after": "متاحة",
+      "source_record_ids": [
+        2850,
+        2874
+      ],
+      "source_states": [
+        "منشورة",
+        "متاحة"
+      ]
+    },
+    {
+      "master_id": 251,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2852
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 253,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2854
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 255,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2856
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 257,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2858
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 258,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2859
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 260,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2861
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 262,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2863
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 308,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2910
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 309,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2911
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 310,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2912
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 311,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2913
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 312,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2914
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 313,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2915
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 314,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2916
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 315,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2917
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 316,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2918
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 317,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2919
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 318,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2920
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 319,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2921
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 320,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2922
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 321,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2923
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 322,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2924
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 323,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2925
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 324,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2926
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 325,
+      "before": "Announced",
+      "after": "منشورة",
+      "source_record_ids": [
+        2927
+      ],
+      "source_states": [
+        "منشورة"
+      ]
+    },
+    {
+      "master_id": 326,
+      "before": "Unknown",
+      "after": "حالة غير معروفة",
+      "source_record_ids": [
+        2928
+      ],
+      "source_states": [
+        "حالة غير معروفة"
+      ]
+    }
+  ],
+  "master_correction_count": 177,
+  "multi_source_status_conflicts": [],
+  "cancellation_evidence_candidates": []
+}

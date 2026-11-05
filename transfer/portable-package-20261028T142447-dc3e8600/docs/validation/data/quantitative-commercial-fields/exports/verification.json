@@ -1,0 +1,28 @@
+{
+  "csv_rows": 292,
+  "xlsx_data_rows": 292,
+  "xlsx_columns": 32,
+  "master218": {
+    "official_reference": "",
+    "technical": "investsaudi:44865",
+    "xlsx_technical": "investsaudi:44865"
+  },
+  "master228": {
+    "duration": "5.0",
+    "currency": "",
+    "official_reference": "",
+    "technical": "ncp:foodsafetylabs",
+    "xlsx_duration": 5
+  },
+  "master230": {
+    "area": "160.0",
+    "duration": "5.0",
+    "currency": "",
+    "official_reference": "06-26-183737-49010",
+    "technical": "furas:06-26-183737-49010 | investsaudi:54952",
+    "xlsx_reference": "06-26-183737-49010",
+    "xlsx_reference_is_text": true,
+    "xlsx_reference_format": "@"
+  },
+  "consistent": true
+}

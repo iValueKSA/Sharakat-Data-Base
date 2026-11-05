@@ -1,0 +1,74 @@
+{
+  "sources": [
+    {
+      "key": "furas",
+      "area": "attributes.TOTALSPACEINMETERS; schema explicitly square metres",
+      "value": "Booklet/RFP/annual-rent fields are not investment_value",
+      "duration": "attributes.DURATION; unit and contract semantics undocumented; raw-only review",
+      "reference": "attributes.OPPORTUNITYID is official reference; OBJECTID is technical fallback"
+    },
+    {
+      "key": "alahsa-opportunities",
+      "area": "details.المساحة with explicit م²",
+      "value": "no investment amount field exposed in linked records",
+      "duration": "details.مدة العقد with explicit Arabic year unit",
+      "reference": "no separate official reference field exposed; internal IDs remain technical"
+    },
+    {
+      "key": "invest-saudi",
+      "area": "modalData.location.siteArea; raw unit absent and not projected",
+      "value": "investmentSize is raw and has no currency metadata; not projected",
+      "duration": "modalData.contractPeriod explicitly in Years",
+      "reference": "modalData.opportunityNumber is official; API id is technical"
+    },
+    {
+      "key": "ncp",
+      "area": "none",
+      "value": "none",
+      "duration": "explicit contract-duration prose only; Master 228 is five years",
+      "reference": "record URL/ID is source identity, not a business reference"
+    },
+    {
+      "key": "ahda",
+      "area": "none in linked records",
+      "value": "none",
+      "duration": "none",
+      "reference": "none"
+    },
+    {
+      "key": "kfu",
+      "area": "none in linked records",
+      "value": "none",
+      "duration": "none",
+      "reference": "none"
+    },
+    {
+      "key": "modon",
+      "area": "no current source rows",
+      "value": "no current source rows",
+      "duration": "no current source rows",
+      "reference": "no current source rows"
+    },
+    {
+      "key": "nhc",
+      "area": "no current source rows",
+      "value": "no current source rows",
+      "duration": "no current source rows",
+      "reference": "no current source rows"
+    },
+    {
+      "key": "pif",
+      "area": "no current source rows",
+      "value": "no current source rows",
+      "duration": "no current source rows",
+      "reference": "no current source rows"
+    },
+    {
+      "key": "mwan",
+      "area": "none in current source records",
+      "value": "none in current source records",
+      "duration": "none in current source records",
+      "reference": "none in current source records"
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "status": "PASSED",
+  "live_counts": {
+    "all": 6623,
+    "eastern": 975,
+    "riyadh": 800,
+    "makkah": 319,
+    "ahsa": 518
+  },
+  "region_labels": [
+    "جميع المناطق",
+    "الرياض",
+    "مكة المكرمة",
+    "المدينة المنورة",
+    "القصيم",
+    "المنطقة الشرقية",
+    "عسير",
+    "تبوك",
+    "حائل",
+    "الحدود الشمالية",
+    "جازان",
+    "نجران",
+    "الباحة",
+    "الجوف"
+  ],
+  "region_option_count": 13,
+  "alahsa_false_positives": 0,
+  "alahsa_false_negatives": 0,
+  "downloads": [
+    {
+      "label": "all",
+      "ext": "csv",
+      "output": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\live-13-region-filter-evidence\\all.csv",
+      "expected": 6623
+    },
+    {
+      "label": "all",
+      "ext": "xlsx",
+      "output": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\live-13-region-filter-evidence\\all.xlsx",
+      "expected": 6623
+    },
+    {
+      "label": "eastern",
+      "ext": "csv",
+      "output": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\live-13-region-filter-evidence\\eastern.csv",
+      "expected": 975
+    },
+    {
+      "label": "eastern",
+      "ext": "xlsx",
+      "output": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\live-13-region-filter-evidence\\eastern.xlsx",
+      "expected": 975
+    },
+    {
+      "label": "riyadh",
+      "ext": "csv",
+      "output": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\live-13-region-filter-evidence\\riyadh.csv",
+      "expected": 800
+    },
+    {
+      "label": "riyadh",
+      "ext": "xlsx",
+      "output": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\live-13-region-filter-evidence\\riyadh.xlsx",
+      "expected": 800
+    },
+    {
+      "label": "makkah",
+      "ext": "csv",
+      "output": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\live-13-region-filter-evidence\\makkah.csv",
+      "expected": 319
+    },
+    {
+      "label": "makkah",
+      "ext": "xlsx",
+      "output": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\live-13-region-filter-evidence\\makkah.xlsx",
+      "expected": 319
+    }
+  ],
+  "viewports": [
+    {
+      "view": "opportunities",
+      "width": 1920,
+      "height": 1080,
+      "rtl": true,
+      "viewport": 1920,
+      "document": 1920,
+      "overflow": false,
+      "regionVisible": true,
+      "regionContained": true
+    },
+    {
+      "view": "data-dashboard",
+      "width": 1920,
+      "height": 1080,
+      "rtl": true,
+      "viewport": 1920,
+      "document": 1920,
+      "overflow": false,
+      "regionVisible": true,
+      "regionContained": true
+    },
+    {
+      "view": "opportunities",
+      "width": 1440,
+      "height": 900,
+      "rtl": true,
+      "viewport": 1440,
+      "document": 1440,
+      "overflow": false,
+      "regionVisible": true,
+      "regionContained": true
+    },
+    {
+      "view": "data-dashboard",
+      "width": 1440,
+      "height": 900,
+      "rtl": true,
+      "viewport": 1440,
+      "document": 1440,
+      "overflow": false,
+      "regionVisible": true,
+      "regionContained": true
+    },
+    {
+      "view": "opportunities",
+      "width": 1366,
+      "height": 768,
+      "rtl": true,
+      "viewport": 1366,
+      "document": 1366,
+      "overflow": false,
+      "regionVisible": true,
+      "regionContained": true
+    },
+    {
+      "view": "data-dashboard",
+      "width": 1366,
+      "height": 768,
+      "rtl": true,
+      "viewport": 1366,
+      "document": 1366,
+      "overflow": false,
+      "regionVisible": true,
+      "regionContained": true
+    },
+    {
+      "view": "opportunities",
+      "width": 768,
+      "height": 900,
+      "rtl": true,
+      "viewport": 768,
+      "document": 768,
+      "overflow": false,
+      "regionVisible": true,
+      "regionContained": true
+    },
+    {
+      "view": "data-dashboard",
+      "width": 768,
+      "height": 900,
+      "rtl": true,
+      "viewport": 768,
+      "document": 768,
+      "overflow": false,
+      "regionVisible": true,
+      "regionContained": true
+    },
+    {
+      "view": "opportunities",
+      "width": 390,
+      "height": 844,
+      "rtl": true,
+      "viewport": 390,
+      "document": 390,
+      "overflow": false,
+      "regionVisible": true,
+      "regionContained": true
+    },
+    {
+      "view": "data-dashboard",
+      "width": 390,
+      "height": 844,
+      "rtl": true,
+      "viewport": 390,
+      "document": 390,
+      "overflow": false,
+      "regionVisible": true,
+      "regionContained": true
+    }
+  ],
+  "js_errors": [],
+  "http5xx": [],
+  "checks": [
+    "Canonical Region count = 13",
+    "Current Master total = 6623",
+    "Live Region/Governorate counts: {\"all\":6623,\"eastern\":975,\"riyadh\":800,\"makkah\":319,\"ahsa\":518}",
+    "Al-Ahsa selector membership count matches current Master API count",
+    "Region dropdown options/order exactly match: جميع المناطق، الرياض، مكة المكرمة، المدينة المنورة، القصيم، المنطقة الشرقية، عسير، تبوك، حائل، الحدود الشمالية، جازان، نجران، الباحة، الجوف",
+    "Opportunities all-Regions visible count is 6,623",
+    "Eastern Governorate choices include Al-Ahsa",
+    "Eastern Governorate choices exclude Riyadh Governorates",
+    "Al-Ahsa city/locality filter stays enabled under its Governorate",
+    "Eastern + Al-Ahsa pagination returns 518 unique current Masters",
+    "Al-Ahsa false positives = 0",
+    "Al-Ahsa false negatives = 0",
+    "Switching Eastern → Riyadh resets Governorate and City selections",
+    "Opportunity CSV link follows all Region",
+    "Opportunity XLSX link follows all Region",
+    "Opportunity CSV link follows eastern Region",
+    "Opportunity XLSX link follows eastern Region",
+    "Opportunity CSV link follows riyadh Region",
+    "Opportunity XLSX link follows riyadh Region",
+    "Opportunity CSV link follows makkah Region",
+    "Opportunity XLSX link follows makkah Region",
+    "Region + sector composition count reconciles at 0",
+    "Dashboard dropdown has the same 13 canonical Region choices and order",
+    "Dashboard KPI/status chart and list parity: 975/975/975",
+    "Dashboard exports retain Region filter",
+    "Dashboard Al-Ahsa Governorate and City dependency is available under Eastern Province",
+    "Dashboard switching Eastern → Riyadh resets Governorate and City selections",
+    "Dashboard Region switch updates total card to Riyadh count",
+    "Dashboard Region filter propagates through Makkah metrics and charts",
+    "Dashboard reset restores national Master total",
+    "opportunities responsive RTL 1920x1080: {\"rtl\":true,\"viewport\":1920,\"document\":1920,\"overflow\":false,\"regionVisible\":true,\"regionContained\":true}",
+    "data-dashboard responsive RTL 1920x1080: {\"rtl\":true,\"viewport\":1920,\"document\":1920,\"overflow\":false,\"regionVisible\":true,\"regionContained\":true}",
+    "opportunities responsive RTL 1440x900: {\"rtl\":true,\"viewport\":1440,\"document\":1440,\"overflow\":false,\"regionVisible\":true,\"regionContained\":true}",
+    "data-dashboard responsive RTL 1440x900: {\"rtl\":true,\"viewport\":1440,\"document\":1440,\"overflow\":false,\"regionVisible\":true,\"regionContained\":true}",
+    "opportunities responsive RTL 1366x768: {\"rtl\":true,\"viewport\":1366,\"document\":1366,\"overflow\":false,\"regionVisible\":true,\"regionContained\":true}",
+    "data-dashboard responsive RTL 1366x768: {\"rtl\":true,\"viewport\":1366,\"document\":1366,\"overflow\":false,\"regionVisible\":true,\"regionContained\":true}",
+    "opportunities responsive RTL 768x900: {\"rtl\":true,\"viewport\":768,\"document\":768,\"overflow\":false,\"regionVisible\":true,\"regionContained\":true}",
+    "data-dashboard responsive RTL 768x900: {\"rtl\":true,\"viewport\":768,\"document\":768,\"overflow\":false,\"regionVisible\":true,\"regionContained\":true}",
+    "opportunities responsive RTL 390x844: {\"rtl\":true,\"viewport\":390,\"document\":390,\"overflow\":false,\"regionVisible\":true,\"regionContained\":true}",
+    "data-dashboard responsive RTL 390x844: {\"rtl\":true,\"viewport\":390,\"document\":390,\"overflow\":false,\"regionVisible\":true,\"regionContained\":true}",
+    "National map/dashboard feature gates remain disabled",
+    "JavaScript errors = 0",
+    "Unexpected 5xx responses = 0"
+  ]
+}

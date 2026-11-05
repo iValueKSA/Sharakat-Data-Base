@@ -1,0 +1,28 @@
+{
+  "snapshot_at": "2026-10-22T07:42:21.338046+00:00",
+  "sources": {
+    "furas": {
+      "total": 332,
+      "by_classification": {
+        "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED": 332
+      },
+      "with_any_evidence_recovered": 332
+    },
+    "invest-saudi": {
+      "total": 8,
+      "by_classification": {
+        "SOURCE_RECHECK_REQUIRED": 2,
+        "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED": 5,
+        "WRONG_BLOCKED_CLASSIFICATION": 1
+      },
+      "with_any_evidence_recovered": 6
+    },
+    "ahda": {
+      "total": 7,
+      "by_classification": {
+        "SOURCE_RECHECK_REQUIRED": 7
+      },
+      "with_any_evidence_recovered": 0
+    }
+  }
+}

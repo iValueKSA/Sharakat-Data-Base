@@ -1,0 +1,42 @@
+{
+  "captured_at": "2026-10-26T08:29:53.5871488Z",
+  "before": [
+    "SOURCE ENUMERATION",
+    "SOURCE UPSERT",
+    "OBSERVATIONS",
+    "CANONICAL REEVALUATION",
+    "REVIEW GENERATION",
+    "OPEN-ONLY REVIEW DEDUPLICATION",
+    "JOB FINALIZATION",
+    "POST-SYNC FAST DQ"
+  ],
+  "before_findings": [
+    "Autonomous conservative resolver was absent from scheduled sync task path.",
+    "Terminal prior reviews were ignored by queue_conflict_idempotently; every later scan could create a new OPEN row for the same conflict.",
+    "DQ ran after service job finalization in the Celery task wrapper."
+  ],
+  "after": [
+    "SOURCE ENUMERATION",
+    "SOURCE UPSERT",
+    "OBSERVATIONS",
+    "CANONICAL REEVALUATION",
+    "REVIEW GENERATION WITH SEMANTIC FINGERPRINT / TERMINAL-CONFLICT LOOKUP",
+    "REVIEW REUSE OR MATERIAL-CHANGE REEVALUATION",
+    "ACCEPTED AUTONOMOUS SYSTEM RESOLUTION",
+    "POST-SYNC FAST DQ AND METRICS",
+    "JOB FINALIZATION COMMIT"
+  ],
+  "after_behavior": [
+    "Successful jobs invoke resolve_post_sync_reviews in the existing source transaction.",
+    "Unchanged conflicts emit one SYSTEM_REEVALUATION per fingerprint per job and do not create a new actionable row.",
+    "Material source/canonical/evidence changes receive a distinct fingerprint and remain eligible for current reevaluation.",
+    "The service-level DQ run is persisted before final job state; task wrapper skips duplicate DQ when the job metrics contain POST_SYNC_DQ_RUN_ID.",
+    "Non-successful completed scans retain the task-level fast DQ fallback."
+  ],
+  "evidence": [
+    "app/service.py::sync_source",
+    "app/service.py::queue_conflict_idempotently",
+    "app/autonomous_review_resolution.py::resolve_post_sync_reviews",
+    "app/tasks.py::sync_source_task"
+  ]
+}

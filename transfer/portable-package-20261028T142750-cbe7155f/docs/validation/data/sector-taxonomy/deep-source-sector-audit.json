@@ -1,0 +1,3778 @@
+{
+  "mode": "READ_ONLY_DRY_RUN",
+  "masters": {
+    "total_nonmerged": 291,
+    "sector_values": [
+      {
+        "value": "<NULL>",
+        "count": 124,
+        "canonical_id": "sector:missing",
+        "canonical_label": "قيمة مفقودة"
+      },
+      {
+        "value": "صناعي",
+        "count": 59,
+        "canonical_id": "sector:industrial",
+        "canonical_label": "صناعي"
+      },
+      {
+        "value": "تجاري",
+        "count": 39,
+        "canonical_id": "sector:commercial",
+        "canonical_label": "تجاري"
+      },
+      {
+        "value": "أخرى",
+        "count": 17,
+        "canonical_id": "sector:other",
+        "canonical_label": "أخرى"
+      },
+      {
+        "value": "أنشطة التجارة العامة",
+        "count": 8,
+        "canonical_id": "unmapped:sector:77835fb5f22b9197",
+        "canonical_label": "أنشطة التجارة العامة"
+      },
+      {
+        "value": "فرصة استثمارية",
+        "count": 7,
+        "canonical_id": "sector:investment_opportunity",
+        "canonical_label": "فرصة استثمارية"
+      },
+      {
+        "value": "البيئة",
+        "count": 6,
+        "canonical_id": "sector:environment",
+        "canonical_label": "البيئة"
+      },
+      {
+        "value": "خدمات الصرافة",
+        "count": 6,
+        "canonical_id": "unmapped:sector:b912bfbec2af693b",
+        "canonical_label": "خدمات الصرافة"
+      },
+      {
+        "value": "أنشطة تجارة المواد الغذائية",
+        "count": 5,
+        "canonical_id": "unmapped:sector:15965e0762dce702",
+        "canonical_label": "أنشطة تجارة المواد الغذائية"
+      },
+      {
+        "value": "خدمي",
+        "count": 5,
+        "canonical_id": "unmapped:sector:586e8187b6b6d2a7",
+        "canonical_label": "خدمي"
+      },
+      {
+        "value": "محلات تجارية",
+        "count": 3,
+        "canonical_id": "unmapped:sector:8b07babf6eae82a5",
+        "canonical_label": "محلات تجارية"
+      },
+      {
+        "value": "LEASE_OPPORTUNITY",
+        "count": 2,
+        "canonical_id": "unmapped:sector:2ceb43d708079120",
+        "canonical_label": "LEASE_OPPORTUNITY"
+      },
+      {
+        "value": "العربات المتنقلة",
+        "count": 2,
+        "canonical_id": "unmapped:sector:ced10d6b9ff0ad90",
+        "canonical_label": "العربات المتنقلة"
+      },
+      {
+        "value": "منشآت تقديم الغذاء",
+        "count": 2,
+        "canonical_id": "unmapped:sector:549ba192c70565b7",
+        "canonical_label": "منشآت تقديم الغذاء"
+      },
+      {
+        "value": "COMMERCIAL_FACILITY_OPPORTUNITY",
+        "count": 1,
+        "canonical_id": "unmapped:sector:45103176229e8e8e",
+        "canonical_label": "COMMERCIAL_FACILITY_OPPORTUNITY"
+      },
+      {
+        "value": "PPP_PROJECT",
+        "count": 1,
+        "canonical_id": "unmapped:sector:d3e5463c0a052382",
+        "canonical_label": "PPP_PROJECT"
+      },
+      {
+        "value": "أنشطة وخدمات انتاج المواد غير الغذائية",
+        "count": 1,
+        "canonical_id": "unmapped:sector:37abf1fe5d0640ea",
+        "canonical_label": "أنشطة وخدمات انتاج المواد غير الغذائية"
+      },
+      {
+        "value": "الساحات الميادين",
+        "count": 1,
+        "canonical_id": "unmapped:sector:cf5020f21b9a75ac",
+        "canonical_label": "الساحات الميادين"
+      },
+      {
+        "value": "المباني",
+        "count": 1,
+        "canonical_id": "unmapped:sector:2cfd9bfa06e3a9ff",
+        "canonical_label": "المباني"
+      },
+      {
+        "value": "خدمات تعليمية أخرى",
+        "count": 1,
+        "canonical_id": "unmapped:sector:1e12771670e3496c",
+        "canonical_label": "خدمات تعليمية أخرى"
+      }
+    ],
+    "subsector_values": [
+      {
+        "value": "<NULL>",
+        "count": 291,
+        "canonical_id": "sector:missing",
+        "canonical_label": "قيمة مفقودة"
+      }
+    ],
+    "opportunity_type_values": [
+      {
+        "value": "<NULL>",
+        "count": 124,
+        "canonical_id": "sector:missing",
+        "canonical_label": "قيمة مفقودة"
+      },
+      {
+        "value": "صناعي",
+        "count": 65,
+        "canonical_id": "sector:industrial",
+        "canonical_label": "صناعي"
+      },
+      {
+        "value": "تجاري",
+        "count": 38,
+        "canonical_id": "sector:commercial",
+        "canonical_label": "تجاري"
+      },
+      {
+        "value": "أخرى",
+        "count": 16,
+        "canonical_id": "sector:other",
+        "canonical_label": "أخرى"
+      },
+      {
+        "value": "أنشطة التجارة العامة",
+        "count": 8,
+        "canonical_id": "unmapped:sector:77835fb5f22b9197",
+        "canonical_label": "أنشطة التجارة العامة"
+      },
+      {
+        "value": "INVESTMENT_OPPORTUNITY",
+        "count": 7,
+        "canonical_id": "sector:investment_opportunity",
+        "canonical_label": "فرصة استثمارية"
+      },
+      {
+        "value": "Environment",
+        "count": 6,
+        "canonical_id": "sector:environment",
+        "canonical_label": "البيئة"
+      },
+      {
+        "value": "خدمات الصرافة",
+        "count": 6,
+        "canonical_id": "unmapped:sector:b912bfbec2af693b",
+        "canonical_label": "خدمات الصرافة"
+      },
+      {
+        "value": "أنشطة تجارة المواد الغذائية",
+        "count": 5,
+        "canonical_id": "unmapped:sector:15965e0762dce702",
+        "canonical_label": "أنشطة تجارة المواد الغذائية"
+      },
+      {
+        "value": "محلات تجارية",
+        "count": 3,
+        "canonical_id": "unmapped:sector:8b07babf6eae82a5",
+        "canonical_label": "محلات تجارية"
+      },
+      {
+        "value": "\"العربات المتنقلة\"",
+        "count": 2,
+        "canonical_id": "unmapped:sector:ed3272cc8fa2a73b",
+        "canonical_label": "العربات المتنقلة"
+      },
+      {
+        "value": "LEASE_OPPORTUNITY",
+        "count": 2,
+        "canonical_id": "unmapped:sector:2ceb43d708079120",
+        "canonical_label": "LEASE_OPPORTUNITY"
+      },
+      {
+        "value": "منشآت تقديم الغذاء",
+        "count": 2,
+        "canonical_id": "unmapped:sector:549ba192c70565b7",
+        "canonical_label": "منشآت تقديم الغذاء"
+      },
+      {
+        "value": "\"أخرى\"",
+        "count": 1,
+        "canonical_id": "unmapped:sector:0cb06f094f9e37d2",
+        "canonical_label": "أخرى"
+      },
+      {
+        "value": "\"الساحات الميادين\"",
+        "count": 1,
+        "canonical_id": "unmapped:sector:dadd03693a594466",
+        "canonical_label": "الساحات الميادين"
+      },
+      {
+        "value": "\"المباني\"",
+        "count": 1,
+        "canonical_id": "unmapped:sector:abc23e22ff22c3cb",
+        "canonical_label": "المباني"
+      },
+      {
+        "value": "COMMERCIAL_FACILITY_OPPORTUNITY",
+        "count": 1,
+        "canonical_id": "unmapped:sector:45103176229e8e8e",
+        "canonical_label": "COMMERCIAL_FACILITY_OPPORTUNITY"
+      },
+      {
+        "value": "PPP_PROJECT",
+        "count": 1,
+        "canonical_id": "unmapped:sector:d3e5463c0a052382",
+        "canonical_label": "PPP_PROJECT"
+      },
+      {
+        "value": "أنشطة وخدمات انتاج المواد غير الغذائية",
+        "count": 1,
+        "canonical_id": "unmapped:sector:37abf1fe5d0640ea",
+        "canonical_label": "أنشطة وخدمات انتاج المواد غير الغذائية"
+      },
+      {
+        "value": "خدمات تعليمية أخرى",
+        "count": 1,
+        "canonical_id": "unmapped:sector:1e12771670e3496c",
+        "canonical_label": "خدمات تعليمية أخرى"
+      }
+    ]
+  },
+  "source_fields": {
+    "source_sector": [
+      {
+        "value": "Petrochemical and Convention industries",
+        "count": 527,
+        "canonical_id": "unmapped:sector:72d6e0d418607550",
+        "canonical_label": "Petrochemical and Convention industries"
+      },
+      {
+        "value": "Real Estate & Construction",
+        "count": 462,
+        "canonical_id": "unmapped:sector:e7c4a23546f747fa",
+        "canonical_label": "Real Estate & Construction"
+      },
+      {
+        "value": "Machinery and Equipment",
+        "count": 192,
+        "canonical_id": "unmapped:sector:e6a8cf413095a927",
+        "canonical_label": "Machinery and Equipment"
+      },
+      {
+        "value": "Recycling",
+        "count": 163,
+        "canonical_id": "unmapped:sector:5217577262ae60bf",
+        "canonical_label": "Recycling"
+      },
+      {
+        "value": "Tourism",
+        "count": 152,
+        "canonical_id": "sector:tourism",
+        "canonical_label": "السياحة"
+      },
+      {
+        "value": "Transport and Logistics",
+        "count": 96,
+        "canonical_id": "unmapped:sector:b8a1aee93e74a3ff",
+        "canonical_label": "Transport and Logistics"
+      },
+      {
+        "value": "Water",
+        "count": 84,
+        "canonical_id": "unmapped:sector:0f4168490e38b844",
+        "canonical_label": "Water"
+      },
+      {
+        "value": "Mining and Metals",
+        "count": 78,
+        "canonical_id": "unmapped:sector:6a325358bc0e22d2",
+        "canonical_label": "Mining and Metals"
+      },
+      {
+        "value": "Education",
+        "count": 75,
+        "canonical_id": "sector:education",
+        "canonical_label": "التعليم"
+      },
+      {
+        "value": "Real Estate and Construction",
+        "count": 64,
+        "canonical_id": "unmapped:sector:ad40d2f7a554f007",
+        "canonical_label": "Real Estate and Construction"
+      },
+      {
+        "value": "صناعي",
+        "count": 59,
+        "canonical_id": "sector:industrial",
+        "canonical_label": "صناعي"
+      },
+      {
+        "value": "Culture",
+        "count": 58,
+        "canonical_id": "unmapped:sector:f1947f79fdfb8046",
+        "canonical_label": "Culture"
+      },
+      {
+        "value": "Agriculture and Food Processing",
+        "count": 57,
+        "canonical_id": "unmapped:sector:0b32818edb9222df",
+        "canonical_label": "Agriculture and Food Processing"
+      },
+      {
+        "value": "Healthcare & Medical Devices",
+        "count": 53,
+        "canonical_id": "unmapped:sector:c66a5ce8246c5e41",
+        "canonical_label": "Healthcare & Medical Devices"
+      },
+      {
+        "value": "Information and Communication Technology",
+        "count": 53,
+        "canonical_id": "unmapped:sector:b82ea15a98b0df04",
+        "canonical_label": "Information and Communication Technology"
+      },
+      {
+        "value": "Energy",
+        "count": 47,
+        "canonical_id": "unmapped:sector:381cfb6e1e428419",
+        "canonical_label": "Energy"
+      },
+      {
+        "value": "PPP_PROJECT",
+        "count": 45,
+        "canonical_id": "unmapped:sector:d3e5463c0a052382",
+        "canonical_label": "PPP_PROJECT"
+      },
+      {
+        "value": "تجاري",
+        "count": 39,
+        "canonical_id": "sector:commercial",
+        "canonical_label": "تجاري"
+      },
+      {
+        "value": "Healthcare",
+        "count": 32,
+        "canonical_id": "sector:healthcare",
+        "canonical_label": "الرعاية الصحية"
+      },
+      {
+        "value": "Biotechnology and Pharma",
+        "count": 30,
+        "canonical_id": "unmapped:sector:51c8a856526d6bc6",
+        "canonical_label": "Biotechnology and Pharma"
+      },
+      {
+        "value": "Real Estate",
+        "count": 29,
+        "canonical_id": "unmapped:sector:d7efa2f7a9e1b512",
+        "canonical_label": "Real Estate"
+      },
+      {
+        "value": "Construction, Building Components & Services",
+        "count": 25,
+        "canonical_id": "unmapped:sector:35a10353292dbf95",
+        "canonical_label": "Construction, Building Components & Services"
+      },
+      {
+        "value": "Utilities and Renewables",
+        "count": 25,
+        "canonical_id": "unmapped:sector:42da52df25d4633f",
+        "canonical_label": "Utilities and Renewables"
+      },
+      {
+        "value": "Automotive",
+        "count": 23,
+        "canonical_id": "unmapped:sector:812df4136a77ca7a",
+        "canonical_label": "Automotive"
+      },
+      {
+        "value": "أخرى",
+        "count": 20,
+        "canonical_id": "sector:other",
+        "canonical_label": "أخرى"
+      },
+      {
+        "value": "Defense and Space",
+        "count": 19,
+        "canonical_id": "unmapped:sector:8b4c0f486cc51a27",
+        "canonical_label": "Defense and Space"
+      },
+      {
+        "value": "Metals and Mining",
+        "count": 18,
+        "canonical_id": "unmapped:sector:b50e0540cb95c3cc",
+        "canonical_label": "Metals and Mining"
+      },
+      {
+        "value": "Entertainment",
+        "count": 17,
+        "canonical_id": "unmapped:sector:b34564f1c4cd1d98",
+        "canonical_label": "Entertainment"
+      },
+      {
+        "value": "Environment",
+        "count": 15,
+        "canonical_id": "sector:environment",
+        "canonical_label": "البيئة"
+      },
+      {
+        "value": "Telecom, Media, and Technology",
+        "count": 9,
+        "canonical_id": "unmapped:sector:99c55542a1712537",
+        "canonical_label": "Telecom, Media, and Technology"
+      },
+      {
+        "value": "أنشطة التجارة العامة",
+        "count": 8,
+        "canonical_id": "unmapped:sector:77835fb5f22b9197",
+        "canonical_label": "أنشطة التجارة العامة"
+      },
+      {
+        "value": "INVESTMENT_OPPORTUNITY",
+        "count": 7,
+        "canonical_id": "sector:investment_opportunity",
+        "canonical_label": "فرصة استثمارية"
+      },
+      {
+        "value": "Financial Services",
+        "count": 6,
+        "canonical_id": "unmapped:sector:13425bd9e339600c",
+        "canonical_label": "Financial Services"
+      },
+      {
+        "value": "Renewable Energy",
+        "count": 6,
+        "canonical_id": "unmapped:sector:6750cb68b37eb331",
+        "canonical_label": "Renewable Energy"
+      },
+      {
+        "value": "خدمات الصرافة",
+        "count": 6,
+        "canonical_id": "unmapped:sector:b912bfbec2af693b",
+        "canonical_label": "خدمات الصرافة"
+      },
+      {
+        "value": "Building Materials",
+        "count": 5,
+        "canonical_id": "unmapped:sector:fd62ba95e2fca7e9",
+        "canonical_label": "Building Materials"
+      },
+      {
+        "value": "Hospitality",
+        "count": 5,
+        "canonical_id": "unmapped:sector:d61d74587224c86a",
+        "canonical_label": "Hospitality"
+      },
+      {
+        "value": "Manufacturing",
+        "count": 5,
+        "canonical_id": "unmapped:sector:039d6add7ee0b6cf",
+        "canonical_label": "Manufacturing"
+      },
+      {
+        "value": "Metal Industries",
+        "count": 5,
+        "canonical_id": "unmapped:sector:b71342a1702724e9",
+        "canonical_label": "Metal Industries"
+      },
+      {
+        "value": "WASTE_SECTOR_INVESTMENT",
+        "count": 5,
+        "canonical_id": "unmapped:sector:87934871718a8f10",
+        "canonical_label": "WASTE_SECTOR_INVESTMENT"
+      },
+      {
+        "value": "أنشطة تجارة المواد الغذائية",
+        "count": 5,
+        "canonical_id": "unmapped:sector:15965e0762dce702",
+        "canonical_label": "أنشطة تجارة المواد الغذائية"
+      },
+      {
+        "value": "خدمي",
+        "count": 5,
+        "canonical_id": "unmapped:sector:586e8187b6b6d2a7",
+        "canonical_label": "خدمي"
+      },
+      {
+        "value": "Consumer Goods and Retail",
+        "count": 4,
+        "canonical_id": "unmapped:sector:980b69ae12f3be24",
+        "canonical_label": "Consumer Goods and Retail"
+      },
+      {
+        "value": "Entertainment, Leisure and Sports",
+        "count": 4,
+        "canonical_id": "unmapped:sector:32b045bc6fed5954",
+        "canonical_label": "Entertainment, Leisure and Sports"
+      },
+      {
+        "value": "Industry",
+        "count": 4,
+        "canonical_id": "unmapped:sector:14d24f98ae39d299",
+        "canonical_label": "Industry"
+      },
+      {
+        "value": "Agriculture",
+        "count": 3,
+        "canonical_id": "sector:agriculture",
+        "canonical_label": "الزراعة"
+      },
+      {
+        "value": "Agriculture and Livestock",
+        "count": 3,
+        "canonical_id": "unmapped:sector:892705645ab9178c",
+        "canonical_label": "Agriculture and Livestock"
+      },
+      {
+        "value": "Food and Agriculture",
+        "count": 3,
+        "canonical_id": "unmapped:sector:aa1a4867fdd7c7ef",
+        "canonical_label": "Food and Agriculture"
+      },
+      {
+        "value": "Food and Agriculture/ Tourism",
+        "count": 3,
+        "canonical_id": "unmapped:sector:dfe34a9a7135a88e",
+        "canonical_label": "Food and Agriculture/ Tourism"
+      },
+      {
+        "value": "GENERAL_ANNOUNCEMENT",
+        "count": 3,
+        "canonical_id": "unmapped:sector:35f177ce778bfd06",
+        "canonical_label": "GENERAL_ANNOUNCEMENT"
+      },
+      {
+        "value": "Land Transport",
+        "count": 3,
+        "canonical_id": "unmapped:sector:10eacca31b457e86",
+        "canonical_label": "Land Transport"
+      },
+      {
+        "value": "Logistics and Commercial Services",
+        "count": 3,
+        "canonical_id": "unmapped:sector:8e6164a6470175a9",
+        "canonical_label": "Logistics and Commercial Services"
+      },
+      {
+        "value": "Logistics and Storage",
+        "count": 3,
+        "canonical_id": "unmapped:sector:6f17cf668f73edb7",
+        "canonical_label": "Logistics and Storage"
+      },
+      {
+        "value": "Services",
+        "count": 3,
+        "canonical_id": "unmapped:sector:ef1c4b45f2ed7632",
+        "canonical_label": "Services"
+      },
+      {
+        "value": "Sports",
+        "count": 3,
+        "canonical_id": "unmapped:sector:1cb542228c765587",
+        "canonical_label": "Sports"
+      },
+      {
+        "value": "Tourism/ Hospitality",
+        "count": 3,
+        "canonical_id": "unmapped:sector:fc11cea03b3ad78a",
+        "canonical_label": "Tourism/ Hospitality"
+      },
+      {
+        "value": "محلات تجارية",
+        "count": 3,
+        "canonical_id": "unmapped:sector:8b07babf6eae82a5",
+        "canonical_label": "محلات تجارية"
+      },
+      {
+        "value": "\"العربات المتنقلة\"",
+        "count": 2,
+        "canonical_id": "unmapped:sector:ed3272cc8fa2a73b",
+        "canonical_label": "العربات المتنقلة"
+      },
+      {
+        "value": "Adventure Tourism/ Tourism",
+        "count": 2,
+        "canonical_id": "unmapped:sector:2dc1be2cb7f32d02",
+        "canonical_label": "Adventure Tourism/ Tourism"
+      },
+      {
+        "value": "Chemical Industries",
+        "count": 2,
+        "canonical_id": "unmapped:sector:bc7cf545f50b3e6a",
+        "canonical_label": "Chemical Industries"
+      },
+      {
+        "value": "Culture and Entertainment",
+        "count": 2,
+        "canonical_id": "unmapped:sector:d000c2ae171b1fda",
+        "canonical_label": "Culture and Entertainment"
+      },
+      {
+        "value": "Culture and Entertainment/ Tourism",
+        "count": 2,
+        "canonical_id": "unmapped:sector:10a40eebcae6efff",
+        "canonical_label": "Culture and Entertainment/ Tourism"
+      },
+      {
+        "value": "Exhibition and Conference Centers",
+        "count": 2,
+        "canonical_id": "unmapped:sector:0c55b85bbe934629",
+        "canonical_label": "Exhibition and Conference Centers"
+      },
+      {
+        "value": "Food Industries",
+        "count": 2,
+        "canonical_id": "unmapped:sector:6056e75a89faf729",
+        "canonical_label": "Food Industries"
+      },
+      {
+        "value": "Hospitality and Entertainment",
+        "count": 2,
+        "canonical_id": "unmapped:sector:e6cc790f202226f9",
+        "canonical_label": "Hospitality and Entertainment"
+      },
+      {
+        "value": "Hospitality/ Culture and Entertainment",
+        "count": 2,
+        "canonical_id": "unmapped:sector:1aeaf5be04b40e43",
+        "canonical_label": "Hospitality/ Culture and Entertainment"
+      },
+      {
+        "value": "LEASE_OPPORTUNITY",
+        "count": 2,
+        "canonical_id": "unmapped:sector:2ceb43d708079120",
+        "canonical_label": "LEASE_OPPORTUNITY"
+      },
+      {
+        "value": "Logistics and Transport Services",
+        "count": 2,
+        "canonical_id": "unmapped:sector:e520c22aeff59fc4",
+        "canonical_label": "Logistics and Transport Services"
+      },
+      {
+        "value": "Meat Industry",
+        "count": 2,
+        "canonical_id": "unmapped:sector:3966c96e0846e029",
+        "canonical_label": "Meat Industry"
+      },
+      {
+        "value": "Plastic and Agricultural Industries",
+        "count": 2,
+        "canonical_id": "unmapped:sector:95ebb88354cde227",
+        "canonical_label": "Plastic and Agricultural Industries"
+      },
+      {
+        "value": "Plastic and Recycling Industries",
+        "count": 2,
+        "canonical_id": "unmapped:sector:b9b65c5ba2c73af4",
+        "canonical_label": "Plastic and Recycling Industries"
+      },
+      {
+        "value": "Sports and Entertainment/ Tourism",
+        "count": 2,
+        "canonical_id": "unmapped:sector:3cbdff920a36cef8",
+        "canonical_label": "Sports and Entertainment/ Tourism"
+      },
+      {
+        "value": "منشآت تقديم الغذاء",
+        "count": 2,
+        "canonical_id": "unmapped:sector:549ba192c70565b7",
+        "canonical_label": "منشآت تقديم الغذاء"
+      },
+      {
+        "value": "\"أخرى\"",
+        "count": 1,
+        "canonical_id": "unmapped:sector:0cb06f094f9e37d2",
+        "canonical_label": "أخرى"
+      },
+      {
+        "value": "\"الساحات الميادين\"",
+        "count": 1,
+        "canonical_id": "unmapped:sector:dadd03693a594466",
+        "canonical_label": "الساحات الميادين"
+      },
+      {
+        "value": "\"المباني\"",
+        "count": 1,
+        "canonical_id": "unmapped:sector:abc23e22ff22c3cb",
+        "canonical_label": "المباني"
+      },
+      {
+        "value": "Administrative Real Estate",
+        "count": 1,
+        "canonical_id": "unmapped:sector:6fecad3d0f07cf1c",
+        "canonical_label": "Administrative Real Estate"
+      },
+      {
+        "value": "Adventure Tourism",
+        "count": 1,
+        "canonical_id": "unmapped:sector:890092be6775fc11",
+        "canonical_label": "Adventure Tourism"
+      },
+      {
+        "value": "Adventure Tourism/ Sports and Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:c5c81c0c9d51ad57",
+        "canonical_label": "Adventure Tourism/ Sports and Entertainment"
+      },
+      {
+        "value": "Aerospace and Defense",
+        "count": 1,
+        "canonical_id": "unmapped:sector:d86fc511471ebad8",
+        "canonical_label": "Aerospace and Defense"
+      },
+      {
+        "value": "Building Products & Porcelain and Sanitary Ware",
+        "count": 1,
+        "canonical_id": "unmapped:sector:3364061477324c19",
+        "canonical_label": "Building Products & Porcelain and Sanitary Ware"
+      },
+      {
+        "value": "COMMERCIAL_FACILITY_OPPORTUNITY",
+        "count": 1,
+        "canonical_id": "unmapped:sector:45103176229e8e8e",
+        "canonical_label": "COMMERCIAL_FACILITY_OPPORTUNITY"
+      },
+      {
+        "value": "Chemical and Cleaning Industries",
+        "count": 1,
+        "canonical_id": "unmapped:sector:70a092cbb936ad55",
+        "canonical_label": "Chemical and Cleaning Industries"
+      },
+      {
+        "value": "Chemical/Cosmetic Industries",
+        "count": 1,
+        "canonical_id": "unmapped:sector:18a4364e00b94d56",
+        "canonical_label": "Chemical/Cosmetic Industries"
+      },
+      {
+        "value": "Commercial Residential",
+        "count": 1,
+        "canonical_id": "unmapped:sector:5a1b6a7531a8604b",
+        "canonical_label": "Commercial Residential"
+      },
+      {
+        "value": "Commercial Service",
+        "count": 1,
+        "canonical_id": "unmapped:sector:510e70a33973ab73",
+        "canonical_label": "Commercial Service"
+      },
+      {
+        "value": "Commercial and Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:4f7effeb70ec6688",
+        "canonical_label": "Commercial and Entertainment"
+      },
+      {
+        "value": "Commercial, Hotel, and Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:54fe14e480c008e6",
+        "canonical_label": "Commercial, Hotel, and Entertainment"
+      },
+      {
+        "value": "Compound Feed Manufacturing",
+        "count": 1,
+        "canonical_id": "unmapped:sector:85d85eeec88485a9",
+        "canonical_label": "Compound Feed Manufacturing"
+      },
+      {
+        "value": "Culture and Knowledge / Technology and Innovation",
+        "count": 1,
+        "canonical_id": "unmapped:sector:fbabceb6d5a15301",
+        "canonical_label": "Culture and Knowledge / Technology and Innovation"
+      },
+      {
+        "value": "Dairy Products",
+        "count": 1,
+        "canonical_id": "unmapped:sector:10791a52960bda5d",
+        "canonical_label": "Dairy Products"
+      },
+      {
+        "value": "Digital Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:39e8704f43e3d1a2",
+        "canonical_label": "Digital Entertainment"
+      },
+      {
+        "value": "Electrical Appliance Manufacturing",
+        "count": 1,
+        "canonical_id": "unmapped:sector:10b5faaaef204310",
+        "canonical_label": "Electrical Appliance Manufacturing"
+      },
+      {
+        "value": "Electrical Lighting Equipment Manufacturing",
+        "count": 1,
+        "canonical_id": "unmapped:sector:0329b4d0777e45cb",
+        "canonical_label": "Electrical Lighting Equipment Manufacturing"
+      },
+      {
+        "value": "Electronic and Electrical Wire and Cable Manufacturing",
+        "count": 1,
+        "canonical_id": "unmapped:sector:fc4d02c610b3d788",
+        "canonical_label": "Electronic and Electrical Wire and Cable Manufacturing"
+      },
+      {
+        "value": "Entertainment and Motorsports",
+        "count": 1,
+        "canonical_id": "unmapped:sector:ac540e60abb24aa6",
+        "canonical_label": "Entertainment and Motorsports"
+      },
+      {
+        "value": "Exhibition and Conference Centers/ Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:4f808fc0bf14ac44",
+        "canonical_label": "Exhibition and Conference Centers/ Entertainment"
+      },
+      {
+        "value": "Food and Beverage (F&B)",
+        "count": 1,
+        "canonical_id": "unmapped:sector:a52d5aab7eee43a7",
+        "canonical_label": "Food and Beverage (F&B)"
+      },
+      {
+        "value": "Food and Beverage (F&B)/ Culture and Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:33cd2b09902304cf",
+        "canonical_label": "Food and Beverage (F&B)/ Culture and Entertainment"
+      },
+      {
+        "value": "Food and Beverage Industries",
+        "count": 1,
+        "canonical_id": "unmapped:sector:fbf63ec0b500cfd6",
+        "canonical_label": "Food and Beverage Industries"
+      },
+      {
+        "value": "Furniture",
+        "count": 1,
+        "canonical_id": "unmapped:sector:0a5a9bb73d93fca8",
+        "canonical_label": "Furniture"
+      },
+      {
+        "value": "Glass Industries",
+        "count": 1,
+        "canonical_id": "unmapped:sector:e91102ff60ae705b",
+        "canonical_label": "Glass Industries"
+      },
+      {
+        "value": "Glass and Solar Industry",
+        "count": 1,
+        "canonical_id": "unmapped:sector:1e234213cf06649b",
+        "canonical_label": "Glass and Solar Industry"
+      },
+      {
+        "value": "Grain Milling and Flour Industry",
+        "count": 1,
+        "canonical_id": "unmapped:sector:1c294f038e805a9a",
+        "canonical_label": "Grain Milling and Flour Industry"
+      },
+      {
+        "value": "Health and Wellness Tourism",
+        "count": 1,
+        "canonical_id": "unmapped:sector:ead6d2fe390a6f39",
+        "canonical_label": "Health and Wellness Tourism"
+      },
+      {
+        "value": "Health and Wellness Tourism/ Hospitality",
+        "count": 1,
+        "canonical_id": "unmapped:sector:58b787306dc480b3",
+        "canonical_label": "Health and Wellness Tourism/ Hospitality"
+      },
+      {
+        "value": "Health and Wellness Tourism/ Sports and Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:8949f3b54573f840",
+        "canonical_label": "Health and Wellness Tourism/ Sports and Entertainment"
+      },
+      {
+        "value": "Hospitality/ Adventure Tourism",
+        "count": 1,
+        "canonical_id": "unmapped:sector:5bf3303d5bb2ba0b",
+        "canonical_label": "Hospitality/ Adventure Tourism"
+      },
+      {
+        "value": "Hospitality/ Tourism",
+        "count": 1,
+        "canonical_id": "unmapped:sector:7c73cf6d4444ee78",
+        "canonical_label": "Hospitality/ Tourism"
+      },
+      {
+        "value": "Hospitality/ Tourismand Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:0494a98d0a9397d3",
+        "canonical_label": "Hospitality/ Tourismand Entertainment"
+      },
+      {
+        "value": "Investment Offices",
+        "count": 1,
+        "canonical_id": "unmapped:sector:2c85395b19da0ee3",
+        "canonical_label": "Investment Offices"
+      },
+      {
+        "value": "Jewelry and Gold Accessories Industry",
+        "count": 1,
+        "canonical_id": "unmapped:sector:27486e3869c014b2",
+        "canonical_label": "Jewelry and Gold Accessories Industry"
+      },
+      {
+        "value": "Livestock",
+        "count": 1,
+        "canonical_id": "unmapped:sector:fc6021af2d4e31f8",
+        "canonical_label": "Livestock"
+      },
+      {
+        "value": "Medical Supplies",
+        "count": 1,
+        "canonical_id": "unmapped:sector:6ded490c64261884",
+        "canonical_label": "Medical Supplies"
+      },
+      {
+        "value": "Mixed Commercial Service",
+        "count": 1,
+        "canonical_id": "unmapped:sector:165e40dbe46b5ce2",
+        "canonical_label": "Mixed Commercial Service"
+      },
+      {
+        "value": "PV factory",
+        "count": 1,
+        "canonical_id": "unmapped:sector:2030905b6ee39e9b",
+        "canonical_label": "PV factory"
+      },
+      {
+        "value": "Packaging",
+        "count": 1,
+        "canonical_id": "unmapped:sector:71669691cb0b0f1b",
+        "canonical_label": "Packaging"
+      },
+      {
+        "value": "Plastic Packaging Industries",
+        "count": 1,
+        "canonical_id": "unmapped:sector:a04f14ee8cbe5d36",
+        "canonical_label": "Plastic Packaging Industries"
+      },
+      {
+        "value": "Real Estate and Residential Development",
+        "count": 1,
+        "canonical_id": "unmapped:sector:c4dbedeb3b50dee3",
+        "canonical_label": "Real Estate and Residential Development"
+      },
+      {
+        "value": "Sports and Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:32796fa0a51c8985",
+        "canonical_label": "Sports and Entertainment"
+      },
+      {
+        "value": "Sports and Entertainment/ Adventure Tourism",
+        "count": 1,
+        "canonical_id": "unmapped:sector:79779886ca0f245f",
+        "canonical_label": "Sports and Entertainment/ Adventure Tourism"
+      },
+      {
+        "value": "Textile and Apparel",
+        "count": 1,
+        "canonical_id": "unmapped:sector:2a24ed0ad8604b03",
+        "canonical_label": "Textile and Apparel"
+      },
+      {
+        "value": "Tourism and Hospitality/ Sport",
+        "count": 1,
+        "canonical_id": "unmapped:sector:1ebf47013edf4c3d",
+        "canonical_label": "Tourism and Hospitality/ Sport"
+      },
+      {
+        "value": "Tourism/Hospitality and Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:fbfb930913aa87bc",
+        "canonical_label": "Tourism/Hospitality and Entertainment"
+      },
+      {
+        "value": "Training and Professional Development",
+        "count": 1,
+        "canonical_id": "unmapped:sector:f5bcde274c06cdf7",
+        "canonical_label": "Training and Professional Development"
+      },
+      {
+        "value": "Traveler Services",
+        "count": 1,
+        "canonical_id": "unmapped:sector:19fb6bd5eef42281",
+        "canonical_label": "Traveler Services"
+      },
+      {
+        "value": "Veterinary Medicines",
+        "count": 1,
+        "canonical_id": "unmapped:sector:a15bb8e9f335892c",
+        "canonical_label": "Veterinary Medicines"
+      },
+      {
+        "value": "Wood or Plastic Industries",
+        "count": 1,
+        "canonical_id": "unmapped:sector:f1931794f1ee0b59",
+        "canonical_label": "Wood or Plastic Industries"
+      },
+      {
+        "value": "Wooden Furniture",
+        "count": 1,
+        "canonical_id": "unmapped:sector:d3164be14e1212ab",
+        "canonical_label": "Wooden Furniture"
+      },
+      {
+        "value": "أنشطة و تجارة المعدات الثقيلة",
+        "count": 1,
+        "canonical_id": "unmapped:sector:2784d939089c5163",
+        "canonical_label": "أنشطة و تجارة المعدات الثقيلة"
+      },
+      {
+        "value": "أنشطة وخدمات انتاج المواد غير الغذائية",
+        "count": 1,
+        "canonical_id": "unmapped:sector:37abf1fe5d0640ea",
+        "canonical_label": "أنشطة وخدمات انتاج المواد غير الغذائية"
+      },
+      {
+        "value": "خدمات تعليمية أخرى",
+        "count": 1,
+        "canonical_id": "unmapped:sector:1e12771670e3496c",
+        "canonical_label": "خدمات تعليمية أخرى"
+      },
+      {
+        "value": "منتزه",
+        "count": 1,
+        "canonical_id": "unmapped:sector:08b078b78c33c462",
+        "canonical_label": "منتزه"
+      }
+    ],
+    "normalized_sector": [
+      {
+        "value": "Industrial",
+        "count": 828,
+        "canonical_id": "sector:industrial",
+        "canonical_label": "صناعي"
+      },
+      {
+        "value": "Real Estate",
+        "count": 582,
+        "canonical_id": "unmapped:sector:d7efa2f7a9e1b512",
+        "canonical_label": "Real Estate"
+      },
+      {
+        "value": "Other",
+        "count": 434,
+        "canonical_id": "sector:other",
+        "canonical_label": "أخرى"
+      },
+      {
+        "value": "Environment",
+        "count": 264,
+        "canonical_id": "sector:environment",
+        "canonical_label": "البيئة"
+      },
+      {
+        "value": "Tourism",
+        "count": 184,
+        "canonical_id": "sector:tourism",
+        "canonical_label": "السياحة"
+      },
+      {
+        "value": "Healthcare",
+        "count": 116,
+        "canonical_id": "sector:healthcare",
+        "canonical_label": "الرعاية الصحية"
+      },
+      {
+        "value": "Logistics",
+        "count": 107,
+        "canonical_id": "sector:logistics",
+        "canonical_label": "الخدمات اللوجستية"
+      },
+      {
+        "value": "Culture",
+        "count": 99,
+        "canonical_id": "unmapped:sector:f1947f79fdfb8046",
+        "canonical_label": "Culture"
+      },
+      {
+        "value": "Education",
+        "count": 75,
+        "canonical_id": "sector:education",
+        "canonical_label": "التعليم"
+      },
+      {
+        "value": "Technology",
+        "count": 73,
+        "canonical_id": "unmapped:sector:e91fadf24f78c081",
+        "canonical_label": "Technology"
+      },
+      {
+        "value": "Agriculture",
+        "count": 71,
+        "canonical_id": "sector:agriculture",
+        "canonical_label": "الزراعة"
+      },
+      {
+        "value": "Energy",
+        "count": 55,
+        "canonical_id": "unmapped:sector:381cfb6e1e428419",
+        "canonical_label": "Energy"
+      },
+      {
+        "value": "Commercial",
+        "count": 6,
+        "canonical_id": "sector:commercial",
+        "canonical_label": "تجاري"
+      }
+    ],
+    "source_subsector": [
+      {
+        "value": "الأنشطة التجارية",
+        "count": 216,
+        "canonical_id": "unmapped:sector:0ac62287e70645ba",
+        "canonical_label": "الأنشطة التجارية"
+      },
+      {
+        "value": "الأنشطة الصناعية",
+        "count": 47,
+        "canonical_id": "unmapped:sector:a0c659059e81d5c7",
+        "canonical_label": "الأنشطة الصناعية"
+      },
+      {
+        "value": "الأنشطة البيئية",
+        "count": 34,
+        "canonical_id": "unmapped:sector:fb8cdb5e2e803679",
+        "canonical_label": "الأنشطة البيئية"
+      },
+      {
+        "value": "الأنشطة الرياضية و الترفيهية",
+        "count": 31,
+        "canonical_id": "unmapped:sector:ce976e139633e3f1",
+        "canonical_label": "الأنشطة الرياضية و الترفيهية"
+      },
+      {
+        "value": "الأنشطة الزراعية والحيوانية",
+        "count": 25,
+        "canonical_id": "unmapped:sector:ed10e824fb7b5eba",
+        "canonical_label": "الأنشطة الزراعية والحيوانية"
+      },
+      {
+        "value": "أنشطة المركبات",
+        "count": 23,
+        "canonical_id": "unmapped:sector:56d55a59a03e7303",
+        "canonical_label": "أنشطة المركبات"
+      },
+      {
+        "value": "أنشطة النقل",
+        "count": 21,
+        "canonical_id": "unmapped:sector:9eb8425abf06cdbb",
+        "canonical_label": "أنشطة النقل"
+      },
+      {
+        "value": "الأنشطة السياحية",
+        "count": 21,
+        "canonical_id": "unmapped:sector:f90de39d082aee74",
+        "canonical_label": "الأنشطة السياحية"
+      },
+      {
+        "value": "أنشطة الخدمات العامة",
+        "count": 9,
+        "canonical_id": "unmapped:sector:2d98f95e76ca6869",
+        "canonical_label": "أنشطة الخدمات العامة"
+      },
+      {
+        "value": "أنشطة المرافق العامة",
+        "count": 8,
+        "canonical_id": "unmapped:sector:bea8a99c51ecfa0d",
+        "canonical_label": "أنشطة المرافق العامة"
+      },
+      {
+        "value": "الأنشطة المالية",
+        "count": 8,
+        "canonical_id": "unmapped:sector:0a2f3a9877da707f",
+        "canonical_label": "الأنشطة المالية"
+      },
+      {
+        "value": "الأنشطة التعليمية",
+        "count": 6,
+        "canonical_id": "unmapped:sector:c6926a486cc35518",
+        "canonical_label": "الأنشطة التعليمية"
+      },
+      {
+        "value": "أنشطة التشييد و إدارة العقارات",
+        "count": 4,
+        "canonical_id": "unmapped:sector:f21bcf1b3b4867cd",
+        "canonical_label": "أنشطة التشييد و إدارة العقارات"
+      },
+      {
+        "value": "الأنشطة الاجتماعية",
+        "count": 4,
+        "canonical_id": "unmapped:sector:59a7e5de401ae654",
+        "canonical_label": "الأنشطة الاجتماعية"
+      },
+      {
+        "value": "الأنشطة الصحية",
+        "count": 2,
+        "canonical_id": "unmapped:sector:3d7478a5c4f0bf43",
+        "canonical_label": "الأنشطة الصحية"
+      },
+      {
+        "value": "أنشطة الملبوسات و المنسوجات",
+        "count": 1,
+        "canonical_id": "unmapped:sector:2e66d98fe9b10e5f",
+        "canonical_label": "أنشطة الملبوسات و المنسوجات"
+      },
+      {
+        "value": "أنشطة تنفيذ أعمال البنية التحتية",
+        "count": 1,
+        "canonical_id": "unmapped:sector:849dc5ac76aeb175",
+        "canonical_label": "أنشطة تنفيذ أعمال البنية التحتية"
+      },
+      {
+        "value": "برج مياه",
+        "count": 1,
+        "canonical_id": "unmapped:sector:81eec8c0233db960",
+        "canonical_label": "برج مياه"
+      }
+    ],
+    "payload_source_taxonomy_sector": [
+      {
+        "value": "Petrochemical and Convention industries",
+        "count": 527,
+        "canonical_id": "unmapped:sector:72d6e0d418607550",
+        "canonical_label": "Petrochemical and Convention industries"
+      },
+      {
+        "value": "Real Estate & Construction",
+        "count": 462,
+        "canonical_id": "unmapped:sector:e7c4a23546f747fa",
+        "canonical_label": "Real Estate & Construction"
+      },
+      {
+        "value": "Machinery and Equipment",
+        "count": 192,
+        "canonical_id": "unmapped:sector:e6a8cf413095a927",
+        "canonical_label": "Machinery and Equipment"
+      },
+      {
+        "value": "Recycling",
+        "count": 163,
+        "canonical_id": "unmapped:sector:5217577262ae60bf",
+        "canonical_label": "Recycling"
+      },
+      {
+        "value": "Tourism",
+        "count": 152,
+        "canonical_id": "sector:tourism",
+        "canonical_label": "السياحة"
+      },
+      {
+        "value": "Transport and Logistics",
+        "count": 96,
+        "canonical_id": "unmapped:sector:b8a1aee93e74a3ff",
+        "canonical_label": "Transport and Logistics"
+      },
+      {
+        "value": "Water",
+        "count": 84,
+        "canonical_id": "unmapped:sector:0f4168490e38b844",
+        "canonical_label": "Water"
+      },
+      {
+        "value": "Mining and Metals",
+        "count": 78,
+        "canonical_id": "unmapped:sector:6a325358bc0e22d2",
+        "canonical_label": "Mining and Metals"
+      },
+      {
+        "value": "Education",
+        "count": 75,
+        "canonical_id": "sector:education",
+        "canonical_label": "التعليم"
+      },
+      {
+        "value": "Real Estate and Construction",
+        "count": 64,
+        "canonical_id": "unmapped:sector:ad40d2f7a554f007",
+        "canonical_label": "Real Estate and Construction"
+      },
+      {
+        "value": "Culture",
+        "count": 58,
+        "canonical_id": "unmapped:sector:f1947f79fdfb8046",
+        "canonical_label": "Culture"
+      },
+      {
+        "value": "Agriculture and Food Processing",
+        "count": 57,
+        "canonical_id": "unmapped:sector:0b32818edb9222df",
+        "canonical_label": "Agriculture and Food Processing"
+      },
+      {
+        "value": "Healthcare & Medical Devices",
+        "count": 53,
+        "canonical_id": "unmapped:sector:c66a5ce8246c5e41",
+        "canonical_label": "Healthcare & Medical Devices"
+      },
+      {
+        "value": "Information and Communication Technology",
+        "count": 53,
+        "canonical_id": "unmapped:sector:b82ea15a98b0df04",
+        "canonical_label": "Information and Communication Technology"
+      },
+      {
+        "value": "Energy",
+        "count": 47,
+        "canonical_id": "unmapped:sector:381cfb6e1e428419",
+        "canonical_label": "Energy"
+      },
+      {
+        "value": "Healthcare",
+        "count": 32,
+        "canonical_id": "sector:healthcare",
+        "canonical_label": "الرعاية الصحية"
+      },
+      {
+        "value": "Biotechnology and Pharma",
+        "count": 30,
+        "canonical_id": "unmapped:sector:51c8a856526d6bc6",
+        "canonical_label": "Biotechnology and Pharma"
+      },
+      {
+        "value": "Real Estate",
+        "count": 29,
+        "canonical_id": "unmapped:sector:d7efa2f7a9e1b512",
+        "canonical_label": "Real Estate"
+      },
+      {
+        "value": "Construction, Building Components & Services",
+        "count": 25,
+        "canonical_id": "unmapped:sector:35a10353292dbf95",
+        "canonical_label": "Construction, Building Components & Services"
+      },
+      {
+        "value": "Utilities and Renewables",
+        "count": 25,
+        "canonical_id": "unmapped:sector:42da52df25d4633f",
+        "canonical_label": "Utilities and Renewables"
+      },
+      {
+        "value": "Automotive",
+        "count": 23,
+        "canonical_id": "unmapped:sector:812df4136a77ca7a",
+        "canonical_label": "Automotive"
+      },
+      {
+        "value": "Defense and Space",
+        "count": 19,
+        "canonical_id": "unmapped:sector:8b4c0f486cc51a27",
+        "canonical_label": "Defense and Space"
+      },
+      {
+        "value": "Metals and Mining",
+        "count": 18,
+        "canonical_id": "unmapped:sector:b50e0540cb95c3cc",
+        "canonical_label": "Metals and Mining"
+      },
+      {
+        "value": "Entertainment",
+        "count": 17,
+        "canonical_id": "unmapped:sector:b34564f1c4cd1d98",
+        "canonical_label": "Entertainment"
+      },
+      {
+        "value": "Environment",
+        "count": 15,
+        "canonical_id": "sector:environment",
+        "canonical_label": "البيئة"
+      },
+      {
+        "value": "Telecom, Media, and Technology",
+        "count": 9,
+        "canonical_id": "unmapped:sector:99c55542a1712537",
+        "canonical_label": "Telecom, Media, and Technology"
+      },
+      {
+        "value": "Financial Services",
+        "count": 6,
+        "canonical_id": "unmapped:sector:13425bd9e339600c",
+        "canonical_label": "Financial Services"
+      },
+      {
+        "value": "Renewable Energy",
+        "count": 6,
+        "canonical_id": "unmapped:sector:6750cb68b37eb331",
+        "canonical_label": "Renewable Energy"
+      },
+      {
+        "value": "Building Materials",
+        "count": 5,
+        "canonical_id": "unmapped:sector:fd62ba95e2fca7e9",
+        "canonical_label": "Building Materials"
+      },
+      {
+        "value": "Hospitality",
+        "count": 5,
+        "canonical_id": "unmapped:sector:d61d74587224c86a",
+        "canonical_label": "Hospitality"
+      },
+      {
+        "value": "Manufacturing",
+        "count": 5,
+        "canonical_id": "unmapped:sector:039d6add7ee0b6cf",
+        "canonical_label": "Manufacturing"
+      },
+      {
+        "value": "Metal Industries",
+        "count": 5,
+        "canonical_id": "unmapped:sector:b71342a1702724e9",
+        "canonical_label": "Metal Industries"
+      },
+      {
+        "value": "Consumer Goods and Retail",
+        "count": 4,
+        "canonical_id": "unmapped:sector:980b69ae12f3be24",
+        "canonical_label": "Consumer Goods and Retail"
+      },
+      {
+        "value": "Entertainment, Leisure and Sports",
+        "count": 4,
+        "canonical_id": "unmapped:sector:32b045bc6fed5954",
+        "canonical_label": "Entertainment, Leisure and Sports"
+      },
+      {
+        "value": "Industry",
+        "count": 4,
+        "canonical_id": "unmapped:sector:14d24f98ae39d299",
+        "canonical_label": "Industry"
+      },
+      {
+        "value": "Agriculture",
+        "count": 3,
+        "canonical_id": "sector:agriculture",
+        "canonical_label": "الزراعة"
+      },
+      {
+        "value": "Agriculture and Livestock",
+        "count": 3,
+        "canonical_id": "unmapped:sector:892705645ab9178c",
+        "canonical_label": "Agriculture and Livestock"
+      },
+      {
+        "value": "Food and Agriculture",
+        "count": 3,
+        "canonical_id": "unmapped:sector:aa1a4867fdd7c7ef",
+        "canonical_label": "Food and Agriculture"
+      },
+      {
+        "value": "Food and Agriculture/ Tourism",
+        "count": 3,
+        "canonical_id": "unmapped:sector:dfe34a9a7135a88e",
+        "canonical_label": "Food and Agriculture/ Tourism"
+      },
+      {
+        "value": "Land Transport",
+        "count": 3,
+        "canonical_id": "unmapped:sector:10eacca31b457e86",
+        "canonical_label": "Land Transport"
+      },
+      {
+        "value": "Logistics and Commercial Services",
+        "count": 3,
+        "canonical_id": "unmapped:sector:8e6164a6470175a9",
+        "canonical_label": "Logistics and Commercial Services"
+      },
+      {
+        "value": "Logistics and Storage",
+        "count": 3,
+        "canonical_id": "unmapped:sector:6f17cf668f73edb7",
+        "canonical_label": "Logistics and Storage"
+      },
+      {
+        "value": "Services",
+        "count": 3,
+        "canonical_id": "unmapped:sector:ef1c4b45f2ed7632",
+        "canonical_label": "Services"
+      },
+      {
+        "value": "Sports",
+        "count": 3,
+        "canonical_id": "unmapped:sector:1cb542228c765587",
+        "canonical_label": "Sports"
+      },
+      {
+        "value": "Tourism/ Hospitality",
+        "count": 3,
+        "canonical_id": "unmapped:sector:fc11cea03b3ad78a",
+        "canonical_label": "Tourism/ Hospitality"
+      },
+      {
+        "value": "Adventure Tourism/ Tourism",
+        "count": 2,
+        "canonical_id": "unmapped:sector:2dc1be2cb7f32d02",
+        "canonical_label": "Adventure Tourism/ Tourism"
+      },
+      {
+        "value": "Chemical Industries",
+        "count": 2,
+        "canonical_id": "unmapped:sector:bc7cf545f50b3e6a",
+        "canonical_label": "Chemical Industries"
+      },
+      {
+        "value": "Culture and Entertainment",
+        "count": 2,
+        "canonical_id": "unmapped:sector:d000c2ae171b1fda",
+        "canonical_label": "Culture and Entertainment"
+      },
+      {
+        "value": "Culture and Entertainment/ Tourism",
+        "count": 2,
+        "canonical_id": "unmapped:sector:10a40eebcae6efff",
+        "canonical_label": "Culture and Entertainment/ Tourism"
+      },
+      {
+        "value": "Exhibition and Conference Centers",
+        "count": 2,
+        "canonical_id": "unmapped:sector:0c55b85bbe934629",
+        "canonical_label": "Exhibition and Conference Centers"
+      },
+      {
+        "value": "Food Industries",
+        "count": 2,
+        "canonical_id": "unmapped:sector:6056e75a89faf729",
+        "canonical_label": "Food Industries"
+      },
+      {
+        "value": "Hospitality and Entertainment",
+        "count": 2,
+        "canonical_id": "unmapped:sector:e6cc790f202226f9",
+        "canonical_label": "Hospitality and Entertainment"
+      },
+      {
+        "value": "Hospitality/ Culture and Entertainment",
+        "count": 2,
+        "canonical_id": "unmapped:sector:1aeaf5be04b40e43",
+        "canonical_label": "Hospitality/ Culture and Entertainment"
+      },
+      {
+        "value": "Logistics and Transport Services",
+        "count": 2,
+        "canonical_id": "unmapped:sector:e520c22aeff59fc4",
+        "canonical_label": "Logistics and Transport Services"
+      },
+      {
+        "value": "Meat Industry",
+        "count": 2,
+        "canonical_id": "unmapped:sector:3966c96e0846e029",
+        "canonical_label": "Meat Industry"
+      },
+      {
+        "value": "Plastic and Agricultural Industries",
+        "count": 2,
+        "canonical_id": "unmapped:sector:95ebb88354cde227",
+        "canonical_label": "Plastic and Agricultural Industries"
+      },
+      {
+        "value": "Plastic and Recycling Industries",
+        "count": 2,
+        "canonical_id": "unmapped:sector:b9b65c5ba2c73af4",
+        "canonical_label": "Plastic and Recycling Industries"
+      },
+      {
+        "value": "Sports and Entertainment/ Tourism",
+        "count": 2,
+        "canonical_id": "unmapped:sector:3cbdff920a36cef8",
+        "canonical_label": "Sports and Entertainment/ Tourism"
+      },
+      {
+        "value": "Administrative Real Estate",
+        "count": 1,
+        "canonical_id": "unmapped:sector:6fecad3d0f07cf1c",
+        "canonical_label": "Administrative Real Estate"
+      },
+      {
+        "value": "Adventure Tourism",
+        "count": 1,
+        "canonical_id": "unmapped:sector:890092be6775fc11",
+        "canonical_label": "Adventure Tourism"
+      },
+      {
+        "value": "Adventure Tourism/ Sports and Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:c5c81c0c9d51ad57",
+        "canonical_label": "Adventure Tourism/ Sports and Entertainment"
+      },
+      {
+        "value": "Aerospace and Defense",
+        "count": 1,
+        "canonical_id": "unmapped:sector:d86fc511471ebad8",
+        "canonical_label": "Aerospace and Defense"
+      },
+      {
+        "value": "Building Products & Porcelain and Sanitary Ware",
+        "count": 1,
+        "canonical_id": "unmapped:sector:3364061477324c19",
+        "canonical_label": "Building Products & Porcelain and Sanitary Ware"
+      },
+      {
+        "value": "Chemical and Cleaning Industries",
+        "count": 1,
+        "canonical_id": "unmapped:sector:70a092cbb936ad55",
+        "canonical_label": "Chemical and Cleaning Industries"
+      },
+      {
+        "value": "Chemical/Cosmetic Industries",
+        "count": 1,
+        "canonical_id": "unmapped:sector:18a4364e00b94d56",
+        "canonical_label": "Chemical/Cosmetic Industries"
+      },
+      {
+        "value": "Commercial Residential",
+        "count": 1,
+        "canonical_id": "unmapped:sector:5a1b6a7531a8604b",
+        "canonical_label": "Commercial Residential"
+      },
+      {
+        "value": "Commercial Service",
+        "count": 1,
+        "canonical_id": "unmapped:sector:510e70a33973ab73",
+        "canonical_label": "Commercial Service"
+      },
+      {
+        "value": "Commercial and Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:4f7effeb70ec6688",
+        "canonical_label": "Commercial and Entertainment"
+      },
+      {
+        "value": "Commercial, Hotel, and Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:54fe14e480c008e6",
+        "canonical_label": "Commercial, Hotel, and Entertainment"
+      },
+      {
+        "value": "Compound Feed Manufacturing",
+        "count": 1,
+        "canonical_id": "unmapped:sector:85d85eeec88485a9",
+        "canonical_label": "Compound Feed Manufacturing"
+      },
+      {
+        "value": "Culture and Knowledge / Technology and Innovation",
+        "count": 1,
+        "canonical_id": "unmapped:sector:fbabceb6d5a15301",
+        "canonical_label": "Culture and Knowledge / Technology and Innovation"
+      },
+      {
+        "value": "Dairy Products",
+        "count": 1,
+        "canonical_id": "unmapped:sector:10791a52960bda5d",
+        "canonical_label": "Dairy Products"
+      },
+      {
+        "value": "Digital Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:39e8704f43e3d1a2",
+        "canonical_label": "Digital Entertainment"
+      },
+      {
+        "value": "Electrical Appliance Manufacturing",
+        "count": 1,
+        "canonical_id": "unmapped:sector:10b5faaaef204310",
+        "canonical_label": "Electrical Appliance Manufacturing"
+      },
+      {
+        "value": "Electrical Lighting Equipment Manufacturing",
+        "count": 1,
+        "canonical_id": "unmapped:sector:0329b4d0777e45cb",
+        "canonical_label": "Electrical Lighting Equipment Manufacturing"
+      },
+      {
+        "value": "Electronic and Electrical Wire and Cable Manufacturing",
+        "count": 1,
+        "canonical_id": "unmapped:sector:fc4d02c610b3d788",
+        "canonical_label": "Electronic and Electrical Wire and Cable Manufacturing"
+      },
+      {
+        "value": "Entertainment and Motorsports",
+        "count": 1,
+        "canonical_id": "unmapped:sector:ac540e60abb24aa6",
+        "canonical_label": "Entertainment and Motorsports"
+      },
+      {
+        "value": "Exhibition and Conference Centers/ Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:4f808fc0bf14ac44",
+        "canonical_label": "Exhibition and Conference Centers/ Entertainment"
+      },
+      {
+        "value": "Food and Beverage (F&B)",
+        "count": 1,
+        "canonical_id": "unmapped:sector:a52d5aab7eee43a7",
+        "canonical_label": "Food and Beverage (F&B)"
+      },
+      {
+        "value": "Food and Beverage (F&B)/ Culture and Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:33cd2b09902304cf",
+        "canonical_label": "Food and Beverage (F&B)/ Culture and Entertainment"
+      },
+      {
+        "value": "Food and Beverage Industries",
+        "count": 1,
+        "canonical_id": "unmapped:sector:fbf63ec0b500cfd6",
+        "canonical_label": "Food and Beverage Industries"
+      },
+      {
+        "value": "Furniture",
+        "count": 1,
+        "canonical_id": "unmapped:sector:0a5a9bb73d93fca8",
+        "canonical_label": "Furniture"
+      },
+      {
+        "value": "Glass Industries",
+        "count": 1,
+        "canonical_id": "unmapped:sector:e91102ff60ae705b",
+        "canonical_label": "Glass Industries"
+      },
+      {
+        "value": "Glass and Solar Industry",
+        "count": 1,
+        "canonical_id": "unmapped:sector:1e234213cf06649b",
+        "canonical_label": "Glass and Solar Industry"
+      },
+      {
+        "value": "Grain Milling and Flour Industry",
+        "count": 1,
+        "canonical_id": "unmapped:sector:1c294f038e805a9a",
+        "canonical_label": "Grain Milling and Flour Industry"
+      },
+      {
+        "value": "Health and Wellness Tourism",
+        "count": 1,
+        "canonical_id": "unmapped:sector:ead6d2fe390a6f39",
+        "canonical_label": "Health and Wellness Tourism"
+      },
+      {
+        "value": "Health and Wellness Tourism/ Hospitality",
+        "count": 1,
+        "canonical_id": "unmapped:sector:58b787306dc480b3",
+        "canonical_label": "Health and Wellness Tourism/ Hospitality"
+      },
+      {
+        "value": "Health and Wellness Tourism/ Sports and Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:8949f3b54573f840",
+        "canonical_label": "Health and Wellness Tourism/ Sports and Entertainment"
+      },
+      {
+        "value": "Hospitality/ Adventure Tourism",
+        "count": 1,
+        "canonical_id": "unmapped:sector:5bf3303d5bb2ba0b",
+        "canonical_label": "Hospitality/ Adventure Tourism"
+      },
+      {
+        "value": "Hospitality/ Tourism",
+        "count": 1,
+        "canonical_id": "unmapped:sector:7c73cf6d4444ee78",
+        "canonical_label": "Hospitality/ Tourism"
+      },
+      {
+        "value": "Hospitality/ Tourismand Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:0494a98d0a9397d3",
+        "canonical_label": "Hospitality/ Tourismand Entertainment"
+      },
+      {
+        "value": "Investment Offices",
+        "count": 1,
+        "canonical_id": "unmapped:sector:2c85395b19da0ee3",
+        "canonical_label": "Investment Offices"
+      },
+      {
+        "value": "Jewelry and Gold Accessories Industry",
+        "count": 1,
+        "canonical_id": "unmapped:sector:27486e3869c014b2",
+        "canonical_label": "Jewelry and Gold Accessories Industry"
+      },
+      {
+        "value": "Livestock",
+        "count": 1,
+        "canonical_id": "unmapped:sector:fc6021af2d4e31f8",
+        "canonical_label": "Livestock"
+      },
+      {
+        "value": "Medical Supplies",
+        "count": 1,
+        "canonical_id": "unmapped:sector:6ded490c64261884",
+        "canonical_label": "Medical Supplies"
+      },
+      {
+        "value": "Mixed Commercial Service",
+        "count": 1,
+        "canonical_id": "unmapped:sector:165e40dbe46b5ce2",
+        "canonical_label": "Mixed Commercial Service"
+      },
+      {
+        "value": "PV factory",
+        "count": 1,
+        "canonical_id": "unmapped:sector:2030905b6ee39e9b",
+        "canonical_label": "PV factory"
+      },
+      {
+        "value": "Packaging",
+        "count": 1,
+        "canonical_id": "unmapped:sector:71669691cb0b0f1b",
+        "canonical_label": "Packaging"
+      },
+      {
+        "value": "Plastic Packaging Industries",
+        "count": 1,
+        "canonical_id": "unmapped:sector:a04f14ee8cbe5d36",
+        "canonical_label": "Plastic Packaging Industries"
+      },
+      {
+        "value": "Real Estate and Residential Development",
+        "count": 1,
+        "canonical_id": "unmapped:sector:c4dbedeb3b50dee3",
+        "canonical_label": "Real Estate and Residential Development"
+      },
+      {
+        "value": "Sports and Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:32796fa0a51c8985",
+        "canonical_label": "Sports and Entertainment"
+      },
+      {
+        "value": "Sports and Entertainment/ Adventure Tourism",
+        "count": 1,
+        "canonical_id": "unmapped:sector:79779886ca0f245f",
+        "canonical_label": "Sports and Entertainment/ Adventure Tourism"
+      },
+      {
+        "value": "Textile and Apparel",
+        "count": 1,
+        "canonical_id": "unmapped:sector:2a24ed0ad8604b03",
+        "canonical_label": "Textile and Apparel"
+      },
+      {
+        "value": "Tourism and Hospitality/ Sport",
+        "count": 1,
+        "canonical_id": "unmapped:sector:1ebf47013edf4c3d",
+        "canonical_label": "Tourism and Hospitality/ Sport"
+      },
+      {
+        "value": "Tourism/Hospitality and Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:fbfb930913aa87bc",
+        "canonical_label": "Tourism/Hospitality and Entertainment"
+      },
+      {
+        "value": "Training and Professional Development",
+        "count": 1,
+        "canonical_id": "unmapped:sector:f5bcde274c06cdf7",
+        "canonical_label": "Training and Professional Development"
+      },
+      {
+        "value": "Traveler Services",
+        "count": 1,
+        "canonical_id": "unmapped:sector:19fb6bd5eef42281",
+        "canonical_label": "Traveler Services"
+      },
+      {
+        "value": "Veterinary Medicines",
+        "count": 1,
+        "canonical_id": "unmapped:sector:a15bb8e9f335892c",
+        "canonical_label": "Veterinary Medicines"
+      },
+      {
+        "value": "Wood or Plastic Industries",
+        "count": 1,
+        "canonical_id": "unmapped:sector:f1931794f1ee0b59",
+        "canonical_label": "Wood or Plastic Industries"
+      },
+      {
+        "value": "Wooden Furniture",
+        "count": 1,
+        "canonical_id": "unmapped:sector:d3164be14e1212ab",
+        "canonical_label": "Wooden Furniture"
+      }
+    ],
+    "payload_normalized_taxonomy_sector": [
+      {
+        "value": "Industrial",
+        "count": 828,
+        "canonical_id": "sector:industrial",
+        "canonical_label": "صناعي"
+      },
+      {
+        "value": "Real Estate",
+        "count": 582,
+        "canonical_id": "unmapped:sector:d7efa2f7a9e1b512",
+        "canonical_label": "Real Estate"
+      },
+      {
+        "value": "Environment",
+        "count": 264,
+        "canonical_id": "sector:environment",
+        "canonical_label": "البيئة"
+      },
+      {
+        "value": "Tourism",
+        "count": 184,
+        "canonical_id": "sector:tourism",
+        "canonical_label": "السياحة"
+      },
+      {
+        "value": "Healthcare",
+        "count": 116,
+        "canonical_id": "sector:healthcare",
+        "canonical_label": "الرعاية الصحية"
+      },
+      {
+        "value": "Logistics",
+        "count": 107,
+        "canonical_id": "sector:logistics",
+        "canonical_label": "الخدمات اللوجستية"
+      },
+      {
+        "value": "Culture",
+        "count": 99,
+        "canonical_id": "unmapped:sector:f1947f79fdfb8046",
+        "canonical_label": "Culture"
+      },
+      {
+        "value": "Other",
+        "count": 95,
+        "canonical_id": "sector:other",
+        "canonical_label": "أخرى"
+      },
+      {
+        "value": "Education",
+        "count": 75,
+        "canonical_id": "sector:education",
+        "canonical_label": "التعليم"
+      },
+      {
+        "value": "Technology",
+        "count": 73,
+        "canonical_id": "unmapped:sector:e91fadf24f78c081",
+        "canonical_label": "Technology"
+      },
+      {
+        "value": "Agriculture",
+        "count": 71,
+        "canonical_id": "sector:agriculture",
+        "canonical_label": "الزراعة"
+      },
+      {
+        "value": "Energy",
+        "count": 55,
+        "canonical_id": "unmapped:sector:381cfb6e1e428419",
+        "canonical_label": "Energy"
+      },
+      {
+        "value": "Commercial",
+        "count": 6,
+        "canonical_id": "sector:commercial",
+        "canonical_label": "تجاري"
+      }
+    ],
+    "payload_activity": [
+      {
+        "value": "الأنشطة التجارية",
+        "count": 216,
+        "canonical_id": "unmapped:sector:0ac62287e70645ba",
+        "canonical_label": "الأنشطة التجارية"
+      },
+      {
+        "value": "الأنشطة الصناعية",
+        "count": 47,
+        "canonical_id": "unmapped:sector:a0c659059e81d5c7",
+        "canonical_label": "الأنشطة الصناعية"
+      },
+      {
+        "value": "الأنشطة البيئية",
+        "count": 34,
+        "canonical_id": "unmapped:sector:fb8cdb5e2e803679",
+        "canonical_label": "الأنشطة البيئية"
+      },
+      {
+        "value": "الأنشطة الرياضية و الترفيهية",
+        "count": 31,
+        "canonical_id": "unmapped:sector:ce976e139633e3f1",
+        "canonical_label": "الأنشطة الرياضية و الترفيهية"
+      },
+      {
+        "value": "الأنشطة الزراعية والحيوانية",
+        "count": 25,
+        "canonical_id": "unmapped:sector:ed10e824fb7b5eba",
+        "canonical_label": "الأنشطة الزراعية والحيوانية"
+      },
+      {
+        "value": "أنشطة المركبات",
+        "count": 23,
+        "canonical_id": "unmapped:sector:56d55a59a03e7303",
+        "canonical_label": "أنشطة المركبات"
+      },
+      {
+        "value": "أنشطة النقل",
+        "count": 21,
+        "canonical_id": "unmapped:sector:9eb8425abf06cdbb",
+        "canonical_label": "أنشطة النقل"
+      },
+      {
+        "value": "الأنشطة السياحية",
+        "count": 21,
+        "canonical_id": "unmapped:sector:f90de39d082aee74",
+        "canonical_label": "الأنشطة السياحية"
+      },
+      {
+        "value": "أنشطة الخدمات العامة",
+        "count": 9,
+        "canonical_id": "unmapped:sector:2d98f95e76ca6869",
+        "canonical_label": "أنشطة الخدمات العامة"
+      },
+      {
+        "value": "أنشطة المرافق العامة",
+        "count": 8,
+        "canonical_id": "unmapped:sector:bea8a99c51ecfa0d",
+        "canonical_label": "أنشطة المرافق العامة"
+      },
+      {
+        "value": "الأنشطة المالية",
+        "count": 8,
+        "canonical_id": "unmapped:sector:0a2f3a9877da707f",
+        "canonical_label": "الأنشطة المالية"
+      },
+      {
+        "value": "الأنشطة التعليمية",
+        "count": 6,
+        "canonical_id": "unmapped:sector:c6926a486cc35518",
+        "canonical_label": "الأنشطة التعليمية"
+      },
+      {
+        "value": "أنشطة التشييد و إدارة العقارات",
+        "count": 4,
+        "canonical_id": "unmapped:sector:f21bcf1b3b4867cd",
+        "canonical_label": "أنشطة التشييد و إدارة العقارات"
+      },
+      {
+        "value": "الأنشطة الاجتماعية",
+        "count": 4,
+        "canonical_id": "unmapped:sector:59a7e5de401ae654",
+        "canonical_label": "الأنشطة الاجتماعية"
+      },
+      {
+        "value": "الأنشطة الصحية",
+        "count": 2,
+        "canonical_id": "unmapped:sector:3d7478a5c4f0bf43",
+        "canonical_label": "الأنشطة الصحية"
+      },
+      {
+        "value": "أنشطة الملبوسات و المنسوجات",
+        "count": 1,
+        "canonical_id": "unmapped:sector:2e66d98fe9b10e5f",
+        "canonical_label": "أنشطة الملبوسات و المنسوجات"
+      },
+      {
+        "value": "أنشطة تنفيذ أعمال البنية التحتية",
+        "count": 1,
+        "canonical_id": "unmapped:sector:849dc5ac76aeb175",
+        "canonical_label": "أنشطة تنفيذ أعمال البنية التحتية"
+      },
+      {
+        "value": "برج مياه",
+        "count": 1,
+        "canonical_id": "unmapped:sector:81eec8c0233db960",
+        "canonical_label": "برج مياه"
+      }
+    ],
+    "payload_category": [
+      {
+        "value": "Real Estate & Construction",
+        "count": 462,
+        "canonical_id": "unmapped:sector:e7c4a23546f747fa",
+        "canonical_label": "Real Estate & Construction"
+      },
+      {
+        "value": "{'value': 'renewable-energy', 'label': 'Renewable Energy'}",
+        "count": 6,
+        "canonical_id": "unmapped:sector:d2ca5d0a8f070038",
+        "canonical_label": "{'value': 'renewable-energy', 'label': 'Renewable Energy'}"
+      },
+      {
+        "value": "{'value': 'building-materials', 'label': 'Building Materials'}",
+        "count": 5,
+        "canonical_id": "unmapped:sector:2eb1444cccf378fc",
+        "canonical_label": "{'value': 'building-materials', 'label': 'Building Materials'}"
+      },
+      {
+        "value": "{'value': 'hospitality', 'label': 'Hospitality'}",
+        "count": 5,
+        "canonical_id": "unmapped:sector:2ce271370bbf8a31",
+        "canonical_label": "{'value': 'hospitality', 'label': 'Hospitality'}"
+      },
+      {
+        "value": "{'value': 'manufacturing', 'label': 'Manufacturing'}",
+        "count": 5,
+        "canonical_id": "unmapped:sector:362755cefd30740a",
+        "canonical_label": "{'value': 'manufacturing', 'label': 'Manufacturing'}"
+      },
+      {
+        "value": "{'value': 'metal-industries', 'label': 'Metal Industries'}",
+        "count": 5,
+        "canonical_id": "unmapped:sector:26cd6e36dbd10a17",
+        "canonical_label": "{'value': 'metal-industries', 'label': 'Metal Industries'}"
+      },
+      {
+        "value": "{'value': 'industry', 'label': 'Industry'}",
+        "count": 4,
+        "canonical_id": "unmapped:sector:3cae56bc9344ae80",
+        "canonical_label": "{'value': 'industry', 'label': 'Industry'}"
+      },
+      {
+        "value": "{'value': 'agriculture', 'label': 'Agriculture'}",
+        "count": 3,
+        "canonical_id": "unmapped:sector:d047bb75d9de4885",
+        "canonical_label": "{'value': 'agriculture', 'label': 'Agriculture'}"
+      },
+      {
+        "value": "{'value': 'agriculture-and-livestock', 'label': 'Agriculture and Livestock'}",
+        "count": 3,
+        "canonical_id": "unmapped:sector:68d3fc42ac0eb563",
+        "canonical_label": "{'value': 'agriculture-and-livestock', 'label': 'Agriculture and Livestock'}"
+      },
+      {
+        "value": "{'value': 'entertainment', 'label': 'Entertainment'}",
+        "count": 3,
+        "canonical_id": "unmapped:sector:30ce829e09b845bd",
+        "canonical_label": "{'value': 'entertainment', 'label': 'Entertainment'}"
+      },
+      {
+        "value": "{'value': 'food-and-agriculture', 'label': 'Food and Agriculture'}",
+        "count": 3,
+        "canonical_id": "unmapped:sector:c8d7b6a063f6b9aa",
+        "canonical_label": "{'value': 'food-and-agriculture', 'label': 'Food and Agriculture'}"
+      },
+      {
+        "value": "{'value': 'food-and-agriculture-tourism', 'label': 'Food and Agriculture/ Tourism'}",
+        "count": 3,
+        "canonical_id": "unmapped:sector:20d66e1c8e99e1fd",
+        "canonical_label": "{'value': 'food-and-agriculture-tourism', 'label': 'Food and Agriculture/ Tourism'}"
+      },
+      {
+        "value": "{'value': 'land-transport', 'label': 'Land Transport'}",
+        "count": 3,
+        "canonical_id": "unmapped:sector:fd7253d04ba422c3",
+        "canonical_label": "{'value': 'land-transport', 'label': 'Land Transport'}"
+      },
+      {
+        "value": "{'value': 'logistics-and-commercial-services', 'label': 'Logistics and Commercial Services'}",
+        "count": 3,
+        "canonical_id": "unmapped:sector:e7bd0375fe025370",
+        "canonical_label": "{'value': 'logistics-and-commercial-services', 'label': 'Logistics and Commercial Services'}"
+      },
+      {
+        "value": "{'value': 'logistics-and-storage', 'label': 'Logistics and Storage'}",
+        "count": 3,
+        "canonical_id": "unmapped:sector:17d2e1f43bca42ee",
+        "canonical_label": "{'value': 'logistics-and-storage', 'label': 'Logistics and Storage'}"
+      },
+      {
+        "value": "{'value': 'services', 'label': 'Services'}",
+        "count": 3,
+        "canonical_id": "unmapped:sector:13171a193e4c1e73",
+        "canonical_label": "{'value': 'services', 'label': 'Services'}"
+      },
+      {
+        "value": "{'value': 'tourism-hospitality', 'label': 'Tourism/ Hospitality'}",
+        "count": 3,
+        "canonical_id": "unmapped:sector:bdc736529222575a",
+        "canonical_label": "{'value': 'tourism-hospitality', 'label': 'Tourism/ Hospitality'}"
+      },
+      {
+        "value": "{'value': 'adventure-tourism-tourism', 'label': 'Adventure Tourism/ Tourism'}",
+        "count": 2,
+        "canonical_id": "unmapped:sector:4becff997c7b4482",
+        "canonical_label": "{'value': 'adventure-tourism-tourism', 'label': 'Adventure Tourism/ Tourism'}"
+      },
+      {
+        "value": "{'value': 'chemical-industries', 'label': 'Chemical Industries'}",
+        "count": 2,
+        "canonical_id": "unmapped:sector:da1e7a5f1901776d",
+        "canonical_label": "{'value': 'chemical-industries', 'label': 'Chemical Industries'}"
+      },
+      {
+        "value": "{'value': 'culture-and-entertainment', 'label': 'Culture and Entertainment'}",
+        "count": 2,
+        "canonical_id": "unmapped:sector:5cbb84bfd35ebb1e",
+        "canonical_label": "{'value': 'culture-and-entertainment', 'label': 'Culture and Entertainment'}"
+      },
+      {
+        "value": "{'value': 'culture-and-entertainment-tourism', 'label': 'Culture and Entertainment/ Tourism'}",
+        "count": 2,
+        "canonical_id": "unmapped:sector:326932bd8987f187",
+        "canonical_label": "{'value': 'culture-and-entertainment-tourism', 'label': 'Culture and Entertainment/ Tourism'}"
+      },
+      {
+        "value": "{'value': 'exhibition-and-conference-centers', 'label': 'Exhibition and Conference Centers'}",
+        "count": 2,
+        "canonical_id": "unmapped:sector:78a563bc999bd67e",
+        "canonical_label": "{'value': 'exhibition-and-conference-centers', 'label': 'Exhibition and Conference Centers'}"
+      },
+      {
+        "value": "{'value': 'food-industries', 'label': 'Food Industries'}",
+        "count": 2,
+        "canonical_id": "unmapped:sector:9bc5b245b73f1358",
+        "canonical_label": "{'value': 'food-industries', 'label': 'Food Industries'}"
+      },
+      {
+        "value": "{'value': 'hospitality-and-entertainment', 'label': 'Hospitality and Entertainment'}",
+        "count": 2,
+        "canonical_id": "unmapped:sector:ab534b6abaea0bab",
+        "canonical_label": "{'value': 'hospitality-and-entertainment', 'label': 'Hospitality and Entertainment'}"
+      },
+      {
+        "value": "{'value': 'hospitality-culture-and-entertainment', 'label': 'Hospitality/ Culture and Entertainment'}",
+        "count": 2,
+        "canonical_id": "unmapped:sector:fa66b72fef2f27f8",
+        "canonical_label": "{'value': 'hospitality-culture-and-entertainment', 'label': 'Hospitality/ Culture and Entertainment'}"
+      },
+      {
+        "value": "{'value': 'logistics-and-transport-services', 'label': 'Logistics and Transport Services'}",
+        "count": 2,
+        "canonical_id": "unmapped:sector:3701e6e998b63131",
+        "canonical_label": "{'value': 'logistics-and-transport-services', 'label': 'Logistics and Transport Services'}"
+      },
+      {
+        "value": "{'value': 'meat-industry', 'label': 'Meat Industry'}",
+        "count": 2,
+        "canonical_id": "unmapped:sector:0088f46c9ec76dfd",
+        "canonical_label": "{'value': 'meat-industry', 'label': 'Meat Industry'}"
+      },
+      {
+        "value": "{'value': 'plastic-and-agricultural-industries', 'label': 'Plastic and Agricultural Industries'}",
+        "count": 2,
+        "canonical_id": "unmapped:sector:499f5b93a6135672",
+        "canonical_label": "{'value': 'plastic-and-agricultural-industries', 'label': 'Plastic and Agricultural Industries'}"
+      },
+      {
+        "value": "{'value': 'plastic-and-recycling-industries', 'label': 'Plastic and Recycling Industries'}",
+        "count": 2,
+        "canonical_id": "unmapped:sector:3969e7804605b761",
+        "canonical_label": "{'value': 'plastic-and-recycling-industries', 'label': 'Plastic and Recycling Industries'}"
+      },
+      {
+        "value": "{'value': 'sports-and-entertainment-tourism', 'label': 'Sports and Entertainment/ Tourism'}",
+        "count": 2,
+        "canonical_id": "unmapped:sector:6066433a520c6563",
+        "canonical_label": "{'value': 'sports-and-entertainment-tourism', 'label': 'Sports and Entertainment/ Tourism'}"
+      },
+      {
+        "value": "{'value': 'administrative-real-estate', 'label': 'Administrative Real Estate'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:78ea601ee9dd8309",
+        "canonical_label": "{'value': 'administrative-real-estate', 'label': 'Administrative Real Estate'}"
+      },
+      {
+        "value": "{'value': 'adventure-tourism', 'label': 'Adventure Tourism'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:4f724f8ddbcfe7f7",
+        "canonical_label": "{'value': 'adventure-tourism', 'label': 'Adventure Tourism'}"
+      },
+      {
+        "value": "{'value': 'adventure-tourism-sports-and-entertainment', 'label': 'Adventure Tourism/ Sports and Entertainment'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:3f5c7d38615f80a3",
+        "canonical_label": "{'value': 'adventure-tourism-sports-and-entertainment', 'label': 'Adventure Tourism/ Sports and Entertainment'}"
+      },
+      {
+        "value": "{'value': 'building-products-porcelain-and-sanitary-ware', 'label': 'Building Products & Porcelain and Sanitary Ware'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:3f602ce8418411ed",
+        "canonical_label": "{'value': 'building-products-porcelain-and-sanitary-ware', 'label': 'Building Products & Porcelain and Sanitary Ware'}"
+      },
+      {
+        "value": "{'value': 'chemical-and-cleaning-industries', 'label': 'Chemical and Cleaning Industries'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:a7ba07194ab2ddaf",
+        "canonical_label": "{'value': 'chemical-and-cleaning-industries', 'label': 'Chemical and Cleaning Industries'}"
+      },
+      {
+        "value": "{'value': 'chemical-cosmetic-industries', 'label': 'Chemical/Cosmetic Industries'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:e66ef8ecb8a30d20",
+        "canonical_label": "{'value': 'chemical-cosmetic-industries', 'label': 'Chemical/Cosmetic Industries'}"
+      },
+      {
+        "value": "{'value': 'commercial-and-entertainment', 'label': 'Commercial and Entertainment'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:5476e96af86b470f",
+        "canonical_label": "{'value': 'commercial-and-entertainment', 'label': 'Commercial and Entertainment'}"
+      },
+      {
+        "value": "{'value': 'commercial-hotel-and-entertainment', 'label': 'Commercial, Hotel, and Entertainment'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:4e9c190b95349814",
+        "canonical_label": "{'value': 'commercial-hotel-and-entertainment', 'label': 'Commercial, Hotel, and Entertainment'}"
+      },
+      {
+        "value": "{'value': 'commercial-residential', 'label': 'Commercial Residential'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:b42536d627afac3d",
+        "canonical_label": "{'value': 'commercial-residential', 'label': 'Commercial Residential'}"
+      },
+      {
+        "value": "{'value': 'commercial-service', 'label': 'Commercial Service'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:8b26942c81d6b45f",
+        "canonical_label": "{'value': 'commercial-service', 'label': 'Commercial Service'}"
+      },
+      {
+        "value": "{'value': 'compound-feed-manufacturing', 'label': 'Compound Feed Manufacturing'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:dd1f0c5b8b510906",
+        "canonical_label": "{'value': 'compound-feed-manufacturing', 'label': 'Compound Feed Manufacturing'}"
+      },
+      {
+        "value": "{'value': 'culture-and-knowledge-technology-and-innovation', 'label': 'Culture and Knowledge / Technology and Innovation'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:dbc950ddd727bd6b",
+        "canonical_label": "{'value': 'culture-and-knowledge-technology-and-innovation', 'label': 'Culture and Knowledge / Technology and Innovation'}"
+      },
+      {
+        "value": "{'value': 'dairy-products', 'label': 'Dairy Products'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:45e61bc14887b00c",
+        "canonical_label": "{'value': 'dairy-products', 'label': 'Dairy Products'}"
+      },
+      {
+        "value": "{'value': 'digital-entertainment', 'label': 'Digital Entertainment'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:7af631dfc1ee91b3",
+        "canonical_label": "{'value': 'digital-entertainment', 'label': 'Digital Entertainment'}"
+      },
+      {
+        "value": "{'value': 'education', 'label': 'Education'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:c56c4871c6c2be05",
+        "canonical_label": "{'value': 'education', 'label': 'Education'}"
+      },
+      {
+        "value": "{'value': 'electrical-appliance-manufacturing', 'label': 'Electrical Appliance Manufacturing'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:f1ee35d5729d3adf",
+        "canonical_label": "{'value': 'electrical-appliance-manufacturing', 'label': 'Electrical Appliance Manufacturing'}"
+      },
+      {
+        "value": "{'value': 'electrical-lighting-equipment-manufacturing', 'label': 'Electrical Lighting Equipment Manufacturing'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:bacb9c43208be194",
+        "canonical_label": "{'value': 'electrical-lighting-equipment-manufacturing', 'label': 'Electrical Lighting Equipment Manufacturing'}"
+      },
+      {
+        "value": "{'value': 'electronic-and-electrical-wire-and-cable-manufacturing', 'label': 'Electronic and Electrical Wire and Cable Manufacturing'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:3dcde9eec38ca8ed",
+        "canonical_label": "{'value': 'electronic-and-electrical-wire-and-cable-manufacturing', 'label': 'Electronic and Electrical Wire and Cable Manufacturing'}"
+      },
+      {
+        "value": "{'value': 'entertainment-and-motorsports', 'label': 'Entertainment and Motorsports'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:b58e3e8b3bff6986",
+        "canonical_label": "{'value': 'entertainment-and-motorsports', 'label': 'Entertainment and Motorsports'}"
+      },
+      {
+        "value": "{'value': 'exhibition-and-conference-centers-entertainment', 'label': 'Exhibition and Conference Centers/ Entertainment'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:6ccb605ed1c0b47b",
+        "canonical_label": "{'value': 'exhibition-and-conference-centers-entertainment', 'label': 'Exhibition and Conference Centers/ Entertainment'}"
+      },
+      {
+        "value": "{'value': 'food-and-beverage-fb', 'label': 'Food and Beverage (F&B)'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:4189e9cc7825d095",
+        "canonical_label": "{'value': 'food-and-beverage-fb', 'label': 'Food and Beverage (F&B)'}"
+      },
+      {
+        "value": "{'value': 'food-and-beverage-fb-culture-and-entertainment', 'label': 'Food and Beverage (F&B)/ Culture and Entertainment'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:71b05b3529014c05",
+        "canonical_label": "{'value': 'food-and-beverage-fb-culture-and-entertainment', 'label': 'Food and Beverage (F&B)/ Culture and Entertainment'}"
+      },
+      {
+        "value": "{'value': 'food-and-beverage-industries', 'label': 'Food and Beverage Industries'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:5ca73a8ccd62f579",
+        "canonical_label": "{'value': 'food-and-beverage-industries', 'label': 'Food and Beverage Industries'}"
+      },
+      {
+        "value": "{'value': 'furniture', 'label': 'Furniture'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:797f0546bc2d008e",
+        "canonical_label": "{'value': 'furniture', 'label': 'Furniture'}"
+      },
+      {
+        "value": "{'value': 'glass-and-solar-industry', 'label': 'Glass and Solar Industry'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:51505af9a38161e5",
+        "canonical_label": "{'value': 'glass-and-solar-industry', 'label': 'Glass and Solar Industry'}"
+      },
+      {
+        "value": "{'value': 'glass-industries', 'label': 'Glass Industries'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:bea2ec8ae390ce5c",
+        "canonical_label": "{'value': 'glass-industries', 'label': 'Glass Industries'}"
+      },
+      {
+        "value": "{'value': 'grain-milling-and-flour-industry', 'label': 'Grain Milling and Flour Industry'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:ff906688ec29b3db",
+        "canonical_label": "{'value': 'grain-milling-and-flour-industry', 'label': 'Grain Milling and Flour Industry'}"
+      },
+      {
+        "value": "{'value': 'health-and-wellness-tourism', 'label': 'Health and Wellness Tourism'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:722817faae8f47a3",
+        "canonical_label": "{'value': 'health-and-wellness-tourism', 'label': 'Health and Wellness Tourism'}"
+      },
+      {
+        "value": "{'value': 'health-and-wellness-tourism-hospitality', 'label': 'Health and Wellness Tourism/ Hospitality'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:cc4d7a309778bdee",
+        "canonical_label": "{'value': 'health-and-wellness-tourism-hospitality', 'label': 'Health and Wellness Tourism/ Hospitality'}"
+      },
+      {
+        "value": "{'value': 'health-and-wellness-tourism-sports-and-entertainment', 'label': 'Health and Wellness Tourism/ Sports and Entertainment'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:45c060360e799805",
+        "canonical_label": "{'value': 'health-and-wellness-tourism-sports-and-entertainment', 'label': 'Health and Wellness Tourism/ Sports and Entertainment'}"
+      },
+      {
+        "value": "{'value': 'healthcare', 'label': 'Healthcare'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:a763c800a91967a0",
+        "canonical_label": "{'value': 'healthcare', 'label': 'Healthcare'}"
+      },
+      {
+        "value": "{'value': 'hospitality-adventure-tourism', 'label': 'Hospitality/ Adventure Tourism'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:d4727289deb9c4b3",
+        "canonical_label": "{'value': 'hospitality-adventure-tourism', 'label': 'Hospitality/ Adventure Tourism'}"
+      },
+      {
+        "value": "{'value': 'hospitality-tourism', 'label': 'Hospitality/ Tourism'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:b64a72191d8bbb03",
+        "canonical_label": "{'value': 'hospitality-tourism', 'label': 'Hospitality/ Tourism'}"
+      },
+      {
+        "value": "{'value': 'hospitality-tourismand-entertainment', 'label': 'Hospitality/ Tourismand Entertainment'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:0696fd030caff509",
+        "canonical_label": "{'value': 'hospitality-tourismand-entertainment', 'label': 'Hospitality/ Tourismand Entertainment'}"
+      },
+      {
+        "value": "{'value': 'investment-offices', 'label': 'Investment Offices'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:aa82680b20548e8c",
+        "canonical_label": "{'value': 'investment-offices', 'label': 'Investment Offices'}"
+      },
+      {
+        "value": "{'value': 'jewelry-and-gold-accessories-industry', 'label': 'Jewelry and Gold Accessories Industry'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:36126c64964b92cc",
+        "canonical_label": "{'value': 'jewelry-and-gold-accessories-industry', 'label': 'Jewelry and Gold Accessories Industry'}"
+      },
+      {
+        "value": "{'value': 'livestock', 'label': 'Livestock'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:78df02edb230e92c",
+        "canonical_label": "{'value': 'livestock', 'label': 'Livestock'}"
+      },
+      {
+        "value": "{'value': 'medical-supplies', 'label': 'Medical Supplies'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:60d5bed090197b52",
+        "canonical_label": "{'value': 'medical-supplies', 'label': 'Medical Supplies'}"
+      },
+      {
+        "value": "{'value': 'mixed-commercial-service', 'label': 'Mixed Commercial Service'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:3b2b5ae51d0132b3",
+        "canonical_label": "{'value': 'mixed-commercial-service', 'label': 'Mixed Commercial Service'}"
+      },
+      {
+        "value": "{'value': 'packaging', 'label': 'Packaging'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:b999ce4f84418b00",
+        "canonical_label": "{'value': 'packaging', 'label': 'Packaging'}"
+      },
+      {
+        "value": "{'value': 'plastic-packaging-industries', 'label': 'Plastic Packaging Industries'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:a963f5f465bb6dfd",
+        "canonical_label": "{'value': 'plastic-packaging-industries', 'label': 'Plastic Packaging Industries'}"
+      },
+      {
+        "value": "{'value': 'real-estate-and-residential-development', 'label': 'Real Estate and Residential Development'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:efaee37cb8fab238",
+        "canonical_label": "{'value': 'real-estate-and-residential-development', 'label': 'Real Estate and Residential Development'}"
+      },
+      {
+        "value": "{'value': 'sports-and-entertainment', 'label': 'Sports and Entertainment'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:e816be3e93121952",
+        "canonical_label": "{'value': 'sports-and-entertainment', 'label': 'Sports and Entertainment'}"
+      },
+      {
+        "value": "{'value': 'sports-and-entertainment-adventure-tourism', 'label': 'Sports and Entertainment/ Adventure Tourism'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:e4b59f95d80c1a57",
+        "canonical_label": "{'value': 'sports-and-entertainment-adventure-tourism', 'label': 'Sports and Entertainment/ Adventure Tourism'}"
+      },
+      {
+        "value": "{'value': 'textile-and-apparel', 'label': 'Textile and Apparel'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:cd4bc3fd98405dea",
+        "canonical_label": "{'value': 'textile-and-apparel', 'label': 'Textile and Apparel'}"
+      },
+      {
+        "value": "{'value': 'tourism-and-hospitality-sport', 'label': 'Tourism and Hospitality/ Sport'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:8f67774415a1dc92",
+        "canonical_label": "{'value': 'tourism-and-hospitality-sport', 'label': 'Tourism and Hospitality/ Sport'}"
+      },
+      {
+        "value": "{'value': 'tourism-hospitality-and-entertainment', 'label': 'Tourism/Hospitality and Entertainment'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:dcd86380bb1bd0cd",
+        "canonical_label": "{'value': 'tourism-hospitality-and-entertainment', 'label': 'Tourism/Hospitality and Entertainment'}"
+      },
+      {
+        "value": "{'value': 'training-and-professional-development', 'label': 'Training and Professional Development'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:a5945f5e74b9825a",
+        "canonical_label": "{'value': 'training-and-professional-development', 'label': 'Training and Professional Development'}"
+      },
+      {
+        "value": "{'value': 'traveler-services', 'label': 'Traveler Services'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:851b6266b86a2c1a",
+        "canonical_label": "{'value': 'traveler-services', 'label': 'Traveler Services'}"
+      },
+      {
+        "value": "{'value': 'veterinary-medicines', 'label': 'Veterinary Medicines'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:5cec5436ff868985",
+        "canonical_label": "{'value': 'veterinary-medicines', 'label': 'Veterinary Medicines'}"
+      },
+      {
+        "value": "{'value': 'wood-or-plastic-industries', 'label': 'Wood or Plastic Industries'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:171999d3e0014ecd",
+        "canonical_label": "{'value': 'wood-or-plastic-industries', 'label': 'Wood or Plastic Industries'}"
+      },
+      {
+        "value": "{'value': 'wooden-furniture', 'label': 'Wooden Furniture'}",
+        "count": 1,
+        "canonical_id": "unmapped:sector:f1777c95269d95e5",
+        "canonical_label": "{'value': 'wooden-furniture', 'label': 'Wooden Furniture'}"
+      }
+    ],
+    "payload_opportunity_category": [],
+    "payload_opportunity_type": [
+      {
+        "value": "<BLANK>",
+        "count": 1771,
+        "canonical_id": "sector:missing",
+        "canonical_label": "قيمة مفقودة"
+      },
+      {
+        "value": "GENERAL_ANNOUNCEMENT",
+        "count": 3,
+        "canonical_id": "unmapped:sector:35f177ce778bfd06",
+        "canonical_label": "GENERAL_ANNOUNCEMENT"
+      },
+      {
+        "value": "LEASE_OPPORTUNITY",
+        "count": 2,
+        "canonical_id": "unmapped:sector:2ceb43d708079120",
+        "canonical_label": "LEASE_OPPORTUNITY"
+      },
+      {
+        "value": "COMMERCIAL_FACILITY_OPPORTUNITY",
+        "count": 1,
+        "canonical_id": "unmapped:sector:45103176229e8e8e",
+        "canonical_label": "COMMERCIAL_FACILITY_OPPORTUNITY"
+      }
+    ],
+    "standardized_sector": [
+      {
+        "value": "صناعي",
+        "count": 887,
+        "canonical_id": "sector:industrial",
+        "canonical_label": "صناعي"
+      },
+      {
+        "value": "Real Estate",
+        "count": 582,
+        "canonical_id": "unmapped:sector:d7efa2f7a9e1b512",
+        "canonical_label": "Real Estate"
+      },
+      {
+        "value": "البيئة",
+        "count": 264,
+        "canonical_id": "sector:environment",
+        "canonical_label": "البيئة"
+      },
+      {
+        "value": "السياحة",
+        "count": 184,
+        "canonical_id": "sector:tourism",
+        "canonical_label": "السياحة"
+      },
+      {
+        "value": "أخرى",
+        "count": 126,
+        "canonical_id": "sector:other",
+        "canonical_label": "أخرى"
+      },
+      {
+        "value": "الرعاية الصحية",
+        "count": 116,
+        "canonical_id": "sector:healthcare",
+        "canonical_label": "الرعاية الصحية"
+      },
+      {
+        "value": "الخدمات اللوجستية",
+        "count": 107,
+        "canonical_id": "sector:logistics",
+        "canonical_label": "الخدمات اللوجستية"
+      },
+      {
+        "value": "Culture",
+        "count": 99,
+        "canonical_id": "unmapped:sector:f1947f79fdfb8046",
+        "canonical_label": "Culture"
+      },
+      {
+        "value": "التعليم",
+        "count": 75,
+        "canonical_id": "sector:education",
+        "canonical_label": "التعليم"
+      },
+      {
+        "value": "Technology",
+        "count": 73,
+        "canonical_id": "unmapped:sector:e91fadf24f78c081",
+        "canonical_label": "Technology"
+      },
+      {
+        "value": "الزراعة",
+        "count": 71,
+        "canonical_id": "sector:agriculture",
+        "canonical_label": "الزراعة"
+      },
+      {
+        "value": "Energy",
+        "count": 55,
+        "canonical_id": "unmapped:sector:381cfb6e1e428419",
+        "canonical_label": "Energy"
+      },
+      {
+        "value": "تجاري",
+        "count": 45,
+        "canonical_id": "sector:commercial",
+        "canonical_label": "تجاري"
+      },
+      {
+        "value": "PPP_PROJECT",
+        "count": 44,
+        "canonical_id": "unmapped:sector:d3e5463c0a052382",
+        "canonical_label": "PPP_PROJECT"
+      },
+      {
+        "value": "أنشطة التجارة العامة",
+        "count": 8,
+        "canonical_id": "unmapped:sector:77835fb5f22b9197",
+        "canonical_label": "أنشطة التجارة العامة"
+      },
+      {
+        "value": "فرصة استثمارية",
+        "count": 7,
+        "canonical_id": "sector:investment_opportunity",
+        "canonical_label": "فرصة استثمارية"
+      },
+      {
+        "value": "خدمات الصرافة",
+        "count": 6,
+        "canonical_id": "unmapped:sector:b912bfbec2af693b",
+        "canonical_label": "خدمات الصرافة"
+      },
+      {
+        "value": "أنشطة تجارة المواد الغذائية",
+        "count": 5,
+        "canonical_id": "unmapped:sector:15965e0762dce702",
+        "canonical_label": "أنشطة تجارة المواد الغذائية"
+      },
+      {
+        "value": "خدمي",
+        "count": 5,
+        "canonical_id": "unmapped:sector:586e8187b6b6d2a7",
+        "canonical_label": "خدمي"
+      },
+      {
+        "value": "محلات تجارية",
+        "count": 3,
+        "canonical_id": "unmapped:sector:8b07babf6eae82a5",
+        "canonical_label": "محلات تجارية"
+      },
+      {
+        "value": "العربات المتنقلة",
+        "count": 2,
+        "canonical_id": "unmapped:sector:ced10d6b9ff0ad90",
+        "canonical_label": "العربات المتنقلة"
+      },
+      {
+        "value": "منشآت تقديم الغذاء",
+        "count": 2,
+        "canonical_id": "unmapped:sector:549ba192c70565b7",
+        "canonical_label": "منشآت تقديم الغذاء"
+      },
+      {
+        "value": "COMMERCIAL_FACILITY_OPPORTUNITY",
+        "count": 1,
+        "canonical_id": "unmapped:sector:45103176229e8e8e",
+        "canonical_label": "COMMERCIAL_FACILITY_OPPORTUNITY"
+      },
+      {
+        "value": "LEASE_OPPORTUNITY",
+        "count": 1,
+        "canonical_id": "unmapped:sector:2ceb43d708079120",
+        "canonical_label": "LEASE_OPPORTUNITY"
+      },
+      {
+        "value": "أنشطة و تجارة المعدات الثقيلة",
+        "count": 1,
+        "canonical_id": "unmapped:sector:2784d939089c5163",
+        "canonical_label": "أنشطة و تجارة المعدات الثقيلة"
+      },
+      {
+        "value": "أنشطة وخدمات انتاج المواد غير الغذائية",
+        "count": 1,
+        "canonical_id": "unmapped:sector:37abf1fe5d0640ea",
+        "canonical_label": "أنشطة وخدمات انتاج المواد غير الغذائية"
+      },
+      {
+        "value": "الساحات الميادين",
+        "count": 1,
+        "canonical_id": "unmapped:sector:cf5020f21b9a75ac",
+        "canonical_label": "الساحات الميادين"
+      },
+      {
+        "value": "المباني",
+        "count": 1,
+        "canonical_id": "unmapped:sector:2cfd9bfa06e3a9ff",
+        "canonical_label": "المباني"
+      },
+      {
+        "value": "خدمات تعليمية أخرى",
+        "count": 1,
+        "canonical_id": "unmapped:sector:1e12771670e3496c",
+        "canonical_label": "خدمات تعليمية أخرى"
+      },
+      {
+        "value": "منتزه",
+        "count": 1,
+        "canonical_id": "unmapped:sector:08b078b78c33c462",
+        "canonical_label": "منتزه"
+      }
+    ]
+  },
+  "opportunity_type": {},
+  "taxonomy_table": {
+    "rows": 2555,
+    "source_taxonomy_values": [
+      {
+        "value": "Petrochemical and Convention industries",
+        "count": 527,
+        "canonical_id": "unmapped:sector:72d6e0d418607550",
+        "canonical_label": "Petrochemical and Convention industries"
+      },
+      {
+        "value": "Real Estate & Construction",
+        "count": 462,
+        "canonical_id": "unmapped:sector:e7c4a23546f747fa",
+        "canonical_label": "Real Estate & Construction"
+      },
+      {
+        "value": "Machinery and Equipment",
+        "count": 192,
+        "canonical_id": "unmapped:sector:e6a8cf413095a927",
+        "canonical_label": "Machinery and Equipment"
+      },
+      {
+        "value": "Recycling",
+        "count": 163,
+        "canonical_id": "unmapped:sector:5217577262ae60bf",
+        "canonical_label": "Recycling"
+      },
+      {
+        "value": "Tourism",
+        "count": 152,
+        "canonical_id": "sector:tourism",
+        "canonical_label": "السياحة"
+      },
+      {
+        "value": "Transport and Logistics",
+        "count": 96,
+        "canonical_id": "unmapped:sector:b8a1aee93e74a3ff",
+        "canonical_label": "Transport and Logistics"
+      },
+      {
+        "value": "Water",
+        "count": 84,
+        "canonical_id": "unmapped:sector:0f4168490e38b844",
+        "canonical_label": "Water"
+      },
+      {
+        "value": "Mining and Metals",
+        "count": 78,
+        "canonical_id": "unmapped:sector:6a325358bc0e22d2",
+        "canonical_label": "Mining and Metals"
+      },
+      {
+        "value": "Education",
+        "count": 75,
+        "canonical_id": "sector:education",
+        "canonical_label": "التعليم"
+      },
+      {
+        "value": "Real Estate and Construction",
+        "count": 64,
+        "canonical_id": "unmapped:sector:ad40d2f7a554f007",
+        "canonical_label": "Real Estate and Construction"
+      },
+      {
+        "value": "Culture",
+        "count": 58,
+        "canonical_id": "unmapped:sector:f1947f79fdfb8046",
+        "canonical_label": "Culture"
+      },
+      {
+        "value": "Agriculture and Food Processing",
+        "count": 57,
+        "canonical_id": "unmapped:sector:0b32818edb9222df",
+        "canonical_label": "Agriculture and Food Processing"
+      },
+      {
+        "value": "Healthcare & Medical Devices",
+        "count": 53,
+        "canonical_id": "unmapped:sector:c66a5ce8246c5e41",
+        "canonical_label": "Healthcare & Medical Devices"
+      },
+      {
+        "value": "Information and Communication Technology",
+        "count": 53,
+        "canonical_id": "unmapped:sector:b82ea15a98b0df04",
+        "canonical_label": "Information and Communication Technology"
+      },
+      {
+        "value": "Energy",
+        "count": 47,
+        "canonical_id": "unmapped:sector:381cfb6e1e428419",
+        "canonical_label": "Energy"
+      },
+      {
+        "value": "Healthcare",
+        "count": 32,
+        "canonical_id": "sector:healthcare",
+        "canonical_label": "الرعاية الصحية"
+      },
+      {
+        "value": "Biotechnology and Pharma",
+        "count": 30,
+        "canonical_id": "unmapped:sector:51c8a856526d6bc6",
+        "canonical_label": "Biotechnology and Pharma"
+      },
+      {
+        "value": "Real Estate",
+        "count": 29,
+        "canonical_id": "unmapped:sector:d7efa2f7a9e1b512",
+        "canonical_label": "Real Estate"
+      },
+      {
+        "value": "Construction, Building Components & Services",
+        "count": 25,
+        "canonical_id": "unmapped:sector:35a10353292dbf95",
+        "canonical_label": "Construction, Building Components & Services"
+      },
+      {
+        "value": "Utilities and Renewables",
+        "count": 25,
+        "canonical_id": "unmapped:sector:42da52df25d4633f",
+        "canonical_label": "Utilities and Renewables"
+      },
+      {
+        "value": "Automotive",
+        "count": 23,
+        "canonical_id": "unmapped:sector:812df4136a77ca7a",
+        "canonical_label": "Automotive"
+      },
+      {
+        "value": "Defense and Space",
+        "count": 19,
+        "canonical_id": "unmapped:sector:8b4c0f486cc51a27",
+        "canonical_label": "Defense and Space"
+      },
+      {
+        "value": "Metals and Mining",
+        "count": 18,
+        "canonical_id": "unmapped:sector:b50e0540cb95c3cc",
+        "canonical_label": "Metals and Mining"
+      },
+      {
+        "value": "Entertainment",
+        "count": 17,
+        "canonical_id": "unmapped:sector:b34564f1c4cd1d98",
+        "canonical_label": "Entertainment"
+      },
+      {
+        "value": "Environment",
+        "count": 15,
+        "canonical_id": "sector:environment",
+        "canonical_label": "البيئة"
+      },
+      {
+        "value": "Telecom, Media, and Technology",
+        "count": 9,
+        "canonical_id": "unmapped:sector:99c55542a1712537",
+        "canonical_label": "Telecom, Media, and Technology"
+      },
+      {
+        "value": "Financial Services",
+        "count": 6,
+        "canonical_id": "unmapped:sector:13425bd9e339600c",
+        "canonical_label": "Financial Services"
+      },
+      {
+        "value": "Renewable Energy",
+        "count": 6,
+        "canonical_id": "unmapped:sector:6750cb68b37eb331",
+        "canonical_label": "Renewable Energy"
+      },
+      {
+        "value": "Building Materials",
+        "count": 5,
+        "canonical_id": "unmapped:sector:fd62ba95e2fca7e9",
+        "canonical_label": "Building Materials"
+      },
+      {
+        "value": "Hospitality",
+        "count": 5,
+        "canonical_id": "unmapped:sector:d61d74587224c86a",
+        "canonical_label": "Hospitality"
+      },
+      {
+        "value": "Manufacturing",
+        "count": 5,
+        "canonical_id": "unmapped:sector:039d6add7ee0b6cf",
+        "canonical_label": "Manufacturing"
+      },
+      {
+        "value": "Metal Industries",
+        "count": 5,
+        "canonical_id": "unmapped:sector:b71342a1702724e9",
+        "canonical_label": "Metal Industries"
+      },
+      {
+        "value": "Consumer Goods and Retail",
+        "count": 4,
+        "canonical_id": "unmapped:sector:980b69ae12f3be24",
+        "canonical_label": "Consumer Goods and Retail"
+      },
+      {
+        "value": "Entertainment, Leisure and Sports",
+        "count": 4,
+        "canonical_id": "unmapped:sector:32b045bc6fed5954",
+        "canonical_label": "Entertainment, Leisure and Sports"
+      },
+      {
+        "value": "Industry",
+        "count": 4,
+        "canonical_id": "unmapped:sector:14d24f98ae39d299",
+        "canonical_label": "Industry"
+      },
+      {
+        "value": "Agriculture",
+        "count": 3,
+        "canonical_id": "sector:agriculture",
+        "canonical_label": "الزراعة"
+      },
+      {
+        "value": "Agriculture and Livestock",
+        "count": 3,
+        "canonical_id": "unmapped:sector:892705645ab9178c",
+        "canonical_label": "Agriculture and Livestock"
+      },
+      {
+        "value": "Food and Agriculture",
+        "count": 3,
+        "canonical_id": "unmapped:sector:aa1a4867fdd7c7ef",
+        "canonical_label": "Food and Agriculture"
+      },
+      {
+        "value": "Food and Agriculture/ Tourism",
+        "count": 3,
+        "canonical_id": "unmapped:sector:dfe34a9a7135a88e",
+        "canonical_label": "Food and Agriculture/ Tourism"
+      },
+      {
+        "value": "Land Transport",
+        "count": 3,
+        "canonical_id": "unmapped:sector:10eacca31b457e86",
+        "canonical_label": "Land Transport"
+      },
+      {
+        "value": "Logistics and Commercial Services",
+        "count": 3,
+        "canonical_id": "unmapped:sector:8e6164a6470175a9",
+        "canonical_label": "Logistics and Commercial Services"
+      },
+      {
+        "value": "Logistics and Storage",
+        "count": 3,
+        "canonical_id": "unmapped:sector:6f17cf668f73edb7",
+        "canonical_label": "Logistics and Storage"
+      },
+      {
+        "value": "Services",
+        "count": 3,
+        "canonical_id": "unmapped:sector:ef1c4b45f2ed7632",
+        "canonical_label": "Services"
+      },
+      {
+        "value": "Sports",
+        "count": 3,
+        "canonical_id": "unmapped:sector:1cb542228c765587",
+        "canonical_label": "Sports"
+      },
+      {
+        "value": "Tourism/ Hospitality",
+        "count": 3,
+        "canonical_id": "unmapped:sector:fc11cea03b3ad78a",
+        "canonical_label": "Tourism/ Hospitality"
+      },
+      {
+        "value": "Adventure Tourism/ Tourism",
+        "count": 2,
+        "canonical_id": "unmapped:sector:2dc1be2cb7f32d02",
+        "canonical_label": "Adventure Tourism/ Tourism"
+      },
+      {
+        "value": "Chemical Industries",
+        "count": 2,
+        "canonical_id": "unmapped:sector:bc7cf545f50b3e6a",
+        "canonical_label": "Chemical Industries"
+      },
+      {
+        "value": "Culture and Entertainment",
+        "count": 2,
+        "canonical_id": "unmapped:sector:d000c2ae171b1fda",
+        "canonical_label": "Culture and Entertainment"
+      },
+      {
+        "value": "Culture and Entertainment/ Tourism",
+        "count": 2,
+        "canonical_id": "unmapped:sector:10a40eebcae6efff",
+        "canonical_label": "Culture and Entertainment/ Tourism"
+      },
+      {
+        "value": "Exhibition and Conference Centers",
+        "count": 2,
+        "canonical_id": "unmapped:sector:0c55b85bbe934629",
+        "canonical_label": "Exhibition and Conference Centers"
+      },
+      {
+        "value": "Food Industries",
+        "count": 2,
+        "canonical_id": "unmapped:sector:6056e75a89faf729",
+        "canonical_label": "Food Industries"
+      },
+      {
+        "value": "Hospitality and Entertainment",
+        "count": 2,
+        "canonical_id": "unmapped:sector:e6cc790f202226f9",
+        "canonical_label": "Hospitality and Entertainment"
+      },
+      {
+        "value": "Hospitality/ Culture and Entertainment",
+        "count": 2,
+        "canonical_id": "unmapped:sector:1aeaf5be04b40e43",
+        "canonical_label": "Hospitality/ Culture and Entertainment"
+      },
+      {
+        "value": "Logistics and Transport Services",
+        "count": 2,
+        "canonical_id": "unmapped:sector:e520c22aeff59fc4",
+        "canonical_label": "Logistics and Transport Services"
+      },
+      {
+        "value": "Meat Industry",
+        "count": 2,
+        "canonical_id": "unmapped:sector:3966c96e0846e029",
+        "canonical_label": "Meat Industry"
+      },
+      {
+        "value": "Plastic and Agricultural Industries",
+        "count": 2,
+        "canonical_id": "unmapped:sector:95ebb88354cde227",
+        "canonical_label": "Plastic and Agricultural Industries"
+      },
+      {
+        "value": "Plastic and Recycling Industries",
+        "count": 2,
+        "canonical_id": "unmapped:sector:b9b65c5ba2c73af4",
+        "canonical_label": "Plastic and Recycling Industries"
+      },
+      {
+        "value": "Sports and Entertainment/ Tourism",
+        "count": 2,
+        "canonical_id": "unmapped:sector:3cbdff920a36cef8",
+        "canonical_label": "Sports and Entertainment/ Tourism"
+      },
+      {
+        "value": "Administrative Real Estate",
+        "count": 1,
+        "canonical_id": "unmapped:sector:6fecad3d0f07cf1c",
+        "canonical_label": "Administrative Real Estate"
+      },
+      {
+        "value": "Adventure Tourism",
+        "count": 1,
+        "canonical_id": "unmapped:sector:890092be6775fc11",
+        "canonical_label": "Adventure Tourism"
+      },
+      {
+        "value": "Adventure Tourism/ Sports and Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:c5c81c0c9d51ad57",
+        "canonical_label": "Adventure Tourism/ Sports and Entertainment"
+      },
+      {
+        "value": "Aerospace and Defense",
+        "count": 1,
+        "canonical_id": "unmapped:sector:d86fc511471ebad8",
+        "canonical_label": "Aerospace and Defense"
+      },
+      {
+        "value": "Building Products & Porcelain and Sanitary Ware",
+        "count": 1,
+        "canonical_id": "unmapped:sector:3364061477324c19",
+        "canonical_label": "Building Products & Porcelain and Sanitary Ware"
+      },
+      {
+        "value": "Chemical and Cleaning Industries",
+        "count": 1,
+        "canonical_id": "unmapped:sector:70a092cbb936ad55",
+        "canonical_label": "Chemical and Cleaning Industries"
+      },
+      {
+        "value": "Chemical/Cosmetic Industries",
+        "count": 1,
+        "canonical_id": "unmapped:sector:18a4364e00b94d56",
+        "canonical_label": "Chemical/Cosmetic Industries"
+      },
+      {
+        "value": "Commercial Residential",
+        "count": 1,
+        "canonical_id": "unmapped:sector:5a1b6a7531a8604b",
+        "canonical_label": "Commercial Residential"
+      },
+      {
+        "value": "Commercial Service",
+        "count": 1,
+        "canonical_id": "unmapped:sector:510e70a33973ab73",
+        "canonical_label": "Commercial Service"
+      },
+      {
+        "value": "Commercial and Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:4f7effeb70ec6688",
+        "canonical_label": "Commercial and Entertainment"
+      },
+      {
+        "value": "Commercial, Hotel, and Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:54fe14e480c008e6",
+        "canonical_label": "Commercial, Hotel, and Entertainment"
+      },
+      {
+        "value": "Compound Feed Manufacturing",
+        "count": 1,
+        "canonical_id": "unmapped:sector:85d85eeec88485a9",
+        "canonical_label": "Compound Feed Manufacturing"
+      },
+      {
+        "value": "Culture and Knowledge / Technology and Innovation",
+        "count": 1,
+        "canonical_id": "unmapped:sector:fbabceb6d5a15301",
+        "canonical_label": "Culture and Knowledge / Technology and Innovation"
+      },
+      {
+        "value": "Dairy Products",
+        "count": 1,
+        "canonical_id": "unmapped:sector:10791a52960bda5d",
+        "canonical_label": "Dairy Products"
+      },
+      {
+        "value": "Digital Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:39e8704f43e3d1a2",
+        "canonical_label": "Digital Entertainment"
+      },
+      {
+        "value": "Electrical Appliance Manufacturing",
+        "count": 1,
+        "canonical_id": "unmapped:sector:10b5faaaef204310",
+        "canonical_label": "Electrical Appliance Manufacturing"
+      },
+      {
+        "value": "Electrical Lighting Equipment Manufacturing",
+        "count": 1,
+        "canonical_id": "unmapped:sector:0329b4d0777e45cb",
+        "canonical_label": "Electrical Lighting Equipment Manufacturing"
+      },
+      {
+        "value": "Electronic and Electrical Wire and Cable Manufacturing",
+        "count": 1,
+        "canonical_id": "unmapped:sector:fc4d02c610b3d788",
+        "canonical_label": "Electronic and Electrical Wire and Cable Manufacturing"
+      },
+      {
+        "value": "Entertainment and Motorsports",
+        "count": 1,
+        "canonical_id": "unmapped:sector:ac540e60abb24aa6",
+        "canonical_label": "Entertainment and Motorsports"
+      },
+      {
+        "value": "Exhibition and Conference Centers/ Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:4f808fc0bf14ac44",
+        "canonical_label": "Exhibition and Conference Centers/ Entertainment"
+      },
+      {
+        "value": "Food and Beverage (F&B)",
+        "count": 1,
+        "canonical_id": "unmapped:sector:a52d5aab7eee43a7",
+        "canonical_label": "Food and Beverage (F&B)"
+      },
+      {
+        "value": "Food and Beverage (F&B)/ Culture and Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:33cd2b09902304cf",
+        "canonical_label": "Food and Beverage (F&B)/ Culture and Entertainment"
+      },
+      {
+        "value": "Food and Beverage Industries",
+        "count": 1,
+        "canonical_id": "unmapped:sector:fbf63ec0b500cfd6",
+        "canonical_label": "Food and Beverage Industries"
+      },
+      {
+        "value": "Furniture",
+        "count": 1,
+        "canonical_id": "unmapped:sector:0a5a9bb73d93fca8",
+        "canonical_label": "Furniture"
+      },
+      {
+        "value": "Glass Industries",
+        "count": 1,
+        "canonical_id": "unmapped:sector:e91102ff60ae705b",
+        "canonical_label": "Glass Industries"
+      },
+      {
+        "value": "Glass and Solar Industry",
+        "count": 1,
+        "canonical_id": "unmapped:sector:1e234213cf06649b",
+        "canonical_label": "Glass and Solar Industry"
+      },
+      {
+        "value": "Grain Milling and Flour Industry",
+        "count": 1,
+        "canonical_id": "unmapped:sector:1c294f038e805a9a",
+        "canonical_label": "Grain Milling and Flour Industry"
+      },
+      {
+        "value": "Health and Wellness Tourism",
+        "count": 1,
+        "canonical_id": "unmapped:sector:ead6d2fe390a6f39",
+        "canonical_label": "Health and Wellness Tourism"
+      },
+      {
+        "value": "Health and Wellness Tourism/ Hospitality",
+        "count": 1,
+        "canonical_id": "unmapped:sector:58b787306dc480b3",
+        "canonical_label": "Health and Wellness Tourism/ Hospitality"
+      },
+      {
+        "value": "Health and Wellness Tourism/ Sports and Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:8949f3b54573f840",
+        "canonical_label": "Health and Wellness Tourism/ Sports and Entertainment"
+      },
+      {
+        "value": "Hospitality/ Adventure Tourism",
+        "count": 1,
+        "canonical_id": "unmapped:sector:5bf3303d5bb2ba0b",
+        "canonical_label": "Hospitality/ Adventure Tourism"
+      },
+      {
+        "value": "Hospitality/ Tourism",
+        "count": 1,
+        "canonical_id": "unmapped:sector:7c73cf6d4444ee78",
+        "canonical_label": "Hospitality/ Tourism"
+      },
+      {
+        "value": "Hospitality/ Tourismand Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:0494a98d0a9397d3",
+        "canonical_label": "Hospitality/ Tourismand Entertainment"
+      },
+      {
+        "value": "Investment Offices",
+        "count": 1,
+        "canonical_id": "unmapped:sector:2c85395b19da0ee3",
+        "canonical_label": "Investment Offices"
+      },
+      {
+        "value": "Jewelry and Gold Accessories Industry",
+        "count": 1,
+        "canonical_id": "unmapped:sector:27486e3869c014b2",
+        "canonical_label": "Jewelry and Gold Accessories Industry"
+      },
+      {
+        "value": "Livestock",
+        "count": 1,
+        "canonical_id": "unmapped:sector:fc6021af2d4e31f8",
+        "canonical_label": "Livestock"
+      },
+      {
+        "value": "Medical Supplies",
+        "count": 1,
+        "canonical_id": "unmapped:sector:6ded490c64261884",
+        "canonical_label": "Medical Supplies"
+      },
+      {
+        "value": "Mixed Commercial Service",
+        "count": 1,
+        "canonical_id": "unmapped:sector:165e40dbe46b5ce2",
+        "canonical_label": "Mixed Commercial Service"
+      },
+      {
+        "value": "PV factory",
+        "count": 1,
+        "canonical_id": "unmapped:sector:2030905b6ee39e9b",
+        "canonical_label": "PV factory"
+      },
+      {
+        "value": "Packaging",
+        "count": 1,
+        "canonical_id": "unmapped:sector:71669691cb0b0f1b",
+        "canonical_label": "Packaging"
+      },
+      {
+        "value": "Plastic Packaging Industries",
+        "count": 1,
+        "canonical_id": "unmapped:sector:a04f14ee8cbe5d36",
+        "canonical_label": "Plastic Packaging Industries"
+      },
+      {
+        "value": "Real Estate and Residential Development",
+        "count": 1,
+        "canonical_id": "unmapped:sector:c4dbedeb3b50dee3",
+        "canonical_label": "Real Estate and Residential Development"
+      },
+      {
+        "value": "Sports and Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:32796fa0a51c8985",
+        "canonical_label": "Sports and Entertainment"
+      },
+      {
+        "value": "Sports and Entertainment/ Adventure Tourism",
+        "count": 1,
+        "canonical_id": "unmapped:sector:79779886ca0f245f",
+        "canonical_label": "Sports and Entertainment/ Adventure Tourism"
+      },
+      {
+        "value": "Textile and Apparel",
+        "count": 1,
+        "canonical_id": "unmapped:sector:2a24ed0ad8604b03",
+        "canonical_label": "Textile and Apparel"
+      },
+      {
+        "value": "Tourism and Hospitality/ Sport",
+        "count": 1,
+        "canonical_id": "unmapped:sector:1ebf47013edf4c3d",
+        "canonical_label": "Tourism and Hospitality/ Sport"
+      },
+      {
+        "value": "Tourism/Hospitality and Entertainment",
+        "count": 1,
+        "canonical_id": "unmapped:sector:fbfb930913aa87bc",
+        "canonical_label": "Tourism/Hospitality and Entertainment"
+      },
+      {
+        "value": "Training and Professional Development",
+        "count": 1,
+        "canonical_id": "unmapped:sector:f5bcde274c06cdf7",
+        "canonical_label": "Training and Professional Development"
+      },
+      {
+        "value": "Traveler Services",
+        "count": 1,
+        "canonical_id": "unmapped:sector:19fb6bd5eef42281",
+        "canonical_label": "Traveler Services"
+      },
+      {
+        "value": "Veterinary Medicines",
+        "count": 1,
+        "canonical_id": "unmapped:sector:a15bb8e9f335892c",
+        "canonical_label": "Veterinary Medicines"
+      },
+      {
+        "value": "Wood or Plastic Industries",
+        "count": 1,
+        "canonical_id": "unmapped:sector:f1931794f1ee0b59",
+        "canonical_label": "Wood or Plastic Industries"
+      },
+      {
+        "value": "Wooden Furniture",
+        "count": 1,
+        "canonical_id": "unmapped:sector:d3164be14e1212ab",
+        "canonical_label": "Wooden Furniture"
+      }
+    ],
+    "normalized_taxonomy_values": [
+      {
+        "value": "Industrial",
+        "count": 828,
+        "canonical_id": "sector:industrial",
+        "canonical_label": "صناعي"
+      },
+      {
+        "value": "Real Estate",
+        "count": 582,
+        "canonical_id": "unmapped:sector:d7efa2f7a9e1b512",
+        "canonical_label": "Real Estate"
+      },
+      {
+        "value": "Environment",
+        "count": 264,
+        "canonical_id": "sector:environment",
+        "canonical_label": "البيئة"
+      },
+      {
+        "value": "Tourism",
+        "count": 184,
+        "canonical_id": "sector:tourism",
+        "canonical_label": "السياحة"
+      },
+      {
+        "value": "Healthcare",
+        "count": 116,
+        "canonical_id": "sector:healthcare",
+        "canonical_label": "الرعاية الصحية"
+      },
+      {
+        "value": "Logistics",
+        "count": 107,
+        "canonical_id": "sector:logistics",
+        "canonical_label": "الخدمات اللوجستية"
+      },
+      {
+        "value": "Culture",
+        "count": 99,
+        "canonical_id": "unmapped:sector:f1947f79fdfb8046",
+        "canonical_label": "Culture"
+      },
+      {
+        "value": "Other",
+        "count": 95,
+        "canonical_id": "sector:other",
+        "canonical_label": "أخرى"
+      },
+      {
+        "value": "Education",
+        "count": 75,
+        "canonical_id": "sector:education",
+        "canonical_label": "التعليم"
+      },
+      {
+        "value": "Technology",
+        "count": 73,
+        "canonical_id": "unmapped:sector:e91fadf24f78c081",
+        "canonical_label": "Technology"
+      },
+      {
+        "value": "Agriculture",
+        "count": 71,
+        "canonical_id": "sector:agriculture",
+        "canonical_label": "الزراعة"
+      },
+      {
+        "value": "Energy",
+        "count": 55,
+        "canonical_id": "unmapped:sector:381cfb6e1e428419",
+        "canonical_label": "Energy"
+      },
+      {
+        "value": "Commercial",
+        "count": 6,
+        "canonical_id": "sector:commercial",
+        "canonical_label": "تجاري"
+      }
+    ]
+  },
+  "investment_opportunity_records": [
+    {
+      "master_id": 211,
+      "canonical_id": "AH-20261011132401-29cd3f84",
+      "title": "الخدمات الرقمية للإرشاد والتوجيه المهني",
+      "title_en": null,
+      "owner": "هيئة تطوير الأحساء",
+      "current_sector": "فرصة استثمارية",
+      "subsector": null,
+      "opportunity_type": "INVESTMENT_OPPORTUNITY",
+      "description": "تأسيس منصة رقمية شاملة للإرشاد والتوجيه المهني تستهدف الطلاب والمهنيين في المملكة، تقدم خدمات التقييم، الاستشارات، إعداد السيرة الذاتية، والبرامج الإرشادية عبر الإنترنت.تهدف المنصة إلى سد فجوة الإرشاد المهني في السوق المحلي ودعم تطوير رأس المال البشري بما يتماشى مع متطلبات سوق العمل المتغير.",
+      "source_evidence": [
+        {
+          "source_key": "ahda",
+          "source_name": "هيئة تطوير الأحساء",
+          "source_record_id": 211,
+          "source_opportunity_id": "https://ahda.gov.sa/invest-al-ahsa/investment-opportunities/digital-career-guidance-services",
+          "title": "الخدمات الرقمية للإرشاد والتوجيه المهني",
+          "source_sector": "INVESTMENT_OPPORTUNITY",
+          "normalized_sector": "Other",
+          "source_subsector": null,
+          "source_taxonomy": null,
+          "normalized_taxonomy": null,
+          "activity": null,
+          "category": null,
+          "opportunity_category": null,
+          "opportunity_type": null,
+          "dataset_name": null,
+          "description": null
+        }
+      ],
+      "open_conflicts": []
+    },
+    {
+      "master_id": 212,
+      "canonical_id": "AH-20261011132402-2e8227c3",
+      "title": "تطوير فنادق 5 نجوم في المنطقة الشرقية",
+      "title_en": null,
+      "owner": "هيئة تطوير الأحساء",
+      "current_sector": "فرصة استثمارية",
+      "subsector": null,
+      "opportunity_type": "INVESTMENT_OPPORTUNITY",
+      "description": "إنشاء وتطوير منتجع فاخر من فئة 5 نجوم، بطاقة استيعابية 300-400 غرفة، لتلبية الطلب المتنامي على السياحة الداخلية والدولية، وتعزيز مكانة المملكة كوجهة عالمية مميزة.",
+      "source_evidence": [
+        {
+          "source_key": "ahda",
+          "source_name": "هيئة تطوير الأحساء",
+          "source_record_id": 212,
+          "source_opportunity_id": "https://ahda.gov.sa/invest-al-ahsa/investment-opportunities/hotel-development-eastern-province",
+          "title": "تطوير فنادق 5 نجوم في المنطقة الشرقية",
+          "source_sector": "INVESTMENT_OPPORTUNITY",
+          "normalized_sector": "Other",
+          "source_subsector": null,
+          "source_taxonomy": null,
+          "normalized_taxonomy": null,
+          "activity": null,
+          "category": null,
+          "opportunity_category": null,
+          "opportunity_type": null,
+          "dataset_name": null,
+          "description": null
+        }
+      ],
+      "open_conflicts": []
+    },
+    {
+      "master_id": 213,
+      "canonical_id": "AH-20261011132402-e58cfa71",
+      "title": "مستشفيات الأمومة والأطفال",
+      "title_en": null,
+      "owner": "هيئة تطوير الأحساء",
+      "current_sector": "فرصة استثمارية",
+      "subsector": null,
+      "opportunity_type": "INVESTMENT_OPPORTUNITY",
+      "description": "تصميم وبناء وتشغيل وصيانة مستشفى للولادة والأطفال، وتقديم الخدمات في طب الأطفال وأمراض النساء والولادة.",
+      "source_evidence": [
+        {
+          "source_key": "ahda",
+          "source_name": "هيئة تطوير الأحساء",
+          "source_record_id": 213,
+          "source_opportunity_id": "https://ahda.gov.sa/invest-al-ahsa/investment-opportunities/maternity-and-childrens-hospitals",
+          "title": "مستشفيات الأمومة والأطفال",
+          "source_sector": "INVESTMENT_OPPORTUNITY",
+          "normalized_sector": "Other",
+          "source_subsector": null,
+          "source_taxonomy": null,
+          "normalized_taxonomy": null,
+          "activity": null,
+          "category": null,
+          "opportunity_category": null,
+          "opportunity_type": null,
+          "dataset_name": null,
+          "description": null
+        }
+      ],
+      "open_conflicts": []
+    },
+    {
+      "master_id": 214,
+      "canonical_id": "AH-20261011132403-4c8e4c29",
+      "title": "الخدمات الطبية للمدارس",
+      "title_en": null,
+      "owner": "هيئة تطوير الأحساء",
+      "current_sector": "فرصة استثمارية",
+      "subsector": null,
+      "opportunity_type": "INVESTMENT_OPPORTUNITY",
+      "description": "تقديم خدمات طبية شاملة داخل المدارس (طلاب، معلمين، كوادر مساندة) تشمل الرعاية الطارئة، متابعة الأمراض المزمنة، التوعية الصحية، والتنسيق مع الأسر لتحسين صحة المجتمع المدرسي.",
+      "source_evidence": [
+        {
+          "source_key": "ahda",
+          "source_name": "هيئة تطوير الأحساء",
+          "source_record_id": 214,
+          "source_opportunity_id": "https://ahda.gov.sa/invest-al-ahsa/investment-opportunities/medical-services-schools",
+          "title": "الخدمات الطبية للمدارس",
+          "source_sector": "INVESTMENT_OPPORTUNITY",
+          "normalized_sector": "Other",
+          "source_subsector": null,
+          "source_taxonomy": null,
+          "normalized_taxonomy": null,
+          "activity": null,
+          "category": null,
+          "opportunity_category": null,
+          "opportunity_type": null,
+          "dataset_name": null,
+          "description": null
+        }
+      ],
+      "open_conflicts": []
+    },
+    {
+      "master_id": 215,
+      "canonical_id": "AH-20261011132403-f9ccf144",
+      "title": "المعالجة الأولية للتمور",
+      "title_en": null,
+      "owner": "هيئة تطوير الأحساء",
+      "current_sector": "فرصة استثمارية",
+      "subsector": null,
+      "opportunity_type": "INVESTMENT_OPPORTUNITY",
+      "description": "الاستحواذ على مزرعة تمور وإنشاء منشأة معالجة أولية بطاقة إنتاجية للاستفادة من الطلب المحلي والدولي على التمور السعودية.",
+      "source_evidence": [
+        {
+          "source_key": "ahda",
+          "source_name": "هيئة تطوير الأحساء",
+          "source_record_id": 215,
+          "source_opportunity_id": "https://ahda.gov.sa/invest-al-ahsa/investment-opportunities/pre-treatment-dates",
+          "title": "المعالجة الأولية للتمور",
+          "source_sector": "INVESTMENT_OPPORTUNITY",
+          "normalized_sector": "Other",
+          "source_subsector": null,
+          "source_taxonomy": null,
+          "normalized_taxonomy": null,
+          "activity": null,
+          "category": null,
+          "opportunity_category": null,
+          "opportunity_type": null,
+          "dataset_name": null,
+          "description": null
+        }
+      ],
+      "open_conflicts": []
+    },
+    {
+      "master_id": 216,
+      "canonical_id": "AH-20261011132404-9501ef33",
+      "title": "تطوير مراكز الرعاية الصحية الأولية",
+      "title_en": null,
+      "owner": "هيئة تطوير الأحساء",
+      "current_sector": "فرصة استثمارية",
+      "subsector": null,
+      "opportunity_type": "INVESTMENT_OPPORTUNITY",
+      "description": "تطوير مراکز الرعایة الصحیة الأولیة الحالیة من خلال تجدید المبانی، تحسین الخدمات، تطویر القوی العاملة وتقدیم الخدمات السریریة.",
+      "source_evidence": [
+        {
+          "source_key": "ahda",
+          "source_name": "هيئة تطوير الأحساء",
+          "source_record_id": 216,
+          "source_opportunity_id": "https://ahda.gov.sa/invest-al-ahsa/investment-opportunities/primary-healthcare-centers-development",
+          "title": "تطوير مراكز الرعاية الصحية الأولية",
+          "source_sector": "INVESTMENT_OPPORTUNITY",
+          "normalized_sector": "Other",
+          "source_subsector": null,
+          "source_taxonomy": null,
+          "normalized_taxonomy": null,
+          "activity": null,
+          "category": null,
+          "opportunity_category": null,
+          "opportunity_type": null,
+          "dataset_name": null,
+          "description": null
+        }
+      ],
+      "open_conflicts": []
+    },
+    {
+      "master_id": 217,
+      "canonical_id": "AH-20261011132405-3e88af9f",
+      "title": "مراكز التدريب التقني والمهني في السياحة والضيافة",
+      "title_en": null,
+      "owner": "هيئة تطوير الأحساء",
+      "current_sector": "فرصة استثمارية",
+      "subsector": null,
+      "opportunity_type": "INVESTMENT_OPPORTUNITY",
+      "description": "إنشاء وتطوير مراكز تدريب سياحي وفندقي لتأهيل الكوادر الوطنية عبر برامج تعليمية معتمدة دوليا، تلبي احتياجات سوق العمل وتدعم مستهدفات رؤية 2030.",
+      "source_evidence": [
+        {
+          "source_key": "ahda",
+          "source_name": "هيئة تطوير الأحساء",
+          "source_record_id": 217,
+          "source_opportunity_id": "https://ahda.gov.sa/invest-al-ahsa/investment-opportunities/tourism-and-hospitality-training",
+          "title": "مراكز التدريب التقني والمهني في السياحة والضيافة",
+          "source_sector": "INVESTMENT_OPPORTUNITY",
+          "normalized_sector": "Other",
+          "source_subsector": null,
+          "source_taxonomy": null,
+          "normalized_taxonomy": null,
+          "activity": null,
+          "category": null,
+          "opportunity_category": null,
+          "opportunity_type": null,
+          "dataset_name": null,
+          "description": null
+        }
+      ],
+      "open_conflicts": []
+    }
+  ],
+  "source_rows_total": 2898
+}

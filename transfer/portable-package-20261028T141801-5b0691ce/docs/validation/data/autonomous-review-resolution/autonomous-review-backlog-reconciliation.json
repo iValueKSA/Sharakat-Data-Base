@@ -1,0 +1,136 @@
+{
+  "open_reviews_before": 519,
+  "human_review_required_before": 510,
+  "source_recheck_required_before": 9,
+  "resolved": 519,
+  "no_change": 518,
+  "canonical_changes": 0,
+  "superseded": 1,
+  "merges": 0,
+  "open_reviews_after": 0,
+  "natural_sync_new_reviews_after_snapshot": 0,
+  "type_reconciliation": [
+    {
+      "type": "duplicate",
+      "open_before": 10,
+      "auto_resolved": 10,
+      "no_change": 10,
+      "canonical_change": 0,
+      "merge": 0,
+      "superseded": 0,
+      "open_after": 0
+    },
+    {
+      "type": "field_conflict",
+      "open_before": 443,
+      "auto_resolved": 443,
+      "no_change": 443,
+      "canonical_change": 0,
+      "merge": 0,
+      "superseded": 0,
+      "open_after": 0
+    },
+    {
+      "type": "location",
+      "open_before": 15,
+      "auto_resolved": 15,
+      "no_change": 15,
+      "canonical_change": 0,
+      "merge": 0,
+      "superseded": 0,
+      "open_after": 0
+    },
+    {
+      "type": "taxonomy_conflict",
+      "open_before": 51,
+      "auto_resolved": 51,
+      "no_change": 50,
+      "canonical_change": 0,
+      "merge": 0,
+      "superseded": 1,
+      "open_after": 0
+    },
+    {
+      "type": "qualification",
+      "open_before": 0,
+      "auto_resolved": 0,
+      "no_change": 0,
+      "canonical_change": 0,
+      "merge": 0,
+      "superseded": 0,
+      "open_after": 0
+    }
+  ],
+  "masters": {
+    "current_count": 566,
+    "unique_current_master_ids": 566,
+    "merged_count": 21
+  },
+  "list_export_reconciliation": {
+    "api_list": 566,
+    "dashboard": 566,
+    "data_dashboard": 566,
+    "csv": 566,
+    "xlsx": 566,
+    "database_current_masters": 566
+  },
+  "list_duplicate_masters": 0,
+  "reconciliation_pass": true,
+  "live_http_api_export_reconciliation": {
+    "captured_at": "2026-10-26T07:30:14.4395474Z",
+    "health": {
+      "http_status": 200,
+      "body": "{\"status\": \"ready\", \"checks\": {\"database\": \"ok\", \"redis\": \"ok\", \"worker\": \"ok\"}}"
+    },
+    "api": {
+      "http_status": 200,
+      "page_1_rows": 500,
+      "page_2_rows": 66,
+      "total": 566,
+      "unique_master_ids": 566,
+      "duplicate_master_ids": 0
+    },
+    "dashboard": {
+      "total": 566
+    },
+    "csv": {
+      "http_status": 200,
+      "rows": 566
+    },
+    "xlsx": {
+      "http_status": 200,
+      "content_type": [
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      ],
+      "bytes": 282102,
+      "passed": true
+    },
+    "dq_route_count_check": {
+      "api_list": 566,
+      "dashboard": 566,
+      "data_dashboard": 566,
+      "csv": 566,
+      "xlsx": 566,
+      "database_current_masters": 566
+    },
+    "dq_list_duplicate_masters": 0,
+    "all_reconciled_to_current_masters": true
+  },
+  "natural_sync_resolution": {
+    "job_id": 504,
+    "review_rows_created": 7,
+    "review_rows_closed_before_snapshot": 7,
+    "net_open_contribution_after_job": 0,
+    "included_in_open_snapshot_519": false,
+    "resolved_review_ids": [
+      752,
+      753,
+      754,
+      755,
+      756,
+      757,
+      758
+    ],
+    "system_rule": "CURRENT_SOURCE_SECTOR_MISSING_NOT_CONFLICT_V1"
+  }
+}

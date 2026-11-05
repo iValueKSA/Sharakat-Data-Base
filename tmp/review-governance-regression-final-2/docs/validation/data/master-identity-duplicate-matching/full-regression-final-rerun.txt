@@ -1,0 +1,7 @@
+Final post-review regression rerun (disposable container, workspace mounted read-only):
+$ docker run --rm -v "${PWD}:/workspace:ro" -w /workspace alahsa-local-api python -m pytest -p no:cacheprovider tests -q
+
+185 passed, 1 warning in 8.69s
+0 failed
+
+The one warning is Starlette's deprecation warning about httpx with TestClient. This run did not connect to or modify PostgreSQL and did not run source synchronization.

@@ -1,0 +1,71 @@
+{
+  "pilot_id": "AHSA-HUMAN-REVIEW-PILOT-2026-10",
+  "frozen_sample_sha256": "e72cb979ebd28e18f302ffa9c1453b2b290496679b83b8ed4cef34aac6815c8c",
+  "pilot_duplicate_cases": 6,
+  "pilot_duplicate_review_ids": [
+    32,
+    34,
+    37,
+    33,
+    35,
+    46
+  ],
+  "unnecessary_duplicate_reviews": 0,
+  "cases_with_hidden_meaningful_differences": 6,
+  "cases_invalidated": 0,
+  "cases_replaced_with_audit": 0,
+  "sample_regenerated": false,
+  "amendment_required": false,
+  "case_audit": [
+    {
+      "review_id": 32,
+      "classification": "SAME_SOURCE_AMBIGUOUS",
+      "meaningful_difference_count": 2,
+      "invalidated": false,
+      "replacement_review_id": null,
+      "reason": "Frozen pilot case remains a valid unresolved identity question with explicit source or business-field differences."
+    },
+    {
+      "review_id": 33,
+      "classification": "SAME_SOURCE_AMBIGUOUS",
+      "meaningful_difference_count": 2,
+      "invalidated": false,
+      "replacement_review_id": null,
+      "reason": "Frozen pilot case remains a valid unresolved identity question with explicit source or business-field differences."
+    },
+    {
+      "review_id": 34,
+      "classification": "SAME_SOURCE_AMBIGUOUS",
+      "meaningful_difference_count": 2,
+      "invalidated": false,
+      "replacement_review_id": null,
+      "reason": "Frozen pilot case remains a valid unresolved identity question with explicit source or business-field differences."
+    },
+    {
+      "review_id": 35,
+      "classification": "SAME_SOURCE_AMBIGUOUS",
+      "meaningful_difference_count": 2,
+      "invalidated": false,
+      "replacement_review_id": null,
+      "reason": "Frozen pilot case remains a valid unresolved identity question with explicit source or business-field differences."
+    },
+    {
+      "review_id": 37,
+      "classification": "SAME_SOURCE_AMBIGUOUS",
+      "meaningful_difference_count": 17,
+      "invalidated": false,
+      "replacement_review_id": null,
+      "reason": "Frozen pilot case remains a valid unresolved identity question with explicit source or business-field differences."
+    },
+    {
+      "review_id": 46,
+      "classification": "CROSS_SOURCE_AMBIGUOUS",
+      "meaningful_difference_count": 29,
+      "invalidated": false,
+      "replacement_review_id": null,
+      "reason": "Frozen pilot case remains a valid unresolved identity question with explicit source or business-field differences."
+    }
+  ],
+  "business_data_changed": false,
+  "review_data_changed": false
+}

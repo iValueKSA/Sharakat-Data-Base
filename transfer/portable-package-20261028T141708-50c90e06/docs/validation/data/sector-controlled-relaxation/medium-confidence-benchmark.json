@@ -1,0 +1,116 @@
+{
+  "engine_version": "ahda-sector-controlled-relaxation-1.0.0",
+  "gold_labeled_masters": 125,
+  "high_confidence": {
+    "correct": 1,
+    "incorrect": 0,
+    "precision_percentage": 100.0,
+    "predictions": 1
+  },
+  "inferred_labels_excluded": true,
+  "limitation": "Pure title and exact semantic signal performance is estimated from leave-one-master-out predictions among non-inferred specified records. Small per-rule counts are supplemented by manual candidate audit.",
+  "medium_by_rule": {
+    "MED_TITLE_HOTELS": {
+      "auto_apply_eligible": true,
+      "correct": 1,
+      "incorrect": 0,
+      "minimum_benchmark_support_for_precision_gate": 5,
+      "precision_percentage": 100.0,
+      "predictions": 1,
+      "sectors": {
+        "sector:tourism": 1
+      }
+    }
+  },
+  "medium_by_sector": {
+    "sector:tourism": {
+      "correct": 1,
+      "incorrect": 0,
+      "precision_percentage": 100.0,
+      "predictions": 1,
+      "rule_decisions": [
+        "MED_TITLE_HOTELS"
+      ],
+      "support": 0
+    }
+  },
+  "medium_confidence": {
+    "correct": 1,
+    "incorrect": 0,
+    "precision_percentage": 100.0,
+    "predictions": 1
+  },
+  "medium_rules_rejected_for_low_precision": [],
+  "minimum_support_for_low_precision_rejection": 5,
+  "official_source_sector_hidden": true,
+  "records": [
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-master-out",
+      "inferred_reference_excluded": true,
+      "master_id": 168,
+      "official_source_sector_hidden": true,
+      "prediction": {
+        "classification": "HIGH_CONFIDENCE",
+        "classification_origin": "INFERRED_RULE",
+        "confidence": 0.94,
+        "confidence_margin": 1.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "field": "activity",
+            "rule_key": "P2_EMPIRICAL_ACTIVITY_MAPPING",
+            "value": "تجاري"
+          }
+        ],
+        "rule_key": "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL",
+        "rule_keys": [
+          "P2_EMPIRICAL_ACTIVITY_MAPPING",
+          "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL"
+        ],
+        "sector": "تجاري",
+        "sector_id": "sector:commercial",
+        "total_score": 94.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:tourism",
+      "holdout": "leave-one-master-out",
+      "inferred_reference_excluded": true,
+      "master_id": 212,
+      "official_source_sector_hidden": true,
+      "prediction": {
+        "classification": "MEDIUM_CONFIDENCE",
+        "classification_origin": "INFERRED_RULE_MEDIUM",
+        "confidence": 0.852,
+        "confidence_margin": 4.0,
+        "engine_version": "ahda-sector-controlled-relaxation-1.0.0",
+        "evidence_fields": [
+          "title"
+        ],
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "field": "title",
+            "rule_key": "MED_TITLE_HOTELS",
+            "signal": "فنادق",
+            "value": "تطوير فنادق 5 نجوم في المنطقة الشرقية"
+          }
+        ],
+        "rule_key": "MED_TITLE_HOTELS",
+        "rule_keys": [
+          "MED_TITLE_HOTELS"
+        ],
+        "second_score": 0.0,
+        "second_sector_id": null,
+        "sector": "السياحة",
+        "sector_id": "sector:tourism",
+        "top_score": 4.0,
+        "top_sector_id": "sector:tourism",
+        "total_score": 85.2
+      }
+    }
+  ],
+  "small_benchmark_warning": "Only one medium-confidence holdout prediction was available; 100% observed precision is descriptive, not a stable statistical estimate. The full proposed live set was manually audited.",
+  "status": "PASS"
+}

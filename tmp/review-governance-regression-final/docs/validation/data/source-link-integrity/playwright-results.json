@@ -1,0 +1,167 @@
+{
+  "tested_at": "2026-10-19T13:04:26.707Z",
+  "url": "http://localhost:8080/?view=opportunities",
+  "viewports": [
+    {
+      "width": 1920,
+      "documentWidth": 1920,
+      "bodyWidth": 1920,
+      "direction": "rtl",
+      "links": [
+        {
+          "href": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-26-017001-58001?type=TempRental",
+          "text": "فرص – البوابة الموحدة للاستثمار · فتح الإعلان الأصلي ↗"
+        }
+      ],
+      "unavailable": [],
+      "modalVisible": true,
+      "screenshot": "reported-master-324-1920x1080.png",
+      "noHorizontalOverflow": true,
+      "rtl": true
+    },
+    {
+      "width": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "direction": "rtl",
+      "links": [
+        {
+          "href": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-26-017001-58001?type=TempRental",
+          "text": "فرص – البوابة الموحدة للاستثمار · فتح الإعلان الأصلي ↗"
+        }
+      ],
+      "unavailable": [],
+      "modalVisible": true,
+      "screenshot": "reported-master-324-1440x900.png",
+      "noHorizontalOverflow": true,
+      "rtl": true
+    },
+    {
+      "width": 1366,
+      "documentWidth": 1366,
+      "bodyWidth": 1366,
+      "direction": "rtl",
+      "links": [
+        {
+          "href": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-26-017001-58001?type=TempRental",
+          "text": "فرص – البوابة الموحدة للاستثمار · فتح الإعلان الأصلي ↗"
+        }
+      ],
+      "unavailable": [],
+      "modalVisible": true,
+      "screenshot": "reported-master-324-1366x768.png",
+      "noHorizontalOverflow": true,
+      "rtl": true
+    },
+    {
+      "width": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "direction": "rtl",
+      "links": [
+        {
+          "href": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-26-017001-58001?type=TempRental",
+          "text": "فرص – البوابة الموحدة للاستثمار · فتح الإعلان الأصلي ↗"
+        }
+      ],
+      "unavailable": [],
+      "modalVisible": true,
+      "screenshot": "reported-master-324-768x900.png",
+      "noHorizontalOverflow": true,
+      "rtl": true
+    },
+    {
+      "width": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "direction": "rtl",
+      "links": [
+        {
+          "href": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-26-017001-58001?type=TempRental",
+          "text": "فرص – البوابة الموحدة للاستثمار · فتح الإعلان الأصلي ↗"
+        }
+      ],
+      "unavailable": [],
+      "modalVisible": true,
+      "screenshot": "reported-master-324-390x844.png",
+      "noHorizontalOverflow": true,
+      "rtl": true
+    }
+  ],
+  "reported_master": {
+    "api_status": 200,
+    "reference": "02-26-017001-58001",
+    "source": {
+      "name": "فرص – البوابة الموحدة للاستثمار",
+      "publication_platform": "فرص – البوابة الموحدة للاستثمار",
+      "publishing_entity": "وزارة الشئون البلدية والقروية",
+      "source_operator": "وزارة البلديات والإسكان والجهات الحكومية المشاركة",
+      "url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-26-017001-58001?type=TempRental",
+      "historical_url": "https://furas.momah.gov.sa/ar/opportunity/02-26-017001-58001?type=TemporaryRental",
+      "checked_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-26-017001-58001?type=TempRental",
+      "link_health": "VALID",
+      "link_checked_at": "2026-10-19T12:54:27Z",
+      "url_repaired": true,
+      "key": "furas",
+      "title": "تاجير مؤقت لموقع من نوع الساحات الميادين بحي  الناصرية مقهى ومطعم في ساحة سوق الحرفيين",
+      "raw_location": "الاحساء الناصرية شارع الرفعة",
+      "raw_status": "Announced",
+      "canonical_status": "منشورة",
+      "status_review_flags": [],
+      "project_stage": null,
+      "investment_model": null,
+      "qualification_reason": null,
+      "location_scope": null,
+      "opportunity_locations": []
+    },
+    "official_url_http": 200,
+    "official_url_contains_reference": true,
+    "official_url_contains_title": true
+  },
+  "unavailable_master": {
+    "id": 15,
+    "api_status": 200,
+    "sources": [
+      {
+        "key": "furas",
+        "health": "UNAVAILABLE_CONFIRMED",
+        "url": null,
+        "historical_url": "https://furas.momah.gov.sa/ar/opportunity/02-23-017001-14002?type=TemporaryRental"
+      }
+    ],
+    "uiUnavailableText": [
+      "فرص – البوابة الموحدة للاستثمار · الإعلان غير متاح حاليًا على المصدر"
+    ],
+    "activeLinkCount": 0
+  },
+  "multi_source_master": {
+    "id": 102,
+    "reference": "06-26-183737-46013",
+    "sources": [
+      {
+        "key": "furas",
+        "health": "VALID",
+        "url": "https://furas.momah.gov.sa/index.php/ar/opportunity/06-26-183737-46013?type=Investment",
+        "historical_url": "https://furas.momah.gov.sa/ar/opportunity/06-26-183737-46013?type=Investment"
+      },
+      {
+        "key": "invest-saudi",
+        "health": "TEMPORARILY_UNVERIFIABLE",
+        "url": null,
+        "historical_url": "https://investsaudi.sa/investment-opportunities"
+      }
+    ],
+    "uiActiveLinkCount": 1,
+    "uiUnavailableText": [
+      "استثمر في السعودية · تعذر التحقق من رابط الإعلان حاليًا"
+    ]
+  },
+  "service_checks": {
+    "rtl": true,
+    "no_horizontal_overflow_all_sizes": true,
+    "reported_link_active": true,
+    "reported_target_identity": true,
+    "unavailable_not_clickable": true,
+    "multi_source_keeps_valid_and_suppresses_unverified": true
+  }
+}

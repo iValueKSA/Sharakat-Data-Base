@@ -1,0 +1,57 @@
+{
+  "captured_at": "2026-10-25T07:21:15.306Z",
+  "read_only": true,
+  "open_reviews_total": 498,
+  "human_review_required": 489,
+  "source_recheck_required": 9,
+  "open_by_priority": {
+    "P1": 0,
+    "P2": 428,
+    "P3": 57,
+    "P4": 13
+  },
+  "open_by_type": {
+    "duplicate": 10,
+    "field_conflict": 423,
+    "location": 15,
+    "taxonomy_conflict": 50
+  },
+  "open_by_subtype": {
+    "DUPLICATE_IDENTITY_AMBIGUITY": 10,
+    "LOCATION_EVIDENCE_AMBIGUITY": 15,
+    "activity": 31,
+    "contract_duration_years": 332,
+    "full_description": 2,
+    "investment_model": 4,
+    "investment_value": 2,
+    "land_area_sqm": 1,
+    "location_description": 24,
+    "normalized_title": 3,
+    "opportunity_owner": 1,
+    "sector": 28,
+    "short_description": 4,
+    "status": 34,
+    "sub_activity": 1,
+    "title_ar": 6
+  },
+  "open_by_source": {
+    "SOURCE_NOT_ATTACHED_TO_REVIEW": 10,
+    "استثمر في السعودية": 18,
+    "المركز الوطني للتخصيص": 1,
+    "جامعة الملك فيصل": 3,
+    "فرص – البوابة الموحدة للاستثمار": 405,
+    "منصة الفرص الاستثمارية بالأحساء": 52,
+    "هيئة تطوير الأحساء": 9
+  },
+  "sync_jobs_total": 471,
+  "active_sync_jobs_observed": 0,
+  "active_sync_jobs_observation_window": 100,
+  "latest_jobs_returned": 100,
+  "pilot_started": false,
+  "pilot_event_count": 0,
+  "pilot_case_count": 40,
+  "pilot_phase_counts": {
+    "A": 20,
+    "B": 20
+  }
+}

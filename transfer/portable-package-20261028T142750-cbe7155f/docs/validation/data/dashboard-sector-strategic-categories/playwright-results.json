@@ -1,0 +1,220 @@
+{
+  "started_at": "2026-10-21T10:27:02.868Z",
+  "base_url": "http://localhost:8080",
+  "viewport_sizes": [
+    [
+      1920,
+      1080
+    ],
+    [
+      1440,
+      900
+    ],
+    [
+      1366,
+      768
+    ],
+    [
+      768,
+      900
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "scenarios": {
+    "opportunity_total": 525,
+    "api_sector_bucket_sum": 525,
+    "tourism_count": 1,
+    "agriculture_count": 1,
+    "api_tourism_present": true,
+    "api_agriculture_present": true,
+    "chart_tourism_separate": true,
+    "chart_agriculture_separate": true,
+    "tourism_in_other": false,
+    "agriculture_in_other": false,
+    "chart_other_display_count": 19,
+    "api_canonical_other_count": 9,
+    "expected_tail_count_in_other": 10,
+    "chart_reconciliation": true,
+    "chart_label_total": "القطاعات: 525 فرصة",
+    "chart_click_filters": {
+      "sector:tourism": {
+        "label": "السياحة",
+        "api_count": 1,
+        "api_master_ids": [
+          "AH-20261011132402-2e8227c3"
+        ],
+        "chart_click": "PASSED",
+        "selected_filter": "sector:tourism",
+        "visible_table_sector_labels": [
+          "السياحة"
+        ],
+        "table_count": "عرض 1–1 من 1 فرصة",
+        "first_page_rows": 1
+      },
+      "sector:agriculture": {
+        "label": "الزراعة",
+        "api_count": 1,
+        "api_master_ids": [
+          "AH-20261011132403-f9ccf144"
+        ],
+        "chart_click": "PASSED",
+        "selected_filter": "sector:agriculture",
+        "visible_table_sector_labels": [
+          "الزراعة"
+        ],
+        "table_count": "عرض 1–1 من 1 فرصة",
+        "first_page_rows": 1
+      }
+    },
+    "visible_chart": {
+      "labels": [
+        "غير محدد",
+        "صناعي",
+        "تجاري",
+        "أخرى",
+        "البيئة",
+        "العقاراتوالإنشاءات",
+        "الخدماتالمالية",
+        "الزراعة",
+        "السياحة"
+      ],
+      "bars": [
+        {
+          "id": "sector:unspecified",
+          "name": "غير محدد",
+          "count": 379,
+          "aria": "تصفية حسب غير محدد: 379 فرصة",
+          "color": "#989899"
+        },
+        {
+          "id": "sector:industrial",
+          "name": "صناعي",
+          "count": 59,
+          "aria": "تصفية حسب صناعي: 59 فرصة",
+          "color": "#006e61"
+        },
+        {
+          "id": "sector:commercial",
+          "name": "تجاري",
+          "count": 46,
+          "aria": "تصفية حسب تجاري: 46 فرصة",
+          "color": "#378aa4"
+        },
+        {
+          "id": null,
+          "name": "أخرى",
+          "count": 19,
+          "aria": "تصفية حسب أخرى: 19 فرصة",
+          "color": "#d1cbbd"
+        },
+        {
+          "id": "sector:environment",
+          "name": "البيئة",
+          "count": 8,
+          "aria": "تصفية حسب البيئة: 8 فرصة",
+          "color": "#9b7a5a"
+        },
+        {
+          "id": "sector:real_estate",
+          "name": "العقاراتوالإنشاءات",
+          "count": 7,
+          "aria": "تصفية حسب العقارات والإنشاءات: 7 فرصة",
+          "color": "#c39853"
+        },
+        {
+          "id": "sector:financial_services",
+          "name": "الخدماتالمالية",
+          "count": 5,
+          "aria": "تصفية حسب الخدمات المالية: 5 فرصة",
+          "color": "#124e5c"
+        },
+        {
+          "id": "sector:agriculture",
+          "name": "الزراعة",
+          "count": 1,
+          "aria": "تصفية حسب الزراعة: 1 فرصة",
+          "color": "#64a08d"
+        },
+        {
+          "id": "sector:tourism",
+          "name": "السياحة",
+          "count": 1,
+          "aria": "تصفية حسب السياحة: 1 فرصة",
+          "color": "#8a6db1"
+        }
+      ],
+      "aggregateValues": [
+        "sector:other",
+        "sector:logistics",
+        "sector:education",
+        "sector:healthcare"
+      ],
+      "aggregateCount": 19,
+      "chartTotalLabel": "القطاعات: 525 فرصة",
+      "direction": "rtl"
+    }
+  },
+  "errors": [],
+  "viewport_checks": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "rtl": true,
+      "western_digits": true,
+      "no_horizontal_page_overflow": true,
+      "tourism_visible": true,
+      "agriculture_visible": true,
+      "chart_labels_within_svg": true,
+      "chart_width": 706
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "rtl": true,
+      "western_digits": true,
+      "no_horizontal_page_overflow": true,
+      "tourism_visible": true,
+      "agriculture_visible": true,
+      "chart_labels_within_svg": true,
+      "chart_width": 501
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "rtl": true,
+      "western_digits": true,
+      "no_horizontal_page_overflow": true,
+      "tourism_visible": true,
+      "agriculture_visible": true,
+      "chart_labels_within_svg": true,
+      "chart_width": 466
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "rtl": true,
+      "western_digits": true,
+      "no_horizontal_page_overflow": true,
+      "tourism_visible": true,
+      "agriculture_visible": true,
+      "chart_labels_within_svg": true,
+      "chart_width": 318
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "rtl": true,
+      "western_digits": true,
+      "no_horizontal_page_overflow": true,
+      "tourism_visible": true,
+      "agriculture_visible": true,
+      "chart_labels_within_svg": true,
+      "chart_width": 338
+    }
+  ],
+  "finished_at": "2026-10-21T10:27:15.977Z",
+  "result": "PASS"
+}

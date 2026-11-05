@@ -1,0 +1,15 @@
+Local PostgreSQL restore evidence
+Captured: 2026-10-13 Asia/Amman
+
+Result: PASS
+Target: sharakat_local_restore_test (created only after confirming it did not exist)
+Primary database sharakat_local was not overwritten.
+Command: pg_restore --exit-on-error --no-owner --no-acl
+Restore command wall time: about 3.4 seconds including connection, database creation, and restore.
+
+Matching primary/restored snapshot counts:
+opportunities 270; source_opportunities 2,871; source_observations 7,603; sources 10; source_sync_jobs 210; duplicate_candidates 25 (pending 20); location_reviews 17 (pending 17); qualification_reviews 0; opportunity_data_conflicts 104 (open taxonomy 14, open field 8); opportunity_change_history 169; opportunity_merge_audit 5; audit_events 6; multi-source masters 7; pg_trgm 1.6.
+
+The primary has 213 sync jobs now because three local validation jobs were created after the backup snapshot. All other compared counts remain equal. API smoke against the restored database returned HTTP 200 for /health/live, /health/ready, and /api/opportunities?limit=1. Application was not exposed on a host port for this test; an in-process TestClient used the restored DATABASE_URL.
+
+An earlier archive created by PostgreSQL 17 client could not be restored cleanly to PostgreSQL 16 because the server rejected transaction_timeout. The application image was changed to use the official PostgreSQL 16 client. A new backup and clean restore then passed.

@@ -1,0 +1,847 @@
+[
+  {
+    "id": 1,
+    "key": "furas",
+    "name": "فرص – البوابة الموحدة للاستثمار",
+    "enabled": true,
+    "interval": 60,
+    "technical_health": "HEALTHY",
+    "coverage_status": "COMPLETE_PUBLIC_SOURCE",
+    "last_attempt": "2026-10-20T14:06:32.603289+03:00",
+    "last_success": "2026-10-20T14:06:43.244641+03:00",
+    "retained": 177,
+    "latest_count": 164,
+    "total": 164,
+    "pages_requested": 3,
+    "pages_successful": 3,
+    "unique": 164,
+    "pagination_complete": true,
+    "notes": "CITY_ID values for Al-Ahsa cities are verified from the public investment layer; booklet price is not investment value.",
+    "metrics": {
+      "source_total_reported": 164,
+      "pages_requested": 3,
+      "pages_successful": 3,
+      "records_received": 164,
+      "records_parsed": 164,
+      "unique_records": 164,
+      "pagination_complete": true,
+      "active_count": 164,
+      "expired_count": 0,
+      "page_size": 100,
+      "city_filter_ids": [
+        "1949",
+        "1945",
+        "1950",
+        "005011001",
+        "9",
+        "1264",
+        "1315",
+        "1299",
+        "1298",
+        "104",
+        "005020001"
+      ],
+      "where": "CITY_ID IN ('1949','1945','1950','005011001','9','1264','1315','1299','1298','104','005020001') AND LASTRFPSELLDATE >= DATE '2026-10-20' AND OPPORTUNITYACTIVESTATUS='Announced' AND QualifyingOpportunity=0",
+      "standardization": {
+        "version": "21",
+        "records_processed": 164,
+        "fields_standardized": 2898,
+        "approved_alias_matches": 179,
+        "unmapped_values": 295,
+        "validation_issues": 97
+      }
+    }
+  },
+  {
+    "id": 2,
+    "key": "alahsa-opportunities",
+    "name": "منصة الفرص الاستثمارية بالأحساء",
+    "enabled": true,
+    "interval": 60,
+    "technical_health": "HEALTHY",
+    "coverage_status": "COMPLETE_PUBLIC_SOURCE",
+    "last_attempt": "2026-10-20T14:06:32.603692+03:00",
+    "last_success": "2026-10-20T14:06:40.440622+03:00",
+    "retained": 103,
+    "latest_count": 103,
+    "total": 103,
+    "pages_requested": 12,
+    "pages_successful": 12,
+    "unique": 103,
+    "pagination_complete": true,
+    "notes": "منصة مخصصة جغرافياً للأحساء؛ يجري مسح الصفحات المتاحة.",
+    "metrics": {
+      "source_total_reported": 103,
+      "category_totals": {
+        "2": 2.0,
+        "3": 101.0,
+        "4": 0.0
+      },
+      "pages_requested": 12,
+      "pages_successful": 12,
+      "records_received": 103,
+      "records_parsed": 103,
+      "unique_records": 103,
+      "duplicate_items_between_pages": 0,
+      "pagination_complete": true,
+      "active_count": 103,
+      "expired_count": 0,
+      "page_size": 9,
+      "standardization": {
+        "version": "21",
+        "records_processed": 103,
+        "fields_standardized": 1248,
+        "approved_alias_matches": 64,
+        "unmapped_values": 209,
+        "validation_issues": 0
+      }
+    }
+  },
+  {
+    "id": 3,
+    "key": "ahda",
+    "name": "هيئة تطوير الأحساء",
+    "enabled": true,
+    "interval": 360,
+    "technical_health": "WARNING",
+    "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE",
+    "last_attempt": "2026-10-20T09:02:14.78428+03:00",
+    "last_success": "2026-10-19T21:47:32.877363+03:00",
+    "retained": 8,
+    "latest_count": 0,
+    "total": null,
+    "pages_requested": 0,
+    "pages_successful": 0,
+    "unique": 0,
+    "pagination_complete": null,
+    "notes": "يجب إبقاء السجلات عند فشل الوصول.",
+    "metrics": {}
+  },
+  {
+    "id": 4,
+    "key": "invest-saudi",
+    "name": "استثمر في السعودية",
+    "enabled": true,
+    "interval": 360,
+    "technical_health": "WARNING",
+    "coverage_status": "COMPLETE_PUBLIC_SOURCE",
+    "last_attempt": "2026-10-20T09:02:15.440686+03:00",
+    "last_success": "2026-10-19T15:47:57.145454+03:00",
+    "retained": 2555,
+    "latest_count": 0,
+    "total": null,
+    "pages_requested": 0,
+    "pages_successful": 0,
+    "unique": 0,
+    "pagination_complete": null,
+    "notes": "المنطقة الشرقية وحدها لا تكفي للتصنيف.",
+    "metrics": {}
+  },
+  {
+    "id": 5,
+    "key": "kfu",
+    "name": "جامعة الملك فيصل",
+    "enabled": true,
+    "interval": 720,
+    "technical_health": "HEALTHY",
+    "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE",
+    "last_attempt": "2026-10-20T09:47:32.507555+03:00",
+    "last_success": "2026-10-20T09:47:33.695438+03:00",
+    "retained": 6,
+    "latest_count": 2,
+    "total": 2,
+    "pages_requested": 1,
+    "pages_successful": 1,
+    "unique": 2,
+    "pagination_complete": true,
+    "notes": "إعلانات فرص الاستثمار والتشغيل.",
+    "metrics": {
+      "source_total_reported": 2,
+      "pages_requested": 1,
+      "pages_successful": 1,
+      "records_received": 2,
+      "records_parsed": 2,
+      "unique_records": 2,
+      "qualified_opportunities": 2,
+      "rejected_content": 0,
+      "pagination_complete": true,
+      "source_collection_complete": true,
+      "listing_url": "https://www.kfu.edu.sa/ar/Departments/Investment/Documents/Newdesign/اعلانات-الإدارة.html",
+      "attachments": 2,
+      "expired_count": 1,
+      "unknown_status_count": 1,
+      "parser_version": "2026.10.12-kfu-1",
+      "standardization": {
+        "version": "19",
+        "records_processed": 2,
+        "fields_standardized": 30,
+        "approved_alias_matches": 2,
+        "unmapped_values": 4,
+        "validation_issues": 4
+      }
+    }
+  },
+  {
+    "id": 6,
+    "key": "modon",
+    "name": "مدن",
+    "enabled": true,
+    "interval": 360,
+    "technical_health": "WARNING",
+    "coverage_status": "PUBLIC_COVERAGE_LIMITED",
+    "last_attempt": "2026-10-20T09:02:15.90597+03:00",
+    "last_success": "2026-10-12T15:26:52.808735+03:00",
+    "retained": 0,
+    "latest_count": 0,
+    "total": null,
+    "pages_requested": 0,
+    "pages_successful": 0,
+    "unique": 0,
+    "pagination_complete": null,
+    "notes": "واجهة الموقع قد تعيد أخطاء مؤقتة.",
+    "metrics": {}
+  },
+  {
+    "id": 7,
+    "key": "ncp",
+    "name": "المركز الوطني للتخصيص",
+    "enabled": true,
+    "interval": 720,
+    "technical_health": "HEALTHY",
+    "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE",
+    "last_attempt": "2026-10-20T09:47:32.430371+03:00",
+    "last_success": "2026-10-20T09:48:03.09999+03:00",
+    "retained": 45,
+    "latest_count": 46,
+    "total": 46,
+    "pages_requested": 83,
+    "pages_successful": 82,
+    "unique": 46,
+    "pagination_complete": true,
+    "notes": "فرص الشراكة بين القطاعين العام والخاص.\nآخر فحص لم ينتج سجلات؛ لم تُحذف البيانات. NCP public news detail pages were parsed as partial observations. The investor portal project API is configured to a private RFC1918 address, so national pipeline completeness cannot be established and missing records are not reconciled.",
+    "metrics": {
+      "source_total_reported": 46,
+      "pages_requested": 83,
+      "pages_successful": 82,
+      "records_received": 46,
+      "records_parsed": 46,
+      "unique_records": 46,
+      "qualified_opportunities": 1,
+      "pagination_complete": true,
+      "source_collection_complete": true,
+      "reconciliation_safe": false,
+      "public_scope_complete": true,
+      "technical_health": "HEALTHY",
+      "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE",
+      "completeness_basis": "PUBLIC_COMPLETENESS",
+      "absolute_source_completeness": "UNKNOWN",
+      "coverage_notes": "The complete English NCP News archive and all linked article pages are monitored; English defines the public scope. The Arabic mirror is attempted and deduplicated where available. This covers published public announcements, not the broader investor pipeline.",
+      "national_pipeline_complete": false,
+      "public_project_count": 44,
+      "public_project_observations": 45,
+      "current_investable_public_projects": null,
+      "lifecycle_observations": 33,
+      "public_scope": "All discoverable English News SharePoint archive items and linked official article pages; English is the canonical complete scope. The Arabic mirror is retried and deduplicated when available. Only explicit project/investment notices qualify as Source Opportunities.",
+      "archive_languages_crawled": [
+        "en",
+        "ar"
+      ],
+      "archive_language_completion": {
+        "en": true,
+        "ar": false
+      },
+      "archive_locale_errors": [
+        {
+          "language": "ar",
+          "url": "https://ncp.gov.sa/ar/MediaCenter/News/Pages/default.aspx",
+          "error": "NCP public news archive page 12 returned no SharePoint list data"
+        }
+      ],
+      "public_discovery_surfaces": [
+        {
+          "url": "https://ncp.gov.sa/en/Pages/default.aspx",
+          "type": "PUBLIC_HOMEPAGE",
+          "http_status": 200
+        },
+        {
+          "url": "https://ncp.gov.sa/en/MediaCenter/Pages/default.aspx",
+          "type": "MEDIA_CENTER",
+          "http_status": 200
+        },
+        {
+          "url": "https://ncp.gov.sa/en/MediaCenter/DigitalLibrary/Pages/default.aspx",
+          "type": "DIGITAL_LIBRARY",
+          "http_status": 200
+        },
+        {
+          "url": "https://ncp.gov.sa/en/KnowledgeCenter/Pages/default.aspx",
+          "type": "KNOWLEDGE_CENTER",
+          "http_status": 200
+        },
+        {
+          "url": "https://ncp.gov.sa/sitemap.xml",
+          "type": "SITEMAP",
+          "http_status": 200
+        }
+      ],
+      "public_discovery_errors": [],
+      "public_archive_pages": 12,
+      "public_archive_items": 46,
+      "investor_portal_url": "https://investors.ncp.gov.sa/home",
+      "portal_accessible_without_auth": true,
+      "investor_portal_api_available": false,
+      "investor_portal_api_base": "http://10.2.2.43:6002/api/v1",
+      "pipeline_api_blocker": "Portal client configuration points to a private API address, not a publicly reachable endpoint.",
+      "private_or_authenticated_pipeline_detected": true,
+      "coverage_status_private_scope": "PRIVATE_API_REQUIRED",
+      "source_limitations": [
+        {
+          "limitation_type": "PRIVATE_API",
+          "description": "Investor Portal public shell is reachable, but its client bundle advertises a private RFC1918 API origin for project data; no request was made to that API.",
+          "evidence_url": "https://investors.ncp.gov.sa/home",
+          "resolution": "Public News archive is monitored independently. Broader investor-pipeline completeness is not claimed."
+        },
+        {
+          "limitation_type": "PUBLIC_DATA_PARTIAL",
+          "description": "The Arabic News archive's final continuation page returned a public maintenance response during validation; English archive pagination completed and is the canonical defined scope.",
+          "evidence_url": "https://ncp.gov.sa/ar/MediaCenter/News/Pages/default.aspx",
+          "resolution": "Retry Arabic mirror on the next scheduled sync."
+        }
+      ],
+      "public_news_archive_detail_links": 46,
+      "fallback_detail_pages": 0,
+      "public_news_detail_pages": 46,
+      "discovered_article_urls": [
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/EOIResult-UmmAlQura-Uni-Hospital.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/RFQ-KF-Suburb-Boulevard.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/RFQResult-QualityValley.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/EOI-UmmAlQura-Uni-Hospital.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/SABIC-Hospital.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/EOIResult-WasteNationalPlatform.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/EOI-JDAMakkah.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/RFP-Taif_International_Airport.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/FiveClubs-Privatization.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/PublicParksPPP.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/EOIResult-QualityValley.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/EOIResult-FoodSafetyLabs.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/National-Dialysis-Services.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/Waste-National-Platform.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/Quality-Valley-Riyadh.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/FoodSafetyLabs.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/RFP-Sikkah-AlHadid.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/Qassim-Airport-EOI-Results.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/PNA-Airport-Qassim.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/National-Privatization-Strategy.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/EOI-Qiddiya-HSR-Co.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/EOI-Project.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/MIC-in-Collaboration.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/Environmental_Inspection.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/EOI-RFQ-ANO-SC.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/EOI-RFQ-PFBF-Sports-City.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/EOI-One-Stop-Station.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/EOI-KF-Suburb-Boulevard.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/RFQ-JD-Taif-Plot-banner.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/NCP-AIAI-Partner.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/Riyadh_Administrative_Office.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/P3C-Dallas.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/EOI-Logistics-Zone-Dmm2Industrial.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/Joint_Development_Madinah.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/CP3P_Certification_Holders.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/Taif_International_Airport.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/education-sector.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/JM-Direct-Highway-Project-PRL.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/ZATCA.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/News-001.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/News-006.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/News-005.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/News-003.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/News-004.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/News-002.aspx",
+        "https://ncp.gov.sa/en/MediaCenter/News/Pages/News-007.aspx"
+      ],
+      "explicit_al_ahsa_matches": 1,
+      "expired_count": 3,
+      "parser_version": "2026.10.12-ncp-2",
+      "standardization": {
+        "version": "19",
+        "records_processed": 45,
+        "fields_standardized": 720,
+        "approved_alias_matches": 0,
+        "unmapped_values": 196,
+        "validation_issues": 0
+      }
+    }
+  },
+  {
+    "id": 8,
+    "key": "nhc",
+    "name": "NHC الاستثمار",
+    "enabled": true,
+    "interval": 720,
+    "technical_health": "WARNING",
+    "coverage_status": "PUBLIC_COVERAGE_LIMITED",
+    "last_attempt": "2026-10-20T09:47:32.509041+03:00",
+    "last_success": "2026-10-12T15:35:37.998869+03:00",
+    "retained": 0,
+    "latest_count": 0,
+    "total": null,
+    "pages_requested": 6,
+    "pages_successful": 0,
+    "unique": 0,
+    "pagination_complete": false,
+    "notes": "تطوير الأراضي والمشروعات السكنية.\nآخر فحص لم ينتج سجلات؛ لم تُحذف البيانات.\nآخر فحص لم ينتج سجلات؛ لم تُحذف البيانات.\nآخر فحص لم ينتج سجلات؛ لم تُحذف البيانات.\nآخر فحص لم ينتج سجلات؛ لم تُحذف البيانات.\nآخر فحص لم ينتج سجلات؛ لم تُحذف البيانات.\nآخر فحص لم ينتج سجلات؛ لم تُحذف البيانات.\nآخر فحص لم ينتج سجلات؛ لم تُحذف البيانات.\nآخر فحص لم ينتج سجلات؛ لم تُحذف البيانات.\nآخر فحص لم ينتج سجلات؛ لم تُحذف البيانات.",
+    "metrics": {
+      "technical_health": "WARNING",
+      "coverage_status": "PUBLIC_COVERAGE_LIMITED",
+      "coverage_notes": "The public NHC scope covers investment categories and public qualification/application paths. The Arabic investment-opportunities page is the required category surface; its English equivalent is a supporting locale mirror. No current itemized Al-Ahsa investment inventory is exposed. Authenticated land/e-services are excluded.",
+      "completeness_basis": "PUBLIC_COMPLETENESS",
+      "absolute_source_completeness": "UNKNOWN",
+      "public_scope_complete": false,
+      "source_collection_complete": false,
+      "reconciliation_safe": false,
+      "pagination_complete": false,
+      "route_inventory": [
+        {
+          "route_url": "https://www.nhc.sa/en/investment-opportunities/",
+          "route_name": "INVESTMENT_CATEGORIES",
+          "route_type": "INVESTMENT_CATEGORIES",
+          "route_criticality": "SUPPORTING",
+          "last_http_status": 403,
+          "route_state": "ACCESS_RESTRICTED",
+          "route_health": "ACCESS_RESTRICTED",
+          "content_role": "INVESTMENT_CATEGORIES",
+          "affects_source_health": false,
+          "affects_coverage": true,
+          "coverage_redundancy": true,
+          "previous_successful_content_preserved": true,
+          "last_success_at": "2026-10-12T15:35:37.983022+03:00",
+          "last_failure_at": "2026-10-20T09:47:36.092539+03:00",
+          "consecutive_failures": 9,
+          "last_success_was_recorded": true
+        },
+        {
+          "route_url": "https://www.nhc.sa/ar/investment-opportunities/",
+          "route_name": "INVESTMENT_CATEGORIES_AR",
+          "route_type": "INVESTMENT_CATEGORIES_AR",
+          "route_criticality": "CRITICAL",
+          "last_http_status": 403,
+          "route_state": "ACCESS_RESTRICTED",
+          "route_health": "ACCESS_RESTRICTED",
+          "content_role": "INVESTMENT_CATEGORIES_AR",
+          "affects_source_health": true,
+          "affects_coverage": true,
+          "coverage_redundancy": false,
+          "previous_successful_content_preserved": true,
+          "last_success_at": "2026-10-12T15:35:37.983022+03:00",
+          "last_failure_at": "2026-10-20T09:47:36.092539+03:00",
+          "consecutive_failures": 9,
+          "last_success_was_recorded": true
+        },
+        {
+          "route_url": "https://nhc.sa/en/lo/",
+          "route_name": "REAL_ESTATE_STIMULATION",
+          "route_type": "REAL_ESTATE_STIMULATION",
+          "route_criticality": "SUPPORTING",
+          "last_http_status": 403,
+          "route_state": "ACCESS_RESTRICTED",
+          "route_health": "ACCESS_RESTRICTED",
+          "content_role": "REAL_ESTATE_STIMULATION",
+          "affects_source_health": false,
+          "affects_coverage": true,
+          "coverage_redundancy": false,
+          "previous_successful_content_preserved": true,
+          "last_success_at": "2026-10-12T15:35:37.983022+03:00",
+          "last_failure_at": "2026-10-20T09:47:36.092539+03:00",
+          "consecutive_failures": 9,
+          "last_success_was_recorded": true
+        },
+        {
+          "route_url": "https://nhc.sa/ar/lo/",
+          "route_name": "REAL_ESTATE_STIMULATION_AR",
+          "route_type": "REAL_ESTATE_STIMULATION_AR",
+          "route_criticality": "SUPPORTING",
+          "last_http_status": 403,
+          "route_state": "ACCESS_RESTRICTED",
+          "route_health": "ACCESS_RESTRICTED",
+          "content_role": "REAL_ESTATE_STIMULATION_AR",
+          "affects_source_health": false,
+          "affects_coverage": true,
+          "coverage_redundancy": false,
+          "previous_successful_content_preserved": true,
+          "last_success_at": "2026-10-12T15:35:37.983022+03:00",
+          "last_failure_at": "2026-10-20T09:47:36.092539+03:00",
+          "consecutive_failures": 9,
+          "last_success_was_recorded": true
+        },
+        {
+          "route_url": "https://investment.nhc.sa/ar/investments",
+          "route_name": "PUBLIC_INVESTOR_INTAKE",
+          "route_type": "PUBLIC_INVESTOR_INTAKE",
+          "route_criticality": "SUPPORTING",
+          "last_http_status": 403,
+          "route_state": "ACCESS_RESTRICTED",
+          "route_health": "ACCESS_RESTRICTED",
+          "content_role": "PUBLIC_INVESTOR_INTAKE",
+          "affects_source_health": false,
+          "affects_coverage": true,
+          "coverage_redundancy": false,
+          "previous_successful_content_preserved": true,
+          "last_success_at": "2026-10-12T15:35:37.983022+03:00",
+          "last_failure_at": "2026-10-20T09:47:36.092539+03:00",
+          "consecutive_failures": 9,
+          "last_success_was_recorded": true
+        },
+        {
+          "route_url": "https://investment.nhc.sa/ar/developer-qualification",
+          "route_name": "DEVELOPER_QUALIFICATION",
+          "route_type": "DEVELOPER_QUALIFICATION",
+          "route_criticality": "SUPPORTING",
+          "last_http_status": 403,
+          "route_state": "ACCESS_RESTRICTED",
+          "route_health": "ACCESS_RESTRICTED",
+          "content_role": "DEVELOPER_QUALIFICATION",
+          "affects_source_health": false,
+          "affects_coverage": true,
+          "coverage_redundancy": false,
+          "previous_successful_content_preserved": true,
+          "last_success_at": "2026-10-12T15:35:37.983022+03:00",
+          "last_failure_at": "2026-10-20T09:47:36.092539+03:00",
+          "consecutive_failures": 9,
+          "last_success_was_recorded": true
+        }
+      ],
+      "critical_routes_total": 1,
+      "critical_routes_successful": 0,
+      "supporting_routes_total": 5,
+      "supporting_routes_successful": 0,
+      "restricted_routes": 6,
+      "parser_failures": 0,
+      "coverage_contract": "Monitor publicly accessible pages that directly describe investment categories, publicly itemized offerings when exposed, and public qualification/application pathways; do not access authenticated investor inventories.",
+      "pages_requested": 6,
+      "pages_successful": 0,
+      "records_received": 0,
+      "records_parsed": 0,
+      "unique_records": 0,
+      "public_opportunities_discovered": 0,
+      "business_qualified_opportunities": 0,
+      "consumer_listings_rejected": 0,
+      "qualification_documents": [],
+      "public_listing_pages": [],
+      "structured_api_discovered": false,
+      "real_estate_stimulation_public": true,
+      "real_estate_stimulation_login_required_for_eservices": false,
+      "errors": [
+        {
+          "url": "https://www.nhc.sa/en/investment-opportunities/",
+          "status": 403,
+          "error": "Public surface denied or rate limited; no challenge or access control was bypassed."
+        },
+        {
+          "url": "https://www.nhc.sa/ar/investment-opportunities/",
+          "status": 403,
+          "error": "Public surface denied or rate limited; no challenge or access control was bypassed."
+        },
+        {
+          "url": "https://nhc.sa/en/lo/",
+          "status": 403,
+          "error": "Public surface denied or rate limited; no challenge or access control was bypassed."
+        },
+        {
+          "url": "https://nhc.sa/ar/lo/",
+          "status": 403,
+          "error": "Public surface denied or rate limited; no challenge or access control was bypassed."
+        },
+        {
+          "url": "https://investment.nhc.sa/ar/investments",
+          "status": 403,
+          "error": "Public surface denied or rate limited; no challenge or access control was bypassed."
+        },
+        {
+          "url": "https://investment.nhc.sa/ar/developer-qualification",
+          "status": 403,
+          "error": "Public surface denied or rate limited; no challenge or access control was bypassed."
+        }
+      ],
+      "public_surface_errors": [
+        {
+          "url": "https://www.nhc.sa/en/investment-opportunities/",
+          "status": 403,
+          "error": "Public surface denied or rate limited; no challenge or access control was bypassed."
+        },
+        {
+          "url": "https://www.nhc.sa/ar/investment-opportunities/",
+          "status": 403,
+          "error": "Public surface denied or rate limited; no challenge or access control was bypassed."
+        },
+        {
+          "url": "https://nhc.sa/en/lo/",
+          "status": 403,
+          "error": "Public surface denied or rate limited; no challenge or access control was bypassed."
+        },
+        {
+          "url": "https://nhc.sa/ar/lo/",
+          "status": 403,
+          "error": "Public surface denied or rate limited; no challenge or access control was bypassed."
+        },
+        {
+          "url": "https://investment.nhc.sa/ar/investments",
+          "status": 403,
+          "error": "Public surface denied or rate limited; no challenge or access control was bypassed."
+        },
+        {
+          "url": "https://investment.nhc.sa/ar/developer-qualification",
+          "status": 403,
+          "error": "Public surface denied or rate limited; no challenge or access control was bypassed."
+        }
+      ],
+      "source_limitations": [
+        {
+          "limitation_type": "NO_PUBLIC_INVENTORY",
+          "description": "NHC's public investment page describes investor categories and qualification steps; the investment portal does not expose a current itemized opportunity inventory in the unauthenticated public view.",
+          "evidence_url": "https://www.nhc.sa/en/investment-opportunities/",
+          "resolution": "Monitor the official public opportunity, qualification, and stimulation pages; treat each newly published itemized partner call as an opportunity only when its identity and investor action are exposed."
+        },
+        {
+          "limitation_type": "ACCESS_RESTRICTED_SUPPORTING_ROUTE",
+          "description": "One supporting NHC public-facing English route currently returns HTTP 403. Its investment-category content is duplicated by the accessible Arabic investment-opportunities page; no unique itemized opportunity inventory is exposed there. Critical investment-information surfaces remain monitored.",
+          "evidence_url": "https://www.nhc.sa/en/investment-opportunities/",
+          "resolution": "Retain the last successful route observation, monitor the equivalent public category page, and retry the route through ordinary unauthenticated requests; do not bypass access controls."
+        }
+      ],
+      "parser_version": "2026.10.12-nhc-1",
+      "standardization": {
+        "version": "19",
+        "records_processed": 0,
+        "fields_standardized": 0,
+        "approved_alias_matches": 0,
+        "unmapped_values": 0,
+        "validation_issues": 0
+      }
+    }
+  },
+  {
+    "id": 9,
+    "key": "pif",
+    "name": "بوابة القطاع الخاص لصندوق الاستثمارات العامة",
+    "enabled": true,
+    "interval": 1440,
+    "technical_health": "HEALTHY",
+    "coverage_status": "PUBLIC_COVERAGE_LIMITED",
+    "last_attempt": "2026-10-19T14:26:48.39685+03:00",
+    "last_success": "2026-10-19T14:27:04.392538+03:00",
+    "retained": 0,
+    "latest_count": 0,
+    "total": null,
+    "pages_requested": 13,
+    "pages_successful": 12,
+    "unique": 0,
+    "pagination_complete": true,
+    "notes": "يلزم دليل موقع محدد بالأحساء.",
+    "metrics": {
+      "technical_health": "HEALTHY",
+      "coverage_status": "PUBLIC_COVERAGE_LIMITED",
+      "coverage_notes": "Monitoring covers the publicly accessible Explore Opportunities landing page, all five discoverable ecosystem routes, the public company-opportunities route, linked public routes, and current content those routes expose without authentication. PIF-controlled search-index/historical content indicates a broader item population has existed, but no deterministic current public inventory or company roster is exposed.",
+      "completeness_basis": "PUBLIC_ROUTE_MONITORING",
+      "absolute_source_completeness": "UNKNOWN",
+      "public_scope_complete": true,
+      "source_collection_complete": false,
+      "collection_incomplete": false,
+      "reconciliation_safe": false,
+      "public_route_monitor_complete": true,
+      "current_listing_states": [
+        {
+          "url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/",
+          "route_type": "AGGREGATE_LISTING",
+          "state": "NO_RESULTS",
+          "items": 0
+        },
+        {
+          "url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/advanced-manufacturing-and-innovation/",
+          "route_type": "ECOSYSTEM",
+          "state": "NO_RESULTS",
+          "items": 0
+        },
+        {
+          "url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/clean-energy-water-and-renewables-infrastructure/",
+          "route_type": "ECOSYSTEM",
+          "state": "NO_RESULTS",
+          "items": 0
+        },
+        {
+          "url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/company-opportunities/",
+          "route_type": "COMPANY",
+          "state": "NO_RESULTS",
+          "items": 0
+        },
+        {
+          "url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/industrials-and-logistics/",
+          "route_type": "ECOSYSTEM",
+          "state": "NO_RESULTS",
+          "items": 0
+        },
+        {
+          "url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/tourism-travel-and-entertainment/",
+          "route_type": "ECOSYSTEM",
+          "state": "NO_RESULTS",
+          "items": 0
+        },
+        {
+          "url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/urban-development-and-livability/",
+          "route_type": "ECOSYSTEM",
+          "state": "NO_RESULTS",
+          "items": 0
+        }
+      ],
+      "current_listing_state": "CURRENT_PUBLIC_LISTINGS_EMPTY",
+      "current_population_state": "INDEXED_OR_HISTORICAL_ITEMS_ONLY",
+      "current_population_enumerable": false,
+      "company_filter_roster_public": false,
+      "required_public_routes_scanned": true,
+      "pagination_complete": true,
+      "pages_requested": 13,
+      "pages_successful": 12,
+      "records_received": 0,
+      "records_parsed": 0,
+      "unique_records": 0,
+      "public_routes_scanned": 12,
+      "ecosystems_scanned": 5,
+      "company_routes_scanned": 1,
+      "portfolio_companies_identified": 0,
+      "company_filter_routes_scanned": 0,
+      "unique_ecosystems": 0,
+      "empty_result_routes": 6,
+      "item_bearing_routes": 0,
+      "raw_opportunity_observations": 0,
+      "unique_public_opportunity_ids": 0,
+      "multi_route_memberships": 0,
+      "company_filter_mismatches": 0,
+      "company_items_unverified": 0,
+      "national_opportunities_excluded": 0,
+      "procurement_like_excluded": 0,
+      "al_ahsa_accepted": 0,
+      "location_review_count": 0,
+      "sitemap_complete": true,
+      "route_inventory": [
+        {
+          "url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/",
+          "route_type": "AGGREGATE_LISTING",
+          "reachable_from_public_navigation": false,
+          "http_status": 200
+        },
+        {
+          "url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/advanced-manufacturing-and-innovation/",
+          "route_type": "ECOSYSTEM",
+          "reachable_from_public_navigation": true,
+          "http_status": 200
+        },
+        {
+          "url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/clean-energy-water-and-renewables-infrastructure/",
+          "route_type": "ECOSYSTEM",
+          "reachable_from_public_navigation": true,
+          "http_status": 200
+        },
+        {
+          "url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/company-opportunities/",
+          "route_type": "COMPANY",
+          "reachable_from_public_navigation": true,
+          "http_status": 200
+        },
+        {
+          "url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/industrials-and-logistics/",
+          "route_type": "ECOSYSTEM",
+          "reachable_from_public_navigation": true,
+          "http_status": 200
+        },
+        {
+          "url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/investor-interest/",
+          "route_type": "REGISTER_INTEREST",
+          "reachable_from_public_navigation": true,
+          "http_status": 200
+        },
+        {
+          "url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/investor-interest/opportunityform/",
+          "route_type": "REGISTER_INTEREST",
+          "reachable_from_public_navigation": true,
+          "http_status": 200
+        },
+        {
+          "url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/investor-interest/opportunityform/thank-you-registered/",
+          "route_type": "REGISTER_INTEREST",
+          "reachable_from_public_navigation": true,
+          "http_status": 200
+        },
+        {
+          "url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/investor-interest/opportunityform/thank-you/",
+          "route_type": "REGISTER_INTEREST",
+          "reachable_from_public_navigation": true,
+          "http_status": 200
+        },
+        {
+          "url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/tasama-business-services/",
+          "route_type": "INFORMATIONAL",
+          "reachable_from_public_navigation": true,
+          "http_status": 200
+        },
+        {
+          "url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/tourism-travel-and-entertainment/",
+          "route_type": "ECOSYSTEM",
+          "reachable_from_public_navigation": true,
+          "http_status": 200
+        },
+        {
+          "url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/urban-development-and-livability/",
+          "route_type": "ECOSYSTEM",
+          "reachable_from_public_navigation": true,
+          "http_status": 200
+        }
+      ],
+      "unclassified_public_routes": [],
+      "pagination_routes": [],
+      "load_more_controls": [],
+      "page_errors": [],
+      "source_limitations": [
+        {
+          "limitation_type": "PUBLIC_COMPANY_ROSTER_NOT_EXPOSED",
+          "description": "The current public company-opportunities page is reachable and monitored, but its roster does not expose deterministic company filter values or item routes.",
+          "evidence_url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/company-opportunities/",
+          "resolution": "Continue monitoring the public page and enumerate company filters only when PIF exposes them through public navigation, HTML, or payload data."
+        },
+        {
+          "limitation_type": "PUBLIC_LISTING_ITEMS_NOT_EXPOSED",
+          "description": "6 current public listing route(s) returned a valid No results found state and no item cards or structured opportunity payload. Official PIF search-index evidence contains item-level content, but the current route representations do not expose it; index-only items are not treated as current records.",
+          "evidence_url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/advanced-manufacturing-and-innovation/",
+          "resolution": "Keep monitoring the defined public routes and reconcile the population if item cards or a public listing payload reappear."
+        }
+      ],
+      "parser_version": "2026.10.12-pif-3",
+      "standardization": {
+        "version": "16",
+        "records_processed": 0,
+        "fields_standardized": 0,
+        "approved_alias_matches": 0,
+        "unmapped_values": 0,
+        "validation_issues": 0
+      }
+    }
+  },
+  {
+    "id": 10,
+    "key": "mwan",
+    "name": "موان",
+    "enabled": true,
+    "interval": 1440,
+    "technical_health": "WARNING",
+    "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE",
+    "last_attempt": "2026-10-19T14:26:48.33932+03:00",
+    "last_success": "2026-10-12T15:28:00.933181+03:00",
+    "retained": 5,
+    "latest_count": 0,
+    "total": null,
+    "pages_requested": 0,
+    "pages_successful": 0,
+    "unique": 0,
+    "pagination_complete": null,
+    "notes": "قد يتعذر الوصول مؤقتاً.",
+    "metrics": {}
+  }
+]

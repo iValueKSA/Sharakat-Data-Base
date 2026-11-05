@@ -1,0 +1,349 @@
+{
+  "snapshot_at": "2026-10-22T07:17:05.578252+00:00",
+  "open_duplicate_reviews": 10,
+  "logical_duplicate_groups": 0,
+  "duplicate_review_groups": [
+    {
+      "logical_key": "(155, 156)",
+      "review_ids": [
+        32
+      ],
+      "is_duplicate": false
+    },
+    {
+      "logical_key": "(155, 159)",
+      "review_ids": [
+        33
+      ],
+      "is_duplicate": false
+    },
+    {
+      "logical_key": "(156, 159)",
+      "review_ids": [
+        34
+      ],
+      "is_duplicate": false
+    },
+    {
+      "logical_key": "(157, 160)",
+      "review_ids": [
+        35
+      ],
+      "is_duplicate": false
+    },
+    {
+      "logical_key": "(158, 161)",
+      "review_ids": [
+        36
+      ],
+      "is_duplicate": false
+    },
+    {
+      "logical_key": "(163, 254)",
+      "review_ids": [
+        37
+      ],
+      "is_duplicate": false
+    },
+    {
+      "logical_key": "(197, 198)",
+      "review_ids": [
+        38
+      ],
+      "is_duplicate": false
+    },
+    {
+      "logical_key": "(263, 264)",
+      "review_ids": [
+        39
+      ],
+      "is_duplicate": false
+    },
+    {
+      "logical_key": "(107, 186)",
+      "review_ids": [
+        46
+      ],
+      "is_duplicate": false
+    },
+    {
+      "logical_key": "(107, 187)",
+      "review_ids": [
+        47
+      ],
+      "is_duplicate": false
+    }
+  ],
+  "identity_audit": [
+    {
+      "review_id": 32,
+      "master_ids": [
+        155,
+        156
+      ],
+      "source_record_ids": [
+        155,
+        156
+      ],
+      "source_keys": [
+        "alahsa-opportunities",
+        "alahsa-opportunities"
+      ],
+      "stored_decision": "REVIEW_REQUIRED",
+      "stored_reason": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "current_duplicate_score": 0.92,
+      "title_similarity": 1.0,
+      "plot_match": true,
+      "plan_match": true,
+      "plot_conflict": false,
+      "trusted_official_reference_match": false,
+      "auto_merge_safe": false,
+      "classification": "STILL_AMBIGUOUS",
+      "proposed_action": "KEEP_OPEN_HUMAN_REVIEW",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 33,
+      "master_ids": [
+        155,
+        159
+      ],
+      "source_record_ids": [
+        155,
+        159
+      ],
+      "source_keys": [
+        "alahsa-opportunities",
+        "alahsa-opportunities"
+      ],
+      "stored_decision": "REVIEW_REQUIRED",
+      "stored_reason": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "current_duplicate_score": 0.92,
+      "title_similarity": 1.0,
+      "plot_match": true,
+      "plan_match": true,
+      "plot_conflict": false,
+      "trusted_official_reference_match": false,
+      "auto_merge_safe": false,
+      "classification": "STILL_AMBIGUOUS",
+      "proposed_action": "KEEP_OPEN_HUMAN_REVIEW",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 34,
+      "master_ids": [
+        156,
+        159
+      ],
+      "source_record_ids": [
+        156,
+        159
+      ],
+      "source_keys": [
+        "alahsa-opportunities",
+        "alahsa-opportunities"
+      ],
+      "stored_decision": "REVIEW_REQUIRED",
+      "stored_reason": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "current_duplicate_score": 0.92,
+      "title_similarity": 1.0,
+      "plot_match": true,
+      "plan_match": true,
+      "plot_conflict": false,
+      "trusted_official_reference_match": false,
+      "auto_merge_safe": false,
+      "classification": "STILL_AMBIGUOUS",
+      "proposed_action": "KEEP_OPEN_HUMAN_REVIEW",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 35,
+      "master_ids": [
+        157,
+        160
+      ],
+      "source_record_ids": [
+        157,
+        160
+      ],
+      "source_keys": [
+        "alahsa-opportunities",
+        "alahsa-opportunities"
+      ],
+      "stored_decision": "REVIEW_REQUIRED",
+      "stored_reason": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "current_duplicate_score": 0.92,
+      "title_similarity": 1.0,
+      "plot_match": true,
+      "plan_match": true,
+      "plot_conflict": false,
+      "trusted_official_reference_match": false,
+      "auto_merge_safe": false,
+      "classification": "STILL_AMBIGUOUS",
+      "proposed_action": "KEEP_OPEN_HUMAN_REVIEW",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 36,
+      "master_ids": [
+        158,
+        161
+      ],
+      "source_record_ids": [
+        158,
+        161
+      ],
+      "source_keys": [
+        "alahsa-opportunities",
+        "alahsa-opportunities"
+      ],
+      "stored_decision": "REVIEW_REQUIRED",
+      "stored_reason": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "current_duplicate_score": 0.92,
+      "title_similarity": 1.0,
+      "plot_match": true,
+      "plan_match": true,
+      "plot_conflict": false,
+      "trusted_official_reference_match": false,
+      "auto_merge_safe": false,
+      "classification": "STILL_AMBIGUOUS",
+      "proposed_action": "KEEP_OPEN_HUMAN_REVIEW",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 37,
+      "master_ids": [
+        163,
+        254
+      ],
+      "source_record_ids": [
+        2834,
+        2855
+      ],
+      "source_keys": [
+        "furas",
+        "alahsa-opportunities"
+      ],
+      "stored_decision": "REVIEW_REQUIRED",
+      "stored_reason": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "current_duplicate_score": 0.6264,
+      "title_similarity": 0.9896,
+      "plot_match": true,
+      "plan_match": true,
+      "plot_conflict": false,
+      "trusted_official_reference_match": false,
+      "auto_merge_safe": false,
+      "classification": "STILL_AMBIGUOUS",
+      "proposed_action": "KEEP_OPEN_HUMAN_REVIEW",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 38,
+      "master_ids": [
+        197,
+        198
+      ],
+      "source_record_ids": [
+        200,
+        201
+      ],
+      "source_keys": [
+        "alahsa-opportunities",
+        "alahsa-opportunities"
+      ],
+      "stored_decision": "REVIEW_REQUIRED",
+      "stored_reason": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "current_duplicate_score": 0.92,
+      "title_similarity": 1.0,
+      "plot_match": true,
+      "plan_match": true,
+      "plot_conflict": false,
+      "trusted_official_reference_match": false,
+      "auto_merge_safe": false,
+      "classification": "STILL_AMBIGUOUS",
+      "proposed_action": "KEEP_OPEN_HUMAN_REVIEW",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 39,
+      "master_ids": [
+        263,
+        264
+      ],
+      "source_record_ids": [
+        2864,
+        2865
+      ],
+      "source_keys": [
+        "alahsa-opportunities",
+        "alahsa-opportunities"
+      ],
+      "stored_decision": "REVIEW_REQUIRED",
+      "stored_reason": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "current_duplicate_score": 0.92,
+      "title_similarity": 1.0,
+      "plot_match": true,
+      "plan_match": true,
+      "plot_conflict": false,
+      "trusted_official_reference_match": false,
+      "auto_merge_safe": false,
+      "classification": "STILL_AMBIGUOUS",
+      "proposed_action": "KEEP_OPEN_HUMAN_REVIEW",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 46,
+      "master_ids": [
+        107,
+        186
+      ],
+      "source_record_ids": [
+        107,
+        189
+      ],
+      "source_keys": [
+        "furas",
+        "alahsa-opportunities"
+      ],
+      "stored_decision": "REVIEW_REQUIRED",
+      "stored_reason": null,
+      "current_duplicate_score": 0.8194,
+      "title_similarity": 0.9841,
+      "plot_match": false,
+      "plan_match": false,
+      "plot_conflict": false,
+      "trusted_official_reference_match": false,
+      "auto_merge_safe": false,
+      "classification": "STILL_AMBIGUOUS",
+      "proposed_action": "KEEP_OPEN_HUMAN_REVIEW",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 47,
+      "master_ids": [
+        107,
+        187
+      ],
+      "source_record_ids": [
+        107,
+        190
+      ],
+      "source_keys": [
+        "furas",
+        "alahsa-opportunities"
+      ],
+      "stored_decision": "REVIEW_REQUIRED",
+      "stored_reason": null,
+      "current_duplicate_score": 0.7743,
+      "title_similarity": 0.8552,
+      "plot_match": false,
+      "plan_match": false,
+      "plot_conflict": false,
+      "trusted_official_reference_match": false,
+      "auto_merge_safe": false,
+      "classification": "STILL_AMBIGUOUS",
+      "proposed_action": "KEEP_OPEN_HUMAN_REVIEW",
+      "audit_result": "PASS"
+    }
+  ]
+}

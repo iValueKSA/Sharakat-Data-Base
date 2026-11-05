@@ -1,0 +1,72 @@
+{
+  "purpose": "Focused DQ warning-count reconciliation only; not a rerun of the operational deep review.",
+  "captured_at": "2026-10-21T12:37:47.650271+00:00",
+  "scope": "full",
+  "read_only": true,
+  "persist": false,
+  "consistency": "PostgreSQL REPEATABLE READ, READ ONLY transaction",
+  "prior_artifact_note": "The 12:30 operational evidence retained the full DQ counts and sync-gate subset, but not the complete warning_gates array. This focused read-only evaluation supplies the exact four warning records below.",
+  "total_dq_gates": 65,
+  "dq_pass": 61,
+  "dq_warning": 4,
+  "dq_fail": 0,
+  "warning_records_returned": 4,
+  "warning_count_reconciliation": "PASSED",
+  "all_dq_warnings_explained": true,
+  "unexplained_dq_warnings": 0,
+  "manual_source_sync_started": false,
+  "warning_gates": [
+    {
+      "gate_key": "GENERIC_SOURCE_PAGE_AS_OPPORTUNITY_ACTION",
+      "domain": "SOURCE_LINKS",
+      "status": "WARNING",
+      "observed_value": 782,
+      "expected_value": 0,
+      "affected_source_or_job": {"source_key": "invest-saudi", "affected_records": 782, "generic_action_urls_exposed": 0},
+      "why_warning": "782 Invest Saudi source records retain a generic official source page instead of a record-specific detail page.",
+      "why_not_failure": "No generic source URLs are exposed as original-opportunity action links (0). The warning records a public-source detail-link limitation; it did not fail source identity or link safety checks.",
+      "action_required": "No change in this reconciliation. Keep the limitation visible and use record-specific official links when the source makes them available.",
+      "accepted_limitation": true
+    },
+    {
+      "gate_key": "OPEN_REVIEW_BACKLOG",
+      "domain": "REVIEW_QUEUES",
+      "status": "WARNING",
+      "observed_value": 578,
+      "expected_value": {"threshold": 0},
+      "affected_source_or_job": {"open_reviews_total": 578, "affected_source_or_job_ids": []},
+      "why_warning": "There are 578 unresolved governed review cases across review queues.",
+      "why_not_failure": "The gate explicitly treats nonzero unresolved-review queues as expected operational work and does not fail DQ for the backlog; separate review integrity and reconciliation gates pass.",
+      "action_required": "Continue normal review-queue processing under existing governance; do not auto-resolve or alter cases as part of this count reconciliation.",
+      "accepted_limitation": true
+    },
+    {
+      "gate_key": "SOURCE_LAST_SUCCESS_TOO_OLD",
+      "domain": "SOURCE_FRESHNESS",
+      "status": "WARNING",
+      "observed_value": 4,
+      "expected_value": 0,
+      "affected_source_or_job": {"source_ids": [6, 7, 8, 10], "source_keys": ["modon", "ncp", "nhc", "mwan"]},
+      "why_warning": "Four enabled sources exceeded twice their configured polling interval since last successful sync.",
+      "why_not_failure": "Freshness is configured as a warning so public-source coverage limits remain distinct from technical data-integrity failures; no failing lifecycle or removal-safety gate was observed.",
+      "action_required": "Monitor through normal source operations and investigate the overdue sources through the established process. No sync was started for this reconciliation.",
+      "accepted_limitation": false
+    },
+    {
+      "gate_key": "SYNC_RUNTIME_ANOMALY",
+      "domain": "SYNC_RUNTIME",
+      "status": "WARNING",
+      "observed_value": 1,
+      "expected_value": 0,
+      "affected_source_or_job": {"source_key": "ahda", "job_id": 393, "duration_seconds": 3399.773, "status": "SUCCESS", "job_state": "COMPLETED", "pagination_complete": true, "pages_scanned": 216, "raw_count": 215},
+      "why_warning": "Completed job 393 ran longer than the runtime anomaly threshold (the configured hard task limit is 1800 seconds).",
+      "why_not_failure": "The job is terminal SUCCESS/COMPLETED with a complete scan, no error, and no incomplete-scan removal violation; this gate is performance telemetry, not a failed business-data integrity check.",
+      "action_required": "No change to Job 393. Retain it for performance follow-up under normal operations.",
+      "accepted_limitation": false
+    }
+  ],
+  "clarifications": {
+    "freshness_structure": "MODON, NCP, NHC, and MWAN are four affected source samples inside one aggregated SOURCE_LAST_SUCCESS_TOO_OLD warning gate.",
+    "job_393_structure": "Job 393 is a separate SYNC_RUNTIME_ANOMALY warning gate; it is not included inside the source-freshness gate."
+  }
+}

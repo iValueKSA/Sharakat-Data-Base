@@ -1,0 +1,137 @@
+{
+  "adjudication": {
+    "published_review_required": 3,
+    "published_to_available": 380,
+    "published_to_cancelled": 0,
+    "published_to_expired": 0,
+    "published_to_historical": 0,
+    "published_to_unknown_or_unspecified": 0
+  },
+  "after": {
+    "available": 464,
+    "canonical_published": 0,
+    "current_masters": 525,
+    "status_counts": {
+      "أزيلت من المصدر": 14,
+      "حالة غير معروفة": 1,
+      "غير محددة": 25,
+      "قيد مراجعة الحالة": 3,
+      "متاحة": 464,
+      "منتهية": 18
+    }
+  },
+  "before": {
+    "available": 84,
+    "current_masters": 525,
+    "published": 383,
+    "raw_master_status_counts": {
+      "أزيلت من المصدر": 14,
+      "حالة غير معروفة": 1,
+      "غير محددة": 25,
+      "متاحة": 84,
+      "منتهية": 18,
+      "منشورة": 383
+    },
+    "source_raw_status_values_by_source": {
+      "ahda": [
+        {
+          "canonical_status": "غير محددة",
+          "count": 8,
+          "raw_status": "<NULL>"
+        }
+      ],
+      "alahsa-opportunities": [
+        {
+          "canonical_status": "متاحة",
+          "count": 84,
+          "raw_status": "متاحة"
+        },
+        {
+          "canonical_status": "منتهية",
+          "count": 19,
+          "raw_status": "منتهية"
+        }
+      ],
+      "furas": [
+        {
+          "canonical_status": "أزيلت من المصدر",
+          "count": 9,
+          "raw_status": "Announced"
+        },
+        {
+          "canonical_status": "منشورة",
+          "count": 402,
+          "raw_status": "Announced"
+        },
+        {
+          "canonical_status": "أزيلت من المصدر",
+          "count": 4,
+          "raw_status": "Deleted"
+        }
+      ],
+      "invest-saudi": [
+        {
+          "canonical_status": "أزيلت من المصدر",
+          "count": 13,
+          "raw_status": "<NULL>"
+        },
+        {
+          "canonical_status": "غير محددة",
+          "count": 2542,
+          "raw_status": "<NULL>"
+        }
+      ],
+      "kfu": [
+        {
+          "canonical_status": "منتهية",
+          "count": 1,
+          "raw_status": "EXPIRED"
+        },
+        {
+          "canonical_status": "أزيلت من المصدر",
+          "count": 1,
+          "raw_status": "UNKNOWN"
+        },
+        {
+          "canonical_status": "حالة غير معروفة",
+          "count": 4,
+          "raw_status": "UNKNOWN"
+        }
+      ],
+      "mwan": [
+        {
+          "canonical_status": "منشورة",
+          "count": 5,
+          "raw_status": "ANNOUNCED"
+        }
+      ],
+      "ncp": [
+        {
+          "canonical_status": "تمت الترسية",
+          "count": 1,
+          "raw_status": "AWARDED"
+        },
+        {
+          "canonical_status": "منتهية",
+          "count": 3,
+          "raw_status": "EXPIRED"
+        },
+        {
+          "canonical_status": "منتهية",
+          "count": 1,
+          "raw_status": "IDENTITY_ALIAS"
+        },
+        {
+          "canonical_status": "حالة غير معروفة",
+          "count": 40,
+          "raw_status": "UNKNOWN"
+        }
+      ]
+    }
+  },
+  "reconciliation": {
+    "dashboard_buckets_sum": 525,
+    "existing_classified_sector_values_changed": 0,
+    "master_count": 525
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-28T11:13:27.2749187Z",
+  "snapshot": {
+    "active_admin_users": 1,
+    "active_sync_jobs": 0,
+    "alembic_heads": [
+      "0023_quant_commercial"
+    ],
+    "audit_events": 3756,
+    "configured_sources": 11,
+    "conflict_reviews": 1114,
+    "current_masters": 566,
+    "duplicate_reviews": 47,
+    "enabled_sources": 10,
+    "location_reviews": 26,
+    "merge_lineage_records": 21,
+    "merged_masters": 21,
+    "observations": 28761,
+    "open_review_records": 0,
+    "opportunity_change_history": 2590,
+    "qualification_reviews": 0,
+    "rbac_fingerprint_sha256": "6c936b8040c442c495ddf684d9c747ada1d791268e45f6dd414540990ffb2cf2",
+    "rbac_role_counts": {
+      "admin": 1,
+      "viewer": 1
+    },
+    "review_history_records": 1187,
+    "source_configuration_sha256": "14851c9d3b43e8c387c1a419adc3d650ad51c97951be0916206fa30e10c21ef0",
+    "source_opportunities": 3180,
+    "sync_jobs": 572,
+    "system_events": 8903,
+    "total_masters": 587,
+    "user_sessions": 2,
+    "users": 2
+  }
+}

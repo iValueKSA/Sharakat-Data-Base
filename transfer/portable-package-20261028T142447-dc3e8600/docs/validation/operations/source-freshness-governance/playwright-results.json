@@ -1,0 +1,84 @@
+{
+  "run_at": "2026-10-21T13:05:55.748Z",
+  "browser": "Chromium / Playwright",
+  "authenticated_role": "admin",
+  "page": "sources",
+  "checks": [
+    "freshness status",
+    "last attempt",
+    "last success",
+    "last complete scan/public scope verification",
+    "coverage distinct from freshness",
+    "technical health distinct from freshness",
+    "RTL",
+    "no horizontal overflow"
+  ],
+  "viewports": [
+    {
+      "viewport": "1920x1080",
+      "passed": true,
+      "width": 1920,
+      "scrollWidth": 1920,
+      "dir": "rtl",
+      "sourceCards": 10,
+      "panels": 10,
+      "hasFreshness": true,
+      "coverageDistinct": true,
+      "healthDistinct": true,
+      "lastComplete": true
+    },
+    {
+      "viewport": "1440x900",
+      "passed": true,
+      "width": 1440,
+      "scrollWidth": 1440,
+      "dir": "rtl",
+      "sourceCards": 10,
+      "panels": 10,
+      "hasFreshness": true,
+      "coverageDistinct": true,
+      "healthDistinct": true,
+      "lastComplete": true
+    },
+    {
+      "viewport": "1366x768",
+      "passed": true,
+      "width": 1366,
+      "scrollWidth": 1366,
+      "dir": "rtl",
+      "sourceCards": 10,
+      "panels": 10,
+      "hasFreshness": true,
+      "coverageDistinct": true,
+      "healthDistinct": true,
+      "lastComplete": true
+    },
+    {
+      "viewport": "768x900",
+      "passed": true,
+      "width": 768,
+      "scrollWidth": 768,
+      "dir": "rtl",
+      "sourceCards": 10,
+      "panels": 10,
+      "hasFreshness": true,
+      "coverageDistinct": true,
+      "healthDistinct": true,
+      "lastComplete": true
+    },
+    {
+      "viewport": "390x844",
+      "passed": true,
+      "width": 390,
+      "scrollWidth": 390,
+      "dir": "rtl",
+      "sourceCards": 10,
+      "panels": 10,
+      "hasFreshness": true,
+      "coverageDistinct": true,
+      "healthDistinct": true,
+      "lastComplete": true
+    }
+  ],
+  "result": "PASSED"
+}

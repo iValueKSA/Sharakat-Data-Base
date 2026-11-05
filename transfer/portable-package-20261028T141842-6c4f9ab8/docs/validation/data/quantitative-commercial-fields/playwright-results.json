@@ -1,0 +1,302 @@
+{
+  "capturedAt": "2026-10-20T08:22:29.327Z",
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "documentWidth": 1920,
+      "bodyWidth": 1920,
+      "direction": "rtl",
+      "filtersVisible": true,
+      "filterCount": 14,
+      "rtl": true,
+      "noHorizontalPageOverflow": true,
+      "allFilterControlsWithinViewport": true,
+      "screenshot": "opportunities-1920x1080.png"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "direction": "rtl",
+      "filtersVisible": true,
+      "filterCount": 14,
+      "rtl": true,
+      "noHorizontalPageOverflow": true,
+      "allFilterControlsWithinViewport": true,
+      "screenshot": "opportunities-1440x900.png"
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "documentWidth": 1366,
+      "bodyWidth": 1366,
+      "direction": "rtl",
+      "filtersVisible": true,
+      "filterCount": 14,
+      "rtl": true,
+      "noHorizontalPageOverflow": true,
+      "allFilterControlsWithinViewport": true,
+      "screenshot": "opportunities-1366x768.png"
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "direction": "rtl",
+      "filtersVisible": true,
+      "filterCount": 14,
+      "rtl": true,
+      "noHorizontalPageOverflow": true,
+      "allFilterControlsWithinViewport": true,
+      "screenshot": "opportunities-768x900.png"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "direction": "rtl",
+      "filtersVisible": true,
+      "filterCount": 14,
+      "rtl": true,
+      "noHorizontalPageOverflow": true,
+      "allFilterControlsWithinViewport": true,
+      "screenshot": "opportunities-390x844.png"
+    }
+  ],
+  "api": {
+    "status": 200,
+    "total": 292,
+    "canonicalMissingCurrency": 292,
+    "areaUnitsConsistent": true,
+    "durationUnitsConsistent": true
+  },
+  "details": {
+    "102": {
+      "status": 200,
+      "title": "مزايدة تأجير موقع صراف الي بمستشفى الملك فهد بالهفوف مزايدة تأجير موقع صراف الي بمستشفى الملك فهد بالهفوف - الأنشطة المالية - خدمات الصرافة - صراف آلي",
+      "reference": "06-26-183737-46013",
+      "area": 2,
+      "area_unit": "m²",
+      "investment_value": null,
+      "currency": null,
+      "duration": 5,
+      "duration_unit": "year",
+      "source_external_ids": [
+        "06-26-183737-46013",
+        "investsaudi:54963"
+      ]
+    },
+    "218": {
+      "status": 200,
+      "title": "AL AHSA HAZARDOUS INDUSTRIAL WASTE TREATMENT",
+      "reference": null,
+      "area": null,
+      "area_unit": null,
+      "investment_value": null,
+      "currency": null,
+      "duration": null,
+      "duration_unit": null,
+      "source_external_ids": [
+        "investsaudi:44865"
+      ]
+    },
+    "219": {
+      "status": 200,
+      "title": "AL AHSA HEALTHCARE WASTE TREATMENT CENTER",
+      "reference": null,
+      "area": null,
+      "area_unit": null,
+      "investment_value": null,
+      "currency": null,
+      "duration": null,
+      "duration_unit": null,
+      "source_external_ids": [
+        "investsaudi:44864"
+      ]
+    },
+    "220": {
+      "status": 200,
+      "title": "AL AHSA END OF LIFE VEHICLES TREATMENT FACILITY",
+      "reference": null,
+      "area": null,
+      "area_unit": null,
+      "investment_value": null,
+      "currency": null,
+      "duration": null,
+      "duration_unit": null,
+      "source_external_ids": [
+        "investsaudi:44863"
+      ]
+    },
+    "221": {
+      "status": 200,
+      "title": "AL AHSA INERT LANDFILL",
+      "reference": null,
+      "area": null,
+      "area_unit": null,
+      "investment_value": null,
+      "currency": null,
+      "duration": null,
+      "duration_unit": null,
+      "source_external_ids": [
+        "investsaudi:44828"
+      ]
+    },
+    "222": {
+      "status": 200,
+      "title": "AL AHSA CONSTRUCTION AND DEMOLITION WASTE TREATMENT FACILITY 3",
+      "reference": null,
+      "area": null,
+      "area_unit": null,
+      "investment_value": null,
+      "currency": null,
+      "duration": null,
+      "duration_unit": null,
+      "source_external_ids": [
+        "investsaudi:44827"
+      ]
+    },
+    "223": {
+      "status": 200,
+      "title": "AL AHSA CONSTRUCTION AND DEMOLITION WASTE TREATMENT FACILITY 2",
+      "reference": null,
+      "area": null,
+      "area_unit": null,
+      "investment_value": null,
+      "currency": null,
+      "duration": null,
+      "duration_unit": null,
+      "source_external_ids": [
+        "investsaudi:44826"
+      ]
+    },
+    "228": {
+      "status": 200,
+      "title": "MOMAH and NCP Launch EOI to Municipal Food Safety Labs Across Five Municipalities in Saudi Arabia",
+      "reference": null,
+      "area": null,
+      "area_unit": null,
+      "investment_value": null,
+      "currency": null,
+      "duration": 5,
+      "duration_unit": "year",
+      "source_external_ids": [
+        "ncp:foodsafetylabs"
+      ]
+    },
+    "230": {
+      "status": 200,
+      "title": "تأجير مواقع مكائن بيع ذاتي لعدد (80) موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي تأجير مواقع مكائن بيع ذاتي لعدد 80 موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي - الأنشطة التجارية - أنشطة تجارة المواد الغذائية - جهاز بيع ذاتي",
+      "reference": "06-26-183737-49010",
+      "area": 160,
+      "area_unit": "m²",
+      "investment_value": null,
+      "currency": null,
+      "duration": 5,
+      "duration_unit": "year",
+      "source_external_ids": [
+        "06-26-183737-49010",
+        "investsaudi:54952"
+      ]
+    }
+  },
+  "exports": {
+    "csv": {
+      "status": 200,
+      "headers": 32,
+      "hasAreaUnit": true,
+      "hasDurationUnit": true,
+      "hasSeparateCurrency": true,
+      "hasOfficialReference": true,
+      "hasTechnicalIds": true
+    },
+    "xlsx": {
+      "status": 200,
+      "bytes": 229970,
+      "signature": "PK"
+    }
+  },
+  "pageErrors": [],
+  "pagination": {
+    "before": "صفحة 1 من 6",
+    "afterNext": "صفحة 2 من 6",
+    "afterPrevious": "صفحة 1 من 6",
+    "works": true
+  },
+  "ui": {
+    "102": {
+      "searchFound": true,
+      "tableArea": "2 م²",
+      "modalText": "AH-20261011105651-100798cf\nمزايدة تأجير موقع صراف الي بمستشفى الملك فهد بالهفوف مزايدة تأجير موقع صراف الي بمستشفى الملك فهد بالهفوف - الأنشطة المالية - خدمات الصرافة - صراف آلي\n\nالجهة المالكة: أمانة الأحساء · الحالة الموحدة: منشورة\n\nالقطاع\nغير محدد\nالنشاط\nالأنشطة المالية\nالنشاط الفرعي\nخدمات الصرافة\nنوع الفرصة\nغير محدد\nنموذج الاستثمار\nالتأجير\nنوع الأصل أو الموقع\nغير محدد\nالدولة\nالمملكة العربية السعودية\nالمنطقة\nالمنطقة الشرقية\nالمحافظة\nالأحساء\nالمدينة / الموقع\nالأحساء\nالحي\nغير منشور\nحالة الموقع الجغرافي\nموقع مؤكد\nسبب المراجعة\nغير منشور\nوصف الموقع\nالاحساء الحفيرة\nالمساحة\n2 m²\nالقيمة الاستثمارية\nغير منشور\nمدة العقد\n5 سنة\nآخر موعد للتقديم\nغير محدد\nالرقم المرجعي\n06-26-183737-46013\nمستوى ثقة الموقع\n100٪\nعدد المصادر\n2\nالنشر حسب المصدر\nفرص – البوابة الموحدة للاستثمار · فتح الإعلان الأصلي ↗\n(رابط متحقق)\nجهة النشر: شركة الصحة القابضة شركة شخص واحد مساهمة مقفلة · مشغل المنصة: وزارة البلديات والإسكان والجهات الحكومية المشاركة\nمعرّف المصدر التقني: 06-26-183737-46013\nالحالة المعيارية: منشورة · النص الخام: Announced\nالموقع كما ورد: الاحساء الحفيرة\nاستثمر في السعودية · تعذر التحقق من رابط الإعلان حاليًا\nجهة النشر: غير محددة في سجل المصدر · مشغل المنصة: وزارة الاستثمار\nمعرّف المصدر التقني: investsaudi:54963\nالحالة المعيارية: غير محددة · النص الخام: غير محدد\nالموقع كما ورد: Municipality\nسجل التغييرات\n\nstatus: Announced ← منشورة · 2026/10/19 · 1:34 م\n\nنموذج الاستثمار: غير محدد ← التأجير · 2026/10/19 · 10:12 ص\n\nنوع الفرصة: قيمة غير معتمدة ← غير محدد · 2026/10/18 · 3:50 م\n\nنوع الفرصة: قيمة غير معتمدة ← غير محدد · 2026/10/18 · 12:30 م\n\nsector: خدمات الصرافة ← غير محدد · 2026/10/18 · 12:30 م\n\nactivity: — ← خدمات الصرافة · 2026/10/18 · 12:30 م\n\nopportunity_owner: شركة الصحة القابضة شركة شخص واحد مساهمة مقفلة ← أمانة الاحساء · 2026/10/11 · 3:30 م",
+      "areaDisplayed": true,
+      "durationDisplayed": true,
+      "currencyNotImplied": true,
+      "officialReferenceDisplayed": true,
+      "technicalIdVisible": true,
+      "screenshot": "master-102-detail-1440x900.png"
+    },
+    "218": {
+      "searchFound": true,
+      "tableArea": "—",
+      "modalText": "AH-20261011132429-501de56e\nAL AHSA HAZARDOUS INDUSTRIAL WASTE TREATMENT\n\nالجهة المالكة: غير محدد · الحالة الموحدة: غير محددة\n\nالقطاع\nالبيئة\nالنشاط\nغير محدد\nالنشاط الفرعي\nغير منشور\nنوع الفرصة\nغير محدد\nنموذج الاستثمار\nغير محدد\nنوع الأصل أو الموقع\nغير محدد\nالدولة\nالمملكة العربية السعودية\nالمنطقة\nالمنطقة الشرقية\nالمحافظة\nالأحساء\nالمدينة / الموقع\nالأحساء\nالحي\nغير منشور\nحالة الموقع الجغرافي\nموقع مؤكد\nسبب المراجعة\nغير منشور\nوصف الموقع\nAl Ahsa\nالمساحة\nغير منشور\nالقيمة الاستثمارية\nغير منشور\nمدة العقد\nغير منشور\nآخر موعد للتقديم\nغير محدد\nالرقم المرجعي\nغير منشور\nمستوى ثقة الموقع\n100٪\nعدد المصادر\n1\nالنشر حسب المصدر\nاستثمر في السعودية · فتح الإعلان الأصلي ↗\n(رابط متحقق)\nجهة النشر: غير محددة في سجل المصدر · مشغل المنصة: وزارة الاستثمار\nمعرّف المصدر التقني: investsaudi:44865\nالحالة المعيارية: غير محددة · النص الخام: غير محدد\nالموقع كما ورد: Al Ahsa\nسجل التغييرات\n\nreference_number: 44865 ← — · 2026/10/20 · 10:41 ص\n\nactivity: — ← Environment · 2026/10/18 · 12:30 م\n\nنوع الفرصة: قيمة غير معتمدة ← غير محدد · 2026/10/18 · 12:30 م\n\nsector: Environment ← البيئة · 2026/10/14 · 3:03 م",
+      "areaDisplayed": true,
+      "durationDisplayed": true,
+      "currencyNotImplied": true,
+      "officialReferenceDisplayed": true,
+      "technicalIdVisible": true,
+      "screenshot": "master-218-detail-1440x900.png"
+    },
+    "228": {
+      "searchFound": true,
+      "tableArea": "—",
+      "modalText": "AH-20261012080336-d8a34a05\nMOMAH and NCP Launch EOI to Municipal Food Safety Labs Across Five Municipalities in Saudi Arabia\n\nالجهة المالكة: غير محدد · الحالة الموحدة: منتهية\n\nالقطاع\nغير محدد\nالنشاط\nغير محدد\nالنشاط الفرعي\nغير منشور\nنوع الفرصة\nغير محدد\nنموذج الاستثمار\nالتجهيز والتشغيل والصيانة والنقل\nنوع الأصل أو الموقع\nغير محدد\nالدولة\nالمملكة العربية السعودية\nالمنطقة\nالمنطقة الشرقية\nالمحافظة\nالأحساء\nالمدينة / الموقع\nالأحساء\nالحي\nغير منشور\nحالة الموقع الجغرافي\nموقع مؤكد\nسبب المراجعة\nغير منشور\nوصف الموقع\nAl-Ahsa, Tabuk, Qassim, Hafr Al Batin, Northern Borders\nالمساحة\nغير منشور\nالقيمة الاستثمارية\nغير منشور\nمدة العقد\n5 سنة\nآخر موعد للتقديم\n2026-04-15\nالرقم المرجعي\nغير منشور\nمستوى ثقة الموقع\n100٪\nعدد المصادر\n1\nالنشر حسب المصدر\nالمركز الوطني للتخصيص · فتح الإعلان الأصلي ↗\n(رابط متحقق)\nجهة النشر: غير محددة في سجل المصدر · مشغل المنصة: المركز الوطني للتخصيص\nمعرّف المصدر التقني: ncp:foodsafetylabs\nالحالة المعيارية: منتهية · النص الخام: EXPIRED\nالموقع كما ورد: Al-Ahsa, Tabuk, Qassim, Hafr Al Batin, Northern Borders\nسجل التغييرات\n\ncontract_duration_years: — ← 5.0 · 2026/10/20 · 10:41 ص\n\nstatus: EXPIRED ← منتهية · 2026/10/19 · 1:34 م\n\nنموذج الاستثمار: غير محدد ← التجهيز والتشغيل والصيانة والنقل · 2026/10/19 · 10:12 ص\n\nopportunity_owner: the Ministry of Municipalities ← وزارة البلديات والإسكان · 2026/10/19 · 9:46 ص\n\nنوع الفرصة: قيمة غير معتمدة ← غير محدد · 2026/10/18 · 3:50 م\n\nsector: قيمة غير معتمدة ← غير محدد · 2026/10/18 · 12:30 م",
+      "areaDisplayed": true,
+      "durationDisplayed": true,
+      "currencyNotImplied": true,
+      "officialReferenceDisplayed": true,
+      "technicalIdVisible": true,
+      "screenshot": "master-228-detail-1440x900.png"
+    },
+    "230": {
+      "searchFound": true,
+      "tableArea": "160 م²",
+      "modalText": "AH-20261012120841-1e079990\nتأجير مواقع مكائن بيع ذاتي لعدد (80) موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي تأجير مواقع مكائن بيع ذاتي لعدد 80 موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي - الأنشطة التجارية - أنشطة تجارة المواد الغذائية - جهاز بيع ذاتي\n\nالجهة المالكة: أمانة الأحساء · الحالة الموحدة: منشورة\n\nالقطاع\nغير محدد\nالنشاط\nالأنشطة التجارية\nالنشاط الفرعي\nأنشطة تجارة المواد الغذائية\nنوع الفرصة\nغير محدد\nنموذج الاستثمار\nالتأجير\nنوع الأصل أو الموقع\nغير محدد\nالدولة\nالمملكة العربية السعودية\nالمنطقة\nالمنطقة الشرقية\nالمحافظة\nالأحساء\nالمدينة / الموقع\nالأحساء\nالحي\nغير منشور\nحالة الموقع الجغرافي\nموقع مؤكد\nسبب المراجعة\nغير منشور\nوصف الموقع\nالاحساء السلمانية الثاني زياد الحارثي\nالمساحة\n160 m²\nالقيمة الاستثمارية\nغير منشور\nمدة العقد\n5 سنة\nآخر موعد للتقديم\nغير محدد\nالرقم المرجعي\n06-26-183737-49010\nمستوى ثقة الموقع\n100٪\nعدد المصادر\n2\nالنشر حسب المصدر\nفرص – البوابة الموحدة للاستثمار · فتح الإعلان الأصلي ↗\n(رابط متحقق)\nجهة النشر: شركة الصحة القابضة شركة شخص واحد مساهمة مقفلة · مشغل المنصة: وزارة البلديات والإسكان والجهات الحكومية المشاركة\nمعرّف المصدر التقني: 06-26-183737-49010\nالحالة المعيارية: منشورة · النص الخام: Announced\nالموقع كما ورد: الاحساء السلمانية الثاني زياد الحارثي\nاستثمر في السعودية · تعذر التحقق من رابط الإعلان حاليًا\nجهة النشر: غير محددة في سجل المصدر · مشغل المنصة: وزارة الاستثمار\nمعرّف المصدر التقني: investsaudi:54952\nالحالة المعيارية: غير محددة · النص الخام: غير محدد\nالموقع كما ورد: Municipality\nسجل التغييرات\n\nstatus: Announced ← منشورة · 2026/10/19 · 1:34 م\n\nنموذج الاستثمار: غير محدد ← التأجير · 2026/10/19 · 10:12 ص\n\nنوع الفرصة: قيمة غير معتمدة ← غير محدد · 2026/10/18 · 3:50 م\n\nsector: أنشطة تجارة المواد الغذائية ← غير محدد · 2026/10/18 · 12:30 م\n\nactivity: — ← أنشطة تجارة المواد الغذائية · 2026/10/18 · 12:30 م\n\nنوع الفرصة: قيمة غير معتمدة ← غير محدد · 2026/10/18 · 12:30 م",
+      "areaDisplayed": true,
+      "durationDisplayed": true,
+      "currencyNotImplied": true,
+      "officialReferenceDisplayed": true,
+      "technicalIdVisible": true,
+      "screenshot": "master-230-detail-1440x900.png"
+    }
+  },
+  "uiValuePresentFixture": {
+    "testOnlyApiOverride": true,
+    "persisted": false,
+    "amount": 1250000.5,
+    "currency": "USD",
+    "amountAndCurrencyDisplayed": true
+  },
+  "assertions": {
+    "apiRows": true,
+    "areaUnitProjection": true,
+    "durationUnitProjection": true,
+    "investmentAmountCurrencyNotImplied": true,
+    "allResponsiveRtl": true,
+    "allResponsiveNoPageOverflow": true,
+    "allFiltersWithinViewport": true,
+    "exportsCsv": true,
+    "exportsXlsx": true,
+    "areaPresentAndAbsentInDetails": true,
+    "durationPresentAndAbsentInDetails": true,
+    "leadingZerosAndHyphensDisplayed": true,
+    "technicalIdsSeparatedInDetails": true,
+    "paginationWorks": true,
+    "searchWorks": true,
+    "investmentValuePresentDisplay": true,
+    "pageErrors": 0
+  }
+}

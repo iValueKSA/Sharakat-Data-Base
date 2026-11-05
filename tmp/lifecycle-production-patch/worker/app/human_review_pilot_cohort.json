@@ -1,0 +1,330 @@
+{
+  "pilot_id": "AHSA-HUMAN-REVIEW-PILOT-2026-10",
+  "metrics_purpose": "WORKFLOW_CALIBRATION_ONLY",
+  "phase_counts": {
+    "A": 20,
+    "B": 20
+  },
+  "cases": [
+    {
+      "review_id": 32,
+      "review_id_key": "duplicate:32",
+      "phase": "A",
+      "pilot_sequence": 1,
+      "type": "duplicate",
+      "subtype": "DUPLICATE_IDENTITY_AMBIGUITY"
+    },
+    {
+      "review_id": 34,
+      "review_id_key": "duplicate:34",
+      "phase": "A",
+      "pilot_sequence": 2,
+      "type": "duplicate",
+      "subtype": "DUPLICATE_IDENTITY_AMBIGUITY"
+    },
+    {
+      "review_id": 37,
+      "review_id_key": "duplicate:37",
+      "phase": "A",
+      "pilot_sequence": 3,
+      "type": "duplicate",
+      "subtype": "DUPLICATE_IDENTITY_AMBIGUITY"
+    },
+    {
+      "review_id": 320,
+      "review_id_key": "field_conflict:320",
+      "phase": "A",
+      "pilot_sequence": 4,
+      "type": "field_conflict",
+      "subtype": "contract_duration_years"
+    },
+    {
+      "review_id": 322,
+      "review_id_key": "field_conflict:322",
+      "phase": "A",
+      "pilot_sequence": 5,
+      "type": "field_conflict",
+      "subtype": "contract_duration_years"
+    },
+    {
+      "review_id": 324,
+      "review_id_key": "field_conflict:324",
+      "phase": "A",
+      "pilot_sequence": 6,
+      "type": "field_conflict",
+      "subtype": "contract_duration_years"
+    },
+    {
+      "review_id": 326,
+      "review_id_key": "field_conflict:326",
+      "phase": "A",
+      "pilot_sequence": 7,
+      "type": "field_conflict",
+      "subtype": "contract_duration_years"
+    },
+    {
+      "review_id": 328,
+      "review_id_key": "field_conflict:328",
+      "phase": "A",
+      "pilot_sequence": 8,
+      "type": "field_conflict",
+      "subtype": "contract_duration_years"
+    },
+    {
+      "review_id": 332,
+      "review_id_key": "field_conflict:332",
+      "phase": "A",
+      "pilot_sequence": 9,
+      "type": "field_conflict",
+      "subtype": "contract_duration_years"
+    },
+    {
+      "review_id": 258,
+      "review_id_key": "field_conflict:258",
+      "phase": "A",
+      "pilot_sequence": 10,
+      "type": "field_conflict",
+      "subtype": "full_description"
+    },
+    {
+      "review_id": 55,
+      "review_id_key": "field_conflict:55",
+      "phase": "A",
+      "pilot_sequence": 11,
+      "type": "field_conflict",
+      "subtype": "location_description"
+    },
+    {
+      "review_id": 236,
+      "review_id_key": "field_conflict:236",
+      "phase": "A",
+      "pilot_sequence": 12,
+      "type": "field_conflict",
+      "subtype": "sector"
+    },
+    {
+      "review_id": 253,
+      "review_id_key": "field_conflict:253",
+      "phase": "A",
+      "pilot_sequence": 13,
+      "type": "field_conflict",
+      "subtype": "title_ar"
+    },
+    {
+      "review_id": 17,
+      "review_id_key": "location:17",
+      "phase": "A",
+      "pilot_sequence": 14,
+      "type": "location",
+      "subtype": "LOCATION_EVIDENCE_AMBIGUITY"
+    },
+    {
+      "review_id": 167,
+      "review_id_key": "taxonomy_conflict:167",
+      "phase": "A",
+      "pilot_sequence": 15,
+      "type": "taxonomy_conflict",
+      "subtype": "activity"
+    },
+    {
+      "review_id": 351,
+      "review_id_key": "field_conflict:351",
+      "phase": "A",
+      "pilot_sequence": 16,
+      "type": "field_conflict",
+      "subtype": "contract_duration_years"
+    },
+    {
+      "review_id": 120,
+      "review_id_key": "field_conflict:120",
+      "phase": "A",
+      "pilot_sequence": 17,
+      "type": "field_conflict",
+      "subtype": "opportunity_owner"
+    },
+    {
+      "review_id": 192,
+      "review_id_key": "taxonomy_conflict:192",
+      "phase": "A",
+      "pilot_sequence": 18,
+      "type": "taxonomy_conflict",
+      "subtype": "investment_model"
+    },
+    {
+      "review_id": 194,
+      "review_id_key": "taxonomy_conflict:194",
+      "phase": "A",
+      "pilot_sequence": 19,
+      "type": "taxonomy_conflict",
+      "subtype": "investment_model"
+    },
+    {
+      "review_id": 3,
+      "review_id_key": "location:3",
+      "phase": "A",
+      "pilot_sequence": 20,
+      "type": "location",
+      "subtype": "LOCATION_EVIDENCE_AMBIGUITY"
+    },
+    {
+      "review_id": 6,
+      "review_id_key": "location:6",
+      "phase": "B",
+      "pilot_sequence": 21,
+      "type": "location",
+      "subtype": "LOCATION_EVIDENCE_AMBIGUITY"
+    },
+    {
+      "review_id": 33,
+      "review_id_key": "duplicate:33",
+      "phase": "B",
+      "pilot_sequence": 22,
+      "type": "duplicate",
+      "subtype": "DUPLICATE_IDENTITY_AMBIGUITY"
+    },
+    {
+      "review_id": 35,
+      "review_id_key": "duplicate:35",
+      "phase": "B",
+      "pilot_sequence": 23,
+      "type": "duplicate",
+      "subtype": "DUPLICATE_IDENTITY_AMBIGUITY"
+    },
+    {
+      "review_id": 46,
+      "review_id_key": "duplicate:46",
+      "phase": "B",
+      "pilot_sequence": 24,
+      "type": "duplicate",
+      "subtype": "DUPLICATE_IDENTITY_AMBIGUITY"
+    },
+    {
+      "review_id": 321,
+      "review_id_key": "field_conflict:321",
+      "phase": "B",
+      "pilot_sequence": 25,
+      "type": "field_conflict",
+      "subtype": "contract_duration_years"
+    },
+    {
+      "review_id": 323,
+      "review_id_key": "field_conflict:323",
+      "phase": "B",
+      "pilot_sequence": 26,
+      "type": "field_conflict",
+      "subtype": "contract_duration_years"
+    },
+    {
+      "review_id": 325,
+      "review_id_key": "field_conflict:325",
+      "phase": "B",
+      "pilot_sequence": 27,
+      "type": "field_conflict",
+      "subtype": "contract_duration_years"
+    },
+    {
+      "review_id": 327,
+      "review_id_key": "field_conflict:327",
+      "phase": "B",
+      "pilot_sequence": 28,
+      "type": "field_conflict",
+      "subtype": "contract_duration_years"
+    },
+    {
+      "review_id": 329,
+      "review_id_key": "field_conflict:329",
+      "phase": "B",
+      "pilot_sequence": 29,
+      "type": "field_conflict",
+      "subtype": "contract_duration_years"
+    },
+    {
+      "review_id": 333,
+      "review_id_key": "field_conflict:333",
+      "phase": "B",
+      "pilot_sequence": 30,
+      "type": "field_conflict",
+      "subtype": "contract_duration_years"
+    },
+    {
+      "review_id": 100,
+      "review_id_key": "field_conflict:100",
+      "phase": "B",
+      "pilot_sequence": 31,
+      "type": "field_conflict",
+      "subtype": "land_area_sqm"
+    },
+    {
+      "review_id": 283,
+      "review_id_key": "field_conflict:283",
+      "phase": "B",
+      "pilot_sequence": 32,
+      "type": "field_conflict",
+      "subtype": "normalized_title"
+    },
+    {
+      "review_id": 302,
+      "review_id_key": "field_conflict:302",
+      "phase": "B",
+      "pilot_sequence": 33,
+      "type": "field_conflict",
+      "subtype": "short_description"
+    },
+    {
+      "review_id": 191,
+      "review_id_key": "taxonomy_conflict:191",
+      "phase": "B",
+      "pilot_sequence": 34,
+      "type": "taxonomy_conflict",
+      "subtype": "sub_activity"
+    },
+    {
+      "review_id": 419,
+      "review_id_key": "field_conflict:419",
+      "phase": "B",
+      "pilot_sequence": 35,
+      "type": "field_conflict",
+      "subtype": "contract_duration_years"
+    },
+    {
+      "review_id": 452,
+      "review_id_key": "field_conflict:452",
+      "phase": "B",
+      "pilot_sequence": 36,
+      "type": "field_conflict",
+      "subtype": "status"
+    },
+    {
+      "review_id": 193,
+      "review_id_key": "taxonomy_conflict:193",
+      "phase": "B",
+      "pilot_sequence": 37,
+      "type": "taxonomy_conflict",
+      "subtype": "investment_model"
+    },
+    {
+      "review_id": 143,
+      "review_id_key": "taxonomy_conflict:143",
+      "phase": "B",
+      "pilot_sequence": 38,
+      "type": "taxonomy_conflict",
+      "subtype": "sector"
+    },
+    {
+      "review_id": 4,
+      "review_id_key": "location:4",
+      "phase": "B",
+      "pilot_sequence": 39,
+      "type": "location",
+      "subtype": "LOCATION_EVIDENCE_AMBIGUITY"
+    },
+    {
+      "review_id": 7,
+      "review_id_key": "location:7",
+      "phase": "B",
+      "pilot_sequence": 40,
+      "type": "location",
+      "subtype": "LOCATION_EVIDENCE_AMBIGUITY"
+    }
+  ]
+}

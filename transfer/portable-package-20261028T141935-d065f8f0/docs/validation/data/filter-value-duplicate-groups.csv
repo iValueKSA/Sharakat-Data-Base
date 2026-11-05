@@ -1,0 +1,118 @@
+﻿dimension,raw_value,normalized_key,canonical_label,count,action,reason,confidence
+activity,صناعي,صناعي,صناعي,59,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+activity,تجاري,تجاري,تجاري,39,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+activity,أخرى,اخرى,أخرى,16,CANONICAL_MEMBER,"Dimension-specific Other category alias, including decorative quotation marks; kept separate from missing.",HIGH
+activity,"""أخرى""","""اخرى""",أخرى,1,MERGED_ALIAS,"Dimension-specific Other category alias, including decorative quotation marks; kept separate from missing.",HIGH
+activity,أنشطة التجارة العامة,انشطة التجارة العامة,أنشطة التجارة العامة,8,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+activity,INVESTMENT_OPPORTUNITY,investment_opportunity,فرصة استثمارية,7,CANONICAL_LABEL,Explicit dimension-specific canonical mapping from the existing UI taxonomy.,HIGH
+activity,Environment,environment,البيئة,6,CANONICAL_LABEL,Explicit dimension-specific canonical mapping from the existing UI taxonomy.,HIGH
+activity,خدمات الصرافة,خدمات الصرافة,خدمات الصرافة,6,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+activity,خدمي,خدمي,خدمي,5,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+activity,أنشطة تجارة المواد الغذائية,انشطة تجارة المواد الغذائية,أنشطة تجارة المواد الغذائية,4,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+activity,محلات تجارية,محلات تجارية,محلات تجارية,3,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+activity,"""العربات المتنقلة""","""العربات المتنقلة""",العربات المتنقلة,2,CANONICAL_LABEL,Explicit dimension-specific canonical mapping from the existing UI taxonomy.,HIGH
+activity,منشآت تقديم الغذاء,منشات تقديم الغذاء,منشآت تقديم الغذاء,2,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+activity,"""الساحات الميادين""","""الساحات الميادين""",الساحات الميادين,1,CANONICAL_LABEL,Explicit dimension-specific canonical mapping from the existing UI taxonomy.,HIGH
+activity,"""المباني""","""المباني""",المباني,1,CANONICAL_LABEL,Explicit dimension-specific canonical mapping from the existing UI taxonomy.,HIGH
+activity,COMMERCIAL_FACILITY_OPPORTUNITY,commercial_facility_opportunity,COMMERCIAL_FACILITY_OPPORTUNITY,1,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+activity,LEASE_OPPORTUNITY,lease_opportunity,LEASE_OPPORTUNITY,1,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+activity,PPP_PROJECT,ppp_project,PPP_PROJECT,1,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+activity,أنشطة وخدمات انتاج المواد غير الغذائية,انشطة وخدمات انتاج المواد غير الغذائية,أنشطة وخدمات انتاج المواد غير الغذائية,1,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+activity,خدمات تعليمية أخرى,خدمات تعليمية اخرى,خدمات تعليمية أخرى,1,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+activity,(NULL / blank),,غير محدد,124,OMITTED_MISSING_OPTION,Missing records remain missing in storage and are not emitted as a separate dropdown choice.,HIGH
+sector,صناعي,صناعي,صناعي,59,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+sector,تجاري,تجاري,تجاري,39,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+sector,أخرى,اخرى,أخرى,16,CANONICAL_MEMBER,"Dimension-specific Other category alias, including decorative quotation marks; kept separate from missing.",HIGH
+sector,"""أخرى""","""اخرى""",أخرى,1,MERGED_ALIAS,"Dimension-specific Other category alias, including decorative quotation marks; kept separate from missing.",HIGH
+sector,أنشطة التجارة العامة,انشطة التجارة العامة,أنشطة التجارة العامة,8,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+sector,INVESTMENT_OPPORTUNITY,investment_opportunity,فرصة استثمارية,7,CANONICAL_LABEL,Explicit dimension-specific canonical mapping from the existing UI taxonomy.,HIGH
+sector,Environment,environment,البيئة,6,CANONICAL_LABEL,Explicit dimension-specific canonical mapping from the existing UI taxonomy.,HIGH
+sector,خدمات الصرافة,خدمات الصرافة,خدمات الصرافة,6,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+sector,خدمي,خدمي,خدمي,5,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+sector,أنشطة تجارة المواد الغذائية,انشطة تجارة المواد الغذائية,أنشطة تجارة المواد الغذائية,4,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+sector,محلات تجارية,محلات تجارية,محلات تجارية,3,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+sector,"""العربات المتنقلة""","""العربات المتنقلة""",العربات المتنقلة,2,CANONICAL_LABEL,Explicit dimension-specific canonical mapping from the existing UI taxonomy.,HIGH
+sector,منشآت تقديم الغذاء,منشات تقديم الغذاء,منشآت تقديم الغذاء,2,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+sector,"""الساحات الميادين""","""الساحات الميادين""",الساحات الميادين,1,CANONICAL_LABEL,Explicit dimension-specific canonical mapping from the existing UI taxonomy.,HIGH
+sector,"""المباني""","""المباني""",المباني,1,CANONICAL_LABEL,Explicit dimension-specific canonical mapping from the existing UI taxonomy.,HIGH
+sector,COMMERCIAL_FACILITY_OPPORTUNITY,commercial_facility_opportunity,COMMERCIAL_FACILITY_OPPORTUNITY,1,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+sector,LEASE_OPPORTUNITY,lease_opportunity,LEASE_OPPORTUNITY,1,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+sector,PPP_PROJECT,ppp_project,PPP_PROJECT,1,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+sector,أنشطة وخدمات انتاج المواد غير الغذائية,انشطة وخدمات انتاج المواد غير الغذائية,أنشطة وخدمات انتاج المواد غير الغذائية,1,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+sector,خدمات تعليمية أخرى,خدمات تعليمية اخرى,خدمات تعليمية أخرى,1,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+sector,(NULL / blank),,غير محدد,124,OMITTED_MISSING_OPTION,Missing records remain missing in storage and are not emitted as a separate dropdown choice.,HIGH
+opportunity_type,صناعي,صناعي,صناعي,65,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+opportunity_type,تجاري,تجاري,تجاري,38,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+opportunity_type,أخرى,اخرى,أخرى,16,CANONICAL_MEMBER,"Dimension-specific Other category alias, including decorative quotation marks; kept separate from missing.",HIGH
+opportunity_type,"""أخرى""","""اخرى""",أخرى,1,MERGED_ALIAS,"Dimension-specific Other category alias, including decorative quotation marks; kept separate from missing.",HIGH
+opportunity_type,أنشطة التجارة العامة,انشطة التجارة العامة,أنشطة التجارة العامة,8,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+opportunity_type,INVESTMENT_OPPORTUNITY,investment_opportunity,INVESTMENT_OPPORTUNITY,7,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+opportunity_type,Environment,environment,Environment,6,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+opportunity_type,خدمات الصرافة,خدمات الصرافة,خدمات الصرافة,6,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+opportunity_type,أنشطة تجارة المواد الغذائية,انشطة تجارة المواد الغذائية,أنشطة تجارة المواد الغذائية,4,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+opportunity_type,محلات تجارية,محلات تجارية,محلات تجارية,3,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+opportunity_type,"""العربات المتنقلة""","""العربات المتنقلة""",العربات المتنقلة,2,CANONICAL_LABEL,Safe display cleanup or explicit canonical spelling; no raw evidence changed.,HIGH
+opportunity_type,منشآت تقديم الغذاء,منشات تقديم الغذاء,منشآت تقديم الغذاء,2,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+opportunity_type,"""الساحات الميادين""","""الساحات الميادين""",الساحات الميادين,1,CANONICAL_LABEL,Safe display cleanup or explicit canonical spelling; no raw evidence changed.,HIGH
+opportunity_type,"""المباني""","""المباني""",المباني,1,CANONICAL_LABEL,Safe display cleanup or explicit canonical spelling; no raw evidence changed.,HIGH
+opportunity_type,COMMERCIAL_FACILITY_OPPORTUNITY,commercial_facility_opportunity,COMMERCIAL_FACILITY_OPPORTUNITY,1,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+opportunity_type,LEASE_OPPORTUNITY,lease_opportunity,LEASE_OPPORTUNITY,1,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+opportunity_type,PPP_PROJECT,ppp_project,PPP_PROJECT,1,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+opportunity_type,أنشطة وخدمات انتاج المواد غير الغذائية,انشطة وخدمات انتاج المواد غير الغذائية,أنشطة وخدمات انتاج المواد غير الغذائية,1,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+opportunity_type,خدمات تعليمية أخرى,خدمات تعليمية اخرى,خدمات تعليمية أخرى,1,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+opportunity_type,(NULL / blank),,غير محدد,124,OMITTED_MISSING_OPTION,Missing records remain missing in storage and are not emitted as a separate dropdown choice.,HIGH
+owner,أمانة الأحساء,امانة الاحساء,أمانة الأحساء,141,CANONICAL_MEMBER,Verified orthographic Alef or whitespace variant of the same municipality name.,HIGH
+owner,أمانة محافظة الأحساء,امانة محافظة الاحساء,أمانة الأحساء,109,MERGED_ALIAS,Verified existing OrganizationAlias entity ID: al-ahsa-municipality.,HIGH
+owner,أمانة الاحساء,امانة الاحساء,أمانة الأحساء,17,MERGED_ALIAS,Verified orthographic Alef or whitespace variant of the same municipality name.,HIGH
+owner,هيئة تطوير الأحساء,هيئة تطوير الاحساء,هيئة تطوير الأحساء,7,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+owner,وزارة الاستثمار,وزارة الاستثمار,وزارة الاستثمار,6,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+owner,وزارة البلديات والإسكان,وزارة البلديات والاسكان,وزارة البلديات والإسكان,4,CANONICAL_MEMBER,Canonical Arabic owner label supported by the linked official NCP article; the English source label is its abbreviation.,HIGH
+owner,the Ministry of Municipalities,the ministry of municipalities,وزارة البلديات والإسكان,1,MERGED_ALIAS,Exact owner name is abbreviated in source record ncp:foodsafetylabs; linked official NCP article spells out Ministry of Municipalities and Housing.,HIGH
+owner,جامعة الملك فيصل,جامعة الملك فيصل,جامعة الملك فيصل,2,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+owner,وزارة البيئة والمياه والزراعة,وزارة البيئة والمياه والزراعة,وزارة البيئة والمياه والزراعة,1,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+owner,وزارة الحرس الوطني,وزارة الحرس الوطني,وزارة الحرس الوطني,1,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+publication_platform,فرص – البوابة الموحدة للاستثمار,فرص – البوابة الموحدة للاستثمار,فرص – البوابة الموحدة للاستثمار,172,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+publication_platform,منصة الفرص الاستثمارية بالأحساء,منصة الفرص الاستثمارية بالاحساء,منصة الفرص الاستثمارية بالأحساء,101,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+publication_platform,هيئة تطوير الأحساء,هيئة تطوير الاحساء,هيئة تطوير الأحساء,7,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+publication_platform,استثمر في السعودية,استثمر في السعودية,استثمر في السعودية,6,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+publication_platform,جامعة الملك فيصل,جامعة الملك فيصل,جامعة الملك فيصل,2,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+publication_platform,المركز الوطني للتخصيص,المركز الوطني للتخصيص,المركز الوطني للتخصيص,1,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+location,الأحساء,الاحساء,الأحساء,258,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+location,العقير,العقير,العقير,13,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+location,العيون,العيون,العيون,8,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+location,العمران,العمران,العمران,3,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+location,الهفوف,الهفوف,الهفوف,3,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+location,الجرن,الجرن,الجرن,2,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+location,الجفر,الجفر,الجفر,1,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+location,سلوى,سلوى,سلوى,1,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+city,الأحساء,الاحساء,الأحساء,258,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+city,العقير,العقير,العقير,13,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+city,العيون,العيون,العيون,8,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+city,العمران,العمران,العمران,3,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+city,الهفوف,الهفوف,الهفوف,3,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+city,الجرن,الجرن,الجرن,2,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+city,الجفر,الجفر,الجفر,1,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+city,سلوى,سلوى,سلوى,1,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+status,Announced,announced,Announced,168,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+status,متاحة,متاحة,متاحة,101,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+status,غير محددة,غير محددة,غير محددة,13,CANONICAL_MEMBER,UNKNOWN and Arabic unspecified status represent the same missing/unknown lifecycle state.,HIGH
+status,UNKNOWN,unknown,غير محددة,1,MERGED_ALIAS,UNKNOWN and Arabic unspecified status represent the same missing/unknown lifecycle state.,HIGH
+status,REMOVED_FROM_SOURCE,removed_from_source,REMOVED_FROM_SOURCE,4,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+status,EXPIRED,expired,EXPIRED,2,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+source,furas,furas,furas,176,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+source,alahsa-opportunities,alahsa-opportunities,alahsa-opportunities,103,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+source,ahda,ahda,ahda,7,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+source,invest-saudi,invest-saudi,invest-saudi,8,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+source,kfu,kfu,kfu,2,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+source,modon,modon,modon,0,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+source,ncp,ncp,ncp,1,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+source,nhc,nhc,nhc,0,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+source,pif,pif,pif,0,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+source,mwan,mwan,mwan,0,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+investment_model,PPP,ppp,PPP,33,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+investment_model,BOOT,boot,BOOT,4,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+investment_model,DBFOM,dbfom,DBFOM,4,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+investment_model,EOMT,eomt,EOMT,2,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+investment_model,ROMT,romt,ROMT,1,KEEP_DISTINCT,No verified equivalent alias found; retained as a separate business value.,HIGH
+subsector,(NULL / blank),,غير محدد,289,OMITTED_MISSING_OPTION,Missing records remain missing in storage and are not emitted as a separate dropdown choice.,HIGH
+district,(NULL / blank),,غير محدد,289,OMITTED_MISSING_OPTION,Missing records remain missing in storage and are not emitted as a separate dropdown choice.,HIGH

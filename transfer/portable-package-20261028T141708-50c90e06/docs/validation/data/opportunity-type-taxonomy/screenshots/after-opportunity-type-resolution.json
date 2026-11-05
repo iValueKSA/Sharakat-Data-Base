@@ -1,0 +1,166 @@
+{
+  "direction": "rtl",
+  "option": [
+    {
+      "label": "تأجير مؤقت",
+      "id": "opportunity_type:temporary_rental",
+      "count": 129
+    },
+    {
+      "label": "غير محدد",
+      "id": "opportunity_type:missing",
+      "count": 162
+    }
+  ],
+  "optionQueryCounts": [
+    {
+      "label": "تأجير مؤقت",
+      "id": "opportunity_type:temporary_rental",
+      "optionCount": 129,
+      "queryCount": 129
+    },
+    {
+      "label": "غير محدد",
+      "id": "opportunity_type:missing",
+      "optionCount": 162,
+      "queryCount": 162
+    }
+  ],
+  "crossFilterCounts": {
+    "sector": {
+      "label": "غير محدد",
+      "count": 128
+    },
+    "activity": {
+      "label": "أخرى",
+      "count": 1
+    },
+    "sub_activity": {
+      "label": "قيمة مفقودة",
+      "count": 129
+    },
+    "status": {
+      "label": "Announced",
+      "count": 121
+    },
+    "owner": {
+      "label": "أمانة الأحساء",
+      "count": 125
+    },
+    "location": {
+      "label": "الأحساء",
+      "count": 111
+    },
+    "source": 129
+  },
+  "ncpDetails": {
+    "id": 228,
+    "canonical_id": "AH-20261012080336-d8a34a05",
+    "title": "MOMAH and NCP Launch EOI to Municipal Food Safety Labs Across Five Municipalities in Saudi Arabia",
+    "owner": "وزارة البلديات والإسكان",
+    "sector": "غير محدد",
+    "activity": "غير محدد",
+    "sub_activity": null,
+    "subsector": null,
+    "type": "غير محدد",
+    "investment_model": "التجهيز والتشغيل والصيانة والنقل",
+    "asset_facility_types": [],
+    "asset_facility_type": "غير محدد",
+    "city": "الأحساء",
+    "location": "Al-Ahsa, Tabuk, Qassim, Hafr Al Batin, Northern Borders",
+    "area": null,
+    "investment_value": null,
+    "duration": null,
+    "deadline": "2026-04-15",
+    "status": "EXPIRED",
+    "lifecycle_status": "EXPIRED",
+    "reference": null,
+    "source_facts": {
+      "locations": "Al-Ahsa | Hafr Al Batin | Northern Borders | Qassim | Tabuk",
+      "stages": "EOI",
+      "investment_models": "التجهيز والتشغيل والصيانة والنقل",
+      "location_scopes": "MULTI_LOCATION"
+    },
+    "sources": [
+      {
+        "name": "المركز الوطني للتخصيص",
+        "url": "https://ncp.gov.sa/en/MediaCenter/News/Pages/FoodSafetyLabs.aspx",
+        "key": "ncp",
+        "title": "MOMAH and NCP Launch EOI to Municipal Food Safety Labs Across Five Municipalities in Saudi Arabia",
+        "raw_status": "EXPIRED",
+        "project_stage": "EOI",
+        "investment_model": "التجهيز والتشغيل والصيانة والنقل",
+        "qualification_reason": "Official NCP announcement names Al-Ahsa as one of the project locations.",
+        "location_scope": "MULTI_LOCATION",
+        "opportunity_locations": [
+          "Al-Ahsa",
+          "Tabuk",
+          "Qassim",
+          "Hafr Al Batin",
+          "Northern Borders"
+        ]
+      }
+    ],
+    "source_count": 1,
+    "confidence": 1,
+    "first_seen": "2026-10-12T08:03:36.793005+00:00",
+    "updated_at": "2026-10-19T06:46:54.286783+00:00",
+    "changes": [
+      {
+        "field": "نموذج الاستثمار",
+        "before": "غير محدد",
+        "after": "التجهيز والتشغيل والصيانة والنقل",
+        "date": "2026-10-19T07:12:46.019637+00:00"
+      },
+      {
+        "field": "opportunity_owner",
+        "before": "the Ministry of Municipalities",
+        "after": "وزارة البلديات والإسكان",
+        "date": "2026-10-19T06:46:54.286783+00:00"
+      },
+      {
+        "field": "نوع الفرصة",
+        "before": "قيمة غير معتمدة",
+        "after": "غير محدد",
+        "date": "2026-10-18T12:50:13.591011+00:00"
+      },
+      {
+        "field": "sector",
+        "before": "قيمة غير معتمدة",
+        "after": "غير محدد",
+        "date": "2026-10-18T09:30:44.195733+00:00"
+      }
+    ]
+  },
+  "dashboardByType": [
+    {
+      "name": "غير محدد",
+      "canonical_id": "opportunity_type:missing",
+      "filter_value": null,
+      "count": 162
+    },
+    {
+      "name": "تأجير مؤقت",
+      "canonical_id": "opportunity_type:temporary_rental",
+      "filter_value": "تأجير مؤقت",
+      "count": 129
+    }
+  ],
+  "total": 291,
+  "htmlScrollWidth": 1920,
+  "viewportWidth": 1920,
+  "detailsHasCanonicalType": true,
+  "exports": {
+    "csvStatus": 200,
+    "csvRows": 129,
+    "csvTypeLabel": true,
+    "xlsxStatus": 200,
+    "xlsxSignature": "PK",
+    "xlsxBytes": 186297
+  },
+  "resetFiltersWorks": true,
+  "dashboardChartFilterId": "opportunity_type:temporary_rental",
+  "dashboardChartDrillDownCount": 129,
+  "dashboardChartNavigatedToCanonicalFilter": true,
+  "screenshot": "after-opportunity-type-resolution.png"
+}

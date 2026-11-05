@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "worker_start_observed": null,
+  "beat_start_observed": null,
+  "scheduler_started_before_restore": false,
+  "transfer_test_beat_schedule_entries": null,
+  "unexplained_active_jobs_after_transfer": null,
+  "manual_source_sync_started": false,
+  "source_machine_runtime_locks_carried_as_active": null
+}

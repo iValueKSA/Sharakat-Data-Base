@@ -1,0 +1,17 @@
+{
+    "snapshot_at": "2026-10-19T11:33:12.267278+00:00",
+    "observations": 10514,
+    "merged_masters": 5,
+    "owner_fingerprint": "74b8031d908bfcba238ded33e7d1a9f9",
+    "total_master_rows": 296,
+    "non_merged_masters": 291,
+    "open_data_conflicts": 95,
+    "source_opportunities": 2898,
+    "open_location_reviews": 25,
+    "source_link_fingerprint": "2bb642767292fa8b74446492e3f50c24",
+    "open_duplicate_candidates": 26,
+    "open_qualification_reviews": 0,
+    "master_identity_fingerprint": "9f163e6d14b53dca33be7830e4d3528c",
+    "source_raw_payload_fingerprint": "c64afb7a1f4f659ee1efb4283cada8ac",
+    "observation_raw_payload_fingerprint": "ee7d8c847721c327c5e1f3160d8a46ce"
+}

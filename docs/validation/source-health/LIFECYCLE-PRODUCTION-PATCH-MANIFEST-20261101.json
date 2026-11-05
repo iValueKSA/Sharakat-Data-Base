@@ -1,0 +1,190 @@
+{
+  "test_file_hashes": [
+    {
+      "path": "api/patch-tests/test_sync_job_state_transitions.py",
+      "sha256": "162227ace01a7284070a4e553220f1ce7669b4c47ac5c8de80cb27004ac188f4"
+    },
+    {
+      "path": "api/patch-tests/test_sync_lifecycle_reliability.py",
+      "sha256": "5631c0bc9a8b3c85c05fdd22a05d7c0b4e4d1c2eeafd0068bf31bc08c331b5f8"
+    },
+    {
+      "path": "api/patch-tests/test_data_quality.py",
+      "sha256": "5f000dce0d4ec0d01fafc146f3c067a234474a5dd010b3d978eb18deb6e53fbf"
+    },
+    {
+      "path": "api/patch-tests/test_ingestion.py",
+      "sha256": "c827ce58f60a1f816786a9eba9c3b1061c6f881bd5110cd561493b7680890b65"
+    },
+    {
+      "path": "api/patch-tests/test_api_cancel_lifecycle_patch.py",
+      "sha256": "0ec0a59778b5fee9e923c85f145fd8c7a6a416018eb51d3f9c119d0969498f5c"
+    }
+  ],
+  "baseline_schema_fingerprint": {
+    "indexes": "1574145b02535bb0c11582c60ab8e650",
+    "columns": "e186f0e941ac5973015eccfa2b471810",
+    "constraints": "2dfb86dca578ef9b66ac47fe691263fc"
+  },
+  "baseline_origin": "Actual running API/worker/Beat images; copied from containers and SHA-256 verified.",
+  "baseline_image_ids": {
+    "api": "sha256:3b7e3af3ca632dbd7b5c21df3cd310a05c184784a3206226f5cd00269adfaefc",
+    "worker": "sha256:2eb708e1e2c24b2cc998e2bc86852498fe750abbdb3150b64801d0a5d42978df",
+    "beat": "sha256:4a91e3700eab0ef4168a3e24c1d5e19a9c8cb2f57c41c5c9ceaf41eca4c71f9d"
+  },
+  "patch_startup": {
+    "rollback_override": "docker-compose.lifecycle-patch-rollback.yml",
+    "override": "docker-compose.lifecycle-patch.yml",
+    "can_apply_0024_or_0025": false,
+    "migration_command": "disabled no-op in docker-compose.lifecycle-patch.yml; deployment uses --no-deps and --no-build",
+    "image_migrations": "baseline source contains versions only through 0023"
+  },
+  "patch_boundary": {
+    "summary": [
+      "sync_lifecycle.py: central guarded CAS state machine, terminal monotonicity, idempotent terminal finalization",
+      "tasks.py: guarded claim/retry/failure/recovery and removal of redundant successful finalizer",
+      "service.py: RUNNING precondition, local outcome status, atomic terminal finalization before DQ, CAS failure/blocked outcomes",
+      "main.py: queued cancellation guarded from QUEUED only"
+    ],
+    "excluded_workspace_changes": [
+      "app/adapters.py (workspace version)",
+      "app/celery_app.py (workspace version)",
+      "app/data_quality.py (workspace version)",
+      "app/models.py (workspace version)",
+      "nationwide routes/filters/dashboard/map modules",
+      "migrations 0024 and 0025"
+    ],
+    "changed_files_by_image": {
+      "api": [
+        {
+          "path": "app/sync_lifecycle.py",
+          "sha256": "e6cc735006e196e08873cc3cc56a7c94607726a97f8dbd8ef47260935b142041"
+        },
+        {
+          "path": "app/tasks.py",
+          "sha256": "7069d4c5e2b4c760fe51c991d0c3d457c0346a61312ca797e058f5daf03b2cbe"
+        },
+        {
+          "path": "app/service.py",
+          "sha256": "541acb25716573c77424fc75747e94344738d5e1c8524e937175a772210d91a4"
+        },
+        {
+          "path": "app/main.py",
+          "sha256": "a5e244a6a0e4f669fc3d9c232f1816923cb0a78ee30e9c70681d30e1d73f9784"
+        }
+      ],
+      "worker": [
+        {
+          "path": "app/sync_lifecycle.py",
+          "sha256": "e6cc735006e196e08873cc3cc56a7c94607726a97f8dbd8ef47260935b142041"
+        },
+        {
+          "path": "app/tasks.py",
+          "sha256": "7069d4c5e2b4c760fe51c991d0c3d457c0346a61312ca797e058f5daf03b2cbe"
+        },
+        {
+          "path": "app/service.py",
+          "sha256": "541acb25716573c77424fc75747e94344738d5e1c8524e937175a772210d91a4"
+        }
+      ],
+      "beat": [
+        {
+          "path": "app/sync_lifecycle.py",
+          "sha256": "e6cc735006e196e08873cc3cc56a7c94607726a97f8dbd8ef47260935b142041"
+        },
+        {
+          "path": "app/tasks.py",
+          "sha256": "7069d4c5e2b4c760fe51c991d0c3d457c0346a61312ca797e058f5daf03b2cbe"
+        }
+      ]
+    },
+    "verified": true,
+    "nationwide_runtime_changes_in_patch": 0,
+    "ambiguous_runtime_hunks": 0
+  },
+  "baseline_manifest": "tmp/production-baseline-0023/production-baseline-manifest.json",
+  "validation": {
+    "focused_lifecycle_tests": "24 passed",
+    "worker_smoke": "Celery inspect ping pong",
+    "DQ_synthetic_test": "PASS coherent terminal / FAIL intentionally inconsistent, severity FAIL",
+    "unapproved_national_runtime_code_deployed": false,
+    "national_flags": {
+      "FURAS_NATIONAL_ENUMERATION_ENABLED": false,
+      "NATIONAL_MAP_ENABLED": false,
+      "NATIONAL_UI_ENABLED": false
+    },
+    "full_applicable_regression": "83 passed total (81 lifecycle/DQ/ingestion + 2 API cancellation endpoint tests)",
+    "API_smoke": "GET /health 200; GET /health/ready 200",
+    "beat_smoke": "Celery Beat startup confirmed",
+    "database": "schema-only copy of live production structure, no business rows copied; Alembic version pinned to 0023_quant_commercial",
+    "patch_runs_on_0023": true,
+    "schema_fingerprint_match": true,
+    "patch_image_full_file_hash_verification": "PASSED: all files under app, migrations, scripts, and alembic.ini match the staged patch tree for each image",
+    "isolated_validation_cleanup": "Temporary PostgreSQL, Redis, API, worker, Beat containers and network removed; candidate and baseline images retained"
+  },
+  "created_at_utc": "2026-11-01T15:46:23Z",
+  "result": "PATCH_IMAGES_DEPLOYED_AND_POST_DEPLOYMENT_HEALTH_PASSED",
+  "baseline_alembic": "0023_quant_commercial",
+  "patch_images": {
+    "api": {
+      "tag": "alahsa-api:lifecycle-fix-20261101",
+      "digest": "sha256:ae6560e822c65a3df27dc72576411d712f72816bca726b7e42b979012d933301"
+    },
+    "worker": {
+      "tag": "alahsa-worker:lifecycle-fix-20261101",
+      "digest": "sha256:f87b2d1d7a974f9255304e3b40f3bf0c314417606de54e5dc6e5c521a936a097"
+    },
+    "beat": {
+      "tag": "alahsa-beat:lifecycle-fix-20261101",
+      "digest": "sha256:87db93f8068221f75ea52fd26c29a5e957026bacb35e889a55a1d70b304613b0"
+    }
+  },
+  "deployment": {
+    "started_at_utc": "2026-11-01T15:51:59Z",
+    "services": [
+      "api",
+      "worker",
+      "scheduler/Beat"
+    ],
+    "method": "docker compose lifecycle-patch override with --no-build --no-deps",
+    "containers_recreated": {
+      "beat": "ab5bbb0ada9290223396761875c9180141606d85b203b377708fe6a0cffee3a6",
+      "worker": "4b5ee7f2119bebb8109671bce1b5a655a395851bf256280d15eb268d108a2df6",
+      "api": "0290c823dfafb77cddaef45540c808aac4188d41b591717b832d8eee48625c9b"
+    },
+    "post_checks": {
+      "new_jobs_after_id_671": 0,
+      "postgres": "healthy",
+      "worker_ping": "pong",
+      "alembic": "0023_quant_commercial",
+      "frontend": "HTTP 200; container remained running",
+      "beat_process": "running",
+      "api_health": 200,
+      "redis": "healthy",
+      "schema_fingerprint_unchanged": true,
+      "historical_jobs_644_651_652_666_668_669_670_671_unchanged": true,
+      "api_ready": 200,
+      "national_flags_false": true,
+      "active_jobs": 0
+    },
+    "live_lifecycle_verification": "PENDING_NATURAL_JOB",
+    "furas_live_verification": "PENDING_NATURAL_FURAS_JOB",
+    "live_observation": {
+      "observed_at_utc": "2026-11-01T16:00:32Z",
+      "cutoff_utc": "2026-11-01T15:51:59Z",
+      "post_deployment_source_jobs": 0,
+      "post_deployment_dq_runs": 0,
+      "maintenance_log_evidence": [
+        "enqueue_due_sources returned queued=[]",
+        "recover_stale_jobs returned abandoned_running=0, abandoned_queued=0, requeued_sources=[]"
+      ],
+      "shared_lifecycle": "PENDING_NATURAL_JOB",
+      "furas": "PENDING_NATURAL_FURAS_JOB",
+      "historical_dq_failures_before_cutoff": [
+        670,
+        671,
+        669
+      ]
+    }
+  }
+}

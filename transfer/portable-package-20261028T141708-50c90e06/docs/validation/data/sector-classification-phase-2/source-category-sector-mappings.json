@@ -1,0 +1,36 @@
+{
+  "engine_version": "ahda-sector-phase2-1.0.0",
+  "mappings": [
+    {
+      "canonical_sector": "sector:commercial",
+      "canonical_sector_id": "sector:commercial",
+      "confidence": 0.97,
+      "evidence": "Exact value is treated as a sub-activity (never as source_sector alone); accepted only with matching canonical activity and sub-activity.",
+      "raw_source_sector_count_all_sources": 2,
+      "raw_value": "أنشطة تجارة المواد الغذائية",
+      "rule_key": "P2_FURAS_FOOD_RETAIL_EXACT_PAIR",
+      "source": "furas"
+    },
+    {
+      "canonical_sector": "sector:commercial",
+      "canonical_sector_id": "sector:commercial",
+      "confidence": 0.97,
+      "evidence": "Exact value is treated as a sub-activity (never as source_sector alone); accepted only with matching canonical activity and sub-activity.",
+      "raw_source_sector_count_all_sources": 3,
+      "raw_value": "محلات تجارية",
+      "rule_key": "P2_FURAS_RETAIL_SHOPS_EXACT_PAIR",
+      "source": "furas"
+    },
+    {
+      "canonical_sector": "sector:financial_services",
+      "canonical_sector_id": "sector:financial_services",
+      "confidence": 0.97,
+      "evidence": "Exact value is treated as a sub-activity (never as source_sector alone); accepted only with matching canonical activity and sub-activity.",
+      "raw_source_sector_count_all_sources": 0,
+      "raw_value": "خدمات الصرافة",
+      "rule_key": "P2_FURAS_EXCHANGE_EXACT_PAIR",
+      "source": "furas"
+    }
+  ],
+  "scope_note": "No raw value is rewritten; only its exact, corroborated structured pair can contribute to a Master sector."
+}

@@ -1,0 +1,795 @@
+{
+  "run_id": "4bb53331270c4cc5a358f6fa6cc11c46",
+  "started_at": "2026-10-21T11:49:05.597358+00:00",
+  "completed_at": "2026-10-21T11:49:11.231082+00:00",
+  "trigger": "sector_controlled_relaxation_post_apply",
+  "scope": "full",
+  "source_id": null,
+  "job_id": null,
+  "read_only_business_data": true,
+  "snapshot": {
+    "total_master_rows": 546,
+    "current_masters": 525,
+    "merged_masters": 21,
+    "source_opportunities": 3137,
+    "source_opportunities_linked_to_current_masters": 525,
+    "observations": 12855,
+    "configured_sources": 10,
+    "enabled_sources": 10,
+    "open_reviews": 578,
+    "standardization_engine_version": "21",
+    "alembic_heads": [
+      "0023_quant_commercial"
+    ],
+    "expected_alembic_heads": [
+      "0023_quant_commercial"
+    ]
+  },
+  "counts": {
+    "pass": 54,
+    "warning": 2,
+    "fail": 0
+  },
+  "source_absence_classification": {
+    "warning_population": 2537,
+    "classification": {
+      "confirmed_current_and_present": 2423,
+      "confirmed_historical_removed": 102,
+      "true_absence_pending_confirmation": 0,
+      "outside_al_ahsa_scope": 0,
+      "non_qualified_national_record": 9,
+      "location_review_required": 0,
+      "limited_or_non_comparable_enumeration": 0,
+      "other_valid_non_absence": 3,
+      "unexplained": 0
+    },
+    "classification_sum": 2537,
+    "reconciliation": "PASSED"
+  },
+  "source_link_semantics": {
+    "generic_page_records": 782,
+    "generic_page_exposed_as_original_opportunity_action": 0
+  },
+  "gates_evaluated": 56,
+  "gates": [
+    {
+      "gate_key": "MASTER_CURRENT_WITHOUT_SOURCE",
+      "domain": "MASTER_IDENTITY",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "SOURCE_LINKED_TO_MULTIPLE_CURRENT_MASTERS",
+      "domain": "SOURCE_LINKAGE",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "DUPLICATE_SOURCE_EXTERNAL_ID",
+      "domain": "SOURCE_LINKAGE",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "QUALIFIED_SOURCE_WITHOUT_CURRENT_MASTER",
+      "domain": "LOCATION_ELIGIBILITY",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "MERGED_MASTER_SOURCE_LINKS",
+      "domain": "MASTER_IDENTITY",
+      "severity": "WARNING",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "Historical source links can remain attached to merged rows; inspect only if current APIs expose them.",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "VERIFIED_OFFICIAL_REFERENCE_SPLIT",
+      "domain": "MASTER_IDENTITY",
+      "severity": "FAIL",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "Exact verified official-reference split across current Masters; title-only similarity is excluded.",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "FUZZY_TITLE_ONLY_DQ_FAILURE",
+      "domain": "MASTER_IDENTITY",
+      "severity": "INFO",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "Title similarity alone is deliberately non-blocking.",
+      "observed": false,
+      "expected": false,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "SOURCE_URL_MALFORMED",
+      "domain": "SOURCE_LINKS",
+      "severity": "FAIL",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "FURAS_TEMPORARY_RENTAL_ROUTE_REGRESSION",
+      "domain": "SOURCE_LINKS",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "KNOWN_UNAVAILABLE_LINK_EXPOSED",
+      "domain": "SOURCE_LINKS",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "GENERIC_SOURCE_PAGE_AS_OPPORTUNITY_ACTION",
+      "domain": "SOURCE_LINKS",
+      "severity": "WARNING",
+      "cadence": "full",
+      "status": "WARNING",
+      "message": "782 records have only a generic official source page; generic URLs exposed as original-opportunity actions: 0.",
+      "observed": 782,
+      "expected": 0,
+      "sample_ids": [
+        2124,
+        2117,
+        2023,
+        2078,
+        2080,
+        2114,
+        2159,
+        2160
+      ]
+    },
+    {
+      "gate_key": "FURAS_UNVERIFIED_PUBLICATION_PROMOTION",
+      "domain": "DATES",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "FURAS_UNVERIFIED_DEADLINE_PROMOTION",
+      "domain": "DATES",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "TECHNICAL_TIMESTAMP_AS_BUSINESS_DATE",
+      "domain": "DATES",
+      "severity": "FAIL",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "ACTIVE_ALERT_WITH_UNVERIFIED_DEADLINE",
+      "domain": "DEADLINES",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "OPEN_REVIEW_BROKEN_ENTITY_LINK",
+      "domain": "REVIEW_QUEUES",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "OPEN_REVIEW_ON_MERGED_MASTER",
+      "domain": "REVIEW_QUEUES",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "LOGICAL_DUPLICATE_OPEN_REVIEW",
+      "domain": "REVIEW_QUEUES",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "OPEN_REVIEW_OLDER_THAN_90_DAYS",
+      "domain": "REVIEW_QUEUES",
+      "severity": "WARNING",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "Age is surfaced for review; cases are never auto-resolved.",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "OPEN_REVIEW_BACKLOG",
+      "domain": "REVIEW_QUEUES",
+      "severity": "WARNING",
+      "cadence": "full",
+      "status": "WARNING",
+      "message": "Nonzero unresolved-review queues are expected and do not fail data quality.",
+      "observed": 578,
+      "expected": {
+        "threshold": 0
+      },
+      "sample_ids": []
+    },
+    {
+      "gate_key": "TOP_LEVEL_REVIEW_RECONCILIATION",
+      "domain": "REVIEW_QUEUES",
+      "severity": "FAIL",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "Mutually exclusive review domains must reconcile to the total open review population.",
+      "observed": 578,
+      "expected": {
+        "total": 578
+      },
+      "sample_ids": []
+    },
+    {
+      "gate_key": "FIELD_CONFLICT_SUBCATEGORY_RECONCILIATION",
+      "domain": "REVIEW_QUEUES",
+      "severity": "FAIL",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "Every field conflict is grouped once by its actual field_name.",
+      "observed": 455,
+      "expected": 455,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "OPEN_REVIEW_WITHOUT_TRACEABLE_EVIDENCE",
+      "domain": "REVIEW_QUEUES",
+      "severity": "FAIL",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "All active review schemas retain source or compared-entity identifiers; sampled evidence completeness is tested in regression tests.",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "PARTIAL_SCAN_REMOVAL_SAFETY",
+      "domain": "PARTIAL_SCAN_SAFETY",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "FURAS_LAST_SUCCESSFUL_SCAN_PAGINATION",
+      "domain": "SOURCE_PAGINATION",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "Latest failed/incomplete Furas attempt is not a coverage assertion; retry may be in flight.",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "LIMITED_COVERAGE_IS_EXPLICIT",
+      "domain": "SOURCE_COVERAGE",
+      "severity": "WARNING",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "TECHNICAL_HEALTH_SEPARATE_FROM_COVERAGE",
+      "domain": "SOURCE_COVERAGE",
+      "severity": "INFO",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "Technical health and coverage_status are distinct persisted fields and API values.",
+      "observed": true,
+      "expected": true,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "SOURCE_ABSENCE_CLASSIFICATION",
+      "domain": "SOURCE_COVERAGE",
+      "severity": "WARNING",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "Only qualified Ahsa-scope records missing from a comparable, complete successful enumeration remain pending; national non-qualified rows and unlinked records are excluded.",
+      "observed": {
+        "warning_population": 2537,
+        "classification": {
+          "confirmed_current_and_present": 2423,
+          "confirmed_historical_removed": 102,
+          "true_absence_pending_confirmation": 0,
+          "outside_al_ahsa_scope": 0,
+          "non_qualified_national_record": 9,
+          "location_review_required": 0,
+          "limited_or_non_comparable_enumeration": 0,
+          "other_valid_non_absence": 3,
+          "unexplained": 0
+        },
+        "classification_sum": 2537,
+        "true_pending_confirmation": 0,
+        "unexplained": 0
+      },
+      "expected": {
+        "unexplained": 0
+      },
+      "sample_ids": []
+    },
+    {
+      "gate_key": "ORPHANED_SOURCE_OBSERVATION",
+      "domain": "OBSERVATION_INTEGRITY",
+      "severity": "FAIL",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "OBSERVATION_TIMESTAMP_ORDER",
+      "domain": "OBSERVATION_INTEGRITY",
+      "severity": "FAIL",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "RUNTIME_STANDARDIZATION_VERSION",
+      "domain": "STANDARDIZATION_RUNTIME_PARITY",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": "21",
+      "expected": "21",
+      "sample_ids": []
+    },
+    {
+      "gate_key": "HISTORICAL_STANDARDIZATION_VERSIONS",
+      "domain": "STANDARDIZATION_RUNTIME_PARITY",
+      "severity": "INFO",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "Persisted historical source projections are not rewritten during read-only validation.",
+      "observed": [
+        "15",
+        "17",
+        "19",
+        "20",
+        "21"
+      ],
+      "expected": {
+        "runtime_current": "21"
+      },
+      "sample_ids": []
+    },
+    {
+      "gate_key": "ALEMBIC_RUNTIME_PARITY",
+      "domain": "DATABASE_MIGRATIONS",
+      "severity": "FAIL",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "Database Alembic head is compared with the migration scripts shipped in this runtime.",
+      "observed": [
+        "0023_quant_commercial"
+      ],
+      "expected": [
+        "0023_quant_commercial"
+      ],
+      "sample_ids": [
+        "0023_quant_commercial"
+      ]
+    },
+    {
+      "gate_key": "UNKNOWN_AREA_STORED_AS_ZERO",
+      "domain": "QUANTITATIVE_FIELDS",
+      "severity": "WARNING",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "Zero can be valid; review required before interpreting as missing-value coercion.",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "UNKNOWN_VALUE_STORED_AS_ZERO",
+      "domain": "QUANTITATIVE_FIELDS",
+      "severity": "WARNING",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "Zero can be valid; review required before interpreting as missing-value coercion.",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "TECHNICAL_SOURCE_ID_AS_MASTER_REFERENCE",
+      "domain": "QUANTITATIVE_FIELDS",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "TAXONOMY_DIMENSION_CARDINALITY",
+      "domain": "TAXONOMY",
+      "severity": "INFO",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "",
+      "observed": {
+        "activity": "single",
+        "sub_activity": "single",
+        "opportunity_type": "single",
+        "investment_model": "single",
+        "asset_type": "multi"
+      },
+      "expected": {
+        "activity": "single",
+        "sub_activity": "single",
+        "opportunity_type": "single",
+        "investment_model": "single",
+        "asset_type": "multi"
+      },
+      "sample_ids": []
+    },
+    {
+      "gate_key": "OTHER_IS_NOT_UNSPECIFIED",
+      "domain": "TAXONOMY",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": {
+        "activity": true,
+        "sector": true
+      },
+      "expected": {
+        "activity": true,
+        "sector": true
+      },
+      "sample_ids": []
+    },
+    {
+      "gate_key": "OWNER_PLATFORM_SEPARATION",
+      "domain": "OWNER",
+      "severity": "INFO",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "Owner, primary publication platform, and source publisher are separately stored model fields.",
+      "observed": true,
+      "expected": true,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "CANONICAL_CURRENT_PUBLISHED_RECORDS",
+      "domain": "STATUS_LIFECYCLE",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "USER_FACING_PUBLISHED_STATUS_BUCKET",
+      "domain": "STATUS_LIFECYCLE",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "TOURISM_AND_AGRICULTURE_CANONICAL_SECTORS",
+      "domain": "TAXONOMY",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": [
+        "sector:agriculture",
+        "sector:tourism"
+      ],
+      "expected": [
+        "sector:agriculture",
+        "sector:tourism"
+      ],
+      "sample_ids": []
+    },
+    {
+      "gate_key": "SOURCE_EXPLICIT_SECTOR_OVERRIDDEN_BY_INFERENCE",
+      "domain": "TAXONOMY",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "FORCED_LOW_CONFIDENCE_SECTOR_CLASSIFICATIONS",
+      "domain": "TAXONOMY",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "INFERRED_SECTOR_WITHOUT_TRACEABLE_EVIDENCE",
+      "domain": "TAXONOMY",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "P2_INFERRED_SECTOR_WITHOUT_EVIDENCE",
+      "domain": "TAXONOMY",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "P2_INFERRED_SECTOR_LOW_CONFIDENCE",
+      "domain": "TAXONOMY",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "P2_OFFICIAL_SECTOR_OVERRIDDEN_BY_INFERENCE",
+      "domain": "TAXONOMY",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "P2_OTHER_USED_AS_MISSING_SECTOR",
+      "domain": "TAXONOMY",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "P2_MEDIUM_INFERENCE_WITH_STRONG_CONTRADICTION",
+      "domain": "TAXONOMY",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "API_DASHBOARD_EXPORT_RECONCILIATION",
+      "domain": "API_DASHBOARD_EXPORT_RECONCILIATION",
+      "severity": "FAIL",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "Counts are read from the running route implementations, CSV rows, and XLSX opportunity sheet.",
+      "observed": {
+        "api_list": 525,
+        "dashboard": 525,
+        "data_dashboard": 525,
+        "csv": 525,
+        "xlsx": 525,
+        "database_current_masters": 525
+      },
+      "expected": {
+        "all_equal": 525
+      },
+      "sample_ids": []
+    },
+    {
+      "gate_key": "CURRENT_LIST_DUPLICATE_MASTER_ROWS",
+      "domain": "SEARCH_LIST_UNIQUENESS",
+      "severity": "FAIL",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "CURRENT_MASTER_MAP_PARTITION",
+      "domain": "LOCATION_ELIGIBILITY",
+      "severity": "FAIL",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "Exact-mapped, outside-reference, unverified, and missing-coordinate groups partition the current Master universe.",
+      "observed": 525,
+      "expected": 525,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "CURRENT_MASTER_LIST_REFERENCE_DUPLICATES",
+      "domain": "SEARCH_LIST_UNIQUENESS",
+      "severity": "WARNING",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "Repeated references are surfaced for inspection; only verified official-reference splits fail.",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "API_WORKER_STANDARDIZATION_PARITY",
+      "domain": "STANDARDIZATION_RUNTIME_PARITY",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "Worker heartbeat must publish its loaded standardization version.",
+      "observed": {
+        "api": "21",
+        "worker_versions": [
+          "21"
+        ],
+        "worker_status": "AVAILABLE"
+      },
+      "expected": {
+        "version": "21",
+        "worker": "available"
+      },
+      "sample_ids": []
+    },
+    {
+      "gate_key": "ENABLED_SOURCE_COVERAGE_DECLARED",
+      "domain": "SOURCE_COVERAGE",
+      "severity": "WARNING",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "Limited and scoped coverage are valid; only missing/unrecognized coverage declarations are flagged.",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    }
+  ],
+  "failed_gates": [],
+  "warning_gates": [
+    {
+      "gate_key": "GENERIC_SOURCE_PAGE_AS_OPPORTUNITY_ACTION",
+      "domain": "SOURCE_LINKS",
+      "severity": "WARNING",
+      "cadence": "full",
+      "status": "WARNING",
+      "message": "782 records have only a generic official source page; generic URLs exposed as original-opportunity actions: 0.",
+      "observed": 782,
+      "expected": 0,
+      "sample_ids": [
+        2124,
+        2117,
+        2023,
+        2078,
+        2080,
+        2114,
+        2159,
+        2160
+      ]
+    },
+    {
+      "gate_key": "OPEN_REVIEW_BACKLOG",
+      "domain": "REVIEW_QUEUES",
+      "severity": "WARNING",
+      "cadence": "full",
+      "status": "WARNING",
+      "message": "Nonzero unresolved-review queues are expected and do not fail data quality.",
+      "observed": 578,
+      "expected": {
+        "threshold": 0
+      },
+      "sample_ids": []
+    }
+  ]
+}

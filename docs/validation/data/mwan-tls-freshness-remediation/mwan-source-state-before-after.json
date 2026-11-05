@@ -1,0 +1,81 @@
+{
+  "captured_before_validation_sync_utc": "2026-10-27T07:42:40Z",
+  "captured_after_validation_sync_utc": "2026-10-27T07:46:23Z",
+  "before": {
+    "source_id": 10,
+    "source_key": "mwan",
+    "enabled": true,
+    "scheduled": true,
+    "interval_minutes": 1440,
+    "last_successful_sync": "2026-10-12T12:28:00.933181Z",
+    "last_attempted_sync": "2026-10-26T13:10:24.703455Z",
+    "latest_job_id": 521,
+    "latest_job_status": "FAILED",
+    "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE",
+    "technical_health": "WARNING",
+    "sync_status": "FAILED",
+    "mwan_source_opportunity_rows": 5,
+    "masters": 587,
+    "all_source_opportunity_rows": 3178,
+    "all_source_observations": 26894,
+    "sync_jobs": 538,
+    "active_jobs": 0,
+    "prior_live_dq": {
+      "total": 129,
+      "pass": 125,
+      "warning": 3,
+      "fail": 1,
+      "failing_gate": "SOURCE_LAST_SUCCESS_TOO_OLD"
+    }
+  },
+  "after": {
+    "source_id": 10,
+    "source_key": "mwan",
+    "enabled": true,
+    "scheduled": true,
+    "interval_minutes": 1440,
+    "last_successful_sync": "2026-10-27T07:43:13.591078Z",
+    "last_attempted_sync": "2026-10-27T07:42:57.963940Z",
+    "latest_job_id": 539,
+    "latest_job_status": "SUCCESS",
+    "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE",
+    "technical_health": "HEALTHY",
+    "sync_status": "HEALTHY",
+    "mwan_source_opportunity_rows": 6,
+    "masters": 587,
+    "all_source_opportunity_rows": 3179,
+    "all_source_observations": 26900,
+    "sync_jobs": 539,
+    "open_actionable_reviews": 0,
+    "active_jobs": 0
+  },
+  "deltas": {
+    "masters": 0,
+    "all_source_opportunity_rows": 1,
+    "all_source_observations": 6,
+    "sync_jobs": 1,
+    "mwan_source_opportunity_rows": 1,
+    "new_master": 0,
+    "updated_master": 0,
+    "merged_master": 0,
+    "cancelled_master": 0,
+    "removed_source_rows": 0,
+    "review_rows_changed": 0
+  },
+  "newly_observed_source_only_record": {
+    "source_row_id": 3209,
+    "official_source_id": "Investment:01-26-007717-5001",
+    "title": "Hazardous Industrial Waste Treatment Facility in the Asir Region",
+    "master_id": null,
+    "eligible_for_al_ahsa": false,
+    "retained_as_source_evidence": true
+  },
+  "current_scan": {
+    "pages_requested": 11,
+    "pages_successful": 11,
+    "pagination_complete": true,
+    "itemized_investment_opportunities": 6,
+    "al_ahsa_accepted": 0,
+    "open_actionable_reviews": 0
+  }
+}

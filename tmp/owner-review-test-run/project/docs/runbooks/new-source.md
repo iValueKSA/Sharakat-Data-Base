@@ -1,0 +1,3 @@
+# Adding a source (future change)
+
+Source integration is complete for the current ten sources. Any future source requires a separate approved scope: verify official public URLs and coverage, add a deterministic adapter and stored fixtures, classify investment eligibility and Al-Ahsa evidence, define its schedule, add source-specific operational notes, run all adapter and ingestion regressions, then perform controlled live validation. Do not add credentials, arbitrary user-supplied fetch URLs, or private endpoints. Update the coverage/architecture records and runbook before enabling production polling.

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "project": "Al-Ahsa Investment Opportunities Platform",
+  "host_required": [
+    {"name": "Windows 11 x64", "purpose": "Host operating system and Windows services", "installation": "already present on supported destination"},
+    {"name": "WSL2", "purpose": "Docker Desktop Linux-container backend", "installation": "Setup Platform uses Microsoft wsl --install --no-distribution and resumes after restart"},
+    {"name": "Docker Desktop", "purpose": "Container runtime", "installation": "reused if installed; otherwise verified Docker.DockerDesktop WinGet package"},
+    {"name": "Docker Compose v2", "purpose": "Service lifecycle", "installation": "provided by Docker Desktop"},
+    {"name": "PowerShell 5.1", "purpose": "Windows setup and existing BAT launchers", "installation": "built into Windows 11"}
+  ],
+  "provided_inside_docker": [
+    {"name": "PostgreSQL 16", "image": "postgres:16-alpine", "purpose": "Application database and pg_dump/pg_restore"},
+    {"name": "Redis", "image": "redis:7-alpine", "purpose": "Queue, scheduler and rate-limit store"},
+    {"name": "Python 3.12", "image": "python:3.12-slim", "purpose": "FastAPI, SQLAlchemy, Alembic, Celery, adapters and exports"},
+    {"name": "Celery Worker and Beat", "purpose": "Background jobs and scheduled tasks", "runtime": "application image"},
+    {"name": "Nginx", "image": "nginxinc/nginx-unprivileged:alpine", "purpose": "Local frontend and reverse proxy"},
+    {"name": "PostgreSQL client tools", "purpose": "Logical backup and restore", "runtime": "postgres:16 image and application image"},
+    {"name": "Application assets and MWAN CA", "purpose": "Dashboard, static media, maps and strict source TLS", "runtime": "copied project files and application image"}
+  ],
+  "development_or_optional": [
+    {"name": "Node.js and Playwright", "purpose": "Development-only browser validation", "required_on_destination": false},
+    {"name": "Python on Windows", "purpose": "Development convenience only", "required_on_destination": false},
+    {"name": "PostgreSQL or Redis on Windows", "purpose": "Not required; services are containerized", "required_on_destination": false},
+    {"name": "npm, Celery, Nginx on Windows", "purpose": "Not required; services are containerized", "required_on_destination": false},
+    {"name": "WinGet", "purpose": "Official Docker Desktop installation when Docker is absent", "required_on_destination": false}
+  ],
+  "network_ports": {
+    "frontend": "127.0.0.1:8080 by default; configurable for isolated validation",
+    "postgresql": "private Compose network only; not host-published",
+    "redis": "private Compose network only; not host-published"
+  },
+  "runtime_files": [
+    "Dockerfile", "frontend.Dockerfile", "docker-compose.yml", "docker-compose.portable.yml", "docker-compose.local.yml",
+    "requirements.txt", "migrations/", "app/", "scripts/", "deploy/", "app/static/", "app/certificates/"
+  ],
+  "not_packaged": [".env.local", "Local Admin Credentials.txt", "data/ (stale SQLite seed)", "backups/ (historical local dumps)", "logs/", "tmp/", "node_modules/", "Python caches"],
+  "database_transfer": "PostgreSQL custom-format logical backup; never copies raw PostgreSQL volume files"
+}

@@ -1,0 +1,10 @@
+const fs=require('fs');
+const p='app/service.py';
+let s=fs.readFileSync(p,'utf8');
+const marker='\n]\nlocks:';
+const i=s.indexOf(marker);
+if(i<0) throw new Error('DEFAULT_SOURCES end not found');
+const item='\n {"source_key":"rcjy-investment-opportunities","source_name_ar":"فرص الهيئة الملكية للجبيل وينبع (RCJY)","organization_name":"الهيئة الملكية للجبيل وينبع","base_url":"https://www.rcjy.gov.sa/","opportunities_url":"https://invest.rcjy.gov.sa/InvestmentPortal/InvestmentOpportunities","source_type":"official_public_investment_opportunity_platform","priority":12,"polling_frequency_minutes":1440,"extraction_method":"Public OutSystems screen-services JSON/XHR with runtime manifest and paginated search endpoint","notes":"كتالوج رسمي مستقل للهيئة الملكية للجبيل وينبع. تُحفظ سجلات المصدر منفصلة عن فرص ومدن واستثمر في السعودية؛ معرّف مزود المصدر هو InvestmentOpportunity.Id. الحقول غير المنشورة تبقى غير محددة، ولا تُستنتج حالة الإتاحة من قيم OutSystems الافتراضية أو من زر البدء. لا يُدمج المصدر مع هوية المالك؛ هو ناشر منصة الفرص."},';
+s=s.slice(0,i)+item+s.slice(i);
+s=s.replace('"waha-development":"PUBLIC_COVERAGE_LIMITED"}', '"waha-development":"PUBLIC_COVERAGE_LIMITED","rcjy-investment-opportunities":"COMPLETE_FOR_DEFINED_SCOPE"}');
+fs.writeFileSync(p,s);

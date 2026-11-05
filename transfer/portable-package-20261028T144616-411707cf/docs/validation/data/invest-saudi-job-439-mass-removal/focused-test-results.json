@@ -1,0 +1,9 @@
+{
+  "focused_command": "pytest -q tests/test_investsaudi_mass_removal_guard.py tests/test_ingestion.py::test_investsaudi_exact_furas_link_supplies_locality_and_merges_across_taxonomy",
+  "focused_passed": 37,
+  "focused_failed": 0,
+  "guard_file_passed": 36,
+  "full_regression_passed": 474,
+  "full_regression_failed": 0,
+  "full_regression_isolated_database": "SQLite temporary database; live PostgreSQL was not used by tests."
+}

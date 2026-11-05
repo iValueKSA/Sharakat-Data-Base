@@ -1,0 +1,196 @@
+{
+  "manifest_type": "RCJY_SOURCE_INTEGRATION",
+  "manifest_version": 1,
+  "project": "C:\\Sharakat Data Base",
+  "date": "2026-11-03",
+  "integration_status": "PARTIAL",
+  "status_reason": "RCJY-specific capture, identity, promotion, geography, filter, restore, and freshness checks passed. Platform-wide full DQ retains 10 failures in pre-existing review and Furas/scheduler/job state.",
+  "source": {
+    "source_key": "rcjy-investment-opportunities",
+    "source_name_ar": "فرص الهيئة الملكية للجبيل وينبع (RCJY)",
+    "publisher": "الهيئة الملكية للجبيل وينبع",
+    "official_catalog_url": "https://invest.rcjy.gov.sa/InvestmentPortal/InvestmentOpportunities",
+    "provider_id_field": "InvestmentOpportunity.Id",
+    "adapter_class": "RcjyAdapter",
+    "adapter_parser_version": "2026.11.03-rcjy-1",
+    "freshness_policy": {
+      "operational_type": "A.DYNAMIC_STRUCTURED_API",
+      "expected_schedule": "24 hours",
+      "warning_after_minutes": 2880,
+      "fail_after_minutes": 8640,
+      "model": "complete_scan"
+    },
+    "live_health": "HEALTHY",
+    "live_freshness": "FRESH"
+  },
+  "public_enumeration": {
+    "records_found": 3,
+    "source_total_reported": 3,
+    "pages_requested": 1,
+    "pages_successful": 1,
+    "pagination_complete": true,
+    "public_scope_complete": true,
+    "provider_ids": ["265", "266", "269"],
+    "provider_ids_unique": true,
+    "duplicate_provider_ids": 0,
+    "coordinates_supplied": 0,
+    "fabricated_coordinates": 0,
+    "lifecycle": "CURRENT catalog membership; application actionability UNKNOWN",
+    "owner_inferred": false
+  },
+  "identity_dry_run": {
+    "artifact": "RCJY-MASTER-ELIGIBILITY-DRY-RUN-20261103.json",
+    "reconciles": true,
+    "current_masters_examined": 6623,
+    "pre_capture_source_opportunities_examined": 9290,
+    "cross_source_keys_examined": [
+      "furas",
+      "modon",
+      "invest-saudi",
+      "ncp",
+      "nhc",
+      "pif",
+      "mwan"
+    ],
+    "cross_source_record_counts": {
+      "furas": 6546,
+      "modon": 0,
+      "invest-saudi": 2555,
+      "ncp": 45,
+      "nhc": 0,
+      "pif": 0,
+      "mwan": 7
+    },
+    "strong_cross_source_matches": 0,
+    "title_only_near_matches_auto_merged": 0,
+    "dispositions": {
+      "A_READY_NEW_MASTER": 3,
+      "B_MATCH_EXISTING_MASTER": 0,
+      "C_IDENTITY_REVIEW": 0,
+      "D_NOT_QUALIFYING": 0,
+      "E_HISTORICAL_OR_NONCURRENT": 0,
+      "F_SAME_SOURCE_DUPLICATE_REVIEW": 0
+    },
+    "projected_masters_without_source": 0,
+    "projected_duplicate_identity": 0,
+    "projected_record_dq_fail": 0
+  },
+  "geography": {
+    "reference_dataset_key": "saudi_administrative_units",
+    "reference_dataset_version": "taadeen-public-gis-20261102-v3",
+    "exact_match_name": "Yanbu",
+    "reference_level": "governorate",
+    "governorate_external_id": "301",
+    "governorate_name_ar": "ينبع",
+    "region_external_id": "3",
+    "region_name_en": "Al-Madinah Region",
+    "city_reference_coverage_available": false,
+    "city_left_unspecified": true,
+    "coordinates_fabricated": false,
+    "accepted_13_region_implementation_modified": false
+  },
+  "backup_and_restore": {
+    "backup_id": "20261103T072253Z-aa02f24b",
+    "backup_path": "backups/20261103T072253Z-aa02f24b.dump",
+    "sha256": "fe6f53a25f342c6a892608ca1f3ba24fb10bf9b44930bc237951f040ab93280f",
+    "verified": true,
+    "restore_test": "PASSED",
+    "restore_target": "separate ephemeral PostgreSQL 16 container",
+    "restored_baseline": {
+      "configured_sources": 12,
+      "current_masters": 6623,
+      "source_opportunities": 9290,
+      "rcjy_source_opportunities": 0
+    }
+  },
+  "live_capture": {
+    "manual_rcjy_syncs": 1,
+    "other_manual_source_syncs": 0,
+    "sync_job_id": 748,
+    "sync_status": "SUCCESS",
+    "trigger_type": "manual",
+    "rows_received": 3,
+    "source_rows_inserted": 3,
+    "source_rows_updated": 0,
+    "source_rows_removed": 0,
+    "bootstrap_removals": 0,
+    "legacy_al_ahsa_count": 0,
+    "legacy_rejected_count": 3,
+    "legacy_scope_note": "Three Yanbu records are outside the Al-Ahsa-only counter, but were retained as SourceOpportunity rows and promoted under verified national geography.",
+    "masters_created_during_capture": 0,
+    "duplicate_provider_keys": 0
+  },
+  "master_promotion": {
+    "masters_created": 3,
+    "existing_masters_linked": 0,
+    "masters_without_source_after": 0,
+    "duplicates_prevented": 0,
+    "audit_event_type": "RCJY_MASTER_CREATED",
+    "audit_event_count": 3,
+    "records": [
+      {"provider_id": "265", "source_opportunity_id": 9323, "master_id": 6675, "canonical_id": "RCJY-265", "sector": "صناعي", "geography_reference_unit_id": 460},
+      {"provider_id": "266", "source_opportunity_id": 9322, "master_id": 6676, "canonical_id": "RCJY-266", "sector": "صناعي", "geography_reference_unit_id": 460},
+      {"provider_id": "269", "source_opportunity_id": 9321, "master_id": 6677, "canonical_id": "RCJY-269", "sector": "تجاري", "geography_reference_unit_id": 460}
+    ],
+    "master_status": "غير محددة",
+    "master_owner": null,
+    "master_area_sqm": null,
+    "master_coordinates": null,
+    "manual_review_required": true
+  },
+  "post_integration_state": {
+    "configured_sources": 12,
+    "enabled_sources": 11,
+    "current_masters": 6626,
+    "all_master_rows": 6647,
+    "merged_masters": 21,
+    "source_opportunities": 9293,
+    "rcjy_source_rows": 3,
+    "rcjy_source_rows_linked": 3,
+    "rcjy_source_filter": "PASSED",
+    "rcjy_source_filter_count": 3,
+    "region_and_governorate_filter": "PASSED",
+    "national_ui_enabled": false,
+    "national_map_enabled": false
+  },
+  "data_quality": {
+    "run_id": "9dcbf13c1a144381bc622fbde9a978aa",
+    "scope": "full",
+    "counts": {"pass": 118, "warning": 6, "fail": 10},
+    "rcjy_specific_failing_gates": 0,
+    "platform_failing_gates": [
+      "STALE_OPEN_REVIEW_CONDITION",
+      "STALE_OPEN_REVIEWS",
+      "OPEN_ACTIONABLE_REVIEW_BACKLOG",
+      "POST_SYNC_ACTIONABLE_REVIEW_BACKLOG",
+      "POST_SYNC_REVIEW_WITHOUT_AUTONOMOUS_RESOLUTION",
+      "AUTONOMOUS_REVIEW_LEFT_UNRESOLVED",
+      "MULTIPLE_RUNNING_JOBS_SAME_SOURCE",
+      "DB_RUNNING_WITHOUT_LIVE_TASK",
+      "UNEXPLAINED_MISSED_SCHEDULE_EXECUTIONS",
+      "SOURCE_LAST_SUCCESS_TOO_OLD"
+    ],
+    "failing_source_freshness_keys": ["furas"],
+    "source_freshness_warning_keys": ["modon", "nhc"]
+  },
+  "regression": {
+    "full_suite": {"passed": 669, "skipped": 1, "failed": 2},
+    "failed_tests": [
+      "tests/test_nationwide_expansion_safety.py::test_geographic_filter_and_selectors_work_while_national_ui_flag_stays_off",
+      "tests/test_reversible_merge.py::test_admin_merge_and_undo_restores_master_and_child_ownership"
+    ],
+    "failure_cause": "PostgreSQL to_char expression executed against SQLite in existing tests",
+    "focused_rcjy_and_freshness_passed": 24,
+    "source_logo_and_video_ui_contract_tests_passed": 12
+  },
+  "deployment": {
+    "api_updated": true,
+    "frontend_updated": true,
+    "worker_updated": true,
+    "scheduler_rebuilt": false,
+    "scheduler_note": "Left untouched to avoid dispatching unrelated due sources; worker now contains the RCJY adapter for scheduled tasks.",
+    "separate_rcjy_ui_created": false,
+    "other_sources_integrated": []
+  },
+  "stop_condition": "RCJY only; no RCU, Ta’adeen, NCP Investors Portal, or Tourism work started."
+}

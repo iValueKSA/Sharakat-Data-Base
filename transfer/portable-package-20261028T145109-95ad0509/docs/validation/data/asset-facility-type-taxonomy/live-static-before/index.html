@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#124e5c">
+  <meta name="description" content="منصة رصد الفرص الاستثمارية في الأحساء ومتابعة مصادرها الرسمية.">
+  <title>رصد | فرص الأحساء الاستثمارية</title>
+    <link rel="stylesheet" href="/static/styles.css?v=ahda-dashboard-rebuild-4">
+    <link rel="stylesheet" href="/static/data-dashboard.css?v=6">
+    <link rel="stylesheet" href="/static/vendor/leaflet-1.9.4/leaflet.css">
+    <link rel="stylesheet" href="/static/vendor/leaflet-markercluster-1.5.3/MarkerCluster.css">
+    <link rel="stylesheet" href="/static/vendor/leaflet-markercluster-1.5.3/MarkerCluster.Default.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar" aria-label="التنقل الرئيسي">
+    <a class="brand" id="brand" href="#overview" aria-label="رصد فرص الأحساء">
+      <span class="brand-copy"><b>رَصْد</b><small>منصة الفرص الاستثمارية</small></span>
+    </a>
+    <div class="authority-lockup"><img class="authority-logo" src="/static/brand/ahda-logo-inverse.svg" alt="هيئة تطوير الأحساء | Al Ahsa Development Authority" width="143" height="48"></div>
+    <div class="workspace-label">مساحة العمل</div>
+    <nav class="nav-list">
+      <button class="nav-item active" data-view="overview"><span class="nav-icon" aria-hidden="true">⌂</span><span>نظرة عامة</span></button>
+      <button class="nav-item" data-view="data-dashboard"><span class="nav-icon" aria-hidden="true">▥</span><span>لوحة عرض البيانات</span></button>
+      <button class="nav-item" data-view="opportunities"><span class="nav-icon" aria-hidden="true">▤</span><span>الفرص الاستثمارية</span><span class="nav-count" id="navCount">—</span></button>
+      <button class="nav-item" data-view="sources"><span class="nav-icon" aria-hidden="true">◉</span><span>المصادر الرسمية</span></button>
+      <button class="nav-item" data-view="activity" data-role="admin,analyst"><span class="nav-icon" aria-hidden="true">◷</span><span>سجل المزامنة</span></button>
+      <button class="nav-item" data-view="review" data-role="admin,analyst"><span class="nav-icon" aria-hidden="true">◇</span><span>مراجعة البيانات</span><span class="nav-count" id="reviewCount">—</span></button>
+      <button class="nav-item" data-view="alerts" data-role="admin"><span class="nav-icon" aria-hidden="true">♧</span><span>التنبيهات</span><span class="nav-count" id="alertCount">—</span></button>
+      <button class="nav-item" data-view="admin" data-role="admin"><span class="nav-icon" aria-hidden="true">⚙</span><span>الإدارة</span></button>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="live-card"><span class="live-dot"></span><div><b>قاعدة البيانات متصلة</b><small id="sidebarStatus">التحديث وفق جداول المصادر</small></div></div>
+      <div class="sidebar-foot"><span>الأحساء · المنطقة الشرقية</span><span>© 2026</span></div>
+    </div>
+  </aside>
+  <button class="sidebar-backdrop" id="sidebarBackdrop" type="button" aria-label="إغلاق قائمة التنقل" hidden></button>
+
+  <main class="main-area">
+    <header class="topbar">
+      <div class="topbar-start"><button class="mobile-menu-button" id="sidebarToggle" type="button" aria-label="فتح قائمة التنقل" aria-controls="sidebar" aria-expanded="false"><span></span><span></span><span></span></button><div class="crumb"><span>رصد</span><span class="crumb-separator" aria-hidden="true">/</span><b id="pageCrumb">نظرة عامة</b></div></div>
+      <div class="top-actions">
+        <span class="updated"><span class="status-dot" aria-hidden="true"></span><span id="topbarUpdateLabel">تاريخ المزامنة غير معروف</span></span>
+        <button class="icon-button" id="refreshBtn" title="تحديث البيانات" aria-label="تحديث البيانات">⟳</button>
+        <button class="user-button" id="userButton" title="تسجيل الدخول"><span class="avatar">م</span><span id="userLabel">زائر</span></button>
+      </div>
+    </header>
+
+    <div class="content">
+      <section class="page-view visible" id="view-overview">
+        <section class="hero-panel">
+          <div class="hero-copy"><div class="eyebrow"><span class="eyebrow-dot"></span>ذكاء استثماري للأحساء</div>
+            <h1>مشهد الفرص<br><em>أوضح من أي وقت</em></h1>
+            <p>قاعدة موحدة للفرص الرسمية في الأحساء، تربط كل إعلان بمصدره وتتابع التغيّرات أولًا بأول.</p>
+            <div class="heading-actions"><button class="button button-gold" data-goto="opportunities">استكشف الفرص <span aria-hidden="true">←</span></button><button class="button button-outline-light" id="openSources">المصادر الرسمية</button></div>
+          </div>
+          <div class="hero-stamp" aria-hidden="true"><span class="stamp-orbit orbit-one"></span><span class="stamp-orbit orbit-two"></span><span class="stamp-center">الأحساء</span><span class="stamp-caption">فرص تنمو من المكان</span></div>
+          <div class="hero-foot"><span>رصد موحّد للمشهد الاستثماري</span><span><i></i> ربط مباشر بالمصادر الرسمية</span></div>
+        </section>
+
+        <div class="section-heading"><div><span class="section-kicker">المؤشرات الرئيسية</span><h2>لمحة عن قاعدة الفرص</h2></div><span class="data-as-of" id="dashboardUpdated">بيانات مباشرة من المنصة</span></div>
+        <div class="metric-grid">
+          <article class="metric-card"><div class="metric-top"><span>إجمالي الفرص</span><span class="metric-symbol symbol-sea" aria-hidden="true">▤</span></div><strong id="metricTotal">—</strong><div class="metric-foot"><span>سجلات موحدة</span></div></article>
+          <article class="metric-card metric-primary"><div class="metric-top"><span>فرص نشطة</span><span class="metric-symbol" aria-hidden="true">↗</span></div><strong id="metricActive">—</strong><div class="metric-foot"><span>ضمن محافظة الأحساء</span><span class="metric-trend">من المصدر</span></div></article>
+          <article class="metric-card"><div class="metric-top"><span>فرص أضيفت اليوم</span><span class="metric-symbol symbol-sea" aria-hidden="true">✳</span></div><strong id="metricNew">—</strong><div class="metric-foot"><span>منذ بداية اليوم</span></div></article>
+          <article class="metric-card"><div class="metric-top"><span>تنتهي خلال 30 يومًا</span><span class="metric-symbol symbol-gold" aria-hidden="true">◷</span></div><strong id="metricClosing">—</strong><div class="metric-foot"><span>بحسب مواعيد المصادر</span></div></article>
+          <article class="metric-card"><div class="metric-top"><span>مصادر مفعّلة</span><span class="metric-symbol symbol-green" aria-hidden="true">◎</span></div><strong id="metricSources">—</strong><div class="metric-foot"><span>ناشرون رسميون</span></div></article>
+          <article class="metric-card"><div class="metric-top"><span>تحتاج مراجعة</span><span class="metric-symbol symbol-gold" aria-hidden="true">◇</span></div><strong id="metricReview">—</strong><div class="metric-foot"><span>حالات مطابقة وموقع</span></div></article>
+        </div>
+        <div class="entity-counts"><span>إعلانات المصادر <b id="metricListings">—</b></span><span>فرص متعددة المصادر <b id="metricMultiSource">—</b></span><span>سجلات موحدة <b id="metricMasters">—</b></span></div>
+
+        <div class="dashboard-grid">
+          <section class="panel opportunity-panel"><div class="panel-heading"><div><span class="section-kicker">تحديثات القاعدة</span><h2>أحدث الفرص</h2><p>سجلات موثقة من المصادر الرسمية</p></div><button class="text-link" data-goto="opportunities">عرض الكل <span aria-hidden="true">←</span></button></div><div id="latestOpportunities" class="latest-list"></div><div id="emptyLatest" class="empty-state"><span class="empty-illustration" aria-hidden="true">◇</span><b>لا توجد فرص لعرضها بعد</b><p>ستظهر الفرص الموثقة هنا عند توفرها في قاعدة المنصة.</p><button class="button button-dark" id="firstSync" data-role="admin,analyst">بدء المزامنة</button></div></section>
+          <section class="panel source-panel"><div class="panel-heading"><div><span class="section-kicker">متابعة النشر</span><h2>حالة المصادر</h2><p>الاتصال وتغطية الجمع المنشورة</p></div><button class="text-link" data-goto="sources">التفاصيل <span aria-hidden="true">←</span></button></div><div id="sourceHealth" class="health-list"></div></section>
+        </div>
+        <div class="dashboard-grid dashboard-lower">
+          <section class="panel sector-panel"><div class="panel-heading"><div><span class="section-kicker">توزيع التصنيفات</span><h2>الفرص حسب القطاع</h2></div><span class="panel-period">كل البيانات</span></div><div id="sectorChart" class="sector-chart"></div></section>
+          <section class="panel deadline-panel"><div class="panel-heading"><div><span class="section-kicker">المتابعة الزمنية</span><h2>مواعيد قريبة</h2></div><button class="text-link" data-goto="opportunities">كل الفرص</button></div><div id="upcomingDeadlines" class="deadline-list"></div></section>
+        </div>
+        <section class="panel source-chart-panel"><div class="panel-heading"><div><span class="section-kicker">انتشار الرصد</span><h2>السجلات حسب المصدر</h2></div><button class="text-link" data-goto="sources">قائمة المصادر</button></div><div id="sourceChart" class="source-chart"></div></section>
+      </section>
+
+            <section class="page-view dashboard-rebuild" id="view-data-dashboard" aria-busy="true">
+        <header class="rd-page-head">
+          <div class="rd-title-group"><span class="rd-eyebrow"><i aria-hidden="true"></i> ذكاء استثماري للأحساء</span><h1>لوحة الفرص الاستثمارية</h1><p>مؤشرات موحدة للفرص المنشورة، الجهات، المواعيد والتغطية الجغرافية.</p><span class="rd-updated" id="dataDashboardUpdated" role="status" aria-live="polite">تُحمّل البيانات من قاعدة المنصة</span></div>
+          <div class="rd-page-actions"><a class="button button-quiet" id="dashExportCsv" href="/api/export.csv" download>تصدير CSV</a><a class="button button-dark" id="dashExportXlsx" href="/api/export.xlsx" download>تصدير Excel</a></div>
+        </header>
+        <details class="rd-filter-panel" id="rdFilterPanel">
+          <summary><span class="rd-filter-icon" aria-hidden="true">☷</span><span>مرشحات اللوحة</span><span class="rd-filter-count" id="dashActiveCount">كل الفرص</span></summary>
+          <div class="rd-filter-body"><div class="rd-filter-grid">
+            <label>الفترة<select id="dashPeriod"><option value="all">كل الفترات</option><option value="30d">آخر 30 يومًا</option><option value="90d">آخر 90 يومًا</option><option value="365d">آخر 12 شهرًا</option></select></label>
+            <label>الحالة<select id="dashStatus"><option value="">كل الحالات</option></select></label>
+            <label>القطاع<select id="dashSector"><option value="">كل القطاعات</option></select></label>
+            <label>النشاط<select id="dashActivity"><option value="">كل الأنشطة</option></select></label>
+            <label>النشاط الفرعي<select id="dashSubActivity"><option value="">كل الأنشطة الفرعية</option></select></label>
+            <label>القطاع الفرعي<select id="dashSubsector"><option value="">كل القطاعات الفرعية</option></select></label>
+            <label>المصدر<select id="dashSource"><option value="">كل المصادر</option></select></label>
+            <label>الجهة المالكة<select id="dashOwner"><option value="">كل الجهات</option></select></label>
+            <label>المدينة أو الموقع<select id="dashLocation"><option value="">كل المواقع</option></select></label>
+            <label>نوع الفرصة<select id="dashType"><option value="">كل الأنواع</option></select></label>
+            <label>نموذج الاستثمار<select id="dashInvestmentModel"><option value="">كل نماذج الاستثمار</option></select></label>
+            <label>نطاق الحالة<select id="dashLifecycle"><option value="">كل السجلات</option><option value="active">الفرص النشطة</option><option value="historical">السجلات التاريخية</option></select></label>
+            <button class="button button-quiet" id="dashReset" type="button">مسح المرشحات</button>
+          </div><div id="dashFilterChips" class="active-filters" aria-live="polite"></div></div>
+        </details>
+        <div id="dataDashboardError" class="rd-error" role="alert" hidden></div>
+
+        <section class="rd-grid rd-executive" aria-label="المؤشرات التنفيذية">
+          <article class="rd-card rd-summary-card">
+            <div class="rd-summary-art" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span class="rd-card-kicker">نظرة عامة</span><h2>نظرة عامة على الفرص الاستثمارية</h2><p>صورة موحدة للفرص الرسمية المنشورة في محافظة الأحساء.</p>
+            <div class="rd-summary-values"><button type="button" data-kpi-action="all"><small>إجمالي الفرص</small><b id="rdHeroTotal">—</b></button><span></span><button type="button" data-kpi-action="active"><small>الفرص النشطة</small><b id="rdHeroActive">—</b></button></div>
+          </article>
+          <button type="button" class="rd-card rd-stat-card rd-total-card" data-kpi-action="all" aria-label="إجمالي الفرص">
+            <span class="rd-stat-label">إجمالي الفرص</span><strong id="rdTotalValue">—</strong><span class="rd-stat-note">الفرص الرئيسية غير المدمجة</span><div id="rdTotalSpark" class="rd-sparkline" aria-label="إضافات الفرص حسب الشهر"></div>
+          </button>
+          <button type="button" class="rd-card rd-stat-card rd-active-card" data-kpi-action="active" aria-label="الفرص النشطة">
+            <span class="rd-stat-label">الفرص النشطة</span><strong id="rdActiveValue">—</strong><span class="rd-stat-note">من إجمالي الفرص</span><span class="rd-radial" id="rdActiveRing"></span>
+          </button>
+          <button type="button" class="rd-card rd-stat-card rd-source-card" data-goto="sources" aria-label="المصادر المفعلة">
+            <span class="rd-stat-label">مصادر مفعلة</span><strong id="rdSourceValue">—</strong><span class="rd-stat-note" id="rdSourceHealthy">حالة الاتصال تُحمّل</span><span class="rd-source-track"><i id="rdSourceProgress"></i></span>
+          </button>
+        </section>
+
+        <section class="rd-grid rd-metrics" aria-label="مؤشرات إضافية">
+          <article class="rd-card rd-metric-card"><span class="rd-metric-icon rd-icon-sector" aria-hidden="true">▥</span><div><small>قطاعات في النتائج</small><b id="rdSectorCount">—</b></div><span class="rd-metric-foot" id="rdSectorHint">حسب المرشحات الحالية</span></article>
+          <article class="rd-card rd-metric-card"><span class="rd-metric-icon rd-icon-owner" aria-hidden="true">◇</span><div><small>اكتمال الجهة المالكة</small><b id="rdOwnerCoverage">—</b></div><span class="rd-mini-track"><i id="rdOwnerProgress"></i></span></article>
+          <article class="rd-card rd-metric-card"><span class="rd-metric-icon rd-icon-deadline" aria-hidden="true">◷</span><div><small>مواعيد خلال 30 يومًا</small><b id="rdDeadline30">—</b></div><span class="rd-micro-bars" id="rdDeadlineBuckets" aria-label="توزيع المواعيد القادمة"></span></article>
+          <article class="rd-card rd-metric-card"><span class="rd-metric-icon rd-icon-geo" aria-hidden="true">◎</span><div><small>نسبة المواقع المطابقة</small><b id="rdGeoCoverage">—</b></div><span class="rd-mini-track"><i id="rdGeoProgress"></i></span></article>
+          <article class="rd-card rd-metric-card"><span class="rd-metric-icon rd-icon-owner" aria-hidden="true">◇</span><div><small>نماذج استثمار مصنفة</small><b id="rdInvestmentModelCoverage">—</b></div><span class="rd-mini-track"><i id="rdInvestmentModelProgress"></i></span></article>
+        </section>
+
+        <section class="rd-grid rd-operations" aria-label="مؤشرات تشغيلية">
+          <article class="rd-card rd-operational-card"><span class="rd-operational-icon rd-op-review" aria-hidden="true">◇</span><div><small>مراجعات بيانات مفتوحة</small><b id="rdReviewCount">—</b></div><a href="#review" data-goto="review" data-role="admin,analyst">فتح المراجعة <span aria-hidden="true">←</span></a></article>
+          <article class="rd-card rd-operational-card"><span class="rd-operational-icon rd-op-health" aria-hidden="true">●</span><div><small>مصادر سليمة تقنيًا</small><b id="rdHealthCount">—</b></div><span class="rd-operational-note">من المصادر المفعلة</span></article>
+          <article class="rd-card rd-operational-card" id="rdUnmappedCard"><span class="rd-operational-icon rd-op-map" aria-hidden="true">⌖</span><div><small>غير ممثلة على الخريطة</small><b id="rdUnmapped">—</b></div><span class="rd-operational-note">إحداثيات غير مطابقة أو غير متاحة</span></article>
+          <button type="button" class="rd-card rd-operational-card" data-deadline-bucket="7d"><span class="rd-operational-icon rd-op-soon" aria-hidden="true">◷</span><div><small>مواعيد خلال 7 أيام</small><b id="rdDeadline7">—</b></div><span class="rd-operational-note">افتح الفرص ذات الموعد القريب</span></button>
+        </section>
+
+        <section class="rd-grid rd-primary-analysis" aria-label="القطاع والتوزيع الجغرافي">
+          <article class="rd-card rd-chart-card rd-sector-card"><header class="rd-card-head"><div><span class="rd-card-kicker">تكوين الفرص</span><h2>توزيع الفرص حسب القطاع</h2><p>عدد الفرص حسب القطاع؛ اختر عمودًا للتصفية.</p></div><button type="button" class="rd-card-link" data-dash-goto>قائمة الفرص</button></header><div id="rdSectorChart" class="rd-chart-area" aria-busy="true"></div></article>
+          <article class="rd-card rd-map-card"><header class="rd-card-head"><div><span class="rd-card-kicker">التوزيع الجغرافي الموثق</span><h2>خريطة فرص الأحساء</h2><p>الإحداثيات المطابقة لسجل المصدر والحد المحلي فقط.</p></div><div class="rd-map-toggle" role="group" aria-label="طريقة عرض الخريطة"><button type="button" class="active" data-rd-map-mode="clusters" aria-pressed="true">المواقع</button><button type="button" data-rd-map-mode="heat" aria-pressed="false">الكثافة</button></div></header><div id="rdGeoStats" class="rd-map-stats" aria-live="polite"><span>جارٍ احتساب التغطية…</span></div><div id="rdOpportunityMap" class="rd-map-canvas" role="application" aria-label="خريطة تفاعلية للفرص في الأحساء"></div><div id="rdMapNotice" class="rd-map-notice" role="status" hidden></div><p class="rd-map-attribution">الحد المرجعي: geoBoundaries / OpenStreetMap · © مساهمو OpenStreetMap. ليس حدًا مساحيًا أو تخطيطيًا رسميًا.</p></article>
+        </section>
+
+        <section class="rd-grid rd-distribution" aria-label="توزيع الحالات والأنواع والمصادر">
+          <article class="rd-card rd-chart-card"><header class="rd-card-head"><div><span class="rd-card-kicker">المشهد التشغيلي</span><h2>حالة الفرص</h2><p>حسب الحالات المسجلة في قاعدة الفرص.</p></div></header><div class="rd-donut-layout"><div id="rdStatusDonut" class="rd-donut" aria-busy="true"></div><div id="rdStatusLegend" class="rd-legend"></div></div></article>
+          <article class="rd-card rd-chart-card"><header class="rd-card-head"><div><span class="rd-card-kicker">التصنيف</span><h2>أنواع الفرص</h2><p>أعلى الأنواع وبقية الأنواع مجمّعة.</p></div></header><div id="rdTypeChart" class="rd-chart-area" aria-busy="true"></div></article>
+          <article class="rd-card rd-chart-card"><header class="rd-card-head"><div><span class="rd-card-kicker">المنظومة الرسمية</span><h2>المصادر الرسمية</h2><p>فرص فريدة مرتبطة بكل مصدر؛ قد يتجاوز المجموع إجمالي الفرص.</p></div><button type="button" class="rd-card-link" data-goto="sources">تفاصيل المصادر</button></header><div id="rdSourceMix" class="rd-source-rank" aria-busy="true"></div></article>
+        </section>
+
+        <section class="rd-grid rd-trends" aria-label="الاتجاه الزمني والمواعيد">
+          <article class="rd-card rd-chart-card rd-trend-card"><header class="rd-card-head"><div><span class="rd-card-kicker">تاريخ الظهور الأول</span><h2>إضافات الفرص عبر الزمن</h2><p>وفق تاريخ أول ظهور المسجل في المنصة؛ لا تُستكمل الفترات الناقصة ببيانات تقديرية.</p></div><button type="button" class="rd-card-link" data-dash-goto>عرض النتائج</button></header><div id="rdTrendChart" class="rd-chart-area" aria-busy="true"></div></article>
+          <article class="rd-card rd-deadline-card"><header class="rd-card-head"><div><span class="rd-card-kicker">المتابعة الزمنية</span><h2>أقرب المواعيد</h2><p>المواعيد المنشورة للفرص النشطة.</p></div><button type="button" class="rd-card-link" data-dash-goto>عرض الكل</button></header><div id="rdUpcomingList" class="rd-upcoming-list"></div></article>
+        </section>
+
+        <section class="rd-grid rd-quality-row" aria-label="ترتيب الجهات وجودة البيانات">
+          <article class="rd-card rd-chart-card rd-owner-card"><header class="rd-card-head"><div><span class="rd-card-kicker">الجهات المالكة</span><h2>أبرز الجهات المالكة</h2><p>أعلى الجهات حسب عدد الفرص في النتائج المفلترة.</p></div></header><div id="rdOwnerRank" class="rd-rank-list" aria-busy="true"></div></article>
+          <article class="rd-card rd-chart-card rd-quality-card"><header class="rd-card-head"><div><span class="rd-card-kicker">اكتمال الحقول</span><h2>جودة البيانات</h2><p>نسب توفر القيم المنشورة؛ لا تمثل تحققًا من صحتها.</p></div><button type="button" class="rd-card-link" data-goto="review">مراجعة البيانات</button></header><div id="rdQuality" class="rd-quality-list" aria-busy="true"></div></article>
+        </section>
+
+        <section class="rd-grid rd-bottom-row" aria-label="صحة المصادر والفرص الأحدث">
+          <article class="rd-card rd-source-health-card"><header class="rd-card-head"><div><span class="rd-card-kicker">استمرارية الرصد</span><h2>صحة المصادر</h2><p>الحالة التقنية منفصلة عن حدود التغطية.</p></div><button type="button" class="rd-card-link" data-goto="sources">كل المصادر</button></header><div id="rdSourceList" class="rd-source-list"></div></article>
+          <article class="rd-card rd-recent-card"><header class="rd-card-head"><div><span class="rd-card-kicker">تحديثات القاعدة</span><h2>أحدث الفرص</h2><p>عينة مفلترة من الفرص الرئيسية.</p></div><button type="button" class="rd-card-link" data-dash-goto>قائمة الفرص</button></header><div class="rd-table-wrap"><table><thead><tr><th>الفرصة والجهة</th><th>القطاع</th><th>الحالة</th><th>آخر موعد</th></tr></thead><tbody id="rdRecentRows"></tbody></table></div><div class="rd-multi-source"><span>متعددة المصادر</span><b id="rdMultiCount">—</b><div id="rdMultiExamples" class="rd-multi-examples"></div></div></article>
+        </section>
+        <p class="rd-footnote">المصدر: قاعدة الفرص الموحدة. يستبعد إجمالي الفرص السجلات المدمجة؛ وتبقى السجلات المصدرية لأغراض التتبع.</p>
+      </section>
+      <section class="page-view" id="view-opportunities">
+        <div class="page-heading compact"><div><div class="eyebrow">قاعدة الفرص الموحدة</div><h1>الفرص الاستثمارية</h1><p>راجع الفرص وابحث فيها مع الاحتفاظ برابط كل سجل إلى مصدره الأصلي.</p></div><div class="heading-actions"><a class="button button-quiet" href="/api/export.csv">تصدير CSV <span aria-hidden="true">↓</span></a><a class="button button-quiet" href="/api/export.xlsx">تصدير Excel <span aria-hidden="true">↓</span></a><button class="button button-dark" id="syncAll2" data-role="admin,analyst">⟳ مزامنة الآن</button></div></div>
+        <section class="panel table-panel"><div class="filter-bar"><label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="ابحث باسم الفرصة أو الجهة أو الرقم المرجعي" aria-label="البحث في الفرص"></label><select id="sectorFilter" aria-label="تصفية حسب القطاع"><option value="">كل القطاعات</option></select><select id="activityFilter" aria-label="تصفية حسب النشاط"><option value="">كل الأنشطة</option></select><select id="subActivityFilter" aria-label="تصفية حسب النشاط الفرعي"><option value="">كل الأنشطة الفرعية</option></select><select id="subsectorFilter" aria-label="تصفية حسب القطاع الفرعي"><option value="">كل القطاعات الفرعية</option></select><select id="statusFilter" aria-label="تصفية حسب الحالة"><option value="">كل الحالات</option></select><select id="lifecycleFilter" aria-label="تصفية حسب النطاق الزمني للحالة"><option value="">كل السجلات</option><option value="active">الفرص النشطة</option><option value="historical">السجلات التاريخية</option></select><select id="ownerFilter" aria-label="تصفية حسب الجهة المالكة"><option value="">كل الجهات</option></select><select id="sourceFilter" aria-label="تصفية حسب المصدر"><option value="">كل المصادر</option></select><select id="locationFilter" aria-label="تصفية حسب الموقع"><option value="">كل المواقع</option></select><select id="typeFilter" aria-label="تصفية حسب نوع الفرصة"><option value="">كل الأنواع</option></select><select id="investmentModelFilter" aria-label="تصفية حسب نموذج الاستثمار"><option value="">كل نماذج الاستثمار</option></select><button class="button button-quiet filter-reset" id="resetFilters" type="button">إعادة الضبط</button></div><div class="active-filters" id="activeFilters" aria-live="polite"></div><div class="table-wrap"><table><thead><tr><th>الفرصة</th><th>الجهة المالكة</th><th>القطاع</th><th>النشاط</th><th>النشاط الفرعي</th><th>المساحة</th><th>آخر موعد</th><th>الحالة</th><th>المصادر</th><th><span class="sr-only">تفاصيل</span></th></tr></thead><tbody id="opportunityRows"></tbody></table><div id="emptyTable" class="table-empty">لا توجد فرص مطابقة لمعايير البحث الحالية.</div></div><div class="table-footer"><span id="tableCount">—</span><div class="table-pagination" aria-label="التنقل بين صفحات الفرص"><button id="previousPage" class="page-button" aria-label="الصفحة السابقة">السابق</button><span id="pageSummary" aria-live="polite">—</span><button id="nextPage" class="page-button" aria-label="الصفحة التالية">التالي</button></div><span>القيم غير المنشورة من المصدر تظل فارغة.</span></div></section>
+      </section>
+
+      <section class="page-view" id="view-sources"><div class="page-heading compact"><div><div class="eyebrow">سجل الناشرين الرسميين</div><h1>المصادر الرسمية</h1><p>حالة الاتصال وتغطية كل مصدر كما يعلنها الرصد.</p></div><div class="heading-actions"><button class="button button-dark" id="syncAll3" data-role="admin,analyst">⟳ مزامنة المصادر المفعّلة</button></div></div><div class="coverage-legend"><span><i class="coverage-full"></i>تغطية عامة مكتملة</span><span><i class="coverage-defined"></i>مكتمل للنطاق المحدد</span><span><i class="coverage-limited"></i>تغطية عامة محدودة</span></div><div id="sourceCards" class="source-cards"></div></section>
+
+      <section class="page-view" id="view-activity"><div class="page-heading compact"><div><div class="eyebrow">سجل النظام</div><h1>نشاط المزامنة</h1><p>نتائج التشغيل بما فيها التحذيرات وأخطاء المصدر.</p></div></div><section class="panel table-panel"><div class="table-wrap"><table><thead><tr><th>المصدر</th><th>بدأ في</th><th>الحالة</th><th>صفحات</th><th>سجلات خام</th><th>فرص الأحساء</th><th>جديدة</th><th>تغييرات</th></tr></thead><tbody id="jobRows"></tbody></table><div id="emptyJobs" class="table-empty">لا توجد سجلات مزامنة.</div></div></section></section>
+
+      <section class="page-view" id="view-review"><div class="page-heading compact"><div><div class="eyebrow">سلامة البيانات</div><h1>مراجعة البيانات</h1><p>طوابير منفصلة للتكرار والموقع والتصنيف واختلاف القيم.</p></div></div><section class="panel raw-panel"><div class="panel-heading"><div><span class="section-kicker">اكتمال وسلامة</span><h2>تقرير التحقق</h2></div></div><div id="validationMetrics" class="validation-grid"></div></section><div class="review-grid"><section class="panel"><div class="panel-heading"><div><h2>مطابقات محتملة</h2><p>قرار الدمج يتطلب مراجعة بشرية.</p></div></div><div id="duplicateList" class="review-list"></div></section><section class="panel"><div class="panel-heading"><div><h2>مراجعة ارتباط الأحساء</h2><p>تحقق من دليل الموقع قبل اعتماد الإدراج.</p></div></div><div id="locationReviewList" class="review-list"></div></section><section class="panel"><div class="panel-heading"><div><h2>أخطاء المصادر</h2><p>آخر محاولات الاتصال أو التحليل.</p></div></div><div id="errorList" class="review-list"></div></section></div><section class="panel raw-panel"><div class="panel-heading"><div><h2>تعارضات القيم</h2><p>اختلاف قيمة حقل مع الاحتفاظ بقيم المصدر.</p></div></div><div id="conflictList" class="review-list"></div></section><section class="panel raw-panel"><div class="panel-heading"><div><h2>تعارضات التصنيف</h2><p>اختلاف تصنيف النشاط بين المصدر والتوحيد.</p></div></div><div id="taxonomyList" class="review-list"></div></section><section class="panel raw-panel"><div class="panel-heading"><div><h2>السجلات الأصلية</h2><p>معاينة ما جُمع مباشرة من المصدر.</p></div></div><div id="rawList" class="raw-list"></div></section></section>
+
+      <section class="page-view" id="view-alerts"><div class="page-heading compact"><div><div class="eyebrow">متابعة النظام</div><h1>التنبيهات</h1><p>حالات تتطلب الاطلاع أو الإقرار من المسؤول.</p></div><div class="heading-actions"><select id="alertStatus"><option value="OPEN">مفتوحة</option><option value="ACKNOWLEDGED">تم الاطلاع</option><option value="RESOLVED">تمت المعالجة</option></select></div></div><div id="alertsList" class="alerts-list"></div><div id="emptyAlerts" class="panel table-empty show">لا توجد تنبيهات بهذه الحالة.</div></section>
+
+      <section class="page-view" id="view-admin"><div class="page-heading compact"><div><div class="eyebrow">إدارة المنصة</div><h1>الإدارة</h1><p>عمليات النظام والمستخدمون والجداول. التفاصيل التقنية متاحة للمسؤولين.</p></div><button class="button button-quiet" id="adminRefresh">تحديث الحالة</button></div><section class="panel admin-status-panel"><div class="panel-heading"><div><span class="section-kicker">حالة التشغيل</span><h2>حالة الخدمات</h2></div></div><div id="systemStatus" class="admin-metrics"></div></section><section class="panel raw-panel"><div class="panel-heading"><div><span class="section-kicker">الجدولة</span><h2>جداول المصادر</h2></div><div class="heading-actions"><button class="button button-quiet" data-operation="pause-schedules">إيقاف الجداول</button><button class="button button-quiet" data-operation="resume-schedules">استئناف الجداول</button></div></div><div id="scheduleList" class="schedule-list"></div></section><section class="panel raw-panel"><div class="panel-heading"><div><span class="section-kicker">الصلاحيات</span><h2>المستخدمون</h2></div></div><form id="userCreateForm" class="user-form"><label>الاسم<input name="display_name" required maxlength="200"></label><label>البريد الإلكتروني<input name="email" type="email" required></label><label>الدور<select name="role"><option value="viewer">مشاهد</option><option value="analyst">محلل</option><option value="admin">مسؤول</option></select></label><label>كلمة المرور المؤقتة<input name="password" type="password" minlength="12" required></label><button class="button button-dark" type="submit">إضافة مستخدم</button></form><div id="userList" class="user-list"></div></section></section>
+    </div>
+  </main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="modal-backdrop" id="modal" aria-hidden="true"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="إغلاق">×</button><div id="modalBody"></div></section></div>
+<dialog id="loginDialog" class="login-dialog"><form id="loginForm"><div class="login-brand"><img class="login-authority-logo" src="/static/brand/ahda-logo-primary.svg" alt="هيئة تطوير الأحساء | Al Ahsa Development Authority" width="363" height="122"></div><h2>تسجيل الدخول</h2><p>أدخل بيانات حسابك للوصول إلى أدوات العمل.</p><label>البريد الإلكتروني<input id="loginEmail" type="email" autocomplete="username" required></label><label>كلمة المرور<input id="loginPassword" type="password" autocomplete="current-password" required></label><button class="button button-dark" type="submit">دخول</button><p id="loginError" role="alert"></p></form></dialog>
+<script src="/static/vendor/leaflet-1.9.4/leaflet.js" defer></script>
+<script src="/static/vendor/leaflet-markercluster-1.5.3/leaflet.markercluster.js" defer></script>
+<script src="/static/vendor/leaflet-heat-0.2.0/leaflet-heat.js" defer></script>
+<script src="/static/app.js?v=investment-model-v12" defer></script>
+<script src="/static/data-dashboard.js?v=investment-model-v12" defer></script>
+</body>
+</html>

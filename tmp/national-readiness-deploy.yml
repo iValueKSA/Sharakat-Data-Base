@@ -1,0 +1,25 @@
+services:
+  api:
+    image: alahsa-api:national-readiness-20261102
+    environment:
+      NATIONAL_UI_ENABLED: "false"
+      NATIONAL_MAP_ENABLED: "false"
+      NATIONAL_DASHBOARD_ENABLED: "false"
+      FURAS_NATIONAL_ENUMERATION_ENABLED: "false"
+      FURAS_NATIONAL_REMOVAL_RECONCILIATION_ENABLED: "false"
+  worker:
+    image: alahsa-worker:national-readiness-20261102
+    environment:
+      NATIONAL_UI_ENABLED: "false"
+      NATIONAL_MAP_ENABLED: "false"
+      NATIONAL_DASHBOARD_ENABLED: "false"
+      FURAS_NATIONAL_ENUMERATION_ENABLED: "false"
+      FURAS_NATIONAL_REMOVAL_RECONCILIATION_ENABLED: "false"
+  scheduler:
+    image: alahsa-beat:national-readiness-20261102
+    environment:
+      NATIONAL_UI_ENABLED: "false"
+      NATIONAL_MAP_ENABLED: "false"
+      NATIONAL_DASHBOARD_ENABLED: "false"
+      FURAS_NATIONAL_ENUMERATION_ENABLED: "false"
+      FURAS_NATIONAL_REMOVAL_RECONCILIATION_ENABLED: "false"

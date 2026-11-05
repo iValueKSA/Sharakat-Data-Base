@@ -1,0 +1,49 @@
+{
+  "snapshot_timestamp": "2026-10-26T09:29:29.150924+00:00",
+  "dq_warning_gate_count": 4,
+  "current_critical_defects": 0,
+  "current_noncritical_defects": 0,
+  "known_accepted_limitations": 4,
+  "limitations": [
+    {
+      "id": "GENERIC_SOURCE_DETAILS",
+      "description": "782 records point only to generic official source pages rather than item-specific detail pages.",
+      "category": "ACCEPTED_LIMITATION",
+      "impact": "Users cannot deep-link to a dedicated official detail page for these records.",
+      "why_accepted": "The official publishers expose a generic public page for the relevant records; the UI does not claim those pages are item-specific.",
+      "workaround": "Use the preserved official source name and source context; avoid treating the landing page as a detail page.",
+      "future_action": "Monitor publisher changes and replace links only when a stable official item URL is available.",
+      "blocks_operation": false
+    },
+    {
+      "id": "HISTORICAL_REVIEW_AUDIT",
+      "description": "120 legacy closed reviews predate versioned audit metadata.",
+      "category": "HISTORICAL_LIMITATION",
+      "impact": "Some historic actor/timestamp fields are unavailable.",
+      "why_accepted": "The system preserves unknown values and does not invent an actor or resolution time; no current/open review is affected.",
+      "workaround": "Refer to the retained review state and mark unavailable audit metadata as unknown.",
+      "future_action": "Keep complete versioned provenance on all new decisions; do not reopen old reviews to manufacture history.",
+      "blocks_operation": false
+    },
+    {
+      "id": "SOURCE_FRESHNESS",
+      "description": "Source-aware freshness gate warns for MODON, NHC, and MWAN; current freshness is stale for MODON/NHC and aging for MWAN.",
+      "category": "OPERATIONAL_MONITORING",
+      "impact": "Public source evidence may lag the latest scheduled verification; this is not a database or API failure.",
+      "why_accepted": "The three sources remain scheduled and are separately classified; local services are healthy and the freshness gate is warning severity.",
+      "workaround": "Monitor source health/last success and allow normal scheduled verification; no manual sync was started.",
+      "future_action": "Review the next scheduled complete-scan/scope-verification outcomes and escalate repeated technical failures.",
+      "blocks_operation": false
+    },
+    {
+      "id": "HISTORICAL_SYNC_RUNTIME",
+      "description": "Historical runtime anomaly gate identifies jobs 496, 500, 393, and 497.",
+      "category": "HISTORICAL_LIMITATION",
+      "impact": "These past job durations need operational context but no job is currently active or nonterminal.",
+      "why_accepted": "Anomaly records are historical; current queue is empty and the source inventory/reconciliation remains stable.",
+      "workaround": "Inspect job IDs/log correlation when diagnosing a future recurrence.",
+      "future_action": "Continue runtime monitoring and tune timeouts only from measured source behavior.",
+      "blocks_operation": false
+    }
+  ]
+}

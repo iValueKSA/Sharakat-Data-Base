@@ -1,0 +1,59 @@
+{
+  "job_id": 439,
+  "pagination_complete": true,
+  "aggregate": {
+    "expected_pages": 26,
+    "requested_pages": 26,
+    "successful_pages": 26,
+    "failed_pages": 0,
+    "missing_page_ranges": [],
+    "page_size": 100,
+    "rows_received": 2431,
+    "source_total": 2431,
+    "unique_ids": 2431,
+    "duplicate_endpoint_memberships": 0
+  },
+  "datasets": [
+    {
+      "dataset": null,
+      "endpoint": "https://investsaudi.sa/backend/wp-json/v3/opportunities",
+      "expected_pages": 18,
+      "requested_pages": 18,
+      "pages_succeeded": "not stored per endpoint; all included in aggregate 26/26",
+      "http_status": "exact per-page codes not persisted",
+      "reported_total": 1771,
+      "schema_parse_failure": false
+    },
+    {
+      "dataset": null,
+      "endpoint": "https://investsaudi.sa/backend/wp-json/v3/investment-projects",
+      "expected_pages": 4,
+      "requested_pages": 4,
+      "pages_succeeded": "not stored per endpoint; all included in aggregate 26/26",
+      "http_status": "exact per-page codes not persisted",
+      "reported_total": 338,
+      "schema_parse_failure": false
+    },
+    {
+      "dataset": null,
+      "endpoint": "https://investsaudi.sa/backend/wp-json/v3/pif-opportunities",
+      "expected_pages": 2,
+      "requested_pages": 2,
+      "pages_succeeded": "not stored per endpoint; all included in aggregate 26/26",
+      "http_status": "exact per-page codes not persisted",
+      "reported_total": 184,
+      "schema_parse_failure": false
+    },
+    {
+      "dataset": null,
+      "endpoint": "https://investsaudi.sa/backend/wp-json/v3/regional-opportunities",
+      "expected_pages": 2,
+      "requested_pages": 2,
+      "pages_succeeded": "not stored per endpoint; all included in aggregate 26/26",
+      "http_status": "exact per-page codes not persisted",
+      "reported_total": 138,
+      "schema_parse_failure": false
+    }
+  ],
+  "completion_evidence": "All four endpoint collectors completed; aggregate enumerated rows equal reported totals, pagination_complete=true, job SUCCESS/COMPLETED."
+}

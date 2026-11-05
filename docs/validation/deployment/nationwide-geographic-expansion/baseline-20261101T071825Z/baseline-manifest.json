@@ -1,0 +1,82 @@
+{
+  "captured_at_utc": "2026-11-01T10:18:32.182754+03:00",
+  "backup_id": "nationwide-pre-change-20261101T071658Z",
+  "snapshot_path": "prechange-database-baseline.json",
+  "snapshot_bytes": 20351952,
+  "snapshot_sha256": "2ea591afa8920b48332faa652de66dadf4c464c7e00c2d2477442a8b5596893c",
+  "table_counts": {
+    "alert_events": 3336,
+    "asset_facility_type_aliases": 8,
+    "asset_facility_types": 9,
+    "audit_events": 3764,
+    "duplicate_candidates": 47,
+    "local_setup_state": 1,
+    "location_reviews": 26,
+    "modon_locations": 2,
+    "ncp_project_events": 45,
+    "opportunities": 587,
+    "opportunity_asset_facility_types": 369,
+    "opportunity_change_history": 2628,
+    "opportunity_data_conflicts": 1116,
+    "opportunity_documents": 0,
+    "opportunity_field_provenance": 6416,
+    "opportunity_locations": 29,
+    "opportunity_merge_audit": 21,
+    "organization_aliases": 13,
+    "qualification_reviews": 0,
+    "source_content_items": 353,
+    "source_errors": 340,
+    "source_limitations": 15,
+    "source_observations": 33377,
+    "source_opportunities": 3180,
+    "source_opportunity_dataset_memberships": 2555,
+    "source_opportunity_taxonomies": 2555,
+    "source_sync_jobs": 652,
+    "sources": 11,
+    "system_events": 16122,
+    "system_settings": 1,
+    "taxonomy_mappings": 110,
+    "user_sessions": 3,
+    "users": 2
+  },
+  "alembic_versions": [
+    "0023_quant_commercial"
+  ],
+  "master_id_count": 587,
+  "current_master_id_count": 566,
+  "source_opportunity_id_count": 3180,
+  "data_id_sha256": {
+    "audit_events": "634dcb1e2624d6febb16bb437edf697daa7c3854b3e6376fcf2f4a07db362dac",
+    "canonical_values": "59d28e52e3164629ccc856e88dd9255b203ddc95671eea08489acdf8bc7286de",
+    "change_history": "ab34a992f635fd68690f0f56fea43b920c401fbe4220921e889d014cad9fd8b4",
+    "current_master_ids": "02d2fed608398752a6d6acb807216453457c072541a8cfe49cffcb30d28e4899",
+    "master_ids": "7cbd587e631eb58a748704178816e3957c23c32d36a00bf8ec87900c47e63c10",
+    "observation_payload_hashes": "fe139ea6ade0a747941a3fcaf6a6cc2f225dc0d836289f8d75ac9c2f1a7e331c",
+    "raw_source_payload_hashes": "c189acb48ef4ba63e936dca7136d0ccb1b3dcc4dbe271db7eea791c0144d1181",
+    "review_states": "13dd94877548aa1bc74725acdfa317eca0c31789c125b43a3e7460a108ec452e",
+    "schema": "a23ad93f645b125aabc65760e3b9a0304e1563d81b50ddb983392c6470c5d935",
+    "source_inventory": "702df602e588f64492665c7ee577fc753c84651972a9610274dc2f0ff4d8b11e",
+    "source_opportunity_ids": "6acc370942c0e89dfdf1e35a9dbb5e190b7c725283ada14b0c8345cfc12b350c",
+    "source_to_master_relationships": "bec0e01d5ab67faca265598fac7397792500992ccfeabc3469ec8b66f51e5b3d"
+  },
+  "notes": "Snapshot captured in one PostgreSQL REPEATABLE READ READ ONLY transaction. Raw payloads are represented by hashes; complete restore point is the paired custom-format dump.",
+  "api_reconciliation": {
+    "general_opportunities_total": 566,
+    "unique_returned_master_ids": 566,
+    "alahsa_governorate_filter_total": 565,
+    "data_dashboard_global_total": 566,
+    "dashboard_active": 461,
+    "map_total": 566,
+    "map_coordinate_records": 436,
+    "map_exact_mapped": 435,
+    "map_missing_coordinates": 130,
+    "confirmed_geography_counts": [
+      "CONFIRMED=565",
+      "LOCATION_UNSPECIFIED=1"
+    ],
+    "unconfirmed_master_ids": [
+      327
+    ],
+    "note": "Read-only live snapshot: all 566 current Masters are returned by default; the legacy Al-Ahsa filter yields 565. The existing hierarchy presently recognizes only the Eastern Region/Al-Ahsa."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "all_parity": true,
+  "cases": [
+    {
+      "filter": "live-export-alahsa.csv",
+      "ui_count": 518,
+      "api_count": 518,
+      "csv_count": 518,
+      "xlsx_count": 518,
+      "parity": true
+    },
+    {
+      "filter": "live-export-riyadh-region1.csv",
+      "ui_count": 800,
+      "api_count": 800,
+      "csv_count": 800,
+      "xlsx_count": 800,
+      "parity": true
+    }
+  ]
+}

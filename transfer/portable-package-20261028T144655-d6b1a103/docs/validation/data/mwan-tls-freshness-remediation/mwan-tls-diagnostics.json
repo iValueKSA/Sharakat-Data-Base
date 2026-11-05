@@ -1,0 +1,61 @@
+{
+  "captured_at_utc": "2026-10-27T07:46:23Z",
+  "api": {
+    "python": "3.12.16",
+    "openssl": "OpenSSL 3.5.7 9 Jun 2026",
+    "system_time_utc": "2026-10-27T07:46:23Z",
+    "cafile": "/usr/lib/ssl/cert.pem",
+    "cafile_target": "/etc/ssl/certs/ca-certificates.crt",
+    "ca_bundle_present": true,
+    "system_ca_count": 148,
+    "digicert_global_root_g2_present": true,
+    "strict_get_mwan_status": 200,
+    "strict_get_mwared_status": 200,
+    "strict_hostname_check": true,
+    "verify_mode": "CERT_REQUIRED",
+    "redirects": 0
+  },
+  "worker": {
+    "python": "3.12.15",
+    "openssl": "OpenSSL 3.5.7 9 Jun 2026",
+    "system_time_utc": "2026-10-27T07:46:22Z",
+    "cafile": "/usr/lib/ssl/cert.pem",
+    "cafile_target": "/etc/ssl/certs/ca-certificates.crt",
+    "ca_bundle_present": true,
+    "system_ca_count": 148,
+    "digicert_global_root_g2_present": true,
+    "source_scoped_strict_get_mwan_status": 200,
+    "source_scoped_strict_get_mwared_status": 200,
+    "strict_hostname_check": true,
+    "verify_mode": "CERT_REQUIRED",
+    "redirects": 0
+  },
+  "configured_url": "https://mwan.gov.sa/en/investment-opportunities",
+  "actual_final_url": "https://mwan.gov.sa/en/investment-opportunities",
+  "configured_portal_url": "https://mwared.mwan.gov.sa/en/investor/opportunities/cards",
+  "actual_portal_final_url": "https://mwared.mwan.gov.sa/en/investor/opportunities/cards",
+  "official_hosts_only": true,
+  "default_trust_probe": {
+    "outcome": "FAIL",
+    "error": "unable to get local issuer certificate",
+    "server_chain_certificates_sent": 1
+  },
+  "official_aia": "http://cacerts.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crt",
+  "intermediate": {
+    "subject": "C=US, O=DigiCert Inc, CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1",
+    "issuer": "C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert Global Root G2",
+    "not_before_utc": "2021-03-30T00:00:00Z",
+    "not_after_utc": "2031-03-29T23:59:59Z",
+    "sha256_der_fingerprint": "C8:02:5F:9F:C6:5F:DF:C9:5B:3C:A8:CC:78:67:B9:A5:87:B5:27:79:73:95:79:17:46:3F:C8:13:D0:B6:25:A9",
+    "signature_chain_validation": "openssl verify -CAfile /etc/ssl/certs/ca-certificates.crt -purpose any: OK"
+  },
+  "applied_tls_policy": {
+    "scope": "MWAN source adapter only",
+    "verify_mode": "CERT_REQUIRED",
+    "hostname_check": true,
+    "source_specific_verified_intermediate": true,
+    "verification_disabled": false,
+    "global_ssl_changes": false,
+    "unrelated_source_contexts_changed": false
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "captured_at": "2026-10-22T14:03:38+03:00",
+  "viewer_can_resolve": false,
+  "viewer_can_preview_or_commit_batch": false,
+  "analyst_resolution": "PASSED for permitted review types; qualification remains administrator-only",
+  "admin_resolution": "PASSED",
+  "server_is_authoritative": true,
+  "source_recheck_has_no_allowed_actions": true,
+  "decision_routes_require_authentication": true,
+  "tests": [
+    "test_reviewer_action_contract_disallows_viewer_and_ambiguous_recommendation",
+    "test_viewer_cannot_preview_or_commit_batch_decisions",
+    "test_source_recheck_evidence_is_not_actionable_and_missing_source_value_is_not_conflict",
+    "tests/test_production_security.py",
+    "tests/test_review_queues_governance.py"
+  ],
+  "result": "PASSED"
+}

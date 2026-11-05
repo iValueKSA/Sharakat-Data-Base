@@ -1,0 +1,37 @@
+{
+  "run_id": "10d06d7db1474849810c5365b32db28f",
+  "trigger": "nationwide_expansion_preflight",
+  "scope": "full",
+  "completed_at": "2026-11-01T14:24:57+03:00",
+  "read_only_business_data": true,
+  "persisted": false,
+  "gates_evaluated": 133,
+  "counts": {
+    "pass": 129,
+    "warning": 4,
+    "fail": 0
+  },
+  "nonpass_gates": [
+    {
+      "gate_key": "GENERIC_SOURCE_PAGE_AS_OPPORTUNITY_ACTION",
+      "status": "WARNING",
+      "observed": 782
+    },
+    {
+      "gate_key": "HISTORICAL_REVIEW_AUDIT_INCOMPLETE",
+      "status": "WARNING",
+      "observed": 120
+    },
+    {
+      "gate_key": "SOURCE_LAST_SUCCESS_TOO_OLD",
+      "status": "WARNING",
+      "observed": 3
+    },
+    {
+      "gate_key": "SYNC_RUNTIME_ANOMALY",
+      "status": "WARNING",
+      "observed": 6
+    }
+  ],
+  "note": "Read-only evaluation with persist=false; does not include the full gate payload."
+}

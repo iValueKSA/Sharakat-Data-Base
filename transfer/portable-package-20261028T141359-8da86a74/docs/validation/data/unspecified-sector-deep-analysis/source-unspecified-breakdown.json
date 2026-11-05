@@ -1,0 +1,124 @@
+{
+  "ranked_by_unspecified_masters": [
+    {
+      "source": "furas",
+      "source_name_ar": "فرص – البوابة الموحدة للاستثمار",
+      "current_masters_from_source": 415,
+      "unspecified_masters": 373,
+      "unspecified_percent": 89.88,
+      "raw_sector_field_available": 0,
+      "raw_activity_field_available": 7,
+      "raw_subactivity_field_available": 7,
+      "raw_category_field_available": 0,
+      "other_classification_fields_available": 373
+    },
+    {
+      "source": "alahsa-opportunities",
+      "source_name_ar": "منصة الفرص الاستثمارية بالأحساء",
+      "current_masters_from_source": 103,
+      "unspecified_masters": 5,
+      "unspecified_percent": 4.85,
+      "raw_sector_field_available": 5,
+      "raw_activity_field_available": 5,
+      "raw_subactivity_field_available": 0,
+      "raw_category_field_available": 0,
+      "other_classification_fields_available": 5
+    },
+    {
+      "source": "kfu",
+      "source_name_ar": "جامعة الملك فيصل",
+      "current_masters_from_source": 3,
+      "unspecified_masters": 3,
+      "unspecified_percent": 100.0,
+      "raw_sector_field_available": 1,
+      "raw_activity_field_available": 0,
+      "raw_subactivity_field_available": 0,
+      "raw_category_field_available": 0,
+      "other_classification_fields_available": 3
+    },
+    {
+      "source": "ahda",
+      "source_name_ar": "هيئة تطوير الأحساء",
+      "current_masters_from_source": 8,
+      "unspecified_masters": 1,
+      "unspecified_percent": 12.5,
+      "raw_sector_field_available": 0,
+      "raw_activity_field_available": 0,
+      "raw_subactivity_field_available": 0,
+      "raw_category_field_available": 0,
+      "other_classification_fields_available": 0
+    },
+    {
+      "source": "ncp",
+      "source_name_ar": "المركز الوطني للتخصيص",
+      "current_masters_from_source": 1,
+      "unspecified_masters": 1,
+      "unspecified_percent": 100.0,
+      "raw_sector_field_available": 1,
+      "raw_activity_field_available": 0,
+      "raw_subactivity_field_available": 0,
+      "raw_category_field_available": 0,
+      "other_classification_fields_available": 1
+    },
+    {
+      "source": "invest-saudi",
+      "source_name_ar": "استثمر في السعودية",
+      "current_masters_from_source": 19,
+      "unspecified_masters": 0,
+      "unspecified_percent": 0.0,
+      "raw_sector_field_available": 0,
+      "raw_activity_field_available": 0,
+      "raw_subactivity_field_available": 0,
+      "raw_category_field_available": 0,
+      "other_classification_fields_available": 0
+    },
+    {
+      "source": "modon",
+      "source_name_ar": "مدن",
+      "current_masters_from_source": 0,
+      "unspecified_masters": 0,
+      "unspecified_percent": 0.0,
+      "raw_sector_field_available": 0,
+      "raw_activity_field_available": 0,
+      "raw_subactivity_field_available": 0,
+      "raw_category_field_available": 0,
+      "other_classification_fields_available": 0
+    },
+    {
+      "source": "mwan",
+      "source_name_ar": "موان",
+      "current_masters_from_source": 0,
+      "unspecified_masters": 0,
+      "unspecified_percent": 0.0,
+      "raw_sector_field_available": 0,
+      "raw_activity_field_available": 0,
+      "raw_subactivity_field_available": 0,
+      "raw_category_field_available": 0,
+      "other_classification_fields_available": 0
+    },
+    {
+      "source": "nhc",
+      "source_name_ar": "NHC الاستثمار",
+      "current_masters_from_source": 0,
+      "unspecified_masters": 0,
+      "unspecified_percent": 0.0,
+      "raw_sector_field_available": 0,
+      "raw_activity_field_available": 0,
+      "raw_subactivity_field_available": 0,
+      "raw_category_field_available": 0,
+      "other_classification_fields_available": 0
+    },
+    {
+      "source": "pif",
+      "source_name_ar": "بوابة القطاع الخاص لصندوق الاستثمارات العامة",
+      "current_masters_from_source": 0,
+      "unspecified_masters": 0,
+      "unspecified_percent": 0.0,
+      "raw_sector_field_available": 0,
+      "raw_activity_field_available": 0,
+      "raw_subactivity_field_available": 0,
+      "raw_category_field_available": 0,
+      "other_classification_fields_available": 0
+    }
+  ]
+}

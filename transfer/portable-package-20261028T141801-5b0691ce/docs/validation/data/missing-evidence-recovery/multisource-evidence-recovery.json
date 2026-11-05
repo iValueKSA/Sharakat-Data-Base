@@ -1,0 +1,210 @@
+{
+  "snapshot_at": "2026-10-22T07:42:21.338046+00:00",
+  "count": 17,
+  "cases": [
+    {
+      "review_id": 379,
+      "master_id": 231,
+      "field": "contract_duration_years",
+      "sources": [
+        2832,
+        2866
+      ],
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "relationship": "ONE_SOURCE_HAS_RAW_FIELD_OTHER_MISSING",
+      "comparison_explanation": "The blocked field has a raw value on one linked source and no same-field raw value on the other; different fields such as RFP price or contract period are not treated as an amount/duration conflict."
+    },
+    {
+      "review_id": 382,
+      "master_id": 234,
+      "field": "contract_duration_years",
+      "sources": [
+        2835,
+        2837
+      ],
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "relationship": "ONE_SOURCE_HAS_RAW_FIELD_OTHER_MISSING",
+      "comparison_explanation": "The blocked field has a raw value on one linked source and no same-field raw value on the other; different fields such as RFP price or contract period are not treated as an amount/duration conflict."
+    },
+    {
+      "review_id": 383,
+      "master_id": 235,
+      "field": "contract_duration_years",
+      "sources": [
+        2836,
+        2878
+      ],
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "relationship": "ONE_SOURCE_HAS_RAW_FIELD_OTHER_MISSING",
+      "comparison_explanation": "The blocked field has a raw value on one linked source and no same-field raw value on the other; different fields such as RFP price or contract period are not treated as an amount/duration conflict."
+    },
+    {
+      "review_id": 384,
+      "master_id": 237,
+      "field": "contract_duration_years",
+      "sources": [
+        2838,
+        2853
+      ],
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "relationship": "ONE_SOURCE_HAS_RAW_FIELD_OTHER_MISSING",
+      "comparison_explanation": "The blocked field has a raw value on one linked source and no same-field raw value on the other; different fields such as RFP price or contract period are not treated as an amount/duration conflict."
+    },
+    {
+      "review_id": 385,
+      "master_id": 239,
+      "field": "contract_duration_years",
+      "sources": [
+        2840,
+        2848
+      ],
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "relationship": "ONE_SOURCE_HAS_RAW_FIELD_OTHER_MISSING",
+      "comparison_explanation": "The blocked field has a raw value on one linked source and no same-field raw value on the other; different fields such as RFP price or contract period are not treated as an amount/duration conflict."
+    },
+    {
+      "review_id": 386,
+      "master_id": 240,
+      "field": "contract_duration_years",
+      "sources": [
+        2841,
+        2844
+      ],
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "relationship": "ONE_SOURCE_HAS_RAW_FIELD_OTHER_MISSING",
+      "comparison_explanation": "The blocked field has a raw value on one linked source and no same-field raw value on the other; different fields such as RFP price or contract period are not treated as an amount/duration conflict."
+    },
+    {
+      "review_id": 387,
+      "master_id": 242,
+      "field": "contract_duration_years",
+      "sources": [
+        2843,
+        2871
+      ],
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "relationship": "ONE_SOURCE_HAS_RAW_FIELD_OTHER_MISSING",
+      "comparison_explanation": "The blocked field has a raw value on one linked source and no same-field raw value on the other; different fields such as RFP price or contract period are not treated as an amount/duration conflict."
+    },
+    {
+      "review_id": 389,
+      "master_id": 246,
+      "field": "contract_duration_years",
+      "sources": [
+        2847,
+        2870
+      ],
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "relationship": "ONE_SOURCE_HAS_RAW_FIELD_OTHER_MISSING",
+      "comparison_explanation": "The blocked field has a raw value on one linked source and no same-field raw value on the other; different fields such as RFP price or contract period are not treated as an amount/duration conflict."
+    },
+    {
+      "review_id": 390,
+      "master_id": 248,
+      "field": "contract_duration_years",
+      "sources": [
+        2849,
+        2867
+      ],
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "relationship": "ONE_SOURCE_HAS_RAW_FIELD_OTHER_MISSING",
+      "comparison_explanation": "The blocked field has a raw value on one linked source and no same-field raw value on the other; different fields such as RFP price or contract period are not treated as an amount/duration conflict."
+    },
+    {
+      "review_id": 392,
+      "master_id": 251,
+      "field": "contract_duration_years",
+      "sources": [
+        2852,
+        2868
+      ],
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "relationship": "ONE_SOURCE_HAS_RAW_FIELD_OTHER_MISSING",
+      "comparison_explanation": "The blocked field has a raw value on one linked source and no same-field raw value on the other; different fields such as RFP price or contract period are not treated as an amount/duration conflict."
+    },
+    {
+      "review_id": 393,
+      "master_id": 253,
+      "field": "contract_duration_years",
+      "sources": [
+        2854,
+        2862
+      ],
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "relationship": "ONE_SOURCE_HAS_RAW_FIELD_OTHER_MISSING",
+      "comparison_explanation": "The blocked field has a raw value on one linked source and no same-field raw value on the other; different fields such as RFP price or contract period are not treated as an amount/duration conflict."
+    },
+    {
+      "review_id": 396,
+      "master_id": 258,
+      "field": "contract_duration_years",
+      "sources": [
+        2859,
+        2869
+      ],
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "relationship": "ONE_SOURCE_HAS_RAW_FIELD_OTHER_MISSING",
+      "comparison_explanation": "The blocked field has a raw value on one linked source and no same-field raw value on the other; different fields such as RFP price or contract period are not treated as an amount/duration conflict."
+    },
+    {
+      "review_id": 397,
+      "master_id": 260,
+      "field": "contract_duration_years",
+      "sources": [
+        2861,
+        2876
+      ],
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "relationship": "ONE_SOURCE_HAS_RAW_FIELD_OTHER_MISSING",
+      "comparison_explanation": "The blocked field has a raw value on one linked source and no same-field raw value on the other; different fields such as RFP price or contract period are not treated as an amount/duration conflict."
+    },
+    {
+      "review_id": 398,
+      "master_id": 262,
+      "field": "contract_duration_years",
+      "sources": [
+        2863,
+        2875
+      ],
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "relationship": "ONE_SOURCE_HAS_RAW_FIELD_OTHER_MISSING",
+      "comparison_explanation": "The blocked field has a raw value on one linked source and no same-field raw value on the other; different fields such as RFP price or contract period are not treated as an amount/duration conflict."
+    },
+    {
+      "review_id": 417,
+      "master_id": 102,
+      "field": "investment_value",
+      "sources": [
+        102,
+        2357
+      ],
+      "classification": "SOURCE_RECHECK_REQUIRED",
+      "relationship": "ONE_SOURCE_HAS_RAW_FIELD_OTHER_MISSING",
+      "comparison_explanation": "The blocked field has a raw value on one linked source and no same-field raw value on the other; different fields such as RFP price or contract period are not treated as an amount/duration conflict."
+    },
+    {
+      "review_id": 418,
+      "master_id": 230,
+      "field": "investment_value",
+      "sources": [
+        2368,
+        2831
+      ],
+      "classification": "SOURCE_RECHECK_REQUIRED",
+      "relationship": "ONE_SOURCE_HAS_RAW_FIELD_OTHER_MISSING",
+      "comparison_explanation": "The blocked field has a raw value on one linked source and no same-field raw value on the other; different fields such as RFP price or contract period are not treated as an amount/duration conflict."
+    },
+    {
+      "review_id": 17,
+      "master_id": 230,
+      "field": "location",
+      "sources": [
+        2368,
+        2831
+      ],
+      "classification": "WRONG_BLOCKED_CLASSIFICATION",
+      "relationship": "LINKED_SOURCE_AGREEMENT_BY_EXACT_OPPORTUNITY_REFERENCE",
+      "comparison_explanation": "Invest Saudi opportunityNumber exactly matches the Al-Ahsa-filtered Furas external opportunity ID; this establishes same-entity location evidence."
+    }
+  ]
+}

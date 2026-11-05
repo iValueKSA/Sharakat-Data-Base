@@ -1,0 +1,7 @@
+Final full regression run after Furas ingestion metadata fix
+Database: isolated SQLite at /tmp/regression.db in disposable Docker container
+Live PostgreSQL: not used by the test process
+Command: DATABASE_URL=sqlite:////tmp/regression.db python -m pytest -q -p no:cacheprovider tests/
+Result: 174 passed, 0 failed
+Duration: 8.48s
+Warning: Starlette TestClient/httpx deprecation warning; no test failures.

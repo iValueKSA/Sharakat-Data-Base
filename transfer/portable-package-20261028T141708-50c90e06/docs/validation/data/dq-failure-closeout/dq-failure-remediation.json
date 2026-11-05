@@ -1,0 +1,112 @@
+{
+  "captured_at": "2026-10-22T13:20:58.986314+03:00",
+  "task": "FOCUSED_DQ_FAILURE_ROOT_CAUSE_REMEDIATION",
+  "full_live_read_only": true,
+  "manual_source_sync_started": false,
+  "code_changes": [
+    {
+      "file": "app/data_quality.py",
+      "change": "Closed review created at/after the earliest persisted versioned review audit and lacking any linked audit is now classified as a current missing-audit defect, even when legacy schema has no resolved_at."
+    },
+    {
+      "file": "tests/test_data_quality.py",
+      "change": "Added current-boundary detection and strict unverified legacy action rejection tests."
+    },
+    {
+      "file": "tests/test_opportunities_search_count.py",
+      "change": "Added tied timestamp pagination, multi-source/source filter, observation/review multiplicity, merged-master exclusion and CSV/XLSX row tests."
+    }
+  ],
+  "existing_corrections_verified": [
+    "Exact MergeAudit pair links are respected for merged decisions.",
+    "Lifecycle supersession events are excluded from human action enum validation.",
+    "Current opportunity list uses a Master ID tie-breaker and no multiplying joins."
+  ],
+  "business_data_changed": 0,
+  "live_review_rows_changed_by_task": 0,
+  "raw_payloads_changed_by_task": 0,
+  "scheduled_jobs": [
+    {
+      "source_net_delta": 0,
+      "observation_delta": 35,
+      "review_delta": 1,
+      "status": "SUCCESS",
+      "source": "furas",
+      "trigger": "scheduled",
+      "source_updated": 0,
+      "source_removal_signal": 35,
+      "review_id": 709,
+      "source_new": 0,
+      "review_result": "SYSTEM RESOLVED_CANONICAL",
+      "master_delta": 0,
+      "job_id": 431
+    },
+    {
+      "review_delta": 0,
+      "status": "SUCCESS",
+      "observation_delta": 19,
+      "job_id": 432,
+      "source_removal_signal": 19,
+      "master_delta": 0,
+      "trigger": "scheduled",
+      "source_new": 0,
+      "source_net_delta": 0,
+      "source_updated": 0,
+      "source": "alahsa-opportunities"
+    },
+    {
+      "source_net_delta": 0,
+      "observation_delta": 35,
+      "review_delta": 1,
+      "status": "SUCCESS",
+      "source": "furas",
+      "trigger": "scheduled",
+      "source_updated": 0,
+      "source_removal_signal": 35,
+      "review_id": 710,
+      "source_new": 0,
+      "review_result": "SYSTEM RESOLVED_CANONICAL",
+      "master_delta": 0,
+      "job_id": 433
+    },
+    {
+      "review_delta": 0,
+      "status": "SUCCESS",
+      "observation_delta": 19,
+      "job_id": 434,
+      "source_removal_signal": 19,
+      "master_delta": 0,
+      "trigger": "scheduled",
+      "source_new": 0,
+      "source_net_delta": 0,
+      "source_updated": 0,
+      "source": "alahsa-opportunities"
+    }
+  ],
+  "natural_job_window_baseline": "Recorded post-scheduled-sync snapshot at job 430: 526 current Masters, 3138 source rows, 16352 observations, 740 reviews, 498 open. Current: 526, 3138, 16460, 742, 498.",
+  "latest_full_dq": {
+    "current_invalid_actions": 0,
+    "total": 90,
+    "current_human_missing": 0,
+    "warning": 5,
+    "fail": 0,
+    "pass": 85,
+    "current_list_duplicates": 0
+  },
+  "warning_explanations": {
+    "GENERIC_SOURCE_PAGE_AS_OPPORTUNITY_ACTION": "782 records retain only a generic source landing page; no generic URL is exposed as an individual opportunity action.",
+    "OPEN_REVIEW_BACKLOG": "498 open reviews are a documented human-review backlog, not an integrity failure.",
+    "SOURCE_LAST_SUCCESS_TOO_OLD": "Four source freshness conditions are aggregated into one gate: Invest Saudi, MODON, NHC, and MWAN; accepted coverage/freshness limitations remain warnings.",
+    "HISTORICAL_REVIEW_AUDIT_INCOMPLETE": "120 historical records lack versioned audit metadata; actor/time/reason were not invented.",
+    "SYNC_RUNTIME_ANOMALY": "One informational runtime anomaly is job 393; it remains unchanged and is a warning, not a failure."
+  },
+  "business_identity_preservation": {
+    "observation_history": true,
+    "master_identities": true,
+    "merge_lineage": true,
+    "source_identities": true,
+    "raw_provenance": true
+  },
+  "unexplained_business_data_changes": 0,
+  "dq_captured_at": "2026-10-22T13:28:16.370646+03:00"
+}

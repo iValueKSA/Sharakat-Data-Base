@@ -1,0 +1,228 @@
+{
+  "reconciled_at": "2026-10-21T09:02:44.784595+00:00",
+  "current_masters": 525,
+  "dashboard_sector_total": 525,
+  "sectors": [
+    {
+      "sector_id": "sector:agriculture",
+      "sector": "الزراعة",
+      "dashboard_count": 1,
+      "filtered_dashboard_count": 1,
+      "api_filter_count": 1,
+      "api_list_items": 1,
+      "csv_count": 1,
+      "xlsx_count": 1,
+      "match": true
+    },
+    {
+      "sector_id": "sector:commercial",
+      "sector": "تجاري",
+      "dashboard_count": 46,
+      "filtered_dashboard_count": 46,
+      "api_filter_count": 46,
+      "api_list_items": 46,
+      "csv_count": 46,
+      "xlsx_count": 46,
+      "match": true
+    },
+    {
+      "sector_id": "sector:culture",
+      "sector": "الثقافة",
+      "dashboard_count": 0,
+      "filtered_dashboard_count": 0,
+      "api_filter_count": 0,
+      "api_list_items": 0,
+      "csv_count": 0,
+      "xlsx_count": 0,
+      "match": true
+    },
+    {
+      "sector_id": "sector:education",
+      "sector": "التعليم",
+      "dashboard_count": 3,
+      "filtered_dashboard_count": 3,
+      "api_filter_count": 3,
+      "api_list_items": 3,
+      "csv_count": 3,
+      "xlsx_count": 3,
+      "match": true
+    },
+    {
+      "sector_id": "sector:energy",
+      "sector": "الطاقة",
+      "dashboard_count": 0,
+      "filtered_dashboard_count": 0,
+      "api_filter_count": 0,
+      "api_list_items": 0,
+      "csv_count": 0,
+      "xlsx_count": 0,
+      "match": true
+    },
+    {
+      "sector_id": "sector:environment",
+      "sector": "البيئة",
+      "dashboard_count": 8,
+      "filtered_dashboard_count": 8,
+      "api_filter_count": 8,
+      "api_list_items": 8,
+      "csv_count": 8,
+      "xlsx_count": 8,
+      "match": true
+    },
+    {
+      "sector_id": "sector:financial_services",
+      "sector": "الخدمات المالية",
+      "dashboard_count": 5,
+      "filtered_dashboard_count": 5,
+      "api_filter_count": 5,
+      "api_list_items": 5,
+      "csv_count": 5,
+      "xlsx_count": 5,
+      "match": true
+    },
+    {
+      "sector_id": "sector:healthcare",
+      "sector": "الرعاية الصحية",
+      "dashboard_count": 3,
+      "filtered_dashboard_count": 3,
+      "api_filter_count": 3,
+      "api_list_items": 3,
+      "csv_count": 3,
+      "xlsx_count": 3,
+      "match": true
+    },
+    {
+      "sector_id": "sector:industrial",
+      "sector": "صناعي",
+      "dashboard_count": 59,
+      "filtered_dashboard_count": 59,
+      "api_filter_count": 59,
+      "api_list_items": 59,
+      "csv_count": 59,
+      "xlsx_count": 59,
+      "match": true
+    },
+    {
+      "sector_id": "sector:logistics",
+      "sector": "الخدمات اللوجستية",
+      "dashboard_count": 4,
+      "filtered_dashboard_count": 4,
+      "api_filter_count": 4,
+      "api_list_items": 4,
+      "csv_count": 4,
+      "xlsx_count": 4,
+      "match": true
+    },
+    {
+      "sector_id": "sector:other",
+      "sector": "أخرى",
+      "dashboard_count": 9,
+      "filtered_dashboard_count": 9,
+      "api_filter_count": 9,
+      "api_list_items": 9,
+      "csv_count": 9,
+      "xlsx_count": 9,
+      "match": true
+    },
+    {
+      "sector_id": "sector:real_estate",
+      "sector": "العقارات والإنشاءات",
+      "dashboard_count": 7,
+      "filtered_dashboard_count": 7,
+      "api_filter_count": 7,
+      "api_list_items": 7,
+      "csv_count": 7,
+      "xlsx_count": 7,
+      "match": true
+    },
+    {
+      "sector_id": "sector:sports",
+      "sector": "الرياضة",
+      "dashboard_count": 0,
+      "filtered_dashboard_count": 0,
+      "api_filter_count": 0,
+      "api_list_items": 0,
+      "csv_count": 0,
+      "xlsx_count": 0,
+      "match": true
+    },
+    {
+      "sector_id": "sector:technology",
+      "sector": "التقنية والاتصالات",
+      "dashboard_count": 0,
+      "filtered_dashboard_count": 0,
+      "api_filter_count": 0,
+      "api_list_items": 0,
+      "csv_count": 0,
+      "xlsx_count": 0,
+      "match": true
+    },
+    {
+      "sector_id": "sector:tourism",
+      "sector": "السياحة",
+      "dashboard_count": 1,
+      "filtered_dashboard_count": 1,
+      "api_filter_count": 1,
+      "api_list_items": 1,
+      "csv_count": 1,
+      "xlsx_count": 1,
+      "match": true
+    },
+    {
+      "sector_id": "sector:unspecified",
+      "sector": "غير محدد",
+      "dashboard_count": 379,
+      "filtered_dashboard_count": 379,
+      "api_filter_count": 379,
+      "api_list_items": 379,
+      "csv_count": 379,
+      "xlsx_count": 379,
+      "match": true
+    }
+  ],
+  "all_match": true,
+  "tourism": {
+    "sector_id": "sector:tourism",
+    "sector": "السياحة",
+    "dashboard_count": 1,
+    "filtered_dashboard_count": 1,
+    "api_filter_count": 1,
+    "api_list_items": 1,
+    "csv_count": 1,
+    "xlsx_count": 1,
+    "match": true
+  },
+  "agriculture": {
+    "sector_id": "sector:agriculture",
+    "sector": "الزراعة",
+    "dashboard_count": 1,
+    "filtered_dashboard_count": 1,
+    "api_filter_count": 1,
+    "api_list_items": 1,
+    "csv_count": 1,
+    "xlsx_count": 1,
+    "match": true
+  },
+  "other": {
+    "sector_id": "sector:other",
+    "sector": "أخرى",
+    "dashboard_count": 9,
+    "filtered_dashboard_count": 9,
+    "api_filter_count": 9,
+    "api_list_items": 9,
+    "csv_count": 9,
+    "xlsx_count": 9,
+    "match": true
+  },
+  "unspecified": {
+    "sector_id": "sector:unspecified",
+    "sector": "غير محدد",
+    "dashboard_count": 379,
+    "filtered_dashboard_count": 379,
+    "api_filter_count": 379,
+    "api_list_items": 379,
+    "csv_count": 379,
+    "xlsx_count": 379,
+    "match": true
+  }
+}

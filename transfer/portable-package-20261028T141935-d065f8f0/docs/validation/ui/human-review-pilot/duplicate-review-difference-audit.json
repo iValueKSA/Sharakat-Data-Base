@@ -1,0 +1,4108 @@
+{
+  "generated_at": "2026-10-25T08:47:22.768Z",
+  "read_only": true,
+  "accepted_working_classification": {
+    "open": 10,
+    "same_source_ambiguous": 7,
+    "cross_source_ambiguous": 3
+  },
+  "deterministic_auto_resolved": 0,
+  "records": [
+    {
+      "review_id": 32,
+      "status": "OPEN",
+      "meaningful_difference_count": 2,
+      "compared_fields": [
+        "title_ar",
+        "normalized_title",
+        "opportunity_owner",
+        "primary_publication_platform",
+        "sector",
+        "activity",
+        "sub_activity",
+        "opportunity_type",
+        "investment_model",
+        "city",
+        "district",
+        "location_description",
+        "latitude",
+        "longitude",
+        "land_area_sqm",
+        "plot_number",
+        "asset_facility_type",
+        "investment_value",
+        "currency",
+        "contract_duration_years",
+        "publication_date",
+        "submission_deadline",
+        "status",
+        "short_description",
+        "full_description",
+        "source",
+        "publisher",
+        "official_source_id",
+        "source_opportunity_id",
+        "source_reference_number",
+        "source_title",
+        "source_owner",
+        "source_sector",
+        "source_activity",
+        "source_sub_activity",
+        "source_opportunity_type",
+        "source_investment_model",
+        "raw_location",
+        "source_coordinates",
+        "source_city",
+        "source_district",
+        "raw_area",
+        "raw_value",
+        "raw_dates",
+        "raw_description",
+        "source_asset_facility_type",
+        "source_url"
+      ],
+      "matched_fields": [
+        {
+          "field": "title_ar",
+          "label": "العنوان",
+          "left": "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "right": "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "normalized_left": "أنشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "normalized_right": "أنشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "normalized_title",
+          "label": "العنوان المعياري",
+          "left": "انشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة او ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "right": "انشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة او ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "normalized_left": "انشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة او ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "normalized_right": "انشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة او ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "primary_publication_platform",
+          "label": "منصة النشر",
+          "left": "منصة الفرص الاستثمارية بالأحساء",
+          "right": "منصة الفرص الاستثمارية بالأحساء",
+          "normalized_left": "منصة الفرص الاستثمارية بالأحساء",
+          "normalized_right": "منصة الفرص الاستثمارية بالأحساء",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "sector",
+          "label": "القطاع",
+          "left": "صناعي",
+          "right": "صناعي",
+          "normalized_left": "صناعي",
+          "normalized_right": "صناعي",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "activity",
+          "label": "النشاط",
+          "left": "صناعي",
+          "right": "صناعي",
+          "normalized_left": "صناعي",
+          "normalized_right": "صناعي",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "city",
+          "label": "المدينة",
+          "left": "الأحساء",
+          "right": "الأحساء",
+          "normalized_left": "الأحساء",
+          "normalized_right": "الأحساء",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "location_description",
+          "label": "الموقع التفصيلي",
+          "left": "الاحساء",
+          "right": "الاحساء",
+          "normalized_left": "الاحساء",
+          "normalized_right": "الاحساء",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "land_area_sqm",
+          "label": "المساحة م²",
+          "left": 1361.05,
+          "right": 1361.05,
+          "normalized_left": 1361.05,
+          "normalized_right": 1361.05,
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "contract_duration_years",
+          "label": "مدة العقد",
+          "left": 15,
+          "right": 15,
+          "normalized_left": 15,
+          "normalized_right": 15,
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "submission_deadline",
+          "label": "موعد التقديم",
+          "left": "2026-11-16",
+          "right": "2026-11-16",
+          "normalized_left": "2026 11 16",
+          "normalized_right": "2026 11 16",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "status",
+          "label": "الحالة",
+          "left": "متاحة",
+          "right": "متاحة",
+          "normalized_left": "متاحة",
+          "normalized_right": "متاحة",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "short_description",
+          "label": "الوصف المختصر",
+          "left": "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "right": "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "normalized_left": "أنشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "normalized_right": "أنشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "full_description",
+          "label": "الوصف الكامل",
+          "left": "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "right": "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "normalized_left": "أنشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "normalized_right": "أنشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "source",
+          "label": "المصدر",
+          "left": [
+            "alahsa-opportunities"
+          ],
+          "right": [
+            "alahsa-opportunities"
+          ],
+          "normalized_left": [
+            "alahsa opportunities"
+          ],
+          "normalized_right": [
+            "alahsa opportunities"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "publisher",
+          "label": "الناشر",
+          "left": [
+            "أمانة الأحساء"
+          ],
+          "right": [
+            "أمانة الأحساء"
+          ],
+          "normalized_left": [
+            "أمانة الأحساء"
+          ],
+          "normalized_right": [
+            "أمانة الأحساء"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_title",
+          "label": "العنوان الخام لدى المصدر",
+          "left": [
+            "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه"
+          ],
+          "right": [
+            "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه"
+          ],
+          "normalized_left": [
+            "أنشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه"
+          ],
+          "normalized_right": [
+            "أنشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_sector",
+          "label": "القطاع الوارد من المصدر",
+          "left": [
+            "صناعي"
+          ],
+          "right": [
+            "صناعي"
+          ],
+          "normalized_left": [
+            "صناعي"
+          ],
+          "normalized_right": [
+            "صناعي"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_activity",
+          "label": "النشاط الوارد من المصدر",
+          "left": [
+            "صناعي"
+          ],
+          "right": [
+            "صناعي"
+          ],
+          "normalized_left": [
+            "صناعي"
+          ],
+          "normalized_right": [
+            "صناعي"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_location",
+          "label": "الموقع الوارد من المصدر",
+          "left": [
+            "الاحساء"
+          ],
+          "right": [
+            "الاحساء"
+          ],
+          "normalized_left": [
+            "الاحساء"
+          ],
+          "normalized_right": [
+            "الاحساء"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_area",
+          "label": "المساحة الخام",
+          "left": [
+            "1361.05 م²"
+          ],
+          "right": [
+            "1361.05 م²"
+          ],
+          "normalized_left": [
+            "1361.05 م2"
+          ],
+          "normalized_right": [
+            "1361.05 م2"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_dates",
+          "label": "تواريخ المصدر",
+          "left": [
+            {
+              "deadline": "2026-11-16"
+            }
+          ],
+          "right": [
+            {
+              "deadline": "2026-11-16"
+            }
+          ],
+          "normalized_left": [
+            {
+              "deadline": "2026 11 16"
+            }
+          ],
+          "normalized_right": [
+            {
+              "deadline": "2026 11 16"
+            }
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        }
+      ],
+      "different_fields": [
+        {
+          "field": "source_opportunity_id",
+          "label": "معرّف الفرصة لدى المصدر",
+          "left": [
+            "484"
+          ],
+          "right": [
+            "483"
+          ],
+          "normalized_left": [
+            "484"
+          ],
+          "normalized_right": [
+            "483"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_url",
+          "label": "رابط الفرصة لدى المصدر",
+          "left": [
+            "https://alahsa-opportunities.com/opportunities/484"
+          ],
+          "right": [
+            "https://alahsa-opportunities.com/opportunities/483"
+          ],
+          "normalized_left": [
+            "https://alahsa-opportunities.com/opportunities/484"
+          ],
+          "normalized_right": [
+            "https://alahsa-opportunities.com/opportunities/483"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        }
+      ],
+      "missing_on_left": [],
+      "missing_on_right": [],
+      "human_review_reason": "نفس المصدر لكن أرقام الفرص الرسمية مختلفة؛ هذا سبب لعدم الدمج الآلي، ولا يثبت وحده أن الفرصتين مختلفتان. يستطيع المحلل اعتماد أنهما نفس الفرصة عند كفاية الدليل.",
+      "auto_resolution_allowed": false
+    },
+    {
+      "review_id": 33,
+      "status": "OPEN",
+      "meaningful_difference_count": 2,
+      "compared_fields": [
+        "title_ar",
+        "normalized_title",
+        "opportunity_owner",
+        "primary_publication_platform",
+        "sector",
+        "activity",
+        "sub_activity",
+        "opportunity_type",
+        "investment_model",
+        "city",
+        "district",
+        "location_description",
+        "latitude",
+        "longitude",
+        "land_area_sqm",
+        "plot_number",
+        "asset_facility_type",
+        "investment_value",
+        "currency",
+        "contract_duration_years",
+        "publication_date",
+        "submission_deadline",
+        "status",
+        "short_description",
+        "full_description",
+        "source",
+        "publisher",
+        "official_source_id",
+        "source_opportunity_id",
+        "source_reference_number",
+        "source_title",
+        "source_owner",
+        "source_sector",
+        "source_activity",
+        "source_sub_activity",
+        "source_opportunity_type",
+        "source_investment_model",
+        "raw_location",
+        "source_coordinates",
+        "source_city",
+        "source_district",
+        "raw_area",
+        "raw_value",
+        "raw_dates",
+        "raw_description",
+        "source_asset_facility_type",
+        "source_url"
+      ],
+      "matched_fields": [
+        {
+          "field": "title_ar",
+          "label": "العنوان",
+          "left": "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "right": "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "normalized_left": "أنشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "normalized_right": "أنشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "normalized_title",
+          "label": "العنوان المعياري",
+          "left": "انشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة او ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "right": "انشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة او ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "normalized_left": "انشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة او ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "normalized_right": "انشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة او ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "primary_publication_platform",
+          "label": "منصة النشر",
+          "left": "منصة الفرص الاستثمارية بالأحساء",
+          "right": "منصة الفرص الاستثمارية بالأحساء",
+          "normalized_left": "منصة الفرص الاستثمارية بالأحساء",
+          "normalized_right": "منصة الفرص الاستثمارية بالأحساء",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "sector",
+          "label": "القطاع",
+          "left": "صناعي",
+          "right": "صناعي",
+          "normalized_left": "صناعي",
+          "normalized_right": "صناعي",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "activity",
+          "label": "النشاط",
+          "left": "صناعي",
+          "right": "صناعي",
+          "normalized_left": "صناعي",
+          "normalized_right": "صناعي",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "city",
+          "label": "المدينة",
+          "left": "الأحساء",
+          "right": "الأحساء",
+          "normalized_left": "الأحساء",
+          "normalized_right": "الأحساء",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "location_description",
+          "label": "الموقع التفصيلي",
+          "left": "الاحساء",
+          "right": "الاحساء",
+          "normalized_left": "الاحساء",
+          "normalized_right": "الاحساء",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "land_area_sqm",
+          "label": "المساحة م²",
+          "left": 1361.05,
+          "right": 1361.05,
+          "normalized_left": 1361.05,
+          "normalized_right": 1361.05,
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "contract_duration_years",
+          "label": "مدة العقد",
+          "left": 15,
+          "right": 15,
+          "normalized_left": 15,
+          "normalized_right": 15,
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "submission_deadline",
+          "label": "موعد التقديم",
+          "left": "2026-11-16",
+          "right": "2026-11-16",
+          "normalized_left": "2026 11 16",
+          "normalized_right": "2026 11 16",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "status",
+          "label": "الحالة",
+          "left": "متاحة",
+          "right": "متاحة",
+          "normalized_left": "متاحة",
+          "normalized_right": "متاحة",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "short_description",
+          "label": "الوصف المختصر",
+          "left": "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "right": "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "normalized_left": "أنشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "normalized_right": "أنشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "full_description",
+          "label": "الوصف الكامل",
+          "left": "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "right": "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "normalized_left": "أنشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "normalized_right": "أنشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "source",
+          "label": "المصدر",
+          "left": [
+            "alahsa-opportunities"
+          ],
+          "right": [
+            "alahsa-opportunities"
+          ],
+          "normalized_left": [
+            "alahsa opportunities"
+          ],
+          "normalized_right": [
+            "alahsa opportunities"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "publisher",
+          "label": "الناشر",
+          "left": [
+            "أمانة الأحساء"
+          ],
+          "right": [
+            "أمانة الأحساء"
+          ],
+          "normalized_left": [
+            "أمانة الأحساء"
+          ],
+          "normalized_right": [
+            "أمانة الأحساء"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_title",
+          "label": "العنوان الخام لدى المصدر",
+          "left": [
+            "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه"
+          ],
+          "right": [
+            "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه"
+          ],
+          "normalized_left": [
+            "أنشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه"
+          ],
+          "normalized_right": [
+            "أنشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_sector",
+          "label": "القطاع الوارد من المصدر",
+          "left": [
+            "صناعي"
+          ],
+          "right": [
+            "صناعي"
+          ],
+          "normalized_left": [
+            "صناعي"
+          ],
+          "normalized_right": [
+            "صناعي"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_activity",
+          "label": "النشاط الوارد من المصدر",
+          "left": [
+            "صناعي"
+          ],
+          "right": [
+            "صناعي"
+          ],
+          "normalized_left": [
+            "صناعي"
+          ],
+          "normalized_right": [
+            "صناعي"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_location",
+          "label": "الموقع الوارد من المصدر",
+          "left": [
+            "الاحساء"
+          ],
+          "right": [
+            "الاحساء"
+          ],
+          "normalized_left": [
+            "الاحساء"
+          ],
+          "normalized_right": [
+            "الاحساء"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_area",
+          "label": "المساحة الخام",
+          "left": [
+            "1361.05 م²"
+          ],
+          "right": [
+            "1361.05 م²"
+          ],
+          "normalized_left": [
+            "1361.05 م2"
+          ],
+          "normalized_right": [
+            "1361.05 م2"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_dates",
+          "label": "تواريخ المصدر",
+          "left": [
+            {
+              "deadline": "2026-11-16"
+            }
+          ],
+          "right": [
+            {
+              "deadline": "2026-11-16"
+            }
+          ],
+          "normalized_left": [
+            {
+              "deadline": "2026 11 16"
+            }
+          ],
+          "normalized_right": [
+            {
+              "deadline": "2026 11 16"
+            }
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        }
+      ],
+      "different_fields": [
+        {
+          "field": "source_opportunity_id",
+          "label": "معرّف الفرصة لدى المصدر",
+          "left": [
+            "484"
+          ],
+          "right": [
+            "480"
+          ],
+          "normalized_left": [
+            "484"
+          ],
+          "normalized_right": [
+            "480"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_url",
+          "label": "رابط الفرصة لدى المصدر",
+          "left": [
+            "https://alahsa-opportunities.com/opportunities/484"
+          ],
+          "right": [
+            "https://alahsa-opportunities.com/opportunities/480"
+          ],
+          "normalized_left": [
+            "https://alahsa-opportunities.com/opportunities/484"
+          ],
+          "normalized_right": [
+            "https://alahsa-opportunities.com/opportunities/480"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        }
+      ],
+      "missing_on_left": [],
+      "missing_on_right": [],
+      "human_review_reason": "نفس المصدر لكن أرقام الفرص الرسمية مختلفة؛ هذا سبب لعدم الدمج الآلي، ولا يثبت وحده أن الفرصتين مختلفتان. يستطيع المحلل اعتماد أنهما نفس الفرصة عند كفاية الدليل.",
+      "auto_resolution_allowed": false
+    },
+    {
+      "review_id": 34,
+      "status": "OPEN",
+      "meaningful_difference_count": 2,
+      "compared_fields": [
+        "title_ar",
+        "normalized_title",
+        "opportunity_owner",
+        "primary_publication_platform",
+        "sector",
+        "activity",
+        "sub_activity",
+        "opportunity_type",
+        "investment_model",
+        "city",
+        "district",
+        "location_description",
+        "latitude",
+        "longitude",
+        "land_area_sqm",
+        "plot_number",
+        "asset_facility_type",
+        "investment_value",
+        "currency",
+        "contract_duration_years",
+        "publication_date",
+        "submission_deadline",
+        "status",
+        "short_description",
+        "full_description",
+        "source",
+        "publisher",
+        "official_source_id",
+        "source_opportunity_id",
+        "source_reference_number",
+        "source_title",
+        "source_owner",
+        "source_sector",
+        "source_activity",
+        "source_sub_activity",
+        "source_opportunity_type",
+        "source_investment_model",
+        "raw_location",
+        "source_coordinates",
+        "source_city",
+        "source_district",
+        "raw_area",
+        "raw_value",
+        "raw_dates",
+        "raw_description",
+        "source_asset_facility_type",
+        "source_url"
+      ],
+      "matched_fields": [
+        {
+          "field": "title_ar",
+          "label": "العنوان",
+          "left": "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "right": "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "normalized_left": "أنشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "normalized_right": "أنشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "normalized_title",
+          "label": "العنوان المعياري",
+          "left": "انشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة او ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "right": "انشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة او ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "normalized_left": "انشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة او ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "normalized_right": "انشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة او ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "primary_publication_platform",
+          "label": "منصة النشر",
+          "left": "منصة الفرص الاستثمارية بالأحساء",
+          "right": "منصة الفرص الاستثمارية بالأحساء",
+          "normalized_left": "منصة الفرص الاستثمارية بالأحساء",
+          "normalized_right": "منصة الفرص الاستثمارية بالأحساء",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "sector",
+          "label": "القطاع",
+          "left": "صناعي",
+          "right": "صناعي",
+          "normalized_left": "صناعي",
+          "normalized_right": "صناعي",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "activity",
+          "label": "النشاط",
+          "left": "صناعي",
+          "right": "صناعي",
+          "normalized_left": "صناعي",
+          "normalized_right": "صناعي",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "city",
+          "label": "المدينة",
+          "left": "الأحساء",
+          "right": "الأحساء",
+          "normalized_left": "الأحساء",
+          "normalized_right": "الأحساء",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "location_description",
+          "label": "الموقع التفصيلي",
+          "left": "الاحساء",
+          "right": "الاحساء",
+          "normalized_left": "الاحساء",
+          "normalized_right": "الاحساء",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "land_area_sqm",
+          "label": "المساحة م²",
+          "left": 1361.05,
+          "right": 1361.05,
+          "normalized_left": 1361.05,
+          "normalized_right": 1361.05,
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "contract_duration_years",
+          "label": "مدة العقد",
+          "left": 15,
+          "right": 15,
+          "normalized_left": 15,
+          "normalized_right": 15,
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "submission_deadline",
+          "label": "موعد التقديم",
+          "left": "2026-11-16",
+          "right": "2026-11-16",
+          "normalized_left": "2026 11 16",
+          "normalized_right": "2026 11 16",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "status",
+          "label": "الحالة",
+          "left": "متاحة",
+          "right": "متاحة",
+          "normalized_left": "متاحة",
+          "normalized_right": "متاحة",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "short_description",
+          "label": "الوصف المختصر",
+          "left": "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "right": "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "normalized_left": "أنشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "normalized_right": "أنشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "full_description",
+          "label": "الوصف الكامل",
+          "left": "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "right": "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "normalized_left": "أنشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "normalized_right": "أنشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "source",
+          "label": "المصدر",
+          "left": [
+            "alahsa-opportunities"
+          ],
+          "right": [
+            "alahsa-opportunities"
+          ],
+          "normalized_left": [
+            "alahsa opportunities"
+          ],
+          "normalized_right": [
+            "alahsa opportunities"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "publisher",
+          "label": "الناشر",
+          "left": [
+            "أمانة الأحساء"
+          ],
+          "right": [
+            "أمانة الأحساء"
+          ],
+          "normalized_left": [
+            "أمانة الأحساء"
+          ],
+          "normalized_right": [
+            "أمانة الأحساء"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_title",
+          "label": "العنوان الخام لدى المصدر",
+          "left": [
+            "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه"
+          ],
+          "right": [
+            "أنشاء وتشغيل و صيانة القطعة رقم 46/1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه"
+          ],
+          "normalized_left": [
+            "أنشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه"
+          ],
+          "normalized_right": [
+            "أنشاء وتشغيل و صيانة القطعة رقم 46 1 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_sector",
+          "label": "القطاع الوارد من المصدر",
+          "left": [
+            "صناعي"
+          ],
+          "right": [
+            "صناعي"
+          ],
+          "normalized_left": [
+            "صناعي"
+          ],
+          "normalized_right": [
+            "صناعي"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_activity",
+          "label": "النشاط الوارد من المصدر",
+          "left": [
+            "صناعي"
+          ],
+          "right": [
+            "صناعي"
+          ],
+          "normalized_left": [
+            "صناعي"
+          ],
+          "normalized_right": [
+            "صناعي"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_location",
+          "label": "الموقع الوارد من المصدر",
+          "left": [
+            "الاحساء"
+          ],
+          "right": [
+            "الاحساء"
+          ],
+          "normalized_left": [
+            "الاحساء"
+          ],
+          "normalized_right": [
+            "الاحساء"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_area",
+          "label": "المساحة الخام",
+          "left": [
+            "1361.05 م²"
+          ],
+          "right": [
+            "1361.05 م²"
+          ],
+          "normalized_left": [
+            "1361.05 م2"
+          ],
+          "normalized_right": [
+            "1361.05 م2"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_dates",
+          "label": "تواريخ المصدر",
+          "left": [
+            {
+              "deadline": "2026-11-16"
+            }
+          ],
+          "right": [
+            {
+              "deadline": "2026-11-16"
+            }
+          ],
+          "normalized_left": [
+            {
+              "deadline": "2026 11 16"
+            }
+          ],
+          "normalized_right": [
+            {
+              "deadline": "2026 11 16"
+            }
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        }
+      ],
+      "different_fields": [
+        {
+          "field": "source_opportunity_id",
+          "label": "معرّف الفرصة لدى المصدر",
+          "left": [
+            "483"
+          ],
+          "right": [
+            "480"
+          ],
+          "normalized_left": [
+            "483"
+          ],
+          "normalized_right": [
+            "480"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_url",
+          "label": "رابط الفرصة لدى المصدر",
+          "left": [
+            "https://alahsa-opportunities.com/opportunities/483"
+          ],
+          "right": [
+            "https://alahsa-opportunities.com/opportunities/480"
+          ],
+          "normalized_left": [
+            "https://alahsa-opportunities.com/opportunities/483"
+          ],
+          "normalized_right": [
+            "https://alahsa-opportunities.com/opportunities/480"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        }
+      ],
+      "missing_on_left": [],
+      "missing_on_right": [],
+      "human_review_reason": "نفس المصدر لكن أرقام الفرص الرسمية مختلفة؛ هذا سبب لعدم الدمج الآلي، ولا يثبت وحده أن الفرصتين مختلفتان. يستطيع المحلل اعتماد أنهما نفس الفرصة عند كفاية الدليل.",
+      "auto_resolution_allowed": false
+    },
+    {
+      "review_id": 35,
+      "status": "OPEN",
+      "meaningful_difference_count": 2,
+      "compared_fields": [
+        "title_ar",
+        "normalized_title",
+        "opportunity_owner",
+        "primary_publication_platform",
+        "sector",
+        "activity",
+        "sub_activity",
+        "opportunity_type",
+        "investment_model",
+        "city",
+        "district",
+        "location_description",
+        "latitude",
+        "longitude",
+        "land_area_sqm",
+        "plot_number",
+        "asset_facility_type",
+        "investment_value",
+        "currency",
+        "contract_duration_years",
+        "publication_date",
+        "submission_deadline",
+        "status",
+        "short_description",
+        "full_description",
+        "source",
+        "publisher",
+        "official_source_id",
+        "source_opportunity_id",
+        "source_reference_number",
+        "source_title",
+        "source_owner",
+        "source_sector",
+        "source_activity",
+        "source_sub_activity",
+        "source_opportunity_type",
+        "source_investment_model",
+        "raw_location",
+        "source_coordinates",
+        "source_city",
+        "source_district",
+        "raw_area",
+        "raw_value",
+        "raw_dates",
+        "raw_description",
+        "source_asset_facility_type",
+        "source_url"
+      ],
+      "matched_fields": [
+        {
+          "field": "title_ar",
+          "label": "العنوان",
+          "left": "أنشاء وتشغيل و صيانة القطعة رقم 61/3 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "right": "أنشاء وتشغيل و صيانة القطعة رقم 61/3 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "normalized_left": "أنشاء وتشغيل و صيانة القطعة رقم 61 3 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "normalized_right": "أنشاء وتشغيل و صيانة القطعة رقم 61 3 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "normalized_title",
+          "label": "العنوان المعياري",
+          "left": "انشاء وتشغيل و صيانة القطعة رقم 61 3 ت لنشاط صناعات خفيفة و متوسطة او ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "right": "انشاء وتشغيل و صيانة القطعة رقم 61 3 ت لنشاط صناعات خفيفة و متوسطة او ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "normalized_left": "انشاء وتشغيل و صيانة القطعة رقم 61 3 ت لنشاط صناعات خفيفة و متوسطة او ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "normalized_right": "انشاء وتشغيل و صيانة القطعة رقم 61 3 ت لنشاط صناعات خفيفة و متوسطة او ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "primary_publication_platform",
+          "label": "منصة النشر",
+          "left": "منصة الفرص الاستثمارية بالأحساء",
+          "right": "منصة الفرص الاستثمارية بالأحساء",
+          "normalized_left": "منصة الفرص الاستثمارية بالأحساء",
+          "normalized_right": "منصة الفرص الاستثمارية بالأحساء",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "sector",
+          "label": "القطاع",
+          "left": "صناعي",
+          "right": "صناعي",
+          "normalized_left": "صناعي",
+          "normalized_right": "صناعي",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "activity",
+          "label": "النشاط",
+          "left": "صناعي",
+          "right": "صناعي",
+          "normalized_left": "صناعي",
+          "normalized_right": "صناعي",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "city",
+          "label": "المدينة",
+          "left": "الأحساء",
+          "right": "الأحساء",
+          "normalized_left": "الأحساء",
+          "normalized_right": "الأحساء",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "location_description",
+          "label": "الموقع التفصيلي",
+          "left": "الاحساء",
+          "right": "الاحساء",
+          "normalized_left": "الاحساء",
+          "normalized_right": "الاحساء",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "land_area_sqm",
+          "label": "المساحة م²",
+          "left": 1361.05,
+          "right": 1361.05,
+          "normalized_left": 1361.05,
+          "normalized_right": 1361.05,
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "contract_duration_years",
+          "label": "مدة العقد",
+          "left": 15,
+          "right": 15,
+          "normalized_left": 15,
+          "normalized_right": 15,
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "submission_deadline",
+          "label": "موعد التقديم",
+          "left": "2026-11-16",
+          "right": "2026-11-16",
+          "normalized_left": "2026 11 16",
+          "normalized_right": "2026 11 16",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "status",
+          "label": "الحالة",
+          "left": "متاحة",
+          "right": "متاحة",
+          "normalized_left": "متاحة",
+          "normalized_right": "متاحة",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "short_description",
+          "label": "الوصف المختصر",
+          "left": "أنشاء وتشغيل و صيانة القطعة رقم 61/3 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "right": "أنشاء وتشغيل و صيانة القطعة رقم 61/3 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "normalized_left": "أنشاء وتشغيل و صيانة القطعة رقم 61 3 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "normalized_right": "أنشاء وتشغيل و صيانة القطعة رقم 61 3 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "full_description",
+          "label": "الوصف الكامل",
+          "left": "أنشاء وتشغيل و صيانة القطعة رقم 61/3 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "right": "أنشاء وتشغيل و صيانة القطعة رقم 61/3 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "normalized_left": "أنشاء وتشغيل و صيانة القطعة رقم 61 3 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "normalized_right": "أنشاء وتشغيل و صيانة القطعة رقم 61 3 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "source",
+          "label": "المصدر",
+          "left": [
+            "alahsa-opportunities"
+          ],
+          "right": [
+            "alahsa-opportunities"
+          ],
+          "normalized_left": [
+            "alahsa opportunities"
+          ],
+          "normalized_right": [
+            "alahsa opportunities"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "publisher",
+          "label": "الناشر",
+          "left": [
+            "أمانة الأحساء"
+          ],
+          "right": [
+            "أمانة الأحساء"
+          ],
+          "normalized_left": [
+            "أمانة الأحساء"
+          ],
+          "normalized_right": [
+            "أمانة الأحساء"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_title",
+          "label": "العنوان الخام لدى المصدر",
+          "left": [
+            "أنشاء وتشغيل و صيانة القطعة رقم 61/3 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه"
+          ],
+          "right": [
+            "أنشاء وتشغيل و صيانة القطعة رقم 61/3 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه"
+          ],
+          "normalized_left": [
+            "أنشاء وتشغيل و صيانة القطعة رقم 61 3 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه"
+          ],
+          "normalized_right": [
+            "أنشاء وتشغيل و صيانة القطعة رقم 61 3 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_sector",
+          "label": "القطاع الوارد من المصدر",
+          "left": [
+            "صناعي"
+          ],
+          "right": [
+            "صناعي"
+          ],
+          "normalized_left": [
+            "صناعي"
+          ],
+          "normalized_right": [
+            "صناعي"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_activity",
+          "label": "النشاط الوارد من المصدر",
+          "left": [
+            "صناعي"
+          ],
+          "right": [
+            "صناعي"
+          ],
+          "normalized_left": [
+            "صناعي"
+          ],
+          "normalized_right": [
+            "صناعي"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_location",
+          "label": "الموقع الوارد من المصدر",
+          "left": [
+            "الاحساء"
+          ],
+          "right": [
+            "الاحساء"
+          ],
+          "normalized_left": [
+            "الاحساء"
+          ],
+          "normalized_right": [
+            "الاحساء"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_area",
+          "label": "المساحة الخام",
+          "left": [
+            "1361.05 م²"
+          ],
+          "right": [
+            "1361.05 م²"
+          ],
+          "normalized_left": [
+            "1361.05 م2"
+          ],
+          "normalized_right": [
+            "1361.05 م2"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_dates",
+          "label": "تواريخ المصدر",
+          "left": [
+            {
+              "deadline": "2026-11-16"
+            }
+          ],
+          "right": [
+            {
+              "deadline": "2026-11-16"
+            }
+          ],
+          "normalized_left": [
+            {
+              "deadline": "2026 11 16"
+            }
+          ],
+          "normalized_right": [
+            {
+              "deadline": "2026 11 16"
+            }
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        }
+      ],
+      "different_fields": [
+        {
+          "field": "source_opportunity_id",
+          "label": "معرّف الفرصة لدى المصدر",
+          "left": [
+            "482"
+          ],
+          "right": [
+            "479"
+          ],
+          "normalized_left": [
+            "482"
+          ],
+          "normalized_right": [
+            "479"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_url",
+          "label": "رابط الفرصة لدى المصدر",
+          "left": [
+            "https://alahsa-opportunities.com/opportunities/482"
+          ],
+          "right": [
+            "https://alahsa-opportunities.com/opportunities/479"
+          ],
+          "normalized_left": [
+            "https://alahsa-opportunities.com/opportunities/482"
+          ],
+          "normalized_right": [
+            "https://alahsa-opportunities.com/opportunities/479"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        }
+      ],
+      "missing_on_left": [],
+      "missing_on_right": [],
+      "human_review_reason": "نفس المصدر لكن أرقام الفرص الرسمية مختلفة؛ هذا سبب لعدم الدمج الآلي، ولا يثبت وحده أن الفرصتين مختلفتان. يستطيع المحلل اعتماد أنهما نفس الفرصة عند كفاية الدليل.",
+      "auto_resolution_allowed": false
+    },
+    {
+      "review_id": 36,
+      "status": "OPEN",
+      "meaningful_difference_count": 2,
+      "compared_fields": [
+        "title_ar",
+        "normalized_title",
+        "opportunity_owner",
+        "primary_publication_platform",
+        "sector",
+        "activity",
+        "sub_activity",
+        "opportunity_type",
+        "investment_model",
+        "city",
+        "district",
+        "location_description",
+        "latitude",
+        "longitude",
+        "land_area_sqm",
+        "plot_number",
+        "asset_facility_type",
+        "investment_value",
+        "currency",
+        "contract_duration_years",
+        "publication_date",
+        "submission_deadline",
+        "status",
+        "short_description",
+        "full_description",
+        "source",
+        "publisher",
+        "official_source_id",
+        "source_opportunity_id",
+        "source_reference_number",
+        "source_title",
+        "source_owner",
+        "source_sector",
+        "source_activity",
+        "source_sub_activity",
+        "source_opportunity_type",
+        "source_investment_model",
+        "raw_location",
+        "source_coordinates",
+        "source_city",
+        "source_district",
+        "raw_area",
+        "raw_value",
+        "raw_dates",
+        "raw_description",
+        "source_asset_facility_type",
+        "source_url"
+      ],
+      "matched_fields": [
+        {
+          "field": "title_ar",
+          "label": "العنوان",
+          "left": "أنشاء وتشغيل و صيانة القطعة رقم 61/2 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "right": "أنشاء وتشغيل و صيانة القطعة رقم 61/2 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "normalized_left": "أنشاء وتشغيل و صيانة القطعة رقم 61 2 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "normalized_right": "أنشاء وتشغيل و صيانة القطعة رقم 61 2 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "normalized_title",
+          "label": "العنوان المعياري",
+          "left": "انشاء وتشغيل و صيانة القطعة رقم 61 2 ت لنشاط صناعات خفيفة و متوسطة او ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "right": "انشاء وتشغيل و صيانة القطعة رقم 61 2 ت لنشاط صناعات خفيفة و متوسطة او ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "normalized_left": "انشاء وتشغيل و صيانة القطعة رقم 61 2 ت لنشاط صناعات خفيفة و متوسطة او ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "normalized_right": "انشاء وتشغيل و صيانة القطعة رقم 61 2 ت لنشاط صناعات خفيفة و متوسطة او ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "primary_publication_platform",
+          "label": "منصة النشر",
+          "left": "منصة الفرص الاستثمارية بالأحساء",
+          "right": "منصة الفرص الاستثمارية بالأحساء",
+          "normalized_left": "منصة الفرص الاستثمارية بالأحساء",
+          "normalized_right": "منصة الفرص الاستثمارية بالأحساء",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "sector",
+          "label": "القطاع",
+          "left": "صناعي",
+          "right": "صناعي",
+          "normalized_left": "صناعي",
+          "normalized_right": "صناعي",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "activity",
+          "label": "النشاط",
+          "left": "صناعي",
+          "right": "صناعي",
+          "normalized_left": "صناعي",
+          "normalized_right": "صناعي",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "city",
+          "label": "المدينة",
+          "left": "الأحساء",
+          "right": "الأحساء",
+          "normalized_left": "الأحساء",
+          "normalized_right": "الأحساء",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "location_description",
+          "label": "الموقع التفصيلي",
+          "left": "الاحساء",
+          "right": "الاحساء",
+          "normalized_left": "الاحساء",
+          "normalized_right": "الاحساء",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "land_area_sqm",
+          "label": "المساحة م²",
+          "left": 1361.05,
+          "right": 1361.05,
+          "normalized_left": 1361.05,
+          "normalized_right": 1361.05,
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "contract_duration_years",
+          "label": "مدة العقد",
+          "left": 15,
+          "right": 15,
+          "normalized_left": 15,
+          "normalized_right": 15,
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "submission_deadline",
+          "label": "موعد التقديم",
+          "left": "2026-11-16",
+          "right": "2026-11-16",
+          "normalized_left": "2026 11 16",
+          "normalized_right": "2026 11 16",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "status",
+          "label": "الحالة",
+          "left": "متاحة",
+          "right": "متاحة",
+          "normalized_left": "متاحة",
+          "normalized_right": "متاحة",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "short_description",
+          "label": "الوصف المختصر",
+          "left": "أنشاء وتشغيل و صيانة القطعة رقم 61/2 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "right": "أنشاء وتشغيل و صيانة القطعة رقم 61/2 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "normalized_left": "أنشاء وتشغيل و صيانة القطعة رقم 61 2 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "normalized_right": "أنشاء وتشغيل و صيانة القطعة رقم 61 2 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "full_description",
+          "label": "الوصف الكامل",
+          "left": "أنشاء وتشغيل و صيانة القطعة رقم 61/2 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "right": "أنشاء وتشغيل و صيانة القطعة رقم 61/2 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+          "normalized_left": "أنشاء وتشغيل و صيانة القطعة رقم 61 2 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "normalized_right": "أنشاء وتشغيل و صيانة القطعة رقم 61 2 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "source",
+          "label": "المصدر",
+          "left": [
+            "alahsa-opportunities"
+          ],
+          "right": [
+            "alahsa-opportunities"
+          ],
+          "normalized_left": [
+            "alahsa opportunities"
+          ],
+          "normalized_right": [
+            "alahsa opportunities"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "publisher",
+          "label": "الناشر",
+          "left": [
+            "أمانة الأحساء"
+          ],
+          "right": [
+            "أمانة الأحساء"
+          ],
+          "normalized_left": [
+            "أمانة الأحساء"
+          ],
+          "normalized_right": [
+            "أمانة الأحساء"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_title",
+          "label": "العنوان الخام لدى المصدر",
+          "left": [
+            "أنشاء وتشغيل و صيانة القطعة رقم 61/2 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه"
+          ],
+          "right": [
+            "أنشاء وتشغيل و صيانة القطعة رقم 61/2 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه"
+          ],
+          "normalized_left": [
+            "أنشاء وتشغيل و صيانة القطعة رقم 61 2 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه"
+          ],
+          "normalized_right": [
+            "أنشاء وتشغيل و صيانة القطعة رقم 61 2 ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082 4 بمصانع الطابوق والخرسانه"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_sector",
+          "label": "القطاع الوارد من المصدر",
+          "left": [
+            "صناعي"
+          ],
+          "right": [
+            "صناعي"
+          ],
+          "normalized_left": [
+            "صناعي"
+          ],
+          "normalized_right": [
+            "صناعي"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_activity",
+          "label": "النشاط الوارد من المصدر",
+          "left": [
+            "صناعي"
+          ],
+          "right": [
+            "صناعي"
+          ],
+          "normalized_left": [
+            "صناعي"
+          ],
+          "normalized_right": [
+            "صناعي"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_location",
+          "label": "الموقع الوارد من المصدر",
+          "left": [
+            "الاحساء"
+          ],
+          "right": [
+            "الاحساء"
+          ],
+          "normalized_left": [
+            "الاحساء"
+          ],
+          "normalized_right": [
+            "الاحساء"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_area",
+          "label": "المساحة الخام",
+          "left": [
+            "1361.05 م²"
+          ],
+          "right": [
+            "1361.05 م²"
+          ],
+          "normalized_left": [
+            "1361.05 م2"
+          ],
+          "normalized_right": [
+            "1361.05 م2"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_dates",
+          "label": "تواريخ المصدر",
+          "left": [
+            {
+              "deadline": "2026-11-16"
+            }
+          ],
+          "right": [
+            {
+              "deadline": "2026-11-16"
+            }
+          ],
+          "normalized_left": [
+            {
+              "deadline": "2026 11 16"
+            }
+          ],
+          "normalized_right": [
+            {
+              "deadline": "2026 11 16"
+            }
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        }
+      ],
+      "different_fields": [
+        {
+          "field": "source_opportunity_id",
+          "label": "معرّف الفرصة لدى المصدر",
+          "left": [
+            "481"
+          ],
+          "right": [
+            "478"
+          ],
+          "normalized_left": [
+            "481"
+          ],
+          "normalized_right": [
+            "478"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_url",
+          "label": "رابط الفرصة لدى المصدر",
+          "left": [
+            "https://alahsa-opportunities.com/opportunities/481"
+          ],
+          "right": [
+            "https://alahsa-opportunities.com/opportunities/478"
+          ],
+          "normalized_left": [
+            "https://alahsa-opportunities.com/opportunities/481"
+          ],
+          "normalized_right": [
+            "https://alahsa-opportunities.com/opportunities/478"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        }
+      ],
+      "missing_on_left": [],
+      "missing_on_right": [],
+      "human_review_reason": "نفس المصدر لكن أرقام الفرص الرسمية مختلفة؛ هذا سبب لعدم الدمج الآلي، ولا يثبت وحده أن الفرصتين مختلفتان. يستطيع المحلل اعتماد أنهما نفس الفرصة عند كفاية الدليل.",
+      "auto_resolution_allowed": false
+    },
+    {
+      "review_id": 37,
+      "status": "OPEN",
+      "meaningful_difference_count": 18,
+      "compared_fields": [
+        "title_ar",
+        "normalized_title",
+        "opportunity_owner",
+        "primary_publication_platform",
+        "sector",
+        "activity",
+        "sub_activity",
+        "opportunity_type",
+        "investment_model",
+        "city",
+        "district",
+        "location_description",
+        "latitude",
+        "longitude",
+        "land_area_sqm",
+        "plot_number",
+        "asset_facility_type",
+        "investment_value",
+        "currency",
+        "contract_duration_years",
+        "publication_date",
+        "submission_deadline",
+        "status",
+        "short_description",
+        "full_description",
+        "source",
+        "publisher",
+        "official_source_id",
+        "source_opportunity_id",
+        "source_reference_number",
+        "source_title",
+        "source_owner",
+        "source_sector",
+        "source_activity",
+        "source_sub_activity",
+        "source_opportunity_type",
+        "source_investment_model",
+        "raw_location",
+        "source_coordinates",
+        "source_city",
+        "source_district",
+        "raw_area",
+        "raw_value",
+        "raw_dates",
+        "raw_description",
+        "source_asset_facility_type",
+        "source_url"
+      ],
+      "matched_fields": [
+        {
+          "field": "title_ar",
+          "label": "العنوان",
+          "left": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19/149 مثلث القرى الشرقية",
+          "right": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19/149 مثلث القرى الشرقية",
+          "normalized_left": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19 149 مثلث القرى الشرقية",
+          "normalized_right": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19 149 مثلث القرى الشرقية",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "normalized_title",
+          "label": "العنوان المعياري",
+          "left": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الانشطة للقطعة رقم 5 بالمخطط رقم 19 149 مثلث القري الشرقية",
+          "right": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الانشطة للقطعة رقم 5 بالمخطط رقم 19 149 مثلث القري الشرقية",
+          "normalized_left": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الانشطة للقطعة رقم 5 بالمخطط رقم 19 149 مثلث القري الشرقية",
+          "normalized_right": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الانشطة للقطعة رقم 5 بالمخطط رقم 19 149 مثلث القري الشرقية",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "primary_publication_platform",
+          "label": "منصة النشر",
+          "left": "منصة الفرص الاستثمارية بالأحساء",
+          "right": "منصة الفرص الاستثمارية بالأحساء",
+          "normalized_left": "منصة الفرص الاستثمارية بالأحساء",
+          "normalized_right": "منصة الفرص الاستثمارية بالأحساء",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "sector",
+          "label": "القطاع",
+          "left": "تجاري",
+          "right": "تجاري",
+          "normalized_left": "تجاري",
+          "normalized_right": "تجاري",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "activity",
+          "label": "النشاط",
+          "left": "تجاري",
+          "right": "تجاري",
+          "normalized_left": "تجاري",
+          "normalized_right": "تجاري",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "city",
+          "label": "المدينة",
+          "left": "الأحساء",
+          "right": "الأحساء",
+          "normalized_left": "الأحساء",
+          "normalized_right": "الأحساء",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "location_description",
+          "label": "الموقع التفصيلي",
+          "left": "الاحساء",
+          "right": "الاحساء",
+          "normalized_left": "الاحساء",
+          "normalized_right": "الاحساء",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "land_area_sqm",
+          "label": "المساحة م²",
+          "left": 11099,
+          "right": 11099,
+          "normalized_left": 11099,
+          "normalized_right": 11099,
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "contract_duration_years",
+          "label": "مدة العقد",
+          "left": 25,
+          "right": 25,
+          "normalized_left": 25,
+          "normalized_right": 25,
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "status",
+          "label": "الحالة",
+          "left": "متاحة",
+          "right": "متاحة",
+          "normalized_left": "متاحة",
+          "normalized_right": "متاحة",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "short_description",
+          "label": "الوصف المختصر",
+          "left": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19/149 مثلث القرى الشرقية",
+          "right": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19/149 مثلث القرى الشرقية",
+          "normalized_left": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19 149 مثلث القرى الشرقية",
+          "normalized_right": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19 149 مثلث القرى الشرقية",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "full_description",
+          "label": "الوصف الكامل",
+          "left": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19/149 مثلث القرى الشرقية",
+          "right": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19/149 مثلث القرى الشرقية",
+          "normalized_left": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19 149 مثلث القرى الشرقية",
+          "normalized_right": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19 149 مثلث القرى الشرقية",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "source_sector",
+          "label": "القطاع الوارد من المصدر",
+          "left": [
+            "تجاري"
+          ],
+          "right": [
+            "تجاري"
+          ],
+          "normalized_left": [
+            "تجاري"
+          ],
+          "normalized_right": [
+            "تجاري"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        }
+      ],
+      "different_fields": [
+        {
+          "field": "submission_deadline",
+          "label": "موعد التقديم",
+          "left": "2026-11-16",
+          "right": "2026-12-14",
+          "normalized_left": "2026 11 16",
+          "normalized_right": "2026 12 14",
+          "state": "DIFFERENT",
+          "identity_evidence": false
+        },
+        {
+          "field": "source",
+          "label": "المصدر",
+          "left": [
+            "alahsa-opportunities",
+            "furas"
+          ],
+          "right": [
+            "alahsa-opportunities"
+          ],
+          "normalized_left": [
+            "alahsa opportunities",
+            "furas"
+          ],
+          "normalized_right": [
+            "alahsa opportunities"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "publisher",
+          "label": "الناشر",
+          "left": [
+            "أمانة الأحساء",
+            "وزارة البلديات والإسكان والجهات الحكومية المشاركة"
+          ],
+          "right": [
+            "أمانة الأحساء"
+          ],
+          "normalized_left": [
+            "أمانة الأحساء",
+            "وزارة البلديات والإسكان والجهات الحكومية المشاركة"
+          ],
+          "normalized_right": [
+            "أمانة الأحساء"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_opportunity_id",
+          "label": "معرّف الفرصة لدى المصدر",
+          "left": [
+            "01-26-017001-23001",
+            "476"
+          ],
+          "right": [
+            "527"
+          ],
+          "normalized_left": [
+            "01-26-017001-23001",
+            "476"
+          ],
+          "normalized_right": [
+            "527"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_title",
+          "label": "العنوان الخام لدى المصدر",
+          "left": [
+            "انشاء و تشغيل و صيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19  149 مثلث القرى الشرقية - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+            "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19/149 مثلث القرى الشرقية"
+          ],
+          "right": [
+            "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19/149 مثلث القرى الشرقية"
+          ],
+          "normalized_left": [
+            "انشاء و تشغيل و صيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19 149 مثلث القرى الشرقية الأنشطة التجارية أنشطة التجارة العامة عام",
+            "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19 149 مثلث القرى الشرقية"
+          ],
+          "normalized_right": [
+            "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19 149 مثلث القرى الشرقية"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_activity",
+          "label": "النشاط الوارد من المصدر",
+          "left": [
+            "الأنشطة التجارية",
+            "تجاري"
+          ],
+          "right": [
+            "تجاري"
+          ],
+          "normalized_left": [
+            "الأنشطة التجارية",
+            "تجاري"
+          ],
+          "normalized_right": [
+            "تجاري"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_location",
+          "label": "الموقع الوارد من المصدر",
+          "left": [
+            "الاحساء مثلث الشرقية الامير مشاري بن عبد العزيز",
+            "الاحساء"
+          ],
+          "right": [
+            "الاحساء"
+          ],
+          "normalized_left": [
+            "الاحساء",
+            "الاحساء مثلث الشرقية الامير مشاري بن عبد العزيز"
+          ],
+          "normalized_right": [
+            "الاحساء"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_area",
+          "label": "المساحة الخام",
+          "left": [
+            "11099 م²",
+            "11099.0"
+          ],
+          "right": [
+            "11099 م²"
+          ],
+          "normalized_left": [
+            "11099 م2",
+            "11099.0"
+          ],
+          "normalized_right": [
+            "11099 م2"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_dates",
+          "label": "تواريخ المصدر",
+          "left": [
+            {
+              "deadline": "2026-11-16"
+            },
+            {
+              "deadline": null
+            }
+          ],
+          "right": [
+            {
+              "deadline": "2026-12-14"
+            }
+          ],
+          "normalized_left": [
+            {
+              "deadline": "2026 11 16"
+            }
+          ],
+          "normalized_right": [
+            {
+              "deadline": "2026 12 14"
+            }
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_url",
+          "label": "رابط الفرصة لدى المصدر",
+          "left": [
+            "https://alahsa-opportunities.com/opportunities/476",
+            "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-23001?type=Investment"
+          ],
+          "right": [
+            "https://alahsa-opportunities.com/opportunities/527"
+          ],
+          "normalized_left": [
+            "https://alahsa-opportunities.com/opportunities/476",
+            "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-23001?type=investment"
+          ],
+          "normalized_right": [
+            "https://alahsa-opportunities.com/opportunities/527"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        }
+      ],
+      "missing_on_left": [],
+      "missing_on_right": [
+        {
+          "field": "opportunity_owner",
+          "label": "الجهة المالكة",
+          "left": "أمانة الأحساء",
+          "right": null,
+          "normalized_left": "أمانة الأحساء",
+          "normalized_right": null,
+          "state": "MISSING_RIGHT",
+          "identity_evidence": false
+        },
+        {
+          "field": "sub_activity",
+          "label": "النشاط الفرعي",
+          "left": "أنشطة التجارة العامة",
+          "right": null,
+          "normalized_left": "أنشطة التجارة العامة",
+          "normalized_right": null,
+          "state": "MISSING_RIGHT",
+          "identity_evidence": false
+        },
+        {
+          "field": "latitude",
+          "label": "خط العرض",
+          "left": 25.390822000000014,
+          "right": null,
+          "normalized_left": 25.390822000000014,
+          "normalized_right": null,
+          "state": "MISSING_RIGHT",
+          "identity_evidence": false
+        },
+        {
+          "field": "longitude",
+          "label": "خط الطول",
+          "left": 49.66241400000001,
+          "right": null,
+          "normalized_left": 49.66241400000001,
+          "normalized_right": null,
+          "state": "MISSING_RIGHT",
+          "identity_evidence": false
+        },
+        {
+          "field": "source_reference_number",
+          "label": "الرقم المرجعي لدى المصدر",
+          "left": [
+            "01-26-017001-23001"
+          ],
+          "right": [],
+          "normalized_left": [
+            "01-26-017001-23001"
+          ],
+          "normalized_right": null,
+          "state": "MISSING_RIGHT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_owner",
+          "label": "الجهة المالكة لدى المصدر",
+          "left": [
+            "أمانة محافظة الأحساء"
+          ],
+          "right": [],
+          "normalized_left": [
+            "أمانة محافظة الأحساء"
+          ],
+          "normalized_right": null,
+          "state": "MISSING_RIGHT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_sub_activity",
+          "label": "النشاط الفرعي الوارد من المصدر",
+          "left": [
+            "أنشطة التجارة العامة"
+          ],
+          "right": [],
+          "normalized_left": [
+            "أنشطة التجارة العامة"
+          ],
+          "normalized_right": null,
+          "state": "MISSING_RIGHT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_opportunity_type",
+          "label": "نوع الفرصة الوارد من المصدر",
+          "left": [
+            "Investment"
+          ],
+          "right": [],
+          "normalized_left": [
+            "investment"
+          ],
+          "normalized_right": null,
+          "state": "MISSING_RIGHT",
+          "identity_evidence": true
+        }
+      ],
+      "human_review_reason": "نفس المصدر لكن أرقام الفرص الرسمية مختلفة؛ هذا سبب لعدم الدمج الآلي، ولا يثبت وحده أن الفرصتين مختلفتان. يستطيع المحلل اعتماد أنهما نفس الفرصة عند كفاية الدليل.",
+      "auto_resolution_allowed": false
+    },
+    {
+      "review_id": 38,
+      "status": "OPEN",
+      "meaningful_difference_count": 2,
+      "compared_fields": [
+        "title_ar",
+        "normalized_title",
+        "opportunity_owner",
+        "primary_publication_platform",
+        "sector",
+        "activity",
+        "sub_activity",
+        "opportunity_type",
+        "investment_model",
+        "city",
+        "district",
+        "location_description",
+        "latitude",
+        "longitude",
+        "land_area_sqm",
+        "plot_number",
+        "asset_facility_type",
+        "investment_value",
+        "currency",
+        "contract_duration_years",
+        "publication_date",
+        "submission_deadline",
+        "status",
+        "short_description",
+        "full_description",
+        "source",
+        "publisher",
+        "official_source_id",
+        "source_opportunity_id",
+        "source_reference_number",
+        "source_title",
+        "source_owner",
+        "source_sector",
+        "source_activity",
+        "source_sub_activity",
+        "source_opportunity_type",
+        "source_investment_model",
+        "raw_location",
+        "source_coordinates",
+        "source_city",
+        "source_district",
+        "raw_area",
+        "raw_value",
+        "raw_dates",
+        "raw_description",
+        "source_asset_facility_type",
+        "source_url"
+      ],
+      "matched_fields": [
+        {
+          "field": "title_ar",
+          "label": "العنوان",
+          "left": "انشاء و تشغيل و صيانة مصنع طابوق وخرسانة للقطعة رقم ت 64 ت 65 بمخطط رقم 4/1082",
+          "right": "انشاء و تشغيل و صيانة مصنع طابوق وخرسانة للقطعة رقم ت 64 ت 65 بمخطط رقم 4/1082",
+          "normalized_left": "انشاء و تشغيل و صيانة مصنع طابوق وخرسانة للقطعة رقم ت 64 ت 65 بمخطط رقم 4 1082",
+          "normalized_right": "انشاء و تشغيل و صيانة مصنع طابوق وخرسانة للقطعة رقم ت 64 ت 65 بمخطط رقم 4 1082",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "normalized_title",
+          "label": "العنوان المعياري",
+          "left": "انشاء و تشغيل و صيانة مصنع طابوق وخرسانة للقطعة رقم ت 64 ت 65 بمخطط رقم 4 1082",
+          "right": "انشاء و تشغيل و صيانة مصنع طابوق وخرسانة للقطعة رقم ت 64 ت 65 بمخطط رقم 4 1082",
+          "normalized_left": "انشاء و تشغيل و صيانة مصنع طابوق وخرسانة للقطعة رقم ت 64 ت 65 بمخطط رقم 4 1082",
+          "normalized_right": "انشاء و تشغيل و صيانة مصنع طابوق وخرسانة للقطعة رقم ت 64 ت 65 بمخطط رقم 4 1082",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "primary_publication_platform",
+          "label": "منصة النشر",
+          "left": "منصة الفرص الاستثمارية بالأحساء",
+          "right": "منصة الفرص الاستثمارية بالأحساء",
+          "normalized_left": "منصة الفرص الاستثمارية بالأحساء",
+          "normalized_right": "منصة الفرص الاستثمارية بالأحساء",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "sector",
+          "label": "القطاع",
+          "left": "صناعي",
+          "right": "صناعي",
+          "normalized_left": "صناعي",
+          "normalized_right": "صناعي",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "activity",
+          "label": "النشاط",
+          "left": "صناعي",
+          "right": "صناعي",
+          "normalized_left": "صناعي",
+          "normalized_right": "صناعي",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "city",
+          "label": "المدينة",
+          "left": "الأحساء",
+          "right": "الأحساء",
+          "normalized_left": "الأحساء",
+          "normalized_right": "الأحساء",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "location_description",
+          "label": "الموقع التفصيلي",
+          "left": "الاحساء",
+          "right": "الاحساء",
+          "normalized_left": "الاحساء",
+          "normalized_right": "الاحساء",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "land_area_sqm",
+          "label": "المساحة م²",
+          "left": 10855.8,
+          "right": 10855.8,
+          "normalized_left": 10855.8,
+          "normalized_right": 10855.8,
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "contract_duration_years",
+          "label": "مدة العقد",
+          "left": 25,
+          "right": 25,
+          "normalized_left": 25,
+          "normalized_right": 25,
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "submission_deadline",
+          "label": "موعد التقديم",
+          "left": "2026-10-21",
+          "right": "2026-10-21",
+          "normalized_left": "2026 10 21",
+          "normalized_right": "2026 10 21",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "status",
+          "label": "الحالة",
+          "left": "أزيلت من المصدر",
+          "right": "أزيلت من المصدر",
+          "normalized_left": "أزيلت من المصدر",
+          "normalized_right": "أزيلت من المصدر",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "short_description",
+          "label": "الوصف المختصر",
+          "left": "انشاء و تشغيل و صيانة مصنع طابوق وخرسانة للقطعة رقم ت 64 ت 65 بمخطط رقم 4/1082",
+          "right": "انشاء و تشغيل و صيانة مصنع طابوق وخرسانة للقطعة رقم ت 64 ت 65 بمخطط رقم 4/1082",
+          "normalized_left": "انشاء و تشغيل و صيانة مصنع طابوق وخرسانة للقطعة رقم ت 64 ت 65 بمخطط رقم 4 1082",
+          "normalized_right": "انشاء و تشغيل و صيانة مصنع طابوق وخرسانة للقطعة رقم ت 64 ت 65 بمخطط رقم 4 1082",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "full_description",
+          "label": "الوصف الكامل",
+          "left": "انشاء و تشغيل و صيانة مصنع طابوق وخرسانة للقطعة رقم ت 64 ت 65 بمخطط رقم 4/1082",
+          "right": "انشاء و تشغيل و صيانة مصنع طابوق وخرسانة للقطعة رقم ت 64 ت 65 بمخطط رقم 4/1082",
+          "normalized_left": "انشاء و تشغيل و صيانة مصنع طابوق وخرسانة للقطعة رقم ت 64 ت 65 بمخطط رقم 4 1082",
+          "normalized_right": "انشاء و تشغيل و صيانة مصنع طابوق وخرسانة للقطعة رقم ت 64 ت 65 بمخطط رقم 4 1082",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "source",
+          "label": "المصدر",
+          "left": [
+            "alahsa-opportunities"
+          ],
+          "right": [
+            "alahsa-opportunities"
+          ],
+          "normalized_left": [
+            "alahsa opportunities"
+          ],
+          "normalized_right": [
+            "alahsa opportunities"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "publisher",
+          "label": "الناشر",
+          "left": [
+            "أمانة الأحساء"
+          ],
+          "right": [
+            "أمانة الأحساء"
+          ],
+          "normalized_left": [
+            "أمانة الأحساء"
+          ],
+          "normalized_right": [
+            "أمانة الأحساء"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_title",
+          "label": "العنوان الخام لدى المصدر",
+          "left": [
+            "انشاء و تشغيل و صيانة مصنع طابوق وخرسانة للقطعة رقم ت 64 ت 65 بمخطط رقم 4/1082"
+          ],
+          "right": [
+            "انشاء و تشغيل و صيانة مصنع طابوق وخرسانة للقطعة رقم ت 64 ت 65 بمخطط رقم 4/1082"
+          ],
+          "normalized_left": [
+            "انشاء و تشغيل و صيانة مصنع طابوق وخرسانة للقطعة رقم ت 64 ت 65 بمخطط رقم 4 1082"
+          ],
+          "normalized_right": [
+            "انشاء و تشغيل و صيانة مصنع طابوق وخرسانة للقطعة رقم ت 64 ت 65 بمخطط رقم 4 1082"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_sector",
+          "label": "القطاع الوارد من المصدر",
+          "left": [
+            "صناعي"
+          ],
+          "right": [
+            "صناعي"
+          ],
+          "normalized_left": [
+            "صناعي"
+          ],
+          "normalized_right": [
+            "صناعي"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_activity",
+          "label": "النشاط الوارد من المصدر",
+          "left": [
+            "صناعي"
+          ],
+          "right": [
+            "صناعي"
+          ],
+          "normalized_left": [
+            "صناعي"
+          ],
+          "normalized_right": [
+            "صناعي"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_location",
+          "label": "الموقع الوارد من المصدر",
+          "left": [
+            "الاحساء"
+          ],
+          "right": [
+            "الاحساء"
+          ],
+          "normalized_left": [
+            "الاحساء"
+          ],
+          "normalized_right": [
+            "الاحساء"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_area",
+          "label": "المساحة الخام",
+          "left": [
+            "10855.8 م²"
+          ],
+          "right": [
+            "10855.8 م²"
+          ],
+          "normalized_left": [
+            "10855.8 م2"
+          ],
+          "normalized_right": [
+            "10855.8 م2"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_dates",
+          "label": "تواريخ المصدر",
+          "left": [
+            {
+              "deadline": "2026-10-21"
+            }
+          ],
+          "right": [
+            {
+              "deadline": "2026-10-21"
+            }
+          ],
+          "normalized_left": [
+            {
+              "deadline": "2026 10 21"
+            }
+          ],
+          "normalized_right": [
+            {
+              "deadline": "2026 10 21"
+            }
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        }
+      ],
+      "different_fields": [
+        {
+          "field": "source_opportunity_id",
+          "label": "معرّف الفرصة لدى المصدر",
+          "left": [
+            "439"
+          ],
+          "right": [
+            "438"
+          ],
+          "normalized_left": [
+            "439"
+          ],
+          "normalized_right": [
+            "438"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_url",
+          "label": "رابط الفرصة لدى المصدر",
+          "left": [
+            "https://alahsa-opportunities.com/opportunities/439"
+          ],
+          "right": [
+            "https://alahsa-opportunities.com/opportunities/438"
+          ],
+          "normalized_left": [
+            "https://alahsa-opportunities.com/opportunities/439"
+          ],
+          "normalized_right": [
+            "https://alahsa-opportunities.com/opportunities/438"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        }
+      ],
+      "missing_on_left": [],
+      "missing_on_right": [],
+      "human_review_reason": "نفس المصدر لكن أرقام الفرص الرسمية مختلفة؛ هذا سبب لعدم الدمج الآلي، ولا يثبت وحده أن الفرصتين مختلفتان. يستطيع المحلل اعتماد أنهما نفس الفرصة عند كفاية الدليل.",
+      "auto_resolution_allowed": false
+    },
+    {
+      "review_id": 39,
+      "status": "OPEN",
+      "meaningful_difference_count": 2,
+      "compared_fields": [
+        "title_ar",
+        "normalized_title",
+        "opportunity_owner",
+        "primary_publication_platform",
+        "sector",
+        "activity",
+        "sub_activity",
+        "opportunity_type",
+        "investment_model",
+        "city",
+        "district",
+        "location_description",
+        "latitude",
+        "longitude",
+        "land_area_sqm",
+        "plot_number",
+        "asset_facility_type",
+        "investment_value",
+        "currency",
+        "contract_duration_years",
+        "publication_date",
+        "submission_deadline",
+        "status",
+        "short_description",
+        "full_description",
+        "source",
+        "publisher",
+        "official_source_id",
+        "source_opportunity_id",
+        "source_reference_number",
+        "source_title",
+        "source_owner",
+        "source_sector",
+        "source_activity",
+        "source_sub_activity",
+        "source_opportunity_type",
+        "source_investment_model",
+        "raw_location",
+        "source_coordinates",
+        "source_city",
+        "source_district",
+        "raw_area",
+        "raw_value",
+        "raw_dates",
+        "raw_description",
+        "source_asset_facility_type",
+        "source_url"
+      ],
+      "matched_fields": [
+        {
+          "field": "title_ar",
+          "label": "العنوان",
+          "left": "انشاء و تشغيل و صيانة سكن جماعي بالقطعة رقم ت 15 بالمخطط رقم 4 1082 الطابوق والخرسانة",
+          "right": "انشاء و تشغيل و صيانة سكن جماعي بالقطعة رقم ت 15 بالمخطط رقم 4 1082 الطابوق والخرسانة",
+          "normalized_left": "انشاء و تشغيل و صيانة سكن جماعي بالقطعة رقم ت 15 بالمخطط رقم 4 1082 الطابوق والخرسانة",
+          "normalized_right": "انشاء و تشغيل و صيانة سكن جماعي بالقطعة رقم ت 15 بالمخطط رقم 4 1082 الطابوق والخرسانة",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "normalized_title",
+          "label": "العنوان المعياري",
+          "left": "انشاء و تشغيل و صيانة سكن جماعي بالقطعة رقم ت 15 بالمخطط رقم 4 1082 الطابوق والخرسانة",
+          "right": "انشاء و تشغيل و صيانة سكن جماعي بالقطعة رقم ت 15 بالمخطط رقم 4 1082 الطابوق والخرسانة",
+          "normalized_left": "انشاء و تشغيل و صيانة سكن جماعي بالقطعة رقم ت 15 بالمخطط رقم 4 1082 الطابوق والخرسانة",
+          "normalized_right": "انشاء و تشغيل و صيانة سكن جماعي بالقطعة رقم ت 15 بالمخطط رقم 4 1082 الطابوق والخرسانة",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "primary_publication_platform",
+          "label": "منصة النشر",
+          "left": "منصة الفرص الاستثمارية بالأحساء",
+          "right": "منصة الفرص الاستثمارية بالأحساء",
+          "normalized_left": "منصة الفرص الاستثمارية بالأحساء",
+          "normalized_right": "منصة الفرص الاستثمارية بالأحساء",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "sector",
+          "label": "القطاع",
+          "left": "تجاري",
+          "right": "تجاري",
+          "normalized_left": "تجاري",
+          "normalized_right": "تجاري",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "activity",
+          "label": "النشاط",
+          "left": "تجاري",
+          "right": "تجاري",
+          "normalized_left": "تجاري",
+          "normalized_right": "تجاري",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "city",
+          "label": "المدينة",
+          "left": "الأحساء",
+          "right": "الأحساء",
+          "normalized_left": "الأحساء",
+          "normalized_right": "الأحساء",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "location_description",
+          "label": "الموقع التفصيلي",
+          "left": "الاحساء",
+          "right": "الاحساء",
+          "normalized_left": "الاحساء",
+          "normalized_right": "الاحساء",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "land_area_sqm",
+          "label": "المساحة م²",
+          "left": 2500.76,
+          "right": 2500.76,
+          "normalized_left": 2500.76,
+          "normalized_right": 2500.76,
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "contract_duration_years",
+          "label": "مدة العقد",
+          "left": 15,
+          "right": 15,
+          "normalized_left": 15,
+          "normalized_right": 15,
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "submission_deadline",
+          "label": "موعد التقديم",
+          "left": "2026-12-14",
+          "right": "2026-12-14",
+          "normalized_left": "2026 12 14",
+          "normalized_right": "2026 12 14",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "status",
+          "label": "الحالة",
+          "left": "متاحة",
+          "right": "متاحة",
+          "normalized_left": "متاحة",
+          "normalized_right": "متاحة",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "short_description",
+          "label": "الوصف المختصر",
+          "left": "انشاء و تشغيل و صيانة سكن جماعي بالقطعة رقم ت 15 بالمخطط رقم 4 1082 الطابوق والخرسانة",
+          "right": "انشاء و تشغيل و صيانة سكن جماعي بالقطعة رقم ت 15 بالمخطط رقم 4 1082 الطابوق والخرسانة",
+          "normalized_left": "انشاء و تشغيل و صيانة سكن جماعي بالقطعة رقم ت 15 بالمخطط رقم 4 1082 الطابوق والخرسانة",
+          "normalized_right": "انشاء و تشغيل و صيانة سكن جماعي بالقطعة رقم ت 15 بالمخطط رقم 4 1082 الطابوق والخرسانة",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "full_description",
+          "label": "الوصف الكامل",
+          "left": "انشاء و تشغيل و صيانة سكن جماعي بالقطعة رقم ت 15 بالمخطط رقم 4 1082 الطابوق والخرسانة",
+          "right": "انشاء و تشغيل و صيانة سكن جماعي بالقطعة رقم ت 15 بالمخطط رقم 4 1082 الطابوق والخرسانة",
+          "normalized_left": "انشاء و تشغيل و صيانة سكن جماعي بالقطعة رقم ت 15 بالمخطط رقم 4 1082 الطابوق والخرسانة",
+          "normalized_right": "انشاء و تشغيل و صيانة سكن جماعي بالقطعة رقم ت 15 بالمخطط رقم 4 1082 الطابوق والخرسانة",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "source",
+          "label": "المصدر",
+          "left": [
+            "alahsa-opportunities"
+          ],
+          "right": [
+            "alahsa-opportunities"
+          ],
+          "normalized_left": [
+            "alahsa opportunities"
+          ],
+          "normalized_right": [
+            "alahsa opportunities"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "publisher",
+          "label": "الناشر",
+          "left": [
+            "أمانة الأحساء"
+          ],
+          "right": [
+            "أمانة الأحساء"
+          ],
+          "normalized_left": [
+            "أمانة الأحساء"
+          ],
+          "normalized_right": [
+            "أمانة الأحساء"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_title",
+          "label": "العنوان الخام لدى المصدر",
+          "left": [
+            "انشاء و تشغيل و صيانة سكن جماعي بالقطعة رقم ت 15 بالمخطط رقم 4 1082 الطابوق والخرسانة"
+          ],
+          "right": [
+            "انشاء و تشغيل و صيانة سكن جماعي بالقطعة رقم ت 15 بالمخطط رقم 4 1082 الطابوق والخرسانة"
+          ],
+          "normalized_left": [
+            "انشاء و تشغيل و صيانة سكن جماعي بالقطعة رقم ت 15 بالمخطط رقم 4 1082 الطابوق والخرسانة"
+          ],
+          "normalized_right": [
+            "انشاء و تشغيل و صيانة سكن جماعي بالقطعة رقم ت 15 بالمخطط رقم 4 1082 الطابوق والخرسانة"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_sector",
+          "label": "القطاع الوارد من المصدر",
+          "left": [
+            "تجاري"
+          ],
+          "right": [
+            "تجاري"
+          ],
+          "normalized_left": [
+            "تجاري"
+          ],
+          "normalized_right": [
+            "تجاري"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_activity",
+          "label": "النشاط الوارد من المصدر",
+          "left": [
+            "تجاري"
+          ],
+          "right": [
+            "تجاري"
+          ],
+          "normalized_left": [
+            "تجاري"
+          ],
+          "normalized_right": [
+            "تجاري"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_location",
+          "label": "الموقع الوارد من المصدر",
+          "left": [
+            "الاحساء"
+          ],
+          "right": [
+            "الاحساء"
+          ],
+          "normalized_left": [
+            "الاحساء"
+          ],
+          "normalized_right": [
+            "الاحساء"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_area",
+          "label": "المساحة الخام",
+          "left": [
+            "2500.76 م²"
+          ],
+          "right": [
+            "2500.76 م²"
+          ],
+          "normalized_left": [
+            "2500.76 م2"
+          ],
+          "normalized_right": [
+            "2500.76 م2"
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_dates",
+          "label": "تواريخ المصدر",
+          "left": [
+            {
+              "deadline": "2026-12-14"
+            }
+          ],
+          "right": [
+            {
+              "deadline": "2026-12-14"
+            }
+          ],
+          "normalized_left": [
+            {
+              "deadline": "2026 12 14"
+            }
+          ],
+          "normalized_right": [
+            {
+              "deadline": "2026 12 14"
+            }
+          ],
+          "state": "MATCH",
+          "identity_evidence": true
+        }
+      ],
+      "different_fields": [
+        {
+          "field": "source_opportunity_id",
+          "label": "معرّف الفرصة لدى المصدر",
+          "left": [
+            "523"
+          ],
+          "right": [
+            "522"
+          ],
+          "normalized_left": [
+            "523"
+          ],
+          "normalized_right": [
+            "522"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_url",
+          "label": "رابط الفرصة لدى المصدر",
+          "left": [
+            "https://alahsa-opportunities.com/opportunities/523"
+          ],
+          "right": [
+            "https://alahsa-opportunities.com/opportunities/522"
+          ],
+          "normalized_left": [
+            "https://alahsa-opportunities.com/opportunities/523"
+          ],
+          "normalized_right": [
+            "https://alahsa-opportunities.com/opportunities/522"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        }
+      ],
+      "missing_on_left": [],
+      "missing_on_right": [],
+      "human_review_reason": "نفس المصدر لكن أرقام الفرص الرسمية مختلفة؛ هذا سبب لعدم الدمج الآلي، ولا يثبت وحده أن الفرصتين مختلفتان. يستطيع المحلل اعتماد أنهما نفس الفرصة عند كفاية الدليل.",
+      "auto_resolution_allowed": false
+    },
+    {
+      "review_id": 46,
+      "status": "OPEN",
+      "meaningful_difference_count": 30,
+      "compared_fields": [
+        "title_ar",
+        "normalized_title",
+        "opportunity_owner",
+        "primary_publication_platform",
+        "sector",
+        "activity",
+        "sub_activity",
+        "opportunity_type",
+        "investment_model",
+        "city",
+        "district",
+        "location_description",
+        "latitude",
+        "longitude",
+        "land_area_sqm",
+        "plot_number",
+        "asset_facility_type",
+        "investment_value",
+        "currency",
+        "contract_duration_years",
+        "publication_date",
+        "submission_deadline",
+        "status",
+        "short_description",
+        "full_description",
+        "source",
+        "publisher",
+        "official_source_id",
+        "source_opportunity_id",
+        "source_reference_number",
+        "source_title",
+        "source_owner",
+        "source_sector",
+        "source_activity",
+        "source_sub_activity",
+        "source_opportunity_type",
+        "source_investment_model",
+        "raw_location",
+        "source_coordinates",
+        "source_city",
+        "source_district",
+        "raw_area",
+        "raw_value",
+        "raw_dates",
+        "raw_description",
+        "source_asset_facility_type",
+        "source_url"
+      ],
+      "matched_fields": [
+        {
+          "field": "land_area_sqm",
+          "label": "المساحة م²",
+          "left": 15,
+          "right": 15,
+          "normalized_left": 15,
+          "normalized_right": 15,
+          "state": "MATCH",
+          "identity_evidence": false
+        }
+      ],
+      "different_fields": [
+        {
+          "field": "title_ar",
+          "label": "العنوان",
+          "left": "انشاء و تشغيل و صيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل - الأنشطة الرياضية و الترفيهية - كشك لنشاط رياضي ذكي - نادي",
+          "right": "إنشاء وتشغيل وصيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل",
+          "normalized_left": "انشاء و تشغيل و صيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل الأنشطة الرياضية و الترفيهية كشك لنشاط رياضي ذكي نادي",
+          "normalized_right": "إنشاء وتشغيل وصيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل",
+          "state": "DIFFERENT",
+          "identity_evidence": false
+        },
+        {
+          "field": "normalized_title",
+          "label": "العنوان المعياري",
+          "left": "انشاء و تشغيل و صيانة كشك لنشاط جم ذكي علي ممشي جامعة الملك فيصل الانشطة الرياضية و الترفيهية كشك لنشاط رياضي ذكي نادي",
+          "right": "انشاء وتشغيل وصيانة كشك لنشاط جم ذكي علي ممشي جامعة الملك فيصل",
+          "normalized_left": "انشاء و تشغيل و صيانة كشك لنشاط جم ذكي علي ممشي جامعة الملك فيصل الانشطة الرياضية و الترفيهية كشك لنشاط رياضي ذكي نادي",
+          "normalized_right": "انشاء وتشغيل وصيانة كشك لنشاط جم ذكي علي ممشي جامعة الملك فيصل",
+          "state": "DIFFERENT",
+          "identity_evidence": false
+        },
+        {
+          "field": "primary_publication_platform",
+          "label": "منصة النشر",
+          "left": "فرص – البوابة الموحدة للاستثمار",
+          "right": "منصة الفرص الاستثمارية بالأحساء",
+          "normalized_left": "فرص البوابة الموحدة للاستثمار",
+          "normalized_right": "منصة الفرص الاستثمارية بالأحساء",
+          "state": "DIFFERENT",
+          "identity_evidence": false
+        },
+        {
+          "field": "sector",
+          "label": "القطاع",
+          "left": "أخرى",
+          "right": "تجاري",
+          "normalized_left": "أخرى",
+          "normalized_right": "تجاري",
+          "state": "DIFFERENT",
+          "identity_evidence": false
+        },
+        {
+          "field": "activity",
+          "label": "النشاط",
+          "left": "الأنشطة الرياضية و الترفيهية",
+          "right": "تجاري",
+          "normalized_left": "الأنشطة الرياضية و الترفيهية",
+          "normalized_right": "تجاري",
+          "state": "DIFFERENT",
+          "identity_evidence": false
+        },
+        {
+          "field": "city",
+          "label": "المدينة",
+          "left": "الأحساء",
+          "right": "الهفوف",
+          "normalized_left": "الأحساء",
+          "normalized_right": "الهفوف",
+          "state": "DIFFERENT",
+          "identity_evidence": false
+        },
+        {
+          "field": "location_description",
+          "label": "الموقع التفصيلي",
+          "left": "الاحساء النسيم شارع فاطمه بنت أسد (رضي الله عنها)",
+          "right": "الهفوف",
+          "normalized_left": "الاحساء النسيم شارع فاطمه بنت أسد رضي الله عنها",
+          "normalized_right": "الهفوف",
+          "state": "DIFFERENT",
+          "identity_evidence": false
+        },
+        {
+          "field": "status",
+          "label": "الحالة",
+          "left": "متاحة",
+          "right": "أزيلت من المصدر",
+          "normalized_left": "متاحة",
+          "normalized_right": "أزيلت من المصدر",
+          "state": "DIFFERENT",
+          "identity_evidence": false
+        },
+        {
+          "field": "short_description",
+          "label": "الوصف المختصر",
+          "left": "انشاء و تشغيل و صيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل - الأنشطة الرياضية و الترفيهية - كشك لنشاط رياضي ذكي - نادي",
+          "right": "إنشاء وتشغيل وصيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل",
+          "normalized_left": "انشاء و تشغيل و صيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل الأنشطة الرياضية و الترفيهية كشك لنشاط رياضي ذكي نادي",
+          "normalized_right": "إنشاء وتشغيل وصيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل",
+          "state": "DIFFERENT",
+          "identity_evidence": false
+        },
+        {
+          "field": "full_description",
+          "label": "الوصف الكامل",
+          "left": "انشاء و تشغيل و صيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل - الأنشطة الرياضية و الترفيهية - كشك لنشاط رياضي ذكي - نادي",
+          "right": "إنشاء وتشغيل وصيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل",
+          "normalized_left": "انشاء و تشغيل و صيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل الأنشطة الرياضية و الترفيهية كشك لنشاط رياضي ذكي نادي",
+          "normalized_right": "إنشاء وتشغيل وصيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل",
+          "state": "DIFFERENT",
+          "identity_evidence": false
+        },
+        {
+          "field": "source",
+          "label": "المصدر",
+          "left": [
+            "furas"
+          ],
+          "right": [
+            "alahsa-opportunities"
+          ],
+          "normalized_left": [
+            "furas"
+          ],
+          "normalized_right": [
+            "alahsa opportunities"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "publisher",
+          "label": "الناشر",
+          "left": [
+            "وزارة البلديات والإسكان والجهات الحكومية المشاركة"
+          ],
+          "right": [
+            "أمانة الأحساء"
+          ],
+          "normalized_left": [
+            "وزارة البلديات والإسكان والجهات الحكومية المشاركة"
+          ],
+          "normalized_right": [
+            "أمانة الأحساء"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_opportunity_id",
+          "label": "معرّف الفرصة لدى المصدر",
+          "left": [
+            "01-26-017001-39029"
+          ],
+          "right": [
+            "450"
+          ],
+          "normalized_left": [
+            "01-26-017001-39029"
+          ],
+          "normalized_right": [
+            "450"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_title",
+          "label": "العنوان الخام لدى المصدر",
+          "left": [
+            "انشاء و تشغيل و صيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل - الأنشطة الرياضية و الترفيهية - كشك لنشاط رياضي ذكي - نادي"
+          ],
+          "right": [
+            "إنشاء وتشغيل وصيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل"
+          ],
+          "normalized_left": [
+            "انشاء و تشغيل و صيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل الأنشطة الرياضية و الترفيهية كشك لنشاط رياضي ذكي نادي"
+          ],
+          "normalized_right": [
+            "إنشاء وتشغيل وصيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_activity",
+          "label": "النشاط الوارد من المصدر",
+          "left": [
+            "الأنشطة الرياضية و الترفيهية"
+          ],
+          "right": [
+            "تجاري"
+          ],
+          "normalized_left": [
+            "الأنشطة الرياضية و الترفيهية"
+          ],
+          "normalized_right": [
+            "تجاري"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_location",
+          "label": "الموقع الوارد من المصدر",
+          "left": [
+            "الاحساء النسيم شارع فاطمه بنت أسد (رضي الله عنها)"
+          ],
+          "right": [
+            "الهفوف"
+          ],
+          "normalized_left": [
+            "الاحساء النسيم شارع فاطمه بنت أسد رضي الله عنها"
+          ],
+          "normalized_right": [
+            "الهفوف"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_area",
+          "label": "المساحة الخام",
+          "left": [
+            "15"
+          ],
+          "right": [
+            "15 م²"
+          ],
+          "normalized_left": [
+            "15"
+          ],
+          "normalized_right": [
+            "15 م2"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_url",
+          "label": "رابط الفرصة لدى المصدر",
+          "left": [
+            "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-39029?type=Investment"
+          ],
+          "right": [
+            "https://alahsa-opportunities.com/opportunities/450"
+          ],
+          "normalized_left": [
+            "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-39029?type=investment"
+          ],
+          "normalized_right": [
+            "https://alahsa-opportunities.com/opportunities/450"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        }
+      ],
+      "missing_on_left": [
+        {
+          "field": "contract_duration_years",
+          "label": "مدة العقد",
+          "left": null,
+          "right": 3,
+          "normalized_left": null,
+          "normalized_right": 3,
+          "state": "MISSING_LEFT",
+          "identity_evidence": false
+        },
+        {
+          "field": "submission_deadline",
+          "label": "موعد التقديم",
+          "left": null,
+          "right": "2026-10-21",
+          "normalized_left": null,
+          "normalized_right": "2026 10 21",
+          "state": "MISSING_LEFT",
+          "identity_evidence": false
+        },
+        {
+          "field": "source_sector",
+          "label": "القطاع الوارد من المصدر",
+          "left": [],
+          "right": [
+            "تجاري"
+          ],
+          "normalized_left": null,
+          "normalized_right": [
+            "تجاري"
+          ],
+          "state": "MISSING_LEFT",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_dates",
+          "label": "تواريخ المصدر",
+          "left": [
+            {
+              "deadline": null
+            }
+          ],
+          "right": [
+            {
+              "deadline": "2026-10-21"
+            }
+          ],
+          "normalized_left": null,
+          "normalized_right": [
+            {
+              "deadline": "2026 10 21"
+            }
+          ],
+          "state": "MISSING_LEFT",
+          "identity_evidence": true
+        }
+      ],
+      "missing_on_right": [
+        {
+          "field": "opportunity_owner",
+          "label": "الجهة المالكة",
+          "left": "أمانة محافظة الأحساء",
+          "right": null,
+          "normalized_left": "أمانة محافظة الأحساء",
+          "normalized_right": null,
+          "state": "MISSING_RIGHT",
+          "identity_evidence": false
+        },
+        {
+          "field": "sub_activity",
+          "label": "النشاط الفرعي",
+          "left": "أخرى",
+          "right": null,
+          "normalized_left": "أخرى",
+          "normalized_right": null,
+          "state": "MISSING_RIGHT",
+          "identity_evidence": false
+        },
+        {
+          "field": "latitude",
+          "label": "خط العرض",
+          "left": 25.329259999999977,
+          "right": null,
+          "normalized_left": 25.329259999999977,
+          "normalized_right": null,
+          "state": "MISSING_RIGHT",
+          "identity_evidence": false
+        },
+        {
+          "field": "longitude",
+          "label": "خط الطول",
+          "left": 49.604750000000024,
+          "right": null,
+          "normalized_left": 49.604750000000024,
+          "normalized_right": null,
+          "state": "MISSING_RIGHT",
+          "identity_evidence": false
+        },
+        {
+          "field": "source_reference_number",
+          "label": "الرقم المرجعي لدى المصدر",
+          "left": [
+            "01-26-017001-39029"
+          ],
+          "right": [],
+          "normalized_left": [
+            "01-26-017001-39029"
+          ],
+          "normalized_right": null,
+          "state": "MISSING_RIGHT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_owner",
+          "label": "الجهة المالكة لدى المصدر",
+          "left": [
+            "أمانة محافظة الأحساء"
+          ],
+          "right": [],
+          "normalized_left": [
+            "أمانة محافظة الأحساء"
+          ],
+          "normalized_right": null,
+          "state": "MISSING_RIGHT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_sub_activity",
+          "label": "النشاط الفرعي الوارد من المصدر",
+          "left": [
+            "أخرى"
+          ],
+          "right": [],
+          "normalized_left": [
+            "أخرى"
+          ],
+          "normalized_right": null,
+          "state": "MISSING_RIGHT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_opportunity_type",
+          "label": "نوع الفرصة الوارد من المصدر",
+          "left": [
+            "Investment"
+          ],
+          "right": [],
+          "normalized_left": [
+            "investment"
+          ],
+          "normalized_right": null,
+          "state": "MISSING_RIGHT",
+          "identity_evidence": true
+        }
+      ],
+      "human_review_reason": "مصادر مختلفة ولا يوجد دليل هوية حتمي كافٍ للدمج الآلي. راجع الفروق؛ ويمكن للمحلل تقرير أنهما نفس الفرصة إذا دعم الدليل ذلك.",
+      "auto_resolution_allowed": false
+    },
+    {
+      "review_id": 47,
+      "status": "OPEN",
+      "meaningful_difference_count": 29,
+      "compared_fields": [
+        "title_ar",
+        "normalized_title",
+        "opportunity_owner",
+        "primary_publication_platform",
+        "sector",
+        "activity",
+        "sub_activity",
+        "opportunity_type",
+        "investment_model",
+        "city",
+        "district",
+        "location_description",
+        "latitude",
+        "longitude",
+        "land_area_sqm",
+        "plot_number",
+        "asset_facility_type",
+        "investment_value",
+        "currency",
+        "contract_duration_years",
+        "publication_date",
+        "submission_deadline",
+        "status",
+        "short_description",
+        "full_description",
+        "source",
+        "publisher",
+        "official_source_id",
+        "source_opportunity_id",
+        "source_reference_number",
+        "source_title",
+        "source_owner",
+        "source_sector",
+        "source_activity",
+        "source_sub_activity",
+        "source_opportunity_type",
+        "source_investment_model",
+        "raw_location",
+        "source_coordinates",
+        "source_city",
+        "source_district",
+        "raw_area",
+        "raw_value",
+        "raw_dates",
+        "raw_description",
+        "source_asset_facility_type",
+        "source_url"
+      ],
+      "matched_fields": [
+        {
+          "field": "city",
+          "label": "المدينة",
+          "left": "الأحساء",
+          "right": "الأحساء",
+          "normalized_left": "الأحساء",
+          "normalized_right": "الأحساء",
+          "state": "MATCH",
+          "identity_evidence": false
+        },
+        {
+          "field": "land_area_sqm",
+          "label": "المساحة م²",
+          "left": 15,
+          "right": 15,
+          "normalized_left": 15,
+          "normalized_right": 15,
+          "state": "MATCH",
+          "identity_evidence": false
+        }
+      ],
+      "different_fields": [
+        {
+          "field": "title_ar",
+          "label": "العنوان",
+          "left": "انشاء و تشغيل و صيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل - الأنشطة الرياضية و الترفيهية - كشك لنشاط رياضي ذكي - نادي",
+          "right": "إنشاء وتشغيل وصيانة كشك لنشاط جم ذكي على ممشى ديار الاحساء مقابل جامعة الملك فيصل",
+          "normalized_left": "انشاء و تشغيل و صيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل الأنشطة الرياضية و الترفيهية كشك لنشاط رياضي ذكي نادي",
+          "normalized_right": "إنشاء وتشغيل وصيانة كشك لنشاط جم ذكي على ممشى ديار الاحساء مقابل جامعة الملك فيصل",
+          "state": "DIFFERENT",
+          "identity_evidence": false
+        },
+        {
+          "field": "normalized_title",
+          "label": "العنوان المعياري",
+          "left": "انشاء و تشغيل و صيانة كشك لنشاط جم ذكي علي ممشي جامعة الملك فيصل الانشطة الرياضية و الترفيهية كشك لنشاط رياضي ذكي نادي",
+          "right": "انشاء وتشغيل وصيانة كشك لنشاط جم ذكي علي ممشي ديار الاحساء مقابل جامعة الملك فيصل",
+          "normalized_left": "انشاء و تشغيل و صيانة كشك لنشاط جم ذكي علي ممشي جامعة الملك فيصل الانشطة الرياضية و الترفيهية كشك لنشاط رياضي ذكي نادي",
+          "normalized_right": "انشاء وتشغيل وصيانة كشك لنشاط جم ذكي علي ممشي ديار الاحساء مقابل جامعة الملك فيصل",
+          "state": "DIFFERENT",
+          "identity_evidence": false
+        },
+        {
+          "field": "primary_publication_platform",
+          "label": "منصة النشر",
+          "left": "فرص – البوابة الموحدة للاستثمار",
+          "right": "منصة الفرص الاستثمارية بالأحساء",
+          "normalized_left": "فرص البوابة الموحدة للاستثمار",
+          "normalized_right": "منصة الفرص الاستثمارية بالأحساء",
+          "state": "DIFFERENT",
+          "identity_evidence": false
+        },
+        {
+          "field": "sector",
+          "label": "القطاع",
+          "left": "أخرى",
+          "right": "تجاري",
+          "normalized_left": "أخرى",
+          "normalized_right": "تجاري",
+          "state": "DIFFERENT",
+          "identity_evidence": false
+        },
+        {
+          "field": "activity",
+          "label": "النشاط",
+          "left": "الأنشطة الرياضية و الترفيهية",
+          "right": "تجاري",
+          "normalized_left": "الأنشطة الرياضية و الترفيهية",
+          "normalized_right": "تجاري",
+          "state": "DIFFERENT",
+          "identity_evidence": false
+        },
+        {
+          "field": "location_description",
+          "label": "الموقع التفصيلي",
+          "left": "الاحساء النسيم شارع فاطمه بنت أسد (رضي الله عنها)",
+          "right": "الهفوف",
+          "normalized_left": "الاحساء النسيم شارع فاطمه بنت أسد رضي الله عنها",
+          "normalized_right": "الهفوف",
+          "state": "DIFFERENT",
+          "identity_evidence": false
+        },
+        {
+          "field": "status",
+          "label": "الحالة",
+          "left": "متاحة",
+          "right": "أزيلت من المصدر",
+          "normalized_left": "متاحة",
+          "normalized_right": "أزيلت من المصدر",
+          "state": "DIFFERENT",
+          "identity_evidence": false
+        },
+        {
+          "field": "short_description",
+          "label": "الوصف المختصر",
+          "left": "انشاء و تشغيل و صيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل - الأنشطة الرياضية و الترفيهية - كشك لنشاط رياضي ذكي - نادي",
+          "right": "إنشاء وتشغيل وصيانة كشك لنشاط جم ذكي على ممشى ديار الاحساء مقابل جامعة الملك فيصل",
+          "normalized_left": "انشاء و تشغيل و صيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل الأنشطة الرياضية و الترفيهية كشك لنشاط رياضي ذكي نادي",
+          "normalized_right": "إنشاء وتشغيل وصيانة كشك لنشاط جم ذكي على ممشى ديار الاحساء مقابل جامعة الملك فيصل",
+          "state": "DIFFERENT",
+          "identity_evidence": false
+        },
+        {
+          "field": "full_description",
+          "label": "الوصف الكامل",
+          "left": "انشاء و تشغيل و صيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل - الأنشطة الرياضية و الترفيهية - كشك لنشاط رياضي ذكي - نادي",
+          "right": "إنشاء وتشغيل وصيانة كشك لنشاط جم ذكي على ممشى ديار الاحساء مقابل جامعة الملك فيصل",
+          "normalized_left": "انشاء و تشغيل و صيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل الأنشطة الرياضية و الترفيهية كشك لنشاط رياضي ذكي نادي",
+          "normalized_right": "إنشاء وتشغيل وصيانة كشك لنشاط جم ذكي على ممشى ديار الاحساء مقابل جامعة الملك فيصل",
+          "state": "DIFFERENT",
+          "identity_evidence": false
+        },
+        {
+          "field": "source",
+          "label": "المصدر",
+          "left": [
+            "furas"
+          ],
+          "right": [
+            "alahsa-opportunities"
+          ],
+          "normalized_left": [
+            "furas"
+          ],
+          "normalized_right": [
+            "alahsa opportunities"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "publisher",
+          "label": "الناشر",
+          "left": [
+            "وزارة البلديات والإسكان والجهات الحكومية المشاركة"
+          ],
+          "right": [
+            "أمانة الأحساء"
+          ],
+          "normalized_left": [
+            "وزارة البلديات والإسكان والجهات الحكومية المشاركة"
+          ],
+          "normalized_right": [
+            "أمانة الأحساء"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_opportunity_id",
+          "label": "معرّف الفرصة لدى المصدر",
+          "left": [
+            "01-26-017001-39029"
+          ],
+          "right": [
+            "449"
+          ],
+          "normalized_left": [
+            "01-26-017001-39029"
+          ],
+          "normalized_right": [
+            "449"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_title",
+          "label": "العنوان الخام لدى المصدر",
+          "left": [
+            "انشاء و تشغيل و صيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل - الأنشطة الرياضية و الترفيهية - كشك لنشاط رياضي ذكي - نادي"
+          ],
+          "right": [
+            "إنشاء وتشغيل وصيانة كشك لنشاط جم ذكي على ممشى ديار الاحساء مقابل جامعة الملك فيصل"
+          ],
+          "normalized_left": [
+            "انشاء و تشغيل و صيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل الأنشطة الرياضية و الترفيهية كشك لنشاط رياضي ذكي نادي"
+          ],
+          "normalized_right": [
+            "إنشاء وتشغيل وصيانة كشك لنشاط جم ذكي على ممشى ديار الاحساء مقابل جامعة الملك فيصل"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_activity",
+          "label": "النشاط الوارد من المصدر",
+          "left": [
+            "الأنشطة الرياضية و الترفيهية"
+          ],
+          "right": [
+            "تجاري"
+          ],
+          "normalized_left": [
+            "الأنشطة الرياضية و الترفيهية"
+          ],
+          "normalized_right": [
+            "تجاري"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_location",
+          "label": "الموقع الوارد من المصدر",
+          "left": [
+            "الاحساء النسيم شارع فاطمه بنت أسد (رضي الله عنها)"
+          ],
+          "right": [
+            "الهفوف"
+          ],
+          "normalized_left": [
+            "الاحساء النسيم شارع فاطمه بنت أسد رضي الله عنها"
+          ],
+          "normalized_right": [
+            "الهفوف"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_area",
+          "label": "المساحة الخام",
+          "left": [
+            "15"
+          ],
+          "right": [
+            "15 م²"
+          ],
+          "normalized_left": [
+            "15"
+          ],
+          "normalized_right": [
+            "15 م2"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_url",
+          "label": "رابط الفرصة لدى المصدر",
+          "left": [
+            "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-39029?type=Investment"
+          ],
+          "right": [
+            "https://alahsa-opportunities.com/opportunities/449"
+          ],
+          "normalized_left": [
+            "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-39029?type=investment"
+          ],
+          "normalized_right": [
+            "https://alahsa-opportunities.com/opportunities/449"
+          ],
+          "state": "DIFFERENT",
+          "identity_evidence": true
+        }
+      ],
+      "missing_on_left": [
+        {
+          "field": "contract_duration_years",
+          "label": "مدة العقد",
+          "left": null,
+          "right": 3,
+          "normalized_left": null,
+          "normalized_right": 3,
+          "state": "MISSING_LEFT",
+          "identity_evidence": false
+        },
+        {
+          "field": "submission_deadline",
+          "label": "موعد التقديم",
+          "left": null,
+          "right": "2026-10-21",
+          "normalized_left": null,
+          "normalized_right": "2026 10 21",
+          "state": "MISSING_LEFT",
+          "identity_evidence": false
+        },
+        {
+          "field": "source_sector",
+          "label": "القطاع الوارد من المصدر",
+          "left": [],
+          "right": [
+            "تجاري"
+          ],
+          "normalized_left": null,
+          "normalized_right": [
+            "تجاري"
+          ],
+          "state": "MISSING_LEFT",
+          "identity_evidence": true
+        },
+        {
+          "field": "raw_dates",
+          "label": "تواريخ المصدر",
+          "left": [
+            {
+              "deadline": null
+            }
+          ],
+          "right": [
+            {
+              "deadline": "2026-10-21"
+            }
+          ],
+          "normalized_left": null,
+          "normalized_right": [
+            {
+              "deadline": "2026 10 21"
+            }
+          ],
+          "state": "MISSING_LEFT",
+          "identity_evidence": true
+        }
+      ],
+      "missing_on_right": [
+        {
+          "field": "opportunity_owner",
+          "label": "الجهة المالكة",
+          "left": "أمانة محافظة الأحساء",
+          "right": null,
+          "normalized_left": "أمانة محافظة الأحساء",
+          "normalized_right": null,
+          "state": "MISSING_RIGHT",
+          "identity_evidence": false
+        },
+        {
+          "field": "sub_activity",
+          "label": "النشاط الفرعي",
+          "left": "أخرى",
+          "right": null,
+          "normalized_left": "أخرى",
+          "normalized_right": null,
+          "state": "MISSING_RIGHT",
+          "identity_evidence": false
+        },
+        {
+          "field": "latitude",
+          "label": "خط العرض",
+          "left": 25.329259999999977,
+          "right": null,
+          "normalized_left": 25.329259999999977,
+          "normalized_right": null,
+          "state": "MISSING_RIGHT",
+          "identity_evidence": false
+        },
+        {
+          "field": "longitude",
+          "label": "خط الطول",
+          "left": 49.604750000000024,
+          "right": null,
+          "normalized_left": 49.604750000000024,
+          "normalized_right": null,
+          "state": "MISSING_RIGHT",
+          "identity_evidence": false
+        },
+        {
+          "field": "source_reference_number",
+          "label": "الرقم المرجعي لدى المصدر",
+          "left": [
+            "01-26-017001-39029"
+          ],
+          "right": [],
+          "normalized_left": [
+            "01-26-017001-39029"
+          ],
+          "normalized_right": null,
+          "state": "MISSING_RIGHT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_owner",
+          "label": "الجهة المالكة لدى المصدر",
+          "left": [
+            "أمانة محافظة الأحساء"
+          ],
+          "right": [],
+          "normalized_left": [
+            "أمانة محافظة الأحساء"
+          ],
+          "normalized_right": null,
+          "state": "MISSING_RIGHT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_sub_activity",
+          "label": "النشاط الفرعي الوارد من المصدر",
+          "left": [
+            "أخرى"
+          ],
+          "right": [],
+          "normalized_left": [
+            "أخرى"
+          ],
+          "normalized_right": null,
+          "state": "MISSING_RIGHT",
+          "identity_evidence": true
+        },
+        {
+          "field": "source_opportunity_type",
+          "label": "نوع الفرصة الوارد من المصدر",
+          "left": [
+            "Investment"
+          ],
+          "right": [],
+          "normalized_left": [
+            "investment"
+          ],
+          "normalized_right": null,
+          "state": "MISSING_RIGHT",
+          "identity_evidence": true
+        }
+      ],
+      "human_review_reason": "مصادر مختلفة ولا يوجد دليل هوية حتمي كافٍ للدمج الآلي. راجع الفروق؛ ويمكن للمحلل تقرير أنهما نفس الفرصة إذا دعم الدليل ذلك.",
+      "auto_resolution_allowed": false
+    }
+  ]
+}

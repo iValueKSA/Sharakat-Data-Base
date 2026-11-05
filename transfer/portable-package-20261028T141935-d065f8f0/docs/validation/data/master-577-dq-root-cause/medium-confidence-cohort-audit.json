@@ -1,0 +1,23 @@
+{
+  "captured_at": "2026-10-22T07:01:46.577808Z",
+  "read_only": true,
+  "total_medium_confidence_records": 37,
+  "medium_with_null_margin": 1,
+  "medium_with_non_applicable_margin": 37,
+  "medium_with_actual_strong_contradiction": 0,
+  "medium_with_incomplete_provenance": 0,
+  "non_applicable_basis": "All 37 current INFERRED_RULE_MEDIUM rows were applied by controlled-relaxation engine v1.0.0, whose contract returns MEDIUM_CONFIDENCE only with one supported sector; multiple supported sectors are REVIEW_REQUIRED. One stored margin is null; 36 legacy stored values are 4.0 (winner score minus absent runner-up 0), not a competing-sector comparison.",
+  "recent_medium_classifications_found": 36,
+  "recent_medium_null_margin": 0,
+  "recent_medium_non_applicable_margin": 36,
+  "recent_medium_strong_contradiction": 0,
+  "recent_medium_provenance_incomplete": 0,
+  "recent_source_artifact": "docs/validation/data/sector-controlled-relaxation/medium-confidence-applied.json",
+  "recent_applied_at": "2026-10-21T14:45:15.051533+03:00",
+  "recent_engine_version": "ahda-sector-controlled-relaxation-1.0.0",
+  "recent_negative_evidence_count": 0,
+  "recent_distinct_legacy_margin_values": [
+    4.0
+  ],
+  "scope": "Current medium-confidence inferred records only; no classification rerun and no row changed."
+}

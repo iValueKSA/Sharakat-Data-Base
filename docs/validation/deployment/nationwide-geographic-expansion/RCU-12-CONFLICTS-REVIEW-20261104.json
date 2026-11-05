@@ -1,0 +1,557 @@
+{
+  "report": "RCU-12-CONFLICTS-REVIEW-20261104",
+  "generated_at_utc": "2026-11-04T07:02:05.734037+00:00",
+  "source_key": "rcu-investment-opportunities",
+  "summary": {
+    "open_conflicts": 12,
+    "status_conflicts_open": 6,
+    "deadline_conflicts_open": 6,
+    "incorrect_current_status_count": 0,
+    "incorrect_deadline_count": 0,
+    "conflicts_block_national_ui": false,
+    "conflicts_block_national_map": false,
+    "status_root_cause": "SOURCE_SPECIFIC_STATUS_SEMANTICS",
+    "deadline_root_cause": "TIMEZONE_AMBIGUITY_AND_PROMOTION_PROJECTION_DEFECT",
+    "raw_source_data_mutated": false,
+    "conflicts_resolved": 0,
+    "canonical_deadlines_cleared": 6
+  },
+  "status_analysis": "RCU isClosed=false coexists with canApply=false and isApplicable=true. Source publication/currentness does not establish application availability. The adapter no longer synthesizes CURRENT; canonical status is unknown pending review.",
+  "deadline_analysis": "Original values are local-looking datetimes without timezone offsets. Existing standardization correctly marked them review-required and did not parse them. The one-time promotion had copied raw strings into Master; correction cleared only those six Master projections while preserving raw evidence and open conflicts.",
+  "records": [
+    {
+      "conflict_id": 1313,
+      "master_id": 6678,
+      "source_record_id": 9329,
+      "provider_id": "0b54170e-49f1-4d95-925b-225e486d8eb2",
+      "field": "status",
+      "type": "FIELD_VALUE_CONFLICT",
+      "status": "OPEN",
+      "original_public_source_payload": {
+        "provider": "RCU",
+        "provider_id": "0b54170e-49f1-4d95-925b-225e486d8eb2",
+        "source_url": "https://eservices.rcu.gov.sa/opportunities",
+        "deadline": "2027-06-30T17:00:00",
+        "isClosed": false,
+        "canApply": false,
+        "isApplicable": true
+      },
+      "raw_value": {
+        "raw_status": "CURRENT",
+        "lifecycle_evidence": {
+          "isClosed": false,
+          "canApply": false,
+          "isApplicable": true
+        },
+        "payload_status": null
+      },
+      "normalized_value": {
+        "raw": "CURRENT",
+        "canonical_id": "حالة غير معروفة",
+        "canonical_label": "حالة غير معروفة",
+        "mapping_status": "REVIEW_REQUIRED",
+        "rule": "source_aware_lifecycle_v1",
+        "review_flags": [
+          "AMBIGUOUS_RAW_STATUS",
+          "INVALID_DEADLINE"
+        ]
+      },
+      "canonical_value_after_review": "حالة غير معروفة",
+      "conflict_selected_value": "حالة غير معروفة",
+      "conflict_alternative_value": "'CURRENT'; deadline='2027-06-30T17:00:00'",
+      "deadline_parser_result": null,
+      "review_history_count": 0,
+      "change_history": [
+        {
+          "before": "غير محددة",
+          "after": "حالة غير معروفة"
+        }
+      ],
+      "assessment": "Canonical status is conservatively unknown; RCU boolean evidence does not establish application availability. Conflict retained for semantic review."
+    },
+    {
+      "conflict_id": 1317,
+      "master_id": 6679,
+      "source_record_id": 9326,
+      "provider_id": "6645c6e9-6bd4-4a93-88bc-baef67a77607",
+      "field": "status",
+      "type": "FIELD_VALUE_CONFLICT",
+      "status": "OPEN",
+      "original_public_source_payload": {
+        "provider": "RCU",
+        "provider_id": "6645c6e9-6bd4-4a93-88bc-baef67a77607",
+        "source_url": "https://eservices.rcu.gov.sa/opportunities",
+        "deadline": "2027-05-31T17:00:00",
+        "isClosed": false,
+        "canApply": false,
+        "isApplicable": true
+      },
+      "raw_value": {
+        "raw_status": "CURRENT",
+        "lifecycle_evidence": {
+          "isClosed": false,
+          "canApply": false,
+          "isApplicable": true
+        },
+        "payload_status": null
+      },
+      "normalized_value": {
+        "raw": "CURRENT",
+        "canonical_id": "حالة غير معروفة",
+        "canonical_label": "حالة غير معروفة",
+        "mapping_status": "REVIEW_REQUIRED",
+        "rule": "source_aware_lifecycle_v1",
+        "review_flags": [
+          "AMBIGUOUS_RAW_STATUS",
+          "INVALID_DEADLINE"
+        ]
+      },
+      "canonical_value_after_review": "حالة غير معروفة",
+      "conflict_selected_value": "حالة غير معروفة",
+      "conflict_alternative_value": "'CURRENT'; deadline='2027-05-31T17:00:00'",
+      "deadline_parser_result": null,
+      "review_history_count": 0,
+      "change_history": [
+        {
+          "before": "غير محددة",
+          "after": "حالة غير معروفة"
+        }
+      ],
+      "assessment": "Canonical status is conservatively unknown; RCU boolean evidence does not establish application availability. Conflict retained for semantic review."
+    },
+    {
+      "conflict_id": 1319,
+      "master_id": 6680,
+      "source_record_id": 9324,
+      "provider_id": "8fd18e92-054a-40c3-9de7-33d7dc23f5db",
+      "field": "status",
+      "type": "FIELD_VALUE_CONFLICT",
+      "status": "OPEN",
+      "original_public_source_payload": {
+        "provider": "RCU",
+        "provider_id": "8fd18e92-054a-40c3-9de7-33d7dc23f5db",
+        "source_url": "https://eservices.rcu.gov.sa/opportunities",
+        "deadline": "2027-11-30T17:00:00",
+        "isClosed": false,
+        "canApply": false,
+        "isApplicable": true
+      },
+      "raw_value": {
+        "raw_status": "CURRENT",
+        "lifecycle_evidence": {
+          "isClosed": false,
+          "canApply": false,
+          "isApplicable": true
+        },
+        "payload_status": null
+      },
+      "normalized_value": {
+        "raw": "CURRENT",
+        "canonical_id": "حالة غير معروفة",
+        "canonical_label": "حالة غير معروفة",
+        "mapping_status": "REVIEW_REQUIRED",
+        "rule": "source_aware_lifecycle_v1",
+        "review_flags": [
+          "AMBIGUOUS_RAW_STATUS",
+          "INVALID_DEADLINE"
+        ]
+      },
+      "canonical_value_after_review": "حالة غير معروفة",
+      "conflict_selected_value": "حالة غير معروفة",
+      "conflict_alternative_value": "'CURRENT'; deadline='2027-11-30T17:00:00'",
+      "deadline_parser_result": null,
+      "review_history_count": 0,
+      "change_history": [
+        {
+          "before": "غير محددة",
+          "after": "حالة غير معروفة"
+        }
+      ],
+      "assessment": "Canonical status is conservatively unknown; RCU boolean evidence does not establish application availability. Conflict retained for semantic review."
+    },
+    {
+      "conflict_id": 1321,
+      "master_id": 6681,
+      "source_record_id": 9327,
+      "provider_id": "b7941434-d0e8-4ddc-8857-49943f3b368f",
+      "field": "status",
+      "type": "FIELD_VALUE_CONFLICT",
+      "status": "OPEN",
+      "original_public_source_payload": {
+        "provider": "RCU",
+        "provider_id": "b7941434-d0e8-4ddc-8857-49943f3b368f",
+        "source_url": "https://eservices.rcu.gov.sa/opportunities",
+        "deadline": "2027-09-30T17:00:00",
+        "isClosed": false,
+        "canApply": false,
+        "isApplicable": true
+      },
+      "raw_value": {
+        "raw_status": "CURRENT",
+        "lifecycle_evidence": {
+          "isClosed": false,
+          "canApply": false,
+          "isApplicable": true
+        },
+        "payload_status": null
+      },
+      "normalized_value": {
+        "raw": "CURRENT",
+        "canonical_id": "حالة غير معروفة",
+        "canonical_label": "حالة غير معروفة",
+        "mapping_status": "REVIEW_REQUIRED",
+        "rule": "source_aware_lifecycle_v1",
+        "review_flags": [
+          "AMBIGUOUS_RAW_STATUS",
+          "INVALID_DEADLINE"
+        ]
+      },
+      "canonical_value_after_review": "حالة غير معروفة",
+      "conflict_selected_value": "حالة غير معروفة",
+      "conflict_alternative_value": "'CURRENT'; deadline='2027-09-30T17:00:00'",
+      "deadline_parser_result": null,
+      "review_history_count": 0,
+      "change_history": [
+        {
+          "before": "غير محددة",
+          "after": "حالة غير معروفة"
+        }
+      ],
+      "assessment": "Canonical status is conservatively unknown; RCU boolean evidence does not establish application availability. Conflict retained for semantic review."
+    },
+    {
+      "conflict_id": 1323,
+      "master_id": 6682,
+      "source_record_id": 9328,
+      "provider_id": "cea3d684-d766-4a97-b4f9-fbccaa72b187",
+      "field": "status",
+      "type": "FIELD_VALUE_CONFLICT",
+      "status": "OPEN",
+      "original_public_source_payload": {
+        "provider": "RCU",
+        "provider_id": "cea3d684-d766-4a97-b4f9-fbccaa72b187",
+        "source_url": "https://eservices.rcu.gov.sa/opportunities",
+        "deadline": "2027-09-30T17:00:00",
+        "isClosed": false,
+        "canApply": false,
+        "isApplicable": true
+      },
+      "raw_value": {
+        "raw_status": "CURRENT",
+        "lifecycle_evidence": {
+          "isClosed": false,
+          "canApply": false,
+          "isApplicable": true
+        },
+        "payload_status": null
+      },
+      "normalized_value": {
+        "raw": "CURRENT",
+        "canonical_id": "حالة غير معروفة",
+        "canonical_label": "حالة غير معروفة",
+        "mapping_status": "REVIEW_REQUIRED",
+        "rule": "source_aware_lifecycle_v1",
+        "review_flags": [
+          "AMBIGUOUS_RAW_STATUS",
+          "INVALID_DEADLINE"
+        ]
+      },
+      "canonical_value_after_review": "حالة غير معروفة",
+      "conflict_selected_value": "حالة غير معروفة",
+      "conflict_alternative_value": "'CURRENT'; deadline='2027-09-30T17:00:00'",
+      "deadline_parser_result": null,
+      "review_history_count": 0,
+      "change_history": [
+        {
+          "before": "غير محددة",
+          "after": "حالة غير معروفة"
+        }
+      ],
+      "assessment": "Canonical status is conservatively unknown; RCU boolean evidence does not establish application availability. Conflict retained for semantic review."
+    },
+    {
+      "conflict_id": 1315,
+      "master_id": 6683,
+      "source_record_id": 9325,
+      "provider_id": "f482f6c3-21f1-4dc6-a2c5-d318ead27a38",
+      "field": "status",
+      "type": "FIELD_VALUE_CONFLICT",
+      "status": "OPEN",
+      "original_public_source_payload": {
+        "provider": "RCU",
+        "provider_id": "f482f6c3-21f1-4dc6-a2c5-d318ead27a38",
+        "source_url": "https://eservices.rcu.gov.sa/opportunities",
+        "deadline": "2027-05-31T17:00:00",
+        "isClosed": false,
+        "canApply": false,
+        "isApplicable": true
+      },
+      "raw_value": {
+        "raw_status": "CURRENT",
+        "lifecycle_evidence": {
+          "isClosed": false,
+          "canApply": false,
+          "isApplicable": true
+        },
+        "payload_status": null
+      },
+      "normalized_value": {
+        "raw": "CURRENT",
+        "canonical_id": "حالة غير معروفة",
+        "canonical_label": "حالة غير معروفة",
+        "mapping_status": "REVIEW_REQUIRED",
+        "rule": "source_aware_lifecycle_v1",
+        "review_flags": [
+          "AMBIGUOUS_RAW_STATUS",
+          "INVALID_DEADLINE"
+        ]
+      },
+      "canonical_value_after_review": "حالة غير معروفة",
+      "conflict_selected_value": "حالة غير معروفة",
+      "conflict_alternative_value": "'CURRENT'; deadline='2027-05-31T17:00:00'",
+      "deadline_parser_result": null,
+      "review_history_count": 0,
+      "change_history": [
+        {
+          "before": "غير محددة",
+          "after": "حالة غير معروفة"
+        }
+      ],
+      "assessment": "Canonical status is conservatively unknown; RCU boolean evidence does not establish application availability. Conflict retained for semantic review."
+    },
+    {
+      "conflict_id": 1314,
+      "master_id": 6678,
+      "source_record_id": 9329,
+      "provider_id": "0b54170e-49f1-4d95-925b-225e486d8eb2",
+      "field": "submission_deadline",
+      "type": "FIELD_VALUE_CONFLICT",
+      "status": "OPEN",
+      "original_public_source_payload": {
+        "provider": "RCU",
+        "provider_id": "0b54170e-49f1-4d95-925b-225e486d8eb2",
+        "source_url": "https://eservices.rcu.gov.sa/opportunities",
+        "deadline": "2027-06-30T17:00:00",
+        "isClosed": false,
+        "canApply": false,
+        "isApplicable": true
+      },
+      "raw_value": "2027-06-30T17:00:00",
+      "normalized_value": {
+        "raw": "2027-06-30T17:00:00",
+        "normalized": null,
+        "canonical_id": null,
+        "canonical_label": null,
+        "mapping_status": "REVIEW_REQUIRED",
+        "rule": "unparsed_date_preserved"
+      },
+      "canonical_value_after_review": null,
+      "conflict_selected_value": "غير محدد",
+      "conflict_alternative_value": "2027-06-30T17:00:00",
+      "deadline_parser_result": null,
+      "review_history_count": 0,
+      "change_history": [
+        {
+          "before": "2027-06-30T17:00:00",
+          "after": null
+        }
+      ],
+      "assessment": "Source gives an offset-free datetime; timezone meaning is ambiguous and parser rejects it. Raw value preserved; invalid canonical projection cleared; conflict remains open."
+    },
+    {
+      "conflict_id": 1318,
+      "master_id": 6679,
+      "source_record_id": 9326,
+      "provider_id": "6645c6e9-6bd4-4a93-88bc-baef67a77607",
+      "field": "submission_deadline",
+      "type": "FIELD_VALUE_CONFLICT",
+      "status": "OPEN",
+      "original_public_source_payload": {
+        "provider": "RCU",
+        "provider_id": "6645c6e9-6bd4-4a93-88bc-baef67a77607",
+        "source_url": "https://eservices.rcu.gov.sa/opportunities",
+        "deadline": "2027-05-31T17:00:00",
+        "isClosed": false,
+        "canApply": false,
+        "isApplicable": true
+      },
+      "raw_value": "2027-05-31T17:00:00",
+      "normalized_value": {
+        "raw": "2027-05-31T17:00:00",
+        "normalized": null,
+        "canonical_id": null,
+        "canonical_label": null,
+        "mapping_status": "REVIEW_REQUIRED",
+        "rule": "unparsed_date_preserved"
+      },
+      "canonical_value_after_review": null,
+      "conflict_selected_value": "غير محدد",
+      "conflict_alternative_value": "2027-05-31T17:00:00",
+      "deadline_parser_result": null,
+      "review_history_count": 0,
+      "change_history": [
+        {
+          "before": "2027-05-31T17:00:00",
+          "after": null
+        }
+      ],
+      "assessment": "Source gives an offset-free datetime; timezone meaning is ambiguous and parser rejects it. Raw value preserved; invalid canonical projection cleared; conflict remains open."
+    },
+    {
+      "conflict_id": 1320,
+      "master_id": 6680,
+      "source_record_id": 9324,
+      "provider_id": "8fd18e92-054a-40c3-9de7-33d7dc23f5db",
+      "field": "submission_deadline",
+      "type": "FIELD_VALUE_CONFLICT",
+      "status": "OPEN",
+      "original_public_source_payload": {
+        "provider": "RCU",
+        "provider_id": "8fd18e92-054a-40c3-9de7-33d7dc23f5db",
+        "source_url": "https://eservices.rcu.gov.sa/opportunities",
+        "deadline": "2027-11-30T17:00:00",
+        "isClosed": false,
+        "canApply": false,
+        "isApplicable": true
+      },
+      "raw_value": "2027-11-30T17:00:00",
+      "normalized_value": {
+        "raw": "2027-11-30T17:00:00",
+        "normalized": null,
+        "canonical_id": null,
+        "canonical_label": null,
+        "mapping_status": "REVIEW_REQUIRED",
+        "rule": "unparsed_date_preserved"
+      },
+      "canonical_value_after_review": null,
+      "conflict_selected_value": "غير محدد",
+      "conflict_alternative_value": "2027-11-30T17:00:00",
+      "deadline_parser_result": null,
+      "review_history_count": 0,
+      "change_history": [
+        {
+          "before": "2027-11-30T17:00:00",
+          "after": null
+        }
+      ],
+      "assessment": "Source gives an offset-free datetime; timezone meaning is ambiguous and parser rejects it. Raw value preserved; invalid canonical projection cleared; conflict remains open."
+    },
+    {
+      "conflict_id": 1322,
+      "master_id": 6681,
+      "source_record_id": 9327,
+      "provider_id": "b7941434-d0e8-4ddc-8857-49943f3b368f",
+      "field": "submission_deadline",
+      "type": "FIELD_VALUE_CONFLICT",
+      "status": "OPEN",
+      "original_public_source_payload": {
+        "provider": "RCU",
+        "provider_id": "b7941434-d0e8-4ddc-8857-49943f3b368f",
+        "source_url": "https://eservices.rcu.gov.sa/opportunities",
+        "deadline": "2027-09-30T17:00:00",
+        "isClosed": false,
+        "canApply": false,
+        "isApplicable": true
+      },
+      "raw_value": "2027-09-30T17:00:00",
+      "normalized_value": {
+        "raw": "2027-09-30T17:00:00",
+        "normalized": null,
+        "canonical_id": null,
+        "canonical_label": null,
+        "mapping_status": "REVIEW_REQUIRED",
+        "rule": "unparsed_date_preserved"
+      },
+      "canonical_value_after_review": null,
+      "conflict_selected_value": "غير محدد",
+      "conflict_alternative_value": "2027-09-30T17:00:00",
+      "deadline_parser_result": null,
+      "review_history_count": 0,
+      "change_history": [
+        {
+          "before": "2027-09-30T17:00:00",
+          "after": null
+        }
+      ],
+      "assessment": "Source gives an offset-free datetime; timezone meaning is ambiguous and parser rejects it. Raw value preserved; invalid canonical projection cleared; conflict remains open."
+    },
+    {
+      "conflict_id": 1324,
+      "master_id": 6682,
+      "source_record_id": 9328,
+      "provider_id": "cea3d684-d766-4a97-b4f9-fbccaa72b187",
+      "field": "submission_deadline",
+      "type": "FIELD_VALUE_CONFLICT",
+      "status": "OPEN",
+      "original_public_source_payload": {
+        "provider": "RCU",
+        "provider_id": "cea3d684-d766-4a97-b4f9-fbccaa72b187",
+        "source_url": "https://eservices.rcu.gov.sa/opportunities",
+        "deadline": "2027-09-30T17:00:00",
+        "isClosed": false,
+        "canApply": false,
+        "isApplicable": true
+      },
+      "raw_value": "2027-09-30T17:00:00",
+      "normalized_value": {
+        "raw": "2027-09-30T17:00:00",
+        "normalized": null,
+        "canonical_id": null,
+        "canonical_label": null,
+        "mapping_status": "REVIEW_REQUIRED",
+        "rule": "unparsed_date_preserved"
+      },
+      "canonical_value_after_review": null,
+      "conflict_selected_value": "غير محدد",
+      "conflict_alternative_value": "2027-09-30T17:00:00",
+      "deadline_parser_result": null,
+      "review_history_count": 0,
+      "change_history": [
+        {
+          "before": "2027-09-30T17:00:00",
+          "after": null
+        }
+      ],
+      "assessment": "Source gives an offset-free datetime; timezone meaning is ambiguous and parser rejects it. Raw value preserved; invalid canonical projection cleared; conflict remains open."
+    },
+    {
+      "conflict_id": 1316,
+      "master_id": 6683,
+      "source_record_id": 9325,
+      "provider_id": "f482f6c3-21f1-4dc6-a2c5-d318ead27a38",
+      "field": "submission_deadline",
+      "type": "FIELD_VALUE_CONFLICT",
+      "status": "OPEN",
+      "original_public_source_payload": {
+        "provider": "RCU",
+        "provider_id": "f482f6c3-21f1-4dc6-a2c5-d318ead27a38",
+        "source_url": "https://eservices.rcu.gov.sa/opportunities",
+        "deadline": "2027-05-31T17:00:00",
+        "isClosed": false,
+        "canApply": false,
+        "isApplicable": true
+      },
+      "raw_value": "2027-05-31T17:00:00",
+      "normalized_value": {
+        "raw": "2027-05-31T17:00:00",
+        "normalized": null,
+        "canonical_id": null,
+        "canonical_label": null,
+        "mapping_status": "REVIEW_REQUIRED",
+        "rule": "unparsed_date_preserved"
+      },
+      "canonical_value_after_review": null,
+      "conflict_selected_value": "غير محدد",
+      "conflict_alternative_value": "2027-05-31T17:00:00",
+      "deadline_parser_result": null,
+      "review_history_count": 0,
+      "change_history": [
+        {
+          "before": "2027-05-31T17:00:00",
+          "after": null
+        }
+      ],
+      "assessment": "Source gives an offset-free datetime; timezone meaning is ambiguous and parser rejects it. Raw value preserved; invalid canonical projection cleared; conflict remains open."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "existing_destination_database_protected": true,
+  "completed_setup_rerun_repeats_restore": false,
+  "interrupted_restore_volume_deleted": false,
+  "interrupted_restore_retry_uses_fresh_project": true,
+  "failure_recovery_status": "PENDING_ISOLATED_TEST"
+}

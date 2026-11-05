@@ -1,0 +1,118 @@
+{
+  "version": "2026-10-21.1",
+  "universal_2x_polling_rule": false,
+  "content_change_is_sole_freshness_signal": false,
+  "successful_no_change_complete_scan_is_fresh": true,
+  "policies": [
+    {
+      "source": "furas",
+      "operational_type": "A.DYNAMIC_STRUCTURED_API",
+      "normal_check_cadence": "60 minutes",
+      "dispatcher_interval_minutes": 60,
+      "warning_after_minutes": 120,
+      "fail_after_minutes": 360,
+      "basis": "complete_scan",
+      "rationale": "Complete paginated municipal opportunity feed."
+    },
+    {
+      "source": "alahsa-opportunities",
+      "operational_type": "B.DYNAMIC_WEB_LISTING",
+      "normal_check_cadence": "60 minutes",
+      "dispatcher_interval_minutes": 60,
+      "warning_after_minutes": 120,
+      "fail_after_minutes": 360,
+      "basis": "complete_scan",
+      "rationale": "Complete paginated local opportunity listing."
+    },
+    {
+      "source": "ahda",
+      "operational_type": "B.DYNAMIC_WEB_LISTING",
+      "normal_check_cadence": "6 hours",
+      "dispatcher_interval_minutes": 360,
+      "warning_after_minutes": 1440,
+      "fail_after_minutes": 4320,
+      "basis": "complete_scan",
+      "rationale": "Sitemap and page publisher; complete defined public scope."
+    },
+    {
+      "source": "invest-saudi",
+      "operational_type": "A.DYNAMIC_STRUCTURED_API",
+      "normal_check_cadence": "6 hours",
+      "dispatcher_interval_minutes": 360,
+      "warning_after_minutes": 720,
+      "fail_after_minutes": 2880,
+      "basis": "complete_scan",
+      "rationale": "Public multi-endpoint paginated API; successful no-change enumeration is fresh."
+    },
+    {
+      "source": "kfu",
+      "operational_type": "C.PERIODIC_DOCUMENT_SOURCE",
+      "normal_check_cadence": "12 hours",
+      "dispatcher_interval_minutes": 720,
+      "warning_after_minutes": 4320,
+      "fail_after_minutes": 20160,
+      "basis": "complete_scan",
+      "rationale": "Official investment announcements and document metadata; sparse publication cadence, no document downloads."
+    },
+    {
+      "source": "modon",
+      "operational_type": "F.LIMITED_PUBLIC_COVERAGE",
+      "normal_check_cadence": "6 hours attempts; weekly scope verification",
+      "dispatcher_interval_minutes": 360,
+      "warning_after_minutes": 10080,
+      "fail_after_minutes": 43200,
+      "basis": "public_scope_verification",
+      "rationale": "No current public itemized Al-Ahsa inventory; only a successful verification of the defined public surfaces is meaningful."
+    },
+    {
+      "source": "ncp",
+      "operational_type": "E.EVENT_DRIVEN_SOURCE",
+      "normal_check_cadence": "12 hours",
+      "dispatcher_interval_minutes": 720,
+      "warning_after_minutes": 1440,
+      "fail_after_minutes": 4320,
+      "basis": "complete_scan",
+      "rationale": "Public paginated news archive is enumerable; private PPP pipeline is outside scope."
+    },
+    {
+      "source": "nhc",
+      "operational_type": "F.LIMITED_PUBLIC_COVERAGE",
+      "normal_check_cadence": "12 hours attempts; weekly scope verification",
+      "dispatcher_interval_minutes": 720,
+      "warning_after_minutes": 10080,
+      "fail_after_minutes": 43200,
+      "basis": "public_scope_verification",
+      "rationale": "Public category/route checks do not enumerate the authenticated investment inventory."
+    },
+    {
+      "source": "pif",
+      "operational_type": "F.LIMITED_PUBLIC_COVERAGE",
+      "normal_check_cadence": "24 hours attempts; weekly scope verification",
+      "dispatcher_interval_minutes": 1440,
+      "warning_after_minutes": 10080,
+      "fail_after_minutes": 43200,
+      "basis": "public_scope_verification",
+      "rationale": "Public routes are monitored; current item-level/company inventory is not deterministically enumerable."
+    },
+    {
+      "source": "mwan",
+      "operational_type": "B.DYNAMIC_WEB_LISTING",
+      "normal_check_cadence": "24 hours",
+      "dispatcher_interval_minutes": 1440,
+      "warning_after_minutes": 2880,
+      "fail_after_minutes": 20160,
+      "basis": "complete_scan",
+      "rationale": "Recurring public itemized opportunity listing and linked detail enumeration."
+    }
+  ],
+  "state_semantics": {
+    "FRESH": "Complete successful scan within SLA",
+    "AGING": "Past warning threshold but before critical limit",
+    "STALE": "Limited/public scope verification overdue or critical threshold exceeded",
+    "STATIC_OK": "Periodic reference review is within its interval",
+    "LIMITED_SOURCE_OK": "Defined public surfaces verified within periodic SLA; coverage remains limited",
+    "MANUAL_REVIEW_DUE": "Human review overdue; not an automated sync failure",
+    "UNKNOWN": "Disabled or no explicit policy/evidence"
+  },
+  "failure_escalation": "A hard failed attempt alerts INFO, two consecutive unsuccessful attempts WARNING, three or more HIGH; freshness DQ FAIL only after source-specific critical threshold."
+}

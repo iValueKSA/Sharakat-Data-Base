@@ -1,0 +1,107 @@
+{
+  "snapshot_at": "2026-10-22T07:26:48.944138+00:00",
+  "current_review_types": [
+    "DUPLICATE_REVIEW",
+    "FIELD_VALUE_CONFLICT",
+    "LOCATION_REVIEW",
+    "STANDARDIZATION_REVIEW",
+    "TAXONOMY_CONFLICT"
+  ],
+  "current_review_subtypes": [
+    "DUPLICATE_REVIEW",
+    "FIELD_VALUE_CONFLICT:full_description",
+    "FIELD_VALUE_CONFLICT:land_area_sqm",
+    "FIELD_VALUE_CONFLICT:location_description",
+    "FIELD_VALUE_CONFLICT:normalized_title",
+    "FIELD_VALUE_CONFLICT:opportunity_owner",
+    "FIELD_VALUE_CONFLICT:sector",
+    "FIELD_VALUE_CONFLICT:short_description",
+    "FIELD_VALUE_CONFLICT:status",
+    "FIELD_VALUE_CONFLICT:title_ar",
+    "LOCATION_REVIEW",
+    "STANDARDIZATION_REVIEW:contract_duration_years",
+    "STANDARDIZATION_REVIEW:investment_value",
+    "TAXONOMY_CONFLICT:activity",
+    "TAXONOMY_CONFLICT:investment_model",
+    "TAXONOMY_CONFLICT:sector",
+    "TAXONOMY_CONFLICT:sub_activity"
+  ],
+  "review_status_counts_by_model": {
+    "duplicate": {
+      "MERGED": 21,
+      "PENDING": 10,
+      "REJECTED": 16
+    },
+    "location": {
+      "ACCEPTED": 11,
+      "PENDING": 15
+    },
+    "qualification": {},
+    "conflict": {
+      "OPEN": 473,
+      "RESOLVED": 40,
+      "RESOLVED_CANONICAL": 89,
+      "RESOLVED_INFERENCE": 5,
+      "RESOLVED_KEEP": 48,
+      "SUPERSEDED": 11
+    }
+  },
+  "current_review_taxonomy_counts": {
+    "DUPLICATE_REVIEW": 10,
+    "LOCATION_REVIEW": 15,
+    "TAXONOMY_CONFLICT": 50,
+    "FIELD_VALUE_CONFLICT": 89,
+    "STANDARDIZATION_REVIEW": 334
+  },
+  "open_reviews_by_type": {
+    "duplicate": 10,
+    "location": 15,
+    "conflict": 473
+  },
+  "open_reviews_by_subtype": {
+    "DUPLICATE_REVIEW": 10,
+    "FIELD_VALUE_CONFLICT:full_description": 2,
+    "FIELD_VALUE_CONFLICT:land_area_sqm": 1,
+    "FIELD_VALUE_CONFLICT:location_description": 24,
+    "FIELD_VALUE_CONFLICT:normalized_title": 3,
+    "FIELD_VALUE_CONFLICT:opportunity_owner": 1,
+    "FIELD_VALUE_CONFLICT:sector": 14,
+    "FIELD_VALUE_CONFLICT:short_description": 4,
+    "FIELD_VALUE_CONFLICT:status": 34,
+    "FIELD_VALUE_CONFLICT:title_ar": 6,
+    "LOCATION_REVIEW": 15,
+    "STANDARDIZATION_REVIEW:contract_duration_years": 332,
+    "STANDARDIZATION_REVIEW:investment_value": 2,
+    "TAXONOMY_CONFLICT:activity": 31,
+    "TAXONOMY_CONFLICT:investment_model": 4,
+    "TAXONOMY_CONFLICT:sector": 14,
+    "TAXONOMY_CONFLICT:sub_activity": 1
+  },
+  "open_reviews_by_source": {
+    "ahda": 9,
+    "alahsa-opportunities": 62,
+    "furas": 408,
+    "invest-saudi": 18,
+    "kfu": 3,
+    "ncp": 1
+  },
+  "open_reviews_by_age_bucket": {
+    "0-7 days": 484,
+    "8-30 days": 14
+  },
+  "open_by_master_status": {
+    "أزيلت من المصدر": 28,
+    "غير محددة": 9,
+    "متاحة": 462,
+    "منتهية": 3
+  },
+  "open_by_master_merged_state": {
+    "CURRENT": 502
+  },
+  "open_by_sourceopportunity_state": {
+    "أزيلت من المصدر": 43,
+    "غير محددة": 21,
+    "متاحة": 442,
+    "منتهية": 3
+  }
+}

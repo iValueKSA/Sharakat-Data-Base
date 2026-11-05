@@ -1,0 +1,55 @@
+{
+  "reviewed_at_utc": "2026-10-19T09:03:42.621511+00:00",
+  "pending_location_reviews_before": 17,
+  "pending_location_reviews_after": 25,
+  "intentionally_added_master_reviews": 8,
+  "review_records": [
+    {
+      "classification": "LOCATION_UNSPECIFIED",
+      "master_id": 211,
+      "decision": "PENDING"
+    },
+    {
+      "classification": "LOCATION_UNSPECIFIED",
+      "master_id": 213,
+      "decision": "PENDING"
+    },
+    {
+      "classification": "LOCATION_UNSPECIFIED",
+      "master_id": 214,
+      "decision": "PENDING"
+    },
+    {
+      "classification": "LOCATION_UNSPECIFIED",
+      "master_id": 215,
+      "decision": "PENDING"
+    },
+    {
+      "classification": "LOCATION_UNSPECIFIED",
+      "master_id": 216,
+      "decision": "PENDING"
+    },
+    {
+      "classification": "LOCATION_UNSPECIFIED",
+      "master_id": 217,
+      "decision": "PENDING"
+    },
+    {
+      "classification": "REGION_ONLY",
+      "master_id": 212,
+      "decision": "PENDING"
+    },
+    {
+      "classification": "COORDINATE_TEXT_CONFLICT",
+      "master_id": 70,
+      "decision": "PENDING"
+    }
+  ],
+  "master_identity_hash_unchanged": true,
+  "source_link_hash_unchanged": true,
+  "raw_source_hash_unchanged": true,
+  "raw_observation_hash_unchanged": true,
+  "business_master_fields_changed": 0,
+  "source_opportunity_rows_changed": 0,
+  "review_resolutions": 0
+}

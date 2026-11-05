@@ -1,0 +1,11 @@
+Local PostgreSQL migration evidence
+Captured: 2026-10-13 Asia/Amman
+
+Result: PASS
+Server: PostgreSQL 16.15
+Alembic: 0016_source_type_text (head)
+Extension: pg_trgm 1.6
+
+Clean local PostgreSQL startup applied the migration chain. The transactional SQLite import marker confirms 230 opportunities, 2,831 source opportunities, 7,603 source observations, 10 sources, and 200 sync jobs were imported. Row counts matched within the import transaction. The original SQLite file was mounted read-only and retained. A repeated bootstrap reports ALREADY_IMPORTED.
+
+Current post-sync database counts and independent backup restore counts are documented in ../local-windows-launcher.md and restore-test.txt. PostGIS is not required by this application.

@@ -1,0 +1,8 @@
+{
+    "setup_version":  "1.0.0",
+    "package_id":  "20261028T145109-95ad0509",
+    "created_at_utc":  "2026-10-28T11:51:35.7830340Z",
+    "alembic_heads":  [
+                          "0023_quant_commercial"
+                      ]
+}

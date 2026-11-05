@@ -1,0 +1,34 @@
+{
+  "captured_at": "2026-10-26T11:07:05.796Z",
+  "source": "GET /api/data-dashboard after presentation change",
+  "card_title": "مواعيد خلال 30 يوماً",
+  "deadline_30d_kpi": 60,
+  "buckets": [
+    {
+      "key": "7d",
+      "label": "خلال 7 أيام",
+      "count": 0
+    },
+    {
+      "key": "8_14d",
+      "label": "8–14 يومًا",
+      "count": 10
+    },
+    {
+      "key": "15_30d",
+      "label": "15–30 يومًا",
+      "count": 50
+    },
+    {
+      "key": "over_30d",
+      "label": "أكثر من 30 يومًا",
+      "count": 44
+    }
+  ],
+  "values": [
+    0,
+    10,
+    50,
+    44
+  ]
+}

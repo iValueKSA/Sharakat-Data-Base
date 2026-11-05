@@ -1,0 +1,8 @@
+Local health endpoint evidence
+Captured: 2026-10-13 Asia/Amman
+
+Result: PASS
+
+Live API `/health/live`, frontend `/health/ready`, and `/api/opportunities?limit=1` returned HTTP 200. Readiness reported database, Redis, and worker `ok`. The same live/ready/opportunities checks returned HTTP 200 when FastAPI was pointed to the separate restored database. PostgreSQL and Redis container health checks also passed.
+
+Docker Desktop stop and restart through Start Platform brought services back to healthy. No dedicated Redis-only outage injection was performed.

@@ -1,0 +1,11 @@
+{
+  "applied_at": "2026-10-26T08:22:02.086331+00:00",
+  "results": {
+    "resolved": 386,
+    "no_change": 385,
+    "canonical_changes": 0,
+    "superseded": 1,
+    "merges": 0
+  },
+  "review_fingerprint": "a7cbe7c3c800f61f487e831537f4d4ca67d5859bd72bfc028aade79f0bead5de"
+}

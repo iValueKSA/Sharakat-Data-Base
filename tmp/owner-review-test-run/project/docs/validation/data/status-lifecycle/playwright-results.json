@@ -1,0 +1,844 @@
+{
+  "started_at": "2026-10-19T10:58:57.110Z",
+  "viewport_checks": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "innerWidth": 1920,
+      "scrollWidth": 1920,
+      "direction": "rtl",
+      "filterBox": {
+        "left": 75,
+        "right": 1581,
+        "width": 1506,
+        "scrollWidth": 1506,
+        "clientWidth": 1506
+      },
+      "controls": [
+        {
+          "name": "search-box",
+          "left": 1390,
+          "right": 1565,
+          "top": 225.4375,
+          "bottom": 263.4375,
+          "within": true
+        },
+        {
+          "name": "sectorFilter",
+          "left": 1259,
+          "right": 1382,
+          "top": 225.4375,
+          "bottom": 263.4375,
+          "within": true
+        },
+        {
+          "name": "activityFilter",
+          "left": 1128,
+          "right": 1251,
+          "top": 225.4375,
+          "bottom": 263.4375,
+          "within": true
+        },
+        {
+          "name": "subActivityFilter",
+          "left": 997,
+          "right": 1120,
+          "top": 225.4375,
+          "bottom": 263.4375,
+          "within": true
+        },
+        {
+          "name": "subsectorFilter",
+          "left": 866,
+          "right": 989,
+          "top": 225.4375,
+          "bottom": 263.4375,
+          "within": true
+        },
+        {
+          "name": "statusFilter",
+          "left": 735,
+          "right": 858,
+          "top": 225.4375,
+          "bottom": 263.4375,
+          "within": true
+        },
+        {
+          "name": "lifecycleFilter",
+          "left": 604,
+          "right": 727,
+          "top": 225.4375,
+          "bottom": 263.4375,
+          "within": true
+        },
+        {
+          "name": "ownerFilter",
+          "left": 473,
+          "right": 596,
+          "top": 225.4375,
+          "bottom": 263.4375,
+          "within": true
+        },
+        {
+          "name": "sourceFilter",
+          "left": 342,
+          "right": 465,
+          "top": 225.4375,
+          "bottom": 263.4375,
+          "within": true
+        },
+        {
+          "name": "locationFilter",
+          "left": 211,
+          "right": 334,
+          "top": 225.4375,
+          "bottom": 263.4375,
+          "within": true
+        },
+        {
+          "name": "typeFilter",
+          "left": 91,
+          "right": 203,
+          "top": 225.4375,
+          "bottom": 263.4375,
+          "within": true
+        },
+        {
+          "name": "investmentModelFilter",
+          "left": 1390,
+          "right": 1565,
+          "top": 271.4375,
+          "bottom": 309.4375,
+          "within": true
+        },
+        {
+          "name": "assetFacilityTypeFilter",
+          "left": 1259,
+          "right": 1382,
+          "top": 271.4375,
+          "bottom": 309.4375,
+          "within": true
+        },
+        {
+          "name": "resetFilters",
+          "left": 1128,
+          "right": 1251,
+          "top": 271.4375,
+          "bottom": 309.4375,
+          "within": true
+        }
+      ],
+      "overlaps": [],
+      "reset": {
+        "left": 1128,
+        "right": 1251,
+        "width": 123,
+        "visible": true,
+        "text": "إعادة الضبط"
+      },
+      "tableCount": "عرض 1–50 من 291 فرصة",
+      "dropdown_filter_usable": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "innerWidth": 1440,
+      "scrollWidth": 1440,
+      "direction": "rtl",
+      "filterBox": {
+        "left": 44.1875,
+        "right": 1131.8125,
+        "width": 1087.625,
+        "scrollWidth": 1088,
+        "clientWidth": 1088
+      },
+      "controls": [
+        {
+          "name": "search-box",
+          "left": 592,
+          "right": 1115.8125,
+          "top": 225.4375,
+          "bottom": 263.4375,
+          "within": true
+        },
+        {
+          "name": "sectorFilter",
+          "left": 326.09375,
+          "right": 584,
+          "top": 225.4375,
+          "bottom": 263.4375,
+          "within": true
+        },
+        {
+          "name": "activityFilter",
+          "left": 60.1875,
+          "right": 318.09375,
+          "top": 225.4375,
+          "bottom": 263.4375,
+          "within": true
+        },
+        {
+          "name": "subActivityFilter",
+          "left": 857.90625,
+          "right": 1115.8125,
+          "top": 271.4375,
+          "bottom": 309.4375,
+          "within": true
+        },
+        {
+          "name": "subsectorFilter",
+          "left": 592,
+          "right": 849.90625,
+          "top": 271.4375,
+          "bottom": 309.4375,
+          "within": true
+        },
+        {
+          "name": "statusFilter",
+          "left": 326.09375,
+          "right": 584,
+          "top": 271.4375,
+          "bottom": 309.4375,
+          "within": true
+        },
+        {
+          "name": "lifecycleFilter",
+          "left": 60.1875,
+          "right": 318.09375,
+          "top": 271.4375,
+          "bottom": 309.4375,
+          "within": true
+        },
+        {
+          "name": "ownerFilter",
+          "left": 857.90625,
+          "right": 1115.8125,
+          "top": 317.4375,
+          "bottom": 355.4375,
+          "within": true
+        },
+        {
+          "name": "sourceFilter",
+          "left": 592,
+          "right": 849.90625,
+          "top": 317.4375,
+          "bottom": 355.4375,
+          "within": true
+        },
+        {
+          "name": "locationFilter",
+          "left": 326.09375,
+          "right": 584,
+          "top": 317.4375,
+          "bottom": 355.4375,
+          "within": true
+        },
+        {
+          "name": "typeFilter",
+          "left": 60.1875,
+          "right": 318.09375,
+          "top": 317.4375,
+          "bottom": 355.4375,
+          "within": true
+        },
+        {
+          "name": "investmentModelFilter",
+          "left": 857.90625,
+          "right": 1115.8125,
+          "top": 363.4375,
+          "bottom": 401.4375,
+          "within": true
+        },
+        {
+          "name": "assetFacilityTypeFilter",
+          "left": 592,
+          "right": 849.90625,
+          "top": 363.4375,
+          "bottom": 401.4375,
+          "within": true
+        },
+        {
+          "name": "resetFilters",
+          "left": 326.09375,
+          "right": 584,
+          "top": 363.4375,
+          "bottom": 401.4375,
+          "within": true
+        }
+      ],
+      "overlaps": [],
+      "reset": {
+        "left": 326.09375,
+        "right": 584,
+        "width": 257.90625,
+        "visible": true,
+        "text": "إعادة الضبط"
+      },
+      "tableCount": "عرض 1–50 من 291 فرصة",
+      "dropdown_filter_usable": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "innerWidth": 1366,
+      "scrollWidth": 1366,
+      "direction": "rtl",
+      "filterBox": {
+        "left": 41.96875,
+        "right": 1060.03125,
+        "width": 1018.0625,
+        "scrollWidth": 1018,
+        "clientWidth": 1018
+      },
+      "controls": [
+        {
+          "name": "search-box",
+          "left": 555,
+          "right": 1044.03125,
+          "top": 225.4375,
+          "bottom": 263.4375,
+          "within": true
+        },
+        {
+          "name": "sectorFilter",
+          "left": 306.484375,
+          "right": 547,
+          "top": 225.4375,
+          "bottom": 263.4375,
+          "within": true
+        },
+        {
+          "name": "activityFilter",
+          "left": 57.96875,
+          "right": 298.484375,
+          "top": 225.4375,
+          "bottom": 263.4375,
+          "within": true
+        },
+        {
+          "name": "subActivityFilter",
+          "left": 803.515625,
+          "right": 1044.03125,
+          "top": 271.4375,
+          "bottom": 309.4375,
+          "within": true
+        },
+        {
+          "name": "subsectorFilter",
+          "left": 555,
+          "right": 795.515625,
+          "top": 271.4375,
+          "bottom": 309.4375,
+          "within": true
+        },
+        {
+          "name": "statusFilter",
+          "left": 306.484375,
+          "right": 547,
+          "top": 271.4375,
+          "bottom": 309.4375,
+          "within": true
+        },
+        {
+          "name": "lifecycleFilter",
+          "left": 57.96875,
+          "right": 298.484375,
+          "top": 271.4375,
+          "bottom": 309.4375,
+          "within": true
+        },
+        {
+          "name": "ownerFilter",
+          "left": 803.515625,
+          "right": 1044.03125,
+          "top": 317.4375,
+          "bottom": 355.4375,
+          "within": true
+        },
+        {
+          "name": "sourceFilter",
+          "left": 555,
+          "right": 795.515625,
+          "top": 317.4375,
+          "bottom": 355.4375,
+          "within": true
+        },
+        {
+          "name": "locationFilter",
+          "left": 306.484375,
+          "right": 547,
+          "top": 317.4375,
+          "bottom": 355.4375,
+          "within": true
+        },
+        {
+          "name": "typeFilter",
+          "left": 57.96875,
+          "right": 298.484375,
+          "top": 317.4375,
+          "bottom": 355.4375,
+          "within": true
+        },
+        {
+          "name": "investmentModelFilter",
+          "left": 803.515625,
+          "right": 1044.03125,
+          "top": 363.4375,
+          "bottom": 401.4375,
+          "within": true
+        },
+        {
+          "name": "assetFacilityTypeFilter",
+          "left": 555,
+          "right": 795.515625,
+          "top": 363.4375,
+          "bottom": 401.4375,
+          "within": true
+        },
+        {
+          "name": "resetFilters",
+          "left": 306.484375,
+          "right": 547,
+          "top": 363.4375,
+          "bottom": 401.4375,
+          "within": true
+        }
+      ],
+      "overlaps": [],
+      "reset": {
+        "left": 306.484375,
+        "right": 547,
+        "width": 240.515625,
+        "visible": true,
+        "text": "إعادة الضبط"
+      },
+      "tableCount": "عرض 1–50 من 291 فرصة",
+      "dropdown_filter_usable": true
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "innerWidth": 768,
+      "scrollWidth": 768,
+      "direction": "rtl",
+      "filterBox": {
+        "left": 26,
+        "right": 742,
+        "width": 716,
+        "scrollWidth": 716,
+        "clientWidth": 716
+      },
+      "controls": [
+        {
+          "name": "search-box",
+          "left": 36,
+          "right": 732,
+          "top": 217.4375,
+          "bottom": 255.4375,
+          "within": true
+        },
+        {
+          "name": "sectorFilter",
+          "left": 388,
+          "right": 732,
+          "top": 263.4375,
+          "bottom": 301.4375,
+          "within": true
+        },
+        {
+          "name": "activityFilter",
+          "left": 36,
+          "right": 380,
+          "top": 263.4375,
+          "bottom": 301.4375,
+          "within": true
+        },
+        {
+          "name": "subActivityFilter",
+          "left": 388,
+          "right": 732,
+          "top": 309.4375,
+          "bottom": 347.4375,
+          "within": true
+        },
+        {
+          "name": "subsectorFilter",
+          "left": 36,
+          "right": 380,
+          "top": 309.4375,
+          "bottom": 347.4375,
+          "within": true
+        },
+        {
+          "name": "statusFilter",
+          "left": 388,
+          "right": 732,
+          "top": 355.4375,
+          "bottom": 393.4375,
+          "within": true
+        },
+        {
+          "name": "lifecycleFilter",
+          "left": 36,
+          "right": 380,
+          "top": 355.4375,
+          "bottom": 393.4375,
+          "within": true
+        },
+        {
+          "name": "ownerFilter",
+          "left": 388,
+          "right": 732,
+          "top": 401.4375,
+          "bottom": 439.4375,
+          "within": true
+        },
+        {
+          "name": "sourceFilter",
+          "left": 36,
+          "right": 380,
+          "top": 401.4375,
+          "bottom": 439.4375,
+          "within": true
+        },
+        {
+          "name": "locationFilter",
+          "left": 388,
+          "right": 732,
+          "top": 447.4375,
+          "bottom": 485.4375,
+          "within": true
+        },
+        {
+          "name": "typeFilter",
+          "left": 36,
+          "right": 380,
+          "top": 447.4375,
+          "bottom": 485.4375,
+          "within": true
+        },
+        {
+          "name": "investmentModelFilter",
+          "left": 388,
+          "right": 732,
+          "top": 493.4375,
+          "bottom": 531.4375,
+          "within": true
+        },
+        {
+          "name": "assetFacilityTypeFilter",
+          "left": 36,
+          "right": 380,
+          "top": 493.4375,
+          "bottom": 531.4375,
+          "within": true
+        },
+        {
+          "name": "resetFilters",
+          "left": 36,
+          "right": 732,
+          "top": 539.4375,
+          "bottom": 577.4375,
+          "within": true
+        }
+      ],
+      "overlaps": [],
+      "reset": {
+        "left": 36,
+        "right": 732,
+        "width": 696,
+        "visible": true,
+        "text": "إعادة الضبط"
+      },
+      "tableCount": "عرض 1–50 من 291 فرصة",
+      "dropdown_filter_usable": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "innerWidth": 390,
+      "scrollWidth": 390,
+      "direction": "rtl",
+      "filterBox": {
+        "left": 26,
+        "right": 364,
+        "width": 338,
+        "scrollWidth": 338,
+        "clientWidth": 338
+      },
+      "controls": [
+        {
+          "name": "search-box",
+          "left": 36,
+          "right": 354,
+          "top": 250.84375,
+          "bottom": 288.84375,
+          "within": true
+        },
+        {
+          "name": "sectorFilter",
+          "left": 199,
+          "right": 354,
+          "top": 296.84375,
+          "bottom": 334.84375,
+          "within": true
+        },
+        {
+          "name": "activityFilter",
+          "left": 36,
+          "right": 191,
+          "top": 296.84375,
+          "bottom": 334.84375,
+          "within": true
+        },
+        {
+          "name": "subActivityFilter",
+          "left": 199,
+          "right": 354,
+          "top": 342.84375,
+          "bottom": 380.84375,
+          "within": true
+        },
+        {
+          "name": "subsectorFilter",
+          "left": 36,
+          "right": 191,
+          "top": 342.84375,
+          "bottom": 380.84375,
+          "within": true
+        },
+        {
+          "name": "statusFilter",
+          "left": 199,
+          "right": 354,
+          "top": 388.84375,
+          "bottom": 426.84375,
+          "within": true
+        },
+        {
+          "name": "lifecycleFilter",
+          "left": 36,
+          "right": 191,
+          "top": 388.84375,
+          "bottom": 426.84375,
+          "within": true
+        },
+        {
+          "name": "ownerFilter",
+          "left": 199,
+          "right": 354,
+          "top": 434.84375,
+          "bottom": 472.84375,
+          "within": true
+        },
+        {
+          "name": "sourceFilter",
+          "left": 36,
+          "right": 191,
+          "top": 434.84375,
+          "bottom": 472.84375,
+          "within": true
+        },
+        {
+          "name": "locationFilter",
+          "left": 199,
+          "right": 354,
+          "top": 480.84375,
+          "bottom": 518.84375,
+          "within": true
+        },
+        {
+          "name": "typeFilter",
+          "left": 36,
+          "right": 191,
+          "top": 480.84375,
+          "bottom": 518.84375,
+          "within": true
+        },
+        {
+          "name": "investmentModelFilter",
+          "left": 199,
+          "right": 354,
+          "top": 526.84375,
+          "bottom": 564.84375,
+          "within": true
+        },
+        {
+          "name": "assetFacilityTypeFilter",
+          "left": 36,
+          "right": 191,
+          "top": 526.84375,
+          "bottom": 564.84375,
+          "within": true
+        },
+        {
+          "name": "resetFilters",
+          "left": 36,
+          "right": 354,
+          "top": 572.84375,
+          "bottom": 610.84375,
+          "within": true
+        }
+      ],
+      "overlaps": [],
+      "reset": {
+        "left": 36,
+        "right": 354,
+        "width": 318,
+        "visible": true,
+        "text": "إعادة الضبط"
+      },
+      "tableCount": "عرض 1–50 من 291 فرصة",
+      "dropdown_filter_usable": true
+    }
+  ],
+  "scenarios": {
+    "status_reconciliation": {
+      "by_status": {
+        "أزيلت من المصدر": {
+          "id": "status:removed_from_source",
+          "api_total": 14,
+          "returned": 1,
+          "dashboard_count": 14,
+          "dashboard_global_total": 291
+        },
+        "حالة غير معروفة": {
+          "id": "status:unknown",
+          "api_total": 1,
+          "returned": 1,
+          "dashboard_count": 1,
+          "dashboard_global_total": 291
+        },
+        "غير محددة": {
+          "id": "status:missing",
+          "api_total": 13,
+          "returned": 1,
+          "dashboard_count": 13,
+          "dashboard_global_total": 291
+        },
+        "متاحة": {
+          "id": "status:available",
+          "api_total": 103,
+          "returned": 1,
+          "dashboard_count": 103,
+          "dashboard_global_total": 291
+        },
+        "منتهية": {
+          "id": "status:expired",
+          "api_total": 2,
+          "returned": 1,
+          "dashboard_count": 2,
+          "dashboard_global_total": 291
+        },
+        "منشورة": {
+          "id": "status:published",
+          "api_total": 158,
+          "returned": 1,
+          "dashboard_count": 158,
+          "dashboard_global_total": 291
+        }
+      },
+      "sum_statuses": 291,
+      "eligible_total": 291
+    },
+    "status_filter": {
+      "label": "أزيلت من المصدر",
+      "id": "status:removed_from_source",
+      "first_page_rows": 14,
+      "table_count": "عرض 1–14 من 14 فرصة",
+      "badge_texts": [
+        "أزيلت من المصدر",
+        "أزيلت من المصدر",
+        "أزيلت من المصدر",
+        "أزيلت من المصدر",
+        "أزيلت من المصدر",
+        "أزيلت من المصدر",
+        "أزيلت من المصدر",
+        "أزيلت من المصدر",
+        "أزيلت من المصدر",
+        "أزيلت من المصدر",
+        "أزيلت من المصدر",
+        "أزيلت من المصدر",
+        "أزيلت من المصدر",
+        "أزيلت من المصدر"
+      ]
+    },
+    "reset": {
+      "status_filter": "",
+      "search": "",
+      "table_count": "عرض 1–50 من 291 فرصة"
+    },
+    "search": {
+      "query": "AL AHSA",
+      "table_count": "عرض 1–6 من 6 فرصة",
+      "rows": 6
+    },
+    "pagination": {
+      "before": "صفحة 1 من 1",
+      "after": "صفحة 2 من 6",
+      "rows": 50
+    },
+    "details": {
+      "modal_visible": true,
+      "title": "إنشاء وتشغيل و صيانة القطعة رقم 47/1ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانة",
+      "has_source_status_section": "الحالة حسب المصدر"
+    },
+    "exports": {
+      "csv": {
+        "status": 200,
+        "content_type": "text/csv; charset=utf-8",
+        "bytes": 12108,
+        "disposition": "attachment; filename=al-ahsa-opportunities.csv",
+        "data_rows": 14
+      },
+      "xlsx": {
+        "status": 200,
+        "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "bytes": 167876,
+        "disposition": "attachment; filename=al-ahsa-opportunities-2026-10-19.xlsx; filename*=UTF-8''%D9%81%D8%B1%D8%B5_%D8%A7%D9%84%D8%A3%D8%AD%D8%B3%D8%A7%D8%A1_2026-10-19.xlsx"
+      }
+    },
+    "dashboard_status_legend": [
+      {
+        "label": "منشورة\n158",
+        "value": "status:published",
+        "aria": "تصفية حسب منشورة: 158 فرصة"
+      },
+      {
+        "label": "متاحة\n103",
+        "value": "status:available",
+        "aria": "تصفية حسب متاحة: 103 فرصة"
+      },
+      {
+        "label": "أزيلت من المصدر\n14",
+        "value": "status:removed_from_source",
+        "aria": "تصفية حسب أزيلت من المصدر: 14 فرصة"
+      },
+      {
+        "label": "غير محددة\n13",
+        "value": "status:missing",
+        "aria": "تصفية حسب غير محددة: 13 فرصة"
+      },
+      {
+        "label": "منتهية\n2",
+        "value": "status:expired",
+        "aria": "تصفية حسب منتهية: 2 فرصة"
+      },
+      {
+        "label": "حالة غير معروفة\n1",
+        "value": "status:unknown",
+        "aria": "تصفية حسب حالة غير معروفة: 1 فرصة"
+      }
+    ],
+    "chart_drilldown": {
+      "label": "منشورة\n158",
+      "value": "status:published",
+      "url": "http://localhost:8080/?view=opportunities&status=status%3Apublished",
+      "selected_status": "status:published",
+      "table_count": "عرض 1–50 من 158 فرصة",
+      "matches_bucket": true
+    }
+  },
+  "errors": [],
+  "finished_at": "2026-10-19T10:59:18.602Z"
+}

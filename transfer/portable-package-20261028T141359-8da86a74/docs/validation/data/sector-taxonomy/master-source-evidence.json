@@ -1,0 +1,658 @@
+[
+  {
+    "sector": "<NULL>",
+    "count": 124,
+    "ids": [
+      16,
+      17,
+      37,
+      25,
+      311,
+      43,
+      33,
+      36,
+      45,
+      65,
+      46,
+      47,
+      23,
+      76,
+      55,
+      26,
+      58,
+      316,
+      314,
+      111,
+      112,
+      114,
+      40,
+      44,
+      50,
+      118,
+      317,
+      119,
+      120,
+      121,
+      61,
+      124,
+      69,
+      125,
+      127,
+      24,
+      14,
+      11,
+      310,
+      22,
+      71,
+      128,
+      32,
+      57,
+      80,
+      115,
+      88,
+      318,
+      122,
+      56,
+      10,
+      28,
+      320,
+      64,
+      113,
+      206,
+      39,
+      38,
+      53,
+      48,
+      52,
+      34,
+      126,
+      81,
+      83,
+      84,
+      312,
+      313,
+      41,
+      85,
+      54,
+      129,
+      130,
+      131,
+      132,
+      205,
+      322,
+      12,
+      94,
+      13,
+      15,
+      309,
+      27,
+      31,
+      42,
+      49,
+      51,
+      68,
+      321,
+      59,
+      60,
+      62,
+      63,
+      35,
+      73,
+      77,
+      86,
+      93,
+      87,
+      92,
+      66,
+      95,
+      72,
+      79,
+      89,
+      315,
+      70,
+      67,
+      136,
+      137,
+      308,
+      29,
+      323,
+      109,
+      117,
+      123,
+      108,
+      110,
+      319,
+      82,
+      134,
+      116,
+      133,
+      324
+    ],
+    "sources": [
+      "furas"
+    ],
+    "raw_source_sector": {},
+    "raw_source_subsector": {},
+    "activities": {},
+    "payload_category": {},
+    "types": {}
+  },
+  {
+    "sector": "صناعي",
+    "count": 59,
+    "ids": [
+      243,
+      154,
+      161,
+      190,
+      196,
+      198,
+      160,
+      272,
+      250,
+      185,
+      277,
+      3,
+      4,
+      5,
+      7,
+      143,
+      144,
+      145,
+      6,
+      9,
+      146,
+      178,
+      179,
+      147,
+      148,
+      149,
+      151,
+      153,
+      155,
+      158,
+      247,
+      245,
+      159,
+      8,
+      176,
+      177,
+      180,
+      181,
+      183,
+      184,
+      150,
+      192,
+      152,
+      193,
+      156,
+      157,
+      162,
+      199,
+      204,
+      271,
+      182,
+      188,
+      194,
+      200,
+      195,
+      197,
+      203,
+      201,
+      202
+    ],
+    "sources": [
+      "alahsa-opportunities",
+      "furas"
+    ],
+    "raw_source_sector": {
+      "صناعي": 59,
+      "أنشطة و تجارة المعدات الثقيلة": 1,
+      "أخرى": 2
+    },
+    "raw_source_subsector": {},
+    "activities": {
+      "صناعي": 59
+    },
+    "payload_category": {},
+    "types": {}
+  },
+  {
+    "sector": "PPP_PROJECT",
+    "count": 1,
+    "ids": [
+      228
+    ],
+    "sources": [
+      "ncp"
+    ],
+    "raw_source_sector": {
+      "PPP_PROJECT": 1
+    },
+    "raw_source_subsector": {},
+    "activities": {},
+    "payload_category": {
+      "PPP_PROJECT_ANNOUNCEMENT": 1
+    },
+    "types": {}
+  },
+  {
+    "sector": "فرصة استثمارية",
+    "count": 7,
+    "ids": [
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      211
+    ],
+    "sources": [
+      "ahda"
+    ],
+    "raw_source_sector": {
+      "INVESTMENT_OPPORTUNITY": 7
+    },
+    "raw_source_subsector": {},
+    "activities": {},
+    "payload_category": {
+      "INVESTMENT_OPPORTUNITY": 7
+    },
+    "types": {}
+  },
+  {
+    "sector": "أخرى",
+    "count": 17,
+    "ids": [
+      240,
+      107,
+      21,
+      232,
+      231,
+      234,
+      255,
+      257,
+      260,
+      235,
+      227,
+      262,
+      99,
+      239,
+      100,
+      101,
+      253
+    ],
+    "sources": [
+      "furas"
+    ],
+    "raw_source_sector": {
+      "أخرى": 16,
+      "\"أخرى\"": 1
+    },
+    "raw_source_subsector": {},
+    "activities": {},
+    "payload_category": {},
+    "types": {}
+  },
+  {
+    "sector": "منشآت تقديم الغذاء",
+    "count": 2,
+    "ids": [
+      96,
+      97
+    ],
+    "sources": [
+      "furas"
+    ],
+    "raw_source_sector": {
+      "منشآت تقديم الغذاء": 2
+    },
+    "raw_source_subsector": {},
+    "activities": {},
+    "payload_category": {},
+    "types": {}
+  },
+  {
+    "sector": "أنشطة تجارة المواد الغذائية",
+    "count": 5,
+    "ids": [
+      98,
+      230,
+      325,
+      30,
+      91
+    ],
+    "sources": [
+      "furas",
+      "invest-saudi"
+    ],
+    "raw_source_sector": {
+      "أنشطة تجارة المواد الغذائية": 5,
+      "Real Estate & Construction": 1
+    },
+    "raw_source_subsector": {
+      "الأنشطة التجارية": 1
+    },
+    "activities": {
+      "الأنشطة التجارية": 1,
+      "Real Estate": 1
+    },
+    "payload_category": {
+      "Real Estate & Construction": 1
+    },
+    "types": {}
+  },
+  {
+    "sector": "خدمات الصرافة",
+    "count": 6,
+    "ids": [
+      103,
+      105,
+      141,
+      104,
+      142,
+      102
+    ],
+    "sources": [
+      "furas",
+      "invest-saudi"
+    ],
+    "raw_source_sector": {
+      "خدمات الصرافة": 6,
+      "Real Estate & Construction": 1
+    },
+    "raw_source_subsector": {
+      "الأنشطة المالية": 1
+    },
+    "activities": {
+      "الأنشطة المالية": 1,
+      "Real Estate": 1
+    },
+    "payload_category": {
+      "Real Estate & Construction": 1
+    },
+    "types": {}
+  },
+  {
+    "sector": "أنشطة التجارة العامة",
+    "count": 8,
+    "ids": [
+      237,
+      251,
+      233,
+      248,
+      244,
+      258,
+      246,
+      242
+    ],
+    "sources": [
+      "furas"
+    ],
+    "raw_source_sector": {
+      "أنشطة التجارة العامة": 8
+    },
+    "raw_source_subsector": {},
+    "activities": {},
+    "payload_category": {},
+    "types": {}
+  },
+  {
+    "sector": "خدمات تعليمية أخرى",
+    "count": 1,
+    "ids": [
+      106
+    ],
+    "sources": [
+      "furas"
+    ],
+    "raw_source_sector": {
+      "خدمات تعليمية أخرى": 1
+    },
+    "raw_source_subsector": {},
+    "activities": {},
+    "payload_category": {},
+    "types": {}
+  },
+  {
+    "sector": "البيئة",
+    "count": 6,
+    "ids": [
+      218,
+      219,
+      221,
+      222,
+      223,
+      220
+    ],
+    "sources": [
+      "invest-saudi"
+    ],
+    "raw_source_sector": {
+      "Recycling": 6
+    },
+    "raw_source_subsector": {},
+    "activities": {
+      "Environment": 6
+    },
+    "payload_category": {},
+    "types": {
+      "": 6
+    }
+  },
+  {
+    "sector": "خدمي",
+    "count": 5,
+    "ids": [
+      274,
+      273,
+      276,
+      236,
+      238
+    ],
+    "sources": [
+      "alahsa-opportunities"
+    ],
+    "raw_source_sector": {
+      "خدمي": 5
+    },
+    "raw_source_subsector": {},
+    "activities": {
+      "خدمي": 5
+    },
+    "payload_category": {},
+    "types": {}
+  },
+  {
+    "sector": "تجاري",
+    "count": 39,
+    "ids": [
+      254,
+      210,
+      167,
+      264,
+      172,
+      175,
+      268,
+      269,
+      189,
+      186,
+      241,
+      259,
+      261,
+      263,
+      265,
+      2,
+      168,
+      266,
+      187,
+      249,
+      252,
+      256,
+      267,
+      270,
+      1,
+      208,
+      209,
+      164,
+      165,
+      166,
+      171,
+      191,
+      226,
+      163,
+      169,
+      170,
+      173,
+      174,
+      275
+    ],
+    "sources": [
+      "alahsa-opportunities",
+      "furas"
+    ],
+    "raw_source_sector": {
+      "تجاري": 39,
+      "أخرى": 2,
+      "منتزه": 1
+    },
+    "raw_source_subsector": {},
+    "activities": {
+      "تجاري": 39
+    },
+    "payload_category": {},
+    "types": {}
+  },
+  {
+    "sector": "العربات المتنقلة",
+    "count": 2,
+    "ids": [
+      19,
+      20
+    ],
+    "sources": [
+      "furas"
+    ],
+    "raw_source_sector": {
+      "\"العربات المتنقلة\"": 2
+    },
+    "raw_source_subsector": {},
+    "activities": {},
+    "payload_category": {},
+    "types": {}
+  },
+  {
+    "sector": "محلات تجارية",
+    "count": 3,
+    "ids": [
+      90,
+      138,
+      139
+    ],
+    "sources": [
+      "furas"
+    ],
+    "raw_source_sector": {
+      "محلات تجارية": 3
+    },
+    "raw_source_subsector": {},
+    "activities": {},
+    "payload_category": {},
+    "types": {}
+  },
+  {
+    "sector": "أنشطة وخدمات انتاج المواد غير الغذائية",
+    "count": 1,
+    "ids": [
+      78
+    ],
+    "sources": [
+      "furas"
+    ],
+    "raw_source_sector": {
+      "أنشطة وخدمات انتاج المواد غير الغذائية": 1
+    },
+    "raw_source_subsector": {},
+    "activities": {},
+    "payload_category": {},
+    "types": {}
+  },
+  {
+    "sector": "الساحات الميادين",
+    "count": 1,
+    "ids": [
+      18
+    ],
+    "sources": [
+      "furas"
+    ],
+    "raw_source_sector": {
+      "\"الساحات الميادين\"": 1
+    },
+    "raw_source_subsector": {},
+    "activities": {},
+    "payload_category": {},
+    "types": {}
+  },
+  {
+    "sector": "LEASE_OPPORTUNITY",
+    "count": 2,
+    "ids": [
+      225,
+      326
+    ],
+    "sources": [
+      "kfu"
+    ],
+    "raw_source_sector": {
+      "LEASE_OPPORTUNITY": 2
+    },
+    "raw_source_subsector": {},
+    "activities": {},
+    "payload_category": {
+      "LEASE_OPPORTUNITY": 2
+    },
+    "types": {
+      "LEASE_OPPORTUNITY": 2
+    }
+  },
+  {
+    "sector": "COMMERCIAL_FACILITY_OPPORTUNITY",
+    "count": 1,
+    "ids": [
+      224
+    ],
+    "sources": [
+      "kfu"
+    ],
+    "raw_source_sector": {
+      "COMMERCIAL_FACILITY_OPPORTUNITY": 1
+    },
+    "raw_source_subsector": {},
+    "activities": {},
+    "payload_category": {
+      "COMMERCIAL_FACILITY_OPPORTUNITY": 1
+    },
+    "types": {
+      "COMMERCIAL_FACILITY_OPPORTUNITY": 1
+    }
+  },
+  {
+    "sector": "المباني",
+    "count": 1,
+    "ids": [
+      207
+    ],
+    "sources": [
+      "furas"
+    ],
+    "raw_source_sector": {
+      "\"المباني\"": 1
+    },
+    "raw_source_subsector": {},
+    "activities": {},
+    "payload_category": {},
+    "types": {}
+  }
+]

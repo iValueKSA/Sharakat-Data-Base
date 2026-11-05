@@ -1,0 +1,95 @@
+{
+  "captured_at": "2026-10-21T13:10:24.861885+00:00",
+  "sources": [
+    {
+      "source": "furas",
+      "source_id": 1,
+      "operational_type": "A.DYNAMIC_STRUCTURED_API",
+      "sync_mode": "SCHEDULED_ADAPTER",
+      "interface": "Public ArcGIS REST query via official catalogue proxy",
+      "coverage_status": "COMPLETE_PUBLIC_SOURCE",
+      "basis": "Complete paginated municipal opportunity feed."
+    },
+    {
+      "source": "alahsa-opportunities",
+      "source_id": 2,
+      "operational_type": "B.DYNAMIC_WEB_LISTING",
+      "sync_mode": "SCHEDULED_ADAPTER",
+      "interface": "Server-rendered HTML cards",
+      "coverage_status": "COMPLETE_PUBLIC_SOURCE",
+      "basis": "Complete paginated local opportunity listing."
+    },
+    {
+      "source": "ahda",
+      "source_id": 3,
+      "operational_type": "B.DYNAMIC_WEB_LISTING",
+      "sync_mode": "SCHEDULED_ADAPTER",
+      "interface": "Sitemap discovery + server-rendered HTML",
+      "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE",
+      "basis": "Sitemap and page publisher; complete defined public scope."
+    },
+    {
+      "source": "invest-saudi",
+      "source_id": 4,
+      "operational_type": "A.DYNAMIC_STRUCTURED_API",
+      "sync_mode": "SCHEDULED_ADAPTER",
+      "interface": "Public paginated JSON API",
+      "coverage_status": "COMPLETE_PUBLIC_SOURCE",
+      "basis": "Public multi-endpoint paginated API; successful no-change enumeration is fresh."
+    },
+    {
+      "source": "kfu",
+      "source_id": 5,
+      "operational_type": "C.PERIODIC_DOCUMENT_SOURCE",
+      "sync_mode": "SCHEDULED_ADAPTER",
+      "interface": "Official investment announcement page; Arabic asset qualification",
+      "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE",
+      "basis": "Official investment announcements and document metadata; sparse publication cadence, no document downloads."
+    },
+    {
+      "source": "modon",
+      "source_id": 6,
+      "operational_type": "F.LIMITED_PUBLIC_COVERAGE",
+      "sync_mode": "SCHEDULED_ADAPTER",
+      "interface": "Official public catalog/product/news surfaces + public GIS schema; no private API access",
+      "coverage_status": "PUBLIC_COVERAGE_LIMITED",
+      "basis": "No current public itemized Al-Ahsa inventory; only a successful verification of the defined public surfaces is meaningful."
+    },
+    {
+      "source": "ncp",
+      "source_id": 7,
+      "operational_type": "E.EVENT_DRIVEN_SOURCE",
+      "sync_mode": "SCHEDULED_ADAPTER",
+      "interface": "Paginated official English/Arabic SharePoint public News archives and linked articles",
+      "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE",
+      "basis": "Public paginated news archive is enumerable; private PPP pipeline is outside scope."
+    },
+    {
+      "source": "nhc",
+      "source_id": 8,
+      "operational_type": "F.LIMITED_PUBLIC_COVERAGE",
+      "sync_mode": "SCHEDULED_ADAPTER",
+      "interface": "Public NHC investment, qualification, and stimulation pages; no authenticated e-services",
+      "coverage_status": "PUBLIC_COVERAGE_LIMITED",
+      "basis": "Public category/route checks do not enumerate the authenticated investment inventory."
+    },
+    {
+      "source": "pif",
+      "source_id": 9,
+      "operational_type": "F.LIMITED_PUBLIC_COVERAGE",
+      "sync_mode": "SCHEDULED_ADAPTER",
+      "interface": "Public PIF ecosystem and portfolio-company opportunity pages; item-level company/location validation",
+      "coverage_status": "PUBLIC_COVERAGE_LIMITED",
+      "basis": "Public routes are monitored; current item-level/company inventory is not deterministically enumerable."
+    },
+    {
+      "source": "mwan",
+      "source_id": 10,
+      "operational_type": "B.DYNAMIC_WEB_LISTING",
+      "sync_mode": "SCHEDULED_ADAPTER",
+      "interface": "Public opportunity listing, linked project details, and public investor opportunity cards",
+      "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE",
+      "basis": "Recurring public itemized opportunity listing and linked detail enumeration."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "generated_at_utc": "2026-10-19T07:34:45.296001+00:00",
+  "read_only": true,
+  "standardization_engine_version_target": "15",
+  "total_eligible_masters": 291,
+  "source_opportunity_records": 2898,
+  "master_investment_model_column_present": true,
+  "deterministic_model_mappings": 0,
+  "mapped_to_unspecified": 286,
+  "wrong_dimension_values": 1,
+  "remain_review_required": 2,
+  "no_change": 289,
+  "master_status_counts": {
+    "UNSPECIFIED": 284,
+    "NO_CHANGE": 5,
+    "REVIEW_REQUIRED": 2
+  },
+  "wrong_dimension_source_records": [
+    {
+      "source_record_id": 2773,
+      "master_id": 224,
+      "source": "kfu",
+      "evidence": "تصنيف منشأة تجارية؛ لا يحدد آلية التعاقد"
+    }
+  ],
+  "canonical_model_bucket_counts": {
+    "التأجير": 4,
+    "التجهيز والتشغيل والصيانة والنقل": 1
+  },
+  "decision": "Dry-run only; database rows were not modified."
+}

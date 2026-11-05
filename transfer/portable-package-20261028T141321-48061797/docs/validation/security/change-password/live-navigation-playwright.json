@@ -1,0 +1,155 @@
+{
+  "url": "http://localhost:8080",
+  "real_live_ui": true,
+  "authenticated_user": "admin@local",
+  "login_status": 200,
+  "credential_value_recorded": false,
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "account_menu_visible": true,
+      "menu_item_visible": true,
+      "menu_item_text": "تغيير كلمة المرور",
+      "menu_item_clickable": true,
+      "menu_item_within_viewport": true,
+      "dialog_visible": true,
+      "password_fields_visible": [
+        true,
+        true,
+        true
+      ],
+      "save_button_visible": true,
+      "cancel_button_visible": true,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "clipped": false,
+      "overlaps": [],
+      "route": "http://localhost:8080/"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "account_menu_visible": true,
+      "menu_item_visible": true,
+      "menu_item_text": "تغيير كلمة المرور",
+      "menu_item_clickable": true,
+      "menu_item_within_viewport": true,
+      "dialog_visible": true,
+      "password_fields_visible": [
+        true,
+        true,
+        true
+      ],
+      "save_button_visible": true,
+      "cancel_button_visible": true,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "clipped": false,
+      "overlaps": [],
+      "route": "http://localhost:8080/"
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "account_menu_visible": true,
+      "menu_item_visible": true,
+      "menu_item_text": "تغيير كلمة المرور",
+      "menu_item_clickable": true,
+      "menu_item_within_viewport": true,
+      "dialog_visible": true,
+      "password_fields_visible": [
+        true,
+        true,
+        true
+      ],
+      "save_button_visible": true,
+      "cancel_button_visible": true,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "clipped": false,
+      "overlaps": [],
+      "route": "http://localhost:8080/"
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "account_menu_visible": true,
+      "menu_item_visible": true,
+      "menu_item_text": "تغيير كلمة المرور",
+      "menu_item_clickable": true,
+      "menu_item_within_viewport": true,
+      "dialog_visible": true,
+      "password_fields_visible": [
+        true,
+        true,
+        true
+      ],
+      "save_button_visible": true,
+      "cancel_button_visible": true,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "clipped": false,
+      "overlaps": [],
+      "route": "http://localhost:8080/"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "account_menu_visible": true,
+      "menu_item_visible": true,
+      "menu_item_text": "تغيير كلمة المرور",
+      "menu_item_clickable": true,
+      "menu_item_within_viewport": true,
+      "dialog_visible": true,
+      "password_fields_visible": [
+        true,
+        true,
+        true
+      ],
+      "save_button_visible": true,
+      "cancel_button_visible": true,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "clipped": false,
+      "overlaps": [],
+      "route": "http://localhost:8080/"
+    }
+  ],
+  "javascript_errors": [],
+  "unexpected_http_4xx": [],
+  "http_5xx": [],
+  "http_404": [],
+  "checks": {
+    "valid_admin_login": true,
+    "menu_visible": true,
+    "menu_clickable": true,
+    "dialog_opens": true,
+    "fields_visible": true,
+    "buttons_visible": true,
+    "rtl": true,
+    "horizontal_overflow": false,
+    "clipping": false,
+    "overlap": false,
+    "no_404": true,
+    "no_unexpected_4xx": true,
+    "no_5xx": true,
+    "no_javascript_errors": true,
+    "updated_asset": true
+  },
+  "screenshots": [
+    "docs\\validation\\security\\change-password\\live-navigation-evidence\\account-menu-1920x1080.png",
+    "docs\\validation\\security\\change-password\\live-navigation-evidence\\change-password-dialog-1920x1080.png"
+  ],
+  "password_changed": false,
+  "account_label": "Local Administrator · مسؤول",
+  "live_html_dir": "rtl",
+  "asset": {
+    "path": "/static/app.js?v=change-password-v1",
+    "status": 200,
+    "live_sha256": "7500b2563d43b1091b19b0b18d1c149e8ff8b2901e90481baaa7b25381a5f12c",
+    "source_sha256": "7500b2563d43b1091b19b0b18d1c149e8ff8b2901e90481baaa7b25381a5f12c"
+  },
+  "updated_asset": true,
+  "logged_out_after_test": true
+}

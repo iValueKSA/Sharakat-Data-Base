@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "dataset_key": "TEST_ONLY_NATIONWIDE_REFERENCE_FIXTURE",
+    "version": "TEST_FIXTURE_01",
+    "operator": "Synthetic test fixture authority; not a real authority",
+    "source_url": "https://example.invalid/TEST_ONLY/geography-reference",
+    "license_name": "TEST_ONLY_LICENSE",
+    "license_url": "https://example.invalid/TEST_ONLY/license",
+    "license_evidence_url": "https://example.invalid/TEST_ONLY/license-evidence",
+    "license_verified": true,
+    "public_access_verified": true,
+    "source_authority_verified": true,
+    "stable_external_ids": true,
+    "parent_relationships_verified": true,
+    "completeness_verified": true,
+    "effective_date": "TEST_ONLY_NOT_AN_EFFECTIVE_DATE",
+    "coverage_by_level": {"country": true, "region": true, "governorate": true, "city": true},
+    "expected_counts": {"country": 1, "region": 1, "governorate": 2, "city": 3},
+    "test_only": true,
+    "content_sha256": "8ce4bdee6d41d1e7cce45b172d1646249a4bee75d5a97d39625fb4cd04150831",
+    "provenance": {"purpose": "automated tests only", "coordinates": "none"}
+  },
+  "units": [
+    {"level":"country","external_id":"TEST_COUNTRY_01","name_ar":"بلد اختباري اصطناعي","name_en":"Synthetic Test Country","parent_external_id":null,"source_record":{"test_only":true}},
+    {"level":"region","external_id":"TEST_REGION_01","name_ar":"منطقة اختبار اصطناعية","name_en":"Synthetic Test Region","parent_external_id":"TEST_COUNTRY_01","source_record":{"test_only":true}},
+    {"level":"governorate","external_id":"TEST_GOV_01","name_ar":"محافظة اختبار اصطناعية أ","name_en":"Synthetic Test Governorate A","parent_external_id":"TEST_REGION_01","source_record":{"test_only":true}},
+    {"level":"governorate","external_id":"TEST_GOV_02","name_ar":"محافظة اختبار اصطناعية ب","name_en":"Synthetic Test Governorate B","parent_external_id":"TEST_REGION_01","source_record":{"test_only":true}},
+    {"level":"city","external_id":"TEST_CITY_01","name_ar":"مدينة اختبار اصطناعية أ","name_en":"Synthetic Test City A","parent_external_id":"TEST_GOV_01","source_record":{"test_only":true}},
+    {"level":"city","external_id":"TEST_CITY_02","name_ar":"مدينة اختبار اصطناعية ب","name_en":"Synthetic Test City B","parent_external_id":"TEST_GOV_01","source_record":{"test_only":true}},
+    {"level":"city","external_id":"TEST_CITY_03","name_ar":"مدينة اختبار اصطناعية ج","name_en":"Synthetic Test City C","parent_external_id":"TEST_GOV_02","source_record":{"test_only":true}}
+  ]
+}

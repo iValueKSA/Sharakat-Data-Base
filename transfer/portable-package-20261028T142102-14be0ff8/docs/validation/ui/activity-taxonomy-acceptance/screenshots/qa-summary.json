@@ -1,0 +1,241 @@
+{
+  "pageHttp": 200,
+  "validationTimestamp": "2026-10-19T08:38:19.437Z",
+  "reconciliation": {
+    "eligibleMasters": 291,
+    "canonicalActivityMasters": 146,
+    "missingActivity": 145,
+    "activityBucketSum": 291,
+    "canonicalSportsCount": 1,
+    "dashboardMissingActivity": 145
+  },
+  "sportsOption": {
+    "display": "الأنشطة الرياضية والترفيهية",
+    "optionId": "activity:sports_recreation",
+    "occurrences": 1
+  },
+  "missingOption": {
+    "display": "غير محدد",
+    "optionId": "activity:missing",
+    "occurrences": 1
+  },
+  "generalTradeOption": {
+    "display": "أنشطة التجارة العامة",
+    "optionId": "sub_activity:general_trade",
+    "count": 8
+  },
+  "optionReconciliation": {
+    "activityCount": 12,
+    "subActivityCount": 11,
+    "activityCountsMatchQueries": true,
+    "subActivityCountsMatchQueries": true,
+    "activityOptionIdsUnique": true,
+    "subActivityOptionIdsUnique": true,
+    "canonicalFilterOptionsUsingUnmappedIds": [],
+    "options": {
+      "activities": [
+        {
+          "label": "صناعي",
+          "optionId": "activity:industrial",
+          "optionCount": 60,
+          "queryCount": 60,
+          "match": true
+        },
+        {
+          "label": "الأنشطة الرياضية والترفيهية",
+          "optionId": "activity:sports_recreation",
+          "optionCount": 1,
+          "queryCount": 1,
+          "match": true
+        },
+        {
+          "label": "أخرى",
+          "optionId": "activity:other",
+          "optionCount": 1,
+          "queryCount": 1,
+          "match": true
+        },
+        {
+          "label": "أنشطة الصيانة والتصليح والتركيب",
+          "optionId": "activity:maintenance_repair_installation",
+          "optionCount": 3,
+          "queryCount": 3,
+          "match": true
+        },
+        {
+          "label": "غير محدد",
+          "optionId": "activity:missing",
+          "optionCount": 145,
+          "queryCount": 145,
+          "match": true
+        },
+        {
+          "label": "الأنشطة المالية",
+          "optionId": "activity:financial_activities",
+          "optionCount": 6,
+          "queryCount": 6,
+          "match": true
+        },
+        {
+          "label": "الأنشطة الصناعية",
+          "optionId": "activity:industrial_activities",
+          "optionCount": 3,
+          "queryCount": 3,
+          "match": true
+        },
+        {
+          "label": "تجاري",
+          "optionId": "activity:commercial",
+          "optionCount": 38,
+          "queryCount": 38,
+          "match": true
+        },
+        {
+          "label": "خدمي",
+          "optionId": "activity:service",
+          "optionCount": 5,
+          "queryCount": 5,
+          "match": true
+        },
+        {
+          "label": "الأنشطة التعليمية",
+          "optionId": "activity:educational_activities",
+          "optionCount": 1,
+          "queryCount": 1,
+          "match": true
+        },
+        {
+          "label": "الأنشطة الزراعية والحيوانية",
+          "optionId": "activity:agriculture_livestock",
+          "optionCount": 1,
+          "queryCount": 1,
+          "match": true
+        },
+        {
+          "label": "الأنشطة التجارية",
+          "optionId": "activity:commercial_activities",
+          "optionCount": 27,
+          "queryCount": 27,
+          "match": true
+        }
+      ],
+      "sub_activities": [
+        {
+          "label": "محلات تجارية",
+          "optionId": "sub_activity:retail_shops",
+          "optionCount": 3,
+          "queryCount": 3,
+          "match": true
+        },
+        {
+          "label": "أنشطة تجارة المواد الغذائية",
+          "optionId": "sub_activity:food_trade",
+          "optionCount": 5,
+          "queryCount": 5,
+          "match": true
+        },
+        {
+          "label": "خدمات الصرافة",
+          "optionId": "sub_activity:money_exchange",
+          "optionCount": 6,
+          "queryCount": 6,
+          "match": true
+        },
+        {
+          "label": "أنشطة التجارة العامة",
+          "optionId": "sub_activity:general_trade",
+          "optionCount": 8,
+          "queryCount": 8,
+          "match": true
+        },
+        {
+          "label": "منتزه",
+          "optionId": "sub_activity:park",
+          "optionCount": 1,
+          "queryCount": 1,
+          "match": true
+        },
+        {
+          "label": "أنشطة و تجارة المعدات الثقيلة",
+          "optionId": "sub_activity:heavy_equipment_trade",
+          "optionCount": 1,
+          "queryCount": 1,
+          "match": true
+        },
+        {
+          "label": "أخرى",
+          "optionId": "sub_activity:other",
+          "optionCount": 20,
+          "queryCount": 20,
+          "match": true
+        },
+        {
+          "label": "أنشطة وخدمات انتاج المواد غير الغذائية",
+          "optionId": "sub_activity:non_food_production_services",
+          "optionCount": 1,
+          "queryCount": 1,
+          "match": true
+        },
+        {
+          "label": "قيمة مفقودة",
+          "optionId": "sub_activity:missing",
+          "optionCount": 243,
+          "queryCount": 243,
+          "match": true
+        },
+        {
+          "label": "خدمات تعليمية أخرى",
+          "optionId": "sub_activity:other_educational_services",
+          "optionCount": 1,
+          "queryCount": 1,
+          "match": true
+        },
+        {
+          "label": "منشآت تقديم الغذاء",
+          "optionId": "sub_activity:food_service_facilities",
+          "optionCount": 2,
+          "queryCount": 2,
+          "match": true
+        }
+      ]
+    }
+  },
+  "checks": {
+    "sportsFilter": {
+      "countText": "عرض 1–1 من 1 فرصة",
+      "apiCount": 1,
+      "resultTitle": "انشاء و تشغيل و صيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل - الأنشطة الرياضية و الترفيهية - كشك لنشاط رياضي ذكي - نادي",
+      "selectedLabel": "الأنشطة الرياضية والترفيهية"
+    },
+    "missingActivityFilter": {
+      "countText": "عرض 1–50 من 145 فرصة",
+      "apiCount": 145,
+      "visibleRows": 50,
+      "allVisibleActivityCellsUseUnspecified": true
+    },
+    "missingActivityDetail": true,
+    "generalTradeFilter": {
+      "countText": "عرض 1–8 من 8 فرصة",
+      "apiCount": 8,
+      "selectedLabel": "أنشطة التجارة العامة"
+    },
+    "resetRestoresAll": true,
+    "sectorFilter": true,
+    "search": true,
+    "pagination": true,
+    "csvExport": true,
+    "xlsxExport": true,
+    "opportunityDetails": true,
+    "dashboardLoaded": true,
+    "dashboardMissingActivityApi": true,
+    "dashboardMissingActivityFilter": true
+  },
+  "screenshots": {
+    "activity-sports-dropdown.png": "docs\\validation\\ui\\activity-taxonomy-acceptance\\screenshots\\activity-sports-dropdown.png",
+    "activity-sports-results.png": "docs\\validation\\ui\\activity-taxonomy-acceptance\\screenshots\\activity-sports-results.png",
+    "activity-unspecified-dropdown.png": "docs\\validation\\ui\\activity-taxonomy-acceptance\\screenshots\\activity-unspecified-dropdown.png",
+    "activity-unspecified-results.png": "docs\\validation\\ui\\activity-taxonomy-acceptance\\screenshots\\activity-unspecified-results.png",
+    "subactivity-general-trade.png": "docs\\validation\\ui\\activity-taxonomy-acceptance\\screenshots\\subactivity-general-trade.png"
+  },
+  "errors": []
+}

@@ -1,0 +1,26 @@
+{
+  "classifier_version": "ahda-governed-sector-classifier-1.0.0",
+  "live_current_masters": 566,
+  "live_unspecified_current_masters": 0,
+  "new_master_auto_classification": "PASS",
+  "test": "tests/test_sector_classification_governed.py::test_new_master_has_governed_auto_classification",
+  "same_input_deterministic": true,
+  "material_evidence_reclassification": "covered by governed ingestion pathway and focused tests",
+  "preserve_existing_specified_sector": "PASS",
+  "source_sector_values_mutated": 0,
+  "classification_without_evidence": 0,
+  "forced_best_fit_without_reason": 0,
+  "forced_best_fit_method_count": 299,
+  "current_unclassified": 0,
+  "manual_source_sync_started": false,
+  "source_sync_jobs_before": 508,
+  "source_sync_jobs_after": 508,
+  "pipeline_execution_marker": "SECTOR_CLASSIFICATION_PIPELINE_COMPLETED",
+  "business_field_change_scope": [
+    "sector",
+    "updated_at",
+    "last_updated_at"
+  ],
+  "review_changes": 0,
+  "new_current_master_unspecified": 0
+}

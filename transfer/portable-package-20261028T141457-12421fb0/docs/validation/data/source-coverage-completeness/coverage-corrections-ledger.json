@@ -1,0 +1,62 @@
+{
+  "reviewCodeChanges": [
+    {
+      "file": "app/service.py",
+      "change": "classify_http_health(None) returns WARNING for no-status network/TLS/DNS failure; prior behavior incorrectly reported HEALTHY"
+    },
+    {
+      "file": "tests/test_ingestion.py",
+      "change": "assert parser/network failure keeps source technical health WARNING and does not count missing scan/remove existing record"
+    },
+    {
+      "file": "tests/test_wave3_adapters.py",
+      "change": "assert no-status health warning"
+    },
+    {
+      "file": "app/service.py",
+      "change": "reconcile_missing_records now counts complete-scan absences for every SourceOpportunity, including unlinked records; Master lifecycle projection remains conditional on a Master link"
+    }
+  ],
+  "sourceHealthMetadataCorrections": [
+    {
+      "source": "ahda",
+      "latestFailedJob": 366,
+      "prior": "HEALTHY",
+      "after": "WARNING"
+    },
+    {
+      "source": "invest-saudi",
+      "latestFailedJob": 367,
+      "prior": "HEALTHY",
+      "after": "WARNING"
+    },
+    {
+      "source": "modon",
+      "latestFailedJob": 368,
+      "prior": "HEALTHY",
+      "after": "WARNING"
+    },
+    {
+      "source": "mwan",
+      "latestFailedJob": 345,
+      "prior": "HEALTHY",
+      "after": "WARNING"
+    }
+  ],
+  "businessRecordCorrections": 0,
+  "mastersCreated": 0,
+  "sourceRowsCreated": 0,
+  "sourceRowsRemoved": 0,
+  "observationsChangedByReview": 0,
+  "naturalScheduledObservationDelta": 13,
+  "manualSyncStarted": false,
+  "standardizationEngineVersion": "21",
+  "fullRegression": "186 passed / 0 failed",
+  "reviewTests": [
+    {
+      "file": "tests/test_ingestion.py",
+      "test": "test_complete_scans_remove_unlinked_source_rows_only_after_confirmation_threshold",
+      "result": "passed: misses 1-2 preserve status; miss 3 records removal and observation while preserving raw payload and creating no Master"
+    }
+  ]
+}

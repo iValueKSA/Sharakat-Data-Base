@@ -1,0 +1,731 @@
+{
+  "captured_at": "2026-10-21T12:30:27.504828+00:00",
+  "job_count": 415,
+  "illegal_job_state_records_remaining": 0,
+  "job_212": {
+    "id": 212,
+    "source_id": 5,
+    "source_key": "kfu",
+    "created_at": "2026-10-13T07:39:10.332446+00:00",
+    "started_at": "2026-10-13T07:39:10.332446+00:00",
+    "finished_at": "2026-10-21T12:08:07.795579+00:00",
+    "updated_at": "2026-10-13T07:39:10.332446+00:00",
+    "heartbeat_at": "2026-10-13T07:39:10.332446+00:00",
+    "celery_task_id": null,
+    "attempt_number": 1,
+    "worker_id": null,
+    "status": "ABANDONED",
+    "job_state": "ABANDONED",
+    "pagination_complete": false,
+    "scan_state": "NOT_STARTED; completeness forced false during adjudication",
+    "pages_scanned": 0,
+    "pages_requested": 0,
+    "pages_successful": 0,
+    "records_received": 0,
+    "records_parsed": 0,
+    "unique_records": 0,
+    "raw_count": 0,
+    "new_count": 0,
+    "update_count": 0,
+    "removed_records_count": 0,
+    "error_message": "Reconciled from prior stale recovery: no Celery task/worker, no Redis source lock or reservation, no progress since 2026-10-13, and successful later KFU jobs through 395. No scan started; incomplete enumeration.",
+    "correlation_id": "phase1-stale-recovery",
+    "later_successful_job_ids": [
+      213,
+      227,
+      261,
+      308,
+      333,
+      358,
+      369,
+      395
+    ],
+    "latest_successful_same_source_job": {
+      "id": 395,
+      "finished_at": "2026-10-21T06:01:12.833913+00:00"
+    },
+    "partial_business_writes": {
+      "source_opportunities": 0,
+      "source_observations": 0,
+      "qualification_reviews": 0,
+      "source_content_items": 0
+    },
+    "write_window": {
+      "start": "2026-10-13T07:39:10.332446+00:00",
+      "end": "2026-10-13T08:39:10.564798+00:00",
+      "attribution": "source-specific timestamp interval; write tables do not carry sync_job_id."
+    },
+    "audit_event_count": 1,
+    "audit_event_ids": [
+      89
+    ]
+  },
+  "source_runtime_profiles": {
+    "furas": {
+      "successful_job_count": 82,
+      "median_seconds": 5.077,
+      "p95_seconds": 19.558,
+      "maximum_seconds": 253.894,
+      "stale_threshold_seconds": 2400,
+      "threshold_basis": "history",
+      "recent_failure_durations_seconds": [
+        10.432,
+        11.309,
+        7086.481,
+        8.476,
+        4.061
+      ],
+      "recent_failure_job_ids": [
+        220,
+        224,
+        267,
+        316,
+        364
+      ]
+    },
+    "alahsa-opportunities": {
+      "successful_job_count": 70,
+      "median_seconds": 7.268,
+      "p95_seconds": 32.828,
+      "maximum_seconds": 195.46,
+      "stale_threshold_seconds": 2400,
+      "threshold_basis": "history",
+      "recent_failure_durations_seconds": [
+        4.66,
+        9.131,
+        4.928,
+        4.49,
+        3.174
+      ],
+      "recent_failure_job_ids": [
+        279,
+        284,
+        286,
+        297,
+        365
+      ]
+    },
+    "ahda": {
+      "successful_job_count": 33,
+      "median_seconds": 28.475,
+      "p95_seconds": 175.222,
+      "maximum_seconds": 3399.773,
+      "stale_threshold_seconds": 6800,
+      "threshold_basis": "history",
+      "recent_failure_durations_seconds": [
+        0.829,
+        0.435,
+        0.094,
+        0.462
+      ],
+      "recent_failure_job_ids": [
+        203,
+        268,
+        298,
+        366
+      ]
+    },
+    "invest-saudi": {
+      "successful_job_count": 38,
+      "median_seconds": 48.537,
+      "p95_seconds": 108.52,
+      "maximum_seconds": 123.759,
+      "stale_threshold_seconds": 2400,
+      "threshold_basis": "history",
+      "recent_failure_durations_seconds": [
+        19.472,
+        0.455,
+        0.184,
+        59.39,
+        0.269
+      ],
+      "recent_failure_job_ids": [
+        229,
+        265,
+        294,
+        360,
+        367
+      ]
+    },
+    "kfu": {
+      "successful_job_count": 29,
+      "median_seconds": 0.752,
+      "p95_seconds": 6.277,
+      "maximum_seconds": 6.322,
+      "stale_threshold_seconds": 2400,
+      "threshold_basis": "history",
+      "recent_failure_durations_seconds": [
+        2.262,
+        0.513
+      ],
+      "recent_failure_job_ids": [
+        272,
+        295
+      ]
+    },
+    "modon": {
+      "successful_job_count": 13,
+      "median_seconds": 7.331,
+      "p95_seconds": 14.37,
+      "maximum_seconds": 14.37,
+      "stale_threshold_seconds": 2400,
+      "threshold_basis": "history",
+      "recent_failure_durations_seconds": [
+        0.326,
+        0.468,
+        0.166,
+        1.701,
+        0.378
+      ],
+      "recent_failure_job_ids": [
+        361,
+        368,
+        386,
+        396,
+        413
+      ]
+    },
+    "ncp": {
+      "successful_job_count": 21,
+      "median_seconds": 29.191,
+      "p95_seconds": 36.229,
+      "maximum_seconds": 39.306,
+      "stale_threshold_seconds": 2400,
+      "threshold_basis": "history",
+      "recent_failure_durations_seconds": [
+        9.283,
+        26.417,
+        0.89,
+        101.806
+      ],
+      "recent_failure_job_ids": [
+        79,
+        207,
+        274,
+        398
+      ]
+    },
+    "nhc": {
+      "successful_job_count": 8,
+      "median_seconds": 5.998,
+      "p95_seconds": 7.346,
+      "maximum_seconds": 7.346,
+      "stale_threshold_seconds": 2400,
+      "threshold_basis": "history",
+      "recent_failure_durations_seconds": [
+        0.797
+      ],
+      "recent_failure_job_ids": [
+        129
+      ]
+    },
+    "pif": {
+      "successful_job_count": 9,
+      "median_seconds": 13.503,
+      "p95_seconds": 15.996,
+      "maximum_seconds": 15.996,
+      "stale_threshold_seconds": 2400,
+      "threshold_basis": "history",
+      "recent_failure_durations_seconds": [],
+      "recent_failure_job_ids": []
+    },
+    "mwan": {
+      "successful_job_count": 8,
+      "median_seconds": 16.251,
+      "p95_seconds": 20.206,
+      "maximum_seconds": 20.206,
+      "stale_threshold_seconds": 2400,
+      "threshold_basis": "history",
+      "recent_failure_durations_seconds": [
+        0.057,
+        0.655,
+        0.687,
+        0.488,
+        0.598
+      ],
+      "recent_failure_job_ids": [
+        300,
+        320,
+        345,
+        382,
+        409
+      ]
+    }
+  },
+  "source_freshness_matrix": [
+    {
+      "source_id": 1,
+      "source_key": "furas",
+      "enabled": true,
+      "sync_mode": "structured_opportunity_platform",
+      "expected_schedule": {
+        "dispatcher": "app.tasks.enqueue_due_sources",
+        "dispatcher_seconds": 60,
+        "source_interval_minutes": 60,
+        "minimum_interval_minutes": 15,
+        "scheduled": true
+      },
+      "last_attempt": "2026-10-21T12:05:05.578293+00:00",
+      "last_success": "2026-10-21T12:05:18.543346+00:00",
+      "last_successful_job_id": 414,
+      "last_complete_successful_scan": "2026-10-21T12:05:18.543372+00:00",
+      "last_complete_successful_scan_job_id": 414,
+      "age_since_success_minutes": 25.1,
+      "freshness_status": "FRESH",
+      "technical_health": "HEALTHY",
+      "coverage_status": "COMPLETE_PUBLIC_SOURCE"
+    },
+    {
+      "source_id": 2,
+      "source_key": "alahsa-opportunities",
+      "enabled": true,
+      "sync_mode": "local_opportunity_platform",
+      "expected_schedule": {
+        "dispatcher": "app.tasks.enqueue_due_sources",
+        "dispatcher_seconds": 60,
+        "source_interval_minutes": 60,
+        "minimum_interval_minutes": 15,
+        "scheduled": true
+      },
+      "last_attempt": "2026-10-21T12:05:05.592226+00:00",
+      "last_success": "2026-10-21T12:05:20.282508+00:00",
+      "last_successful_job_id": 415,
+      "last_complete_successful_scan": "2026-10-21T12:05:20.282524+00:00",
+      "last_complete_successful_scan_job_id": 415,
+      "age_since_success_minutes": 25.1,
+      "freshness_status": "FRESH",
+      "technical_health": "HEALTHY",
+      "coverage_status": "COMPLETE_PUBLIC_SOURCE"
+    },
+    {
+      "source_id": 3,
+      "source_key": "ahda",
+      "enabled": true,
+      "sync_mode": "unstructured_opportunity_publisher",
+      "expected_schedule": {
+        "dispatcher": "app.tasks.enqueue_due_sources",
+        "dispatcher_seconds": 60,
+        "source_interval_minutes": 360,
+        "minimum_interval_minutes": 15,
+        "scheduled": true
+      },
+      "last_attempt": "2026-10-21T12:01:06.294491+00:00",
+      "last_success": "2026-10-21T12:01:37.973560+00:00",
+      "last_successful_job_id": 412,
+      "last_complete_successful_scan": "2026-10-21T12:01:37.973580+00:00",
+      "last_complete_successful_scan_job_id": 412,
+      "age_since_success_minutes": 28.8,
+      "freshness_status": "FRESH",
+      "technical_health": "HEALTHY",
+      "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE"
+    },
+    {
+      "source_id": 4,
+      "source_key": "invest-saudi",
+      "enabled": true,
+      "sync_mode": "national_opportunity_platform",
+      "expected_schedule": {
+        "dispatcher": "app.tasks.enqueue_due_sources",
+        "dispatcher_seconds": 60,
+        "source_interval_minutes": 360,
+        "minimum_interval_minutes": 15,
+        "scheduled": true
+      },
+      "last_attempt": "2026-10-21T12:01:06.191772+00:00",
+      "last_success": "2026-10-21T12:02:39.153597+00:00",
+      "last_successful_job_id": 411,
+      "last_complete_successful_scan": "2026-10-21T12:02:39.153637+00:00",
+      "last_complete_successful_scan_job_id": 411,
+      "age_since_success_minutes": 27.8,
+      "freshness_status": "FRESH",
+      "technical_health": "HEALTHY",
+      "coverage_status": "COMPLETE_PUBLIC_SOURCE"
+    },
+    {
+      "source_id": 5,
+      "source_key": "kfu",
+      "enabled": true,
+      "sync_mode": "announcement_driven_local_source",
+      "expected_schedule": {
+        "dispatcher": "app.tasks.enqueue_due_sources",
+        "dispatcher_seconds": 60,
+        "source_interval_minutes": 720,
+        "minimum_interval_minutes": 15,
+        "scheduled": true
+      },
+      "last_attempt": "2026-10-21T06:01:06.511668+00:00",
+      "last_success": "2026-10-21T06:01:12.833866+00:00",
+      "last_successful_job_id": 395,
+      "last_complete_successful_scan": "2026-10-21T06:01:12.833913+00:00",
+      "last_complete_successful_scan_job_id": 395,
+      "age_since_success_minutes": 389.2,
+      "freshness_status": "FRESH",
+      "technical_health": "HEALTHY",
+      "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE"
+    },
+    {
+      "source_id": 6,
+      "source_key": "modon",
+      "enabled": true,
+      "sync_mode": "industrial_spatial_opportunity_source",
+      "expected_schedule": {
+        "dispatcher": "app.tasks.enqueue_due_sources",
+        "dispatcher_seconds": 60,
+        "source_interval_minutes": 360,
+        "minimum_interval_minutes": 15,
+        "scheduled": true
+      },
+      "last_attempt": "2026-10-21T12:02:05.582309+00:00",
+      "last_success": "2026-10-12T12:26:52.808735+00:00",
+      "last_successful_job_id": 195,
+      "last_complete_successful_scan": null,
+      "last_complete_successful_scan_job_id": null,
+      "age_since_success_minutes": 12963.6,
+      "freshness_status": "STALE",
+      "technical_health": "WARNING",
+      "coverage_status": "PUBLIC_COVERAGE_LIMITED"
+    },
+    {
+      "source_id": 7,
+      "source_key": "ncp",
+      "enabled": true,
+      "sync_mode": "ppp_privatisation_pipeline_source",
+      "expected_schedule": {
+        "dispatcher": "app.tasks.enqueue_due_sources",
+        "dispatcher_seconds": 60,
+        "source_interval_minutes": 720,
+        "minimum_interval_minutes": 15,
+        "scheduled": true
+      },
+      "last_attempt": "2026-10-21T06:01:16.215982+00:00",
+      "last_success": "2026-10-20T06:48:03.099990+00:00",
+      "last_successful_job_id": 371,
+      "last_complete_successful_scan": "2026-10-20T06:48:03.100006+00:00",
+      "last_complete_successful_scan_job_id": 371,
+      "age_since_success_minutes": 1782.4,
+      "freshness_status": "STALE",
+      "technical_health": "WARNING",
+      "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE"
+    },
+    {
+      "source_id": 8,
+      "source_key": "nhc",
+      "enabled": true,
+      "sync_mode": "real_estate_investment_and_partnership_source",
+      "expected_schedule": {
+        "dispatcher": "app.tasks.enqueue_due_sources",
+        "dispatcher_seconds": 60,
+        "source_interval_minutes": 720,
+        "minimum_interval_minutes": 15,
+        "scheduled": true
+      },
+      "last_attempt": "2026-10-21T06:01:14.760737+00:00",
+      "last_success": "2026-10-12T12:35:37.998869+00:00",
+      "last_successful_job_id": 200,
+      "last_complete_successful_scan": "2026-10-12T12:35:37.998869+00:00",
+      "last_complete_successful_scan_job_id": 200,
+      "age_since_success_minutes": 12954.8,
+      "freshness_status": "STALE",
+      "technical_health": "WARNING",
+      "coverage_status": "PUBLIC_COVERAGE_LIMITED"
+    },
+    {
+      "source_id": 9,
+      "source_key": "pif",
+      "enabled": true,
+      "sync_mode": "national_value_chain_investment_source",
+      "expected_schedule": {
+        "dispatcher": "app.tasks.enqueue_due_sources",
+        "dispatcher_seconds": 60,
+        "source_interval_minutes": 1440,
+        "minimum_interval_minutes": 15,
+        "scheduled": true
+      },
+      "last_attempt": "2026-10-21T11:28:06.149829+00:00",
+      "last_success": "2026-10-21T11:28:21.005659+00:00",
+      "last_successful_job_id": 410,
+      "last_complete_successful_scan": "2026-10-21T11:28:21.005677+00:00",
+      "last_complete_successful_scan_job_id": 410,
+      "age_since_success_minutes": 62.1,
+      "freshness_status": "FRESH",
+      "technical_health": "HEALTHY",
+      "coverage_status": "PUBLIC_COVERAGE_LIMITED"
+    },
+    {
+      "source_id": 10,
+      "source_key": "mwan",
+      "enabled": true,
+      "sync_mode": "waste_sector_investment_source",
+      "expected_schedule": {
+        "dispatcher": "app.tasks.enqueue_due_sources",
+        "dispatcher_seconds": 60,
+        "source_interval_minutes": 1440,
+        "minimum_interval_minutes": 15,
+        "scheduled": true
+      },
+      "last_attempt": "2026-10-21T11:28:05.547178+00:00",
+      "last_success": "2026-10-12T12:28:00.933181+00:00",
+      "last_successful_job_id": 199,
+      "last_complete_successful_scan": "2026-10-12T12:28:00.933181+00:00",
+      "last_complete_successful_scan_job_id": 199,
+      "age_since_success_minutes": 12962.4,
+      "freshness_status": "STALE",
+      "technical_health": "WARNING",
+      "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE"
+    }
+  ],
+  "beat_schedule": [
+    {
+      "entry": "enqueue-due-sources-every-minute",
+      "task": "app.tasks.enqueue_due_sources",
+      "schedule_seconds": 60.0,
+      "options": {
+        "queue": "maintenance"
+      }
+    },
+    {
+      "entry": "recover-stale-jobs-every-five-minutes",
+      "task": "app.tasks.recover_stale_jobs",
+      "schedule_seconds": 300.0,
+      "options": {
+        "queue": "maintenance"
+      }
+    },
+    {
+      "entry": "dispatch-alert-emails-every-minute",
+      "task": "app.tasks.dispatch_alert_emails",
+      "schedule_seconds": 60.0,
+      "options": {
+        "queue": "notifications"
+      }
+    },
+    {
+      "entry": "worker-heartbeat-every-minute",
+      "task": "app.tasks.worker_heartbeat",
+      "schedule_seconds": 60.0,
+      "options": {
+        "queue": "maintenance"
+      }
+    },
+    {
+      "entry": "daily-deadline-check",
+      "task": "app.tasks.check_deadlines",
+      "schedule_seconds": 86400.0,
+      "options": {
+        "queue": "maintenance"
+      }
+    },
+    {
+      "entry": "daily-data-quality-gates",
+      "task": "app.tasks.run_daily_data_quality",
+      "schedule_seconds": 86400.0,
+      "options": {
+        "queue": "maintenance"
+      }
+    },
+    {
+      "entry": "weekly-data-quality-gates",
+      "task": "app.tasks.run_weekly_data_quality",
+      "schedule_seconds": 604800.0,
+      "options": {
+        "queue": "maintenance"
+      }
+    },
+    {
+      "entry": "hourly-status-lifecycle-reconcile",
+      "task": "app.tasks.reconcile_status_lifecycle",
+      "schedule_seconds": 3600.0,
+      "options": {
+        "queue": "maintenance"
+      }
+    },
+    {
+      "entry": "daily-postgres-backup",
+      "task": "app.tasks.run_database_backup",
+      "schedule_seconds": 86400.0,
+      "options": {
+        "queue": "maintenance"
+      }
+    }
+  ],
+  "task_views": {
+    "status": "AVAILABLE",
+    "views": {
+      "active": {
+        "celery@924fa244e8c7": 0
+      },
+      "reserved": {
+        "celery@924fa244e8c7": 0
+      },
+      "scheduled": {
+        "celery@924fa244e8c7": 0
+      }
+    },
+    "tasks": [],
+    "task_ids": [],
+    "source_keys": []
+  },
+  "redis": {
+    "status": "AVAILABLE",
+    "source_sync_queue_depth": 0,
+    "locks": [],
+    "orphaned_lock_count": 0
+  },
+  "dq": {
+    "counts": {
+      "pass": 61,
+      "warning": 4,
+      "fail": 0
+    },
+    "gates_evaluated": 65,
+    "sync_gates": [
+      {
+        "gate_key": "PARTIAL_SCAN_REMOVAL_SAFETY",
+        "domain": "PARTIAL_SCAN_SAFETY",
+        "severity": "FAIL",
+        "cadence": "fast",
+        "status": "PASS",
+        "message": "",
+        "observed": 0,
+        "expected": 0,
+        "sample_ids": []
+      },
+      {
+        "gate_key": "SYNC_JOB_STATE_CONSISTENCY",
+        "domain": "SYNC_JOB_LIFECYCLE",
+        "severity": "FAIL",
+        "cadence": "fast",
+        "status": "PASS",
+        "message": "Status, job_state, and finished_at must agree with the recorded lifecycle.",
+        "observed": 0,
+        "expected": 0,
+        "sample_ids": []
+      },
+      {
+        "gate_key": "STALE_RUNNING_SYNC_JOBS",
+        "domain": "SYNC_JOB_LIVENESS",
+        "severity": "FAIL",
+        "cadence": "fast",
+        "status": "PASS",
+        "message": "Source-specific stale thresholds use three times p95 and twice the observed maximum after at least eight successful runs, with hard-limit and sparse-history floors.",
+        "observed": 0,
+        "expected": 0,
+        "sample_ids": []
+      },
+      {
+        "gate_key": "STALE_RETRYING_SYNC_JOBS",
+        "domain": "SYNC_JOB_LIVENESS",
+        "severity": "FAIL",
+        "cadence": "fast",
+        "status": "PASS",
+        "message": "A retrying job without a recent attempt beyond its source-specific stale threshold requires reconciliation.",
+        "observed": 0,
+        "expected": 0,
+        "sample_ids": []
+      },
+      {
+        "gate_key": "MULTIPLE_RUNNING_JOBS_SAME_SOURCE",
+        "domain": "SYNC_JOB_CONCURRENCY",
+        "severity": "FAIL",
+        "cadence": "fast",
+        "status": "PASS",
+        "message": "Source-specific reservation and lock controls permit at most one running job per source.",
+        "observed": 0,
+        "expected": 0,
+        "sample_ids": []
+      },
+      {
+        "gate_key": "DB_RUNNING_WITHOUT_LIVE_TASK",
+        "domain": "SYNC_JOB_RECONCILIATION",
+        "severity": "FAIL",
+        "cadence": "fast",
+        "status": "PASS",
+        "message": "A DB RUNNING job must map to a live Celery task or source lock; broker/Redis inspection failures are warnings.",
+        "observed": 0,
+        "expected": 0,
+        "sample_ids": []
+      },
+      {
+        "gate_key": "ORPHANED_SYNC_LOCKS",
+        "domain": "SYNC_JOB_LOCKING",
+        "severity": "FAIL",
+        "cadence": "fast",
+        "status": "PASS",
+        "message": "A source lock without a live source task or queued/running job is orphaned.",
+        "observed": 0,
+        "expected": 0,
+        "sample_ids": []
+      },
+      {
+        "gate_key": "ENABLED_SOURCE_WITH_UNEXPLAINED_NO_SCHEDULE",
+        "domain": "SYNC_SCHEDULER",
+        "severity": "FAIL",
+        "cadence": "full",
+        "status": "PASS",
+        "message": "Enabled sources with an implemented adapter are covered by the one-minute due-source dispatcher.",
+        "observed": 0,
+        "expected": 0,
+        "sample_ids": []
+      },
+      {
+        "gate_key": "SOURCE_LAST_SUCCESS_TOO_OLD",
+        "domain": "SOURCE_FRESHNESS",
+        "severity": "WARNING",
+        "cadence": "full",
+        "status": "WARNING",
+        "message": "Freshness aging is a warning so public-source coverage limits remain separate from technical health.",
+        "observed": 4,
+        "expected": 0,
+        "sample_ids": [
+          6,
+          7,
+          8,
+          10
+        ]
+      },
+      {
+        "gate_key": "SYNC_RUNTIME_ANOMALY",
+        "domain": "SYNC_RUNTIME",
+        "severity": "WARNING",
+        "cadence": "full",
+        "status": "WARNING",
+        "message": "Completed source runtimes above three times the historical p95 or the hard task limit are surfaced for inspection.",
+        "observed": 1,
+        "expected": 0,
+        "sample_ids": [
+          393
+        ]
+      }
+    ]
+  },
+  "natural_scheduled_jobs_since_baseline": [
+    {
+      "id": 414,
+      "source_key": "furas",
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "job_state": "COMPLETED",
+      "started_at": "2026-10-21T12:05:05.578265+00:00",
+      "finished_at": "2026-10-21T12:05:18.543372+00:00",
+      "task_id": "4cca3631-ac6d-4c85-98fa-86ed8e3a89a1",
+      "pagination_complete": true,
+      "raw_count": 402,
+      "new_count": 0,
+      "update_count": 0
+    },
+    {
+      "id": 415,
+      "source_key": "alahsa-opportunities",
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "job_state": "COMPLETED",
+      "started_at": "2026-10-21T12:05:05.592202+00:00",
+      "finished_at": "2026-10-21T12:05:20.282524+00:00",
+      "task_id": "d37415cc-228b-4e0a-a732-9334e7fdc45c",
+      "pagination_complete": true,
+      "raw_count": 84,
+      "new_count": 0,
+      "update_count": 84
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "final_engine_version": 11,
+  "original_type_resolution": {
+    "applied_at_utc": "2026-10-18T13:09:07.922321Z",
+    "engine_version": 10,
+    "masters_updated": 129,
+    "source_projection_records_updated": 2898,
+    "source_evidence_conflict_rows_resolved": 5,
+    "conflict_ids_resolved": [
+      179,
+      180,
+      181,
+      187,
+      188
+    ],
+    "raw_payloads_changed": false,
+    "source_links_changed": false,
+    "master_identity_changed": false,
+    "sector_activity_changed": false
+  },
+  "v11_metadata_correction": {
+    "applied_at_utc": "2026-10-18T13:23:23.264262+00:00",
+    "engine_version": 11,
+    "masters_updated": 0,
+    "source_projection_records_updated": 2898,
+    "source_evidence_conflict_rows_resolved": 0,
+    "change": "Withdrew unsupported KFU COMMERCIAL_FACILITY_OPPORTUNITY -> تشغيل inference; stored model evidence as REVIEW_REQUIRED and retained مرفق تجاري as asset candidate.",
+    "raw_payloads_changed": false,
+    "source_links_changed": false,
+    "master_identity_changed": false,
+    "sector_activity_changed": false
+  },
+  "post_apply_validation": {
+    "generated_at_utc": "2026-10-18T16:23:28.356773+03:00",
+    "total_eligible_masters": 291,
+    "canonical_type_buckets": {
+      "تأجير مؤقت": 129,
+      "غير محدد": 162
+    },
+    "bucket_sum": 291,
+    "reconciles": true,
+    "open_conflicts": 14,
+    "review_masters": 14,
+    "investment_model_source_records": 46,
+    "investment_model_unique_masters": 3,
+    "investment_model_review_candidates": [
+      {
+        "value": "COMMERCIAL_FACILITY_OPPORTUNITY",
+        "source": "kfu",
+        "source_records": 1,
+        "master_count": 1,
+        "proposed_model": null,
+        "status": "REVIEW_REQUIRED"
+      }
+    ]
+  }
+}

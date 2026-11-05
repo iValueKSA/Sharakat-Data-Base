@@ -1,0 +1,5 @@
+FROM alahsa-local-api:baseline-lifecycle-20261101
+COPY --chown=app:app api/app/sync_lifecycle.py /app/app/sync_lifecycle.py
+COPY --chown=app:app api/app/tasks.py /app/app/tasks.py
+COPY --chown=app:app api/app/service.py /app/app/service.py
+COPY --chown=app:app api/app/main.py /app/app/main.py

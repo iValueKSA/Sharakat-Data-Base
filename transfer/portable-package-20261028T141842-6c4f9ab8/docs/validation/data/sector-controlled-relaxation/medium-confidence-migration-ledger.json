@@ -1,0 +1,14 @@
+{
+  "audit_changes": [
+    "opportunity_change_history.sector",
+    "system_events provenance",
+    "audit_events for inferred review resolutions",
+    "opportunity_data_conflicts.status for accepted medium reviews"
+  ],
+  "merge_lineage_modified": false,
+  "observation_rows_modified": false,
+  "only_business_column_updated": "opportunities.sector",
+  "schema_migration_required": false,
+  "schema_migrations": 0,
+  "source_raw_data_modified": false
+}

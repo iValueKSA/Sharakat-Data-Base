@@ -1,0 +1,76 @@
+{
+  "authenticated_role_visible": true,
+  "rtl": "rtl",
+  "fixed_open_count": 305,
+  "ui_db_count_match": true,
+  "filters": {
+    "location_open": 15,
+    "location_resolved": 11,
+    "location_all": 26
+  },
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "document": 1920,
+      "body": 1920,
+      "dir": "rtl",
+      "clippedMasterLinks": 0,
+      "no_horizontal_overflow": true,
+      "screenshot": "docs\\validation\\data\\review-queues-governance\\screenshots\\review-queue-1920x1080.png"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "document": 1440,
+      "body": 1440,
+      "dir": "rtl",
+      "clippedMasterLinks": 0,
+      "no_horizontal_overflow": true,
+      "screenshot": "docs\\validation\\data\\review-queues-governance\\screenshots\\review-queue-1440x900.png"
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "viewport": 1366,
+      "document": 1366,
+      "body": 1366,
+      "dir": "rtl",
+      "clippedMasterLinks": 0,
+      "no_horizontal_overflow": true,
+      "screenshot": "docs\\validation\\data\\review-queues-governance\\screenshots\\review-queue-1366x768.png"
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "viewport": 768,
+      "document": 768,
+      "body": 768,
+      "dir": "rtl",
+      "clippedMasterLinks": 0,
+      "no_horizontal_overflow": true,
+      "screenshot": "docs\\validation\\data\\review-queues-governance\\screenshots\\review-queue-768x900.png"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "document": 390,
+      "body": 390,
+      "dir": "rtl",
+      "clippedMasterLinks": 0,
+      "no_horizontal_overflow": true,
+      "screenshot": "docs\\validation\\data\\review-queues-governance\\screenshots\\review-queue-390x844.png"
+    }
+  ],
+  "master_detail": true,
+  "source_sync_started": false,
+  "console_errors": [
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+  ],
+  "unauthenticated_review_write": 401,
+  "all_viewports_pass": true,
+  "pass": true
+}

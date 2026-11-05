@@ -1,0 +1,51 @@
+{
+  "reviewCodeChanges": [
+    {
+      "file": "app/service.py",
+      "change": "classify_http_health(None) returns WARNING for no-status network/TLS/DNS failure; prior behavior incorrectly reported HEALTHY"
+    },
+    {
+      "file": "tests/test_wave3_adapters.py",
+      "change": "assert no-status health warning"
+    },
+    {
+      "file": "tests/test_ingestion.py",
+      "change": "assert parser/network failure keeps source technical health WARNING and does not count missing scan/remove existing record"
+    }
+  ],
+  "sourceHealthMetadataCorrections": [
+    {
+      "source": "ahda",
+      "latestFailedJob": 366,
+      "prior": "HEALTHY",
+      "after": "WARNING"
+    },
+    {
+      "source": "invest-saudi",
+      "latestFailedJob": 367,
+      "prior": "HEALTHY",
+      "after": "WARNING"
+    },
+    {
+      "source": "modon",
+      "latestFailedJob": 368,
+      "prior": "HEALTHY",
+      "after": "WARNING"
+    },
+    {
+      "source": "mwan",
+      "latestFailedJob": 345,
+      "prior": "HEALTHY",
+      "after": "WARNING"
+    }
+  ],
+  "businessRecordCorrections": 0,
+  "mastersCreated": 0,
+  "sourceRowsCreated": 0,
+  "sourceRowsRemoved": 0,
+  "observationsChangedByReview": 0,
+  "naturalScheduledObservationDelta": 13,
+  "manualSyncStarted": false,
+  "standardizationEngineVersion": "21",
+  "fullRegression": "185 passed / 0 failed (one existing deprecation warning)"
+}

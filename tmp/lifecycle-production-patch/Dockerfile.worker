@@ -1,0 +1,4 @@
+FROM alahsa-local-worker:baseline-lifecycle-20261101
+COPY --chown=app:app worker/app/sync_lifecycle.py /app/app/sync_lifecycle.py
+COPY --chown=app:app worker/app/tasks.py /app/app/tasks.py
+COPY --chown=app:app worker/app/service.py /app/app/service.py

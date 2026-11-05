@@ -1,0 +1,1317 @@
+{
+    "schema_version":  1,
+    "setup_version":  "1.0.0",
+    "package_id":  "20261028T144540-8f7edded",
+    "created_at_utc":  "2026-10-28T11:45:55.0867539Z",
+    "package_root":  ".",
+    "database_transfer_method":  "LOGICAL_BACKUP_RESTORE",
+    "database_backup":  {
+                            "path":  "transfer/database/al-ahsa-platform-20261028T144540-8f7edded.dump",
+                            "format":  "PostgreSQL custom",
+                            "sha256":  "4dccfee98b2dd4934061a39c4afdd2a7787a4e70345cb261fb8e33742420b6d9",
+                            "validated_with":  "pg_restore --list",
+                            "contains_business_data_and_password_hashes":  true
+                        },
+    "expected_data_manifest":  "expected-data-manifest.json",
+    "encrypted_secret_bundle":  {
+                                    "path":  "transfer/private/session-signing-secret.aes",
+                                    "content":  "session signing key only",
+                                    "encrypted":  true,
+                                    "plaintext_secrets_in_manifest":  false
+                                },
+    "excluded_source_machine_secrets":  [
+                                            ".env.local",
+                                            "Local Admin Credentials.txt"
+                                        ],
+    "excluded_runtime_data":  [
+                                  "data/",
+                                  "backups/",
+                                  "logs/",
+                                  "tmp/",
+                                  "node_modules/",
+                                  "__pycache__/"
+                              ],
+    "source_snapshot":  {
+                            "active_admin_users":  1,
+                            "active_sync_jobs":  0,
+                            "alembic_heads":  [
+                                                  "0023_quant_commercial"
+                                              ],
+                            "audit_events":  3756,
+                            "configured_sources":  11,
+                            "conflict_reviews":  1114,
+                            "current_masters":  566,
+                            "duplicate_reviews":  47,
+                            "enabled_sources":  10,
+                            "location_reviews":  26,
+                            "merge_lineage_records":  21,
+                            "merged_masters":  21,
+                            "observations":  28761,
+                            "open_review_records":  0,
+                            "opportunity_change_history":  2590,
+                            "qualification_reviews":  0,
+                            "rbac_fingerprint_sha256":  "6c936b8040c442c495ddf684d9c747ada1d791268e45f6dd414540990ffb2cf2",
+                            "rbac_role_counts":  {
+                                                     "admin":  1,
+                                                     "viewer":  1
+                                                 },
+                            "review_history_records":  1187,
+                            "source_configuration_sha256":  "14851c9d3b43e8c387c1a419adc3d650ad51c97951be0916206fa30e10c21ef0",
+                            "source_opportunities":  3180,
+                            "sync_jobs":  572,
+                            "system_events":  8903,
+                            "total_masters":  587,
+                            "user_sessions":  2,
+                            "users":  2
+                        },
+    "static_asset_count":  30,
+    "static_asset_total_bytes":  11817379,
+    "required_static_assets":  [
+                                   "media\\ahsa-investment-hero-poster.webp",
+                                   "media\\ahsa-investment-hero.webm",
+                                   "brand\\ahda-logo-inverse.svg",
+                                   "geo\\alahsa-governorate.geojson"
+                               ],
+    "mwAN_tls":  {
+                     "path":  "app/certificates/mwan-digicert-global-g2-tls-rsa-sha256-2020-ca1.pem",
+                     "sha256":  "6601f41fceefbe7523a6a2e746938de57fc24e99426b7bea58d1867dbee1be5e",
+                     "strict_verification_preserved":  true
+                 },
+    "files":  [
+                  {
+                      "path":  "alembic.ini",
+                      "size_bytes":  581,
+                      "sha256":  "683aadceb1a7f4f690949294c321b085a84ee75adca4ead2ef7cf4cbb26266d1"
+                  },
+                  {
+                      "path":  "app/__init__.py",
+                      "size_bytes":  1,
+                      "sha256":  "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+                  },
+                  {
+                      "path":  "app/adapters.py",
+                      "size_bytes":  168014,
+                      "sha256":  "260bd11cad7b75c670c30520ff320a33d51f652b1900b88b5f2637a778febacf"
+                  },
+                  {
+                      "path":  "app/asset_facility_types.py",
+                      "size_bytes":  4329,
+                      "sha256":  "11e543463da448e0cb5e7b641644874b9934c41adcc20fffe0a25a0d507c7f9c"
+                  },
+                  {
+                      "path":  "app/autonomous_review_resolution.py",
+                      "size_bytes":  31121,
+                      "sha256":  "3ccf2499010de95acdb6b29fb4879da6331a546678b64ad37c9a0d35725903cb"
+                  },
+                  {
+                      "path":  "app/backups.py",
+                      "size_bytes":  2859,
+                      "sha256":  "c88a946acac3d4752cc0c99bb5d1cd76decb96c36c690c5aaba3278e531bd9f3"
+                  },
+                  {
+                      "path":  "app/celery_app.py",
+                      "size_bytes":  2691,
+                      "sha256":  "373584b1673451f3f9729ac5e78fafc93b8c8946b978c88961b78c6b2b682f61"
+                  },
+                  {
+                      "path":  "app/certificates/mwan-digicert-global-g2-tls-rsa-sha256-2020-ca1.pem",
+                      "size_bytes":  1720,
+                      "sha256":  "6601f41fceefbe7523a6a2e746938de57fc24e99426b7bea58d1867dbee1be5e"
+                  },
+                  {
+                      "path":  "app/data_quality.py",
+                      "size_bytes":  126622,
+                      "sha256":  "fd03379c421260ff069a6547fc17d1434f9921c423cbebdec25a86432d486cd2"
+                  },
+                  {
+                      "path":  "app/database.py",
+                      "size_bytes":  1362,
+                      "sha256":  "fa0731eecbd7106779ff66413cbb83987a4b1e489eb002f0c9a01573e3ca8be6"
+                  },
+                  {
+                      "path":  "app/deadline_distribution.py",
+                      "size_bytes":  1688,
+                      "sha256":  "acc2daba90031abae1717708a48bde5f9b0c7a783cac47677826d213737939ce"
+                  },
+                  {
+                      "path":  "app/duplicate_review.py",
+                      "size_bytes":  15190,
+                      "sha256":  "9835363d98280aa47e7bd4f8bdfb1d2eb34654d6f412b5c9e2ce02333d8da661"
+                  },
+                  {
+                      "path":  "app/entity_resolution.py",
+                      "size_bytes":  16516,
+                      "sha256":  "39e7bb567991f441dd2b3884714f916004fdb1f9d9ae13484fccd99858c28ed5"
+                  },
+                  {
+                      "path":  "app/excel_export.py",
+                      "size_bytes":  18844,
+                      "sha256":  "c9cead5b55594406ca85414bf5f11c191ef8c32d2cc87981085491aa0bb44e3a"
+                  },
+                  {
+                      "path":  "app/filter_canonicalization.py",
+                      "size_bytes":  784,
+                      "sha256":  "971e907d5060f3eaf19483ea085a2ed0cc88fd3fc690bd92a4bb088b502f06a3"
+                  },
+                  {
+                      "path":  "app/geography.py",
+                      "size_bytes":  8072,
+                      "sha256":  "334f62e6d4100343da7f077bb46bffd8434abee03d68370159f9d25091593cfa"
+                  },
+                  {
+                      "path":  "app/human_review_pilot_cohort.json",
+                      "size_bytes":  8472,
+                      "sha256":  "e72cb979ebd28e18f302ffa9c1453b2b290496679b83b8ed4cef34aac6815c8c"
+                  },
+                  {
+                      "path":  "app/main.py",
+                      "size_bytes":  244094,
+                      "sha256":  "8c88e67b8bb3f73b476d19adccf2dea9d3dedf0683c1a606cf8e297d0871a5bf"
+                  },
+                  {
+                      "path":  "app/merge.py",
+                      "size_bytes":  12955,
+                      "sha256":  "e21b1b423d4207482ca315ce74db6b3b4abd919dd8fb536ad4bb85242f465359"
+                  },
+                  {
+                      "path":  "app/models.py",
+                      "size_bytes":  31873,
+                      "sha256":  "c180d8f961bddebb4987966cf47c7e104f78808cd779a991feb8782068f666dd"
+                  },
+                  {
+                      "path":  "app/normalization.py",
+                      "size_bytes":  4187,
+                      "sha256":  "acfcecea3d4fe028dabaca88371cfb3abae53a77a67c915067c555a17939729a"
+                  },
+                  {
+                      "path":  "app/notifications.py",
+                      "size_bytes":  762,
+                      "sha256":  "cc9a50b42a6b81e95364a72d14faa130c4f97bd9c3b41f822129be583cfa0dac"
+                  },
+                  {
+                      "path":  "app/regression.py",
+                      "size_bytes":  945,
+                      "sha256":  "726f48c2beaeb1ac9c564e234a5d77a21b96ebb50f724037f381dc3ceb178a94"
+                  },
+                  {
+                      "path":  "app/review_evidence.py",
+                      "size_bytes":  16494,
+                      "sha256":  "80b29ad89fab23024099fada6dfeb7cb564921c46c82f8e5031f566fb3c9a668"
+                  },
+                  {
+                      "path":  "app/review_lifecycle.py",
+                      "size_bytes":  8538,
+                      "sha256":  "37e30dd2e8d40f5095e9dcab3bd98b95b464eaec69cc41e321ca69cad40f054d"
+                  },
+                  {
+                      "path":  "app/sector_classification.py",
+                      "size_bytes":  24271,
+                      "sha256":  "b4567e8393994f950426c18c80478afad6728423635c6206fb31f308cd021a35"
+                  },
+                  {
+                      "path":  "app/sector_inference.py",
+                      "size_bytes":  14543,
+                      "sha256":  "731b6319a1e4cb86c9d3be81421fbd266f6df96bbd827b94a032691aa0c80196"
+                  },
+                  {
+                      "path":  "app/sector_inference_phase2.py",
+                      "size_bytes":  17402,
+                      "sha256":  "68682ef09b5a87c01be6caaadb20efd3bfef8e256a90e0b6737dbd1e201d33a5"
+                  },
+                  {
+                      "path":  "app/sector_inference_relaxed.py",
+                      "size_bytes":  22594,
+                      "sha256":  "64f7029c2ea5a7483f6dc5b04744d0142c0367d62a9d0b7a97266c66410f368d"
+                  },
+                  {
+                      "path":  "app/security.py",
+                      "size_bytes":  4289,
+                      "sha256":  "23d254f6ef306b572b5504c7c4cbe52b461bd2c65d0afdd240d77e156a30a205"
+                  },
+                  {
+                      "path":  "app/service.py",
+                      "size_bytes":  125404,
+                      "sha256":  "99b8a99b23a33ce7a166833febb24e4c78f2c8a1f64a16c5468b71c4b5c0854e"
+                  },
+                  {
+                      "path":  "app/source_freshness.py",
+                      "size_bytes":  9231,
+                      "sha256":  "3a5737915a64f512d79982f2314a0c58d41c4ff6268c95f1056a43833a95059f"
+                  },
+                  {
+                      "path":  "app/source_link_health.json",
+                      "size_bytes":  160267,
+                      "sha256":  "94ff0e8047e5bfa8006d3a0651a814451076aedbd13b0375e396d6a168733a8e"
+                  },
+                  {
+                      "path":  "app/source_links.py",
+                      "size_bytes":  7815,
+                      "sha256":  "789f3ca7a86e4e80a60bc620bf7075e069af953473efd8286bc23d7afe58cc1d"
+                  },
+                  {
+                      "path":  "app/standardization.py",
+                      "size_bytes":  52773,
+                      "sha256":  "8268b74c7693c334ea189666541a38716b73954d7afaaa3a1bb826ba51abe93e"
+                  },
+                  {
+                      "path":  "app/static/app.js",
+                      "size_bytes":  136582,
+                      "sha256":  "9a2e4cec9f2effd191185eac5feee00e73cb9f36d1f134b0e142dfd1a1bf4fbe"
+                  },
+                  {
+                      "path":  "app/static/brand/ahda-logo-inverse.svg",
+                      "size_bytes":  128918,
+                      "sha256":  "061dcc269ea6fe3fed9973d6ad6b298058c08845347882adb6d4a116fe163dca"
+                  },
+                  {
+                      "path":  "app/static/brand/ahda-logo-primary.svg",
+                      "size_bytes":  128887,
+                      "sha256":  "b0d9598b341fc3baf4036cc5e695e7950434b32301fe243657633c86de96cbfc"
+                  },
+                  {
+                      "path":  "app/static/brand/ahda-logo-primary-excel.png",
+                      "size_bytes":  77501,
+                      "sha256":  "21ffdaaefccfe13db9d423b7d0bf76ccc35c62f133f93fda6a0fc6a516ba54c2"
+                  },
+                  {
+                      "path":  "app/static/data-dashboard.css",
+                      "size_bytes":  46657,
+                      "sha256":  "fbd9730fa944fb09f8b0092a375498fb76a0c29e93de207c61aeef7d3212b3cd"
+                  },
+                  {
+                      "path":  "app/static/data-dashboard.js",
+                      "size_bytes":  33786,
+                      "sha256":  "64c4f03a8649694da3d6def4c2176ef18cbdca107dd3734dd94d58576aefbd66"
+                  },
+                  {
+                      "path":  "app/static/fonts/AhdaText-Bold.ttf",
+                      "size_bytes":  98504,
+                      "sha256":  "b3aad84f774805ad2e3bc98f29699fc390292566d4fe461b72efeddb71b5a2cc"
+                  },
+                  {
+                      "path":  "app/static/fonts/AhdaText-Regular.ttf",
+                      "size_bytes":  96492,
+                      "sha256":  "29e06944d81f82862a002e3c8dd38baf441dce351d9a556754582f569910a7fb"
+                  },
+                  {
+                      "path":  "app/static/geo/alahsa-governorate.geojson",
+                      "size_bytes":  144154,
+                      "sha256":  "9cd3c69e22c7546fbb8f8a2727be121f7ee49fa686ebda86c41aa5d11487f982"
+                  },
+                  {
+                      "path":  "app/static/geo/README.md",
+                      "size_bytes":  2923,
+                      "sha256":  "db4a25456db6593f8f857e8de25ff9e41beff09651a68185c4822d38aee20416"
+                  },
+                  {
+                      "path":  "app/static/index.html",
+                      "size_bytes":  46137,
+                      "sha256":  "3c5061f33ca9a7aea9a1da51d4ae122fa22904450729a2552af137bd826a0d20"
+                  },
+                  {
+                      "path":  "app/static/media/ahsa-investment-hero.webm",
+                      "size_bytes":  9790136,
+                      "sha256":  "2bdb92251b0f4fc3f131ce375877d0095cac0aff5607668885f2bb22df521455"
+                  },
+                  {
+                      "path":  "app/static/media/ahsa-investment-hero-poster.webp",
+                      "size_bytes":  243874,
+                      "sha256":  "db7045f0042dcdfb9de9322e86f2386829751edb2286d37b84a315a021dd2a0c"
+                  },
+                  {
+                      "path":  "app/static/source-logos/ahda.svg",
+                      "size_bytes":  128887,
+                      "sha256":  "b0d9598b341fc3baf4036cc5e695e7950434b32301fe243657633c86de96cbfc"
+                  },
+                  {
+                      "path":  "app/static/source-logos/furas.svg",
+                      "size_bytes":  55314,
+                      "sha256":  "6968a57373c780bf3be8a73763d1b5fca5c9c588a0e3c9cd581d5369144a8c9f"
+                  },
+                  {
+                      "path":  "app/static/source-logos/invest-saudi.png",
+                      "size_bytes":  5408,
+                      "sha256":  "a25178cd42d562212e4b106c8898e3d9e16bb8d40c43751f8d64b041a75bd61f"
+                  },
+                  {
+                      "path":  "app/static/source-logos/kfu.webp",
+                      "size_bytes":  5932,
+                      "sha256":  "74d1d3a9c8b937c4fab425258a6026a679805ed4e94190c36f874f62daf69da1"
+                  },
+                  {
+                      "path":  "app/static/source-logos/modon.png",
+                      "size_bytes":  322464,
+                      "sha256":  "8af2bebef2746ad45099e95f2eb87db9b2784a62e517ddb7a4b1616b68a91ad1"
+                  },
+                  {
+                      "path":  "app/static/source-logos/mwan.png",
+                      "size_bytes":  34202,
+                      "sha256":  "1f0d285643b20517e12f46ecb31afa8ca7dcf20dde01fd54c7e12f8b4a6fa192"
+                  },
+                  {
+                      "path":  "app/static/source-logos/ncp.svg",
+                      "size_bytes":  15379,
+                      "sha256":  "3d78fc293a79fec32b55faf579b3898f6d8c033121f59422841c9d3431d322a5"
+                  },
+                  {
+                      "path":  "app/static/styles.css",
+                      "size_bytes":  67663,
+                      "sha256":  "187d33182c618a27d8b43ee0fa419990c4046b91562ae39aacc113d619d0d5cf"
+                  },
+                  {
+                      "path":  "app/static/vendor/leaflet-1.9.4/leaflet.css",
+                      "size_bytes":  14806,
+                      "sha256":  "a7837102824184820dfa198d1ebcd109ff6d0ff9a2672a074b9a1b4d147d04c6"
+                  },
+                  {
+                      "path":  "app/static/vendor/leaflet-1.9.4/leaflet.js",
+                      "size_bytes":  147552,
+                      "sha256":  "db49d009c841f5ca34a888c96511ae936fd9f5533e90d8b2c4d57596f4e5641a"
+                  },
+                  {
+                      "path":  "app/static/vendor/leaflet-1.9.4/LICENSE",
+                      "size_bytes":  1395,
+                      "sha256":  "53e8dc25862014e4324741ca18fbe3611e11d42ef69f59f86ea8c5389647d4cb"
+                  },
+                  {
+                      "path":  "app/static/vendor/leaflet-heat-0.2.0/leaflet-heat.js",
+                      "size_bytes":  5158,
+                      "sha256":  "eb952aae5806a1102729f291bab887dde783ace859819a354827a776e73e486a"
+                  },
+                  {
+                      "path":  "app/static/vendor/leaflet-heat-0.2.0/LICENSE",
+                      "size_bytes":  1321,
+                      "sha256":  "9010b843aad8e450890fc18dae2dfec00e68c10da775515801c42878afbb0da1"
+                  },
+                  {
+                      "path":  "app/static/vendor/leaflet-markercluster-1.5.3/leaflet.markercluster.js",
+                      "size_bytes":  34136,
+                      "sha256":  "1e4e1d22972a3926f48598e0caf14e3fe7049835d428a344fed4f9e3665b3508"
+                  },
+                  {
+                      "path":  "app/static/vendor/leaflet-markercluster-1.5.3/LICENSE",
+                      "size_bytes":  1052,
+                      "sha256":  "3133dacd38250bd1f524d8166cc60a016a382522e062fce143691c65bf5e4b3d"
+                  },
+                  {
+                      "path":  "app/static/vendor/leaflet-markercluster-1.5.3/MarkerCluster.css",
+                      "size_bytes":  872,
+                      "sha256":  "614dea0a98ff3f4ead74f04918f6b1d1b9ba435c25b5fc23b21a394d1e3e4d87"
+                  },
+                  {
+                      "path":  "app/static/vendor/leaflet-markercluster-1.5.3/MarkerCluster.Default.css",
+                      "size_bytes":  1287,
+                      "sha256":  "61258232d98d64dc2a7b1e02130d67421bc5b9bda5994eef70228ff97570c170"
+                  },
+                  {
+                      "path":  "app/status_lifecycle.py",
+                      "size_bytes":  6137,
+                      "sha256":  "3b6344e903adf8dc5bc3f2bfe602f7bf394733167630cd55d64899000e22eebc"
+                  },
+                  {
+                      "path":  "app/sync_lifecycle.py",
+                      "size_bytes":  2048,
+                      "sha256":  "fb047c599d0bf7ca868345d66da0384559268f1b66040373838a05c6db7397d6"
+                  },
+                  {
+                      "path":  "app/tasks.py",
+                      "size_bytes":  26047,
+                      "sha256":  "38371b09a78039cf0519c326e495231bfc033499d4008728d0d58449ffe5e758"
+                  },
+                  {
+                      "path":  "app/tls.py",
+                      "size_bytes":  1612,
+                      "sha256":  "a515c635191d665c18d8af9e9f23b04113281ecbb094d71c4129a91c5a72d790"
+                  },
+                  {
+                      "path":  "Check New PC.bat",
+                      "size_bytes":  220,
+                      "sha256":  "6c04ca84ee75a192df80f168ab31457b07412a6bd51be0fd0c74810c35d8efeb"
+                  },
+                  {
+                      "path":  "deploy/nginx.conf",
+                      "size_bytes":  1266,
+                      "sha256":  "888b25ae5b3bb50f4546b76e1d01a41d291d09fb9160f0a74405f381c6120612"
+                  },
+                  {
+                      "path":  "docker-compose.local.yml",
+                      "size_bytes":  2127,
+                      "sha256":  "210b6c70c8efacbe626d37fd3420fed63abaabbdc62addf6498e5d50c2e82865"
+                  },
+                  {
+                      "path":  "docker-compose.portable.yml",
+                      "size_bytes":  1103,
+                      "sha256":  "6456c1d3ecfb4d4e7c64166d24dc07dd9c09fe7acc1e600a2c70e4155c85ef95"
+                  },
+                  {
+                      "path":  "docker-compose.yml",
+                      "size_bytes":  4241,
+                      "sha256":  "615a32811d4fb3a11e5fcc80f6b6437a7174d79c456f6bc02d8b39956185a49e"
+                  },
+                  {
+                      "path":  "Dockerfile",
+                      "size_bytes":  1619,
+                      "sha256":  "faaf0bd655fbf55ab3ba9154158d40de259d839a77ef47855ac81e32eccdbee9"
+                  },
+                  {
+                      "path":  "docs/validation/deployment/portable-transfer/auth-rbac-transfer-validation.json",
+                      "size_bytes":  215,
+                      "sha256":  "7dc1ac16b9fbe95fa9582a18607104049dc96284ba82bd5aeeb09326551fb6cb"
+                  },
+                  {
+                      "path":  "docs/validation/deployment/portable-transfer/database-transfer-validation.json",
+                      "size_bytes":  434,
+                      "sha256":  "f720ef30a599afe8f4ce4f299c1bfef8acf6ef25e885f08fd40c0dc16286f450"
+                  },
+                  {
+                      "path":  "docs/validation/deployment/portable-transfer/dependency-inventory.json",
+                      "size_bytes":  3234,
+                      "sha256":  "a532f7d8e175f7da7be4ae9b0cd96c7deb3f08b9c95b6820e148587cbfe7eb40"
+                  },
+                  {
+                      "path":  "docs/validation/deployment/portable-transfer/evidence/transfer-ui-1366x768.png",
+                      "size_bytes":  112128,
+                      "sha256":  "01b06109ae4aebe30f7f7c152d35ad82e8ff548f3c83e6eaf5dc7bcbb99f7951"
+                  },
+                  {
+                      "path":  "docs/validation/deployment/portable-transfer/evidence/transfer-ui-1440x900.png",
+                      "size_bytes":  132771,
+                      "sha256":  "06f2e7123f249c4debe7be1e30a799247bd0c8ef4c8d1eb341d70de72abb51b5"
+                  },
+                  {
+                      "path":  "docs/validation/deployment/portable-transfer/evidence/transfer-ui-1920x1080.png",
+                      "size_bytes":  180183,
+                      "sha256":  "516d5bf91d0e0d8f4afd769b77049ba7038b0fab6a7b05a84ffd35610fbe835d"
+                  },
+                  {
+                      "path":  "docs/validation/deployment/portable-transfer/evidence/transfer-ui-390x844.png",
+                      "size_bytes":  43832,
+                      "sha256":  "1dae380e971ba8b6b0cfaa9d9e2de86daad1266f2cf50a5c2ae2fe914516006f"
+                  },
+                  {
+                      "path":  "docs/validation/deployment/portable-transfer/evidence/transfer-ui-768x900.png",
+                      "size_bytes":  59030,
+                      "sha256":  "32e024dbf80141f5178332f5c11b0c9939b8b7ae00a815b56a9fa56a4ad66ceb"
+                  },
+                  {
+                      "path":  "docs/validation/deployment/portable-transfer/isolated-transfer-test.json",
+                      "size_bytes":  342,
+                      "sha256":  "9a776e60b2d8c23ac0db23fe13a1b552568d65ec67c2de13c0b7aefc0c3a16bf"
+                  },
+                  {
+                      "path":  "docs/validation/deployment/portable-transfer/isolated-ui-playwright.json",
+                      "size_bytes":  3072,
+                      "sha256":  "dd3eee7ee0a5f7fe455a3fccc28d35479bb72d8cbfaca041500475966af9ceba"
+                  },
+                  {
+                      "path":  "docs/validation/deployment/portable-transfer/path-portability-validation.json",
+                      "size_bytes":  680,
+                      "sha256":  "17a6396dbddb43f1e114476b53265f8d7fba42b3e931fd544d782a082bb65118"
+                  },
+                  {
+                      "path":  "docs/validation/deployment/portable-transfer/scheduler-transfer-validation.json",
+                      "size_bytes":  329,
+                      "sha256":  "db5dc2ebdbc191bcfcfc55342d99ac878a517350ff5c152edf72d5a400f4730b"
+                  },
+                  {
+                      "path":  "docs/validation/deployment/portable-transfer/setup-idempotency-validation.json",
+                      "size_bytes":  284,
+                      "sha256":  "e2527af11fa3887af4c50cc22609ed521ab75506b9be36030e28ae05755e4d2d"
+                  },
+                  {
+                      "path":  "docs/validation/deployment/portable-transfer/static-assets-validation.json",
+                      "size_bytes":  276,
+                      "sha256":  "e93be7588d16394ef547474f663e5be9d757e95b9a5c2e247a0626c95f392ee9"
+                  },
+                  {
+                      "path":  "docs/validation/deployment/portable-transfer/transfer-manifest-example.json",
+                      "size_bytes":  965,
+                      "sha256":  "bff8027bd2455d05a658e10b602c6655c2c08c85783ece1577ef42dc7f67ea0e"
+                  },
+                  {
+                      "path":  "frontend.Dockerfile",
+                      "size_bytes":  213,
+                      "sha256":  "c80f1576f5120f03432c5a02191d85f4de96f876d9184af337042d3cea41f5e0"
+                  },
+                  {
+                      "path":  "migrations/env.py",
+                      "size_bytes":  1918,
+                      "sha256":  "b1ec0185e8d4f68cbe8ce8750cdb056adb33185f87ffc56b669dbfabbf799235"
+                  },
+                  {
+                      "path":  "migrations/script.py.mako",
+                      "size_bytes":  450,
+                      "sha256":  "33f4ee36cf5dfc621e5dd1e000f34a732945f5bff58685d78ffe7a4d6db611ce"
+                  },
+                  {
+                      "path":  "migrations/versions/0001_initial_schema.py",
+                      "size_bytes":  346,
+                      "sha256":  "ebddeceb09da96b48e3d0f7f31b068f0a6419d3e0831abc76113a1b6db44e427"
+                  },
+                  {
+                      "path":  "migrations/versions/0002_raw_and_conflicts.py",
+                      "size_bytes":  1639,
+                      "sha256":  "aaf1ad246b3780be075225d5a8fc874cae8228aab717af311d0ffe0d4214a929"
+                  },
+                  {
+                      "path":  "migrations/versions/0003_reversible_merge.py",
+                      "size_bytes":  1644,
+                      "sha256":  "07a8581c901675ca657832fefe08a3fdd3ad22364a5260ed12eeb2e99feaddcb"
+                  },
+                  {
+                      "path":  "migrations/versions/0004_validation_metrics_and_reference.py",
+                      "size_bytes":  4393,
+                      "sha256":  "509023b03b5fa4062528a66d880f46509311bae29170b340bd343fd0b5517cd4"
+                  },
+                  {
+                      "path":  "migrations/versions/0005_explained_reversible_resolution.py",
+                      "size_bytes":  1582,
+                      "sha256":  "87bb22e7ed9374753ee46f68a5b2b09f69cb1ea25bf55276f4df94eb4f65c64d"
+                  },
+                  {
+                      "path":  "migrations/versions/0006_merge_undo_ownership.py",
+                      "size_bytes":  1204,
+                      "sha256":  "cdd40ece2d60f65c4364c5894649bae425d13a0304b643e02d2d5a6700f368d8"
+                  },
+                  {
+                      "path":  "migrations/versions/0007_merge_generated_history.py",
+                      "size_bytes":  859,
+                      "sha256":  "667e2bfaee08d79a14dc93fcf284c1efca1a2b8df4db8bac5512d4130dc08693"
+                  },
+                  {
+                      "path":  "migrations/versions/0008_wave2_content_location_taxonomy.py",
+                      "size_bytes":  5521,
+                      "sha256":  "777caef267d52fa39adeaf85116dd08192c521c02042bee64e6454a537b12e2c"
+                  },
+                  {
+                      "path":  "migrations/versions/0009_source_metrics_json.py",
+                      "size_bytes":  808,
+                      "sha256":  "62bbf005182ac2c1126326fdcea527a6780ef98ba725837ed7996bf2f1401354"
+                  },
+                  {
+                      "path":  "migrations/versions/0010_source_taxonomy_columns.py",
+                      "size_bytes":  1049,
+                      "sha256":  "381894ce68e446c23adb8c41351e2090372c8b753eca5e58e112e564dbd53e18"
+                  },
+                  {
+                      "path":  "migrations/versions/0011_invest_saudi_source_identity.py",
+                      "size_bytes":  12565,
+                      "sha256":  "7b2f2f40eae25847e7651b04ef4dffa8f38057ed6c2ba8d34351fe3681dfcee5"
+                  },
+                  {
+                      "path":  "migrations/versions/0012_wave3_source_models.py",
+                      "size_bytes":  2646,
+                      "sha256":  "7b47405db106bd66556d5c663396922490d998834a29bc3d9ef558aac172855c"
+                  },
+                  {
+                      "path":  "migrations/versions/0013_public_coverage_model.py",
+                      "size_bytes":  3864,
+                      "sha256":  "f18d1075fc82a36b23c76de158d187e061e57bef624b8b3955489e8e1e4d42c1"
+                  },
+                  {
+                      "path":  "migrations/versions/0014_production_operations.py",
+                      "size_bytes":  6062,
+                      "sha256":  "1e7147e0904fe222bc22e410afb653506deabfe30afd93defeee7e4b7caf0114"
+                  },
+                  {
+                      "path":  "migrations/versions/0015_source_extraction_method_text.py",
+                      "size_bytes":  656,
+                      "sha256":  "3a2f5f5e1ef67d0f7751c71dfb05c370783e585af21f14fd4add1bb571dc5c75"
+                  },
+                  {
+                      "path":  "migrations/versions/0016_source_type_text.py",
+                      "size_bytes":  639,
+                      "sha256":  "3c31b5d3a8d339d027b48e726b3dec14c2c7899070c371729f20e1daec037134"
+                  },
+                  {
+                      "path":  "migrations/versions/0017_data_standardization.py",
+                      "size_bytes":  1214,
+                      "sha256":  "d735f632c069905aef144f668df6ed6e25059129fa073e826ab3bdbd48a43b20"
+                  },
+                  {
+                      "path":  "migrations/versions/0018_sector_activity.py",
+                      "size_bytes":  1256,
+                      "sha256":  "bd0761f864be0367308033ce9a786d297314f38d8ae8afef74d4a94397ffde8d"
+                  },
+                  {
+                      "path":  "migrations/versions/0019_activity_sub_activity.py",
+                      "size_bytes":  1348,
+                      "sha256":  "f97140d0bcfe48f4cdbeb708b3822c74ea69430a5913048ac39d4dfba1117497"
+                  },
+                  {
+                      "path":  "migrations/versions/0020_investment_model.py",
+                      "size_bytes":  844,
+                      "sha256":  "d2977e97f874880aff2292eee0be6dd6f388da1d4cf23a7392052075dfd91d3f"
+                  },
+                  {
+                      "path":  "migrations/versions/0021_asset_facility_type.py",
+                      "size_bytes":  5377,
+                      "sha256":  "8b95441ec6f0e7de9d25d024601c9652788aa72f9b3b4bd98952b6af0a89c593"
+                  },
+                  {
+                      "path":  "migrations/versions/0022_status_lifecycle.py",
+                      "size_bytes":  3641,
+                      "sha256":  "3f3d7847425ed8143b4971f50de145cdc2697a5e3774bd69daa745720f5bea48"
+                  },
+                  {
+                      "path":  "migrations/versions/0023_quantitative_commercial_field_semantics.py",
+                      "size_bytes":  853,
+                      "sha256":  "db6738a883bc3bbe4cda8051ed70dc8bd84b7d28b1478486e94f754a40099d24"
+                  },
+                  {
+                      "path":  "PORTABLE-SETUP-README.md",
+                      "size_bytes":  3923,
+                      "sha256":  "0a8cfbb8f72bcae921c3c7a4e15e3326d0c9c68249d188e36d78a6ce122525c7"
+                  },
+                  {
+                      "path":  "Prepare Transfer.bat",
+                      "size_bytes":  322,
+                      "sha256":  "04ca9fbd05fb99d8aa9c612c73fee3c4955fad7d28338e627a82d033eb3e27a2"
+                  },
+                  {
+                      "path":  "Prepare Transfer.ps1",
+                      "size_bytes":  16434,
+                      "sha256":  "82c96a8ef0c56569f328d31258b14ed64e88f35f4cf32b07d018c82e33a66d2c"
+                  },
+                  {
+                      "path":  "requirements.txt",
+                      "size_bytes":  317,
+                      "sha256":  "91d3391509baf493146b35d418fa57faa3ad88323c33c564c38fe45818e9fa0e"
+                  },
+                  {
+                      "path":  "scripts/_temp_portable_transfer_validation.ps1",
+                      "size_bytes":  6103,
+                      "sha256":  "eb643ae11915cc1d97948bb2f0ff5176d2334a0019faa24fe2814fa76c9647ff"
+                  },
+                  {
+                      "path":  "scripts/activity_taxonomy_review.py",
+                      "size_bytes":  26323,
+                      "sha256":  "69dafb72aa0c3b8dc7246babce84dc7eabbf58e57c9253a23ab1575559b7692b"
+                  },
+                  {
+                      "path":  "scripts/apply_sector_classification_phase2.py",
+                      "size_bytes":  10335,
+                      "sha256":  "8f77aa6bda97d8f6c903dddcb44e2ce2ae18c133d3b693c9a48dfca6601c7ead"
+                  },
+                  {
+                      "path":  "scripts/apply_sector_controlled_relaxation.py",
+                      "size_bytes":  12714,
+                      "sha256":  "f7a277f23238a4cbb57c0dbfc0d8bcd50a97360fd0727d318d247f39a8a91f0c"
+                  },
+                  {
+                      "path":  "scripts/asset_facility_type_taxonomy_audit.py",
+                      "size_bytes":  7796,
+                      "sha256":  "d2bc8664af4d8541f942ac33c3c398c62d43bfa3b8ffb215b38290740be2c9b2"
+                  },
+                  {
+                      "path":  "scripts/backfill_standardization.py",
+                      "size_bytes":  7225,
+                      "sha256":  "02e767ecebf03105f86b024623d1859456b65405cd2968724e4f2830d92b9cca"
+                  },
+                  {
+                      "path":  "scripts/build_missing_evidence_recovery_artifacts.py",
+                      "size_bytes":  27829,
+                      "sha256":  "763bd48cc31f2ecea2bbd602d3c1403b9b5d7d143c16f4318ba34bf3cbf0853e"
+                  },
+                  {
+                      "path":  "scripts/build_review_backlog_triage_artifacts.py",
+                      "size_bytes":  18851,
+                      "sha256":  "8db03b9b68e48dcce6a6ca150700457906e02b1e5558a774c4d4a743bbf5775b"
+                  },
+                  {
+                      "path":  "scripts/build_sector_taxonomy_candidate_report.py",
+                      "size_bytes":  4917,
+                      "sha256":  "bceb3d5ff2c334538ca171dbe9f2840f737979c59f1593c463f4ac40cc74477e"
+                  },
+                  {
+                      "path":  "scripts/capture_missing_evidence_snapshot.py",
+                      "size_bytes":  14860,
+                      "sha256":  "1fed6df18a0f9e0b56aa76ead80eeab1abf8971475711f76909495a5463e86ac"
+                  },
+                  {
+                      "path":  "scripts/capture_opportunity_type_taxonomy_before.cjs",
+                      "size_bytes":  1603,
+                      "sha256":  "d049490b422a9fa8e680a360e42caacdf43cffc96f2cc7f1269fba1cefdde87c"
+                  },
+                  {
+                      "path":  "scripts/capture_scheduled_sync_job_lifecycle_review.py",
+                      "size_bytes":  26792,
+                      "sha256":  "c1b8d86d05330b1fd4d4b4af94ad308ef2ed5c139ce12ffcda55f0dd64837164"
+                  },
+                  {
+                      "path":  "scripts/capture_sector_taxonomy_chart.cjs",
+                      "size_bytes":  2170,
+                      "sha256":  "33583f49bb6cf8dcdc5deaeb3b067518d6e34a28671fcf2df959b8ce5ceb81e1"
+                  },
+                  {
+                      "path":  "scripts/capture_source_freshness_governance.py",
+                      "size_bytes":  13969,
+                      "sha256":  "772a051ba22ac79d3c2f5a0480496298deb1b03866031f7b30d0c0aec872d590"
+                  },
+                  {
+                      "path":  "scripts/capture_status_lifecycle_viewports.cjs",
+                      "size_bytes":  1420,
+                      "sha256":  "1b3dad771ab46edb89eaef3e9da4f8d5500c325992ae6dabf7e30f68e2028d04"
+                  },
+                  {
+                      "path":  "scripts/check-new-pc.ps1",
+                      "size_bytes":  796,
+                      "sha256":  "8a59f779b97a176f51a2a983c3c6963df0198bbc518a442e8ddce2fc0e25aaa9"
+                  },
+                  {
+                      "path":  "scripts/count_furas.py",
+                      "size_bytes":  1846,
+                      "sha256":  "82bf2ede989e7081b72a42f35c22a65a0717692a2d348a07826283fc56da7ff9"
+                  },
+                  {
+                      "path":  "scripts/create-desktop-shortcuts.ps1",
+                      "size_bytes":  727,
+                      "sha256":  "d7880dfdff3dc83007dc33d130d82e57e308d2c6b6fde67876a0f47df1d568ee"
+                  },
+                  {
+                      "path":  "scripts/inspect_furas.py",
+                      "size_bytes":  3908,
+                      "sha256":  "ddb0abb9ec42faaab3e3a14173e6507a4de5871d3618dcae34747414e7052a4b"
+                  },
+                  {
+                      "path":  "scripts/install-local-requirements.ps1",
+                      "size_bytes":  16792,
+                      "sha256":  "dffc383f865326d898b60dbce4201121ebb0492eea9dbf68b316b43f30791bcd"
+                  },
+                  {
+                      "path":  "scripts/investment_model_taxonomy_review.py",
+                      "size_bytes":  14650,
+                      "sha256":  "f8b640cc4d93f901e67812ad2f59e5e925ad271cc61c7e61ba19b0563b8a5a75"
+                  },
+                  {
+                      "path":  "scripts/local_database_setup.py",
+                      "size_bytes":  10768,
+                      "sha256":  "e8e40600387e986e79e7b2b1e2eec6a5e531113ceafcde3bb34ec92e719e8758"
+                  },
+                  {
+                      "path":  "scripts/local-platform.ps1",
+                      "size_bytes":  10379,
+                      "sha256":  "dcc124aa28e68985fa1a677ee535181798027452da9974d046fd1e9680580a21"
+                  },
+                  {
+                      "path":  "scripts/opportunity_type_taxonomy_snapshot.py",
+                      "size_bytes":  9465,
+                      "sha256":  "7af16082d489e831b51e06c180e74f20389817dd6cca6d06a9dcc9efa7361654"
+                  },
+                  {
+                      "path":  "scripts/phase2_sector_inventory_snapshot.py",
+                      "size_bytes":  15269,
+                      "sha256":  "d1f9b3d5b61072c09b0b5df03672e8a10b8c0b47e5815d2f5b1e5d3b36cf97d1"
+                  },
+                  {
+                      "path":  "scripts/portable_transfer_snapshot.py",
+                      "size_bytes":  5178,
+                      "sha256":  "8bc77374e20d76149f2658c7259945e04b317b808977f179f38f604662440788"
+                  },
+                  {
+                      "path":  "scripts/portable_worker_heartbeat.py",
+                      "size_bytes":  270,
+                      "sha256":  "aa69e567c53400b724d2dd2ae4ce30127d30191e56bd49778fa6c02fb227ea15"
+                  },
+                  {
+                      "path":  "scripts/portable-crypto.ps1",
+                      "size_bytes":  4694,
+                      "sha256":  "d9a68d70b712b370c39f7865bdff6787862e20424abb878fff20876b3480b31f"
+                  },
+                  {
+                      "path":  "scripts/portable-host-check.ps1",
+                      "size_bytes":  5662,
+                      "sha256":  "4404e84d26833cbc45f84a6d5673c58c948256493f03832e4fc210db50352654"
+                  },
+                  {
+                      "path":  "scripts/reconstruct_opportunity_type_preapply_audit.py",
+                      "size_bytes":  4528,
+                      "sha256":  "eb2bcc9dea515568acc1ebb4e5e4c2fd2f24219bb221ffd28cc5d4b3aa89943c"
+                  },
+                  {
+                      "path":  "scripts/resolve_investment_model_taxonomy.py",
+                      "size_bytes":  23209,
+                      "sha256":  "5860ef290dad5da4d2d44988486bd9fbd11f8cffc39af34c841599f894374a3c"
+                  },
+                  {
+                      "path":  "scripts/resolve_opportunity_type_taxonomy.py",
+                      "size_bytes":  31104,
+                      "sha256":  "0c5e290292ff1188ca6929fca3d2f112b59295d2a0813fccd338bc1241784bc3"
+                  },
+                  {
+                      "path":  "scripts/run_autonomous_review_resolution.py",
+                      "size_bytes":  8478,
+                      "sha256":  "286edfde3660bc8e221499ccdb82ceed89bbd9af953e8f220b4d65fa89e58fa9"
+                  },
+                  {
+                      "path":  "scripts/run_data_quality.py",
+                      "size_bytes":  1044,
+                      "sha256":  "f9fad07c41eaa9535e691534d49acb849e32479eaecda0b9f9b80b0738533512"
+                  },
+                  {
+                      "path":  "scripts/run_missing_evidence_dq.py",
+                      "size_bytes":  1749,
+                      "sha256":  "414eabbad8a97b6b400d68536c401f41d7bf09479b9b1af9d19ae0a19b8f2fdb"
+                  },
+                  {
+                      "path":  "scripts/runtime_data_safety_snapshot.py",
+                      "size_bytes":  5449,
+                      "sha256":  "be7d656d65843dce12d9ab29fbece760218af0cb89fba2a1e4a97e7384a1d29f"
+                  },
+                  {
+                      "path":  "scripts/sector_classification_phase2.py",
+                      "size_bytes":  11944,
+                      "sha256":  "80e93154728de211058c2cc4559cbd8718a2cfe7d03547122eb1936d55cbd3c5"
+                  },
+                  {
+                      "path":  "scripts/sector_controlled_relaxation.py",
+                      "size_bytes":  21557,
+                      "sha256":  "cd19ac6eeabf02a88fcc6bff83e1f9f586677e51f71db02d9d58a8318a998e9b"
+                  },
+                  {
+                      "path":  "scripts/sector_inference_status_consolidation.py",
+                      "size_bytes":  41584,
+                      "sha256":  "66e4543fbc4a863ac63e8049ab718c7410cab16db77d22b4af56283acd521e78"
+                  },
+                  {
+                      "path":  "scripts/sector_taxonomy_integrity_snapshot.py",
+                      "size_bytes":  2498,
+                      "sha256":  "b1776df7eeddfd606ecd53d47ac97bb0745516238739004eb60e6ffb981925ff"
+                  },
+                  {
+                      "path":  "scripts/sector_taxonomy_review.py",
+                      "size_bytes":  14524,
+                      "sha256":  "b0f9cec1e758f444d6a3ef4c67404a41912294075e38cf5a507f3926e386e9c3"
+                  },
+                  {
+                      "path":  "scripts/standardization_audit.py",
+                      "size_bytes":  11226,
+                      "sha256":  "ff8f09f1dccae78d426a44ca91794991aa4650eaf57e5287c7f25a1d39e2530f"
+                  },
+                  {
+                      "path":  "scripts/start-platform.ps1",
+                      "size_bytes":  4796,
+                      "sha256":  "7dc1c584fe6e476d0eb946e307cc08d2ef9f450d35ae5209603d0044787653fa"
+                  },
+                  {
+                      "path":  "scripts/status_lifecycle_acceptance_audit.py",
+                      "size_bytes":  5762,
+                      "sha256":  "afcfb91402405c7ba8e6a2da5ffed2ce0a8c1297289616d66f75c6ec9f20c80b"
+                  },
+                  {
+                      "path":  "scripts/status_lifecycle_correction_ledger.py",
+                      "size_bytes":  2076,
+                      "sha256":  "702ee97cb81e970a0e1c81a7cb9c708247bb02fe8139f6e09a79ebb16fb08180"
+                  },
+                  {
+                      "path":  "scripts/status_lifecycle_preview.py",
+                      "size_bytes":  3653,
+                      "sha256":  "5475deaa0f6ad2a7dc3e97d5a39b324d460a4693b3e5da3157e90da3ea93dd71"
+                  },
+                  {
+                      "path":  "scripts/status_lifecycle_snapshot.py",
+                      "size_bytes":  6786,
+                      "sha256":  "7405bfc0938e6f6a8446361e9d6076e8792ae99280fe5f8d5864b02ac68785b2"
+                  },
+                  {
+                      "path":  "scripts/status-platform.ps1",
+                      "size_bytes":  3355,
+                      "sha256":  "ea968047cb198e7e9471aca48f2322bdd6978de5b1c6850feb78b09b2e611607"
+                  },
+                  {
+                      "path":  "scripts/stop-platform.ps1",
+                      "size_bytes":  1701,
+                      "sha256":  "11cb6220e5f282f76589531d3bdd6e6b295aadd7deb68c08a84bdc4fe89d345d"
+                  },
+                  {
+                      "path":  "scripts/test-portable-crypto.ps1",
+                      "size_bytes":  1284,
+                      "sha256":  "459c2ccceb2a9e22695d2a181ba7aebc85b216fac86f7d8d18555157f52c51ef"
+                  },
+                  {
+                      "path":  "scripts/update_missing_evidence_snapshot_metadata.py",
+                      "size_bytes":  2369,
+                      "sha256":  "b7d55f8a5201c6b610b348384dd9469501ef74ab68feb5013946bc3550928c61"
+                  },
+                  {
+                      "path":  "scripts/verify_asset_facility_type_live.py",
+                      "size_bytes":  6987,
+                      "sha256":  "3c7c838ab21b4edd73173b3af404b4fcf6fb126deb5cb34db8b0ceb25338e132"
+                  },
+                  {
+                      "path":  "scripts/verify_asset_facility_type_ui.cjs",
+                      "size_bytes":  4776,
+                      "sha256":  "6c02fa3c0c5c26bb67648c68ba4eef92cf140a7a4d3d8c7b8ae612d6d64cad53"
+                  },
+                  {
+                      "path":  "scripts/verify_deadline_card_single_row.cjs",
+                      "size_bytes":  6143,
+                      "sha256":  "6fff9c09fe89022ba1be673a0532a0815aaeab4e43da238997782773a5533f04"
+                  },
+                  {
+                      "path":  "scripts/verify_deadline_distribution_live.cjs",
+                      "size_bytes":  6003,
+                      "sha256":  "907ce7cca83ea397e4386497374b1464b80a9681ddc6ea5cb24eeadd3a711da8"
+                  },
+                  {
+                      "path":  "scripts/verify_investment_model_live.py",
+                      "size_bytes":  8090,
+                      "sha256":  "729dc0366780dcb77f90d1e2f6920bab1604327399a84bfc7ce3c5aab84310f9"
+                  },
+                  {
+                      "path":  "scripts/verify_investment_model_ui.cjs",
+                      "size_bytes":  6153,
+                      "sha256":  "2b1da67948b0160d00fc93a87de0583facfea149092de36b3fd5463564ead3e0"
+                  },
+                  {
+                      "path":  "scripts/verify_location_geographic_ui.cjs",
+                      "size_bytes":  5553,
+                      "sha256":  "0587df3347d488b2e67f4773ff0a210069974f07f844c6462e045c8896b06775"
+                  },
+                  {
+                      "path":  "scripts/verify_opportunity_type_exports.py",
+                      "size_bytes":  2815,
+                      "sha256":  "77e11cc3b2959b64cfbe85ae86dd9a81b900bc741e8dfd04534b292a3248be35"
+                  },
+                  {
+                      "path":  "scripts/verify_opportunity_type_taxonomy_ui.cjs",
+                      "size_bytes":  11190,
+                      "sha256":  "7fde89d52c08a29c4f39ffb897308ff8e3bc05a1e5a895f8ee5eac731f043bad"
+                  },
+                  {
+                      "path":  "scripts/verify_production_stack.py",
+                      "size_bytes":  4035,
+                      "sha256":  "8b31001bae6973d0632505677d881692e4be5564a43401be4a2e74c1d3b79028"
+                  },
+                  {
+                      "path":  "scripts/verify_sector_controlled_relaxation_live.cjs",
+                      "size_bytes":  5278,
+                      "sha256":  "bb8cfc02c8467c2200376063ceb96213578a500a2d4b3a9df47ddbab81faddd3"
+                  },
+                  {
+                      "path":  "scripts/verify_sector_controlled_relaxation_reconciliation.py",
+                      "size_bytes":  4580,
+                      "sha256":  "539aac39c000a9430a20ad9aa6dc0353a8ca0998c56f423baa5e7c1bff3df154"
+                  },
+                  {
+                      "path":  "scripts/verify_sector_dashboard_strategic_categories_live.cjs",
+                      "size_bytes":  12197,
+                      "sha256":  "21d94849d23c4866c152f1cfa34ff01b6e4448a7c147c0526d22f18d870479b6"
+                  },
+                  {
+                      "path":  "scripts/verify_sector_status_consolidation_exports.py",
+                      "size_bytes":  5280,
+                      "sha256":  "38109d6160f2fd48a267957d3ad6c87f6865c433fd0be8a109ccaa874682157f"
+                  },
+                  {
+                      "path":  "scripts/verify_sector_status_consolidation_live.cjs",
+                      "size_bytes":  10046,
+                      "sha256":  "cfaec1ebc5e4511bfb419a1e7e8edd5a103d4f6aec94e6a32812e81186c87939"
+                  },
+                  {
+                      "path":  "scripts/verify_sector_taxonomy_exports.py",
+                      "size_bytes":  3095,
+                      "sha256":  "997a20d9eea17668eadc7ce351223f59b0726f0fb2112d709d4eef73de4ec9c1"
+                  },
+                  {
+                      "path":  "scripts/verify_sector_taxonomy_ui.cjs",
+                      "size_bytes":  4733,
+                      "sha256":  "72b397360144067dbd64350328ce7a8f8f1fc62e220297cf2823fd434f20add7"
+                  },
+                  {
+                      "path":  "scripts/verify_status_lifecycle_exports.py",
+                      "size_bytes":  3613,
+                      "sha256":  "a08f61e306b7ac14c8269204b028cf7d6b0e94843beba3f7f9ab95825546b65e"
+                  },
+                  {
+                      "path":  "scripts/verify_status_lifecycle_ui.cjs",
+                      "size_bytes":  11378,
+                      "sha256":  "5aadf65835f6d3eaaf3e7450271e0005ac59ec5d64e370d2fd04a5fa32617209"
+                  },
+                  {
+                      "path":  "scripts/verify_v16_ingestion_rules.py",
+                      "size_bytes":  2805,
+                      "sha256":  "617c68165aaf34d4abb4df91ea05737ac5723a66e1a57844b984f47b11a12642"
+                  },
+                  {
+                      "path":  "scripts/verify-installation.ps1",
+                      "size_bytes":  9202,
+                      "sha256":  "4d4de551ba646cb0b688b94ada4d5734c61e21d0959ff0b453a4da1411bd7aa2"
+                  },
+                  {
+                      "path":  "Setup Platform.bat",
+                      "size_bytes":  471,
+                      "sha256":  "08473288f65a2a2f78de97129d2f877cfedd7039df467013fb4b072929d50a4c"
+                  },
+                  {
+                      "path":  "Setup Platform.ps1",
+                      "size_bytes":  34133,
+                      "sha256":  "82b0001ce9baf31f3942a921420efced7360aae43891e136a8b5bb14c7937b3e"
+                  },
+                  {
+                      "path":  "tests/fixtures/pif/company-mixed-filter.html",
+                      "size_bytes":  385,
+                      "sha256":  "b45e413dc4d41ff335d9ddb00489ca57425889da9f68071e7c4eed0aa862064a"
+                  },
+                  {
+                      "path":  "tests/fixtures/pif/ecosystem-five-cards.html",
+                      "size_bytes":  2221,
+                      "sha256":  "d1ed1f2fdab461327e8a23328cbf2e297b5563afe11d38b57a362da44d8f76ae"
+                  },
+                  {
+                      "path":  "tests/fixtures/pif/no-results-no-false-cards.html",
+                      "size_bytes":  403,
+                      "sha256":  "5c1d3931b49e5d8899d5c9a980d218e7d76bc49ad10aa9eaa0ce6db4774dbac2"
+                  },
+                  {
+                      "path":  "tests/fixtures/pif/opportunity-detail.html",
+                      "size_bytes":  305,
+                      "sha256":  "f5613169fef4604f4a8821747261a2ead409a0741fea52636d77ac962432a2cf"
+                  },
+                  {
+                      "path":  "tests/test_activity_taxonomy.py",
+                      "size_bytes":  11195,
+                      "sha256":  "7a84399bace0f34f3b63620960d3a31ff88ff254f396ffef951728c31dcea987"
+                  },
+                  {
+                      "path":  "tests/test_adapters.py",
+                      "size_bytes":  5805,
+                      "sha256":  "028ce49559008d2df30a05b0fc85d89e7debc9ff78f1533be5a97345a5dfe781"
+                  },
+                  {
+                      "path":  "tests/test_asset_facility_types.py",
+                      "size_bytes":  3992,
+                      "sha256":  "ffa709c701f2ec2296b1eb4967d356e369e11cb07c84cbe7b317cdb98d421e51"
+                  },
+                  {
+                      "path":  "tests/test_autonomous_review_resolution.py",
+                      "size_bytes":  26726,
+                      "sha256":  "7d8eee15b14e554247efaf14c6310a88b29bf5a320a03d0a54f8be14e463f017"
+                  },
+                  {
+                      "path":  "tests/test_dashboard_video_hero.py",
+                      "size_bytes":  5301,
+                      "sha256":  "86a79b13fb992dbfe6c67822f7a1890e5c9dcef30c9ebd1ffc5ad0ee04fc049c"
+                  },
+                  {
+                      "path":  "tests/test_data_dashboard.py",
+                      "size_bytes":  18789,
+                      "sha256":  "624cea1ad20e5c5dea1baf9a73347b862b5aadb206b259312218bc35cac65872"
+                  },
+                  {
+                      "path":  "tests/test_data_quality.py",
+                      "size_bytes":  31540,
+                      "sha256":  "b4532c895b4d8609540ba44cda64dd0953c09d7dfe4f35a082c3495a4d84f59a"
+                  },
+                  {
+                      "path":  "tests/test_deadline_distribution.py",
+                      "size_bytes":  4449,
+                      "sha256":  "8fcbe7053f39d710773b992cd3eef1cce05f8c97a89f1a9b99b4cd163956598f"
+                  },
+                  {
+                      "path":  "tests/test_duplicate_review_quality.py",
+                      "size_bytes":  8329,
+                      "sha256":  "ea7cd18f69717c2ec7384a49fe7cac0fd47d10c577566f7dc082e6967344f00b"
+                  },
+                  {
+                      "path":  "tests/test_entity_resolution.py",
+                      "size_bytes":  12536,
+                      "sha256":  "85a459f6c63805441b7bc73709f8a993b9ec2d05537bd8354c80c553121a0b62"
+                  },
+                  {
+                      "path":  "tests/test_excel_presentation.py",
+                      "size_bytes":  5606,
+                      "sha256":  "7261f978fc91cb720f69c610d150a9f298f3e9af21f621228396090339858fc8"
+                  },
+                  {
+                      "path":  "tests/test_filter_canonicalization.py",
+                      "size_bytes":  14324,
+                      "sha256":  "345cb586408f5000e90a13db639ae71a46b0760f79081df8b094d61768a21d6c"
+                  },
+                  {
+                      "path":  "tests/test_ingestion.py",
+                      "size_bytes":  30737,
+                      "sha256":  "ccf25d4302d4780799486994e62079146beceb9b2f95d4a8befeca775d74829e"
+                  },
+                  {
+                      "path":  "tests/test_investment_model_taxonomy.py",
+                      "size_bytes":  8727,
+                      "sha256":  "9d73fed732f29bb860f7d7f5eb07e4fa322c148dda8ff51517853bbe87f74cb1"
+                  },
+                  {
+                      "path":  "tests/test_investsaudi_mass_removal_guard.py",
+                      "size_bytes":  14854,
+                      "sha256":  "2a1be6fbcafb673e9246c4560e03119dd412905befca7d6af835a65c4d5ee696"
+                  },
+                  {
+                      "path":  "tests/test_local_database_setup.py",
+                      "size_bytes":  1371,
+                      "sha256":  "d4f706000a67188433847b3c296ab6829b854bd66f7a5f4aa600069fe17f3697"
+                  },
+                  {
+                      "path":  "tests/test_location_geography.py",
+                      "size_bytes":  11794,
+                      "sha256":  "50e9287646b5a98da45abcd37967cbd1201b440bba846131957f39723ac5559a"
+                  },
+                  {
+                      "path":  "tests/test_medium_inference_dq_root_cause.py",
+                      "size_bytes":  5965,
+                      "sha256":  "a1d4adc345e70eedc793ddde6118f4cce030b351fc74ce016fe819579a65afc1"
+                  },
+                  {
+                      "path":  "tests/test_opportunities_search_count.py",
+                      "size_bytes":  8463,
+                      "sha256":  "2e54428712bcedfe8364cb013103b009ecc2e57851ddda6c9769458bb9913a5c"
+                  },
+                  {
+                      "path":  "tests/test_owner_publisher_semantics.py",
+                      "size_bytes":  4468,
+                      "sha256":  "927db8ecf418fb50c9cf2de274ddfecc3a5bac06e1a5a689480529a44c334458"
+                  },
+                  {
+                      "path":  "tests/test_production_security.py",
+                      "size_bytes":  17566,
+                      "sha256":  "ff302a3b57a2b55018cd04bc5711d7921f137d5f40beec5a1cce3351b4bf0238"
+                  },
+                  {
+                      "path":  "tests/test_reversible_merge.py",
+                      "size_bytes":  11239,
+                      "sha256":  "d2717aae91eb391629f8ba7a15974f4a5fd289f7f644bbfbf0586514dbeba91e"
+                  },
+                  {
+                      "path":  "tests/test_review_evidence.py",
+                      "size_bytes":  8014,
+                      "sha256":  "73db2c99690abcc041f358ffe2f5f243c76f3f3c6cd7ad69d7a40b890aaa80d9"
+                  },
+                  {
+                      "path":  "tests/test_review_lifecycle_triage.py",
+                      "size_bytes":  20720,
+                      "sha256":  "8d5b3cccdb26e3b76790692aa9d632a0d9644d4a3d170b9a605294705b328423"
+                  },
+                  {
+                      "path":  "tests/test_review_queues_governance.py",
+                      "size_bytes":  12375,
+                      "sha256":  "1906a50e2f7010b9f4398ed400864c71554954a44f5aec6d46d100aabf21d53a"
+                  },
+                  {
+                      "path":  "tests/test_review_workbench.py",
+                      "size_bytes":  69698,
+                      "sha256":  "b37d191c11aed079d668f87b07b8ac4cba9b5aeb357b310353600d0c9fe9d6b0"
+                  },
+                  {
+                      "path":  "tests/test_scheduled_sync_miss_gate.py",
+                      "size_bytes":  6377,
+                      "sha256":  "18b5ee076bb05c71ace3b4c1d1023946b758039516e1217ea752a92257d97426"
+                  },
+                  {
+                      "path":  "tests/test_sector_classification_governed.py",
+                      "size_bytes":  10681,
+                      "sha256":  "f0c8addc12ae626615b7456b9c2f328e4ff1a0a3ec90ab2612c1a7acae2b713b"
+                  },
+                  {
+                      "path":  "tests/test_sector_controlled_relaxation.py",
+                      "size_bytes":  15102,
+                      "sha256":  "5ed567aca1525d7fdda23366d36d09efdb28142fa4e3d87882846a357c885927"
+                  },
+                  {
+                      "path":  "tests/test_sector_inference.py",
+                      "size_bytes":  5726,
+                      "sha256":  "19fa4552c8e57e5ed85c3294069f4c309ad28c0ab7b00206d6d60e01ddd7c5c5"
+                  },
+                  {
+                      "path":  "tests/test_sector_inference_phase2.py",
+                      "size_bytes":  10564,
+                      "sha256":  "eb098265cebe6e4311ca620c81077e145b208a8b5f53554579ccacfc87bcfdc2"
+                  },
+                  {
+                      "path":  "tests/test_source_coverage_api.py",
+                      "size_bytes":  7963,
+                      "sha256":  "7ec485bc86b0e23cb387ef83d95e1ad0d71c68d3d85e08cf250f596c83c9d5ca"
+                  },
+                  {
+                      "path":  "tests/test_source_freshness.py",
+                      "size_bytes":  4231,
+                      "sha256":  "999a59d5baa7b82f7aae7bc50eb8f96b1850747745600a0a1cd04f7b234f753c"
+                  },
+                  {
+                      "path":  "tests/test_source_links.py",
+                      "size_bytes":  7753,
+                      "sha256":  "098f69114e42f7c604fd47468fbcfeb20661aa4639f8f24aba185e0628fcc7fa"
+                  },
+                  {
+                      "path":  "tests/test_source_logo_contract.py",
+                      "size_bytes":  2248,
+                      "sha256":  "42ebfc7074580880f646076b2af3f349614183d2f24d29d7030150085ab99cd4"
+                  },
+                  {
+                      "path":  "tests/test_source_tls.py",
+                      "size_bytes":  1390,
+                      "sha256":  "e4a1112623ec51b002dcff6bc82b6a7c5abb47864fbfb0e872959041477a5792"
+                  },
+                  {
+                      "path":  "tests/test_standardization_engine.py",
+                      "size_bytes":  15034,
+                      "sha256":  "488adf5117536a7970b8f606e4e76c4918e97d6c713cb4564c36774767a086e4"
+                  },
+                  {
+                      "path":  "tests/test_status_lifecycle.py",
+                      "size_bytes":  10895,
+                      "sha256":  "d797b730dc75a82f88796ec568c7a38f8a0e6133986dc070d235f100111b54aa"
+                  },
+                  {
+                      "path":  "tests/test_sync_lifecycle_reliability.py",
+                      "size_bytes":  10685,
+                      "sha256":  "1e144d4c34422aa1715cac5cfcf48d7bc2341d369e102a789de9621bd1f71ff6"
+                  },
+                  {
+                      "path":  "tests/test_waha_source_catalog.py",
+                      "size_bytes":  3912,
+                      "sha256":  "d6cb99739f60eb99012eaa1ae07dd13b5d82cf1a2eac6b8a67224a1f6dc71e6e"
+                  },
+                  {
+                      "path":  "tests/test_wave2_adapters.py",
+                      "size_bytes":  21743,
+                      "sha256":  "1607a56853bfede65ce7a2a18c1d8a312b07c2edfbf0cb9b76f0d1701ab996ba"
+                  },
+                  {
+                      "path":  "tests/test_wave3_adapters.py",
+                      "size_bytes":  9211,
+                      "sha256":  "655e5a22e65fe8f63283169df82dbcfe09f1a4f917b155933d75f20a97418dee"
+                  },
+                  {
+                      "path":  "tests/test_wave4_adapters.py",
+                      "size_bytes":  19686,
+                      "sha256":  "c210bdc27cbb89cb0b75fbb4cb3590763a43f09c3378f4f5bb57c6ca3c9c3ebb"
+                  },
+                  {
+                      "path":  "Verify Installation.bat",
+                      "size_bytes":  226,
+                      "sha256":  "326b4c72ff449f4e73c35c523a456cbf12029c2e9601759a8461b94e3be117c4"
+                  },
+                  {
+                      "path":  "expected-data-manifest.json",
+                      "size_bytes":  1775,
+                      "sha256":  "6bb4e6eaffcd9046de213143b42f02f916e298b307a5357eff03f4acbdacd6d2",
+                      "sensitive":  false
+                  },
+                  {
+                      "path":  "transfer/database/al-ahsa-platform-20261028T144540-8f7edded.dump",
+                      "size_bytes":  12541201,
+                      "sha256":  "4dccfee98b2dd4934061a39c4afdd2a7787a4e70345cb261fb8e33742420b6d9",
+                      "sensitive":  true
+                  },
+                  {
+                      "path":  "transfer/private/session-signing-secret.aes",
+                      "size_bytes":  437,
+                      "sha256":  "5f32aa354f5c24c76b0bf2dfec76594e05147f1f194e81c314a67bfcf87afc5c",
+                      "sensitive":  true
+                  },
+                  {
+                      "path":  "portable-setup-version.json",
+                      "size_bytes":  241,
+                      "sha256":  "9e3672745f09b94ff178f149fd2177b4cee09454d57bdcaa58b8fdcb1912e01c"
+                  }
+              ],
+    "secrets_printed_to_console":  false,
+    "secrets_written_to_validation_report":  false
+}

@@ -1,0 +1,114 @@
+{
+  "count": 9,
+  "engine_version": "ahda-sector-phase2-1.0.0",
+  "rules": [
+    {
+      "blocks_alone": [
+        "sector:tourism"
+      ],
+      "key": "P2_CAFE_RESTAURANT_NOT_TOURISM",
+      "phrase_groups": [
+        "مقهى",
+        "مطعم",
+        "مطاعم",
+        "خدمات غذائية",
+        "cafe",
+        "restaurant"
+      ]
+    },
+    {
+      "blocks_alone": [
+        "sector:agriculture"
+      ],
+      "key": "P2_FOOD_RETAIL_NOT_AGRICULTURE",
+      "phrase_groups": [
+        "تموينات",
+        "ميني ماركت",
+        "متجر غذائي",
+        "تجارة المواد الغذائية",
+        "food retail",
+        "grocery store"
+      ]
+    },
+    {
+      "blocks_alone": [
+        "sector:agriculture"
+      ],
+      "key": "P2_FOOD_WAREHOUSE_NOT_AGRICULTURE",
+      "phrase_groups": [
+        "مستودع أغذية",
+        "مستودع غذائي",
+        "food warehouse"
+      ]
+    },
+    {
+      "blocks_alone": [
+        "sector:real_estate"
+      ],
+      "key": "P2_GENERIC_PLOT_NOT_REAL_ESTATE",
+      "phrase_groups": [
+        "قطعة رقم",
+        "أرض فضاء",
+        "موقع استثماري"
+      ]
+    },
+    {
+      "blocks_alone": [
+        "sector:real_estate"
+      ],
+      "key": "P2_GENERIC_BUILDING_NOT_REAL_ESTATE",
+      "phrase_groups": [
+        "مبنى",
+        "مكاتب إدارية",
+        "building"
+      ]
+    },
+    {
+      "blocks_alone": [
+        "sector:logistics"
+      ],
+      "key": "P2_GENERIC_PARKING_NOT_TRANSPORT",
+      "phrase_groups": [
+        "مواقف سيارات",
+        "موقف سيارات",
+        "parking"
+      ]
+    },
+    {
+      "blocks_alone": [
+        "sector:tourism"
+      ],
+      "key": "P2_LOCATION_NAME_NOT_TOURISM",
+      "phrase_groups": [
+        "الأحساء",
+        "الهفوف",
+        "العمران",
+        "العيون"
+      ]
+    },
+    {
+      "blocks_alone": [
+        "sector:agriculture"
+      ],
+      "key": "P2_LOCATION_NAME_NOT_AGRICULTURE",
+      "phrase_groups": [
+        "النخيل",
+        "التمور",
+        "واحة الأحساء"
+      ]
+    },
+    {
+      "blocks_alone": [
+        "sector:any"
+      ],
+      "key": "P2_GENERIC_LEASE_NOT_SECTOR",
+      "phrase_groups": [
+        "تأجير",
+        "استثمار",
+        "تشغيل",
+        "lease opportunity",
+        "investment opportunity"
+      ]
+    }
+  ]
+}

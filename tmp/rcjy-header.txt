@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Date: Mon, 02 Nov 2026 11:20:16 GMT
+Server: Apache
+Set-Cookie: JSESSIONID=85F2AA233285001F5BE6276223BDC5BF.node2; Path=/; Secure; HttpOnly
+Set-Cookie: GUEST_LANGUAGE_ID=en_US; Path=/; Expires=Tue, 02-Nov-2027 11:20:36 GMT; Max-Age=31536000; Secure; HttpOnly
+Set-Cookie: COOKIE_SUPPORT=true; Path=/; Expires=Tue, 02-Nov-2027 11:20:36 GMT; Max-Age=31536000; Secure; HttpOnly
+Set-Cookie: AL_SESS-S=AWsORw!vKL0nA09U9f2CjDheJS5Sx0_YRwpEkzbguI5dqD9M0EECvj!ey3E5vX_ghOwr; Path=/; Secure; HttpOnly; SameSite=Lax
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Vary: Accept-Encoding
+Cache-Control: max-age=2592000
+Expires: Wed, 02 Dec 2026 11:20:08 GMT
+Strict-Transport-Security: max-age=31536000
+Referrer-Policy: same-origin
+Permissions-Policy: accelerometer=(self), ambient-light-sensor=(self), autoplay=(self), camera=(self), display-capture=(self), document-domain=(self), encrypted-media=(self), fullscreen=(self), geolocation=(self), gyroscope=(self), magnetometer=(self), microphone=(self), midi=(self), payment=(self), usb=(self), xr-spatial-tracking=(self)
+Transfer-Encoding: chunked
+Content-Type: text/html;charset=UTF-8
+

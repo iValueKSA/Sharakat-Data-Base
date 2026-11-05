@@ -1,0 +1,7 @@
+{
+  "status": "PASSED",
+  "focused_evidence_recovery": {"passed": 38, "failed": 0},
+  "targeted_location_review_workflow_regression": {"passed": 1, "failed": 0},
+  "full_isolated_regression": {"passed": 388, "failed": 0, "database": "SQLite in-memory"},
+  "warnings": 27
+}

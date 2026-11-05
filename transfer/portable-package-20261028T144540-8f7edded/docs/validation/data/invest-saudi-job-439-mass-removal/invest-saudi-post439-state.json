@@ -1,0 +1,31 @@
+{
+  "measured_at": "2026-10-22 12:39:44.052374+00:00",
+  "source_rows_retained": 2555,
+  "job439_present_rows": 2431,
+  "job439_present_unqualified": 2423,
+  "job439_present_qualified": 8,
+  "lifecycle_after_correction": {
+    "أزيلت من المصدر": 124,
+    "غير محددة": 2431
+  },
+  "current_dataset_memberships": {
+    "Investment projects": 338,
+    "Regional opportunities": 138,
+    "Opportunities": 1771,
+    "PIF opportunities": 184
+  },
+  "dataset_membership_state_counts": {
+    "PIF opportunities|current=True|checks=0": 184,
+    "Investment projects|current=True|checks=0": 338,
+    "Regional opportunities|current=True|checks=0": 138,
+    "Opportunities|current=True|checks=0": 1771,
+    "Investment projects|current=False|checks=3": 124
+  },
+  "physical_source_rows_deleted": 0,
+  "source_state": {
+    "technical_health": "HEALTHY",
+    "coverage_status": "COMPLETE_PUBLIC_SOURCE",
+    "sync_status": "HEALTHY",
+    "last_successful_sync": "2026-10-22 12:03:25.553138+00:00"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "count": 1,
+  "superseded_reviews": [
+    {
+      "review_id": 184,
+      "review_type": "taxonomy_conflict",
+      "resolution_class": "K_SUPERSEDED_OR_STALE_REVIEW",
+      "action": "supersede",
+      "confidence": "HIGH",
+      "business_change": "NO_BUSINESS_CHANGE",
+      "reason": "SUPERSEDED_REVIEW",
+      "evidence": {
+        "selected": "الأنشطة الرياضية و الترفيهية",
+        "conflicting": "الأنشطة الرياضية والترفيهية",
+        "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-39029?type=Investment",
+        "mapping_rule": "approved_alias_v1",
+        "review_flags": [],
+        "guarded_standardization": false,
+        "current_value": "الأنشطة الرياضية و الترفيهية"
+      },
+      "queue_snapshot": {
+        "id": 184,
+        "domain": "taxonomy_conflict",
+        "source_status": "OPEN",
+        "created_at": "2026-10-18T13:58:26.62733+03:00",
+        "master_ids": [
+          107
+        ],
+        "title": "انشاء و تشغيل و صيانة كشك لنشاط جم ذكي على ممشى جامعة الملك فيصل - الأنشطة الرياضية و الترفيهية - كشك لنشاط رياضي ذكي - نادي",
+        "reason_key": "FIELD_CONFLICT:activity",
+        "field": "activity",
+        "source": "فرص – البوابة الموحدة للاستثمار",
+        "source_record_id": 107,
+        "priority": "P2",
+        "disposition": "RETAIN_OPEN",
+        "evidence_status": "EVIDENCE_AVAILABLE",
+        "evidence": {
+          "selected": "الأنشطة الرياضية و الترفيهية",
+          "conflicting": "الأنشطة الرياضية والترفيهية",
+          "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-39029?type=Investment",
+          "mapping_rule": "approved_alias_v1",
+          "review_flags": [],
+          "guarded_standardization": false
+        }
+      },
+      "version_token": "14ce07061170fe697a949ec3af24e5b4b752369413f1c886f61d1fa00b623d6e"
+    }
+  ]
+}

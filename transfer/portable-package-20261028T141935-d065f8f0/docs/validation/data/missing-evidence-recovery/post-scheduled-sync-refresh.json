@@ -1,0 +1,158 @@
+{
+  "snapshot_at": "2026-10-22T08:25:48.390449+00:00",
+  "business_review_state": {
+    "open_reviews_total": 498,
+    "human_review_required": 151,
+    "blocked_by_missing_evidence": 347,
+    "blocked_review_case_ids_added_since_original": 0,
+    "blocked_review_case_ids_removed_since_original": 0,
+    "classification_reprocessing_performed": false
+  },
+  "blocked_by_type": {
+    "STANDARDIZATION_REVIEW": 334,
+    "LOCATION_REVIEW": 13
+  },
+  "blocked_by_subtype": {
+    "STANDARDIZATION_REVIEW:contract_duration_years": 332,
+    "STANDARDIZATION_REVIEW:investment_value": 2,
+    "LOCATION_REVIEW": 13
+  },
+  "blocked_by_source": {
+    "furas": 332,
+    "invest-saudi": 8,
+    "ahda": 7
+  },
+  "blocked_by_field": {
+    "contract_duration_years": 332,
+    "investment_value": 2,
+    "location": 13
+  },
+  "blocked_by_age": {
+    "0-7 days": 341,
+    "8-30 days": 6
+  },
+  "blocked_by_master_current_state": {
+    "CURRENT:متاحة": 333,
+    "CURRENT:أزيلت من المصدر": 2,
+    "MISSING_MASTER": 5,
+    "CURRENT:غير محددة": 7
+  },
+  "business_counts": {
+    "current_masters": 526,
+    "total_masters": 547,
+    "source_opportunities": 3138,
+    "observations": 16352,
+    "merged_masters": 21,
+    "open_reviews": 498,
+    "sync_jobs": 430
+  },
+  "business_delta_vs_2026_10_22T08_00_44Z": {
+    "current_masters": 0,
+    "total_masters": 0,
+    "source_opportunities": 0,
+    "observations": 54,
+    "merged_masters": 0,
+    "open_reviews": 0,
+    "sync_jobs": 2
+  },
+  "natural_scheduled_jobs": [
+    {
+      "source": "furas",
+      "trigger_type": "scheduled",
+      "source_id": 1,
+      "job_id": 429,
+      "unchanged_count": 381,
+      "status": "SUCCESS",
+      "review_delta": 0,
+      "finished_at": "2026-10-22T08:02:23.780445+00:00",
+      "master_delta": 0,
+      "source_opportunity_delta": 0,
+      "update_count": 0,
+      "observation_delta": 35,
+      "new_count": 0
+    },
+    {
+      "source": "alahsa-opportunities",
+      "trigger_type": "scheduled",
+      "source_id": 2,
+      "job_id": 430,
+      "unchanged_count": 84,
+      "status": "SUCCESS",
+      "review_delta": 0,
+      "finished_at": "2026-10-22T08:02:25.893189+00:00",
+      "master_delta": 0,
+      "source_opportunity_delta": 0,
+      "update_count": 0,
+      "observation_delta": 19,
+      "new_count": 0
+    }
+  ],
+  "task_manual_source_sync_started": false,
+  "targeted_reevaluation_after_these_scheduled_jobs": {
+    "new_append_only_review_evidence_events_since_2026_10_22T08_00_44Z": 412,
+    "enriched_review_entities": 412,
+    "total_review_evidence_enrichment_events": 759,
+    "source_data_or_review_rows_changed_by_this_task": 0
+  },
+  "live_full_dq": {
+    "total_gates": 83,
+    "pass": 76,
+    "warning": 4,
+    "fail": 3,
+    "failed_gates": [
+      {
+        "sample_ids": [
+          "duplicate_candidate:1",
+          "duplicate_candidate:2",
+          "duplicate_candidate:3",
+          "duplicate_candidate:4",
+          "duplicate_candidate:5",
+          "duplicate_candidate:28",
+          "duplicate_candidate:7",
+          "duplicate_candidate:20"
+        ],
+        "gate_key": "HUMAN_DECISION_WITHOUT_AUDIT",
+        "domain": "REVIEW_GOVERNANCE",
+        "observed": 141
+      },
+      {
+        "sample_ids": [
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76
+        ],
+        "gate_key": "REVIEW_DECISION_WITH_INVALID_ACTION",
+        "domain": "REVIEW_GOVERNANCE",
+        "observed": 11
+      },
+      {
+        "sample_ids": [
+          112
+        ],
+        "gate_key": "CURRENT_LIST_DUPLICATE_MASTER_ROWS",
+        "domain": "SEARCH_LIST_UNIQUENESS",
+        "observed": 1
+      }
+    ],
+    "warnings": [
+      "GENERIC_SOURCE_PAGE_AS_OPPORTUNITY_ACTION",
+      "OPEN_REVIEW_BACKLOG",
+      "SOURCE_LAST_SUCCESS_TOO_OLD",
+      "SYNC_RUNTIME_ANOMALY"
+    ],
+    "evidence_integrity_gates": {
+      "RECOVERED_EVIDENCE_WITHOUT_PROVENANCE": "PASS",
+      "DUPLICATE_REVIEW_EVIDENCE_ATTACHMENT": "PASS",
+      "AUTO_RESOLUTION_WITHOUT_RECOVERED_EVIDENCE": "PASS",
+      "BLOCKED_REVIEW_WITH_EXISTING_SUFFICIENT_EVIDENCE": "PASS",
+      "REVIEW_EVIDENCE_PROVENANCE_BROKEN": "PASS",
+      "EVIDENCE_ENRICHMENT_IDEMPOTENCY": "PASS"
+    }
+  },
+  "note": "Read-only follow-up snapshot after natural scheduled jobs 429 and 430. No evidence enrichment rerun, source sync trigger, business-row write, or test rerun was performed. Current full DQ includes broader review-governance/search failures; evidence-specific gates all pass and unrelated scopes were left untouched."
+}

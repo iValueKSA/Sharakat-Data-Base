@@ -1,0 +1,36 @@
+{
+  "captured_at_utc": "2026-10-19T10:02:36.808825+00:00",
+  "counts": {
+    "masters_total": 296,
+    "masters_eligible_nonmerged": 291,
+    "masters_merged": 5,
+    "masters_active": 275,
+    "masters_historical": 16,
+    "master_status_counts": {
+      "متاحة": 101,
+      "Announced": 160,
+      "REMOVED_FROM_SOURCE": 14,
+      "غير محددة": 13,
+      "EXPIRED": 2,
+      "Unknown": 1
+    },
+    "source_opportunities": 2898,
+    "source_observations": 7603,
+    "change_history": 1012,
+    "pending_location_reviews": 25,
+    "open_location_reviews_all_statuses": [
+      "('PENDING', 25)"
+    ],
+    "opportunity_location_rows": 29,
+    "masters_with_coordinates": 177,
+    "coordinates_missing_both": 114,
+    "coordinates_partial": 0,
+    "coordinates_invalid_wgs84": 0
+  },
+  "fingerprints": {
+    "master_identities_sha256": "33141808bbe5e9e56a6287cdad23b6e76c254b564d140a29fe7d6450442b10a1",
+    "master_source_links_sha256": "297b863ff96c1c5d87afcf22f6e1be33cd375af1870e4c1cd1894ce2f872f867",
+    "raw_source_payloads_sha256": "85e98c5d47ba960182d0caff7bc29c8895dcef312ada61bb377c3d03534aca4d",
+    "raw_observation_payloads_sha256": "b62b1d0952bed0f32138681a9e1b19e48fc1240b35a0a4c135da7368f0ff9214"
+  }
+}

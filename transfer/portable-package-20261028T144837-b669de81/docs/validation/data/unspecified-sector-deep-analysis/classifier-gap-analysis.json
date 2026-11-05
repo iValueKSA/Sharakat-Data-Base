@@ -1,0 +1,121 @@
+{
+  "top_classifier_gaps": [
+    {
+      "rank": 1,
+      "gap": "Current engine is intentionally conservative because title, description, activity and source activity values are often broad or duplicated.",
+      "evidence": "Most remaining records have title/description but few canonical activity/sub-activity values; inspect signal-coverage.json.",
+      "impact": "High population, low automatic safety without structured source taxonomy.",
+      "recommendation": "Prioritize source-specific structured-field extraction and exact taxonomy mapping."
+    },
+    {
+      "rank": 2,
+      "gap": "Raw source classifications are sparse or source-scoped and are not consistently exposed as canonical fields.",
+      "evidence": "3 distinct unmatched raw classification values are catalogued.",
+      "impact": "Potentially high for affected sources; evidence must be field- and source-specific.",
+      "recommendation": "Review explicit raw values and add adapter mappings only after official taxonomy validation."
+    },
+    {
+      "rank": 3,
+      "gap": "Descriptions frequently repeat titles and contribute no independent evidence.",
+      "evidence": "Duplicate descriptions are collapsed in availability and candidate analysis.",
+      "impact": "False confidence risk if text is counted twice.",
+      "recommendation": "Extract structured clauses or source taxonomy attributes; do not double-count repeated title text."
+    }
+  ],
+  "all_canonical_sector_candidate_summary": [
+    {
+      "sector_id": "sector:agriculture",
+      "strong_candidates": 0,
+      "ambiguous_candidates": 1,
+      "insufficient": 0
+    },
+    {
+      "sector_id": "sector:commercial",
+      "strong_candidates": 0,
+      "ambiguous_candidates": 0,
+      "insufficient": 0
+    },
+    {
+      "sector_id": "sector:education",
+      "strong_candidates": 0,
+      "ambiguous_candidates": 0,
+      "insufficient": 0
+    },
+    {
+      "sector_id": "sector:environment",
+      "strong_candidates": 0,
+      "ambiguous_candidates": 0,
+      "insufficient": 0
+    },
+    {
+      "sector_id": "sector:financial_services",
+      "strong_candidates": 0,
+      "ambiguous_candidates": 0,
+      "insufficient": 0
+    },
+    {
+      "sector_id": "sector:healthcare",
+      "strong_candidates": 0,
+      "ambiguous_candidates": 0,
+      "insufficient": 0
+    },
+    {
+      "sector_id": "sector:industrial",
+      "strong_candidates": 0,
+      "ambiguous_candidates": 0,
+      "insufficient": 0
+    },
+    {
+      "sector_id": "sector:logistics",
+      "strong_candidates": 0,
+      "ambiguous_candidates": 0,
+      "insufficient": 0
+    },
+    {
+      "sector_id": "sector:other",
+      "strong_candidates": 0,
+      "ambiguous_candidates": 0,
+      "insufficient": 0
+    },
+    {
+      "sector_id": "sector:real_estate",
+      "strong_candidates": 0,
+      "ambiguous_candidates": 0,
+      "insufficient": 0
+    },
+    {
+      "sector_id": "sector:tourism",
+      "strong_candidates": 0,
+      "ambiguous_candidates": 0,
+      "insufficient": 0
+    }
+  ],
+  "current_unspecified": 379,
+  "mutually_exclusive_bucket_counts": {
+    "EXPLICIT_SOURCE_EVIDENCE_UNMAPPED": 7,
+    "HIGH_PURITY_ACTIVITY_RESOLVABLE": 0,
+    "HIGH_PURITY_SUBACTIVITY_RESOLVABLE": 0,
+    "RAW_SOURCE_CLASSIFICATION_RESOLVABLE": 1,
+    "TITLE_PATTERN_RESOLVABLE": 0,
+    "DESCRIPTION_RESOLVABLE": 0,
+    "MULTI_SIGNAL_RESOLVABLE": 0,
+    "CONFLICTING_EVIDENCE": 0,
+    "POTENTIAL_TAXONOMY_GAP": 0,
+    "GENUINELY_UNCLASSIFIABLE": 371
+  },
+  "bucket_order": [
+    "EXPLICIT_SOURCE_EVIDENCE_UNMAPPED",
+    "HIGH_PURITY_ACTIVITY_RESOLVABLE",
+    "HIGH_PURITY_SUBACTIVITY_RESOLVABLE",
+    "RAW_SOURCE_CLASSIFICATION_RESOLVABLE",
+    "TITLE_PATTERN_RESOLVABLE",
+    "DESCRIPTION_RESOLVABLE",
+    "MULTI_SIGNAL_RESOLVABLE",
+    "CONFLICTING_EVIDENCE",
+    "POTENTIAL_TAXONOMY_GAP",
+    "GENUINELY_UNCLASSIFIABLE"
+  ],
+  "bucket_sum": 379,
+  "bucket_reconciliation": "PASSED",
+  "phase1_phase2_logic_reopened": false
+}

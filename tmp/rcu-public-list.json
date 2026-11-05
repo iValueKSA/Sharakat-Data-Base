@@ -1,0 +1,423 @@
+{
+  "succeeded": true,
+  "data": {
+    "count": 6,
+    "list": [
+      {
+        "id": "8fd18e92-054a-40c3-9de7-33d7dc23f5db",
+        "titleEN": "Development and Operation of Strategic Water Storage Tanks – PPP Investment Opportunity",
+        "titleAR": "تطوير وتشغيل الخزن الاستراتيجي للمياه: فرصة للشراكة بين القطاع العام والخاص",
+        "displayOpportunityId": "RCU-OPP-000260",
+        "descriptionEN": "In alignment with the Privatization Plan approved by the National Center for Privatization, the Royal Commission for AlUla is advancing the development of a strategic potable water storage system to ensure reliable and sustainable water supply and support AlUla’s economic and tourism growth and future development needs.\nThe project includes the development and operation of five strategic water storage tanks with a combined capacity of 295,000 m³, providing approximately 3 to 4 days of potable water reserves, alongside pumping stations, connection networks, and supporting infrastructure serving urban districts, heritage sites, the airport, and new development areas.\nThe project is planned to be delivered under a Design–Build–Finance–Operate–Maintain (DBFOM) model, with a concession period of approximately 15 years, comprising 2 to 3 years of construction and 12 to 13 years of operations and maintenance, supported by availability-based payments linked to performance and water quality.\nThe RFP is expected to be launched in Q4 2027, with phased completion targeted by 2031.\n",
+        "descriptionAR": "تماشيًا مع خطة التخصيص المعتمدة من المركز الوطني للتخصيص، تعمل الهيئة الملكية على تطوير منظومة استراتيجية لتخزين مياه الشرب، بهدف ضمان استدامة وموثوقية إمدادات المياه، ودعم النمو الاقتصادي والسياحي والاحتياجات المستقبلية للمحافظة.\nيشمل المشروع إنشاء وتشغيل خمسة خزانات استراتيجية بسعة إجمالية تبلغ 295,000 م³، بما يوفر احتياطيًا من مياه الشرب يكفي لنحو 3 إلى 4 أيام، بالإضافة إلى محطات الضخ وشبكات الربط والمرافق الداعمة، لخدمة المناطق الحضرية والمواقع التراثية والمطار ومناطق التطوير الجديدة.من المخطط تنفيذ المشروع وفق نموذج التصميم والبناء والتمويل والتشغيل والصيانة، بمدة امتياز تبلغ نحو 15 عامًا، تشمل 2 إلى 3 سنوات للإنشاء و12 إلى 13 عامًا للتشغيل والصيانة، وبآلية مدفوعات قائمة على الإتاحة والأداء وجودة المياه.\nمن المتوقع طرح طلب تقديم العروض في الربع الرابع من عام 2027، على أن يتم إنجاز المشروع على مراحل حتى عام 2031.\n",
+        "rfpDescriptionEN": "In alignment with the Privatization Plan approved by the National Center for Privatization, the Royal Commission for AlUla is advancing the development of a strategic potable water storage system to ensure reliable and sustainable water supply and support AlUla’s economic and tourism growth and future development needs.\nThe project includes the development and operation of five strategic water storage tanks with a combined capacity of 295,000 m³, providing approximately 3 to 4 days of potable water reserves, alongside pumping stations, connection networks, and supporting infrastructure serving urban districts, heritage sites, the airport, and new development areas.\nThe project is planned to be delivered under a Design–Build–Finance–Operate–Maintain (DBFOM) model, with a concession period of approximately 15 years, comprising 2 to 3 years of construction and 12 to 13 years of operations and maintenance, supported by availability-based payments linked to performance and water quality.\nThe RFP is expected to be launched in Q4 2027, with phased completion targeted by 2031.\n",
+        "rfpDescriptionAR": "تماشيًا مع خطة التخصيص المعتمدة من المركز الوطني للتخصيص، تعمل الهيئة الملكية على تطوير منظومة استراتيجية لتخزين مياه الشرب، بهدف ضمان استدامة وموثوقية إمدادات المياه، ودعم النمو الاقتصادي والسياحي والاحتياجات المستقبلية للمحافظة.\nيشمل المشروع إنشاء وتشغيل خمسة خزانات استراتيجية بسعة إجمالية تبلغ 295,000 م³، بما يوفر احتياطيًا من مياه الشرب يكفي لنحو 3 إلى 4 أيام، بالإضافة إلى محطات الضخ وشبكات الربط والمرافق الداعمة، لخدمة المناطق الحضرية والمواقع التراثية والمطار ومناطق التطوير الجديدة.من المخطط تنفيذ المشروع وفق نموذج التصميم والبناء والتمويل والتشغيل والصيانة، بمدة امتياز تبلغ نحو 15 عامًا، تشمل 2 إلى 3 سنوات للإنشاء و12 إلى 13 عامًا للتشغيل والصيانة، وبآلية مدفوعات قائمة على الإتاحة والأداء وجودة المياه.\nمن المتوقع طرح طلب تقديم العروض في الربع الرابع من عام 2027، على أن يتم إنجاز المشروع على مراحل حتى عام 2031.\n",
+        "imageId": "2fadf14e-3abc-4a7e-8bb2-e7b938a3a0ee",
+        "latitude": 26.606149,
+        "longitude": 37.927985,
+        "parcelNumber": "",
+        "plotNumber": "",
+        "area": 75000,
+        "publishDate": "2026-10-20T18:05:00",
+        "submissionDeadline": "2027-11-30T17:00:00",
+        "isClosed": false,
+        "isValidSubmitIntrest": false,
+        "isValidRFP": false,
+        "isApplicable": true,
+        "canApply": false,
+        "opportunityType": {
+          "id": "1fb6e7a2-9b3c-4d5e-8f1a-2b3c4d5e6f7a",
+          "name": "Public",
+          "displayNameArabic": "عام",
+          "displayNameEnglish": "Public"
+        },
+        "realEstateCategory": {
+          "id": "6b66a00a-64d7-418e-8b90-978ed03320b0",
+          "name": "Water & Waste",
+          "displayNameArabic": "المياه والنفايات",
+          "displayNameEnglish": "Water & Waste"
+        },
+        "ownershipStructure": {
+          "id": "a74f4b84-c7b3-447d-a483-b77caca239fa",
+          "name": "Other",
+          "displayNameArabic": "أخرى",
+          "displayNameEnglish": "Other"
+        },
+        "ownershipStructureOtherEN": "PPP",
+        "ownershipStructureOtherAR": "الشراكة بين القطاع العام والخاص",
+        "estimatedCAPEX": "900000000",
+        "assetTypes": [
+          {
+            "id": "3ce06cb5-6af1-462d-8279-792740e2b7a8",
+            "name": "Land",
+            "displayNameArabic": "أرض",
+            "displayNameEnglish": "Land"
+          }
+        ],
+        "opportunityCategories": [
+          {
+            "id": "8e7ab477-095b-4cdb-ba4e-84a03d9c18c4",
+            "name": "Primary & Secondary Infrastructure",
+            "displayNameArabic": "البنية التحتية الأولية والثانوية",
+            "displayNameEnglish": "Primary & Secondary Infrastructure"
+          }
+        ],
+        "entityStatus": {
+          "id": -1,
+          "name": "None",
+          "displayNameArabic": "لم يتم إبداء الاهتمام",
+          "displayNameEnglish": "No Interest Expressed"
+        },
+        "attachments": []
+      },
+      {
+        "id": "f482f6c3-21f1-4dc6-a2c5-d318ead27a38",
+        "titleEN": "Enhancement and operation of Wastewater Treatment Plants – PPP Investment Opportunity",
+        "titleAR": "تحسين وتشغيل محطات معالجة مياه الصرف الصحي: فرصة للشراكة بين القطاع العام والخاص",
+        "displayOpportunityId": "RCU-OPP-000259",
+        "descriptionEN": "In alignment with the Privatization Plan approved by the National Center for Privatization, the Royal Commission for AlUla is advancing the rehabilitation and expansion of the Wastewater Treatment Plant to increase treatment capacity, support economic growth, and enhance environmental sustainability.\nThe project includes the rehabilitation of the existing plant with a capacity of 8,000 m³/day and its expansion using Moving Bed Biofilm Reactor (MBBR) technology in two phases, adding 18,000 m³/day in Phase I and 36,000 m³/day in Phase II, bringing the total treatment capacity to 62,000 m³/day, alongside treated wastewater storage and pumping facilities, control systems, and supporting infrastructure.\nThe project is planned to be delivered under a Build–Own–Operate–Transfer (BOOT) model, with a concession period of approximately 26 years, comprising 3 years of construction and rehabilitation and 23 years of operations, supported by capacity, output, and supplemental payments.\nThe RFP is expected to be launched in Q2 2027.",
+        "descriptionAR": "تماشيًا مع خطة التخصيص المعتمدة من المركز الوطني للتخصيص، تعمل الهيئة الملكية على إعادة تأهيل وتوسعة محطة معالجة مياه الصرف الصحي لتعزيز الطاقة الاستيعابية، ودعم النمو الاقتصادي، بما يحقق الاستدامة البيئية.\n\nيشمل المشروع إعادة تأهيل المحطة القائمة بطاقة 8,000 م³/يوميا، وتوسعتها باستخدام تقنية المفاعل الحيوي ذي الحشوات المتحركة على مرحلتين، بطاقة 18,000 م³/يومياً للمرحلة الأولى، و36,000 م³/يومياً للمرحلة الثانية، لتصل الطاقة الإجمالية إلى 62,000 م³/يومياً ، بالإضافة إلى مرافق تخزين وضخ المياه المعالجة، وأنظمة التحكم والمرافق الداعمة.\nمن المخطط تنفيذ المشروع وفق نموذج البناء والتملك والتشغيل ونقل الملكية ، بمدة امتياز تبلغ نحو 26 عامًا، تشمل 3 سنوات للإنشاء وإعادة التأهيل و23 عامًا للتشغيل، وبآلية مدفوعات قائمة على الطاقة الاستيعابية والإنتاج ومدفوعات تكميلية.\nمن المتوقع طرح طلب تقديم العروض في الربع الثاني من عام 2027.\n",
+        "rfpDescriptionEN": "In alignment with the Privatization Plan approved by the National Center for Privatization, the Royal Commission for AlUla is advancing the rehabilitation and expansion of the Wastewater Treatment Plant to increase treatment capacity, support economic growth, and enhance environmental sustainability.\nThe project includes the rehabilitation of the existing plant with a capacity of 8,000 m³/day and its expansion using Moving Bed Biofilm Reactor (MBBR) technology in two phases, adding 18,000 m³/day in Phase I and 36,000 m³/day in Phase II, bringing the total treatment capacity to 62,000 m³/day, alongside treated wastewater storage and pumping facilities, control systems, and supporting infrastructure.\nThe project is planned to be delivered under a Build–Own–Operate–Transfer (BOOT) model, with a concession period of approximately 26 years, comprising 3 years of construction and rehabilitation and 23 years of operations, supported by capacity, output, and supplemental payments.\nThe RFP is expected to be launched in Q2 2027.",
+        "rfpDescriptionAR": "تماشيًا مع خطة التخصيص المعتمدة من المركز الوطني للتخصيص، تعمل الهيئة الملكية على إعادة تأهيل وتوسعة محطة معالجة مياه الصرف الصحي لتعزيز الطاقة الاستيعابية، ودعم النمو الاقتصادي، بما يحقق الاستدامة البيئية.\n\nيشمل المشروع إعادة تأهيل المحطة القائمة بطاقة 8,000 م³/يوميا، وتوسعتها باستخدام تقنية المفاعل الحيوي ذي الحشوات المتحركة على مرحلتين، بطاقة 18,000 م³/يومياً للمرحلة الأولى، و36,000 م³/يومياً للمرحلة الثانية، لتصل الطاقة الإجمالية إلى 62,000 م³/يومياً ، بالإضافة إلى مرافق تخزين وضخ المياه المعالجة، وأنظمة التحكم والمرافق الداعمة.\nمن المخطط تنفيذ المشروع وفق نموذج البناء والتملك والتشغيل ونقل الملكية ، بمدة امتياز تبلغ نحو 26 عامًا، تشمل 3 سنوات للإنشاء وإعادة التأهيل و23 عامًا للتشغيل، وبآلية مدفوعات قائمة على الطاقة الاستيعابية والإنتاج ومدفوعات تكميلية.\nمن المتوقع طرح طلب تقديم العروض في الربع الثاني من عام 2027.\n",
+        "imageId": "8666a7f3-fe4f-41f1-9f30-ae635a03c523",
+        "latitude": 26.606149,
+        "longitude": 37.927985,
+        "parcelNumber": "",
+        "plotNumber": "",
+        "area": 501000,
+        "publishDate": "2026-10-20T17:40:00",
+        "submissionDeadline": "2027-05-31T17:00:00",
+        "isClosed": false,
+        "isValidSubmitIntrest": false,
+        "isValidRFP": false,
+        "isApplicable": true,
+        "canApply": false,
+        "opportunityType": {
+          "id": "1fb6e7a2-9b3c-4d5e-8f1a-2b3c4d5e6f7a",
+          "name": "Public",
+          "displayNameArabic": "عام",
+          "displayNameEnglish": "Public"
+        },
+        "realEstateCategory": {
+          "id": "6b66a00a-64d7-418e-8b90-978ed03320b0",
+          "name": "Water & Waste",
+          "displayNameArabic": "المياه والنفايات",
+          "displayNameEnglish": "Water & Waste"
+        },
+        "ownershipStructure": {
+          "id": "a74f4b84-c7b3-447d-a483-b77caca239fa",
+          "name": "Other",
+          "displayNameArabic": "أخرى",
+          "displayNameEnglish": "Other"
+        },
+        "ownershipStructureOtherEN": "PPP",
+        "ownershipStructureOtherAR": "الشراكة بين القطاع العام والخاص",
+        "estimatedCAPEX": "454000000",
+        "assetTypes": [
+          {
+            "id": "3ce06cb5-6af1-462d-8279-792740e2b7a8",
+            "name": "Land",
+            "displayNameArabic": "أرض",
+            "displayNameEnglish": "Land"
+          }
+        ],
+        "opportunityCategories": [
+          {
+            "id": "8e7ab477-095b-4cdb-ba4e-84a03d9c18c4",
+            "name": "Primary & Secondary Infrastructure",
+            "displayNameArabic": "البنية التحتية الأولية والثانوية",
+            "displayNameEnglish": "Primary & Secondary Infrastructure"
+          }
+        ],
+        "entityStatus": {
+          "id": -1,
+          "name": "None",
+          "displayNameArabic": "لم يتم إبداء الاهتمام",
+          "displayNameEnglish": "No Interest Expressed"
+        },
+        "attachments": []
+      },
+      {
+        "id": "6645c6e9-6bd4-4a93-88bc-baef67a77607",
+        "titleEN": "Development and Operation of a Solid Waste Management System – PPP Investment Opportunity",
+        "titleAR": "تطوير وتشغيل وإدارة النفايات الصلبة: فرصة للشراكة بين القطاع العام والخاص",
+        "displayOpportunityId": "RCU-OPP-000258",
+        "descriptionEN": "In alignment with the Privatization Plan approved by the National Center for Privatization, the Royal Commission for AlUla is advancing the development of an integrated solid waste management system in AlUla to enhance environmental sustainability, increase recycling rates, and support a sustainable economy.\nThe project includes the development of a Resource Management Park and a waste transfer station with a capacity of 76,000 tonnes annually, recycling facilities with a capacity of 45,000 tonnes annually, organic waste treatment facilities, construction and demolition waste processing facilities with a capacity of 220,000 tonnes annually, and engineered landfill cells with a total capacity of 5 million cubic metres, alongside supporting infrastructure.\nThe project is planned to be delivered under a Design–Build–Finance–Operate–Maintain (DBFOM) model, with a concession period of 30 years, comprising 3 years of construction and 27 years of operations, supported by performance-based payments and waste gate and transfer fees.\nThe RFP is planned to be launched in Q2 2027.",
+        "descriptionAR": "تماشيًا مع خطة التخصيص المعتمدة من المركز الوطني للتخصيص، تعمل الهيئة الملكية على تطوير منظومة متكاملة لإدارة النفايات الصلبة في العُلا، بهدف تعزيز الاستدامة البيئية، وزيادة معدلات إعادة التدوير، ودعم الاقتصاد المستدام \nيشمل المشروع تطوير مجمع لإدارة المواد ومحطة لنقل النفايات بطاقة 76 ألف طن سنويًا، ومرافق لإعادة التدوير بطاقة 45 ألف طن سنويًا، ومعالجة النفايات العضوية، ومخلفات البناء والهدم بطاقة 220 ألف طن سنويًا، إلى جانب خلايا ردم هندسية بسعة 5 ملايين متر مكعب، والمرافق الداعمة.\nمن المخطط تنفيذ المشروع وفق نموذج التصميم والبناء والتمويل والتشغيل والصيانة، بمدة امتياز تبلغ 30 عامًا، تشمل 3 سنوات للإنشاء و27 عامًا للتشغيل، وبآلية مدفوعات قائمة على الأداء ورسوم استقبال ونقل النفايات.\nمن المخطط طرح طلب تقديم العروض في الربع الثاني من عام 2027.",
+        "rfpDescriptionEN": "In alignment with the Privatization Plan approved by the National Center for Privatization, the Royal Commission for AlUla is advancing the development of an integrated solid waste management system in AlUla to enhance environmental sustainability, increase recycling rates, and support a sustainable economy.\nThe project includes the development of a Resource Management Park and a waste transfer station with a capacity of 76,000 tonnes annually, recycling facilities with a capacity of 45,000 tonnes annually, organic waste treatment facilities, construction and demolition waste processing facilities with a capacity of 220,000 tonnes annually, and engineered landfill cells with a total capacity of 5 million cubic metres, alongside supporting infrastructure.\nThe project is planned to be delivered under a Design–Build–Finance–Operate–Maintain (DBFOM) model, with a concession period of 30 years, comprising 3 years of construction and 27 years of operations, supported by performance-based payments and waste gate and transfer fees.\nThe RFP is planned to be launched in Q2 2027.",
+        "rfpDescriptionAR": "تماشيًا مع خطة التخصيص المعتمدة من المركز الوطني للتخصيص، تعمل الهيئة الملكية على تطوير منظومة متكاملة لإدارة النفايات الصلبة في العُلا، بهدف تعزيز الاستدامة البيئية، وزيادة معدلات إعادة التدوير، ودعم الاقتصاد المستدام \nيشمل المشروع تطوير مجمع لإدارة المواد ومحطة لنقل النفايات بطاقة 76 ألف طن سنويًا، ومرافق لإعادة التدوير بطاقة 45 ألف طن سنويًا، ومعالجة النفايات العضوية، ومخلفات البناء والهدم بطاقة 220 ألف طن سنويًا، إلى جانب خلايا ردم هندسية بسعة 5 ملايين متر مكعب، والمرافق الداعمة.\nمن المخطط تنفيذ المشروع وفق نموذج التصميم والبناء والتمويل والتشغيل والصيانة، بمدة امتياز تبلغ 30 عامًا، تشمل 3 سنوات للإنشاء و27 عامًا للتشغيل، وبآلية مدفوعات قائمة على الأداء ورسوم استقبال ونقل النفايات.\nمن المخطط طرح طلب تقديم العروض في الربع الثاني من عام 2027.",
+        "imageId": "202c1a92-ca80-4884-b831-9cdeb46bc8cc",
+        "latitude": 26.606149,
+        "longitude": 37.927985,
+        "parcelNumber": "",
+        "plotNumber": "",
+        "area": 1400000,
+        "publishDate": "2026-10-20T17:30:00",
+        "submissionDeadline": "2027-05-31T17:00:00",
+        "isClosed": false,
+        "isValidSubmitIntrest": false,
+        "isValidRFP": false,
+        "isApplicable": true,
+        "canApply": false,
+        "opportunityType": {
+          "id": "1fb6e7a2-9b3c-4d5e-8f1a-2b3c4d5e6f7a",
+          "name": "Public",
+          "displayNameArabic": "عام",
+          "displayNameEnglish": "Public"
+        },
+        "realEstateCategory": {
+          "id": "6b66a00a-64d7-418e-8b90-978ed03320b0",
+          "name": "Water & Waste",
+          "displayNameArabic": "المياه والنفايات",
+          "displayNameEnglish": "Water & Waste"
+        },
+        "ownershipStructure": {
+          "id": "a74f4b84-c7b3-447d-a483-b77caca239fa",
+          "name": "Other",
+          "displayNameArabic": "أخرى",
+          "displayNameEnglish": "Other"
+        },
+        "ownershipStructureOtherEN": "PPP",
+        "ownershipStructureOtherAR": "الشراكة بين القطاع العام والخاص",
+        "estimatedCAPEX": "1041000000",
+        "assetTypes": [
+          {
+            "id": "3ce06cb5-6af1-462d-8279-792740e2b7a8",
+            "name": "Land",
+            "displayNameArabic": "أرض",
+            "displayNameEnglish": "Land"
+          }
+        ],
+        "opportunityCategories": [
+          {
+            "id": "8e7ab477-095b-4cdb-ba4e-84a03d9c18c4",
+            "name": "Primary & Secondary Infrastructure",
+            "displayNameArabic": "البنية التحتية الأولية والثانوية",
+            "displayNameEnglish": "Primary & Secondary Infrastructure"
+          }
+        ],
+        "entityStatus": {
+          "id": -1,
+          "name": "None",
+          "displayNameArabic": "لم يتم إبداء الاهتمام",
+          "displayNameEnglish": "No Interest Expressed"
+        },
+        "attachments": []
+      },
+      {
+        "id": "b7941434-d0e8-4ddc-8857-49943f3b368f",
+        "titleEN": "Expansion of Secondary Roads– PPP Investment Opportunity",
+        "titleAR": "توسعة الطرق الفرعية : فرصة استثمارية للشراكة بين القطاعين العام والخاص",
+        "displayOpportunityId": "RCU-OPP-000257",
+        "descriptionEN": "In alignment with the Privatization Plan approved by the National Center for Privatization, the Royal Commission for AlUla is advancing the development of the secondary road network to enhance connectivity, support economic and tourism growth in AlUla, and facilitate access to new development areas, heritage sites, and nature reserves.\nThe project covers the development of 18 secondary road and utility corridors totalling approximately 1,400 km, including new road construction and integrated infrastructure for water supply, electricity, telecommunications, street lighting, and stormwater drainage.\nThe project is planned to be delivered under a Design–Build–Finance–Operate–Maintain (DBFOM) model, with an availability-based payment mechanism and a concession period of approximately 20 years. Operations and maintenance will cover roads only, with utilities handed over to the relevant entities.\nThe RFP process for the project packages is planned to commence in early 2028, with phased completion targeted by 2033.",
+        "descriptionAR": "تماشيًا مع خطة التخصيص المعتمدة من المركز الوطني للتخصيص، تعمل الهيئة الملكية على تطوير شبكة الطرق الثانوية بهدف تعزيز الربط ودعم النمو الاقتصادي والسياحي العلا. وتسهيل الوصول إلى مناطق التطوير الجديدة والمواقع التراثية والمحميات الطبيعية.\nيشمل المشروع تطوير 18 مسارًا للطرق الثانوية وشبكات المرافق والخدمات، بإجمالي أطوال يبلغ نحو 1,400 كيلومتر، بما في ذلك إنشاء طرق جديدة وتطوير البنية التحتية المتكاملة لشبكات المياه والكهرباء والاتصالات وإنارة الطرق وتصريف مياه الأمطار.\nمن المخطط تنفيذ المشروع وفق نموذج التصميم والبناء والتمويل والتشغيل والصيانة بآلية مدفوعات قائمة على الإتاحة، ومدة امتياز تبلغ نحو 20 عامًا. ويقتصر نطاق التشغيل والصيانة على الطرق فقط، على أن تُسلّم شبكات المرافق والخدمات إلى الجهات المختصة.\nمن المخطط البدء في طرح طلبات تقديم العروض للحزم في بداية 2028، على أن يتم إنجاز المشروع على مراحل حتى 2033",
+        "rfpDescriptionEN": "In alignment with the Privatization Plan approved by the National Center for Privatization, the Royal Commission for AlUla is advancing the development of the secondary road network to enhance connectivity, support economic and tourism growth in AlUla, and facilitate access to new development areas, heritage sites, and nature reserves.\nThe project covers the development of 18 secondary road and utility corridors totalling approximately 1,400 km, including new road construction and integrated infrastructure for water supply, electricity, telecommunications, street lighting, and stormwater drainage.\nThe project is planned to be delivered under a Design–Build–Finance–Operate–Maintain (DBFOM) model, with an availability-based payment mechanism and a concession period of approximately 20 years. Operations and maintenance will cover roads only, with utilities handed over to the relevant entities.\nThe RFP process for the project packages is planned to commence in early 2028, with phased completion targeted by 2033.",
+        "rfpDescriptionAR": "تماشيًا مع خطة التخصيص المعتمدة من المركز الوطني للتخصيص، تعمل الهيئة الملكية على تطوير شبكة الطرق الثانوية بهدف تعزيز الربط ودعم النمو الاقتصادي والسياحي العلا. وتسهيل الوصول إلى مناطق التطوير الجديدة والمواقع التراثية والمحميات الطبيعية.\nيشمل المشروع تطوير 18 مسارًا للطرق الثانوية وشبكات المرافق والخدمات، بإجمالي أطوال يبلغ نحو 1,400 كيلومتر، بما في ذلك إنشاء طرق جديدة وتطوير البنية التحتية المتكاملة لشبكات المياه والكهرباء والاتصالات وإنارة الطرق وتصريف مياه الأمطار.\nمن المخطط تنفيذ المشروع وفق نموذج التصميم والبناء والتمويل والتشغيل والصيانة بآلية مدفوعات قائمة على الإتاحة، ومدة امتياز تبلغ نحو 20 عامًا. ويقتصر نطاق التشغيل والصيانة على الطرق فقط، على أن تُسلّم شبكات المرافق والخدمات إلى الجهات المختصة.\nمن المخطط البدء في طرح طلبات تقديم العروض للحزم في بداية 2028، على أن يتم إنجاز المشروع على مراحل حتى 2033",
+        "imageId": "89eb552c-8852-47d0-84e4-770af2e8dc13",
+        "latitude": 26.605954,
+        "longitude": 37.928046,
+        "parcelNumber": "",
+        "plotNumber": "",
+        "area": 22000000,
+        "publishDate": "2026-10-19T17:30:00",
+        "submissionDeadline": "2027-09-30T17:00:00",
+        "isClosed": false,
+        "isValidSubmitIntrest": false,
+        "isValidRFP": false,
+        "isApplicable": true,
+        "canApply": false,
+        "opportunityType": {
+          "id": "1fb6e7a2-9b3c-4d5e-8f1a-2b3c4d5e6f7a",
+          "name": "Public",
+          "displayNameArabic": "عام",
+          "displayNameEnglish": "Public"
+        },
+        "realEstateCategory": {
+          "id": "04128486-ba12-41a0-aa29-56c70889a8de",
+          "name": "Transport (e.g., Roads, Rail, Airports)",
+          "displayNameArabic": "النقل (مثل الطرق والسكك الحديدية والمطارات)",
+          "displayNameEnglish": "Transport (e.g., Roads, Rail, Airports)"
+        },
+        "ownershipStructure": {
+          "id": "a74f4b84-c7b3-447d-a483-b77caca239fa",
+          "name": "Other",
+          "displayNameArabic": "أخرى",
+          "displayNameEnglish": "Other"
+        },
+        "ownershipStructureOtherEN": "PPP",
+        "ownershipStructureOtherAR": "الشراكة بين القطاع العام والخاص",
+        "estimatedCAPEX": "17000000000",
+        "assetTypes": [],
+        "opportunityCategories": [
+          {
+            "id": "8e7ab477-095b-4cdb-ba4e-84a03d9c18c4",
+            "name": "Primary & Secondary Infrastructure",
+            "displayNameArabic": "البنية التحتية الأولية والثانوية",
+            "displayNameEnglish": "Primary & Secondary Infrastructure"
+          }
+        ],
+        "entityStatus": {
+          "id": -1,
+          "name": "None",
+          "displayNameArabic": "لم يتم إبداء الاهتمام",
+          "displayNameEnglish": "No Interest Expressed"
+        },
+        "attachments": []
+      },
+      {
+        "id": "cea3d684-d766-4a97-b4f9-fbccaa72b187",
+        "titleEN": "Expansion of Highways and Primary Roads – PPP investment opportunity",
+        "titleAR": "مشاريع توسعة الطرق الرئيسية - فرصة استثمارية للشراكة بين القطاع العام والخاص",
+        "displayOpportunityId": "RCU-OPP-000256",
+        "descriptionEN": "In alignment with the Privatization Plan approved by the National Center for Privatization, the Royal Commission for AlUla is advancing the development and upgrade of the primary road network to enhance connectivity and support economic and tourism growth in AlUla.\nThe project covers the development and upgrade of five primary roads and associated utility networks, totalling 204 km, including new road construction, rehabilitation, cycling paths, and traffic-calming measures, alongside integrated water, electricity, telecommunications, and stormwater drainage infrastructure.\nThe project is planned to be delivered under a Design–Build–Finance–Operate–Maintain (DBFOM) model, with an availability-based payment mechanism and a concession period of 15 years. Operations and maintenance will cover roads only, with utilities handed over to the relevant entities.\nThe RFP process for the project packages is planned to commence in early 2028, with phased completion targeted by 2032.",
+        "descriptionAR": "تماشيًا مع خطة التخصيص المعتمدة من المركز الوطني للتخصيص، تعمل الهيئة الملكية على تطوير وتحديث شبكة الطرق الرئيسية بهدف تعزيز الربط ودعم النمو الاقتصادي والسياحي  في العلا\nيشمل المشروع تطوير وتحديث خمسة طرق رئيسية وشبكات المرافق والخدمات التابعة، بإجمالي أطوال 204 كيلومترات، بما في ذلك الإنشاء وإعادة التأهيل، وتوفير مسارات للدراجات الهوائية، وتطبيق إجراءات تهدئة الحركة المرورية، إلى جانب تطوير البنية التحتية المتكاملة لشبكات المياه والكهرباء والاتصالات وتصريف مياه الأمطار\nمن المخطط تنفيذ المشروع وفق نموذج التصميم والبناء والتمويل والتشغيل والصيانة بآلية مدفوعات قائمة على الإتاحة، ومدة امتياز 15 عامًا. ويقتصر نطاق التشغيل والصيانة على الطرق، على أن تُسلّم شبكات المرافق والخدمات إلى الجهات المختصة\nمن المخطط البدء في طرح طلبات تقديم العروض للحزم في بداية 2028، على أن يتم إنجاز المشروع على مراحل حتى 2032\n",
+        "rfpDescriptionEN": "In alignment with the Privatization Plan approved by the National Center for Privatization, the Royal Commission for AlUla is advancing the development and upgrade of the primary road network to enhance connectivity and support economic and tourism growth in AlUla.\nThe project covers the development and upgrade of five primary roads and associated utility networks, totalling 204 km, including new road construction, rehabilitation, cycling paths, and traffic-calming measures, alongside integrated water, electricity, telecommunications, and stormwater drainage infrastructure.\nThe project is planned to be delivered under a Design–Build–Finance–Operate–Maintain (DBFOM) model, with an availability-based payment mechanism and a concession period of 15 years. Operations and maintenance will cover roads only, with utilities handed over to the relevant entities.\nThe RFP process for the project packages is planned to commence in early 2028, with phased completion targeted by 2032.",
+        "rfpDescriptionAR": "تماشيًا مع خطة التخصيص المعتمدة من المركز الوطني للتخصيص، تعمل الهيئة الملكية على تطوير وتحديث شبكة الطرق الرئيسية بهدف تعزيز الربط ودعم النمو الاقتصادي والسياحي  في العلا\nيشمل المشروع تطوير وتحديث خمسة طرق رئيسية وشبكات المرافق والخدمات التابعة، بإجمالي أطوال 204 كيلومترات، بما في ذلك الإنشاء وإعادة التأهيل، وتوفير مسارات للدراجات الهوائية، وتطبيق إجراءات تهدئة الحركة المرورية، إلى جانب تطوير البنية التحتية المتكاملة لشبكات المياه والكهرباء والاتصالات وتصريف مياه الأمطار\nمن المخطط تنفيذ المشروع وفق نموذج التصميم والبناء والتمويل والتشغيل والصيانة بآلية مدفوعات قائمة على الإتاحة، ومدة امتياز 15 عامًا. ويقتصر نطاق التشغيل والصيانة على الطرق، على أن تُسلّم شبكات المرافق والخدمات إلى الجهات المختصة\nمن المخطط البدء في طرح طلبات تقديم العروض للحزم في بداية 2028، على أن يتم إنجاز المشروع على مراحل حتى 2032\n",
+        "imageId": "3013eddc-1fe5-4496-8f24-247da2e81665",
+        "latitude": 26.605954,
+        "longitude": 37.928046,
+        "parcelNumber": "",
+        "plotNumber": "",
+        "area": 3000000,
+        "publishDate": "2026-10-19T17:15:00",
+        "submissionDeadline": "2027-09-30T17:00:00",
+        "isClosed": false,
+        "isValidSubmitIntrest": false,
+        "isValidRFP": false,
+        "isApplicable": true,
+        "canApply": false,
+        "opportunityType": {
+          "id": "1fb6e7a2-9b3c-4d5e-8f1a-2b3c4d5e6f7a",
+          "name": "Public",
+          "displayNameArabic": "عام",
+          "displayNameEnglish": "Public"
+        },
+        "realEstateCategory": {
+          "id": "04128486-ba12-41a0-aa29-56c70889a8de",
+          "name": "Transport (e.g., Roads, Rail, Airports)",
+          "displayNameArabic": "النقل (مثل الطرق والسكك الحديدية والمطارات)",
+          "displayNameEnglish": "Transport (e.g., Roads, Rail, Airports)"
+        },
+        "ownershipStructure": {
+          "id": "a74f4b84-c7b3-447d-a483-b77caca239fa",
+          "name": "Other",
+          "displayNameArabic": "أخرى",
+          "displayNameEnglish": "Other"
+        },
+        "ownershipStructureOtherEN": "PPP",
+        "ownershipStructureOtherAR": "الشراكة بين القطاع العام والخاص",
+        "estimatedCAPEX": "4000000000",
+        "assetTypes": [],
+        "opportunityCategories": [
+          {
+            "id": "8e7ab477-095b-4cdb-ba4e-84a03d9c18c4",
+            "name": "Primary & Secondary Infrastructure",
+            "displayNameArabic": "البنية التحتية الأولية والثانوية",
+            "displayNameEnglish": "Primary & Secondary Infrastructure"
+          },
+          {
+            "id": "8e7ab477-095b-4cdb-ba4e-84a03d9c18c4",
+            "name": "Primary & Secondary Infrastructure",
+            "displayNameArabic": "البنية التحتية الأولية والثانوية",
+            "displayNameEnglish": "Primary & Secondary Infrastructure"
+          }
+        ],
+        "entityStatus": {
+          "id": -1,
+          "name": "None",
+          "displayNameArabic": "لم يتم إبداء الاهتمام",
+          "displayNameEnglish": "No Interest Expressed"
+        },
+        "attachments": []
+      },
+      {
+        "id": "0b54170e-49f1-4d95-925b-225e486d8eb2",
+        "titleEN": "AlUla international Airport Expansion – PPP Investment Opportunity",
+        "titleAR": "توسعة وتطوير مطار العلا الدولي: فرصة استثمارية للشراكة بين القطاع العام والخاص",
+        "displayOpportunityId": "RCU-OPP-000255",
+        "descriptionEN": "In alignment with the Privatization Plan approved by the National Center for Privatization, the Royal Commission for AlUla is advancing the expansion of AlUla International Airport to support economic and tourism growth and enhance AlUla’s air connectivity.\nThe project includes a new passenger terminal of approximately 30,000 sqm, with a capacity of up to 3 million passengers annually, a 5,000 sqm cargo terminal incorporating world-class equestrian facilities, a private aviation terminal of approximately 10,000 sqm, general aviation and helicopter facilities, and an extension of the runway to 3,000 metres, in addition to roads, parking, maintenance facilities, utilities, and fuel facilities.\nApproximately 1 million sqm of land is also available for complementary commercial uses, including logistics, retail, hospitality, and aviation services.\nThe project is planned to be delivered under a Build–Transfer–Operate (BTO) model, with a concession period of up to 35 years\nThe RFP is expected to be launched in Q3 2027, with project completion targeted by 2032\n",
+        "descriptionAR": "تماشيًا مع خطة التخصيص المعتمدة من المركز الوطني للتخصيص، تعمل الهيئة الملكية لمحافظة العلا على توسعة مطار العلا الدولي لدعم النمو السياحي وتعزيز الربط الجوي للعلا\n\nيشمل المشروع مبنى ركاب جديدًا بمساحة تقارب 30 ألف م² وبطاقة استيعابية تصل إلى 3 ملايين مسافر سنويًا، ومبنى للشحن الجوي بمساحة 5 آلاف م² يضم مرافق مخصصة للخيول والفروسية  وفق أعلى المعاييرالعالمية، ومبنى للطيران الخاص بمساحة تقارب 10 آلاف م²، ومرافق للطيران العام والمروحيات، وتمديد المدرج إلى 3 آلاف متر، إضافة إلى الطرق ومواقف السيارات ومرافق الصيانة والخدمات والوقود\n\nكما تتوفر نحو مليون م² من الأراضي لاستخدامات تجارية مكملة، تشمل الخدمات اللوجستية والتجزئة والضيافة وخدمات الطيران\n\nمن المخطط تنفيذ المشروع بنظام البناء–النقل–التشغيل، بمدة امتياز تصل إلى 35 عامًا.\n\nومن المتوقع طرح طلب تقديم العروض في الربع الثالث من عام 2027، وإنجاز المشروع بحلول عام 2032.",
+        "rfpDescriptionEN": "In alignment with the Privatization Plan approved by the National Center for Privatization, the Royal Commission for AlUla is advancing the expansion of AlUla International Airport to support economic and tourism growth and enhance AlUla’s air connectivity.\nThe project includes a new passenger terminal of approximately 30,000 sqm, with a capacity of up to 3 million passengers annually, a 5,000 sqm cargo terminal incorporating world-class equestrian facilities, a private aviation terminal of approximately 10,000 sqm, general aviation and helicopter facilities, and an extension of the runway to 3,000 metres, in addition to roads, parking, maintenance facilities, utilities, and fuel facilities.\nApproximately 1 million sqm of land is also available for complementary commercial uses, including logistics, retail, hospitality, and aviation services.\nThe project is planned to be delivered under a Build–Transfer–Operate (BTO) model, with a concession period of up to 35 years\nThe RFP is expected to be launched in Q3 2027, with project completion targeted by 2032\n",
+        "rfpDescriptionAR": "تماشيًا مع خطة التخصيص المعتمدة من المركز الوطني للتخصيص، تعمل الهيئة الملكية لمحافظة العلا على توسعة مطار العلا الدولي لدعم النمو السياحي وتعزيز الربط الجوي للعلا\n\nيشمل المشروع مبنى ركاب جديدًا بمساحة تقارب 30 ألف م² وبطاقة استيعابية تصل إلى 3 ملايين مسافر سنويًا، ومبنى للشحن الجوي بمساحة 5 آلاف م² يضم مرافق مخصصة للخيول والفروسية  وفق أعلى المعاييرالعالمية، ومبنى للطيران الخاص بمساحة تقارب 10 آلاف م²، ومرافق للطيران العام والمروحيات، وتمديد المدرج إلى 3 آلاف متر، إضافة إلى الطرق ومواقف السيارات ومرافق الصيانة والخدمات والوقود\n\nكما تتوفر نحو مليون م² من الأراضي لاستخدامات تجارية مكملة، تشمل الخدمات اللوجستية والتجزئة والضيافة وخدمات الطيران\n\nمن المخطط تنفيذ المشروع بنظام البناء–النقل–التشغيل، بمدة امتياز تصل إلى 35 عامًا.\n\nومن المتوقع طرح طلب تقديم العروض في الربع الثالث من عام 2027، وإنجاز المشروع بحلول عام 2032.",
+        "imageId": "e10ceabd-06d4-42a6-9663-4ef954e2947c",
+        "latitude": 26.480579,
+        "longitude": 38.118554,
+        "parcelNumber": "",
+        "plotNumber": "",
+        "area": 7000000,
+        "publishDate": "2026-10-19T17:00:00",
+        "submissionDeadline": "2027-06-30T17:00:00",
+        "isClosed": false,
+        "isValidSubmitIntrest": false,
+        "isValidRFP": false,
+        "isApplicable": true,
+        "canApply": false,
+        "opportunityType": {
+          "id": "1fb6e7a2-9b3c-4d5e-8f1a-2b3c4d5e6f7a",
+          "name": "Public",
+          "displayNameArabic": "عام",
+          "displayNameEnglish": "Public"
+        },
+        "realEstateCategory": {
+          "id": "04128486-ba12-41a0-aa29-56c70889a8de",
+          "name": "Transport (e.g., Roads, Rail, Airports)",
+          "displayNameArabic": "النقل (مثل الطرق والسكك الحديدية والمطارات)",
+          "displayNameEnglish": "Transport (e.g., Roads, Rail, Airports)"
+        },
+        "ownershipStructure": {
+          "id": "a74f4b84-c7b3-447d-a483-b77caca239fa",
+          "name": "Other",
+          "displayNameArabic": "أخرى",
+          "displayNameEnglish": "Other"
+        },
+        "ownershipStructureOtherEN": "PPP",
+        "ownershipStructureOtherAR": "الشراكة بين القطاع العام والخاص",
+        "estimatedCAPEX": "2000000000",
+        "gfa": "+45000",
+        "assetTypes": [
+          {
+            "id": "3ce06cb5-6af1-462d-8279-792740e2b7a8",
+            "name": "Land",
+            "displayNameArabic": "أرض",
+            "displayNameEnglish": "Land"
+          },
+          {
+            "id": "e8114a4a-f33c-4e5a-a255-5a5f182686cc",
+            "name": "Building",
+            "displayNameArabic": "مبنى",
+            "displayNameEnglish": "Building"
+          }
+        ],
+        "opportunityCategories": [
+          {
+            "id": "35dbc492-5b17-49df-8595-9f8af0d63cdb",
+            "name": "Logistics & Industrial",
+            "displayNameArabic": "الخدمات اللوجستية والصناعة",
+            "displayNameEnglish": "Logistics & Industrial"
+          },
+          {
+            "id": "8e7ab477-095b-4cdb-ba4e-84a03d9c18c4",
+            "name": "Primary & Secondary Infrastructure",
+            "displayNameArabic": "البنية التحتية الأولية والثانوية",
+            "displayNameEnglish": "Primary & Secondary Infrastructure"
+          }
+        ],
+        "entityStatus": {
+          "id": -1,
+          "name": "None",
+          "displayNameArabic": "لم يتم إبداء الاهتمام",
+          "displayNameEnglish": "No Interest Expressed"
+        },
+        "attachments": []
+      }
+    ],
+    "parameters": {
+      "page": {
+        "index": 1,
+        "size": 100
+      },
+      "pageSize": 100,
+      "pageNumber": 1
+    }
+  }
+}

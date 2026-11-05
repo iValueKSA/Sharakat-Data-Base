@@ -1,0 +1,20 @@
+{
+  "captured_at": "2026-10-28T09:35:56.436119+00:00",
+  "as_of_date": "2026-10-28",
+  "active_opportunities": 474,
+  "bucket_counts": {
+    "7d": 0,
+    "8_14d": 21,
+    "15_30d": 39,
+    "over_30d": 44,
+    "no_deadline": 370
+  },
+  "sum_of_five_buckets": 474,
+  "active_api_total": 474,
+  "active_api_returned": 474,
+  "mutually_exclusive": true,
+  "masters_in_multiple_buckets": 0,
+  "union_matches_active_ids": true,
+  "all_active_masters_exactly_once": true,
+  "reconciliation": "PASSED"
+}

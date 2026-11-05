@@ -1,0 +1,8 @@
+{
+  "status": "NOT_APPLICABLE",
+  "reason": "No Review Queue UI fields, components, or presentation logic were changed; the change affects backend review lifecycle and the queue count only.",
+  "ui_changed": false,
+  "rtl_relevant_ui_change": false,
+  "viewports_tested": [],
+  "browser_verification": "Not applicable because there is no UI change to validate."
+}

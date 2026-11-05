@@ -1,0 +1,293 @@
+{
+  "mode": "READ_ONLY_DRY_RUN",
+  "standardization_version": "4",
+  "rows": 11131,
+  "dimensions": {
+    "activity": {
+      "records_audited": 291,
+      "raw_distinct_values_before": 20,
+      "canonical_id_distinct_values_after_projection": 20,
+      "mapped_values": 5,
+      "validated_structured_values": 0,
+      "source_scoped_ids": 0,
+      "unmapped_values_left_unmodified": 14,
+      "review_required_values": 0,
+      "candidate_alias_groups": 0
+    },
+    "city": {
+      "records_audited": 291,
+      "raw_distinct_values_before": 8,
+      "canonical_id_distinct_values_after_projection": 8,
+      "mapped_values": 1,
+      "validated_structured_values": 0,
+      "source_scoped_ids": 0,
+      "unmapped_values_left_unmodified": 7,
+      "review_required_values": 0,
+      "candidate_alias_groups": 0
+    },
+    "district": {
+      "records_audited": 291,
+      "raw_distinct_values_before": 1,
+      "canonical_id_distinct_values_after_projection": 1,
+      "mapped_values": 0,
+      "validated_structured_values": 0,
+      "source_scoped_ids": 0,
+      "unmapped_values_left_unmodified": 0,
+      "review_required_values": 0,
+      "candidate_alias_groups": 0
+    },
+    "investment_model": {
+      "records_audited": 44,
+      "raw_distinct_values_before": 5,
+      "canonical_id_distinct_values_after_projection": 5,
+      "mapped_values": 0,
+      "validated_structured_values": 0,
+      "source_scoped_ids": 0,
+      "unmapped_values_left_unmodified": 5,
+      "review_required_values": 0,
+      "candidate_alias_groups": 0
+    },
+    "location": {
+      "records_audited": 291,
+      "raw_distinct_values_before": 8,
+      "canonical_id_distinct_values_after_projection": 8,
+      "mapped_values": 1,
+      "validated_structured_values": 0,
+      "source_scoped_ids": 0,
+      "unmapped_values_left_unmodified": 7,
+      "review_required_values": 0,
+      "candidate_alias_groups": 0
+    },
+    "official_source_id_normalized": {
+      "records_audited": 2555,
+      "raw_distinct_values_before": 2555,
+      "canonical_id_distinct_values_after_projection": 2555,
+      "mapped_values": 0,
+      "validated_structured_values": 0,
+      "source_scoped_ids": 2555,
+      "unmapped_values_left_unmodified": 0,
+      "review_required_values": 0,
+      "candidate_alias_groups": 0
+    },
+    "official_source_id_original": {
+      "records_audited": 2560,
+      "raw_distinct_values_before": 2560,
+      "canonical_id_distinct_values_after_projection": 2560,
+      "mapped_values": 0,
+      "validated_structured_values": 0,
+      "source_scoped_ids": 2560,
+      "unmapped_values_left_unmodified": 0,
+      "review_required_values": 0,
+      "candidate_alias_groups": 0
+    },
+    "opportunity_type": {
+      "records_audited": 291,
+      "raw_distinct_values_before": 20,
+      "canonical_id_distinct_values_after_projection": 20,
+      "mapped_values": 1,
+      "validated_structured_values": 0,
+      "source_scoped_ids": 0,
+      "unmapped_values_left_unmodified": 18,
+      "review_required_values": 0,
+      "candidate_alias_groups": 0
+    },
+    "owner": {
+      "records_audited": 291,
+      "raw_distinct_values_before": 10,
+      "canonical_id_distinct_values_after_projection": 7,
+      "mapped_values": 5,
+      "validated_structured_values": 0,
+      "source_scoped_ids": 0,
+      "unmapped_values_left_unmodified": 5,
+      "review_required_values": 0,
+      "candidate_alias_groups": 2
+    },
+    "project_stage": {
+      "records_audited": 50,
+      "raw_distinct_values_before": 7,
+      "canonical_id_distinct_values_after_projection": 7,
+      "mapped_values": 0,
+      "validated_structured_values": 0,
+      "source_scoped_ids": 0,
+      "unmapped_values_left_unmodified": 7,
+      "review_required_values": 0,
+      "candidate_alias_groups": 0
+    },
+    "publication_platform": {
+      "records_audited": 291,
+      "raw_distinct_values_before": 6,
+      "canonical_id_distinct_values_after_projection": 6,
+      "mapped_values": 0,
+      "validated_structured_values": 0,
+      "source_scoped_ids": 0,
+      "unmapped_values_left_unmodified": 6,
+      "review_required_values": 0,
+      "candidate_alias_groups": 0
+    },
+    "record_semantic_type": {
+      "records_audited": 5,
+      "raw_distinct_values_before": 1,
+      "canonical_id_distinct_values_after_projection": 1,
+      "mapped_values": 0,
+      "validated_structured_values": 0,
+      "source_scoped_ids": 0,
+      "unmapped_values_left_unmodified": 1,
+      "review_required_values": 0,
+      "candidate_alias_groups": 0
+    },
+    "reference_number": {
+      "records_audited": 291,
+      "raw_distinct_values_before": 184,
+      "canonical_id_distinct_values_after_projection": 184,
+      "mapped_values": 0,
+      "validated_structured_values": 0,
+      "source_scoped_ids": 0,
+      "unmapped_values_left_unmodified": 183,
+      "review_required_values": 0,
+      "candidate_alias_groups": 0
+    },
+    "sector": {
+      "records_audited": 291,
+      "raw_distinct_values_before": 20,
+      "canonical_id_distinct_values_after_projection": 20,
+      "mapped_values": 5,
+      "validated_structured_values": 0,
+      "source_scoped_ids": 0,
+      "unmapped_values_left_unmodified": 14,
+      "review_required_values": 0,
+      "candidate_alias_groups": 0
+    },
+    "source_area": {
+      "records_audited": 742,
+      "raw_distinct_values_before": 375,
+      "canonical_id_distinct_values_after_projection": 341,
+      "mapped_values": 0,
+      "validated_structured_values": 375,
+      "source_scoped_ids": 0,
+      "unmapped_values_left_unmodified": 0,
+      "review_required_values": 0,
+      "candidate_alias_groups": 30
+    },
+    "source_deadline": {
+      "records_audited": 285,
+      "raw_distinct_values_before": 52,
+      "canonical_id_distinct_values_after_projection": 52,
+      "mapped_values": 0,
+      "validated_structured_values": 52,
+      "source_scoped_ids": 0,
+      "unmapped_values_left_unmodified": 0,
+      "review_required_values": 0,
+      "candidate_alias_groups": 0
+    },
+    "source_location": {
+      "records_audited": 2674,
+      "raw_distinct_values_before": 147,
+      "canonical_id_distinct_values_after_projection": 147,
+      "mapped_values": 0,
+      "validated_structured_values": 0,
+      "source_scoped_ids": 0,
+      "unmapped_values_left_unmodified": 146,
+      "review_required_values": 0,
+      "candidate_alias_groups": 0
+    },
+    "source_owner": {
+      "records_audited": 2874,
+      "raw_distinct_values_before": 67,
+      "canonical_id_distinct_values_after_projection": 67,
+      "mapped_values": 0,
+      "validated_structured_values": 0,
+      "source_scoped_ids": 0,
+      "unmapped_values_left_unmodified": 67,
+      "review_required_values": 0,
+      "candidate_alias_groups": 1
+    },
+    "source_publication_date": {
+      "records_audited": 222,
+      "raw_distinct_values_before": 74,
+      "canonical_id_distinct_values_after_projection": 74,
+      "mapped_values": 0,
+      "validated_structured_values": 74,
+      "source_scoped_ids": 0,
+      "unmapped_values_left_unmodified": 0,
+      "review_required_values": 0,
+      "candidate_alias_groups": 0
+    },
+    "source_reference": {
+      "records_audited": 2732,
+      "raw_distinct_values_before": 2730,
+      "canonical_id_distinct_values_after_projection": 2730,
+      "mapped_values": 0,
+      "validated_structured_values": 0,
+      "source_scoped_ids": 2730,
+      "unmapped_values_left_unmodified": 0,
+      "review_required_values": 0,
+      "candidate_alias_groups": 0
+    },
+    "source_sector": {
+      "records_audited": 2774,
+      "raw_distinct_values_before": 133,
+      "canonical_id_distinct_values_after_projection": 133,
+      "mapped_values": 0,
+      "validated_structured_values": 0,
+      "source_scoped_ids": 0,
+      "unmapped_values_left_unmodified": 133,
+      "review_required_values": 0,
+      "candidate_alias_groups": 0
+    },
+    "source_status": {
+      "records_audited": 336,
+      "raw_distinct_values_before": 8,
+      "canonical_id_distinct_values_after_projection": 7,
+      "mapped_values": 0,
+      "validated_structured_values": 0,
+      "source_scoped_ids": 0,
+      "unmapped_values_left_unmodified": 8,
+      "review_required_values": 0,
+      "candidate_alias_groups": 1
+    },
+    "source_subsector": {
+      "records_audited": 462,
+      "raw_distinct_values_before": 18,
+      "canonical_id_distinct_values_after_projection": 18,
+      "mapped_values": 0,
+      "validated_structured_values": 0,
+      "source_scoped_ids": 0,
+      "unmapped_values_left_unmodified": 18,
+      "review_required_values": 0,
+      "candidate_alias_groups": 0
+    },
+    "source_url": {
+      "records_audited": 2898,
+      "raw_distinct_values_before": 2114,
+      "canonical_id_distinct_values_after_projection": 2114,
+      "mapped_values": 0,
+      "validated_structured_values": 2114,
+      "source_scoped_ids": 0,
+      "unmapped_values_left_unmodified": 0,
+      "review_required_values": 0,
+      "candidate_alias_groups": 0
+    },
+    "status": {
+      "records_audited": 291,
+      "raw_distinct_values_before": 7,
+      "canonical_id_distinct_values_after_projection": 6,
+      "mapped_values": 6,
+      "validated_structured_values": 0,
+      "source_scoped_ids": 0,
+      "unmapped_values_left_unmodified": 1,
+      "review_required_values": 0,
+      "candidate_alias_groups": 1
+    },
+    "subsector": {
+      "records_audited": 291,
+      "raw_distinct_values_before": 1,
+      "canonical_id_distinct_values_after_projection": 1,
+      "mapped_values": 0,
+      "validated_structured_values": 0,
+      "source_scoped_ids": 0,
+      "unmapped_values_left_unmodified": 0,
+      "review_required_values": 0,
+      "candidate_alias_groups": 0
+    }
+  }
+}

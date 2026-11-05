@@ -1,0 +1,149 @@
+{
+  "browser": "Microsoft Edge controlled by Playwright",
+  "viewport_checks": [
+    {
+      "width": 1920,
+      "documentWidth": 1920,
+      "bodyWidth": 1920,
+      "direction": "rtl",
+      "ownerLabels": [
+        "كل الجهات",
+        "أمانة الأحساء",
+        "جامعة الملك فيصل",
+        "وزارة البيئة والمياه والزراعة",
+        "وزارة الحرس الوطني",
+        "غير محدد"
+      ],
+      "resetVisible": true,
+      "toolbarControlsVisible": true,
+      "countText": "عرض 1–50 من 291 فرصة",
+      "screenshot": "docs/validation/data/owner-completion/screenshots/opportunities-1920x1080.png",
+      "noHorizontalOverflow": true,
+      "resetFullyVisible": true,
+      "controlsWithinViewport": true,
+      "unspecifiedOwnerReachable": true
+    },
+    {
+      "width": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "direction": "rtl",
+      "ownerLabels": [
+        "كل الجهات",
+        "أمانة الأحساء",
+        "جامعة الملك فيصل",
+        "وزارة البيئة والمياه والزراعة",
+        "وزارة الحرس الوطني",
+        "غير محدد"
+      ],
+      "resetVisible": true,
+      "toolbarControlsVisible": true,
+      "countText": "عرض 1–50 من 291 فرصة",
+      "screenshot": "docs/validation/data/owner-completion/screenshots/opportunities-1440x900.png",
+      "noHorizontalOverflow": true,
+      "resetFullyVisible": true,
+      "controlsWithinViewport": true,
+      "unspecifiedOwnerReachable": true
+    },
+    {
+      "width": 1366,
+      "documentWidth": 1366,
+      "bodyWidth": 1366,
+      "direction": "rtl",
+      "ownerLabels": [
+        "كل الجهات",
+        "أمانة الأحساء",
+        "جامعة الملك فيصل",
+        "وزارة البيئة والمياه والزراعة",
+        "وزارة الحرس الوطني",
+        "غير محدد"
+      ],
+      "resetVisible": true,
+      "toolbarControlsVisible": true,
+      "countText": "عرض 1–50 من 291 فرصة",
+      "screenshot": "docs/validation/data/owner-completion/screenshots/opportunities-1366x768.png",
+      "noHorizontalOverflow": true,
+      "resetFullyVisible": true,
+      "controlsWithinViewport": true,
+      "unspecifiedOwnerReachable": true
+    },
+    {
+      "width": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "direction": "rtl",
+      "ownerLabels": [
+        "كل الجهات",
+        "أمانة الأحساء",
+        "جامعة الملك فيصل",
+        "وزارة البيئة والمياه والزراعة",
+        "وزارة الحرس الوطني",
+        "غير محدد"
+      ],
+      "resetVisible": true,
+      "toolbarControlsVisible": true,
+      "countText": "عرض 1–50 من 291 فرصة",
+      "screenshot": "docs/validation/data/owner-completion/screenshots/opportunities-768x900.png",
+      "noHorizontalOverflow": true,
+      "resetFullyVisible": true,
+      "controlsWithinViewport": true,
+      "unspecifiedOwnerReachable": true
+    },
+    {
+      "width": 390,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "direction": "rtl",
+      "ownerLabels": [
+        "كل الجهات",
+        "أمانة الأحساء",
+        "جامعة الملك فيصل",
+        "وزارة البيئة والمياه والزراعة",
+        "وزارة الحرس الوطني",
+        "غير محدد"
+      ],
+      "resetVisible": true,
+      "toolbarControlsVisible": true,
+      "countText": "عرض 1–50 من 291 فرصة",
+      "screenshot": "docs/validation/data/owner-completion/screenshots/opportunities-390x844.png",
+      "noHorizontalOverflow": true,
+      "resetFullyVisible": true,
+      "controlsWithinViewport": true,
+      "unspecifiedOwnerReachable": true
+    }
+  ],
+  "functional_checks": {
+    "ownerOptionLabels": [
+      "كل الجهات",
+      "أمانة الأحساء",
+      "جامعة الملك فيصل",
+      "وزارة البيئة والمياه والزراعة",
+      "وزارة الحرس الوطني",
+      "غير محدد"
+    ],
+    "ownerOptionsMatchApi": true,
+    "ownerUnspecifiedOptionPresent": true,
+    "canonicalSpecifiedOwnerCount": 4,
+    "ownerAliasDuplicates": 0,
+    "tableHasOwnerColumn": true,
+    "master228RemainsDisplayedUnspecified": true,
+    "kfuOwnerFilterCount": 3,
+    "furasOwnerPublisherPlatform": true,
+    "unspecifiedApiStatus": 200,
+    "unspecifiedApiCount": 111,
+    "unspecifiedRowsAllUnspecified": true,
+    "unspecifiedUiCount": "عرض 1–50 من 111 فرصة",
+    "resetClearsOwnerAndRestores291": true,
+    "searchReturnsRows": true,
+    "paginationAdvances": true,
+    "detailShowsOwnerAndPublicationSemantics": true,
+    "csvStatus": 200,
+    "csvContentType": "text/csv; charset=utf-8",
+    "csvNonempty": true,
+    "xlsxStatus": 200,
+    "xlsxContentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "xlsxNonempty": true,
+    "rtl": true,
+    "westernDigits": true
+  }
+}

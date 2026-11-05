@@ -1,0 +1,18 @@
+{
+  "verification": "read-only SQL aggregate after UI validation",
+  "opportunities": 547,
+  "source_opportunities": 3138,
+  "source_observations": 23528,
+  "duplicate_candidates": {
+    "PENDING": 10,
+    "MERGED": 21,
+    "REJECTED": 16
+  },
+  "merge_audit_rows": 21,
+  "sync_jobs": 473,
+  "active_sync_jobs": 0,
+  "baseline_comparison": "counts match the available pre-task snapshot",
+  "review_state_changes": 0,
+  "business_data_changes": 0,
+  "manual_source_sync_started": false
+}

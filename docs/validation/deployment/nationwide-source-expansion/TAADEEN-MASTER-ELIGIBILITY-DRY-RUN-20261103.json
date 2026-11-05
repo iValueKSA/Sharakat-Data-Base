@@ -1,0 +1,1558 @@
+{
+  "artifact": "TAADEEN-MASTER-ELIGIBILITY-DRY-RUN-20261103.json",
+  "captured_at": "2026-11-03T12:46:56.696803+00:00",
+  "read_only": true,
+  "source_key": "taadeen-mining-bids",
+  "source_id": 14,
+  "today": "2026-11-03",
+  "record_count": 28,
+  "public_round_count": 4,
+  "public_rounds": [
+    {
+      "round_id": "exploration-licensing-tender-rounds-preliminary-plan-2026-2027",
+      "round_name": "Exploration Licensing Tender Rounds Preliminary Plan 2026-2027",
+      "round_url": "https://cms.taadeen.sa/en/mining-bids/exploration-licensing-tender-rounds-preliminary-plan-2026-2027",
+      "round_status": "Active",
+      "round_publication_date": null,
+      "round_application_start": null,
+      "round_application_deadline": null,
+      "round_regions": [
+        "Al Bahah Province",
+        "Asir Terrane",
+        "Hail Region",
+        "Makkah Region",
+        "Medina Region",
+        "Najran Region",
+        "Qassim Region",
+        "Riyadh Region"
+      ],
+      "round_area": "1.00 km²",
+      "round_stages": [
+        {
+          "date": "2026-02-01",
+          "stage": "1 2026-02-01 No Stages available"
+        }
+      ],
+      "round_documents": [
+        {
+          "name": "Exploration-Licensing-Tenders-Rounds-2026-2027.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-01/Exploration-Licensing-Tenders-Rounds-2026-2027.pdf&download=1"
+        }
+      ]
+    },
+    {
+      "round_id": "round-10",
+      "round_name": "Round 10",
+      "round_url": "https://cms.taadeen.sa/en/mining-bids/round-10",
+      "round_status": "Inactive",
+      "round_publication_date": null,
+      "round_application_start": "2025-08-21",
+      "round_application_deadline": "2025-12-15",
+      "round_regions": [
+        "Makkah Region",
+        "Medina Region",
+        "Qassim Region",
+        "Riyadh Region"
+      ],
+      "round_area": "11,302.00 km²",
+      "round_stages": [
+        {
+          "date": "2025-08-21",
+          "stage": "1 2025-08-21 Pre-Qualification Questionnaire Open window"
+        },
+        {
+          "date": "2025-12-15",
+          "stage": "2 2025-12-15 The Deadline for PQQ submission"
+        }
+      ],
+      "round_documents": [
+        {
+          "name": "2025-Licensing-Rounds---Maps-and-technical-writeup---14-Jan.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/2025-Licensing-Rounds---Maps-and-technical-writeup---14-Jan_0.pdf&download=1&filename=2025-Licensing-Rounds---Maps-and-technical-writeup---14-Jan.pdf"
+        },
+        {
+          "name": "MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx&download=1"
+        },
+        {
+          "name": "MIM-Licensing-Rounds---Consortium-Agreement---Template.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/MIM-Licensing-Rounds---Consortium-Agreement---Template.docx&download=1"
+        },
+        {
+          "name": "PRE-QUALIFICATION-QUESTIONNAIRE-(PQQ)_0.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/PRE-QUALIFICATION-QUESTIONNAIRE-%28PQQ%29_0.docx&download=1"
+        },
+        {
+          "name": "2026---Licensing-Round-10---Participation-Guidelines-(EN)_May-2026.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-06/2026---Licensing-Round-10---Participation-Guidelines-%28EN%29_May-2026.pdf&download=1"
+        }
+      ]
+    },
+    {
+      "round_id": "round-11",
+      "round_name": "Round 11",
+      "round_url": "https://cms.taadeen.sa/en/mining-bids/round-11",
+      "round_status": "Active",
+      "round_publication_date": null,
+      "round_application_start": "2026-01-13",
+      "round_application_deadline": "2026-07-31",
+      "round_regions": [
+        "Asir Terrane",
+        "Hail Region",
+        "Riyadh Region"
+      ],
+      "round_area": "1,878.00 km²",
+      "round_stages": [
+        {
+          "date": "2026-01-13",
+          "stage": "1 2026-01-13 Pre- Qualification Questionnaire Open Window"
+        },
+        {
+          "date": "2026-07-31",
+          "stage": "2 2026-07-31 The Deadline for PQQ submission"
+        }
+      ],
+      "round_documents": [
+        {
+          "name": "MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-01/MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx&download=1"
+        },
+        {
+          "name": "MIM-Licensing-Rounds---Consortium-Agreement---Template.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-01/MIM-Licensing-Rounds---Consortium-Agreement---Template.docx&download=1"
+        },
+        {
+          "name": "Round-11-Brochure.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-03/Round-11-Brochure.pdf&download=1"
+        },
+        {
+          "name": "PQQ-Submission-step-by-step-Guide.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-06/PQQ-Submission-step-by-step-Guide.pdf&download=1"
+        },
+        {
+          "name": "Round-11-sites-technical-report---2-Feb-2026.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-07/Round-11-sites-technical-report---2-Feb-2026.pdf&download=1"
+        }
+      ]
+    },
+    {
+      "round_id": "round-9",
+      "round_name": "Round 9",
+      "round_url": "https://cms.taadeen.sa/en/mining-bids/round-9",
+      "round_status": "Inactive",
+      "round_publication_date": null,
+      "round_application_start": null,
+      "round_application_deadline": null,
+      "round_regions": [
+        "Hail Region",
+        "Makkah Region",
+        "Medina Region",
+        "Qassim Region",
+        "Riyadh Region"
+      ],
+      "round_area": "24,964.00 km²",
+      "round_stages": [
+        {
+          "date": "2025-01-14",
+          "stage": "1 2025-01-14 بدء مرحلة التقييم المسبق PQQ"
+        },
+        {
+          "date": "2025-05-30",
+          "stage": "2 2025-05-30 نشر الإرشادات المتعلقة بالمنافسات"
+        },
+        {
+          "date": "2025-06-16",
+          "stage": "3 2025-06-16 الانتهاء من استقبال نماذج التأهيل المسبق PQQ"
+        },
+        {
+          "date": "2025-07-30",
+          "stage": "4 2025-07-30 بدء المنافسة"
+        },
+        {
+          "date": "2025-08-20",
+          "stage": "5 2025-08-20 انتهاء فترة المنافسة"
+        },
+        {
+          "date": "2025-08-29",
+          "stage": "6 2025-08-29 إعلان الفائزين"
+        },
+        {
+          "date": "2025-09-11",
+          "stage": "7 2025-09-11 Multi-Round Auction (MRA)"
+        }
+      ],
+      "round_documents": [
+        {
+          "name": "وثيقة-إرشادات-المشاركة-في-منافسات-رخص-الكشف-لعام-2025م.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D9%88%D8%AB%D9%8A%D9%82%D8%A9-%D8%A7%D9%95%D8%B1%D8%B4%D8%A7%D8%AF%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%83%D8%A9-%D9%81%D9%8A-%D9%85%D9%86%D8%A7%D9%81%D8%B3%D8%A7%D8%AA-%D8%B1%D8%AE%D8%B5-%D8%A7%D9%84%D9%83%D8%B4%D9%81-%D9%84%D8%B9%D8%A7%D9%85-2025%D9%85.pdf&download=1"
+        },
+        {
+          "name": "Why-Saudi-(From-Potential-to-Discovery).pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/Why-Saudi-%28From-Potential-to-Discovery%29.pdf&download=1"
+        },
+        {
+          "name": "PQQ---2025-Licensing-Rounds---14-Jan.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/PQQ---2025-Licensing-Rounds---14-Jan.docx&download=1"
+        },
+        {
+          "name": "Online-Bidding-Participation-Guidelines---July-2025.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/Online-Bidding-Participation-Guidelines---July-2025.pdf&download=1"
+        },
+        {
+          "name": "MIM-Licensing-Rounds---Consortium-Agreement---Template_0.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/MIM-Licensing-Rounds---Consortium-Agreement---Template_0.docx&download=1"
+        },
+        {
+          "name": "MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking_0.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking_0.docx&download=1"
+        },
+        {
+          "name": "Bidders-Clarifications---May-2025_6.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/Bidders-Clarifications---May-2025_6.pdf&download=1"
+        },
+        {
+          "name": "2025-Licensing-Rounds---Maps-and-technical-writeup---14-Jan.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/2025-Licensing-Rounds---Maps-and-technical-writeup---14-Jan.pdf&download=1"
+        }
+      ]
+    }
+  ],
+  "catalog_pages": 4,
+  "extraction_method": "PUBLIC_PAGINATED_HTML_WITH_ROUND_AND_SITE_DETAIL_PAGES",
+  "provider_id_field": "canonical public detail URL slug, namespaced by public round slug where present",
+  "provider_ids_unique": true,
+  "duplicate_provider_ids": [],
+  "closed_round_representation": "SOURCE_ONLY",
+  "closed_round_representation_reason": "Platform source-only capture is the governed representation for unqualified national/current rows; these Ta'adeen site bids are inactive/expired and were not existing canonical Masters. No historical Master was created.",
+  "disposition_counts": {
+    "A_READY_NEW_MASTER": 0,
+    "B_MATCH_EXISTING_MASTER": 0,
+    "C_IDENTITY_REVIEW": 0,
+    "D_NOT_QUALIFYING": 0,
+    "E_HISTORICAL_OR_NONCURRENT": 28,
+    "F_SAME_SOURCE_DUPLICATE_REVIEW": 0
+  },
+  "classification_total": 28,
+  "all_rows_classified_exactly_once": true,
+  "cross_source_identity_method": "Exact licence/block ID or direct coordinate evidence first; candidate review may use a high title score only with at least two additional exact source fields (region, area, minerals). Title alone never links.",
+  "cross_source_identity_candidate_count": 0,
+  "current_masters_created": 0,
+  "historical_masters_created": 0,
+  "existing_masters_linked": 0,
+  "direct_coordinate_records": 0,
+  "fabricated_coordinates": 0,
+  "records": [
+    {
+      "source_opportunity_id": "taadeen:round-10:nabitahad-duwayhi-dahlat-shabab-gold-belt-ii",
+      "site_id": "nabitahad-duwayhi-dahlat-shabab-gold-belt-ii",
+      "site_name": "NABITAH/AD- Duwayhi (DAHLAT SHABAB) Gold-Belt II",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/round-10/nabitahad-duwayhi-dahlat-shabab-gold-belt-ii",
+      "round_id": "round-10",
+      "round_name": "Round 10",
+      "round_status": "Inactive",
+      "site_status": "Inactive",
+      "round_application_start": "2025-08-21",
+      "application_deadline": "2025-12-15",
+      "deadline_passed": true,
+      "region": "Makkah Region - Riyadh Region",
+      "governorate_or_city": null,
+      "area": "854.00 km²",
+      "minerals": "Gold, Base Minerals and Precious Minerals",
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "2025-Licensing-Rounds---Maps-and-technical-writeup---14-Jan_0.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/2025-Licensing-Rounds---Maps-and-technical-writeup---14-Jan_0_2.pdf&download=1&filename=2025-Licensing-Rounds---Maps-and-technical-writeup---14-Jan_0.pdf"
+        },
+        {
+          "name": "MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking_0.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking_0_2.docx&download=1&filename=MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking_0.docx"
+        },
+        {
+          "name": "MIM-Licensing-Rounds---Consortium-Agreement---Template_0.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/MIM-Licensing-Rounds---Consortium-Agreement---Template_0_2.docx&download=1&filename=MIM-Licensing-Rounds---Consortium-Agreement---Template_0.docx"
+        },
+        {
+          "name": "PQQ---2025-Licensing-Rounds---14-Jan_0.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/PQQ---2025-Licensing-Rounds---14-Jan_0_2.docx&download=1&filename=PQQ---2025-Licensing-Rounds---14-Jan_0.docx"
+        },
+        {
+          "name": "NABITAHAD--Duwayhi-(DAHLAT-SHABAB)-Gold-Belt-II-inventory-sheet.xlsx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-04/NABITAHAD--Duwayhi-%28DAHLAT-SHABAB%29-Gold-Belt-II-inventory-sheet_0.xlsx&download=1&filename=NABITAHAD--Duwayhi-%28DAHLAT-SHABAB%29-Gold-Belt-II-inventory-sheet.xlsx"
+        },
+        {
+          "name": "Download Files",
+          "url": "https://axbfqlz5pef2.objectstorage.me-jeddah-1.oci.customer-oci.com/p/f3pxfB561gnLnR-NFKZjlRsLpw2whsqYduX9x-I8Y366aNtZJBOxNtbC_H-u2lTS/n/axbfqlz5pef2/b/prod-gis-files/o/roomdata_10/Nabitah_Duwayhi_II.zip"
+        }
+      ],
+      "application_url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/PQQ---2025-Licensing-Rounds---14-Jan_0_2.docx&download=1&filename=PQQ---2025-Licensing-Rounds---14-Jan_0.docx",
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:round-10:nuqrah-vms-belt-ii",
+      "site_id": "nuqrah-vms-belt-ii",
+      "site_name": "NUQRAH VMS-Belt II",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/round-10/nuqrah-vms-belt-ii",
+      "round_id": "round-10",
+      "round_name": "Round 10",
+      "round_status": "Inactive",
+      "site_status": "Inactive",
+      "round_application_start": "2025-08-21",
+      "application_deadline": "2025-12-15",
+      "deadline_passed": true,
+      "region": "Medina Region - Qassim Region",
+      "governorate_or_city": null,
+      "area": "3,461.81 km²",
+      "minerals": null,
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "2025-Licensing-Rounds---Maps-and-technical-writeup---14-Jan.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/2025-Licensing-Rounds---Maps-and-technical-writeup---14-Jan_1.pdf&download=1&filename=2025-Licensing-Rounds---Maps-and-technical-writeup---14-Jan.pdf"
+        },
+        {
+          "name": "MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking_1.docx&download=1&filename=MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx"
+        },
+        {
+          "name": "MIM-Licensing-Rounds---Consortium-Agreement---Template.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/MIM-Licensing-Rounds---Consortium-Agreement---Template_1.docx&download=1&filename=MIM-Licensing-Rounds---Consortium-Agreement---Template.docx"
+        },
+        {
+          "name": "PQQ---2025-Licensing-Rounds---14-Jan.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/PQQ---2025-Licensing-Rounds---14-Jan_0.docx&download=1&filename=PQQ---2025-Licensing-Rounds---14-Jan.docx"
+        },
+        {
+          "name": "NUQRAH-VMS-Belt-II-inventory-sheet.xlsx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-04/NUQRAH-VMS-Belt-II-inventory-sheet_1.xlsx&download=1&filename=NUQRAH-VMS-Belt-II-inventory-sheet.xlsx"
+        },
+        {
+          "name": "Download Files",
+          "url": "https://axbfqlz5pef2.objectstorage.me-jeddah-1.oci.customer-oci.com/p/f3pxfB561gnLnR-NFKZjlRsLpw2whsqYduX9x-I8Y366aNtZJBOxNtbC_H-u2lTS/n/axbfqlz5pef2/b/prod-gis-files/o/roomdata_10/Al_Nuqrah_II.zip"
+        }
+      ],
+      "application_url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/PQQ---2025-Licensing-Rounds---14-Jan_0.docx&download=1&filename=PQQ---2025-Licensing-Rounds---14-Jan.docx",
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:round-10:sukhaybrahas-safra-gold-belt-ii",
+      "site_id": "sukhaybrahas-safra-gold-belt-ii",
+      "site_name": "SUKHAYBRAH/AS SAFRA Gold-Belt II",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/round-10/sukhaybrahas-safra-gold-belt-ii",
+      "round_id": "round-10",
+      "round_name": "Round 10",
+      "round_status": "Inactive",
+      "site_status": "Inactive",
+      "round_application_start": "2025-08-21",
+      "application_deadline": "2025-12-15",
+      "deadline_passed": true,
+      "region": "Hail Region - Medina Region - Qassim Region",
+      "governorate_or_city": null,
+      "area": "3,179.52 km²",
+      "minerals": null,
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "2025-Licensing-Rounds---Maps-and-technical-writeup---14-Jan.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/2025-Licensing-Rounds---Maps-and-technical-writeup---14-Jan_2.pdf&download=1&filename=2025-Licensing-Rounds---Maps-and-technical-writeup---14-Jan.pdf"
+        },
+        {
+          "name": "MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking_2.docx&download=1&filename=MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx"
+        },
+        {
+          "name": "MIM-Licensing-Rounds---Consortium-Agreement---Template.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/MIM-Licensing-Rounds---Consortium-Agreement---Template_2.docx&download=1&filename=MIM-Licensing-Rounds---Consortium-Agreement---Template.docx"
+        },
+        {
+          "name": "PQQ---2025-Licensing-Rounds---14-Jan.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/PQQ---2025-Licensing-Rounds---14-Jan_1.docx&download=1&filename=PQQ---2025-Licensing-Rounds---14-Jan.docx"
+        },
+        {
+          "name": "SUKHAYBRAHAS-SAFRA-Gold-Belt-II-inventory-sheet.xlsx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-04/SUKHAYBRAHAS-SAFRA-Gold-Belt-II-inventory-sheet_0.xlsx&download=1&filename=SUKHAYBRAHAS-SAFRA-Gold-Belt-II-inventory-sheet.xlsx"
+        },
+        {
+          "name": "Download Files",
+          "url": "https://axbfqlz5pef2.objectstorage.me-jeddah-1.oci.customer-oci.com/p/f3pxfB561gnLnR-NFKZjlRsLpw2whsqYduX9x-I8Y366aNtZJBOxNtbC_H-u2lTS/n/axbfqlz5pef2/b/prod-gis-files/o/roomdata_10/Sukhaybrah_As_Safra_II.zip"
+        }
+      ],
+      "application_url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/PQQ---2025-Licensing-Rounds---14-Jan_1.docx&download=1&filename=PQQ---2025-Licensing-Rounds---14-Jan.docx",
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:round-11:al-khashbi",
+      "site_id": "al-khashbi",
+      "site_name": "Al Khashbi",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/round-11/al-khashbi",
+      "round_id": "round-11",
+      "round_name": "Round 11",
+      "round_status": "Active",
+      "site_status": "Inactive",
+      "round_application_start": "2026-01-13",
+      "application_deadline": "2026-07-31",
+      "deadline_passed": true,
+      "region": "Riyadh Region",
+      "governorate_or_city": null,
+      "area": "157.00 km²",
+      "minerals": "Gold, Silver, Copper, Nickel, Zinc",
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-01/MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking_5.docx&download=1&filename=MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx"
+        },
+        {
+          "name": "MIM-Licensing-Rounds---Consortium-Agreement---Template.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-01/MIM-Licensing-Rounds---Consortium-Agreement---Template_5.docx&download=1&filename=MIM-Licensing-Rounds---Consortium-Agreement---Template.docx"
+        },
+        {
+          "name": "Round-11-Brochure.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-03/Round-11-Brochure.pdf&download=1"
+        },
+        {
+          "name": "PQQ-Submission-step-by-step-Guide.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-06/PQQ-Submission-step-by-step-Guide.pdf&download=1"
+        },
+        {
+          "name": "Round-11-sites-technical-report---2-Feb-2026.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-07/Round-11-sites-technical-report---2-Feb-2026.pdf&download=1"
+        },
+        {
+          "name": "Download Files",
+          "url": "https://objectstorage.me-jeddah-1.oraclecloud.com/p/Kf0WigAukO1LTItJaeIlJcPI8gPoBmTFsW03ACu7KwZPhLAyC0OKITP28Qvyz3fj/n/axbfqlz5pef2/b/prod-gis-files/o/round_11/04%20Al%20Khashabi.zip"
+        }
+      ],
+      "application_url": "https://bidding.taadeen.sa/admin/pqq-forms/2DC4862B-7980-477F-8C3C-54F0BFED2610",
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:round-11:al-kushaymiyah",
+      "site_id": "al-kushaymiyah",
+      "site_name": "Al Kushaymiyah",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/round-11/al-kushaymiyah",
+      "round_id": "round-11",
+      "round_name": "Round 11",
+      "round_status": "Active",
+      "site_status": "Inactive",
+      "round_application_start": "2026-01-13",
+      "application_deadline": "2026-07-31",
+      "deadline_passed": true,
+      "region": "Riyadh Region",
+      "governorate_or_city": null,
+      "area": "98.15 km²",
+      "minerals": "Silver",
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-01/MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking_2.docx&download=1&filename=MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx"
+        },
+        {
+          "name": "MIM-Licensing-Rounds---Consortium-Agreement---Template.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-01/MIM-Licensing-Rounds---Consortium-Agreement---Template_2.docx&download=1&filename=MIM-Licensing-Rounds---Consortium-Agreement---Template.docx"
+        },
+        {
+          "name": "Round-11-Brochure.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-03/Round-11-Brochure.pdf&download=1"
+        },
+        {
+          "name": "PQQ-Submission-step-by-step-Guide.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-06/PQQ-Submission-step-by-step-Guide.pdf&download=1"
+        },
+        {
+          "name": "Round-11-sites-technical-report---2-Feb-2026.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-07/Round-11-sites-technical-report---2-Feb-2026.pdf&download=1"
+        },
+        {
+          "name": "Download Files",
+          "url": "https://objectstorage.me-jeddah-1.oraclecloud.com/p/Kf0WigAukO1LTItJaeIlJcPI8gPoBmTFsW03ACu7KwZPhLAyC0OKITP28Qvyz3fj/n/axbfqlz5pef2/b/prod-gis-files/o/round_11/02%20Al%20Kushaymaiyah.zip"
+        }
+      ],
+      "application_url": "https://bidding.taadeen.sa/admin/pqq-forms/2DC4862B-7980-477F-8C3C-54F0BFED2610",
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:round-11:ashab-adh-dhaib",
+      "site_id": "ashab-adh-dhaib",
+      "site_name": "Ashab adh Dhaib",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/round-11/ashab-adh-dhaib",
+      "round_id": "round-11",
+      "round_name": "Round 11",
+      "round_status": "Active",
+      "site_status": "Inactive",
+      "round_application_start": "2026-01-13",
+      "application_deadline": "2026-07-31",
+      "deadline_passed": true,
+      "region": "Riyadh Region",
+      "governorate_or_city": null,
+      "area": "188.94 km²",
+      "minerals": "Gold, Silver, Copper, Nickel, Zinc",
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-01/MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking_7.docx&download=1&filename=MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx"
+        },
+        {
+          "name": "MIM-Licensing-Rounds---Consortium-Agreement---Template.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-01/MIM-Licensing-Rounds---Consortium-Agreement---Template_7.docx&download=1&filename=MIM-Licensing-Rounds---Consortium-Agreement---Template.docx"
+        },
+        {
+          "name": "Round-11-Brochure.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-03/Round-11-Brochure.pdf&download=1"
+        },
+        {
+          "name": "PQQ-Submission-step-by-step-Guide.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-06/PQQ-Submission-step-by-step-Guide.pdf&download=1"
+        },
+        {
+          "name": "Round-11-sites-technical-report---2-Feb-2026.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-07/Round-11-sites-technical-report---2-Feb-2026.pdf&download=1"
+        },
+        {
+          "name": "Download Files",
+          "url": "https://objectstorage.me-jeddah-1.oraclecloud.com/p/RdgjyZUqfYGD8kP95U6ga6XD9vBxRyMPpFUH-3VJQb9VMphJm7gkce2gAoFnBt-t/n/axbfqlz5pef2/b/prod-gis-files/o/round_11/AshabAdhDhiab.zip"
+        }
+      ],
+      "application_url": "https://bidding.taadeen.sa/admin/pqq-forms/2DC4862B-7980-477F-8C3C-54F0BFED2610",
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:round-11:dilan-sumar-al-har-jabal-aqab",
+      "site_id": "dilan-sumar-al-har-jabal-aqab",
+      "site_name": "Dilan Sumar Al Har (Jabal aqab)",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/round-11/dilan-sumar-al-har-jabal-aqab",
+      "round_id": "round-11",
+      "round_name": "Round 11",
+      "round_status": "Active",
+      "site_status": "Inactive",
+      "round_application_start": "2026-01-13",
+      "application_deadline": "2026-07-31",
+      "deadline_passed": true,
+      "region": "Hail Region",
+      "governorate_or_city": null,
+      "area": "774.00 km²",
+      "minerals": "Gold, Silver, Copper, Nickel, Zinc",
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-01/MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking_1.docx&download=1&filename=MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx"
+        },
+        {
+          "name": "MIM-Licensing-Rounds---Consortium-Agreement---Template.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-01/MIM-Licensing-Rounds---Consortium-Agreement---Template_1.docx&download=1&filename=MIM-Licensing-Rounds---Consortium-Agreement---Template.docx"
+        },
+        {
+          "name": "Round-11-Brochure.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-03/Round-11-Brochure.pdf&download=1"
+        },
+        {
+          "name": "PQQ-Submission-step-by-step-Guide.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-06/PQQ-Submission-step-by-step-Guide.pdf&download=1"
+        },
+        {
+          "name": "Round-11-sites-technical-report---2-Feb-2026.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-07/Round-11-sites-technical-report---2-Feb-2026.pdf&download=1"
+        },
+        {
+          "name": "Download Files",
+          "url": "https://objectstorage.me-jeddah-1.oraclecloud.com/p/Kf0WigAukO1LTItJaeIlJcPI8gPoBmTFsW03ACu7KwZPhLAyC0OKITP28Qvyz3fj/n/axbfqlz5pef2/b/prod-gis-files/o/round_11/AEP_DATA_ROOM_II_DilanSumarAlHar.zip"
+        }
+      ],
+      "application_url": "https://bidding.taadeen.sa/admin/pqq-forms/2DC4862B-7980-477F-8C3C-54F0BFED2610",
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:round-11:jabal-idsas",
+      "site_id": "jabal-idsas",
+      "site_name": "Jabal Idsas",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/round-11/jabal-idsas",
+      "round_id": "round-11",
+      "round_name": "Round 11",
+      "round_status": "Active",
+      "site_status": "Inactive",
+      "round_application_start": "2026-01-13",
+      "application_deadline": "2026-07-31",
+      "deadline_passed": true,
+      "region": "Hail Region",
+      "governorate_or_city": null,
+      "area": "121.49 km²",
+      "minerals": "Iron Ore Fe > 40 %",
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-01/MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking_0.docx&download=1&filename=MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx"
+        },
+        {
+          "name": "MIM-Licensing-Rounds---Consortium-Agreement---Template.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-01/MIM-Licensing-Rounds---Consortium-Agreement---Template_0.docx&download=1&filename=MIM-Licensing-Rounds---Consortium-Agreement---Template.docx"
+        },
+        {
+          "name": "Round-11-Brochure.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-03/Round-11-Brochure.pdf&download=1"
+        },
+        {
+          "name": "PQQ-Submission-step-by-step-Guide.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-06/PQQ-Submission-step-by-step-Guide.pdf&download=1"
+        },
+        {
+          "name": "Round-11-sites-technical-report---2-Feb-2026.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-07/Round-11-sites-technical-report---2-Feb-2026.pdf&download=1"
+        },
+        {
+          "name": "Download Files",
+          "url": "https://objectstorage.me-jeddah-1.oraclecloud.com/p/Kf0WigAukO1LTItJaeIlJcPI8gPoBmTFsW03ACu7KwZPhLAyC0OKITP28Qvyz3fj/n/axbfqlz5pef2/b/prod-gis-files/o/round_11/AEP_DATA_ROOM_II_JabalIdsas.zip"
+        }
+      ],
+      "application_url": "https://bidding.taadeen.sa/admin/pqq-forms/2DC4862B-7980-477F-8C3C-54F0BFED2610",
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:round-11:jabal-mikhyat",
+      "site_id": "jabal-mikhyat",
+      "site_name": "Jabal Mikhyat",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/round-11/jabal-mikhyat",
+      "round_id": "round-11",
+      "round_name": "Round 11",
+      "round_status": "Active",
+      "site_status": "Inactive",
+      "round_application_start": "2026-01-13",
+      "application_deadline": "2026-07-31",
+      "deadline_passed": true,
+      "region": "Asir Terrane",
+      "governorate_or_city": null,
+      "area": "168.55 km²",
+      "minerals": "Gold, Silver, Copper, Nickel, Zinc",
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-01/MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking_3.docx&download=1&filename=MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx"
+        },
+        {
+          "name": "MIM-Licensing-Rounds---Consortium-Agreement---Template.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-01/MIM-Licensing-Rounds---Consortium-Agreement---Template_3.docx&download=1&filename=MIM-Licensing-Rounds---Consortium-Agreement---Template.docx"
+        },
+        {
+          "name": "Round-11-Brochure.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-03/Round-11-Brochure.pdf&download=1"
+        },
+        {
+          "name": "PQQ-Submission-step-by-step-Guide.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-06/PQQ-Submission-step-by-step-Guide.pdf&download=1"
+        },
+        {
+          "name": "Round-11-sites-technical-report---2-Feb-2026.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-07/Round-11-sites-technical-report---2-Feb-2026.pdf&download=1"
+        },
+        {
+          "name": "Download Files",
+          "url": "https://objectstorage.me-jeddah-1.oraclecloud.com/p/I3XwHBsuIZFp8scCWgtWBTWtXBFtnxKSzyeXEhdnlAZ9YsReOOrwpfeGMqZ_TPfv/n/axbfqlz5pef2/b/prod-gis-files/o/round_11/JabalMikhyat.zip"
+        }
+      ],
+      "application_url": "https://bidding.taadeen.sa/admin/pqq-forms/2DC4862B-7980-477F-8C3C-54F0BFED2610",
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:round-11:jabal-minyah",
+      "site_id": "jabal-minyah",
+      "site_name": "Jabal Minyah",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/round-11/jabal-minyah",
+      "round_id": "round-11",
+      "round_name": "Round 11",
+      "round_status": "Active",
+      "site_status": "Inactive",
+      "round_application_start": "2026-01-13",
+      "application_deadline": "2026-07-31",
+      "deadline_passed": true,
+      "region": "Riyadh Region",
+      "governorate_or_city": null,
+      "area": "280.88 km²",
+      "minerals": "Gold, Silver, Copper, Nickel, Zinc",
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-01/MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking_6.docx&download=1&filename=MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx"
+        },
+        {
+          "name": "MIM-Licensing-Rounds---Consortium-Agreement---Template.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-01/MIM-Licensing-Rounds---Consortium-Agreement---Template_6.docx&download=1&filename=MIM-Licensing-Rounds---Consortium-Agreement---Template.docx"
+        },
+        {
+          "name": "Round-11-Brochure.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-03/Round-11-Brochure.pdf&download=1"
+        },
+        {
+          "name": "PQQ-Submission-step-by-step-Guide.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-06/PQQ-Submission-step-by-step-Guide.pdf&download=1"
+        },
+        {
+          "name": "Round-11-sites-technical-report---2-Feb-2026.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-07/Round-11-sites-technical-report---2-Feb-2026.pdf&download=1"
+        },
+        {
+          "name": "Download Files",
+          "url": "https://objectstorage.me-jeddah-1.oraclecloud.com/p/Kf0WigAukO1LTItJaeIlJcPI8gPoBmTFsW03ACu7KwZPhLAyC0OKITP28Qvyz3fj/n/axbfqlz5pef2/b/prod-gis-files/o/round_11/AEP_DATA_ROOM_II_JabalMinyah.zip"
+        }
+      ],
+      "application_url": "https://bidding.taadeen.sa/admin/pqq-forms/2DC4862B-7980-477F-8C3C-54F0BFED2610",
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:round-11:wadi-khiyam",
+      "site_id": "wadi-khiyam",
+      "site_name": "Wadi Khiyam",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/round-11/wadi-khiyam",
+      "round_id": "round-11",
+      "round_name": "Round 11",
+      "round_status": "Active",
+      "site_status": "Inactive",
+      "round_application_start": "2026-01-13",
+      "application_deadline": "2026-07-31",
+      "deadline_passed": true,
+      "region": "Riyadh Region",
+      "governorate_or_city": null,
+      "area": "91.98 km²",
+      "minerals": "Gold, Silver, Copper, Nickel, Zinc",
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-01/MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking_4.docx&download=1&filename=MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx"
+        },
+        {
+          "name": "MIM-Licensing-Rounds---Consortium-Agreement---Template.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-01/MIM-Licensing-Rounds---Consortium-Agreement---Template_4.docx&download=1&filename=MIM-Licensing-Rounds---Consortium-Agreement---Template.docx"
+        },
+        {
+          "name": "Round-11-Brochure.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-03/Round-11-Brochure.pdf&download=1"
+        },
+        {
+          "name": "PQQ-Submission-step-by-step-Guide.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-06/PQQ-Submission-step-by-step-Guide.pdf&download=1"
+        },
+        {
+          "name": "Round-11-sites-technical-report---2-Feb-2026.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-07/Round-11-sites-technical-report---2-Feb-2026.pdf&download=1"
+        },
+        {
+          "name": "Download Files",
+          "url": "https://objectstorage.me-jeddah-1.oraclecloud.com/p/Kf0WigAukO1LTItJaeIlJcPI8gPoBmTFsW03ACu7KwZPhLAyC0OKITP28Qvyz3fj/n/axbfqlz5pef2/b/prod-gis-files/o/round_11/WadiKhiyam.zip"
+        }
+      ],
+      "application_url": "https://bidding.taadeen.sa/admin/pqq-forms/2DC4862B-7980-477F-8C3C-54F0BFED2610",
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:round-9:nabitahad-duwayhi-dahlat-shabab-gold-belt",
+      "site_id": "nabitahad-duwayhi-dahlat-shabab-gold-belt",
+      "site_name": "NABITAH/AD- Duwayhi (DAHLAT SHABAB) Gold-Belt",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/round-9/nabitahad-duwayhi-dahlat-shabab-gold-belt",
+      "round_id": "round-9",
+      "round_name": "Round 9",
+      "round_status": "Inactive",
+      "site_status": "Inactive",
+      "round_application_start": null,
+      "application_deadline": "2025-06-16",
+      "deadline_passed": true,
+      "region": "Makkah Region - Riyadh Region",
+      "governorate_or_city": null,
+      "area": "2,477.00 km²",
+      "minerals": "Gold, Base Minerals and Precious Minerals",
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "2025-Licensing-Rounds---Maps-and-technical-writeup---14-Jan_0.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/2025-Licensing-Rounds---Maps-and-technical-writeup---14-Jan_0_0.pdf&download=1&filename=2025-Licensing-Rounds---Maps-and-technical-writeup---14-Jan_0.pdf"
+        },
+        {
+          "name": "Bidders-Clarifications---May-2025_0.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/Bidders-Clarifications---May-2025_0.pdf&download=1"
+        },
+        {
+          "name": "MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking_0.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking_0_0.docx&download=1&filename=MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking_0.docx"
+        },
+        {
+          "name": "MIM-Licensing-Rounds---Consortium-Agreement---Template_0.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/MIM-Licensing-Rounds---Consortium-Agreement---Template_0_0.docx&download=1&filename=MIM-Licensing-Rounds---Consortium-Agreement---Template_0.docx"
+        },
+        {
+          "name": "PQQ---2025-Licensing-Rounds---14-Jan_0.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/PQQ---2025-Licensing-Rounds---14-Jan_0_0.docx&download=1&filename=PQQ---2025-Licensing-Rounds---14-Jan_0.docx"
+        },
+        {
+          "name": "Why-Saudi-(From-Potential-to-Discovery)_0.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/Why-Saudi-%28From-Potential-to-Discovery%29_0.pdf&download=1"
+        }
+      ],
+      "application_url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/PQQ---2025-Licensing-Rounds---14-Jan_0_0.docx&download=1&filename=PQQ---2025-Licensing-Rounds---14-Jan_0.docx",
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:round-9:nuqrah-vms-belt",
+      "site_id": "nuqrah-vms-belt",
+      "site_name": "NUQRAH VMS-Belt",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/round-9/nuqrah-vms-belt",
+      "round_id": "round-9",
+      "round_name": "Round 9",
+      "round_status": "Inactive",
+      "site_status": "Inactive",
+      "round_application_start": null,
+      "application_deadline": "2025-06-16",
+      "deadline_passed": true,
+      "region": "Hail Region - Medina Region - Qassim Region",
+      "governorate_or_city": null,
+      "area": "355.00 km²",
+      "minerals": "Gold, Silver, Copper and Associated Metals",
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "2025-Licensing-Rounds---Maps-and-technical-writeup---14-Jan_0.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/2025-Licensing-Rounds---Maps-and-technical-writeup---14-Jan_0_1.pdf&download=1&filename=2025-Licensing-Rounds---Maps-and-technical-writeup---14-Jan_0.pdf"
+        },
+        {
+          "name": "2025-Licensing-Rounds---Participation-Guidelines-(EN)---051025.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/2025-Licensing-Rounds---Participation-Guidelines-%28EN%29---051025.pdf&download=1"
+        },
+        {
+          "name": "Bidders-Clarifications---May-2025_0.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/Bidders-Clarifications---May-2025_0_0.pdf&download=1&filename=Bidders-Clarifications---May-2025_0.pdf"
+        },
+        {
+          "name": "MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking_0.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking_0_1.docx&download=1&filename=MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking_0.docx"
+        },
+        {
+          "name": "MIM-Licensing-Rounds---Consortium-Agreement---Template_0.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/MIM-Licensing-Rounds---Consortium-Agreement---Template_0_1.docx&download=1&filename=MIM-Licensing-Rounds---Consortium-Agreement---Template_0.docx"
+        },
+        {
+          "name": "PQQ---2025-Licensing-Rounds---14-Jan_0.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/PQQ---2025-Licensing-Rounds---14-Jan_0_1.docx&download=1&filename=PQQ---2025-Licensing-Rounds---14-Jan_0.docx"
+        },
+        {
+          "name": "Why-Saudi-(From-Potential-to-Discovery)_0.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/Why-Saudi-%28From-Potential-to-Discovery%29_0_0.pdf&download=1&filename=Why-Saudi-%28From-Potential-to-Discovery%29_0.pdf"
+        },
+        {
+          "name": "وثيقة-إرشادات-المشاركة-في-منافسات-رخص-الكشف-لعام-2025م.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D9%88%D8%AB%D9%8A%D9%82%D8%A9-%D8%A7%D9%95%D8%B1%D8%B4%D8%A7%D8%AF%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%83%D8%A9-%D9%81%D9%8A-%D9%85%D9%86%D8%A7%D9%81%D8%B3%D8%A7%D8%AA-%D8%B1%D8%AE%D8%B5-%D8%A7%D9%84%D9%83%D8%B4%D9%81-%D9%84%D8%B9%D8%A7%D9%85-2025%D9%85_0.pdf&download=1&filename=%D9%88%D8%AB%D9%8A%D9%82%D8%A9-%D8%A7%D9%95%D8%B1%D8%B4%D8%A7%D8%AF%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%83%D8%A9-%D9%81%D9%8A-%D9%85%D9%86%D8%A7%D9%81%D8%B3%D8%A7%D8%AA-%D8%B1%D8%AE%D8%B5-%D8%A7%D9%84%D9%83%D8%B4%D9%81-%D9%84%D8%B9%D8%A7%D9%85-2025%D9%85.pdf"
+        }
+      ],
+      "application_url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/PQQ---2025-Licensing-Rounds---14-Jan_0_1.docx&download=1&filename=PQQ---2025-Licensing-Rounds---14-Jan_0.docx",
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:round-9:sukhaybrahas-safra-gold-belt",
+      "site_id": "sukhaybrahas-safra-gold-belt",
+      "site_name": "SUKHAYBRAH/AS SAFRA Gold-Belt",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/round-9/sukhaybrahas-safra-gold-belt",
+      "round_id": "round-9",
+      "round_name": "Round 9",
+      "round_status": "Inactive",
+      "site_status": "Inactive",
+      "round_application_start": null,
+      "application_deadline": "2025-12-15",
+      "deadline_passed": true,
+      "region": "Hail Region - Medina Region - Qassim Region",
+      "governorate_or_city": null,
+      "area": "16,166.00 km²",
+      "minerals": null,
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "2025-Licensing-Rounds---Maps-and-technical-writeup---14-Jan.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/2025-Licensing-Rounds---Maps-and-technical-writeup---14-Jan_2.pdf&download=1&filename=2025-Licensing-Rounds---Maps-and-technical-writeup---14-Jan.pdf"
+        },
+        {
+          "name": "MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking_2.docx&download=1&filename=MIM---Exploration-Licensing-Rounds---Unilateral-ND-Undertaking.docx"
+        },
+        {
+          "name": "MIM-Licensing-Rounds---Consortium-Agreement---Template.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/MIM-Licensing-Rounds---Consortium-Agreement---Template_2.docx&download=1&filename=MIM-Licensing-Rounds---Consortium-Agreement---Template.docx"
+        },
+        {
+          "name": "PQQ---2025-Licensing-Rounds---14-Jan.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/PQQ---2025-Licensing-Rounds---14-Jan_1.docx&download=1&filename=PQQ---2025-Licensing-Rounds---14-Jan.docx"
+        }
+      ],
+      "application_url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/PQQ---2025-Licensing-Rounds---14-Jan_1.docx&download=1&filename=PQQ---2025-Licensing-Rounds---14-Jan.docx",
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:site:%D8%A7%D9%84%D9%85%D8%B3%D9%86%D8%A7%D8%A9",
+      "site_id": "%D8%A7%D9%84%D9%85%D8%B3%D9%86%D8%A7%D8%A9",
+      "site_name": "المسناة",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/%D8%A7%D9%84%D9%85%D8%B3%D9%86%D8%A7%D8%A9",
+      "round_id": null,
+      "round_name": null,
+      "round_status": null,
+      "site_status": "Inactive",
+      "round_application_start": null,
+      "application_deadline": "2024-12-10",
+      "deadline_passed": true,
+      "region": "Eastern Region",
+      "governorate_or_city": null,
+      "area": "248.00 km²",
+      "minerals": "بحص",
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "جدول-الاحداثيات-الجغرافية-للمواقع-المطروحة-للمنافسة-في-مجمع-المسناة_0_0.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D8%AC%D8%AF%D9%88%D9%84-%D8%A7%D9%84%D8%A7%D8%AD%D8%AF%D8%A7%D8%AB%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%BA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9-%D9%84%D9%84%D9%85%D9%88%D8%A7%D9%82%D8%B9-%D8%A7%D9%84%D9%85%D8%B7%D8%B1%D9%88%D8%AD%D8%A9-%D9%84%D9%84%D9%85%D9%86%D8%A7%D9%81%D8%B3%D8%A9-%D9%81%D9%8A-%D9%85%D8%AC%D9%85%D8%B9-%D8%A7%D9%84%D9%85%D8%B3%D9%86%D8%A7%D8%A9_0_0.pdf&download=1"
+        },
+        {
+          "name": "شروط-ومعايير-منافسة-المسناة_0.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D8%B4%D8%B1%D9%88%D8%B7-%D9%88%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D9%85%D9%86%D8%A7%D9%81%D8%B3%D8%A9-%D8%A7%D9%84%D9%85%D8%B3%D9%86%D8%A7%D8%A9_0.pdf&download=1"
+        },
+        {
+          "name": "نموذج-طلب-التأهيل---منافسة-المسناة_0.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D9%86%D9%85%D9%88%D8%B0%D8%AC-%D8%B7%D9%84%D8%A8-%D8%A7%D9%84%D8%AA%D8%A7%D9%94%D9%87%D9%8A%D9%84---%D9%85%D9%86%D8%A7%D9%81%D8%B3%D8%A9-%D8%A7%D9%84%D9%85%D8%B3%D9%86%D8%A7%D8%A9_0.docx&download=1"
+        }
+      ],
+      "application_url": null,
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:site:%D8%AC%D9%86%D9%88%D8%A8-%D9%88%D8%A7%D8%AF%D9%8A-%D8%B9%D9%85%D9%82",
+      "site_id": "%D8%AC%D9%86%D9%88%D8%A8-%D9%88%D8%A7%D8%AF%D9%8A-%D8%B9%D9%85%D9%82",
+      "site_name": "جنوب وادي عمق",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/%D8%AC%D9%86%D9%88%D8%A8-%D9%88%D8%A7%D8%AF%D9%8A-%D8%B9%D9%85%D9%82",
+      "round_id": null,
+      "round_name": null,
+      "round_status": null,
+      "site_status": "Inactive",
+      "round_application_start": null,
+      "application_deadline": "2024-12-10",
+      "deadline_passed": true,
+      "region": "Tabuk Region",
+      "governorate_or_city": null,
+      "area": "132.00 km²",
+      "minerals": "بحص",
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "جدول-الاحداثيات-الجغرافية-للمواقع-المطروحة-بمجمع-جنوب-وادي-عمق---منطقة-تبوك.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D8%AC%D8%AF%D9%88%D9%84-%D8%A7%D9%84%D8%A7%D8%AD%D8%AF%D8%A7%D8%AB%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%BA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9-%D9%84%D9%84%D9%85%D9%88%D8%A7%D9%82%D8%B9-%D8%A7%D9%84%D9%85%D8%B7%D8%B1%D9%88%D8%AD%D8%A9-%D8%A8%D9%85%D8%AC%D9%85%D8%B9-%D8%AC%D9%86%D9%88%D8%A8-%D9%88%D8%A7%D8%AF%D9%8A-%D8%B9%D9%85%D9%82---%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%AA%D8%A8%D9%88%D9%83.pdf&download=1"
+        },
+        {
+          "name": "شروط-ومعايير-المنافسة--منافسة-عمق.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D8%B4%D8%B1%D9%88%D8%B7-%D9%88%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D8%A7%D9%84%D9%85%D9%86%D8%A7%D9%81%D8%B3%D8%A9--%D9%85%D9%86%D8%A7%D9%81%D8%B3%D8%A9-%D8%B9%D9%85%D9%82.pdf&download=1"
+        },
+        {
+          "name": "نموذج-طلب-التأهيل---منافسة-عمق.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D9%86%D9%85%D9%88%D8%B0%D8%AC-%D8%B7%D9%84%D8%A8-%D8%A7%D9%84%D8%AA%D8%A7%D9%94%D9%87%D9%8A%D9%84---%D9%85%D9%86%D8%A7%D9%81%D8%B3%D8%A9-%D8%B9%D9%85%D9%82.docx&download=1"
+        }
+      ],
+      "application_url": null,
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:site:%D8%B4%D9%85%D8%A7%D9%84-%D8%BA%D8%B1%D8%A8-%D8%B3%D9%84%D9%88%D9%89",
+      "site_id": "%D8%B4%D9%85%D8%A7%D9%84-%D8%BA%D8%B1%D8%A8-%D8%B3%D9%84%D9%88%D9%89",
+      "site_name": "شمال غرب سلوى",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/%D8%B4%D9%85%D8%A7%D9%84-%D8%BA%D8%B1%D8%A8-%D8%B3%D9%84%D9%88%D9%89",
+      "round_id": null,
+      "round_name": null,
+      "round_status": null,
+      "site_status": "Inactive",
+      "round_application_start": null,
+      "application_deadline": "2024-12-10",
+      "deadline_passed": true,
+      "region": "Eastern Region",
+      "governorate_or_city": null,
+      "area": "247.00 km²",
+      "minerals": "بحص",
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "جدول-الاحداثيات-الجغرافية-للمواقع-المطروحة-بمجمع-شمال-غرب-سلوى.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D8%AC%D8%AF%D9%88%D9%84-%D8%A7%D9%84%D8%A7%D8%AD%D8%AF%D8%A7%D8%AB%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%BA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9-%D9%84%D9%84%D9%85%D9%88%D8%A7%D9%82%D8%B9-%D8%A7%D9%84%D9%85%D8%B7%D8%B1%D9%88%D8%AD%D8%A9-%D8%A8%D9%85%D8%AC%D9%85%D8%B9-%D8%B4%D9%85%D8%A7%D9%84-%D8%BA%D8%B1%D8%A8-%D8%B3%D9%84%D9%88%D9%89.pdf&download=1"
+        },
+        {
+          "name": "شروط-ومعايير-منافسة-شمال-غرب-سلوى.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D8%B4%D8%B1%D9%88%D8%B7-%D9%88%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D9%85%D9%86%D8%A7%D9%81%D8%B3%D8%A9-%D8%B4%D9%85%D8%A7%D9%84-%D8%BA%D8%B1%D8%A8-%D8%B3%D9%84%D9%88%D9%89.pdf&download=1"
+        },
+        {
+          "name": "نموذج-طلب-التأهيل---منافسة-سلوى.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D9%86%D9%85%D9%88%D8%B0%D8%AC-%D8%B7%D9%84%D8%A8-%D8%A7%D9%84%D8%AA%D8%A7%D9%94%D9%87%D9%8A%D9%84---%D9%85%D9%86%D8%A7%D9%81%D8%B3%D8%A9-%D8%B3%D9%84%D9%88%D9%89.docx&download=1"
+        }
+      ],
+      "application_url": null,
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:site:%D9%85%D8%AC%D9%85%D8%B9-%D9%83%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B5%D9%85%D8%A7%D9%86",
+      "site_id": "%D9%85%D8%AC%D9%85%D8%B9-%D9%83%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B5%D9%85%D8%A7%D9%86",
+      "site_name": "مجمع كسارات الصمان",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/%D9%85%D8%AC%D9%85%D8%B9-%D9%83%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B5%D9%85%D8%A7%D9%86",
+      "round_id": null,
+      "round_name": null,
+      "round_status": null,
+      "site_status": "Inactive",
+      "round_application_start": null,
+      "application_deadline": "2026-03-06",
+      "deadline_passed": true,
+      "region": "Eastern Region",
+      "governorate_or_city": null,
+      "area": "9.00 km²",
+      "minerals": "Aggregates: (any rock suitable to be crushed )",
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "برنامج-العمل.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-01/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A7%D9%84%D8%B9%D9%85%D9%84.docx&download=1"
+        },
+        {
+          "name": "خريطة-مجمع-كسارات-الصمان.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-01/%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D9%85%D8%AC%D9%85%D8%B9-%D9%83%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B5%D9%85%D8%A7%D9%86.pdf&download=1"
+        },
+        {
+          "name": "خطة-إدارة-الأثر-الاجتماعي.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-01/%D8%AE%D8%B7%D8%A9-%D8%A7%D9%95%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A7%D9%94%D8%AB%D8%B1-%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A.docx&download=1"
+        },
+        {
+          "name": "خطة-إدارة-الأثر-البيئي_0.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-01/%D8%AE%D8%B7%D8%A9-%D8%A7%D9%95%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A7%D9%94%D8%AB%D8%B1-%D8%A7%D9%84%D8%A8%D9%8A%D9%8A%D9%94%D9%8A_0.docx&download=1"
+        },
+        {
+          "name": "مجمع-كسارات-الصمان.kmz",
+          "url": "https://cms.taadeen.sa/oci-files/public?file=2026-01/%D9%85%D8%AC%D9%85%D8%B9-%D9%83%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B5%D9%85%D8%A7%D9%86.kmz&download=1"
+        },
+        {
+          "name": "_كراسة-شروط-ومعايير-الدخول-لمزايدة-الحصول-على-رخصة-محجر-مواد-بناء_1.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-03/_%D9%83%D8%B1%D8%A7%D8%B3%D8%A9-%D8%B4%D8%B1%D9%88%D8%B7-%D9%88%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84-%D9%84%D9%85%D8%B2%D8%A7%D9%8A%D8%AF%D8%A9-%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84-%D8%B9%D9%84%D9%89-%D8%B1%D8%AE%D8%B5%D8%A9-%D9%85%D8%AD%D8%AC%D8%B1-%D9%85%D9%88%D8%A7%D8%AF-%D8%A8%D9%86%D8%A7%D8%A1_1.pdf&download=1"
+        },
+        {
+          "name": "_معايير-وشروط-التأهيل-لمنافسة-الحصول-على-رخصة-محجر-مواد-بناء_1.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-03/_%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D9%88%D8%B4%D8%B1%D9%88%D8%B7-%D8%A7%D9%84%D8%AA%D8%A7%D9%94%D9%87%D9%8A%D9%84-%D9%84%D9%85%D9%86%D8%A7%D9%81%D8%B3%D8%A9-%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84-%D8%B9%D9%84%D9%89-%D8%B1%D8%AE%D8%B5%D8%A9-%D9%85%D8%AD%D8%AC%D8%B1-%D9%85%D9%88%D8%A7%D8%AF-%D8%A8%D9%86%D8%A7%D8%A1_1.pdf&download=1"
+        },
+        {
+          "name": "قائمة-المتأهلين-لمرحلة-المزايدة.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-04%2F%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D8%AA%D8%A3%D9%87%D9%84%D9%8A%D9%86-%D9%84%D9%85%D8%B1%D8%AD%D9%84%D8%A9-%D8%A7%D9%84%D9%85%D8%B2%D8%A7%D9%8A%D8%AF%D8%A9.pdf&download=1"
+        }
+      ],
+      "application_url": null,
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:site:al-halahilah",
+      "site_id": "al-halahilah",
+      "site_name": "Al Halahilah",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/al-halahilah",
+      "round_id": null,
+      "round_name": null,
+      "round_status": null,
+      "site_status": "Inactive",
+      "round_application_start": null,
+      "application_deadline": "2024-04-01",
+      "deadline_passed": true,
+      "region": "Asir Terrane",
+      "governorate_or_city": null,
+      "area": "34.00 km²",
+      "minerals": null,
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "Al-Halahilah--Information-Memorandum-(01-April-2024).pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/Al-Halahilah--Information-Memorandum-%2801-April-2024%29.pdf&download=1"
+        },
+        {
+          "name": "Auction-5-Licensing-Rounds---Proposal-Application-Form.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/Auction-5-Licensing-Rounds---Proposal-Application-Form.pdf&download=1"
+        }
+      ],
+      "application_url": null,
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:site:complex-sand-and-sub-base-ore-south-al-hair",
+      "site_id": "complex-sand-and-sub-base-ore-south-al-hair",
+      "site_name": "Complex of Sand and sub-base ore south of Al-Ha'ir",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/complex-sand-and-sub-base-ore-south-al-hair",
+      "round_id": null,
+      "round_name": null,
+      "round_status": null,
+      "site_status": "Inactive",
+      "round_application_start": null,
+      "application_deadline": "2026-08-09",
+      "deadline_passed": true,
+      "region": "Riyadh Region",
+      "governorate_or_city": null,
+      "area": "2.25 km²",
+      "minerals": "sand and gravel",
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "‪قائمة-المتأهلين-لمرحلة-المزايدة-لمجمع-خام-الرمل-والردميات-جنوب-الحائر.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-10%2F%E2%80%AA%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D8%AA%D8%A3%D9%87%D9%84%D9%8A%D9%86-%D9%84%D9%85%D8%B1%D8%AD%D9%84%D8%A9-%D8%A7%D9%84%D9%85%D8%B2%D8%A7%D9%8A%D8%AF%D8%A9-%D9%84%D9%85%D8%AC%D9%85%D8%B9-%D8%AE%D8%A7%D9%85-%D8%A7%D9%84%D8%B1%D9%85%D9%84-%D9%88%D8%A7%D9%84%D8%B1%D8%AF%D9%85%D9%8A%D8%A7%D8%AA-%D8%AC%D9%86%D9%88%D8%A8-%D8%A7%D9%84%D8%AD%D8%A7%D8%A6%D8%B1.pdf&download=1"
+        }
+      ],
+      "application_url": null,
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:site:jabal-al-klah-north%E2%80%8B",
+      "site_id": "jabal-al-klah-north%E2%80%8B",
+      "site_name": "Jabal al Klah North​",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/jabal-al-klah-north%E2%80%8B",
+      "round_id": null,
+      "round_name": null,
+      "round_status": null,
+      "site_status": "Inactive",
+      "round_application_start": null,
+      "application_deadline": "2024-10-20",
+      "deadline_passed": true,
+      "region": "Riyadh Region",
+      "governorate_or_city": null,
+      "area": "98.15 km²",
+      "minerals": null,
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "Jabal-Al-Khilah---North---Information-Memorandum---201024---FINAL.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/Jabal-Al-Khilah---North---Information-Memorandum---201024---FINAL.pdf&download=1"
+        },
+        {
+          "name": "Jabal-al-Klah-North---Map.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/Jabal-al-Klah-North---Map.pdf&download=1"
+        },
+        {
+          "name": "Mineral-Exploration-Opportunities-in-the-Kingdom-of-Saudi-Arabia-V2.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/Mineral-Exploration-Opportunities-in-the-Kingdom-of-Saudi-Arabia-V2_0.pdf&download=1&filename=Mineral-Exploration-Opportunities-in-the-Kingdom-of-Saudi-Arabia-V2.pdf"
+        },
+        {
+          "name": "Proposal-Application-Form--Round-7-Exploration-Licensing_3.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/Proposal-Application-Form--Round-7-Exploration-Licensing_3.docx&download=1"
+        }
+      ],
+      "application_url": null,
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:site:jabal-baudan%E2%80%8B",
+      "site_id": "jabal-baudan%E2%80%8B",
+      "site_name": "Jabal Baudan​",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/jabal-baudan%E2%80%8B",
+      "round_id": null,
+      "round_name": null,
+      "round_status": null,
+      "site_status": "Inactive",
+      "round_application_start": null,
+      "application_deadline": "2024-10-20",
+      "deadline_passed": true,
+      "region": "Riyadh Region",
+      "governorate_or_city": null,
+      "area": "244.92 km²",
+      "minerals": null,
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "Jabal-Baudan---Information-Memorandum---201024---FINAL.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/Jabal-Baudan---Information-Memorandum---201024---FINAL.pdf&download=1"
+        },
+        {
+          "name": "Jabal-Baudan---Map.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/Jabal-Baudan---Map.pdf&download=1"
+        },
+        {
+          "name": "Mineral-Exploration-Opportunities-in-the-Kingdom-of-Saudi-Arabia-V2.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/Mineral-Exploration-Opportunities-in-the-Kingdom-of-Saudi-Arabia-V2.pdf&download=1"
+        },
+        {
+          "name": "Proposal-Application-Form--Round-7-Exploration-Licensing_5.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/Proposal-Application-Form--Round-7-Exploration-Licensing_5.docx&download=1"
+        }
+      ],
+      "application_url": null,
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:site:jabal-sayid",
+      "site_id": "jabal-sayid",
+      "site_name": "Jabal Sayid",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/jabal-sayid",
+      "round_id": null,
+      "round_name": null,
+      "round_status": null,
+      "site_status": "Inactive",
+      "round_application_start": null,
+      "application_deadline": "2024-10-31",
+      "deadline_passed": true,
+      "region": "Medina Region",
+      "governorate_or_city": null,
+      "area": "2,892.28 km²",
+      "minerals": null,
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "Exploration-Licensing-Round---Jabal-Sayid-Mineralised-Belt_Digital.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/Exploration-Licensing-Round---Jabal-Sayid-Mineralised-Belt_Digital.pdf&download=1"
+        },
+        {
+          "name": "Jabal-Sayid-Mineralized-Belt---Map-and-Technical-Writeup.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/Jabal-Sayid-Mineralized-Belt---Map-and-Technical-Writeup.pdf&download=1"
+        },
+        {
+          "name": "Mineral-Exploration-Opportunities-in-the-Kingdom-of-Saudi-Arabia-V2.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/Mineral-Exploration-Opportunities-in-the-Kingdom-of-Saudi-Arabia-V2_2.pdf&download=1&filename=Mineral-Exploration-Opportunities-in-the-Kingdom-of-Saudi-Arabia-V2.pdf"
+        },
+        {
+          "name": "Mining-Project---UAD---Unilateral-ND-Undertaking.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/Mining-Project---UAD---Unilateral-ND-Undertaking.pdf&download=1"
+        },
+        {
+          "name": "PQQ---2024---Belts-Exploration-Licensing.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/PQQ---2024---Belts-Exploration-Licensing.docx&download=1"
+        }
+      ],
+      "application_url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/PQQ---2024---Belts-Exploration-Licensing.docx&download=1",
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:site:salt-ore-site-sabkhat-umm-al-shuraybat-aba-al-hamam-and-al-mamlaha-south-abqaiq",
+      "site_id": "salt-ore-site-sabkhat-umm-al-shuraybat-aba-al-hamam-and-al-mamlaha-south-abqaiq",
+      "site_name": "Salt Ore Site at the Sabkhat of Umm Al-Shuraybat, Aba Al-Hamam, and Al-Mamlaha, South of Abqaiq",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/salt-ore-site-sabkhat-umm-al-shuraybat-aba-al-hamam-and-al-mamlaha-south-abqaiq",
+      "round_id": null,
+      "round_name": null,
+      "round_status": null,
+      "site_status": "Inactive",
+      "round_application_start": null,
+      "application_deadline": "2026-08-28",
+      "deadline_passed": true,
+      "region": "Eastern Region",
+      "governorate_or_city": null,
+      "area": "10.45 km²",
+      "minerals": "Salt",
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "قائمة-المتاهلين-لمرحلة-المزايدة.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-09%2F%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D8%AA%D8%A7%D9%87%D9%84%D9%8A%D9%86-%D9%84%D9%85%D8%B1%D8%AD%D9%84%D8%A9-%D8%A7%D9%84%D9%85%D8%B2%D8%A7%D9%8A%D8%AF%D8%A9.pdf&download=1"
+        }
+      ],
+      "application_url": null,
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:site:sand-ore-and-backfill-complex-jubaihah",
+      "site_id": "sand-ore-and-backfill-complex-jubaihah",
+      "site_name": "Sand ore and backfill complex in Jubaihah",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/sand-ore-and-backfill-complex-jubaihah",
+      "round_id": null,
+      "round_name": null,
+      "round_status": null,
+      "site_status": "Inactive",
+      "round_application_start": null,
+      "application_deadline": null,
+      "deadline_passed": false,
+      "region": "Makkah Region",
+      "governorate_or_city": null,
+      "area": "45.57 km²",
+      "minerals": null,
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "برنامج-العمل.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A7%D9%84%D8%B9%D9%85%D9%84_0.docx&download=1&filename=%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A7%D9%84%D8%B9%D9%85%D9%84.docx"
+        },
+        {
+          "name": "خطة-إدارة-الأثر-الاجتماعي.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D8%AE%D8%B7%D8%A9-%D8%A7%D9%95%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A7%D9%94%D8%AB%D8%B1-%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A_0.docx&download=1&filename=%D8%AE%D8%B7%D8%A9-%D8%A7%D9%95%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A7%D9%94%D8%AB%D8%B1-%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A.docx"
+        },
+        {
+          "name": "خطة-إدارة-الأثر-البيئي.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D8%AE%D8%B7%D8%A9-%D8%A7%D9%95%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A7%D9%94%D8%AB%D8%B1-%D8%A7%D9%84%D8%A8%D9%8A%D9%8A%D9%94%D9%8A_0.docx&download=1&filename=%D8%AE%D8%B7%D8%A9-%D8%A7%D9%95%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A7%D9%94%D8%AB%D8%B1-%D8%A7%D9%84%D8%A8%D9%8A%D9%8A%D9%94%D9%8A.docx"
+        },
+        {
+          "name": "كراسة-شروط-ومعايير-الدخول-لمزايدة-الحصول-على-رخصة-محجر-مواد-بناء.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D9%83%D8%B1%D8%A7%D8%B3%D8%A9-%D8%B4%D8%B1%D9%88%D8%B7-%D9%88%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84-%D9%84%D9%85%D8%B2%D8%A7%D9%8A%D8%AF%D8%A9-%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84-%D8%B9%D9%84%D9%89-%D8%B1%D8%AE%D8%B5%D8%A9-%D9%85%D8%AD%D8%AC%D8%B1-%D9%85%D9%88%D8%A7%D8%AF-%D8%A8%D9%86%D8%A7%D8%A1_0.pdf&download=1&filename=%D9%83%D8%B1%D8%A7%D8%B3%D8%A9-%D8%B4%D8%B1%D9%88%D8%B7-%D9%88%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84-%D9%84%D9%85%D8%B2%D8%A7%D9%8A%D8%AF%D8%A9-%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84-%D8%B9%D9%84%D9%89-%D8%B1%D8%AE%D8%B5%D8%A9-%D9%85%D8%AD%D8%AC%D8%B1-%D9%85%D9%88%D8%A7%D8%AF-%D8%A8%D9%86%D8%A7%D8%A1.pdf"
+        },
+        {
+          "name": "مجمع-خام-الرمل-والردميات-بالجبيهة.kmz",
+          "url": "https://cms.taadeen.sa/oci-files/public?file=2025-12/%D9%85%D8%AC%D9%85%D8%B9-%D8%AE%D8%A7%D9%85-%D8%A7%D9%84%D8%B1%D9%85%D9%84-%D9%88%D8%A7%D9%84%D8%B1%D8%AF%D9%85%D9%8A%D8%A7%D8%AA-%D8%A8%D8%A7%D9%84%D8%AC%D8%A8%D9%8A%D9%87%D8%A9.kmz&download=1"
+        },
+        {
+          "name": "مجمع-خام-الرمل-والردميات-بالجبيهة.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D9%85%D8%AC%D9%85%D8%B9-%D8%AE%D8%A7%D9%85-%D8%A7%D9%84%D8%B1%D9%85%D9%84-%D9%88%D8%A7%D9%84%D8%B1%D8%AF%D9%85%D9%8A%D8%A7%D8%AA-%D8%A8%D8%A7%D9%84%D8%AC%D8%A8%D9%8A%D9%87%D8%A9.pdf&download=1"
+        },
+        {
+          "name": "معايير-وشروط-التأهيل-لمنافسة-الحصول-على-رخصة-محجر-مواد-بناء.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D9%88%D8%B4%D8%B1%D9%88%D8%B7-%D8%A7%D9%84%D8%AA%D8%A7%D9%94%D9%87%D9%8A%D9%84-%D9%84%D9%85%D9%86%D8%A7%D9%81%D8%B3%D8%A9-%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84-%D8%B9%D9%84%D9%89-%D8%B1%D8%AE%D8%B5%D8%A9-%D9%85%D8%AD%D8%AC%D8%B1-%D9%85%D9%88%D8%A7%D8%AF-%D8%A8%D9%86%D8%A7%D8%A1_0.pdf&download=1&filename=%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D9%88%D8%B4%D8%B1%D9%88%D8%B7-%D8%A7%D9%84%D8%AA%D8%A7%D9%94%D9%87%D9%8A%D9%84-%D9%84%D9%85%D9%86%D8%A7%D9%81%D8%B3%D8%A9-%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84-%D8%B9%D9%84%D9%89-%D8%B1%D8%AE%D8%B5%D8%A9-%D9%85%D8%AD%D8%AC%D8%B1-%D9%85%D9%88%D8%A7%D8%AF-%D8%A8%D9%86%D8%A7%D8%A1.pdf"
+        },
+        {
+          "name": "قائمة-الشركات-المؤهلة---الجبيهة.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-02%2F%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%A4%D9%87%D9%84%D8%A9---%D8%A7%D9%84%D8%AC%D8%A8%D9%8A%D9%87%D8%A9.pdf&download=1"
+        }
+      ],
+      "application_url": null,
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:site:sand-ore-and-backfill-complex-south-al-hair",
+      "site_id": "sand-ore-and-backfill-complex-south-al-hair",
+      "site_name": "Sand ore and backfill complex south of Al-Ha'ir",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/sand-ore-and-backfill-complex-south-al-hair",
+      "round_id": null,
+      "round_name": null,
+      "round_status": null,
+      "site_status": "Inactive",
+      "round_application_start": null,
+      "application_deadline": "2025-12-11",
+      "deadline_passed": true,
+      "region": "Riyadh Region",
+      "governorate_or_city": null,
+      "area": "15.23 km²",
+      "minerals": "sand and gravel",
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "برنامج-العمل.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A7%D9%84%D8%B9%D9%85%D9%84.docx&download=1"
+        },
+        {
+          "name": "خطة-إدارة-الأثر-الاجتماعي.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D8%AE%D8%B7%D8%A9-%D8%A7%D9%95%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A7%D9%94%D8%AB%D8%B1-%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A.docx&download=1"
+        },
+        {
+          "name": "خطة-إدارة-الأثر-البيئي.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D8%AE%D8%B7%D8%A9-%D8%A7%D9%95%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A7%D9%94%D8%AB%D8%B1-%D8%A7%D9%84%D8%A8%D9%8A%D9%8A%D9%94%D9%8A.docx&download=1"
+        },
+        {
+          "name": "كراسة-شروط-ومعايير-الدخول-لمزايدة-الحصول-على-رخصة-محجر-مواد-بناء.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D9%83%D8%B1%D8%A7%D8%B3%D8%A9-%D8%B4%D8%B1%D9%88%D8%B7-%D9%88%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84-%D9%84%D9%85%D8%B2%D8%A7%D9%8A%D8%AF%D8%A9-%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84-%D8%B9%D9%84%D9%89-%D8%B1%D8%AE%D8%B5%D8%A9-%D9%85%D8%AD%D8%AC%D8%B1-%D9%85%D9%88%D8%A7%D8%AF-%D8%A8%D9%86%D8%A7%D8%A1.pdf&download=1"
+        },
+        {
+          "name": "مجمع-خام-الرمل-والردميات-جنوب-الحائر.kmz",
+          "url": "https://cms.taadeen.sa/oci-files/public?file=2025-12/%D9%85%D8%AC%D9%85%D8%B9-%D8%AE%D8%A7%D9%85-%D8%A7%D9%84%D8%B1%D9%85%D9%84-%D9%88%D8%A7%D9%84%D8%B1%D8%AF%D9%85%D9%8A%D8%A7%D8%AA-%D8%AC%D9%86%D9%88%D8%A8-%D8%A7%D9%84%D8%AD%D8%A7%D9%8A%D9%94%D8%B1.kmz&download=1"
+        },
+        {
+          "name": "مجمع-خام-الرمل-والردميات-جنوب-الحائر.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D9%85%D8%AC%D9%85%D8%B9-%D8%AE%D8%A7%D9%85-%D8%A7%D9%84%D8%B1%D9%85%D9%84-%D9%88%D8%A7%D9%84%D8%B1%D8%AF%D9%85%D9%8A%D8%A7%D8%AA-%D8%AC%D9%86%D9%88%D8%A8-%D8%A7%D9%84%D8%AD%D8%A7%D9%8A%D9%94%D8%B1.pdf&download=1"
+        },
+        {
+          "name": "معايير-وشروط-التأهيل-لمنافسة-الحصول-على-رخصة-محجر-مواد-بناء.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D9%88%D8%B4%D8%B1%D9%88%D8%B7-%D8%A7%D9%84%D8%AA%D8%A7%D9%94%D9%87%D9%8A%D9%84-%D9%84%D9%85%D9%86%D8%A7%D9%81%D8%B3%D8%A9-%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84-%D8%B9%D9%84%D9%89-%D8%B1%D8%AE%D8%B5%D8%A9-%D9%85%D8%AD%D8%AC%D8%B1-%D9%85%D9%88%D8%A7%D8%AF-%D8%A8%D9%86%D8%A7%D8%A1.pdf&download=1"
+        },
+        {
+          "name": "قائمة-الشركات-المؤهلة---الحائر.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-02%2F%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%A4%D9%87%D9%84%D8%A9---%D8%A7%D9%84%D8%AD%D8%A7%D8%A6%D8%B1.pdf&download=1"
+        }
+      ],
+      "application_url": null,
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:site:south-dalam-sand-ore-complex",
+      "site_id": "south-dalam-sand-ore-complex",
+      "site_name": "South Dalam Sand Ore Complex",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/south-dalam-sand-ore-complex",
+      "round_id": null,
+      "round_name": null,
+      "round_status": null,
+      "site_status": "Inactive",
+      "round_application_start": null,
+      "application_deadline": "2025-12-11",
+      "deadline_passed": true,
+      "region": "Riyadh Region",
+      "governorate_or_city": null,
+      "area": "2.48 km²",
+      "minerals": "sand and gravel",
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "برنامج-العمل.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A7%D9%84%D8%B9%D9%85%D9%84_1.docx&download=1&filename=%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A7%D9%84%D8%B9%D9%85%D9%84.docx"
+        },
+        {
+          "name": "خريطة-تقسيم-مجمع-خام-الرمل-جنوب-الدلم.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D9%85%D8%AC%D9%85%D8%B9-%D8%AE%D8%A7%D9%85-%D8%A7%D9%84%D8%B1%D9%85%D9%84-%D8%AC%D9%86%D9%88%D8%A8-%D8%A7%D9%84%D8%AF%D9%84%D9%85.pdf&download=1"
+        },
+        {
+          "name": "خطة-إدارة-الأثر-الاجتماعي.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D8%AE%D8%B7%D8%A9-%D8%A7%D9%95%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A7%D9%94%D8%AB%D8%B1-%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A_1.docx&download=1&filename=%D8%AE%D8%B7%D8%A9-%D8%A7%D9%95%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A7%D9%94%D8%AB%D8%B1-%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A.docx"
+        },
+        {
+          "name": "خطة-إدارة-الأثر-البيئي.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D8%AE%D8%B7%D8%A9-%D8%A7%D9%95%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A7%D9%94%D8%AB%D8%B1-%D8%A7%D9%84%D8%A8%D9%8A%D9%8A%D9%94%D9%8A_1.docx&download=1&filename=%D8%AE%D8%B7%D8%A9-%D8%A7%D9%95%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A7%D9%94%D8%AB%D8%B1-%D8%A7%D9%84%D8%A8%D9%8A%D9%8A%D9%94%D9%8A.docx"
+        },
+        {
+          "name": "كراسة-شروط-ومعايير-الدخول-لمزايدة-الحصول-على-رخصة-محجر-مواد-بناء.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D9%83%D8%B1%D8%A7%D8%B3%D8%A9-%D8%B4%D8%B1%D9%88%D8%B7-%D9%88%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84-%D9%84%D9%85%D8%B2%D8%A7%D9%8A%D8%AF%D8%A9-%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84-%D8%B9%D9%84%D9%89-%D8%B1%D8%AE%D8%B5%D8%A9-%D9%85%D8%AD%D8%AC%D8%B1-%D9%85%D9%88%D8%A7%D8%AF-%D8%A8%D9%86%D8%A7%D8%A1_1.pdf&download=1&filename=%D9%83%D8%B1%D8%A7%D8%B3%D8%A9-%D8%B4%D8%B1%D9%88%D8%B7-%D9%88%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84-%D9%84%D9%85%D8%B2%D8%A7%D9%8A%D8%AF%D8%A9-%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84-%D8%B9%D9%84%D9%89-%D8%B1%D8%AE%D8%B5%D8%A9-%D9%85%D8%AD%D8%AC%D8%B1-%D9%85%D9%88%D8%A7%D8%AF-%D8%A8%D9%86%D8%A7%D8%A1.pdf"
+        },
+        {
+          "name": "مجمع-خام-الرمل-جنوب-الدلم.kmz",
+          "url": "https://cms.taadeen.sa/oci-files/public?file=2025-12/%D9%85%D8%AC%D9%85%D8%B9-%D8%AE%D8%A7%D9%85-%D8%A7%D9%84%D8%B1%D9%85%D9%84-%D8%AC%D9%86%D9%88%D8%A8-%D8%A7%D9%84%D8%AF%D9%84%D9%85.kmz&download=1"
+        },
+        {
+          "name": "معايير-وشروط-التأهيل-لمنافسة-الحصول-على-رخصة-محجر-مواد-بناء.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D9%88%D8%B4%D8%B1%D9%88%D8%B7-%D8%A7%D9%84%D8%AA%D8%A7%D9%94%D9%87%D9%8A%D9%84-%D9%84%D9%85%D9%86%D8%A7%D9%81%D8%B3%D8%A9-%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84-%D8%B9%D9%84%D9%89-%D8%B1%D8%AE%D8%B5%D8%A9-%D9%85%D8%AD%D8%AC%D8%B1-%D9%85%D9%88%D8%A7%D8%AF-%D8%A8%D9%86%D8%A7%D8%A1_1.pdf&download=1&filename=%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1-%D9%88%D8%B4%D8%B1%D9%88%D8%B7-%D8%A7%D9%84%D8%AA%D8%A7%D9%94%D9%87%D9%8A%D9%84-%D9%84%D9%85%D9%86%D8%A7%D9%81%D8%B3%D8%A9-%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84-%D8%B9%D9%84%D9%89-%D8%B1%D8%AE%D8%B5%D8%A9-%D9%85%D8%AD%D8%AC%D8%B1-%D9%85%D9%88%D8%A7%D8%AF-%D8%A8%D9%86%D8%A7%D8%A1.pdf"
+        },
+        {
+          "name": "قائمة-الشركات-المؤهلة---الدلم.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2026-02%2F%D9%82%D8%A7%D9%8A%D9%94%D9%85%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%88%D9%94%D9%87%D9%84%D8%A9---%D8%A7%D9%84%D8%AF%D9%84%D9%85.pdf&download=1"
+        }
+      ],
+      "application_url": null,
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    },
+    {
+      "source_opportunity_id": "taadeen:site:umm-hijlan-mamilah%E2%80%8B",
+      "site_id": "umm-hijlan-mamilah%E2%80%8B",
+      "site_name": "Umm Hijlan (Mamilah)​",
+      "detail_url": "https://cms.taadeen.sa/en/mining-bids/umm-hijlan-mamilah%E2%80%8B",
+      "round_id": null,
+      "round_name": null,
+      "round_status": null,
+      "site_status": "Inactive",
+      "round_application_start": null,
+      "application_deadline": "2024-10-20",
+      "deadline_passed": true,
+      "region": "Riyadh Region",
+      "governorate_or_city": null,
+      "area": "78.40 km²",
+      "minerals": null,
+      "license_or_block_id": null,
+      "coordinates": null,
+      "documents": [
+        {
+          "name": "Mineral-Exploration-Opportunities-in-the-Kingdom-of-Saudi-Arabia-V2.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/Mineral-Exploration-Opportunities-in-the-Kingdom-of-Saudi-Arabia-V2_1.pdf&download=1&filename=Mineral-Exploration-Opportunities-in-the-Kingdom-of-Saudi-Arabia-V2.pdf"
+        },
+        {
+          "name": "Proposal-Application-Form--Round-7-Exploration-Licensing.docx",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/Proposal-Application-Form--Round-7-Exploration-Licensing.docx&download=1"
+        },
+        {
+          "name": "Umm-Hijlan----Information-Memorandum--201024---FINAL.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/Umm-Hijlan----Information-Memorandum--201024---FINAL.pdf&download=1"
+        },
+        {
+          "name": "Umm-Hijlan-(Mamilah)---Map.pdf",
+          "url": "https://cms.taadeen.sa/en/oci-files/public?file=2025-12/Umm-Hijlan-%28Mamilah%29---Map.pdf&download=1"
+        }
+      ],
+      "application_url": null,
+      "master_eligibility_class": "E_HISTORICAL_OR_NONCURRENT",
+      "reason": "The site bid is inactive/closed or its published application deadline has passed. No cancellation is inferred.",
+      "identity_review_candidates": [],
+      "master_opportunity_id": null
+    }
+  ]
+}

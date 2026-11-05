@@ -1,0 +1,40 @@
+{
+  "snapshot_at": "2026-10-21T09:27:58.139091+00:00",
+  "current_masters": 525,
+  "specified": 146,
+  "unspecified": 379,
+  "counts": {
+    "canonical_activity": 8,
+    "canonical_sub_activity": 7,
+    "raw_activity": 8,
+    "raw_sub_activity": 7,
+    "asset_type": 366,
+    "opportunity_type": 366,
+    "short_description": 379,
+    "full_description": 379,
+    "raw_source_category": 0,
+    "raw_source_sector": 7,
+    "other_structured_classification": 378,
+    "meaningful_title_pattern": 7,
+    "description_any": 379,
+    "distinct_description": 4
+  },
+  "combinations": {
+    "activity+sub_activity": 7,
+    "activity+title": 3,
+    "sub_activity+title": 3,
+    "title+description": 0,
+    "raw_source_category+title": 0,
+    "asset_type+title": 4
+  },
+  "title_only": 378,
+  "no_useful_sector_signal": 378,
+  "definitions": {
+    "distinct_description": "short/full description is nonempty and differs from normalized title; counted per Master",
+    "description_any": "at least one short or full description field is populated",
+    "raw_source_category": "raw payload key contains category/industry/theme/classification/taxonomy; master-level presence",
+    "other_structured_classification": "classification-like payload key exists; availability only, values can still be generic or unmapped",
+    "title_only": "title exists and no supported non-title sector signal is available; includes generic/contextual titles and is an availability diagnostic, not a claim that the title is sector-indicative",
+    "no_useful_sector_signal": "no empirically supported canonical activity/sub-activity/raw mapping, semantic source-activity hint, distinct description phrase, meaningful asset signal, or non-contextual title phrase. Generic labels and contextual mentions are excluded."
+  }
+}

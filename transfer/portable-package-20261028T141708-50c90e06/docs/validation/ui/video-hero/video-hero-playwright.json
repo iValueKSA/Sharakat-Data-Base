@@ -1,0 +1,326 @@
+{
+  "validated_at": "2026-10-28T09:07:30.305Z",
+  "route": "http://localhost:8080/?view=data-dashboard",
+  "asset": "/static/media/ahsa-investment-hero.webm",
+  "asset_format": "WebM VP9",
+  "asset_duration_seconds": 22.131582,
+  "asset_bytes": 9790136,
+  "poster_bytes": 243874,
+  "map_scene_count": 0,
+  "replacement_scene_ids": [
+    "irrigation",
+    "road"
+  ],
+  "local_asset_sha256": "2bdb92251b0f4fc3f131ce375877d0095cac0aff5607668885f2bb22df521455",
+  "served_asset_sha256": "2bdb92251b0f4fc3f131ce375877d0095cac0aff5607668885f2bb22df521455",
+  "performance": {
+    "dashboard_data_ready_ms": 1164,
+    "first_contentful_paint_ms": 860,
+    "video_first_frame_after_navigation_ms": 2657.5999999940395
+  },
+  "playback": {
+    "current_src": "http://localhost:8080/static/media/ahsa-investment-hero.webm?v=hero-no-map-v1",
+    "autoplay": true,
+    "muted": true,
+    "loop": true,
+    "playsinline": true,
+    "paused": false,
+    "ready_state": 4,
+    "duration_seconds": 22.131582,
+    "video_width": 1920,
+    "video_height": 540,
+    "time_at_ready": 1.840793,
+    "irrigation_replacement_time": 6.263659,
+    "road_replacement_time": 20.981147,
+    "native_loop_wrap": true,
+    "loop_wrapped_time": 0
+  },
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "status": "PASSED",
+      "hero_visible": true,
+      "video_visible": true,
+      "video_current_time": 2.393797,
+      "title_visible": true,
+      "subtitle_visible": true,
+      "cta_visible": true,
+      "no_text_overlap": true,
+      "no_clipping": true,
+      "no_horizontal_overflow": true,
+      "rtl": true,
+      "hero": {
+        "x": 74,
+        "y": 87,
+        "right": 1582,
+        "bottom": 497,
+        "width": 1508,
+        "height": 410
+      },
+      "title": {
+        "x": 863,
+        "y": 229.921875,
+        "right": 1539,
+        "bottom": 287.921875,
+        "width": 676,
+        "height": 58
+      },
+      "subtitle": {
+        "x": 939,
+        "y": 294.921875,
+        "right": 1539,
+        "bottom": 320.109375,
+        "width": 600,
+        "height": 25.1875
+      },
+      "cta": {
+        "x": 1417.90625,
+        "y": 339.109375,
+        "right": 1539,
+        "bottom": 381.109375,
+        "width": 121.09375,
+        "height": 42
+      },
+      "screenshot": "premium-hero-1920x1080.png"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "status": "PASSED",
+      "hero_visible": true,
+      "video_visible": true,
+      "video_current_time": 3.47645,
+      "title_visible": true,
+      "subtitle_visible": true,
+      "cta_visible": true,
+      "no_text_overlap": true,
+      "no_clipping": true,
+      "no_horizontal_overflow": true,
+      "rtl": true,
+      "hero": {
+        "x": 43.1875,
+        "y": 87,
+        "right": 1132.8125,
+        "bottom": 475.796875,
+        "width": 1089.625,
+        "height": 388.796875
+      },
+      "title": {
+        "x": 413.8125,
+        "y": 219.328125,
+        "right": 1089.8125,
+        "bottom": 277.328125,
+        "width": 676,
+        "height": 58
+      },
+      "subtitle": {
+        "x": 489.8125,
+        "y": 284.328125,
+        "right": 1089.8125,
+        "bottom": 309.515625,
+        "width": 600,
+        "height": 25.1875
+      },
+      "cta": {
+        "x": 968.71875,
+        "y": 328.515625,
+        "right": 1089.8125,
+        "bottom": 370.515625,
+        "width": 121.09375,
+        "height": 42
+      },
+      "screenshot": "premium-hero-1440x900.png"
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "status": "PASSED",
+      "hero_visible": true,
+      "video_visible": true,
+      "video_current_time": 4.328572,
+      "title_visible": true,
+      "subtitle_visible": true,
+      "cta_visible": true,
+      "no_text_overlap": true,
+      "no_clipping": true,
+      "no_horizontal_overflow": true,
+      "rtl": true,
+      "hero": {
+        "x": 40.96875,
+        "y": 87,
+        "right": 1061.03125,
+        "bottom": 455.8125,
+        "width": 1020.0625,
+        "height": 368.8125
+      },
+      "title": {
+        "x": 342.03125,
+        "y": 209.328125,
+        "right": 1018.03125,
+        "bottom": 267.328125,
+        "width": 676,
+        "height": 58
+      },
+      "subtitle": {
+        "x": 418.03125,
+        "y": 274.328125,
+        "right": 1018.03125,
+        "bottom": 299.515625,
+        "width": 600,
+        "height": 25.1875
+      },
+      "cta": {
+        "x": 896.9375,
+        "y": 318.515625,
+        "right": 1018.03125,
+        "bottom": 360.515625,
+        "width": 121.09375,
+        "height": 42
+      },
+      "screenshot": "premium-hero-1366x768.png"
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "status": "PASSED",
+      "hero_visible": true,
+      "video_visible": true,
+      "video_current_time": 5.195255,
+      "title_visible": true,
+      "subtitle_visible": true,
+      "cta_visible": true,
+      "no_text_overlap": true,
+      "no_clipping": true,
+      "no_horizontal_overflow": true,
+      "rtl": true,
+      "hero": {
+        "x": 25,
+        "y": 89,
+        "right": 743,
+        "bottom": 380.828125,
+        "width": 718,
+        "height": 291.828125
+      },
+      "title": {
+        "x": 56,
+        "y": 182.265625,
+        "right": 712,
+        "bottom": 221.40625,
+        "width": 656,
+        "height": 39.140625
+      },
+      "subtitle": {
+        "x": 112,
+        "y": 228.40625,
+        "right": 712,
+        "bottom": 253.59375,
+        "width": 600,
+        "height": 25.1875
+      },
+      "cta": {
+        "x": 590.90625,
+        "y": 272.59375,
+        "right": 712,
+        "bottom": 314.59375,
+        "width": 121.09375,
+        "height": 42
+      },
+      "screenshot": "premium-hero-768x900.png"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "status": "PASSED",
+      "hero_visible": true,
+      "video_visible": true,
+      "video_current_time": 5.891327,
+      "title_visible": true,
+      "subtitle_visible": true,
+      "cta_visible": true,
+      "no_text_overlap": true,
+      "no_clipping": true,
+      "no_horizontal_overflow": true,
+      "rtl": true,
+      "hero": {
+        "x": 12,
+        "y": 77,
+        "right": 378,
+        "bottom": 326.59375,
+        "width": 366,
+        "height": 249.59375
+      },
+      "title": {
+        "x": 31,
+        "y": 157.328125,
+        "right": 359,
+        "bottom": 192.203125,
+        "width": 328,
+        "height": 34.875
+      },
+      "subtitle": {
+        "x": 31,
+        "y": 197.203125,
+        "right": 359,
+        "bottom": 214.203125,
+        "width": 328,
+        "height": 17
+      },
+      "cta": {
+        "x": 252.734375,
+        "y": 227.203125,
+        "right": 359,
+        "bottom": 266.203125,
+        "width": 106.265625,
+        "height": 39
+      },
+      "screenshot": "premium-hero-390x844.png"
+    }
+  ],
+  "reduced_motion": {
+    "preference_detected": true,
+    "paused": true,
+    "source_attached": false,
+    "poster_visible": true
+  },
+  "media_failure_fallback": {
+    "media_fallback_kept_poster": true,
+    "poster_visible": true,
+    "title_visible": true,
+    "cta_visible": true,
+    "dashboard_metric_visible": true,
+    "media_request_aborted": true
+  },
+  "cta": {
+    "works": true,
+    "destination": "opportunities"
+  },
+  "dashboard_metrics": {
+    "total": 566,
+    "deadline_30d": 60
+  },
+  "issues": {
+    "javascript": [],
+    "unexpected_http": [],
+    "external_reference_requests": []
+  },
+  "served_asset_bytes": 9790136,
+  "served_asset_content_type": "video/webm",
+  "assertions": {
+    "asset_sha256_matches": true,
+    "local_asset_only": true,
+    "map_scenes_removed": true,
+    "replacement_scene_count": true,
+    "no_reference_runtime_dependency": true,
+    "finite_duration": true,
+    "playback_contract": true,
+    "native_loop": true,
+    "all_viewports_pass": true,
+    "reduced_motion_pass": true,
+    "media_failure_fallback_pass": true,
+    "cta_pass": true,
+    "javascript_errors_zero": true,
+    "unexpected_http_zero": true,
+    "dashboard_total_matches_dom": true
+  }
+}

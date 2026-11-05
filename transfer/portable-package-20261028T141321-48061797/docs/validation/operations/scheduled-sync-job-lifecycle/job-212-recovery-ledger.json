@@ -1,0 +1,24 @@
+{
+  "job_id": 212,
+  "before": {
+    "status": "RUNNING",
+    "job_state": "ABANDONED",
+    "finished_at": null,
+    "pagination_complete": null,
+    "task_id": null,
+    "worker_id": null
+  },
+  "after": {
+    "status": "ABANDONED",
+    "job_state": "ABANDONED",
+    "finished_at": "2026-10-21T12:08:07.795579+00:00",
+    "pagination_complete": false
+  },
+  "started_at_preserved": true,
+  "task_id_preserved": true,
+  "source_id_preserved": true,
+  "business_data_changed": false,
+  "audit_event_ids": [
+    89
+  ]
+}

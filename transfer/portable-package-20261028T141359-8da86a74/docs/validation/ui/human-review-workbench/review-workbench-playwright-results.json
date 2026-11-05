@@ -1,0 +1,93 @@
+{
+  "isolated": true,
+  "flows": {
+    "follow_recommendation": "PASSED",
+    "override_recommendation": "PASSED",
+    "reopen_preserve_and_resolve_again": "PASSED",
+    "deterministic_batch_commit": "PASSED",
+    "mixed_batch_rejected": "PASSED",
+    "stale_version_rejected": "PASSED",
+    "unsaved_change_warning": "PASSED",
+    "viewports_rtl_digits_overflow_clipping_overlap": "PASSED"
+  },
+  "viewports": [
+    {
+      "viewport": "1920x1080",
+      "rtl": true,
+      "western_digits": true,
+      "horizontal_overflow": false,
+      "clipped_buttons": 0,
+      "overlapping_controls": 0,
+      "responsive_columns": "300px 838px 350px",
+      "responsive_collapse": true
+    },
+    {
+      "viewport": "1440x900",
+      "rtl": true,
+      "western_digits": true,
+      "horizontal_overflow": false,
+      "clipped_buttons": 0,
+      "overlapping_controls": 0,
+      "responsive_columns": "300px 419.625px 350px",
+      "responsive_collapse": true
+    },
+    {
+      "viewport": "1366x768",
+      "rtl": true,
+      "western_digits": true,
+      "horizontal_overflow": false,
+      "clipped_buttons": 0,
+      "overlapping_controls": 0,
+      "responsive_columns": "290.031px 390px 320.031px",
+      "responsive_collapse": true
+    },
+    {
+      "viewport": "768x900",
+      "rtl": true,
+      "western_digits": true,
+      "horizontal_overflow": false,
+      "clipped_buttons": 0,
+      "overlapping_controls": 0,
+      "responsive_columns": "260px 448px",
+      "responsive_collapse": true
+    },
+    {
+      "viewport": "390x844",
+      "rtl": true,
+      "western_digits": true,
+      "horizontal_overflow": false,
+      "clipped_buttons": 0,
+      "overlapping_controls": 0,
+      "responsive_columns": "366px",
+      "responsive_collapse": true
+    }
+  ],
+  "screenshots": [
+    "docs/validation/ui/human-review-workbench/screenshots/final-closeout/closeout-review-1920x1080.png",
+    "docs/validation/ui/human-review-workbench/screenshots/final-closeout/closeout-review-1440x900.png",
+    "docs/validation/ui/human-review-workbench/screenshots/final-closeout/closeout-review-1366x768.png",
+    "docs/validation/ui/human-review-workbench/screenshots/final-closeout/closeout-review-768x900.png",
+    "docs/validation/ui/human-review-workbench/screenshots/final-closeout/closeout-review-390x844.png"
+  ],
+  "batch_preview": {
+    "eligible": true,
+    "signature_count": 1,
+    "item_count": 2,
+    "excluded_count": 0
+  },
+  "mixed_batch_preview": {
+    "eligible": false,
+    "signature_count": 2,
+    "item_count": 2,
+    "excluded_count": 0
+  },
+  "performance": {
+    "requests": 30,
+    "current_review_detail_api_p95_ms": 17,
+    "previous_review_detail_api_p95_ms": 337,
+    "p95_delta_ms": -320
+  },
+  "console_errors": [],
+  "javascript_console_errors": 0,
+  "captured_at": "2026-10-22T10:58:03.158Z"
+}

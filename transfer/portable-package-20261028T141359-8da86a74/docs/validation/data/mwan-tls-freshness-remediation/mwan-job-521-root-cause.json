@@ -1,0 +1,32 @@
+{
+  "job_id": 521,
+  "source_id": 10,
+  "source_key": "mwan",
+  "trigger": "scheduled",
+  "status": "FAILED",
+  "job_state": "FAILED",
+  "started_at_utc": "2026-10-26T13:10:24.703407Z",
+  "finished_at_utc": "2026-10-26T13:10:25.256213Z",
+  "error_class": "ssl.SSLCertVerificationError / CERTIFICATE_VERIFY_FAILED",
+  "sanitized_error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+  "target_host": "mwan.gov.sa",
+  "tls_failure_stage": "TLS certificate path building / issuer-chain validation before HTTP response",
+  "classified_root_cause": "C. Missing intermediate certificate chain served by official MWAN endpoint",
+  "leaf": {
+    "subject": "C=SA, L=Riyadh, O=National Center for Waste Management (MWAN), CN=*.mwan.gov.sa",
+    "issuer": "C=US, O=DigiCert Inc, CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1",
+    "not_before_utc": "2025-11-10T00:00:00Z",
+    "not_after_utc": "2026-12-11T23:59:59Z",
+    "hostname_match": true
+  },
+  "server_chain_certificates_sent": 1,
+  "missing_intermediate_subject": "C=US, O=DigiCert Inc, CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1",
+  "system_trust_anchor": "DigiCert Global Root G2",
+  "present_in_container_trust_store": true,
+  "alternative_ca_bundle_issue": false,
+  "expired_certificate": false,
+  "hostname_mismatch": false,
+  "protocol_or_endpoint_change": false,
+  "tls_verification_disabled": false,
+  "evidence": "Strict OpenSSL verification from worker returned verify error 20; both official MWAN hosts presented only the leaf. The leaf AIA names the intermediate. The official DigiCert intermediate verifies OK against the container trust bundle."
+}

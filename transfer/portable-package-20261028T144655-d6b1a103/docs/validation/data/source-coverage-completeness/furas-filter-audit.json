@@ -1,0 +1,28 @@
+{
+  "captured": "2026-10-20T14:18:03.3479045+03:00",
+  "date": "2026-10-20",
+  "source_url": "https://gisOppertunities.momra.gov.sa/arcgis/rest/services/GISProjects/InvestmentView/MapServer/0",
+  "counts": {
+    "accepted_current": {
+      "error": "No such host is known. (gisoppertunities.momra.gov.sa:443)",
+      "where": "CITY_ID IN ('1949','1945','1950','005011001','9','1264','1315','1299','1298','104','005020001') AND OPPORTUNITYACTIVESTATUS='Announced' AND LASTRFPSELLDATE >= DATE '2026-10-20' AND QualifyingOpportunity=0"
+    },
+    "with_qualifying": {
+      "error": "No such host is known. (gisoppertunities.momra.gov.sa:443)",
+      "where": "CITY_ID IN ('1949','1945','1950','005011001','9','1264','1315','1299','1298','104','005020001') AND OPPORTUNITYACTIVESTATUS='Announced' AND LASTRFPSELLDATE >= DATE '2026-10-20'"
+    },
+    "qualification_required": {
+      "error": "No such host is known. (gisoppertunities.momra.gov.sa:443)",
+      "where": "CITY_ID IN ('1949','1945','1950','005011001','9','1264','1315','1299','1298','104','005020001') AND OPPORTUNITYACTIVESTATUS='Announced' AND LASTRFPSELLDATE >= DATE '2026-10-20' AND QualifyingOpportunity=1"
+    },
+    "no_deadline_filter": {
+      "error": "No such host is known. (gisoppertunities.momra.gov.sa:443)",
+      "where": "CITY_ID IN ('1949','1945','1950','005011001','9','1264','1315','1299','1298','104','005020001') AND OPPORTUNITYACTIVESTATUS='Announced' AND QualifyingOpportunity=0"
+    },
+    "city_only_all_lifecycle": {
+      "error": "No such host is known. (gisoppertunities.momra.gov.sa:443)",
+      "where": "CITY_ID IN ('1949','1945','1950','005011001','9','1264','1315','1299','1298','104','005020001')"
+    }
+  },
+  "fields": []
+}

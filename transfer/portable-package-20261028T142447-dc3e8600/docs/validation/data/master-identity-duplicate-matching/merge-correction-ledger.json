@@ -1,0 +1,1906 @@
+{
+  "snapshot_before_utc": "2026-10-20 09:27:35.377973",
+  "snapshot_after_utc": "2026-10-20 09:59:32.899366",
+  "pre_hashes": {
+    "source_links_sha256": "05b43f5f0786c957c9b4cd1595c4277299b4a2d912ce79c5a2853440f8142390",
+    "raw_source_payloads_sha256": "bd3b6a9713b3b86f91bc52fbae976a16257b405606626edd1ee43dbbabab6f2a",
+    "observations_sha256": "4cfee46fbc1049e281a776041d6ff21ab4292cf18a79903e8107cd9ff8f6cdf6",
+    "canonical_fields_sha256": "de0c4ad27750dda51442aab78b1ccf53d2e106aab4e8b80eec85718799d3507d",
+    "merge_relationships_sha256": "e196d07f6e477f2add751a8d1412d4097ce43c12d29b7d1fe08f89674f5540df"
+  },
+  "post_hashes": {
+    "source_links_sha256": "07247c504991f10e3347d620250bfaa03fffc49a73ba96b2ebd50d010c5029ff",
+    "raw_source_payloads_sha256": "bd3b6a9713b3b86f91bc52fbae976a16257b405606626edd1ee43dbbabab6f2a",
+    "observations_sha256": "4cfee46fbc1049e281a776041d6ff21ab4292cf18a79903e8107cd9ff8f6cdf6",
+    "canonical_fields_sha256": "1bda2dc0a3035ac63a3813888474f5db6dc1245de16f3d1ab8bf393da3505ea2",
+    "merge_relationships_sha256": "d43f246cbe7ce87175b91741afb03ae5dc315408df655dfc53e48b44b9ebf83c"
+  },
+  "merge_actions_applied": 16,
+  "rejected_as_distinct": 16,
+  "same_source_reviews_added": 8,
+  "cross_source_reviews_added": 2,
+  "actions": [
+    {
+      "action": "MERGE",
+      "master_a": 163,
+      "master_b": 233,
+      "surviving_master": 163,
+      "source_ids_affected": [
+        2834
+      ],
+      "before_links": [
+        {
+          "source_record_id": 2834,
+          "master_id_before": 233
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 2834,
+          "master_id_after": 163
+        }
+      ],
+      "merge_audit_id": 16,
+      "candidate_id": 7,
+      "evidence": {
+        "auto_merge_safe": false,
+        "contradicting_evidence": [],
+        "features": {
+          "area_difference_percentage": 0.0,
+          "area_similarity": 1.0,
+          "deadline_match": false,
+          "description_similarity": 0.9896,
+          "duration_match": true,
+          "exact_identifier_match": false,
+          "location_similarity": 0.0,
+          "plan_match": true,
+          "plot_match": true,
+          "title_similarity": 0.9896
+        },
+        "identity_review_decision": {
+          "basis": "AL-Ahsa lot 5 / plan 19/149 matches Furas lot 5 / plan 19/149; exact 11,099 m², same title/site; same official asset.",
+          "decision": "CONFIRMED_FALSE_SPLIT",
+          "fuzzy_title_alone_used": false,
+          "reversible": true,
+          "review_snapshot": "2026-10-20T09:27:35.377973Z",
+          "reviewed_at": "2026-10-20T09:31:28.316623+00:00",
+          "same_source": false
+        },
+        "positive_evidence": [
+          "strong title similarity (99%)",
+          "matching parcel/plot wording",
+          "matching subdivision plan number",
+          "area differs by 0.00%",
+          "same normalized owner/municipality",
+          "same contract duration"
+        ]
+      },
+      "reason": "AL-Ahsa lot 5 / plan 19/149 matches Furas lot 5 / plan 19/149; exact 11,099 m², same title/site; same official asset.",
+      "reversibility": "Supported by MergeAudit and undo_duplicate_merge endpoint; covered by reversible merge tests."
+    },
+    {
+      "action": "MERGE",
+      "master_a": 231,
+      "master_b": 265,
+      "surviving_master": 231,
+      "source_ids_affected": [
+        2866
+      ],
+      "before_links": [
+        {
+          "source_record_id": 2866,
+          "master_id_before": 265
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 2866,
+          "master_id_after": 231
+        }
+      ],
+      "merge_audit_id": 17,
+      "candidate_id": 20,
+      "evidence": {
+        "auto_merge_safe": false,
+        "contradicting_evidence": [],
+        "features": {
+          "area_difference_percentage": 0.0,
+          "area_similarity": 1.0,
+          "deadline_match": true,
+          "description_similarity": 1.0,
+          "duration_match": true,
+          "exact_identifier_match": false,
+          "location_similarity": 0.0,
+          "plan_match": true,
+          "plot_match": true,
+          "title_similarity": 1.0
+        },
+        "identity_review_decision": {
+          "basis": "Furas and Al-Ahsa titles identify plot T20, plan 4/1082, same 2,448.7 m²; same owner/site and exact asset description.",
+          "decision": "CONFIRMED_FALSE_SPLIT",
+          "fuzzy_title_alone_used": false,
+          "reversible": true,
+          "review_snapshot": "2026-10-20T09:27:35.377973Z",
+          "reviewed_at": "2026-10-20T09:31:28.409305+00:00",
+          "same_source": false
+        },
+        "positive_evidence": [
+          "strong title similarity (100%)",
+          "matching parcel/plot wording",
+          "matching subdivision plan number",
+          "area differs by 0.00%",
+          "same normalized owner/municipality",
+          "same contract duration",
+          "same submission deadline"
+        ]
+      },
+      "reason": "Furas and Al-Ahsa titles identify plot T20, plan 4/1082, same 2,448.7 m²; same owner/site and exact asset description.",
+      "reversibility": "Supported by MergeAudit and undo_duplicate_merge endpoint; covered by reversible merge tests."
+    },
+    {
+      "action": "MERGE",
+      "master_a": 248,
+      "master_b": 266,
+      "surviving_master": 248,
+      "source_ids_affected": [
+        2867
+      ],
+      "before_links": [
+        {
+          "source_record_id": 2867,
+          "master_id_before": 266
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 2867,
+          "master_id_after": 248
+        }
+      ],
+      "merge_audit_id": 18,
+      "candidate_id": 21,
+      "evidence": {
+        "auto_merge_safe": false,
+        "contradicting_evidence": [],
+        "features": {
+          "area_difference_percentage": 0.0,
+          "area_similarity": 1.0,
+          "deadline_match": true,
+          "description_similarity": 0.9362,
+          "duration_match": true,
+          "exact_identifier_match": false,
+          "location_similarity": 0.92,
+          "plan_match": false,
+          "plot_match": false,
+          "title_similarity": 0.9362
+        },
+        "identity_review_decision": {
+          "basis": "Same drive-through kiosk on King Fahd Road in Al-Mubarraz; exact title/site and 16 m²; Furas official reference maps to Al-Ahsa listing.",
+          "decision": "CONFIRMED_FALSE_SPLIT",
+          "fuzzy_title_alone_used": false,
+          "reversible": true,
+          "review_snapshot": "2026-10-20T09:27:35.377973Z",
+          "reviewed_at": "2026-10-20T09:31:28.480069+00:00",
+          "same_source": false
+        },
+        "positive_evidence": [
+          "strong title similarity (94%)",
+          "shared locality/site tokens: المبرز",
+          "source B locality appears in source A title",
+          "area differs by 0.00%",
+          "same normalized owner/municipality",
+          "same contract duration",
+          "same submission deadline"
+        ]
+      },
+      "reason": "Same drive-through kiosk on King Fahd Road in Al-Mubarraz; exact title/site and 16 m²; Furas official reference maps to Al-Ahsa listing.",
+      "reversibility": "Supported by MergeAudit and undo_duplicate_merge endpoint; covered by reversible merge tests."
+    },
+    {
+      "action": "MERGE",
+      "master_a": 251,
+      "master_b": 267,
+      "surviving_master": 251,
+      "source_ids_affected": [
+        2868
+      ],
+      "before_links": [
+        {
+          "source_record_id": 2868,
+          "master_id_before": 267
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 2868,
+          "master_id_after": 251
+        }
+      ],
+      "merge_audit_id": 19,
+      "candidate_id": 22,
+      "evidence": {
+        "auto_merge_safe": false,
+        "contradicting_evidence": [],
+        "features": {
+          "area_difference_percentage": 0.0,
+          "area_similarity": 1.0,
+          "deadline_match": true,
+          "description_similarity": 0.9333,
+          "duration_match": true,
+          "exact_identifier_match": false,
+          "location_similarity": 0.92,
+          "plan_match": false,
+          "plot_match": false,
+          "title_similarity": 0.9333
+        },
+        "identity_review_decision": {
+          "basis": "Same drive-through kiosk on Gulf Road in Hofuf; exact title/site and 16 m²; Furas official reference maps to Al-Ahsa listing.",
+          "decision": "CONFIRMED_FALSE_SPLIT",
+          "fuzzy_title_alone_used": false,
+          "reversible": true,
+          "review_snapshot": "2026-10-20T09:27:35.377973Z",
+          "reviewed_at": "2026-10-20T09:31:28.532365+00:00",
+          "same_source": false
+        },
+        "positive_evidence": [
+          "strong title similarity (93%)",
+          "shared locality/site tokens: الهفوف",
+          "source B locality appears in source A title",
+          "area differs by 0.00%",
+          "same normalized owner/municipality",
+          "same contract duration",
+          "same submission deadline"
+        ]
+      },
+      "reason": "Same drive-through kiosk on Gulf Road in Hofuf; exact title/site and 16 m²; Furas official reference maps to Al-Ahsa listing.",
+      "reversibility": "Supported by MergeAudit and undo_duplicate_merge endpoint; covered by reversible merge tests."
+    },
+    {
+      "action": "MERGE",
+      "master_a": 258,
+      "master_b": 268,
+      "surviving_master": 258,
+      "source_ids_affected": [
+        2869
+      ],
+      "before_links": [
+        {
+          "source_record_id": 2869,
+          "master_id_before": 268
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 2869,
+          "master_id_after": 258
+        }
+      ],
+      "merge_audit_id": 20,
+      "candidate_id": 23,
+      "evidence": {
+        "auto_merge_safe": false,
+        "contradicting_evidence": [],
+        "features": {
+          "area_difference_percentage": 0.0,
+          "area_similarity": 1.0,
+          "deadline_match": true,
+          "description_similarity": 0.9538,
+          "duration_match": true,
+          "exact_identifier_match": false,
+          "location_similarity": 0.92,
+          "plan_match": false,
+          "plot_match": false,
+          "title_similarity": 0.9538
+        },
+        "identity_review_decision": {
+          "basis": "Same drive-through kiosk at King Abdullah Road / Al-Amer Mall extension; exact title/site and 8 m²; Furas official reference maps to Al-Ahsa listing.",
+          "decision": "CONFIRMED_FALSE_SPLIT",
+          "fuzzy_title_alone_used": false,
+          "reversible": true,
+          "review_snapshot": "2026-10-20T09:27:35.377973Z",
+          "reviewed_at": "2026-10-20T09:31:28.593250+00:00",
+          "same_source": false
+        },
+        "positive_evidence": [
+          "strong title similarity (95%)",
+          "source B locality appears in source A title",
+          "area differs by 0.00%",
+          "same normalized owner/municipality",
+          "same contract duration",
+          "same submission deadline"
+        ]
+      },
+      "reason": "Same drive-through kiosk at King Abdullah Road / Al-Amer Mall extension; exact title/site and 8 m²; Furas official reference maps to Al-Ahsa listing.",
+      "reversibility": "Supported by MergeAudit and undo_duplicate_merge endpoint; covered by reversible merge tests."
+    },
+    {
+      "action": "MERGE",
+      "master_a": 246,
+      "master_b": 269,
+      "surviving_master": 246,
+      "source_ids_affected": [
+        2870
+      ],
+      "before_links": [
+        {
+          "source_record_id": 2870,
+          "master_id_before": 269
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 2870,
+          "master_id_after": 246
+        }
+      ],
+      "merge_audit_id": 21,
+      "candidate_id": 24,
+      "evidence": {
+        "auto_merge_safe": false,
+        "contradicting_evidence": [],
+        "features": {
+          "area_difference_percentage": 0.0,
+          "area_similarity": 1.0,
+          "deadline_match": true,
+          "description_similarity": 0.9497,
+          "duration_match": true,
+          "exact_identifier_match": false,
+          "location_similarity": 0.92,
+          "plan_match": false,
+          "plot_match": false,
+          "title_similarity": 0.9497
+        },
+        "identity_review_decision": {
+          "basis": "Same numbered (2) drive-through kiosk on Prince Abdullah bin Jalawi Road; exact title/site and 16 m²; reference and source content align.",
+          "decision": "CONFIRMED_FALSE_SPLIT",
+          "fuzzy_title_alone_used": false,
+          "reversible": true,
+          "review_snapshot": "2026-10-20T09:27:35.377973Z",
+          "reviewed_at": "2026-10-20T09:31:28.658507+00:00",
+          "same_source": false
+        },
+        "positive_evidence": [
+          "strong title similarity (95%)",
+          "shared locality/site tokens: المبرز",
+          "source B locality appears in source A title",
+          "area differs by 0.00%",
+          "same normalized owner/municipality",
+          "same contract duration",
+          "same submission deadline"
+        ]
+      },
+      "reason": "Same numbered (2) drive-through kiosk on Prince Abdullah bin Jalawi Road; exact title/site and 16 m²; reference and source content align.",
+      "reversibility": "Supported by MergeAudit and undo_duplicate_merge endpoint; covered by reversible merge tests."
+    },
+    {
+      "action": "MERGE",
+      "master_a": 242,
+      "master_b": 270,
+      "surviving_master": 242,
+      "source_ids_affected": [
+        2871
+      ],
+      "before_links": [
+        {
+          "source_record_id": 2871,
+          "master_id_before": 270
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 2871,
+          "master_id_after": 242
+        }
+      ],
+      "merge_audit_id": 22,
+      "candidate_id": 25,
+      "evidence": {
+        "auto_merge_safe": false,
+        "contradicting_evidence": [],
+        "features": {
+          "area_difference_percentage": 0.0,
+          "area_similarity": 1.0,
+          "deadline_match": true,
+          "description_similarity": 0.9497,
+          "duration_match": true,
+          "exact_identifier_match": false,
+          "location_similarity": 0.92,
+          "plan_match": false,
+          "plot_match": false,
+          "title_similarity": 0.9497
+        },
+        "identity_review_decision": {
+          "basis": "Same numbered (1) drive-through kiosk on Prince Abdullah bin Jalawi Road; exact title/site and 16 m²; reference and source content align.",
+          "decision": "CONFIRMED_FALSE_SPLIT",
+          "fuzzy_title_alone_used": false,
+          "reversible": true,
+          "review_snapshot": "2026-10-20T09:27:35.377973Z",
+          "reviewed_at": "2026-10-20T09:31:28.720291+00:00",
+          "same_source": false
+        },
+        "positive_evidence": [
+          "strong title similarity (95%)",
+          "shared locality/site tokens: المبرز",
+          "source B locality appears in source A title",
+          "area differs by 0.00%",
+          "same normalized owner/municipality",
+          "same contract duration",
+          "same submission deadline"
+        ]
+      },
+      "reason": "Same numbered (1) drive-through kiosk on Prince Abdullah bin Jalawi Road; exact title/site and 16 m²; reference and source content align.",
+      "reversibility": "Supported by MergeAudit and undo_duplicate_merge endpoint; covered by reversible merge tests."
+    },
+    {
+      "action": "MERGE",
+      "master_a": 262,
+      "master_b": 273,
+      "surviving_master": 262,
+      "source_ids_affected": [
+        2875
+      ],
+      "before_links": [
+        {
+          "source_record_id": 2875,
+          "master_id_before": 273
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 2875,
+          "master_id_after": 262
+        }
+      ],
+      "merge_audit_id": 23,
+      "candidate_id": 28,
+      "evidence": {
+        "auto_merge_safe": false,
+        "contradicting_evidence": [
+          "conflicting parcel/plot identifiers"
+        ],
+        "features": {
+          "area_difference_percentage": 0.0,
+          "area_similarity": 1.0,
+          "deadline_match": true,
+          "description_similarity": 0.7938,
+          "duration_match": true,
+          "exact_identifier_match": false,
+          "location_similarity": 0.92,
+          "plan_match": true,
+          "plot_match": false,
+          "title_similarity": 0.7938
+        },
+        "identity_review_decision": {
+          "basis": "Same salvage-yard asset, plot 67/1, plan 518/4, 5,223 m², owner and site. Raw titles agree; parser tokenization created a false plot conflict.",
+          "decision": "CONFIRMED_FALSE_SPLIT",
+          "fuzzy_title_alone_used": false,
+          "reversible": true,
+          "review_snapshot": "2026-10-20T09:27:35.377973Z",
+          "reviewed_at": "2026-10-20T09:31:28.782498+00:00",
+          "same_source": false
+        },
+        "positive_evidence": [
+          "shared locality/site tokens: الهفوف",
+          "source B locality appears in source A title",
+          "matching subdivision plan number",
+          "area differs by 0.00%",
+          "same normalized owner/municipality",
+          "same contract duration",
+          "same submission deadline"
+        ]
+      },
+      "reason": "Same salvage-yard asset, plot 67/1, plan 518/4, 5,223 m², owner and site. Raw titles agree; parser tokenization created a false plot conflict.",
+      "reversibility": "Supported by MergeAudit and undo_duplicate_merge endpoint; covered by reversible merge tests."
+    },
+    {
+      "action": "MERGE",
+      "master_a": 260,
+      "master_b": 274,
+      "surviving_master": 260,
+      "source_ids_affected": [
+        2876
+      ],
+      "before_links": [
+        {
+          "source_record_id": 2876,
+          "master_id_before": 274
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 2876,
+          "master_id_after": 260
+        }
+      ],
+      "merge_audit_id": 24,
+      "candidate_id": 29,
+      "evidence": {
+        "auto_merge_safe": false,
+        "contradicting_evidence": [],
+        "features": {
+          "area_difference_percentage": 0.0,
+          "area_similarity": 1.0,
+          "deadline_match": true,
+          "description_similarity": 0.7809,
+          "duration_match": true,
+          "exact_identifier_match": false,
+          "location_similarity": 0.92,
+          "plan_match": true,
+          "plot_match": true,
+          "title_similarity": 0.7809
+        },
+        "identity_review_decision": {
+          "basis": "Same salvage-yard asset, plot 60, plan 518/4, 9,982 m², owner and site; exact cross-source asset match.",
+          "decision": "CONFIRMED_FALSE_SPLIT",
+          "fuzzy_title_alone_used": false,
+          "reversible": true,
+          "review_snapshot": "2026-10-20T09:27:35.377973Z",
+          "reviewed_at": "2026-10-20T09:31:28.861115+00:00",
+          "same_source": false
+        },
+        "positive_evidence": [
+          "shared locality/site tokens: الهفوف",
+          "source B locality appears in source A title",
+          "matching parcel/plot wording",
+          "matching subdivision plan number",
+          "area differs by 0.00%",
+          "same normalized owner/municipality",
+          "same contract duration",
+          "same submission deadline"
+        ]
+      },
+      "reason": "Same salvage-yard asset, plot 60, plan 518/4, 9,982 m², owner and site; exact cross-source asset match.",
+      "reversibility": "Supported by MergeAudit and undo_duplicate_merge endpoint; covered by reversible merge tests."
+    },
+    {
+      "action": "MERGE",
+      "master_a": 235,
+      "master_b": 276,
+      "surviving_master": 235,
+      "source_ids_affected": [
+        2878
+      ],
+      "before_links": [
+        {
+          "source_record_id": 2878,
+          "master_id_before": 276
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 2878,
+          "master_id_after": 235
+        }
+      ],
+      "merge_audit_id": 25,
+      "candidate_id": 30,
+      "evidence": {
+        "auto_merge_safe": false,
+        "contradicting_evidence": [
+          "conflicting parcel/plot identifiers"
+        ],
+        "features": {
+          "area_difference_percentage": 0.0,
+          "area_similarity": 1.0,
+          "deadline_match": true,
+          "description_similarity": 0.9867,
+          "duration_match": true,
+          "exact_identifier_match": false,
+          "location_similarity": 0.92,
+          "plan_match": true,
+          "plot_match": false,
+          "title_similarity": 0.9867
+        },
+        "identity_review_decision": {
+          "basis": "Same warehouse, plot 485, plan 14/16, 712 m², same site and owner; Furas and Al-Ahsa records describe the identical asset.",
+          "decision": "CONFIRMED_FALSE_SPLIT",
+          "fuzzy_title_alone_used": false,
+          "reversible": true,
+          "review_snapshot": "2026-10-20T09:27:35.377973Z",
+          "reviewed_at": "2026-10-20T09:31:28.974477+00:00",
+          "same_source": false
+        },
+        "positive_evidence": [
+          "strong title similarity (99%)",
+          "shared locality/site tokens: العيون",
+          "source B locality appears in source A title",
+          "matching subdivision plan number",
+          "area differs by 0.00%",
+          "same normalized owner/municipality",
+          "same contract duration",
+          "same submission deadline"
+        ]
+      },
+      "reason": "Same warehouse, plot 485, plan 14/16, 712 m², same site and owner; Furas and Al-Ahsa records describe the identical asset.",
+      "reversibility": "Supported by MergeAudit and undo_duplicate_merge endpoint; covered by reversible merge tests."
+    },
+    {
+      "action": "MERGE",
+      "master_a": 234,
+      "master_b": 236,
+      "surviving_master": 234,
+      "source_ids_affected": [
+        2837
+      ],
+      "before_links": [
+        {
+          "source_record_id": 2837,
+          "master_id_before": 236
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 2837,
+          "master_id_after": 234
+        }
+      ],
+      "merge_audit_id": 26,
+      "candidate_id": 40,
+      "evidence": {
+        "area_difference_percentage": 0.0,
+        "area_similarity": 1.0,
+        "auto_merge_safe": false,
+        "contradicting_evidence": [],
+        "fuzzy_title_alone_used": false,
+        "identity_review_decision": {
+          "basis": "Furas and Al-Ahsa records independently state plot 484, plan 14/16, 653.74 m², the same warehouse description and Al-Uyun industrial locality. Punctuation/spacing differences caused a parser plot-conflict flag; the source text resolves it as the same plot. Furas ref 01-26-017001-26003 is retained on the surviving source record; Al-Ahsa supplies no propagated reference.",
+          "decision": "CONFIRMED_FALSE_SPLIT",
+          "fuzzy_title_alone_used": false,
+          "official_reference_evidence": "Furas source-specific reference exists only on the Furas record; no equal Al-Ahsa reference is asserted.",
+          "owner_evidence": "UNAVAILABLE_ON_AL_AHSA_SOURCE_RECORD",
+          "reversible": true,
+          "review_snapshot": "2026-10-20T09:27:35.377973Z",
+          "reviewed_at": "2026-10-20T09:59:11.514990+00:00",
+          "same_source": false
+        },
+        "owner_comparison": "UNAVAILABLE_ON_AL_AHSA_SOURCE_RECORD",
+        "owner_match": false,
+        "parser_plot_conflict_overridden": true,
+        "plan_match": true,
+        "plot_conflict": false,
+        "plot_match": true,
+        "positive_evidence": [
+          "normalized source titles agree with the same explicit plot and plan",
+          "exactly matching area",
+          "compatible named locality/site",
+          "verified Furas source reference remains attached to surviving source listing"
+        ],
+        "site_identity_match": true,
+        "title_similarity": 0.9867,
+        "trusted_official_reference_match": false
+      },
+      "reason": "Furas and Al-Ahsa records independently state plot 484, plan 14/16, 653.74 m², the same warehouse description and Al-Uyun industrial locality. Punctuation/spacing differences caused a parser plot-conflict flag; the source text resolves it as the same plot. Furas ref 01-26-017001-26003 is retained on the surviving source record; Al-Ahsa supplies no propagated reference.",
+      "reversibility": "Supported by MergeAudit and undo_duplicate_merge endpoint; covered by reversible merge tests."
+    },
+    {
+      "action": "MERGE",
+      "master_a": 237,
+      "master_b": 252,
+      "surviving_master": 237,
+      "source_ids_affected": [
+        2853
+      ],
+      "before_links": [
+        {
+          "source_record_id": 2853,
+          "master_id_before": 252
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 2853,
+          "master_id_after": 237
+        }
+      ],
+      "merge_audit_id": 27,
+      "candidate_id": 41,
+      "evidence": {
+        "area_difference_percentage": 0.0,
+        "area_similarity": 1.0,
+        "auto_merge_safe": false,
+        "contradicting_evidence": [],
+        "fuzzy_title_alone_used": false,
+        "identity_review_decision": {
+          "basis": "Both source records describe commercial plot B1, plan 15/28 at Jawatha, 2,000 m², with the same normalized opportunity description and locality. Furas ref 01-26-017001-30001 is retained on the surviving source record; Al-Ahsa supplies no propagated reference.",
+          "decision": "CONFIRMED_FALSE_SPLIT",
+          "fuzzy_title_alone_used": false,
+          "official_reference_evidence": "Furas source-specific reference exists only on the Furas record; no equal Al-Ahsa reference is asserted.",
+          "owner_evidence": "UNAVAILABLE_ON_AL_AHSA_SOURCE_RECORD",
+          "reversible": true,
+          "review_snapshot": "2026-10-20T09:27:35.377973Z",
+          "reviewed_at": "2026-10-20T09:59:11.527559+00:00",
+          "same_source": false
+        },
+        "owner_comparison": "UNAVAILABLE_ON_AL_AHSA_SOURCE_RECORD",
+        "owner_match": false,
+        "parser_plot_conflict_overridden": false,
+        "plan_match": true,
+        "plot_conflict": false,
+        "plot_match": true,
+        "positive_evidence": [
+          "normalized source titles agree with the same explicit plot and plan",
+          "exactly matching area",
+          "compatible named locality/site",
+          "verified Furas source reference remains attached to surviving source listing"
+        ],
+        "site_identity_match": true,
+        "title_similarity": 0.9265,
+        "trusted_official_reference_match": false
+      },
+      "reason": "Both source records describe commercial plot B1, plan 15/28 at Jawatha, 2,000 m², with the same normalized opportunity description and locality. Furas ref 01-26-017001-30001 is retained on the surviving source record; Al-Ahsa supplies no propagated reference.",
+      "reversibility": "Supported by MergeAudit and undo_duplicate_merge endpoint; covered by reversible merge tests."
+    },
+    {
+      "action": "MERGE",
+      "master_a": 239,
+      "master_b": 247,
+      "surviving_master": 239,
+      "source_ids_affected": [
+        2848
+      ],
+      "before_links": [
+        {
+          "source_record_id": 2848,
+          "master_id_before": 247
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 2848,
+          "master_id_after": 239
+        }
+      ],
+      "merge_audit_id": 28,
+      "candidate_id": 42,
+      "evidence": {
+        "area_difference_percentage": 0.0,
+        "area_similarity": 1.0,
+        "auto_merge_safe": false,
+        "contradicting_evidence": [],
+        "fuzzy_title_alone_used": false,
+        "identity_review_decision": {
+          "basis": "Both source records describe factory/workshop plot 214, plan 14/16, 464.52 m², with the same normalized opportunity description and Al-Uyun industrial site. Furas ref 01-26-017001-34002 is retained on the surviving source record; Al-Ahsa supplies no propagated reference.",
+          "decision": "CONFIRMED_FALSE_SPLIT",
+          "fuzzy_title_alone_used": false,
+          "official_reference_evidence": "Furas source-specific reference exists only on the Furas record; no equal Al-Ahsa reference is asserted.",
+          "owner_evidence": "UNAVAILABLE_ON_AL_AHSA_SOURCE_RECORD",
+          "reversible": true,
+          "review_snapshot": "2026-10-20T09:27:35.377973Z",
+          "reviewed_at": "2026-10-20T09:59:11.531193+00:00",
+          "same_source": false
+        },
+        "owner_comparison": "UNAVAILABLE_ON_AL_AHSA_SOURCE_RECORD",
+        "owner_match": false,
+        "parser_plot_conflict_overridden": false,
+        "plan_match": true,
+        "plot_conflict": false,
+        "plot_match": true,
+        "positive_evidence": [
+          "normalized source titles agree with the same explicit plot and plan",
+          "exactly matching area",
+          "compatible named locality/site",
+          "verified Furas source reference remains attached to surviving source listing"
+        ],
+        "site_identity_match": true,
+        "title_similarity": 0.9894,
+        "trusted_official_reference_match": false
+      },
+      "reason": "Both source records describe factory/workshop plot 214, plan 14/16, 464.52 m², with the same normalized opportunity description and Al-Uyun industrial site. Furas ref 01-26-017001-34002 is retained on the surviving source record; Al-Ahsa supplies no propagated reference.",
+      "reversibility": "Supported by MergeAudit and undo_duplicate_merge endpoint; covered by reversible merge tests."
+    },
+    {
+      "action": "MERGE",
+      "master_a": 240,
+      "master_b": 243,
+      "surviving_master": 240,
+      "source_ids_affected": [
+        2844
+      ],
+      "before_links": [
+        {
+          "source_record_id": 2844,
+          "master_id_before": 243
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 2844,
+          "master_id_after": 240
+        }
+      ],
+      "merge_audit_id": 29,
+      "candidate_id": 43,
+      "evidence": {
+        "area_difference_percentage": 0.0,
+        "area_similarity": 1.0,
+        "auto_merge_safe": false,
+        "contradicting_evidence": [],
+        "fuzzy_title_alone_used": false,
+        "identity_review_decision": {
+          "basis": "Both source records describe factory/workshop plot 54, plan 14/16, 538.72 m², with the same normalized opportunity description and Al-Uyun industrial site. Furas ref 01-26-017001-34005 is retained on the surviving source record; Al-Ahsa supplies no propagated reference.",
+          "decision": "CONFIRMED_FALSE_SPLIT",
+          "fuzzy_title_alone_used": false,
+          "official_reference_evidence": "Furas source-specific reference exists only on the Furas record; no equal Al-Ahsa reference is asserted.",
+          "owner_evidence": "UNAVAILABLE_ON_AL_AHSA_SOURCE_RECORD",
+          "reversible": true,
+          "review_snapshot": "2026-10-20T09:27:35.377973Z",
+          "reviewed_at": "2026-10-20T09:59:11.535300+00:00",
+          "same_source": false
+        },
+        "owner_comparison": "UNAVAILABLE_ON_AL_AHSA_SOURCE_RECORD",
+        "owner_match": false,
+        "parser_plot_conflict_overridden": false,
+        "plan_match": true,
+        "plot_conflict": false,
+        "plot_match": true,
+        "positive_evidence": [
+          "normalized source titles agree with the same explicit plot and plan",
+          "exactly matching area",
+          "compatible named locality/site",
+          "verified Furas source reference remains attached to surviving source listing"
+        ],
+        "site_identity_match": true,
+        "title_similarity": 0.9892,
+        "trusted_official_reference_match": false
+      },
+      "reason": "Both source records describe factory/workshop plot 54, plan 14/16, 538.72 m², with the same normalized opportunity description and Al-Uyun industrial site. Furas ref 01-26-017001-34005 is retained on the surviving source record; Al-Ahsa supplies no propagated reference.",
+      "reversibility": "Supported by MergeAudit and undo_duplicate_merge endpoint; covered by reversible merge tests."
+    },
+    {
+      "action": "MERGE",
+      "master_a": 241,
+      "master_b": 244,
+      "surviving_master": 241,
+      "source_ids_affected": [
+        2845
+      ],
+      "before_links": [
+        {
+          "source_record_id": 2845,
+          "master_id_before": 244
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 2845,
+          "master_id_after": 241
+        }
+      ],
+      "merge_audit_id": 30,
+      "candidate_id": 44,
+      "evidence": {
+        "area_difference_percentage": 0.0,
+        "area_similarity": 1.0,
+        "auto_merge_safe": false,
+        "contradicting_evidence": [],
+        "fuzzy_title_alone_used": false,
+        "identity_review_decision": {
+          "basis": "Both source records describe mixed-use building plot 2030, plan 187 at Al-Saifa/Hofuf, 2,513.16 m², with matching normalized title and locality. Furas ref 01-26-017001-40001 is retained on the surviving source record; Al-Ahsa supplies no propagated reference.",
+          "decision": "CONFIRMED_FALSE_SPLIT",
+          "fuzzy_title_alone_used": false,
+          "official_reference_evidence": "Furas source-specific reference exists only on the Furas record; no equal Al-Ahsa reference is asserted.",
+          "owner_evidence": "UNAVAILABLE_ON_AL_AHSA_SOURCE_RECORD",
+          "reversible": true,
+          "review_snapshot": "2026-10-20T09:27:35.377973Z",
+          "reviewed_at": "2026-10-20T09:59:11.539358+00:00",
+          "same_source": false
+        },
+        "owner_comparison": "UNAVAILABLE_ON_AL_AHSA_SOURCE_RECORD",
+        "owner_match": false,
+        "parser_plot_conflict_overridden": false,
+        "plan_match": true,
+        "plot_conflict": false,
+        "plot_match": true,
+        "positive_evidence": [
+          "normalized source titles agree with the same explicit plot and plan",
+          "exactly matching area",
+          "compatible named locality/site",
+          "verified Furas source reference remains attached to surviving source listing"
+        ],
+        "site_identity_match": true,
+        "title_similarity": 0.9754,
+        "trusted_official_reference_match": false
+      },
+      "reason": "Both source records describe mixed-use building plot 2030, plan 187 at Al-Saifa/Hofuf, 2,513.16 m², with matching normalized title and locality. Furas ref 01-26-017001-40001 is retained on the surviving source record; Al-Ahsa supplies no propagated reference.",
+      "reversibility": "Supported by MergeAudit and undo_duplicate_merge endpoint; covered by reversible merge tests."
+    },
+    {
+      "action": "MERGE",
+      "master_a": 253,
+      "master_b": 261,
+      "surviving_master": 253,
+      "source_ids_affected": [
+        2862
+      ],
+      "before_links": [
+        {
+          "source_record_id": 2862,
+          "master_id_before": 261
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 2862,
+          "master_id_after": 253
+        }
+      ],
+      "merge_audit_id": 31,
+      "candidate_id": 45,
+      "evidence": {
+        "area_difference_percentage": 0.0,
+        "area_similarity": 1.0,
+        "auto_merge_safe": false,
+        "contradicting_evidence": [],
+        "fuzzy_title_alone_used": false,
+        "identity_review_decision": {
+          "basis": "Both source records describe mixed-use building plot 12, plan 4/253 in the second education district/Hofuf, 1,991 m², with matching normalized title and site. Furas ref 01-26-017001-1 is retained on the surviving source record; Al-Ahsa supplies no propagated reference.",
+          "decision": "CONFIRMED_FALSE_SPLIT",
+          "fuzzy_title_alone_used": false,
+          "official_reference_evidence": "Furas source-specific reference exists only on the Furas record; no equal Al-Ahsa reference is asserted.",
+          "owner_evidence": "UNAVAILABLE_ON_AL_AHSA_SOURCE_RECORD",
+          "reversible": true,
+          "review_snapshot": "2026-10-20T09:27:35.377973Z",
+          "reviewed_at": "2026-10-20T09:59:11.543177+00:00",
+          "same_source": false
+        },
+        "owner_comparison": "UNAVAILABLE_ON_AL_AHSA_SOURCE_RECORD",
+        "owner_match": false,
+        "parser_plot_conflict_overridden": false,
+        "plan_match": true,
+        "plot_conflict": false,
+        "plot_match": true,
+        "positive_evidence": [
+          "normalized source titles agree with the same explicit plot and plan",
+          "exactly matching area",
+          "compatible named locality/site",
+          "verified Furas source reference remains attached to surviving source listing"
+        ],
+        "site_identity_match": true,
+        "title_similarity": 1.0,
+        "trusted_official_reference_match": false
+      },
+      "reason": "Both source records describe mixed-use building plot 12, plan 4/253 in the second education district/Hofuf, 1,991 m², with matching normalized title and site. Furas ref 01-26-017001-1 is retained on the surviving source record; Al-Ahsa supplies no propagated reference.",
+      "reversibility": "Supported by MergeAudit and undo_duplicate_merge endpoint; covered by reversible merge tests."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_CONFIRMED_DISTINCT",
+      "candidate_id": 6,
+      "master_a": 165,
+      "master_b": 232,
+      "source_ids_affected": [
+        168,
+        2833
+      ],
+      "before_links": [
+        {
+          "source_record_id": 168,
+          "master_id_before": 165
+        },
+        {
+          "source_record_id": 2833,
+          "master_id_before": 232
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 168,
+          "master_id_after": 165
+        },
+        {
+          "source_record_id": 2833,
+          "master_id_after": 232
+        }
+      ],
+      "reason": "Different assets and parcels: Master 165 lists multi-plot group 71/1,71/2,73/1,73/2 (893.06 m²); Master 232 is factory plot 524 (800 m²).",
+      "reversibility": "No identity data change; candidate decision and SystemEvent recorded."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_CONFIRMED_DISTINCT",
+      "candidate_id": 26,
+      "master_a": 262,
+      "master_b": 271,
+      "source_ids_affected": [
+        2863,
+        2872
+      ],
+      "before_links": [
+        {
+          "source_record_id": 2863,
+          "master_id_before": 262
+        },
+        {
+          "source_record_id": 2872,
+          "master_id_before": 271
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 2863,
+          "master_id_after": 262
+        },
+        {
+          "source_record_id": 2872,
+          "master_id_after": 271
+        }
+      ],
+      "reason": "Different parcel/use: Furas salvage-yard plot 67/1, plan 518/4, vs Al-Ahsa equipment/office site plot T84, plan 41082, 5,008 m².",
+      "reversibility": "No identity data change; candidate decision and SystemEvent recorded."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_CONFIRMED_DISTINCT",
+      "candidate_id": 27,
+      "master_a": 262,
+      "master_b": 272,
+      "source_ids_affected": [
+        2863,
+        2873
+      ],
+      "before_links": [
+        {
+          "source_record_id": 2863,
+          "master_id_before": 262
+        },
+        {
+          "source_record_id": 2873,
+          "master_id_before": 272
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 2863,
+          "master_id_after": 262
+        },
+        {
+          "source_record_id": 2873,
+          "master_id_after": 272
+        }
+      ],
+      "reason": "Different parcel/use: Furas salvage-yard plot 67/1, plan 518/4, vs Al-Ahsa equipment/office site plot T82, plan 41082, 5,008 m².",
+      "reversibility": "No identity data change; candidate decision and SystemEvent recorded."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_CONFIRMED_DISTINCT",
+      "candidate_id": 31,
+      "master_a": 262,
+      "master_b": 277,
+      "source_ids_affected": [
+        2863,
+        2879
+      ],
+      "before_links": [
+        {
+          "source_record_id": 2863,
+          "master_id_before": 262
+        },
+        {
+          "source_record_id": 2879,
+          "master_id_before": 277
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 2863,
+          "master_id_after": 262
+        },
+        {
+          "source_record_id": 2879,
+          "master_id_after": 277
+        }
+      ],
+      "reason": "Different parcel/use: Furas salvage-yard plot 67/1, plan 518/4, vs Al-Ahsa equipment/office site plot T85, plan 41082, 5,008 m².",
+      "reversibility": "No identity data change; candidate decision and SystemEvent recorded."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_CONFIRMED_DISTINCT",
+      "candidate_id": 8,
+      "master_a": 193,
+      "master_b": 234,
+      "source_ids_affected": [
+        75,
+        196,
+        2835
+      ],
+      "before_links": [
+        {
+          "source_record_id": 75,
+          "master_id_before": 193
+        },
+        {
+          "source_record_id": 196,
+          "master_id_before": 193
+        },
+        {
+          "source_record_id": 2835,
+          "master_id_before": 234
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 75,
+          "master_id_after": 193
+        },
+        {
+          "source_record_id": 196,
+          "master_id_after": 193
+        },
+        {
+          "source_record_id": 2835,
+          "master_id_after": 234
+        }
+      ],
+      "reason": "Different plot and asset: Master 193 plot 471 light-industry site vs Master 234 warehouse plot 484 (653.74 m²).",
+      "reversibility": "No identity data change; candidate decision and SystemEvent recorded."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_CONFIRMED_DISTINCT",
+      "candidate_id": 9,
+      "master_a": 193,
+      "master_b": 235,
+      "source_ids_affected": [
+        75,
+        196,
+        2836
+      ],
+      "before_links": [
+        {
+          "source_record_id": 75,
+          "master_id_before": 193
+        },
+        {
+          "source_record_id": 196,
+          "master_id_before": 193
+        },
+        {
+          "source_record_id": 2836,
+          "master_id_before": 235
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 75,
+          "master_id_after": 193
+        },
+        {
+          "source_record_id": 196,
+          "master_id_after": 193
+        },
+        {
+          "source_record_id": 2836,
+          "master_id_after": 235
+        }
+      ],
+      "reason": "Different plot and asset: Master 193 plot 471 vs Master 235 warehouse plot 485 (712 m²).",
+      "reversibility": "No identity data change; candidate decision and SystemEvent recorded."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_CONFIRMED_DISTINCT",
+      "candidate_id": 10,
+      "master_a": 193,
+      "master_b": 236,
+      "source_ids_affected": [
+        75,
+        196,
+        2837
+      ],
+      "before_links": [
+        {
+          "source_record_id": 75,
+          "master_id_before": 193
+        },
+        {
+          "source_record_id": 196,
+          "master_id_before": 193
+        },
+        {
+          "source_record_id": 2837,
+          "master_id_before": 236
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 75,
+          "master_id_after": 193
+        },
+        {
+          "source_record_id": 196,
+          "master_id_after": 193
+        },
+        {
+          "source_record_id": 2837,
+          "master_id_after": 236
+        }
+      ],
+      "reason": "Different plot and asset: Master 193 plot 471 vs Master 236 warehouse plot 484 (653.74 m²).",
+      "reversibility": "No identity data change; candidate decision and SystemEvent recorded."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_CONFIRMED_DISTINCT",
+      "candidate_id": 11,
+      "master_a": 193,
+      "master_b": 238,
+      "source_ids_affected": [
+        75,
+        196,
+        2839
+      ],
+      "before_links": [
+        {
+          "source_record_id": 75,
+          "master_id_before": 193
+        },
+        {
+          "source_record_id": 196,
+          "master_id_before": 193
+        },
+        {
+          "source_record_id": 2839,
+          "master_id_before": 238
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 75,
+          "master_id_after": 193
+        },
+        {
+          "source_record_id": 196,
+          "master_id_after": 193
+        },
+        {
+          "source_record_id": 2839,
+          "master_id_after": 238
+        }
+      ],
+      "reason": "Different plot and asset: Master 193 plot 471 vs Master 238 warehouse plot 483 (705.75 m²).",
+      "reversibility": "No identity data change; candidate decision and SystemEvent recorded."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_CONFIRMED_DISTINCT",
+      "candidate_id": 12,
+      "master_a": 193,
+      "master_b": 239,
+      "source_ids_affected": [
+        75,
+        196,
+        2840
+      ],
+      "before_links": [
+        {
+          "source_record_id": 75,
+          "master_id_before": 193
+        },
+        {
+          "source_record_id": 196,
+          "master_id_before": 193
+        },
+        {
+          "source_record_id": 2840,
+          "master_id_before": 239
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 75,
+          "master_id_after": 193
+        },
+        {
+          "source_record_id": 196,
+          "master_id_after": 193
+        },
+        {
+          "source_record_id": 2840,
+          "master_id_after": 239
+        }
+      ],
+      "reason": "Different plot and asset: Master 193 plot 471 vs Master 239 factory/workshop plot 214 (464.52 m²).",
+      "reversibility": "No identity data change; candidate decision and SystemEvent recorded."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_CONFIRMED_DISTINCT",
+      "candidate_id": 13,
+      "master_a": 193,
+      "master_b": 240,
+      "source_ids_affected": [
+        75,
+        196,
+        2841
+      ],
+      "before_links": [
+        {
+          "source_record_id": 75,
+          "master_id_before": 193
+        },
+        {
+          "source_record_id": 196,
+          "master_id_before": 193
+        },
+        {
+          "source_record_id": 2841,
+          "master_id_before": 240
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 75,
+          "master_id_after": 193
+        },
+        {
+          "source_record_id": 196,
+          "master_id_after": 193
+        },
+        {
+          "source_record_id": 2841,
+          "master_id_after": 240
+        }
+      ],
+      "reason": "Different plot and asset: Master 193 plot 471 vs Master 240 factory/workshop plot 54 (538.72 m²).",
+      "reversibility": "No identity data change; candidate decision and SystemEvent recorded."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_CONFIRMED_DISTINCT",
+      "candidate_id": 14,
+      "master_a": 193,
+      "master_b": 243,
+      "source_ids_affected": [
+        75,
+        196,
+        2844
+      ],
+      "before_links": [
+        {
+          "source_record_id": 75,
+          "master_id_before": 193
+        },
+        {
+          "source_record_id": 196,
+          "master_id_before": 193
+        },
+        {
+          "source_record_id": 2844,
+          "master_id_before": 243
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 75,
+          "master_id_after": 193
+        },
+        {
+          "source_record_id": 196,
+          "master_id_after": 193
+        },
+        {
+          "source_record_id": 2844,
+          "master_id_after": 243
+        }
+      ],
+      "reason": "Different plot and asset: Master 193 plot 471 vs Master 243 factory/workshop plot 54 (538.72 m²).",
+      "reversibility": "No identity data change; candidate decision and SystemEvent recorded."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_CONFIRMED_DISTINCT",
+      "candidate_id": 15,
+      "master_a": 193,
+      "master_b": 245,
+      "source_ids_affected": [
+        75,
+        196,
+        2846
+      ],
+      "before_links": [
+        {
+          "source_record_id": 75,
+          "master_id_before": 193
+        },
+        {
+          "source_record_id": 196,
+          "master_id_before": 193
+        },
+        {
+          "source_record_id": 2846,
+          "master_id_before": 245
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 75,
+          "master_id_after": 193
+        },
+        {
+          "source_record_id": 196,
+          "master_id_after": 193
+        },
+        {
+          "source_record_id": 2846,
+          "master_id_after": 245
+        }
+      ],
+      "reason": "Different plot and asset: Master 193 plot 471 vs Master 245 factory/workshop plot 524 (800 m²).",
+      "reversibility": "No identity data change; candidate decision and SystemEvent recorded."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_CONFIRMED_DISTINCT",
+      "candidate_id": 16,
+      "master_a": 193,
+      "master_b": 247,
+      "source_ids_affected": [
+        75,
+        196,
+        2848
+      ],
+      "before_links": [
+        {
+          "source_record_id": 75,
+          "master_id_before": 193
+        },
+        {
+          "source_record_id": 196,
+          "master_id_before": 193
+        },
+        {
+          "source_record_id": 2848,
+          "master_id_before": 247
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 75,
+          "master_id_after": 193
+        },
+        {
+          "source_record_id": 196,
+          "master_id_after": 193
+        },
+        {
+          "source_record_id": 2848,
+          "master_id_after": 247
+        }
+      ],
+      "reason": "Different plot and asset: Master 193 plot 471 vs Master 247 factory/workshop plot 214 (464.52 m²).",
+      "reversibility": "No identity data change; candidate decision and SystemEvent recorded."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_CONFIRMED_DISTINCT",
+      "candidate_id": 17,
+      "master_a": 191,
+      "master_b": 249,
+      "source_ids_affected": [
+        194,
+        2850,
+        2874
+      ],
+      "before_links": [
+        {
+          "source_record_id": 194,
+          "master_id_before": 191
+        },
+        {
+          "source_record_id": 2850,
+          "master_id_before": 249
+        },
+        {
+          "source_record_id": 2874,
+          "master_id_before": 249
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 194,
+          "master_id_after": 191
+        },
+        {
+          "source_record_id": 2850,
+          "master_id_after": 249
+        },
+        {
+          "source_record_id": 2874,
+          "master_id_after": 249
+        }
+      ],
+      "reason": "Different shopping-center lots: Master 191 identifies lot 11 (6,525 m²); Master 249 identifies lot 12 (6,683.14 m²).",
+      "reversibility": "No identity data change; candidate decision and SystemEvent recorded."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_CONFIRMED_DISTINCT",
+      "candidate_id": 18,
+      "master_a": 193,
+      "master_b": 250,
+      "source_ids_affected": [
+        75,
+        196,
+        2851
+      ],
+      "before_links": [
+        {
+          "source_record_id": 75,
+          "master_id_before": 193
+        },
+        {
+          "source_record_id": 196,
+          "master_id_before": 193
+        },
+        {
+          "source_record_id": 2851,
+          "master_id_before": 250
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 75,
+          "master_id_after": 193
+        },
+        {
+          "source_record_id": 196,
+          "master_id_after": 193
+        },
+        {
+          "source_record_id": 2851,
+          "master_id_after": 250
+        }
+      ],
+      "reason": "Different plot and asset: Master 193 plot 471 vs Master 250 factory/workshop plot 122 (558.79 m²).",
+      "reversibility": "No identity data change; candidate decision and SystemEvent recorded."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_CONFIRMED_DISTINCT",
+      "candidate_id": 19,
+      "master_a": 193,
+      "master_b": 255,
+      "source_ids_affected": [
+        75,
+        196,
+        2856
+      ],
+      "before_links": [
+        {
+          "source_record_id": 75,
+          "master_id_before": 193
+        },
+        {
+          "source_record_id": 196,
+          "master_id_before": 193
+        },
+        {
+          "source_record_id": 2856,
+          "master_id_before": 255
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 75,
+          "master_id_after": 193
+        },
+        {
+          "source_record_id": 196,
+          "master_id_after": 193
+        },
+        {
+          "source_record_id": 2856,
+          "master_id_after": 255
+        }
+      ],
+      "reason": "Different plot and asset: Master 193 plot 471 vs Master 255 warehouse plot 483 (705.75 m²).",
+      "reversibility": "No identity data change; candidate decision and SystemEvent recorded."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_REQUIRED_CROSS_SOURCE",
+      "candidate_id": 46,
+      "master_a": 107,
+      "master_b": 186,
+      "source_ids_affected": [
+        107,
+        189
+      ],
+      "before_links": [
+        {
+          "source_record_id": 107,
+          "master_id_before": 107
+        },
+        {
+          "source_record_id": 189,
+          "master_id_before": 186
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 107,
+          "master_id_after": 107
+        },
+        {
+          "source_record_id": 189,
+          "master_id_after": 186
+        }
+      ],
+      "reason": "Furas and Al-Ahsa listings both describe a 15 m² smart-gym kiosk on a King Faisal University promenade and have highly similar titles. Al-Ahsa has no official reference or owner, and its location is only Hawfuf while Furas includes a more specific street. Keep separate pending source-detail confirmation.",
+      "reversibility": "No merge; source/detail review remains open."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_REQUIRED_CROSS_SOURCE",
+      "candidate_id": 47,
+      "master_a": 107,
+      "master_b": 187,
+      "source_ids_affected": [
+        107,
+        190
+      ],
+      "before_links": [
+        {
+          "source_record_id": 107,
+          "master_id_before": 107
+        },
+        {
+          "source_record_id": 190,
+          "master_id_before": 187
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 107,
+          "master_id_after": 107
+        },
+        {
+          "source_record_id": 190,
+          "master_id_after": 187
+        }
+      ],
+      "reason": "Furas lists a 15 m² smart-gym kiosk on a King Faisal University walkway; the Al-Ahsa listing says Diyar Al-Ahsa promenade opposite the university. The shared area and nearby locality are insufficient to establish the same exact site; keep separate pending source-detail confirmation.",
+      "reversibility": "No merge; source/detail review remains open."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_REQUIRED_SAME_SOURCE",
+      "candidate_id": 32,
+      "master_a": 155,
+      "master_b": 156,
+      "source_ids_affected": [
+        155,
+        156
+      ],
+      "before_links": [
+        {
+          "source_record_id": 155,
+          "master_id_before": 155
+        },
+        {
+          "source_record_id": 156,
+          "master_id_before": 156
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 155,
+          "master_id_after": 155
+        },
+        {
+          "source_record_id": 156,
+          "master_id_after": 156
+        }
+      ],
+      "reason": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "reversibility": "No merge; source/detail review remains open."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_REQUIRED_SAME_SOURCE",
+      "candidate_id": 33,
+      "master_a": 155,
+      "master_b": 159,
+      "source_ids_affected": [
+        155,
+        159
+      ],
+      "before_links": [
+        {
+          "source_record_id": 155,
+          "master_id_before": 155
+        },
+        {
+          "source_record_id": 159,
+          "master_id_before": 159
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 155,
+          "master_id_after": 155
+        },
+        {
+          "source_record_id": 159,
+          "master_id_after": 159
+        }
+      ],
+      "reason": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "reversibility": "No merge; source/detail review remains open."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_REQUIRED_SAME_SOURCE",
+      "candidate_id": 34,
+      "master_a": 156,
+      "master_b": 159,
+      "source_ids_affected": [
+        156,
+        159
+      ],
+      "before_links": [
+        {
+          "source_record_id": 156,
+          "master_id_before": 156
+        },
+        {
+          "source_record_id": 159,
+          "master_id_before": 159
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 156,
+          "master_id_after": 156
+        },
+        {
+          "source_record_id": 159,
+          "master_id_after": 159
+        }
+      ],
+      "reason": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "reversibility": "No merge; source/detail review remains open."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_REQUIRED_SAME_SOURCE",
+      "candidate_id": 35,
+      "master_a": 157,
+      "master_b": 160,
+      "source_ids_affected": [
+        157,
+        160
+      ],
+      "before_links": [
+        {
+          "source_record_id": 157,
+          "master_id_before": 157
+        },
+        {
+          "source_record_id": 160,
+          "master_id_before": 160
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 157,
+          "master_id_after": 157
+        },
+        {
+          "source_record_id": 160,
+          "master_id_after": 160
+        }
+      ],
+      "reason": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "reversibility": "No merge; source/detail review remains open."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_REQUIRED_SAME_SOURCE",
+      "candidate_id": 36,
+      "master_a": 158,
+      "master_b": 161,
+      "source_ids_affected": [
+        158,
+        161
+      ],
+      "before_links": [
+        {
+          "source_record_id": 158,
+          "master_id_before": 158
+        },
+        {
+          "source_record_id": 161,
+          "master_id_before": 161
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 158,
+          "master_id_after": 158
+        },
+        {
+          "source_record_id": 161,
+          "master_id_after": 161
+        }
+      ],
+      "reason": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "reversibility": "No merge; source/detail review remains open."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_REQUIRED_SAME_SOURCE",
+      "candidate_id": 37,
+      "master_a": 163,
+      "master_b": 254,
+      "source_ids_affected": [
+        163,
+        2855
+      ],
+      "before_links": [
+        {
+          "source_record_id": 163,
+          "master_id_before": 163
+        },
+        {
+          "source_record_id": 2855,
+          "master_id_before": 254
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 163,
+          "master_id_after": 163
+        },
+        {
+          "source_record_id": 2855,
+          "master_id_after": 254
+        }
+      ],
+      "reason": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "reversibility": "No merge; source/detail review remains open."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_REQUIRED_SAME_SOURCE",
+      "candidate_id": 38,
+      "master_a": 197,
+      "master_b": 198,
+      "source_ids_affected": [
+        200,
+        201
+      ],
+      "before_links": [
+        {
+          "source_record_id": 200,
+          "master_id_before": 197
+        },
+        {
+          "source_record_id": 201,
+          "master_id_before": 198
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 200,
+          "master_id_after": 197
+        },
+        {
+          "source_record_id": 201,
+          "master_id_after": 198
+        }
+      ],
+      "reason": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "reversibility": "No merge; source/detail review remains open."
+    },
+    {
+      "action": "NO_ACTION_REVIEW_REQUIRED_SAME_SOURCE",
+      "candidate_id": 39,
+      "master_a": 263,
+      "master_b": 264,
+      "source_ids_affected": [
+        2864,
+        2865
+      ],
+      "before_links": [
+        {
+          "source_record_id": 2864,
+          "master_id_before": 263
+        },
+        {
+          "source_record_id": 2865,
+          "master_id_before": 264
+        }
+      ],
+      "after_links": [
+        {
+          "source_record_id": 2864,
+          "master_id_after": 263
+        },
+        {
+          "source_record_id": 2865,
+          "master_id_after": 264
+        }
+      ],
+      "reason": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "reversibility": "No merge; source/detail review remains open."
+    }
+  ]
+}

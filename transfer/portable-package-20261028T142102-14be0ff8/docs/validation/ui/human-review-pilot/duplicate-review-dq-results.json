@@ -1,0 +1,47 @@
+{
+  "scope": "full",
+  "generated_at_local": "2026-10-25",
+  "read_only": true,
+  "persisted": false,
+  "focused_run": {
+    "gates": 42,
+    "pass": 42,
+    "warning": 0,
+    "fail": 0
+  },
+  "full_run": {
+    "gates": 103,
+    "pass": 98,
+    "warning": 5,
+    "fail": 0
+  },
+  "duplicate_review_gate_records": [
+    {
+      "gate_key": "DUPLICATE_REVIEW_WITH_NO_MEANINGFUL_DIFFERENCE",
+      "status": "PASS",
+      "observed_value": 0
+    },
+    {
+      "gate_key": "IDENTICAL_REVIEW_WITHOUT_BLOCKING_REASON",
+      "status": "PASS",
+      "observed_value": 0
+    },
+    {
+      "gate_key": "SAME_SOURCE_SAME_OFFICIAL_ID_MULTIPLE_CURRENT_RECORDS",
+      "status": "PASS",
+      "observed_value": 0
+    },
+    {
+      "gate_key": "DETERMINISTIC_DUPLICATE_LEFT_FOR_HUMAN_REVIEW",
+      "status": "PASS",
+      "observed_value": 0
+    }
+  ],
+  "assertions": {
+    "DQ_DUPLICATE_REVIEW_NO_DIFFERENCE": 0,
+    "DQ_IDENTICAL_REVIEW_NO_EXPLANATION": 0,
+    "DQ_SAME_SOURCE_IDENTITY_DUPLICATION": 0,
+    "DQ_DETERMINISTIC_DUPLICATE_LEFT_HUMAN": 0,
+    "live_dq_failures": 0
+  }
+}

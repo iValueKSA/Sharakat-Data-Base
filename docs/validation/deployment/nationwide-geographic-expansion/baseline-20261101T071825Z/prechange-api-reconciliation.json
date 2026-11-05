@@ -1,0 +1,29 @@
+{
+  "captured_at_utc": "2026-11-01T07:30Z",
+  "general_total": 566,
+  "unique_master_ids": 566,
+  "alahsa_filter_total": 565,
+  "dashboard_global_total": 566,
+  "dashboard_active": 461,
+  "map_total": 566,
+  "map_coordinate_records": 436,
+  "map_exact_mapped": 435,
+  "map_missing_coordinates": 130,
+  "geographic_status_counts": {
+    "CONFIRMED": 565,
+    "LOCATION_UNSPECIFIED": 1
+  },
+  "confirmed_region_counts": [
+    {
+      "region": "المنطقة الشرقية",
+      "count": 565
+    },
+    {
+      "region": null,
+      "count": 1
+    }
+  ],
+  "unconfirmed_master_ids": [
+    327
+  ]
+}

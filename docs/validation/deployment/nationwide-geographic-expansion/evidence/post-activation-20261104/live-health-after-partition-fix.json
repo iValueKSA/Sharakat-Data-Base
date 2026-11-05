@@ -1,0 +1,47 @@
+{
+  "recorded_at": "2026-11-04 Asia/Amman",
+  "api_live_http": 200,
+  "api_readiness_http": 200,
+  "readiness": {
+    "status": "ready",
+    "checks": {
+      "database": "ok",
+      "redis": "ok",
+      "worker": "ok"
+    }
+  },
+  "feature_flags": {
+    "NATIONAL_DASHBOARD_ENABLED": "true",
+    "NATIONAL_UI_ENABLED": "true",
+    "NATIONAL_MAP_ENABLED": "false"
+  },
+  "catalog": {
+    "reference_ready": true,
+    "national_ui_enabled": true,
+    "national_dashboard_enabled": true,
+    "national_map_enabled": false
+  },
+  "services": {
+    "alahsa-local-db-1": "running healthy",
+    "alahsa-local-worker-1": "running no-healthcheck",
+    "alahsa-local-redis-1": "running healthy",
+    "alahsa-local-api-1": "running healthy",
+    "alahsa-local-scheduler-1": "running no-healthcheck"
+  },
+  "postgres": "pg_isready: accepting connections",
+  "redis": "PONG",
+  "worker": "Celery inspect ping: pong",
+  "beat": "scheduler container running; command: celery -A app.celery_app:celery_app beat --loglevel=INFO",
+  "current_masters": 6657,
+  "rcu_masters": 6,
+  "rcu_canonical_status_incorrect": 0,
+  "rcu_canonical_deadline_incorrect": 0,
+  "rcu_open_status_reviews": 6,
+  "rcu_open_deadline_reviews": 6,
+  "verified_coordinate_masters": 5889,
+  "map_markers": 5847,
+  "outside_boundary_markers": 0,
+  "manual_source_syncs": 0,
+  "new_masters_created": 0,
+  "business_data_changes": 0
+}

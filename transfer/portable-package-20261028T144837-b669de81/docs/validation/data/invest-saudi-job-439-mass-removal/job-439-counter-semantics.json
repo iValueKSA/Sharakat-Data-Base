@@ -1,0 +1,15 @@
+{
+  "reported_counter": "removed_records_count",
+  "reported_value": 2423,
+  "pre_fix_cause": "The sync service used only the adapter returned records for seen IDs. Invest Saudi returns the 8 Al-Ahsa-qualified rows there while persisting all 2431 national raw_candidates. The 2423 present, unqualified rows were therefore treated as absent.",
+  "counter_was_net_transition_only": false,
+  "counted_preexisting_false_removed_rows": 2423,
+  "net_source_lifecycle_transitions_attributable_to_439": 0,
+  "actual_dataset_membership_deactivations": {
+    "count": 9,
+    "dataset": "Investment projects",
+    "meaning": "Three-confirmation dataset-membership deactivation, distinct from the 2423 source-lifecycle counter."
+  },
+  "historical_439_counter_rewritten": false,
+  "counter_fix": "All raw_candidates define source presence; reconcile_missing_records returns only new lifecycle transitions. Added source_lifecycle_newly_removed_count."
+}

@@ -1,0 +1,28 @@
+{
+  "model": "PASS / WARNING / FAIL per gate status; technical service health remains separate",
+  "levels": [
+    {
+      "status": "PASS",
+      "action": "No action; retain run result."
+    },
+    {
+      "status": "WARNING",
+      "action": "Surface in admin panel with reason and sample IDs; no business-data mutation."
+    },
+    {
+      "status": "FAIL",
+      "action": "Create deduplicated DATA_QUALITY_FAILURE admin alert; do not auto-correct or stop liveness."
+    }
+  ],
+  "gate_severity_counts": {
+    "FAIL": 31,
+    "WARNING": 12,
+    "INFO": 5
+  },
+  "live_status_counts": {
+    "pass": 45,
+    "warning": 3,
+    "fail": 0
+  },
+  "alert_fingerprint": "Stable hash of failed gate keys and sample IDs, excluding run/job IDs."
+}

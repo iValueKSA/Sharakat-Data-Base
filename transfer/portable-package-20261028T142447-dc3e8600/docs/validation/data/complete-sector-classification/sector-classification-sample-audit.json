@@ -1,0 +1,3164 @@
+{
+  "sampling_method": "deterministic stratified sample, seed 20261026; includes every explicit Other record, all non-Commercial sectors, all non-mobile-vending LOW rules, all HIGH decisions, and four additional MEDIUM Commercial decisions",
+  "sample_size": 60,
+  "population_size": 362,
+  "confidence_counts": {
+    "MEDIUM": 31,
+    "LOW": 7,
+    "HIGH": 22
+  },
+  "sector_counts": {
+    "sector:other": 21,
+    "sector:real_estate": 2,
+    "sector:tourism": 1,
+    "sector:commercial": 33,
+    "sector:industrial": 1,
+    "sector:education": 1,
+    "sector:logistics": 1
+  },
+  "all_positive_other_in_population_reviewed": 21,
+  "unexplained_other": 0,
+  "sample_review_failed": 0,
+  "sample_records": [
+    {
+      "master_id": 10,
+      "title": "تاجير مؤقت لموقع من نوع الشواطئ والواجهات بحي العقير العقير موقع دبابات رقم 7 بين مدخل 4 ومدخل 5",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 10,
+          "source_opportunity_id": "02-22-017001-1013"
+        }
+      ],
+      "sector_id": "sector:other",
+      "proposed_sector": "أخرى",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+      "top_score": 66.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 66.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:other",
+          "field": "title_ar",
+          "signal": "دبابات",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 66.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:other",
+          "field": "normalized_title",
+          "signal": "دبابات",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit amusement/leisure attraction (rides, games, scooters, slides or event activity). Other is a positive canonical bucket because Entertainment has no canonical ID; not a missing-data fallback."
+    },
+    {
+      "master_id": 11,
+      "title": "تاجير مؤقت لموقع من نوع الشواطئ والواجهات بحي  العقير تأجير دبابات الموقع رقم 5 بين مدخل 4 ومدخل 3",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 11,
+          "source_opportunity_id": "02-22-017001-1012"
+        }
+      ],
+      "sector_id": "sector:other",
+      "proposed_sector": "أخرى",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+      "top_score": 66.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 66.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:other",
+          "field": "title_ar",
+          "signal": "دبابات",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 66.0,
+          "duplicate_representation": false
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit amusement/leisure attraction (rides, games, scooters, slides or event activity). Other is a positive canonical bucket because Entertainment has no canonical ID; not a missing-data fallback."
+    },
+    {
+      "master_id": 12,
+      "title": "تاجير مؤقت لموقع من نوع الشواطئ والواجهات بحي  العقير تأجير ساحة العاب الموقع رقم 4 بين مدخل6 ومدخل5",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 12,
+          "source_opportunity_id": "02-22-017001-1027"
+        }
+      ],
+      "sector_id": "sector:other",
+      "proposed_sector": "أخرى",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+      "top_score": 66.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 66.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:other",
+          "field": "title_ar",
+          "signal": "ساحة ألعاب",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 66.0,
+          "duplicate_representation": false
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit amusement/leisure attraction (rides, games, scooters, slides or event activity). Other is a positive canonical bucket because Entertainment has no canonical ID; not a missing-data fallback."
+    },
+    {
+      "master_id": 13,
+      "title": "تاجير مؤقت لموقع من نوع الشواطئ والواجهات بحي  العقير تأجير دبابات الموقع رقم 1 بين مدخل 3 ومدخل 2",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 13,
+          "source_opportunity_id": "02-22-017001-1008"
+        }
+      ],
+      "sector_id": "sector:other",
+      "proposed_sector": "أخرى",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+      "top_score": 66.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 66.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:other",
+          "field": "title_ar",
+          "signal": "دبابات",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 66.0,
+          "duplicate_representation": false
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit amusement/leisure attraction (rides, games, scooters, slides or event activity). Other is a positive canonical bucket because Entertainment has no canonical ID; not a missing-data fallback."
+    },
+    {
+      "master_id": 14,
+      "title": "تاجير مؤقت لموقع من نوع الشواطئ والواجهات بحي  العقير تاجير موقع دبابات رقم 4 بين مدخل 4 ومدخل 3",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 14,
+          "source_opportunity_id": "02-23-017001-10002"
+        }
+      ],
+      "sector_id": "sector:other",
+      "proposed_sector": "أخرى",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+      "top_score": 66.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 66.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:other",
+          "field": "title_ar",
+          "signal": "دبابات",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 66.0,
+          "duplicate_representation": false
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit amusement/leisure attraction (rides, games, scooters, slides or event activity). Other is a positive canonical bucket because Entertainment has no canonical ID; not a missing-data fallback."
+    },
+    {
+      "master_id": 16,
+      "title": "تاجير مؤقت لموقع من نوع الاراضي بحي  شاطئ العقير اقامة عربات متنقلة (كرفانات) لأغراض سكنية",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 16,
+          "source_opportunity_id": "02-24-017001-21002"
+        }
+      ],
+      "sector_id": "sector:real_estate",
+      "proposed_sector": "العقارات والإنشاءات",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_REAL_ESTATE",
+      "top_score": 66.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 66.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:real_estate",
+          "field": "normalized_title",
+          "signal": "كرفانات لأغراض سكنية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_REAL_ESTATE",
+          "weight": 66.0,
+          "duplicate_representation": false
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Residential caravan/housing use is explicit; Real Estate is the closest canonical activity sector."
+    },
+    {
+      "master_id": 17,
+      "title": "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  شاطئ العقير لنشاط عربات خيل (حناطير)",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 17,
+          "source_opportunity_id": "02-24-017001-28001"
+        }
+      ],
+      "sector_id": "sector:other",
+      "proposed_sector": "أخرى",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+      "top_score": 66.0,
+      "second_sector_id": "sector:commercial",
+      "second_score": 24.0,
+      "margin": 42.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:other",
+          "field": "title_ar",
+          "signal": "عربات خيل",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 66.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:other",
+          "field": "normalized_title",
+          "signal": "عربات خيل",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit amusement/leisure attraction (rides, games, scooters, slides or event activity). Other is a positive canonical bucket because Entertainment has no canonical ID; not a missing-data fallback."
+    },
+    {
+      "master_id": 18,
+      "title": "تاجير مؤقت لموقع من نوع الساحات الميادين بحي  جبل الشعبة جبل الشعبة لنشاط دبابات هوائية (4 كفرات )",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 18,
+          "source_opportunity_id": "02-24-017001-38001"
+        }
+      ],
+      "sector_id": "sector:other",
+      "proposed_sector": "أخرى",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+      "top_score": 66.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 66.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:other",
+          "field": "title_ar",
+          "signal": "دبابات",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 66.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:other",
+          "field": "normalized_title",
+          "signal": "دبابات",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit amusement/leisure attraction (rides, games, scooters, slides or event activity). Other is a positive canonical bucket because Entertainment has no canonical ID; not a missing-data fallback."
+    },
+    {
+      "master_id": 23,
+      "title": "تاجير مؤقت لموقع من نوع الحدائق بحي  العمران لنشاط العاب هوائية (نطيطة)",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 23,
+          "source_opportunity_id": "02-25-017001-7001"
+        }
+      ],
+      "sector_id": "sector:other",
+      "proposed_sector": "أخرى",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+      "top_score": 66.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 66.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:other",
+          "field": "title_ar",
+          "signal": "ألعاب هوائية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 66.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:other",
+          "field": "normalized_title",
+          "signal": "ألعاب هوائية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit amusement/leisure attraction (rides, games, scooters, slides or event activity). Other is a positive canonical bucket because Entertainment has no canonical ID; not a missing-data fallback."
+    },
+    {
+      "master_id": 24,
+      "title": "تاجير مؤقت لموقع من نوع الشواطئ والواجهات بحي  العقير تاجير مؤقت لموقع  دبابات رقم 2 بين مدخل رقم 2 ورقم 3",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 24,
+          "source_opportunity_id": "02-25-017001-19002"
+        }
+      ],
+      "sector_id": "sector:other",
+      "proposed_sector": "أخرى",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+      "top_score": 66.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 66.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:other",
+          "field": "title_ar",
+          "signal": "دبابات",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 66.0,
+          "duplicate_representation": false
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit amusement/leisure attraction (rides, games, scooters, slides or event activity). Other is a positive canonical bucket because Entertainment has no canonical ID; not a missing-data fallback."
+    },
+    {
+      "master_id": 25,
+      "title": "تاجير مؤقت لموقع من نوع الشواطئ والواجهات بحي  العقير لتنظيم الفعاليات والمناسبات والمبيت  في شاطئ الريف",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 25,
+          "source_opportunity_id": "02-25-017001-22001"
+        }
+      ],
+      "sector_id": "sector:tourism",
+      "proposed_sector": "السياحة",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_TOURISM",
+      "top_score": 66.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 66.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:tourism",
+          "field": "title_ar",
+          "signal": "المبيت في شاطئ",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_TOURISM",
+          "weight": 66.0,
+          "duplicate_representation": false
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Evidence supports the selected sector at the stated confidence; no venue/owner-only inference used."
+    },
+    {
+      "master_id": 31,
+      "title": "تاجير مؤقت لموقع من نوع الحدائق بحي  المطار,الإمام محمد بن سعود,الجامعيين الجامعيين لاقامة نشاط اسكوتر",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 31,
+          "source_opportunity_id": "02-25-017001-59007"
+        }
+      ],
+      "sector_id": "sector:other",
+      "proposed_sector": "أخرى",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+      "top_score": 66.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 66.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:other",
+          "field": "title_ar",
+          "signal": "اسكوتر",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 66.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:other",
+          "field": "normalized_title",
+          "signal": "اسكوتر",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit amusement/leisure attraction (rides, games, scooters, slides or event activity). Other is a positive canonical bucket because Entertainment has no canonical ID; not a missing-data fallback."
+    },
+    {
+      "master_id": 47,
+      "title": "تاجير مؤقت لموقع من نوع الحدائق بحي  منتزه جبل الشعبة سكوتر مع اضاءة-موقع رقم 62 منطقة F",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 47,
+          "source_opportunity_id": "02-25-017001-67001"
+        }
+      ],
+      "sector_id": "sector:other",
+      "proposed_sector": "أخرى",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+      "top_score": 66.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 66.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:other",
+          "field": "title_ar",
+          "signal": "سكوتر",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 66.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:other",
+          "field": "normalized_title",
+          "signal": "سكوتر",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit amusement/leisure attraction (rides, games, scooters, slides or event activity). Other is a positive canonical bucket because Entertainment has no canonical ID; not a missing-data fallback."
+    },
+    {
+      "master_id": 64,
+      "title": "تاجير مؤقت لموقع من نوع الحدائق بحي  منتزه جبل الشعبة - منطقة G - موقف 63 الزحليقة الملونة",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 64,
+          "source_opportunity_id": "02-25-017001-83001"
+        }
+      ],
+      "sector_id": "sector:other",
+      "proposed_sector": "أخرى",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+      "top_score": 66.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 66.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:other",
+          "field": "title_ar",
+          "signal": "زحليقة",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 66.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:other",
+          "field": "normalized_title",
+          "signal": "زحليقة",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit amusement/leisure attraction (rides, games, scooters, slides or event activity). Other is a positive canonical bucket because Entertainment has no canonical ID; not a missing-data fallback."
+    },
+    {
+      "master_id": 66,
+      "title": "تاجير مؤقت لموقع من نوع الحدائق بحي  الرقيقة,الرقيقة,الرقيقة الرقيقه (الاوقاف)",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 66,
+          "source_opportunity_id": "02-25-017001-85001"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "LOW",
+      "classification_method": "FORCED_BEST_FIT",
+      "rule_key": "FORCED_BEST_FIT_TEMPORARY_RENTAL_PEER_PRIOR",
+      "top_score": 28.0,
+      "second_sector_id": "sector:other",
+      "second_score": 5.0,
+      "margin": 23.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "opportunity_type + accepted labeled peers",
+          "signal": "temporary rental; 28/33 comparable labeled peers Commercial",
+          "rule_key": "FORCED_BEST_FIT_TEMPORARY_RENTAL_PEER_PRIOR",
+          "weight": 28.0,
+          "duplicate_representation": false
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_AS_LOW_BEST_FIT",
+      "auditor_note": "LOW best fit: no activity-level evidence is exposed; among 33 previously specified temporary-rental peers, 28 were Commercial and 5 were Other. The record has no explicit positive Other signal, so Commercial is the bounded best fit; preserve low confidence and alternative."
+    },
+    {
+      "master_id": 67,
+      "title": "تاجير مؤقت لموقع من نوع الحدائق بحي  منتزه جبل الشعبة 3 أكواخ خشبية مؤقتة",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 67,
+          "source_opportunity_id": "02-25-017001-86001"
+        }
+      ],
+      "sector_id": "sector:other",
+      "proposed_sector": "أخرى",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+      "top_score": 66.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 66.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:other",
+          "field": "title_ar",
+          "signal": "أكواخ خشبية مؤقتة",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 66.0,
+          "duplicate_representation": false
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit amusement/leisure attraction (rides, games, scooters, slides or event activity). Other is a positive canonical bucket because Entertainment has no canonical ID; not a missing-data fallback."
+    },
+    {
+      "master_id": 70,
+      "title": "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  سلوى فود ترك",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 70,
+          "source_opportunity_id": "02-26-017704-1001"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+      "top_score": 90.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 90.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "فود ترك",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 66.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "normalized_title",
+          "signal": "فود ترك",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.LOCATIONTYPE",
+          "signal": "العربات المتنقلة",
+          "rule_key": "ASSET_MOBILE_VENDING_CONTEXT",
+          "weight": 24.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].asset_assignment",
+          "signal": "العربات المتنقلة",
+          "rule_key": "ASSET_MOBILE_VENDING_CONTEXT",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "asset_facility_type",
+          "signal": "العربات المتنقلة",
+          "rule_key": "ASSET_MOBILE_VENDING_CONTEXT",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit retail, food service, vehicle service or parking activity. Commercial matches the stated primary economic activity."
+    },
+    {
+      "master_id": 72,
+      "title": "تاجير مؤقت لموقع من نوع الحدائق بحي  قرية الحوطة تأجير موقع المسطح الاخضر (مثلث) بالعمران لإقامة كشك",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 72,
+          "source_opportunity_id": "02-26-017001-12003"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+      "top_score": 66.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 66.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "كشك",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 66.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "normalized_title",
+          "signal": "كشك",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit retail, food service, vehicle service or parking activity. Commercial matches the stated primary economic activity."
+    },
+    {
+      "master_id": 78,
+      "title": "منشأة تحويلية للمنتجات الثانوية للنخيل بمحافظة الأحساء بالمنطقة الشرقية",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 78,
+          "source_opportunity_id": "06-26-189921-64005"
+        }
+      ],
+      "sector_id": "sector:industrial",
+      "proposed_sector": "صناعي",
+      "confidence": "LOW",
+      "classification_method": "FORCED_BEST_FIT",
+      "rule_key": "FORCED_EXACT_SUB_ACTIVITY",
+      "top_score": 162.0,
+      "second_sector_id": "sector:agriculture",
+      "second_score": 90.0,
+      "margin": 72.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:industrial",
+          "field": "sub_activity",
+          "signal": "أنشطة وخدمات انتاج المواد غير الغذائية",
+          "rule_key": "FORCED_EXACT_SUB_ACTIVITY",
+          "weight": 96.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:industrial",
+          "field": "sources[0].source_sub_activity",
+          "signal": "أنشطة وخدمات انتاج المواد غير الغذائية",
+          "rule_key": "FORCED_EXACT_SOURCE_SUB_ACTIVITY",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:industrial",
+          "field": "sources[0].raw.SUBACTIVITYTYPE",
+          "signal": "أنشطة وخدمات انتاج المواد غير الغذائية",
+          "rule_key": "FORCED_RAW_SUBACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:industrial",
+          "field": "title_ar",
+          "signal": "منشأة تحويلية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_INDUSTRIAL",
+          "weight": 66.0,
+          "duplicate_representation": false
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_AS_LOW_BEST_FIT",
+      "auditor_note": "LOW forced choice due material activity/sub-activity conflict; transformation of palm by-products supports Industrial more directly than broad Agriculture activity. Alternative/conflict remains visible in provenance."
+    },
+    {
+      "master_id": 81,
+      "title": "تاجير مؤقت لموقع من نوع الحدائق بحي  منتزه جبل الشعبة مستودع الألعاب المائية موقع رقم 76",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 81,
+          "source_opportunity_id": "02-26-017001-34001"
+        }
+      ],
+      "sector_id": "sector:other",
+      "proposed_sector": "أخرى",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+      "top_score": 66.0,
+      "second_sector_id": "sector:logistics",
+      "second_score": 27.0,
+      "margin": 39.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:other",
+          "field": "title_ar",
+          "signal": "مستودع الألعاب المائية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 66.0,
+          "duplicate_representation": false
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit amusement/leisure attraction (rides, games, scooters, slides or event activity). Other is a positive canonical bucket because Entertainment has no canonical ID; not a missing-data fallback."
+    },
+    {
+      "master_id": 92,
+      "title": "تاجير مؤقت لموقع من نوع الحدائق بحي  الأندلس لنشاط العاب هوائية في حديقة حنين بحي النويصر بالمبرز",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 92,
+          "source_opportunity_id": "02-26-017001-47002"
+        }
+      ],
+      "sector_id": "sector:other",
+      "proposed_sector": "أخرى",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+      "top_score": 66.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 66.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:other",
+          "field": "title_ar",
+          "signal": "ألعاب هوائية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 66.0,
+          "duplicate_representation": false
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit amusement/leisure attraction (rides, games, scooters, slides or event activity). Other is a positive canonical bucket because Entertainment has no canonical ID; not a missing-data fallback."
+    },
+    {
+      "master_id": 95,
+      "title": "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  المثلث موقع تأجير مؤقت لنشاط سيارة ايسكريم",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 95,
+          "source_opportunity_id": "02-26-017001-49003"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+      "top_score": 90.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 90.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "سيارة آيسكريم",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 66.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.LOCATIONTYPE",
+          "signal": "العربات المتنقلة",
+          "rule_key": "ASSET_MOBILE_VENDING_CONTEXT",
+          "weight": 24.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].asset_assignment",
+          "signal": "العربات المتنقلة",
+          "rule_key": "ASSET_MOBILE_VENDING_CONTEXT",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "asset_facility_type",
+          "signal": "العربات المتنقلة",
+          "rule_key": "ASSET_MOBILE_VENDING_CONTEXT",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit retail, food service, vehicle service or parking activity. Commercial matches the stated primary economic activity."
+    },
+    {
+      "master_id": 108,
+      "title": "تاجير مؤقت لموقع من نوع الشواطئ والواجهات بحي  العقير تأجير ساحة العاب الموقع رقم 1 بين مدخل 2 ومدخل 3",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 108,
+          "source_opportunity_id": "02-22-017001-1024"
+        }
+      ],
+      "sector_id": "sector:other",
+      "proposed_sector": "أخرى",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+      "top_score": 66.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 66.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:other",
+          "field": "title_ar",
+          "signal": "ساحة ألعاب",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 66.0,
+          "duplicate_representation": false
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit amusement/leisure attraction (rides, games, scooters, slides or event activity). Other is a positive canonical bucket because Entertainment has no canonical ID; not a missing-data fallback."
+    },
+    {
+      "master_id": 110,
+      "title": "تاجير مؤقت لموقع من نوع الاراضي بحي  شاطئ العقير اقامة عربات متنقلة (كرفانات) لأغراض سكنية",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 110,
+          "source_opportunity_id": "02-24-017001-21001"
+        }
+      ],
+      "sector_id": "sector:real_estate",
+      "proposed_sector": "العقارات والإنشاءات",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_REAL_ESTATE",
+      "top_score": 66.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 66.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:real_estate",
+          "field": "normalized_title",
+          "signal": "كرفانات لأغراض سكنية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_REAL_ESTATE",
+          "weight": 66.0,
+          "duplicate_representation": false
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Residential caravan/housing use is explicit; Real Estate is the closest canonical activity sector."
+    },
+    {
+      "master_id": 121,
+      "title": "تاجير مؤقت لموقع من نوع الساحات الميادين و الطرق والارصفة بحي  حي ضاحية الامير سلطان الشمالية موقف فود ترك",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 121,
+          "source_opportunity_id": "02-25-017001-73002"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+      "top_score": 66.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 66.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "فود ترك",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 66.0,
+          "duplicate_representation": false
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit retail, food service, vehicle service or parking activity. Commercial matches the stated primary economic activity."
+    },
+    {
+      "master_id": 124,
+      "title": "تاجير مؤقت لموقع من نوع الحدائق بحي  منتزه جبل الشعبة عربات مضيئة موقع رقم 70",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 124,
+          "source_opportunity_id": "02-25-017001-86002"
+        }
+      ],
+      "sector_id": "sector:other",
+      "proposed_sector": "أخرى",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+      "top_score": 66.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 66.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:other",
+          "field": "title_ar",
+          "signal": "عربات مضيئة",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 66.0,
+          "duplicate_representation": false
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit amusement/leisure attraction (rides, games, scooters, slides or event activity). Other is a positive canonical bucket because Entertainment has no canonical ID; not a missing-data fallback."
+    },
+    {
+      "master_id": 125,
+      "title": "تاجير مؤقت لموقع من نوع الحدائق بحي  منتزه جبل الشعبة عربات كلاسيك وعربة نق ترددي لدورات المياه",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 125,
+          "source_opportunity_id": "02-25-017001-86003"
+        }
+      ],
+      "sector_id": "sector:other",
+      "proposed_sector": "أخرى",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+      "top_score": 66.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 66.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:other",
+          "field": "title_ar",
+          "signal": "عربات كلاسيك",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 66.0,
+          "duplicate_representation": false
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit amusement/leisure attraction (rides, games, scooters, slides or event activity). Other is a positive canonical bucket because Entertainment has no canonical ID; not a missing-data fallback."
+    },
+    {
+      "master_id": 130,
+      "title": "تاجير مؤقت لموقع من نوع الحدائق بحي  منتزه جبل الشعبة موقف رقم 75 زحليقة السعادة الملونة منطقة G منتزه جبل الشعبة",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 130,
+          "source_opportunity_id": "02-26-017001-24005"
+        }
+      ],
+      "sector_id": "sector:other",
+      "proposed_sector": "أخرى",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+      "top_score": 66.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 66.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:other",
+          "field": "title_ar",
+          "signal": "زحليقة",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 66.0,
+          "duplicate_representation": false
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit amusement/leisure attraction (rides, games, scooters, slides or event activity). Other is a positive canonical bucket because Entertainment has no canonical ID; not a missing-data fallback."
+    },
+    {
+      "master_id": 137,
+      "title": "تاجير مؤقت لموقع من نوع الحدائق بحي  العمران ﺗﺎﺟﻴﺮ ﻣﺆﻗﺖ ﻟﻤﻮﻗﻊ ﻣﻦ ﻧﻮﻉ حدائقﺑﺤﻲ ﺍﻟﻌﻤﺮﺍﻥ لنشاط العاب هوائية (نطيطه)",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 137,
+          "source_opportunity_id": "02-26-017001-45001"
+        }
+      ],
+      "sector_id": "sector:other",
+      "proposed_sector": "أخرى",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+      "top_score": 66.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 66.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:other",
+          "field": "title_ar",
+          "signal": "ألعاب هوائية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 66.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:other",
+          "field": "normalized_title",
+          "signal": "ألعاب هوائية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit amusement/leisure attraction (rides, games, scooters, slides or event activity). Other is a positive canonical bucket because Entertainment has no canonical ID; not a missing-data fallback."
+    },
+    {
+      "master_id": 205,
+      "title": "تاجير مؤقت لموقع من نوع الشواطئ والواجهات بحي  dsf",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 208,
+          "source_opportunity_id": "03-21-017001-76"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "LOW",
+      "classification_method": "FORCED_BEST_FIT",
+      "rule_key": "FORCED_BEST_FIT_TEMPORARY_RENTAL_PEER_PRIOR",
+      "top_score": 28.0,
+      "second_sector_id": "sector:other",
+      "second_score": 5.0,
+      "margin": 23.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "opportunity_type + accepted labeled peers",
+          "signal": "temporary rental; 28/33 comparable labeled peers Commercial",
+          "rule_key": "FORCED_BEST_FIT_TEMPORARY_RENTAL_PEER_PRIOR",
+          "weight": 28.0,
+          "duplicate_representation": false
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_AS_LOW_BEST_FIT",
+      "auditor_note": "LOW best fit: no activity-level evidence is exposed; among 33 previously specified temporary-rental peers, 28 were Commercial and 5 were Other. The record has no explicit positive Other signal, so Commercial is the bounded best fit; preserve low confidence and alternative."
+    },
+    {
+      "master_id": 206,
+      "title": "تاجير مؤقت لموقع من نوع الحدائق بحي  الجامعيين الجامعيين لنشاط العاب هوائية",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 209,
+          "source_opportunity_id": "02-24-017001-8001"
+        }
+      ],
+      "sector_id": "sector:other",
+      "proposed_sector": "أخرى",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+      "top_score": 66.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 66.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:other",
+          "field": "title_ar",
+          "signal": "ألعاب هوائية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_OTHER",
+          "weight": 66.0,
+          "duplicate_representation": false
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit amusement/leisure attraction (rides, games, scooters, slides or event activity). Other is a positive canonical bucket because Entertainment has no canonical ID; not a missing-data fallback."
+    },
+    {
+      "master_id": 207,
+      "title": "تاجير مؤقت لموقع من نوع المباني بحي  مجمع الدوائر الحكومية في بهو الامانة",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 210,
+          "source_opportunity_id": "02-23-017001-1001"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "LOW",
+      "classification_method": "FORCED_BEST_FIT",
+      "rule_key": "FORCED_BEST_FIT_TEMPORARY_RENTAL_PEER_PRIOR",
+      "top_score": 28.0,
+      "second_sector_id": "sector:other",
+      "second_score": 5.0,
+      "margin": 23.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "opportunity_type + accepted labeled peers",
+          "signal": "temporary rental; 28/33 comparable labeled peers Commercial",
+          "rule_key": "FORCED_BEST_FIT_TEMPORARY_RENTAL_PEER_PRIOR",
+          "weight": 28.0,
+          "duplicate_representation": false
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_AS_LOW_BEST_FIT",
+      "auditor_note": "LOW best fit: no activity-level evidence is exposed; among 33 previously specified temporary-rental peers, 28 were Commercial and 5 were Other. The record has no explicit positive Other signal, so Commercial is the bounded best fit; preserve low confidence and alternative."
+    },
+    {
+      "master_id": 211,
+      "title": "الخدمات الرقمية للإرشاد والتوجيه المهني",
+      "sources": [
+        {
+          "source_key": "ahda",
+          "source_record_id": 211,
+          "source_opportunity_id": "https://ahda.gov.sa/invest-al-ahsa/investment-opportunities/digital-career-guidance-services"
+        }
+      ],
+      "sector_id": "sector:education",
+      "proposed_sector": "التعليم",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_EDUCATION",
+      "top_score": 111.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 111.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:education",
+          "field": "title_ar",
+          "signal": "الخدمات الرقمية للإرشاد والتوجيه المهني",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_EDUCATION",
+          "weight": 66.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:education",
+          "field": "short_description",
+          "signal": "للإرشاد والتوجيه المهني",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_EDUCATION",
+          "weight": 45.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:education",
+          "field": "full_description",
+          "signal": "الخدمات الرقمية للإرشاد والتوجيه المهني",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_EDUCATION",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Digital vocational guidance and career-orientation service fits Education; digital delivery is a delivery method, not a stronger technology activity."
+    },
+    {
+      "master_id": 225,
+      "title": "فرصة استثمارية \" لتأجير مواقع مؤقته لتقديم الخدمات الغذائية بكليات جامعة الملك فيصل فرصة استثمارية \" لتأجير مواقع مؤقته لتقديم الخدمات الغذائية بكليات جامعة الملك فيصل للتقديم على الفرصة",
+      "sources": [
+        {
+          "source_key": "kfu",
+          "source_record_id": 2774,
+          "source_opportunity_id": "kfu-announcement:7e98c5dfb12b0a6d09f4c349"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "LOW",
+      "classification_method": "FORCED_BEST_FIT",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+      "top_score": 66.0,
+      "second_sector_id": "sector:education",
+      "second_score": 66.0,
+      "margin": 0.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "تأجير مواقع مؤقته لتقديم الخدمات الغذائية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 66.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "normalized_title",
+          "signal": "تأجير مواقع مؤقته لتقديم الخدمات الغذائية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_AS_LOW_BEST_FIT",
+      "auditor_note": "Explicit retail, food service, vehicle service or parking activity. Commercial matches the stated primary economic activity."
+    },
+    {
+      "master_id": 234,
+      "title": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 484بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 2835,
+          "source_opportunity_id": "01-26-017001-26003"
+        },
+        {
+          "source_key": "alahsa-opportunities",
+          "source_record_id": 2837,
+          "source_opportunity_id": "535"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "HIGH",
+      "classification_method": "HIGH_CONFIDENCE",
+      "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+      "top_score": 90.0,
+      "second_sector_id": "sector:logistics",
+      "second_score": 27.0,
+      "margin": 63.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+          "weight": 90.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.ACTIVITYTYPE",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_RAW_ACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "source[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Raw source activity says commercial or vehicle services; raw value is preserved and used only as classification evidence."
+    },
+    {
+      "master_id": 235,
+      "title": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 485بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 2836,
+          "source_opportunity_id": "01-26-017001-26004"
+        },
+        {
+          "source_key": "alahsa-opportunities",
+          "source_record_id": 2878,
+          "source_opportunity_id": "536"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "HIGH",
+      "classification_method": "HIGH_CONFIDENCE",
+      "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+      "top_score": 90.0,
+      "second_sector_id": "sector:logistics",
+      "second_score": 27.0,
+      "margin": 63.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+          "weight": 90.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.ACTIVITYTYPE",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_RAW_ACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "source[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Raw source activity says commercial or vehicle services; raw value is preserved and used only as classification evidence."
+    },
+    {
+      "master_id": 238,
+      "title": "إنشاء وتشغيل وصيانة مستودع بالقطعة رقم 483بالمخطط رقم 14/16 بصناعية العيون",
+      "sources": [
+        {
+          "source_key": "alahsa-opportunities",
+          "source_record_id": 2839,
+          "source_opportunity_id": "534"
+        }
+      ],
+      "sector_id": "sector:logistics",
+      "proposed_sector": "الخدمات اللوجستية",
+      "confidence": "LOW",
+      "classification_method": "FORCED_BEST_FIT",
+      "rule_key": "FORCED_BEST_FIT_GENERIC_WAREHOUSE_CONTEXT",
+      "top_score": 27.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 27.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:logistics",
+          "field": "title_ar",
+          "signal": "مستودع (asset context; logistics use not explicit)",
+          "rule_key": "FORCED_BEST_FIT_GENERIC_WAREHOUSE_CONTEXT",
+          "weight": 27.0,
+          "duplicate_representation": false
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_AS_LOW_BEST_FIT",
+      "auditor_note": "LOW best fit from warehouse asset wording; logistics operation is not explicit. Keep low confidence and allow future evidence to refine."
+    },
+    {
+      "master_id": 260,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 2861,
+          "source_opportunity_id": "01-26-017001-41006"
+        },
+        {
+          "source_key": "alahsa-opportunities",
+          "source_record_id": 2876,
+          "source_opportunity_id": "538"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "HIGH",
+      "classification_method": "HIGH_CONFIDENCE",
+      "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+      "top_score": 156.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 156.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_activity",
+          "signal": "أنشطة الصيانة والتصليح والتركيب",
+          "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+          "weight": 90.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.ACTIVITYTYPE",
+          "signal": "أنشطة الصيانة والتصليح والتركيب",
+          "rule_key": "FORCED_RAW_ACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "تشاليح سيارات",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 66.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "source[0].source_title",
+          "signal": "تشاليح سيارات",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Raw source activity says commercial or vehicle services; raw value is preserved and used only as classification evidence."
+    },
+    {
+      "master_id": 262,
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 2863,
+          "source_opportunity_id": "01-26-017001-41007"
+        },
+        {
+          "source_key": "alahsa-opportunities",
+          "source_record_id": 2875,
+          "source_opportunity_id": "540"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "HIGH",
+      "classification_method": "HIGH_CONFIDENCE",
+      "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+      "top_score": 156.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 156.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_activity",
+          "signal": "أنشطة الصيانة والتصليح والتركيب",
+          "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+          "weight": 90.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.ACTIVITYTYPE",
+          "signal": "أنشطة الصيانة والتصليح والتركيب",
+          "rule_key": "FORCED_RAW_ACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "تشاليح سيارات",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 66.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "normalized_title",
+          "signal": "تشاليح سيارات",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "source[0].source_title",
+          "signal": "تشاليح سيارات",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Raw source activity says commercial or vehicle services; raw value is preserved and used only as classification evidence."
+    },
+    {
+      "master_id": 315,
+      "title": "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  السلمانية الثاني موقع رقم (1) لنشاط عربه اطعمه في حي السلمانية",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 2917,
+          "source_opportunity_id": "02-26-017001-53001"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+      "top_score": 90.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 90.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "عربه اطعمه",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 66.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "normalized_title",
+          "signal": "عربه اطعمه",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.LOCATIONTYPE",
+          "signal": "العربات المتنقلة",
+          "rule_key": "ASSET_MOBILE_VENDING_CONTEXT",
+          "weight": 24.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].asset_assignment",
+          "signal": "العربات المتنقلة",
+          "rule_key": "ASSET_MOBILE_VENDING_CONTEXT",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "asset_facility_type",
+          "signal": "العربات المتنقلة",
+          "rule_key": "ASSET_MOBILE_VENDING_CONTEXT",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit retail, food service, vehicle service or parking activity. Commercial matches the stated primary economic activity."
+    },
+    {
+      "master_id": 316,
+      "title": "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  الملك فهد موقع تأجير مؤقت لنشاط عربة اطعه حديقة المحدود حي الملك فهد",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 2918,
+          "source_opportunity_id": "02-26-017001-54002"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "MEDIUM",
+      "classification_method": "MEDIUM_CONFIDENCE",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+      "top_score": 90.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 90.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "عربة اطعه",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 66.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.LOCATIONTYPE",
+          "signal": "العربات المتنقلة",
+          "rule_key": "ASSET_MOBILE_VENDING_CONTEXT",
+          "weight": 24.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].asset_assignment",
+          "signal": "العربات المتنقلة",
+          "rule_key": "ASSET_MOBILE_VENDING_CONTEXT",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "asset_facility_type",
+          "signal": "العربات المتنقلة",
+          "rule_key": "ASSET_MOBILE_VENDING_CONTEXT",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Explicit retail, food service, vehicle service or parking activity. Commercial matches the stated primary economic activity."
+    },
+    {
+      "master_id": 326,
+      "title": "فرصة استثمارية \" لتأجير مواقع مؤقته لتقديم الخدمات الغذائية بكليات جامعة الملك فيصل فرصة استثمارية \" لتأجير مواقع مؤقته لتقديم الخدمات الغذائية بكليات جامعة الملك فيصل للتقديم على الفرصة",
+      "sources": [
+        {
+          "source_key": "kfu",
+          "source_record_id": 2928,
+          "source_opportunity_id": "kfu-announcement:0aac035af08807f4f1755ee5"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "LOW",
+      "classification_method": "FORCED_BEST_FIT",
+      "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+      "top_score": 66.0,
+      "second_sector_id": "sector:education",
+      "second_score": 66.0,
+      "margin": 0.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "تأجير مواقع مؤقته لتقديم الخدمات الغذائية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 66.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "normalized_title",
+          "signal": "تأجير مواقع مؤقته لتقديم الخدمات الغذائية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_AS_LOW_BEST_FIT",
+      "auditor_note": "Explicit retail, food service, vehicle service or parking activity. Commercial matches the stated primary economic activity."
+    },
+    {
+      "master_id": 587,
+      "title": "انشاء و تشغيل و صيانة ‏‏‏‏ مجمع ترفيهي تجاري للقطعة رقم88د جنوب مدينة الهفوف بحي القدس - الأنشطة التجارية - مجمع ترفيهي تجاري - مجمع تجاري",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 3178,
+          "source_opportunity_id": "01-26-017001-30014"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "HIGH",
+      "classification_method": "HIGH_CONFIDENCE",
+      "rule_key": "FORCED_EXACT_ACTIVITY",
+      "top_score": 90.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 90.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_ACTIVITY",
+          "weight": 90.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.ACTIVITYTYPE",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_RAW_ACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "normalized_title",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "source[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Official structured activity/category maps to Commercial; title context agrees with commercial use."
+    },
+    {
+      "master_id": 588,
+      "title": "انشاء و تشغيل و صيانة مبنى تجاري متعدد الانشطة للقطعة رقم79د جنوب مدينة الهفوف بحي القدس - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 3179,
+          "source_opportunity_id": "01-26-017001-30012"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "HIGH",
+      "classification_method": "HIGH_CONFIDENCE",
+      "rule_key": "FORCED_EXACT_ACTIVITY",
+      "top_score": 186.0,
+      "second_sector_id": "sector:real_estate",
+      "second_score": 66.0,
+      "margin": 120.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_ACTIVITY",
+          "weight": 90.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sub_activity",
+          "signal": "أنشطة التجارة العامة",
+          "rule_key": "FORCED_EXACT_SUB_ACTIVITY",
+          "weight": 96.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_sub_activity",
+          "signal": "أنشطة التجارة العامة",
+          "rule_key": "FORCED_EXACT_SOURCE_SUB_ACTIVITY",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.ACTIVITYTYPE",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_RAW_ACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.SUBACTIVITYTYPE",
+          "signal": "أنشطة التجارة العامة",
+          "rule_key": "FORCED_RAW_SUBACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "normalized_title",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "source[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Official structured activity/category maps to Commercial; title context agrees with commercial use."
+    },
+    {
+      "master_id": 590,
+      "title": "انشاء و تشغيل و صيانة مبنى تجاري متعدد الانشطة للقطعة رقم86د جنوب مدينة الهفوف بحي القدس - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 3181,
+          "source_opportunity_id": "01-26-017001-30007"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "HIGH",
+      "classification_method": "HIGH_CONFIDENCE",
+      "rule_key": "FORCED_EXACT_ACTIVITY",
+      "top_score": 186.0,
+      "second_sector_id": "sector:real_estate",
+      "second_score": 66.0,
+      "margin": 120.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_ACTIVITY",
+          "weight": 90.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sub_activity",
+          "signal": "أنشطة التجارة العامة",
+          "rule_key": "FORCED_EXACT_SUB_ACTIVITY",
+          "weight": 96.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_sub_activity",
+          "signal": "أنشطة التجارة العامة",
+          "rule_key": "FORCED_EXACT_SOURCE_SUB_ACTIVITY",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.ACTIVITYTYPE",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_RAW_ACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.SUBACTIVITYTYPE",
+          "signal": "أنشطة التجارة العامة",
+          "rule_key": "FORCED_RAW_SUBACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "normalized_title",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "source[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Official structured activity/category maps to Commercial; title context agrees with commercial use."
+    },
+    {
+      "master_id": 594,
+      "title": "انشاء و تشغيل و صيانة مركز خدمات سيارات بحي النايفية بالمخطط رقم 400   4 بمدينة الهفوف - أنشطة المركبات - مركز خدمات السيارات - ورشة",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 3185,
+          "source_opportunity_id": "01-26-017001-42013"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "HIGH",
+      "classification_method": "HIGH_CONFIDENCE",
+      "rule_key": "FORCED_EXACT_ACTIVITY",
+      "top_score": 156.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 156.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "activity",
+          "signal": "أنشطة المركبات",
+          "rule_key": "FORCED_EXACT_ACTIVITY",
+          "weight": 90.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_activity",
+          "signal": "أنشطة المركبات",
+          "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.ACTIVITYTYPE",
+          "signal": "أنشطة المركبات",
+          "rule_key": "FORCED_RAW_ACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "مركز خدمات سيارات",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 66.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "normalized_title",
+          "signal": "مركز خدمات سيارات",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Official structured activity/category maps to Commercial; title context agrees with commercial use."
+    },
+    {
+      "master_id": 595,
+      "title": "انشاء و تشغيل و صيانة وجهه سياحية وتجارية وصحية متعددة  للقطعة رقم 1 بالمخطط رقم 1210  4 بحي الصفا الرابع بمدينة العيون - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 3186,
+          "source_opportunity_id": "01-26-017001-42012"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "HIGH",
+      "classification_method": "HIGH_CONFIDENCE",
+      "rule_key": "FORCED_EXACT_ACTIVITY",
+      "top_score": 186.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 186.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_ACTIVITY",
+          "weight": 90.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sub_activity",
+          "signal": "أنشطة التجارة العامة",
+          "rule_key": "FORCED_EXACT_SUB_ACTIVITY",
+          "weight": 96.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_sub_activity",
+          "signal": "أنشطة التجارة العامة",
+          "rule_key": "FORCED_EXACT_SOURCE_SUB_ACTIVITY",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.ACTIVITYTYPE",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_RAW_ACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.SUBACTIVITYTYPE",
+          "signal": "أنشطة التجارة العامة",
+          "rule_key": "FORCED_RAW_SUBACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "normalized_title",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "source[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Official structured activity/category maps to Commercial; title context agrees with commercial use."
+    },
+    {
+      "master_id": 597,
+      "title": "انشاء و تشغيل و صيانة مبنى تجاري سكني للقطعة رقم 73  72 بالمخطط رقم 1030   4 بضاحية هجر  الحي الثاني عشر - الأنشطة التجارية - - - مبنى سكني تجاري",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 3188,
+          "source_opportunity_id": "01-26-017001-42008"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "HIGH",
+      "classification_method": "HIGH_CONFIDENCE",
+      "rule_key": "FORCED_EXACT_ACTIVITY",
+      "top_score": 90.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 90.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_ACTIVITY",
+          "weight": 90.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.ACTIVITYTYPE",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_RAW_ACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "normalized_title",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "source[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Official structured activity/category maps to Commercial; title context agrees with commercial use."
+    },
+    {
+      "master_id": 598,
+      "title": "انشاء و تشغيل و صيانة مجمع تجاري للقطعة رقم 179 ب جنوب مدينة الهفوف بحي القدس - الأنشطة التجارية - مجمع تجاري - مجمع تجاري",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 3189,
+          "source_opportunity_id": "01-26-017001-30017"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "HIGH",
+      "classification_method": "HIGH_CONFIDENCE",
+      "rule_key": "FORCED_EXACT_ACTIVITY",
+      "top_score": 90.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 90.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_ACTIVITY",
+          "weight": 90.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.ACTIVITYTYPE",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_RAW_ACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "normalized_title",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "source[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Official structured activity/category maps to Commercial; title context agrees with commercial use."
+    },
+    {
+      "master_id": 600,
+      "title": "انشاء و تشغيل و صيانة مجمع تجاري للقطعة رقم 180 ب جنوب مدينة الهفوف بحي القدس - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 3191,
+          "source_opportunity_id": "01-26-017001-30011"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "HIGH",
+      "classification_method": "HIGH_CONFIDENCE",
+      "rule_key": "FORCED_EXACT_ACTIVITY",
+      "top_score": 186.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 186.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_ACTIVITY",
+          "weight": 90.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sub_activity",
+          "signal": "أنشطة التجارة العامة",
+          "rule_key": "FORCED_EXACT_SUB_ACTIVITY",
+          "weight": 96.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_sub_activity",
+          "signal": "أنشطة التجارة العامة",
+          "rule_key": "FORCED_EXACT_SOURCE_SUB_ACTIVITY",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.ACTIVITYTYPE",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_RAW_ACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.SUBACTIVITYTYPE",
+          "signal": "أنشطة التجارة العامة",
+          "rule_key": "FORCED_RAW_SUBACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "normalized_title",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "source[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Official structured activity/category maps to Commercial; title context agrees with commercial use."
+    },
+    {
+      "master_id": 602,
+      "title": "انشاء و تشغيل و صيانة مبنى تجاري سكني للقطعة رقم 47 بالمخطط رقم 1030 4 بضاحية هجر  الحي الثاني عشر - الأنشطة التجارية - - - مبنى سكني تجاري",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 3193,
+          "source_opportunity_id": "01-26-017001-42010"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "HIGH",
+      "classification_method": "HIGH_CONFIDENCE",
+      "rule_key": "FORCED_EXACT_ACTIVITY",
+      "top_score": 90.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 90.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_ACTIVITY",
+          "weight": 90.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.ACTIVITYTYPE",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_RAW_ACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "normalized_title",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "source[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Official structured activity/category maps to Commercial; title context agrees with commercial use."
+    },
+    {
+      "master_id": 604,
+      "title": "انشاء و تشغيل و صيانة مبنى تجاري متعدد الانشطة للقطعة رقم78د جنوب مدينة الهفوف بحي القدس - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 3195,
+          "source_opportunity_id": "01-26-017001-30009"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "HIGH",
+      "classification_method": "HIGH_CONFIDENCE",
+      "rule_key": "FORCED_EXACT_ACTIVITY",
+      "top_score": 186.0,
+      "second_sector_id": "sector:real_estate",
+      "second_score": 66.0,
+      "margin": 120.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_ACTIVITY",
+          "weight": 90.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sub_activity",
+          "signal": "أنشطة التجارة العامة",
+          "rule_key": "FORCED_EXACT_SUB_ACTIVITY",
+          "weight": 96.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_sub_activity",
+          "signal": "أنشطة التجارة العامة",
+          "rule_key": "FORCED_EXACT_SOURCE_SUB_ACTIVITY",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.ACTIVITYTYPE",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_RAW_ACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.SUBACTIVITYTYPE",
+          "signal": "أنشطة التجارة العامة",
+          "rule_key": "FORCED_RAW_SUBACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "normalized_title",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "source[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Official structured activity/category maps to Commercial; title context agrees with commercial use."
+    },
+    {
+      "master_id": 608,
+      "title": "انشاء و تشغيل و صيانة مستودع وسكن للموظفين للقطعة رقم 428 و 429 بالمخطط رقم 154  14 بمدينة العيون - الأنشطة التجارية - سكن للموظفين - مستودع",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 3199,
+          "source_opportunity_id": "01-26-017001-42004"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "HIGH",
+      "classification_method": "HIGH_CONFIDENCE",
+      "rule_key": "FORCED_EXACT_ACTIVITY",
+      "top_score": 90.0,
+      "second_sector_id": "sector:logistics",
+      "second_score": 27.0,
+      "margin": 63.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_ACTIVITY",
+          "weight": 90.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.ACTIVITYTYPE",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_RAW_ACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "normalized_title",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "source[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Official structured activity/category maps to Commercial; title context agrees with commercial use."
+    },
+    {
+      "master_id": 609,
+      "title": "انشاء و تشغيل و صيانة مستودع وسكن للموظفين للقطعة رقم 430 و 431 بالمخطط رقم 154  14 بمدينة العيون - الأنشطة التجارية - سكن للموظفين - مستودع",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 3200,
+          "source_opportunity_id": "01-26-017001-42005"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "HIGH",
+      "classification_method": "HIGH_CONFIDENCE",
+      "rule_key": "FORCED_EXACT_ACTIVITY",
+      "top_score": 90.0,
+      "second_sector_id": "sector:logistics",
+      "second_score": 27.0,
+      "margin": 63.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_ACTIVITY",
+          "weight": 90.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.ACTIVITYTYPE",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_RAW_ACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "normalized_title",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "source[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Official structured activity/category maps to Commercial; title context agrees with commercial use."
+    },
+    {
+      "master_id": 610,
+      "title": "انشاء و تشغيل و صيانة تجاري سكني للقطعة رقم 75 74 بالمخطط رقم 1030   4 بضاحية هجر  الحي الثاني عشر - الأنشطة التجارية - -- - مبنى سكني تجاري",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 3201,
+          "source_opportunity_id": "01-26-017001-42007"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "HIGH",
+      "classification_method": "HIGH_CONFIDENCE",
+      "rule_key": "FORCED_EXACT_ACTIVITY",
+      "top_score": 90.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 90.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_ACTIVITY",
+          "weight": 90.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.ACTIVITYTYPE",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_RAW_ACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "normalized_title",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "source[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Official structured activity/category maps to Commercial; title context agrees with commercial use."
+    },
+    {
+      "master_id": 612,
+      "title": "انشاء و تشغيل و صيانة مبنى تجاري متعدد الانشطة للقطعة رقم80د جنوب مدينة الهفوف بحي القدس - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 3203,
+          "source_opportunity_id": "01-26-017001-30015"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "HIGH",
+      "classification_method": "HIGH_CONFIDENCE",
+      "rule_key": "FORCED_EXACT_ACTIVITY",
+      "top_score": 186.0,
+      "second_sector_id": "sector:real_estate",
+      "second_score": 66.0,
+      "margin": 120.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_ACTIVITY",
+          "weight": 90.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sub_activity",
+          "signal": "أنشطة التجارة العامة",
+          "rule_key": "FORCED_EXACT_SUB_ACTIVITY",
+          "weight": 96.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_sub_activity",
+          "signal": "أنشطة التجارة العامة",
+          "rule_key": "FORCED_EXACT_SOURCE_SUB_ACTIVITY",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.ACTIVITYTYPE",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_RAW_ACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.SUBACTIVITYTYPE",
+          "signal": "أنشطة التجارة العامة",
+          "rule_key": "FORCED_RAW_SUBACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "normalized_title",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "source[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Official structured activity/category maps to Commercial; title context agrees with commercial use."
+    },
+    {
+      "master_id": 614,
+      "title": "انشاء و تشغيل و صيانة مستودع وسكن للموظفين للقطعة رقم 424 و 425 بالمخطط رقم 154  14 بمدينة العيون - الأنشطة التجارية - سكن للموظفين - مستودع",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 3205,
+          "source_opportunity_id": "01-26-017001-42002"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "HIGH",
+      "classification_method": "HIGH_CONFIDENCE",
+      "rule_key": "FORCED_EXACT_ACTIVITY",
+      "top_score": 90.0,
+      "second_sector_id": "sector:logistics",
+      "second_score": 27.0,
+      "margin": 63.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_ACTIVITY",
+          "weight": 90.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.ACTIVITYTYPE",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_RAW_ACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "normalized_title",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "source[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Official structured activity/category maps to Commercial; title context agrees with commercial use."
+    },
+    {
+      "master_id": 615,
+      "title": "انشاء و تشغيل و صيانة مستودع وسكن للموظفين للقطعة رقم 426 و 427 بالمخطط رقم 154  14 بمدينة العيون - الأنشطة التجارية - سكن للموظفين - مستودع",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 3206,
+          "source_opportunity_id": "01-26-017001-42003"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "HIGH",
+      "classification_method": "HIGH_CONFIDENCE",
+      "rule_key": "FORCED_EXACT_ACTIVITY",
+      "top_score": 90.0,
+      "second_sector_id": "sector:logistics",
+      "second_score": 27.0,
+      "margin": 63.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_ACTIVITY",
+          "weight": 90.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.ACTIVITYTYPE",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_RAW_ACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "normalized_title",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "source[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Official structured activity/category maps to Commercial; title context agrees with commercial use."
+    },
+    {
+      "master_id": 616,
+      "title": "انشاء و تشغيل و صيانة مبنى تجاري سكني للقطعة رقم 71  70 بالمخطط رقم 1030  4 بضاحية هجر  الحي الثاني عشر - الأنشطة التجارية - - - مبنى سكني تجاري",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 3207,
+          "source_opportunity_id": "01-26-017001-42009"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "HIGH",
+      "classification_method": "HIGH_CONFIDENCE",
+      "rule_key": "FORCED_EXACT_ACTIVITY",
+      "top_score": 90.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 90.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_ACTIVITY",
+          "weight": 90.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.ACTIVITYTYPE",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_RAW_ACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "normalized_title",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "source[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Official structured activity/category maps to Commercial; title context agrees with commercial use."
+    },
+    {
+      "master_id": 617,
+      "title": "انشاء و تشغيل و صيانة مركز تجاري بالمخطط رقم 14  62 بوسط مدينة العيون - الأنشطة التجارية - مركز تجاري - مجمع تجاري",
+      "sources": [
+        {
+          "source_key": "furas",
+          "source_record_id": 3208,
+          "source_opportunity_id": "01-26-017001-42011"
+        }
+      ],
+      "sector_id": "sector:commercial",
+      "proposed_sector": "تجاري",
+      "confidence": "HIGH",
+      "classification_method": "HIGH_CONFIDENCE",
+      "rule_key": "FORCED_EXACT_ACTIVITY",
+      "top_score": 90.0,
+      "second_sector_id": null,
+      "second_score": 0.0,
+      "margin": 90.0,
+      "supporting_evidence": [
+        {
+          "sector_id": "sector:commercial",
+          "field": "activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_ACTIVITY",
+          "weight": 90.0,
+          "duplicate_representation": false
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_EXACT_SOURCE_ACTIVITY",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "sources[0].raw.ACTIVITYTYPE",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_RAW_ACTIVITYTYPE",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "title_ar",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "normalized_title",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        },
+        {
+          "sector_id": "sector:commercial",
+          "field": "source[0].source_activity",
+          "signal": "الأنشطة التجارية",
+          "rule_key": "FORCED_PRIMARY_PURPOSE_COMMERCIAL",
+          "weight": 0.0,
+          "duplicate_representation": true
+        }
+      ],
+      "sample_audit_result": "SUPPORTED_WITH_CONFIDENCE_LABEL",
+      "auditor_note": "Official structured activity/category maps to Commercial; title context agrees with commercial use."
+    }
+  ]
+}

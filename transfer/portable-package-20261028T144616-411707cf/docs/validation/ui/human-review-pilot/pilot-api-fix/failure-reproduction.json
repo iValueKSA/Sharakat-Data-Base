@@ -1,0 +1,12 @@
+{
+  "before_fix_http_status": 500,
+  "before_fix_body": {
+    "detail": "id",
+    "request_id": null
+  },
+  "stack_frame": "app/main.py review_workbench_pilot natural_jobs_after_start list comprehension",
+  "root_cause": "The query selects (SyncJob, Source.source_key) and returns SQLAlchemy Row pairs, but the comprehension iterated each Row as a single job object and accessed job.id. The Row has no id attribute.",
+  "proven_case": "Pilot-start baseline id 471 had later scheduled jobs; SELECT returned (SyncJob, source_key) Row values; unpacking the pair restored SyncJob.id/status access.",
+  "classification": "API response construction row/entity contract mismatch",
+  "frozen_cohort_was_valid": true
+}

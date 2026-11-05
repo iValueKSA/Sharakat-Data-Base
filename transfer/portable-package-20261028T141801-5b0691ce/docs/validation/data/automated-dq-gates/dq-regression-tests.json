@@ -1,0 +1,29 @@
+{
+  "targeted_tests": 15,
+  "chaos_cases": 12,
+  "positive_and_safety_cases": 3,
+  "full_suite": {
+    "passed": 204,
+    "failed": 0,
+    "database": "Disposable SQLite; the suite was run with DATABASE_URL overridden to an ephemeral /tmp SQLite file.",
+    "executed_at": "2026-10-21",
+    "warnings": 16
+  },
+  "cases": [
+    "test_qualified_source_without_master_fails",
+    "test_same_verified_official_reference_split_across_current_masters_fails",
+    "test_current_master_without_source_fails",
+    "test_furas_unverified_dates_promoted_in_projection_fail",
+    "test_stale_worker_standardization_heartbeat_fails",
+    "test_incomplete_scan_with_removals_fails_and_preserves_safe_rule",
+    "test_incomplete_page_missing_does_not_count_as_completed_furas_gap",
+    "test_duplicate_logical_review_creation_fails",
+    "test_api_dashboard_export_count_mismatch_fails",
+    "test_broken_furas_active_route_fails",
+    "test_technical_source_id_as_official_reference_fails",
+    "test_open_review_on_merged_master_fails",
+    "test_positive_states_do_not_create_false_identity_or_coverage_failures",
+    "test_read_only_is_default_and_only_audit_event_can_be_opted_in",
+    "test_retention_is_bounded_to_dq_events_and_preserves_other_audit_history"
+  ]
+}

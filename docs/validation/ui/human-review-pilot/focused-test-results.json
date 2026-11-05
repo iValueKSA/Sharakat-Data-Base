@@ -1,0 +1,5 @@
+{
+  "command": "isolated Docker container; network=none; SQLite temp DB; tests/test_duplicate_review_quality.py",
+  "passed": 19,
+  "failed": 0
+}

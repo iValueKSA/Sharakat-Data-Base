@@ -1,0 +1,43 @@
+{
+  "captured_at": "2026-10-26T08:36:19.7761099Z",
+  "previous_implementation": {
+    "identity_dimensions": [
+      "master_id",
+      "field_name",
+      "selected_value",
+      "conflicting_value",
+      "source_id",
+      "source_record_id"
+    ],
+    "timestamp_only_variance_in_identity": false,
+    "resolved_history_lookup": false,
+    "deduplication_scope": "OPEN rows only; an exact terminal prior conflict did not prevent a new OPEN row",
+    "logically_duplicate_reviews_created": true
+  },
+  "current_implementation": {
+    "algorithm": "SHA-256 of canonical JSON; master, field, conflict type, source, SourceOpportunity, semantic selected/competing values, standardized mapping status/rule/canonical id/review flags",
+    "timestamp_only_variance_in_identity": false,
+    "normalized_aliases": [
+      "taxonomy canonical ID",
+      "field comparison normalization",
+      "normalized reference identifiers",
+      "status lifecycle aliases",
+      "numeric normalization",
+      "missing/empty/غير محدد equivalence"
+    ],
+    "resolved_history_lookup": true,
+    "material_changes_permitted": [
+      "source value changes semantically",
+      "canonical selected value changes",
+      "source/evidence identity changes",
+      "mapping status/rule/canonical id/review flags change",
+      "stronger evidence from a different source"
+    ],
+    "logically_duplicate_reviews_created": false,
+    "immutable_evidence_snapshot": true,
+    "prior_fingerprint_used_for_material_change_audit": "Stored fingerprint captured at review creation"
+  },
+  "current_review_fingerprint_causes_duplicate_logical_reviews": false,
+  "duplicate_logical_reviews_after_fix": 0,
+  "evidence": "app/service.py::_review_logical_fingerprint and queue_conflict_idempotently"
+}

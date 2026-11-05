@@ -1,0 +1,72 @@
+{
+  "results": [
+    {
+      "dimension": "sector",
+      "value": "sector:missing",
+      "expected": 124,
+      "count": "عرض 1–50 من 124 فرصة",
+      "pass": true
+    },
+    {
+      "dimension": "status",
+      "value": "status:announced",
+      "expected": 168,
+      "count": "عرض 1–50 من 168 فرصة",
+      "pass": true
+    },
+    {
+      "dimension": "source",
+      "value": "furas",
+      "expected": 176,
+      "count": "عرض 1–50 من 176 فرصة",
+      "pass": true
+    },
+    {
+      "dimension": "owner",
+      "value": "al_ahsa_municipality",
+      "expected": 267,
+      "count": "عرض 1–50 من 267 فرصة",
+      "pass": true
+    },
+    {
+      "dimension": "location",
+      "value": "al_ahsa_governorate",
+      "expected": 258,
+      "count": "عرض 1–50 من 258 فرصة",
+      "pass": true
+    },
+    {
+      "dimension": "subsector",
+      "value": "subsector:missing",
+      "expected": 289,
+      "count": "عرض 1–50 من 289 فرصة",
+      "pass": true
+    },
+    {
+      "dimension": "opportunity_type",
+      "value": "opportunity_type:missing",
+      "expected": 124,
+      "count": "عرض 1–50 من 124 فرصة",
+      "pass": true
+    },
+    {
+      "kpi": "active",
+      "url": "http://localhost:8080/?view=opportunities&lifecycle=active",
+      "count": "عرض 1–50 من 283 فرصة"
+    },
+    {
+      "kpi": "historical",
+      "url": "http://localhost:8080/?view=opportunities&lifecycle=historical",
+      "count": "عرض 1–6 من 6 فرصة"
+    },
+    {
+      "filteredDashboardExports": {
+        "csvHref": "/api/export.csv?sector=sector%3Aindustrial",
+        "xlsxHref": "/api/export.xlsx?sector=sector%3Aindustrial"
+      }
+    },
+    {
+      "guestReviewGuard": true
+    }
+  ]
+}

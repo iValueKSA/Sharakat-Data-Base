@@ -1,0 +1,1917 @@
+{
+  "sample_size": 51,
+  "deterministic_candidate_count": 0,
+  "human_cases_sampled": 50,
+  "wrong_blocked_cases_audited": 1,
+  "cases": [
+    {
+      "review_id": 320,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 18,
+      "source_ids": [
+        18
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 18,
+          "observation_id": 15956,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:18.940037+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 18,
+          "observation_id": 15956,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:18.940037+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 321,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 19,
+      "source_ids": [
+        19
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 19,
+          "observation_id": 15857,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:11.281933+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 19,
+          "observation_id": 15857,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:11.281933+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 322,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 20,
+      "source_ids": [
+        20
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 20,
+          "observation_id": 16056,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:23.383750+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 20,
+          "observation_id": 16056,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:23.383750+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 323,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 21,
+      "source_ids": [
+        21
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 21,
+          "observation_id": 15858,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:11.351499+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 21,
+          "observation_id": 15858,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:11.351499+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 324,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 28,
+      "source_ids": [
+        28
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 28,
+          "observation_id": 16058,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:23.509419+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 28,
+          "observation_id": 16058,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:23.509419+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 325,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 29,
+      "source_ids": [
+        29
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 29,
+          "observation_id": 15958,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:19.012851+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 29,
+          "observation_id": 15958,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:19.012851+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 326,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 54,
+      "source_ids": [
+        54
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 54,
+          "observation_id": 15863,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:11.619488+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 54,
+          "observation_id": 15863,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:11.619488+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 327,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 62,
+      "source_ids": [
+        62
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 62,
+          "observation_id": 15865,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:11.738247+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 62,
+          "observation_id": 15865,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:11.738247+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 328,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 72,
+      "source_ids": [
+        72
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 72,
+          "observation_id": 15973,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:19.692163+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 72,
+          "observation_id": 15973,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:19.692163+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 329,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 73,
+      "source_ids": [
+        73
+      ],
+      "missing_evidence_original": "367",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 73,
+          "observation_id": 15975,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 367,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:19.771975+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 73,
+          "observation_id": 15975,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:19.771975+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 332,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 76,
+      "source_ids": [
+        76
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 76,
+          "observation_id": 15869,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:12.921264+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 76,
+          "observation_id": 15869,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:12.921264+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 333,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 77,
+      "source_ids": [
+        77
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 77,
+          "observation_id": 15870,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:12.998794+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 77,
+          "observation_id": 15870,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:12.998794+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 334,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 78,
+      "source_ids": [
+        78
+      ],
+      "missing_evidence_original": "180",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 78,
+          "observation_id": 15976,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 180,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:19.819711+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 78,
+          "observation_id": 15976,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:19.819711+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 335,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 79,
+      "source_ids": [
+        79
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 79,
+          "observation_id": 15871,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:13.088247+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 79,
+          "observation_id": 15871,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:13.088247+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 336,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 80,
+      "source_ids": [
+        80
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 80,
+          "observation_id": 15872,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:13.154989+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 80,
+          "observation_id": 15872,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:13.154989+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 337,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 81,
+      "source_ids": [
+        81
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 81,
+          "observation_id": 15978,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:19.900749+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 81,
+          "observation_id": 15978,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:19.900749+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 338,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 82,
+      "source_ids": [
+        82
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 82,
+          "observation_id": 16079,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:24.725873+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 82,
+          "observation_id": 16079,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:24.725873+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 339,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 83,
+      "source_ids": [
+        83
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 83,
+          "observation_id": 15874,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:13.268390+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 83,
+          "observation_id": 15874,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:13.268390+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 340,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 84,
+      "source_ids": [
+        84
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 84,
+          "observation_id": 15979,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:19.947120+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 84,
+          "observation_id": 15979,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:19.947120+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 341,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 85,
+      "source_ids": [
+        85
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 85,
+          "observation_id": 15877,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:13.432945+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 85,
+          "observation_id": 15877,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:13.432945+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 342,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 86,
+      "source_ids": [
+        86
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 86,
+          "observation_id": 15981,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:20.040096+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 86,
+          "observation_id": 15981,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:20.040096+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 343,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 87,
+      "source_ids": [
+        87
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 87,
+          "observation_id": 15982,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:20.088467+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 87,
+          "observation_id": 15982,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:20.088467+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 344,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 88,
+      "source_ids": [
+        88
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 88,
+          "observation_id": 15983,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:20.173668+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 88,
+          "observation_id": 15983,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:20.173668+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 345,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 89,
+      "source_ids": [
+        89
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 89,
+          "observation_id": 15878,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:13.484976+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 89,
+          "observation_id": 15878,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:13.484976+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 346,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 92,
+      "source_ids": [
+        92
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 92,
+          "observation_id": 15984,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:20.226162+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 92,
+          "observation_id": 15984,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:20.226162+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 347,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 93,
+      "source_ids": [
+        93
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 93,
+          "observation_id": 15879,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:13.550610+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 93,
+          "observation_id": 15879,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:13.550610+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 348,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 94,
+      "source_ids": [
+        94
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 94,
+          "observation_id": 16084,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:24.945873+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 94,
+          "observation_id": 16084,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:24.945873+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 349,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 95,
+      "source_ids": [
+        95
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 95,
+          "observation_id": 15880,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:13.606954+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 95,
+          "observation_id": 15880,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:13.606954+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 350,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 96,
+      "source_ids": [
+        96
+      ],
+      "missing_evidence_original": "60",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 96,
+          "observation_id": 15881,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 60,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:13.657599+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 96,
+          "observation_id": 15881,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:13.657599+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 351,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 97,
+      "source_ids": [
+        97
+      ],
+      "missing_evidence_original": "60",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 97,
+          "observation_id": 16279,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 60,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T07:01:21.528363+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 97,
+          "observation_id": 16279,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T07:01:21.528363+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 352,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 98,
+      "source_ids": [
+        98
+      ],
+      "missing_evidence_original": "60",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 98,
+          "observation_id": 15986,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 60,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:20.329190+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 98,
+          "observation_id": 15986,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:20.329190+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 353,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 99,
+      "source_ids": [
+        99
+      ],
+      "missing_evidence_original": "60",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 99,
+          "observation_id": 16085,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 60,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:24.980820+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 99,
+          "observation_id": 16085,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:24.980820+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 354,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 100,
+      "source_ids": [
+        100
+      ],
+      "missing_evidence_original": "60",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 100,
+          "observation_id": 15882,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 60,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:13.687978+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 100,
+          "observation_id": 15882,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:13.687978+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 355,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 101,
+      "source_ids": [
+        101
+      ],
+      "missing_evidence_original": "60",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 101,
+          "observation_id": 15883,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 60,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:13.720464+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 101,
+          "observation_id": 15883,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:13.720464+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 357,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 103,
+      "source_ids": [
+        103
+      ],
+      "missing_evidence_original": "60",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 103,
+          "observation_id": 15988,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 60,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:20.385354+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 103,
+          "observation_id": 15988,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:20.385354+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 358,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 104,
+      "source_ids": [
+        104
+      ],
+      "missing_evidence_original": "60",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 104,
+          "observation_id": 16086,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 60,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:25.004314+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 104,
+          "observation_id": 16086,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:25.004314+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 359,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 105,
+      "source_ids": [
+        105
+      ],
+      "missing_evidence_original": "60",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 105,
+          "observation_id": 15989,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 60,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:20.411553+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 105,
+          "observation_id": 15989,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:20.411553+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 360,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 106,
+      "source_ids": [
+        106
+      ],
+      "missing_evidence_original": "300",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 106,
+          "observation_id": 15992,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 300,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:20.511710+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 106,
+          "observation_id": 15992,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:20.511710+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 361,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 107,
+      "source_ids": [
+        107
+      ],
+      "missing_evidence_original": "36",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 107,
+          "observation_id": 15993,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 36,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:20.532327+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 107,
+          "observation_id": 15993,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:20.532327+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 362,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 127,
+      "source_ids": [
+        127
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 127,
+          "observation_id": 16071,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:24.345900+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 127,
+          "observation_id": 16071,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:24.345900+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 363,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 129,
+      "source_ids": [
+        129
+      ],
+      "missing_evidence_original": "213",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 129,
+          "observation_id": 16161,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 213,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:28.647015+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 129,
+          "observation_id": 16161,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:28.647015+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 364,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 130,
+      "source_ids": [
+        130
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 130,
+          "observation_id": 16077,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:24.654430+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 130,
+          "observation_id": 16077,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:24.654430+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 365,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 131,
+      "source_ids": [
+        131
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 131,
+          "observation_id": 16078,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:24.692442+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 131,
+          "observation_id": 16078,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:24.692442+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 366,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 132,
+      "source_ids": [
+        132
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 132,
+          "observation_id": 16162,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:28.698454+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 132,
+          "observation_id": 16162,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:28.698454+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 367,
+      "type": "STANDARDIZATION_REVIEW",
+      "subtype": "STANDARDIZATION_REVIEW:contract_duration_years",
+      "master_id": 133,
+      "source_ids": [
+        133
+      ],
+      "missing_evidence_original": "366",
+      "recovered_evidence": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 133,
+          "observation_id": 16163,
+          "raw_field": "attributes.DURATION",
+          "raw_value": 366,
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:28.744115+00:00",
+          "evidence_role": "CURRENT_RAW_DURATION_WITH_UNVERIFIED_UNIT",
+          "reliability_level": "RAW_SOURCE_UNINTERPRETED"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 133,
+          "observation_id": 16163,
+          "raw_field": "attributes.DURATION",
+          "observed_at": "2026-10-22T06:01:28.744115+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Furas DURATION is retained with historical observations, but its unit and contract semantics are explicitly unverified; keep the case open for a human/source-specific decision.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 3,
+      "type": "LOCATION_REVIEW",
+      "subtype": "LOCATION_REVIEW",
+      "master_id": null,
+      "source_ids": [
+        517
+      ],
+      "missing_evidence_original": "Explicit Al-Ahsa evidence appears in descriptive text; verify that the asset itself is located in Al-Ahsa.",
+      "recovered_evidence": [
+        {
+          "source_type": "national_opportunity_platform",
+          "source_name": "invest-saudi",
+          "source_opportunity_id": 517,
+          "observation_id": 13479,
+          "raw_field": "description/location",
+          "raw_value": "Develop a small palm tree farm that would provide tours that showcase the significance and heritage of dates in Al Hasa, through multiple services including farm and museum visits, date tasting experiences, workshops, F and B, and a gift shop",
+          "normalized_value": null,
+          "observed_at": "2026-10-21T12:02:33.070967+00:00",
+          "evidence_role": "DESCRIPTION_ONLY_LOCATION_CONTEXT",
+          "reliability_level": "OFFICIAL_ITEM_DESCRIPTION_NOT_ASSET_SITE"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "national_opportunity_platform",
+          "source_name": "invest-saudi",
+          "source_opportunity_id": 517,
+          "observation_id": 13479,
+          "raw_field": "description/location",
+          "observed_at": "2026-10-21T12:02:33.070967+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Al-Ahsa appears in opportunity description/title text, but source location is generic and the accepted confidence is below the location acceptance threshold; human validation of the asset site is still required.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 4,
+      "type": "LOCATION_REVIEW",
+      "subtype": "LOCATION_REVIEW",
+      "master_id": null,
+      "source_ids": [
+        524
+      ],
+      "missing_evidence_original": "Explicit Al-Ahsa evidence appears in descriptive text; verify that the asset itself is located in Al-Ahsa.",
+      "recovered_evidence": [
+        {
+          "source_type": "national_opportunity_platform",
+          "source_name": "invest-saudi",
+          "source_opportunity_id": 524,
+          "observation_id": 13488,
+          "raw_field": "description/location",
+          "raw_value": "Establish a company that activates the Al-Uqair port heritage site in Al-Hasa by setting up a visitor center, museum, F and B outlet, and accommodations, and by leasing some areas of the site for diverse purposes (e.g., retail spaces)",
+          "normalized_value": null,
+          "observed_at": "2026-10-21T12:02:33.070967+00:00",
+          "evidence_role": "DESCRIPTION_ONLY_LOCATION_CONTEXT",
+          "reliability_level": "OFFICIAL_ITEM_DESCRIPTION_NOT_ASSET_SITE"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "national_opportunity_platform",
+          "source_name": "invest-saudi",
+          "source_opportunity_id": 524,
+          "observation_id": 13488,
+          "raw_field": "description/location",
+          "observed_at": "2026-10-21T12:02:33.070967+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Al-Ahsa appears in opportunity description/title text, but source location is generic and the accepted confidence is below the location acceptance threshold; human validation of the asset site is still required.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 6,
+      "type": "LOCATION_REVIEW",
+      "subtype": "LOCATION_REVIEW",
+      "master_id": null,
+      "source_ids": [
+        896
+      ],
+      "missing_evidence_original": "Explicit Al-Ahsa evidence appears in descriptive text; verify that the asset itself is located in Al-Ahsa.",
+      "recovered_evidence": [
+        {
+          "source_type": "national_opportunity_platform",
+          "source_name": "invest-saudi",
+          "source_opportunity_id": 896,
+          "observation_id": 15195,
+          "raw_field": "description/location",
+          "raw_value": "The project consists in the development of strategic potable water reservoirs located in Al Ahsaa and WTTCO intends to procure the construction of water transmission system from Ras Al Khair to Khafji to Hafr Al Batin Region using a Public-Private Partnership (PPP) Model",
+          "normalized_value": null,
+          "observed_at": "2026-10-21T12:02:33.070967+00:00",
+          "evidence_role": "DESCRIPTION_ONLY_LOCATION_CONTEXT",
+          "reliability_level": "OFFICIAL_ITEM_DESCRIPTION_NOT_ASSET_SITE"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "national_opportunity_platform",
+          "source_name": "invest-saudi",
+          "source_opportunity_id": 896,
+          "observation_id": 15195,
+          "raw_field": "description/location",
+          "observed_at": "2026-10-21T12:02:33.070967+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Al-Ahsa appears in opportunity description/title text, but source location is generic and the accepted confidence is below the location acceptance threshold; human validation of the asset site is still required.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 7,
+      "type": "LOCATION_REVIEW",
+      "subtype": "LOCATION_REVIEW",
+      "master_id": null,
+      "source_ids": [
+        897
+      ],
+      "missing_evidence_original": "Explicit Al-Ahsa evidence appears in descriptive text; verify that the asset itself is located in Al-Ahsa.",
+      "recovered_evidence": [
+        {
+          "source_type": "national_opportunity_platform",
+          "source_name": "invest-saudi",
+          "source_opportunity_id": 897,
+          "observation_id": 13821,
+          "raw_field": "description/location",
+          "raw_value": "The project consists in the development of strategic potable water reservoirs located in Al Ahsaa and WTTCO intends to procure the construction of water transmission system from Tabuk to Al-Ula Region using a Public-Private Partnership (PPP) Model.",
+          "normalized_value": null,
+          "observed_at": "2026-10-21T12:02:33.070967+00:00",
+          "evidence_role": "DESCRIPTION_ONLY_LOCATION_CONTEXT",
+          "reliability_level": "OFFICIAL_ITEM_DESCRIPTION_NOT_ASSET_SITE"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "national_opportunity_platform",
+          "source_name": "invest-saudi",
+          "source_opportunity_id": 897,
+          "observation_id": 13821,
+          "raw_field": "description/location",
+          "observed_at": "2026-10-21T12:02:33.070967+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Al-Ahsa appears in opportunity description/title text, but source location is generic and the accepted confidence is below the location acceptance threshold; human validation of the asset site is still required.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 8,
+      "type": "LOCATION_REVIEW",
+      "subtype": "LOCATION_REVIEW",
+      "master_id": null,
+      "source_ids": [
+        898
+      ],
+      "missing_evidence_original": "Explicit Al-Ahsa evidence appears in descriptive text; verify that the asset itself is located in Al-Ahsa.",
+      "recovered_evidence": [
+        {
+          "source_type": "national_opportunity_platform",
+          "source_name": "invest-saudi",
+          "source_opportunity_id": 898,
+          "observation_id": 13822,
+          "raw_field": "description/location",
+          "raw_value": "The project consists in the development of strategic potable water reservoirs located in Al Ahsaa and WTTCO intends to procure the construction of the water transmission system from SHUQAIQ to JAZAN Region using a Public-Private Partnership (PPP) Model.",
+          "normalized_value": null,
+          "observed_at": "2026-10-21T12:02:33.070967+00:00",
+          "evidence_role": "DESCRIPTION_ONLY_LOCATION_CONTEXT",
+          "reliability_level": "OFFICIAL_ITEM_DESCRIPTION_NOT_ASSET_SITE"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "national_opportunity_platform",
+          "source_name": "invest-saudi",
+          "source_opportunity_id": 898,
+          "observation_id": 13822,
+          "raw_field": "description/location",
+          "observed_at": "2026-10-21T12:02:33.070967+00:00"
+        }
+      ],
+      "proposed_disposition": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "why_correct": "Al-Ahsa appears in opportunity description/title text, but source location is generic and the accepted confidence is below the location acceptance threshold; human validation of the asset site is still required.",
+      "audit_result": "PASS"
+    },
+    {
+      "review_id": 17,
+      "type": "LOCATION_REVIEW",
+      "subtype": "LOCATION_REVIEW",
+      "master_id": 230,
+      "source_ids": [
+        2368,
+        2831
+      ],
+      "missing_evidence_original": "Explicit Al-Ahsa evidence appears in descriptive text; verify that the asset itself is located in Al-Ahsa.",
+      "recovered_evidence": [
+        {
+          "source_type": "national_opportunity_platform",
+          "source_name": "invest-saudi",
+          "source_opportunity_id": 2368,
+          "observation_id": 13112,
+          "raw_field": "description/location",
+          "raw_value": "تأجير مواقع مكائن بيع ذاتي لعدد (32) موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي",
+          "normalized_value": null,
+          "observed_at": "2026-10-21T12:02:27.081343+00:00",
+          "evidence_role": "DESCRIPTION_ONLY_LOCATION_CONTEXT",
+          "reliability_level": "OFFICIAL_ITEM_DESCRIPTION_NOT_ASSET_SITE"
+        },
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 2831,
+          "observation_id": 16168,
+          "raw_field": "attributes.CITYNAME",
+          "raw_value": "الاحساء",
+          "normalized_value": null,
+          "observed_at": "2026-10-22T06:01:28.935596+00:00",
+          "evidence_role": "LINKED_OFFICIAL_CITY_EVIDENCE",
+          "reliability_level": "OFFICIAL_EXACT_REFERENCE_LINK"
+        }
+      ],
+      "provenance": [
+        {
+          "source_type": "national_opportunity_platform",
+          "source_name": "invest-saudi",
+          "source_opportunity_id": 2368,
+          "observation_id": 13112,
+          "raw_field": "description/location",
+          "observed_at": "2026-10-21T12:02:27.081343+00:00"
+        },
+        {
+          "source_type": "structured_opportunity_platform",
+          "source_name": "furas",
+          "source_opportunity_id": 2831,
+          "observation_id": 16168,
+          "raw_field": "attributes.CITYNAME",
+          "observed_at": "2026-10-22T06:01:28.935596+00:00"
+        }
+      ],
+      "proposed_disposition": "WRONG_BLOCKED_CLASSIFICATION",
+      "why_correct": "Exact opportunity number links the Invest Saudi record to an Al-Ahsa-filtered Furas record, and the Master already retains that Al-Ahsa location. The evidence is sufficient for geography, but current acceptance workflow can reproject business fields, so keep the source review open for a safe human disposition.",
+      "audit_result": "PASS"
+    }
+  ],
+  "all_pass": true
+}

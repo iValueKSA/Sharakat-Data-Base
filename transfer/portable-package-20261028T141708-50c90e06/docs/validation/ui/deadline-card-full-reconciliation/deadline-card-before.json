@@ -1,0 +1,35 @@
+{
+  "captured_at": "2026-10-28T09:30:44.334624+00:00",
+  "as_of_date": "2026-10-28",
+  "active_opportunities": 474,
+  "deadline_buckets": [
+    {
+      "key": "7d",
+      "count": 0
+    },
+    {
+      "key": "8_14d",
+      "count": 21
+    },
+    {
+      "key": "15_30d",
+      "count": 39
+    },
+    {
+      "key": "over_30d",
+      "count": 44
+    }
+  ],
+  "current_card_total": 104,
+  "active_not_in_current_card": 370,
+  "active_status_set": [
+    "متاحة",
+    "Announced",
+    "ANNOUNCED",
+    "PUBLISHED",
+    "AVAILABLE",
+    "ACTIVE",
+    "منشورة"
+  ],
+  "service_state": "API/DB healthy; readonly source-row inspection"
+}

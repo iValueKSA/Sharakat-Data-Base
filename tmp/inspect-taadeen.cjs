@@ -1,0 +1,1 @@
+const fs=require('fs');let s=fs.readFileSync('tmp/taadeen-ahsa.json','utf8').replace(/^\uFEFF/,'');const o=JSON.parse(s);const f=o.features[0];const coords=f.geometry.coordinates[0];console.log(JSON.stringify({crs:o.crs,first:coords.slice(0,5),n:coords.length,point:[50.174,25.769]},null,2));

@@ -1,0 +1,47 @@
+{
+  "snapshot_timestamp": "2026-10-26T09:29:29.150924+00:00",
+  "database_dialect": "postgresql",
+  "total_masters": 587,
+  "current_masters": 566,
+  "unique_current_master_ids": 566,
+  "merged_masters": 21,
+  "source_opportunities": 3178,
+  "observations": 25298,
+  "reviews_total": 1187,
+  "review_counts_by_type": {
+    "opportunity_conflict": 1114,
+    "duplicate_candidate": 47,
+    "location_review": 26,
+    "qualification_review": 0
+  },
+  "open_reviews": 0,
+  "resolved_or_superseded_reviews": 1187,
+  "sync_jobs": 508,
+  "active_or_nonterminal_sync_jobs": 0,
+  "sync_job_states": {
+    "COMPLETED": 383,
+    "FAILED": 78,
+    "COMPLETED_WITH_WARNINGS": 43,
+    "ABANDONED": 3,
+    "SKIPPED_ALREADY_RUNNING": 1
+  },
+  "configured_sources": 11,
+  "enabled_sources": 10,
+  "audit_events": 3721,
+  "enabled_users": 1,
+  "valid_admin_sessions": 1,
+  "alembic_head": [
+    "0023_quant_commercial"
+  ],
+  "ready_health_endpoint": "PASSED",
+  "services": {
+    "postgres": "healthy",
+    "redis": "healthy",
+    "api": "healthy",
+    "worker": "running",
+    "scheduler": "running",
+    "frontend": "running"
+  },
+  "business_and_review_counts_match_accepted_snapshot": true,
+  "manual_source_sync_started": false
+}

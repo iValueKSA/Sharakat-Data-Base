@@ -1,0 +1,25 @@
+{
+  "captured_at": "2026-10-26T08:37:21.3011104Z",
+  "scope": "full",
+  "trigger": "post_sync_resolution_final_verification",
+  "persisted": false,
+  "business_data_read_only": true,
+  "counts": {
+    "total": 121,
+    "pass": 117,
+    "warning": 4,
+    "fail": 0
+  },
+  "warning_gate_keys": [
+    "GENERIC_SOURCE_PAGE_AS_OPPORTUNITY_ACTION",
+    "HISTORICAL_REVIEW_AUDIT_INCOMPLETE",
+    "SOURCE_LAST_SUCCESS_TOO_OLD",
+    "SYNC_RUNTIME_ANOMALY"
+  ],
+  "failing_gate_keys": [],
+  "open_actionable_reviews": 0,
+  "active_sync_jobs": 0,
+  "sync_jobs_total": 506,
+  "manual_source_sync_started": false,
+  "health_ready": true
+}

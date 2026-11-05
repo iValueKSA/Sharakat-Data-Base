@@ -1,0 +1,157 @@
+{
+  "project": "C:\\Sharakat Data Base",
+  "task": "FINAL NATIONAL EXPANSION ACCEPTANCE",
+  "as_of_date": "2026-11-03",
+  "final_status": "PARTIAL",
+  "data_quality": {
+    "run_id": "045e12f1e13e4741962789b172cfcedc",
+    "scope": "full",
+    "completed_at_utc": "2026-11-03T13:11:17Z",
+    "pass": 127,
+    "warning": 7,
+    "fail": 0
+  },
+  "regression": {
+    "command_scope": "pytest -q tests --ignore=tests/tests",
+    "passed": 687,
+    "skipped": 1,
+    "failed": 0,
+    "skip_note": "Existing justified PostgreSQL-lock skip."
+  },
+  "masters": {
+    "total_rows": 6678,
+    "current_nonmerged": 6657,
+    "merged": 21,
+    "reconciliation": "PASSED",
+    "source_opportunities": 9467,
+    "source_rows_linked": 6769,
+    "source_rows_unlinked": 2698,
+    "configured_sources": 14,
+    "open_duplicate_reviews": 0,
+    "open_conflicts": 12
+  },
+  "source_reconciliation": [
+    {"key":"furas","display_name":"Furas","enabled":true,"source_rows":6546,"linked_rows":6493,"current_masters":6493,"technical_health":"WARNING","freshness":"STALE"},
+    {"key":"alahsa-opportunities","display_name":"Al-Ahsa Opportunities","enabled":true,"source_rows":123,"linked_rows":123,"current_masters":123,"technical_health":"HEALTHY","freshness":"FRESH"},
+    {"key":"ahda","display_name":"Ahda","enabled":true,"source_rows":8,"linked_rows":8,"current_masters":8,"technical_health":"HEALTHY","freshness":"FRESH"},
+    {"key":"invest-saudi","display_name":"Invest Saudi","enabled":true,"source_rows":2555,"linked_rows":106,"current_masters":106,"technical_health":"HEALTHY","freshness":"FRESH"},
+    {"key":"kfu","display_name":"King Faisal University","enabled":true,"source_rows":6,"linked_rows":3,"current_masters":3,"technical_health":"HEALTHY","freshness":"FRESH"},
+    {"key":"modon","display_name":"MODON","enabled":true,"source_rows":0,"linked_rows":0,"current_masters":0,"technical_health":"WARNING","freshness":"STALE"},
+    {"key":"ncp","display_name":"National Center for Privatization (NCP)","enabled":true,"source_rows":185,"linked_rows":27,"current_masters":26,"technical_health":"HEALTHY","freshness":"FRESH"},
+    {"key":"nhc","display_name":"National Housing Company","enabled":true,"source_rows":0,"linked_rows":0,"current_masters":0,"technical_health":"WARNING","freshness":"STALE"},
+    {"key":"pif","display_name":"Public Investment Fund","enabled":true,"source_rows":0,"linked_rows":0,"current_masters":0,"technical_health":"HEALTHY","freshness":"LIMITED_SOURCE_OK"},
+    {"key":"mwan","display_name":"MWAN","enabled":true,"source_rows":7,"linked_rows":0,"current_masters":0,"technical_health":"HEALTHY","freshness":"FRESH"},
+    {"key":"waha-development","display_name":"Waha Development","enabled":false,"source_rows":0,"linked_rows":0,"current_masters":0,"technical_health":"UNKNOWN","freshness":"UNKNOWN"},
+    {"key":"rcjy-investment-opportunities","display_name":"Royal Commission for Jubail and Yanbu (RCJY)","enabled":true,"source_rows":3,"linked_rows":3,"current_masters":3,"technical_health":"HEALTHY","freshness":"FRESH"},
+    {"key":"rcu-investment-opportunities","display_name":"Royal Commission for AlUla (RCU)","enabled":true,"source_rows":6,"linked_rows":6,"current_masters":6,"technical_health":"HEALTHY","freshness":"FRESH"},
+    {"key":"taadeen-mining-bids","display_name":"Ta’adeen Mining Bids","enabled":true,"source_rows":28,"linked_rows":0,"current_masters":0,"technical_health":"HEALTHY","freshness":"FRESH"}
+  ],
+  "source_regression": {
+    "rcjy": {"source_rows":3,"current_masters":3,"source_filter_total":3,"result":"PASSED"},
+    "rcu": {"source_rows":6,"current_masters":6,"al_madinah_governorate_302_filter_total":6,"open_conflicts":12,"result":"PASSED_WITH_OPEN_CONFLICT_REVIEW"},
+    "ncp": {"single_source_identity":"ncp","source_rows":185,"linked_rows":27,"distinct_current_masters":26,"portal_created_masters_from_accepted_integration_record":25,"closed_transaction_source_only_from_accepted_integration_record":59,"result":"PASSED"},
+    "taadeen": {"source_rows":28,"current_masters":0,"health":"HEALTHY","freshness":"FRESH","source_filter_total":0,"result":"PASSED"}
+  },
+  "rcu_conflicts": {
+    "read_only": true,
+    "modified_or_resolved": 0,
+    "ui_block": true,
+    "map_block": false,
+    "assessment": "Conservative block: six raw CURRENT statuses project to unknown and six offset-free datetimes are flagged invalid by the lifecycle parser. Their meaning is unresolved; do not silently promote status or infer a timezone.",
+    "items": [
+      {"conflict_id":1313,"master_id":6678,"source_opportunity_id":9329,"provider_key":"0b54170e-49f1-4d95-925b-225e486d8eb2","field":"status","conflict_type":"FIELD_VALUE_CONFLICT","canonical_value":"حالة غير معروفة","rcu_value":"CURRENT (isClosed=false)","other_source_value":null,"evidence":"Raw status is not in the explicit canonical lifecycle map; parser flags AMBIGUOUS_RAW_STATUS. One RCU source row is linked.","classification":"LEGITIMATE_OPEN_CONFLICT","actionability":"Requires source-semantics review.","recommended_action":"Keep open; do not infer active state until RCU status semantics are established."},
+      {"conflict_id":1315,"master_id":6683,"source_opportunity_id":9325,"provider_key":"f482f6c3-21f1-4dc6-a2c5-d318ead27a38","field":"status","conflict_type":"FIELD_VALUE_CONFLICT","canonical_value":"حالة غير معروفة","rcu_value":"CURRENT (isClosed=false)","other_source_value":null,"evidence":"Raw status is not in the explicit canonical lifecycle map; parser flags AMBIGUOUS_RAW_STATUS. One RCU source row is linked.","classification":"LEGITIMATE_OPEN_CONFLICT","actionability":"Requires source-semantics review.","recommended_action":"Keep open; do not infer active state until RCU status semantics are established."},
+      {"conflict_id":1317,"master_id":6679,"source_opportunity_id":9326,"provider_key":"6645c6e9-6bd4-4a93-88bc-baef67a77607","field":"status","conflict_type":"FIELD_VALUE_CONFLICT","canonical_value":"حالة غير معروفة","rcu_value":"CURRENT (isClosed=false)","other_source_value":null,"evidence":"Raw status is not in the explicit canonical lifecycle map; parser flags AMBIGUOUS_RAW_STATUS. One RCU source row is linked.","classification":"LEGITIMATE_OPEN_CONFLICT","actionability":"Requires source-semantics review.","recommended_action":"Keep open; do not infer active state until RCU status semantics are established."},
+      {"conflict_id":1319,"master_id":6680,"source_opportunity_id":9324,"provider_key":"8fd18e92-054a-40c3-9de7-33d7dc23f5db","field":"status","conflict_type":"FIELD_VALUE_CONFLICT","canonical_value":"حالة غير معروفة","rcu_value":"CURRENT (isClosed=false)","other_source_value":null,"evidence":"Raw status is not in the explicit canonical lifecycle map; parser flags AMBIGUOUS_RAW_STATUS. One RCU source row is linked.","classification":"LEGITIMATE_OPEN_CONFLICT","actionability":"Requires source-semantics review.","recommended_action":"Keep open; do not infer active state until RCU status semantics are established."},
+      {"conflict_id":1321,"master_id":6681,"source_opportunity_id":9327,"provider_key":"b7941434-d0e8-4ddc-8857-49943f3b368f","field":"status","conflict_type":"FIELD_VALUE_CONFLICT","canonical_value":"حالة غير معروفة","rcu_value":"CURRENT (isClosed=false)","other_source_value":null,"evidence":"Raw status is not in the explicit canonical lifecycle map; parser flags AMBIGUOUS_RAW_STATUS. One RCU source row is linked.","classification":"LEGITIMATE_OPEN_CONFLICT","actionability":"Requires source-semantics review.","recommended_action":"Keep open; do not infer active state until RCU status semantics are established."},
+      {"conflict_id":1323,"master_id":6682,"source_opportunity_id":9328,"provider_key":"cea3d684-d766-4a97-b4f9-fbccaa72b187","field":"status","conflict_type":"FIELD_VALUE_CONFLICT","canonical_value":"حالة غير معروفة","rcu_value":"CURRENT (isClosed=false)","other_source_value":null,"evidence":"Raw status is not in the explicit canonical lifecycle map; parser flags AMBIGUOUS_RAW_STATUS. One RCU source row is linked.","classification":"LEGITIMATE_OPEN_CONFLICT","actionability":"Requires source-semantics review.","recommended_action":"Keep open; do not infer active state until RCU status semantics are established."},
+      {"conflict_id":1314,"master_id":6678,"source_opportunity_id":9329,"provider_key":"0b54170e-49f1-4d95-925b-225e486d8eb2","field":"submission_deadline","conflict_type":"FIELD_VALUE_CONFLICT","canonical_value":"2027-06-30T17:00:00","rcu_value":"2027-06-30T17:00:00","other_source_value":null,"selected_value_anomaly":"حالة غير معروفة","evidence":"Canonical deadline exactly equals raw RCU deadline. ISO datetime has no timezone offset; parser flags INVALID_DEADLINE rather than assigning a local date. selected_value is an unrelated status string.","classification":"INVALID_CONFLICT","actionability":"Conflict row is internally inconsistent; date semantics remain unresolved.","recommended_action":"Keep open pending governed parser/review correction; do not modify deadline or infer timezone."},
+      {"conflict_id":1316,"master_id":6683,"source_opportunity_id":9325,"provider_key":"f482f6c3-21f1-4dc6-a2c5-d318ead27a38","field":"submission_deadline","conflict_type":"FIELD_VALUE_CONFLICT","canonical_value":"2027-05-31T17:00:00","rcu_value":"2027-05-31T17:00:00","other_source_value":null,"selected_value_anomaly":"حالة غير معروفة","evidence":"Canonical deadline exactly equals raw RCU deadline. ISO datetime has no timezone offset; parser flags INVALID_DEADLINE rather than assigning a local date. selected_value is an unrelated status string.","classification":"INVALID_CONFLICT","actionability":"Conflict row is internally inconsistent; date semantics remain unresolved.","recommended_action":"Keep open pending governed parser/review correction; do not modify deadline or infer timezone."},
+      {"conflict_id":1318,"master_id":6679,"source_opportunity_id":9326,"provider_key":"6645c6e9-6bd4-4a93-88bc-baef67a77607","field":"submission_deadline","conflict_type":"FIELD_VALUE_CONFLICT","canonical_value":"2027-05-31T17:00:00","rcu_value":"2027-05-31T17:00:00","other_source_value":null,"selected_value_anomaly":"حالة غير معروفة","evidence":"Canonical deadline exactly equals raw RCU deadline. ISO datetime has no timezone offset; parser flags INVALID_DEADLINE rather than assigning a local date. selected_value is an unrelated status string.","classification":"INVALID_CONFLICT","actionability":"Conflict row is internally inconsistent; date semantics remain unresolved.","recommended_action":"Keep open pending governed parser/review correction; do not modify deadline or infer timezone."},
+      {"conflict_id":1320,"master_id":6680,"source_opportunity_id":9324,"provider_key":"8fd18e92-054a-40c3-9de7-33d7dc23f5db","field":"submission_deadline","conflict_type":"FIELD_VALUE_CONFLICT","canonical_value":"2027-11-30T17:00:00","rcu_value":"2027-11-30T17:00:00","other_source_value":null,"selected_value_anomaly":"حالة غير معروفة","evidence":"Canonical deadline exactly equals raw RCU deadline. ISO datetime has no timezone offset; parser flags INVALID_DEADLINE rather than assigning a local date. selected_value is an unrelated status string.","classification":"INVALID_CONFLICT","actionability":"Conflict row is internally inconsistent; date semantics remain unresolved.","recommended_action":"Keep open pending governed parser/review correction; do not modify deadline or infer timezone."},
+      {"conflict_id":1322,"master_id":6681,"source_opportunity_id":9327,"provider_key":"b7941434-d0e8-4ddc-8857-49943f3b368f","field":"submission_deadline","canonical_value":"2027-09-30T17:00:00","rcu_value":"2027-09-30T17:00:00","other_source_value":null,"selected_value_anomaly":"حالة غير معروفة","evidence":"Canonical deadline exactly equals raw RCU deadline. ISO datetime has no timezone offset; parser flags INVALID_DEADLINE rather than assigning a local date. selected_value is an unrelated status string.","classification":"INVALID_CONFLICT","actionability":"Conflict row is internally inconsistent; date semantics remain unresolved.","recommended_action":"Keep open pending governed parser/review correction; do not modify deadline or infer timezone."},
+      {"conflict_id":1324,"master_id":6682,"source_opportunity_id":9328,"provider_key":"cea3d684-d766-4a97-b4f9-fbccaa72b187","field":"submission_deadline","canonical_value":"2027-09-30T17:00:00","rcu_value":"2027-09-30T17:00:00","other_source_value":null,"selected_value_anomaly":"حالة غير معروفة","evidence":"Canonical deadline exactly equals raw RCU deadline. ISO datetime has no timezone offset; parser flags INVALID_DEADLINE rather than assigning a local date. selected_value is an unrelated status string.","classification":"INVALID_CONFLICT","actionability":"Conflict row is internally inconsistent; date semantics remain unresolved.","recommended_action":"Keep open pending governed parser/review correction; do not modify deadline or infer timezone."}
+    ]
+  },
+  "geography": {
+    "reference_ready": true,
+    "regions": 13,
+    "governorates": 149,
+    "canonical_city_dataset": "NOT_AVAILABLE",
+    "city_coverage": 0,
+    "national_city_ui_behavior": "LIMITED_TO_EXISTING_EVIDENCED_CITY_VALUES",
+    "region_filter": "PASSED_API",
+    "governorate_filter": "PASSED_API",
+    "parent_checks": {"eastern_province_al_ahsa": true, "al_madinah_yanbu": true, "al_madinah_al_ula": true, "cross_region_governorates": "not observed"},
+    "al_ahsa_governorate_id": "501",
+    "al_ahsa_api_count": 518,
+    "al_ahsa_unresolved_geo_included_results": 84,
+    "al_ahsa_false_positives": null,
+    "al_ahsa_false_negatives": null,
+    "al_ahsa_filter_note": "518 API matches; 84 return LOCATION_UNSPECIFIED with no governorate identity in their display projection although the reference-membership filter selects them. FP/FN equality could not be certified; UI gate remains blocked.",
+    "hofuf_legacy_location_filter_count": 3,
+    "dashboard_list_parity": {"all_saudi":6657,"eastern":975,"riyadh":800,"makkah":319,"al_madinah":458,"al_ahsa":518,"result":"PASSED_API"},
+    "region_membership_counts_non_additive": true
+  },
+  "api_export_parity": {
+    "api_csv_xlsx": "PASSED_FOR_ALL_SAUDI_AND_CHECKED_FILTERS",
+    "checked": {"eastern":975,"riyadh":800,"makkah":319,"al_madinah":458,"al_ahsa":518,"ncp":26,"rcjy":3,"rcu":6,"rcu_al_ula":6,"taadeen":0},
+    "taadeen_empty_workbook": "No matching rows; workbook includes the standard empty-state row.",
+    "all_saudi_csv_rows": 6657,
+    "all_saudi_xlsx": "PASSED_6657_ROWS_IN_153_SECONDS"
+  },
+  "map": {
+    "feature_preview": "in-process TestClient with temporary flags; shared live DB read-only",
+    "total": 6657,
+    "verified_coordinate_masters": 5889,
+    "no_coordinate_specific_location": 9,
+    "unverified_coordinate_specific_location": 168,
+    "multi_location_with_multiple_verified_points": 0,
+    "nationwide_scope": 0,
+    "location_unspecified_or_region_wide": 591,
+    "outside_boundary": 0,
+    "unique_marker_master_ids": 5889,
+    "marker_policy": "Only verified direct source coordinates; unique Master IDs deduplicated; broad/unknown locations produce no markers.",
+    "map_browser_and_drilldown": "NOT_VALIDATED_AUTH_REQUIRED",
+    "overall_map_readiness": "BLOCKED"
+  },
+  "playwright": {
+    "target": "http://localhost:8080/",
+    "navigated": true,
+    "login_attempted_with_configured_bootstrap": true,
+    "authenticated": false,
+    "auth_flow_validated": false,
+    "shell_responsive_viewports": ["1920x1080","1440x900","1366x768","768x900","390x844"],
+    "rtl": true,
+    "shell_horizontal_overflow": false,
+    "screenshots": ["tmp/national-acceptance-1920.png","tmp/national-acceptance-390.png"],
+    "runtime_page_errors": 0,
+    "expected_auth_401_console_responses": 5,
+    "unexpected_5xx": 0,
+    "failed_resources": 0,
+    "national_dashboard_opportunities_controls": "NOT_VALIDATED_AUTH_REQUIRED",
+    "full_live_validation": "FAILED_INCOMPLETE_AUTH_REQUIRED"
+  },
+  "activation": {
+    "national_ui_enabled": false,
+    "national_dashboard_enabled": false,
+    "national_map_enabled": false,
+    "furas_national_enumeration_enabled": false,
+    "furas_removals_enabled": false,
+    "ui_gate": "BLOCKED",
+    "map_gate": "BLOCKED",
+    "reasons": ["Bootstrap credentials were rejected; live authenticated controls and UI/export parity were not validated.","Al-Ahsa filter returned 84 rows whose display geography remains LOCATION_UNSPECIFIED; zero false-positive/negative assertion cannot be made.","RCU status and timezone-free deadline conflicts remain open pending deterministic source semantics.","National map was checked through read-only API preview; browser map drilldown was not available without authentication."]
+  },
+  "task_mutations": {
+    "manual_source_syncs_started": 0,
+    "new_masters_created": 0,
+    "master_link_changes": 0,
+    "sourceopportunity_business_changes": 0,
+    "review_auto_resolutions": 0,
+    "migrations": 0,
+    "feature_flags_changed": 0,
+    "natural_scheduler_activity_observed": "scheduled job 763 completed while acceptance was in progress; it was not started by this task",
+    "login_audit": "One configured bootstrap sign-in attempt was rejected; application may record a failed-login audit event. No opportunity/business records were changed."
+  }
+}
+

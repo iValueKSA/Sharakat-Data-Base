@@ -1,0 +1,97 @@
+{
+  "captured_at": "2026-10-22T14:03:38+03:00",
+  "suite": "Restricted deterministic batch actions",
+  "status": "PASSED",
+  "mapped_scenarios": 14,
+  "pytest_result": "45 passed / 0 failed",
+  "full_regression_result": "438 passed / 0 failed",
+  "environment": "isolated synthetic SQLite; no live review mutation",
+  "suite_note": "Signature, atomic rejection, role restrictions, idempotency, individual audit, and isolated UI flows are covered.",
+  "scenarios": [
+    {
+      "id": "BATCH-01",
+      "scenario": "Preview accepts identical deterministic decision signatures",
+      "status": "PASS",
+      "evidence": "test_deterministic_batch_preview_commit_has_individual_audits_and_is_idempotent"
+    },
+    {
+      "id": "BATCH-02",
+      "scenario": "Preview rejects mixed decision signatures",
+      "status": "PASS",
+      "evidence": "test_mixed_signature_stale_source_recheck_and_duplicate_batch_are_rejected; Playwright FLOW E"
+    },
+    {
+      "id": "BATCH-03",
+      "scenario": "Preview returns eligible and excluded members",
+      "status": "PASS",
+      "evidence": "test_deterministic_batch_preview_commit_has_individual_audits_and_is_idempotent"
+    },
+    {
+      "id": "BATCH-04",
+      "scenario": "Commit requires the preview confirmation/signature",
+      "status": "PASS",
+      "evidence": "test_batch_commit_rejects_changed_preview_signature_without_partial_writes"
+    },
+    {
+      "id": "BATCH-05",
+      "scenario": "Changed preview signature is rejected without writes",
+      "status": "PASS",
+      "evidence": "test_batch_commit_rejects_changed_preview_signature_without_partial_writes"
+    },
+    {
+      "id": "BATCH-06",
+      "scenario": "SOURCE_RECHECK members are rejected",
+      "status": "PASS",
+      "evidence": "test_mixed_signature_stale_source_recheck_and_duplicate_batch_are_rejected"
+    },
+    {
+      "id": "BATCH-07",
+      "scenario": "Duplicate merge is disabled in batch",
+      "status": "PASS",
+      "evidence": "test_mixed_signature_stale_source_recheck_and_duplicate_batch_are_rejected"
+    },
+    {
+      "id": "BATCH-08",
+      "scenario": "Viewer cannot preview or commit batch decisions",
+      "status": "PASS",
+      "evidence": "test_viewer_cannot_preview_or_commit_batch_decisions"
+    },
+    {
+      "id": "BATCH-09",
+      "scenario": "Analyst can commit supported deterministic batch action",
+      "status": "PASS",
+      "evidence": "test_deterministic_batch_preview_commit_has_individual_audits_and_is_idempotent"
+    },
+    {
+      "id": "BATCH-10",
+      "scenario": "Stale member rejects whole batch atomically",
+      "status": "PASS",
+      "evidence": "test_batch_commit_requires_confirmation_and_stale_member_is_atomic"
+    },
+    {
+      "id": "BATCH-11",
+      "scenario": "Every resolved member receives an individual audit",
+      "status": "PASS",
+      "evidence": "test_deterministic_batch_preview_commit_has_individual_audits_and_is_idempotent"
+    },
+    {
+      "id": "BATCH-12",
+      "scenario": "Repeated operation ID is idempotent",
+      "status": "PASS",
+      "evidence": "test_deterministic_batch_preview_commit_has_individual_audits_and_is_idempotent"
+    },
+    {
+      "id": "BATCH-13",
+      "scenario": "Batch override requires an explicit reason and audit",
+      "status": "PASS",
+      "evidence": "test_batch_override_requires_and_audits_an_explicit_reason"
+    },
+    {
+      "id": "BATCH-14",
+      "scenario": "Valid batch preview and commit work end to end",
+      "status": "PASS",
+      "evidence": "Playwright FLOW D: deterministic_batch_commit"
+    }
+  ],
+  "focused_suite_collected_cases": 45
+}

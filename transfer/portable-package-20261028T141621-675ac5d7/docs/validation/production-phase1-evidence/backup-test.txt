@@ -1,0 +1,12 @@
+Local PostgreSQL backup evidence
+Captured: 2026-10-13 Asia/Amman
+
+Result: PASS. Celery `app.tasks.run_database_backup` returned SUCCESS.
+Backup ID: 20261013T083522Z-29148109
+Path: backups/20261013T083522Z-29148109.dump
+Size: 3,366,395 bytes
+SHA-256: 955cb296adf15b8c950288abc4979fbb9bc8bb14b0042cd952996c37fbff2b0f
+Duration: 0.78 seconds from manifest timestamps
+Format: custom PostgreSQL archive; PostgreSQL 16.15 server with PostgreSQL 16.15 client
+
+The archive restored with --exit-on-error to the separate sharakat_local_restore_test database. See restore-test.txt and ../restore-rto-test.md for the comparison. Retention deletion and deliberate backup-failure alert behavior were not exercised.

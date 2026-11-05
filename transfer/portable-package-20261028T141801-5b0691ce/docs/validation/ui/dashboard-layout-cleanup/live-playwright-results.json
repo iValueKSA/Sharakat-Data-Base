@@ -1,0 +1,1159 @@
+{
+  "capturedAt": "2026-10-28T10:16:41.612Z",
+  "url": "http://localhost:8080",
+  "assetVersions": {
+    "css": "14-dashboard-layout-cleanup",
+    "dashboardJs": "deadline-single-row-v18"
+  },
+  "results": [
+    {
+      "viewport": "1920x1080",
+      "passed": true,
+      "passes": {
+        "removedCard": true,
+        "topThreeLayout": true,
+        "expectedOrder": true,
+        "deadlineFullWidth": true,
+        "deadlineImmediatelyBelow": true,
+        "oneDeadlineCard": true,
+        "fiveBuckets": true,
+        "barBaselineAligned": true,
+        "noPageOverflow": true,
+        "noLabelClipping": true,
+        "rtl": true,
+        "noJsErrors": true,
+        "noHttp5xx": true,
+        "allCardsVisible": true,
+        "balancedDesktopWidths": true
+      },
+      "measurements": {
+        "dashboardVisible": true,
+        "direction": "rtl",
+        "removedCardPresent": false,
+        "executiveMode": "grid",
+        "executiveColumns": "682.75px 401.625px 401.625px",
+        "executive": {
+          "x": 74,
+          "y": 666.984375,
+          "width": 1508,
+          "height": 134.765625,
+          "right": 1582,
+          "bottom": 801.75
+        },
+        "cards": [
+          {
+            "x": 899.25,
+            "y": 666.984375,
+            "width": 682.75,
+            "height": 134.765625,
+            "right": 1582,
+            "bottom": 801.75
+          },
+          {
+            "x": 486.625,
+            "y": 666.984375,
+            "width": 401.625,
+            "height": 134.765625,
+            "right": 888.25,
+            "bottom": 801.75
+          },
+          {
+            "x": 74,
+            "y": 666.984375,
+            "width": 401.625,
+            "height": 134.765625,
+            "right": 475.625,
+            "bottom": 801.75
+          }
+        ],
+        "topRowCount": 1,
+        "metricsMode": "grid",
+        "metricsColumns": "1508px",
+        "metrics": {
+          "x": 74,
+          "y": 812.75,
+          "width": 1508,
+          "height": 104,
+          "right": 1582,
+          "bottom": 916.75
+        },
+        "deadline": {
+          "x": 74,
+          "y": 812.75,
+          "width": 1508,
+          "height": 104,
+          "right": 1582,
+          "bottom": 916.75
+        },
+        "deadlineTopGap": 11,
+        "deadlineCardCount": 1,
+        "deadlineBuckets": [
+          {
+            "label": "خلال 7 أيام",
+            "value": "0",
+            "rect": {
+              "x": 1240.609375,
+              "y": 852.75,
+              "width": 285.390625,
+              "height": 55,
+              "right": 1526,
+              "bottom": 907.75
+            },
+            "bar": {
+              "x": 1365.3125,
+              "y": 866.75,
+              "width": 36,
+              "height": 4,
+              "right": 1401.3125,
+              "bottom": 870.75
+            },
+            "color": "#378AA4"
+          },
+          {
+            "label": "8–14 يومًا",
+            "value": "21",
+            "rect": {
+              "x": 952.203125,
+              "y": 852.75,
+              "width": 285.40625,
+              "height": 55,
+              "right": 1237.609375,
+              "bottom": 907.75
+            },
+            "bar": {
+              "x": 1076.90625,
+              "y": 866.75,
+              "width": 36,
+              "height": 4,
+              "right": 1112.90625,
+              "bottom": 870.75
+            },
+            "color": "#006E61"
+          },
+          {
+            "label": "15–30 يومًا",
+            "value": "39",
+            "rect": {
+              "x": 663.8125,
+              "y": 852.75,
+              "width": 285.390625,
+              "height": 55,
+              "right": 949.203125,
+              "bottom": 907.75
+            },
+            "bar": {
+              "x": 788.515625,
+              "y": 866.75,
+              "width": 36,
+              "height": 4,
+              "right": 824.515625,
+              "bottom": 870.75
+            },
+            "color": "#C39853"
+          },
+          {
+            "label": "أكثر من 30 يومًا",
+            "value": "44",
+            "rect": {
+              "x": 375.40625,
+              "y": 852.75,
+              "width": 285.40625,
+              "height": 55,
+              "right": 660.8125,
+              "bottom": 907.75
+            },
+            "bar": {
+              "x": 500.109375,
+              "y": 866.75,
+              "width": 36,
+              "height": 4,
+              "right": 536.109375,
+              "bottom": 870.75
+            },
+            "color": "#7953A9"
+          },
+          {
+            "label": "بدون موعد محدد",
+            "value": "370",
+            "rect": {
+              "x": 87.015625,
+              "y": 852.75,
+              "width": 285.390625,
+              "height": 55,
+              "right": 372.40625,
+              "bottom": 907.75
+            },
+            "bar": {
+              "x": 211.71875,
+              "y": 852.75,
+              "width": 36,
+              "height": 18,
+              "right": 247.71875,
+              "bottom": 870.75
+            },
+            "color": "#989899"
+          }
+        ],
+        "deadlineRowCount": 1,
+        "barBaselineCount": 1,
+        "pageOverflow": false,
+        "overflowElements": [],
+        "clippedLabels": [],
+        "total": "566",
+        "activeValue": "474",
+        "sourceValue": "10",
+        "deadlineTotal": "474",
+        "cardOrder": [
+          "نظرة عامة",
+          "الفرص النشطة",
+          "مصادر مفعلة"
+        ]
+      },
+      "jsErrors": [],
+      "http5xx": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+      ]
+    },
+    {
+      "viewport": "1440x900",
+      "passed": true,
+      "passes": {
+        "removedCard": true,
+        "topThreeLayout": true,
+        "expectedOrder": true,
+        "deadlineFullWidth": true,
+        "deadlineImmediatelyBelow": true,
+        "oneDeadlineCard": true,
+        "fiveBuckets": true,
+        "barBaselineAligned": true,
+        "noPageOverflow": true,
+        "noLabelClipping": true,
+        "rtl": true,
+        "noJsErrors": true,
+        "noHttp5xx": true,
+        "allCardsVisible": true,
+        "balancedDesktopWidths": true
+      },
+      "measurements": {
+        "dashboardVisible": true,
+        "direction": "rtl",
+        "removedCardPresent": false,
+        "executiveMode": "grid",
+        "executiveColumns": "490.516px 288.547px 288.562px",
+        "executive": {
+          "x": 43.1875,
+          "y": 645.7817993164062,
+          "width": 1089.625,
+          "height": 134.765625,
+          "right": 1132.8125,
+          "bottom": 780.5474243164062
+        },
+        "cards": [
+          {
+            "x": 642.296875,
+            "y": 645.7817993164062,
+            "width": 490.515625,
+            "height": 134.765625,
+            "right": 1132.8125,
+            "bottom": 780.5474243164062
+          },
+          {
+            "x": 342.75,
+            "y": 645.7817993164062,
+            "width": 288.546875,
+            "height": 134.765625,
+            "right": 631.296875,
+            "bottom": 780.5474243164062
+          },
+          {
+            "x": 43.1875,
+            "y": 645.7817993164062,
+            "width": 288.5625,
+            "height": 134.765625,
+            "right": 331.75,
+            "bottom": 780.5474243164062
+          }
+        ],
+        "topRowCount": 1,
+        "metricsMode": "grid",
+        "metricsColumns": "1089.62px",
+        "metrics": {
+          "x": 43.1875,
+          "y": 791.5474243164062,
+          "width": 1089.625,
+          "height": 104,
+          "right": 1132.8125,
+          "bottom": 895.5474243164062
+        },
+        "deadline": {
+          "x": 43.1875,
+          "y": 791.5474243164062,
+          "width": 1089.625,
+          "height": 104,
+          "right": 1132.8125,
+          "bottom": 895.5474243164062
+        },
+        "deadlineTopGap": 11,
+        "deadlineCardCount": 1,
+        "deadlineBuckets": [
+          {
+            "label": "خلال 7 أيام",
+            "value": "0",
+            "rect": {
+              "x": 875.09375,
+              "y": 831.5474243164062,
+              "width": 201.71875,
+              "height": 55,
+              "right": 1076.8125,
+              "bottom": 886.5474243164062
+            },
+            "bar": {
+              "x": 957.953125,
+              "y": 845.5474243164062,
+              "width": 36,
+              "height": 4,
+              "right": 993.953125,
+              "bottom": 849.5474243164062
+            },
+            "color": "#378AA4"
+          },
+          {
+            "label": "8–14 يومًا",
+            "value": "21",
+            "rect": {
+              "x": 670.375,
+              "y": 831.5474243164062,
+              "width": 201.71875,
+              "height": 55,
+              "right": 872.09375,
+              "bottom": 886.5474243164062
+            },
+            "bar": {
+              "x": 753.234375,
+              "y": 845.5474243164062,
+              "width": 36,
+              "height": 4,
+              "right": 789.234375,
+              "bottom": 849.5474243164062
+            },
+            "color": "#006E61"
+          },
+          {
+            "label": "15–30 يومًا",
+            "value": "39",
+            "rect": {
+              "x": 465.640625,
+              "y": 831.5474243164062,
+              "width": 201.734375,
+              "height": 55,
+              "right": 667.375,
+              "bottom": 886.5474243164062
+            },
+            "bar": {
+              "x": 548.515625,
+              "y": 845.5474243164062,
+              "width": 36,
+              "height": 4,
+              "right": 584.515625,
+              "bottom": 849.5474243164062
+            },
+            "color": "#C39853"
+          },
+          {
+            "label": "أكثر من 30 يومًا",
+            "value": "44",
+            "rect": {
+              "x": 260.921875,
+              "y": 831.5474243164062,
+              "width": 201.71875,
+              "height": 55,
+              "right": 462.640625,
+              "bottom": 886.5474243164062
+            },
+            "bar": {
+              "x": 343.78125,
+              "y": 845.5474243164062,
+              "width": 36,
+              "height": 4,
+              "right": 379.78125,
+              "bottom": 849.5474243164062
+            },
+            "color": "#7953A9"
+          },
+          {
+            "label": "بدون موعد محدد",
+            "value": "370",
+            "rect": {
+              "x": 56.1875,
+              "y": 831.5474243164062,
+              "width": 201.734375,
+              "height": 55,
+              "right": 257.921875,
+              "bottom": 886.5474243164062
+            },
+            "bar": {
+              "x": 139.0625,
+              "y": 831.5474243164062,
+              "width": 36,
+              "height": 18,
+              "right": 175.0625,
+              "bottom": 849.5474243164062
+            },
+            "color": "#989899"
+          }
+        ],
+        "deadlineRowCount": 1,
+        "barBaselineCount": 1,
+        "pageOverflow": false,
+        "overflowElements": [],
+        "clippedLabels": [],
+        "total": "566",
+        "activeValue": "474",
+        "sourceValue": "10",
+        "deadlineTotal": "474",
+        "cardOrder": [
+          "نظرة عامة",
+          "الفرص النشطة",
+          "مصادر مفعلة"
+        ]
+      },
+      "jsErrors": [],
+      "http5xx": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+      ]
+    },
+    {
+      "viewport": "1366x768",
+      "passed": true,
+      "passes": {
+        "removedCard": true,
+        "topThreeLayout": true,
+        "expectedOrder": true,
+        "deadlineFullWidth": true,
+        "deadlineImmediatelyBelow": true,
+        "oneDeadlineCard": true,
+        "fiveBuckets": true,
+        "barBaselineAligned": true,
+        "noPageOverflow": true,
+        "noLabelClipping": true,
+        "rtl": true,
+        "noJsErrors": true,
+        "noHttp5xx": true,
+        "allCardsVisible": true,
+        "balancedDesktopWidths": true
+      },
+      "measurements": {
+        "dashboardVisible": true,
+        "direction": "rtl",
+        "removedCardPresent": false,
+        "executiveMode": "grid",
+        "executiveColumns": "458.562px 269.75px 269.734px",
+        "executive": {
+          "x": 40.96875,
+          "y": 624.37548828125,
+          "width": 1020.0625,
+          "height": 134.765625,
+          "right": 1061.03125,
+          "bottom": 759.14111328125
+        },
+        "cards": [
+          {
+            "x": 602.46875,
+            "y": 624.37548828125,
+            "width": 458.5625,
+            "height": 134.765625,
+            "right": 1061.03125,
+            "bottom": 759.14111328125
+          },
+          {
+            "x": 321.71875,
+            "y": 624.37548828125,
+            "width": 269.75,
+            "height": 134.765625,
+            "right": 591.46875,
+            "bottom": 759.14111328125
+          },
+          {
+            "x": 40.984375,
+            "y": 624.37548828125,
+            "width": 269.734375,
+            "height": 134.765625,
+            "right": 310.71875,
+            "bottom": 759.14111328125
+          }
+        ],
+        "topRowCount": 1,
+        "metricsMode": "grid",
+        "metricsColumns": "1020.06px",
+        "metrics": {
+          "x": 40.96875,
+          "y": 770.14111328125,
+          "width": 1020.0625,
+          "height": 104,
+          "right": 1061.03125,
+          "bottom": 874.14111328125
+        },
+        "deadline": {
+          "x": 40.96875,
+          "y": 770.14111328125,
+          "width": 1020.0625,
+          "height": 104,
+          "right": 1061.03125,
+          "bottom": 874.14111328125
+        },
+        "deadlineTopGap": 11,
+        "deadlineCardCount": 1,
+        "deadlineBuckets": [
+          {
+            "label": "خلال 7 أيام",
+            "value": "0",
+            "rect": {
+              "x": 817.21875,
+              "y": 810.14111328125,
+              "width": 187.8125,
+              "height": 55,
+              "right": 1005.03125,
+              "bottom": 865.14111328125
+            },
+            "bar": {
+              "x": 893.125,
+              "y": 824.14111328125,
+              "width": 36,
+              "height": 4,
+              "right": 929.125,
+              "bottom": 828.14111328125
+            },
+            "color": "#378AA4"
+          },
+          {
+            "label": "8–14 يومًا",
+            "value": "21",
+            "rect": {
+              "x": 626.40625,
+              "y": 810.14111328125,
+              "width": 187.8125,
+              "height": 55,
+              "right": 814.21875,
+              "bottom": 865.14111328125
+            },
+            "bar": {
+              "x": 702.3125,
+              "y": 824.14111328125,
+              "width": 36,
+              "height": 4,
+              "right": 738.3125,
+              "bottom": 828.14111328125
+            },
+            "color": "#006E61"
+          },
+          {
+            "label": "15–30 يومًا",
+            "value": "39",
+            "rect": {
+              "x": 435.59375,
+              "y": 810.14111328125,
+              "width": 187.8125,
+              "height": 55,
+              "right": 623.40625,
+              "bottom": 865.14111328125
+            },
+            "bar": {
+              "x": 511.5,
+              "y": 824.14111328125,
+              "width": 36,
+              "height": 4,
+              "right": 547.5,
+              "bottom": 828.14111328125
+            },
+            "color": "#C39853"
+          },
+          {
+            "label": "أكثر من 30 يومًا",
+            "value": "44",
+            "rect": {
+              "x": 244.78125,
+              "y": 810.14111328125,
+              "width": 187.8125,
+              "height": 55,
+              "right": 432.59375,
+              "bottom": 865.14111328125
+            },
+            "bar": {
+              "x": 320.6875,
+              "y": 824.14111328125,
+              "width": 36,
+              "height": 4,
+              "right": 356.6875,
+              "bottom": 828.14111328125
+            },
+            "color": "#7953A9"
+          },
+          {
+            "label": "بدون موعد محدد",
+            "value": "370",
+            "rect": {
+              "x": 53.96875,
+              "y": 810.14111328125,
+              "width": 187.8125,
+              "height": 55,
+              "right": 241.78125,
+              "bottom": 865.14111328125
+            },
+            "bar": {
+              "x": 129.875,
+              "y": 810.14111328125,
+              "width": 36,
+              "height": 18,
+              "right": 165.875,
+              "bottom": 828.14111328125
+            },
+            "color": "#989899"
+          }
+        ],
+        "deadlineRowCount": 1,
+        "barBaselineCount": 1,
+        "pageOverflow": false,
+        "overflowElements": [],
+        "clippedLabels": [],
+        "total": "566",
+        "activeValue": "474",
+        "sourceValue": "10",
+        "deadlineTotal": "474",
+        "cardOrder": [
+          "نظرة عامة",
+          "الفرص النشطة",
+          "مصادر مفعلة"
+        ]
+      },
+      "jsErrors": [],
+      "http5xx": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+      ]
+    },
+    {
+      "viewport": "768x900",
+      "passed": true,
+      "passes": {
+        "removedCard": true,
+        "topThreeLayout": true,
+        "expectedOrder": true,
+        "deadlineFullWidth": true,
+        "deadlineImmediatelyBelow": true,
+        "oneDeadlineCard": true,
+        "fiveBuckets": true,
+        "barBaselineAligned": true,
+        "noPageOverflow": true,
+        "noLabelClipping": true,
+        "rtl": true,
+        "noJsErrors": true,
+        "noHttp5xx": true,
+        "allCardsVisible": true,
+        "balancedDesktopWidths": true
+      },
+      "measurements": {
+        "dashboardVisible": true,
+        "direction": "rtl",
+        "removedCardPresent": false,
+        "executiveMode": "grid",
+        "executiveColumns": "353.5px 353.5px",
+        "executive": {
+          "x": 25,
+          "y": 546.9067993164062,
+          "width": 718,
+          "height": 277.765625,
+          "right": 743,
+          "bottom": 824.6724243164062
+        },
+        "cards": [
+          {
+            "x": 25,
+            "y": 546.9067993164062,
+            "width": 718,
+            "height": 134.765625,
+            "right": 743,
+            "bottom": 681.6724243164062
+          },
+          {
+            "x": 389.5,
+            "y": 692.6724243164062,
+            "width": 353.5,
+            "height": 132,
+            "right": 743,
+            "bottom": 824.6724243164062
+          },
+          {
+            "x": 25,
+            "y": 692.6724243164062,
+            "width": 353.5,
+            "height": 132,
+            "right": 378.5,
+            "bottom": 824.6724243164062
+          }
+        ],
+        "topRowCount": 2,
+        "metricsMode": "grid",
+        "metricsColumns": "718px",
+        "metrics": {
+          "x": 25,
+          "y": 835.6724243164062,
+          "width": 718,
+          "height": 104,
+          "right": 743,
+          "bottom": 939.6724243164062
+        },
+        "deadline": {
+          "x": 25,
+          "y": 835.6724243164062,
+          "width": 718,
+          "height": 104,
+          "right": 743,
+          "bottom": 939.6724243164062
+        },
+        "deadlineTopGap": 11,
+        "deadlineCardCount": 1,
+        "deadlineBuckets": [
+          {
+            "label": "خلال 7 أيام",
+            "value": "0",
+            "rect": {
+              "x": 559.609375,
+              "y": 875.6724243164062,
+              "width": 127.390625,
+              "height": 55,
+              "right": 687,
+              "bottom": 930.6724243164062
+            },
+            "bar": {
+              "x": 605.3125,
+              "y": 889.6724243164062,
+              "width": 36,
+              "height": 4,
+              "right": 641.3125,
+              "bottom": 893.6724243164062
+            },
+            "color": "#378AA4"
+          },
+          {
+            "label": "8–14 يومًا",
+            "value": "21",
+            "rect": {
+              "x": 429.203125,
+              "y": 875.6724243164062,
+              "width": 127.40625,
+              "height": 55,
+              "right": 556.609375,
+              "bottom": 930.6724243164062
+            },
+            "bar": {
+              "x": 474.90625,
+              "y": 889.6724243164062,
+              "width": 36,
+              "height": 4,
+              "right": 510.90625,
+              "bottom": 893.6724243164062
+            },
+            "color": "#006E61"
+          },
+          {
+            "label": "15–30 يومًا",
+            "value": "39",
+            "rect": {
+              "x": 298.8125,
+              "y": 875.6724243164062,
+              "width": 127.390625,
+              "height": 55,
+              "right": 426.203125,
+              "bottom": 930.6724243164062
+            },
+            "bar": {
+              "x": 344.515625,
+              "y": 889.6724243164062,
+              "width": 36,
+              "height": 4,
+              "right": 380.515625,
+              "bottom": 893.6724243164062
+            },
+            "color": "#C39853"
+          },
+          {
+            "label": "أكثر من 30 يومًا",
+            "value": "44",
+            "rect": {
+              "x": 168.40625,
+              "y": 875.6724243164062,
+              "width": 127.40625,
+              "height": 55,
+              "right": 295.8125,
+              "bottom": 930.6724243164062
+            },
+            "bar": {
+              "x": 214.109375,
+              "y": 889.6724243164062,
+              "width": 36,
+              "height": 4,
+              "right": 250.109375,
+              "bottom": 893.6724243164062
+            },
+            "color": "#7953A9"
+          },
+          {
+            "label": "بدون موعد محدد",
+            "value": "370",
+            "rect": {
+              "x": 38,
+              "y": 875.6724243164062,
+              "width": 127.40625,
+              "height": 55,
+              "right": 165.40625,
+              "bottom": 930.6724243164062
+            },
+            "bar": {
+              "x": 83.703125,
+              "y": 875.6724243164062,
+              "width": 36,
+              "height": 18,
+              "right": 119.703125,
+              "bottom": 893.6724243164062
+            },
+            "color": "#989899"
+          }
+        ],
+        "deadlineRowCount": 1,
+        "barBaselineCount": 1,
+        "pageOverflow": false,
+        "overflowElements": [
+          {
+            "tag": "A",
+            "cls": "brand",
+            "right": 1085.95263671875
+          },
+          {
+            "tag": "SPAN",
+            "cls": "brand-copy",
+            "right": 1077.95263671875
+          },
+          {
+            "tag": "B",
+            "cls": "",
+            "right": 1077.95263671875
+          },
+          {
+            "tag": "SMALL",
+            "cls": "",
+            "right": 1077.95263671875
+          },
+          {
+            "tag": "DIV",
+            "cls": "authority-lockup",
+            "right": 1085.95263671875
+          }
+        ],
+        "clippedLabels": [],
+        "total": "566",
+        "activeValue": "474",
+        "sourceValue": "10",
+        "deadlineTotal": "474",
+        "cardOrder": [
+          "نظرة عامة",
+          "الفرص النشطة",
+          "مصادر مفعلة"
+        ]
+      },
+      "jsErrors": [],
+      "http5xx": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+      ]
+    },
+    {
+      "viewport": "390x844",
+      "passed": true,
+      "passes": {
+        "removedCard": true,
+        "topThreeLayout": true,
+        "expectedOrder": true,
+        "deadlineFullWidth": true,
+        "deadlineImmediatelyBelow": true,
+        "oneDeadlineCard": true,
+        "fiveBuckets": true,
+        "barBaselineAligned": true,
+        "noPageOverflow": true,
+        "noLabelClipping": true,
+        "rtl": true,
+        "noJsErrors": true,
+        "noHttp5xx": true,
+        "allCardsVisible": true,
+        "balancedDesktopWidths": true
+      },
+      "measurements": {
+        "dashboardVisible": true,
+        "direction": "rtl",
+        "removedCardPresent": false,
+        "executiveMode": "grid",
+        "executiveColumns": "366px",
+        "executive": {
+          "x": 12,
+          "y": 540.6722412109375,
+          "width": 366,
+          "height": 387.10943603515625,
+          "right": 378,
+          "bottom": 927.7816772460938
+        },
+        "cards": [
+          {
+            "x": 12,
+            "y": 540.6722412109375,
+            "width": 366,
+            "height": 134.76568603515625,
+            "right": 378,
+            "bottom": 675.4379272460938
+          },
+          {
+            "x": 12,
+            "y": 686.4379272460938,
+            "width": 366,
+            "height": 118,
+            "right": 378,
+            "bottom": 804.4379272460938
+          },
+          {
+            "x": 12,
+            "y": 815.4379272460938,
+            "width": 366,
+            "height": 112.34375,
+            "right": 378,
+            "bottom": 927.7816772460938
+          }
+        ],
+        "topRowCount": 3,
+        "metricsMode": "grid",
+        "metricsColumns": "366px",
+        "metrics": {
+          "x": 12,
+          "y": 938.7816772460938,
+          "width": 366,
+          "height": 102.00006103515625,
+          "right": 378,
+          "bottom": 1040.78173828125
+        },
+        "deadline": {
+          "x": 12,
+          "y": 938.7816772460938,
+          "width": 366,
+          "height": 102.00006103515625,
+          "right": 378,
+          "bottom": 1040.78173828125
+        },
+        "deadlineTopGap": 11,
+        "deadlineCardCount": 1,
+        "deadlineBuckets": [
+          {
+            "label": "خلال 7 أيام",
+            "value": "0",
+            "rect": {
+              "x": 269.203125,
+              "y": 977.7816772460938,
+              "width": 59.796875,
+              "height": 55.00006103515625,
+              "right": 329,
+              "bottom": 1032.78173828125
+            },
+            "bar": {
+              "x": 281.109375,
+              "y": 991.7816772460938,
+              "width": 36,
+              "height": 4,
+              "right": 317.109375,
+              "bottom": 995.7816772460938
+            },
+            "color": "#378AA4"
+          },
+          {
+            "label": "8–14 يومًا",
+            "value": "21",
+            "rect": {
+              "x": 207.40625,
+              "y": 977.7816772460938,
+              "width": 59.796875,
+              "height": 55.00006103515625,
+              "right": 267.203125,
+              "bottom": 1032.78173828125
+            },
+            "bar": {
+              "x": 219.3125,
+              "y": 991.7816772460938,
+              "width": 36,
+              "height": 4,
+              "right": 255.3125,
+              "bottom": 995.7816772460938
+            },
+            "color": "#006E61"
+          },
+          {
+            "label": "15–30 يومًا",
+            "value": "39",
+            "rect": {
+              "x": 145.609375,
+              "y": 977.7816772460938,
+              "width": 59.796875,
+              "height": 55.00006103515625,
+              "right": 205.40625,
+              "bottom": 1032.78173828125
+            },
+            "bar": {
+              "x": 157.515625,
+              "y": 991.7816772460938,
+              "width": 36,
+              "height": 4,
+              "right": 193.515625,
+              "bottom": 995.7816772460938
+            },
+            "color": "#C39853"
+          },
+          {
+            "label": "أكثر من 30 يومًا",
+            "value": "44",
+            "rect": {
+              "x": 83.8125,
+              "y": 977.7816772460938,
+              "width": 59.796875,
+              "height": 55.00006103515625,
+              "right": 143.609375,
+              "bottom": 1032.78173828125
+            },
+            "bar": {
+              "x": 95.71875,
+              "y": 991.7816772460938,
+              "width": 36,
+              "height": 4,
+              "right": 131.71875,
+              "bottom": 995.7816772460938
+            },
+            "color": "#7953A9"
+          },
+          {
+            "label": "بدون موعد محدد",
+            "value": "370",
+            "rect": {
+              "x": 22.015625,
+              "y": 977.7816772460938,
+              "width": 59.796875,
+              "height": 55.00006103515625,
+              "right": 81.8125,
+              "bottom": 1032.78173828125
+            },
+            "bar": {
+              "x": 33.921875,
+              "y": 977.7816772460938,
+              "width": 36,
+              "height": 18,
+              "right": 69.921875,
+              "bottom": 995.7816772460938
+            },
+            "color": "#989899"
+          }
+        ],
+        "deadlineRowCount": 1,
+        "barBaselineCount": 1,
+        "pageOverflow": false,
+        "overflowElements": [
+          {
+            "tag": "A",
+            "cls": "brand",
+            "right": 707.9662475585938
+          },
+          {
+            "tag": "SPAN",
+            "cls": "brand-copy",
+            "right": 707.9662475585938
+          },
+          {
+            "tag": "B",
+            "cls": "",
+            "right": 707.9662475585938
+          },
+          {
+            "tag": "SMALL",
+            "cls": "",
+            "right": 707.9662475585938
+          },
+          {
+            "tag": "DIV",
+            "cls": "authority-lockup",
+            "right": 707.9662475585938
+          }
+        ],
+        "clippedLabels": [],
+        "total": "566",
+        "activeValue": "474",
+        "sourceValue": "10",
+        "deadlineTotal": "474",
+        "cardOrder": [
+          "نظرة عامة",
+          "الفرص النشطة",
+          "مصادر مفعلة"
+        ]
+      },
+      "jsErrors": [],
+      "http5xx": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+      ]
+    }
+  ],
+  "deadlineValuesUnchangedAcrossViewports": true,
+  "dashboardValuesUnchangedAcrossViewports": true,
+  "verificationSummary": {
+    "cardRemoved": true,
+    "preChangeLiveValues": {
+      "total": "566",
+      "active": "474",
+      "enabledSources": "10",
+      "deadlineTotal": "474",
+      "buckets": [
+        "0",
+        "21",
+        "39",
+        "44",
+        "370"
+      ],
+      "labels": [
+        "خلال 7 أيام",
+        "8–14 يومًا",
+        "15–30 يومًا",
+        "أكثر من 30 يومًا",
+        "بدون موعد محدد"
+      ]
+    },
+    "postChangeLiveValues": {
+      "total": "566",
+      "active": "474",
+      "enabledSources": "10",
+      "deadlineTotal": "474",
+      "buckets": [
+        "0",
+        "21",
+        "39",
+        "44",
+        "370"
+      ],
+      "labels": [
+        "خلال 7 أيام",
+        "8–14 يومًا",
+        "15–30 يومًا",
+        "أكثر من 30 يومًا",
+        "بدون موعد محدد"
+      ]
+    },
+    "businessValuesMatchPreChange": true,
+    "allFiveColorsDistinct": true,
+    "allViewportChecksPassed": true,
+    "javascriptExceptions": 0,
+    "http5xx": 0,
+    "manualSourceSyncStarted": false,
+    "businessDataChanges": 0
+  }
+}

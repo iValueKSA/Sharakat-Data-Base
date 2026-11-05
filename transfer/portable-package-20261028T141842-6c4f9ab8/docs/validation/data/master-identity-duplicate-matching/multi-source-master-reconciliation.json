@@ -1,0 +1,1011 @@
+{
+  "snapshot_utc": "2026-10-20 09:59:32.899366",
+  "current_multi_source_masters": [
+    {
+      "master_id": 102,
+      "canonical_id": "AH-20261011105651-100798cf",
+      "title": "مزايدة تأجير موقع صراف الي بمستشفى الملك فهد بالهفوف مزايدة تأجير موقع صراف الي بمستشفى الملك فهد بالهفوف - الأنشطة المالية - خدمات الصرافة - صراف آلي",
+      "source_record_count": 2,
+      "source_count": 2,
+      "classification": "MULTI_SOURCE_IDENTITY_CONFIRMED",
+      "evidence": "Independent source-pair review: matching official reference or exact parcel/site, owner, area and opportunity description without a material identity contradiction.",
+      "merge_audit_ids": [],
+      "sources": [
+        {
+          "source_record_id": 102,
+          "source_key": "furas",
+          "source_name": "فرص – البوابة الموحدة للاستثمار",
+          "external_id": "06-26-183737-46013",
+          "official_reference": "06-26-183737-46013",
+          "official_reference_normalized": "062618373746013",
+          "source_title": "مزايدة تأجير موقع صراف الي بمستشفى الملك فهد بالهفوف مزايدة تأجير موقع صراف الي بمستشفى الملك فهد بالهفوف - الأنشطة المالية - خدمات الصرافة - صراف آلي",
+          "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/06-26-183737-46013?type=Investment",
+          "raw_area": "2",
+          "raw_owner": "أمانة الاحساء",
+          "raw_location": "الاحساء الحفيرة",
+          "master_id_at_snapshot": 102
+        },
+        {
+          "source_record_id": 2357,
+          "source_key": "invest-saudi",
+          "source_name": "استثمر في السعودية",
+          "external_id": "investsaudi:54963",
+          "official_reference": "06-26-183737-46013",
+          "official_reference_normalized": "062618373746013",
+          "source_title": "مزايدة تأجير موقع صراف الي بمستشفى الملك فهد بالهفوف",
+          "source_url": "https://investsaudi.sa/investment-opportunities",
+          "raw_area": "2",
+          "raw_owner": null,
+          "raw_location": "Municipality",
+          "master_id_at_snapshot": 102
+        }
+      ]
+    },
+    {
+      "master_id": 163,
+      "canonical_id": "AH-20261011111414-abc577e8",
+      "title": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19/149 مثلث القرى الشرقية",
+      "source_record_count": 2,
+      "source_count": 2,
+      "classification": "MULTI_SOURCE_IDENTITY_CONFIRMED",
+      "evidence": "Audited reversible cross-source merge; source-specific records, references, original payloads and merge evidence remain preserved.",
+      "merge_audit_ids": [
+        16
+      ],
+      "sources": [
+        {
+          "source_record_id": 163,
+          "source_key": "alahsa-opportunities",
+          "source_name": "منصة الفرص الاستثمارية بالأحساء",
+          "external_id": "476",
+          "official_reference": null,
+          "official_reference_normalized": null,
+          "source_title": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19/149 مثلث القرى الشرقية",
+          "source_url": "https://alahsa-opportunities.com/opportunities/476",
+          "raw_area": "11099 م²",
+          "raw_owner": null,
+          "raw_location": "الاحساء",
+          "master_id_at_snapshot": 163
+        },
+        {
+          "source_record_id": 2834,
+          "source_key": "furas",
+          "source_name": "فرص – البوابة الموحدة للاستثمار",
+          "external_id": "01-26-017001-23001",
+          "official_reference": "01-26-017001-23001",
+          "official_reference_normalized": "012601700123001",
+          "source_title": "انشاء و تشغيل و صيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19  149 مثلث القرى الشرقية - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+          "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-23001?type=Investment",
+          "raw_area": "11099.0",
+          "raw_owner": "أمانة محافظة الأحساء",
+          "raw_location": "الاحساء مثلث الشرقية الامير مشاري بن عبد العزيز",
+          "master_id_at_snapshot": 163
+        }
+      ]
+    },
+    {
+      "master_id": 164,
+      "canonical_id": "AH-20261011111415-7845ad39",
+      "title": "انشاء وتشغيل وصيانة مستودع غاز  بالمخطط رقم (14/53) بمدينة الجرن بنشاط بيع وتوزيع أسطوانات الغاز",
+      "source_record_count": 2,
+      "source_count": 2,
+      "classification": "MULTI_SOURCE_IDENTITY_CONFIRMED",
+      "evidence": "Audited reversible cross-source merge; source-specific records, references, original payloads and merge evidence remain preserved.",
+      "merge_audit_ids": [
+        2
+      ],
+      "sources": [
+        {
+          "source_record_id": 140,
+          "source_key": "furas",
+          "source_name": "فرص – البوابة الموحدة للاستثمار",
+          "external_id": "01-26-017001-39001",
+          "official_reference": "01-26-017001-39001",
+          "official_reference_normalized": "012601700139001",
+          "source_title": "انشاء و تشغيل و صيانة مستودع غاز  بالمخطط رقم  14   53  بمدينة الجرن بنشاط بيع وتوزيع أسطوانات الغاز - الأنشطة التجارية - بيع وتوزيع أسطوانات الغاز - مستودع",
+          "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-39001?type=Investment",
+          "raw_area": "2734.0",
+          "raw_owner": "أمانة محافظة الأحساء",
+          "raw_location": "الاحساء الاسكان الحارث بن شريح التميمي",
+          "master_id_at_snapshot": 164
+        },
+        {
+          "source_record_id": 167,
+          "source_key": "alahsa-opportunities",
+          "source_name": "منصة الفرص الاستثمارية بالأحساء",
+          "external_id": "472",
+          "official_reference": null,
+          "official_reference_normalized": null,
+          "source_title": "انشاء وتشغيل وصيانة مستودع غاز  بالمخطط رقم (14/53) بمدينة الجرن بنشاط بيع وتوزيع أسطوانات الغاز",
+          "source_url": "https://alahsa-opportunities.com/opportunities/472",
+          "raw_area": "2734 م²",
+          "raw_owner": null,
+          "raw_location": "الجرن",
+          "master_id_at_snapshot": 164
+        }
+      ]
+    },
+    {
+      "master_id": 192,
+      "canonical_id": "AH-20261011111428-559ef48d",
+      "title": "إنشاء وتشغيل وصيانة مواقف للمعدات والنقليات وورشة ومستودع ومكاتب إدارية وسكن للموظفين للقطع رقم 405/ت الى 409/ت بالمخطط رقم 14/154 الصناعية الشمالية بالعيون",
+      "source_record_count": 2,
+      "source_count": 2,
+      "classification": "MULTI_SOURCE_IDENTITY_CONFIRMED",
+      "evidence": "Audited reversible cross-source merge; source-specific records, references, original payloads and merge evidence remain preserved.",
+      "merge_audit_ids": [
+        4
+      ],
+      "sources": [
+        {
+          "source_record_id": 135,
+          "source_key": "furas",
+          "source_name": "فرص – البوابة الموحدة للاستثمار",
+          "external_id": "01-26-017001-36001",
+          "official_reference": "01-26-017001-36001",
+          "official_reference_normalized": "012601700136001",
+          "source_title": "انشاء و تشغيل و صيانة مواقف للمعدات والنقليات وورشة ومستودع ومكاتب إدارية وسكن للموظفين للقطع رقم 405 ت الى 409 ت بالمخطط رقم 14 154 الصناعية الشمالية ب - الأنشطة التجارية - أنشطة و تجارة المعدات الثقيلة - ورشة",
+          "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-36001?type=Investment",
+          "raw_area": "145000.0",
+          "raw_owner": "أمانة محافظة الأحساء",
+          "raw_location": "الاحساء الاحساء 173",
+          "master_id_at_snapshot": 192
+        },
+        {
+          "source_record_id": 195,
+          "source_key": "alahsa-opportunities",
+          "source_name": "منصة الفرص الاستثمارية بالأحساء",
+          "external_id": "444",
+          "official_reference": null,
+          "official_reference_normalized": null,
+          "source_title": "إنشاء وتشغيل وصيانة مواقف للمعدات والنقليات وورشة ومستودع ومكاتب إدارية وسكن للموظفين للقطع رقم 405/ت الى 409/ت بالمخطط رقم 14/154 الصناعية الشمالية بالعيون",
+          "source_url": "https://alahsa-opportunities.com/opportunities/444",
+          "raw_area": "145000 م²",
+          "raw_owner": null,
+          "raw_location": "العيون",
+          "master_id_at_snapshot": 192
+        }
+      ]
+    },
+    {
+      "master_id": 193,
+      "canonical_id": "AH-20261011111429-1df50137",
+      "title": "انشاء وتشغيل وصيانة القطعة رقم 471  لنشاط صناعات خفيفة أو ورشة بالمخطط رقم 14  16  بصناعية العيون",
+      "source_record_count": 2,
+      "source_count": 2,
+      "classification": "MULTI_SOURCE_IDENTITY_CONFIRMED",
+      "evidence": "Audited reversible cross-source merge; source-specific records, references, original payloads and merge evidence remain preserved.",
+      "merge_audit_ids": [
+        3
+      ],
+      "sources": [
+        {
+          "source_record_id": 75,
+          "source_key": "furas",
+          "source_name": "فرص – البوابة الموحدة للاستثمار",
+          "external_id": "01-26-017001-27002",
+          "official_reference": "01-26-017001-27002",
+          "official_reference_normalized": "012601700127002",
+          "source_title": "انشاء و تشغيل و صيانة القطعة رقم 471  لنشاط صناعات خفيفة أو ورشة بالمخطط رقم 14  16  بصناعية العيون - الأنشطة الصناعية - صناعات خفيفة أو متوسطة - مصنع",
+          "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-27002?type=Investment",
+          "raw_area": "708.45",
+          "raw_owner": "أمانة محافظة الأحساء",
+          "raw_location": "العيون الصناعية أسلم بن الحارث الهاشمي",
+          "master_id_at_snapshot": 193
+        },
+        {
+          "source_record_id": 196,
+          "source_key": "alahsa-opportunities",
+          "source_name": "منصة الفرص الاستثمارية بالأحساء",
+          "external_id": "443",
+          "official_reference": null,
+          "official_reference_normalized": null,
+          "source_title": "انشاء وتشغيل وصيانة القطعة رقم 471  لنشاط صناعات خفيفة أو ورشة بالمخطط رقم 14  16  بصناعية العيون",
+          "source_url": "https://alahsa-opportunities.com/opportunities/443",
+          "raw_area": "708.45 م²",
+          "raw_owner": null,
+          "raw_location": "العيون",
+          "master_id_at_snapshot": 193
+        }
+      ]
+    },
+    {
+      "master_id": 195,
+      "canonical_id": "AH-20261011111430-798b7aa6",
+      "title": "انشاء و تشغيل وصيانة القطعة رقم 461 1و 461 2 لنشاط صناعات خفيفة أو ورشة بالمخطط رقم 14-16 بصناعية العيون",
+      "source_record_count": 2,
+      "source_count": 2,
+      "classification": "MULTI_SOURCE_IDENTITY_CONFIRMED",
+      "evidence": "Audited reversible cross-source merge; source-specific records, references, original payloads and merge evidence remain preserved.",
+      "merge_audit_ids": [
+        1
+      ],
+      "sources": [
+        {
+          "source_record_id": 74,
+          "source_key": "furas",
+          "source_name": "فرص – البوابة الموحدة للاستثمار",
+          "external_id": "01-26-017001-27001",
+          "official_reference": "01-26-017001-27001",
+          "official_reference_normalized": "012601700127001",
+          "source_title": "انشاء و تشغيل و صيانة القطعة رقم 461 1و 461 2 لنشاط صناعات خفيفة أو ورشة بالمخطط رقم 14  16 بصناعية العيون - الأنشطة الصناعية - صناعات خفيفة أو متوسطة - مصنع",
+          "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-27001?type=Investment",
+          "raw_area": "752.34",
+          "raw_owner": "أمانة محافظة الأحساء",
+          "raw_location": "العيون الصناعية حارثة بن قيس",
+          "master_id_at_snapshot": 195
+        },
+        {
+          "source_record_id": 198,
+          "source_key": "alahsa-opportunities",
+          "source_name": "منصة الفرص الاستثمارية بالأحساء",
+          "external_id": "441",
+          "official_reference": null,
+          "official_reference_normalized": null,
+          "source_title": "انشاء و تشغيل وصيانة القطعة رقم 461 1و 461 2 لنشاط صناعات خفيفة أو ورشة بالمخطط رقم 14-16 بصناعية العيون",
+          "source_url": "https://alahsa-opportunities.com/opportunities/441",
+          "raw_area": "752.34 م²",
+          "raw_owner": null,
+          "raw_location": "العيون",
+          "master_id_at_snapshot": 195
+        }
+      ]
+    },
+    {
+      "master_id": 226,
+      "canonical_id": "AH-20261012075557-6da95c92",
+      "title": "انشاء و تشغيل و صيانة حديقة بحي الامراء بالمخطط رقم 416 4 بمدينة الهفوف - أنشطة المرافق العامة - منتزه - حديقة",
+      "source_record_count": 2,
+      "source_count": 2,
+      "classification": "MULTI_SOURCE_IDENTITY_CONFIRMED",
+      "evidence": "Independent source-pair review: matching official reference or exact parcel/site, owner, area and opportunity description without a material identity contradiction.",
+      "merge_audit_ids": [],
+      "sources": [
+        {
+          "source_record_id": 2778,
+          "source_key": "furas",
+          "source_name": "فرص – البوابة الموحدة للاستثمار",
+          "external_id": "01-26-017001-40002",
+          "official_reference": "01-26-017001-40002",
+          "official_reference_normalized": "012601700140002",
+          "source_title": "انشاء و تشغيل و صيانة حديقة بحي الامراء بالمخطط رقم 416 4 بمدينة الهفوف - أنشطة المرافق العامة - منتزه - حديقة",
+          "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-40002?type=Investment",
+          "raw_area": "261531.75",
+          "raw_owner": "أمانة محافظة الأحساء",
+          "raw_location": "الاحساء الأمراء",
+          "master_id_at_snapshot": 226
+        },
+        {
+          "source_record_id": 2780,
+          "source_key": "alahsa-opportunities",
+          "source_name": "منصة الفرص الاستثمارية بالأحساء",
+          "external_id": "515",
+          "official_reference": null,
+          "official_reference_normalized": null,
+          "source_title": "انشاء و تشغيل و صيانة حديقة بحي الامراء بالمخطط رقم 416 4 بمدينة الهفوف - أنشطة المرافق العامة - منتزه - حديقة",
+          "source_url": "https://alahsa-opportunities.com/opportunities/515",
+          "raw_area": "261531.75 م²",
+          "raw_owner": null,
+          "raw_location": "الهفوف",
+          "master_id_at_snapshot": 226
+        }
+      ]
+    },
+    {
+      "master_id": 230,
+      "canonical_id": "AH-20261012120841-1e079990",
+      "title": "تأجير مواقع مكائن بيع ذاتي لعدد (80) موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي تأجير مواقع مكائن بيع ذاتي لعدد 80 موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي - الأنشطة التجارية - أنشطة تجارة المواد الغذائية - جهاز بيع ذاتي",
+      "source_record_count": 2,
+      "source_count": 2,
+      "classification": "MULTI_SOURCE_IDENTITY_REVIEW_REQUIRED",
+      "evidence": "Verified cross-source official reference matches, but Invest Saudi siteArea lacks a unit and differs numerically from Furas area; preserve both source facts and retain review.",
+      "merge_audit_ids": [],
+      "sources": [
+        {
+          "source_record_id": 2368,
+          "source_key": "invest-saudi",
+          "source_name": "استثمر في السعودية",
+          "external_id": "investsaudi:54952",
+          "official_reference": "06-26-183737-49010",
+          "official_reference_normalized": "062618373749010",
+          "source_title": "تأجير مواقع مكائن بيع ذاتي لعدد (32) موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي",
+          "source_url": "https://investsaudi.sa/investment-opportunities",
+          "raw_area": "64",
+          "raw_owner": null,
+          "raw_location": "Municipality",
+          "master_id_at_snapshot": 230
+        },
+        {
+          "source_record_id": 2831,
+          "source_key": "furas",
+          "source_name": "فرص – البوابة الموحدة للاستثمار",
+          "external_id": "06-26-183737-49010",
+          "official_reference": "06-26-183737-49010",
+          "official_reference_normalized": "062618373749010",
+          "source_title": "تأجير مواقع مكائن بيع ذاتي لعدد (80) موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي تأجير مواقع مكائن بيع ذاتي لعدد 80 موقعاً بمرافق ومراكز الرعاية الصحية الأولية بتجمع الأحساء الصحي - الأنشطة التجارية - أنشطة تجارة المواد الغذائية - جهاز بيع ذاتي",
+          "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/06-26-183737-49010?type=Investment",
+          "raw_area": "160",
+          "raw_owner": "أمانة الاحساء",
+          "raw_location": "الاحساء السلمانية الثاني زياد الحارثي",
+          "master_id_at_snapshot": 230
+        }
+      ]
+    },
+    {
+      "master_id": 231,
+      "canonical_id": "AH-20261013081928-f2310b7f",
+      "title": "انشاء و تشغيل و صيانة انشاء وتشغيل وصيانة محلات تجارية بالقطعة رقم  ت 20 في مخطط رقم  4   1082 الطابوق والخرسانة - الأنشطة التجارية - محلات تجارية - مجمع تجاري",
+      "source_record_count": 2,
+      "source_count": 2,
+      "classification": "MULTI_SOURCE_IDENTITY_CONFIRMED",
+      "evidence": "Audited reversible cross-source merge; source-specific records, references, original payloads and merge evidence remain preserved.",
+      "merge_audit_ids": [
+        17
+      ],
+      "sources": [
+        {
+          "source_record_id": 2832,
+          "source_key": "furas",
+          "source_name": "فرص – البوابة الموحدة للاستثمار",
+          "external_id": "01-26-017001-14003",
+          "official_reference": "01-26-017001-14003",
+          "official_reference_normalized": "012601700114003",
+          "source_title": "انشاء و تشغيل و صيانة انشاء وتشغيل وصيانة محلات تجارية بالقطعة رقم  ت 20 في مخطط رقم  4   1082 الطابوق والخرسانة - الأنشطة التجارية - محلات تجارية - مجمع تجاري",
+          "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-14003?type=Investment",
+          "raw_area": "2448.7",
+          "raw_owner": "أمانة محافظة الأحساء",
+          "raw_location": "العيون الباهية",
+          "master_id_at_snapshot": 231
+        },
+        {
+          "source_record_id": 2866,
+          "source_key": "alahsa-opportunities",
+          "source_name": "منصة الفرص الاستثمارية بالأحساء",
+          "external_id": "521",
+          "official_reference": null,
+          "official_reference_normalized": null,
+          "source_title": "انشاء و تشغيل و صيانة انشاء وتشغيل وصيانة محلات تجارية بالقطعة رقم ت 20 في مخطط رقم 4 1082 الطابوق والخرسانة",
+          "source_url": "https://alahsa-opportunities.com/opportunities/521",
+          "raw_area": "2448.7 م²",
+          "raw_owner": null,
+          "raw_location": "الاحساء",
+          "master_id_at_snapshot": 231
+        }
+      ]
+    },
+    {
+      "master_id": 234,
+      "canonical_id": "AH-20261013081930-1536fb18",
+      "title": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 484بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+      "source_record_count": 2,
+      "source_count": 2,
+      "classification": "MULTI_SOURCE_IDENTITY_CONFIRMED",
+      "evidence": "Audited reversible cross-source merge; source-specific records, references, original payloads and merge evidence remain preserved.",
+      "merge_audit_ids": [
+        26
+      ],
+      "sources": [
+        {
+          "source_record_id": 2835,
+          "source_key": "furas",
+          "source_name": "فرص – البوابة الموحدة للاستثمار",
+          "external_id": "01-26-017001-26003",
+          "official_reference": "01-26-017001-26003",
+          "official_reference_normalized": "012601700126003",
+          "source_title": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 484بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+          "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-26003?type=Investment",
+          "raw_area": "653.74",
+          "raw_owner": "أمانة محافظة الأحساء",
+          "raw_location": "العيون الصناعية أسلم بن الحارث الهاشمي",
+          "master_id_at_snapshot": 234
+        },
+        {
+          "source_record_id": 2837,
+          "source_key": "alahsa-opportunities",
+          "source_name": "منصة الفرص الاستثمارية بالأحساء",
+          "external_id": "535",
+          "official_reference": null,
+          "official_reference_normalized": null,
+          "source_title": "إنشاء وتشغيل وصيانة مستودع بالقطعة رقم 484بالمخطط رقم 14/16 بصناعية العيون",
+          "source_url": "https://alahsa-opportunities.com/opportunities/535",
+          "raw_area": "653.74 م²",
+          "raw_owner": null,
+          "raw_location": "العيون",
+          "master_id_at_snapshot": 234
+        }
+      ]
+    },
+    {
+      "master_id": 235,
+      "canonical_id": "AH-20261013081930-860c39b7",
+      "title": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 485بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+      "source_record_count": 2,
+      "source_count": 2,
+      "classification": "MULTI_SOURCE_IDENTITY_CONFIRMED",
+      "evidence": "Audited reversible cross-source merge; source-specific records, references, original payloads and merge evidence remain preserved.",
+      "merge_audit_ids": [
+        25
+      ],
+      "sources": [
+        {
+          "source_record_id": 2836,
+          "source_key": "furas",
+          "source_name": "فرص – البوابة الموحدة للاستثمار",
+          "external_id": "01-26-017001-26004",
+          "official_reference": "01-26-017001-26004",
+          "official_reference_normalized": "012601700126004",
+          "source_title": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 485بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+          "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-26004?type=Investment",
+          "raw_area": "712.0",
+          "raw_owner": "أمانة محافظة الأحساء",
+          "raw_location": "العيون الصناعية أسلم بن الحارث الهاشمي",
+          "master_id_at_snapshot": 235
+        },
+        {
+          "source_record_id": 2878,
+          "source_key": "alahsa-opportunities",
+          "source_name": "منصة الفرص الاستثمارية بالأحساء",
+          "external_id": "536",
+          "official_reference": null,
+          "official_reference_normalized": null,
+          "source_title": "إنشاء وتشغيل وصيانة مستودع بالقطعة رقم 485بالمخطط رقم 14/16 بصناعية العيون",
+          "source_url": "https://alahsa-opportunities.com/opportunities/536",
+          "raw_area": "712 م²",
+          "raw_owner": null,
+          "raw_location": "العيون",
+          "master_id_at_snapshot": 235
+        }
+      ]
+    },
+    {
+      "master_id": 237,
+      "canonical_id": "AH-20261013081931-fbc20dc7",
+      "title": "انشاء و تشغيل و صيانة محلات تجارية  للقطعة رقم ب1 بمخطط جواثا 15  28 - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "source_record_count": 2,
+      "source_count": 2,
+      "classification": "MULTI_SOURCE_IDENTITY_CONFIRMED",
+      "evidence": "Audited reversible cross-source merge; source-specific records, references, original payloads and merge evidence remain preserved.",
+      "merge_audit_ids": [
+        27
+      ],
+      "sources": [
+        {
+          "source_record_id": 2838,
+          "source_key": "furas",
+          "source_name": "فرص – البوابة الموحدة للاستثمار",
+          "external_id": "01-26-017001-30001",
+          "official_reference": "01-26-017001-30001",
+          "official_reference_normalized": "012601700130001",
+          "source_title": "انشاء و تشغيل و صيانة محلات تجارية  للقطعة رقم ب1 بمخطط جواثا 15  28 - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+          "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-30001?type=Investment",
+          "raw_area": "2000.0",
+          "raw_owner": "أمانة محافظة الأحساء",
+          "raw_location": "الاحساء جواثا",
+          "master_id_at_snapshot": 237
+        },
+        {
+          "source_record_id": 2853,
+          "source_key": "alahsa-opportunities",
+          "source_name": "منصة الفرص الاستثمارية بالأحساء",
+          "external_id": "528",
+          "official_reference": null,
+          "official_reference_normalized": null,
+          "source_title": "انشاء وتشغيل وصيانة محلات تجارية  للقطعة رقم تجاري (ب1) بمخطط جواثا 15_28",
+          "source_url": "https://alahsa-opportunities.com/opportunities/528",
+          "raw_area": "2000 م²",
+          "raw_owner": null,
+          "raw_location": "جواثا",
+          "master_id_at_snapshot": 237
+        }
+      ]
+    },
+    {
+      "master_id": 239,
+      "canonical_id": "AH-20261013081932-81bab1b4",
+      "title": "انشاء و تشغيل و صيانة مصنع صناعات خفيفة او ورشة للقطعة رقم 214 بالمخطط رقم 14  16 بصناعية العيون - الأنشطة الصناعية - صناعات خفيفة - مصنع",
+      "source_record_count": 2,
+      "source_count": 2,
+      "classification": "MULTI_SOURCE_IDENTITY_CONFIRMED",
+      "evidence": "Audited reversible cross-source merge; source-specific records, references, original payloads and merge evidence remain preserved.",
+      "merge_audit_ids": [
+        28
+      ],
+      "sources": [
+        {
+          "source_record_id": 2840,
+          "source_key": "furas",
+          "source_name": "فرص – البوابة الموحدة للاستثمار",
+          "external_id": "01-26-017001-34002",
+          "official_reference": "01-26-017001-34002",
+          "official_reference_normalized": "012601700134002",
+          "source_title": "انشاء و تشغيل و صيانة مصنع صناعات خفيفة او ورشة للقطعة رقم 214 بالمخطط رقم 14  16 بصناعية العيون - الأنشطة الصناعية - صناعات خفيفة - مصنع",
+          "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-34002?type=Investment",
+          "raw_area": "464.52",
+          "raw_owner": "أمانة محافظة الأحساء",
+          "raw_location": "العيون الصناعية الأنبار",
+          "master_id_at_snapshot": 239
+        },
+        {
+          "source_record_id": 2848,
+          "source_key": "alahsa-opportunities",
+          "source_name": "منصة الفرص الاستثمارية بالأحساء",
+          "external_id": "530",
+          "official_reference": null,
+          "official_reference_normalized": null,
+          "source_title": "انشاء وتشغيل وصيانة مصنع صناعات خفيفة او ورشة للقطعة رقم 214 بالمخطط رقم 14/16 بصناعية العيون",
+          "source_url": "https://alahsa-opportunities.com/opportunities/530",
+          "raw_area": "464.52 م²",
+          "raw_owner": null,
+          "raw_location": "العيون",
+          "master_id_at_snapshot": 239
+        }
+      ]
+    },
+    {
+      "master_id": 240,
+      "canonical_id": "AH-20261013081932-e9e1284b",
+      "title": "انشاء و تشغيل و صيانة مصنع صناعات خفيفة او ورشة للقطعة رقم 54 بالمخطط رقم 14   16 بصناعية العيون - الأنشطة الصناعية - صناعات خفيفة - مصنع",
+      "source_record_count": 2,
+      "source_count": 2,
+      "classification": "MULTI_SOURCE_IDENTITY_CONFIRMED",
+      "evidence": "Audited reversible cross-source merge; source-specific records, references, original payloads and merge evidence remain preserved.",
+      "merge_audit_ids": [
+        29
+      ],
+      "sources": [
+        {
+          "source_record_id": 2841,
+          "source_key": "furas",
+          "source_name": "فرص – البوابة الموحدة للاستثمار",
+          "external_id": "01-26-017001-34005",
+          "official_reference": "01-26-017001-34005",
+          "official_reference_normalized": "012601700134005",
+          "source_title": "انشاء و تشغيل و صيانة مصنع صناعات خفيفة او ورشة للقطعة رقم 54 بالمخطط رقم 14   16 بصناعية العيون - الأنشطة الصناعية - صناعات خفيفة - مصنع",
+          "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-34005?type=Investment",
+          "raw_area": "538.72",
+          "raw_owner": "أمانة محافظة الأحساء",
+          "raw_location": "العيون الصناعية صهيب بن سنان",
+          "master_id_at_snapshot": 240
+        },
+        {
+          "source_record_id": 2844,
+          "source_key": "alahsa-opportunities",
+          "source_name": "منصة الفرص الاستثمارية بالأحساء",
+          "external_id": "532",
+          "official_reference": null,
+          "official_reference_normalized": null,
+          "source_title": "انشاء وتشغيل وصيانة مصنع صناعات خفيفة او ورشة للقطعة رقم 54 بالمخطط رقم 14/16 بصناعية العيون",
+          "source_url": "https://alahsa-opportunities.com/opportunities/532",
+          "raw_area": "538.72 م²",
+          "raw_owner": null,
+          "raw_location": "العيون",
+          "master_id_at_snapshot": 240
+        }
+      ]
+    },
+    {
+      "master_id": 241,
+      "canonical_id": "AH-20261013081933-3eba8f98",
+      "title": "إنشاء وتشغيل وصيانة مبنى سكني تجاري إداري على القطعة رقم (2030) بالمخطط رقم (187)بالسيفة بمدينة الهفوف",
+      "source_record_count": 2,
+      "source_count": 2,
+      "classification": "MULTI_SOURCE_IDENTITY_CONFIRMED",
+      "evidence": "Audited reversible cross-source merge; source-specific records, references, original payloads and merge evidence remain preserved.",
+      "merge_audit_ids": [
+        30
+      ],
+      "sources": [
+        {
+          "source_record_id": 2842,
+          "source_key": "alahsa-opportunities",
+          "source_name": "منصة الفرص الاستثمارية بالأحساء",
+          "external_id": "533",
+          "official_reference": null,
+          "official_reference_normalized": null,
+          "source_title": "إنشاء وتشغيل وصيانة مبنى سكني تجاري إداري على القطعة رقم (2030) بالمخطط رقم (187)بالسيفة بمدينة الهفوف",
+          "source_url": "https://alahsa-opportunities.com/opportunities/533",
+          "raw_area": "2513.16 م²",
+          "raw_owner": null,
+          "raw_location": "الهفوف",
+          "master_id_at_snapshot": 241
+        },
+        {
+          "source_record_id": 2845,
+          "source_key": "furas",
+          "source_name": "فرص – البوابة الموحدة للاستثمار",
+          "external_id": "01-26-017001-40001",
+          "official_reference": "01-26-017001-40001",
+          "official_reference_normalized": "012601700140001",
+          "source_title": "انشاء و تشغيل و صيانة مبنى سكني تجاري إداري على القطعة رقم  2030  بالمخطط رقم  187 بحي السيفة بمدينة الهفوف - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+          "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-40001?type=Investment",
+          "raw_area": "2513.16",
+          "raw_owner": "أمانة محافظة الأحساء",
+          "raw_location": "الاحساء السيفة أبي المحاسن الخياط",
+          "master_id_at_snapshot": 241
+        }
+      ]
+    },
+    {
+      "master_id": 242,
+      "canonical_id": "AH-20261013081933-ad55a6d0",
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  رقم  1  طريق الامير عبدالله بن جلوي بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "source_record_count": 2,
+      "source_count": 2,
+      "classification": "MULTI_SOURCE_IDENTITY_CONFIRMED",
+      "evidence": "Audited reversible cross-source merge; source-specific records, references, original payloads and merge evidence remain preserved.",
+      "merge_audit_ids": [
+        22
+      ],
+      "sources": [
+        {
+          "source_record_id": 2843,
+          "source_key": "furas",
+          "source_name": "فرص – البوابة الموحدة للاستثمار",
+          "external_id": "01-26-017001-41001",
+          "official_reference": "01-26-017001-41001",
+          "official_reference_normalized": "012601700141001",
+          "source_title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  رقم  1  طريق الامير عبدالله بن جلوي بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+          "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-41001?type=Investment",
+          "raw_area": "16.0",
+          "raw_owner": "أمانة محافظة الأحساء",
+          "raw_location": "الاحساء عين مرجان محمد بن إبراهيم آل الشيخ",
+          "master_id_at_snapshot": 242
+        },
+        {
+          "source_record_id": 2871,
+          "source_key": "alahsa-opportunities",
+          "source_name": "منصة الفرص الاستثمارية بالأحساء",
+          "external_id": "516",
+          "official_reference": null,
+          "official_reference_normalized": null,
+          "source_title": "إنشاء وتشغيل كشك درايف ثرو (DRIVE THRO) رقم (1) طريق الامير عبدالله بن جلوي بمدينة المبرز",
+          "source_url": "https://alahsa-opportunities.com/opportunities/516",
+          "raw_area": "16 م²",
+          "raw_owner": null,
+          "raw_location": "المبرز",
+          "master_id_at_snapshot": 242
+        }
+      ]
+    },
+    {
+      "master_id": 246,
+      "canonical_id": "AH-20261013081935-8cd53244",
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  رقم  2  طريق الامير عبدالله بن جلوي بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "source_record_count": 2,
+      "source_count": 2,
+      "classification": "MULTI_SOURCE_IDENTITY_CONFIRMED",
+      "evidence": "Audited reversible cross-source merge; source-specific records, references, original payloads and merge evidence remain preserved.",
+      "merge_audit_ids": [
+        21
+      ],
+      "sources": [
+        {
+          "source_record_id": 2847,
+          "source_key": "furas",
+          "source_name": "فرص – البوابة الموحدة للاستثمار",
+          "external_id": "01-26-017001-41002",
+          "official_reference": "01-26-017001-41002",
+          "official_reference_normalized": "012601700141002",
+          "source_title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  رقم  2  طريق الامير عبدالله بن جلوي بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+          "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-41002?type=Investment",
+          "raw_area": "16.0",
+          "raw_owner": "أمانة محافظة الأحساء",
+          "raw_location": "الاحساء عين مرجان محمد بن إبراهيم آل الشيخ",
+          "master_id_at_snapshot": 246
+        },
+        {
+          "source_record_id": 2870,
+          "source_key": "alahsa-opportunities",
+          "source_name": "منصة الفرص الاستثمارية بالأحساء",
+          "external_id": "517",
+          "official_reference": null,
+          "official_reference_normalized": null,
+          "source_title": "إنشاء وتشغيل كشك درايف ثرو (DRIVE THRO) رقم (2) طريق الامير عبدالله بن جلوي بمدينة المبرز",
+          "source_url": "https://alahsa-opportunities.com/opportunities/517",
+          "raw_area": "16 م²",
+          "raw_owner": null,
+          "raw_location": "المبرز",
+          "master_id_at_snapshot": 246
+        }
+      ]
+    },
+    {
+      "master_id": 248,
+      "canonical_id": "AH-20261013081935-08bc586a",
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  طريق الملك فهد بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "source_record_count": 2,
+      "source_count": 2,
+      "classification": "MULTI_SOURCE_IDENTITY_CONFIRMED",
+      "evidence": "Audited reversible cross-source merge; source-specific records, references, original payloads and merge evidence remain preserved.",
+      "merge_audit_ids": [
+        18
+      ],
+      "sources": [
+        {
+          "source_record_id": 2849,
+          "source_key": "furas",
+          "source_name": "فرص – البوابة الموحدة للاستثمار",
+          "external_id": "01-26-017001-41005",
+          "official_reference": "01-26-017001-41005",
+          "official_reference_normalized": "012601700141005",
+          "source_title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  طريق الملك فهد بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+          "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-41005?type=Investment",
+          "raw_area": "16.0",
+          "raw_owner": "أمانة محافظة الأحساء",
+          "raw_location": "الاحساء المسعودي طريق الملك فهد بن عبد العزيز",
+          "master_id_at_snapshot": 248
+        },
+        {
+          "source_record_id": 2867,
+          "source_key": "alahsa-opportunities",
+          "source_name": "منصة الفرص الاستثمارية بالأحساء",
+          "external_id": "520",
+          "official_reference": null,
+          "official_reference_normalized": null,
+          "source_title": "إنشاء وتشغيل كشك درايف ثرو (DRIVE THRO) طريق الملك فهد بمدينة المبرز",
+          "source_url": "https://alahsa-opportunities.com/opportunities/520",
+          "raw_area": "16 م²",
+          "raw_owner": null,
+          "raw_location": "المبرز",
+          "master_id_at_snapshot": 248
+        }
+      ]
+    },
+    {
+      "master_id": 249,
+      "canonical_id": "AH-20261013081936-d91d9b9c",
+      "title": "انشاء و تشغيل و صيانة مركز تجاري متعدد الأنشطة على القطعة رقم 12 بالمخطط رقم 4  1111 بحي الريان بمدينة الهفوف - الأنشطة التجارية - مركز تجاري - مجمع تجاري",
+      "source_record_count": 2,
+      "source_count": 2,
+      "classification": "MULTI_SOURCE_IDENTITY_CONFIRMED",
+      "evidence": "Independent source-pair review: matching official reference or exact parcel/site, owner, area and opportunity description without a material identity contradiction.",
+      "merge_audit_ids": [],
+      "sources": [
+        {
+          "source_record_id": 2850,
+          "source_key": "furas",
+          "source_name": "فرص – البوابة الموحدة للاستثمار",
+          "external_id": "01-26-017001-41008",
+          "official_reference": "01-26-017001-41008",
+          "official_reference_normalized": "012601700141008",
+          "source_title": "انشاء و تشغيل و صيانة مركز تجاري متعدد الأنشطة على القطعة رقم 12 بالمخطط رقم 4  1111 بحي الريان بمدينة الهفوف - الأنشطة التجارية - مركز تجاري - مجمع تجاري",
+          "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-41008?type=Investment",
+          "raw_area": "6683.14",
+          "raw_owner": "أمانة محافظة الأحساء",
+          "raw_location": "الاحساء الريان الجيبه",
+          "master_id_at_snapshot": 249
+        },
+        {
+          "source_record_id": 2874,
+          "source_key": "alahsa-opportunities",
+          "source_name": "منصة الفرص الاستثمارية بالأحساء",
+          "external_id": "541",
+          "official_reference": null,
+          "official_reference_normalized": null,
+          "source_title": "أنشاء وتشغيل وصيانة مركز تجاري متعدد الأنشطة على القطعة رقم 12 بالمخطط رقم 4  1111 بحي الريان بمدينة الهفوف",
+          "source_url": "https://alahsa-opportunities.com/opportunities/541",
+          "raw_area": "6683.14 م²",
+          "raw_owner": null,
+          "raw_location": "الهفوف",
+          "master_id_at_snapshot": 249
+        }
+      ]
+    },
+    {
+      "master_id": 251,
+      "canonical_id": "AH-20261013081936-98015441",
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  طريق الخليج بمدينة الهفوف - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "source_record_count": 2,
+      "source_count": 2,
+      "classification": "MULTI_SOURCE_IDENTITY_CONFIRMED",
+      "evidence": "Audited reversible cross-source merge; source-specific records, references, original payloads and merge evidence remain preserved.",
+      "merge_audit_ids": [
+        19
+      ],
+      "sources": [
+        {
+          "source_record_id": 2852,
+          "source_key": "furas",
+          "source_name": "فرص – البوابة الموحدة للاستثمار",
+          "external_id": "01-26-017001-41004",
+          "official_reference": "01-26-017001-41004",
+          "official_reference_normalized": "012601700141004",
+          "source_title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  طريق الخليج بمدينة الهفوف - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+          "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-41004?type=Investment",
+          "raw_area": "16.0",
+          "raw_owner": "أمانة محافظة الأحساء",
+          "raw_location": "الاحساء الروضة طريق الخليج العربي",
+          "master_id_at_snapshot": 251
+        },
+        {
+          "source_record_id": 2868,
+          "source_key": "alahsa-opportunities",
+          "source_name": "منصة الفرص الاستثمارية بالأحساء",
+          "external_id": "519",
+          "official_reference": null,
+          "official_reference_normalized": null,
+          "source_title": "إنشاء وتشغيل كشك درايف ثرو (DRIVE THRO) طريق الخليج بمدينة الهفوف",
+          "source_url": "https://alahsa-opportunities.com/opportunities/519",
+          "raw_area": "16 م²",
+          "raw_owner": null,
+          "raw_location": "الهفوف",
+          "master_id_at_snapshot": 251
+        }
+      ]
+    },
+    {
+      "master_id": 253,
+      "canonical_id": "AH-20261013081937-a9420f8e",
+      "title": "انشاء و تشغيل و صيانة مبنى تجاري سكني بالقطعة رقم 12 بالمخطط رقم 4 253 بحي منسوب التعليم الثاني بمدينة الهفوف - الأنشطة التجارية - تجاري سكني - مبنى سكني تجاري",
+      "source_record_count": 2,
+      "source_count": 2,
+      "classification": "MULTI_SOURCE_IDENTITY_CONFIRMED",
+      "evidence": "Audited reversible cross-source merge; source-specific records, references, original payloads and merge evidence remain preserved.",
+      "merge_audit_ids": [
+        31
+      ],
+      "sources": [
+        {
+          "source_record_id": 2854,
+          "source_key": "furas",
+          "source_name": "فرص – البوابة الموحدة للاستثمار",
+          "external_id": "01-26-017001-1",
+          "official_reference": "01-26-017001-1",
+          "official_reference_normalized": "01260170011",
+          "source_title": "انشاء و تشغيل و صيانة مبنى تجاري سكني بالقطعة رقم 12 بالمخطط رقم 4 253 بحي منسوب التعليم الثاني بمدينة الهفوف - الأنشطة التجارية - تجاري سكني - مبنى سكني تجاري",
+          "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-1?type=Investment",
+          "raw_area": "1991.0",
+          "raw_owner": "أمانة محافظة الأحساء",
+          "raw_location": "الاحساء منسوبي التعليم الثاني",
+          "master_id_at_snapshot": 253
+        },
+        {
+          "source_record_id": 2862,
+          "source_key": "alahsa-opportunities",
+          "source_name": "منصة الفرص الاستثمارية بالأحساء",
+          "external_id": "524",
+          "official_reference": null,
+          "official_reference_normalized": null,
+          "source_title": "انشاء و تشغيل و صيانة مبنى تجاري سكني بالقطعة رقم 12 بالمخطط رقم 4 253 بحي منسوب التعليم الثاني بمدينة الهفوف",
+          "source_url": "https://alahsa-opportunities.com/opportunities/524",
+          "raw_area": "1991 م²",
+          "raw_owner": null,
+          "raw_location": "الهفوف",
+          "master_id_at_snapshot": 253
+        }
+      ]
+    },
+    {
+      "master_id": 258,
+      "canonical_id": "AH-20261013081939-24a4c3ec",
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO   طريق الملك عبدالله امتداد مجمع العامر مول بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "source_record_count": 2,
+      "source_count": 2,
+      "classification": "MULTI_SOURCE_IDENTITY_CONFIRMED",
+      "evidence": "Audited reversible cross-source merge; source-specific records, references, original payloads and merge evidence remain preserved.",
+      "merge_audit_ids": [
+        20
+      ],
+      "sources": [
+        {
+          "source_record_id": 2859,
+          "source_key": "furas",
+          "source_name": "فرص – البوابة الموحدة للاستثمار",
+          "external_id": "01-26-017001-41003",
+          "official_reference": "01-26-017001-41003",
+          "official_reference_normalized": "012601700141003",
+          "source_title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO   طريق الملك عبدالله امتداد مجمع العامر مول بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+          "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-41003?type=Investment",
+          "raw_area": "8.0",
+          "raw_owner": "أمانة محافظة الأحساء",
+          "raw_location": "الاحساء الشراع الجنوبي طريق الملك عبدالله الدائري - الضلع الشرقي",
+          "master_id_at_snapshot": 258
+        },
+        {
+          "source_record_id": 2869,
+          "source_key": "alahsa-opportunities",
+          "source_name": "منصة الفرص الاستثمارية بالأحساء",
+          "external_id": "518",
+          "official_reference": null,
+          "official_reference_normalized": null,
+          "source_title": "إنشاء وتشغيل كشك درايف ثرو (DRIVE THRO)  طريق الملك عبدالله امتداد مجمع العامر مول بمدينة المبرز",
+          "source_url": "https://alahsa-opportunities.com/opportunities/518",
+          "raw_area": "8 م²",
+          "raw_owner": null,
+          "raw_location": "المبرز",
+          "master_id_at_snapshot": 258
+        }
+      ]
+    },
+    {
+      "master_id": 260,
+      "canonical_id": "AH-20261013081940-db8a3002",
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "source_record_count": 2,
+      "source_count": 2,
+      "classification": "MULTI_SOURCE_IDENTITY_CONFIRMED",
+      "evidence": "Audited reversible cross-source merge; source-specific records, references, original payloads and merge evidence remain preserved.",
+      "merge_audit_ids": [
+        24
+      ],
+      "sources": [
+        {
+          "source_record_id": 2861,
+          "source_key": "furas",
+          "source_name": "فرص – البوابة الموحدة للاستثمار",
+          "external_id": "01-26-017001-41006",
+          "official_reference": "01-26-017001-41006",
+          "official_reference_normalized": "012601700141006",
+          "source_title": "انشاء و تشغيل و صيانة القطعة رقم 60 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف - أنشطة الصيانة والتصليح والتركيب - تشاليح سيارات - معمل",
+          "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-41006?type=Investment",
+          "raw_area": "9982.0",
+          "raw_owner": "أمانة محافظة الأحساء",
+          "raw_location": "الاحساء أحمد بن ناصر الكناني",
+          "master_id_at_snapshot": 260
+        },
+        {
+          "source_record_id": 2876,
+          "source_key": "alahsa-opportunities",
+          "source_name": "منصة الفرص الاستثمارية بالأحساء",
+          "external_id": "538",
+          "official_reference": null,
+          "official_reference_normalized": null,
+          "source_title": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+          "source_url": "https://alahsa-opportunities.com/opportunities/538",
+          "raw_area": "9982 م²",
+          "raw_owner": null,
+          "raw_location": "الهفوف",
+          "master_id_at_snapshot": 260
+        }
+      ]
+    },
+    {
+      "master_id": 262,
+      "canonical_id": "AH-20261013081941-ab3ee3ee",
+      "title": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+      "source_record_count": 2,
+      "source_count": 2,
+      "classification": "MULTI_SOURCE_IDENTITY_CONFIRMED",
+      "evidence": "Audited reversible cross-source merge; source-specific records, references, original payloads and merge evidence remain preserved.",
+      "merge_audit_ids": [
+        23
+      ],
+      "sources": [
+        {
+          "source_record_id": 2863,
+          "source_key": "furas",
+          "source_name": "فرص – البوابة الموحدة للاستثمار",
+          "external_id": "01-26-017001-41007",
+          "official_reference": "01-26-017001-41007",
+          "official_reference_normalized": "012601700141007",
+          "source_title": "انشاء و تشغيل و صيانة القطعة رقم 67  1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف - أنشطة الصيانة والتصليح والتركيب - تشاليح سيارات - معمل",
+          "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-41007?type=Investment",
+          "raw_area": "5223.0",
+          "raw_owner": "أمانة محافظة الأحساء",
+          "raw_location": "الاحساء ابن فرحون",
+          "master_id_at_snapshot": 262
+        },
+        {
+          "source_record_id": 2875,
+          "source_key": "alahsa-opportunities",
+          "source_name": "منصة الفرص الاستثمارية بالأحساء",
+          "external_id": "540",
+          "official_reference": null,
+          "official_reference_normalized": null,
+          "source_title": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+          "source_url": "https://alahsa-opportunities.com/opportunities/540",
+          "raw_area": "5223 م²",
+          "raw_owner": null,
+          "raw_location": "الهفوف",
+          "master_id_at_snapshot": 262
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "multi_source_masters": 24,
+    "identity_confirmed": 23,
+    "review_required": 1,
+    "identity_incorrect": 0
+  }
+}

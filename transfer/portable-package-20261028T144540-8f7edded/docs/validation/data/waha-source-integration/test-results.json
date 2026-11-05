@@ -1,0 +1,13 @@
+{
+  "captured_at": "2026-10-26",
+  "full_regression": {
+    "passed": 528,
+    "failed": 0,
+    "environment": "Temporary SQLite in isolated Docker container with network disabled",
+    "notes": "The same full suite was run again on the final API image after official coverage findings were incorporated."
+  },
+  "focused_tests": {
+    "passed": 11,
+    "failed": 0
+  }
+}

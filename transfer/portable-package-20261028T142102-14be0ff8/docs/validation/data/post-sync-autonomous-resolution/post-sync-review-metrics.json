@@ -1,0 +1,39 @@
+{
+  "captured_at": "2026-10-26T08:29:53.6021931Z",
+  "historical_jobs": {
+    "505": {
+      "source": "alahsa-opportunities",
+      "created": 7,
+      "actionable_open": 7,
+      "status": "SUCCESS",
+      "trigger": "scheduled"
+    },
+    "506": {
+      "source": "furas",
+      "created": 390,
+      "actionable_open": 379,
+      "immediately_stale_closed": 11,
+      "status": "SUCCESS",
+      "trigger": "scheduled"
+    }
+  },
+  "backlog_resolution": {
+    "resolved": 386,
+    "no_change": 385,
+    "canonical_changes": 0,
+    "superseded": 1,
+    "merges": 0
+  },
+  "future_sync_metrics": [
+    "REVIEWS_CREATED",
+    "REVIEWS_REUSED",
+    "REVIEWS_REEVALUATED",
+    "REVIEWS_AUTO_RESOLVED",
+    "REVIEWS_LEFT_OPEN"
+  ],
+  "future_metrics_written_to": "SyncJob.metrics_json; populated for successful scheduled syncs before finalization",
+  "job_505_506_rows_modified_for_metrics": 0,
+  "natural_sync_during_fix": false,
+  "total_sync_jobs_at_final_snapshot": 506,
+  "active_sync_jobs_at_final_snapshot": 0
+}

@@ -1,0 +1,17 @@
+{
+  "mode": "APPLY_DERIVED_METADATA_ONLY",
+  "standardization_version": "3",
+  "batch_size": 200,
+  "master_rows_modified": 0,
+  "raw_source_values_modified": 0,
+  "review_decisions_modified": 0,
+  "summary": {
+    "records_processed": 2896,
+    "field_entries": 62857,
+    "approved_alias_matches": 716,
+    "unmapped_fields": 13658,
+    "validation_issues": 0,
+    "batches_committed": 15
+  },
+  "projection_change_rows": 0
+}

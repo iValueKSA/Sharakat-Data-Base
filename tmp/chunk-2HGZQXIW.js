@@ -1,0 +1,2 @@
+import{aa as r,ua as i}from"./chunk-ITNMMGU5.js";var s=class e{static AUTO_DISMISS_MS=3e3;_current=i(null);current=this._current.asReadonly();timer=null;show(t){this._current.set({text:(t??"").trim()}),this.restartTimer()}dismiss(){this.clearTimer(),this._current.set(null)}restartTimer(){this.clearTimer(),this.timer=setTimeout(()=>this.dismiss(),e.AUTO_DISMISS_MS)}clearTimer(){this.timer!==null&&(clearTimeout(this.timer),this.timer=null)}static \u0275fac=function(a){return new(a||e)};static \u0275prov=r({token:e,factory:e.\u0275fac,providedIn:"root"})};export{s as a};
+

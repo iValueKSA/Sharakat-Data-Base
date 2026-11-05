@@ -1,0 +1,55 @@
+{
+  "captured_at": "2026-10-22T14:03:38+03:00",
+  "suite": "Recommendation follow and override audit",
+  "status": "PASSED",
+  "mapped_scenarios": 7,
+  "pytest_result": "45 passed / 0 failed",
+  "full_regression_result": "438 passed / 0 failed",
+  "environment": "isolated synthetic SQLite; no live review mutation",
+  "suite_note": "Reason validation, audit, optional note, and browser override flow are covered by focused tests.",
+  "scenarios": [
+    {
+      "id": "OVR-01",
+      "scenario": "Following an existing recommendation is audited",
+      "status": "PASS",
+      "evidence": "test_authoritative_source_recommendation_snapshot_and_follow_audit"
+    },
+    {
+      "id": "OVR-02",
+      "scenario": "Choosing another action requires an override reason",
+      "status": "PASS",
+      "evidence": "test_recommendation_override_requires_reason_and_is_audited"
+    },
+    {
+      "id": "OVR-03",
+      "scenario": "Unapproved override reason is rejected",
+      "status": "PASS",
+      "evidence": "test_recommendation_override_rejects_unapproved_reason"
+    },
+    {
+      "id": "OVR-04",
+      "scenario": "Override audit preserves recommendation and actual action",
+      "status": "PASS",
+      "evidence": "test_recommendation_override_requires_reason_and_is_audited"
+    },
+    {
+      "id": "OVR-05",
+      "scenario": "Override note is optional and retained",
+      "status": "PASS",
+      "evidence": "test_recommendation_override_requires_reason_and_is_audited"
+    },
+    {
+      "id": "OVR-06",
+      "scenario": "Override appears in timeline",
+      "status": "PASS",
+      "evidence": "test_recommendation_override_requires_reason_and_is_audited"
+    },
+    {
+      "id": "OVR-07",
+      "scenario": "Override path works end to end in isolated UI",
+      "status": "PASS",
+      "evidence": "Playwright FLOW B: override_recommendation"
+    }
+  ],
+  "focused_suite_collected_cases": 45
+}

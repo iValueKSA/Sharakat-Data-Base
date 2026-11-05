@@ -1,0 +1,636 @@
+{
+  "captured_at": "2026-10-22T14:03:38+03:00",
+  "result": "PASS",
+  "total_scenarios": 89,
+  "passed": 89,
+  "failed": 0,
+  "untested": 0,
+  "focused_workbench_pytest": "45 passed / 0 failed",
+  "full_regression": "438 passed / 0 failed",
+  "isolated_synthetic_playwright": true,
+  "scenarios": [
+    {
+      "scenario_id": "REOPEN-01",
+      "area": "reopen",
+      "scenario": "Resolved reviews expose reopen preview when eligible",
+      "status": "PASS",
+      "evidence": "test_reopen_preview_and_governed_reopen_preserve_resolution_history"
+    },
+    {
+      "scenario_id": "REOPEN-02",
+      "area": "reopen",
+      "scenario": "Reopen preview includes current version and prior decision context",
+      "status": "PASS",
+      "evidence": "test_reopen_preview_and_governed_reopen_preserve_resolution_history"
+    },
+    {
+      "scenario_id": "REOPEN-03",
+      "area": "reopen",
+      "scenario": "Missing legacy actor/time/reason is stated without fabrication",
+      "status": "PASS",
+      "evidence": "test_legacy_resolved_review_timeline_marks_missing_audit_without_fabrication"
+    },
+    {
+      "scenario_id": "REOPEN-04",
+      "area": "reopen",
+      "scenario": "Approved reopen reason is required",
+      "status": "PASS",
+      "evidence": "test_reopen_rejects_missing_or_unapproved_reason_without_mutating_status"
+    },
+    {
+      "scenario_id": "REOPEN-05",
+      "area": "reopen",
+      "scenario": "Optional analyst note is preserved when provided",
+      "status": "PASS",
+      "evidence": "test_reopen_preview_and_governed_reopen_preserve_resolution_history"
+    },
+    {
+      "scenario_id": "REOPEN-06",
+      "area": "reopen",
+      "scenario": "Missing version token is rejected",
+      "status": "PASS",
+      "evidence": "test_reopen_requires_authorized_role_valid_status_reason_and_current_version"
+    },
+    {
+      "scenario_id": "REOPEN-07",
+      "area": "reopen",
+      "scenario": "Stale version token is rejected",
+      "status": "PASS",
+      "evidence": "test_reopen_requires_authorized_role_valid_status_reason_and_current_version"
+    },
+    {
+      "scenario_id": "REOPEN-08",
+      "area": "reopen",
+      "scenario": "Already reopened or non-resolved review cannot be reopened",
+      "status": "PASS",
+      "evidence": "test_reopen_requires_authorized_role_valid_status_reason_and_current_version"
+    },
+    {
+      "scenario_id": "REOPEN-09",
+      "area": "reopen",
+      "scenario": "Reopen audit carries actor, role, reason, version and previous reference",
+      "status": "PASS",
+      "evidence": "test_reopen_preview_and_governed_reopen_preserve_resolution_history"
+    },
+    {
+      "scenario_id": "REOPEN-10",
+      "area": "reopen",
+      "scenario": "Previous decision remains in history after reopen and subsequent resolution",
+      "status": "PASS",
+      "evidence": "Playwright FLOW C: reopen_preserve_and_resolve_again"
+    },
+    {
+      "scenario_id": "TIME-01",
+      "area": "timeline",
+      "scenario": "Unified timeline combines governed review events",
+      "status": "PASS",
+      "evidence": "test_unified_timeline_uses_stable_event_ids_for_equal_timestamps"
+    },
+    {
+      "scenario_id": "TIME-02",
+      "area": "timeline",
+      "scenario": "Equal-time events use stable event IDs and secondary keys",
+      "status": "PASS",
+      "evidence": "test_unified_timeline_uses_stable_event_ids_for_equal_timestamps"
+    },
+    {
+      "scenario_id": "TIME-03",
+      "area": "timeline",
+      "scenario": "Historical events without timestamps have no invented time",
+      "status": "PASS",
+      "evidence": "test_legacy_resolved_review_timeline_marks_missing_audit_without_fabrication"
+    },
+    {
+      "scenario_id": "TIME-04",
+      "area": "timeline",
+      "scenario": "Unknown-time history is marked separately",
+      "status": "PASS",
+      "evidence": "test_legacy_resolved_review_timeline_marks_missing_audit_without_fabrication"
+    },
+    {
+      "scenario_id": "TIME-05",
+      "area": "timeline",
+      "scenario": "Decision preview and recommendation activity can be represented",
+      "status": "PASS",
+      "evidence": "test_authoritative_source_recommendation_snapshot_and_follow_audit"
+    },
+    {
+      "scenario_id": "TIME-06",
+      "area": "timeline",
+      "scenario": "Override and reopen are represented in the review history",
+      "status": "PASS",
+      "evidence": "test_recommendation_override_requires_reason_and_is_audited; test_reopen_preview_and_governed_reopen_preserve_resolution_history"
+    },
+    {
+      "scenario_id": "TIME-07",
+      "area": "timeline",
+      "scenario": "Prior resolution is preserved across reopen",
+      "status": "PASS",
+      "evidence": "test_reopen_preview_and_governed_reopen_preserve_resolution_history"
+    },
+    {
+      "scenario_id": "TIME-08",
+      "area": "timeline",
+      "scenario": "Timeline is visible in the isolated browser flow",
+      "status": "PASS",
+      "evidence": "Playwright FLOW C: reopen_preserve_and_resolve_again"
+    },
+    {
+      "scenario_id": "REC-01",
+      "area": "recommendation",
+      "scenario": "High confidence follows strictly higher authority evidence",
+      "status": "PASS",
+      "evidence": "test_authoritative_source_recommendation_snapshot_and_follow_audit"
+    },
+    {
+      "scenario_id": "REC-02",
+      "area": "recommendation",
+      "scenario": "Medium confidence follows accepted canonical provenance rule",
+      "status": "PASS",
+      "evidence": "test_medium_confidence_recommendation_follows_canonical_source_evidence"
+    },
+    {
+      "scenario_id": "REC-03",
+      "area": "recommendation",
+      "scenario": "Ambiguous evidence returns NONE",
+      "status": "PASS",
+      "evidence": "test_recommendation_returns_none_when_evidence_does_not_resolve_conflict"
+    },
+    {
+      "scenario_id": "REC-04",
+      "area": "recommendation",
+      "scenario": "Missing or mismatched evidence returns NONE",
+      "status": "PASS",
+      "evidence": "test_recommendation_returns_none_when_evidence_does_not_resolve_conflict"
+    },
+    {
+      "scenario_id": "REC-05",
+      "area": "recommendation",
+      "scenario": "Recommendation includes a human-readable reason",
+      "status": "PASS",
+      "evidence": "test_authoritative_source_recommendation_snapshot_and_follow_audit"
+    },
+    {
+      "scenario_id": "REC-06",
+      "area": "recommendation",
+      "scenario": "Recommendation includes supporting evidence",
+      "status": "PASS",
+      "evidence": "test_authoritative_source_recommendation_snapshot_and_follow_audit"
+    },
+    {
+      "scenario_id": "REC-07",
+      "area": "recommendation",
+      "scenario": "Recommendation includes contradictory evidence",
+      "status": "PASS",
+      "evidence": "test_authoritative_source_recommendation_snapshot_and_follow_audit"
+    },
+    {
+      "scenario_id": "REC-08",
+      "area": "recommendation",
+      "scenario": "Recommendation version rejects changed rule inputs",
+      "status": "PASS",
+      "evidence": "test_recommendation_version_rejects_changed_rule_inputs_before_decision"
+    },
+    {
+      "scenario_id": "REC-09",
+      "area": "recommendation",
+      "scenario": "Decision stores the shown recommendation snapshot",
+      "status": "PASS",
+      "evidence": "test_authoritative_source_recommendation_snapshot_and_follow_audit"
+    },
+    {
+      "scenario_id": "REC-10",
+      "area": "recommendation",
+      "scenario": "Recommendation cannot auto-commit a decision",
+      "status": "PASS",
+      "evidence": "test_reviewer_action_contract_disallows_viewer_and_ambiguous_recommendation; Playwright FLOW A"
+    },
+    {
+      "scenario_id": "OVR-01",
+      "area": "override",
+      "scenario": "Following an existing recommendation is audited",
+      "status": "PASS",
+      "evidence": "test_authoritative_source_recommendation_snapshot_and_follow_audit"
+    },
+    {
+      "scenario_id": "OVR-02",
+      "area": "override",
+      "scenario": "Choosing another action requires an override reason",
+      "status": "PASS",
+      "evidence": "test_recommendation_override_requires_reason_and_is_audited"
+    },
+    {
+      "scenario_id": "OVR-03",
+      "area": "override",
+      "scenario": "Unapproved override reason is rejected",
+      "status": "PASS",
+      "evidence": "test_recommendation_override_rejects_unapproved_reason"
+    },
+    {
+      "scenario_id": "OVR-04",
+      "area": "override",
+      "scenario": "Override audit preserves recommendation and actual action",
+      "status": "PASS",
+      "evidence": "test_recommendation_override_requires_reason_and_is_audited"
+    },
+    {
+      "scenario_id": "OVR-05",
+      "area": "override",
+      "scenario": "Override note is optional and retained",
+      "status": "PASS",
+      "evidence": "test_recommendation_override_requires_reason_and_is_audited"
+    },
+    {
+      "scenario_id": "OVR-06",
+      "area": "override",
+      "scenario": "Override appears in timeline",
+      "status": "PASS",
+      "evidence": "test_recommendation_override_requires_reason_and_is_audited"
+    },
+    {
+      "scenario_id": "OVR-07",
+      "area": "override",
+      "scenario": "Override path works end to end in isolated UI",
+      "status": "PASS",
+      "evidence": "Playwright FLOW B: override_recommendation"
+    },
+    {
+      "scenario_id": "BATCH-01",
+      "area": "batch",
+      "scenario": "Preview accepts identical deterministic decision signatures",
+      "status": "PASS",
+      "evidence": "test_deterministic_batch_preview_commit_has_individual_audits_and_is_idempotent"
+    },
+    {
+      "scenario_id": "BATCH-02",
+      "area": "batch",
+      "scenario": "Preview rejects mixed decision signatures",
+      "status": "PASS",
+      "evidence": "test_mixed_signature_stale_source_recheck_and_duplicate_batch_are_rejected; Playwright FLOW E"
+    },
+    {
+      "scenario_id": "BATCH-03",
+      "area": "batch",
+      "scenario": "Preview returns eligible and excluded members",
+      "status": "PASS",
+      "evidence": "test_deterministic_batch_preview_commit_has_individual_audits_and_is_idempotent"
+    },
+    {
+      "scenario_id": "BATCH-04",
+      "area": "batch",
+      "scenario": "Commit requires the preview confirmation/signature",
+      "status": "PASS",
+      "evidence": "test_batch_commit_rejects_changed_preview_signature_without_partial_writes"
+    },
+    {
+      "scenario_id": "BATCH-05",
+      "area": "batch",
+      "scenario": "Changed preview signature is rejected without writes",
+      "status": "PASS",
+      "evidence": "test_batch_commit_rejects_changed_preview_signature_without_partial_writes"
+    },
+    {
+      "scenario_id": "BATCH-06",
+      "area": "batch",
+      "scenario": "SOURCE_RECHECK members are rejected",
+      "status": "PASS",
+      "evidence": "test_mixed_signature_stale_source_recheck_and_duplicate_batch_are_rejected"
+    },
+    {
+      "scenario_id": "BATCH-07",
+      "area": "batch",
+      "scenario": "Duplicate merge is disabled in batch",
+      "status": "PASS",
+      "evidence": "test_mixed_signature_stale_source_recheck_and_duplicate_batch_are_rejected"
+    },
+    {
+      "scenario_id": "BATCH-08",
+      "area": "batch",
+      "scenario": "Viewer cannot preview or commit batch decisions",
+      "status": "PASS",
+      "evidence": "test_viewer_cannot_preview_or_commit_batch_decisions"
+    },
+    {
+      "scenario_id": "BATCH-09",
+      "area": "batch",
+      "scenario": "Analyst can commit supported deterministic batch action",
+      "status": "PASS",
+      "evidence": "test_deterministic_batch_preview_commit_has_individual_audits_and_is_idempotent"
+    },
+    {
+      "scenario_id": "BATCH-10",
+      "area": "batch",
+      "scenario": "Stale member rejects whole batch atomically",
+      "status": "PASS",
+      "evidence": "test_batch_commit_requires_confirmation_and_stale_member_is_atomic"
+    },
+    {
+      "scenario_id": "BATCH-11",
+      "area": "batch",
+      "scenario": "Every resolved member receives an individual audit",
+      "status": "PASS",
+      "evidence": "test_deterministic_batch_preview_commit_has_individual_audits_and_is_idempotent"
+    },
+    {
+      "scenario_id": "BATCH-12",
+      "area": "batch",
+      "scenario": "Repeated operation ID is idempotent",
+      "status": "PASS",
+      "evidence": "test_deterministic_batch_preview_commit_has_individual_audits_and_is_idempotent"
+    },
+    {
+      "scenario_id": "BATCH-13",
+      "area": "batch",
+      "scenario": "Batch override requires an explicit reason and audit",
+      "status": "PASS",
+      "evidence": "test_batch_override_requires_and_audits_an_explicit_reason"
+    },
+    {
+      "scenario_id": "BATCH-14",
+      "area": "batch",
+      "scenario": "Valid batch preview and commit work end to end",
+      "status": "PASS",
+      "evidence": "Playwright FLOW D: deterministic_batch_commit"
+    },
+    {
+      "scenario_id": "RBAC-01",
+      "area": "rbac",
+      "scenario": "Viewer cannot resolve a review",
+      "status": "PASS",
+      "evidence": "test_reviewer_action_contract_disallows_viewer_and_ambiguous_recommendation"
+    },
+    {
+      "scenario_id": "RBAC-02",
+      "area": "rbac",
+      "scenario": "Viewer cannot preview or commit a batch",
+      "status": "PASS",
+      "evidence": "test_viewer_cannot_preview_or_commit_batch_decisions"
+    },
+    {
+      "scenario_id": "RBAC-03",
+      "area": "rbac",
+      "scenario": "Analyst resolves permitted review types",
+      "status": "PASS",
+      "evidence": "test_review_workbench_detail_returns_comparison_sources_history_and_version"
+    },
+    {
+      "scenario_id": "RBAC-04",
+      "area": "rbac",
+      "scenario": "Qualification remains administrator-only",
+      "status": "PASS",
+      "evidence": "tests/test_production_security.py; tests/test_review_workbench.py"
+    },
+    {
+      "scenario_id": "RBAC-05",
+      "area": "rbac",
+      "scenario": "Source recheck has no final decision actions",
+      "status": "PASS",
+      "evidence": "test_source_recheck_evidence_is_not_actionable_and_missing_source_value_is_not_conflict"
+    },
+    {
+      "scenario_id": "CONC-01",
+      "area": "concurrency",
+      "scenario": "Missing decision version is rejected",
+      "status": "PASS",
+      "evidence": "test_review_workbench_decision_preview_is_read_only_and_rejects_stale_version"
+    },
+    {
+      "scenario_id": "CONC-02",
+      "area": "concurrency",
+      "scenario": "Stale decision version is rejected",
+      "status": "PASS",
+      "evidence": "test_review_workbench_decision_preview_is_read_only_and_rejects_stale_version"
+    },
+    {
+      "scenario_id": "CONC-03",
+      "area": "concurrency",
+      "scenario": "Stale reopen version is rejected",
+      "status": "PASS",
+      "evidence": "test_reopen_requires_authorized_role_valid_status_reason_and_current_version"
+    },
+    {
+      "scenario_id": "CONC-04",
+      "area": "concurrency",
+      "scenario": "Changed recommendation snapshot version is rejected",
+      "status": "PASS",
+      "evidence": "test_recommendation_version_rejects_changed_rule_inputs_before_decision"
+    },
+    {
+      "scenario_id": "CONC-05",
+      "area": "concurrency",
+      "scenario": "Stale batch member causes no partial commit",
+      "status": "PASS",
+      "evidence": "test_batch_commit_requires_confirmation_and_stale_member_is_atomic"
+    },
+    {
+      "scenario_id": "CONC-06",
+      "area": "concurrency",
+      "scenario": "Batch operation retry does not double-commit",
+      "status": "PASS",
+      "evidence": "test_deterministic_batch_preview_commit_has_individual_audits_and_is_idempotent"
+    },
+    {
+      "scenario_id": "DQ-01",
+      "area": "dq",
+      "scenario": "Current decision without audit is zero",
+      "status": "PASS",
+      "evidence": "live full DQ: HUMAN_DECISION_WITHOUT_AUDIT PASS observed=0"
+    },
+    {
+      "scenario_id": "DQ-02",
+      "area": "dq",
+      "scenario": "Invalid current review action is zero",
+      "status": "PASS",
+      "evidence": "live full DQ: REVIEW_DECISION_WITH_INVALID_ACTION PASS observed=0"
+    },
+    {
+      "scenario_id": "DQ-03",
+      "area": "dq",
+      "scenario": "Stale decision commit is zero",
+      "status": "PASS",
+      "evidence": "live full DQ: REVIEW_DECISION_STALE_VERSION PASS observed=0"
+    },
+    {
+      "scenario_id": "DQ-04",
+      "area": "dq",
+      "scenario": "Recommendation without evidence is zero",
+      "status": "PASS",
+      "evidence": "live full DQ: RECOMMENDATION_WITHOUT_EVIDENCE PASS observed=0"
+    },
+    {
+      "scenario_id": "DQ-05",
+      "area": "dq",
+      "scenario": "Recommendation without explanation is zero",
+      "status": "PASS",
+      "evidence": "live full DQ: RECOMMENDATION_WITHOUT_EXPLANATION PASS observed=0"
+    },
+    {
+      "scenario_id": "DQ-06",
+      "area": "dq",
+      "scenario": "Missing recommendation snapshot is zero",
+      "status": "PASS",
+      "evidence": "live full DQ: RECOMMENDATION_SNAPSHOT_MISSING PASS observed=0"
+    },
+    {
+      "scenario_id": "DQ-07",
+      "area": "dq",
+      "scenario": "Override without reason is zero",
+      "status": "PASS",
+      "evidence": "live full DQ: RECOMMENDATION_OVERRIDE_WITHOUT_REASON PASS observed=0"
+    },
+    {
+      "scenario_id": "DQ-08",
+      "area": "dq",
+      "scenario": "Reopen without audit is zero",
+      "status": "PASS",
+      "evidence": "live full DQ: REOPEN_WITHOUT_AUDIT PASS observed=0"
+    },
+    {
+      "scenario_id": "DQ-09",
+      "area": "dq",
+      "scenario": "Nondeterministic batch decision is zero",
+      "status": "PASS",
+      "evidence": "live full DQ: BATCH_DECISION_NONDETERMINISTIC PASS observed=0"
+    },
+    {
+      "scenario_id": "DQ-10",
+      "area": "dq",
+      "scenario": "Batch without individual audit is zero",
+      "status": "PASS",
+      "evidence": "live full DQ: BATCH_DECISION_WITHOUT_INDIVIDUAL_AUDIT PASS observed=0"
+    },
+    {
+      "scenario_id": "UI-1920",
+      "area": "viewport",
+      "scenario": "1920x1080 RTL, Western digits, no overflow/clipping/overlap",
+      "status": "PASS",
+      "evidence": "Playwright viewport 1920x1080; screenshot final-closeout"
+    },
+    {
+      "scenario_id": "UI-1440",
+      "area": "viewport",
+      "scenario": "1440x900 RTL, Western digits, no overflow/clipping/overlap",
+      "status": "PASS",
+      "evidence": "Playwright viewport 1440x900; screenshot final-closeout"
+    },
+    {
+      "scenario_id": "UI-1366",
+      "area": "viewport",
+      "scenario": "1366x768 RTL, Western digits, no overflow/clipping/overlap",
+      "status": "PASS",
+      "evidence": "Playwright viewport 1366x768; screenshot final-closeout"
+    },
+    {
+      "scenario_id": "UI-768",
+      "area": "viewport",
+      "scenario": "768x900 RTL, Western digits, no overflow/clipping/overlap",
+      "status": "PASS",
+      "evidence": "Playwright viewport 768x900; screenshot final-closeout"
+    },
+    {
+      "scenario_id": "UI-390",
+      "area": "viewport",
+      "scenario": "390x844 RTL, Western digits, no overflow/clipping/overlap",
+      "status": "PASS",
+      "evidence": "Playwright viewport 390x844; screenshot final-closeout"
+    },
+    {
+      "scenario_id": "FLOW-A",
+      "area": "end_to_end",
+      "scenario": "Follow recommendation, submit, audit and continue",
+      "status": "PASS",
+      "evidence": "Playwright follow_recommendation"
+    },
+    {
+      "scenario_id": "FLOW-B",
+      "area": "end_to_end",
+      "scenario": "Override recommendation with reason and audit",
+      "status": "PASS",
+      "evidence": "Playwright override_recommendation"
+    },
+    {
+      "scenario_id": "FLOW-C",
+      "area": "end_to_end",
+      "scenario": "Reopen, preserve decision, resolve again and inspect timeline",
+      "status": "PASS",
+      "evidence": "Playwright reopen_preserve_and_resolve_again"
+    },
+    {
+      "scenario_id": "FLOW-D",
+      "area": "end_to_end",
+      "scenario": "Deterministic batch preview and commit",
+      "status": "PASS",
+      "evidence": "Playwright deterministic_batch_commit"
+    },
+    {
+      "scenario_id": "FLOW-E",
+      "area": "end_to_end",
+      "scenario": "Mixed-signature batch rejected",
+      "status": "PASS",
+      "evidence": "Playwright mixed_batch_rejected"
+    },
+    {
+      "scenario_id": "FLOW-F",
+      "area": "end_to_end",
+      "scenario": "Stale-version action rejected",
+      "status": "PASS",
+      "evidence": "Playwright stale_version_rejected"
+    },
+    {
+      "scenario_id": "NAV-02",
+      "area": "navigation",
+      "scenario": "Review Detail and evidence remain available",
+      "status": "PASS",
+      "evidence": "Playwright five-viewport Review Detail checks"
+    },
+    {
+      "scenario_id": "NAV-03",
+      "area": "navigation",
+      "scenario": "Next review navigation remains available",
+      "status": "PASS",
+      "evidence": "Playwright follow_recommendation"
+    },
+    {
+      "scenario_id": "NAV-04",
+      "area": "navigation",
+      "scenario": "Unsaved changes produce a warning",
+      "status": "PASS",
+      "evidence": "Playwright unsaved_change_warning"
+    },
+    {
+      "scenario_id": "NAV-05",
+      "area": "navigation",
+      "scenario": "No JavaScript console errors",
+      "status": "PASS",
+      "evidence": "Playwright javascript_console_errors=0"
+    },
+    {
+      "scenario_id": "NAV-01",
+      "area": "navigation",
+      "scenario": "Review Queue filter controls are present and laid out without clipping",
+      "status": "PASS",
+      "evidence": "Playwright queue/detail viewport screenshots at five required dimensions"
+    },
+    {
+      "scenario_id": "DQ-11",
+      "area": "dq",
+      "scenario": "Override without audit is zero",
+      "status": "PASS",
+      "evidence": "live full DQ: RECOMMENDATION_OVERRIDE_WITHOUT_AUDIT PASS observed=0"
+    },
+    {
+      "scenario_id": "DQ-12",
+      "area": "dq",
+      "scenario": "Review action RBAC violation is zero",
+      "status": "PASS",
+      "evidence": "live full DQ: REVIEW_ACTION_RBAC_VIOLATION PASS observed=0"
+    },
+    {
+      "scenario_id": "DQ-13",
+      "area": "dq",
+      "scenario": "Business change without review decision is zero",
+      "status": "PASS",
+      "evidence": "live full DQ: BUSINESS_CHANGE_WITHOUT_REVIEW_DECISION PASS observed=0"
+    }
+  ]
+}

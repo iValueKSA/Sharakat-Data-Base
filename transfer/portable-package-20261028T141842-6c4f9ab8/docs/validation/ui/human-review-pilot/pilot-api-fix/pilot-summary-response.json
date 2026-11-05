@@ -1,0 +1,30 @@
+{
+  "verified_at": "2026-10-25T11:59:34.4374557+03:00",
+  "http_status": 200,
+  "read_only": true,
+  "pilot_sample_size": 40,
+  "phase_a_count": 20,
+  "phase_b_count": 20,
+  "current_phase": "A",
+  "completed_count": 0,
+  "remaining_count": 40,
+  "current_phase_count": 20,
+  "current_phase_remaining_count": 20,
+  "source_recheck_count": 0,
+  "pilot_duplicate_cases": 6,
+  "frozen_cohort_version": "sha256:e72cb979ebd28e18f302ffa9c1453b2b290496679b83b8ed4cef34aac6815c8c",
+  "frozen_cohort_hash": "e72cb979ebd28e18f302ffa9c1453b2b290496679b83b8ed4cef34aac6815c8c",
+  "active_case_reference_count": 20,
+  "active_phase_first_case": {
+    "review_id": 32,
+    "review_id_key": "duplicate:32",
+    "type": "duplicate",
+    "phase": "A",
+    "phase_sequence": 1,
+    "pilot_sequence": 1
+  },
+  "phase_b_references_returned": 0,
+  "natural_jobs_after_start": 4,
+  "cohort_hash_before": "E72CB979EBD28E18F302FFA9C1453B2B290496679B83B8ED4CEF34AAC6815C8C",
+  "cohort_hash_matches": true
+}

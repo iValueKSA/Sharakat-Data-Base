@@ -1,0 +1,2092 @@
+{
+  "snapshot_at": "2026-10-22T07:42:21.338046+00:00",
+  "mode": "APPENDED_AUDIT_EVENTS",
+  "enriched_review_count": 347,
+  "new_events_this_run": 0,
+  "audit_event_total_after": 347,
+  "original_review_evidence_overwritten": 0,
+  "cases": [
+    {
+      "review_id": 320,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "f25d1f8af8609a7dfd9a26d02d877c39bffaa02965b353ece9b2ae1c5c96eccd",
+      "attached": true
+    },
+    {
+      "review_id": 321,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "217a1338b5f50be196c7d3f09c2b619b674aecd7725de969d07069066f512788",
+      "attached": true
+    },
+    {
+      "review_id": 322,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "46fb1f1b8380d142d7f3d25b4bca572f762c6aca5ceaf00fd7d784760199b104",
+      "attached": true
+    },
+    {
+      "review_id": 323,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "59c9f8446b8fa18fafba989336810956975f798a0961f776890ff66929ae700d",
+      "attached": true
+    },
+    {
+      "review_id": 324,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "05c3414ccd7e84f2e7b1d65baa5a68673f1430619ba8cf9efd69ff99673a183e",
+      "attached": true
+    },
+    {
+      "review_id": 325,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "eda1d42c7981a10ca295c8976ea3702c969aa4e2fd3816b30939f6b00de2891f",
+      "attached": true
+    },
+    {
+      "review_id": 326,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "9549304086f1f23e0bd1fe164f490e3787f13a7fae02b5fd4af720e5ca944cbe",
+      "attached": true
+    },
+    {
+      "review_id": 327,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "dfaf6a264791c351353cad42907b3ea1faf77c3a78a1feaf07847c318cc3dc28",
+      "attached": true
+    },
+    {
+      "review_id": 328,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "2f3c7f537040cb95217a30bad45266aa344ff1ecb5eb6cb115fd82f2ca107dac",
+      "attached": true
+    },
+    {
+      "review_id": 329,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "db79886dc2a9f632640887e2329aeaac5325573593b95c6b37b6e5a896121594",
+      "attached": true
+    },
+    {
+      "review_id": 332,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "46553413676c322afbc6bda9932c6e58a930c27cacc24477423d2cb9fb80c2c2",
+      "attached": true
+    },
+    {
+      "review_id": 333,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "f95c30b3648b3999bcc8f3a6d8e1c0425a113502d7dcb2bdef8c4569c6af0172",
+      "attached": true
+    },
+    {
+      "review_id": 334,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "71aca66f9f6285dd8207c01117880ac4caf90b1174bdf486991ce4c3b81322e5",
+      "attached": true
+    },
+    {
+      "review_id": 335,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "888fc268f95e9067b02addce62f595dc14a9a3c8a09561ce22031ece2fa0164a",
+      "attached": true
+    },
+    {
+      "review_id": 336,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "378e964df33bc385c6e69e6de7faa31cabc729d9bcce0198bb6c3c9d154877de",
+      "attached": true
+    },
+    {
+      "review_id": 337,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "e2c1f707d545d05bcdae096baccc5ebabbe867cc9a25290cb0094989ebb1093a",
+      "attached": true
+    },
+    {
+      "review_id": 338,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "cc9c99f0acb1a776f72f420418bfab7c2a137580147401128760392824ceb67e",
+      "attached": true
+    },
+    {
+      "review_id": 339,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "36c3cc048b0a57c7cc4378a6433c95bcc23297ce9c6743105a7d500678445393",
+      "attached": true
+    },
+    {
+      "review_id": 340,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "26108a7b1fe6fc0780f3dec6d27815f4d7aa5a173aaf595c30b19a6744bddad1",
+      "attached": true
+    },
+    {
+      "review_id": 341,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "433e6f36469de397f0464859d1ca216663a062065ba5ed3384921706efa18cfa",
+      "attached": true
+    },
+    {
+      "review_id": 342,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "3688794a3b3f31ae9e4791af2ba168fa44a3b5fe74c71484f607e2d6ce3409d1",
+      "attached": true
+    },
+    {
+      "review_id": 343,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "3a3004e62aa5fa17a3fe9003750803a6f59c4ce1a780fe16c128c1110b705717",
+      "attached": true
+    },
+    {
+      "review_id": 344,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "975d769b67f014bd047f320827b13ff897210c5148c653866468abba169c1362",
+      "attached": true
+    },
+    {
+      "review_id": 345,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "93a300a9ea75162269a8550c88316b1e1dcefb2ad5efc23598f301142e9151c8",
+      "attached": true
+    },
+    {
+      "review_id": 346,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "44079bd916640962447febb6e39686d8313ce3a38bbb5a67b7837f411e2e2cf3",
+      "attached": true
+    },
+    {
+      "review_id": 347,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "b387e1a1e0e585e460cb6a30811105f2a4ec5ac921a1acfede7ce5011c1034d1",
+      "attached": true
+    },
+    {
+      "review_id": 348,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "c7cb92f2ad9a1f535641278a2543441c9149815c34d72fa8cbc538355af38d2a",
+      "attached": true
+    },
+    {
+      "review_id": 349,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "dff0b743b084b54269622bf73af25e4acdba569c2d807a4d72474fee21ad04da",
+      "attached": true
+    },
+    {
+      "review_id": 350,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "e5688117db1fe719691ca81a2c5d7948df1d84a085325605ba683c7245ca878b",
+      "attached": true
+    },
+    {
+      "review_id": 351,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "95a0baa032e2b7ce1ca0272f30ca6266753092ba9824e377e6e21dd347891b48",
+      "attached": true
+    },
+    {
+      "review_id": 352,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "69e320cd763d65e321d124297b20a39e89cae988f29cdb9c4c7de979a4e4860a",
+      "attached": true
+    },
+    {
+      "review_id": 353,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "1895fc8c697b0cff5b3eeec5308c21825ebc10f8fc6c72537196dfd38fef9f53",
+      "attached": true
+    },
+    {
+      "review_id": 354,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "5909c97764e57d59c1d970472b2ce768078f3fc2de3d003f63094f5d82b46666",
+      "attached": true
+    },
+    {
+      "review_id": 355,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "779c3110438c97de8aa6a9d64e0623994b50cf3e58c0e394c0a10660c376b074",
+      "attached": true
+    },
+    {
+      "review_id": 357,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "adbfc85a2f79b43ba879bf2e4d968e11c0cb557beb866e13f6f2a8a1e5b79d13",
+      "attached": true
+    },
+    {
+      "review_id": 358,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "cd1fe7bf5b9f1c1468ac692e2c3cf4d725eeea9d03b5f3ddd0ed5330938c54e4",
+      "attached": true
+    },
+    {
+      "review_id": 359,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "37762af481ecbf707dae3355c6a28c7dc68c01b637829f63f2b3cc32436f5b6b",
+      "attached": true
+    },
+    {
+      "review_id": 360,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "0afde05a1b8edd66454019ece444b6470a793687c4ea15e65ea94bf95e99f779",
+      "attached": true
+    },
+    {
+      "review_id": 361,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "ac85983cbcc0dce67a9af5a47e8bd23c1ed91e7a5afbfb67f69c7ad741401a58",
+      "attached": true
+    },
+    {
+      "review_id": 362,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "11804cbe58c42e04996c9f6543e7126c914c6396c26970523780b3f703685e18",
+      "attached": true
+    },
+    {
+      "review_id": 363,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "c98303ba3a74baa1738ec0ee0a0e36d916944aa3468c8d752a67eb3c980602de",
+      "attached": true
+    },
+    {
+      "review_id": 364,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "3e0d9b0b53f12c301da49b2dbd61c55ec1b567499c3f004be69056f570d6b05d",
+      "attached": true
+    },
+    {
+      "review_id": 365,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "36cc70c30fdedfa506ac99c24a60a67ae6d7b38d61986b6d45e616efc361fe49",
+      "attached": true
+    },
+    {
+      "review_id": 366,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "96877ebe5553c935df07681421ceb0df90d3b98eb1655d47d40e6bb28f5b829b",
+      "attached": true
+    },
+    {
+      "review_id": 367,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "fce3293649be530dcbb7926d633f1561b5ed5c42c7937315d48200665bfc4b5e",
+      "attached": true
+    },
+    {
+      "review_id": 368,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "c03a813b784e2003972a19a1c4fd319ea972d42c221684d41951e0062a25d466",
+      "attached": true
+    },
+    {
+      "review_id": 370,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "5ca384087e18cd44822b1aca4215da48169fb6bdf633e6b565ee781d2d4eaed0",
+      "attached": true
+    },
+    {
+      "review_id": 371,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "f62a23a0d781ca0948d9adb7420721c8a54ee427a5c8003607d6a6936eb62225",
+      "attached": true
+    },
+    {
+      "review_id": 373,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "e95cf7753f67ccd164d69f129f024f01945efc67416fcb535d77445e6fd925b5",
+      "attached": true
+    },
+    {
+      "review_id": 374,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "d3fad557834c9bc4f3de8d0cdeb37e95513bfbeda8b794c7b0d3002aa129afb2",
+      "attached": true
+    },
+    {
+      "review_id": 375,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "c20201a9522c75117e9b2bea732160eb3a298c7be4f4648ce58a756f26b9aa0c",
+      "attached": true
+    },
+    {
+      "review_id": 377,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "7c2b57602f15246666516809bcd5a60d175a918d9700f7ce0833f176d3be1250",
+      "attached": true
+    },
+    {
+      "review_id": 379,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "0f9af56f571220acd38297c31c9eeb4fa34a08a3d91f6132e914df0d69ea347d",
+      "attached": true
+    },
+    {
+      "review_id": 380,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "452592be235da57397a2239ac1acea429cb830838754d989104b158a803ea040",
+      "attached": true
+    },
+    {
+      "review_id": 382,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "10a9b794bc4d8d0be8cdd00d57107eeb8b5db97a6e88f1bbd4578802c1315dbc",
+      "attached": true
+    },
+    {
+      "review_id": 383,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "a0c861cb7e8fd550b3057a524f3309a6288e6a61f65cb96dcfeafe33fad975af",
+      "attached": true
+    },
+    {
+      "review_id": 384,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "387f40c9d852a5d9493436fd5f8935f55fee73f98911a9aaff36b9edd080a2d5",
+      "attached": true
+    },
+    {
+      "review_id": 385,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "390e05d26d9d49feac22cdb94d88f4619e7c3d58dd448261668325b92ae105c0",
+      "attached": true
+    },
+    {
+      "review_id": 386,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "1a55c6647109916d381f74495b83e34589250c3be404b41eddd2cd8680f06cf9",
+      "attached": true
+    },
+    {
+      "review_id": 387,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "f2a53b4b064ee8440162277007aa607326826328301963e8f525c6f3092f34ee",
+      "attached": true
+    },
+    {
+      "review_id": 389,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "de768627162c29d1b728716d27bc80de023441545a2ecc843f65ea4e41d6b33d",
+      "attached": true
+    },
+    {
+      "review_id": 390,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "e44cacc8b7d82bdb91512ee7d6e325415510ac34650a0792590dcdf644df75b5",
+      "attached": true
+    },
+    {
+      "review_id": 392,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "991f8e5cc4b2decb6b841687c090d9d09ea647268fa07825f7d1c64c22fccdf1",
+      "attached": true
+    },
+    {
+      "review_id": 393,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "1371740d4a98c97214dc6742fa4a1e864da24fc326edaebb5b7daebb777a1e1c",
+      "attached": true
+    },
+    {
+      "review_id": 394,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "ed3d253e3b75d2c52be6b6f3cf8b78c87a2f1f192f90681564137ac7a96076a7",
+      "attached": true
+    },
+    {
+      "review_id": 395,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "d247619443f7a790a44cf196783b83cc91da0b3cc9a2cb8324d0645230bd1122",
+      "attached": true
+    },
+    {
+      "review_id": 396,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "8636cca1815a2ffcfa4d3065b7e8e89ab82b62c03a0676ce82b7290360ea9d87",
+      "attached": true
+    },
+    {
+      "review_id": 397,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "f651b4ea8a1b2dd1e1e4dc43fe45c6ef8e599e2196dfa56ce8d2e1d79b712066",
+      "attached": true
+    },
+    {
+      "review_id": 398,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "ffa57a37fc0f22bd8b229666b8f71a62526ec3ed1b008b6dc539255ed4ab74ef",
+      "attached": true
+    },
+    {
+      "review_id": 399,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "db6e2c4875c154ef52b1fd60f4ec37489ee278dc9af35f2f009ed8c6f788c191",
+      "attached": true
+    },
+    {
+      "review_id": 400,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "7fe39a0706662cd063d70d50bcc8f756bf2d122b4589dadda22114742ee9c838",
+      "attached": true
+    },
+    {
+      "review_id": 401,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "0feb5edbd25ead239c1f8e88c752731579526f7ae59227d0b35a18cb0c1fdecf",
+      "attached": true
+    },
+    {
+      "review_id": 402,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "8cd2a8298fe4cf258269903273e3aedccb2b33f08b2d09ec1109a2a283d52f5c",
+      "attached": true
+    },
+    {
+      "review_id": 403,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "dd7b22f7e5e3a68fc7be89be98707ab2abeebd0a9f1cfb3c3738ce7ebe1e7fd6",
+      "attached": true
+    },
+    {
+      "review_id": 404,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "1ba8212bc6174ec43149e16f6effd221c289b59cfc869b0caf0b2444d66865c9",
+      "attached": true
+    },
+    {
+      "review_id": 405,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "8b1e2aab78751ca10aa8f96d21b0894214845ff5eab8470387caef814d14fa58",
+      "attached": true
+    },
+    {
+      "review_id": 406,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "0702e618f2a6d3cbaddd2350c3a42c4d693e49ff8d05287b6c0aba29488b8d82",
+      "attached": true
+    },
+    {
+      "review_id": 407,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "87b21dcc0197eb4d095c620d34b0369fd12be06d177a9c0c69dc4e942d51ae22",
+      "attached": true
+    },
+    {
+      "review_id": 408,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "fd368e9e4a20cc4ddbd8408287258eb03d592ed73b663d3d31c365001e4426ab",
+      "attached": true
+    },
+    {
+      "review_id": 409,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "bc145a5f0b1f22267aa65272d44bc6eaf0b519d1a0b65ea82820b22b024bc886",
+      "attached": true
+    },
+    {
+      "review_id": 410,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "f17db0c4c279fffd55f3eded41e34637c2f7c1416949172b81e582771d7e41dd",
+      "attached": true
+    },
+    {
+      "review_id": 411,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "b430c842c2c597a5d0e11ff0426e9071026fbb5d7a0d0e4a09482120232586a1",
+      "attached": true
+    },
+    {
+      "review_id": 412,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "758e767d4cfee70636036404cc1c7ac112fc0cf693c917ff21645a72c1330763",
+      "attached": true
+    },
+    {
+      "review_id": 413,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "4fa6af401ddfe12d0e78d612f539315176acf8ec3cf000e2eae67193bf15f9fc",
+      "attached": true
+    },
+    {
+      "review_id": 414,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "420cd0c1ed66af9633e9f422d0ad2005bfea4e78895a635c5d1ec1f57abda04b",
+      "attached": true
+    },
+    {
+      "review_id": 415,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "0e078546786d206e6a3d438e4b1ecfdb1ce8f49930ebf0c84b1ea02cc8b58c0a",
+      "attached": true
+    },
+    {
+      "review_id": 416,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "b996230d8f0b0e9713fbfda673c1d030febbfdc5d1e552e32acbee6e35b134a4",
+      "attached": true
+    },
+    {
+      "review_id": 417,
+      "classification": "SOURCE_RECHECK_REQUIRED",
+      "fingerprint": "296c30c46161f2ca33c9eb1bbabdd25d9ed6094178285024275503ca98c2f51f",
+      "attached": true
+    },
+    {
+      "review_id": 418,
+      "classification": "SOURCE_RECHECK_REQUIRED",
+      "fingerprint": "90e8b6cac11bb6f4e11a159caf47563cdeef047acd3d58632e178cd5e2774465",
+      "attached": true
+    },
+    {
+      "review_id": 419,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "2b74babdc38ac68059ee8d2146391db3deb1fc09fd4ede757cf409978a1dcc65",
+      "attached": true
+    },
+    {
+      "review_id": 455,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "3f525336a9172959bbfec26e631ea74c307168ced9a78148deec0d7330e84255",
+      "attached": true
+    },
+    {
+      "review_id": 456,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "135ede9641e20a10587ebccfe2cfe1d35f5e6ffff73cb0cda63192afe45f8ade",
+      "attached": true
+    },
+    {
+      "review_id": 457,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "e0853e98f0edcf6dd9d9f29932a77e217f10f51866b75db74a764b35bf22dee3",
+      "attached": true
+    },
+    {
+      "review_id": 458,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "7b0d4e4308bca7a020dfd626c617524dd99190ec48c2f45b9cfc6b6e17a638c7",
+      "attached": true
+    },
+    {
+      "review_id": 459,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "ee21b5eeffdb4595ed6df2438f564ec8cafe77c0e5d1c35533f1ce9933c8f4af",
+      "attached": true
+    },
+    {
+      "review_id": 460,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "c2ba8e88f62b391734f390cdcf40c550263d3247614ef36201c64073128fd4e6",
+      "attached": true
+    },
+    {
+      "review_id": 461,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "a44f9a32b2c0aea0ed5c214788d265399dbe6570fc16676b6b0781f987d81127",
+      "attached": true
+    },
+    {
+      "review_id": 462,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "27dbf2e5795ceac9473dd37c02ca705eb0f7805ebe481687a82574691c6397d2",
+      "attached": true
+    },
+    {
+      "review_id": 463,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "3c9113ab8263df01868f4bcbfa149a13800e65666f1b2e93b2a6175fcf5e33f9",
+      "attached": true
+    },
+    {
+      "review_id": 464,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "c56f41c574246e2fd0f63a97bbc1854ea6a16f080d3f69d80517195e29ecc9f5",
+      "attached": true
+    },
+    {
+      "review_id": 465,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "a6a7e4ed4007c72b3a07800cb1c91a29e3a3635deb23f10e55df24f0cf708975",
+      "attached": true
+    },
+    {
+      "review_id": 466,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "08c5b6f4253fee87604ee8e8180dabaf43c6496c9188a0b8e8e2ef9189154828",
+      "attached": true
+    },
+    {
+      "review_id": 467,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "90a5a7276117416c3babeb49543ad958892a7a8e391f0dbefa86a2c6b73e427a",
+      "attached": true
+    },
+    {
+      "review_id": 468,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "0684be231057aa5f9b61398f3e1af24a6c98fa8fa35285c48bd8fda30f531a8d",
+      "attached": true
+    },
+    {
+      "review_id": 469,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "8e35ac9ebd9d23b0480a0e2f1884e7cf01dfa8351be51751cda441ac84d333d6",
+      "attached": true
+    },
+    {
+      "review_id": 470,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "766943a49a4281bbb10f15789dc39bcb1f51da20c84a68e8ac31784a3aafa521",
+      "attached": true
+    },
+    {
+      "review_id": 471,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "30b2ab58caf3101f116b9ce109fb1fc03e67a7bb10a903c497652f2f4682611c",
+      "attached": true
+    },
+    {
+      "review_id": 472,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "8ecdcd6e3eb272748af88f6faecb6a20118255ef2ee6ba9ef067abdf69592c01",
+      "attached": true
+    },
+    {
+      "review_id": 473,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "d12c04e3b1263c4cc8eaee2a901d0e1175b4a6f95bcf6f8817c8942eefd3e155",
+      "attached": true
+    },
+    {
+      "review_id": 474,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "295752bab3d21a16df2150c5e139abf2765171c563f1cc6baaabbe18fc56ef70",
+      "attached": true
+    },
+    {
+      "review_id": 475,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "ec233a4950300aa202482dba74da1dfa0a8821ae24488cf64fc7e34b5422afe4",
+      "attached": true
+    },
+    {
+      "review_id": 476,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "465de805b25b6e8a603fbf0e629316d9309ed9179972fb736b3f3ac34215401a",
+      "attached": true
+    },
+    {
+      "review_id": 477,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "63a83733289331f502b4659700bdd7db067c897d78a8497de0bdaeabb2d281bb",
+      "attached": true
+    },
+    {
+      "review_id": 478,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "6d5393be74fea34d037d42c542b9d85e7ad3ff28bdc9f10834be3cc12f762936",
+      "attached": true
+    },
+    {
+      "review_id": 479,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "e0b48e03fdd34077fa7d0e3ee6c53d614a38cc78409826fade5df6c3bfeba0a8",
+      "attached": true
+    },
+    {
+      "review_id": 480,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "5946d2a442273de0cd946f45b0d2cdfd247a273354b5745047780283f4b6979a",
+      "attached": true
+    },
+    {
+      "review_id": 481,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "45b32cac532d4d07ac99be55a6791b9470c5a7dc74dc91e59444b993c170e9c4",
+      "attached": true
+    },
+    {
+      "review_id": 482,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "c41c2a7726e5125275f16471195024a99227d2da877441058f1c693ee5870e2f",
+      "attached": true
+    },
+    {
+      "review_id": 483,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "b363475db8cf8e28d43b49016a3c76edae143e4bf0b3e32f691c775407d01d43",
+      "attached": true
+    },
+    {
+      "review_id": 484,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "e4fca27556cc68dab2b570d38e2cdfe13cb82e90698838e06e97c2c33ad28d70",
+      "attached": true
+    },
+    {
+      "review_id": 485,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "945b22b0a95f8655228828f52ab71b4b110d5667e3b549e3208442d2c84f6c59",
+      "attached": true
+    },
+    {
+      "review_id": 486,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "75b2fb2d20f0761b326bf9822a5df20942c973417e4a3b77e9ee4e43d7df9460",
+      "attached": true
+    },
+    {
+      "review_id": 487,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "1fa4abe276424d8efaa106cbc160da153970d2ba0a4e347f8b21e4d8a6576baf",
+      "attached": true
+    },
+    {
+      "review_id": 488,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "78eba8210cf70dd9b10caeffd0a21a7acc8c3d29d17c47cc72ce0c268ed7daa1",
+      "attached": true
+    },
+    {
+      "review_id": 489,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "fea92e064f095c5860edda3971e08a059f1fca0a0672127d5d2ad0a3e53183cb",
+      "attached": true
+    },
+    {
+      "review_id": 490,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "258f043adca193a3e240e04806b8423b0b9df59cec8186235dc5b81df2cde050",
+      "attached": true
+    },
+    {
+      "review_id": 491,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "3dc263e9af248a5d28ac1b8cee47c26abbcc3e453301d754cf84918dc9afbc9b",
+      "attached": true
+    },
+    {
+      "review_id": 492,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "0c8880cd26afdae4620691243996479bd178d2016b3e94be5162ffcfea9f67fd",
+      "attached": true
+    },
+    {
+      "review_id": 493,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "d0401c373c99ca363f12681eb10bbdf13b5308bbcf3967900064c597e3f3e833",
+      "attached": true
+    },
+    {
+      "review_id": 494,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "ecabcdec296d74880d66abe95b625a0812e9214e8a6b7dcfa45960b563d93be8",
+      "attached": true
+    },
+    {
+      "review_id": 495,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "687ae057f6384d4e84d84861d2fe7b3f43f5ffb74c036b9682632c277aea506b",
+      "attached": true
+    },
+    {
+      "review_id": 496,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "78859fed8b789040381795f13c54005afeb2dbfdf7b2dcf79580fa0a355f74a7",
+      "attached": true
+    },
+    {
+      "review_id": 497,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "69aa3b78b356dbda1b180e77da3ea8e7a29baea178cfc2538ecaa437c09cbca1",
+      "attached": true
+    },
+    {
+      "review_id": 498,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "b6e3ac1272a1a18077aec42c71ce873906b76343c4a482eea8b7368c729df278",
+      "attached": true
+    },
+    {
+      "review_id": 499,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "66d7b1d45b2682ae694972b695eac9c54595cdfb9a37dfcda7fe8305d2f67ebe",
+      "attached": true
+    },
+    {
+      "review_id": 500,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "003869cbd04ad41ac1a1c4b8d83c5de0a174e6fdb9220d7520cfcd623f8f4d6a",
+      "attached": true
+    },
+    {
+      "review_id": 501,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "2cee84a6da91eebb1c73cec093086e0c0e3f7552bb4e5a075d1ce3c51288d464",
+      "attached": true
+    },
+    {
+      "review_id": 502,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "6ada4700a9996135e86679b78f53935119cabafe3da7462cff4402b777377fd6",
+      "attached": true
+    },
+    {
+      "review_id": 503,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "9619f72d8b95bb3c88746090410b8631d0d35f2b76c41750b7bc934dd2d91f8d",
+      "attached": true
+    },
+    {
+      "review_id": 504,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "a4f6010cb2200ab23d6ed9c36008ea5788416621faea9246af23d54ace64f9fa",
+      "attached": true
+    },
+    {
+      "review_id": 505,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "265353cf8e00dc3cf189cb05afb84fac6e30702c90b619500d3a8782598afb78",
+      "attached": true
+    },
+    {
+      "review_id": 506,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "e61a7c86b8217df8fdfbdb18290db49db031f9325dfaa19c29f36b1c4b527cf6",
+      "attached": true
+    },
+    {
+      "review_id": 507,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "19eecca507e2ff80b912ffcc0d1800844beb2cde6b640cd17e081a5e40da6ab9",
+      "attached": true
+    },
+    {
+      "review_id": 508,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "a587445b487bdb9083118cde4f40baef02ea62bf8df283c24f0b552986e519d3",
+      "attached": true
+    },
+    {
+      "review_id": 509,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "723763b9889d4cf4a6e56d5968a3e734868b97ee7c3934a868e8b5ac3307ba2d",
+      "attached": true
+    },
+    {
+      "review_id": 510,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "a21b2a3b779d63ce72a54c78c7ed9cbb45340b484b78fdd5f1e0ada49861f92c",
+      "attached": true
+    },
+    {
+      "review_id": 511,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "7a93a580db712d1069a3b7103d8109e18b7bd4e2e6fb988e7bb8531670a33c4e",
+      "attached": true
+    },
+    {
+      "review_id": 512,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "7e37a2f9aa2d24844b57f2aabb12fd234cf449bc958fb055f999ef72bcc1da10",
+      "attached": true
+    },
+    {
+      "review_id": 513,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "c555a2b917e98076ac3bdebed8a99372d099c9c604f8b9dc417a3519d9a5151a",
+      "attached": true
+    },
+    {
+      "review_id": 514,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "cb881508594daea74b05cc01baf73a2541171b5f2267e99c6051cb52d393acf8",
+      "attached": true
+    },
+    {
+      "review_id": 515,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "44374038994242f36e4b210785712cc4ca3d900818c1d4ea2ec7e6d4b3809bbe",
+      "attached": true
+    },
+    {
+      "review_id": 516,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "ce3b01d0ff3fb5e292a95fcc4ba23f2b3f48eb632b8e5e247c315292b5e0da92",
+      "attached": true
+    },
+    {
+      "review_id": 517,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "bf306f12abafe606d8ddb2bd7dafe7ea379ee9096a0f893cca0bdd2a7efa01fc",
+      "attached": true
+    },
+    {
+      "review_id": 518,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "eeed47fb660df4e4042b75a283da30142e760cbf2fa46d79ed22826737d4d6f4",
+      "attached": true
+    },
+    {
+      "review_id": 519,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "b163b5571d6f4c7279c5ba72047101ce8c5a24e980c01b0048f0983f6ea90dc6",
+      "attached": true
+    },
+    {
+      "review_id": 520,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "d54b654e7b77a9b498c443cb017acd28ecf29e82eec8690f035b4fda1df1d946",
+      "attached": true
+    },
+    {
+      "review_id": 521,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "b355c678e7c1fd9a10f1bad39dd6e686de2f49afcf013f961f111cd89ce89fc1",
+      "attached": true
+    },
+    {
+      "review_id": 522,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "ede1c34d70662093102befc8c7f3c217e61a4f75d3c86a2773e8968f502c232b",
+      "attached": true
+    },
+    {
+      "review_id": 523,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "6568fb3ea54d1d75b4eaf40dcd6c51e863147ef17ff8c3ec650d736fd69a806b",
+      "attached": true
+    },
+    {
+      "review_id": 524,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "3ced29e31d4e0be7deaec454a6e9fc53d8d5330aa5db6241c1ac39e519ad5dbb",
+      "attached": true
+    },
+    {
+      "review_id": 525,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "0ac241062a4ae7446eaea3978a2d09a712f2f316b902d526d0a1276ce94df5ca",
+      "attached": true
+    },
+    {
+      "review_id": 526,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "ad6ab8703d31746606046b41bb58ae4d5ea3512d0d779c583a8d7ac45d30570e",
+      "attached": true
+    },
+    {
+      "review_id": 527,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "54c1841e5c52684b21e35be121b05483b247747627b21240f0c67e61239e70bc",
+      "attached": true
+    },
+    {
+      "review_id": 528,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "75d6026bdb3b19faa9af278731f71278f87c192888676d94682730380ebf26b4",
+      "attached": true
+    },
+    {
+      "review_id": 529,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "7a1d3fe56c37fe62a1908ae949dce898a1cce55f9f3378d974349c85d396dd1b",
+      "attached": true
+    },
+    {
+      "review_id": 530,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "cfc130f81239ff345345812214b9e5f15a96c2c70000270fe067c1db896ae719",
+      "attached": true
+    },
+    {
+      "review_id": 531,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "1cad7d9524eeb79f088719279584bbe071a50db916eacecc60f2b8a319f684fd",
+      "attached": true
+    },
+    {
+      "review_id": 532,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "9a335fdfab011c9bbf0a353ccb63c00d7b183a29204f4be946373ba1db50d75e",
+      "attached": true
+    },
+    {
+      "review_id": 533,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "8856cadc879ad0087556e1b29762030c86b64bcef64872eb46ec98616d4b23c1",
+      "attached": true
+    },
+    {
+      "review_id": 534,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "eabf716e4c7d5cd400fd1b7b0f0ddf65559da4ab170f87270519fc5dfd12f682",
+      "attached": true
+    },
+    {
+      "review_id": 535,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "73dafd825ebc9877d7c9b7056835b574af42d204e86f507b0813973f8100e376",
+      "attached": true
+    },
+    {
+      "review_id": 536,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "d9087e7bfe84a1eb46451f004f7aeae566b39b75b955e25727fede0c23b3a296",
+      "attached": true
+    },
+    {
+      "review_id": 537,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "b1b110b9968bf9d12a5d92395751fb2afddbbb1c4a58378db16769ec11939538",
+      "attached": true
+    },
+    {
+      "review_id": 538,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "7e86797c6995f72b8d65d42bd955ad6f4967b3bfc129b885d149d250f7e68e07",
+      "attached": true
+    },
+    {
+      "review_id": 539,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "72184c54e349ab0d424d656cfd8a5916523a5e6363096c4fd8f92cbfeea3cf2f",
+      "attached": true
+    },
+    {
+      "review_id": 540,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "e763eaf028bbfcf546f6145644d429d9c4cee6d6a4f64fd426c4771ce165d5d6",
+      "attached": true
+    },
+    {
+      "review_id": 541,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "5e92a572cc731e0491fd7b0b5ecc7c4737b5c5b58284bc2674c7404bb493ee65",
+      "attached": true
+    },
+    {
+      "review_id": 542,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "e5ad124f2722a9d74b5be7cf1d14d26b8c2b686daf83a27f3e48b7873bf45f58",
+      "attached": true
+    },
+    {
+      "review_id": 543,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "838d9972cbb39e96f62421561fba2ce341f916f042cc214a154e4e14265f55c0",
+      "attached": true
+    },
+    {
+      "review_id": 544,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "3063aba847623d1a3cf4af74173480d978421aa9b42ba2de70dffa8ca4d78faf",
+      "attached": true
+    },
+    {
+      "review_id": 545,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "b38c1a51cc3771b3b6c30e5626360c82a3cf88ccbe678041f08e89662475ca26",
+      "attached": true
+    },
+    {
+      "review_id": 546,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "63054800cf4e2a1c2ca852bb47d662138e95b52b07389d0be38902cdc102941b",
+      "attached": true
+    },
+    {
+      "review_id": 547,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "d67edbe1c598481c88edfe505ed9847618efefe1bd92850042ba5cf725f4d4b7",
+      "attached": true
+    },
+    {
+      "review_id": 548,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "f4a7c6dde0b7782618fbf222446b232989896620364a1192bed321ebe572b205",
+      "attached": true
+    },
+    {
+      "review_id": 549,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "c9c411faca58eec58f2e0d2a6fbf69b80358ede13ff986464b2ad6bdfa358a9a",
+      "attached": true
+    },
+    {
+      "review_id": 550,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "a364cd65d5bb71dba869cfc3658c328d79a56e27686080268789fefb7e3f9986",
+      "attached": true
+    },
+    {
+      "review_id": 551,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "aa52e7324f7926c6ac4b3c834a729ce4ff3c3ba37e03cd2d992738507db75957",
+      "attached": true
+    },
+    {
+      "review_id": 552,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "ca6b9d6803dc24e72f474d497dd13cbdf70ac1c79c8372b3f0e73cce3f66a079",
+      "attached": true
+    },
+    {
+      "review_id": 553,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "83ea7971e2f92464905acaed3957a02b60c8ee36255d1f7e291345b038ed14b9",
+      "attached": true
+    },
+    {
+      "review_id": 554,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "e39eb2d85edb75b2cf447fd040aed8caf0948d7252c37f0e673743479518cb34",
+      "attached": true
+    },
+    {
+      "review_id": 555,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "9ff10008814d4ac82a3ab8635e9e9bfa6256df52d768f8d9e3518c70a3dd6981",
+      "attached": true
+    },
+    {
+      "review_id": 556,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "660f14ec5bebb5758380dd9267227974e8062f21a0b2bc30cb043a58f547f5b2",
+      "attached": true
+    },
+    {
+      "review_id": 557,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "01b1d5e297b9383852ace801f36b685bba112c7fa4b8e10ddc024d4eca868145",
+      "attached": true
+    },
+    {
+      "review_id": 558,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "7920534be81a03c697a5856894e7391cb0d5b9421acbd063aebccf59af118033",
+      "attached": true
+    },
+    {
+      "review_id": 559,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "5110ade9ceac54e915e9081e607c486bc5c60a42f5b0003cc67f738189ef8184",
+      "attached": true
+    },
+    {
+      "review_id": 560,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "2c760a552f4916602778cc91cb2dbccba3f3af09b9801950bd583701babdbeb2",
+      "attached": true
+    },
+    {
+      "review_id": 561,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "e379dd07c9e8e1a7417aa05fe05898fcec07a23d7c690b27e5ec3c6700c47616",
+      "attached": true
+    },
+    {
+      "review_id": 562,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "849bf3bbd94c10daf43baa4b43c3c1eb73c99dc8681cba02ff90a11e348efd1a",
+      "attached": true
+    },
+    {
+      "review_id": 563,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "af6523751865d4da698e60176efe462c815fa3ab1cc72d81203e748fbde99706",
+      "attached": true
+    },
+    {
+      "review_id": 564,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "6888c9992d433b570eb592df092440d3cb6e9d4a83cef42aedfa3a0c37f80fbb",
+      "attached": true
+    },
+    {
+      "review_id": 565,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "80135b1dbdde04b323623499efc3cf17b0ac50fca3c2518bf602c7f69679e5de",
+      "attached": true
+    },
+    {
+      "review_id": 566,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "c598ee998df3f87ae7c423ab463959f9b2e6e7872d280ac3f0a3de95221cffe7",
+      "attached": true
+    },
+    {
+      "review_id": 567,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "64a237287e4dcd5d8f8a330b1152160b683755e009e8a406de112d39435a6a9a",
+      "attached": true
+    },
+    {
+      "review_id": 568,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "fc3c0bedd2baad8df82910387f1fecc4ec6513ece22a76ac8be7df6327bbedf6",
+      "attached": true
+    },
+    {
+      "review_id": 569,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "99911e22996a424c19b0be377335971304dd4204c014aafe9b52ab87038c1a63",
+      "attached": true
+    },
+    {
+      "review_id": 570,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "02d9b6728350dffcb0c82ce96f28476868e43c1c0e90b06aff47371a97d0a968",
+      "attached": true
+    },
+    {
+      "review_id": 571,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "7e18f2282159f02954cb88ff4f6dfb9a2805c20c35aaf4ed8ab1897ecfb4cbb7",
+      "attached": true
+    },
+    {
+      "review_id": 572,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "d926e67a7308fe4487a0b4830fb55ddbf6f829bbd5ec6535ee91828869fd943a",
+      "attached": true
+    },
+    {
+      "review_id": 573,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "cd4dc2d07d185ea958a68f8ae380895852e913d869ae01273912d358b2a4c2e3",
+      "attached": true
+    },
+    {
+      "review_id": 574,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "aba6f62c14a748e705244670d0bfe2153394bdf26c9571614d8ec53d2fc9e1e1",
+      "attached": true
+    },
+    {
+      "review_id": 575,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "764f47547d0210c3f67cf8ffcad0f5b727b464e0e6043cfc8e8d405ea8a47ddf",
+      "attached": true
+    },
+    {
+      "review_id": 576,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "264a337a61b771c4db936851a048350634ab83b67001063d830b45e44d3e5fce",
+      "attached": true
+    },
+    {
+      "review_id": 577,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "b89664bcc6a34cd2b8a95c19e57608ea2a64ff84d065b7a386dc0b75d348ae3f",
+      "attached": true
+    },
+    {
+      "review_id": 578,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "cf7faacec6bc896bda51befbf55ff0b6ce7780883e826d4b12c161bef5df9b10",
+      "attached": true
+    },
+    {
+      "review_id": 579,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "a1921d5bcd4dadd2c9c7ef6f15027ccf61fd717c52977576204dc4f724c3be7d",
+      "attached": true
+    },
+    {
+      "review_id": 580,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "cbb3e6e01da88d4f337eee55e80a20a71a1033b28cb5908134034e30b570b4a6",
+      "attached": true
+    },
+    {
+      "review_id": 581,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "98957f1557d57fbaf76c7ca6ac5103dc87f79e776e06f1a19082f149142cceb9",
+      "attached": true
+    },
+    {
+      "review_id": 582,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "4857e8e72e0d81e4c1f7cdbd3dcdc8e80e684f136912bb040eb62d226d4c26b1",
+      "attached": true
+    },
+    {
+      "review_id": 583,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "b216386f776a7a880a5ac5b3af71729533817960f6479e4b5bbbbc42a26abff3",
+      "attached": true
+    },
+    {
+      "review_id": 584,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "77a51593d924ffb8471eb117605985aad6fca1721bb94446e84f0dd489fc0be2",
+      "attached": true
+    },
+    {
+      "review_id": 585,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "a020a0df67021f74c4b86595a3f9fd62048fc0b413eef0b5eae1994048794b90",
+      "attached": true
+    },
+    {
+      "review_id": 586,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "badab273bfc7803870cc6eec2b2e67bf47f74f449be5bd8487fdd7e0198740bd",
+      "attached": true
+    },
+    {
+      "review_id": 587,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "c3fd7893b1995b87ce983362558b197f7a458fe85d082a2be54f16dfd8751fc3",
+      "attached": true
+    },
+    {
+      "review_id": 588,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "7365df555aadb6cf069633754965b322f0af71cd159c8730867a7dba43fa86c5",
+      "attached": true
+    },
+    {
+      "review_id": 589,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "faf8aa6bdac73053d918239deb1a2c52560cb3c4f24d06258ae1d2fbf4de77f7",
+      "attached": true
+    },
+    {
+      "review_id": 590,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "01ee55761abdc2ac52360121ae5dae17f25421a275976765e995de051251e6c0",
+      "attached": true
+    },
+    {
+      "review_id": 591,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "52f6527bed1541a3be42e738bcbb50489df418565adf3f463647d1bf675e98ef",
+      "attached": true
+    },
+    {
+      "review_id": 592,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "7ad058535568436f90b5897142fd28aef45e6a7f0994b44b382b3a4cae3f89a0",
+      "attached": true
+    },
+    {
+      "review_id": 593,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "4895eda5c19d42fa25edf1f7319074a594b0c652254531b682ecbad0b6656597",
+      "attached": true
+    },
+    {
+      "review_id": 594,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "89795005fc5fd2a9f09cf1ecd10ff6942c7bd1ecbcecc013ce7e6dd624eae4cb",
+      "attached": true
+    },
+    {
+      "review_id": 595,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "27be51e47b2a86d5cb8dd7365b5ceb318e303a777443642864bcd610d6d3f03d",
+      "attached": true
+    },
+    {
+      "review_id": 596,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "1f0370eff85abdc835da7d2145a5f891a4918743991674ab1cce1d9187c6895b",
+      "attached": true
+    },
+    {
+      "review_id": 597,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "1adddc9137ed75b9c57b40bcc51a6f71ab343908bc866367846dcea81aeb20c4",
+      "attached": true
+    },
+    {
+      "review_id": 598,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "8b692f63e0ca229587b782bc002cd7f4f3c3a553e95c87b6cffa237712f6519f",
+      "attached": true
+    },
+    {
+      "review_id": 599,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "aa294fae8745e6989e58c2c00ab773a61b444ef45329ce3963478021a7a6d20d",
+      "attached": true
+    },
+    {
+      "review_id": 600,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "901d330c1b6a1b58be88228ae0a23f99833198bb510ab0e1c6ec5be19c8c8317",
+      "attached": true
+    },
+    {
+      "review_id": 601,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "71851f3d225aa2768843f27e5737dc5f54dc508335f4da09b4a8d054d0166e4d",
+      "attached": true
+    },
+    {
+      "review_id": 602,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "d742e3aa765a1692421cd7acf53e13ded108fd5479ef7488c463519b5e22301e",
+      "attached": true
+    },
+    {
+      "review_id": 603,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "1df0a220eb5f0f66ef5b4386f41083a5b79686a1dc739e8be7e72aa4bb411c82",
+      "attached": true
+    },
+    {
+      "review_id": 604,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "0bfb29425a56a365841c683d8fd380264f7d736152b08946128588b879df9baf",
+      "attached": true
+    },
+    {
+      "review_id": 605,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "2d3119252ef21a301e72eb0eea854677397f9c80dd7aeec6c291203b24f49b59",
+      "attached": true
+    },
+    {
+      "review_id": 606,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "8b2f8e19c9129ff29174fc195208ad15968c06050b75d13c7e5b00c6176a854e",
+      "attached": true
+    },
+    {
+      "review_id": 607,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "f92465d05d773854081917c04d6014240b1ee4c77dccc5086e607bad509eb744",
+      "attached": true
+    },
+    {
+      "review_id": 608,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "ac4b8d3304fe31b1d258749a0d5f796a2f73fa10d341908b8c1ab0c4efa68e6f",
+      "attached": true
+    },
+    {
+      "review_id": 609,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "c6596e1dcbe2407bfaa23a92bbdec1ece2f8aef5feace3f8280aa40313904efd",
+      "attached": true
+    },
+    {
+      "review_id": 610,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "efff2df83ec88c482760e18f13e1f3c0f47e8451aded54808f9976dc46ca9726",
+      "attached": true
+    },
+    {
+      "review_id": 611,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "692d449875869a6a3ef0c9b1407ba677c8eeeb6e5dc68487661806073740b156",
+      "attached": true
+    },
+    {
+      "review_id": 612,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "def04c66da8bcee46310db6c4fb308b7d828b29d153fe09b0bb29113618a774e",
+      "attached": true
+    },
+    {
+      "review_id": 613,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "7632e46a6c25b411dccc1c7ccf4240526772de12d6ef818e8bb128cb7d8e28d2",
+      "attached": true
+    },
+    {
+      "review_id": 614,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "b72312d4c0a5e788dbdc9c3d539662e1aab30012c605b417e6bc0307ca465270",
+      "attached": true
+    },
+    {
+      "review_id": 615,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "68a476b25a7b12e3b34d788c5dff3de137d6005c0248e912f34644c6851abeb5",
+      "attached": true
+    },
+    {
+      "review_id": 616,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "09dd6c86a58a81f587721264fb69be9a671823c7a3124ea2d8f7019309de3644",
+      "attached": true
+    },
+    {
+      "review_id": 617,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "ea9798596b3916d9612d72f6a6943b35428143409055550905e85ad545161025",
+      "attached": true
+    },
+    {
+      "review_id": 618,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "9935a7f339403558d7889cae77e979395e3322e53f6379006817475ee54cf1cc",
+      "attached": true
+    },
+    {
+      "review_id": 619,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "4e3c48831bdcfea37c7860a9996489f7f3222f45f62a3b8da41425591834fed8",
+      "attached": true
+    },
+    {
+      "review_id": 620,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "e109042a00bad125b5fb1085ef330856be9c8e71ae9d189d06f15f778e46aaa9",
+      "attached": true
+    },
+    {
+      "review_id": 621,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "38494478dcc1da468937de68e308f6d92ed247cc5a6565a6411c64e33ef8a93f",
+      "attached": true
+    },
+    {
+      "review_id": 622,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "cf26825605151f7923728316ce9ac259eff6effba1f23d19e0e1c24844d5f493",
+      "attached": true
+    },
+    {
+      "review_id": 623,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "769f1402f37baf21cce972b5d3c7ab6b523a684e3ae6b50f82ba9f30c1cac7f3",
+      "attached": true
+    },
+    {
+      "review_id": 624,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "4044ad7205b05c49408a27a648d089062edcd99c6f0cb9279abed9920e5dd607",
+      "attached": true
+    },
+    {
+      "review_id": 625,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "d2613cbd9b6078ce92ba82d31e78c379d91400788bc2b2cb191bd93476344ca3",
+      "attached": true
+    },
+    {
+      "review_id": 626,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "0bff93fdb9cff5503a0400874feb053f282486ed6595c392fa28d20befaf5d33",
+      "attached": true
+    },
+    {
+      "review_id": 627,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "164899847a7449e84158e7c0c77fb1ab9c348b7974a74a8461c12bbc5e4a3b18",
+      "attached": true
+    },
+    {
+      "review_id": 628,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "f0c18fb5c968df7fb451c00e79dff4162f43c1a0060ac8980d848b7320832e8b",
+      "attached": true
+    },
+    {
+      "review_id": 629,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "624d315eab2e1e2dca29758208068df716064afab0406f203bc484abd7c3ef2f",
+      "attached": true
+    },
+    {
+      "review_id": 630,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "c3f05f55606cfd6b9424d69d0d67e41bca1a44df43d6e3ce96d6c7ab600233e4",
+      "attached": true
+    },
+    {
+      "review_id": 631,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "910176d898c366a9f523ce604130ca6bc2868fc74886a5392c93e942194a26b0",
+      "attached": true
+    },
+    {
+      "review_id": 632,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "ac62b00d01c8cd18691ecccf2227f7231758e9f47970a89f8faaea622dcdbd65",
+      "attached": true
+    },
+    {
+      "review_id": 633,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "f2dab755bc24c7ab0cd6bfcb7c93820db09789191e9c686cf0d7df3af917cce3",
+      "attached": true
+    },
+    {
+      "review_id": 634,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "5d8b5dfc2fb5ebd0e6f4c4ace2c6af20d894c67e520360581852de2133f367bd",
+      "attached": true
+    },
+    {
+      "review_id": 635,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "2b36ecf06c7148148ca4c21c177fdcfd51c9b8c68ce5f041124eb426be6b26dc",
+      "attached": true
+    },
+    {
+      "review_id": 636,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "32bdf105ab275785c94f45fd71a6970069e560f2e8374543b65077c5a519ac18",
+      "attached": true
+    },
+    {
+      "review_id": 637,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "0465ac252cf1f21c667bac9e4ba745739f64d2708cda48759a629e2015bc1bb1",
+      "attached": true
+    },
+    {
+      "review_id": 638,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "25bb6ae1f5f7872b502891a65ed0744035ffc2b5d25e43e1255faabca4011576",
+      "attached": true
+    },
+    {
+      "review_id": 639,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "5bca4c61a40ab2991aed73bedd4994426d63213018190a862956f518397b8fc2",
+      "attached": true
+    },
+    {
+      "review_id": 640,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "1f6416d13dc402862803ad1d485d9c614c7272ac049409047807a56d8779ce78",
+      "attached": true
+    },
+    {
+      "review_id": 641,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "28769d3031f8b55585f7e98211ac2467ce1e1f07f25281102f6615fd587dc415",
+      "attached": true
+    },
+    {
+      "review_id": 642,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "193664214348854fc14bc888f9116d3749ab20bf81fcce15179b55f5eb8a5149",
+      "attached": true
+    },
+    {
+      "review_id": 643,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "09a9268a4bee767c9133f874247fcdf6673b364ea659f50f1f489e8c3f911eba",
+      "attached": true
+    },
+    {
+      "review_id": 644,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "31bc4340e7dcd451f923a703008abedba985cfc502dc35b114a8608db21e7b5c",
+      "attached": true
+    },
+    {
+      "review_id": 645,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "4d182ae5960ab370d347006b03fe64852809d61b15cd67f406da0d4fc63a968e",
+      "attached": true
+    },
+    {
+      "review_id": 646,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "00bc2f3d505cbf92605fa2c9bc8cb30d07bdf8be0c2ab67e58210168e2848117",
+      "attached": true
+    },
+    {
+      "review_id": 647,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "55387d989a8531289424a40e858dc821f63182af1db70255e919fed42e14122b",
+      "attached": true
+    },
+    {
+      "review_id": 648,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "448d17b82c45c351075438bf2516b1176f24665f2a1a40172e3000d9ccb3d8c1",
+      "attached": true
+    },
+    {
+      "review_id": 649,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "7e39224853736a73fe51988fd783dc0fbc6178d5231af9495583623de381776d",
+      "attached": true
+    },
+    {
+      "review_id": 650,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "bb24c21f4ab8507e65f4259a819f89a5e4eb4d61c66eff77f0c0c2abb551055d",
+      "attached": true
+    },
+    {
+      "review_id": 651,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "3adfb10278a267b467342f785fd39938e80b0b82cdf95d4976fc2996b8975ec6",
+      "attached": true
+    },
+    {
+      "review_id": 652,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "bfc12f3ef912982bee4ec18e0962a467330d103e93de23c7c8eab3ef64b3029f",
+      "attached": true
+    },
+    {
+      "review_id": 653,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "faf6d585b9e27b7f0fde5c5d5da696f5542cc27e2fb24b27fdc14db4aa8942f0",
+      "attached": true
+    },
+    {
+      "review_id": 654,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "ad3cd3a43cbf14d4deb377524aba78ac136293b9b6a1779fae507832236a62c2",
+      "attached": true
+    },
+    {
+      "review_id": 655,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "45c13f3f7633934bb6699fdf05b33313bc8cee710dc85df5a035727076c15cd1",
+      "attached": true
+    },
+    {
+      "review_id": 656,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "9511667e5ea892df009b5164ed8b4301eb7137fe4b5fd55532993a4a40b564e1",
+      "attached": true
+    },
+    {
+      "review_id": 657,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "51cf0c70db5f2841b3ba47f62cc8a7b5b0eac2289b416680c611fed1b03ba08a",
+      "attached": true
+    },
+    {
+      "review_id": 658,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "a3a5bbdabe83257d4b42a435829d0a402db468b9e3aa03ae5b74f932ed0048e8",
+      "attached": true
+    },
+    {
+      "review_id": 659,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "754a036aa073c749b660a9763da9be676937b6368e91e670000386b02ad3a87d",
+      "attached": true
+    },
+    {
+      "review_id": 660,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "86b07e792c13b2ba85fd56e3990f3d4b1e552f889dba59bf7f1f91fedd2def23",
+      "attached": true
+    },
+    {
+      "review_id": 661,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "304e296bf28d509ef2fe4d5e2e507d9741839da3e2fad9588a8921cadb872920",
+      "attached": true
+    },
+    {
+      "review_id": 662,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "3d5437dba3bfe541ff3053024fdd06221bbd3534e5161550a4788f4d4d680e6a",
+      "attached": true
+    },
+    {
+      "review_id": 663,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "55fe6380cad7882f07aefb75aff45ad3c105ece2cd938befe2b67fb3480a3e40",
+      "attached": true
+    },
+    {
+      "review_id": 664,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "66858b70f0f2312fc1fc2f4da220cdf550ce828020481967d60d81bfaa7233a1",
+      "attached": true
+    },
+    {
+      "review_id": 665,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "b64b15cc0e88352033d4c98eca324b6f2b31f090b2632af6f6de138392254d03",
+      "attached": true
+    },
+    {
+      "review_id": 666,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "d3f7e614ba4f1bcb8514df0b14165700deea192164a251d044b88976b77a0270",
+      "attached": true
+    },
+    {
+      "review_id": 667,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "954ae16aee28c354772c15a1d757842fd24b4b92a28ad6b1d2de6e5934de9fba",
+      "attached": true
+    },
+    {
+      "review_id": 668,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "4df7e161f067f5ba5b6c15854de1d8fdee1a28d77c7a42fffe000872dbc14594",
+      "attached": true
+    },
+    {
+      "review_id": 669,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "ef0b74409e275e9b76ce4c91ff00060c786624667e81936ed38a33f834b24ccb",
+      "attached": true
+    },
+    {
+      "review_id": 670,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "d7628888d3d979923b2f3c02df1d153d93d9849ed4865cabcb35af9676dd369e",
+      "attached": true
+    },
+    {
+      "review_id": 671,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "2ed247a391433d08acead177ff13015fd7c19bca98c03a2a42ab4765736586b7",
+      "attached": true
+    },
+    {
+      "review_id": 672,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "cbc97adc2b45426d763059f2ab8338adecf3288f47f1885be6e4becf1900bcd3",
+      "attached": true
+    },
+    {
+      "review_id": 673,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "8b7ad9d3bd4e96c67e7e3da57978db44540435fc20b83fa1748edd0aac81e5f5",
+      "attached": true
+    },
+    {
+      "review_id": 674,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "2142bef0dffb0f7607845f1df62ad75f20a95603c5ce7400d1f922fc2fcc9a6f",
+      "attached": true
+    },
+    {
+      "review_id": 675,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "ed45b0e1b811cd5c7880ad77e402d9eff5080187329bffa3a75bbfa3a3026cf9",
+      "attached": true
+    },
+    {
+      "review_id": 676,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "717b190c1b298b3c93727ff92c86e466e117808149d68fdec320e7be495bad3c",
+      "attached": true
+    },
+    {
+      "review_id": 677,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "554475b4d89a33f0aa28056ccfd3684b0075d65485c0d790ca77d24f7aa8a8b1",
+      "attached": true
+    },
+    {
+      "review_id": 678,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "260a754599156d4727974e47c275253dcbd1eae6824b0a3e4964445445f499f4",
+      "attached": true
+    },
+    {
+      "review_id": 679,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "1776e4fd41a4626affed8a8ca4dd0491c6d975173ec6067ceda3c2dc141e793e",
+      "attached": true
+    },
+    {
+      "review_id": 680,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "9824b7ca4e94420c162197e734467858c1c18e963841db145f1aaa9a05dc909b",
+      "attached": true
+    },
+    {
+      "review_id": 681,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "72183c3c2d405e8b1fd4a8d45e26587379fc99d78c4902e1047c7affc4b1cbf8",
+      "attached": true
+    },
+    {
+      "review_id": 682,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "8514b2d223575ce1dae29d1e3761fe56d4f7358cf4cc421d54ef574202eabd13",
+      "attached": true
+    },
+    {
+      "review_id": 683,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "879b3c326f75ad8b65947edf0f386fa1988318de96d3c9f6b7734c203a6effb2",
+      "attached": true
+    },
+    {
+      "review_id": 684,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "de1d998c8f8b1e4a2e2f083dfcd676e6cee675f41246379f474c42f8e5b9baaf",
+      "attached": true
+    },
+    {
+      "review_id": 685,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "7c7994f8a7884008af1c478ab23db36df60b7a24a2889882c521b32929abf4c8",
+      "attached": true
+    },
+    {
+      "review_id": 686,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "ddabeea18d8f0a5b53409eae4663bf2fa0fc7c31ee9a327c1049fa3e75616253",
+      "attached": true
+    },
+    {
+      "review_id": 687,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "9593019870ede714eeb66be19688daf9e8f3ffe84ab286892ea01b5436867122",
+      "attached": true
+    },
+    {
+      "review_id": 688,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "39d84eda1f12e58108d005642034f82534f2c4eec634c2a9b4b88be36dcb6c4f",
+      "attached": true
+    },
+    {
+      "review_id": 689,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "7308388e55d80f9a3def53a99079d63ca274cc0ab812b1421560caf6ca031316",
+      "attached": true
+    },
+    {
+      "review_id": 690,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "19c7dadcea2c1073e492d47295befe2bbd925f54ccbc0067ad638bbcb1846656",
+      "attached": true
+    },
+    {
+      "review_id": 691,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "78163b2ba653ccef5ab31225098b15a8ad1cb4dc365bf7014316a5f0c55e766c",
+      "attached": true
+    },
+    {
+      "review_id": 692,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "f074c72ce8063ed10c223bbcc1e5fda739ee4b14e066818287124eaaf7888ea0",
+      "attached": true
+    },
+    {
+      "review_id": 693,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "c2867c109c096f1e92de36004924ef3cfe74653413b3c256dc47be51533588c1",
+      "attached": true
+    },
+    {
+      "review_id": 694,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "ed380695b4806a4a73cb8a53a23372743b5020048aab89724f272085cc8dd85c",
+      "attached": true
+    },
+    {
+      "review_id": 695,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "8cf34c74b9d8d26a9801a5e239aa90bebec378840effa25e32b1b07f9f0c47b6",
+      "attached": true
+    },
+    {
+      "review_id": 696,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "88b53517350b8d6b253a3e5501fc093196e08a0693048912e17c321ca266340e",
+      "attached": true
+    },
+    {
+      "review_id": 697,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "7e76145df53bbd06e073aa77fef19f59a7850c10c6349201309bbf46eb44d80d",
+      "attached": true
+    },
+    {
+      "review_id": 704,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "bdef15513b22dfe33707970fdea4f7a813074d1bda3002c00ebe4281f6158837",
+      "attached": true
+    },
+    {
+      "review_id": 3,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "2bada67567d79112173d020b073b4177114cad532e1f3090e7c88bf4072c3183",
+      "attached": true
+    },
+    {
+      "review_id": 4,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "a7a23bf821ef143ff760292eef07eefa16bbb23ed37c545e6a96dfcfb08184b9",
+      "attached": true
+    },
+    {
+      "review_id": 6,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "4e09b519f9bf7ba58b076249a9615626c9d51e06e98eb470c9b7b74bcc2cc039",
+      "attached": true
+    },
+    {
+      "review_id": 7,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "56f3cbe1ad332c360b1da4851f24494eefaad499faf4f9e40d9ae1306355fe58",
+      "attached": true
+    },
+    {
+      "review_id": 8,
+      "classification": "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED",
+      "fingerprint": "d6558438254fa87cd6ff1d9b3d6bea63ded8a5e60b4fcefaa6298993c0dd45d3",
+      "attached": true
+    },
+    {
+      "review_id": 17,
+      "classification": "WRONG_BLOCKED_CLASSIFICATION",
+      "fingerprint": "e4d840c91548a4323c7a343b9ecf81221ddc3713ae0ef2fd7894dcba4bf0e1c0",
+      "attached": true
+    },
+    {
+      "review_id": 18,
+      "classification": "SOURCE_RECHECK_REQUIRED",
+      "fingerprint": "2a08426f42aa6610a0c245a08487a918114683cdd4fd972d7b154117eb00b4d6",
+      "attached": true
+    },
+    {
+      "review_id": 19,
+      "classification": "SOURCE_RECHECK_REQUIRED",
+      "fingerprint": "f731b40fb4d3d7de2914d49bf911099bef3942462078140e2f9990401d5ac77a",
+      "attached": true
+    },
+    {
+      "review_id": 20,
+      "classification": "SOURCE_RECHECK_REQUIRED",
+      "fingerprint": "f80005ae64b57ba9c2ba91c85b98fd01ef596e04495ccc6dd5b0fad389d2d8b3",
+      "attached": true
+    },
+    {
+      "review_id": 21,
+      "classification": "SOURCE_RECHECK_REQUIRED",
+      "fingerprint": "900bbe0ed0838bcbee3a4a324a7f408317d140deeb00420e7eab6cc9ef4ed7bf",
+      "attached": true
+    },
+    {
+      "review_id": 22,
+      "classification": "SOURCE_RECHECK_REQUIRED",
+      "fingerprint": "18f4e20daf6e6b457e20b6009b671e5132a296c3e8be6a0f7f81bd33d04a89e7",
+      "attached": true
+    },
+    {
+      "review_id": 23,
+      "classification": "SOURCE_RECHECK_REQUIRED",
+      "fingerprint": "0e9991f39eb39f8268ecfc41216b5af0fff3dd510dbc5a294eee2946e8bf9593",
+      "attached": true
+    },
+    {
+      "review_id": 24,
+      "classification": "SOURCE_RECHECK_REQUIRED",
+      "fingerprint": "fa7c490ee0c4b85276592bfaaa446ccd192b56bddfd8bb9f8a495d9794f36a40",
+      "attached": true
+    }
+  ]
+}

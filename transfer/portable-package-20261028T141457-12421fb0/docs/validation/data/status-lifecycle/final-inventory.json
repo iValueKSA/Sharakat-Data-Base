@@ -1,0 +1,706 @@
+{
+  "snapshot_date_local": "2026-10-19",
+  "master_status_counts": {
+    "متاحة": 103,
+    "أزيلت من المصدر": 14,
+    "منتهية": 2,
+    "غير محددة": 13,
+    "منشورة": 158,
+    "حالة غير معروفة": 1
+  },
+  "master_deadline_status_counts": {
+    "متاحة|future": 103,
+    "أزيلت من المصدر|future": 7,
+    "منتهية|past": 2,
+    "غير محددة|missing": 13,
+    "منشورة|future": 158,
+    "أزيلت من المصدر|past": 6,
+    "أزيلت من المصدر|missing": 1,
+    "حالة غير معروفة|missing": 1
+  },
+  "master_multi_source_count": 8,
+  "source_raw_status_counts": {
+    "furas": {
+      "Announced": 173,
+      "Deleted": 4
+    },
+    "invest-saudi": {
+      "null": 2555
+    },
+    "alahsa-opportunities": {
+      "متاحة": 103
+    },
+    "ahda": {
+      "null": 7
+    },
+    "ncp": {
+      "UNKNOWN": 40,
+      "IDENTITY_ALIAS": 1,
+      "EXPIRED": 3,
+      "AWARDED": 1
+    },
+    "kfu": {
+      "UNKNOWN": 5,
+      "EXPIRED": 1
+    },
+    "mwan": {
+      "ANNOUNCED": 5
+    }
+  },
+  "source_canonical_status_counts": {
+    "furas": {
+      "منشورة": 164,
+      "أزيلت من المصدر": 13
+    },
+    "invest-saudi": {
+      "غير محددة": 2555
+    },
+    "alahsa-opportunities": {
+      "متاحة": 103
+    },
+    "ahda": {
+      "غير محددة": 7
+    },
+    "ncp": {
+      "حالة غير معروفة": 40,
+      "منتهية": 4,
+      "تمت الترسية": 1
+    },
+    "kfu": {
+      "أزيلت من المصدر": 1,
+      "حالة غير معروفة": 4,
+      "منتهية": 1
+    },
+    "mwan": {
+      "منشورة": 5
+    }
+  },
+  "status_review_flag_counts": {},
+  "status_review_flag_examples": [],
+  "source_inventory": [
+    {
+      "key": "furas",
+      "name": "فرص – البوابة الموحدة للاستثمار",
+      "technical_health": "HEALTHY",
+      "coverage_status": "COMPLETE_PUBLIC_SOURCE",
+      "enabled": true,
+      "records": 177,
+      "last_successful_sync": "2026-10-19T10:47:54.876591+00:00"
+    },
+    {
+      "key": "alahsa-opportunities",
+      "name": "منصة الفرص الاستثمارية بالأحساء",
+      "technical_health": "HEALTHY",
+      "coverage_status": "COMPLETE_PUBLIC_SOURCE",
+      "enabled": true,
+      "records": 103,
+      "last_successful_sync": "2026-10-19T10:48:56.918510+00:00"
+    },
+    {
+      "key": "ahda",
+      "name": "هيئة تطوير الأحساء",
+      "technical_health": "HEALTHY",
+      "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE",
+      "enabled": true,
+      "records": 7,
+      "last_successful_sync": "2026-10-19T06:46:50.528354+00:00"
+    },
+    {
+      "key": "invest-saudi",
+      "name": "استثمر في السعودية",
+      "technical_health": "HEALTHY",
+      "coverage_status": "COMPLETE_PUBLIC_SOURCE",
+      "enabled": true,
+      "records": 2555,
+      "last_successful_sync": "2026-10-19T06:47:34.265151+00:00"
+    },
+    {
+      "key": "kfu",
+      "name": "جامعة الملك فيصل",
+      "technical_health": "HEALTHY",
+      "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE",
+      "enabled": true,
+      "records": 6,
+      "last_successful_sync": "2026-10-19T06:46:30.315069+00:00"
+    },
+    {
+      "key": "modon",
+      "name": "مدن",
+      "technical_health": "HEALTHY",
+      "coverage_status": "PUBLIC_COVERAGE_LIMITED",
+      "enabled": true,
+      "records": 0,
+      "last_successful_sync": "2026-10-12T12:26:52.808735+00:00"
+    },
+    {
+      "key": "ncp",
+      "name": "المركز الوطني للتخصيص",
+      "technical_health": "HEALTHY",
+      "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE",
+      "enabled": true,
+      "records": 45,
+      "last_successful_sync": "2026-10-19T06:46:54.548851+00:00"
+    },
+    {
+      "key": "nhc",
+      "name": "NHC الاستثمار",
+      "technical_health": "WARNING",
+      "coverage_status": "PUBLIC_COVERAGE_LIMITED",
+      "enabled": true,
+      "records": 0,
+      "last_successful_sync": "2026-10-12T12:35:37.998869+00:00"
+    },
+    {
+      "key": "pif",
+      "name": "بوابة القطاع الخاص لصندوق الاستثمارات العامة",
+      "technical_health": "HEALTHY",
+      "coverage_status": "PUBLIC_COVERAGE_LIMITED",
+      "enabled": true,
+      "records": 0,
+      "last_successful_sync": "2026-10-18T11:26:35.011495+00:00"
+    },
+    {
+      "key": "mwan",
+      "name": "موان",
+      "technical_health": "HEALTHY",
+      "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE",
+      "enabled": true,
+      "records": 5,
+      "last_successful_sync": "2026-10-12T12:28:00.933181+00:00"
+    }
+  ],
+  "raw_status_value_inventory": [
+    {
+      "source": "ahda",
+      "raw_status": null,
+      "count": 7
+    },
+    {
+      "source": "alahsa-opportunities",
+      "raw_status": "متاحة",
+      "count": 103
+    },
+    {
+      "source": "furas",
+      "raw_status": "Announced",
+      "count": 173
+    },
+    {
+      "source": "furas",
+      "raw_status": "Deleted",
+      "count": 4
+    },
+    {
+      "source": "invest-saudi",
+      "raw_status": null,
+      "count": 2555
+    },
+    {
+      "source": "kfu",
+      "raw_status": "EXPIRED",
+      "count": 1
+    },
+    {
+      "source": "kfu",
+      "raw_status": "UNKNOWN",
+      "count": 5
+    },
+    {
+      "source": "mwan",
+      "raw_status": "ANNOUNCED",
+      "count": 5
+    },
+    {
+      "source": "ncp",
+      "raw_status": "AWARDED",
+      "count": 1
+    },
+    {
+      "source": "ncp",
+      "raw_status": "EXPIRED",
+      "count": 3
+    },
+    {
+      "source": "ncp",
+      "raw_status": "IDENTITY_ALIAS",
+      "count": 1
+    },
+    {
+      "source": "ncp",
+      "raw_status": "UNKNOWN",
+      "count": 40
+    }
+  ],
+  "cancellation_evidence_candidates": [],
+  "open_status_conflicts": [],
+  "removed_source_rows": [
+    {
+      "id": 139,
+      "source": "furas",
+      "master_id": 139,
+      "external_id": "26-09-2422527",
+      "raw_status": "Announced",
+      "canonical_status": "أزيلت من المصدر",
+      "checks": 12,
+      "required_checks": 3,
+      "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+    },
+    {
+      "id": 15,
+      "source": "furas",
+      "master_id": 15,
+      "external_id": "02-23-017001-14002",
+      "raw_status": "Announced",
+      "canonical_status": "أزيلت من المصدر",
+      "checks": 8,
+      "required_checks": 3,
+      "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+    },
+    {
+      "id": 25,
+      "source": "furas",
+      "master_id": 25,
+      "external_id": "02-25-017001-22001",
+      "raw_status": "Announced",
+      "canonical_status": "أزيلت من المصدر",
+      "checks": 8,
+      "required_checks": 3,
+      "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+    },
+    {
+      "id": 30,
+      "source": "furas",
+      "master_id": 30,
+      "external_id": "25-09-1976186",
+      "raw_status": "Announced",
+      "canonical_status": "أزيلت من المصدر",
+      "checks": 12,
+      "required_checks": 3,
+      "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+    },
+    {
+      "id": 35,
+      "source": "furas",
+      "master_id": 35,
+      "external_id": "02-25-017001-64001",
+      "raw_status": "Announced",
+      "canonical_status": "أزيلت من المصدر",
+      "checks": 12,
+      "required_checks": 3,
+      "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+    },
+    {
+      "id": 90,
+      "source": "furas",
+      "master_id": 90,
+      "external_id": "26-09-2422346",
+      "raw_status": "Announced",
+      "canonical_status": "أزيلت من المصدر",
+      "checks": 12,
+      "required_checks": 3,
+      "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+    },
+    {
+      "id": 109,
+      "source": "furas",
+      "master_id": 109,
+      "external_id": "02-23-017001-14003",
+      "raw_status": "Announced",
+      "canonical_status": "أزيلت من المصدر",
+      "checks": 8,
+      "required_checks": 3,
+      "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+    },
+    {
+      "id": 122,
+      "source": "furas",
+      "master_id": 122,
+      "external_id": "02-25-017001-77007",
+      "raw_status": "Deleted",
+      "canonical_status": "أزيلت من المصدر",
+      "checks": 62,
+      "required_checks": 3,
+      "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+    },
+    {
+      "id": 138,
+      "source": "furas",
+      "master_id": 138,
+      "external_id": "26-09-2422468",
+      "raw_status": "Announced",
+      "canonical_status": "أزيلت من المصدر",
+      "checks": 20,
+      "required_checks": 3,
+      "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+    },
+    {
+      "id": 91,
+      "source": "furas",
+      "master_id": 91,
+      "external_id": "26-09-2422553",
+      "raw_status": "Announced",
+      "canonical_status": "أزيلت من المصدر",
+      "checks": 20,
+      "required_checks": 3,
+      "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+    },
+    {
+      "id": 2774,
+      "source": "kfu",
+      "master_id": 225,
+      "external_id": "kfu-announcement:7e98c5dfb12b0a6d09f4c349",
+      "raw_status": "UNKNOWN",
+      "canonical_status": "أزيلت من المصدر",
+      "checks": 3,
+      "required_checks": 3,
+      "last_missing_at": "2026-10-19T06:46:30.299073+00:00"
+    },
+    {
+      "id": 26,
+      "source": "furas",
+      "master_id": 26,
+      "external_id": "02-25-017001-36002",
+      "raw_status": "Deleted",
+      "canonical_status": "أزيلت من المصدر",
+      "checks": 62,
+      "required_checks": 3,
+      "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+    },
+    {
+      "id": 69,
+      "source": "furas",
+      "master_id": 69,
+      "external_id": "02-26-017001-1",
+      "raw_status": "Deleted",
+      "canonical_status": "أزيلت من المصدر",
+      "checks": 62,
+      "required_checks": 3,
+      "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+    },
+    {
+      "id": 23,
+      "source": "furas",
+      "master_id": 23,
+      "external_id": "02-25-017001-7001",
+      "raw_status": "Deleted",
+      "canonical_status": "أزيلت من المصدر",
+      "checks": 62,
+      "required_checks": 3,
+      "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+    }
+  ],
+  "multi_source_master_ids": [
+    192,
+    193,
+    102,
+    249,
+    226,
+    164,
+    195,
+    230
+  ],
+  "source_observation_count": 10514,
+  "change_history_count": 1189,
+  "recent_sync_jobs": [
+    {
+      "id": 344,
+      "source_id": 2,
+      "started_at": "2026-10-19T10:48:48.335129+00:00",
+      "finished_at": "2026-10-19T10:48:56.918534+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": true
+    },
+    {
+      "id": 343,
+      "source_id": 1,
+      "started_at": "2026-10-19T10:47:48.231869+00:00",
+      "finished_at": "2026-10-19T10:47:54.876616+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "removed_records_count": 13,
+      "pagination_complete": true
+    },
+    {
+      "id": 342,
+      "source_id": 2,
+      "started_at": "2026-10-19T09:48:23.698441+00:00",
+      "finished_at": "2026-10-19T09:48:32.298737+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": true
+    },
+    {
+      "id": 341,
+      "source_id": 1,
+      "started_at": "2026-10-19T09:47:23.852373+00:00",
+      "finished_at": "2026-10-19T09:47:29.712037+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": true
+    },
+    {
+      "id": 340,
+      "source_id": 2,
+      "started_at": "2026-10-19T08:47:23.696215+00:00",
+      "finished_at": "2026-10-19T08:47:31.380822+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": true
+    },
+    {
+      "id": 339,
+      "source_id": 1,
+      "started_at": "2026-10-19T08:46:23.727361+00:00",
+      "finished_at": "2026-10-19T08:46:31.957705+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": true
+    },
+    {
+      "id": 338,
+      "source_id": 2,
+      "started_at": "2026-10-19T07:47:22.507833+00:00",
+      "finished_at": "2026-10-19T07:47:31.439139+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": true
+    },
+    {
+      "id": 337,
+      "source_id": 1,
+      "started_at": "2026-10-19T07:46:22.758168+00:00",
+      "finished_at": "2026-10-19T07:46:28.676521+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": true
+    },
+    {
+      "id": 336,
+      "source_id": 7,
+      "started_at": "2026-10-19T06:46:31.245963+00:00",
+      "finished_at": "2026-10-19T06:46:54.548867+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": true
+    },
+    {
+      "id": 335,
+      "source_id": 8,
+      "started_at": "2026-10-19T06:46:30.528688+00:00",
+      "finished_at": "2026-10-19T06:46:32.849263+00:00",
+      "status": "WARNING",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": false
+    },
+    {
+      "id": 334,
+      "source_id": 6,
+      "started_at": "2026-10-19T06:46:30.363410+00:00",
+      "finished_at": "2026-10-19T06:46:30.462098+00:00",
+      "status": "FAILED",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": null
+    },
+    {
+      "id": 333,
+      "source_id": 5,
+      "started_at": "2026-10-19T06:46:28.481738+00:00",
+      "finished_at": "2026-10-19T06:46:30.315090+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "removed_records_count": 1,
+      "pagination_complete": true
+    },
+    {
+      "id": 332,
+      "source_id": 2,
+      "started_at": "2026-10-19T06:46:22.823824+00:00",
+      "finished_at": "2026-10-19T06:46:31.203544+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": true
+    },
+    {
+      "id": 331,
+      "source_id": 1,
+      "started_at": "2026-10-19T06:46:21.977290+00:00",
+      "finished_at": "2026-10-19T06:46:28.431899+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": true
+    },
+    {
+      "id": 330,
+      "source_id": 4,
+      "started_at": "2026-10-19T06:46:22.273627+00:00",
+      "finished_at": "2026-10-19T06:47:34.265182+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": true
+    },
+    {
+      "id": 329,
+      "source_id": 3,
+      "started_at": "2026-10-19T06:46:22.053469+00:00",
+      "finished_at": "2026-10-19T06:46:50.528376+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": true
+    },
+    {
+      "id": 328,
+      "source_id": 1,
+      "started_at": "2026-10-18T12:59:30.435681+00:00",
+      "finished_at": "2026-10-18T12:59:36.079900+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "removed_records_count": 3,
+      "pagination_complete": true
+    },
+    {
+      "id": 327,
+      "source_id": 2,
+      "started_at": "2026-10-18T12:59:30.311178+00:00",
+      "finished_at": "2026-10-18T12:59:38.894224+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": true
+    },
+    {
+      "id": 326,
+      "source_id": 6,
+      "started_at": "2026-10-18T12:55:30.629379+00:00",
+      "finished_at": "2026-10-18T12:55:31.084535+00:00",
+      "status": "FAILED",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": null
+    },
+    {
+      "id": 325,
+      "source_id": 4,
+      "started_at": "2026-10-18T12:55:30.616746+00:00",
+      "finished_at": "2026-10-18T12:57:03.012720+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": true
+    },
+    {
+      "id": 324,
+      "source_id": 3,
+      "started_at": "2026-10-18T12:55:30.586537+00:00",
+      "finished_at": "2026-10-18T12:55:54.461122+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": true
+    },
+    {
+      "id": 323,
+      "source_id": 2,
+      "started_at": "2026-10-18T11:59:23.004576+00:00",
+      "finished_at": "2026-10-18T11:59:30.182151+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": true
+    },
+    {
+      "id": 322,
+      "source_id": 1,
+      "started_at": "2026-10-18T11:59:22.988069+00:00",
+      "finished_at": "2026-10-18T11:59:28.449833+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": true
+    },
+    {
+      "id": 321,
+      "source_id": 9,
+      "started_at": "2026-10-18T11:26:22.996255+00:00",
+      "finished_at": "2026-10-18T11:26:35.011508+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": true
+    },
+    {
+      "id": 320,
+      "source_id": 10,
+      "started_at": "2026-10-18T11:26:22.985902+00:00",
+      "finished_at": "2026-10-18T11:26:23.640828+00:00",
+      "status": "FAILED",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": null
+    },
+    {
+      "id": 319,
+      "source_id": 2,
+      "started_at": "2026-10-18T10:58:23.207547+00:00",
+      "finished_at": "2026-10-18T10:58:30.565218+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": true
+    },
+    {
+      "id": 318,
+      "source_id": 1,
+      "started_at": "2026-10-18T10:58:23.160444+00:00",
+      "finished_at": "2026-10-18T10:58:28.023895+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": true
+    },
+    {
+      "id": 317,
+      "source_id": 2,
+      "started_at": "2026-10-18T09:57:27.418077+00:00",
+      "finished_at": "2026-10-18T09:57:35.899837+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": true
+    },
+    {
+      "id": 316,
+      "source_id": 1,
+      "started_at": "2026-10-18T09:57:27.291603+00:00",
+      "finished_at": "2026-10-18T09:57:35.767967+00:00",
+      "status": "FAILED",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": null
+    },
+    {
+      "id": 315,
+      "source_id": 2,
+      "started_at": "2026-10-18T08:56:55.960596+00:00",
+      "finished_at": "2026-10-18T08:57:02.846102+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "removed_records_count": 0,
+      "pagination_complete": true
+    }
+  ]
+}

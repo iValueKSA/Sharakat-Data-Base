@@ -1,0 +1,316 @@
+{
+  "http": 200,
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "name": "1920x1080",
+      "scrollWidth": 1920,
+      "mapWidth": 1470,
+      "mapHeight": 440,
+      "overflowers": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "classes": "leaflet-proxy leaflet-zoom-animated",
+          "width": 0,
+          "right": 10551
+        }
+      ],
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "name": "1440x900",
+      "scrollWidth": 1440,
+      "mapWidth": 1052,
+      "mapHeight": 440,
+      "overflowers": [
+        {
+          "tag": "IMG",
+          "id": "",
+          "classes": "leaflet-tile",
+          "width": 256,
+          "right": 1604
+        },
+        {
+          "tag": "IMG",
+          "id": "",
+          "classes": "leaflet-tile",
+          "width": 256,
+          "right": 1604
+        },
+        {
+          "tag": "IMG",
+          "id": "",
+          "classes": "leaflet-tile",
+          "width": 256,
+          "right": 1604
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "classes": "leaflet-proxy leaflet-zoom-animated",
+          "width": 0,
+          "right": 10311
+        }
+      ],
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "name": "1366x768",
+      "scrollWidth": 1366,
+      "mapWidth": 982,
+      "mapHeight": 440,
+      "overflowers": [
+        {
+          "tag": "IMG",
+          "id": "",
+          "classes": "leaflet-tile",
+          "width": 256,
+          "right": 1602
+        },
+        {
+          "tag": "IMG",
+          "id": "",
+          "classes": "leaflet-tile",
+          "width": 256,
+          "right": 1602
+        },
+        {
+          "tag": "IMG",
+          "id": "",
+          "classes": "leaflet-tile",
+          "width": 256,
+          "right": 1602
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "classes": "leaflet-proxy leaflet-zoom-animated",
+          "width": 0,
+          "right": 10274
+        }
+      ],
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "name": "768x900",
+      "scrollWidth": 768,
+      "mapWidth": 680,
+      "mapHeight": 400,
+      "overflowers": [
+        {
+          "tag": "ASIDE",
+          "id": "sidebar",
+          "classes": "sidebar",
+          "width": 320,
+          "right": 1104
+        },
+        {
+          "tag": "A",
+          "id": "brand",
+          "classes": "brand",
+          "width": 284,
+          "right": 1086
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "classes": "brand-copy",
+          "width": 87,
+          "right": 1078
+        },
+        {
+          "tag": "B",
+          "id": "",
+          "classes": "",
+          "width": 87,
+          "right": 1078
+        },
+        {
+          "tag": "SMALL",
+          "id": "",
+          "classes": "",
+          "width": 87,
+          "right": 1078
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "classes": "authority-lockup",
+          "width": 284,
+          "right": 1086
+        },
+        {
+          "tag": "IMG",
+          "id": "",
+          "classes": "authority-logo",
+          "width": 143,
+          "right": 1070
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "classes": "workspace-label",
+          "width": 284,
+          "right": 1086
+        }
+      ],
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "name": "390x844",
+      "scrollWidth": 390,
+      "mapWidth": 340,
+      "mapHeight": 360,
+      "overflowers": [
+        {
+          "tag": "ASIDE",
+          "id": "sidebar",
+          "classes": "sidebar",
+          "width": 320,
+          "right": 726
+        },
+        {
+          "tag": "A",
+          "id": "brand",
+          "classes": "brand",
+          "width": 284,
+          "right": 708
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "classes": "brand-copy",
+          "width": 87,
+          "right": 708
+        },
+        {
+          "tag": "B",
+          "id": "",
+          "classes": "",
+          "width": 87,
+          "right": 708
+        },
+        {
+          "tag": "SMALL",
+          "id": "",
+          "classes": "",
+          "width": 87,
+          "right": 708
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "classes": "authority-lockup",
+          "width": 284,
+          "right": 708
+        },
+        {
+          "tag": "IMG",
+          "id": "",
+          "classes": "authority-logo",
+          "width": 143,
+          "right": 692
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "classes": "workspace-label",
+          "width": 284,
+          "right": 708
+        }
+      ],
+      "noHorizontalOverflow": true
+    }
+  ],
+  "charts": {
+    "dashBySector": {
+      "svg": true,
+      "marks": 60
+    },
+    "dashByStatus": {
+      "svg": true,
+      "marks": 18
+    },
+    "dashBySource": {
+      "svg": true,
+      "marks": 30
+    },
+    "dashByOwner": {
+      "svg": true,
+      "marks": 21
+    },
+    "dashByActivity": {
+      "svg": false,
+      "marks": 0
+    },
+    "dashByType": {
+      "svg": true,
+      "marks": 60
+    },
+    "dashByLocation": {
+      "svg": true,
+      "marks": 24
+    },
+    "dashTimeline": {
+      "svg": true,
+      "marks": 1
+    },
+    "dashDeadlineTrend": {
+      "svg": true,
+      "marks": 13
+    }
+  },
+  "geo": {
+    "text": "إجمالي الفرص ضمن المرشحات\n289\nنقاط موثقة على الخريطة\n175\nبدون إحداثيات\n113\nخارج الحد الإداري\n1\nإحداثيات غير مثبتة بالمصدر\n0\nغير ممثلة على الخريطة\n114",
+    "mapHeight": 440,
+    "points": 8
+  },
+  "checks": {
+    "heatToggleShowsCanvas": true,
+    "clusterModeShowsMarkers": true,
+    "clusterDebug": 1,
+    "globalFilterUpdatesChartsAndMap": true,
+    "chartKeyboardDrilldown": true,
+    "apiTotalsCanonical": true,
+    "tenSourceRows": true,
+    "recentTableUsesLiveData": true,
+    "apiUiCountMatch": true,
+    "mapIdDrilldown": true,
+    "activityEmptyState": true,
+    "tileFailureShowsNotice": true,
+    "tileFailureKeepsBoundary": true,
+    "tileFailureKeepsOpportunityClusters": true,
+    "deadlineDrilldown": true
+  },
+  "initialUiTotal": 289,
+  "recentRows": 8,
+  "deadlineDrilldown": true,
+  "api": {
+    "total": 289,
+    "enabledSources": 10,
+    "sourceRows": 10,
+    "sectorsSum": 289,
+    "statusesSum": 289,
+    "typesSum": 289,
+    "mapped": 175,
+    "unmapped": 114
+  },
+  "errors": [],
+  "expectedAuthWarnings": [
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+  ],
+  "ok": true
+}

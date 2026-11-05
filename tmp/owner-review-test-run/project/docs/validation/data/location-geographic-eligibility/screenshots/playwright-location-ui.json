@@ -1,0 +1,63 @@
+{
+  "validated_at": "2026-10-19T08:55:36.998Z",
+  "direction": "rtl",
+  "location_option": {
+    "value": "al_ahsa_governorate",
+    "label": "الأحساء"
+  },
+  "filter_count": "عرض 1–50 من 260 فرصة",
+  "csv_href": "/api/export.csv?location=al_ahsa_governorate",
+  "xlsx_href": "/api/export.xlsx?location=al_ahsa_governorate",
+  "search_44826_rows": 1,
+  "detail_has_al_ahsa": true,
+  "pagination_after_next": "صفحة 2 من 6",
+  "reset_count": "عرض 1–50 من 291 فرصة",
+  "responsive": [
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "scrollWidth": 1920,
+      "controls": 14,
+      "controlsOutside": []
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollWidth": 1440,
+      "controls": 14,
+      "controlsOutside": []
+    },
+    {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "scrollWidth": 1366,
+      "controls": 14,
+      "controlsOutside": []
+    },
+    {
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "scrollWidth": 768,
+      "controls": 14,
+      "controlsOutside": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollWidth": 390,
+      "controls": 14,
+      "controlsOutside": []
+    }
+  ],
+  "failures": []
+}

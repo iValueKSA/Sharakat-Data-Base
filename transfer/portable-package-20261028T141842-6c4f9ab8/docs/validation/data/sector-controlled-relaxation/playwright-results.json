@@ -1,0 +1,322 @@
+{
+  "started_at": "2026-10-21T11:48:29.004Z",
+  "base_url": "http://localhost:8080",
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "rtl": true,
+      "no_horizontal_overflow": true,
+      "dashboard_total": 525,
+      "sector_bucket_sum": 525
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "rtl": true,
+      "no_horizontal_overflow": true,
+      "dashboard_total": 525,
+      "sector_bucket_sum": 525
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "rtl": true,
+      "no_horizontal_overflow": true,
+      "dashboard_total": 525,
+      "sector_bucket_sum": 525
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "rtl": true,
+      "no_horizontal_overflow": true,
+      "dashboard_total": 525,
+      "sector_bucket_sum": 525
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "rtl": true,
+      "no_horizontal_overflow": true,
+      "dashboard_total": 525,
+      "sector_bucket_sum": 525
+    }
+  ],
+  "sector_counts": {
+    "total": 525,
+    "sector:unspecified": {
+      "label": "غير محدد",
+      "count": 343
+    },
+    "sector:commercial": {
+      "label": "تجاري",
+      "count": 77
+    },
+    "sector:industrial": {
+      "label": "صناعي",
+      "count": 59
+    },
+    "sector:other": {
+      "label": "أخرى",
+      "count": 13
+    },
+    "sector:environment": {
+      "label": "البيئة",
+      "count": 8
+    },
+    "sector:real_estate": {
+      "label": "العقارات والإنشاءات",
+      "count": 7
+    },
+    "sector:financial_services": {
+      "label": "الخدمات المالية",
+      "count": 5
+    },
+    "sector:logistics": {
+      "label": "الخدمات اللوجستية",
+      "count": 4
+    },
+    "sector:healthcare": {
+      "label": "الرعاية الصحية",
+      "count": 4
+    },
+    "sector:education": {
+      "label": "التعليم",
+      "count": 3
+    },
+    "sector:agriculture": {
+      "label": "الزراعة",
+      "count": 1
+    },
+    "sector:tourism": {
+      "label": "السياحة",
+      "count": 1
+    }
+  },
+  "filter_checks": [
+    {
+      "viewport": "1920x1080",
+      "sector_id": "sector:unspecified",
+      "label": "غير محدد",
+      "expected_count": 343,
+      "displayed_count_text": "عرض 1–50 من 343 فرصة",
+      "visible_rows": 50,
+      "returned_sector_labels": [
+        "غير محدد"
+      ]
+    },
+    {
+      "viewport": "1920x1080",
+      "sector_id": "sector:tourism",
+      "label": "السياحة",
+      "expected_count": 1,
+      "displayed_count_text": "عرض 1–1 من 1 فرصة",
+      "visible_rows": 1,
+      "returned_sector_labels": [
+        "السياحة"
+      ]
+    },
+    {
+      "viewport": "1920x1080",
+      "sector_id": "sector:agriculture",
+      "label": "الزراعة",
+      "expected_count": 1,
+      "displayed_count_text": "عرض 1–1 من 1 فرصة",
+      "visible_rows": 1,
+      "returned_sector_labels": [
+        "الزراعة"
+      ]
+    },
+    {
+      "viewport": "1920x1080",
+      "sector_id": "sector:other",
+      "label": "أخرى",
+      "expected_count": 13,
+      "displayed_count_text": "عرض 1–13 من 13 فرصة",
+      "visible_rows": 13,
+      "returned_sector_labels": [
+        "أخرى"
+      ]
+    },
+    {
+      "viewport": "1440x900",
+      "sector_id": "sector:unspecified",
+      "label": "غير محدد",
+      "expected_count": 343,
+      "displayed_count_text": "عرض 1–50 من 343 فرصة",
+      "visible_rows": 50,
+      "returned_sector_labels": [
+        "غير محدد"
+      ]
+    },
+    {
+      "viewport": "1440x900",
+      "sector_id": "sector:tourism",
+      "label": "السياحة",
+      "expected_count": 1,
+      "displayed_count_text": "عرض 1–1 من 1 فرصة",
+      "visible_rows": 1,
+      "returned_sector_labels": [
+        "السياحة"
+      ]
+    },
+    {
+      "viewport": "1440x900",
+      "sector_id": "sector:agriculture",
+      "label": "الزراعة",
+      "expected_count": 1,
+      "displayed_count_text": "عرض 1–1 من 1 فرصة",
+      "visible_rows": 1,
+      "returned_sector_labels": [
+        "الزراعة"
+      ]
+    },
+    {
+      "viewport": "1440x900",
+      "sector_id": "sector:other",
+      "label": "أخرى",
+      "expected_count": 13,
+      "displayed_count_text": "عرض 1–13 من 13 فرصة",
+      "visible_rows": 13,
+      "returned_sector_labels": [
+        "أخرى"
+      ]
+    },
+    {
+      "viewport": "1366x768",
+      "sector_id": "sector:unspecified",
+      "label": "غير محدد",
+      "expected_count": 343,
+      "displayed_count_text": "عرض 1–50 من 343 فرصة",
+      "visible_rows": 50,
+      "returned_sector_labels": [
+        "غير محدد"
+      ]
+    },
+    {
+      "viewport": "1366x768",
+      "sector_id": "sector:tourism",
+      "label": "السياحة",
+      "expected_count": 1,
+      "displayed_count_text": "عرض 1–1 من 1 فرصة",
+      "visible_rows": 1,
+      "returned_sector_labels": [
+        "السياحة"
+      ]
+    },
+    {
+      "viewport": "1366x768",
+      "sector_id": "sector:agriculture",
+      "label": "الزراعة",
+      "expected_count": 1,
+      "displayed_count_text": "عرض 1–1 من 1 فرصة",
+      "visible_rows": 1,
+      "returned_sector_labels": [
+        "الزراعة"
+      ]
+    },
+    {
+      "viewport": "1366x768",
+      "sector_id": "sector:other",
+      "label": "أخرى",
+      "expected_count": 13,
+      "displayed_count_text": "عرض 1–13 من 13 فرصة",
+      "visible_rows": 13,
+      "returned_sector_labels": [
+        "أخرى"
+      ]
+    },
+    {
+      "viewport": "768x900",
+      "sector_id": "sector:unspecified",
+      "label": "غير محدد",
+      "expected_count": 343,
+      "displayed_count_text": "عرض 1–50 من 343 فرصة",
+      "visible_rows": 50,
+      "returned_sector_labels": [
+        "غير محدد"
+      ]
+    },
+    {
+      "viewport": "768x900",
+      "sector_id": "sector:tourism",
+      "label": "السياحة",
+      "expected_count": 1,
+      "displayed_count_text": "عرض 1–1 من 1 فرصة",
+      "visible_rows": 1,
+      "returned_sector_labels": [
+        "السياحة"
+      ]
+    },
+    {
+      "viewport": "768x900",
+      "sector_id": "sector:agriculture",
+      "label": "الزراعة",
+      "expected_count": 1,
+      "displayed_count_text": "عرض 1–1 من 1 فرصة",
+      "visible_rows": 1,
+      "returned_sector_labels": [
+        "الزراعة"
+      ]
+    },
+    {
+      "viewport": "768x900",
+      "sector_id": "sector:other",
+      "label": "أخرى",
+      "expected_count": 13,
+      "displayed_count_text": "عرض 1–13 من 13 فرصة",
+      "visible_rows": 13,
+      "returned_sector_labels": [
+        "أخرى"
+      ]
+    },
+    {
+      "viewport": "390x844",
+      "sector_id": "sector:unspecified",
+      "label": "غير محدد",
+      "expected_count": 343,
+      "displayed_count_text": "عرض 1–50 من 343 فرصة",
+      "visible_rows": 50,
+      "returned_sector_labels": [
+        "غير محدد"
+      ]
+    },
+    {
+      "viewport": "390x844",
+      "sector_id": "sector:tourism",
+      "label": "السياحة",
+      "expected_count": 1,
+      "displayed_count_text": "عرض 1–1 من 1 فرصة",
+      "visible_rows": 1,
+      "returned_sector_labels": [
+        "السياحة"
+      ]
+    },
+    {
+      "viewport": "390x844",
+      "sector_id": "sector:agriculture",
+      "label": "الزراعة",
+      "expected_count": 1,
+      "displayed_count_text": "عرض 1–1 من 1 فرصة",
+      "visible_rows": 1,
+      "returned_sector_labels": [
+        "الزراعة"
+      ]
+    },
+    {
+      "viewport": "390x844",
+      "sector_id": "sector:other",
+      "label": "أخرى",
+      "expected_count": 13,
+      "displayed_count_text": "عرض 1–13 من 13 فرصة",
+      "visible_rows": 13,
+      "returned_sector_labels": [
+        "أخرى"
+      ]
+    }
+  ],
+  "browser_errors": [],
+  "finished_at": "2026-10-21T11:48:42.260Z",
+  "result": "PASS"
+}

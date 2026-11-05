@@ -1,0 +1,97 @@
+{
+  "snapshot_at": "2026-10-20T13:02:54.713210+00:00",
+  "canonical_reason_key_count": 16,
+  "duplicate_semantic_reason_keys_found": 0,
+  "duplicate_semantic_reason_keys_remaining": 0,
+  "normalization_rule": "API keys use one stable key per semantic field, independent of TAXONOMY_CONFLICT versus FIELD_VALUE_CONFLICT storage type; location and identity reviews use canonical domain keys. Historical human-readable notes remain untouched.",
+  "reasons": [
+    {
+      "key": "DUPLICATE_IDENTITY_AMBIGUITY",
+      "label_ar": "تشابه هوية يتطلب التحقق",
+      "open_count": 10
+    },
+    {
+      "key": "DURATION_UNIT_OR_SEMANTICS_UNVERIFIED",
+      "label_ar": "وحدة أو دلالة مدة Furas غير موثقة",
+      "open_count": 93
+    },
+    {
+      "key": "FIELD_CONFLICT:activity",
+      "label_ar": "تعارض النشاط",
+      "open_count": 36
+    },
+    {
+      "key": "FIELD_CONFLICT:full_description",
+      "label_ar": "تعارض الوصف الكامل",
+      "open_count": 2
+    },
+    {
+      "key": "FIELD_CONFLICT:investment_model",
+      "label_ar": "تعارض نموذج الاستثمار",
+      "open_count": 4
+    },
+    {
+      "key": "FIELD_CONFLICT:land_area_sqm",
+      "label_ar": "تعارض المساحة",
+      "open_count": 1
+    },
+    {
+      "key": "FIELD_CONFLICT:location_description",
+      "label_ar": "تعارض وصف الموقع",
+      "open_count": 34
+    },
+    {
+      "key": "FIELD_CONFLICT:normalized_title",
+      "label_ar": "تعارض العنوان المعياري",
+      "open_count": 16
+    },
+    {
+      "key": "FIELD_CONFLICT:opportunity_owner",
+      "label_ar": "تعارض الجهة المالكة",
+      "open_count": 3
+    },
+    {
+      "key": "FIELD_CONFLICT:opportunity_type",
+      "label_ar": "تعارض نوع الفرصة",
+      "open_count": 14
+    },
+    {
+      "key": "FIELD_CONFLICT:sector",
+      "label_ar": "تعارض القطاع",
+      "open_count": 64
+    },
+    {
+      "key": "FIELD_CONFLICT:short_description",
+      "label_ar": "تعارض الوصف المختصر",
+      "open_count": 4
+    },
+    {
+      "key": "FIELD_CONFLICT:sub_activity",
+      "label_ar": "تعارض النشاط الفرعي",
+      "open_count": 1
+    },
+    {
+      "key": "FIELD_CONFLICT:title_ar",
+      "label_ar": "تعارض العنوان العربي",
+      "open_count": 6
+    },
+    {
+      "key": "INVESTMENT_VALUE_ZERO_WITHOUT_UNIT_OR_MEANING",
+      "label_ar": "قيمة استثمار صفرية بلا عملة أو دلالة موثقة",
+      "open_count": 2
+    },
+    {
+      "key": "LOCATION_EVIDENCE_AMBIGUITY",
+      "label_ar": "غموض دليل الموقع أو نطاقه",
+      "open_count": 15
+    }
+  ],
+  "raw_location_reason_variants": [
+    "COORDINATE_TEXT_CONFLICT: Furas source filter includes CITY_ID=104 and the title names Salwa, while the exact source point falls outside the local reference polygon. The polygon is not an official cadastral/planning limit; retain both claims for review.",
+    "Explicit Al-Ahsa evidence appears in descriptive text; verify that the asset itself is located in Al-Ahsa.",
+    "LOCATION_UNSPECIFIED: Project-level locality is absent. The AHDA page breadcrumb/publisher scope does not establish the asset location.",
+    "REGION_ONLY: The source title says Eastern Province only; the project location within the region is not specified.",
+    "Structured location conflicts with a multi-city title; verify a project/site in Al-Ahsa."
+  ],
+  "status": "PASS"
+}

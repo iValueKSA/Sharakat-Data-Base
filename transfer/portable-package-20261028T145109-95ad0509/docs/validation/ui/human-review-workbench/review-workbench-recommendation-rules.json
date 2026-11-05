@@ -1,0 +1,14 @@
+{
+  "current_rule_coverage": "No deterministic recommendation rule is wired into the workbench response; response is NONE with an Arabic reason.",
+  "confidence_categories_implemented": [
+    "NONE"
+  ],
+  "HIGH_MEDIUM_available": false,
+  "recommendation_action": null,
+  "reason": "لا توجد قاعدة حتمية موثوقة لهذه الحالة.",
+  "auto_accept": false,
+  "ambiguous_cases_forced": false,
+  "recommendations_without_explanation": 0,
+  "recommendation_override_count": 0,
+  "limitation": "The UI currently renders an empty recommendation panel fallback; recommendation evidence and override capture need implementation."
+}

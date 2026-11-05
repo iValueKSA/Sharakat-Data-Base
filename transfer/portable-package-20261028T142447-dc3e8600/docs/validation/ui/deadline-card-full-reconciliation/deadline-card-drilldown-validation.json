@@ -1,0 +1,45 @@
+{
+  "captured_at": "2026-10-28T09:35:56.436119+00:00",
+  "filter_semantics": "deadline_status=without_reliable_deadline; intersects the existing ACTIVE status set and excludes valid future canonical deadlines; raw date fields are not promoted.",
+  "categories": [
+    {
+      "key": "7d",
+      "expected_bucket_count": 0,
+      "api_total": 0,
+      "returned": 0,
+      "passed": true
+    },
+    {
+      "key": "8_14d",
+      "expected_bucket_count": 21,
+      "api_total": 21,
+      "returned": 21,
+      "passed": true
+    },
+    {
+      "key": "15_30d",
+      "expected_bucket_count": 39,
+      "api_total": 39,
+      "returned": 39,
+      "passed": true
+    },
+    {
+      "key": "over_30d",
+      "expected_bucket_count": 44,
+      "api_total": 44,
+      "returned": 44,
+      "passed": true
+    },
+    {
+      "key": "no_deadline",
+      "expected_bucket_count": 370,
+      "api_total": 370,
+      "returned": 370,
+      "passed": true
+    }
+  ],
+  "group_union_count": 474,
+  "active_master_count": 474,
+  "click_through_no_deadline_visible_count": 370,
+  "status": "PASSED"
+}

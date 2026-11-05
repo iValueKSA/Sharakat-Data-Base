@@ -1,0 +1,36 @@
+{
+  "layout_before": {
+    "live_source": "pre-rebuild frontend CSS/DOM",
+    "live_column_count": 5,
+    "live_row_count": 1,
+    "card_height_px": {
+      "1920x1080": 167,
+      "1440x900": 167,
+      "1366x768": 167,
+      "768x900": 167,
+      "390x844": 165
+    },
+    "bucket_counts": [0, 21, 39, 44, 370],
+    "card_total": 474,
+    "observed_issues": ["card height and internal spacing were not compact", "outdated frontend asset did not match the local stylesheet"]
+  },
+  "layout_after": {
+    "served_css": "/static/data-dashboard.css?v=13-deadline-single-row",
+    "served_js": "/static/data-dashboard.js?v=deadline-single-row-v17",
+    "live_column_count": 5,
+    "live_row_count": 1,
+    "card_height_px": {
+      "1920x1080": 104,
+      "1440x900": 104,
+      "1366x768": 104,
+      "768x900": 104,
+      "390x844": 102
+    },
+    "bucket_counts": [0, 21, 39, 44, 370],
+    "card_total": 474,
+    "reconciliation": "PASSED"
+  },
+  "bucket_values_changed": false,
+  "deadline_business_logic_changed": false,
+  "height_reduction_from_pre_rebuild_percent": 37.7
+}

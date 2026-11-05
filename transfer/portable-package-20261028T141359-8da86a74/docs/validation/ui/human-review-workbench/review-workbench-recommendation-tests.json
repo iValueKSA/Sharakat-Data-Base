@@ -1,0 +1,73 @@
+{
+  "captured_at": "2026-10-22T14:03:38+03:00",
+  "suite": "Deterministic explainable recommendations",
+  "status": "PASSED",
+  "mapped_scenarios": 10,
+  "pytest_result": "45 passed / 0 failed",
+  "full_regression_result": "438 passed / 0 failed",
+  "environment": "isolated synthetic SQLite; no live review mutation",
+  "suite_note": "Recommendation confidence, evidence, NONE outcomes, snapshot, and stale recommendation version are covered by focused tests.",
+  "scenarios": [
+    {
+      "id": "REC-01",
+      "scenario": "High confidence follows strictly higher authority evidence",
+      "status": "PASS",
+      "evidence": "test_authoritative_source_recommendation_snapshot_and_follow_audit"
+    },
+    {
+      "id": "REC-02",
+      "scenario": "Medium confidence follows accepted canonical provenance rule",
+      "status": "PASS",
+      "evidence": "test_medium_confidence_recommendation_follows_canonical_source_evidence"
+    },
+    {
+      "id": "REC-03",
+      "scenario": "Ambiguous evidence returns NONE",
+      "status": "PASS",
+      "evidence": "test_recommendation_returns_none_when_evidence_does_not_resolve_conflict"
+    },
+    {
+      "id": "REC-04",
+      "scenario": "Missing or mismatched evidence returns NONE",
+      "status": "PASS",
+      "evidence": "test_recommendation_returns_none_when_evidence_does_not_resolve_conflict"
+    },
+    {
+      "id": "REC-05",
+      "scenario": "Recommendation includes a human-readable reason",
+      "status": "PASS",
+      "evidence": "test_authoritative_source_recommendation_snapshot_and_follow_audit"
+    },
+    {
+      "id": "REC-06",
+      "scenario": "Recommendation includes supporting evidence",
+      "status": "PASS",
+      "evidence": "test_authoritative_source_recommendation_snapshot_and_follow_audit"
+    },
+    {
+      "id": "REC-07",
+      "scenario": "Recommendation includes contradictory evidence",
+      "status": "PASS",
+      "evidence": "test_authoritative_source_recommendation_snapshot_and_follow_audit"
+    },
+    {
+      "id": "REC-08",
+      "scenario": "Recommendation version rejects changed rule inputs",
+      "status": "PASS",
+      "evidence": "test_recommendation_version_rejects_changed_rule_inputs_before_decision"
+    },
+    {
+      "id": "REC-09",
+      "scenario": "Decision stores the shown recommendation snapshot",
+      "status": "PASS",
+      "evidence": "test_authoritative_source_recommendation_snapshot_and_follow_audit"
+    },
+    {
+      "id": "REC-10",
+      "scenario": "Recommendation cannot auto-commit a decision",
+      "status": "PASS",
+      "evidence": "test_reviewer_action_contract_disallows_viewer_and_ambiguous_recommendation; Playwright FLOW A"
+    }
+  ],
+  "focused_suite_collected_cases": 45
+}

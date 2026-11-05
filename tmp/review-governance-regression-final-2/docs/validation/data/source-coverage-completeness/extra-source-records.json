@@ -1,0 +1,182 @@
+{
+  "officialCurrentMinusPlatform": {
+    "count": 0,
+    "records": []
+  },
+  "platformCurrentMinusOfficial": {
+    "count": 16,
+    "records": [
+      {
+        "source": "invest-saudi",
+        "externalId": "investsaudi:52080",
+        "dataset": "Investment projects",
+        "class": "current membership absent from fresh official enumeration; missing_checks=0"
+      },
+      {
+        "source": "invest-saudi",
+        "externalId": "investsaudi:51540",
+        "dataset": "Investment projects",
+        "class": "current membership absent from fresh official enumeration; missing_checks=0"
+      },
+      {
+        "source": "invest-saudi",
+        "externalId": "investsaudi:51539",
+        "dataset": "Investment projects",
+        "class": "current membership absent from fresh official enumeration; missing_checks=0"
+      },
+      {
+        "source": "invest-saudi",
+        "externalId": "investsaudi:51538",
+        "dataset": "Investment projects",
+        "class": "current membership absent from fresh official enumeration; missing_checks=0"
+      },
+      {
+        "source": "invest-saudi",
+        "externalId": "investsaudi:51537",
+        "dataset": "Investment projects",
+        "class": "current membership absent from fresh official enumeration; missing_checks=0"
+      },
+      {
+        "source": "invest-saudi",
+        "externalId": "investsaudi:51536",
+        "dataset": "Investment projects",
+        "class": "current membership absent from fresh official enumeration; missing_checks=0"
+      },
+      {
+        "source": "invest-saudi",
+        "externalId": "investsaudi:51535",
+        "dataset": "Investment projects",
+        "class": "current membership absent from fresh official enumeration; missing_checks=0"
+      },
+      {
+        "source": "invest-saudi",
+        "externalId": "investsaudi:51522",
+        "dataset": "Investment projects",
+        "class": "current membership absent from fresh official enumeration; missing_checks=0"
+      },
+      {
+        "source": "invest-saudi",
+        "externalId": "investsaudi:51518",
+        "dataset": "Investment projects",
+        "class": "current membership absent from fresh official enumeration; missing_checks=0"
+      },
+      {
+        "source": "invest-saudi",
+        "externalId": "investsaudi:51517",
+        "dataset": "Investment projects",
+        "class": "current membership absent from fresh official enumeration; missing_checks=0"
+      },
+      {
+        "source": "invest-saudi",
+        "externalId": "investsaudi:55062",
+        "dataset": "Investment projects",
+        "class": "current membership absent from fresh official enumeration; missing_checks=0"
+      },
+      {
+        "source": "invest-saudi",
+        "externalId": "investsaudi:55057",
+        "dataset": "Investment projects",
+        "class": "current membership absent from fresh official enumeration; missing_checks=0"
+      },
+      {
+        "source": "invest-saudi",
+        "externalId": "investsaudi:55046",
+        "dataset": "Investment projects",
+        "class": "current membership absent from fresh official enumeration; missing_checks=0"
+      },
+      {
+        "source": "kfu",
+        "externalId": "kfu-announcement:d20b35b7faa10dadaf813279",
+        "status": "حالة غير معروفة",
+        "masterId": null,
+        "class": "absent from fresh successful enumeration; removal threshold not reached; missing_checks=0"
+      },
+      {
+        "source": "kfu",
+        "externalId": "kfu-announcement:386b36399fd270bfa5c772e0",
+        "status": "حالة غير معروفة",
+        "masterId": null,
+        "class": "absent from fresh successful enumeration; removal threshold not reached; missing_checks=0"
+      },
+      {
+        "source": "kfu",
+        "externalId": "kfu-announcement:99442b845172484870ec5665",
+        "status": "حالة غير معروفة",
+        "masterId": null,
+        "class": "absent from fresh successful enumeration; removal threshold not reached; missing_checks=0"
+      }
+    ]
+  },
+  "preservedHistorical": {
+    "furasRemoved": [
+      {
+        "externalId": "02-23-017001-14002",
+        "masterId": 15,
+        "missingChecks": 16
+      },
+      {
+        "externalId": "02-25-017001-7001",
+        "masterId": 23,
+        "missingChecks": 70
+      },
+      {
+        "externalId": "02-25-017001-22001",
+        "masterId": 25,
+        "missingChecks": 16
+      },
+      {
+        "externalId": "02-25-017001-36002",
+        "masterId": 26,
+        "missingChecks": 70
+      },
+      {
+        "externalId": "25-09-1976186",
+        "masterId": 30,
+        "missingChecks": 20
+      },
+      {
+        "externalId": "02-25-017001-64001",
+        "masterId": 35,
+        "missingChecks": 20
+      },
+      {
+        "externalId": "02-26-017001-1",
+        "masterId": 69,
+        "missingChecks": 70
+      },
+      {
+        "externalId": "26-09-2422346",
+        "masterId": 90,
+        "missingChecks": 20
+      },
+      {
+        "externalId": "26-09-2422553",
+        "masterId": 91,
+        "missingChecks": 28
+      },
+      {
+        "externalId": "02-23-017001-14003",
+        "masterId": 109,
+        "missingChecks": 16
+      },
+      {
+        "externalId": "02-25-017001-77007",
+        "masterId": 122,
+        "missingChecks": 70
+      },
+      {
+        "externalId": "26-09-2422468",
+        "masterId": 138,
+        "missingChecks": 28
+      },
+      {
+        "externalId": "26-09-2422527",
+        "masterId": 139,
+        "missingChecks": 20
+      }
+    ],
+    "count": 13
+  },
+  "unexplainedExtraSourceRecords": 16,
+  "policy": "No guessed removals; wait for natural complete scheduled reconciliation."
+}

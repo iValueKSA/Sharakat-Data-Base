@@ -1,0 +1,606 @@
+{
+  "phrase_count": 17,
+  "phrases": [
+    {
+      "phrase": "مستشفى",
+      "sector_id": "sector:healthcare",
+      "unspecified_occurrences": 5,
+      "labeled_occurrences": 4,
+      "labeled_sector_distribution": {
+        "sector:other": 3,
+        "sector:healthcare": 1
+      },
+      "dominant_sector_id": "sector:other",
+      "purity_percentage": 75.0,
+      "group": "AMBIGUOUS"
+    },
+    {
+      "phrase": "تمور",
+      "sector_id": "sector:agriculture",
+      "unspecified_occurrences": 1,
+      "labeled_occurrences": 1,
+      "labeled_sector_distribution": {
+        "sector:agriculture": 1
+      },
+      "dominant_sector_id": "sector:agriculture",
+      "purity_percentage": 100.0,
+      "group": "AMBIGUOUS"
+    },
+    {
+      "phrase": "نخيل",
+      "sector_id": "sector:agriculture",
+      "unspecified_occurrences": 1,
+      "labeled_occurrences": 0,
+      "labeled_sector_distribution": {},
+      "dominant_sector_id": null,
+      "purity_percentage": null,
+      "group": "NO_LABELED_SUPPORT"
+    },
+    {
+      "phrase": "school",
+      "sector_id": "sector:education",
+      "unspecified_occurrences": 0,
+      "labeled_occurrences": 2,
+      "labeled_sector_distribution": {
+        "sector:healthcare": 1,
+        "sector:education": 1
+      },
+      "dominant_sector_id": "sector:healthcare",
+      "purity_percentage": 50.0,
+      "group": "AMBIGUOUS"
+    },
+    {
+      "phrase": "waste treatment",
+      "sector_id": "sector:environment",
+      "unspecified_occurrences": 0,
+      "labeled_occurrences": 5,
+      "labeled_sector_distribution": {
+        "sector:environment": 5
+      },
+      "dominant_sector_id": "sector:environment",
+      "purity_percentage": 100.0,
+      "group": "HIGHLY_DISCRIMINATIVE"
+    },
+    {
+      "phrase": "أنشطة التجارة العامة",
+      "sector_id": "sector:commercial",
+      "unspecified_occurrences": 0,
+      "labeled_occurrences": 8,
+      "labeled_sector_distribution": {
+        "sector:commercial": 8
+      },
+      "dominant_sector_id": "sector:commercial",
+      "purity_percentage": 100.0,
+      "group": "HIGHLY_DISCRIMINATIVE"
+    },
+    {
+      "phrase": "تصنيع",
+      "sector_id": "sector:industrial",
+      "unspecified_occurrences": 0,
+      "labeled_occurrences": 1,
+      "labeled_sector_distribution": {
+        "sector:agriculture": 1
+      },
+      "dominant_sector_id": "sector:agriculture",
+      "purity_percentage": 100.0,
+      "group": "AMBIGUOUS"
+    },
+    {
+      "phrase": "فنادق",
+      "sector_id": "sector:tourism",
+      "unspecified_occurrences": 0,
+      "labeled_occurrences": 1,
+      "labeled_sector_distribution": {
+        "sector:tourism": 1
+      },
+      "dominant_sector_id": "sector:tourism",
+      "purity_percentage": 100.0,
+      "group": "AMBIGUOUS"
+    },
+    {
+      "phrase": "فندق",
+      "sector_id": "sector:tourism",
+      "unspecified_occurrences": 0,
+      "labeled_occurrences": 1,
+      "labeled_sector_distribution": {
+        "sector:education": 1
+      },
+      "dominant_sector_id": "sector:education",
+      "purity_percentage": 100.0,
+      "group": "AMBIGUOUS"
+    },
+    {
+      "phrase": "محلات تجارية",
+      "sector_id": "sector:commercial",
+      "unspecified_occurrences": 0,
+      "labeled_occurrences": 3,
+      "labeled_sector_distribution": {
+        "sector:commercial": 3
+      },
+      "dominant_sector_id": "sector:commercial",
+      "purity_percentage": 100.0,
+      "group": "HIGHLY_DISCRIMINATIVE"
+    },
+    {
+      "phrase": "مدارس",
+      "sector_id": "sector:education",
+      "unspecified_occurrences": 0,
+      "labeled_occurrences": 1,
+      "labeled_sector_distribution": {
+        "sector:healthcare": 1
+      },
+      "dominant_sector_id": "sector:healthcare",
+      "purity_percentage": 100.0,
+      "group": "AMBIGUOUS"
+    },
+    {
+      "phrase": "مدرسة",
+      "sector_id": "sector:education",
+      "unspecified_occurrences": 0,
+      "labeled_occurrences": 1,
+      "labeled_sector_distribution": {
+        "sector:tourism": 1
+      },
+      "dominant_sector_id": "sector:tourism",
+      "purity_percentage": 100.0,
+      "group": "AMBIGUOUS"
+    },
+    {
+      "phrase": "مركز تجاري",
+      "sector_id": "sector:commercial",
+      "unspecified_occurrences": 0,
+      "labeled_occurrences": 9,
+      "labeled_sector_distribution": {
+        "sector:commercial": 9
+      },
+      "dominant_sector_id": "sector:commercial",
+      "purity_percentage": 100.0,
+      "group": "HIGHLY_DISCRIMINATIVE"
+    },
+    {
+      "phrase": "مزرعة",
+      "sector_id": "sector:agriculture",
+      "unspecified_occurrences": 0,
+      "labeled_occurrences": 1,
+      "labeled_sector_distribution": {
+        "sector:agriculture": 1
+      },
+      "dominant_sector_id": "sector:agriculture",
+      "purity_percentage": 100.0,
+      "group": "AMBIGUOUS"
+    },
+    {
+      "phrase": "مصانع",
+      "sector_id": "sector:industrial",
+      "unspecified_occurrences": 0,
+      "labeled_occurrences": 49,
+      "labeled_sector_distribution": {
+        "sector:commercial": 4,
+        "sector:industrial": 45
+      },
+      "dominant_sector_id": "sector:industrial",
+      "purity_percentage": 91.84,
+      "group": "HIGHLY_DISCRIMINATIVE"
+    },
+    {
+      "phrase": "مصنع",
+      "sector_id": "sector:industrial",
+      "unspecified_occurrences": 0,
+      "labeled_occurrences": 10,
+      "labeled_sector_distribution": {
+        "sector:industrial": 9,
+        "sector:other": 1
+      },
+      "dominant_sector_id": "sector:industrial",
+      "purity_percentage": 90.0,
+      "group": "HIGHLY_DISCRIMINATIVE"
+    },
+    {
+      "phrase": "منتجع",
+      "sector_id": "sector:tourism",
+      "unspecified_occurrences": 0,
+      "labeled_occurrences": 2,
+      "labeled_sector_distribution": {
+        "sector:commercial": 1,
+        "sector:tourism": 1
+      },
+      "dominant_sector_id": "sector:commercial",
+      "purity_percentage": 50.0,
+      "group": "AMBIGUOUS"
+    }
+  ],
+  "generic_phrase_count": 23,
+  "generic_phrase_analysis": [
+    {
+      "normalized_phrase": "تاجير",
+      "spelling_variants": [
+        "تأجير",
+        "تاجير"
+      ],
+      "unspecified_occurrences": 370,
+      "labeled_occurrences": 5,
+      "labeled_sector_distribution": {
+        "sector:other": 4,
+        "sector:tourism": 1
+      },
+      "dominant_sector_id": "sector:other",
+      "purity_percentage": 80.0,
+      "group": "GENERIC",
+      "rule_recommendation": "DO_NOT_USE_ALONE"
+    },
+    {
+      "normalized_phrase": "موقع",
+      "spelling_variants": [
+        "موقع"
+      ],
+      "unspecified_occurrences": 368,
+      "labeled_occurrences": 7,
+      "labeled_sector_distribution": {
+        "sector:other": 4,
+        "sector:commercial": 1,
+        "sector:tourism": 1,
+        "sector:agriculture": 1
+      },
+      "dominant_sector_id": "sector:other",
+      "purity_percentage": 57.14,
+      "group": "GENERIC",
+      "rule_recommendation": "DO_NOT_USE_ALONE"
+    },
+    {
+      "normalized_phrase": "ارض",
+      "spelling_variants": [
+        "أرض",
+        "ارض"
+      ],
+      "unspecified_occurrences": 5,
+      "labeled_occurrences": 0,
+      "labeled_sector_distribution": {},
+      "dominant_sector_id": null,
+      "purity_percentage": null,
+      "group": "GENERIC",
+      "rule_recommendation": "DO_NOT_USE_ALONE"
+    },
+    {
+      "normalized_phrase": "انشاء",
+      "spelling_variants": [
+        "إنشاء",
+        "انشاء"
+      ],
+      "unspecified_occurrences": 5,
+      "labeled_occurrences": 102,
+      "labeled_sector_distribution": {
+        "sector:commercial": 36,
+        "sector:industrial": 58,
+        "sector:other": 5,
+        "sector:tourism": 1,
+        "sector:agriculture": 1,
+        "sector:education": 1
+      },
+      "dominant_sector_id": "sector:industrial",
+      "purity_percentage": 56.86,
+      "group": "GENERIC",
+      "rule_recommendation": "DO_NOT_USE_ALONE"
+    },
+    {
+      "normalized_phrase": "تشغيل",
+      "spelling_variants": [
+        "تشغيل"
+      ],
+      "unspecified_occurrences": 5,
+      "labeled_occurrences": 102,
+      "labeled_sector_distribution": {
+        "sector:commercial": 37,
+        "sector:industrial": 59,
+        "sector:other": 5,
+        "sector:healthcare": 1
+      },
+      "dominant_sector_id": "sector:industrial",
+      "purity_percentage": 57.84,
+      "group": "GENERIC",
+      "rule_recommendation": "DO_NOT_USE_ALONE"
+    },
+    {
+      "normalized_phrase": "خدمات",
+      "spelling_variants": [
+        "خدمات"
+      ],
+      "unspecified_occurrences": 5,
+      "labeled_occurrences": 6,
+      "labeled_sector_distribution": {
+        "sector:healthcare": 3,
+        "sector:logistics": 3
+      },
+      "dominant_sector_id": "sector:healthcare",
+      "purity_percentage": 50.0,
+      "group": "GENERIC",
+      "rule_recommendation": "DO_NOT_USE_ALONE"
+    },
+    {
+      "normalized_phrase": "استثمار",
+      "spelling_variants": [
+        "استثمار"
+      ],
+      "unspecified_occurrences": 4,
+      "labeled_occurrences": 10,
+      "labeled_sector_distribution": {
+        "sector:commercial": 3,
+        "sector:tourism": 1,
+        "sector:healthcare": 3,
+        "sector:agriculture": 1,
+        "sector:education": 1,
+        "sector:other": 1
+      },
+      "dominant_sector_id": "sector:commercial",
+      "purity_percentage": 30.0,
+      "group": "GENERIC",
+      "rule_recommendation": "DO_NOT_USE_ALONE"
+    },
+    {
+      "normalized_phrase": "فرصه",
+      "spelling_variants": [
+        "فرصة"
+      ],
+      "unspecified_occurrences": 3,
+      "labeled_occurrences": 0,
+      "labeled_sector_distribution": {},
+      "dominant_sector_id": null,
+      "purity_percentage": null,
+      "group": "GENERIC",
+      "rule_recommendation": "DO_NOT_USE_ALONE"
+    },
+    {
+      "normalized_phrase": "investment",
+      "spelling_variants": [
+        "investment"
+      ],
+      "unspecified_occurrences": 1,
+      "labeled_occurrences": 7,
+      "labeled_sector_distribution": {
+        "sector:environment": 7
+      },
+      "dominant_sector_id": "sector:environment",
+      "purity_percentage": 100.0,
+      "group": "GENERIC",
+      "rule_recommendation": "DO_NOT_USE_ALONE"
+    },
+    {
+      "normalized_phrase": "operation",
+      "spelling_variants": [
+        "operation"
+      ],
+      "unspecified_occurrences": 1,
+      "labeled_occurrences": 4,
+      "labeled_sector_distribution": {
+        "sector:environment": 3,
+        "sector:logistics": 1
+      },
+      "dominant_sector_id": "sector:environment",
+      "purity_percentage": 75.0,
+      "group": "GENERIC",
+      "rule_recommendation": "DO_NOT_USE_ALONE"
+    },
+    {
+      "normalized_phrase": "project",
+      "spelling_variants": [
+        "project"
+      ],
+      "unspecified_occurrences": 1,
+      "labeled_occurrences": 9,
+      "labeled_sector_distribution": {
+        "sector:environment": 7,
+        "sector:logistics": 2
+      },
+      "dominant_sector_id": "sector:environment",
+      "purity_percentage": 77.78,
+      "group": "GENERIC",
+      "rule_recommendation": "DO_NOT_USE_ALONE"
+    },
+    {
+      "normalized_phrase": "site",
+      "spelling_variants": [
+        "site"
+      ],
+      "unspecified_occurrences": 1,
+      "labeled_occurrences": 1,
+      "labeled_sector_distribution": {
+        "sector:environment": 1
+      },
+      "dominant_sector_id": "sector:environment",
+      "purity_percentage": 100.0,
+      "group": "GENERIC",
+      "rule_recommendation": "DO_NOT_USE_ALONE"
+    },
+    {
+      "normalized_phrase": "تطوير",
+      "spelling_variants": [
+        "تطوير"
+      ],
+      "unspecified_occurrences": 1,
+      "labeled_occurrences": 6,
+      "labeled_sector_distribution": {
+        "sector:commercial": 1,
+        "sector:industrial": 1,
+        "sector:tourism": 1,
+        "sector:healthcare": 2,
+        "sector:education": 1
+      },
+      "dominant_sector_id": "sector:healthcare",
+      "purity_percentage": 33.33,
+      "group": "GENERIC",
+      "rule_recommendation": "DO_NOT_USE_ALONE"
+    },
+    {
+      "normalized_phrase": "مبني",
+      "spelling_variants": [
+        "مبنى"
+      ],
+      "unspecified_occurrences": 1,
+      "labeled_occurrences": 2,
+      "labeled_sector_distribution": {
+        "sector:commercial": 2
+      },
+      "dominant_sector_id": "sector:commercial",
+      "purity_percentage": 100.0,
+      "group": "GENERIC",
+      "rule_recommendation": "DO_NOT_USE_ALONE"
+    },
+    {
+      "normalized_phrase": "مشروع",
+      "spelling_variants": [
+        "مشروع"
+      ],
+      "unspecified_occurrences": 1,
+      "labeled_occurrences": 2,
+      "labeled_sector_distribution": {
+        "sector:tourism": 1,
+        "sector:other": 1
+      },
+      "dominant_sector_id": "sector:tourism",
+      "purity_percentage": 50.0,
+      "group": "GENERIC",
+      "rule_recommendation": "DO_NOT_USE_ALONE"
+    },
+    {
+      "normalized_phrase": "activity",
+      "spelling_variants": [
+        "activity"
+      ],
+      "unspecified_occurrences": 0,
+      "labeled_occurrences": 0,
+      "labeled_sector_distribution": {},
+      "dominant_sector_id": null,
+      "purity_percentage": null,
+      "group": "GENERIC",
+      "rule_recommendation": "DO_NOT_USE_ALONE"
+    },
+    {
+      "normalized_phrase": "building",
+      "spelling_variants": [
+        "building"
+      ],
+      "unspecified_occurrences": 0,
+      "labeled_occurrences": 0,
+      "labeled_sector_distribution": {},
+      "dominant_sector_id": null,
+      "purity_percentage": null,
+      "group": "GENERIC",
+      "rule_recommendation": "DO_NOT_USE_ALONE"
+    },
+    {
+      "normalized_phrase": "development",
+      "spelling_variants": [
+        "development"
+      ],
+      "unspecified_occurrences": 0,
+      "labeled_occurrences": 4,
+      "labeled_sector_distribution": {
+        "sector:environment": 4
+      },
+      "dominant_sector_id": "sector:environment",
+      "purity_percentage": 100.0,
+      "group": "GENERIC",
+      "rule_recommendation": "DO_NOT_USE_ALONE"
+    },
+    {
+      "normalized_phrase": "facility",
+      "spelling_variants": [
+        "facility"
+      ],
+      "unspecified_occurrences": 0,
+      "labeled_occurrences": 4,
+      "labeled_sector_distribution": {
+        "sector:environment": 4
+      },
+      "dominant_sector_id": "sector:environment",
+      "purity_percentage": 100.0,
+      "group": "GENERIC",
+      "rule_recommendation": "DO_NOT_USE_ALONE"
+    },
+    {
+      "normalized_phrase": "land",
+      "spelling_variants": [
+        "land"
+      ],
+      "unspecified_occurrences": 0,
+      "labeled_occurrences": 1,
+      "labeled_sector_distribution": {
+        "sector:environment": 1
+      },
+      "dominant_sector_id": "sector:environment",
+      "purity_percentage": 100.0,
+      "group": "GENERIC",
+      "rule_recommendation": "DO_NOT_USE_ALONE"
+    },
+    {
+      "normalized_phrase": "opportunity",
+      "spelling_variants": [
+        "opportunity"
+      ],
+      "unspecified_occurrences": 0,
+      "labeled_occurrences": 7,
+      "labeled_sector_distribution": {
+        "sector:environment": 5,
+        "sector:logistics": 2
+      },
+      "dominant_sector_id": "sector:environment",
+      "purity_percentage": 71.43,
+      "group": "GENERIC",
+      "rule_recommendation": "DO_NOT_USE_ALONE"
+    },
+    {
+      "normalized_phrase": "مرفق",
+      "spelling_variants": [
+        "مرفق"
+      ],
+      "unspecified_occurrences": 0,
+      "labeled_occurrences": 0,
+      "labeled_sector_distribution": {},
+      "dominant_sector_id": null,
+      "purity_percentage": null,
+      "group": "GENERIC",
+      "rule_recommendation": "DO_NOT_USE_ALONE"
+    },
+    {
+      "normalized_phrase": "منافسه",
+      "spelling_variants": [
+        "منافسة"
+      ],
+      "unspecified_occurrences": 0,
+      "labeled_occurrences": 0,
+      "labeled_sector_distribution": {},
+      "dominant_sector_id": null,
+      "purity_percentage": null,
+      "group": "GENERIC",
+      "rule_recommendation": "DO_NOT_USE_ALONE"
+    }
+  ],
+  "generic_phrases": [
+    "activity",
+    "building",
+    "development",
+    "facility",
+    "investment",
+    "land",
+    "operation",
+    "opportunity",
+    "project",
+    "site",
+    "أرض",
+    "إنشاء",
+    "ارض",
+    "استثمار",
+    "انشاء",
+    "تأجير",
+    "تاجير",
+    "تشغيل",
+    "تطوير",
+    "خدمات",
+    "فرصة",
+    "مبنى",
+    "مرفق",
+    "مشروع",
+    "منافسة",
+    "موقع"
+  ],
+  "method": "Exact normalized phrase occurrence, counted once per Master across title/activity/sub-activity/description fields; Arabic orthographic normalization; labeled controls exclude inferred Masters. Generic phrases are reported descriptively and never proposed as sector rules."
+}

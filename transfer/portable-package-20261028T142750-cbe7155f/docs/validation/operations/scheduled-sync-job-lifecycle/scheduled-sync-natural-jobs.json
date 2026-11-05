@@ -1,0 +1,35 @@
+{
+  "baseline_job_count": 413,
+  "captured_at": "2026-10-21T12:30:27.504828+00:00",
+  "manual_source_sync_started": false,
+  "natural_scheduled_jobs": [
+    {
+      "id": 414,
+      "source_key": "furas",
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "job_state": "COMPLETED",
+      "started_at": "2026-10-21T12:05:05.578265+00:00",
+      "finished_at": "2026-10-21T12:05:18.543372+00:00",
+      "task_id": "4cca3631-ac6d-4c85-98fa-86ed8e3a89a1",
+      "pagination_complete": true,
+      "raw_count": 402,
+      "new_count": 0,
+      "update_count": 0
+    },
+    {
+      "id": 415,
+      "source_key": "alahsa-opportunities",
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "job_state": "COMPLETED",
+      "started_at": "2026-10-21T12:05:05.592202+00:00",
+      "finished_at": "2026-10-21T12:05:20.282524+00:00",
+      "task_id": "d37415cc-228b-4e0a-a732-9334e7fdc45c",
+      "pagination_complete": true,
+      "raw_count": 84,
+      "new_count": 0,
+      "update_count": 84
+    }
+  ]
+}

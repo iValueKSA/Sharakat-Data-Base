@@ -1,0 +1,516 @@
+{
+  "generated_at": "2026-10-21T10:40:19.681079+03:00",
+  "run_id": "6c650b8e66f04d50aa571ca1c0262542",
+  "total_gates": 48,
+  "counts": {
+    "pass": 45,
+    "warning": 3,
+    "fail": 0
+  },
+  "gates": [
+    {
+      "GATE_KEY": "MASTER_CURRENT_WITHOUT_SOURCE",
+      "DOMAIN": "MASTER_IDENTITY",
+      "DESCRIPTION": "Automated invariant for MASTER_IDENTITY.",
+      "INVARIANT": 0,
+      "SEVERITY": "FAIL",
+      "CADENCE": "fast",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "SOURCE_LINKED_TO_MULTIPLE_CURRENT_MASTERS",
+      "DOMAIN": "SOURCE_LINKAGE",
+      "DESCRIPTION": "Automated invariant for SOURCE_LINKAGE.",
+      "INVARIANT": 0,
+      "SEVERITY": "FAIL",
+      "CADENCE": "fast",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "DUPLICATE_SOURCE_EXTERNAL_ID",
+      "DOMAIN": "SOURCE_LINKAGE",
+      "DESCRIPTION": "Automated invariant for SOURCE_LINKAGE.",
+      "INVARIANT": 0,
+      "SEVERITY": "FAIL",
+      "CADENCE": "fast",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "QUALIFIED_SOURCE_WITHOUT_CURRENT_MASTER",
+      "DOMAIN": "LOCATION_ELIGIBILITY",
+      "DESCRIPTION": "Automated invariant for LOCATION_ELIGIBILITY.",
+      "INVARIANT": 0,
+      "SEVERITY": "FAIL",
+      "CADENCE": "fast",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "MERGED_MASTER_SOURCE_LINKS",
+      "DOMAIN": "MASTER_IDENTITY",
+      "DESCRIPTION": "Historical source links can remain attached to merged rows; inspect only if current APIs expose them.",
+      "INVARIANT": 0,
+      "SEVERITY": "WARNING",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Show in admin DQ status; preserve business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "VERIFIED_OFFICIAL_REFERENCE_SPLIT",
+      "DOMAIN": "MASTER_IDENTITY",
+      "DESCRIPTION": "Exact verified official-reference split across current Masters; title-only similarity is excluded.",
+      "INVARIANT": 0,
+      "SEVERITY": "FAIL",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "FUZZY_TITLE_ONLY_DQ_FAILURE",
+      "DOMAIN": "MASTER_IDENTITY",
+      "DESCRIPTION": "Title similarity alone is deliberately non-blocking.",
+      "INVARIANT": false,
+      "SEVERITY": "INFO",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Record diagnostic only",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "SOURCE_URL_MALFORMED",
+      "DOMAIN": "SOURCE_LINKS",
+      "DESCRIPTION": "Automated invariant for SOURCE_LINKS.",
+      "INVARIANT": 0,
+      "SEVERITY": "FAIL",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "FURAS_TEMPORARY_RENTAL_ROUTE_REGRESSION",
+      "DOMAIN": "SOURCE_LINKS",
+      "DESCRIPTION": "Automated invariant for SOURCE_LINKS.",
+      "INVARIANT": 0,
+      "SEVERITY": "FAIL",
+      "CADENCE": "fast",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "KNOWN_UNAVAILABLE_LINK_EXPOSED",
+      "DOMAIN": "SOURCE_LINKS",
+      "DESCRIPTION": "Automated invariant for SOURCE_LINKS.",
+      "INVARIANT": 0,
+      "SEVERITY": "FAIL",
+      "CADENCE": "fast",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "GENERIC_SOURCE_PAGE_AS_OPPORTUNITY_ACTION",
+      "DOMAIN": "SOURCE_LINKS",
+      "DESCRIPTION": "Generic source/listing pages are surfaced for inspection, never validated with per-request HTTP calls.",
+      "INVARIANT": 0,
+      "SEVERITY": "WARNING",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Show in admin DQ status; preserve business data",
+      "CURRENT_STATUS": "WARNING"
+    },
+    {
+      "GATE_KEY": "FURAS_UNVERIFIED_PUBLICATION_PROMOTION",
+      "DOMAIN": "DATES",
+      "DESCRIPTION": "Automated invariant for DATES.",
+      "INVARIANT": 0,
+      "SEVERITY": "FAIL",
+      "CADENCE": "fast",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "FURAS_UNVERIFIED_DEADLINE_PROMOTION",
+      "DOMAIN": "DATES",
+      "DESCRIPTION": "Automated invariant for DATES.",
+      "INVARIANT": 0,
+      "SEVERITY": "FAIL",
+      "CADENCE": "fast",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "TECHNICAL_TIMESTAMP_AS_BUSINESS_DATE",
+      "DOMAIN": "DATES",
+      "DESCRIPTION": "Automated invariant for DATES.",
+      "INVARIANT": 0,
+      "SEVERITY": "FAIL",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "ACTIVE_ALERT_WITH_UNVERIFIED_DEADLINE",
+      "DOMAIN": "DEADLINES",
+      "DESCRIPTION": "Automated invariant for DEADLINES.",
+      "INVARIANT": 0,
+      "SEVERITY": "FAIL",
+      "CADENCE": "fast",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "OPEN_REVIEW_BROKEN_ENTITY_LINK",
+      "DOMAIN": "REVIEW_QUEUES",
+      "DESCRIPTION": "Automated invariant for REVIEW_QUEUES.",
+      "INVARIANT": 0,
+      "SEVERITY": "FAIL",
+      "CADENCE": "fast",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "OPEN_REVIEW_ON_MERGED_MASTER",
+      "DOMAIN": "REVIEW_QUEUES",
+      "DESCRIPTION": "Automated invariant for REVIEW_QUEUES.",
+      "INVARIANT": 0,
+      "SEVERITY": "FAIL",
+      "CADENCE": "fast",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "LOGICAL_DUPLICATE_OPEN_REVIEW",
+      "DOMAIN": "REVIEW_QUEUES",
+      "DESCRIPTION": "Automated invariant for REVIEW_QUEUES.",
+      "INVARIANT": 0,
+      "SEVERITY": "FAIL",
+      "CADENCE": "fast",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "OPEN_REVIEW_OLDER_THAN_90_DAYS",
+      "DOMAIN": "REVIEW_QUEUES",
+      "DESCRIPTION": "Age is surfaced for review; cases are never auto-resolved.",
+      "INVARIANT": 0,
+      "SEVERITY": "WARNING",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Show in admin DQ status; preserve business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "OPEN_REVIEW_BACKLOG",
+      "DOMAIN": "REVIEW_QUEUES",
+      "DESCRIPTION": "Nonzero unresolved-review queues are expected and do not fail data quality.",
+      "INVARIANT": {
+        "threshold": 0
+      },
+      "SEVERITY": "WARNING",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Show in admin DQ status; preserve business data",
+      "CURRENT_STATUS": "WARNING"
+    },
+    {
+      "GATE_KEY": "TOP_LEVEL_REVIEW_RECONCILIATION",
+      "DOMAIN": "REVIEW_QUEUES",
+      "DESCRIPTION": "Mutually exclusive review domains must reconcile to the total open review population.",
+      "INVARIANT": {
+        "total": 577
+      },
+      "SEVERITY": "FAIL",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "FIELD_CONFLICT_SUBCATEGORY_RECONCILIATION",
+      "DOMAIN": "REVIEW_QUEUES",
+      "DESCRIPTION": "Every field conflict is grouped once by its actual field_name.",
+      "INVARIANT": 111,
+      "SEVERITY": "FAIL",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "OPEN_REVIEW_WITHOUT_TRACEABLE_EVIDENCE",
+      "DOMAIN": "REVIEW_QUEUES",
+      "DESCRIPTION": "All active review schemas retain source or compared-entity identifiers; sampled evidence completeness is tested in regression tests.",
+      "INVARIANT": 0,
+      "SEVERITY": "FAIL",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "PARTIAL_SCAN_REMOVAL_SAFETY",
+      "DOMAIN": "PARTIAL_SCAN_SAFETY",
+      "DESCRIPTION": "Automated invariant for PARTIAL_SCAN_SAFETY.",
+      "INVARIANT": 0,
+      "SEVERITY": "FAIL",
+      "CADENCE": "fast",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "FURAS_LAST_SUCCESSFUL_SCAN_PAGINATION",
+      "DOMAIN": "SOURCE_PAGINATION",
+      "DESCRIPTION": "Latest failed/incomplete Furas attempt is not a coverage assertion; retry may be in flight.",
+      "INVARIANT": 0,
+      "SEVERITY": "FAIL",
+      "CADENCE": "fast",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "LIMITED_COVERAGE_IS_EXPLICIT",
+      "DOMAIN": "SOURCE_COVERAGE",
+      "DESCRIPTION": "Automated invariant for SOURCE_COVERAGE.",
+      "INVARIANT": 0,
+      "SEVERITY": "WARNING",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Show in admin DQ status; preserve business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "TECHNICAL_HEALTH_SEPARATE_FROM_COVERAGE",
+      "DOMAIN": "SOURCE_COVERAGE",
+      "DESCRIPTION": "Technical health and coverage_status are distinct persisted fields and API values.",
+      "INVARIANT": true,
+      "SEVERITY": "INFO",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Record diagnostic only",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "SOURCE_ABSENCE_CLASSIFICATION",
+      "DOMAIN": "SOURCE_COVERAGE",
+      "DESCRIPTION": "Only completed authoritative scans advance confirmation; pending absence is warning and historical removal is retained.",
+      "INVARIANT": {
+        "unexplained": 0
+      },
+      "SEVERITY": "WARNING",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Show in admin DQ status; preserve business data",
+      "CURRENT_STATUS": "WARNING"
+    },
+    {
+      "GATE_KEY": "FURAS_PAGE_COMPLETION_METRICS",
+      "DOMAIN": "SOURCE_PAGINATION",
+      "DESCRIPTION": "Uses the last successful completed enumeration, not the latest failed attempt.",
+      "INVARIANT": {
+        "requested_equals_successful": true,
+        "pagination_complete": true
+      },
+      "SEVERITY": "FAIL",
+      "CADENCE": "weekly",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "FURAS_REPORTED_VS_ENUMERATED_TOTAL",
+      "DOMAIN": "SOURCE_COVERAGE",
+      "DESCRIPTION": "Only comparable authoritative public counts are compared.",
+      "INVARIANT": 0,
+      "SEVERITY": "WARNING",
+      "CADENCE": "weekly",
+      "FAILURE_ACTION": "Show in admin DQ status; preserve business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "FURAS_REPEATED_PAGE_SIGNAL",
+      "DOMAIN": "SOURCE_PAGINATION",
+      "DESCRIPTION": "Adapter duplicate-page telemetry is surfaced; it does not auto-delete records.",
+      "INVARIANT": 0,
+      "SEVERITY": "WARNING",
+      "CADENCE": "weekly",
+      "FAILURE_ACTION": "Show in admin DQ status; preserve business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "ORPHANED_SOURCE_OBSERVATION",
+      "DOMAIN": "OBSERVATION_INTEGRITY",
+      "DESCRIPTION": "Automated invariant for OBSERVATION_INTEGRITY.",
+      "INVARIANT": 0,
+      "SEVERITY": "FAIL",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "OBSERVATION_TIMESTAMP_ORDER",
+      "DOMAIN": "OBSERVATION_INTEGRITY",
+      "DESCRIPTION": "Automated invariant for OBSERVATION_INTEGRITY.",
+      "INVARIANT": 0,
+      "SEVERITY": "FAIL",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "RUNTIME_STANDARDIZATION_VERSION",
+      "DOMAIN": "STANDARDIZATION_RUNTIME_PARITY",
+      "DESCRIPTION": "Automated invariant for STANDARDIZATION_RUNTIME_PARITY.",
+      "INVARIANT": "21",
+      "SEVERITY": "FAIL",
+      "CADENCE": "fast",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "HISTORICAL_STANDARDIZATION_VERSIONS",
+      "DOMAIN": "STANDARDIZATION_RUNTIME_PARITY",
+      "DESCRIPTION": "Persisted historical source projections are not rewritten during read-only validation.",
+      "INVARIANT": {
+        "runtime_current": "21"
+      },
+      "SEVERITY": "INFO",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Record diagnostic only",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "ALEMBIC_RUNTIME_PARITY",
+      "DOMAIN": "DATABASE_MIGRATIONS",
+      "DESCRIPTION": "Database Alembic head is compared with the migration scripts shipped in this runtime.",
+      "INVARIANT": [
+        "0023_quant_commercial"
+      ],
+      "SEVERITY": "FAIL",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "UNKNOWN_AREA_STORED_AS_ZERO",
+      "DOMAIN": "QUANTITATIVE_FIELDS",
+      "DESCRIPTION": "Zero can be valid; review required before interpreting as missing-value coercion.",
+      "INVARIANT": 0,
+      "SEVERITY": "WARNING",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Show in admin DQ status; preserve business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "UNKNOWN_VALUE_STORED_AS_ZERO",
+      "DOMAIN": "QUANTITATIVE_FIELDS",
+      "DESCRIPTION": "Zero can be valid; review required before interpreting as missing-value coercion.",
+      "INVARIANT": 0,
+      "SEVERITY": "WARNING",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Show in admin DQ status; preserve business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "TECHNICAL_SOURCE_ID_AS_MASTER_REFERENCE",
+      "DOMAIN": "QUANTITATIVE_FIELDS",
+      "DESCRIPTION": "Automated invariant for QUANTITATIVE_FIELDS.",
+      "INVARIANT": 0,
+      "SEVERITY": "FAIL",
+      "CADENCE": "fast",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "TAXONOMY_DIMENSION_CARDINALITY",
+      "DOMAIN": "TAXONOMY",
+      "DESCRIPTION": "Automated invariant for TAXONOMY.",
+      "INVARIANT": {
+        "activity": "single",
+        "sub_activity": "single",
+        "opportunity_type": "single",
+        "investment_model": "single",
+        "asset_type": "multi"
+      },
+      "SEVERITY": "INFO",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Record diagnostic only",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "OTHER_IS_NOT_UNSPECIFIED",
+      "DOMAIN": "TAXONOMY",
+      "DESCRIPTION": "Automated invariant for TAXONOMY.",
+      "INVARIANT": "غير محدد",
+      "SEVERITY": "FAIL",
+      "CADENCE": "fast",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "OWNER_PLATFORM_SEPARATION",
+      "DOMAIN": "OWNER",
+      "DESCRIPTION": "Owner, primary publication platform, and source publisher are separately stored model fields.",
+      "INVARIANT": true,
+      "SEVERITY": "INFO",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Record diagnostic only",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "API_DASHBOARD_EXPORT_RECONCILIATION",
+      "DOMAIN": "API_DASHBOARD_EXPORT_RECONCILIATION",
+      "DESCRIPTION": "Counts are read from the running route implementations, CSV rows, and XLSX opportunity sheet.",
+      "INVARIANT": {
+        "all_equal": 525
+      },
+      "SEVERITY": "FAIL",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "CURRENT_LIST_DUPLICATE_MASTER_ROWS",
+      "DOMAIN": "SEARCH_LIST_UNIQUENESS",
+      "DESCRIPTION": "Automated invariant for SEARCH_LIST_UNIQUENESS.",
+      "INVARIANT": 0,
+      "SEVERITY": "FAIL",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "CURRENT_MASTER_MAP_PARTITION",
+      "DOMAIN": "LOCATION_ELIGIBILITY",
+      "DESCRIPTION": "Exact-mapped, outside-reference, unverified, and missing-coordinate groups partition the current Master universe.",
+      "INVARIANT": 525,
+      "SEVERITY": "FAIL",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "CURRENT_MASTER_LIST_REFERENCE_DUPLICATES",
+      "DOMAIN": "SEARCH_LIST_UNIQUENESS",
+      "DESCRIPTION": "Repeated references are surfaced for inspection; only verified official-reference splits fail.",
+      "INVARIANT": 0,
+      "SEVERITY": "WARNING",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Show in admin DQ status; preserve business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "API_WORKER_STANDARDIZATION_PARITY",
+      "DOMAIN": "STANDARDIZATION_RUNTIME_PARITY",
+      "DESCRIPTION": "Worker heartbeat must publish its loaded standardization version.",
+      "INVARIANT": {
+        "version": "21",
+        "worker": "available"
+      },
+      "SEVERITY": "FAIL",
+      "CADENCE": "fast",
+      "FAILURE_ACTION": "Create idempotent admin alert; change no business data",
+      "CURRENT_STATUS": "PASS"
+    },
+    {
+      "GATE_KEY": "ENABLED_SOURCE_COVERAGE_DECLARED",
+      "DOMAIN": "SOURCE_COVERAGE",
+      "DESCRIPTION": "Limited and scoped coverage are valid; only missing/unrecognized coverage declarations are flagged.",
+      "INVARIANT": 0,
+      "SEVERITY": "WARNING",
+      "CADENCE": "full",
+      "FAILURE_ACTION": "Show in admin DQ status; preserve business data",
+      "CURRENT_STATUS": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "discovery_method": "Recursive inspection of raw and standardized source JSON, depth <= 6; classification-like key names only. Used=true where present in standardized payload or matched to a normalized source classification column.",
+  "unused_classification_fields_found": 8,
+  "fields": [
+    {
+      "source": "alahsa-opportunities",
+      "raw_field": "raw.source_taxonomy.sector",
+      "non_null_records": 5,
+      "non_null_values": 5,
+      "distinct_values": 1,
+      "sample_values": [
+        "خدمي"
+      ],
+      "currently_used_by_normalization": true,
+      "normalization_evidence": "field is represented in standardized payload or mapped to a canonical source classification column"
+    },
+    {
+      "source": "furas",
+      "raw_field": "raw.attributes.ACTIVITYTYPE",
+      "non_null_records": 11,
+      "non_null_values": 11,
+      "distinct_values": 6,
+      "sample_values": [
+        "الأنشطة التجارية",
+        "\"العربات المتنقلة\"",
+        "أنشطة الصيانة والتصليح والتركيب",
+        "\"الساحات الميادين\"",
+        "الأنشطة الزراعية والحيوانية",
+        "\"المباني\""
+      ],
+      "currently_used_by_normalization": false,
+      "normalization_evidence": "no matching standardized or canonical source classification field found"
+    },
+    {
+      "source": "furas",
+      "raw_field": "raw.attributes.ACTIVITYTYPEID",
+      "non_null_records": 11,
+      "non_null_values": 11,
+      "distinct_values": 7,
+      "sample_values": [
+        "101",
+        "113",
+        "205,205",
+        "208,208",
+        "208",
+        "108",
+        "202"
+      ],
+      "currently_used_by_normalization": false,
+      "normalization_evidence": "no matching standardized or canonical source classification field found"
+    },
+    {
+      "source": "furas",
+      "raw_field": "raw.attributes.OPPORTUNITYTYPE",
+      "non_null_records": 373,
+      "non_null_values": 373,
+      "distinct_values": 2,
+      "sample_values": [
+        "TemporaryRental",
+        "Investment"
+      ],
+      "currently_used_by_normalization": false,
+      "normalization_evidence": "no matching standardized or canonical source classification field found"
+    },
+    {
+      "source": "furas",
+      "raw_field": "raw.attributes.OPPORTUNITYTYPEID",
+      "non_null_records": 373,
+      "non_null_values": 373,
+      "distinct_values": 2,
+      "sample_values": [
+        "02",
+        "01"
+      ],
+      "currently_used_by_normalization": false,
+      "normalization_evidence": "no matching standardized or canonical source classification field found"
+    },
+    {
+      "source": "furas",
+      "raw_field": "raw.attributes.SUBACTIVITYTYPE",
+      "non_null_records": 7,
+      "non_null_values": 7,
+      "distinct_values": 3,
+      "sample_values": [
+        "أخرى",
+        "منشآت تقديم الغذاء",
+        "أنشطة وخدمات انتاج المواد غير الغذائية"
+      ],
+      "currently_used_by_normalization": false,
+      "normalization_evidence": "no matching standardized or canonical source classification field found"
+    },
+    {
+      "source": "furas",
+      "raw_field": "raw.attributes.SUBACTIVITYTYPEID",
+      "non_null_records": 7,
+      "non_null_values": 7,
+      "distinct_values": 4,
+      "sample_values": [
+        "16",
+        "141",
+        "153",
+        "66"
+      ],
+      "currently_used_by_normalization": false,
+      "normalization_evidence": "no matching standardized or canonical source classification field found"
+    },
+    {
+      "source": "kfu",
+      "raw_field": "raw.opportunity_type",
+      "non_null_records": 3,
+      "non_null_values": 3,
+      "distinct_values": 2,
+      "sample_values": [
+        "LEASE_OPPORTUNITY",
+        "COMMERCIAL_FACILITY_OPPORTUNITY"
+      ],
+      "currently_used_by_normalization": false,
+      "normalization_evidence": "no matching standardized or canonical source classification field found"
+    },
+    {
+      "source": "ncp",
+      "raw_field": "raw.opportunity_type",
+      "non_null_records": 1,
+      "non_null_values": 1,
+      "distinct_values": 1,
+      "sample_values": [
+        "PPP_PROJECT"
+      ],
+      "currently_used_by_normalization": false,
+      "normalization_evidence": "no matching standardized or canonical source classification field found"
+    }
+  ]
+}

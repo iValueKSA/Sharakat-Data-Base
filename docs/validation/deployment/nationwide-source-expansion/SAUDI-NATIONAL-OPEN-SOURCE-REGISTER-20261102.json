@@ -1,0 +1,1764 @@
+{
+  "audit": {
+    "title": "Saudi Arabia — Comprehensive National Open Investment Sources Discovery & Coverage Audit",
+    "audit_date": "2026-11-03",
+    "as_of_utc": "2026-11-03T10:00:00Z",
+    "scope": "Read-only public-source discovery; no adapters, syncs, Master creation, source-row changes, Master-link changes, UI/map changes, or business-data changes.",
+    "status": "COMPLETE",
+    "search_saturation_reached": true,
+    "search_saturation_qualification": "Practical national saturation confirmed after the unresolved candidate endpoints were either verified as public structured catalogs or classified as externally restricted. This is not a mathematical completeness claim.",
+    "current_masters": 6623,
+    "configured_sources": 11,
+    "source_opportunity_rows_total": 9290,
+    "source_opportunity_rows_by_configured_source": {
+      "furas": 6546,
+      "alahsa-opportunities": 123,
+      "ahda": 8,
+      "invest-saudi": 2555,
+      "kfu": 6,
+      "modon": 0,
+      "ncp": 45,
+      "nhc": 0,
+      "pif": 0,
+      "mwan": 7,
+      "waha-development": 0
+    },
+    "count_semantics": "Source.last_record_count / latest sync parsed count / current raw SourceOpportunity rows / canonical Masters are distinct quantities. Do not treat stored historical rows as current active public listings.",
+    "counts": {
+      "organizations_investigated": 105,
+      "valid_public_itemized_sources_found_including_existing": 13,
+      "existing_integrated_sources": 11,
+      "new_valid_unique_public_sources": 4,
+      "new_ready_to_integrate": 4,
+      "new_needs_technical_investigation": 0,
+      "new_mirror_sources": 14,
+      "new_not_itemized": 6,
+      "new_not_investment": 3,
+      "new_restricted": 2,
+      "new_inactive_or_broken": 0,
+      "regions_investigated": 13,
+      "regions_with_at_least_one_ready_unique_local_source_including_existing_integrations": 2,
+      "regions_with_new_ready_unique_local_source": 1,
+      "sector_categories_investigated": 20,
+      "estimated_additional_opportunities": "3 confirmed title-level nonmatches for RCJY; 165 further current provider records across RCU (6) and NCP Investors Portal (159) remain subject to cross-source identity reconciliation. Tourism map volume is unknown. Ta’adeen has 8 inactive historical site records, not current offers."
+    },
+    "new_sources_ready": [
+      {
+        "source_id": "rcu-investment-opportunities",
+        "priority": "P1",
+        "observed_count": 6,
+        "overlap": "LOW; project-level NCP comparison remains an integration gate"
+      },
+      {
+        "source_id": "ncp-investors-portal",
+        "priority": "P1",
+        "observed_count": 159,
+        "overlap": "ADDITIONAL_UNIQUE_RECORDS relative to existing NCP news source; cross-source pipeline dedupe remains required"
+      },
+      {
+        "source_id": "rcjy-investment-opportunities",
+        "priority": "P1",
+        "observed_count": 3,
+        "overlap": "No exact title matches in current Masters; broader cross-source overlap unknown"
+      },
+      {
+        "source_id": "taadeen-mining-bids",
+        "priority": "P2",
+        "observed_count": "8 Round 11 site records; all currently inactive and the 2026-07-31 PQQ deadline has passed",
+        "overlap": "LOW; historical/closed data only until a future active round"
+      }
+    ],
+    "new_sources_needing_investigation": [],
+    "live_change_controls": {
+      "manual_source_syncs": 0,
+      "new_source_adapters": 0,
+      "new_masters_created": 0,
+      "sourceopportunity_changes": 0,
+      "master_link_changes": 0,
+      "national_ui_enabled_changed": false,
+      "national_map_enabled_changed": false,
+      "business_data_changes": 0,
+      "geographic_filter_changes": 0
+    },
+    "restricted_candidates": [
+      {
+        "source_id": "mt-tourism-investment-map",
+        "reason": "Official Ministry materials confirm itemized opportunity details, but the map is inaccessible from an external network (HTTP 403); no public records or API were exposed. No bypass attempted."
+      }
+    ]
+  },
+  "configured_sources": [
+    {
+      "source_id": "furas",
+      "source_name_ar": "فرص – البوابة الموحدة للاستثمار",
+      "source_name_en": "Furas unified investment portal",
+      "organization": "Ministry of Municipalities and Housing and participating government entities",
+      "official_url": "https://furas.momah.gov.sa/ar",
+      "opportunity_url": "https://furas.momah.gov.sa/ar/list-opportunities",
+      "entity_type": "National government platform",
+      "geographic_scope": "NATIONAL",
+      "regions_covered": "All 13 regions",
+      "sector_scope": "Municipal, real estate, commercial, education, tourism, industrial, environmental and other participating-entity public assets",
+      "public_access": "PUBLIC",
+      "itemized_opportunities": true,
+      "visible_record_count": "375 latest parsed; 6,546 current raw source rows (not equivalent to active listings)",
+      "extraction_method": "ARCGIS",
+      "stable_provider_id": "TRUE",
+      "pagination": "ArcGIS query paging via official catalogue proxy; latest job reported 375 parsed records and warning",
+      "geography_available": "TRUE/PARTIAL",
+      "coordinates_available": "PARTIAL",
+      "overlaps_with": "Amanat, participating authorities/universities, MEWA/NCVC and other Furas publishers",
+      "current_platform_status": "INTEGRATED; enabled every 60 min; latest job 2026-11-02T10:03:10Z returned 375 with reconciliation warning",
+      "discovery_classification": "INTEGRATED",
+      "priority": "-",
+      "notes": "Source.last_record_count is 375; raw rows 6,546. National baseline. Official MyGov describes Furas as unified reference for municipal/real-estate opportunities. Public GIS legacy viewer describes 223,000 map opportunities; that figure is not treated as active listing count."
+    },
+    {
+      "source_id": "alahsa-opportunities",
+      "source_name_ar": "منصة الفرص الاستثمارية بالأحساء",
+      "source_name_en": "Al-Ahsa investment opportunities platform",
+      "organization": "Amanat Al-Ahsa",
+      "official_url": "https://alahsa-opportunities.com/",
+      "opportunity_url": "https://alahsa-opportunities.com/",
+      "entity_type": "Municipality",
+      "geographic_scope": "LOCAL",
+      "regions_covered": "Eastern Province (Al-Ahsa)",
+      "sector_scope": "Municipal land, commercial and service assets",
+      "public_access": "PUBLIC",
+      "itemized_opportunities": true,
+      "visible_record_count": "104 latest parsed; 123 raw rows",
+      "extraction_method": "HTML",
+      "stable_provider_id": "PARTIAL",
+      "pagination": "HTML card/list traversal",
+      "geography_available": "PARTIAL",
+      "coordinates_available": "PARTIAL",
+      "overlaps_with": "Furas",
+      "current_platform_status": "INTEGRATED; enabled every 60 min; latest success 2026-11-02T10:44:22Z",
+      "discovery_classification": "INTEGRATED",
+      "priority": "-",
+      "notes": "Local direct publisher; record-level matching to Furas is not complete in this research-only audit."
+    },
+    {
+      "source_id": "ahda",
+      "source_name_ar": "هيئة تطوير الأحساء",
+      "source_name_en": "Al-Ahsa Development Authority",
+      "organization": "Al-Ahsa Development Authority (AHDA)",
+      "official_url": "https://www.ahda.gov.sa/",
+      "opportunity_url": "https://www.ahda.gov.sa/",
+      "entity_type": "Regional development authority",
+      "geographic_scope": "REGIONAL",
+      "regions_covered": "Eastern Province (Al-Ahsa)",
+      "sector_scope": "Regional development and investment items",
+      "public_access": "PUBLIC",
+      "itemized_opportunities": true,
+      "visible_record_count": "217 latest parsed; 8 raw rows",
+      "extraction_method": "HTML",
+      "stable_provider_id": "FALSE/UNKNOWN",
+      "pagination": "Sitemap discovery + page traversal",
+      "geography_available": "PARTIAL",
+      "coordinates_available": "UNKNOWN",
+      "overlaps_with": "Furas; Al-Ahsa municipal sources",
+      "current_platform_status": "INTEGRATED; enabled every 360 min; latest success 2026-11-02T06:41:00Z",
+      "discovery_classification": "INTEGRATED",
+      "priority": "-",
+      "notes": "Latest parsed vs stored raw-row discrepancy is material; do not assume 217 current opportunities without audit of source records."
+    },
+    {
+      "source_id": "invest-saudi",
+      "source_name_ar": "استثمر في السعودية",
+      "source_name_en": "Invest Saudi",
+      "organization": "Ministry of Investment (MISA)",
+      "official_url": "https://investsaudi.sa/",
+      "opportunity_url": "https://investsaudi.sa/investment-opportunities",
+      "entity_type": "National government platform",
+      "geographic_scope": "NATIONAL",
+      "regions_covered": "All 13 regions; countrywide sector pages",
+      "sector_scope": "Multi-sector investment projects and opportunities",
+      "public_access": "PUBLIC",
+      "itemized_opportunities": true,
+      "visible_record_count": "2,297 latest parsed; 2,555 raw rows",
+      "extraction_method": "PUBLIC_API",
+      "stable_provider_id": "TRUE",
+      "pagination": "Public paginated JSON API",
+      "geography_available": "TRUE/PARTIAL",
+      "coordinates_available": "PARTIAL",
+      "overlaps_with": "PIF, NCP, Furas, MODON",
+      "current_platform_status": "INTEGRATED; enabled every 360 min; latest success 2026-11-02T06:41:41Z",
+      "discovery_classification": "INTEGRATED",
+      "priority": "-",
+      "notes": "National sector catalogs include active opportunities; counts may include pipeline/sector records and should not be summed with other aggregators."
+    },
+    {
+      "source_id": "kfu",
+      "source_name_ar": "جامعة الملك فيصل",
+      "source_name_en": "King Faisal University",
+      "organization": "King Faisal University",
+      "official_url": "https://www.kfu.edu.sa/",
+      "opportunity_url": "https://www.kfu.edu.sa/ar/Departments/Investment/Documents/Newdesign/اعلانات-الإدارة.html",
+      "entity_type": "Public university",
+      "geographic_scope": "LOCAL",
+      "regions_covered": "Eastern Province (Al-Ahsa)",
+      "sector_scope": "University asset investment announcements",
+      "public_access": "PUBLIC",
+      "itemized_opportunities": true,
+      "visible_record_count": "2 latest parsed; 6 raw rows",
+      "extraction_method": "HTML/PDF",
+      "stable_provider_id": "PARTIAL",
+      "pagination": "Announcement page and linked files",
+      "geography_available": "PARTIAL",
+      "coordinates_available": "UNKNOWN",
+      "overlaps_with": "Furas university publishers",
+      "current_platform_status": "INTEGRATED; enabled every 720 min; latest success 2026-11-02T06:41:26Z",
+      "discovery_classification": "INTEGRATED",
+      "priority": "-",
+      "notes": "Only current standalone university source confirmed in registry."
+    },
+    {
+      "source_id": "modon",
+      "source_name_ar": "مدن",
+      "source_name_en": "MODON",
+      "organization": "Saudi Authority for Industrial Cities and Technology Zones",
+      "official_url": "https://modon.gov.sa/",
+      "opportunity_url": "https://modon.gov.sa/en/InvestmentOpportunities",
+      "entity_type": "National industrial authority",
+      "geographic_scope": "NATIONAL",
+      "regions_covered": "Multiple industrial cities",
+      "sector_scope": "Industrial land, factories, logistics, industrial services",
+      "public_access": "PUBLIC",
+      "itemized_opportunities": false,
+      "visible_record_count": 0,
+      "extraction_method": "HTML/OTHER",
+      "stable_provider_id": "UNKNOWN",
+      "pagination": "Public pages/catalog and public GIS schema reviewed by current adapter; no current offer records returned",
+      "geography_available": "PARTIAL",
+      "coordinates_available": "PARTIAL",
+      "overlaps_with": "Furas, Invest Saudi, PIF, RCJY",
+      "current_platform_status": "INTEGRATED configuration; enabled every 360 min; latest success 2026-10-12 returned 0, latest status failed",
+      "discovery_classification": "INTEGRATED",
+      "priority": "-",
+      "notes": "Public coverage is limited; generic land/property availability is not automatically an actionable investment offer."
+    },
+    {
+      "source_id": "ncp",
+      "source_name_ar": "المركز الوطني للتخصيص",
+      "source_name_en": "National Center for Privatization & PPP",
+      "organization": "National Center for Privatization & PPP",
+      "official_url": "https://ncp.gov.sa/",
+      "opportunity_url": "https://ncp.gov.sa/en/MediaCenter/News/Pages/default.aspx",
+      "entity_type": "National PSP/PPP authority",
+      "geographic_scope": "NATIONAL",
+      "regions_covered": "All regions; project-dependent",
+      "sector_scope": "PPP, privatization, concessions, public infrastructure",
+      "public_access": "PUBLIC",
+      "itemized_opportunities": true,
+      "visible_record_count": "46 latest parsed; 45 raw rows",
+      "extraction_method": "HTML",
+      "stable_provider_id": "PARTIAL",
+      "pagination": "Public Arabic/English SharePoint news archives and linked articles",
+      "geography_available": "TRUE/PARTIAL",
+      "coordinates_available": "PARTIAL",
+      "overlaps_with": "Invest Saudi, PIF, Furas, issuer ministries and authorities",
+      "current_platform_status": "INTEGRATED; enabled every 720 min; latest success 2026-11-02T07:11:52Z",
+      "discovery_classification": "INTEGRATED",
+      "priority": "-",
+      "notes": "The configured source is news/announcement based, not the separate Investors Portal. Include PPP/concession announcements only; ordinary procurement excluded."
+    },
+    {
+      "source_id": "nhc",
+      "source_name_ar": "NHC الاستثمار",
+      "source_name_en": "NHC Investment",
+      "organization": "National Housing Company",
+      "official_url": "https://www.nhc.sa/",
+      "opportunity_url": "https://www.nhc.sa/en/investment-opportunities/",
+      "entity_type": "Government-owned development company",
+      "geographic_scope": "NATIONAL",
+      "regions_covered": "Multiple regions",
+      "sector_scope": "Housing, urban development, land and partnerships",
+      "public_access": "PUBLIC",
+      "itemized_opportunities": false,
+      "visible_record_count": 0,
+      "extraction_method": "HTML",
+      "stable_provider_id": "UNKNOWN",
+      "pagination": "Public pages; no current itemized rows returned",
+      "geography_available": "PARTIAL",
+      "coordinates_available": "UNKNOWN",
+      "overlaps_with": "Furas, PIF, Invest Saudi",
+      "current_platform_status": "INTEGRATED configuration; enabled every 720 min; parser warning; zero raw rows",
+      "discovery_classification": "INTEGRATED",
+      "priority": "-",
+      "notes": "Configured but current public itemized yield is zero."
+    },
+    {
+      "source_id": "pif",
+      "source_name_ar": "بوابة القطاع الخاص لصندوق الاستثمارات العامة",
+      "source_name_en": "PIF Private Sector Hub",
+      "organization": "Public Investment Fund",
+      "official_url": "https://www.pif.gov.sa/",
+      "opportunity_url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/",
+      "entity_type": "Sovereign wealth fund / government-owned portfolio aggregator",
+      "geographic_scope": "NATIONAL",
+      "regions_covered": "Multiple regions; portfolio company locations",
+      "sector_scope": "Tourism, real estate, industrial, logistics, healthcare, technology, infrastructure",
+      "public_access": "PUBLIC/PARTIAL",
+      "itemized_opportunities": true,
+      "visible_record_count": "UNKNOWN; public category pages visibly contain itemized opportunities; current configured extraction returned 0",
+      "extraction_method": "HTML",
+      "stable_provider_id": "PARTIAL",
+      "pagination": "Category/company landing pages; direct origin retrieval varies; publicly indexed pages expose records",
+      "geography_available": "PARTIAL",
+      "coordinates_available": "PARTIAL",
+      "overlaps_with": "PIF portfolio companies, Invest Saudi, NCP, Furas, MODON, NHC, MWAN",
+      "current_platform_status": "INTEGRATED; enabled every 1,440 min; latest job 2026-11-02 returned 0; stored raw rows 0",
+      "discovery_classification": "INTEGRATED",
+      "priority": "-",
+      "notes": "Existing adapter/source has a major coverage gap: public hub pages show detailed investment opportunities across PIF companies, including RSG, JCDC, Soudah, AlUla Development, ASFAR, Ma'aden, NWC and others. Fixing its coverage is a future task, not a new source in this audit."
+    },
+    {
+      "source_id": "mwan",
+      "source_name_ar": "موان",
+      "source_name_en": "MWAN",
+      "organization": "National Center for Waste Management",
+      "official_url": "https://mwan.gov.sa/",
+      "opportunity_url": "https://mwan.gov.sa/en/investment-opportunities",
+      "entity_type": "National sector regulator/center",
+      "geographic_scope": "NATIONAL",
+      "regions_covered": "Multiple regions",
+      "sector_scope": "Waste, recycling, resource recovery",
+      "public_access": "PUBLIC",
+      "itemized_opportunities": true,
+      "visible_record_count": "8 latest parsed; 7 raw rows",
+      "extraction_method": "HTML",
+      "stable_provider_id": "PARTIAL",
+      "pagination": "Public listing, linked details and opportunity cards",
+      "geography_available": "PARTIAL",
+      "coordinates_available": "PARTIAL",
+      "overlaps_with": "Furas, NCP, PIF, RCU",
+      "current_platform_status": "INTEGRATED; enabled every 1,440 min; latest success 2026-11-02T10:10:02Z",
+      "discovery_classification": "INTEGRATED",
+      "priority": "-",
+      "notes": "Defined national waste sector source; latest/raw count difference is preserved."
+    },
+    {
+      "source_id": "waha-development",
+      "source_name_ar": "شركة واحة للتنمية والتطوير",
+      "source_name_en": "Waha Development",
+      "organization": "Waha Development",
+      "official_url": "https://waha.sa/",
+      "opportunity_url": "https://waha.sa/opportunities.html",
+      "entity_type": "Local development company",
+      "geographic_scope": "LOCAL",
+      "regions_covered": "Eastern Province (Al-Ahsa)",
+      "sector_scope": "Development sites / local real estate",
+      "public_access": "PUBLIC",
+      "itemized_opportunities": false,
+      "visible_record_count": 0,
+      "extraction_method": "OTHER",
+      "stable_provider_id": "FALSE",
+      "pagination": "Public pages and referenced GIS locations reviewed; no itemized live offer feed",
+      "geography_available": "TRUE/PARTIAL",
+      "coordinates_available": "PARTIAL",
+      "overlaps_with": "Furas, Al-Ahsa municipal sources",
+      "current_platform_status": "REGISTERED BUT DISABLED; no adapter; never synced",
+      "discovery_classification": "INTEGRATED",
+      "priority": "-",
+      "notes": "Registry entry is disabled and has no adapter; current public pages are location/catalogue oriented, not live itemized offers."
+    },
+    {
+      "source_id": "taadeen-mining-bids",
+      "source_name_ar": "منافسات التعدين - تعدين",
+      "source_name_en": "Ta'adeen Mining Bids",
+      "organization": "Ministry of Industry and Mineral Resources (MIM)",
+      "official_url": "https://taadeen.sa/en",
+      "opportunity_url": "https://cms.taadeen.sa/en/mining-bids",
+      "entity_type": "National government licensing platform",
+      "geographic_scope": "NATIONAL / MULTI-REGION",
+      "regions_covered": "Multiple mineralized belts and regions",
+      "sector_scope": "Mining exploration licensing rounds and mineral-rights competitions",
+      "public_access": "PUBLIC",
+      "itemized_opportunities": true,
+      "visible_record_count": "8 Round 11 site records; all 8 inactive as of 2026-11-03; PQQ deadline 2026-07-31 passed",
+      "extraction_method": "HTML/PDF",
+      "stable_provider_id": "TRUE (canonical per-site slug/URL; no separate numeric license code observed)",
+      "pagination": "HTML listing with detail routes; linked public round brochure and supporting documents",
+      "geography_available": "TRUE (multiple regions; site detail in brochure)",
+      "coordinates_available": "UNKNOWN/PARTIAL",
+      "overlaps_with": "LOW_OVERLAP with Furas, Invest Saudi, NCP, MODON, PIF, NHC, MWAN",
+      "current_platform_status": "Public itemized source; Round 11 application window closed; all 8 child site listings currently inactive",
+      "discovery_classification": "READY_TO_INTEGRATE",
+      "priority": "P2",
+      "notes": "Each site has its own public detail route, region, area, mineral commodities, exploration-license type and site-specific data-room file link; parent round carries a single PQQ window. Model as parent round plus 8 site children (8 opportunity Masters if historic records are ever ingested); current active offers = 0. Do not automate registration, data-room access requiring login, or bidding."
+    },
+    {
+      "source_id": "rcu-investment-opportunities",
+      "source_name_ar": "الفرص الاستثمارية - الهيئة الملكية لمحافظة العلا",
+      "source_name_en": "Royal Commission for AlUla Investment Opportunities",
+      "organization": "Royal Commission for AlUla (RCU)",
+      "official_url": "https://www.rcu.gov.sa/",
+      "opportunity_url": "https://eservices.rcu.gov.sa/opportunities",
+      "entity_type": "Regional development authority / Royal Commission",
+      "geographic_scope": "LOCAL",
+      "regions_covered": "Madinah Region (AlUla)",
+      "sector_scope": "PPP, airport, water, wastewater, roads, waste, infrastructure and destination investment",
+      "public_access": "PUBLIC (listing/detail JSON; application actions may require login)",
+      "itemized_opportunities": true,
+      "visible_record_count": 6,
+      "extraction_method": "PUBLIC_XHR",
+      "stable_provider_id": "TRUE (displayOpportunityId RCU-OPP-000255–000260)",
+      "pagination": "Public frontend POST list request with Page.Size/Page.Index; observed 6 total",
+      "geography_available": "TRUE",
+      "coordinates_available": "TRUE",
+      "overlaps_with": "LOW_OVERLAP with Furas/Invest Saudi/NCP; subject overlap with NCP PPP pipeline possible",
+      "current_platform_status": "Not configured in current platform",
+      "discovery_classification": "READY_TO_INTEGRATE",
+      "priority": "P1",
+      "notes": "Public frontend JS calls https://eservices.rcu.gov.sa/api/investment-opportunities/list; direct unauthenticated frontend-consumed request returned six records with IDs, descriptions, status, dates, coordinates, areas and model fields. Read public data only. API is documented in shipped frontend, not treated as a private endpoint."
+    },
+    {
+      "source_id": "rcjy-investment-opportunities",
+      "source_name_ar": "فرص الهيئة الملكية للجبيل وينبع",
+      "source_name_en": "RCJY Investment Opportunities",
+      "organization": "Royal Commission for Jubail and Yanbu",
+      "official_url": "https://www.rcjy.gov.sa/investment-details",
+      "opportunity_url": "https://invest.rcjy.gov.sa/InvestmentPortal/InvestmentOpportunities",
+      "entity_type": "Royal Commission / industrial development authority",
+      "geographic_scope": "SECTORAL / MULTI-REGION",
+      "regions_covered": "Jubail, Yanbu, Ras Al-Khair and Jazan industrial city references",
+      "sector_scope": "Commercial site investment, industrial cities and selected services",
+      "public_access": "PUBLIC unauthenticated listing and frontend-consumed API",
+      "itemized_opportunities": true,
+      "visible_record_count": 3,
+      "extraction_method": "PUBLIC_XHR / OutSystems screen-services POST (public page also supports filters)",
+      "stable_provider_id": "TRUE (numeric provider IDs 265, 266, 269; OpportunityCode field is blank)",
+      "pagination": "Public search-conditions endpoint returns Count=3; city/sector filters exposed",
+      "geography_available": "TRUE (Yanbu on all 3 records; filter exposes Jubail, Yanbu, Ras Al-Khair, Jazan)",
+      "coordinates_available": "FALSE (not present in observed rows)",
+      "overlaps_with": "Potential overlap with MODON, NCP, Furas, Invest Saudi; exact title lookup against current Masters returned no match for the 3 records",
+      "current_platform_status": "Dedicated official investor portal works unauthenticated; legacy homepage View All route remains broken",
+      "discovery_classification": "READY_TO_INTEGRATE",
+      "priority": "P1",
+      "notes": "Public API returned three titled records, all Yanbu: serviced apartments (commercial/tourism), electrical transformers, and industrial/infrastructure LED fixtures. Records expose numeric IDs, city, sector/subsector; observed detail/description, opportunity code, area, status and coordinates are blank/default. Get Started is the investor action; implementation must preserve sparse status and resolve cross-source duplicate identity before creating Masters."
+    },
+    {
+      "source_id": "mt-tourism-investment-map",
+      "source_name_ar": "منصة الاستثمار السياحي - خريطة الفرص",
+      "source_name_en": "Ministry of Tourism Investment Opportunities Map",
+      "organization": "Ministry of Tourism",
+      "official_url": "https://mt.gov.sa/tourism-investment",
+      "opportunity_url": "https://mt.gov.sa/tourism-investment",
+      "entity_type": "National government investment platform",
+      "geographic_scope": "NATIONAL",
+      "regions_covered": "All regions / destination-level",
+      "sector_scope": "Tourism, hospitality, destinations and tourism assets",
+      "public_access": "PARTIAL; public Ministry page/FAQ, but map application returned HTTP 403 with external-network restriction",
+      "itemized_opportunities": true,
+      "visible_record_count": "UNKNOWN",
+      "extraction_method": "Map destination advertised on official Ministry page; direct map access blocked from external network; no public XHR/API/ArcGIS records observed",
+      "stable_provider_id": "FALSE (no public record identifier observed)",
+      "pagination": "UNKNOWN",
+      "geography_available": "TRUE (FAQ says opportunity details include location)",
+      "coordinates_available": "UNKNOWN",
+      "overlaps_with": "MEDIUM_OVERLAP with Invest Saudi, PIF, Furas",
+      "current_platform_status": "RESTRICTED from this external network; official help pages and map promotion are public",
+      "discovery_classification": "RESTRICTED",
+      "priority": "-",
+      "notes": "Official Ministry FAQ confirms the platform exposes itemized investment-opportunity details (description, location, status, category, activities and amenities); login is required only to register interest. Tourism.sa marketing/interactive-map pages did not expose the same records/API. No access-control bypass attempted."
+    },
+    {
+      "source_id": "ncp-investors-portal",
+      "source_name_ar": "بوابة المستثمرين للمركز الوطني للتخصيص",
+      "source_name_en": "NCP Investors Portal",
+      "organization": "National Center for Privatization & PPP",
+      "official_url": "https://investors.ncp.gov.sa/",
+      "opportunity_url": "https://investors.ncp.gov.sa/home",
+      "entity_type": "National PSP/PPP project portal",
+      "geographic_scope": "NATIONAL",
+      "regions_covered": "All regions; project-dependent",
+      "sector_scope": "PPP and privatization pipeline",
+      "public_access": "PUBLIC unauthenticated API; portal shell/root behavior is inconsistent",
+      "itemized_opportunities": true,
+      "visible_record_count": 159,
+      "extraction_method": "Public config JSON identifies /api/v1; unauthenticated paginated REST JSON list, pipeline and project-detail endpoints",
+      "stable_provider_id": "TRUE (project UUID GUID)",
+      "pagination": "Pipeline pageSize=100; 159 total across 2 pages (100 + 59); project details by UUID",
+      "geography_available": "TRUE (13 area/location lookups and per-project location names/description)",
+      "coordinates_available": "UNKNOWN (no coordinates confirmed)",
+      "overlaps_with": "Existing configured NCP source is announcement/news archive; 0 exact portal GUID matches in its 45 current rows. Same projects may be announced in NCP news or appear in Invest Saudi/PIF; cross-source reconciliation required.",
+      "current_platform_status": "Public records and detail endpoint verified without login; 159 project records; 2 currently marked availableToSubmit",
+      "discovery_classification": "READY_TO_INTEGRATE",
+      "priority": "P1",
+      "notes": "GET /assets/config.prod.json provides apiBaseUrl; public API returns 159 paginated project records with UUIDs, bilingual names/descriptions, sectors, locations, contract type, pipeline stage, close/availability flags and detail records. Existing configured NCP source covers SharePoint news announcements, not this structured portal. Classify as additional records relative to that news feed, subject to stable-ID and semantic duplicate checks across the national catalog."
+    },
+    {
+      "source_id": "amanat-network-furas",
+      "source_name_ar": "بوابات الأمانات والبلديات",
+      "source_name_en": "Amanat and Municipal Investment Portals",
+      "organization": "Regional Amanat and municipalities across the Kingdom",
+      "official_url": "https://furas.momah.gov.sa/en",
+      "opportunity_url": "https://furas.momah.gov.sa/ar/list-opportunities",
+      "entity_type": "Regional/local government issuers on national platform",
+      "geographic_scope": "NATIONAL / LOCAL ISSUERS",
+      "regions_covered": "All 13 regions",
+      "sector_scope": "Municipal land, commercial, retail, service, leisure, tourism and temporary-use sites",
+      "public_access": "PUBLIC listings; account may be required for booklet purchase/bid",
+      "itemized_opportunities": true,
+      "visible_record_count": "Included in Furas; no independent non-Furas total assigned",
+      "extraction_method": "ARCGIS (existing Furas feed)",
+      "stable_provider_id": "TRUE on Furas records",
+      "pagination": "Furas query pagination",
+      "geography_available": "TRUE/PARTIAL",
+      "coordinates_available": "PARTIAL",
+      "overlaps_with": "HIGH_OVERLAP with Furas",
+      "current_platform_status": "Mirror family; not a separate adapter candidate",
+      "discovery_classification": "MIRROR_OF_EXISTING_SOURCE",
+      "priority": "-",
+      "notes": "Includes Riyadh, Jeddah, Makkah, Madinah, Eastern Province/Al-Ahsa, Qassim, Asir, Tabuk, Hail, Jazan, Najran, Al-Baha, Al-Jouf and Northern Borders. Exact same opportunity IDs should be checked before considering any separate feed."
+    },
+    {
+      "source_id": "riyadh-municipality-investment",
+      "source_name_ar": "أمانة منطقة الرياض - فرص الاستثمار",
+      "source_name_en": "Riyadh Municipality Investment Opportunities",
+      "organization": "Riyadh Municipality",
+      "official_url": "https://alriyadh.gov.sa/en/new/investment-opportunities",
+      "opportunity_url": "https://alriyadh.gov.sa/en/new/investment-opportunities",
+      "entity_type": "Municipality",
+      "geographic_scope": "LOCAL",
+      "regions_covered": "Riyadh Region",
+      "sector_scope": "Municipal land and concessions",
+      "public_access": "PUBLIC",
+      "itemized_opportunities": true,
+      "visible_record_count": "Sample page displays 5 opportunity rows; 7 pages indicated",
+      "extraction_method": "HTML (guides users to Furas list)",
+      "stable_provider_id": "TRUE through Furas IDs",
+      "pagination": "Municipal page says filter Foras by Riyadh Municipality",
+      "geography_available": "TRUE",
+      "coordinates_available": "PARTIAL",
+      "overlaps_with": "HIGH_OVERLAP with Furas",
+      "current_platform_status": "Not separately integrated",
+      "discovery_classification": "MIRROR_OF_EXISTING_SOURCE",
+      "priority": "-",
+      "notes": "Official guidance says opportunities are under Foras Program and explains filtering the platform; no duplicate adapter recommended."
+    },
+    {
+      "source_id": "ncvc-opportunities",
+      "source_name_ar": "المركز الوطني لتنمية الغطاء النباتي - الفرص الاستثمارية",
+      "source_name_en": "NCVC Vegetation Investment Opportunities",
+      "organization": "National Center for Vegetation Development and Combating Desertification",
+      "official_url": "https://ncvc.gov.sa/en/opportunities/Pages/default.aspx",
+      "opportunity_url": "https://ncvc.gov.sa/en/opportunities/Pages/default.aspx",
+      "entity_type": "National government center",
+      "geographic_scope": "NATIONAL",
+      "regions_covered": "All regions",
+      "sector_scope": "Vegetation, parks, eco-tourism, nurseries, camping, apiaries, land/service leases",
+      "public_access": "PUBLIC overview; formal offers via Furas",
+      "itemized_opportunities": false,
+      "visible_record_count": "17+ opportunity types and 2,500+ potential sites cited; not active itemized offers",
+      "extraction_method": "HTML/PDF overview; Furas for offers",
+      "stable_provider_id": "UNKNOWN",
+      "pagination": "No standalone live catalog confirmed",
+      "geography_available": "TRUE/PARTIAL",
+      "coordinates_available": "UNKNOWN",
+      "overlaps_with": "HIGH_OVERLAP with Furas",
+      "current_platform_status": "Not configured as separate source",
+      "discovery_classification": "MIRROR_OF_EXISTING_SOURCE",
+      "priority": "-",
+      "notes": "Official page says it publishes pre-identified opportunities through formal channels such as Foras. Site/asset totals are not counted as active records."
+    },
+    {
+      "source_id": "asda-investment-teasers",
+      "source_name_ar": "هيئة تطوير منطقة عسير - ملخصات الفرص الاستثمارية",
+      "source_name_en": "Aseer Development Authority Investment Teasers",
+      "organization": "Aseer Development Authority and Aseer Region Municipality",
+      "official_url": "https://www.asda.gov.sa/",
+      "opportunity_url": "https://www.asda.gov.sa/",
+      "entity_type": "Regional development authority / municipality",
+      "geographic_scope": "REGIONAL",
+      "regions_covered": "Asir Region",
+      "sector_scope": "Tourism, hospitality, health, retail and leisure land/site concepts",
+      "public_access": "PUBLIC downloadable PDFs",
+      "itemized_opportunities": true,
+      "visible_record_count": "At least 25 teaser opportunities in the historic regional forum material; current live count unknown",
+      "extraction_method": "PDF",
+      "stable_provider_id": "TRUE (teaser sequence numbers), current status unknown",
+      "pagination": "Public PDF archive/search indexing",
+      "geography_available": "TRUE",
+      "coordinates_available": "PARTIAL",
+      "overlaps_with": "HIGH_OVERLAP with Furas and PIF",
+      "current_platform_status": "No separate itemized current feed verified",
+      "discovery_classification": "MIRROR_OF_EXISTING_SOURCE",
+      "priority": "-",
+      "notes": "Teaser roadmap explicitly says Asir Municipality posts RFPs and listings on Furas; PDFs are archived/dated and must not be mistaken for currently open tenders."
+    },
+    {
+      "source_id": "university-investment-portals",
+      "source_name_ar": "بوابات الاستثمار الجامعي",
+      "source_name_en": "Public University Investment Portals",
+      "organization": "Majma'ah University, University of Hail, Princess Nourah University, and other public universities reviewed",
+      "official_url": "https://www.mu.edu.sa/en/achievement/investment-opportunities-platform",
+      "opportunity_url": "https://furas.mu.edu.sa/login",
+      "entity_type": "Public universities",
+      "geographic_scope": "REGIONAL / MULTI-REGION",
+      "regions_covered": "Riyadh, Hail and multiple regions",
+      "sector_scope": "University land, facilities and commercial services",
+      "public_access": "MIXED; Majma'ah portal requires login; many issuers announce through Furas",
+      "itemized_opportunities": "MIXED/UNKNOWN",
+      "visible_record_count": "UNKNOWN",
+      "extraction_method": "HTML/OTHER",
+      "stable_provider_id": "UNKNOWN",
+      "pagination": "Furas issuer filters; login portal for Majma'ah",
+      "geography_available": "PARTIAL",
+      "coordinates_available": "UNKNOWN",
+      "overlaps_with": "HIGH_OVERLAP with Furas and KFU",
+      "current_platform_status": "No new standalone feed confirmed",
+      "discovery_classification": "MIRROR_OF_EXISTING_SOURCE",
+      "priority": "-",
+      "notes": "Majma'ah explicitly describes its system as a platform but its direct link opens login and its official agreement states that it announces its investments through Furas. University department homepages are not treated as feeds."
+    },
+    {
+      "source_id": "mewa-investment",
+      "source_name_ar": "فرص وزارة البيئة والمياه والزراعة",
+      "source_name_en": "MEWA Investment Opportunities",
+      "organization": "Ministry of Environment, Water and Agriculture",
+      "official_url": "https://www.mewa.gov.sa/en/Ministry/InvestmentOpportunities/Pages/default.aspx",
+      "opportunity_url": "https://furas.momah.gov.sa/en",
+      "entity_type": "Ministry",
+      "geographic_scope": "NATIONAL",
+      "regions_covered": "All regions",
+      "sector_scope": "Environment, water, agriculture, development sites",
+      "public_access": "PUBLIC via Furas",
+      "itemized_opportunities": true,
+      "visible_record_count": "No separate count; current offers routed to Furas",
+      "extraction_method": "ARCGIS (Furas)",
+      "stable_provider_id": "TRUE via Furas records",
+      "pagination": "Furas pagination",
+      "geography_available": "TRUE/PARTIAL",
+      "coordinates_available": "PARTIAL",
+      "overlaps_with": "HIGH_OVERLAP with Furas",
+      "current_platform_status": "No separate feed; Furas is current opportunity route",
+      "discovery_classification": "MIRROR_OF_EXISTING_SOURCE",
+      "priority": "-",
+      "notes": "Official MEWA page says Explore Current Opportunities via Furas; site proposal form is not a published opportunity source."
+    },
+    {
+      "source_id": "education-tbc-assets",
+      "source_name_ar": "مركز الاستثمار التعليمي - تدرج",
+      "source_name_en": "TBC Educational Investment Center (EISC/Tadaruj)",
+      "organization": "Tatweer Buildings Company / Ministry of Education",
+      "official_url": "https://www.moe.gov.sa/en/knowledgecenter/eservices/pages/estithmar.aspx",
+      "opportunity_url": "https://tbc.sa/EISC/EN/tadaruj.aspx",
+      "entity_type": "Government-owned education asset platform",
+      "geographic_scope": "NATIONAL",
+      "regions_covered": "Multiple regions",
+      "sector_scope": "School land, buildings and educational assets",
+      "public_access": "RESTRICTED (account/login for asset listings and bidding)",
+      "itemized_opportunities": "UNKNOWN behind access boundary",
+      "visible_record_count": "UNKNOWN",
+      "extraction_method": "UNKNOWN",
+      "stable_provider_id": "UNKNOWN",
+      "pagination": "Login service",
+      "geography_available": "UNKNOWN",
+      "coordinates_available": "UNKNOWN",
+      "overlaps_with": "Furas education publishers",
+      "current_platform_status": "Not configured",
+      "discovery_classification": "RESTRICTED",
+      "priority": "-",
+      "notes": "Official MOE service describes online public bidding but the linked asset platform is gated; no login or access-control bypass attempted."
+    },
+    {
+      "source_id": "matarat-airport-ppp",
+      "source_name_ar": "مشروعات مطارات القابضة بالشراكة مع المركز الوطني للتخصيص",
+      "source_name_en": "MATARAT Airport PPP Projects",
+      "organization": "MATARAT Holding and National Center for Privatization & PPP",
+      "official_url": "https://ncp.gov.sa/en/MediaCenter/News/Pages/default.aspx",
+      "opportunity_url": "https://ncp.gov.sa/en/MediaCenter/News/Pages/PNA-Airport-Qassim.aspx",
+      "entity_type": "Government-owned airport operator / PPP issuer",
+      "geographic_scope": "MULTI-REGION",
+      "regions_covered": "Qassim, Makkah/ Taif, other project locations",
+      "sector_scope": "Airport development, long-term BTO/PPP concessions",
+      "public_access": "PUBLIC project announcements; bidder portal details may be gated",
+      "itemized_opportunities": true,
+      "visible_record_count": "At least two project announcements reviewed; Qassim EOI window is closed; Taif RFP-stage announcement published",
+      "extraction_method": "HTML",
+      "stable_provider_id": "PARTIAL (project names and NCP project GUIDs in links)",
+      "pagination": "NCP news archive",
+      "geography_available": "TRUE",
+      "coordinates_available": "FALSE/PARTIAL",
+      "overlaps_with": "HIGH_OVERLAP with integrated NCP",
+      "current_platform_status": "Already represented by integrated NCP announcement source",
+      "discovery_classification": "MIRROR_OF_EXISTING_SOURCE",
+      "priority": "-",
+      "notes": "These are investment PPPs, unlike ordinary airport procurement. Keep as NCP source records; do not create a duplicate MATARAT adapter without a distinct public feed."
+    },
+    {
+      "source_id": "pif-portfolio-opportunities",
+      "source_name_ar": "فرص شركات محفظة صندوق الاستثمارات العامة",
+      "source_name_en": "PIF Portfolio Company Opportunity Pages",
+      "organization": "PIF-owned development and portfolio companies (RSG, JCDC, Soudah, AlUla Development, ASFAR, NEOM, Ma'aden, NWC and others)",
+      "official_url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/",
+      "opportunity_url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/tourism-travel-and-entertainment/",
+      "entity_type": "Government-owned portfolio company opportunity content",
+      "geographic_scope": "NATIONAL / PORTFOLIO LOCATIONS",
+      "regions_covered": "Multiple regions",
+      "sector_scope": "Tourism, hospitality, real estate, urban development, mining, water, industry, logistics, healthcare",
+      "public_access": "PUBLIC indexed/category pages; direct HTTP availability varies",
+      "itemized_opportunities": true,
+      "visible_record_count": "UNKNOWN; several portfolio category pages contain many records; PIF source currently returns zero",
+      "extraction_method": "HTML/PUBLIC_XHR unknown per category",
+      "stable_provider_id": "PARTIAL/UNKNOWN (PIF record GUIDs sometimes present)",
+      "pagination": "Category and company pages; exact total unknown",
+      "geography_available": "PARTIAL",
+      "coordinates_available": "PARTIAL",
+      "overlaps_with": "HIGH_OVERLAP with PIF, Invest Saudi, NCP, Furas and existing PIF source configuration",
+      "current_platform_status": "Content is part of existing PIF source; not separate adapters",
+      "discovery_classification": "MIRROR_OF_EXISTING_SOURCE",
+      "priority": "-",
+      "notes": "ASFAR Hail opportunity card links to PIF and its destination currently says no results; RSG/JCDC/AlUla and industrial category pages expose detailed opportunity items. Source-level aggregation belongs to PIF."
+    },
+    {
+      "source_id": "kaec-opportunity-pages",
+      "source_name_ar": "فرص مدينة الملك عبدالله الاقتصادية",
+      "source_name_en": "KAEC Public Plot Opportunities",
+      "organization": "King Abdullah Economic City / Emaar Economic City",
+      "official_url": "https://www.kaec.net/invest/",
+      "opportunity_url": "https://www.kaec.net/invest/",
+      "entity_type": "Publicly listed developer / special economic zone operator",
+      "geographic_scope": "LOCAL",
+      "regions_covered": "Makkah Region (KAEC)",
+      "sector_scope": "Real estate plots, mixed-use, residential, medical and commercial development",
+      "public_access": "PUBLIC",
+      "itemized_opportunities": true,
+      "visible_record_count": "At least 30 plot IDs visible/indexed; complete current count unknown",
+      "extraction_method": "HTML",
+      "stable_provider_id": "TRUE (plot IDs)",
+      "pagination": "Section-based HTML listing",
+      "geography_available": "TRUE (district/plot map references)",
+      "coordinates_available": "PARTIAL",
+      "overlaps_with": "MEDIUM_OVERLAP with PIF hub",
+      "current_platform_status": "Not configured separately",
+      "discovery_classification": "MIRROR_OF_EXISTING_SOURCE",
+      "priority": "-",
+      "notes": "Public site lists plot IDs, areas, uses and development terms. The operator is a listed/developer entity, not a public authority; included for coverage review but not counted as a new government/government-owned source without ownership verification. PIF hub contains KAEC company opportunity content."
+    },
+    {
+      "source_id": "spark-investor-process",
+      "source_name_ar": "مسار المستثمر - سبارك",
+      "source_name_en": "King Salman Energy Park (SPARK) Investor Process",
+      "organization": "King Salman Energy Park (SPARK)",
+      "official_url": "https://www.spark.sa/page/Become_an_Investor",
+      "opportunity_url": "https://www.spark.sa/page/Become_an_Investor",
+      "entity_type": "Government-backed industrial zone developer",
+      "geographic_scope": "LOCAL",
+      "regions_covered": "Eastern Province",
+      "sector_scope": "Industrial land, logistics, commercial, residential and community facilities",
+      "public_access": "PUBLIC investor interest process",
+      "itemized_opportunities": false,
+      "visible_record_count": "UNKNOWN; no public parcel-level live inventory found",
+      "extraction_method": "HTML",
+      "stable_provider_id": "FALSE",
+      "pagination": "No itemized catalog; investor sends LOI and completes land allocation form",
+      "geography_available": "TRUE (zone level)",
+      "coordinates_available": "FALSE",
+      "overlaps_with": "MODON, Invest Saudi, PIF",
+      "current_platform_status": "Not configured",
+      "discovery_classification": "NOT_ITEMIZED",
+      "priority": "-",
+      "notes": "Master plan describes categories and broad planned area; investor process is request-driven, not an open itemized offer list."
+    },
+    {
+      "source_id": "mawani-leasing",
+      "source_name_ar": "تأجير العقارات بالموانئ السعودية",
+      "source_name_en": "Mawani Port Property Leasing",
+      "organization": "Saudi Ports Authority (Mawani)",
+      "official_url": "https://mawani.gov.sa/",
+      "opportunity_url": "https://mawani.gov.sa/uploads/Regulations_for_Leasing_Property_of_the_Saudi_Ports_Authority_5cb4050982.pdf",
+      "entity_type": "National transport authority",
+      "geographic_scope": "NATIONAL",
+      "regions_covered": "Port locations nationwide",
+      "sector_scope": "Port commercial sites, services and concessions",
+      "public_access": "PUBLIC regulations; no current open catalog confirmed",
+      "itemized_opportunities": false,
+      "visible_record_count": "UNKNOWN",
+      "extraction_method": "PDF regulations; no itemized feed",
+      "stable_provider_id": "UNKNOWN",
+      "pagination": "No catalog verified",
+      "geography_available": "TRUE (ports, not opportunities)",
+      "coordinates_available": "UNKNOWN",
+      "overlaps_with": "NCP, Invest Saudi, PIF",
+      "current_platform_status": "Not configured separately",
+      "discovery_classification": "NOT_ITEMIZED",
+      "priority": "-",
+      "notes": "Regulations say Mawani identifies sites before offering leases; the policy itself is not a current opportunity list. NCP/Invest Saudi project announcements cover some long-term concessions."
+    },
+    {
+      "source_id": "swa-opportunities-announcement",
+      "source_name_ar": "فرص الهيئة السعودية للمياه",
+      "source_name_en": "Saudi Water Authority Localization Opportunities",
+      "organization": "Saudi Water Authority",
+      "official_url": "https://www.spa.gov.sa/en/N2618510",
+      "opportunity_url": "https://www.spa.gov.sa/en/N2618510",
+      "entity_type": "National water authority",
+      "geographic_scope": "NATIONAL",
+      "regions_covered": "National supplier/localization market",
+      "sector_scope": "Water industry localization and services",
+      "public_access": "PUBLIC news announcement",
+      "itemized_opportunities": false,
+      "visible_record_count": "18 described as a total; no individually itemized catalog linked",
+      "extraction_method": "HTML news",
+      "stable_provider_id": "FALSE",
+      "pagination": "Single news article",
+      "geography_available": "FALSE/PARTIAL",
+      "coordinates_available": "FALSE",
+      "overlaps_with": "PIF, Invest Saudi, NCP",
+      "current_platform_status": "Not configured",
+      "discovery_classification": "NOT_ITEMIZED",
+      "priority": "-",
+      "notes": "An 18-opportunity count is announced but the news article does not enumerate each opportunity or link a public catalog; count is not ingestible as 18 records from this page."
+    },
+    {
+      "source_id": "public-procurement-etimad",
+      "source_name_ar": "اعتماد - المنافسات الحكومية",
+      "source_name_en": "Etimad Government Procurement",
+      "organization": "National Center for Government Resources Systems / Ministry of Finance",
+      "official_url": "https://etimad.sa/",
+      "opportunity_url": "https://etimad.sa/",
+      "entity_type": "Government procurement platform",
+      "geographic_scope": "NATIONAL",
+      "regions_covered": "All regions",
+      "sector_scope": "Public procurement and tenders",
+      "public_access": "PUBLIC notice information; bidder submission/access may require registration",
+      "itemized_opportunities": true,
+      "visible_record_count": "Not counted",
+      "extraction_method": "Portal/HTML",
+      "stable_provider_id": "TRUE/PARTIAL",
+      "pagination": "Procurement portal workflow",
+      "geography_available": "PARTIAL",
+      "coordinates_available": "PARTIAL",
+      "overlaps_with": "NCP and public issuer sites",
+      "current_platform_status": "Not configured and excluded from investment ingestion",
+      "discovery_classification": "NOT_INVESTMENT_OPPORTUNITY",
+      "priority": "-",
+      "notes": "Ordinary supplies, consulting, construction and service tenders are not investments; only individually proven PPP, BOT, concession, long-term asset development or commercial lease items qualify."
+    },
+    {
+      "source_id": "public-funds-financing",
+      "source_name_ar": "صناديق التنمية والتمويل العامة",
+      "source_name_en": "Public Development Funds (Financing Products)",
+      "organization": "Tourism Development Fund, SIDF, Agricultural Development Fund, Cultural Development Fund, National Development Fund",
+      "official_url": "https://tdf.gov.sa/",
+      "opportunity_url": "https://tdf.gov.sa/",
+      "entity_type": "Public financing institutions",
+      "geographic_scope": "NATIONAL",
+      "regions_covered": "All regions",
+      "sector_scope": "Loans, guarantees, project financing and credit support",
+      "public_access": "PUBLIC product information",
+      "itemized_opportunities": false,
+      "visible_record_count": 0,
+      "extraction_method": "HTML",
+      "stable_provider_id": "FALSE",
+      "pagination": "Financing product pages; no asset opportunity feed identified",
+      "geography_available": "NOT_APPLICABLE",
+      "coordinates_available": "NOT_APPLICABLE",
+      "overlaps_with": "Invest Saudi financing/sector information",
+      "current_platform_status": "Not configured",
+      "discovery_classification": "NOT_INVESTMENT_OPPORTUNITY",
+      "priority": "-",
+      "notes": "Financing products and investor-support programs are not themselves third-party investment opportunity records."
+    },
+    {
+      "source_id": "mim-general-mining",
+      "source_name_ar": "وزارة الصناعة والثروة المعدنية - معلومات التعدين",
+      "source_name_en": "MIM Mining Licences and Geological Data",
+      "organization": "Ministry of Industry and Mineral Resources / Saudi Geological Survey",
+      "official_url": "https://mim.gov.sa/",
+      "opportunity_url": "https://cms.taadeen.sa/en/mining-bids",
+      "entity_type": "Ministry and geological survey",
+      "geographic_scope": "NATIONAL",
+      "regions_covered": "Mineralized areas nationwide",
+      "sector_scope": "Mining licenses, geology and mining services",
+      "public_access": "PUBLIC information; licence application services gated",
+      "itemized_opportunities": "See Ta'adeen Mining Bids; geology datasets are not opportunities",
+      "visible_record_count": "No additional public itemized feed beyond Ta'adeen confirmed",
+      "extraction_method": "HTML/PDF/OTHER",
+      "stable_provider_id": "UNKNOWN",
+      "pagination": "N/A",
+      "geography_available": "TRUE",
+      "coordinates_available": "PARTIAL",
+      "overlaps_with": "Ta'adeen; Invest Saudi; PIF",
+      "current_platform_status": "Opportunity source represented by Ta'adeen candidate",
+      "discovery_classification": "MIRROR_OF_EXISTING_SOURCE",
+      "priority": "-",
+      "notes": "Geological datasets, license service instructions and public mining bids must be kept distinct. New feed candidate is the Ta'adeen round catalog."
+    },
+    {
+      "source_id": "regional-development-authorities",
+      "source_name_ar": "هيئات التطوير الإقليمية",
+      "source_name_en": "Regional Development Authorities",
+      "organization": "Royal Commission for Riyadh City; Royal Commission for Makkah City and Holy Sites; Madinah Region Development Authority; Eastern Region Development Authority; AHDA; Aseer Development Authority; Hail Region Development Authority; Al-Baha development bodies",
+      "official_url": "https://furas.momah.gov.sa/en",
+      "opportunity_url": "https://furas.momah.gov.sa/en",
+      "entity_type": "Regional development authorities",
+      "geographic_scope": "REGIONAL",
+      "regions_covered": "Riyadh, Makkah, Madinah, Eastern, Al-Ahsa, Asir, Hail and Al-Baha; other region search did not find independent itemized catalogs",
+      "sector_scope": "Regional infrastructure, urban development, tourism and municipal assets",
+      "public_access": "Mixed; Furas offers public issuer listings; authority strategy pages often non-itemized",
+      "itemized_opportunities": "Furas publisher records; no additional independent catalog confirmed beyond AHDA and RCU",
+      "visible_record_count": "UNKNOWN outside integrated AHDA/Furas/RCU",
+      "extraction_method": "ARCGIS via Furas; public authority HTML/PDF",
+      "stable_provider_id": "TRUE through Furas; varies elsewhere",
+      "pagination": "Furas and agency pages",
+      "geography_available": "TRUE/PARTIAL",
+      "coordinates_available": "PARTIAL",
+      "overlaps_with": "HIGH_OVERLAP with Furas, NCP, PIF",
+      "current_platform_status": "AHDA and RCU already covered elsewhere in this register; most authority content mirrors Furas or is marketing/strategy",
+      "discovery_classification": "MIRROR_OF_EXISTING_SOURCE",
+      "priority": "-",
+      "notes": "No new regional authority adapter recommended until an independent currently open itemized catalog and provider IDs are proven."
+    },
+    {
+      "source_id": "royal-commissions-other",
+      "source_name_ar": "الهيئات الملكية الأخرى",
+      "source_name_en": "Other Royal Commissions and Authorities",
+      "organization": "Royal Commission for Riyadh City; Royal Commission for Makkah City and Holy Sites; Royal Commission for Jubail and Yanbu; Royal Commission for AlUla",
+      "official_url": "https://www.rcjy.gov.sa/en/web/guest",
+      "opportunity_url": "https://www.rcjy.gov.sa/en/web/guest",
+      "entity_type": "Royal Commissions",
+      "geographic_scope": "LOCAL / MULTI-REGION",
+      "regions_covered": "Riyadh, Makkah, Madinah/AlUla, Eastern/Jubail, Madinah/Yanbu, Jazan industrial city",
+      "sector_scope": "Urban development, industrial, tourism, infrastructure and commercial assets",
+      "public_access": "Mixed",
+      "itemized_opportunities": "RCU public API=6; RCJY teaser cards=5; other commissions no separate public itemized feed verified",
+      "visible_record_count": "See RCU and RCJY individual entries",
+      "extraction_method": "PUBLIC_XHR / HTML",
+      "stable_provider_id": "Varies",
+      "pagination": "Varies",
+      "geography_available": "PARTIAL",
+      "coordinates_available": "PARTIAL",
+      "overlaps_with": "Furas, NCP, PIF, MODON",
+      "current_platform_status": "RCU candidate ready; RCJY candidate needs investigation; others not itemized/mirror",
+      "discovery_classification": "MIRROR_OF_EXISTING_SOURCE",
+      "priority": "-",
+      "notes": "Do not combine this summary group count with the separately listed RCU and RCJY sources."
+    },
+    {
+      "source_id": "development-companies-pif",
+      "source_name_ar": "شركات التطوير المملوكة لصندوق الاستثمارات العامة",
+      "source_name_en": "PIF Development Companies",
+      "organization": "ROSHN, New Murabba, Diriyah Company, Jeddah Central, Rua Al Madinah, Masar/Umm Al Qura, Saudi Downtown, Red Sea Global, Qiddiya, Soudah, Boutique Group, NEOM",
+      "official_url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/",
+      "opportunity_url": "https://www.pif.gov.sa/en/private-sector-hub/explore-opportunities/",
+      "entity_type": "PIF portfolio developers",
+      "geographic_scope": "NATIONAL / PROJECT LOCATIONS",
+      "regions_covered": "Riyadh, Makkah/Jeddah, Madinah, Asir, Tabuk and other destination locations",
+      "sector_scope": "Tourism, hospitality, residential, retail, entertainment and mixed-use urban development",
+      "public_access": "Mixed; public opportunity records primarily visible in PIF Hub; individual company pages often marketing/procurement/EOI",
+      "itemized_opportunities": "PIF hub has itemized company-specific opportunities; individual company direct totals not verified",
+      "visible_record_count": "UNKNOWN; use integrated PIF source as aggregator",
+      "extraction_method": "HTML/PUBLIC_XHR varies",
+      "stable_provider_id": "PARTIAL",
+      "pagination": "PIF company/category pages",
+      "geography_available": "PARTIAL",
+      "coordinates_available": "PARTIAL",
+      "overlaps_with": "HIGH_OVERLAP with PIF and Invest Saudi; NCP for PPP projects",
+      "current_platform_status": "No direct company feeds added; PIF source already configured but currently returns 0 records",
+      "discovery_classification": "MIRROR_OF_EXISTING_SOURCE",
+      "priority": "-",
+      "notes": "Individual development-company homepages, procurement portals and vendor registrations are not separate investment sources unless a publicly itemized private-participation offer is verified outside PIF."
+    },
+    {
+      "source_id": "transport-port-airport-operators",
+      "source_name_ar": "مشغلو النقل والموانئ والمطارات",
+      "source_name_en": "Transport, Port and Airport Operators",
+      "organization": "Mawani; MATARAT; Riyadh Airports; Jeddah Airports; Dammam Airports; Cluster2 Airports; SAR; SPL; individual port authorities",
+      "official_url": "https://mawani.gov.sa/",
+      "opportunity_url": "https://mawani.gov.sa/",
+      "entity_type": "Government-owned infrastructure operators",
+      "geographic_scope": "NATIONAL / LOCAL ASSETS",
+      "regions_covered": "Multiple regions",
+      "sector_scope": "Airports, ports, rail, logistics zones, leases and concessions",
+      "public_access": "Public information and NCP announcements; no common independent open catalog confirmed",
+      "itemized_opportunities": false,
+      "visible_record_count": "No separate catalog count; project announcements covered by NCP and RCU",
+      "extraction_method": "HTML/PDF via issuer or NCP",
+      "stable_provider_id": "UNKNOWN",
+      "pagination": "No consolidated open catalog confirmed",
+      "geography_available": "PARTIAL",
+      "coordinates_available": "UNKNOWN",
+      "overlaps_with": "NCP, Invest Saudi, PIF, Furas",
+      "current_platform_status": "No new adapter proposed; NCP/RCU/Invest Saudi cover verified project items",
+      "discovery_classification": "NOT_ITEMIZED",
+      "priority": "-",
+      "notes": "Ordinary Etimad tenders excluded. Only concession/PPP/lease/project announcements qualify; NCP project news includes Qassim and Taif airport PPPs."
+    },
+    {
+      "source_id": "economic-zones",
+      "source_name_ar": "المدن والمناطق الاقتصادية الخاصة",
+      "source_name_en": "Economic Cities and Special Economic Zones",
+      "organization": "KAEC; SPARK; ECZA and Jazan, Ras Al-Khair, Cloud Computing SEZ operators",
+      "official_url": "https://www.spark.sa/page/Become_an_Investor",
+      "opportunity_url": "https://www.spark.sa/page/Become_an_Investor",
+      "entity_type": "Special economic zones / zone developers",
+      "geographic_scope": "LOCAL / MULTI-REGION",
+      "regions_covered": "Makkah, Eastern, Jazan, Riyadh/Cloud Computing and other zones",
+      "sector_scope": "Industrial, logistics, technology, real estate and commercial development",
+      "public_access": "Mixed; SPARK request form; KAEC public plot pages; RCJY zones have no verified public item catalog",
+      "itemized_opportunities": "KAEC public plot page is itemized; ownership/source eligibility caveat; no additional government-owned zone feed confirmed",
+      "visible_record_count": "KAEC at least 30 plot IDs; all current plot availability unverified",
+      "extraction_method": "HTML",
+      "stable_provider_id": "TRUE for KAEC plot codes; UNKNOWN for other zones",
+      "pagination": "HTML page by neighborhood",
+      "geography_available": "TRUE/PARTIAL",
+      "coordinates_available": "PARTIAL",
+      "overlaps_with": "PIF, MODON, RCJY",
+      "current_platform_status": "No new source qualifies on government-owned/public source rule without source/ownership verification",
+      "discovery_classification": "NOT_ITEMIZED",
+      "priority": "-",
+      "notes": "SPARK's published investor journey is request-driven with no parcel catalog. KAEC has public plots but is a listed developer; included as a boundary case rather than counted as a new government source."
+    },
+    {
+      "source_id": "additional-ministry-portals",
+      "source_name_ar": "بوابات الوزارات والهيئات القطاعية",
+      "source_name_en": "Other Ministry and Sector Authority Pages",
+      "organization": "Ministries of Commerce, Health, Education, Hajj and Umrah, Culture, Sport, Energy, Transport; Saudi Water Authority; NWC; SWPC; National Water Company; Saudi Tourism Authority",
+      "official_url": "https://www.my.gov.sa/content/investing",
+      "opportunity_url": "https://www.my.gov.sa/content/investing",
+      "entity_type": "Central ministries and sector authorities",
+      "geographic_scope": "NATIONAL",
+      "regions_covered": "All regions",
+      "sector_scope": "Commerce, healthcare, education, pilgrimage, culture, sports, energy, transport, water",
+      "public_access": "Mostly public informational pages; current itemized sources are Furas, NCP, Invest Saudi, PIF, Ta'adeen, RCU or sector notices",
+      "itemized_opportunities": false,
+      "visible_record_count": "No independent additional current catalog confirmed",
+      "extraction_method": "HTML/PDF / existing aggregator",
+      "stable_provider_id": "UNKNOWN",
+      "pagination": "N/A",
+      "geography_available": "PARTIAL",
+      "coordinates_available": "UNKNOWN",
+      "overlaps_with": "Furas, Invest Saudi, NCP, PIF, NHC",
+      "current_platform_status": "Reviewed; no additional qualifying open feed found in practical sweep",
+      "discovery_classification": "NOT_ITEMIZED",
+      "priority": "-",
+      "notes": "An investment strategy, financing program, announced count, tender page or ministry homepage is not a source without publicly itemized actionable opportunities."
+    },
+    {
+      "source_id": "university-investment-eisc",
+      "source_name_ar": "استثمار الأصول التعليمية الحكومية",
+      "source_name_en": "Public University and School Asset Investment",
+      "organization": "Ministry of Education; Tatweer Buildings; Majma'ah, Hail, PNU, Umm Al-Qura, Taibah, Qassim, KSU, KAU, IAU, KKU, Tabuk, Jazan, Najran, Jouf, Northern Border and other public universities",
+      "official_url": "https://www.moe.gov.sa/en/knowledgecenter/eservices/pages/estithmar.aspx",
+      "opportunity_url": "https://tbc.sa/EISC/EN/tadaruj.aspx",
+      "entity_type": "Ministry and public universities",
+      "geographic_scope": "NATIONAL / MULTI-REGION",
+      "regions_covered": "All regions",
+      "sector_scope": "School/university land, facilities, commercial and service assets",
+      "public_access": "MIXED; Furas public issuer list and some portals; EISC detail platform is login restricted",
+      "itemized_opportunities": "KFU integrated; other current standalone public sources not verified",
+      "visible_record_count": "UNKNOWN beyond KFU/Furas",
+      "extraction_method": "ARCGIS via Furas; HTML/PDF for standalone university records",
+      "stable_provider_id": "TRUE via Furas; varies outside",
+      "pagination": "Furas list; login platform for school assets",
+      "geography_available": "PARTIAL",
+      "coordinates_available": "PARTIAL",
+      "overlaps_with": "Furas, KFU, TBC/EISC",
+      "current_platform_status": "KFU existing; other pages largely mirror or restricted",
+      "discovery_classification": "RESTRICTED",
+      "priority": "-",
+      "notes": "Representative sweeps of Majma'ah (confirmed Furas), University of Hail, PNU and public university search results found investment functions but not another open standalone itemized catalog. Do not infer that all universities were individually endpoint-tested."
+    },
+    {
+      "source_id": "funding-entities",
+      "source_name_ar": "جهات التمويل والتنمية العامة",
+      "source_name_en": "Public Funds and Development Finance Entities",
+      "organization": "Tourism Development Fund, SIDF, Agricultural Development Fund, Cultural Development Fund, National Development Fund and related public funds",
+      "official_url": "https://tdf.gov.sa/",
+      "opportunity_url": "https://tdf.gov.sa/",
+      "entity_type": "Public funds",
+      "geographic_scope": "NATIONAL",
+      "regions_covered": "All regions",
+      "sector_scope": "Loans, guarantees, grants, financing and credit programs",
+      "public_access": "PUBLIC financing program information",
+      "itemized_opportunities": false,
+      "visible_record_count": 0,
+      "extraction_method": "HTML/PDF",
+      "stable_provider_id": "FALSE",
+      "pagination": "Financing products",
+      "geography_available": "NOT_APPLICABLE",
+      "coordinates_available": "NOT_APPLICABLE",
+      "overlaps_with": "Invest Saudi and investor support programs",
+      "current_platform_status": "No opportunity source adapter recommended",
+      "discovery_classification": "NOT_INVESTMENT_OPPORTUNITY",
+      "priority": "-",
+      "notes": "Same exclusion decision as public-funds-financing; this row is a reviewed organization family, not an additional countable feed."
+    },
+    {
+      "source_id": "amanat-and-development-entity-pages",
+      "source_name_ar": "صفحات الجهات المحلية والإقليمية",
+      "source_name_en": "Local Authority and Development Entity Page Sweep",
+      "organization": "Emirates, Amanat, major municipalities, regional development authorities, Royal Commissions and local development companies in the 13 regions",
+      "official_url": "https://furas.momah.gov.sa/en",
+      "opportunity_url": "https://furas.momah.gov.sa/en",
+      "entity_type": "Regional/local public issuers",
+      "geographic_scope": "NATIONAL / LOCAL ISSUERS",
+      "regions_covered": "All 13 regions",
+      "sector_scope": "Municipal, commercial, urban, tourism, education and industrial assets",
+      "public_access": "PUBLIC/VARIES",
+      "itemized_opportunities": "Furas includes itemized publisher opportunities; non-Furas independent feeds only AHDA, Al-Ahsa platform, RCU and RCJY teaser cards found",
+      "visible_record_count": "Not independently counted; Furas records overlap",
+      "extraction_method": "ARCGIS; HTML/PDF for authority pages",
+      "stable_provider_id": "TRUE via Furas, unknown otherwise",
+      "pagination": "Furas API; source-specific pages",
+      "geography_available": "TRUE/PARTIAL",
+      "coordinates_available": "PARTIAL",
+      "overlaps_with": "HIGH_OVERLAP with Furas, NCP, PIF and Invest Saudi",
+      "current_platform_status": "Region and authority sweep summarized in matrix; no separate adapters for mirrors",
+      "discovery_classification": "MIRROR_OF_EXISTING_SOURCE",
+      "priority": "-",
+      "notes": "Search coverage included emirates/Amanat and named development bodies for Riyadh, Makkah, Madinah, Eastern, Qassim, Asir, Tabuk, Hail, Northern Borders, Jazan, Najran, Al-Baha and Al-Jouf."
+    }
+  ],
+  "regions": [
+    {
+      "region": "Riyadh",
+      "existing_integrated_sources": [
+        "furas",
+        "invest-saudi",
+        "ncp",
+        "pif",
+        "modon",
+        "nhc",
+        "mwan"
+      ],
+      "new_unique_sources_found": [
+        "matarat-airport-ppp (through NCP)"
+      ],
+      "ready_to_integrate": [],
+      "coverage_gaps": [
+        "No separate current public Riyadh Airports concession catalog confirmed; municipal offers are Furas listings."
+      ]
+    },
+    {
+      "region": "Makkah",
+      "existing_integrated_sources": [
+        "furas",
+        "invest-saudi",
+        "ncp",
+        "pif",
+        "mwan"
+      ],
+      "new_unique_sources_found": [
+        "PIF company opportunities incl. Jeddah Central"
+      ],
+      "ready_to_integrate": [],
+      "coverage_gaps": [
+        "Municipal content mainly Furas; individual developer direct catalogs not consistently itemized."
+      ]
+    },
+    {
+      "region": "Madinah",
+      "existing_integrated_sources": [
+        "furas",
+        "invest-saudi",
+        "ncp",
+        "pif"
+      ],
+      "new_unique_sources_found": [
+        "rcu-investment-opportunities"
+      ],
+      "ready_to_integrate": [
+        "rcu-investment-opportunities"
+      ],
+      "coverage_gaps": [
+        "Other development authority live catalogs not confirmed."
+      ]
+    },
+    {
+      "region": "Eastern Province",
+      "existing_integrated_sources": [
+        "furas",
+        "alahsa-opportunities",
+        "ahda",
+        "kfu",
+        "modon",
+        "ncp",
+        "pif",
+        "mwan"
+      ],
+      "new_unique_sources_found": [
+        "taadeen-mining-bids (national multi-region; 8 inactive Round 11 site records)",
+        "rcjy-investment-opportunities (official investor portal; current listings all Yanbu)"
+      ],
+      "ready_to_integrate": [
+        "rcjy-investment-opportunities",
+        "taadeen-mining-bids (historical/inactive only)"
+      ],
+      "coverage_gaps": [
+        "RCJY public portal now works; current catalog has 3 Yanbu records and none currently observed for Jubail/Ras Al-Khair/Jazan. MODON current feed remains zero."
+      ]
+    },
+    {
+      "region": "Qassim",
+      "existing_integrated_sources": [
+        "furas",
+        "invest-saudi",
+        "ncp",
+        "pif"
+      ],
+      "new_unique_sources_found": [
+        "MATARAT Qassim airport PPP announcement via NCP"
+      ],
+      "ready_to_integrate": [],
+      "coverage_gaps": [
+        "Airport PPP content is announcement/portal-driven, not direct operator inventory."
+      ]
+    },
+    {
+      "region": "Asir",
+      "existing_integrated_sources": [
+        "furas",
+        "invest-saudi",
+        "ncp",
+        "pif"
+      ],
+      "new_unique_sources_found": [
+        "historic ASDA investment teasers; PIF Soudah content"
+      ],
+      "ready_to_integrate": [],
+      "coverage_gaps": [
+        "Teasers route live offers to Furas; current offer status unknown."
+      ]
+    },
+    {
+      "region": "Tabuk",
+      "existing_integrated_sources": [
+        "furas",
+        "invest-saudi",
+        "ncp",
+        "pif"
+      ],
+      "new_unique_sources_found": [
+        "PIF/NEOM/Red Sea content; Ta'adeen multi-region"
+      ],
+      "ready_to_integrate": [],
+      "coverage_gaps": [
+        "No separate developer open catalog confirmed beyond PIF aggregator."
+      ]
+    },
+    {
+      "region": "Hail",
+      "existing_integrated_sources": [
+        "furas",
+        "invest-saudi",
+        "ncp",
+        "pif"
+      ],
+      "new_unique_sources_found": [
+        "PIF ASFAR Hail opportunity card"
+      ],
+      "ready_to_integrate": [],
+      "coverage_gaps": [
+        "ASFAR link resolves through PIF and detail target currently returns no results."
+      ]
+    },
+    {
+      "region": "Northern Borders",
+      "existing_integrated_sources": [
+        "furas",
+        "invest-saudi",
+        "ncp",
+        "pif"
+      ],
+      "new_unique_sources_found": [],
+      "ready_to_integrate": [],
+      "coverage_gaps": [
+        "No direct/local public itemized opportunity source found beyond national platforms."
+      ]
+    },
+    {
+      "region": "Jazan",
+      "existing_integrated_sources": [
+        "furas",
+        "invest-saudi",
+        "ncp",
+        "pif",
+        "modon"
+      ],
+      "new_unique_sources_found": [
+        "RCJY official investor portal exposes Jazan as a city filter; no current Jazan record among 3 returned listings",
+        "taadeen-mining-bids (national multi-region; Round 11 has no current active offers)"
+      ],
+      "ready_to_integrate": [],
+      "coverage_gaps": [
+        "RCJY dedicated portal is accessible, but its current three records are all Yanbu; Jazan listings are not currently observed."
+      ]
+    },
+    {
+      "region": "Najran",
+      "existing_integrated_sources": [
+        "furas",
+        "invest-saudi",
+        "ncp",
+        "pif"
+      ],
+      "new_unique_sources_found": [],
+      "ready_to_integrate": [],
+      "coverage_gaps": [
+        "No direct/local public itemized opportunity source found beyond national platforms."
+      ]
+    },
+    {
+      "region": "Al-Baha",
+      "existing_integrated_sources": [
+        "furas",
+        "invest-saudi",
+        "ncp",
+        "pif"
+      ],
+      "new_unique_sources_found": [],
+      "ready_to_integrate": [],
+      "coverage_gaps": [
+        "No direct/local public itemized opportunity source found beyond national platforms."
+      ]
+    },
+    {
+      "region": "Al-Jouf",
+      "existing_integrated_sources": [
+        "furas",
+        "invest-saudi",
+        "ncp",
+        "pif"
+      ],
+      "new_unique_sources_found": [],
+      "ready_to_integrate": [],
+      "coverage_gaps": [
+        "No direct/local public itemized opportunity source found beyond national platforms."
+      ]
+    }
+  ],
+  "sectors": [
+    {
+      "sector": "Municipal / Real Estate",
+      "integrated_sources": [
+        "Furas",
+        "Al-Ahsa",
+        "AHDA",
+        "NHC"
+      ],
+      "new_candidates": [
+        "Riyadh Municipality mirror",
+        "NCVC mirror",
+        "ASDA teasers mirror"
+      ],
+      "known_gaps": "Source totals/active status and record-level Furas reconciliation."
+    },
+    {
+      "sector": "Industrial",
+      "integrated_sources": [
+        "MODON",
+        "Invest Saudi",
+        "PIF",
+        "Furas"
+      ],
+      "new_candidates": [
+        "RCJY official portal (3 itemized listings, all current records Yanbu)"
+      ],
+      "known_gaps": "RCJY detail rows have sparse/default status and area; MODON current feed returns zero."
+    },
+    {
+      "sector": "Mining",
+      "integrated_sources": [
+        "Invest Saudi",
+        "PIF"
+      ],
+      "new_candidates": [
+        "Ta’adeen Round 11 (8 itemized site records, all inactive; PQQ closed 2026-07-31)"
+      ],
+      "known_gaps": "Model parent round plus 8 site children; no current active offers; stable public site slugs but no numeric license IDs observed."
+    },
+    {
+      "sector": "Tourism",
+      "integrated_sources": [
+        "Invest Saudi",
+        "PIF",
+        "Furas"
+      ],
+      "new_candidates": [
+        "Ministry Tourism opportunity map: itemized details confirmed by official FAQ; application inaccessible externally"
+      ],
+      "known_gaps": "Public record count and extraction payload unavailable because map application blocks external network."
+    },
+    {
+      "sector": "PPP / Privatization",
+      "integrated_sources": [
+        "NCP",
+        "Invest Saudi",
+        "PIF"
+      ],
+      "new_candidates": [
+        "NCP Investors Portal (159 public UUID-identified project records)",
+        "RCU"
+      ],
+      "known_gaps": "Existing NCP source is news announcements; portal pipeline is a distinct dataset. Cross-source semantic/project matching remains an integration gate."
+    },
+    {
+      "sector": "Transport",
+      "integrated_sources": [
+        "NCP",
+        "Invest Saudi",
+        "PIF"
+      ],
+      "new_candidates": [
+        "RCU airport PPP"
+      ],
+      "known_gaps": "Operator-specific commercial concessions not consistently public."
+    },
+    {
+      "sector": "Logistics",
+      "integrated_sources": [
+        "Invest Saudi",
+        "PIF",
+        "MODON"
+      ],
+      "new_candidates": [
+        "RCU airport and asset opportunities"
+      ],
+      "known_gaps": "Port/airport site lists absent."
+    },
+    {
+      "sector": "Ports",
+      "integrated_sources": [
+        "NCP",
+        "Invest Saudi",
+        "PIF"
+      ],
+      "new_candidates": [
+        "None validated"
+      ],
+      "known_gaps": "Mawani lease rules, not current list; PPP notices via NCP."
+    },
+    {
+      "sector": "Airports",
+      "integrated_sources": [
+        "NCP",
+        "Invest Saudi",
+        "PIF"
+      ],
+      "new_candidates": [
+        "RCU"
+      ],
+      "known_gaps": "Airport operator commercial catalogs not found."
+    },
+    {
+      "sector": "Water",
+      "integrated_sources": [
+        "Invest Saudi",
+        "PIF",
+        "Furas"
+      ],
+      "new_candidates": [
+        "RCU"
+      ],
+      "known_gaps": "SWA announced 18 opportunities without linked itemized catalog."
+    },
+    {
+      "sector": "Waste",
+      "integrated_sources": [
+        "MWAN",
+        "Furas",
+        "PIF",
+        "NCP"
+      ],
+      "new_candidates": [
+        "RCU"
+      ],
+      "known_gaps": "Reconcile current MWAN opportunities and RCU overlap."
+    },
+    {
+      "sector": "Agriculture",
+      "integrated_sources": [
+        "Furas",
+        "Invest Saudi",
+        "PIF"
+      ],
+      "new_candidates": [
+        "None validated"
+      ],
+      "known_gaps": "MEWA routes current offers through Furas."
+    },
+    {
+      "sector": "Energy",
+      "integrated_sources": [
+        "Invest Saudi",
+        "PIF",
+        "NCP"
+      ],
+      "new_candidates": [
+        "SPARK not itemized"
+      ],
+      "known_gaps": "Investor LOI process has no open parcel list."
+    },
+    {
+      "sector": "Healthcare",
+      "integrated_sources": [
+        "Furas",
+        "Invest Saudi",
+        "PIF",
+        "NCP"
+      ],
+      "new_candidates": [
+        "None validated"
+      ],
+      "known_gaps": "No additional ministry/cluster public offer catalog confirmed."
+    },
+    {
+      "sector": "Education",
+      "integrated_sources": [
+        "KFU",
+        "Furas"
+      ],
+      "new_candidates": [
+        "TBC/EISC restricted"
+      ],
+      "known_gaps": "Other public university portals mirror Furas or require login."
+    },
+    {
+      "sector": "Culture",
+      "integrated_sources": [
+        "Furas",
+        "PIF"
+      ],
+      "new_candidates": [
+        "None validated"
+      ],
+      "known_gaps": "No distinct current catalog found."
+    },
+    {
+      "sector": "Sports",
+      "integrated_sources": [
+        "Furas",
+        "PIF"
+      ],
+      "new_candidates": [
+        "None validated"
+      ],
+      "known_gaps": "No distinct current catalog found."
+    },
+    {
+      "sector": "Urban Development",
+      "integrated_sources": [
+        "Furas",
+        "Invest Saudi",
+        "PIF",
+        "NHC",
+        "AHDA"
+      ],
+      "new_candidates": [
+        "RCU"
+      ],
+      "known_gaps": "Developer pages often marketing/EOI/procurement or PIF mirrors."
+    },
+    {
+      "sector": "Hospitality",
+      "integrated_sources": [
+        "Invest Saudi",
+        "PIF",
+        "Furas"
+      ],
+      "new_candidates": [
+        "Tourism map investigation",
+        "RCU"
+      ],
+      "known_gaps": "Ministry map outage; exact current public count unknown."
+    },
+    {
+      "sector": "Commercial / Retail",
+      "integrated_sources": [
+        "Furas",
+        "Al-Ahsa",
+        "PIF",
+        "MWAN"
+      ],
+      "new_candidates": [
+        "RCJY public investor portal (3 current itemized records, all Yanbu)"
+      ],
+      "known_gaps": "RCJY detail fields are sparse; some application steps may require investor account."
+    }
+  ],
+  "organizations_investigated": [
+    "Ministry of Investment (MISA)",
+    "Invest Saudi",
+    "Ministry of Municipalities and Housing",
+    "Furas",
+    "National Center for Privatization & PPP",
+    "Ministry of Industry and Mineral Resources",
+    "Ta'adeen",
+    "Ministry of Environment, Water and Agriculture",
+    "Ministry of Tourism",
+    "Saudi Tourism Authority",
+    "Ministry of Transport and Logistics Services",
+    "Ministry of Energy",
+    "Ministry of Commerce",
+    "Ministry of Health",
+    "Ministry of Education",
+    "Ministry of Hajj and Umrah",
+    "Ministry of Culture",
+    "Ministry of Sport",
+    "Saudi Ports Authority (Mawani)",
+    "General Authority of Civil Aviation",
+    "MATARAT Holding",
+    "Riyadh Airports",
+    "Jeddah Airports",
+    "Dammam Airports",
+    "Cluster2 Airports",
+    "Saudi Railway Company",
+    "Saudi Post/SPL",
+    "National Water Company",
+    "Saudi Water Authority",
+    "SWPC",
+    "National Center for Waste Management (MWAN)",
+    "National Center for Vegetation Development and Combating Desertification",
+    "MODON",
+    "SIDF",
+    "Tourism Development Fund",
+    "Agricultural Development Fund",
+    "Cultural Development Fund",
+    "National Development Fund",
+    "National Housing Company",
+    "Public Investment Fund",
+    "Royal Commission for Riyadh City",
+    "Royal Commission for Makkah City and Holy Sites",
+    "Al Madinah Region Development Authority",
+    "Eastern Region Development Authority",
+    "Al-Ahsa Development Authority",
+    "Aseer Development Authority",
+    "Al-Baha development bodies",
+    "Hail Region Development Authority",
+    "Royal Commission for Jubail and Yanbu",
+    "Royal Commission for AlUla",
+    "King Abdullah Economic City",
+    "King Salman Energy Park (SPARK)",
+    "Jazan Special Economic Zone",
+    "Ras Al-Khair Special Economic Zone",
+    "Cloud Computing SEZ",
+    "ROSHN",
+    "New Murabba",
+    "Diriyah Company",
+    "Jeddah Central Development Company",
+    "Rua Al Madinah",
+    "Masar/Umm Al Qura",
+    "Saudi Downtown Company",
+    "Red Sea Global",
+    "Qiddiya",
+    "Soudah Development",
+    "Boutique Group",
+    "NEOM",
+    "ASFAR",
+    "Ma'aden",
+    "King Faisal University",
+    "King Saud University",
+    "King Abdulaziz University",
+    "Imam Abdulrahman Bin Faisal University",
+    "Umm Al-Qura University",
+    "Taibah University",
+    "Qassim University",
+    "King Saud bin Abdulaziz University for Health Sciences",
+    "King Khalid University",
+    "University of Tabuk",
+    "Jazan University",
+    "Najran University",
+    "University of Baha",
+    "Jouf University",
+    "Northern Border University",
+    "Majma'ah University",
+    "University of Hail",
+    "Princess Nourah bint Abdulrahman University",
+    "Prince Sattam bin Abdulaziz University",
+    "University of Taif",
+    "Islamic University of Madinah",
+    "Jeddah Municipality",
+    "Madinah Municipality",
+    "Eastern Province Municipality",
+    "Qassim Municipality",
+    "Aseer Municipality",
+    "Tabuk Municipality",
+    "Hail Municipality",
+    "Jazan Municipality",
+    "Najran Municipality",
+    "Al-Baha Municipality",
+    "Al-Jouf Municipality",
+    "Northern Borders Municipality",
+    "Riyadh Municipality",
+    "Makkah Municipality",
+    "Al-Ahsa Municipality"
+  ],
+  "search_saturation_log": [
+    {
+      "search_area": "Existing registry",
+      "approach": "Read-only application DB inspection: Source rows, latest SyncJob rows, grouped SourceOpportunity counts, canonical Master count.",
+      "organizations_reviewed": "11 configured source records",
+      "new_sources_found": 0
+    },
+    {
+      "search_area": "Central platforms / municipal",
+      "approach": "Official Furas, MyGov, MOMAH/Municipality pages; queries for each authority plus investment opportunities; Furas public provider filters and ArcGIS source notes.",
+      "organizations_reviewed": "MOMAH/Furas, MISA/Invest Saudi, MEWA, NCP, major ministry group, Riyadh Municipality",
+      "new_sources_found": 1
+    },
+    {
+      "search_area": "Regional authorities and Amanat",
+      "approach": "13-region issuer sweep; official site and Furas searches; representative authority-specific pages and teasers; official municipality pages tested for mirror references.",
+      "organizations_reviewed": "13 regional issuer/Amanat families and named development authorities",
+      "new_sources_found": 1
+    },
+    {
+      "search_area": "Royal Commissions",
+      "approach": "RCJY public English portal, home teaser cards, Terms, MyGov service; link status and standard public route inspection. RCU frontend JavaScript route and public list request checked.",
+      "organizations_reviewed": "RCJY, RCU, RCRC, Royal Commission for Makkah City",
+      "new_sources_found": 1
+    },
+    {
+      "search_area": "Mining and industrial",
+      "approach": "Ta'adeen public mining bids and Round 11 detail, public attachments, MIM/SGS mining auction pages; MODON current configuration; industrial-entity searches.",
+      "organizations_reviewed": "MIM, Ta'adeen, SGS, MODON, SIDF, RCJY industrial locations",
+      "new_sources_found": 1
+    },
+    {
+      "search_area": "Tourism and PIF developers",
+      "approach": "Ministry of Tourism investment page and FAQ; PIF hub category pages; search company-level RSG, JCDC, Soudah, ASFAR, KAEC and development companies.",
+      "organizations_reviewed": "Tourism Ministry/STA/TDF and major PIF destination developers",
+      "new_sources_found": 1
+    },
+    {
+      "search_area": "Transport, ports, airports, water and public funds",
+      "approach": "Official NCP/MATART PPP notices, Mawani leasing regulations, SWA announcement, MEWA Furas route, public-fund investment/financing pages; exclude procurement and financing.",
+      "organizations_reviewed": "Mawani, GACA, MATARAT, airport operators, NWC/SWA/SWPC, funds",
+      "new_sources_found": 0
+    },
+    {
+      "search_area": "Universities and education assets",
+      "approach": "Furas university issuers, KFU existing source, Majma'ah Furas announcement/login platform, MOE educational-investment/TBC link, representative public university investment pages.",
+      "organizations_reviewed": "KFU and 16+ public universities; MOE/Tatweer Buildings",
+      "new_sources_found": 0
+    },
+    {
+      "search_area": "Economic zones, industrial and local developers",
+      "approach": "Official KAEC current plot page, SPARK investor process/master plan, official zone pages, PIF hub company pages.",
+      "organizations_reviewed": "KAEC, SPARK, ECZA, Jazan/Ras Al-Khair/Cloud Computing zones and PIF companies",
+      "new_sources_found": 0
+    },
+    {
+      "search_area": "Saturation follow-up",
+      "approach": "Targeted follow-up on RCJY, Ministry Tourism map, NCP Investors Portal, Ta’adeen and RCU. RCJY and NCP now expose unauthenticated structured catalogs; Tourism is classified restricted from external network; Ta’adeen Round 11 is closed/inactive. Remaining matched results resolve to reviewed feeds, mirrors, procurement, non-itemized, or restricted channels.",
+      "organizations_reviewed": "Previously reviewed org sets plus sectoral agencies",
+      "new_sources_found": 2
+    }
+  ],
+  "source_classification_definitions": {
+    "INTEGRATED": "Configured in the live source registry; this status does not assert full current harvest.",
+    "READY_TO_INTEGRATE": "Public, official, itemized opportunities and a viable public extraction path were directly confirmed.",
+    "NEEDS_TECHNICAL_INVESTIGATION": "Official public itemization appears to exist, but public list/detail/API access or stable count is incomplete; no bypass attempted.",
+    "MIRROR_OF_EXISTING_SOURCE": "Issuer's itemized offers appear in an existing national or configured source; no separate adapter recommended without unique records/fields.",
+    "NOT_ITEMIZED": "Investment interest, strategy, site inventory, news count, or process found but no open actionable itemized catalog.",
+    "NOT_INVESTMENT_OPPORTUNITY": "Financing or ordinary procurement, not investable assets/concessions/PPP/leases.",
+    "RESTRICTED": "Potential itemized inventory is behind login/access control and cannot be inspected publicly.",
+    "INACTIVE_OR_BROKEN": "The only relevant public listing route is inactive or broken and no alternate public path was confirmed.",
+    "NO_CURRENT_OPPORTUNITIES": "A source exposes a catalog pathway, but no current itemized offer is displayed."
+  }
+}

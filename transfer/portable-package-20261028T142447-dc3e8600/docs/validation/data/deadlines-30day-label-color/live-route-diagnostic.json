@@ -1,0 +1,638 @@
+{
+  "status": "PASSED",
+  "target": "LIVE_DASHBOARD",
+  "route": "http://localhost:8080/?view=data-dashboard",
+  "page_component": "#view-data-dashboard",
+  "card_component": "article.rd-card.rd-metric-card containing #rdDeadlineBuckets",
+  "source_files": {
+    "card_markup": "app/static/index.html",
+    "render_function": "renderSparkMetrics in app/static/data-dashboard.js",
+    "stylesheet": "app/static/data-dashboard.css"
+  },
+  "duplicate_component_search": {
+    "search": "rdDeadlineBuckets across app/deploy/tests",
+    "matches": 2,
+    "unique_card_markup": 1,
+    "unique_render_function": 1
+  },
+  "previous_change_not_visible_root_cause": "OLD_STATIC_BUILD_STILL_SERVED was reproduced during the first deployment attempt: Compose built alahsa-production-reference-frontend under its implicit project name and failed network creation, leaving alahsa-local-frontend unchanged at that step. The explicit alahsa-local deployment subsequently recreated the local static frontend. Current live browser DOM and versioned assets now contain the labels and four distinct bar colors. The pasted request contains no screenshot timestamp or browser-session metadata, so whether the supplied screenshot came from the pre-deployment window or a stale tab cannot be independently proven.",
+  "initial_live_dom": {
+    "title": "رصد | فرص الأحساء الاستثمارية",
+    "route": "http://localhost:8080/?view=data-dashboard",
+    "dashboardVisible": false,
+    "direction": "rtl",
+    "cardCount": 1,
+    "cardClass": "rd-card rd-metric-card",
+    "cardTitle": "مواعيد خلال 30 يوماً",
+    "labels": [
+      "خلال 7 أيام",
+      "8–14 يومًا",
+      "15–30 يومًا",
+      "أكثر من 30 يومًا"
+    ],
+    "bars": [
+      {
+        "key": "7d",
+        "color": "rgb(55, 138, 164)",
+        "hex": "#378AA4",
+        "label": "خلال 7 أيام",
+        "title": "خلال 7 أيام: 0 فرصة",
+        "aria": "خلال 7 أيام: 0 فرصة",
+        "barHeight": 4
+      },
+      {
+        "key": "8_14d",
+        "color": "rgb(0, 110, 97)",
+        "hex": "#006E61",
+        "label": "8–14 يومًا",
+        "title": "8–14 يومًا: 10 فرصة",
+        "aria": "8–14 يومًا: 10 فرصة",
+        "barHeight": 4.796875
+      },
+      {
+        "key": "15_30d",
+        "color": "rgb(195, 152, 83)",
+        "hex": "#C39853",
+        "label": "15–30 يومًا",
+        "title": "15–30 يومًا: 50 فرصة",
+        "aria": "15–30 يومًا: 50 فرصة",
+        "barHeight": 24
+      },
+      {
+        "key": "over_30d",
+        "color": "rgb(121, 83, 169)",
+        "hex": "#7953A9",
+        "label": "أكثر من 30 يومًا",
+        "title": "أكثر من 30 يومًا: 44 فرصة",
+        "aria": "أكثر من 30 يومًا: 44 فرصة",
+        "barHeight": 21.109375
+      }
+    ],
+    "values": "60",
+    "dashboard_visible": true,
+    "view_class": "page-view dashboard-rebuild visible",
+    "view_computed_visibility": {
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1"
+    }
+  },
+  "assets": {
+    "loaded": [
+      {
+        "url": "http://localhost:8080/static/data-dashboard.css?v=8",
+        "status": 200,
+        "last_modified": "Mon, 26 Oct 2026 11:06:41 GMT",
+        "etag": "\"6adf3441-9f52\"",
+        "sha256": "f05b6c2339b235623154bc217b1f95a01f9a1fd0fa2802d50c0eaceb2868b009",
+        "bytes": 40786
+      },
+      {
+        "url": "http://localhost:8080/static/data-dashboard.js?v=sector-distribution-v14",
+        "status": 200,
+        "last_modified": "Mon, 26 Oct 2026 11:03:26 GMT",
+        "etag": "\"6adf337e-7e25\"",
+        "sha256": "b7bbc62334d8d5797812f24de7e530ff38b2922ef697555797daa642447dda65",
+        "bytes": 32293
+      }
+    ],
+    "local_files": [
+      {
+        "asset": "css",
+        "path": "app/static/data-dashboard.css",
+        "sha256": "f05b6c2339b235623154bc217b1f95a01f9a1fd0fa2802d50c0eaceb2868b009"
+      },
+      {
+        "asset": "js",
+        "path": "app/static/data-dashboard.js",
+        "sha256": "b7bbc62334d8d5797812f24de7e530ff38b2922ef697555797daa642447dda65"
+      }
+    ],
+    "served_hashes_match_local": true
+  },
+  "values_before": [
+    0,
+    10,
+    50,
+    44
+  ],
+  "values_after": [
+    0,
+    10,
+    50,
+    44
+  ],
+  "values_changed": false,
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "docScroll": 1920,
+      "bodyScroll": 1920,
+      "rtl": true,
+      "labels": [
+        {
+          "text": "خلال 7 أيام",
+          "display": "flex",
+          "visibility": "visible",
+          "left": 599.875,
+          "right": 765.5,
+          "top": 465.09375,
+          "bottom": 490.09375,
+          "width": 165.625,
+          "height": 25,
+          "scrollWidth": 166,
+          "scrollHeight": 25
+        },
+        {
+          "text": "8–14 يومًا",
+          "display": "flex",
+          "visibility": "visible",
+          "left": 429.25,
+          "right": 594.875,
+          "top": 465.09375,
+          "bottom": 490.09375,
+          "width": 165.625,
+          "height": 25,
+          "scrollWidth": 166,
+          "scrollHeight": 25
+        },
+        {
+          "text": "15–30 يومًا",
+          "display": "flex",
+          "visibility": "visible",
+          "left": 258.625,
+          "right": 424.25,
+          "top": 465.09375,
+          "bottom": 490.09375,
+          "width": 165.625,
+          "height": 25,
+          "scrollWidth": 166,
+          "scrollHeight": 25
+        },
+        {
+          "text": "أكثر من 30 يومًا",
+          "display": "flex",
+          "visibility": "visible",
+          "left": 88,
+          "right": 253.625,
+          "top": 465.09375,
+          "bottom": 490.09375,
+          "width": 165.625,
+          "height": 25,
+          "scrollWidth": 166,
+          "scrollHeight": 25
+        }
+      ],
+      "bars": [
+        {
+          "key": "7d",
+          "color": "rgb(55, 138, 164)",
+          "height": 4,
+          "width": 22
+        },
+        {
+          "key": "8_14d",
+          "color": "rgb(0, 110, 97)",
+          "height": 4.796875,
+          "width": 22
+        },
+        {
+          "key": "15_30d",
+          "color": "rgb(195, 152, 83)",
+          "height": 24,
+          "width": 22
+        },
+        {
+          "key": "over_30d",
+          "color": "rgb(121, 83, 169)",
+          "height": 21.109375,
+          "width": 22
+        }
+      ],
+      "overlap": false,
+      "cardRect": {
+        "x": 74,
+        "y": 386.75,
+        "width": 748.5,
+        "height": 118.34375
+      },
+      "label_count": 4,
+      "bar_count": 4,
+      "distinct_colors": 4,
+      "label_overlap": false,
+      "label_clipping": false,
+      "horizontal_overflow": false,
+      "screenshot": "live-dashboard-screenshots/live-card-1920x1080.png"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "docScroll": 1440,
+      "bodyScroll": 1440,
+      "rtl": true,
+      "labels": [
+        {
+          "text": "خلال 7 أيام",
+          "display": "flex",
+          "visibility": "visible",
+          "left": 412.171875,
+          "right": 525.5,
+          "top": 465.09375,
+          "bottom": 490.09375,
+          "width": 113.328125,
+          "height": 25,
+          "scrollWidth": 113,
+          "scrollHeight": 25
+        },
+        {
+          "text": "8–14 يومًا",
+          "display": "flex",
+          "visibility": "visible",
+          "left": 293.84375,
+          "right": 407.171875,
+          "top": 465.09375,
+          "bottom": 490.09375,
+          "width": 113.328125,
+          "height": 25,
+          "scrollWidth": 113,
+          "scrollHeight": 25
+        },
+        {
+          "text": "15–30 يومًا",
+          "display": "flex",
+          "visibility": "visible",
+          "left": 175.515625,
+          "right": 288.84375,
+          "top": 465.09375,
+          "bottom": 490.09375,
+          "width": 113.328125,
+          "height": 25,
+          "scrollWidth": 113,
+          "scrollHeight": 25
+        },
+        {
+          "text": "أكثر من 30 يومًا",
+          "display": "flex",
+          "visibility": "visible",
+          "left": 57.1875,
+          "right": 170.515625,
+          "top": 465.09375,
+          "bottom": 490.09375,
+          "width": 113.328125,
+          "height": 25,
+          "scrollWidth": 113,
+          "scrollHeight": 25
+        }
+      ],
+      "bars": [
+        {
+          "key": "7d",
+          "color": "rgb(55, 138, 164)",
+          "height": 4,
+          "width": 22
+        },
+        {
+          "key": "8_14d",
+          "color": "rgb(0, 110, 97)",
+          "height": 4.796875,
+          "width": 22
+        },
+        {
+          "key": "15_30d",
+          "color": "rgb(195, 152, 83)",
+          "height": 24,
+          "width": 22
+        },
+        {
+          "key": "over_30d",
+          "color": "rgb(121, 83, 169)",
+          "height": 21.109375,
+          "width": 22
+        }
+      ],
+      "overlap": false,
+      "cardRect": {
+        "x": 43.1875,
+        "y": 386.75,
+        "width": 539.3125,
+        "height": 118.34375
+      },
+      "label_count": 4,
+      "bar_count": 4,
+      "distinct_colors": 4,
+      "label_overlap": false,
+      "label_clipping": false,
+      "horizontal_overflow": false,
+      "screenshot": "live-dashboard-screenshots/live-card-1440x900.png"
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "docScroll": 1366,
+      "bodyScroll": 1366,
+      "rtl": true,
+      "labels": [
+        {
+          "text": "خلال 7 أيام",
+          "display": "flex",
+          "visibility": "visible",
+          "left": 383.875,
+          "right": 488.5,
+          "top": 463.671875,
+          "bottom": 488.671875,
+          "width": 104.625,
+          "height": 25,
+          "scrollWidth": 105,
+          "scrollHeight": 25
+        },
+        {
+          "text": "8–14 يومًا",
+          "display": "flex",
+          "visibility": "visible",
+          "left": 274.234375,
+          "right": 378.875,
+          "top": 463.671875,
+          "bottom": 488.671875,
+          "width": 104.640625,
+          "height": 25,
+          "scrollWidth": 105,
+          "scrollHeight": 25
+        },
+        {
+          "text": "15–30 يومًا",
+          "display": "flex",
+          "visibility": "visible",
+          "left": 164.609375,
+          "right": 269.234375,
+          "top": 463.671875,
+          "bottom": 488.671875,
+          "width": 104.625,
+          "height": 25,
+          "scrollWidth": 105,
+          "scrollHeight": 25
+        },
+        {
+          "text": "أكثر من 30 يومًا",
+          "display": "flex",
+          "visibility": "visible",
+          "left": 54.96875,
+          "right": 159.609375,
+          "top": 463.671875,
+          "bottom": 488.671875,
+          "width": 104.640625,
+          "height": 25,
+          "scrollWidth": 105,
+          "scrollHeight": 25
+        }
+      ],
+      "bars": [
+        {
+          "key": "7d",
+          "color": "rgb(55, 138, 164)",
+          "height": 4,
+          "width": 22
+        },
+        {
+          "key": "8_14d",
+          "color": "rgb(0, 110, 97)",
+          "height": 4.796875,
+          "width": 22
+        },
+        {
+          "key": "15_30d",
+          "color": "rgb(195, 152, 83)",
+          "height": 24,
+          "width": 22
+        },
+        {
+          "key": "over_30d",
+          "color": "rgb(121, 83, 169)",
+          "height": 21.109375,
+          "width": 22
+        }
+      ],
+      "overlap": false,
+      "cardRect": {
+        "x": 40.96875,
+        "y": 385.328125,
+        "width": 504.53125,
+        "height": 118.34375
+      },
+      "label_count": 4,
+      "bar_count": 4,
+      "distinct_colors": 4,
+      "label_overlap": false,
+      "label_clipping": false,
+      "horizontal_overflow": false,
+      "screenshot": "live-dashboard-screenshots/live-card-1366x768.png"
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "docScroll": 768,
+      "bodyScroll": 768,
+      "rtl": true,
+      "labels": [
+        {
+          "text": "خلال 7 أيام",
+          "display": "flex",
+          "visibility": "visible",
+          "left": 254.625,
+          "right": 321.5,
+          "top": 606.1875,
+          "bottom": 631.1875,
+          "width": 66.875,
+          "height": 25,
+          "scrollWidth": 67,
+          "scrollHeight": 25
+        },
+        {
+          "text": "8–14 يومًا",
+          "display": "flex",
+          "visibility": "visible",
+          "left": 182.75,
+          "right": 249.625,
+          "top": 606.1875,
+          "bottom": 631.1875,
+          "width": 66.875,
+          "height": 25,
+          "scrollWidth": 67,
+          "scrollHeight": 25
+        },
+        {
+          "text": "15–30 يومًا",
+          "display": "flex",
+          "visibility": "visible",
+          "left": 110.875,
+          "right": 177.75,
+          "top": 606.1875,
+          "bottom": 631.1875,
+          "width": 66.875,
+          "height": 25,
+          "scrollWidth": 67,
+          "scrollHeight": 25
+        },
+        {
+          "text": "أكثر من 30 يومًا",
+          "display": "flex",
+          "visibility": "visible",
+          "left": 39,
+          "right": 105.875,
+          "top": 606.1875,
+          "bottom": 631.1875,
+          "width": 66.875,
+          "height": 25,
+          "scrollWidth": 67,
+          "scrollHeight": 25
+        }
+      ],
+      "bars": [
+        {
+          "key": "7d",
+          "color": "rgb(55, 138, 164)",
+          "height": 4,
+          "width": 22
+        },
+        {
+          "key": "8_14d",
+          "color": "rgb(0, 110, 97)",
+          "height": 4.796875,
+          "width": 22
+        },
+        {
+          "key": "15_30d",
+          "color": "rgb(195, 152, 83)",
+          "height": 24,
+          "width": 22
+        },
+        {
+          "key": "over_30d",
+          "color": "rgb(121, 83, 169)",
+          "height": 21.109375,
+          "width": 22
+        }
+      ],
+      "overlap": false,
+      "cardRect": {
+        "x": 25,
+        "y": 527.84375,
+        "width": 353.5,
+        "height": 118.34375
+      },
+      "label_count": 4,
+      "bar_count": 4,
+      "distinct_colors": 4,
+      "label_overlap": false,
+      "label_clipping": false,
+      "horizontal_overflow": false,
+      "screenshot": "live-dashboard-screenshots/live-card-768x900.png"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "docScroll": 390,
+      "bodyScroll": 390,
+      "rtl": true,
+      "labels": [
+        {
+          "text": "خلال 7 أيام",
+          "display": "flex",
+          "visibility": "visible",
+          "left": 251,
+          "right": 321,
+          "top": 837.265625,
+          "bottom": 862.265625,
+          "width": 70,
+          "height": 25,
+          "scrollWidth": 70,
+          "scrollHeight": 25
+        },
+        {
+          "text": "8–14 يومًا",
+          "display": "flex",
+          "visibility": "visible",
+          "left": 176,
+          "right": 246,
+          "top": 837.265625,
+          "bottom": 862.265625,
+          "width": 70,
+          "height": 25,
+          "scrollWidth": 70,
+          "scrollHeight": 25
+        },
+        {
+          "text": "15–30 يومًا",
+          "display": "flex",
+          "visibility": "visible",
+          "left": 101,
+          "right": 171,
+          "top": 837.265625,
+          "bottom": 862.265625,
+          "width": 70,
+          "height": 25,
+          "scrollWidth": 70,
+          "scrollHeight": 25
+        },
+        {
+          "text": "أكثر من 30 يومًا",
+          "display": "flex",
+          "visibility": "visible",
+          "left": 26,
+          "right": 96,
+          "top": 837.265625,
+          "bottom": 862.265625,
+          "width": 70,
+          "height": 25,
+          "scrollWidth": 70,
+          "scrollHeight": 25
+        }
+      ],
+      "bars": [
+        {
+          "key": "7d",
+          "color": "rgb(55, 138, 164)",
+          "height": 4,
+          "width": 22
+        },
+        {
+          "key": "8_14d",
+          "color": "rgb(0, 110, 97)",
+          "height": 4.796875,
+          "width": 22
+        },
+        {
+          "key": "15_30d",
+          "color": "rgb(195, 152, 83)",
+          "height": 24,
+          "width": 22
+        },
+        {
+          "key": "over_30d",
+          "color": "rgb(121, 83, 169)",
+          "height": 21.109375,
+          "width": 22
+        }
+      ],
+      "overlap": false,
+      "cardRect": {
+        "x": 12,
+        "y": 758.921875,
+        "width": 366,
+        "height": 118.34375
+      },
+      "label_count": 4,
+      "bar_count": 4,
+      "distinct_colors": 4,
+      "label_overlap": false,
+      "label_clipping": false,
+      "horizontal_overflow": false,
+      "screenshot": "live-dashboard-screenshots/live-card-390x844.png"
+    }
+  ],
+  "javascript_errors": [],
+  "http_5xx": [],
+  "finished_at": "2026-10-26T11:16:23.616Z",
+  "current_live_failure_reproduced": false,
+  "current_live_screen_proof": "live-dashboard-screenshots/live-card-1440x900.png and live-card-390x844.png show all four labels and colors."
+}

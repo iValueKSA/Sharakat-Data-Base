@@ -1,0 +1,40 @@
+{
+  "captured_at": "2026-10-26T07:30:14.4395474Z",
+  "health": {
+    "http_status": 200,
+    "body": "{\"status\": \"ready\", \"checks\": {\"database\": \"ok\", \"redis\": \"ok\", \"worker\": \"ok\"}}"
+  },
+  "api": {
+    "http_status": 200,
+    "page_1_rows": 500,
+    "page_2_rows": 66,
+    "total": 566,
+    "unique_master_ids": 566,
+    "duplicate_master_ids": 0
+  },
+  "dashboard": {
+    "total": 566
+  },
+  "csv": {
+    "http_status": 200,
+    "rows": 566
+  },
+  "xlsx": {
+    "http_status": 200,
+    "content_type": [
+      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    ],
+    "bytes": 282102,
+    "passed": true
+  },
+  "dq_route_count_check": {
+    "api_list": 566,
+    "dashboard": 566,
+    "data_dashboard": 566,
+    "csv": 566,
+    "xlsx": 566,
+    "database_current_masters": 566
+  },
+  "dq_list_duplicate_masters": 0,
+  "all_reconciled_to_current_masters": true
+}

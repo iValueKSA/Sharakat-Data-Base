@@ -1,0 +1,11 @@
+﻿source_key,source_name,source_records,linked_source_records,unique_linked_masters,source_type_present_records,unique_masters_with_type_evidence,observed_type_values,review_note
+furas,فرص – البوابة الموحدة للاستثمار,177,177,177,177,177,Investment (48) | TemporaryRental (129) | Investment (43) | TemporaryRental (121) | أنشطة تجارة المواد الغذائية (2) | محلات تجارية (3),See source-values.csv; raw payload and standardized projections are kept distinct.
+alahsa-opportunities,منصة الفرص الاستثمارية بالأحساء,103,103,103,0,0,,See source-values.csv; raw payload and standardized projections are kept distinct.
+ahda,هيئة تطوير الأحساء,7,7,7,7,7,INVESTMENT_OPPORTUNITY (7),See source-values.csv; raw payload and standardized projections are kept distinct.
+invest-saudi,استثمر في السعودية,2555,8,8,2555,8,Agriculture (71) | Commercial (6) | Culture (99) | Education (75) | Energy (55) | Environment (264) | Healthcare (116) | Industrial (828) | Logistics (107) | Other (95) | Real Estate (543) | Real Estate & Construction (39) | Technology (73) | Tourism (184),See source-values.csv; raw payload and standardized projections are kept distinct.
+kfu,جامعة الملك فيصل,6,3,3,6,3,COMMERCIAL_FACILITY_OPPORTUNITY (1) | GENERAL_ANNOUNCEMENT (3) | LEASE_OPPORTUNITY (2) | COMMERCIAL_FACILITY_OPPORTUNITY (1) | GENERAL_ANNOUNCEMENT (3) | LEASE_OPPORTUNITY (2),See source-values.csv; raw payload and standardized projections are kept distinct.
+modon,مدن,0,0,0,0,0,,See source-values.csv; raw payload and standardized projections are kept distinct.
+ncp,المركز الوطني للتخصيص,45,1,1,45,1,PPP_PROJECT (45),See source-values.csv; raw payload and standardized projections are kept distinct.
+nhc,NHC الاستثمار,0,0,0,0,0,,See source-values.csv; raw payload and standardized projections are kept distinct.
+pif,بوابة القطاع الخاص لصندوق الاستثمارات العامة,0,0,0,0,0,,See source-values.csv; raw payload and standardized projections are kept distinct.
+mwan,موان,5,0,0,5,0,WASTE_SECTOR_INVESTMENT (5),See source-values.csv; raw payload and standardized projections are kept distinct.

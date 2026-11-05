@@ -1,0 +1,18 @@
+{
+  "status": "APPLIED",
+  "engine_version": "ahda-sector-phase2-1.0.0",
+  "applied_at": "2026-10-21T09:01:07.076362+00:00",
+  "current_masters": 525,
+  "specified_before": 135,
+  "unspecified_before": 390,
+  "specified_after": 146,
+  "unspecified_after": 379,
+  "applied_count": 11,
+  "preexisting_specified_sector_values_changed": 0,
+  "official_source_sector_overridden_by_inference": 0,
+  "forced_low_confidence_classifications": 0,
+  "inferred_sector_without_traceable_evidence": 0,
+  "unspecified_converted_to_other_only_due_to_missing_evidence": 0,
+  "source_sync_started_manually": false,
+  "open_reviews_modified": false
+}

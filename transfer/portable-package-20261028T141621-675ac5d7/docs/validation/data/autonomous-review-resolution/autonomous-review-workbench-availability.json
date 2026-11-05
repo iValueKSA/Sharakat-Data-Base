@@ -1,0 +1,27 @@
+{
+  "captured_at": "2026-10-26T07:36:19.7186902Z",
+  "home_http_status": 200,
+  "app_js_http_status": 200,
+  "html_workbench_present": true,
+  "js_review_queue_present": true,
+  "js_workbench_api_present": true,
+  "js_reopen_action_present": true,
+  "api_review_routes": [
+    "/api/admin/review-queue",
+    "/api/admin/review-workbench/batch/commit",
+    "/api/admin/review-workbench/batch/preview",
+    "/api/admin/review-workbench/metrics",
+    "/api/admin/review-workbench/pilot",
+    "/api/admin/review-workbench/pilot/events",
+    "/api/admin/review-workbench/{domain}/{review_id}",
+    "/api/admin/review-workbench/{domain}/{review_id}/preview",
+    "/api/admin/review-workbench/{domain}/{review_id}/recommendation-shown",
+    "/api/admin/review-workbench/{domain}/{review_id}/reopen",
+    "/api/admin/review-workbench/{domain}/{review_id}/reopen/preview"
+  ],
+  "api_queue_endpoint_present": true,
+  "api_metrics_present": true,
+  "api_detail_present": true,
+  "api_reopen_present": true,
+  "review_workbench_available": true
+}

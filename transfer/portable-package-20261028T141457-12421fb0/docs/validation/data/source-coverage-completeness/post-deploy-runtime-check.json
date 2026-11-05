@@ -1,0 +1,30 @@
+{
+  "ready": {
+    "status": "ready",
+    "checks": {
+      "database": "ok",
+      "redis": "ok",
+      "worker": "ok"
+    }
+  },
+  "dashboard_total": 287,
+  "source_listings": 2899,
+  "first_master": 325,
+  "configured_sources": 10,
+  "observations": 11187,
+  "sync_jobs": 381,
+  "worker": "ok",
+  "scheduler": "ok",
+  "source_health": [
+    "furas=HEALTHY/COMPLETE_PUBLIC_SOURCE",
+    "alahsa-opportunities=HEALTHY/COMPLETE_PUBLIC_SOURCE",
+    "ahda=WARNING/COMPLETE_FOR_DEFINED_SCOPE",
+    "invest-saudi=WARNING/COMPLETE_PUBLIC_SOURCE",
+    "kfu=HEALTHY/COMPLETE_FOR_DEFINED_SCOPE",
+    "modon=WARNING/PUBLIC_COVERAGE_LIMITED",
+    "ncp=HEALTHY/COMPLETE_FOR_DEFINED_SCOPE",
+    "nhc=WARNING/PUBLIC_COVERAGE_LIMITED",
+    "pif=HEALTHY/PUBLIC_COVERAGE_LIMITED",
+    "mwan=WARNING/COMPLETE_FOR_DEFINED_SCOPE"
+  ]
+}

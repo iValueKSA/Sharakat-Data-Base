@@ -1,0 +1,15 @@
+Local runtime security evidence
+Captured: 2026-10-13 Asia/Amman
+
+Results: PASS for local checks
+
+- Protected-mode smoke returned HSTS on `/health/live` and generic `Internal server error` on a deliberately failing temporary route; the response did not expose the diagnostic marker.
+- CORS accepted `http://localhost:8080` and rejected `https://untrusted.invalid`.
+- Redis-backed login throttling allowed eight invalid attempts for a random nonexistent account and returned 429 on attempt nine; the temporary key was removed.
+- Redis-backed API rate limiter allowed two synthetic requests, rejected the third, and its temporary key was removed.
+- Secret injection inspection found required values in the runtime container environment but absent from the API image config/history. Values were not printed.
+- Runtime users were `app` for API and UID 101 for frontend. Only the frontend port 8080 was published, bound to loopback; database and Redis ports were not published.
+- Local Admin credential file ACL grants full control to the current Windows account and its filename matches the explicit `.gitignore` exclusion. This workspace has no `.git` metadata for `git check-ignore`.
+- The app does not expose a dynamic source URL administration route; adapters use code-defined official endpoints, so no user-controlled fetch target was available for an SSRF request test.
+
+The local URL uses HTTP on loopback. A production HTTPS terminator and real forwarded-header chain were not deployed or tested. The protected-mode HSTS and error-body checks used a local test client, not a public TLS ingress. Export formula safety remains covered by automated tests.

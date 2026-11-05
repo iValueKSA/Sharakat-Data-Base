@@ -1,0 +1,15 @@
+{
+  "focused_tests": {
+    "passed": 149,
+    "failed": 0,
+    "command": "pytest focused sector inference and data-quality modules plus tests/test_sector_classification_governed.py"
+  },
+  "full_regression": {
+    "passed": 580,
+    "failed": 0,
+    "command": "pytest -q tests/",
+    "isolated_environment": true
+  },
+  "functional_test_modified": "tests/test_ingestion.py::test_deadline_change_creates_history assertion was updated to allow the additional sector audit history row; deadline behavior unchanged",
+  "test_artifact_source": "completed test run output recorded during this task; no tests rerun during closeout"
+}

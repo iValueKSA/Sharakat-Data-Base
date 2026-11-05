@@ -1,0 +1,115 @@
+{
+  "base_url": "http://localhost:18080",
+  "http_status": 200,
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "dir": "rtl",
+      "overflow": false,
+      "main": true,
+      "title": "رصد | فرص الأحساء الاستثمارية",
+      "screenshot": "C:/Sharakat Data Base/docs/validation/deployment/portable-transfer/evidence/transfer-ui-1920x1080.png"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "dir": "rtl",
+      "overflow": false,
+      "main": true,
+      "title": "رصد | فرص الأحساء الاستثمارية",
+      "screenshot": "C:/Sharakat Data Base/docs/validation/deployment/portable-transfer/evidence/transfer-ui-1440x900.png"
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "dir": "rtl",
+      "overflow": false,
+      "main": true,
+      "title": "رصد | فرص الأحساء الاستثمارية",
+      "screenshot": "C:/Sharakat Data Base/docs/validation/deployment/portable-transfer/evidence/transfer-ui-1366x768.png"
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "dir": "rtl",
+      "overflow": false,
+      "main": true,
+      "title": "رصد | فرص الأحساء الاستثمارية",
+      "screenshot": "C:/Sharakat Data Base/docs/validation/deployment/portable-transfer/evidence/transfer-ui-768x900.png"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "dir": "rtl",
+      "overflow": false,
+      "main": true,
+      "title": "رصد | فرص الأحساء الاستثمارية",
+      "screenshot": "C:/Sharakat Data Base/docs/validation/deployment/portable-transfer/evidence/transfer-ui-390x844.png"
+    }
+  ],
+  "endpoints": [
+    {
+      "route": "/health/live",
+      "status": 200
+    },
+    {
+      "route": "/health/ready",
+      "status": 200
+    },
+    {
+      "route": "/api/health",
+      "status": 200
+    },
+    {
+      "route": "/api/auth/me",
+      "status": 401
+    }
+  ],
+  "assets": [
+    {
+      "path": "/static/brand/ahda-logo-inverse.svg",
+      "status": 200,
+      "type": "image/svg+xml",
+      "bytes": 128918
+    },
+    {
+      "path": "/static/media/ahsa-investment-hero-poster.webp",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 243874
+    },
+    {
+      "path": "/static/media/ahsa-investment-hero.webm",
+      "status": 200,
+      "type": "video/webm",
+      "bytes": 9790136
+    },
+    {
+      "path": "/static/geo/alahsa-governorate.geojson",
+      "status": 200,
+      "type": "application/octet-stream",
+      "bytes": 144154
+    },
+    {
+      "path": "/static/app.js?v=change-password-v1",
+      "status": 200,
+      "type": "application/javascript",
+      "bytes": 136582
+    },
+    {
+      "path": "/static/styles.css?v=change-password-v1",
+      "status": 200,
+      "type": "text/css",
+      "bytes": 67663
+    }
+  ],
+  "javascript_errors": [],
+  "expected_auth_401_console": [
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+  ],
+  "other_console_errors": [],
+  "http_5xx": [],
+  "rtl": true,
+  "horizontal_overflow": false
+}

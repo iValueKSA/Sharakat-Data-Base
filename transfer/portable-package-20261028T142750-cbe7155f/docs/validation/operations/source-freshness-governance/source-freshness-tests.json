@@ -1,0 +1,26 @@
+{
+  "captured_at": "2026-10-21T13:09:00Z",
+  "focused_freshness_tests": {
+    "command": "pytest tests/test_source_freshness.py tests/test_data_quality.py::test_source_freshness_gate_is_source_aware_read_only_and_returns_evidence tests/test_sync_lifecycle_reliability.py::test_repeated_warning_runs_escalate_and_success_resets_counter",
+    "passed": 19,
+    "failed": 0,
+    "result": "PASSED",
+    "database": "isolated in-memory SQLite fixtures"
+  },
+  "full_regression": {
+    "command": "pytest tests -q -p no:cacheprovider --tb=short",
+    "passed": 320,
+    "failed": 0,
+    "result": "PASSED",
+    "database": "isolated SQLite file in disposable container; container network disabled"
+  },
+  "read_only_live_dq": {
+    "persist": false,
+    "postgres_transaction": "READ ONLY",
+    "protected_counts_before_equal_after": true,
+    "business_data_modified_by_dq": false
+  },
+  "warnings": [
+    "22 deprecation warnings from existing FastAPI TestClient and Alembic configuration; no test failures."
+  ]
+}

@@ -1,0 +1,17 @@
+﻿raw_activity,normalized_activity,canonical_id,count,current_dimension,notes
+,,activity:missing,136,Master.activity,Missing Activity
+صناعي,صناعي,activity:industrial,60,Master.activity,Source-specific values require projection review
+تجاري,تجاري,activity:commercial,38,Master.activity,Source-specific values require projection review
+أخرى,أخرى,activity:other,16,Master.activity,Source-specific values require projection review
+أنشطة التجارة العامة,أنشطة التجارة العامة,unmapped:activity:77835fb5f22b9197,8,Master.activity,Source-specific values require projection review
+Environment,Environment,unmapped:activity:ba5285161ba6eed0,6,Master.activity,Sector duplicate; deterministic clear
+خدمات الصرافة,خدمات الصرافة,unmapped:activity:b912bfbec2af693b,6,Master.activity,Source-specific values require projection review
+أنشطة تجارة المواد الغذائية,أنشطة تجارة المواد الغذائية,unmapped:activity:15965e0762dce702,5,Master.activity,Source-specific values require projection review
+خدمي,خدمي,activity:service,5,Master.activity,Source-specific values require projection review
+محلات تجارية,محلات تجارية,unmapped:activity:8b07babf6eae82a5,3,Master.activity,Source-specific values require projection review
+العربات المتنقلة,العربات المتنقلة,unmapped:activity:ced10d6b9ff0ad90,2,Master.activity,Source-specific values require projection review
+منشآت تقديم الغذاء,منشآت تقديم الغذاء,unmapped:activity:549ba192c70565b7,2,Master.activity,Source-specific values require projection review
+أنشطة وخدمات انتاج المواد غير الغذائية,أنشطة وخدمات انتاج المواد غير الغذائية,unmapped:activity:37abf1fe5d0640ea,1,Master.activity,Source-specific values require projection review
+الساحات الميادين,الساحات الميادين,unmapped:activity:cf5020f21b9a75ac,1,Master.activity,Source-specific values require projection review
+المباني,المباني,unmapped:activity:2cfd9bfa06e3a9ff,1,Master.activity,Source-specific values require projection review
+خدمات تعليمية أخرى,خدمات تعليمية أخرى,unmapped:activity:1e12771670e3496c,1,Master.activity,Source-specific values require projection review

@@ -1,0 +1,91 @@
+{
+  "validationTimestampUtc": "2026-10-19T10:19:11.317Z",
+  "viewports": [
+    {
+      "name": "1920x1080",
+      "pageHorizontalOverflow": false,
+      "rtl": true,
+      "headerCount": 11,
+      "checkedRows": 50,
+      "checkedCellsPerRow": [
+        11
+      ],
+      "semanticAlignment": true,
+      "internalTableScroll": false
+    },
+    {
+      "name": "1440x900",
+      "pageHorizontalOverflow": false,
+      "rtl": true,
+      "headerCount": 11,
+      "checkedRows": 50,
+      "checkedCellsPerRow": [
+        11
+      ],
+      "semanticAlignment": true,
+      "internalTableScroll": false
+    },
+    {
+      "name": "1366x768",
+      "pageHorizontalOverflow": false,
+      "rtl": true,
+      "headerCount": 11,
+      "checkedRows": 50,
+      "checkedCellsPerRow": [
+        11
+      ],
+      "semanticAlignment": true,
+      "internalTableScroll": false
+    },
+    {
+      "name": "768x900",
+      "pageHorizontalOverflow": false,
+      "rtl": true,
+      "headerCount": 11,
+      "checkedRows": 50,
+      "checkedCellsPerRow": [
+        11
+      ],
+      "semanticAlignment": true,
+      "internalTableScroll": true
+    },
+    {
+      "name": "390x844",
+      "pageHorizontalOverflow": false,
+      "rtl": true,
+      "headerCount": 11,
+      "checkedRows": 50,
+      "checkedCellsPerRow": [
+        11
+      ],
+      "semanticAlignment": true,
+      "internalTableScroll": true
+    }
+  ],
+  "table": {
+    "search44826": "1 Master",
+    "sectorFilterIndustrial": "59 Masters",
+    "resetTotal": "291 Masters",
+    "pagination": "passed",
+    "keyboardDetails": "passed"
+  },
+  "chart": {
+    "canonicalOther": 17,
+    "tailSectorGroup": 2,
+    "displayedOther": 19,
+    "chartSum": 291,
+    "snapshotEligibleMasters": 291,
+    "noRemainderBucket": true,
+    "groupedMembers": [
+      "sector:other",
+      "sector:agriculture",
+      "sector:tourism"
+    ],
+    "otherClickResultCount": 19,
+    "liveCsvDataRows": 19,
+    "liveXlsxDataRows": 19,
+    "xlsxFilterDescription": "القطاعات المجمعة: أخرى، الزراعة، السياحة",
+    "resetRestoresTotal": true
+  },
+  "browserErrors": []
+}

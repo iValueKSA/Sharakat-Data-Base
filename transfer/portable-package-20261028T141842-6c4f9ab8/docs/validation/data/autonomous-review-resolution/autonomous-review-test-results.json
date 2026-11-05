@@ -1,0 +1,22 @@
+{
+  "focused_policy_tests": {
+    "passed": 22,
+    "failed": 0,
+    "source": "prior focused run, included in final full regression"
+  },
+  "focused_dq_backlog_test_after_gate_fix": {
+    "passed": 1,
+    "failed": 0,
+    "duration_seconds": 2.17
+  },
+  "full_isolated_regression": {
+    "passed": 525,
+    "failed": 0,
+    "duration_seconds": 32.09,
+    "scope": "tests/",
+    "network": "disabled",
+    "database": "temporary isolated SQLite",
+    "live_postgres": "not used"
+  },
+  "test_suite_status": "PASSED"
+}

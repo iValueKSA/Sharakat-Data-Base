@@ -1,0 +1,102 @@
+{
+  "captured_at_utc": "2026-10-20T07:49:59.746684+00:00",
+  "standardization_engine_version": "21",
+  "migration": {
+    "revision": "0023_quant_commercial",
+    "change": "currency nullable; clear SAR default where investment_value is null",
+    "rows_updated": 297
+  },
+  "canonical_corrections": {
+    "area": {
+      "count": 0,
+      "master_ids": []
+    },
+    "investment_value": {
+      "count": 0,
+      "master_ids": [],
+      "note": "All current linked Masters remain amount-unspecified or review-required; no amount was guessed."
+    },
+    "currency": {
+      "count": 297,
+      "from": "SAR model default",
+      "to": null,
+      "master_ids": "all 297 rows"
+    },
+    "contract_duration": {
+      "cleared_count": 40,
+      "cleared_master_ids": [
+        30,
+        78,
+        90,
+        91,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        103,
+        104,
+        105,
+        106,
+        107,
+        138,
+        139,
+        141,
+        142,
+        227,
+        231,
+        232,
+        233,
+        234,
+        235,
+        237,
+        239,
+        240,
+        242,
+        244,
+        246,
+        248,
+        251,
+        253,
+        255,
+        257,
+        258,
+        260,
+        262,
+        325
+      ],
+      "added_count": 1,
+      "added_master_ids": [
+        228
+      ],
+      "new_value_years": 5
+    },
+    "official_reference": {
+      "cleared_count": 6,
+      "master_ids": [
+        218,
+        219,
+        220,
+        221,
+        222,
+        223
+      ]
+    }
+  },
+  "source_projection_corrections": {
+    "invest_saudi_nonproject_reference_values_cleared": 2093,
+    "invest_saudi_project_official_references_retained": 462,
+    "furas_duration_source_records_marked_review_required": 103,
+    "standardized_data_json_rows_versioned_to_21": 2197
+  },
+  "existing_reviews_preserved": {
+    "master_230_area_conflict_id": 100,
+    "status": "OPEN",
+    "selected": "160.0",
+    "conflicting": "64.0"
+  },
+  "change_history_entries_added": 47,
+  "raw_data_json_or_source_observation_changes": 0,
+  "manual_source_sync_started": false
+}

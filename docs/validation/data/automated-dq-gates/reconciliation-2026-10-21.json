@@ -1,0 +1,179 @@
+{
+  "closeout": "COMPLETE",
+  "focused_scope_only": true,
+  "deep_review_rerun": false,
+  "captured_at": "2026-10-21T10:56:45.501608+03:00",
+  "live_run": {
+    "run_id": "b35c046e4dfc4d7aa95a94c90551dbc9",
+    "started_at": "2026-10-21T10:56:38.761521+03:00",
+    "completed_at": "2026-10-21T10:56:45.501608+03:00",
+    "scope": "weekly",
+    "trigger": "focused_reconciliation_live",
+    "persist": false,
+    "read_only_business_data": true,
+    "total_gates": 48,
+    "passing": 46,
+    "warnings": 2,
+    "failing": 0,
+    "warning_details": [
+      {
+        "gate_key": "GENERIC_SOURCE_PAGE_AS_OPPORTUNITY_ACTION",
+        "exact_count": 782,
+        "why_warning": "782 Invest Saudi source records retain only a generic official page and have no opportunity-specific public detail URL.",
+        "why_not_failure": "The generic page is no longer exposed as an original-opportunity action; source-specific details are not fabricated.",
+        "action_required": "None for data. Retain the source limitation until official detail URLs are available.",
+        "accepted_limitation": true
+      },
+      {
+        "gate_key": "OPEN_REVIEW_BACKLOG",
+        "exact_count": 577,
+        "why_warning": "The unresolved queue is valid and its 269-case growth since the accepted snapshot is reconciled to scheduled jobs.",
+        "why_not_failure": "All current cases reconcile to supported queue domains and no DQ-created reviews were observed.",
+        "action_required": "Continue the existing human review workflow; do not auto-resolve cases.",
+        "accepted_limitation": true
+      }
+    ]
+  },
+  "review_reconciliation": {
+    "previous_accepted_open_reviews": 308,
+    "current_open_reviews": 577,
+    "delta": 269,
+    "current_top_level": {
+      "duplicate": 10,
+      "location": 15,
+      "taxonomy_conflict": 103,
+      "field_conflict": 449,
+      "qualification": 0,
+      "other_top_level": 0,
+      "sum": 577
+    },
+    "field_conflict_definition": "FIELD_VALUE_CONFLICT plus STANDARDIZATION_REVIEW, matching the review queue UI.",
+    "previous_field_conflict_reconstruction": {
+      "field_value_conflict": 85,
+      "standardization_review": 95,
+      "sum": 180
+    },
+    "delta_attribution": {
+      "created_by_scheduled_syncs_since_previous_snapshot": 269,
+      "created_by_source_data_changes_outside_scheduled_sync_attribution": 0,
+      "created_by_code_migration_or_backfill": 0,
+      "created_by_dq_framework": 0,
+      "other_explained": 0,
+      "unexplained": 0
+    },
+    "scheduled_sync_jobs": [
+      {
+        "job_id": 392,
+        "source_key": "alahsa-opportunities",
+        "trigger": "scheduled",
+        "started_at": "2026-10-21T09:00:41.363306+03:00",
+        "finished_at": "2026-10-21T09:01:16.163708+03:00",
+        "open_cases": 22,
+        "case_type": "FIELD_VALUE_CONFLICT",
+        "case_ids": "429-450"
+      },
+      {
+        "job_id": 394,
+        "source_key": "invest-saudi",
+        "trigger": "scheduled",
+        "started_at": "2026-10-21T09:00:44.424538+03:00",
+        "finished_at": "2026-10-21T09:02:32.944701+03:00",
+        "open_cases": 1,
+        "case_type": "FIELD_VALUE_CONFLICT",
+        "case_id": 451,
+        "review_event_id": 491,
+        "reopened_prior_review_id": 119
+      },
+      {
+        "job_id": 399,
+        "source_key": "furas",
+        "trigger": "scheduled",
+        "started_at": "2026-10-21T10:00:41.063543+03:00",
+        "finished_at": "2026-10-21T10:04:54.957972+03:00",
+        "open_cases": 246,
+        "field_value_conflicts": 3,
+        "field_value_conflict_ids": "452-454",
+        "standardization_reviews": 243,
+        "standardization_review_ids": "455-697"
+      }
+    ],
+    "dq_run_is_read_only_by_default": true,
+    "dq_run_created_review_cases": 0,
+    "open_review_count_reconciliation": "PASSED"
+  },
+  "source_absence_reconciliation": {
+    "legacy_warning_population": 2537,
+    "classification": {
+      "confirmed_current_and_present": 2423,
+      "confirmed_historical_removed": 102,
+      "true_absence_pending_confirmation": 0,
+      "outside_al_ahsa_scope": 0,
+      "non_qualified_national_record": 9,
+      "location_review_required": 0,
+      "source_with_limited_or_non_comparable_enumeration": 0,
+      "other_valid_non_absence": 3,
+      "unexplained": 0
+    },
+    "classification_sum": 2537,
+    "reconciliation": "PASSED",
+    "invest_saudi_non_qualified_rows_in_legacy_population": 2534,
+    "dq_true_source_absence_pending_confirmation": 0,
+    "dq_non_qualified_rows_counted_as_absence": 0,
+    "dq_outside_scope_rows_counted_as_absence": 0,
+    "dq_noncomparable_scope_rows_counted_as_absence": 0,
+    "dq_unexplained_source_absences": 0,
+    "logic_correction": "Use endpoint membership and complete successful enumeration evidence for Invest Saudi; require a qualified Ahsa-scope record and a complete successful scan after last_seen_at for other sources. Unlinked status alone is not absence."
+  },
+  "invest_saudi_generic_page_check": {
+    "generic_page_records": 782,
+    "records_without_raw_opportunity_detail_url": 782,
+    "generic_page_exposed_as_original_opportunity_action": 0,
+    "behavior": "Generic source/listing URLs resolve to no clickable action and remain available as historical URL metadata."
+  },
+  "read_only_live_verification": {
+    "before": {
+      "masters": 546,
+      "source_opportunities": 3137,
+      "observations": 12401,
+      "open_reviews": 577,
+      "sync_job_count": 400,
+      "max_sync_job_id": 400,
+      "dq_event_count": 2
+    },
+    "after": {
+      "masters": 546,
+      "source_opportunities": 3137,
+      "observations": 12401,
+      "open_reviews": 577,
+      "sync_job_count": 400,
+      "max_sync_job_id": 400,
+      "dq_event_count": 2
+    },
+    "dq_run_created_audit_events": 0,
+    "manual_source_sync_started": false,
+    "unexplained_business_data_changes": 0,
+    "local_services_after_code_update": "RUNNING"
+  },
+  "tests": {
+    "focused": "34 passed / 0 failed",
+    "full_regression_suite": "213 passed / 0 failed",
+    "full_regression_database": "disposable SQLite in temporary container"
+  },
+  "final_assertions": {
+    "DQ_FINAL_CLOSEOUT": "COMPLETE",
+    "OPEN_REVIEW_COUNT_RECONCILIATION": "PASSED",
+    "OPEN_REVIEW_DELTA_UNEXPLAINED": 0,
+    "SOURCE_ABSENCE_CLASSIFICATION_RECONCILIATION": "PASSED",
+    "TRUE_SOURCE_ABSENCE_PENDING_CONFIRMATION": 0,
+    "INVEST_SAUDI_GENERIC_PAGE_RECORDS": 782,
+    "GENERIC_PAGE_EXPOSED_AS_ORIGINAL_OPPORTUNITY_ACTION": 0,
+    "LIVE_DQ_PASSING_GATES": 46,
+    "LIVE_DQ_WARNING_GATES": 2,
+    "LIVE_DQ_FAILING_GATES": 0,
+    "LIVE_DQ_WARNINGS_ALL_EXPLAINED": true,
+    "DQ_AUTO_FIXES_BUSINESS_DATA": false,
+    "LIVE_DQ_VALIDATION_IS_NON_DESTRUCTIVE": true,
+    "MANUAL_SOURCE_SYNC_STARTED": false,
+    "UNEXPLAINED_BUSINESS_DATA_CHANGES": 0
+  }
+}

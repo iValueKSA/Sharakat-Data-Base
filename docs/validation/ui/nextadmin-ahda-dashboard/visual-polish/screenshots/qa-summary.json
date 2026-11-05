@@ -1,0 +1,2330 @@
+{
+  "http": 200,
+  "screenshots": [
+    "docs\\validation\\ui\\nextadmin-ahda-dashboard\\visual-polish\\screenshots\\dashboard-1920x1080-top.png",
+    "docs\\validation\\ui\\nextadmin-ahda-dashboard\\visual-polish\\screenshots\\dashboard-chart-1920x1080.png",
+    "docs\\validation\\ui\\nextadmin-ahda-dashboard\\visual-polish\\screenshots\\dashboard-map-1920x1080.png",
+    "docs\\validation\\ui\\nextadmin-ahda-dashboard\\visual-polish\\screenshots\\dashboard-1440x900-top.png",
+    "docs\\validation\\ui\\nextadmin-ahda-dashboard\\visual-polish\\screenshots\\dashboard-chart-1440x900.png",
+    "docs\\validation\\ui\\nextadmin-ahda-dashboard\\visual-polish\\screenshots\\dashboard-map-1440x900.png",
+    "docs\\validation\\ui\\nextadmin-ahda-dashboard\\visual-polish\\screenshots\\dashboard-1366x768-top.png",
+    "docs\\validation\\ui\\nextadmin-ahda-dashboard\\visual-polish\\screenshots\\dashboard-chart-1366x768.png",
+    "docs\\validation\\ui\\nextadmin-ahda-dashboard\\visual-polish\\screenshots\\dashboard-map-1366x768.png",
+    "docs\\validation\\ui\\nextadmin-ahda-dashboard\\visual-polish\\screenshots\\dashboard-768x900-top.png",
+    "docs\\validation\\ui\\nextadmin-ahda-dashboard\\visual-polish\\screenshots\\dashboard-chart-768x900.png",
+    "docs\\validation\\ui\\nextadmin-ahda-dashboard\\visual-polish\\screenshots\\dashboard-map-768x900.png",
+    "docs\\validation\\ui\\nextadmin-ahda-dashboard\\visual-polish\\screenshots\\dashboard-mobile-kpis-390x844.png",
+    "docs\\validation\\ui\\nextadmin-ahda-dashboard\\visual-polish\\screenshots\\dashboard-mobile-sector-390x844.png",
+    "docs\\validation\\ui\\nextadmin-ahda-dashboard\\visual-polish\\screenshots\\dashboard-mobile-timeline-390x844.png",
+    "docs\\validation\\ui\\nextadmin-ahda-dashboard\\visual-polish\\screenshots\\chart-tooltip-1440x900.png",
+    "docs\\validation\\ui\\nextadmin-ahda-dashboard\\visual-polish\\screenshots\\dashboard-categories-1440x900.png",
+    "docs\\validation\\ui\\nextadmin-ahda-dashboard\\visual-polish\\screenshots\\nextadmin-analytics-1440x900.png"
+  ],
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "name": "1920x1080",
+      "scrollWidth": 1920,
+      "kpis": [
+        {
+          "label": "إجمالي الفرص",
+          "height": 158,
+          "clientWidth": 239,
+          "scrollWidth": 239,
+          "textBoxes": [
+            {
+              "text": "إجمالي الفرص",
+              "width": 164,
+              "height": 24,
+              "scrollWidth": 164,
+              "clientWidth": 164
+            },
+            {
+              "text": "289",
+              "width": 207,
+              "height": 36,
+              "scrollWidth": 207,
+              "clientWidth": 207
+            },
+            {
+              "text": "الفرص الرئيسية غير المدمجة",
+              "width": 207,
+              "height": 20,
+              "scrollWidth": 207,
+              "clientWidth": 207
+            }
+          ]
+        },
+        {
+          "label": "الفرص النشطة",
+          "height": 158,
+          "clientWidth": 239,
+          "scrollWidth": 239,
+          "textBoxes": [
+            {
+              "text": "الفرص النشطة",
+              "width": 164,
+              "height": 24,
+              "scrollWidth": 164,
+              "clientWidth": 164
+            },
+            {
+              "text": "283",
+              "width": 207,
+              "height": 36,
+              "scrollWidth": 207,
+              "clientWidth": 207
+            },
+            {
+              "text": "وفق تعريف الحالة التشغيلية",
+              "width": 207,
+              "height": 20,
+              "scrollWidth": 207,
+              "clientWidth": 207
+            }
+          ]
+        },
+        {
+          "label": "سجلات تاريخية",
+          "height": 158,
+          "clientWidth": 239,
+          "scrollWidth": 239,
+          "textBoxes": [
+            {
+              "text": "سجلات تاريخية",
+              "width": 164,
+              "height": 24,
+              "scrollWidth": 164,
+              "clientWidth": 164
+            },
+            {
+              "text": "6",
+              "width": 207,
+              "height": 36,
+              "scrollWidth": 207,
+              "clientWidth": 207
+            },
+            {
+              "text": "منتهية أو ملغاة أو مرساة أو مزالة",
+              "width": 207,
+              "height": 20,
+              "scrollWidth": 207,
+              "clientWidth": 207
+            }
+          ]
+        },
+        {
+          "label": "مصادر رسمية",
+          "height": 158,
+          "clientWidth": 239,
+          "scrollWidth": 239,
+          "textBoxes": [
+            {
+              "text": "مصادر رسمية",
+              "width": 164,
+              "height": 24,
+              "scrollWidth": 164,
+              "clientWidth": 164
+            },
+            {
+              "text": "10",
+              "width": 207,
+              "height": 36,
+              "scrollWidth": 207,
+              "clientWidth": 207
+            },
+            {
+              "text": "مصادر مفعّلة في المنصة",
+              "width": 207,
+              "height": 20,
+              "scrollWidth": 207,
+              "clientWidth": 207
+            }
+          ]
+        },
+        {
+          "label": "موعد خلال 30 يومًا",
+          "height": 158,
+          "clientWidth": 239,
+          "scrollWidth": 239,
+          "textBoxes": [
+            {
+              "text": "موعد خلال 30 يومًا",
+              "width": 164,
+              "height": 24,
+              "scrollWidth": 164,
+              "clientWidth": 164
+            },
+            {
+              "text": "111",
+              "width": 207,
+              "height": 36,
+              "scrollWidth": 207,
+              "clientWidth": 207
+            },
+            {
+              "text": "بحسب المواعيد المنشورة",
+              "width": 207,
+              "height": 20,
+              "scrollWidth": 207,
+              "clientWidth": 207
+            }
+          ]
+        },
+        {
+          "label": "متعددة المصادر",
+          "height": 158,
+          "clientWidth": 239,
+          "scrollWidth": 239,
+          "textBoxes": [
+            {
+              "text": "متعددة المصادر",
+              "width": 164,
+              "height": 24,
+              "scrollWidth": 164,
+              "clientWidth": 164
+            },
+            {
+              "text": "8",
+              "width": 207,
+              "height": 36,
+              "scrollWidth": 207,
+              "clientWidth": 207
+            },
+            {
+              "text": "2.8٪ من النتيجة الحالية",
+              "width": 207,
+              "height": 20,
+              "scrollWidth": 207,
+              "clientWidth": 207
+            }
+          ]
+        }
+      ],
+      "cards": [
+        {
+          "id": "data-filters",
+          "left": 74,
+          "right": 1582,
+          "width": 1508,
+          "scrollWidth": 1506,
+          "clientWidth": 1506,
+          "overflowingChildren": []
+        },
+        {
+          "id": "geo-panel",
+          "left": 74,
+          "right": 1582,
+          "width": 1508,
+          "scrollWidth": 1506,
+          "clientWidth": 1506,
+          "overflowingChildren": [
+            {
+              "tag": "DIV",
+              "id": "opportunityMap",
+              "cls": "opportunity-map leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom",
+              "text": "10\n13\n6\n144\n2\n173\n+\n−\n Leaflet | © OpenStr",
+              "client": 1468,
+              "scroll": 10457,
+              "right": 1563
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "leaflet-pane leaflet-map-pane leaflet-cluster-anim",
+              "text": "10\n13\n6\n144\n2\n173",
+              "client": 0,
+              "scroll": 10457,
+              "right": 94
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "leaflet-pane leaflet-tile-pane",
+              "text": "",
+              "client": 0,
+              "scroll": 1541,
+              "right": 94
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "leaflet-layer ",
+              "text": "",
+              "client": 0,
+              "scroll": 1541,
+              "right": 94
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "leaflet-tile-container leaflet-zoom-animated",
+              "text": "",
+              "client": 0,
+              "scroll": 1541,
+              "right": 94
+            }
+          ]
+        },
+        {
+          "id": "dashSectorPanel",
+          "left": 708,
+          "right": 1582,
+          "width": 874,
+          "scrollWidth": 872,
+          "clientWidth": 872,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-status",
+          "left": 74,
+          "right": 694,
+          "width": 620,
+          "scrollWidth": 618,
+          "clientWidth": 618,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-source",
+          "left": 835,
+          "right": 1582,
+          "width": 747,
+          "scrollWidth": 745,
+          "clientWidth": 745,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-owner",
+          "left": 74,
+          "right": 821,
+          "width": 747,
+          "scrollWidth": 745,
+          "clientWidth": 745,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-classification",
+          "left": 581,
+          "right": 1582,
+          "width": 1001,
+          "scrollWidth": 999,
+          "clientWidth": 999,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-location",
+          "left": 74,
+          "right": 567,
+          "width": 493,
+          "scrollWidth": 491,
+          "clientWidth": 491,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-timeline",
+          "left": 962,
+          "right": 1582,
+          "width": 620,
+          "scrollWidth": 618,
+          "clientWidth": 618,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-deadline",
+          "left": 74,
+          "right": 948,
+          "width": 874,
+          "scrollWidth": 872,
+          "clientWidth": 872,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-operations",
+          "left": 835,
+          "right": 1582,
+          "width": 747,
+          "scrollWidth": 745,
+          "clientWidth": 745,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-quality",
+          "left": 74,
+          "right": 821,
+          "width": 747,
+          "scrollWidth": 745,
+          "clientWidth": 745,
+          "overflowingChildren": []
+        },
+        {
+          "id": "recent-dashboard-panel",
+          "left": 74,
+          "right": 1582,
+          "width": 1508,
+          "scrollWidth": 1506,
+          "clientWidth": 1506,
+          "overflowingChildren": [
+            {
+              "tag": "B",
+              "id": "",
+              "cls": "",
+              "text": "تاجير مؤقت لموقع من نوع العربات المتنقلة ب",
+              "client": 540,
+              "scroll": 629,
+              "right": 1554
+            }
+          ]
+        }
+      ],
+      "chartWidths": [
+        836,
+        582,
+        709,
+        709,
+        963,
+        455,
+        576,
+        836
+      ],
+      "labelBounds": [],
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "name": "1440x900",
+      "scrollWidth": 1440,
+      "kpis": [
+        {
+          "label": "إجمالي الفرص",
+          "height": 158,
+          "clientWidth": 170,
+          "scrollWidth": 170,
+          "textBoxes": [
+            {
+              "text": "إجمالي الفرص",
+              "width": 95,
+              "height": 24,
+              "scrollWidth": 95,
+              "clientWidth": 95
+            },
+            {
+              "text": "289",
+              "width": 138,
+              "height": 36,
+              "scrollWidth": 138,
+              "clientWidth": 138
+            },
+            {
+              "text": "الفرص الرئيسية غير المدمجة",
+              "width": 138,
+              "height": 20,
+              "scrollWidth": 138,
+              "clientWidth": 138
+            }
+          ]
+        },
+        {
+          "label": "الفرص النشطة",
+          "height": 158,
+          "clientWidth": 170,
+          "scrollWidth": 170,
+          "textBoxes": [
+            {
+              "text": "الفرص النشطة",
+              "width": 95,
+              "height": 24,
+              "scrollWidth": 95,
+              "clientWidth": 95
+            },
+            {
+              "text": "283",
+              "width": 138,
+              "height": 36,
+              "scrollWidth": 138,
+              "clientWidth": 138
+            },
+            {
+              "text": "وفق تعريف الحالة التشغيلية",
+              "width": 138,
+              "height": 20,
+              "scrollWidth": 138,
+              "clientWidth": 138
+            }
+          ]
+        },
+        {
+          "label": "سجلات تاريخية",
+          "height": 158,
+          "clientWidth": 170,
+          "scrollWidth": 170,
+          "textBoxes": [
+            {
+              "text": "سجلات تاريخية",
+              "width": 95,
+              "height": 24,
+              "scrollWidth": 95,
+              "clientWidth": 95
+            },
+            {
+              "text": "6",
+              "width": 138,
+              "height": 36,
+              "scrollWidth": 138,
+              "clientWidth": 138
+            },
+            {
+              "text": "منتهية أو ملغاة أو مرساة أو مزالة",
+              "width": 138,
+              "height": 20,
+              "scrollWidth": 138,
+              "clientWidth": 138
+            }
+          ]
+        },
+        {
+          "label": "مصادر رسمية",
+          "height": 158,
+          "clientWidth": 170,
+          "scrollWidth": 170,
+          "textBoxes": [
+            {
+              "text": "مصادر رسمية",
+              "width": 95,
+              "height": 24,
+              "scrollWidth": 95,
+              "clientWidth": 95
+            },
+            {
+              "text": "10",
+              "width": 138,
+              "height": 36,
+              "scrollWidth": 138,
+              "clientWidth": 138
+            },
+            {
+              "text": "مصادر مفعّلة في المنصة",
+              "width": 138,
+              "height": 20,
+              "scrollWidth": 138,
+              "clientWidth": 138
+            }
+          ]
+        },
+        {
+          "label": "موعد خلال 30 يومًا",
+          "height": 158,
+          "clientWidth": 170,
+          "scrollWidth": 170,
+          "textBoxes": [
+            {
+              "text": "موعد خلال 30 يومًا",
+              "width": 95,
+              "height": 24,
+              "scrollWidth": 95,
+              "clientWidth": 95
+            },
+            {
+              "text": "111",
+              "width": 138,
+              "height": 36,
+              "scrollWidth": 138,
+              "clientWidth": 138
+            },
+            {
+              "text": "بحسب المواعيد المنشورة",
+              "width": 138,
+              "height": 20,
+              "scrollWidth": 138,
+              "clientWidth": 138
+            }
+          ]
+        },
+        {
+          "label": "متعددة المصادر",
+          "height": 158,
+          "clientWidth": 170,
+          "scrollWidth": 170,
+          "textBoxes": [
+            {
+              "text": "متعددة المصادر",
+              "width": 95,
+              "height": 24,
+              "scrollWidth": 95,
+              "clientWidth": 95
+            },
+            {
+              "text": "8",
+              "width": 138,
+              "height": 36,
+              "scrollWidth": 138,
+              "clientWidth": 138
+            },
+            {
+              "text": "2.8٪ من النتيجة الحالية",
+              "width": 138,
+              "height": 20,
+              "scrollWidth": 138,
+              "clientWidth": 138
+            }
+          ]
+        }
+      ],
+      "cards": [
+        {
+          "id": "data-filters",
+          "left": 43,
+          "right": 1133,
+          "width": 1090,
+          "scrollWidth": 1088,
+          "clientWidth": 1088,
+          "overflowingChildren": []
+        },
+        {
+          "id": "geo-panel",
+          "left": 43,
+          "right": 1133,
+          "width": 1090,
+          "scrollWidth": 1088,
+          "clientWidth": 1088,
+          "overflowingChildren": [
+            {
+              "tag": "DIV",
+              "id": "opportunityMap",
+              "cls": "opportunity-map leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom",
+              "text": "2\n173\n+\n−\n Leaflet | © OpenStreetMap contr",
+              "client": 1050,
+              "scroll": 1332,
+              "right": 1114
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "leaflet-pane leaflet-map-pane",
+              "text": "2\n173",
+              "client": 0,
+              "scroll": 1541,
+              "right": -146
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "leaflet-pane leaflet-tile-pane",
+              "text": "",
+              "client": 0,
+              "scroll": 1541,
+              "right": -146
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "leaflet-layer ",
+              "text": "",
+              "client": 0,
+              "scroll": 1541,
+              "right": -146
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "leaflet-tile-container leaflet-zoom-animated",
+              "text": "",
+              "client": 0,
+              "scroll": 1541,
+              "right": -146
+            }
+          ]
+        },
+        {
+          "id": "dashSectorPanel",
+          "left": 503,
+          "right": 1133,
+          "width": 630,
+          "scrollWidth": 628,
+          "clientWidth": 628,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-status",
+          "left": 43,
+          "right": 489,
+          "width": 446,
+          "scrollWidth": 444,
+          "clientWidth": 444,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-source",
+          "left": 595,
+          "right": 1133,
+          "width": 538,
+          "scrollWidth": 536,
+          "clientWidth": 536,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-owner",
+          "left": 43,
+          "right": 581,
+          "width": 538,
+          "scrollWidth": 536,
+          "clientWidth": 536,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-classification",
+          "left": 411,
+          "right": 1133,
+          "width": 722,
+          "scrollWidth": 720,
+          "clientWidth": 720,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-location",
+          "left": 43,
+          "right": 397,
+          "width": 354,
+          "scrollWidth": 352,
+          "clientWidth": 352,
+          "overflowingChildren": [
+            {
+              "tag": "DIV",
+              "id": "dashByLocation",
+              "cls": "dash-bars analytics-chart",
+              "text": "0\n65\n129\n194\n258\n258\nالأحساء\n13\nالعقير\n8\nا",
+              "client": 316,
+              "scroll": 390,
+              "right": 378
+            }
+          ]
+        },
+        {
+          "id": "widget-timeline",
+          "left": 687,
+          "right": 1133,
+          "width": 446,
+          "scrollWidth": 444,
+          "clientWidth": 444,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-deadline",
+          "left": 43,
+          "right": 673,
+          "width": 630,
+          "scrollWidth": 628,
+          "clientWidth": 628,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-operations",
+          "left": 595,
+          "right": 1133,
+          "width": 538,
+          "scrollWidth": 536,
+          "clientWidth": 536,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-quality",
+          "left": 43,
+          "right": 581,
+          "width": 538,
+          "scrollWidth": 536,
+          "clientWidth": 536,
+          "overflowingChildren": []
+        },
+        {
+          "id": "recent-dashboard-panel",
+          "left": 43,
+          "right": 1133,
+          "width": 1090,
+          "scrollWidth": 1088,
+          "clientWidth": 1088,
+          "overflowingChildren": [
+            {
+              "tag": "B",
+              "id": "",
+              "cls": "",
+              "text": "تاجير مؤقت لموقع من نوع الساحات الميادين ب",
+              "client": 468,
+              "scroll": 484,
+              "right": 1105
+            },
+            {
+              "tag": "B",
+              "id": "",
+              "cls": "",
+              "text": "تاجير مؤقت لموقع من نوع العربات المتنقلة ب",
+              "client": 468,
+              "scroll": 629,
+              "right": 1105
+            }
+          ]
+        }
+      ],
+      "chartWidths": [
+        592,
+        408,
+        500,
+        500,
+        684,
+        390,
+        402,
+        592
+      ],
+      "labelBounds": [],
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "name": "1366x768",
+      "scrollWidth": 1366,
+      "kpis": [
+        {
+          "label": "إجمالي الفرص",
+          "height": 158,
+          "clientWidth": 158,
+          "scrollWidth": 158,
+          "textBoxes": [
+            {
+              "text": "إجمالي الفرص",
+              "width": 83,
+              "height": 24,
+              "scrollWidth": 83,
+              "clientWidth": 83
+            },
+            {
+              "text": "289",
+              "width": 126,
+              "height": 36,
+              "scrollWidth": 126,
+              "clientWidth": 126
+            },
+            {
+              "text": "الفرص الرئيسية غير المدمجة",
+              "width": 126,
+              "height": 20,
+              "scrollWidth": 126,
+              "clientWidth": 126
+            }
+          ]
+        },
+        {
+          "label": "الفرص النشطة",
+          "height": 158,
+          "clientWidth": 158,
+          "scrollWidth": 158,
+          "textBoxes": [
+            {
+              "text": "الفرص النشطة",
+              "width": 83,
+              "height": 24,
+              "scrollWidth": 83,
+              "clientWidth": 83
+            },
+            {
+              "text": "283",
+              "width": 126,
+              "height": 36,
+              "scrollWidth": 126,
+              "clientWidth": 126
+            },
+            {
+              "text": "وفق تعريف الحالة التشغيلية",
+              "width": 126,
+              "height": 20,
+              "scrollWidth": 126,
+              "clientWidth": 126
+            }
+          ]
+        },
+        {
+          "label": "سجلات تاريخية",
+          "height": 158,
+          "clientWidth": 158,
+          "scrollWidth": 158,
+          "textBoxes": [
+            {
+              "text": "سجلات تاريخية",
+              "width": 83,
+              "height": 24,
+              "scrollWidth": 83,
+              "clientWidth": 83
+            },
+            {
+              "text": "6",
+              "width": 126,
+              "height": 36,
+              "scrollWidth": 126,
+              "clientWidth": 126
+            },
+            {
+              "text": "منتهية أو ملغاة أو مرساة أو مزالة",
+              "width": 126,
+              "height": 40,
+              "scrollWidth": 126,
+              "clientWidth": 126
+            }
+          ]
+        },
+        {
+          "label": "مصادر رسمية",
+          "height": 158,
+          "clientWidth": 158,
+          "scrollWidth": 158,
+          "textBoxes": [
+            {
+              "text": "مصادر رسمية",
+              "width": 83,
+              "height": 24,
+              "scrollWidth": 83,
+              "clientWidth": 83
+            },
+            {
+              "text": "10",
+              "width": 126,
+              "height": 36,
+              "scrollWidth": 126,
+              "clientWidth": 126
+            },
+            {
+              "text": "مصادر مفعّلة في المنصة",
+              "width": 126,
+              "height": 20,
+              "scrollWidth": 126,
+              "clientWidth": 126
+            }
+          ]
+        },
+        {
+          "label": "موعد خلال 30 يومًا",
+          "height": 158,
+          "clientWidth": 158,
+          "scrollWidth": 158,
+          "textBoxes": [
+            {
+              "text": "موعد خلال 30 يومًا",
+              "width": 83,
+              "height": 44,
+              "scrollWidth": 83,
+              "clientWidth": 83
+            },
+            {
+              "text": "111",
+              "width": 126,
+              "height": 36,
+              "scrollWidth": 126,
+              "clientWidth": 126
+            },
+            {
+              "text": "بحسب المواعيد المنشورة",
+              "width": 126,
+              "height": 20,
+              "scrollWidth": 126,
+              "clientWidth": 126
+            }
+          ]
+        },
+        {
+          "label": "متعددة المصادر",
+          "height": 158,
+          "clientWidth": 158,
+          "scrollWidth": 158,
+          "textBoxes": [
+            {
+              "text": "متعددة المصادر",
+              "width": 83,
+              "height": 24,
+              "scrollWidth": 83,
+              "clientWidth": 83
+            },
+            {
+              "text": "8",
+              "width": 126,
+              "height": 36,
+              "scrollWidth": 126,
+              "clientWidth": 126
+            },
+            {
+              "text": "2.8٪ من النتيجة الحالية",
+              "width": 126,
+              "height": 20,
+              "scrollWidth": 126,
+              "clientWidth": 126
+            }
+          ]
+        }
+      ],
+      "cards": [
+        {
+          "id": "data-filters",
+          "left": 41,
+          "right": 1061,
+          "width": 1020,
+          "scrollWidth": 1018,
+          "clientWidth": 1018,
+          "overflowingChildren": []
+        },
+        {
+          "id": "geo-panel",
+          "left": 41,
+          "right": 1061,
+          "width": 1020,
+          "scrollWidth": 1018,
+          "clientWidth": 1018,
+          "overflowingChildren": [
+            {
+              "tag": "DIV",
+              "id": "opportunityMap",
+              "cls": "opportunity-map leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom",
+              "text": "2\n173\n+\n−\n Leaflet | © OpenStreetMap contr",
+              "client": 980,
+              "scroll": 1297,
+              "right": 1042
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "leaflet-pane leaflet-map-pane",
+              "text": "2\n173",
+              "client": 0,
+              "scroll": 1541,
+              "right": -183
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "leaflet-pane leaflet-tile-pane",
+              "text": "",
+              "client": 0,
+              "scroll": 1541,
+              "right": -183
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "leaflet-layer ",
+              "text": "",
+              "client": 0,
+              "scroll": 1541,
+              "right": -183
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "leaflet-tile-container leaflet-zoom-animated",
+              "text": "",
+              "client": 0,
+              "scroll": 1541,
+              "right": -183
+            }
+          ]
+        },
+        {
+          "id": "dashSectorPanel",
+          "left": 472,
+          "right": 1061,
+          "width": 589,
+          "scrollWidth": 587,
+          "clientWidth": 587,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-status",
+          "left": 41,
+          "right": 458,
+          "width": 417,
+          "scrollWidth": 415,
+          "clientWidth": 415,
+          "overflowingChildren": [
+            {
+              "tag": "DIV",
+              "id": "dashByStatus",
+              "cls": "dash-bars analytics-chart",
+              "text": "0\n42\n84\n126\n168\n168\nمنشورة\n101\nمتاحة\n13\nغي",
+              "client": 379,
+              "scroll": 390,
+              "right": 439
+            }
+          ]
+        },
+        {
+          "id": "widget-source",
+          "left": 558,
+          "right": 1061,
+          "width": 503,
+          "scrollWidth": 501,
+          "clientWidth": 501,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-owner",
+          "left": 41,
+          "right": 544,
+          "width": 503,
+          "scrollWidth": 501,
+          "clientWidth": 501,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-classification",
+          "left": 386,
+          "right": 1061,
+          "width": 675,
+          "scrollWidth": 673,
+          "clientWidth": 673,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-location",
+          "left": 41,
+          "right": 372,
+          "width": 331,
+          "scrollWidth": 329,
+          "clientWidth": 329,
+          "overflowingChildren": [
+            {
+              "tag": "DIV",
+              "id": "dashByLocation",
+              "cls": "dash-bars analytics-chart",
+              "text": "0\n65\n129\n194\n258\n258\nالأحساء\n13\nالعقير\n8\nا",
+              "client": 293,
+              "scroll": 390,
+              "right": 353
+            }
+          ]
+        },
+        {
+          "id": "widget-timeline",
+          "left": 644,
+          "right": 1061,
+          "width": 417,
+          "scrollWidth": 415,
+          "clientWidth": 415,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-deadline",
+          "left": 41,
+          "right": 630,
+          "width": 589,
+          "scrollWidth": 587,
+          "clientWidth": 587,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-operations",
+          "left": 558,
+          "right": 1061,
+          "width": 503,
+          "scrollWidth": 501,
+          "clientWidth": 501,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-quality",
+          "left": 41,
+          "right": 544,
+          "width": 503,
+          "scrollWidth": 501,
+          "clientWidth": 501,
+          "overflowingChildren": []
+        },
+        {
+          "id": "recent-dashboard-panel",
+          "left": 41,
+          "right": 1061,
+          "width": 1020,
+          "scrollWidth": 1018,
+          "clientWidth": 1018,
+          "overflowingChildren": [
+            {
+              "tag": "B",
+              "id": "",
+              "cls": "",
+              "text": "تاجير مؤقت لموقع من نوع الساحات الميادين ب",
+              "client": 436,
+              "scroll": 484,
+              "right": 1033
+            },
+            {
+              "tag": "B",
+              "id": "",
+              "cls": "",
+              "text": "تاجير مؤقت لموقع من نوع الساحات الميادين ب",
+              "client": 436,
+              "scroll": 443,
+              "right": 1033
+            },
+            {
+              "tag": "B",
+              "id": "",
+              "cls": "",
+              "text": "تاجير مؤقت لموقع من نوع العربات المتنقلة ب",
+              "client": 436,
+              "scroll": 629,
+              "right": 1033
+            }
+          ]
+        }
+      ],
+      "chartWidths": [
+        551,
+        390,
+        465,
+        465,
+        637,
+        390,
+        373,
+        551
+      ],
+      "labelBounds": [],
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "name": "768x900",
+      "scrollWidth": 768,
+      "kpis": [
+        {
+          "label": "إجمالي الفرص",
+          "height": 150,
+          "clientWidth": 229,
+          "scrollWidth": 229,
+          "textBoxes": [
+            {
+              "text": "إجمالي الفرص",
+              "width": 154,
+              "height": 24,
+              "scrollWidth": 154,
+              "clientWidth": 154
+            },
+            {
+              "text": "289",
+              "width": 197,
+              "height": 36,
+              "scrollWidth": 197,
+              "clientWidth": 197
+            },
+            {
+              "text": "الفرص الرئيسية غير المدمجة",
+              "width": 197,
+              "height": 20,
+              "scrollWidth": 197,
+              "clientWidth": 197
+            }
+          ]
+        },
+        {
+          "label": "الفرص النشطة",
+          "height": 150,
+          "clientWidth": 229,
+          "scrollWidth": 229,
+          "textBoxes": [
+            {
+              "text": "الفرص النشطة",
+              "width": 154,
+              "height": 24,
+              "scrollWidth": 154,
+              "clientWidth": 154
+            },
+            {
+              "text": "283",
+              "width": 197,
+              "height": 36,
+              "scrollWidth": 197,
+              "clientWidth": 197
+            },
+            {
+              "text": "وفق تعريف الحالة التشغيلية",
+              "width": 197,
+              "height": 20,
+              "scrollWidth": 197,
+              "clientWidth": 197
+            }
+          ]
+        },
+        {
+          "label": "سجلات تاريخية",
+          "height": 150,
+          "clientWidth": 229,
+          "scrollWidth": 229,
+          "textBoxes": [
+            {
+              "text": "سجلات تاريخية",
+              "width": 154,
+              "height": 24,
+              "scrollWidth": 154,
+              "clientWidth": 154
+            },
+            {
+              "text": "6",
+              "width": 197,
+              "height": 36,
+              "scrollWidth": 197,
+              "clientWidth": 197
+            },
+            {
+              "text": "منتهية أو ملغاة أو مرساة أو مزالة",
+              "width": 197,
+              "height": 20,
+              "scrollWidth": 197,
+              "clientWidth": 197
+            }
+          ]
+        },
+        {
+          "label": "مصادر رسمية",
+          "height": 150,
+          "clientWidth": 229,
+          "scrollWidth": 229,
+          "textBoxes": [
+            {
+              "text": "مصادر رسمية",
+              "width": 154,
+              "height": 24,
+              "scrollWidth": 154,
+              "clientWidth": 154
+            },
+            {
+              "text": "10",
+              "width": 197,
+              "height": 36,
+              "scrollWidth": 197,
+              "clientWidth": 197
+            },
+            {
+              "text": "مصادر مفعّلة في المنصة",
+              "width": 197,
+              "height": 20,
+              "scrollWidth": 197,
+              "clientWidth": 197
+            }
+          ]
+        },
+        {
+          "label": "موعد خلال 30 يومًا",
+          "height": 150,
+          "clientWidth": 229,
+          "scrollWidth": 229,
+          "textBoxes": [
+            {
+              "text": "موعد خلال 30 يومًا",
+              "width": 154,
+              "height": 24,
+              "scrollWidth": 154,
+              "clientWidth": 154
+            },
+            {
+              "text": "111",
+              "width": 197,
+              "height": 36,
+              "scrollWidth": 197,
+              "clientWidth": 197
+            },
+            {
+              "text": "بحسب المواعيد المنشورة",
+              "width": 197,
+              "height": 20,
+              "scrollWidth": 197,
+              "clientWidth": 197
+            }
+          ]
+        },
+        {
+          "label": "متعددة المصادر",
+          "height": 150,
+          "clientWidth": 229,
+          "scrollWidth": 229,
+          "textBoxes": [
+            {
+              "text": "متعددة المصادر",
+              "width": 154,
+              "height": 24,
+              "scrollWidth": 154,
+              "clientWidth": 154
+            },
+            {
+              "text": "8",
+              "width": 197,
+              "height": 36,
+              "scrollWidth": 197,
+              "clientWidth": 197
+            },
+            {
+              "text": "2.8٪ من النتيجة الحالية",
+              "width": 197,
+              "height": 20,
+              "scrollWidth": 197,
+              "clientWidth": 197
+            }
+          ]
+        }
+      ],
+      "cards": [
+        {
+          "id": "data-filters",
+          "left": 25,
+          "right": 743,
+          "width": 718,
+          "scrollWidth": 716,
+          "clientWidth": 716,
+          "overflowingChildren": []
+        },
+        {
+          "id": "geo-panel",
+          "left": 25,
+          "right": 743,
+          "width": 718,
+          "scrollWidth": 716,
+          "clientWidth": 716,
+          "overflowingChildren": [
+            {
+              "tag": "DIV",
+              "id": "opportunityMap",
+              "cls": "opportunity-map leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom",
+              "text": "2\n173\n+\n−\n Leaflet | © OpenStreetMap contr",
+              "client": 678,
+              "scroll": 1146,
+              "right": 724
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "leaflet-pane leaflet-map-pane",
+              "text": "2\n173",
+              "client": 0,
+              "scroll": 1541,
+              "right": -350
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "leaflet-pane leaflet-tile-pane",
+              "text": "",
+              "client": 0,
+              "scroll": 1541,
+              "right": -350
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "leaflet-layer ",
+              "text": "",
+              "client": 0,
+              "scroll": 1541,
+              "right": -350
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "leaflet-tile-container leaflet-zoom-animated",
+              "text": "",
+              "client": 0,
+              "scroll": 1541,
+              "right": -350
+            }
+          ]
+        },
+        {
+          "id": "dashSectorPanel",
+          "left": 391,
+          "right": 743,
+          "width": 352,
+          "scrollWidth": 350,
+          "clientWidth": 350,
+          "overflowingChildren": [
+            {
+              "tag": "DIV",
+              "id": "dashBySector",
+              "cls": "dash-bars analytics-chart",
+              "text": "0\n31\n62\n93\n124\n124\nقيمة مفقودة\n59\nصناعي\n39",
+              "client": 314,
+              "scroll": 390,
+              "right": 724
+            }
+          ]
+        },
+        {
+          "id": "widget-status",
+          "left": 25,
+          "right": 377,
+          "width": 352,
+          "scrollWidth": 350,
+          "clientWidth": 350,
+          "overflowingChildren": [
+            {
+              "tag": "DIV",
+              "id": "dashByStatus",
+              "cls": "dash-bars analytics-chart",
+              "text": "0\n42\n84\n126\n168\n168\nمنشورة\n101\nمتاحة\n13\nغي",
+              "client": 314,
+              "scroll": 390,
+              "right": 358
+            }
+          ]
+        },
+        {
+          "id": "widget-source",
+          "left": 391,
+          "right": 743,
+          "width": 352,
+          "scrollWidth": 350,
+          "clientWidth": 350,
+          "overflowingChildren": [
+            {
+              "tag": "DIV",
+              "id": "dashBySource",
+              "cls": "dash-bars analytics-chart",
+              "text": "0\n44\n88\n132\n176\n176\nفرص – البوابةالموحدةلل",
+              "client": 314,
+              "scroll": 390,
+              "right": 724
+            }
+          ]
+        },
+        {
+          "id": "widget-owner",
+          "left": 25,
+          "right": 377,
+          "width": 352,
+          "scrollWidth": 350,
+          "clientWidth": 350,
+          "overflowingChildren": [
+            {
+              "tag": "DIV",
+              "id": "dashByOwner",
+              "cls": "dash-bars analytics-chart",
+              "text": "0\n67\n134\n200\n267\n267\nأمانة الأحساء\n7\nهيئة ",
+              "client": 314,
+              "scroll": 390,
+              "right": 358
+            }
+          ]
+        },
+        {
+          "id": "widget-classification",
+          "left": 391,
+          "right": 743,
+          "width": 352,
+          "scrollWidth": 350,
+          "clientWidth": 350,
+          "overflowingChildren": [
+            {
+              "tag": "DIV",
+              "id": "dashByType",
+              "cls": "dash-bars dash-bars-compact analytics-chart",
+              "text": "0\n31\n62\n93\n124\n124\nقيمة مفقودة\n65\nصناعي\n38",
+              "client": 314,
+              "scroll": 390,
+              "right": 724
+            }
+          ]
+        },
+        {
+          "id": "widget-location",
+          "left": 25,
+          "right": 377,
+          "width": 352,
+          "scrollWidth": 350,
+          "clientWidth": 350,
+          "overflowingChildren": [
+            {
+              "tag": "DIV",
+              "id": "dashByLocation",
+              "cls": "dash-bars analytics-chart",
+              "text": "0\n65\n129\n194\n258\n258\nالأحساء\n13\nالعقير\n8\nا",
+              "client": 314,
+              "scroll": 390,
+              "right": 358
+            }
+          ]
+        },
+        {
+          "id": "widget-timeline",
+          "left": 391,
+          "right": 743,
+          "width": 352,
+          "scrollWidth": 350,
+          "clientWidth": 350,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-deadline",
+          "left": 25,
+          "right": 377,
+          "width": 352,
+          "scrollWidth": 350,
+          "clientWidth": 350,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-operations",
+          "left": 391,
+          "right": 743,
+          "width": 352,
+          "scrollWidth": 350,
+          "clientWidth": 350,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-quality",
+          "left": 25,
+          "right": 377,
+          "width": 352,
+          "scrollWidth": 350,
+          "clientWidth": 350,
+          "overflowingChildren": [
+            {
+              "tag": "SPAN",
+              "id": "",
+              "cls": "dash-bar-label ",
+              "text": "",
+              "client": 115,
+              "scroll": 165,
+              "right": 354
+            }
+          ]
+        },
+        {
+          "id": "recent-dashboard-panel",
+          "left": 25,
+          "right": 743,
+          "width": 718,
+          "scrollWidth": 716,
+          "clientWidth": 716,
+          "overflowingChildren": [
+            {
+              "tag": "B",
+              "id": "",
+              "cls": "",
+              "text": "تاجير مؤقت لموقع من نوع العربات المتنقلة ب",
+              "client": 296,
+              "scroll": 359,
+              "right": 715
+            },
+            {
+              "tag": "B",
+              "id": "",
+              "cls": "",
+              "text": "تاجير مؤقت لموقع من نوع المباني بحي مجمع ا",
+              "client": 296,
+              "scroll": 346,
+              "right": 715
+            },
+            {
+              "tag": "B",
+              "id": "",
+              "cls": "",
+              "text": "منشأة تحويلية للمنتجات الثانوية للنخيل بمح",
+              "client": 296,
+              "scroll": 338,
+              "right": 715
+            },
+            {
+              "tag": "B",
+              "id": "",
+              "cls": "",
+              "text": "تاجير مؤقت لموقع من نوع أخرى بحي جبل الشعب",
+              "client": 296,
+              "scroll": 343,
+              "right": 715
+            },
+            {
+              "tag": "B",
+              "id": "",
+              "cls": "",
+              "text": "تاجير مؤقت لموقع من نوع العربات المتنقلة ب",
+              "client": 296,
+              "scroll": 426,
+              "right": 715
+            }
+          ]
+        }
+      ],
+      "chartWidths": [
+        390,
+        390,
+        390,
+        390,
+        390,
+        390,
+        308,
+        314
+      ],
+      "labelBounds": [],
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "name": "390x844",
+      "scrollWidth": 390,
+      "kpis": [
+        {
+          "label": "إجمالي الفرص",
+          "height": 151,
+          "clientWidth": 177,
+          "scrollWidth": 177,
+          "textBoxes": [
+            {
+              "text": "إجمالي الفرص",
+              "width": 123,
+              "height": 24,
+              "scrollWidth": 123,
+              "clientWidth": 123
+            },
+            {
+              "text": "289",
+              "width": 153,
+              "height": 31,
+              "scrollWidth": 153,
+              "clientWidth": 153
+            },
+            {
+              "text": "الفرص الرئيسية غير المدمجة",
+              "width": 153,
+              "height": 20,
+              "scrollWidth": 153,
+              "clientWidth": 153
+            }
+          ]
+        },
+        {
+          "label": "الفرص النشطة",
+          "height": 151,
+          "clientWidth": 177,
+          "scrollWidth": 177,
+          "textBoxes": [
+            {
+              "text": "الفرص النشطة",
+              "width": 123,
+              "height": 24,
+              "scrollWidth": 123,
+              "clientWidth": 123
+            },
+            {
+              "text": "283",
+              "width": 153,
+              "height": 31,
+              "scrollWidth": 153,
+              "clientWidth": 153
+            },
+            {
+              "text": "وفق تعريف الحالة التشغيلية",
+              "width": 153,
+              "height": 20,
+              "scrollWidth": 153,
+              "clientWidth": 153
+            }
+          ]
+        },
+        {
+          "label": "سجلات تاريخية",
+          "height": 151,
+          "clientWidth": 177,
+          "scrollWidth": 177,
+          "textBoxes": [
+            {
+              "text": "سجلات تاريخية",
+              "width": 123,
+              "height": 24,
+              "scrollWidth": 123,
+              "clientWidth": 123
+            },
+            {
+              "text": "6",
+              "width": 153,
+              "height": 31,
+              "scrollWidth": 153,
+              "clientWidth": 153
+            },
+            {
+              "text": "منتهية أو ملغاة أو مرساة أو مزالة",
+              "width": 153,
+              "height": 20,
+              "scrollWidth": 153,
+              "clientWidth": 153
+            }
+          ]
+        },
+        {
+          "label": "مصادر رسمية",
+          "height": 151,
+          "clientWidth": 177,
+          "scrollWidth": 177,
+          "textBoxes": [
+            {
+              "text": "مصادر رسمية",
+              "width": 123,
+              "height": 24,
+              "scrollWidth": 123,
+              "clientWidth": 123
+            },
+            {
+              "text": "10",
+              "width": 153,
+              "height": 31,
+              "scrollWidth": 153,
+              "clientWidth": 153
+            },
+            {
+              "text": "مصادر مفعّلة في المنصة",
+              "width": 153,
+              "height": 20,
+              "scrollWidth": 153,
+              "clientWidth": 153
+            }
+          ]
+        },
+        {
+          "label": "موعد خلال 30 يومًا",
+          "height": 151,
+          "clientWidth": 177,
+          "scrollWidth": 177,
+          "textBoxes": [
+            {
+              "text": "موعد خلال 30 يومًا",
+              "width": 123,
+              "height": 24,
+              "scrollWidth": 123,
+              "clientWidth": 123
+            },
+            {
+              "text": "111",
+              "width": 153,
+              "height": 31,
+              "scrollWidth": 153,
+              "clientWidth": 153
+            },
+            {
+              "text": "بحسب المواعيد المنشورة",
+              "width": 153,
+              "height": 20,
+              "scrollWidth": 153,
+              "clientWidth": 153
+            }
+          ]
+        },
+        {
+          "label": "متعددة المصادر",
+          "height": 151,
+          "clientWidth": 177,
+          "scrollWidth": 177,
+          "textBoxes": [
+            {
+              "text": "متعددة المصادر",
+              "width": 123,
+              "height": 24,
+              "scrollWidth": 123,
+              "clientWidth": 123
+            },
+            {
+              "text": "8",
+              "width": 153,
+              "height": 31,
+              "scrollWidth": 153,
+              "clientWidth": 153
+            },
+            {
+              "text": "2.8٪ من النتيجة الحالية",
+              "width": 153,
+              "height": 20,
+              "scrollWidth": 153,
+              "clientWidth": 153
+            }
+          ]
+        }
+      ],
+      "cards": [
+        {
+          "id": "data-filters",
+          "left": 12,
+          "right": 378,
+          "width": 366,
+          "scrollWidth": 364,
+          "clientWidth": 364,
+          "overflowingChildren": []
+        },
+        {
+          "id": "geo-panel",
+          "left": 12,
+          "right": 378,
+          "width": 366,
+          "scrollWidth": 364,
+          "clientWidth": 364,
+          "overflowingChildren": [
+            {
+              "tag": "DIV",
+              "id": "opportunityMap",
+              "cls": "opportunity-map leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom",
+              "text": "2\n173\n+\n−\n Leaflet | © OpenStreetMap contr",
+              "client": 338,
+              "scroll": 976,
+              "right": 365
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "leaflet-pane leaflet-map-pane",
+              "text": "2\n173",
+              "client": 0,
+              "scroll": 1541,
+              "right": -539
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "leaflet-pane leaflet-tile-pane",
+              "text": "",
+              "client": 0,
+              "scroll": 1541,
+              "right": -539
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "leaflet-layer ",
+              "text": "",
+              "client": 0,
+              "scroll": 1541,
+              "right": -539
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "leaflet-tile-container leaflet-zoom-animated",
+              "text": "",
+              "client": 0,
+              "scroll": 1541,
+              "right": -539
+            }
+          ]
+        },
+        {
+          "id": "dashSectorPanel",
+          "left": 12,
+          "right": 378,
+          "width": 366,
+          "scrollWidth": 364,
+          "clientWidth": 364,
+          "overflowingChildren": [
+            {
+              "tag": "DIV",
+              "id": "dashBySector",
+              "cls": "dash-bars analytics-chart",
+              "text": "0\n31\n62\n93\n124\n124\nقيمة مفقودة\n59\nصناعي\n39",
+              "client": 336,
+              "scroll": 340,
+              "right": 363
+            }
+          ]
+        },
+        {
+          "id": "widget-status",
+          "left": 12,
+          "right": 378,
+          "width": 366,
+          "scrollWidth": 364,
+          "clientWidth": 364,
+          "overflowingChildren": [
+            {
+              "tag": "DIV",
+              "id": "dashByStatus",
+              "cls": "dash-bars analytics-chart",
+              "text": "0\n42\n84\n126\n168\n168\nمنشورة\n101\nمتاحة\n13\nغي",
+              "client": 336,
+              "scroll": 340,
+              "right": 363
+            }
+          ]
+        },
+        {
+          "id": "widget-source",
+          "left": 12,
+          "right": 378,
+          "width": 366,
+          "scrollWidth": 364,
+          "clientWidth": 364,
+          "overflowingChildren": [
+            {
+              "tag": "DIV",
+              "id": "dashBySource",
+              "cls": "dash-bars analytics-chart",
+              "text": "0\n44\n88\n132\n176\n176\nفرص – البوابةالموحدةلل",
+              "client": 336,
+              "scroll": 340,
+              "right": 363
+            }
+          ]
+        },
+        {
+          "id": "widget-owner",
+          "left": 12,
+          "right": 378,
+          "width": 366,
+          "scrollWidth": 364,
+          "clientWidth": 364,
+          "overflowingChildren": [
+            {
+              "tag": "DIV",
+              "id": "dashByOwner",
+              "cls": "dash-bars analytics-chart",
+              "text": "0\n67\n134\n200\n267\n267\nأمانة الأحساء\n7\nهيئة ",
+              "client": 336,
+              "scroll": 340,
+              "right": 363
+            }
+          ]
+        },
+        {
+          "id": "widget-classification",
+          "left": 12,
+          "right": 378,
+          "width": 366,
+          "scrollWidth": 364,
+          "clientWidth": 364,
+          "overflowingChildren": [
+            {
+              "tag": "DIV",
+              "id": "dashByType",
+              "cls": "dash-bars dash-bars-compact analytics-chart",
+              "text": "0\n31\n62\n93\n124\n124\nقيمة مفقودة\n65\nصناعي\n38",
+              "client": 336,
+              "scroll": 340,
+              "right": 363
+            }
+          ]
+        },
+        {
+          "id": "widget-location",
+          "left": 12,
+          "right": 378,
+          "width": 366,
+          "scrollWidth": 364,
+          "clientWidth": 364,
+          "overflowingChildren": [
+            {
+              "tag": "DIV",
+              "id": "dashByLocation",
+              "cls": "dash-bars analytics-chart",
+              "text": "0\n65\n129\n194\n258\n258\nالأحساء\n13\nالعقير\n8\nا",
+              "client": 336,
+              "scroll": 340,
+              "right": 363
+            }
+          ]
+        },
+        {
+          "id": "widget-timeline",
+          "left": 12,
+          "right": 378,
+          "width": 366,
+          "scrollWidth": 364,
+          "clientWidth": 364,
+          "overflowingChildren": [
+            {
+              "tag": "DIV",
+              "id": "dashTimeline",
+              "cls": "dash-timeline analytics-chart trend-chart",
+              "text": "0\n145\n289\n26-10",
+              "client": 336,
+              "scroll": 526,
+              "right": 363
+            }
+          ]
+        },
+        {
+          "id": "widget-deadline",
+          "left": 12,
+          "right": 378,
+          "width": 366,
+          "scrollWidth": 364,
+          "clientWidth": 364,
+          "overflowingChildren": [
+            {
+              "tag": "DIV",
+              "id": "dashDeadlineTrend",
+              "cls": "analytics-chart trend-chart",
+              "text": "0\n43\n86\n26-10\n26-12\n27-02\n27-06\n27-08\n27-1",
+              "client": 336,
+              "scroll": 520,
+              "right": 363
+            }
+          ]
+        },
+        {
+          "id": "widget-operations",
+          "left": 12,
+          "right": 378,
+          "width": 366,
+          "scrollWidth": 364,
+          "clientWidth": 364,
+          "overflowingChildren": []
+        },
+        {
+          "id": "widget-quality",
+          "left": 12,
+          "right": 378,
+          "width": 366,
+          "scrollWidth": 364,
+          "clientWidth": 364,
+          "overflowingChildren": [
+            {
+              "tag": "SPAN",
+              "id": "",
+              "cls": "dash-bar-label ",
+              "text": "",
+              "client": 131,
+              "scroll": 152,
+              "right": 359
+            }
+          ]
+        },
+        {
+          "id": "recent-dashboard-panel",
+          "left": 12,
+          "right": 378,
+          "width": 366,
+          "scrollWidth": 364,
+          "clientWidth": 364,
+          "overflowingChildren": [
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "recent-table-wrap",
+              "text": "الفرصة والجهة\tالقطاع\tالحالة\tآخر موعد\n\nتاجي",
+              "client": 328,
+              "scroll": 560,
+              "right": 359
+            },
+            {
+              "tag": "B",
+              "id": "",
+              "cls": "",
+              "text": "تاجير مؤقت لموقع من نوع العربات المتنقلة ب",
+              "client": 228,
+              "scroll": 359,
+              "right": 350
+            },
+            {
+              "tag": "B",
+              "id": "",
+              "cls": "",
+              "text": "تاجير مؤقت لموقع من نوع المباني بحي مجمع ا",
+              "client": 228,
+              "scroll": 346,
+              "right": 350
+            },
+            {
+              "tag": "B",
+              "id": "",
+              "cls": "",
+              "text": "منشأة تحويلية للمنتجات الثانوية للنخيل بمح",
+              "client": 228,
+              "scroll": 338,
+              "right": 350
+            },
+            {
+              "tag": "B",
+              "id": "",
+              "cls": "",
+              "text": "تاجير مؤقت لموقع من نوع أخرى بحي جبل الشعب",
+              "client": 228,
+              "scroll": 343,
+              "right": 350
+            }
+          ]
+        }
+      ],
+      "chartWidths": [
+        340,
+        340,
+        340,
+        340,
+        340,
+        340,
+        520,
+        520
+      ],
+      "labelBounds": [],
+      "noHorizontalOverflow": true
+    }
+  ],
+  "charts": {
+    "dashBySector": {
+      "svg": true,
+      "width": 592,
+      "height": 505,
+      "categories": 20,
+      "axes": 10,
+      "tooltip": true,
+      "labels": [
+        "قيمة مفقودة",
+        "صناعي",
+        "تجاري"
+      ]
+    },
+    "dashByStatus": {
+      "svg": true,
+      "width": 408,
+      "height": 337,
+      "categories": 6,
+      "axes": 5,
+      "tooltip": true,
+      "labels": [
+        "منشورة",
+        "متاحة",
+        "غير محددة"
+      ]
+    },
+    "dashBySource": {
+      "svg": true,
+      "width": 500,
+      "height": 475,
+      "categories": 10,
+      "axes": 5,
+      "tooltip": true,
+      "labels": [
+        "فرص – البوابة الموحدةللاستثمار",
+        "منصة الفرصالاستثمارية بالأحساء",
+        "استثمر في السعودية"
+      ]
+    },
+    "dashByOwner": {
+      "svg": true,
+      "width": 500,
+      "height": 335,
+      "categories": 7,
+      "axes": 5,
+      "tooltip": true,
+      "labels": [
+        "أمانة الأحساء",
+        "هيئة تطوير الأحساء",
+        "وزارة الاستثمار"
+      ]
+    },
+    "dashByActivity": {
+      "svg": false,
+      "width": 0,
+      "height": 0,
+      "categories": 0,
+      "axes": 0,
+      "tooltip": false,
+      "labels": []
+    },
+    "dashByType": {
+      "svg": true,
+      "width": 684,
+      "height": 505,
+      "categories": 20,
+      "axes": 10,
+      "tooltip": true,
+      "labels": [
+        "قيمة مفقودة",
+        "صناعي",
+        "تجاري"
+      ]
+    },
+    "dashByLocation": {
+      "svg": true,
+      "width": 390,
+      "height": 469,
+      "categories": 8,
+      "axes": 5,
+      "tooltip": true,
+      "labels": [
+        "الأحساء",
+        "العقير",
+        "العيون"
+      ]
+    },
+    "dashTimeline": {
+      "svg": true,
+      "width": 402,
+      "height": 221,
+      "categories": 1,
+      "axes": 3,
+      "tooltip": true,
+      "labels": []
+    },
+    "dashDeadlineTrend": {
+      "svg": true,
+      "width": 592,
+      "height": 264,
+      "categories": 13,
+      "axes": 3,
+      "tooltip": true,
+      "labels": []
+    }
+  },
+  "overflow": [
+    {
+      "viewport": "1920x1080",
+      "kpiTextOverflow": [],
+      "cardWidthOverflow": [],
+      "svgLabelOverflow": []
+    },
+    {
+      "viewport": "1440x900",
+      "kpiTextOverflow": [],
+      "cardWidthOverflow": [],
+      "svgLabelOverflow": []
+    },
+    {
+      "viewport": "1366x768",
+      "kpiTextOverflow": [],
+      "cardWidthOverflow": [],
+      "svgLabelOverflow": []
+    },
+    {
+      "viewport": "768x900",
+      "kpiTextOverflow": [],
+      "cardWidthOverflow": [],
+      "svgLabelOverflow": []
+    },
+    {
+      "viewport": "390x844",
+      "kpiTextOverflow": [],
+      "cardWidthOverflow": [],
+      "svgLabelOverflow": []
+    }
+  ],
+  "interactions": {
+    "firstSectorRow": {
+      "role": "button",
+      "tabIndex": "0",
+      "filter": "sector",
+      "value": "صناعي"
+    },
+    "customTooltip": true,
+    "tooltipHasMetrics": true,
+    "heatmapToggle": true,
+    "clusterToggle": true,
+    "csvExport": true,
+    "xlsxExport": true,
+    "initialCount": "289",
+    "chartKeyboardDrilldown": true,
+    "filterControlsPresent": true,
+    "mapSummaryPresent": true,
+    "globalFilterUpdatesDashboardAndMap": true,
+    "opportunityListAndDetails": true,
+    "mapDrilldown": true,
+    "kpiDrilldown": true,
+    "sourceHealthVisible": true,
+    "guestAdminControlsHidden": true,
+    "authenticationLogin": true,
+    "adminRoleControlsVisible": true
+  },
+  "errors": [],
+  "typeLayout": {
+    "chartWidth": 684,
+    "gridTemplate": "683.75px",
+    "columns": 2
+  }
+}

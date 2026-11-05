@@ -1,0 +1,11 @@
+{
+  "source_recheck_in_pilot": 0,
+  "sample_size": 40,
+  "before": "E72CB979EBD28E18F302FFA9C1453B2B290496679B83B8ED4CEF34AAC6815C8C",
+  "after": "E72CB979EBD28E18F302FFA9C1453B2B290496679B83B8ED4CEF34AAC6815C8C",
+  "duplicate_cases": 6,
+  "phase_b": 20,
+  "phase_a": 20,
+  "regenerated": false,
+  "changed": false
+}

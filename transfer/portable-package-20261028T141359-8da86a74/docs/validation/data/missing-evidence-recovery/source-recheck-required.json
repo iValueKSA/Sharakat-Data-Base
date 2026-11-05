@@ -1,0 +1,77 @@
+{
+  "count": 9,
+  "cases": [
+    {
+      "review_id": 417,
+      "source": "invest-saudi",
+      "missing_evidence": "investment_value",
+      "why_existing_data_is_insufficient": "Invest Saudi retains literal investmentSize=0 with no documented sentinel, currency, or amount semantics; recheck the official item detail when available, without treating missing as zero.",
+      "what_future_source_check_should_confirm": "official meaning of investmentSize=0 and any documented amount/currency",
+      "manual_source_sync_started": false
+    },
+    {
+      "review_id": 418,
+      "source": "invest-saudi",
+      "missing_evidence": "investment_value",
+      "why_existing_data_is_insufficient": "Invest Saudi retains literal investmentSize=0 with no documented sentinel, currency, or amount semantics; recheck the official item detail when available, without treating missing as zero.",
+      "what_future_source_check_should_confirm": "official meaning of investmentSize=0 and any documented amount/currency",
+      "manual_source_sync_started": false
+    },
+    {
+      "review_id": 18,
+      "source": "ahda",
+      "missing_evidence": "location",
+      "why_existing_data_is_insufficient": "Retained AHDA evidence establishes institutional Al-Ahsa scope but no project site; a future official detail/source check must confirm the specific asset location.",
+      "what_future_source_check_should_confirm": "official project-level location",
+      "manual_source_sync_started": false
+    },
+    {
+      "review_id": 19,
+      "source": "ahda",
+      "missing_evidence": "location",
+      "why_existing_data_is_insufficient": "Retained AHDA evidence establishes institutional Al-Ahsa scope but no project site; a future official detail/source check must confirm the specific asset location.",
+      "what_future_source_check_should_confirm": "official project-level location",
+      "manual_source_sync_started": false
+    },
+    {
+      "review_id": 20,
+      "source": "ahda",
+      "missing_evidence": "location",
+      "why_existing_data_is_insufficient": "Retained AHDA evidence establishes institutional Al-Ahsa scope but no project site; a future official detail/source check must confirm the specific asset location.",
+      "what_future_source_check_should_confirm": "official project-level location",
+      "manual_source_sync_started": false
+    },
+    {
+      "review_id": 21,
+      "source": "ahda",
+      "missing_evidence": "location",
+      "why_existing_data_is_insufficient": "Retained AHDA evidence establishes institutional Al-Ahsa scope but no project site; a future official detail/source check must confirm the specific asset location.",
+      "what_future_source_check_should_confirm": "official project-level location",
+      "manual_source_sync_started": false
+    },
+    {
+      "review_id": 22,
+      "source": "ahda",
+      "missing_evidence": "location",
+      "why_existing_data_is_insufficient": "Retained AHDA evidence establishes institutional Al-Ahsa scope but no project site; a future official detail/source check must confirm the specific asset location.",
+      "what_future_source_check_should_confirm": "official project-level location",
+      "manual_source_sync_started": false
+    },
+    {
+      "review_id": 23,
+      "source": "ahda",
+      "missing_evidence": "location",
+      "why_existing_data_is_insufficient": "Retained AHDA evidence establishes institutional Al-Ahsa scope but no project site; a future official detail/source check must confirm the specific asset location.",
+      "what_future_source_check_should_confirm": "official project-level location",
+      "manual_source_sync_started": false
+    },
+    {
+      "review_id": 24,
+      "source": "ahda",
+      "missing_evidence": "location",
+      "why_existing_data_is_insufficient": "Retained AHDA evidence establishes institutional Al-Ahsa scope but no project site; a future official detail/source check must confirm the specific asset location.",
+      "what_future_source_check_should_confirm": "official project-level location",
+      "manual_source_sync_started": false
+    }
+  ]
+}

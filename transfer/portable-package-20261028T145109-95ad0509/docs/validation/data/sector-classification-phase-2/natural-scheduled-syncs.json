@@ -1,0 +1,92 @@
+{
+  "captured_at": "2026-10-21T09:15:58.670084+00:00",
+  "manual_source_sync_started": false,
+  "comparison_window": {
+    "before": "2026-10-21T09:01:28.929746+00:00",
+    "after": "2026-10-21T09:07:49.953806+00:00",
+    "before_snapshot": "phase2-post-apply-snapshot.json",
+    "after_snapshot": "phase2-post-scheduled-sync-snapshot.json"
+  },
+  "aggregate_delta": {
+    "master_count": 0,
+    "source_opportunity_count": 0,
+    "observation_count": 415,
+    "observation_source": "furas",
+    "open_sector_review_rows": 0,
+    "open_sector_review_rows_before": 64,
+    "open_sector_review_rows_after": 64,
+    "other_open_review_cases": 3,
+    "review_case_type": "status field conflicts",
+    "merge_audit_count": 0
+  },
+  "jobs": [
+    {
+      "job_id": 403,
+      "timestamp_started": "2026-10-21T09:02:06.123189+00:00",
+      "timestamp_finished": "2026-10-21T09:02:17.894442+00:00",
+      "source": "furas",
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "job_state": "COMPLETED",
+      "records_received": 402,
+      "records_parsed": 402,
+      "unique_records": 402,
+      "new_masters": 0,
+      "master_updates": 0,
+      "unchanged_records": 402,
+      "source_opportunity_delta": 0,
+      "master_delta": 0,
+      "source_observation_delta": 415,
+      "removed_records_reported": 13,
+      "merged_records": 0,
+      "location_reviews_reported": 0,
+      "review_rows_created": 0,
+      "note": "All 415 new observation versions in the comparison window belong to Furas; source and Master identities remained stable."
+    },
+    {
+      "job_id": 404,
+      "timestamp_started": "2026-10-21T09:03:05.547489+00:00",
+      "timestamp_finished": "2026-10-21T09:03:15.663383+00:00",
+      "source": "alahsa-opportunities",
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "job_state": "COMPLETED",
+      "records_received": 103,
+      "records_parsed": 103,
+      "unique_records": 103,
+      "new_masters": 0,
+      "master_updates": 0,
+      "unchanged_records": 103,
+      "source_opportunity_delta": 0,
+      "master_delta": 0,
+      "source_observation_delta": 0,
+      "removed_records_reported": 0,
+      "merged_records": 0,
+      "location_reviews_reported": 0,
+      "review_rows_created": 3,
+      "review_ids": [
+        701,
+        702,
+        703
+      ],
+      "review_field": "status",
+      "sector_review_rows_created": 0,
+      "note": "Three open status-conflict reviews record source evidence “متاحة | منتهية” while selected Master status remains “متاحة”; no lifecycle value was changed."
+    }
+  ],
+  "post_sync_manifest": {
+    "current_masters": 525,
+    "specified": 146,
+    "unspecified": 379,
+    "source_opportunities": 3137,
+    "observations": 12829,
+    "sync_jobs": 404,
+    "active_sync_jobs": 0,
+    "open_sector_review_rows": 64,
+    "master_identity_preserved": true,
+    "source_identity_preserved": true,
+    "raw_source_provenance_preserved": true,
+    "merge_lineage_preserved": true
+  },
+  "phase2_sector_counts_unchanged_after_sync": true
+}

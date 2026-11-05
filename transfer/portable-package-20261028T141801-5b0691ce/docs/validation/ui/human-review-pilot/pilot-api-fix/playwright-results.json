@@ -1,0 +1,116 @@
+{
+  "status": "PASSED",
+  "navigation": "Review Queue -> Pilot Mode -> Phase A -> Case 1 of 20",
+  "first_case_key": "duplicate:32",
+  "phase_b_inaccessible": true,
+  "phase_b_review_control_visible": false,
+  "api_write_requests_sent_to_server": 0,
+  "api_write_requests_intercepted": [
+    {
+      "method": "POST",
+      "url": "http://localhost:8080/api/admin/review-workbench/pilot/events"
+    },
+    {
+      "method": "POST",
+      "url": "http://localhost:8080/api/admin/review-workbench/duplicate/32/recommendation-shown?version_token=80515eb3cc9ac503a6c8fcd76a4c04dffac816667f9c5d20efee2174e05bce1f"
+    }
+  ],
+  "javascript_errors": [],
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "review_queue_active": true,
+      "pilot_mode_active": true,
+      "phase_a_status": true,
+      "position": "الحالة 1 من 20 · المرحلة أ",
+      "first_case_key": "duplicate:32",
+      "visible_queue_count": 20,
+      "phase_b_review_control_hidden": true,
+      "current_phase": "A",
+      "active_case_phases": [
+        "A"
+      ],
+      "phase_b_case_references": 0,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "review_queue_active": true,
+      "pilot_mode_active": true,
+      "phase_a_status": true,
+      "position": "الحالة 1 من 20 · المرحلة أ",
+      "first_case_key": "duplicate:32",
+      "visible_queue_count": 20,
+      "phase_b_review_control_hidden": true,
+      "current_phase": "A",
+      "active_case_phases": [
+        "A"
+      ],
+      "phase_b_case_references": 0,
+      "passed": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "review_queue_active": true,
+      "pilot_mode_active": true,
+      "phase_a_status": true,
+      "position": "الحالة 1 من 20 · المرحلة أ",
+      "first_case_key": "duplicate:32",
+      "visible_queue_count": 20,
+      "phase_b_review_control_hidden": true,
+      "current_phase": "A",
+      "active_case_phases": [
+        "A"
+      ],
+      "phase_b_case_references": 0,
+      "passed": true
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "review_queue_active": true,
+      "pilot_mode_active": true,
+      "phase_a_status": true,
+      "position": "الحالة 1 من 20 · المرحلة أ",
+      "first_case_key": "duplicate:32",
+      "visible_queue_count": 20,
+      "phase_b_review_control_hidden": true,
+      "current_phase": "A",
+      "active_case_phases": [
+        "A"
+      ],
+      "phase_b_case_references": 0,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "review_queue_active": true,
+      "pilot_mode_active": true,
+      "phase_a_status": true,
+      "position": "الحالة 1 من 20 · المرحلة أ",
+      "first_case_key": "duplicate:32",
+      "visible_queue_count": 20,
+      "phase_b_review_control_hidden": true,
+      "current_phase": "A",
+      "active_case_phases": [
+        "A"
+      ],
+      "phase_b_case_references": 0,
+      "passed": true
+    }
+  ]
+}

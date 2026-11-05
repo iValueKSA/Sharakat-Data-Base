@@ -1,0 +1,164 @@
+{
+  "api": {
+    "total": 290,
+    "active": 284,
+    "sources": 10,
+    "sectors": 20,
+    "statuses": 6,
+    "owners": 7,
+    "types": 20,
+    "timeline": 1,
+    "exactMapped": 176,
+    "unmapped": 114
+  },
+  "after": {
+    "total": 290,
+    "active": 284,
+    "sources": 10
+  },
+  "viewportChecks": [
+    {
+      "viewport": "1920x1080",
+      "documentWidth": 1920,
+      "rtl": true,
+      "visible": true,
+      "total": "290",
+      "charts": {
+        "columns": 2,
+        "donut": 1,
+        "timeSeries": 0,
+        "limitedHistoryIndicator": 1,
+        "rank": 7
+      },
+      "mapHeight": 285,
+      "overflowingCards": [],
+      "narrowTextOverflows": []
+    },
+    {
+      "viewport": "1440x900",
+      "documentWidth": 1440,
+      "rtl": true,
+      "visible": true,
+      "total": "290",
+      "charts": {
+        "columns": 2,
+        "donut": 1,
+        "timeSeries": 0,
+        "limitedHistoryIndicator": 1,
+        "rank": 7
+      },
+      "mapHeight": 270,
+      "overflowingCards": [],
+      "narrowTextOverflows": []
+    },
+    {
+      "viewport": "1366x768",
+      "documentWidth": 1366,
+      "rtl": true,
+      "visible": true,
+      "total": "290",
+      "charts": {
+        "columns": 2,
+        "donut": 1,
+        "timeSeries": 0,
+        "limitedHistoryIndicator": 1,
+        "rank": 7
+      },
+      "mapHeight": 270,
+      "overflowingCards": [],
+      "narrowTextOverflows": []
+    },
+    {
+      "viewport": "768x900",
+      "documentWidth": 768,
+      "rtl": true,
+      "visible": true,
+      "total": "290",
+      "charts": {
+        "columns": 2,
+        "donut": 1,
+        "timeSeries": 0,
+        "limitedHistoryIndicator": 1,
+        "rank": 7
+      },
+      "mapHeight": 270,
+      "overflowingCards": [],
+      "narrowTextOverflows": []
+    },
+    {
+      "viewport": "390x844",
+      "documentWidth": 390,
+      "rtl": true,
+      "visible": true,
+      "total": "290",
+      "charts": {
+        "columns": 2,
+        "donut": 1,
+        "timeSeries": 0,
+        "limitedHistoryIndicator": 1,
+        "rank": 7
+      },
+      "mapHeight": 260,
+      "overflowingCards": [],
+      "narrowTextOverflows": []
+    }
+  ],
+  "functional": {
+    "sectorFilterMatchesApi": true,
+    "sectorFilterMapMatchesApi": true,
+    "sectorFilterUpdatedUrl": true,
+    "resetRestoredTotal": true,
+    "statusDonutDrilldown": true,
+    "ownerDrilldown": true,
+    "heatMapToggle": true,
+    "clusterToggle": true,
+    "mapPopup": true,
+    "mapPopupDrilldown": true,
+    "opportunityDetail": true,
+    "csvExport": true,
+    "xlsxExport": true,
+    "route_opportunities": true,
+    "route_sources": true,
+    "guestAdminHidden": true,
+    "loginDialogAvailable": true,
+    "localLogin": true,
+    "adminRouteVisibleAfterLogin": true,
+    "route_review": true,
+    "route_alerts": true,
+    "route_admin": true,
+    "opportunityPagination": true,
+    "opportunitySearch": true,
+    "opportunityListDetail": true,
+    "dashboardNavigationItem": true,
+    "latinDigitsAudit": true,
+    "displayLabelsAudit": true,
+    "compactSinglePeriodInsight": true,
+    "latinFormatterAudit": true,
+    "statusColorsUnique": true,
+    "statusLegendOrderAndColors": true,
+    "actualStatusPalette": true,
+    "statusTooltipArabicCountPercentAndColor": true,
+    "latestRowsReuseStatusColors": true,
+    "latestDatesLatinDigits": true
+  },
+  "errors": [],
+  "failed": [],
+  "screenshots": [
+    "docs\\validation\\ui\\tabler-ahda-final-ui-refinements\\screenshots\\dashboard-1920x1080-full.png",
+    "docs\\validation\\ui\\tabler-ahda-final-ui-refinements\\screenshots\\dashboard-desktop-first-1920x1080.png",
+    "docs\\validation\\ui\\tabler-ahda-final-ui-refinements\\screenshots\\dashboard-charts-and-map-1920x1080.png",
+    "docs\\validation\\ui\\tabler-ahda-final-ui-refinements\\screenshots\\map-section.png",
+    "docs\\validation\\ui\\tabler-ahda-final-ui-refinements\\screenshots\\opportunity-status-chart.png",
+    "docs\\validation\\ui\\tabler-ahda-final-ui-refinements\\screenshots\\official-sources-chart.png",
+    "docs\\validation\\ui\\tabler-ahda-final-ui-refinements\\screenshots\\dashboard-1440x900-full.png",
+    "docs\\validation\\ui\\tabler-ahda-final-ui-refinements\\screenshots\\dashboard-1366x768-full.png",
+    "docs\\validation\\ui\\tabler-ahda-final-ui-refinements\\screenshots\\dashboard-768x900-full.png",
+    "docs\\validation\\ui\\tabler-ahda-final-ui-refinements\\screenshots\\dashboard-390x844-full.png",
+    "docs\\validation\\ui\\tabler-ahda-final-ui-refinements\\screenshots\\dashboard-mobile-first-390x844.png",
+    "docs\\validation\\ui\\tabler-ahda-final-ui-refinements\\screenshots\\dashboard-desktop-first-1440x900.png",
+    "docs\\validation\\ui\\tabler-ahda-final-ui-refinements\\screenshots\\dashboard-03-trend-owners-quality-1920x1080.png",
+    "docs\\validation\\ui\\tabler-ahda-final-ui-refinements\\screenshots\\dashboard-04-source-health-recent-1920x1080.png",
+    "docs\\validation\\ui\\tabler-ahda-final-ui-refinements\\screenshots\\latest-opportunities.png",
+    "docs\\validation\\ui\\tabler-ahda-final-ui-refinements\\screenshots\\dashboard-02-map-sector-and-distribution-1920x1200.png"
+  ]
+}

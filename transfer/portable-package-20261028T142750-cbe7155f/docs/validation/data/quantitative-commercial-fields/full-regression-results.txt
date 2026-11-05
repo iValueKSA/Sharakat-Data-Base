@@ -1,0 +1,18 @@
+FULL REGRESSION SUITE
+Executed: 2026-10-20
+Result: 178 passed / 0 failed
+Runner: Docker test container using a disposable SQLite database at /tmp/quant-fields-final7.db.
+Live PostgreSQL volume: not mounted into the test container.
+Source synchronization: not triggered by the suite.
+Warning: one Starlette TestClient/httpx deprecation warning; no test failures.
+Command:
+docker run --rm --mount "type=bind,source=C:/Sharakat Data Base,target=/workspace,readonly" --workdir /workspace --entrypoint sh alahsa-local-api:latest -c 'DATABASE_URL=sqlite:////tmp/quant-fields-final7.db python -m pytest -q -p no:cacheprovider tests/'
+
+CURRENT REVALIDATION — 2026-10-20T08:24:30Z
+Result: 185 passed / 0 failed
+Runner: disposable Docker test container; SQLite database at /tmp/quant-fields-current-final.db.
+Project mount: read-only. Live PostgreSQL was not mounted or queried by tests.
+Source synchronization: not triggered.
+Command:
+docker run --rm --mount "type=bind,source=C:/Sharakat Data Base,target=/workspace,readonly" --workdir /workspace --entrypoint sh alahsa-local-api:latest -c 'PYTHONPATH=/workspace DATABASE_URL=sqlite:////tmp/quant-fields-current-final.db python -m pytest -q -p no:cacheprovider tests/'
+Warning: one Starlette TestClient/httpx deprecation warning; no test failures.

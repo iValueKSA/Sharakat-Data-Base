@@ -1,0 +1,5 @@
+{
+  "command": "isolated Docker; network=none; SQLite fixture DB; tests/test_review_workbench.py",
+  "passed": 53,
+  "failed": 0
+}

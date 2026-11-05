@@ -1,0 +1,13 @@
+{
+  "benchmark_total": 135,
+  "benchmark_high_confidence": 1,
+  "benchmark_correct": 1,
+  "benchmark_incorrect": 0,
+  "precision": 100,
+  "by_sector": {
+    "sector:commercial": 1
+  },
+  "high": 11,
+  "review": 5,
+  "insufficient": 374
+}

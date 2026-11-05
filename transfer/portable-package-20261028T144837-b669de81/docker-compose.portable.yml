@@ -1,0 +1,25 @@
+services:
+  api:
+    environment:
+      ENVIRONMENT: ${ENVIRONMENT:-local_user}
+      PUBLIC_BASE_URL: ${PUBLIC_BASE_URL:-http://localhost:8080}
+      CORS_ORIGINS: ${CORS_ORIGINS:?Local CORS origins are required}
+      BOOTSTRAP_ADMIN_EMAIL: ${BOOTSTRAP_ADMIN_EMAIL:-admin@local}
+      BOOTSTRAP_ADMIN_PASSWORD: ${BOOTSTRAP_ADMIN_PASSWORD:?A private bootstrap fallback is required}
+      FORWARDED_ALLOW_IPS: ${FORWARDED_ALLOW_IPS:?The local frontend IP is required}
+      STAGING_DATABASE_NAME: ${STAGING_DATABASE_NAME:-sharakat_local}
+      BACKUP_DIR: /backups
+  worker:
+    environment:
+      ENVIRONMENT: ${ENVIRONMENT:-local_user}
+      PORTABLE_TRANSFER_TEST_MODE: ${PORTABLE_TRANSFER_TEST_MODE:-0}
+      LOCAL_SETUP_MARKER: ${LOCAL_SETUP_MARKER:-local_setup_state}
+      BACKUP_DIR: /backups
+  scheduler:
+    environment:
+      ENVIRONMENT: ${ENVIRONMENT:-local_user}
+      PORTABLE_TRANSFER_TEST_MODE: ${PORTABLE_TRANSFER_TEST_MODE:-0}
+  migrate:
+    environment:
+      ENVIRONMENT: ${ENVIRONMENT:-local_user}
+      REDIS_URL: ${REDIS_URL:?Redis URL is required for runtime parity validation}

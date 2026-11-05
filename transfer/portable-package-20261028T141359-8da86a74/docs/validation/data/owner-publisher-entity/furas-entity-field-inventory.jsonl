@@ -1,0 +1,11 @@
+{"source_key" : "furas", "field" : "attributes.AMANA", "raw_value" : null, "state" : "NULL", "records" : 2, "linked_records" : 2}
+{"source_key" : "furas", "field" : "attributes.AMANA", "raw_value" : "أمانة الاحساء", "state" : "VALUE", "records" : 20, "linked_records" : 20}
+{"source_key" : "furas", "field" : "attributes.AMANA", "raw_value" : "أمانة محافظة الأحساء", "state" : "VALUE", "records" : 155, "linked_records" : 155}
+{"source_key" : "furas", "field" : "attributes.ENTITIESNAME", "raw_value" : "المؤسسة العامة للتدريب التقني و المهني", "state" : "VALUE", "records" : 1, "linked_records" : 1}
+{"source_key" : "furas", "field" : "attributes.ENTITIESNAME", "raw_value" : "شركة الصحة القابضة شركة شخص واحد مساهمة مقفلة", "state" : "VALUE", "records" : 13, "linked_records" : 13}
+{"source_key" : "furas", "field" : "attributes.ENTITIESNAME", "raw_value" : "شركة تطوير للمباني", "state" : "VALUE", "records" : 1, "linked_records" : 1}
+{"source_key" : "furas", "field" : "attributes.ENTITIESNAME", "raw_value" : "شركة واحة للتنمية والتطوير", "state" : "VALUE", "records" : 1, "linked_records" : 1}
+{"source_key" : "furas", "field" : "attributes.ENTITIESNAME", "raw_value" : "وزارة البلديات والإسكان", "state" : "VALUE", "records" : 88, "linked_records" : 88}
+{"source_key" : "furas", "field" : "attributes.ENTITIESNAME", "raw_value" : "وزارة البيئة والمياه والزراعة", "state" : "VALUE", "records" : 1, "linked_records" : 1}
+{"source_key" : "furas", "field" : "attributes.ENTITIESNAME", "raw_value" : "وزارة الحرس الوطني", "state" : "VALUE", "records" : 5, "linked_records" : 5}
+{"source_key" : "furas", "field" : "attributes.ENTITIESNAME", "raw_value" : "وزارة الشئون البلدية والقروية", "state" : "VALUE", "records" : 67, "linked_records" : 67}

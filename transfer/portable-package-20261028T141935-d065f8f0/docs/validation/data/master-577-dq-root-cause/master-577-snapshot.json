@@ -1,0 +1,59 @@
+{
+  "captured_at": "2026-10-22T07:01:46.577808Z",
+  "read_only": true,
+  "master_id": 577,
+  "canonical_id": "AH-20261021130514-b6c27895",
+  "reference": "06-26-183737-46007",
+  "title_ar": "مزايدة تأجير موقع مقهى مستشفى العمران العام بالأحساء مزايدة تأجير موقع مقهى مستشفى العمران العام بالأحساء - الأنشطة التجارية - منشآت تقديم الغذاء - مقهى",
+  "title_en": null,
+  "current_canonical_sector": "تجاري",
+  "sector_provenance": "INFERRED_RULE_MEDIUM; event SECTOR_CONTROLLED_RELAXATION_APPLIED #531",
+  "classification_origin": "INFERRED_RULE_MEDIUM",
+  "classification_confidence_level": "MEDIUM (origin + score; no separate level field persisted)",
+  "classification_confidence_score": 0.852,
+  "classification_rule_key": "MED_TITLE_CAFE_CONCESSION",
+  "confidence_margin": null,
+  "confidence_margin_storage": "Key absent from SystemEvent #531; semantically NOT_APPLICABLE because no second sector candidate.",
+  "top_sector": "تجاري (reconstructed from the sole MED_TITLE_CAFE_CONCESSION candidate; not persisted as top_sector_id)",
+  "top_score": 4.0,
+  "top_score_status": "reconstructed from rule weight and confidence formula; not persisted",
+  "second_sector": null,
+  "second_score": null,
+  "second_score_status": "no competing candidate; not applicable",
+  "classification_timestamp": "2026-10-21T13:05:14.162695Z",
+  "linked_source_opportunity_ids": [
+    3168
+  ],
+  "linked_sources": [
+    {
+      "other_relevant_raw_classification_fields": {
+        "OPPORTUNITYACTIVESTATUS": "Announced",
+        "OPPORTUNITYTYPE": "Investment",
+        "source_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/06-26-183737-46007?type=Investment",
+        "OPPORTUNITYTYPEID": "01",
+        "SUBACTIVITYTYPE": "منشآت تقديم الغذاء",
+        "ACTIVITYTYPEID": "101",
+        "ACTIVITYTYPE": "الأنشطة التجارية",
+        "SUBACTIVITYTYPEID": "16",
+        "OPPORTUNITYDESCRIPTION": "مزايدة تأجير موقع مقهى مستشفى العمران العام بالأحساء مزايدة تأجير موقع مقهى مستشفى العمران العام بالأحساء - الأنشطة التجارية - منشآت تقديم الغذاء - مقهى",
+        "FACILITYTYPE": null
+      },
+      "raw_asset_type": null,
+      "raw_sub_activity": "منشآت تقديم الغذاء",
+      "raw_sector": null,
+      "raw_activity": "الأنشطة التجارية",
+      "source_opportunity_id": 3168,
+      "external_id": "06-26-183737-46007",
+      "raw_description": "مزايدة تأجير موقع مقهى مستشفى العمران العام بالأحساء مزايدة تأجير موقع مقهى مستشفى العمران العام بالأحساء - الأنشطة التجارية - منشآت تقديم الغذاء - مقهى",
+      "raw_title": "مزايدة تأجير موقع مقهى مستشفى العمران العام بالأحساء مزايدة تأجير موقع مقهى مستشفى العمران العام بالأحساء - الأنشطة التجارية - منشآت تقديم الغذاء - مقهى",
+      "source": "furas"
+    }
+  ],
+  "database_counts_at_initial_read_only_snapshot": {
+    "opportunities": 547,
+    "source_observations": 16279,
+    "system_events": 545,
+    "source_opportunities": 3138,
+    "opportunity_merge_audit": 21
+  }
+}

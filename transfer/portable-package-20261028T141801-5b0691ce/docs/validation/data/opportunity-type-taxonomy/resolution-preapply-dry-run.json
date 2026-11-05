@@ -1,0 +1,18 @@
+{
+  "reconstructed_at_utc": "2026-10-18T13:19:28.422784+00:00",
+  "original_dry_run_at_utc": "2026-10-18T13:08:57.441805+00:00",
+  "reconstructed_from_immutable_change_history": true,
+  "source_raw_payload_read_only": true,
+  "total_eligible_masters": 291,
+  "masters_with_canonical_opportunity_type_proposed": 129,
+  "masters_with_unspecified_opportunity_type_proposed": 162,
+  "deterministic_canonical_type_changes": 129,
+  "investment_model_source_records": 47,
+  "asset_type_master_changes": 0,
+  "open_conflict_rows_before_source_evidence_resolution": 19,
+  "source_evidence_conflict_rows_proposed_resolved": 5,
+  "open_conflict_rows_after_proposed_resolution": 14,
+  "remaining_unique_masters_requiring_review": 14,
+  "database_written": false,
+  "engine_version": "10"
+}

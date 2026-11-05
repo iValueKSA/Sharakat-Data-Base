@@ -1,0 +1,1559 @@
+{
+  "audit_policy": "All HIGH_CONFIDENCE and REVIEW_REQUIRED candidates plus a deterministic 20-record unspecified sample and every existing tourism/agriculture Master.",
+  "random_seed": "phase2-sample+master-identity-fingerprint",
+  "records": [
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261011105647-1608887f",
+      "current_sector": "غير محدد",
+      "has_open_sector_review": true,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 20,
+      "result": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "title_ar": "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  جبل الشعبة عربة اطعمة رقم 27"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261011105648-ca30f942",
+      "current_sector": "غير محدد",
+      "has_open_sector_review": true,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 30,
+      "result": {
+        "classification": "HIGH_CONFIDENCE",
+        "classification_origin": "INFERRED_RULE",
+        "confidence": 0.97,
+        "confidence_margin": 1.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:agriculture"
+            ],
+            "phrases": [
+              "تموينات"
+            ],
+            "rule_key": "P2_FOOD_RETAIL_NOT_AGRICULTURE"
+          },
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الأحساء"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير",
+              "تشغيل"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [
+          {
+            "field": "sub_activity",
+            "rule_key": "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+            "value": "أنشطة تجارة المواد الغذائية"
+          },
+          {
+            "activity": "الأنشطة التجارية",
+            "field": "activity+sub_activity",
+            "rule_key": "P2_FURAS_FOOD_RETAIL_EXACT_PAIR",
+            "sub_activity": "أنشطة تجارة المواد الغذائية"
+          }
+        ],
+        "rule_key": "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL",
+        "rule_keys": [
+          "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL",
+          "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+          "P2_FURAS_FOOD_RETAIL_EXACT_PAIR"
+        ],
+        "sector": "تجاري",
+        "sector_id": "sector:commercial",
+        "total_score": 97.0
+      },
+      "title_ar": "تأجير وتشغيل نشاط تموينات بمساحة (270م2) بحي أحد بمدينة الملك عبدالله بالأحساء \"إعادة طرح\""
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261011105648-30723bd5",
+      "current_sector": "غير محدد",
+      "has_open_sector_review": false,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 42,
+      "result": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:real_estate"
+            ],
+            "phrases": [
+              "قطعة رقم"
+            ],
+            "rule_key": "P2_GENERIC_PLOT_NOT_REAL_ESTATE"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "title_ar": "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  المطار,المطار,المطار الوفره للقطعة رقم  524"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261011105650-5c629472",
+      "current_sector": "غير محدد",
+      "has_open_sector_review": true,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 78,
+      "result": {
+        "candidates": [
+          "sector:agriculture",
+          "sector:industrial"
+        ],
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الأحساء"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          }
+        ],
+        "positive_evidence": [
+          {
+            "field": "activity",
+            "rule_key": "P2_CURATED_AGRICULTURAL_ACTIVITY_SIGNAL",
+            "value": "الأنشطة الزراعية والحيوانية"
+          },
+          {
+            "field": "sub_activity",
+            "rule_key": "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+            "value": "أنشطة وخدمات انتاج المواد غير الغذائية"
+          }
+        ],
+        "rule_key": "P2_CONFLICTING_SECTOR_SIGNALS",
+        "rule_keys": [
+          "P2_CONFLICTING_SECTOR_SIGNALS",
+          "P2_CURATED_AGRICULTURAL_ACTIVITY_SIGNAL",
+          "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "title_ar": "منشأة تحويلية للمنتجات الثانوية للنخيل بمحافظة الأحساء بالمنطقة الشرقية"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261011105651-5eb0e783",
+      "current_sector": "غير محدد",
+      "has_open_sector_review": true,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 90,
+      "result": {
+        "classification": "HIGH_CONFIDENCE",
+        "classification_origin": "INFERRED_RULE",
+        "confidence": 0.97,
+        "confidence_margin": 1.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:agriculture"
+            ],
+            "phrases": [
+              "تموينات"
+            ],
+            "rule_key": "P2_FOOD_RETAIL_NOT_AGRICULTURE"
+          },
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الأحساء"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير",
+              "تشغيل"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [
+          {
+            "field": "sub_activity",
+            "rule_key": "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+            "value": "محلات تجارية"
+          },
+          {
+            "activity": "الأنشطة التجارية",
+            "field": "activity+sub_activity",
+            "rule_key": "P2_FURAS_RETAIL_SHOPS_EXACT_PAIR",
+            "sub_activity": "محلات تجارية"
+          }
+        ],
+        "rule_key": "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL",
+        "rule_keys": [
+          "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL",
+          "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+          "P2_FURAS_RETAIL_SHOPS_EXACT_PAIR"
+        ],
+        "sector": "تجاري",
+        "sector_id": "sector:commercial",
+        "total_score": 97.0
+      },
+      "title_ar": "تأجير وتشغيل نشاط تموينات بمساحة (270م2) بحي القادسية بمدينة الملك عبدالله السكنية بالأحساء (إعادة طرح)"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261011105651-a3059cd0",
+      "current_sector": "غير محدد",
+      "has_open_sector_review": true,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 91,
+      "result": {
+        "classification": "HIGH_CONFIDENCE",
+        "classification_origin": "INFERRED_RULE",
+        "confidence": 0.97,
+        "confidence_margin": 1.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:agriculture"
+            ],
+            "phrases": [
+              "تموينات"
+            ],
+            "rule_key": "P2_FOOD_RETAIL_NOT_AGRICULTURE"
+          },
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الأحساء"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير",
+              "تشغيل"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [
+          {
+            "field": "sub_activity",
+            "rule_key": "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+            "value": "أنشطة تجارة المواد الغذائية"
+          },
+          {
+            "activity": "الأنشطة التجارية",
+            "field": "activity+sub_activity",
+            "rule_key": "P2_FURAS_FOOD_RETAIL_EXACT_PAIR",
+            "sub_activity": "أنشطة تجارة المواد الغذائية"
+          }
+        ],
+        "rule_key": "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL",
+        "rule_keys": [
+          "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL",
+          "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+          "P2_FURAS_FOOD_RETAIL_EXACT_PAIR"
+        ],
+        "sector": "تجاري",
+        "sector_id": "sector:commercial",
+        "total_score": 97.0
+      },
+      "title_ar": "تأجير وتشغيل نشاط تموينات بمساحة (270م2) بحي حطين بمدينة الملك عبدالله بالأحساء \"إعادة طرح\""
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261011105651-7007d3ac",
+      "current_sector": "غير محدد",
+      "has_open_sector_review": false,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 92,
+      "result": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "title_ar": "تاجير مؤقت لموقع من نوع الحدائق بحي  الأندلس لنشاط العاب هوائية في حديقة حنين بحي النويصر بالمبرز"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261011105651-f33dd377",
+      "current_sector": "غير محدد",
+      "has_open_sector_review": false,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 94,
+      "result": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "title_ar": "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  المثلث موقع تأجير مؤقت لنشاط عربة اطعمه في حي المثلث"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261011105651-b7ff6708",
+      "current_sector": "غير محدد",
+      "has_open_sector_review": true,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 98,
+      "result": {
+        "classification": "HIGH_CONFIDENCE",
+        "classification_origin": "INFERRED_RULE",
+        "confidence": 0.97,
+        "confidence_margin": 1.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:agriculture"
+            ],
+            "phrases": [
+              "ميني ماركت",
+              "تجارة المواد الغذائية"
+            ],
+            "rule_key": "P2_FOOD_RETAIL_NOT_AGRICULTURE"
+          },
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الأحساء"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          }
+        ],
+        "positive_evidence": [
+          {
+            "field": "sub_activity",
+            "rule_key": "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+            "value": "أنشطة تجارة المواد الغذائية"
+          },
+          {
+            "activity": "الأنشطة التجارية",
+            "field": "activity+sub_activity",
+            "rule_key": "P2_FURAS_FOOD_RETAIL_EXACT_PAIR",
+            "sub_activity": "أنشطة تجارة المواد الغذائية"
+          }
+        ],
+        "rule_key": "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL",
+        "rule_keys": [
+          "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL",
+          "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+          "P2_FURAS_FOOD_RETAIL_EXACT_PAIR"
+        ],
+        "sector": "تجاري",
+        "sector_id": "sector:commercial",
+        "total_score": 97.0
+      },
+      "title_ar": "ميني ماركت العيادات الخارجية لمستشفى الأمير سعود بن جلوي بالأحساء ميني ماركت العيادات الخارجية لمستشفى الأمير سعود بن جلوي بالأحساء - الأنشطة التجارية - أنشطة تجارة المواد الغذائية - محل"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261011105652-f9950aca",
+      "current_sector": "غير محدد",
+      "has_open_sector_review": true,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 103,
+      "result": {
+        "classification": "HIGH_CONFIDENCE",
+        "classification_origin": "INFERRED_RULE",
+        "confidence": 0.97,
+        "confidence_margin": 1.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الأحساء"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [
+          {
+            "field": "sub_activity",
+            "rule_key": "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+            "value": "خدمات الصرافة"
+          },
+          {
+            "activity": "الأنشطة المالية",
+            "field": "activity+sub_activity",
+            "rule_key": "P2_FURAS_EXCHANGE_EXACT_PAIR",
+            "sub_activity": "خدمات الصرافة"
+          }
+        ],
+        "rule_key": "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL",
+        "rule_keys": [
+          "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL",
+          "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+          "P2_FURAS_EXCHANGE_EXACT_PAIR"
+        ],
+        "sector": "الخدمات المالية",
+        "sector_id": "sector:financial_services",
+        "total_score": 97.0
+      },
+      "title_ar": "مزايدة تأجير موقع صراف الي بمستشفى الولادة والأطفال بالأحساء مزايدة تأجير موقع صراف الي بمستشفى الولادة والأطفال بالأحساء - الأنشطة المالية - خدمات الصرافة - صراف آلي"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261011105652-0f77fc8d",
+      "current_sector": "غير محدد",
+      "has_open_sector_review": true,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 104,
+      "result": {
+        "classification": "HIGH_CONFIDENCE",
+        "classification_origin": "INFERRED_RULE",
+        "confidence": 0.97,
+        "confidence_margin": 1.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الأحساء"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [
+          {
+            "field": "sub_activity",
+            "rule_key": "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+            "value": "خدمات الصرافة"
+          },
+          {
+            "activity": "الأنشطة المالية",
+            "field": "activity+sub_activity",
+            "rule_key": "P2_FURAS_EXCHANGE_EXACT_PAIR",
+            "sub_activity": "خدمات الصرافة"
+          }
+        ],
+        "rule_key": "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL",
+        "rule_keys": [
+          "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL",
+          "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+          "P2_FURAS_EXCHANGE_EXACT_PAIR"
+        ],
+        "sector": "الخدمات المالية",
+        "sector_id": "sector:financial_services",
+        "total_score": 97.0
+      },
+      "title_ar": "مزايدة تأجير موقع صراف الي بمستشفى الملك فيصل بالأحساء مزايدة تأجير موقع صراف الي بمستشفى الملك فيصل بالأحساء - الأنشطة المالية - خدمات الصرافة - صراف آلي"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261011105652-98765a0e",
+      "current_sector": "غير محدد",
+      "has_open_sector_review": true,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 105,
+      "result": {
+        "classification": "HIGH_CONFIDENCE",
+        "classification_origin": "INFERRED_RULE",
+        "confidence": 0.97,
+        "confidence_margin": 1.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الأحساء",
+              "العمران"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [
+          {
+            "field": "sub_activity",
+            "rule_key": "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+            "value": "خدمات الصرافة"
+          },
+          {
+            "activity": "الأنشطة المالية",
+            "field": "activity+sub_activity",
+            "rule_key": "P2_FURAS_EXCHANGE_EXACT_PAIR",
+            "sub_activity": "خدمات الصرافة"
+          }
+        ],
+        "rule_key": "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL",
+        "rule_keys": [
+          "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL",
+          "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+          "P2_FURAS_EXCHANGE_EXACT_PAIR"
+        ],
+        "sector": "الخدمات المالية",
+        "sector_id": "sector:financial_services",
+        "total_score": 97.0
+      },
+      "title_ar": "مزايدة تأجير موقع صراف الي بمستشفى العمران العام بالأحساء مزايدة تأجير موقع صراف الي بمستشفى العمران العام بالأحساء - الأنشطة المالية - خدمات الصرافة - صراف آلي"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261011105653-9129a3b3",
+      "current_sector": "غير محدد",
+      "has_open_sector_review": false,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 130,
+      "result": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "title_ar": "تاجير مؤقت لموقع من نوع الحدائق بحي  منتزه جبل الشعبة موقف رقم 75 زحليقة السعادة الملونة منطقة G منتزه جبل الشعبة"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261011105653-8d041477",
+      "current_sector": "غير محدد",
+      "has_open_sector_review": true,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 138,
+      "result": {
+        "classification": "HIGH_CONFIDENCE",
+        "classification_origin": "INFERRED_RULE",
+        "confidence": 0.97,
+        "confidence_margin": 1.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:agriculture"
+            ],
+            "phrases": [
+              "تموينات"
+            ],
+            "rule_key": "P2_FOOD_RETAIL_NOT_AGRICULTURE"
+          },
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الأحساء"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير",
+              "تشغيل"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [
+          {
+            "field": "sub_activity",
+            "rule_key": "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+            "value": "محلات تجارية"
+          },
+          {
+            "activity": "الأنشطة التجارية",
+            "field": "activity+sub_activity",
+            "rule_key": "P2_FURAS_RETAIL_SHOPS_EXACT_PAIR",
+            "sub_activity": "محلات تجارية"
+          }
+        ],
+        "rule_key": "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL",
+        "rule_keys": [
+          "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL",
+          "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+          "P2_FURAS_RETAIL_SHOPS_EXACT_PAIR"
+        ],
+        "sector": "تجاري",
+        "sector_id": "sector:commercial",
+        "total_score": 97.0
+      },
+      "title_ar": "تأجير وتشغيل نشاط تموينات بمساحة (270م2) بحي اليرموك بمدينة الملك عبدالله بالأحساء \"إعادة طرح\""
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261011105654-75a464ce",
+      "current_sector": "غير محدد",
+      "has_open_sector_review": true,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 139,
+      "result": {
+        "classification": "HIGH_CONFIDENCE",
+        "classification_origin": "INFERRED_RULE",
+        "confidence": 0.97,
+        "confidence_margin": 1.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:agriculture"
+            ],
+            "phrases": [
+              "تموينات"
+            ],
+            "rule_key": "P2_FOOD_RETAIL_NOT_AGRICULTURE"
+          },
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الأحساء"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير",
+              "تشغيل"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [
+          {
+            "field": "sub_activity",
+            "rule_key": "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+            "value": "محلات تجارية"
+          },
+          {
+            "activity": "الأنشطة التجارية",
+            "field": "activity+sub_activity",
+            "rule_key": "P2_FURAS_RETAIL_SHOPS_EXACT_PAIR",
+            "sub_activity": "محلات تجارية"
+          }
+        ],
+        "rule_key": "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL",
+        "rule_keys": [
+          "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL",
+          "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+          "P2_FURAS_RETAIL_SHOPS_EXACT_PAIR"
+        ],
+        "sector": "تجاري",
+        "sector_id": "sector:commercial",
+        "total_score": 97.0
+      },
+      "title_ar": "تأجير وتشغيل نشاط تموينات بمساحة (270م2) بحي بدر بمدينة الملك عبدالله السكنية بالأحساء (إعادة طرح)"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261011105654-5f155ac5",
+      "current_sector": "غير محدد",
+      "has_open_sector_review": true,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 141,
+      "result": {
+        "classification": "HIGH_CONFIDENCE",
+        "classification_origin": "INFERRED_RULE",
+        "confidence": 0.97,
+        "confidence_margin": 1.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الأحساء"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [
+          {
+            "field": "sub_activity",
+            "rule_key": "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+            "value": "خدمات الصرافة"
+          },
+          {
+            "activity": "الأنشطة المالية",
+            "field": "activity+sub_activity",
+            "rule_key": "P2_FURAS_EXCHANGE_EXACT_PAIR",
+            "sub_activity": "خدمات الصرافة"
+          }
+        ],
+        "rule_key": "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL",
+        "rule_keys": [
+          "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL",
+          "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+          "P2_FURAS_EXCHANGE_EXACT_PAIR"
+        ],
+        "sector": "الخدمات المالية",
+        "sector_id": "sector:financial_services",
+        "total_score": 97.0
+      },
+      "title_ar": "مزايدة تأجير موقع صراف الي بمستشفى الأمير سعود بن جلوي بالأحساء مزايدة تأجير موقع صراف الي بمستشفى الأمير سعود بن جلوي بالأحساء - الأنشطة المالية - خدمات الصرافة - صراف آلي"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261011105654-c209a449",
+      "current_sector": "غير محدد",
+      "has_open_sector_review": true,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 142,
+      "result": {
+        "classification": "HIGH_CONFIDENCE",
+        "classification_origin": "INFERRED_RULE",
+        "confidence": 0.97,
+        "confidence_margin": 1.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الأحساء"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [
+          {
+            "field": "sub_activity",
+            "rule_key": "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+            "value": "خدمات الصرافة"
+          },
+          {
+            "activity": "الأنشطة المالية",
+            "field": "activity+sub_activity",
+            "rule_key": "P2_FURAS_EXCHANGE_EXACT_PAIR",
+            "sub_activity": "خدمات الصرافة"
+          }
+        ],
+        "rule_key": "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL",
+        "rule_keys": [
+          "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL",
+          "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+          "P2_FURAS_EXCHANGE_EXACT_PAIR"
+        ],
+        "sector": "الخدمات المالية",
+        "sector_id": "sector:financial_services",
+        "total_score": 97.0
+      },
+      "title_ar": "مزايدة تأجير موقع صراف الي بمستشفى الصحة النفسية بالأحساء مزايدة تأجير موقع صراف الي بمستشفى الصحة النفسية بالأحساء - الأنشطة المالية - خدمات الصرافة - صراف آلي"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261011111437-4c2b793a",
+      "current_sector": "غير محدد",
+      "has_open_sector_review": true,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 207,
+      "result": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "title_ar": "تاجير مؤقت لموقع من نوع المباني بحي  مجمع الدوائر الحكومية في بهو الامانة"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261013081930-1536fb18",
+      "current_sector": "غير محدد",
+      "has_open_sector_review": true,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 234,
+      "result": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "field": "source_activity",
+            "value": "الأنشطة التجارية"
+          },
+          {
+            "field": "source_activity",
+            "value": "خدمي"
+          },
+          {
+            "field": "source_sub_activity",
+            "value": "أخرى"
+          }
+        ],
+        "rule_key": "P2_CONFLICTING_SOURCE_TAXONOMY",
+        "rule_keys": [
+          "P2_CONFLICTING_SOURCE_TAXONOMY"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "title_ar": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 484بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261013081930-860c39b7",
+      "current_sector": "غير محدد",
+      "has_open_sector_review": true,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 235,
+      "result": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "field": "source_activity",
+            "value": "الأنشطة التجارية"
+          },
+          {
+            "field": "source_activity",
+            "value": "خدمي"
+          },
+          {
+            "field": "source_sub_activity",
+            "value": "أخرى"
+          }
+        ],
+        "rule_key": "P2_CONFLICTING_SOURCE_TAXONOMY",
+        "rule_keys": [
+          "P2_CONFLICTING_SOURCE_TAXONOMY"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "title_ar": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 485بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261013081940-db8a3002",
+      "current_sector": "غير محدد",
+      "has_open_sector_review": true,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 260,
+      "result": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "field": "source_activity",
+            "value": "أنشطة الصيانة والتصليح والتركيب"
+          },
+          {
+            "field": "source_activity",
+            "value": "خدمي"
+          },
+          {
+            "field": "source_sub_activity",
+            "value": "أخرى"
+          }
+        ],
+        "rule_key": "P2_CONFLICTING_SOURCE_TAXONOMY",
+        "rule_keys": [
+          "P2_CONFLICTING_SOURCE_TAXONOMY"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "title_ar": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261013081941-ab3ee3ee",
+      "current_sector": "غير محدد",
+      "has_open_sector_review": true,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 262,
+      "result": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "field": "source_activity",
+            "value": "أنشطة الصيانة والتصليح والتركيب"
+          },
+          {
+            "field": "source_activity",
+            "value": "خدمي"
+          },
+          {
+            "field": "source_sub_activity",
+            "value": "أخرى"
+          }
+        ],
+        "rule_key": "P2_CONFLICTING_SOURCE_TAXONOMY",
+        "rule_keys": [
+          "P2_CONFLICTING_SOURCE_TAXONOMY"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "title_ar": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261014060153-0719eb5b",
+      "current_sector": "غير محدد",
+      "has_open_sector_review": false,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 324,
+      "result": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "مقهى",
+              "مطعم"
+            ],
+            "rule_key": "P2_CAFE_RESTAURANT_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "title_ar": "تاجير مؤقت لموقع من نوع الساحات الميادين بحي  الناصرية مقهى ومطعم في ساحة سوق الحرفيين"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261021070046-8bfb01b0",
+      "current_sector": null,
+      "has_open_sector_review": false,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 339,
+      "result": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "title_ar": "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  المطار مخطط المطار  رقم الارض 345"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261021070105-e016f76a",
+      "current_sector": null,
+      "has_open_sector_review": false,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 362,
+      "result": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "title_ar": "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  المطار المطار تجمع الوفرة 90"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261021070126-31ed8724",
+      "current_sector": null,
+      "has_open_sector_review": false,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 384,
+      "result": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "title_ar": "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  المطار المطار  \"تجمع الوفره\" 137"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261021070131-ef335043",
+      "current_sector": null,
+      "has_open_sector_review": false,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 388,
+      "result": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "title_ar": "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  المطار المطار تجمع الوفرة 197"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261021070132-4900caed",
+      "current_sector": null,
+      "has_open_sector_review": false,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 389,
+      "result": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "title_ar": "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  المطار المطار \"تجمع الوفره\" 140"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261021070133-5494f543",
+      "current_sector": null,
+      "has_open_sector_review": false,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 390,
+      "result": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "title_ar": "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  المطار المطار \"تجمع الوفره\" 142"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261021070156-ac231002",
+      "current_sector": null,
+      "has_open_sector_review": false,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 407,
+      "result": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "title_ar": "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  المطار المطار تجمع الوفرة 289"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261021070227-70440aaa",
+      "current_sector": null,
+      "has_open_sector_review": false,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 442,
+      "result": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "title_ar": "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  المطار المطار تجمع الوفرة 201"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261021070241-e23a5a60",
+      "current_sector": null,
+      "has_open_sector_review": false,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 456,
+      "result": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "title_ar": "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  المطار المطار تجمع الوفره 51"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261021070329-6a98aaf7",
+      "current_sector": null,
+      "has_open_sector_review": false,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 500,
+      "result": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "title_ar": "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  المطار المطار تجمع الوفرة 190"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261021070348-b8eb1dba",
+      "current_sector": null,
+      "has_open_sector_review": false,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 519,
+      "result": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "title_ar": "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  المطار المطار تجمع الوفره 44"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261021070416-d16a928b",
+      "current_sector": null,
+      "has_open_sector_review": false,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 547,
+      "result": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "title_ar": "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  المطار المطار \"تجمع الوفره\" 11"
+    },
+    {
+      "audit_reason": "Deterministic stratified sample; all proposed decisions included.",
+      "canonical_id": "AH-20261021070444-edb1d4a9",
+      "current_sector": null,
+      "has_open_sector_review": false,
+      "manual_audit_status": "PENDING_REVIEW",
+      "master_id": 568,
+      "result": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "title_ar": "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  المطار المطار تجمع الوفرة 192"
+    }
+  ],
+  "sample_size": 36
+}

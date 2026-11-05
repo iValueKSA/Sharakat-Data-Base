@@ -1,0 +1,18 @@
+{
+  "test_file": "tests/test_sync_lifecycle_reliability.py",
+  "cases": [
+    "dead stale task plus absent lock -> ABANDONED and requeued",
+    "old heartbeat with live task remains RUNNING",
+    "old heartbeat with live source lock remains RUNNING",
+    "broker inspection unavailable fails closed",
+    "reserved task remains RUNNING",
+    "lock TTL exceeds hard task limit",
+    "permanent failures are not retried",
+    "cancelled queued task does not enter sync",
+    "redelivery does not finalize while prior-attempt lock lives",
+    "stale RETRYING job recovers after task and lock disappear",
+    "sparse history uses fallback; 8 successful runs enable source-specific threshold"
+  ],
+  "status": "PASSED",
+  "suite_result": "see final-review test summary"
+}

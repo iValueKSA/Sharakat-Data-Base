@@ -1,0 +1,89 @@
+{
+  "asset": "/static/media/ahsa-investment-hero.webm",
+  "format": "WebM VP9",
+  "duration_seconds": 22.131582,
+  "resolution": "1920x540",
+  "frame_rate": 24,
+  "audio": false,
+  "map_scene_count": 0,
+  "previous_map_scene_1_time_range": "03.65–07.65 seconds",
+  "previous_map_scene_2_time_range": "18.25–22.09 seconds",
+  "replacements": [
+    {
+      "removed_scene": "former map overview at 03.65–07.65 seconds",
+      "replacement_scene": "irrigation",
+      "visual": "Low, cinematic pass beside a traditional irrigation channel through dense date palms and cultivated oasis plots at golden hour."
+    },
+    {
+      "removed_scene": "former map close-up at 18.25–22.09 seconds",
+      "replacement_scene": "road",
+      "visual": "Palm-lined arterial road and low-rise commercial/logistics district at twilight, with warm building lights and restrained vehicle trails."
+    }
+  ],
+  "loop_design": {
+    "description": "The final road scene crossfades into the opening oasis frame before native HTML video looping returns to the start.",
+    "native_loop_verified": true
+  },
+  "creative_disclosure": "All landscape and development scenes are AI-generated illustrative promotional imagery. They do not depict a named site or a specific listed investment opportunity.",
+  "poster_frame": "scene-01-opening.webp",
+  "poster_contains_map": false,
+  "scenes": [
+    {
+      "id": "opening",
+      "type": "landscape",
+      "start_seconds": 0,
+      "end_seconds": 4,
+      "visual": "Warm dawn above the palm oasis and escarpment, with subtle panoramic drift.",
+      "evidence_frame": "scene-01-opening.webp"
+    },
+    {
+      "id": "irrigation",
+      "type": "landscape",
+      "start_seconds": 3.65,
+      "end_seconds": 7.65,
+      "visual": "Reflective irrigation channel between palms and cultivated plots at golden hour.",
+      "evidence_frame": "scene-02-irrigation.webp"
+    },
+    {
+      "id": "oasis",
+      "type": "landscape",
+      "start_seconds": 7.3,
+      "end_seconds": 11.3,
+      "visual": "Closer view of mature date palms, farm plots, and water channels.",
+      "evidence_frame": "scene-03-oasis.webp"
+    },
+    {
+      "id": "heritage",
+      "type": "landscape",
+      "start_seconds": 10.95,
+      "end_seconds": 14.95,
+      "visual": "Warm heritage architecture and shaded market-street atmosphere.",
+      "evidence_frame": "scene-04-heritage.webp"
+    },
+    {
+      "id": "investment",
+      "type": "landscape",
+      "start_seconds": 14.6,
+      "end_seconds": 18.6,
+      "visual": "Low-rise business and logistics district with palms at sunset.",
+      "evidence_frame": "scene-05-investment.webp"
+    },
+    {
+      "id": "road",
+      "type": "landscape",
+      "start_seconds": 18.25,
+      "end_seconds": 22.131582,
+      "visual": "Palm-lined development road and illuminated low-rise district at blue-hour twilight, returning toward the opening landscape.",
+      "evidence_frame": "scene-06-road.webp"
+    }
+  ],
+  "runtime": {
+    "hosting": "local",
+    "reference_site_dependency": false,
+    "autoplay": true,
+    "muted": true,
+    "loop": true,
+    "playsinline": true,
+    "reduced_motion": "paused video with poster retained"
+  }
+}

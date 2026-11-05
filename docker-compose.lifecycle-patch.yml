@@ -1,0 +1,14 @@
+services:
+  migrate:
+    image: alahsa-api:lifecycle-fix-20261101
+    build: !reset null
+    command: ["python", "-c", "print('Lifecycle patch deployment: schema migrations intentionally disabled')"]
+  api:
+    image: alahsa-api:lifecycle-fix-20261101
+    build: !reset null
+  worker:
+    image: alahsa-worker:lifecycle-fix-20261101
+    build: !reset null
+  scheduler:
+    image: alahsa-beat:lifecycle-fix-20261101
+    build: !reset null

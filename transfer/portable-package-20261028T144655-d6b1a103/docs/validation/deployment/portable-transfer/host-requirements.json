@@ -1,0 +1,92 @@
+{
+    "checked_at_utc":  "2026-10-28T11:42:55.8713922Z",
+    "windows_caption":  "Microsoft Windows 11 Pro",
+    "windows_version":  "10.0.26300",
+    "windows_build":  26300,
+    "architecture":  "64-bit",
+    "processor_architecture":  9,
+    "administrator":  false,
+    "free_disk_gb":  711.2,
+    "http_port":  8080,
+    "wsl2_available":  true,
+    "docker_desktop_available":  true,
+    "docker_cli_available":  true,
+    "docker_engine_running":  true,
+    "docker_compose_available":  true,
+    "virtualization_detected":  true,
+    "postgres_publicly_exposed":  false,
+    "redis_publicly_exposed":  false,
+    "checks":  [
+                   {
+                       "key":  "windows_11",
+                       "status":  "PASS",
+                       "observed":  "Microsoft Windows 11 Pro, build 26300"
+                   },
+                   {
+                       "key":  "architecture_x64",
+                       "status":  "PASS",
+                       "observed":  "64-bit, processor architecture 9"
+                   },
+                   {
+                       "key":  "administrator",
+                       "status":  "FAIL",
+                       "observed":  "not elevated; setup must request UAC elevation"
+                   },
+                   {
+                       "key":  "disk_space_20gb",
+                       "status":  "PASS",
+                       "observed":  "711.2 GB free on project drive"
+                   },
+                   {
+                       "key":  "virtualization",
+                       "status":  "PASS",
+                       "observed":  "Docker Engine and WSL2 are operational"
+                   },
+                   {
+                       "key":  "wsl2",
+                       "status":  "PASS",
+                       "observed":  "WSL 2 is available"
+                   },
+                   {
+                       "key":  "docker_desktop",
+                       "status":  "PASS",
+                       "observed":  "installed"
+                   },
+                   {
+                       "key":  "docker_engine",
+                       "status":  "PASS",
+                       "observed":  "running"
+                   },
+                   {
+                       "key":  "docker_compose",
+                       "status":  "PASS",
+                       "observed":  "Compose plugin available"
+                   },
+                   {
+                       "key":  "http_port",
+                       "status":  "FAIL",
+                       "observed":  "port 8080 is occupied; no process was stopped"
+                   },
+                   {
+                       "key":  "project_folder_writable",
+                       "status":  "PASS",
+                       "observed":  "write test passed"
+                   },
+                   {
+                       "key":  "postgres_host_binding",
+                       "status":  "PASS",
+                       "observed":  "PostgreSQL is configured on the private Compose network only"
+                   },
+                   {
+                       "key":  "redis_host_binding",
+                       "status":  "PASS",
+                       "observed":  "Redis is configured on the private Compose network only"
+                   }
+               ],
+    "minimum_host_dependencies":  [
+                                      "Windows 11 x64",
+                                      "WSL2",
+                                      "Docker Desktop with Docker Compose v2",
+                                      "PowerShell 5.1 built into Windows"
+                                  ]
+}

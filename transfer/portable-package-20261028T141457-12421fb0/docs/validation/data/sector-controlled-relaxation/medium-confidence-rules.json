@@ -1,0 +1,693 @@
+{
+  "canonical_taxonomy_gap": "Entertainment has no standalone canonical sector and remains represented by Other only when the primary purpose is explicitly an entertainment attraction.",
+  "engine_version": "ahda-sector-controlled-relaxation-1.0.0",
+  "exact_structured_mappings": {
+    "activity": {
+      "الأنشطة التعليمية": "sector:education",
+      "الأنشطة الزراعية والحيوانية": "sector:agriculture",
+      "الأنشطة الصناعية": "sector:industrial",
+      "الأنشطة المالية": "sector:financial_services",
+      "تجاري": "sector:commercial",
+      "صناعي": "sector:industrial"
+    },
+    "sub_activity": {
+      "أنشطة التجارة العامة": "sector:commercial",
+      "أنشطة تجارة المواد الغذائية": "sector:commercial",
+      "أنشطة وخدمات انتاج المواد غير الغذائية": "sector:industrial",
+      "خدمات الصرافة": "sector:financial_services",
+      "خدمات تعليمية أخرى": "sector:education",
+      "محلات تجارية": "sector:commercial"
+    }
+  },
+  "generic_terms_that_never_classify_alone": [
+    "أرض",
+    "موقع",
+    "مبنى",
+    "تشغيل",
+    "استثمار",
+    "تطوير",
+    "إنشاء",
+    "تأجير",
+    "صيانة",
+    "خدمات",
+    "مشروع",
+    "مرفق",
+    "مجمع"
+  ],
+  "high_confidence_engine": "ahda-sector-phase2-1.0.0",
+  "negative_conditions": [
+    "explicit source sector has priority",
+    "existing canonical sector is preserved",
+    "source activity/subactivity conflicts route to review",
+    "competing sectors route to review",
+    "generic asset types and place names do not classify",
+    "restaurant/cafe do not imply Tourism",
+    "food retail does not imply Agriculture",
+    "generic warehouse does not imply Logistics",
+    "generic land/building does not imply Real Estate"
+  ],
+  "other_policy": "Other is accepted only for explicit, classified activities outside the current canonical sector list; this run uses exact named child entertainment attractions. No evidence defaults to Other.",
+  "raw_source_classification_review": {
+    "decision": "No raw field is mapped solely by a label/code without unambiguous primary-purpose semantics. خدمي is broad; LEASE_OPPORTUNITY and PPP_PROJECT are not sectors; numeric Furas IDs lack a verified codebook; generic/ambiguous labels such as أخرى or mixed activity groups are not sector mappings. Clear existing source activity/sub-activity semantics are evaluated by exact structured rules, with disagreements kept for review.",
+    "mappings_applied": 0,
+    "reused_completed_analysis": true,
+    "unmapped_distinct_values": [
+      {
+        "confidence": "LOW",
+        "count": 5,
+        "master_ids": [
+          234,
+          235,
+          238,
+          260,
+          262
+        ],
+        "notes": "Observed in raw source payload; current master sector remains unspecified. Proposed mappings are analysis only.",
+        "proposed_canonical_sector": null,
+        "raw_fields": [
+          "source_sector",
+          "source_taxonomy.sector"
+        ],
+        "raw_value": "خدمي",
+        "source": "alahsa-opportunities"
+      },
+      {
+        "confidence": "LOW",
+        "count": 1,
+        "master_ids": [
+          225
+        ],
+        "notes": "Observed in raw source payload; current master sector remains unspecified. Proposed mappings are analysis only.",
+        "proposed_canonical_sector": null,
+        "raw_fields": [
+          "source_sector"
+        ],
+        "raw_value": "LEASE_OPPORTUNITY",
+        "source": "kfu"
+      },
+      {
+        "confidence": "LOW",
+        "count": 1,
+        "master_ids": [
+          228
+        ],
+        "notes": "Observed in raw source payload; current master sector remains unspecified. Proposed mappings are analysis only.",
+        "proposed_canonical_sector": null,
+        "raw_fields": [
+          "source_sector"
+        ],
+        "raw_value": "PPP_PROJECT",
+        "source": "ncp"
+      }
+    ],
+    "unmapped_explicit_source_sector_occurrences": 7,
+    "unused_classification_fields": [
+      {
+        "currently_used_by_normalization": true,
+        "distinct_values": 1,
+        "non_null_records": 5,
+        "non_null_values": 5,
+        "normalization_evidence": "field is represented in standardized payload or mapped to a canonical source classification column",
+        "raw_field": "raw.source_taxonomy.sector",
+        "sample_values": [
+          "خدمي"
+        ],
+        "source": "alahsa-opportunities"
+      },
+      {
+        "currently_used_by_normalization": false,
+        "distinct_values": 6,
+        "non_null_records": 11,
+        "non_null_values": 11,
+        "normalization_evidence": "no matching standardized or canonical source classification field found",
+        "raw_field": "raw.attributes.ACTIVITYTYPE",
+        "sample_values": [
+          "الأنشطة التجارية",
+          "\"العربات المتنقلة\"",
+          "أنشطة الصيانة والتصليح والتركيب",
+          "\"الساحات الميادين\"",
+          "الأنشطة الزراعية والحيوانية",
+          "\"المباني\""
+        ],
+        "source": "furas"
+      },
+      {
+        "currently_used_by_normalization": false,
+        "distinct_values": 7,
+        "non_null_records": 11,
+        "non_null_values": 11,
+        "normalization_evidence": "no matching standardized or canonical source classification field found",
+        "raw_field": "raw.attributes.ACTIVITYTYPEID",
+        "sample_values": [
+          "101",
+          "113",
+          "205,205",
+          "208,208",
+          "208",
+          "108",
+          "202"
+        ],
+        "source": "furas"
+      },
+      {
+        "currently_used_by_normalization": false,
+        "distinct_values": 2,
+        "non_null_records": 373,
+        "non_null_values": 373,
+        "normalization_evidence": "no matching standardized or canonical source classification field found",
+        "raw_field": "raw.attributes.OPPORTUNITYTYPE",
+        "sample_values": [
+          "TemporaryRental",
+          "Investment"
+        ],
+        "source": "furas"
+      },
+      {
+        "currently_used_by_normalization": false,
+        "distinct_values": 2,
+        "non_null_records": 373,
+        "non_null_values": 373,
+        "normalization_evidence": "no matching standardized or canonical source classification field found",
+        "raw_field": "raw.attributes.OPPORTUNITYTYPEID",
+        "sample_values": [
+          "02",
+          "01"
+        ],
+        "source": "furas"
+      },
+      {
+        "currently_used_by_normalization": false,
+        "distinct_values": 3,
+        "non_null_records": 7,
+        "non_null_values": 7,
+        "normalization_evidence": "no matching standardized or canonical source classification field found",
+        "raw_field": "raw.attributes.SUBACTIVITYTYPE",
+        "sample_values": [
+          "أخرى",
+          "منشآت تقديم الغذاء",
+          "أنشطة وخدمات انتاج المواد غير الغذائية"
+        ],
+        "source": "furas"
+      },
+      {
+        "currently_used_by_normalization": false,
+        "distinct_values": 4,
+        "non_null_records": 7,
+        "non_null_values": 7,
+        "normalization_evidence": "no matching standardized or canonical source classification field found",
+        "raw_field": "raw.attributes.SUBACTIVITYTYPEID",
+        "sample_values": [
+          "16",
+          "141",
+          "153",
+          "66"
+        ],
+        "source": "furas"
+      },
+      {
+        "currently_used_by_normalization": false,
+        "distinct_values": 2,
+        "non_null_records": 3,
+        "non_null_values": 3,
+        "normalization_evidence": "no matching standardized or canonical source classification field found",
+        "raw_field": "raw.opportunity_type",
+        "sample_values": [
+          "LEASE_OPPORTUNITY",
+          "COMMERCIAL_FACILITY_OPPORTUNITY"
+        ],
+        "source": "kfu"
+      },
+      {
+        "currently_used_by_normalization": false,
+        "distinct_values": 1,
+        "non_null_records": 1,
+        "non_null_values": 1,
+        "normalization_evidence": "no matching standardized or canonical source classification field found",
+        "raw_field": "raw.opportunity_type",
+        "sample_values": [
+          "PPP_PROJECT"
+        ],
+        "source": "ncp"
+      }
+    ],
+    "unused_classification_fields_count": 8
+  },
+  "single_semantic_title_rules": {
+    "sector:agriculture": [
+      {
+        "phrase": "مزرعة",
+        "rule_key": "MED_TITLE_FARM"
+      },
+      {
+        "phrase": "مشتل",
+        "rule_key": "MED_TITLE_NURSERY"
+      },
+      {
+        "phrase": "مشاتل",
+        "rule_key": "MED_TITLE_NURSERIES"
+      },
+      {
+        "phrase": "إنتاج زراعي",
+        "rule_key": "MED_TITLE_AGRICULTURAL_PRODUCTION"
+      },
+      {
+        "phrase": "إنتاج التمور",
+        "rule_key": "MED_TITLE_DATE_PRODUCTION"
+      },
+      {
+        "phrase": "بيوت محمية زراعية",
+        "rule_key": "MED_TITLE_GREENHOUSE"
+      },
+      {
+        "phrase": "agricultural production",
+        "rule_key": "MED_TITLE_AGRICULTURAL_PRODUCTION_EN"
+      }
+    ],
+    "sector:commercial": [
+      {
+        "phrase": "كشك لبيع",
+        "rule_key": "MED_TITLE_RETAIL_KIOSK"
+      },
+      {
+        "phrase": "كشك بيع",
+        "rule_key": "MED_TITLE_RETAIL_KIOSK_ALT"
+      },
+      {
+        "phrase": "كشك تجاري",
+        "rule_key": "MED_TITLE_COMMERCIAL_KIOSK"
+      },
+      {
+        "phrase": "محلات تجارية",
+        "rule_key": "MED_TITLE_RETAIL_SHOPS"
+      },
+      {
+        "phrase": "متاجر عامة",
+        "rule_key": "MED_TITLE_GENERAL_STORES"
+      },
+      {
+        "phrase": "بيع الألعاب والهدايا والتحف",
+        "rule_key": "MED_TITLE_GIFT_RETAIL"
+      },
+      {
+        "phrase": "بيع الالعاب والهدايا والتحف",
+        "rule_key": "MED_TITLE_GIFT_RETAIL_NORMALIZED"
+      },
+      {
+        "phrase": "مبسط غذائي",
+        "rule_key": "MED_TITLE_FOOD_STALL"
+      },
+      {
+        "phrase": "عربة أطعمة",
+        "rule_key": "MED_TITLE_FOOD_CART"
+      },
+      {
+        "phrase": "عربة اطعمة",
+        "rule_key": "MED_TITLE_FOOD_CART_NORMALIZED"
+      },
+      {
+        "phrase": "عربات الأطعمة",
+        "rule_key": "MED_TITLE_FOOD_CARTS"
+      },
+      {
+        "phrase": "عربات الاطعمة",
+        "rule_key": "MED_TITLE_FOOD_CARTS_NORMALIZED"
+      },
+      {
+        "phrase": "عربة أطعمة متنقلة",
+        "rule_key": "MED_TITLE_MOBILE_FOOD_CART"
+      },
+      {
+        "phrase": "عربة اطعمه",
+        "rule_key": "MED_TITLE_FOOD_CART_ALT"
+      },
+      {
+        "phrase": "عربة آيسكريم",
+        "rule_key": "MED_TITLE_ICE_CREAM_CART"
+      },
+      {
+        "phrase": "عربة ايسكريم",
+        "rule_key": "MED_TITLE_ICE_CREAM_CART_ALT"
+      },
+      {
+        "phrase": "بسطة لبيع",
+        "rule_key": "MED_TITLE_RETAIL_STALL"
+      },
+      {
+        "phrase": "بسطه لبيع",
+        "rule_key": "MED_TITLE_RETAIL_STALL_NORMALIZED"
+      },
+      {
+        "phrase": "بسطه بيع",
+        "rule_key": "MED_TITLE_RETAIL_STALL_ALT"
+      },
+      {
+        "phrase": "لبيع التسالي والشاي",
+        "rule_key": "MED_TITLE_SNACK_RETAIL"
+      },
+      {
+        "phrase": "بيع التسالي والشاي",
+        "rule_key": "MED_TITLE_SNACK_RETAIL_ALT"
+      },
+      {
+        "phrase": "بيع الاغذيه والمشروبات",
+        "rule_key": "MED_TITLE_FOOD_RETAIL"
+      },
+      {
+        "phrase": "بيع الأغذية والمشروبات",
+        "rule_key": "MED_TITLE_FOOD_RETAIL_AR"
+      },
+      {
+        "phrase": "مزايدة تأجير موقع مقهى",
+        "rule_key": "MED_TITLE_CAFE_CONCESSION"
+      },
+      {
+        "phrase": "مقهى ومطعم",
+        "rule_key": "MED_TITLE_CAFE_RESTAURANT"
+      }
+    ],
+    "sector:culture": [
+      {
+        "phrase": "متحف",
+        "rule_key": "MED_TITLE_MUSEUM"
+      },
+      {
+        "phrase": "مركز ثقافي",
+        "rule_key": "MED_TITLE_CULTURAL_CENTER"
+      },
+      {
+        "phrase": "مركز تراثي",
+        "rule_key": "MED_TITLE_HERITAGE_CENTER"
+      },
+      {
+        "phrase": "museum",
+        "rule_key": "MED_TITLE_MUSEUM_EN"
+      }
+    ],
+    "sector:education": [
+      {
+        "phrase": "مدرسة أهلية",
+        "rule_key": "MED_TITLE_PRIVATE_SCHOOL"
+      },
+      {
+        "phrase": "إنشاء مدرسة",
+        "rule_key": "MED_TITLE_SCHOOL_CONSTRUCTION"
+      },
+      {
+        "phrase": "مدرسة",
+        "rule_key": "MED_TITLE_SCHOOL"
+      },
+      {
+        "phrase": "إنشاء جامعة",
+        "rule_key": "MED_TITLE_UNIVERSITY_CONSTRUCTION"
+      },
+      {
+        "phrase": "إنشاء كلية",
+        "rule_key": "MED_TITLE_COLLEGE_CONSTRUCTION"
+      },
+      {
+        "phrase": "مركز تدريب",
+        "rule_key": "MED_TITLE_TRAINING_CENTER"
+      },
+      {
+        "phrase": "معهد تدريبي",
+        "rule_key": "MED_TITLE_TRAINING_INSTITUTE"
+      }
+    ],
+    "sector:energy": [
+      {
+        "phrase": "محطة طاقة شمسية",
+        "rule_key": "MED_TITLE_SOLAR_PLANT"
+      },
+      {
+        "phrase": "توليد الكهرباء",
+        "rule_key": "MED_TITLE_ELECTRICITY_GENERATION"
+      },
+      {
+        "phrase": "محطة كهرباء",
+        "rule_key": "MED_TITLE_POWER_STATION"
+      },
+      {
+        "phrase": "renewable energy plant",
+        "rule_key": "MED_TITLE_RENEWABLE_ENERGY_EN"
+      }
+    ],
+    "sector:environment": [
+      {
+        "phrase": "إعادة تدوير النفايات",
+        "rule_key": "MED_TITLE_WASTE_RECYCLING"
+      },
+      {
+        "phrase": "محطة معالجة مياه الصرف",
+        "rule_key": "MED_TITLE_WASTEWATER_TREATMENT"
+      },
+      {
+        "phrase": "معالجة النفايات",
+        "rule_key": "MED_TITLE_WASTE_TREATMENT"
+      },
+      {
+        "phrase": "wastewater treatment plant",
+        "rule_key": "MED_TITLE_WASTEWATER_PLANT_EN"
+      }
+    ],
+    "sector:financial_services": [
+      {
+        "phrase": "خدمات مالية",
+        "rule_key": "MED_TITLE_FINANCIAL_SERVICES"
+      },
+      {
+        "phrase": "خدمات مصرفية",
+        "rule_key": "MED_TITLE_BANKING_SERVICES"
+      },
+      {
+        "phrase": "إنشاء مصرف",
+        "rule_key": "MED_TITLE_BANK"
+      },
+      {
+        "phrase": "خدمات تمويلية",
+        "rule_key": "MED_TITLE_FINANCING_SERVICES"
+      },
+      {
+        "phrase": "insurance services",
+        "rule_key": "MED_TITLE_INSURANCE_EN"
+      }
+    ],
+    "sector:healthcare": [
+      {
+        "phrase": "إنشاء وتشغيل مستشفى",
+        "rule_key": "MED_TITLE_HOSPITAL_BUILD_OPERATE"
+      },
+      {
+        "phrase": "إنشاء مستشفى",
+        "rule_key": "MED_TITLE_HOSPITAL_BUILD"
+      },
+      {
+        "phrase": "مستشفى تخصصي",
+        "rule_key": "MED_TITLE_SPECIALTY_HOSPITAL"
+      },
+      {
+        "phrase": "مركز طبي",
+        "rule_key": "MED_TITLE_MEDICAL_CENTER"
+      },
+      {
+        "phrase": "عيادة طبية",
+        "rule_key": "MED_TITLE_MEDICAL_CLINIC"
+      },
+      {
+        "phrase": "مختبرات سلامة الغذاء البلدية",
+        "rule_key": "MED_TITLE_MUNICIPAL_FOOD_SAFETY_LABS"
+      },
+      {
+        "phrase": "municipal food safety labs",
+        "rule_key": "MED_TITLE_MUNICIPAL_FOOD_SAFETY_LABS_EN"
+      },
+      {
+        "phrase": "healthcare center",
+        "rule_key": "MED_TITLE_HEALTHCARE_CENTER"
+      },
+      {
+        "phrase": "medical clinic",
+        "rule_key": "MED_TITLE_MEDICAL_CLINIC_EN"
+      }
+    ],
+    "sector:industrial": [
+      {
+        "phrase": "مصنع",
+        "rule_key": "MED_TITLE_FACTORY"
+      },
+      {
+        "phrase": "مصانع",
+        "rule_key": "MED_TITLE_FACTORIES"
+      },
+      {
+        "phrase": "إنشاء مصنع",
+        "rule_key": "MED_TITLE_FACTORY_CONSTRUCTION"
+      },
+      {
+        "phrase": "خط إنتاج",
+        "rule_key": "MED_TITLE_PRODUCTION_LINE"
+      },
+      {
+        "phrase": "منشأة تصنيع",
+        "rule_key": "MED_TITLE_MANUFACTURING_FACILITY"
+      },
+      {
+        "phrase": "مصنع لل",
+        "rule_key": "MED_TITLE_FACTORY_FOR"
+      },
+      {
+        "phrase": "manufacturing plant",
+        "rule_key": "MED_TITLE_MANUFACTURING_PLANT"
+      },
+      {
+        "phrase": "factory",
+        "rule_key": "MED_TITLE_FACTORY_EN"
+      }
+    ],
+    "sector:logistics": [
+      {
+        "phrase": "مركز لوجستي",
+        "rule_key": "MED_TITLE_LOGISTICS_CENTER"
+      },
+      {
+        "phrase": "مستودع لوجستي",
+        "rule_key": "MED_TITLE_LOGISTICS_WAREHOUSE"
+      },
+      {
+        "phrase": "مستودعات لوجستية",
+        "rule_key": "MED_TITLE_LOGISTICS_WAREHOUSES"
+      },
+      {
+        "phrase": "مركز توزيع",
+        "rule_key": "MED_TITLE_DISTRIBUTION_CENTER"
+      },
+      {
+        "phrase": "خدمات الشحن",
+        "rule_key": "MED_TITLE_FREIGHT_SERVICES"
+      },
+      {
+        "phrase": "نقل البضائع",
+        "rule_key": "MED_TITLE_FREIGHT_TRANSPORT"
+      },
+      {
+        "phrase": "logistics center",
+        "rule_key": "MED_TITLE_LOGISTICS_CENTER_EN"
+      },
+      {
+        "phrase": "distribution center",
+        "rule_key": "MED_TITLE_DISTRIBUTION_CENTER_EN"
+      }
+    ],
+    "sector:other": [
+      {
+        "phrase": "قطار ترفيهي للأطفال",
+        "rule_key": "MED_TITLE_CHILD_ENTERTAINMENT_TRAIN"
+      },
+      {
+        "phrase": "قطار أطفال",
+        "rule_key": "MED_TITLE_CHILD_TRAIN"
+      },
+      {
+        "phrase": "ركن ترفيهي يشمل العاب اطفال",
+        "rule_key": "MED_TITLE_FAMILY_ENTERTAINMENT_CORNER"
+      },
+      {
+        "phrase": "ركن ترفيهي يشمل ألعاب أطفال",
+        "rule_key": "MED_TITLE_FAMILY_ENTERTAINMENT_CORNER_AR"
+      },
+      {
+        "phrase": "مركز ترفيه عائلي",
+        "rule_key": "MED_TITLE_FAMILY_ENTERTAINMENT_CENTER"
+      },
+      {
+        "phrase": "amusement facility",
+        "rule_key": "MED_TITLE_AMUSEMENT_FACILITY_EN"
+      }
+    ],
+    "sector:sports": [
+      {
+        "phrase": "نادي رياضي",
+        "rule_key": "MED_TITLE_SPORTS_CLUB"
+      },
+      {
+        "phrase": "مركز رياضي",
+        "rule_key": "MED_TITLE_SPORTS_CENTER"
+      },
+      {
+        "phrase": "ملعب رياضي",
+        "rule_key": "MED_TITLE_SPORTS_STADIUM"
+      },
+      {
+        "phrase": "منشأة رياضية",
+        "rule_key": "MED_TITLE_SPORTS_FACILITY"
+      },
+      {
+        "phrase": "sports club",
+        "rule_key": "MED_TITLE_SPORTS_CLUB_EN"
+      },
+      {
+        "phrase": "sports facility",
+        "rule_key": "MED_TITLE_SPORTS_FACILITY_EN"
+      }
+    ],
+    "sector:technology": [
+      {
+        "phrase": "مركز بيانات",
+        "rule_key": "MED_TITLE_DATA_CENTER"
+      },
+      {
+        "phrase": "خدمات تقنية المعلومات",
+        "rule_key": "MED_TITLE_IT_SERVICES"
+      },
+      {
+        "phrase": "منصة برمجية",
+        "rule_key": "MED_TITLE_SOFTWARE_PLATFORM"
+      },
+      {
+        "phrase": "شبكة اتصالات",
+        "rule_key": "MED_TITLE_TELECOM_NETWORK"
+      },
+      {
+        "phrase": "data center",
+        "rule_key": "MED_TITLE_DATA_CENTER_EN"
+      },
+      {
+        "phrase": "software platform",
+        "rule_key": "MED_TITLE_SOFTWARE_EN"
+      }
+    ],
+    "sector:tourism": [
+      {
+        "phrase": "فندق",
+        "rule_key": "MED_TITLE_HOTEL"
+      },
+      {
+        "phrase": "فنادق",
+        "rule_key": "MED_TITLE_HOTELS"
+      },
+      {
+        "phrase": "منتجع سياحي",
+        "rule_key": "MED_TITLE_TOURIST_RESORT"
+      },
+      {
+        "phrase": "منتجع",
+        "rule_key": "MED_TITLE_RESORT"
+      },
+      {
+        "phrase": "نزل سياحي",
+        "rule_key": "MED_TITLE_TOURIST_INN"
+      },
+      {
+        "phrase": "إيواء سياحي",
+        "rule_key": "MED_TITLE_TOURIST_LODGING"
+      },
+      {
+        "phrase": "tourist accommodation",
+        "rule_key": "MED_TITLE_TOURIST_ACCOMMODATION"
+      },
+      {
+        "phrase": "hotel development",
+        "rule_key": "MED_TITLE_HOTEL_DEVELOPMENT"
+      }
+    ]
+  }
+}

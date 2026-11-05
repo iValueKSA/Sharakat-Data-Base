@@ -1,0 +1,1356 @@
+from __future__ import annotations
+import asyncio, csv, io, os, json, logging, time, uuid
+from urllib.parse import quote
+from contextlib import asynccontextmanager
+from datetime import datetime, timezone, date
+from fastapi import FastAPI, Header, HTTPException, Query, Response, Request
+from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel, ConfigDict, Field
+from fastapi.responses import FileResponse, StreamingResponse, JSONResponse
+from fastapi.staticfiles import StaticFiles
+from sqlalchemy import select, func, or_, and_, case, exists
+from sqlalchemy.orm import selectinload
+from .database import init_db, SessionLocal, engine
+from .models import Source, Opportunity, SourceOpportunity, OpportunityLocation, QualificationReview, ChangeHistory, SyncJob, SourceError, DuplicateCandidate, OpportunityConflict, FieldProvenance, SystemEvent, MergeAudit, LocationReview, TaxonomyMapping, SourceContentItem, SourceLimitation, ModonLocation, NcpProjectEvent, User, UserSession, AlertEvent, SystemSetting, AuditEvent, AssetFacilityType, OpportunityAssetFacilityType
+from .service import seed_sources, sync_source, scheduler_loop
+from .adapters import LOCATION_ACCEPTANCE_THRESHOLD
+from .excel_export import build_opportunities_workbook, export_timestamp
+from .merge import merge_candidate, undo_candidate
+from .security import SESSION_COOKIE, SESSION_HOURS, allow_login_attempt, allow_rate, audit, hash_password, new_session, session_digest, user_for_session, utcnow, verify_password
+from .filter_canonicalization import ACTIVITY_UNSPECIFIED_LABEL, MISSING_LABEL, SECTOR_UNSPECIFIED_LABEL, canonical_id, canonical_value, comparison_key, matching_values, option_labels, group_counts
+from .standardization import OPPORTUNITY_TYPE_UNSPECIFIED_LABEL, INVESTMENT_MODEL_UNSPECIFIED_LABEL
+from .geography import AL_AHSA_GOVERNORATE, EASTERN_REGION, canonical_geography_identity, geography_identity_by_id, resolve_master_geography
+from .asset_facility_types import ASSET_FACILITY_TYPE_MISSING_ID, ASSET_FACILITY_TYPE_MISSING_LABEL
+from .status_lifecycle import local_today
+from contextvars import ContextVar
+from datetime import timedelta
+
+logger=logging.getLogger("app")
+request_context: ContextVar[dict] = ContextVar("request_context", default={})
+_request_count=0
+_request_errors=0
+_request_seconds=0.0
+
+DATA_DIR=os.getenv("DATA_DIR","data")
+
+def _raw_dimension_values(db, column, dimension: str):
+    """Distinct stored labels for one Master dimension; source rows are not read or changed."""
+    return list(db.scalars(select(column).where(Opportunity.merged_into_id.is_(None)).distinct()).all())
+
+def _canonical_option_data(db, column, dimension: str):
+    rows=db.execute(select(column,func.count(Opportunity.id)).where(Opportunity.merged_into_id.is_(None)).group_by(column)).all()
+    raw_values=[value for value,_ in rows if value is not None and str(value).strip()]
+    labels=option_labels(dimension,raw_values)
+    count_by_id={};label_by_id={}
+    for value,count in rows:
+        identity=canonical_id(dimension,value);label=canonical_value(dimension,value)
+        count_by_id[identity]=count_by_id.get(identity,0)+int(count);label_by_id[identity]=label
+    counts={label_by_id[identity]:count for identity,count in count_by_id.items()}
+    option_ids={label:identity for identity,label in label_by_id.items()}
+    missing_label = (SECTOR_UNSPECIFIED_LABEL if dimension == "sector"
+                     else ACTIVITY_UNSPECIFIED_LABEL if dimension == "activity"
+                     else "غير محدد" if dimension in {"opportunity_type", "type", "investment_model", "owner", "opportunity_owner"}
+                     else MISSING_LABEL)
+    if counts.get(missing_label) and missing_label not in labels: labels.append(missing_label)
+    return labels,counts,option_ids
+
+def _canonical_filter_condition(db, column, dimension: str, selected: str):
+    values=matching_values(dimension,selected,_raw_dimension_values(db,column,dimension))
+    predicates=[]
+    if any(value is None for value in values): predicates.append(column.is_(None))
+    present=[value for value in values if value is not None]
+    if present: predicates.append(column.in_(present))
+    if len(predicates)==1: return predicates[0]
+    if predicates: return or_(*predicates)
+    return column.in_([])
+
+def _sector_values_filter_condition(db, encoded_values: str):
+    """Filter a presentation group by its explicit canonical sector members."""
+    if len(encoded_values) > 4000:
+        raise HTTPException(422,"قائمة القطاعات المجمعة طويلة جدًا")
+    try:
+        values=json.loads(encoded_values)
+    except (TypeError,ValueError):
+        raise HTTPException(422,"قائمة القطاعات المجمعة غير صالحة")
+    if not isinstance(values,list) or not values or len(values)>32 or any(not isinstance(value,str) or not value.strip() for value in values):
+        raise HTTPException(422,"قائمة القطاعات المجمعة غير صالحة")
+    predicates=[_canonical_filter_condition(db,Opportunity.sector,"sector",value.strip()) for value in dict.fromkeys(values)]
+    return or_(*predicates) if predicates else Opportunity.sector.in_([])
+
+def _sector_values_display_labels(db, encoded_values: str):
+    try:
+        selected=json.loads(encoded_values)
+    except (TypeError,ValueError):
+        return []
+    raw_values=_raw_dimension_values(db,Opportunity.sector,"sector")
+    labels=[]
+    for value in selected if isinstance(selected,list) else []:
+        if not isinstance(value,str): continue
+        for raw in matching_values("sector",value.strip(),raw_values):
+            label=canonical_value("sector",raw)
+            if label not in labels: labels.append(label)
+    return labels
+
+
+def _pending_location_reviews_by_master(db, master_ids=None):
+    statement=(select(SourceOpportunity.master_opportunity_id,LocationReview.reason)
+        .join(LocationReview,LocationReview.source_record_id==SourceOpportunity.id)
+        .where(LocationReview.status=="PENDING",SourceOpportunity.master_opportunity_id.is_not(None),or_(
+            LocationReview.reason.like("LOCATION_UNSPECIFIED:%"),
+            LocationReview.reason.like("REGION_ONLY:%"),
+            LocationReview.reason.like("COORDINATE_TEXT_CONFLICT:%"),
+        )))
+    if master_ids is not None:
+        statement=statement.where(SourceOpportunity.master_opportunity_id.in_(master_ids or [-1]))
+    pending={}
+    for master_id,reason in db.execute(statement).all():
+        pending.setdefault(master_id,reason or "")
+    return pending
+
+
+def _location_rows_for_hierarchy(db):
+    rows=db.execute(select(Opportunity.id,Opportunity.city,Opportunity.district,Opportunity.location_confidence_score,Opportunity.manual_review_required)
+        .where(Opportunity.merged_into_id.is_(None))).all()
+    return rows,_pending_location_reviews_by_master(db,[row.id for row in rows])
+
+
+def _source_location_values_by_master(db,master_ids=None):
+    statement=(select(SourceOpportunity.master_opportunity_id,OpportunityLocation.location_name)
+        .join(OpportunityLocation,OpportunityLocation.source_opportunity_id==SourceOpportunity.id)
+        .where(SourceOpportunity.master_opportunity_id.is_not(None)))
+    if master_ids is not None:
+        statement=statement.where(SourceOpportunity.master_opportunity_id.in_(master_ids or [-1]))
+    values={}
+    for master_id,location_name in db.execute(statement).all():
+        if location_name and location_name not in values.setdefault(master_id,[]):
+            values[master_id].append(location_name)
+    return values
+
+
+def _location_identity_for_row(city, district):
+    district_identity=canonical_geography_identity(district)
+    if district_identity and district_identity["id"].startswith("al_ahsa_locality:"):
+        return district_identity
+    return canonical_geography_identity(city) or district_identity
+
+
+def _location_filter_condition(db, selected):
+    selected_geo=geography_identity_by_id(selected) if selected in {AL_AHSA_GOVERNORATE["id"],EASTERN_REGION["id"],"saudi_arabia"} or str(selected).startswith("al_ahsa_locality:") else canonical_geography_identity(selected)
+    if not selected_geo:
+        location_value=func.coalesce(func.nullif(Opportunity.district,""),func.nullif(Opportunity.city,""),"غير محدد")
+        condition=_canonical_filter_condition(db,location_value,"location",selected)
+        eligible=and_(Opportunity.location_confidence_score>=LOCATION_ACCEPTANCE_THRESHOLD,Opportunity.manual_review_required.is_(False),~Opportunity.id.in_(select(SourceOpportunity.master_opportunity_id).join(LocationReview,LocationReview.source_record_id==SourceOpportunity.id).where(LocationReview.status=="PENDING",SourceOpportunity.master_opportunity_id.is_not(None))))
+        return and_(condition,eligible)
+
+    rows,pending=_location_rows_for_hierarchy(db)
+    source_locations=_source_location_values_by_master(db,[row.id for row in rows])
+    selected_full=geography_identity_by_id(selected_geo["id"])
+    if not selected_full:
+        return Opportunity.id.in_([])
+    matches=[]
+    for row in rows:
+        if row.id in pending or row.manual_review_required or float(row.location_confidence_score or 0)<LOCATION_ACCEPTANCE_THRESHOLD:
+            continue
+        identity=_location_identity_for_row(row.city,row.district)
+        full=geography_identity_by_id(identity["id"]) if identity else None
+        match=False
+        if full:
+            if selected_full.get("governorate_id"):
+                match=full.get("governorate_id")==selected_full.get("governorate_id")
+            elif selected_full.get("region_id") and selected_full.get("governorate_id") is None:
+                match=full.get("region_id")==selected_full.get("region_id")
+            elif selected_full.get("country_id") and selected_full.get("region_id") is None:
+                match=full.get("country_id")==selected_full.get("country_id")
+            else:
+                match=identity["id"]==selected_geo["id"]
+        if not match:
+            for raw_location in source_locations.get(row.id,[]):
+                source_identity=canonical_geography_identity(raw_location)
+                source_full=geography_identity_by_id(source_identity["id"]) if source_identity else None
+                if not source_full:
+                    continue
+                if selected_full.get("governorate_id"):
+                    match=source_full.get("governorate_id")==selected_full.get("governorate_id")
+                elif selected_full.get("region_id") and selected_full.get("governorate_id") is None:
+                    match=source_full.get("region_id")==selected_full.get("region_id")
+                elif selected_full.get("country_id") and selected_full.get("region_id") is None:
+                    match=source_full.get("country_id")==selected_full.get("country_id")
+                else:
+                    match=source_identity["id"]==selected_geo["id"]
+                if match:
+                    break
+        if match:
+            matches.append(row.id)
+    return Opportunity.id.in_(matches or [-1])
+
+
+def _location_option_data(db):
+    rows,pending=_location_rows_for_hierarchy(db)
+    source_locations=_source_location_values_by_master(db,[row.id for row in rows])
+    counts={};ids={};labels=set();hierarchy=[];governorate_masters=set();locality_masters={}
+    for row in rows:
+        if row.id in pending or row.manual_review_required or float(row.location_confidence_score or 0)<LOCATION_ACCEPTANCE_THRESHOLD:
+            continue
+        identity=_location_identity_for_row(row.city,row.district)
+        full=geography_identity_by_id(identity["id"]) if identity else None
+        if full and full.get("governorate_id"):
+            governorate_masters.add(row.id)
+            if full.get("locality_id"):
+                label=identity["label"]
+                labels.add(label);ids[label]=identity["id"];locality_masters.setdefault(label,set()).add(row.id)
+        for raw_location in source_locations.get(row.id,[]):
+            source_identity=canonical_geography_identity(raw_location)
+            source_full=geography_identity_by_id(source_identity["id"]) if source_identity else None
+            if source_full and source_full.get("governorate_id"):
+                governorate_masters.add(row.id)
+                if source_full.get("locality_id"):
+                    label=source_identity["label"]
+                    labels.add(label);ids[label]=source_identity["id"];locality_masters.setdefault(label,set()).add(row.id)
+    counts.update({label:len(master_ids) for label,master_ids in locality_masters.items()})
+    governorate_count=len(governorate_masters)
+    parent_id=AL_AHSA_GOVERNORATE["id"];parent_label=AL_AHSA_GOVERNORATE["label"]
+    counts[parent_label]=governorate_count;ids[parent_label]=parent_id;labels.add(parent_label)
+    hierarchy.append({"id":"saudi_arabia","label":"المملكة العربية السعودية","parent_id":None,"level":"country"})
+    hierarchy.append({"id":EASTERN_REGION["id"],"label":EASTERN_REGION["label"],"parent_id":"saudi_arabia","level":"region"})
+    hierarchy.append({"id":parent_id,"label":parent_label,"parent_id":EASTERN_REGION["id"],"level":"governorate","count":governorate_count})
+    for label in sorted(labels-{parent_label},key=comparison_key):
+        identity=geography_identity_by_id(ids[label])
+        if identity and identity.get("locality_id"):
+            hierarchy.append({"id":identity["id"],"label":label,"parent_id":parent_id,"level":"locality","count":counts[label]})
+    return sorted(labels,key=comparison_key),counts,ids,hierarchy
+
+
+def _confirmed_location_master_ids(db):
+    rows,pending=_location_rows_for_hierarchy(db)
+    source_locations=_source_location_values_by_master(db,[row.id for row in rows])
+    confirmed=[]
+    for row in rows:
+        if row.id in pending or row.manual_review_required or float(row.location_confidence_score or 0)<LOCATION_ACCEPTANCE_THRESHOLD:
+            continue
+        identity=_location_identity_for_row(row.city,row.district)
+        full=geography_identity_by_id(identity["id"]) if identity else None
+        source_in_governorate=any((identity:=canonical_geography_identity(place)) and (geography_identity_by_id(identity["id"]) or {}).get("governorate_id") for place in source_locations.get(row.id,[]))
+        if (full and full.get("governorate_id")) or source_in_governorate:
+            confirmed.append(row.id)
+    return confirmed
+
+
+def _opportunity_geography(db,o,pending=None,source_locations_by_master=None):
+    pending=pending if pending is not None else _pending_location_reviews_by_master(db,[o.id])
+    reason=pending.get(o.id)
+    status=None
+    if reason:
+        status="REGION_ONLY" if reason.startswith("REGION_ONLY") else "LOCATION_UNSPECIFIED" if reason.startswith("LOCATION_UNSPECIFIED") else "LOCATION_REVIEW_REQUIRED"
+    elif o.manual_review_required:
+        status="LOCATION_REVIEW_REQUIRED";reason="الموقع محدد للمراجعة اليدوية في سجل الفرصة."
+    elif float(o.location_confidence_score or 0)<LOCATION_ACCEPTANCE_THRESHOLD:
+        status="LOCATION_REVIEW_REQUIRED";reason="درجة ثقة تحديد الموقع أقل من حد القبول الحالي."
+    geo=resolve_master_geography(o.city,o.district,status=status,reason=reason)
+    source_locations=(source_locations_by_master if source_locations_by_master is not None else _source_location_values_by_master(db,[o.id])).get(o.id,[])
+    geo["source_locations"]=source_locations
+    source_geographies=[]
+    for raw_location in source_locations:
+        identity=canonical_geography_identity(raw_location)
+        full=geography_identity_by_id(identity["id"]) if identity else None
+        if identity and full:
+            source_geographies.append({"raw":raw_location,**identity,"country_id":full.get("country_id"),"country":full.get("country"),"region_id":full.get("region_id"),"region":full.get("region"),"governorate_id":full.get("governorate_id"),"governorate":full.get("governorate"),"locality_id":full.get("locality_id"),"locality":full.get("locality")})
+    geo["source_geographies"]=source_geographies
+    if (not reason and not o.manual_review_required and float(o.location_confidence_score or 0)>=LOCATION_ACCEPTANCE_THRESHOLD
+            and not geo.get("confirmed") and any(item.get("governorate_id")==AL_AHSA_GOVERNORATE["id"] for item in source_geographies)):
+        parent=geography_identity_by_id(AL_AHSA_GOVERNORATE["id"])
+        geo.update({key:parent.get(key) for key in ("country_id","country","country_code","region_id","region","governorate_id","governorate")})
+        geo["confirmed"]=True;geo["status"]="CONFIRMED";geo["reason"]="مصدر رسمي يذكر الأحساء ضمن مواقع الفرصة المتعددة."
+        geo["multi_location_scope"]="MULTI_LOCATION"
+    if geo["status"]=="REGION_ONLY":
+        geo["status"]="LOCATION_REVIEW_REQUIRED";geo["confirmed"]=False
+    geo["review_required"]=not geo["confirmed"]
+    geo["status_ar"]={"CONFIRMED":"موقع مؤكد","LOCATION_UNSPECIFIED":"الموقع غير محدد","LOCATION_REVIEW_REQUIRED":"الموقع قيد المراجعة"}.get(geo["status"],"الموقع غير محدد")
+    if geo["confirmed"]:
+        geo["display_location"]=geo.get("locality") or canonical_value("location",o.city) or geo.get("governorate")
+    else:
+        geo["display_location"]="غير محدد" if geo["status"]=="LOCATION_UNSPECIFIED" else "قيد المراجعة"
+    return geo
+
+
+def _asset_facility_type_options(db):
+    total = db.scalar(select(func.count(Opportunity.id)).where(Opportunity.merged_into_id.is_(None))) or 0
+    rows = db.execute(
+        select(AssetFacilityType.canonical_id, AssetFacilityType.label_ar, func.count(func.distinct(OpportunityAssetFacilityType.opportunity_id)))
+        .join(OpportunityAssetFacilityType, OpportunityAssetFacilityType.canonical_id == AssetFacilityType.canonical_id)
+        .join(Opportunity, Opportunity.id == OpportunityAssetFacilityType.opportunity_id)
+        .where(AssetFacilityType.active.is_(True), Opportunity.merged_into_id.is_(None))
+        .group_by(AssetFacilityType.canonical_id, AssetFacilityType.label_ar)
+        .order_by(AssetFacilityType.label_ar)
+    ).all()
+    labels = [label for _, label, count in rows if count]
+    counts = {label: int(count) for _, label, count in rows}
+    ids = {label: canonical_id for canonical_id, label, _ in rows}
+    assigned = db.scalar(select(func.count(func.distinct(OpportunityAssetFacilityType.opportunity_id))).join(Opportunity, Opportunity.id == OpportunityAssetFacilityType.opportunity_id).where(Opportunity.merged_into_id.is_(None))) or 0
+    missing = max(0, int(total) - int(assigned))
+    if missing:
+        labels.append(ASSET_FACILITY_TYPE_MISSING_LABEL)
+        counts[ASSET_FACILITY_TYPE_MISSING_LABEL] = missing
+        ids[ASSET_FACILITY_TYPE_MISSING_LABEL] = ASSET_FACILITY_TYPE_MISSING_ID
+    return labels, counts, ids
+
+
+def _asset_facility_type_filter_condition(db, selected: str):
+    rows = db.execute(select(AssetFacilityType.canonical_id, AssetFacilityType.label_ar).where(AssetFacilityType.active.is_(True))).all()
+    by_id = {identifier: label for identifier, label in rows}
+    by_label = {label: identifier for identifier, label in rows}
+    if selected in {ASSET_FACILITY_TYPE_MISSING_ID, ASSET_FACILITY_TYPE_MISSING_LABEL}:
+        return ~exists(select(1).where(OpportunityAssetFacilityType.opportunity_id == Opportunity.id))
+    canonical_id = selected if selected in by_id else by_label.get(selected)
+    if not canonical_id:
+        return Opportunity.id.in_([])
+    return exists(select(1).where(OpportunityAssetFacilityType.opportunity_id == Opportunity.id, OpportunityAssetFacilityType.canonical_id == canonical_id))
+
+
+_TECHNICAL_TAXONOMY_HISTORY_VALUES = {
+    comparison_key(value) for value in (
+        "PPP_PROJECT", "PPP_PROJECT_ANNOUNCEMENT", "LEASE_OPPORTUNITY",
+        "COMMERCIAL_FACILITY_OPPORTUNITY", "INVESTMENT_OPPORTUNITY",
+        "GENERAL_ANNOUNCEMENT", "INVESTMENT_ANNOUNCEMENT",
+        "INVESTMENT_SECTOR_INFORMATION", "STRATEGIC_PROJECT",
+        "WASTE_SECTOR_INVESTMENT", "TemporaryRental", "TempRental",
+    )
+}
+
+
+def _business_history_value(value):
+    """Avoid exposing source enum tokens from legacy audit values in business UI."""
+    if value is not None and comparison_key(value) in _TECHNICAL_TAXONOMY_HISTORY_VALUES:
+        return "قيمة غير معتمدة"
+    return value
+
+ACTIVE_STATUSES = ["متاحة", "منشورة", "Announced", "ANNOUNCED", "AVAILABLE", "ACTIVE"]
+ACTIVE_EXCLUDED_STATUSES = ["ملغاة", "ملغي", "منتهية", "منتهي", "تم الترسية", "أزيلت من المصدر", "REMOVED_FROM_SOURCE", "EXPIRED", "CANCELLED", "AWARDED", "DELETED_FROM_SOURCE", "حالة غير معروفة", "غير محددة", "قيد مراجعة الحالة"]
+HISTORICAL_STATUSES = ["منتهية", "منتهي", "ملغاة", "ملغي", "تمت الترسية", "تم الترسية", "أزيلت من المصدر", "REMOVED_FROM_SOURCE", "EXPIRED", "CANCELLED", "AWARDED", "DELETED_FROM_SOURCE"]
+
+
+def _opportunity_filter_conditions(db, *, sector="", activity="", sub_activity="", status="", owner="", source="", location="", opportunity_type="", investment_model="", asset_facility_type="", subsector="", lifecycle=""):
+    conditions=[Opportunity.merged_into_id.is_(None)]
+    if sector: conditions.append(_canonical_filter_condition(db,Opportunity.sector,"sector",sector))
+    if activity: conditions.append(_canonical_filter_condition(db,Opportunity.activity,"activity",activity))
+    if sub_activity: conditions.append(_canonical_filter_condition(db,Opportunity.sub_activity,"sub_activity",sub_activity))
+    if status: conditions.append(_canonical_filter_condition(db,Opportunity.status,"status",status))
+    if source:
+        conditions.append(Opportunity.id.in_(select(SourceOpportunity.master_opportunity_id).join(Source,Source.id==SourceOpportunity.source_id).where(Source.source_key==source,SourceOpportunity.master_opportunity_id.is_not(None))))
+    if owner: conditions.append(_canonical_filter_condition(db,Opportunity.opportunity_owner,"owner",owner))
+    if subsector: conditions.append(_canonical_filter_condition(db,Opportunity.subsector,"subsector",subsector))
+    if location:
+        conditions.append(_location_filter_condition(db,location))
+    if opportunity_type: conditions.append(_canonical_filter_condition(db,Opportunity.opportunity_type,"opportunity_type",opportunity_type))
+    if investment_model: conditions.append(_canonical_filter_condition(db,Opportunity.investment_model,"investment_model",investment_model))
+    if asset_facility_type: conditions.append(_asset_facility_type_filter_condition(db,asset_facility_type))
+    if lifecycle == "active": conditions.append(Opportunity.status.in_(ACTIVE_STATUSES))
+    elif lifecycle == "historical": conditions.append(Opportunity.status.in_(HISTORICAL_STATUSES))
+    elif lifecycle: raise HTTPException(422,"نطاق الحالة غير مدعوم")
+    return conditions
+
+
+def _period_start(period: str):
+    if period not in {"", "all", "30d", "90d", "365d"}:
+        raise HTTPException(422,"الفترة الزمنية غير مدعومة")
+    return {"30d":datetime.now(timezone.utc)-timedelta(days=30),"90d":datetime.now(timezone.utc)-timedelta(days=90),"365d":datetime.now(timezone.utc)-timedelta(days=365)}.get(period)
+
+def _geojson_contains(geometry: dict, longitude: float, latitude: float) -> bool:
+    """Return whether a WGS84 point falls inside a GeoJSON Polygon or MultiPolygon."""
+    if not isinstance(geometry, dict): return False
+    polygons = [geometry.get("coordinates")] if geometry.get("type") == "Polygon" else geometry.get("coordinates", []) if geometry.get("type") == "MultiPolygon" else []
+    def in_ring(ring):
+        inside = False
+        if not isinstance(ring, list) or len(ring) < 4: return False
+        previous = ring[-1]
+        for current in ring:
+            try: x1, y1 = float(previous[0]), float(previous[1]); x2, y2 = float(current[0]), float(current[1])
+            except (TypeError, ValueError, IndexError): previous = current; continue
+            if ((y1 > latitude) != (y2 > latitude)) and longitude < (x2-x1)*(latitude-y1)/(y2-y1)+x1: inside = not inside
+            previous = current
+        return inside
+    for polygon in polygons:
+        if not polygon or not in_ring(polygon[0]): continue
+        if not any(in_ring(hole) for hole in polygon[1:]): return True
+    return False
+
+def _alahsa_boundary_geometry():
+    path=os.path.join(os.path.dirname(__file__),"static","geo","alahsa-governorate.geojson")
+    try:
+        with open(path,encoding="utf-8") as boundary_file: collection=json.load(boundary_file)
+        return (collection.get("features") or [{}])[0].get("geometry") or {}
+    except (OSError,ValueError,AttributeError):
+        logger.exception("Unable to load the local Al-Ahsa boundary")
+        return {}
+
+def validate_forwarded_allow_ips(value: str) -> str:
+    trusted=[item.strip() for item in value.split(",") if item.strip()]
+    if not trusted or "*" in trusted:
+        raise RuntimeError("Staging and production require explicit trusted proxy IPs or CIDRs in FORWARDED_ALLOW_IPS")
+    return ",".join(trusted)
+
+def spreadsheet_safe(value):
+    if isinstance(value,str) and value.lstrip(" \t\r\n").startswith(("=","+","-","@")):
+        return "'"+value
+    return value
+@asynccontextmanager
+async def lifespan(app:FastAPI):
+    environment=os.getenv("ENVIRONMENT",os.getenv("ENV","development")).lower()
+    production=environment=="production"
+    protected=environment in ("production","staging")
+    database_url=os.getenv("DATABASE_URL","")
+    if protected and (not database_url.startswith(("postgresql://","postgresql+psycopg://")) or "sqlite" in database_url.lower()):
+        raise RuntimeError("Staging and production require PostgreSQL via DATABASE_URL")
+    if protected and not os.getenv("SECRET_KEY"):
+        raise RuntimeError("Staging and production require an externally supplied SECRET_KEY")
+    if protected and not os.getenv("REDIS_URL"):
+        raise RuntimeError("Staging and production require Redis for jobs and distributed locks")
+    if protected:
+        validate_forwarded_allow_ips(os.getenv("FORWARDED_ALLOW_IPS", ""))
+    if protected and not os.getenv("PUBLIC_BASE_URL","").startswith("https://"):
+        raise RuntimeError("Staging and production PUBLIC_BASE_URL must use HTTPS")
+    if protected and (not os.getenv("CORS_ORIGINS") or "*" in os.getenv("CORS_ORIGINS","")):
+        raise RuntimeError("Staging and production CORS_ORIGINS must contain explicit origins")
+    if protected and os.getenv("BOOTSTRAP_ADMIN_PASSWORD") and len(os.getenv("BOOTSTRAP_ADMIN_PASSWORD",""))<12:
+        raise RuntimeError("Initial administrator password must contain at least 12 characters")
+    if not protected:init_db()
+    with SessionLocal() as db: seed_sources(db)
+    task=None
+    if not protected and os.getenv("SYNC_ON_STARTUP","false").lower()=="true": task=asyncio.create_task(scheduler_loop())
+    bootstrap_password=os.getenv("BOOTSTRAP_ADMIN_PASSWORD")
+    bootstrap_email=os.getenv("BOOTSTRAP_ADMIN_EMAIL")
+    if bootstrap_password and bootstrap_email:
+        with SessionLocal() as db:
+            if not db.scalar(select(User).where(User.email==bootstrap_email.lower())):
+                db.add(User(email=bootstrap_email.lower(),display_name="Administrator",role="admin",password_hash=hash_password(bootstrap_password),is_active=True,created_at=utcnow()))
+                db.commit()
+    yield
+    if task: task.cancel()
+
+app=FastAPI(title="Al-Ahsa Investment Opportunities Intelligence Platform",version="0.1.0",lifespan=lifespan)
+app.mount("/static",StaticFiles(directory="app/static"),name="static")
+allowed_origins=[x.strip() for x in os.getenv("CORS_ORIGINS","").split(",") if x.strip()]
+if allowed_origins: app.add_middleware(CORSMiddleware,allow_origins=allowed_origins,allow_credentials=True,allow_methods=["GET","POST","PATCH","PUT","DELETE"],allow_headers=["Content-Type","X-Request-ID"])
+
+@app.exception_handler(Exception)
+async def safe_unhandled_error(request:Request,exc:Exception):
+    logger.exception("Unhandled API error",extra={"request_id":request_context.get().get("correlation_id"),"path":request.url.path})
+    protected=os.getenv("ENVIRONMENT",os.getenv("ENV","development")).lower() in ("production","staging")
+    detail="Internal server error" if protected else str(exc)
+    return JSONResponse({"detail":detail,"request_id":request_context.get().get("correlation_id")},status_code=500)
+
+@app.middleware("http")
+async def security_and_correlation(request:Request,call_next):
+    global _request_count,_request_errors,_request_seconds
+    correlation_id=request.headers.get("X-Request-ID") or str(uuid.uuid4())
+    identity=user_for_session(request.cookies.get(SESSION_COOKIE))
+    context_token=request_context.set({"correlation_id":correlation_id,"user":identity,"path":request.url.path,"method":request.method})
+    started=time.perf_counter();status=500
+    try:
+        protected=request.url.path.startswith("/api/admin/") and request.method in ("POST","PATCH","PUT","DELETE") or request.url.path.startswith("/api/export.")
+        if protected:
+            address=request.client.host if request.client else "unknown"
+            if not allow_rate(f"{address}:{request.url.path}",20 if request.url.path.startswith("/api/export.") else 40,60):
+                status=429
+                return Response(content='{"detail":"Rate limit exceeded"}',media_type="application/json",status_code=429)
+        response=await call_next(request);status=response.status_code
+        response.headers["X-Request-ID"]=correlation_id
+        response.headers["X-Content-Type-Options"]="nosniff"
+        response.headers["Referrer-Policy"]="strict-origin-when-cross-origin"
+        response.headers["X-Frame-Options"]="DENY"
+        response.headers["Content-Security-Policy"]="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'"
+        if os.getenv("ENVIRONMENT",os.getenv("ENV","development")).lower() in ("production","staging"): response.headers["Strict-Transport-Security"]="max-age=31536000; includeSubDomains"
+        if request.url.path.startswith("/api/admin/") and request.method in ("POST","PATCH","PUT","DELETE") and status<400:
+            try:
+                with SessionLocal() as db:
+                    user_id=(identity or {}).get("id")
+                    audit(db,"ADMIN_ACTION",user_id,"http",request.url.path,after={"method":request.method,"status":status},metadata={"request_id":correlation_id,"ip":request.client.host if request.client else None})
+                    db.commit()
+            except Exception:
+                logger.exception("Failed to persist administrative audit event")
+        return response
+    finally:
+        elapsed=time.perf_counter()-started;_request_count+=1;_request_seconds+=elapsed
+        if status>=400:_request_errors+=1
+        logger.info(json.dumps({"timestamp":datetime.now(timezone.utc).isoformat(),"level":"INFO","service":"api","request_id":correlation_id,"user_id":(identity or {}).get("id"),"event":"http_request","method":request.method,"path":request.url.path,"status":status,"duration_seconds":round(elapsed,4)},ensure_ascii=False))
+        request_context.reset(context_token)
+
+def admin_auth(token:str|None):
+    identity=request_context.get().get("user")
+    protected=os.getenv("ENVIRONMENT",os.getenv("ENV","development")).lower() in ("production","staging")
+    path=request_context.get().get("path","")
+    if identity:
+        if identity.get("role")=="admin": return identity
+        if identity.get("role")=="analyst" and (path in ("/api/admin/location-reviews","/api/admin/conflicts","/api/admin/duplicates") or any(part in path for part in ("/location-reviews/","/conflicts/","/duplicates/"))): return identity
+        raise HTTPException(403,"Insufficient permissions")
+    if protected: raise HTTPException(401,"Authentication required")
+    expected=os.getenv("ADMIN_TOKEN","")
+    if expected and token!=expected: raise HTTPException(401,"رمز الإدارة غير صحيح")
+
+class LoginPayload(BaseModel):
+    model_config=ConfigDict(extra="forbid")
+    email:str=Field(min_length=3,max_length=255)
+    password:str=Field(min_length=1,max_length=256)
+
+class UserCreatePayload(BaseModel):
+    model_config=ConfigDict(extra="forbid")
+    email:str=Field(min_length=5,max_length=255)
+    display_name:str=Field(min_length=1,max_length=200)
+    role:str=Field(pattern="^(admin|analyst|viewer)$")
+    password:str=Field(min_length=12,max_length=256)
+
+@app.get("/api/admin/users")
+def list_users(x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    with SessionLocal() as db:
+        return [{"id":u.id,"email":u.email,"display_name":u.display_name,"role":u.role,"is_active":u.is_active,"last_login_at":dt(u.last_login_at)} for u in db.scalars(select(User).order_by(User.email)).all()]
+
+@app.post("/api/admin/users")
+def create_user(payload:UserCreatePayload,x_admin_token:str|None=Header(default=None)):
+    identity=admin_auth(x_admin_token)
+    with SessionLocal() as db:
+        email=payload.email.strip().lower()
+        if db.scalar(select(User.id).where(User.email==email)):raise HTTPException(409,"User already exists")
+        user=User(email=email,display_name=payload.display_name.strip(),role=payload.role,password_hash=hash_password(payload.password),is_active=True,created_at=utcnow())
+        db.add(user);db.flush();audit(db,"USER_CREATED",(identity or {}).get("id"),"user",str(user.id),after={"email":email,"role":payload.role});db.commit()
+        return {"id":user.id,"email":user.email,"role":user.role}
+
+@app.post("/api/admin/users/{user_id}/disable")
+def disable_user(user_id:int,confirm:bool=Query(False),x_admin_token:str|None=Header(default=None)):
+    identity=admin_auth(x_admin_token)
+    with SessionLocal() as db:
+        user=db.get(User,user_id)
+        if not user:raise HTTPException(404,"User not found")
+        if not confirm:raise HTTPException(409,"Explicit confirmation is required")
+        if user.id==(identity or {}).get("id"):raise HTTPException(409,"Cannot disable the active account")
+        user.is_active=False
+        db.query(UserSession).filter(UserSession.user_id==user.id).delete(synchronize_session=False)
+        audit(db,"USER_DISABLED",(identity or {}).get("id"),"user",str(user.id),before={"is_active":True},after={"is_active":False});db.commit()
+        return {"ok":True,"is_active":False}
+
+@app.post("/api/auth/login")
+def login(payload:LoginPayload,request:Request,response:Response):
+    address=request.client.host if request.client else "unknown"
+    if not allow_login_attempt(f"{address}:{payload.email.lower()}"): raise HTTPException(429,"Too many login attempts")
+    with SessionLocal() as db:
+        user=db.scalar(select(User).where(User.email==payload.email.lower()))
+        now=utcnow()
+        locked_until=user.locked_until if user else None
+        if locked_until and locked_until.tzinfo is None:locked_until=locked_until.replace(tzinfo=timezone.utc)
+        if not user or not user.is_active or (locked_until and locked_until>now) or not verify_password(payload.password,user.password_hash):
+            if user:
+                user.failed_login_count=(user.failed_login_count or 0)+1
+                if user.failed_login_count>=10:user.locked_until=now+timedelta(minutes=15)
+                audit(db,"LOGIN_FAILED",user.id,"user",str(user.id),metadata={"request_id":request_context.get().get("correlation_id"),"ip":address})
+                db.commit()
+            raise HTTPException(401,"Invalid credentials")
+        user.failed_login_count=0;user.locked_until=None;user.last_login_at=now
+        session_token=new_session(db,user)
+        audit(db,"LOGIN",user.id,"user",str(user.id),metadata={"request_id":request_context.get().get("correlation_id"),"ip":address})
+        db.commit()
+        response.set_cookie(SESSION_COOKIE,session_token,httponly=True,secure=os.getenv("ENVIRONMENT",os.getenv("ENV","development")).lower() in ("production","staging"),samesite="lax",max_age=SESSION_HOURS*3600,path="/")
+        return {"user":{"id":user.id,"email":user.email,"display_name":user.display_name,"role":user.role}}
+
+@app.post("/api/auth/logout")
+def logout(request:Request,response:Response):
+    value=request.cookies.get(SESSION_COOKIE)
+    if value:
+        with SessionLocal() as db:
+            session=db.scalar(select(UserSession).where(UserSession.token_hash==session_digest(value)))
+            if session:
+                user_id=session.user_id;db.delete(session);audit(db,"LOGOUT",user_id,"user",str(user_id),metadata={"request_id":request_context.get().get("correlation_id")});db.commit()
+    response.delete_cookie(SESSION_COOKIE,path="/")
+    return {"ok":True}
+
+@app.get("/api/auth/me")
+def auth_me():
+    identity=request_context.get().get("user")
+    if not identity:raise HTTPException(401,"Authentication required")
+    return {"user":identity}
+
+@app.get("/")
+def home(): return FileResponse("app/static/index.html")
+
+@app.get("/api/health")
+def health(): return {"status":"ok","time":datetime.now(timezone.utc).isoformat()}
+
+@app.get("/health/live")
+@app.get("/health")
+def health_live(): return {"status":"ok","service":"api"}
+
+@app.get("/health/ready")
+def health_ready():
+    checks={"database":"ok","redis":"not_configured","worker":"not_configured"}
+    try:
+        with SessionLocal() as db: db.execute(select(1))
+    except Exception: checks["database"]="error"
+    if os.getenv("REDIS_URL"):
+        try:
+            import redis
+            client=redis.Redis.from_url(os.environ["REDIS_URL"],socket_connect_timeout=2,socket_timeout=2)
+            client.ping()
+            checks["redis"]="ok"
+            checks["worker"]="ok" if next(client.scan_iter(match="worker:heartbeat:*",count=1),None) else "error"
+        except Exception: checks["redis"]="error"
+    ready=checks["database"]=="ok" and checks["redis"]!="error" and checks["worker"] not in ("error",)
+    return Response(content=json.dumps({"status":"ready" if ready else "not_ready","checks":checks}),media_type="application/json",status_code=200 if ready else 503)
+
+@app.get("/metrics")
+def metrics():
+    lines=["# HELP api_requests_total Requests served by this API process.","# TYPE api_requests_total counter",f"api_requests_total {_request_count}","# HELP api_errors_total Error responses served by this API process.","# TYPE api_errors_total counter",f"api_errors_total {_request_errors}","# HELP api_request_duration_seconds_sum Total request duration in seconds.","# TYPE api_request_duration_seconds_sum counter",f"api_request_duration_seconds_sum {_request_seconds:.6f}"]
+    return Response("\n".join(lines)+"\n",media_type="text/plain; version=0.0.4")
+
+@app.get("/api/admin/source-health")
+def source_health(x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    with SessionLocal() as db:
+        return [{"key":s.source_key,"health":s.technical_health,"coverage":s.coverage_status,"last_attempt":dt(s.last_attempted_sync),"last_success":dt(s.last_successful_sync),"enabled":s.enabled} for s in db.scalars(select(Source).order_by(Source.priority)).all()]
+
+@app.get("/api/admin/system-status")
+def system_status(x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    result={"api":"ok","database":"ok","redis":"not_configured","workers":"unknown","scheduler":"unknown","queue_depth":None,"database_size_bytes":None,"raw_observations":0,"sync_jobs":0,"attachments_size_bytes":0,"pool":engine.pool.status()}
+    with SessionLocal() as db:
+        result["raw_observations"]=db.scalar(select(func.count()).select_from(__import__("app.models",fromlist=["SourceObservation"]).SourceObservation)) or 0
+        result["sync_jobs"]=db.scalar(select(func.count()).select_from(SyncJob)) or 0
+        if engine.dialect.name=="postgresql":
+            result["database_size_bytes"]=db.scalar(select(func.pg_database_size(func.current_database())))
+    if os.getenv("REDIS_URL"):
+        try:
+            import redis
+            client=redis.Redis.from_url(os.environ["REDIS_URL"],socket_connect_timeout=2,socket_timeout=2)
+            result["redis"]="ok";result["queue_depth"]=sum(client.llen(f"{name}") for name in ("source_sync","maintenance","exports","notifications","document_processing"))
+            last_tick=client.get("scheduler:last_tick")
+            result["scheduler"]="ok" if last_tick else "unknown"
+            result["workers"]="ok" if next(client.scan_iter(match="worker:heartbeat:*",count=1),None) else "stale"
+        except Exception:result["redis"]="error"
+    backups=os.getenv("BACKUP_DIR","/backups")
+    attachment_dir=__import__("pathlib").Path(os.getenv("ATTACHMENT_DIR","data/attachments"))
+    if attachment_dir.exists():
+        try:result["attachments_size_bytes"]=sum(item.stat().st_size for item in attachment_dir.rglob("*") if item.is_file())
+        except OSError:result["attachments_size_bytes"]=None
+    try:
+        records=sorted(__import__("pathlib").Path(backups).glob("*.json"),key=lambda p:p.stat().st_mtime,reverse=True)
+        result["last_backup"]=json.loads(records[0].read_text(encoding="utf-8")) if records else None
+    except Exception:result["last_backup"]=None
+    return result
+
+@app.get("/api/admin/schedules")
+def schedules(x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    with SessionLocal() as db:
+        result=[];now=datetime.now(timezone.utc)
+        for source in db.scalars(select(Source).order_by(Source.priority)).all():
+            interval=max(15,source.polling_frequency_minutes or 60)
+            latest=db.scalar(select(SyncJob).where(SyncJob.source_id==source.id).order_by(SyncJob.id.desc()).limit(1))
+            success=source.last_successful_sync
+            next_run=(source.last_attempted_sync or now)+timedelta(minutes=interval)
+            stale=bool(success and (now-success).total_seconds()>2*interval*60)
+            result.append({"source_key":source.source_key,"enabled":source.enabled,"interval_minutes":interval,"last_run":dt(source.last_attempted_sync),"last_success":dt(success),"next_run":dt(next_run),"current_job":latest.id if latest and latest.job_state in ("QUEUED","RUNNING","RETRYING") else None,"last_job_state":latest.job_state if latest else None,"health":"STALE" if stale else source.technical_health})
+        paused=db.scalar(select(SystemSetting).where(SystemSetting.key=="pause_all_scheduled_syncs"))
+        maintenance=db.scalar(select(SystemSetting).where(SystemSetting.key=="maintenance_mode"))
+        return {"paused":bool(paused and paused.value=="true"),"maintenance_mode":bool(maintenance and maintenance.value=="true"),"sources":result}
+
+def set_system_setting(db,key,value):
+    setting=db.scalar(select(SystemSetting).where(SystemSetting.key==key))
+    if setting is None:db.add(SystemSetting(key=key,value=value))
+    else:setting.value=value
+
+@app.post("/api/admin/operations/{action}")
+def operational_control(action:str,x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    values={"pause-schedules":("pause_all_scheduled_syncs","true"),"resume-schedules":("pause_all_scheduled_syncs","false"),"maintenance-on":("maintenance_mode","true"),"maintenance-off":("maintenance_mode","false")}
+    if action not in values:raise HTTPException(400,"Unsupported action")
+    with SessionLocal() as db:
+        key,value=values[action];before=db.scalar(select(SystemSetting).where(SystemSetting.key==key));old=before.value if before else None
+        set_system_setting(db,key,value);audit(db,action.upper().replace("-","_"),entity_type="system_setting",entity_id=key,before={"value":old},after={"value":value},metadata={"request_id":request_context.get().get("correlation_id")});db.commit()
+    return {"ok":True,"setting":key,"value":value}
+
+@app.post("/api/admin/sources/{source_key}/pause")
+def pause_source(source_key:str,confirm:bool=Query(False),x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    if not confirm:raise HTTPException(409,"Explicit confirmation is required")
+    with SessionLocal() as db:
+        source=db.scalar(select(Source).where(Source.source_key==source_key))
+        if not source:raise HTTPException(404,"Source not found")
+        source.enabled=False;source.sync_status="DISABLED";audit(db,"SOURCE_DISABLED",entity_type="source",entity_id=source_key,after={"enabled":False});db.commit()
+        return {"ok":True,"enabled":False}
+
+@app.post("/api/admin/sources/{source_key}/resume")
+def resume_source(source_key:str,confirm:bool=Query(False),x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    if not confirm:raise HTTPException(409,"Explicit confirmation is required")
+    with SessionLocal() as db:
+        source=db.scalar(select(Source).where(Source.source_key==source_key))
+        if not source:raise HTTPException(404,"Source not found")
+        source.enabled=True;source.sync_status="READY";audit(db,"SOURCE_ENABLED",entity_type="source",entity_id=source_key,after={"enabled":True});db.commit()
+        return {"ok":True,"enabled":True}
+
+@app.post("/api/admin/jobs/{job_id}/cancel")
+def cancel_queued_job(job_id:int,x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    with SessionLocal() as db:
+        job=db.get(SyncJob,job_id)
+        if not job:raise HTTPException(404,"Job not found")
+        if job.job_state!="QUEUED" or not job.celery_task_id:raise HTTPException(409,"Only queued jobs can be cancelled")
+        from .celery_app import celery_app
+        celery_app.control.revoke(job.celery_task_id,terminate=False)
+        try:
+            from .tasks import redis_client
+            redis_client().delete(f"source-sync-enqueued:{job.source_id}")
+        except Exception:pass
+        job.job_state="CANCELLED";job.status="CANCELLED";job.finished_at=utcnow();db.commit()
+        return {"ok":True,"status":job.job_state}
+
+@app.post("/api/admin/jobs/{job_id}/retry")
+def retry_failed_job(job_id:int,x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    with SessionLocal() as db:
+        job=db.get(SyncJob,job_id)
+        if not job:raise HTTPException(404,"Job not found")
+        if job.job_state not in ("FAILED","ABANDONED","COMPLETED_WITH_WARNINGS"):raise HTTPException(409,"Job is not retryable")
+        source=db.get(Source,job.source_id)
+        if not source:raise HTTPException(404,"Source not found")
+        source_key=source.source_key
+    from .tasks import enqueue_source
+    return enqueue_source(source_key,"retry",request_context.get().get("correlation_id"))
+
+@app.get("/api/admin/alerts")
+def alerts(x_admin_token:str|None=Header(default=None),status_filter:str=Query("OPEN",alias="status")):
+    admin_auth(x_admin_token)
+    with SessionLocal() as db:
+        return [{"id":a.id,"type":a.event_type,"severity":a.severity,"source_id":a.source_id,"payload":a.payload,"status":a.status,"created_at":dt(a.created_at),"acknowledged_by":a.acknowledged_by,"resolved_at":dt(a.resolved_at)} for a in db.scalars(select(AlertEvent).where(AlertEvent.status==status_filter).order_by(AlertEvent.created_at.desc()).limit(200)).all()]
+
+@app.post("/api/admin/alerts/{alert_id}/{action}")
+def update_alert(alert_id:int,action:str,x_admin_token:str|None=Header(default=None)):
+    identity=admin_auth(x_admin_token)
+    if action not in ("acknowledge","resolve"):raise HTTPException(400,"Unsupported action")
+    with SessionLocal() as db:
+        row=db.get(AlertEvent,alert_id)
+        if not row:raise HTTPException(404,"Alert not found")
+        now=utcnow()
+        if action=="acknowledge":row.status="ACKNOWLEDGED";row.acknowledged_at=now;row.acknowledged_by=(identity or {}).get("id")
+        else:row.status="RESOLVED";row.resolved_at=now
+        db.commit();return {"ok":True,"status":row.status}
+
+@app.get("/api/dashboard")
+def dashboard():
+    with SessionLocal() as db:
+        total=db.scalar(select(func.count(Opportunity.id)).where(Opportunity.merged_into_id.is_(None))) or 0
+        active=db.scalar(select(func.count(Opportunity.id)).where(Opportunity.merged_into_id.is_(None),Opportunity.status.in_(ACTIVE_STATUSES))) or 0
+        recent=db.scalar(select(func.count(Opportunity.id)).where(Opportunity.merged_into_id.is_(None),Opportunity.first_seen_at>=datetime.now(timezone.utc).replace(hour=0,minute=0,second=0,microsecond=0))) or 0
+        source_count=db.scalar(select(func.count(Source.id)).where(Source.enabled==True)) or 0
+        pending=db.scalar(select(func.count(DuplicateCandidate.id)).where(DuplicateCandidate.status=="PENDING")) or 0
+        source_listings=db.scalar(select(func.count(SourceOpportunity.id))) or 0
+        multi_source_ids=select(SourceOpportunity.master_opportunity_id).where(SourceOpportunity.master_opportunity_id.is_not(None)).group_by(SourceOpportunity.master_opportunity_id).having(func.count(func.distinct(SourceOpportunity.source_id))>1).subquery()
+        multi_source=db.scalar(select(func.count()).select_from(multi_source_ids)) or 0
+        pending_locations=db.scalar(select(func.count(LocationReview.id)).where(LocationReview.status=="PENDING")) or 0
+        jobs=db.scalars(select(SyncJob).order_by(SyncJob.started_at.desc()).limit(5)).all()
+        return {"total":total,"unique_master_opportunities":total,"source_listings_collected":source_listings,"multi_source_opportunities":multi_source,"active":active,"new_today":recent,"enabled_sources":source_count,"pending_duplicates":pending,"pending_location_reviews":pending_locations,
+            "sectors":group_counts("sector",db.execute(select(Opportunity.sector,func.count()).where(Opportunity.merged_into_id.is_(None)).group_by(Opportunity.sector)).all())[:8],
+            "recent_jobs":[job_json(j) for j in jobs]}
+
+@app.get("/api/data-dashboard")
+def data_dashboard(period:str="all",status:str="",sector:str="",activity:str="",sub_activity:str="",source:str="",owner:str="",location:str="",opportunity_type:str="",investment_model:str="",asset_facility_type:str="",subsector:str="",lifecycle:str=""):
+    """Return SQL-aggregated executive analytics over non-merged Master Opportunities."""
+    now=datetime.now(timezone.utc)
+    period_start=_period_start(period)
+    location_value=func.coalesce(func.nullif(Opportunity.district,""),func.nullif(Opportunity.city,""),"غير محدد")
+    conditions=[Opportunity.merged_into_id.is_(None)]
+    if period_start: conditions.append(Opportunity.first_seen_at>=period_start)
+    today=local_today()
+    today_iso=today.isoformat()
+    with SessionLocal() as db:
+        conditions.extend(_opportunity_filter_conditions(db,sector=sector,activity=activity,sub_activity=sub_activity,status=status,owner=owner,source=source,location=location,opportunity_type=opportunity_type,investment_model=investment_model,asset_facility_type=asset_facility_type,subsector=subsector,lifecycle=lifecycle)[1:])
+        master_ids=select(Opportunity.id).where(*conditions)
+        global_total=db.scalar(select(func.count(Opportunity.id)).where(Opportunity.merged_into_id.is_(None))) or 0
+        total=db.scalar(select(func.count(Opportunity.id)).where(*conditions)) or 0
+        active=db.scalar(select(func.count(Opportunity.id)).where(*conditions,Opportunity.status.in_(ACTIVE_STATUSES))) or 0
+        historical=db.scalar(select(func.count(Opportunity.id)).where(*conditions,Opportunity.status.in_(HISTORICAL_STATUSES))) or 0
+        recent_start=now-timedelta(days=30)
+        new_30d=db.scalar(select(func.count(Opportunity.id)).where(*conditions,Opportunity.first_seen_at>=recent_start)) or 0
+        source_count=db.scalar(select(func.count(func.distinct(SourceOpportunity.source_id))).join(Source,Source.id==SourceOpportunity.source_id).where(SourceOpportunity.master_opportunity_id.in_(master_ids))) or 0
+        multis=select(SourceOpportunity.master_opportunity_id.label("master_id")).where(SourceOpportunity.master_opportunity_id.in_(master_ids)).group_by(SourceOpportunity.master_opportunity_id).having(func.count(func.distinct(SourceOpportunity.source_id))>1).subquery()
+        multi_count=db.scalar(select(func.count()).select_from(multis)) or 0
+        master_subquery=master_ids.subquery()
+        by_sector=group_counts("sector",db.execute(select(Opportunity.sector,func.count(Opportunity.id)).where(Opportunity.id.in_(select(master_subquery.c.id))).group_by(Opportunity.sector)).all())
+        by_status=group_counts("status",db.execute(select(Opportunity.status,func.count(Opportunity.id)).where(Opportunity.id.in_(select(master_subquery.c.id))).group_by(Opportunity.status)).all())
+        by_activity=group_counts("activity",db.execute(select(Opportunity.activity,func.count(Opportunity.id)).where(Opportunity.id.in_(select(master_subquery.c.id))).group_by(Opportunity.activity)).all())
+        by_sub_activity=group_counts("sub_activity",db.execute(select(Opportunity.sub_activity,func.count(Opportunity.id)).where(Opportunity.id.in_(select(master_subquery.c.id))).group_by(Opportunity.sub_activity)).all())
+        by_type=group_counts("opportunity_type",db.execute(select(Opportunity.opportunity_type,func.count(Opportunity.id)).where(Opportunity.id.in_(select(master_subquery.c.id))).group_by(Opportunity.opportunity_type)).all())
+        by_investment_model=group_counts("investment_model",db.execute(select(Opportunity.investment_model,func.count(Opportunity.id)).where(Opportunity.id.in_(select(master_subquery.c.id))).group_by(Opportunity.investment_model)).all())
+        model_known=db.scalar(select(func.count(Opportunity.id)).where(Opportunity.id.in_(select(master_subquery.c.id)),Opportunity.investment_model.is_not(None),Opportunity.investment_model!="")) or 0
+        model_review=db.scalar(select(func.count(func.distinct(OpportunityConflict.opportunity_id))).where(OpportunityConflict.field_name=="investment_model",OpportunityConflict.status=="OPEN",OpportunityConflict.opportunity_id.in_(select(master_subquery.c.id)))) or 0
+        investment_model_coverage={"total":int(total),"canonical":int(model_known),"unspecified":int(total-model_known),"review":int(model_review),"canonical_percent":round(model_known*100/total,1) if total else 0}
+        source_count_rows=db.execute(
+            select(Source.source_key,Source.source_name_ar,func.count(func.distinct(SourceOpportunity.master_opportunity_id)))
+            .select_from(Source)
+            .outerjoin(SourceOpportunity,and_(SourceOpportunity.source_id==Source.id,SourceOpportunity.master_opportunity_id.in_(select(master_subquery.c.id))))
+            .where(Source.enabled.is_(True)).group_by(Source.source_key,Source.source_name_ar,Source.priority)
+            .order_by(func.count(func.distinct(SourceOpportunity.master_opportunity_id)).desc(),Source.priority)
+        ).all()
+        by_source=[{"key":key,"name":name,"count":int(count or 0),"share_percent":round((int(count or 0)*100/total),1) if total else 0} for key,name,count in source_count_rows]
+        by_owner=group_counts("owner",db.execute(select(Opportunity.opportunity_owner,func.count(Opportunity.id)).where(Opportunity.id.in_(select(master_subquery.c.id))).group_by(Opportunity.opportunity_owner)).all())[:10]
+        confirmed_geo_ids=_confirmed_location_master_ids(db)
+        by_location=group_counts("location",db.execute(select(location_value,func.count(Opportunity.id)).where(Opportunity.id.in_(select(master_subquery.c.id)),Opportunity.id.in_(confirmed_geo_ids or [-1])).group_by(location_value)).all())[:12]
+        dialect=engine.dialect.name
+        month_expr=func.to_char(Opportunity.first_seen_at,"YYYY-MM") if dialect=="postgresql" else func.strftime("%Y-%m",Opportunity.first_seen_at)
+        timeline_start=period_start or now-timedelta(days=365)
+        timeline_conditions=[*conditions,Opportunity.first_seen_at>=timeline_start]
+        timeline=[]
+        for month,count in db.execute(select(month_expr,func.count(Opportunity.id)).where(*timeline_conditions).group_by(month_expr).order_by(month_expr)).all():
+            if not month: continue
+            year,month_number=map(int,month.split("-"))
+            next_month=date(year+(month_number==12),1 if month_number==12 else month_number+1,1)
+            timeline.append({"month":month,"start_date":f"{month}-01","end_date":(next_month-timedelta(days=1)).isoformat(),"count":int(count)})
+        deadline_rows=db.execute(select(Opportunity.id,Opportunity.title_ar,Opportunity.opportunity_owner,Opportunity.submission_deadline,Opportunity.primary_publication_platform).where(*conditions,Opportunity.submission_deadline.is_not(None),Opportunity.submission_deadline.like("____-__-__"),Opportunity.submission_deadline>=today_iso,~Opportunity.status.in_(HISTORICAL_STATUSES)).order_by(Opportunity.submission_deadline,Opportunity.id).limit(8)).all()
+        deadlines=[]
+        for opportunity_id,title,organization,deadline,source_name in deadline_rows:
+            try: days=(date.fromisoformat(deadline)-today).days
+            except (TypeError,ValueError): continue
+            deadlines.append({"id":opportunity_id,"title":title,"owner":organization,"deadline":deadline,"days_remaining":days,"source":source_name})
+        deadline_base=[*conditions,Opportunity.submission_deadline.is_not(None),Opportunity.submission_deadline.like("____-__-__"),Opportunity.submission_deadline>=today_iso,~Opportunity.status.in_(HISTORICAL_STATUSES)]
+        deadline_30d=db.scalar(select(func.count(Opportunity.id)).where(*deadline_base,Opportunity.submission_deadline<=(today+timedelta(days=30)).isoformat())) or 0
+        deadline_buckets=[]
+        for key,label,lower,upper in [("7d","خلال 7 أيام",0,7),("8_14d","8–14 يومًا",8,14),("15_30d","15–30 يومًا",15,30),("over_30d","أكثر من 30 يومًا",31,None)]:
+            bucket_conditions=[*deadline_base,Opportunity.submission_deadline<= (today+timedelta(days=upper)).isoformat()] if upper is not None else [*deadline_base]
+            if lower: bucket_conditions.append(Opportunity.submission_deadline>=(today+timedelta(days=lower)).isoformat())
+            deadline_buckets.append({"key":key,"label":label,"count":db.scalar(select(func.count(Opportunity.id)).where(*bucket_conditions)) or 0})
+        deadline_trend_counts={}
+        trend_rows=db.scalars(select(Opportunity.submission_deadline).where(*deadline_base).order_by(Opportunity.submission_deadline)).all()
+        for raw_deadline in trend_rows:
+            try: parsed_deadline=date.fromisoformat(raw_deadline)
+            except (TypeError,ValueError): continue
+            month=parsed_deadline.strftime("%Y-%m")
+            deadline_trend_counts[month]=deadline_trend_counts.get(month,0)+1
+        deadline_trend=[]
+        for month,count in sorted(deadline_trend_counts.items()):
+            year,month_number=map(int,month.split("-"))
+            next_month=date(year+(month_number==12),1 if month_number==12 else month_number+1,1)
+            deadline_trend.append({"month":month,"start_date":f"{month}-01","end_date":(next_month-timedelta(days=1)).isoformat(),"count":count})
+        completeness_fields={
+            "owner":and_(Opportunity.opportunity_owner.is_not(None),Opportunity.opportunity_owner!=""),
+            "sector":and_(Opportunity.sector.is_not(None),Opportunity.sector!=""),
+            "location":or_(and_(Opportunity.location_description.is_not(None),Opportunity.location_description!=""),and_(Opportunity.district.is_not(None),Opportunity.district!="")),
+            "deadline":and_(Opportunity.submission_deadline.is_not(None),Opportunity.submission_deadline!=""),
+            "reference":and_(Opportunity.reference_number.is_not(None),Opportunity.reference_number!=""),
+            "area":Opportunity.land_area_sqm.is_not(None),
+        }
+        complete_counts={key:db.scalar(select(func.sum(case((condition,1),else_=0))).where(*conditions)) or 0 for key,condition in completeness_fields.items()}
+        completeness=[{"key":key,"label":label,"count":int(complete_counts[key]),"total":int(total),"percent":round((complete_counts[key]/total)*100,1) if total else 0} for key,label in [("owner","الجهة المالكة"),("sector","القطاع"),("location","تفاصيل الموقع"),("deadline","الموعد النهائي"),("reference","الرقم المرجعي"),("area","المساحة")]]
+        area_totals={}
+        for raw,area,count in db.execute(select(Opportunity.sector,func.sum(Opportunity.land_area_sqm),func.count(Opportunity.id)).where(Opportunity.id.in_(select(master_subquery.c.id)),Opportunity.land_area_sqm.is_not(None)).group_by(Opportunity.sector)).all():
+            label=canonical_value("sector",raw);aggregate=area_totals.setdefault(label,{"name":label,"area_sqm":0.0,"count":0})
+            aggregate["area_sqm"]+=float(area or 0);aggregate["count"]+=int(count)
+        area_by_sector=sorted(({**row,"area_sqm":round(row["area_sqm"],2)} for row in area_totals.values()),key=lambda row:(-row["area_sqm"],comparison_key(row["name"])))[:8]
+        source_health=[{"status":key or "UNKNOWN","count":int(count)} for key,count in db.execute(select(Source.technical_health,func.count(Source.id)).where(Source.enabled.is_(True)).group_by(Source.technical_health).order_by(func.count(Source.id).desc())).all()]
+        source_coverage=[{"status":key or "UNKNOWN_COVERAGE","count":int(count)} for key,count in db.execute(select(Source.coverage_status,func.count(Source.id)).where(Source.enabled.is_(True)).group_by(Source.coverage_status).order_by(func.count(Source.id).desc())).all()]
+        source_rows=db.execute(select(Source.source_key,Source.source_name_ar,Source.technical_health,Source.coverage_status,Source.last_successful_sync).where(Source.enabled.is_(True)).order_by(Source.priority,Source.source_name_ar)).all()
+        source_list=[{"key":key,"name":name,"health":health,"coverage":coverage,"last_successful_sync":last.isoformat() if last else None} for key,name,health,coverage,last in source_rows]
+        pending_duplicates=db.scalar(select(func.count(DuplicateCandidate.id)).where(DuplicateCandidate.status=="PENDING")) or 0
+        pending_locations=db.scalar(select(func.count(LocationReview.id)).where(LocationReview.status=="PENDING")) or 0
+        open_taxonomy=db.scalar(select(func.count(OpportunityConflict.id)).where(OpportunityConflict.status=="OPEN",OpportunityConflict.conflict_type=="TAXONOMY_CONFLICT")) or 0
+        open_fields=db.scalar(select(func.count(OpportunityConflict.id)).where(OpportunityConflict.status=="OPEN",OpportunityConflict.conflict_type=="FIELD_VALUE_CONFLICT")) or 0
+        multi_examples=db.execute(
+            select(Opportunity.id,Opportunity.title_ar,Opportunity.opportunity_owner)
+            .where(Opportunity.id.in_(select(multis.c.master_id)))
+            .order_by(Opportunity.last_updated_at.desc())
+            .limit(4)
+        ).all()
+        recent_opportunities=db.execute(
+            select(Opportunity.id,Opportunity.title_ar,Opportunity.opportunity_owner,Opportunity.sector,Opportunity.status,Opportunity.submission_deadline)
+            .where(*conditions).order_by(Opportunity.last_updated_at.desc(),Opportunity.id.desc()).limit(8)
+        ).all()
+        last_update=db.scalar(select(func.max(Source.last_successful_sync)))
+        sectors,_,sector_ids=_canonical_option_data(db,Opportunity.sector,"sector")
+        statuses,_,status_ids=_canonical_option_data(db,Opportunity.status,"status")
+        owners,_,owner_ids=_canonical_option_data(db,Opportunity.opportunity_owner,"owner")
+        locations,location_counts,location_ids,location_hierarchy=_location_option_data(db)
+        types,_,type_ids=_canonical_option_data(db,Opportunity.opportunity_type,"opportunity_type")
+        activities,_,activity_ids=_canonical_option_data(db,Opportunity.activity,"activity")
+        sub_activities,_,sub_activity_ids=_canonical_option_data(db,Opportunity.sub_activity,"sub_activity")
+        investment_models,_,investment_model_ids=_canonical_option_data(db,Opportunity.investment_model,"investment_model")
+        asset_facility_types,_,asset_facility_type_ids=_asset_facility_type_options(db)
+        subsectors,_,subsector_ids=_canonical_option_data(db,Opportunity.subsector,"subsector")
+        sources=[{"key":key,"name":name} for key,name in db.execute(select(Source.source_key,Source.source_name_ar).order_by(Source.priority)).all()]
+        options={"sectors":sectors,"statuses":statuses,"sources":sources,"owners":owners,"locations":locations,"location_hierarchy":location_hierarchy,"types":types,"activities":activities,"sub_activities":sub_activities,"investment_models":investment_models,"asset_facility_types":asset_facility_types,"subsectors":subsectors}
+        option_ids={"sectors":sector_ids,"statuses":status_ids,"owners":owner_ids,"locations":location_ids,"types":type_ids,"activities":activity_ids,"sub_activities":sub_activity_ids,"investment_models":investment_model_ids,"asset_facility_types":asset_facility_type_ids,"subsectors":subsector_ids,"sources":{source["name"]:source["key"] for source in sources}}
+        return {"generated_at":now.isoformat(),"as_of_date":today_iso,"global_total":int(global_total),"filters":{"period":period,"status":status,"sector":sector,"activity":activity,"sub_activity":sub_activity,"source":source,"owner":owner,"location":location,"opportunity_type":opportunity_type,"investment_model":investment_model,"asset_facility_type":asset_facility_type,"subsector":subsector,"lifecycle":lifecycle},"options":options,"option_ids":option_ids,
+            "kpis":{"total":total,"active":active,"new_30d":new_30d,"historical":historical,"sources":source_count,"enabled_sources":len(source_list),"deadline_30d":int(deadline_30d),"multi_source":multi_count,"multi_source_percent":round(multi_count*100/total,1) if total else 0},
+            "by_sector":by_sector,"by_status":by_status,"by_activity":by_activity,"by_sub_activity":by_sub_activity,"by_type":by_type,"by_investment_model":by_investment_model,"investment_model_coverage":investment_model_coverage,"by_source":by_source,"by_owner":by_owner,"by_location":by_location,"timeline":timeline,"deadlines":deadlines,"deadline_buckets":deadline_buckets,"deadline_trend":deadline_trend,
+            "multi_source_examples":[{"id":item[0],"title":item[1],"owner":item[2]} for item in multi_examples],"recent_opportunities":[{"id":row[0],"title":row[1],"owner":row[2],"sector":canonical_value("sector",row[3]),"status":canonical_value("status",row[4]),"deadline":row[5]} for row in recent_opportunities],"source_health":source_health,"source_coverage":source_coverage,"sources":source_list,
+            "data_quality":{"pending_duplicates":pending_duplicates,"pending_locations":pending_locations,"open_taxonomy_conflicts":open_taxonomy,"open_field_conflicts":open_fields},
+            "completeness":completeness,"area_by_sector":area_by_sector,"latest_source_update":last_update.isoformat() if last_update else None}
+
+@app.get("/api/opportunities")
+def opportunities(q:str="",sector:str="",sector_values:str="",activity:str="",sub_activity:str="",status:str="",source:str="",owner:str="",location:str="",opportunity_type:str="",investment_model:str="",asset_facility_type:str="",subsector:str="",lifecycle:str="",period:str="all",created_after:str="",created_before:str="",deadline_after:str="",deadline_before:str="",map_ids:str="",limit:int=Query(50,ge=1,le=500),offset:int=Query(0,ge=0)):
+    with SessionLocal() as db:
+        query=select(Opportunity).where(Opportunity.merged_into_id.is_(None)).options(selectinload(Opportunity.source_records).selectinload(SourceOpportunity.source),selectinload(Opportunity.asset_facility_type_assignments).selectinload(OpportunityAssetFacilityType.asset_type))
+        count_query=select(func.count(func.distinct(Opportunity.id))).select_from(Opportunity).where(Opportunity.merged_into_id.is_(None))
+        filters=_opportunity_filter_conditions(db,sector=sector,activity=activity,sub_activity=sub_activity,status=status,owner=owner,source=source,location=location,opportunity_type=opportunity_type,investment_model=investment_model,asset_facility_type=asset_facility_type,subsector=subsector,lifecycle=lifecycle)
+        if sector_values: filters.append(_sector_values_filter_condition(db,sector_values))
+        period_start=_period_start(period)
+        if period_start: filters.append(Opportunity.first_seen_at>=period_start)
+        if map_ids:
+            try: selected_map_ids=sorted({int(value) for value in map_ids.split(",") if value.strip()})
+            except ValueError: raise HTTPException(422,"معرّفات الخريطة غير صالحة")
+            if not selected_map_ids: raise HTTPException(422,"معرّفات الخريطة غير صالحة")
+            filters.append(Opportunity.id.in_(selected_map_ids))
+        for condition in filters[1:]: query=query.where(condition);count_query=count_query.where(condition)
+        if q:
+            like=f"%{q}%"
+            search_filter=or_(Opportunity.title_ar.ilike(like),Opportunity.reference_number.ilike(like),Opportunity.location_description.ilike(like),Opportunity.opportunity_owner.ilike(like))
+            query=query.where(search_filter);count_query=count_query.where(search_filter)
+        if created_after:
+            try: boundary=datetime.fromisoformat(created_after).replace(tzinfo=timezone.utc)
+            except ValueError: raise HTTPException(422,"تاريخ البداية غير صالح")
+            query=query.where(Opportunity.first_seen_at>=boundary);count_query=count_query.where(Opportunity.first_seen_at>=boundary)
+        if created_before:
+            try: boundary=datetime.fromisoformat(created_before).replace(tzinfo=timezone.utc)+timedelta(days=1)
+            except ValueError: raise HTTPException(422,"تاريخ النهاية غير صالح")
+            query=query.where(Opportunity.first_seen_at<boundary);count_query=count_query.where(Opportunity.first_seen_at<boundary)
+        if deadline_after:
+            query=query.where(Opportunity.submission_deadline>=deadline_after);count_query=count_query.where(Opportunity.submission_deadline>=deadline_after)
+        if deadline_before:
+            query=query.where(Opportunity.submission_deadline<=deadline_before);count_query=count_query.where(Opportunity.submission_deadline<=deadline_before)
+        rows=db.scalars(query.order_by(Opportunity.last_updated_at.desc()).limit(limit).offset(offset)).unique().all()
+        count=db.scalar(count_query) or 0
+        row_ids=[row.id for row in rows]
+        pending=_pending_location_reviews_by_master(db,row_ids)
+        source_locations=_source_location_values_by_master(db,row_ids)
+        return {"items":[opp_json(row,_opportunity_geography(db,row,pending,source_locations)) for row in rows],"total":count,"limit":limit,"offset":offset}
+
+@app.get("/api/data-dashboard/geography")
+def data_dashboard_geography(period:str="all",status:str="",sector:str="",activity:str="",sub_activity:str="",source:str="",owner:str="",location:str="",opportunity_type:str="",investment_model:str="",asset_facility_type:str="",subsector:str="",lifecycle:str=""):
+    """Map only Furas master points whose stored coordinates match raw source geometry."""
+    period_start=_period_start(period)
+    geometry=_alahsa_boundary_geometry()
+    with SessionLocal() as db:
+        conditions=_opportunity_filter_conditions(db,sector=sector,activity=activity,sub_activity=sub_activity,status=status,owner=owner,source=source,location=location,opportunity_type=opportunity_type,investment_model=investment_model,asset_facility_type=asset_facility_type,subsector=subsector,lifecycle=lifecycle)
+        if period_start: conditions.append(Opportunity.first_seen_at>=period_start)
+        masters=db.scalars(select(Opportunity).where(*conditions).order_by(Opportunity.id)).all()
+        total=len(masters)
+        by_id={item.id:item for item in masters}
+        coordinate_count=sum(1 for item in masters if item.latitude is not None and item.longitude is not None)
+        missing_count=total-coordinate_count
+        furas_rows=db.execute(
+            select(SourceOpportunity.master_opportunity_id,SourceOpportunity.raw_data_json)
+            .join(Source,Source.id==SourceOpportunity.source_id)
+            .where(Source.source_key=="furas",SourceOpportunity.master_opportunity_id.in_(by_id or [-1]))
+        ).all()
+        source_geometry={}
+        for master_id,raw in furas_rows:
+            raw=raw or {}; point=raw.get("geometry") or {}
+            try: x=float(point["x"]); y=float(point["y"])
+            except (KeyError,TypeError,ValueError): continue
+            item=by_id.get(master_id)
+            if item and item.latitude is not None and item.longitude is not None and abs(item.longitude-x)<1e-8 and abs(item.latitude-y)<1e-8:
+                source_geometry[master_id]=(x,y)
+        boundary_excluded=0
+        unverified=coordinate_count-len(source_geometry)
+        grouped={}
+        for master_id,(longitude,latitude) in source_geometry.items():
+            if not (-180<=longitude<=180 and -90<=latitude<=90):
+                unverified+=1;continue
+            if not _geojson_contains(geometry,longitude,latitude):
+                boundary_excluded+=1;continue
+            key=(round(latitude,7),round(longitude,7))
+            bucket=grouped.setdefault(key,[])
+            bucket.append(by_id[master_id])
+        points=[]
+        for (latitude,longitude),items in grouped.items():
+            points.append({
+                "latitude":latitude,"longitude":longitude,"count":len(items),
+                "active_count":sum(1 for item in items if item.status in ACTIVE_STATUSES),
+                "ids":[item.id for item in items],
+                "title":items[0].title_ar if len(items)==1 else f"{len(items)} فرص في الموقع نفسه",
+                "location":canonical_value("location",items[0].district or items[0].city),
+                "sector":canonical_value("sector",items[0].sector),
+            })
+        mapped_count=sum(len(point["ids"]) for point in points)
+        return {"boundary":{"name":"محافظة الأحساء","source":"geoBoundaries / OpenStreetMap","license":"CC BY-SA 2.0"},
+            "counts":{"total":total,"coordinate_records":coordinate_count,"exact_mapped":mapped_count,"locality_mapped":0,"missing_coordinates":missing_count,"outside_boundary":boundary_excluded,"unverified_coordinates":unverified,"unmapped":total-mapped_count},
+            "points":points,"coordinate_precision":"مصدرية مباشرة WGS84؛ تطابق هندسة سجل Furas الخام، 7 منازل عشرية في العرض"}
+
+@app.get("/api/opportunities/{opportunity_id}")
+def opportunity_detail(opportunity_id:int):
+    with SessionLocal() as db:
+        item=db.scalar(select(Opportunity).where(Opportunity.id==opportunity_id).options(selectinload(Opportunity.source_records).selectinload(SourceOpportunity.source)))
+        if not item: raise HTTPException(404,"الفرصة غير موجودة")
+        changes=db.scalars(select(ChangeHistory).where(ChangeHistory.opportunity_id==item.id).order_by(ChangeHistory.detected_at.desc())).all()
+        data=opp_json(item,_opportunity_geography(db,item))
+        data["changes"]=[{
+            "field": "نوع الفرصة" if c.changed_field == "opportunity_type" else "نموذج الاستثمار" if c.changed_field == "investment_model" else c.changed_field,
+            "before": ("قيمة غير معتمدة" if c.previous_value is not None else OPPORTUNITY_TYPE_UNSPECIFIED_LABEL)
+                if c.changed_field == "opportunity_type" else canonical_value("investment_model", c.previous_value) if c.changed_field in {"investment_model", "investment_model_source_projection"} else _business_history_value(c.previous_value),
+            "after": ("قيمة غير معتمدة" if c.new_value is not None else OPPORTUNITY_TYPE_UNSPECIFIED_LABEL)
+                if c.changed_field == "opportunity_type" else canonical_value("investment_model", c.new_value) if c.changed_field in {"investment_model", "investment_model_source_projection"} else _business_history_value(c.new_value),
+            "date": dt(c.detected_at),
+        } for c in changes if c.changed_field != "investment_model_source_projection"]
+        return data
+
+@app.get("/api/sources")
+def sources():
+    with SessionLocal() as db:
+        multi_source_ids=select(SourceOpportunity.master_opportunity_id).where(SourceOpportunity.master_opportunity_id.is_not(None)).group_by(SourceOpportunity.master_opportunity_id).having(func.count(func.distinct(SourceOpportunity.source_id))>1).subquery()
+        return [source_json(s,db.scalar(select(func.count(SourceOpportunity.id)).where(SourceOpportunity.source_id==s.id)),db.scalar(select(SyncJob).where(SyncJob.source_id==s.id).order_by(SyncJob.started_at.desc()).limit(1)),db.scalar(select(func.count(func.distinct(SourceOpportunity.master_opportunity_id))).where(SourceOpportunity.source_id==s.id,SourceOpportunity.master_opportunity_id.in_(select(multi_source_ids.c.master_opportunity_id)))) or 0) for s in db.scalars(select(Source).order_by(Source.priority)).all()]
+
+@app.get("/api/source-limitations")
+def source_limitations():
+    with SessionLocal() as db:
+        rows=db.scalars(select(SourceLimitation).order_by(SourceLimitation.source_id,SourceLimitation.limitation_type)).all()
+        return [{"source_id":r.source_id,"source_key":db.get(Source,r.source_id).source_key,"type":r.limitation_type,"description":r.description,
+            "evidence_url":r.evidence_url,"first_detected_at":dt(r.first_detected_at),"last_verified_at":dt(r.last_verified_at),
+            "affects_completeness":r.affects_completeness,"resolution":r.resolution} for r in rows]
+
+@app.get("/api/modon-locations")
+def modon_locations():
+    with SessionLocal() as db:
+        return [{"official_name_ar":r.official_name_ar,"official_name_en":r.official_name_en,"location_type":r.location_type,
+            "source_identifier":r.source_identifier,"region":r.region,"governorate":r.governorate,"latitude":r.latitude,
+            "longitude":r.longitude,"active":r.active,"source_url":r.source_url,"verified_at":dt(r.verified_at)}
+            for r in db.scalars(select(ModonLocation).order_by(ModonLocation.official_name_en)).all()]
+
+@app.get("/api/ncp-project-events")
+def ncp_project_events():
+    with SessionLocal() as db:
+        rows=db.scalars(select(NcpProjectEvent).order_by(NcpProjectEvent.event_date,NcpProjectEvent.id)).all()
+        return [{"project_source_opportunity_id":r.project_source_opportunity_id,"event_type":r.event_type,"event_date":r.event_date,
+            "source_url":r.source_url,"stage_before":r.stage_before,"stage_after":r.stage_after,"raw_title":r.raw_title,"raw_data":r.raw_data} for r in rows]
+
+@app.post("/api/admin/sources/{source_key}/sync")
+async def trigger_sync(source_key:str,x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    if os.getenv("ENVIRONMENT",os.getenv("ENV","development")).lower() in ("production","staging"):
+        with SessionLocal() as db:
+            maintenance=db.scalar(select(SystemSetting).where(SystemSetting.key=="maintenance_mode"))
+            if maintenance and maintenance.value.lower()=="true":raise HTTPException(503,"Source writes are paused for maintenance")
+        from .tasks import enqueue_source
+        return enqueue_source(source_key,"manual",request_context.get().get("correlation_id"))
+    return await sync_source(source_key)
+
+@app.patch("/api/admin/sources/{source_key}")
+def update_source(source_key:str,enabled:bool|None=None,interval_minutes:int|None=Query(None,ge=15,le=10080),confirm:bool=Query(False),x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    with SessionLocal() as db:
+        source=db.scalar(select(Source).where(Source.source_key==source_key))
+        if not source: raise HTTPException(404,"المصدر غير موجود")
+        if enabled is not None and enabled!=source.enabled and not confirm:raise HTTPException(409,"Explicit confirmation is required to enable or disable a source")
+        if interval_minutes is not None and not (max(15,source.polling_frequency_minutes)//4 <= interval_minutes <= max(15,source.polling_frequency_minutes)*4) and not confirm:raise HTTPException(409,"Explicit confirmation is required for a large schedule change")
+        if enabled is not None: source.enabled=enabled
+        if interval_minutes is not None: source.polling_frequency_minutes=interval_minutes
+        db.commit(); return source_json(source,db.scalar(select(func.count(SourceOpportunity.id)).where(SourceOpportunity.source_id==source.id)),db.scalar(select(SyncJob).where(SyncJob.source_id==source.id).order_by(SyncJob.started_at.desc()).limit(1)))
+
+@app.get("/api/admin/jobs")
+def jobs(x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    with SessionLocal() as db:
+        rows=db.scalars(select(SyncJob).order_by(SyncJob.started_at.desc()).limit(100)).all()
+        return [job_json(row) for row in rows]
+
+@app.get("/api/admin/errors")
+def errors(x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    with SessionLocal() as db:
+        return [{"id":e.id,"source_id":e.source_id,"date":dt(e.occurred_at),"category":e.category,"message":e.message} for e in db.scalars(select(SourceError).order_by(SourceError.occurred_at.desc()).limit(100)).all()]
+
+@app.get("/api/admin/validation-report")
+def validation_report(x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    with SessionLocal() as db:
+        masters=Opportunity.merged_into_id.is_(None)
+        multi_source_ids=select(SourceOpportunity.master_opportunity_id).where(SourceOpportunity.master_opportunity_id.is_not(None)).group_by(SourceOpportunity.master_opportunity_id).having(func.count(func.distinct(SourceOpportunity.source_id))>1).subquery()
+        today=local_today().isoformat()
+        return {"generated_at":datetime.now(timezone.utc).isoformat(),"metrics":{
+            "total_master_opportunities":db.scalar(select(func.count(Opportunity.id)).where(masters)) or 0,
+            "total_source_records":db.scalar(select(func.count(SourceOpportunity.id))) or 0,
+            "masters_with_multiple_sources":db.scalar(select(func.count()).select_from(multi_source_ids)) or 0,
+            "duplicate_candidates_pending":db.scalar(select(func.count(DuplicateCandidate.id)).where(DuplicateCandidate.status=="PENDING")) or 0,
+            "location_reviews_pending":db.scalar(select(func.count(LocationReview.id)).where(LocationReview.status=="PENDING")) or 0,
+            "qualification_reviews_pending":db.scalar(select(func.count(QualificationReview.id)).where(QualificationReview.status=="PENDING")) or 0,
+            "opportunity_locations":db.scalar(select(func.count(OpportunityLocation.id))) or 0,
+            "missing_reference_number":db.scalar(select(func.count(Opportunity.id)).where(masters,or_(Opportunity.reference_number.is_(None),Opportunity.reference_number==""))) or 0,
+            "missing_deadline":db.scalar(select(func.count(Opportunity.id)).where(masters,or_(Opportunity.submission_deadline.is_(None),Opportunity.submission_deadline==""))) or 0,
+            "missing_area":db.scalar(select(func.count(Opportunity.id)).where(masters,Opportunity.land_area_sqm.is_(None))) or 0,
+            "missing_owner":db.scalar(select(func.count(Opportunity.id)).where(masters,or_(Opportunity.opportunity_owner.is_(None),Opportunity.opportunity_owner==""))) or 0,
+            "low_location_confidence":db.scalar(select(func.count(Opportunity.id)).where(masters,Opportunity.location_confidence_score<LOCATION_ACCEPTANCE_THRESHOLD)) or 0,
+            "low_data_quality":db.scalar(select(func.count(Opportunity.id)).where(masters,Opportunity.data_quality_score<.60)) or 0,
+            "open_conflicts":db.scalar(select(func.count(OpportunityConflict.id)).where(OpportunityConflict.status=="OPEN")) or 0,
+            "taxonomy_conflicts":db.scalar(select(func.count(OpportunityConflict.id)).where(OpportunityConflict.status=="OPEN",OpportunityConflict.conflict_type=="TAXONOMY_CONFLICT")) or 0,
+            "field_conflicts":db.scalar(select(func.count(OpportunityConflict.id)).where(OpportunityConflict.status=="OPEN",OpportunityConflict.conflict_type=="FIELD_VALUE_CONFLICT")) or 0,
+            "taxonomy_mappings":db.scalar(select(func.count(TaxonomyMapping.id))) or 0,
+            "discovered_content_items":db.scalar(select(func.count(SourceContentItem.id))) or 0,
+            "expired_opportunities":db.scalar(select(func.count(Opportunity.id)).where(masters,Opportunity.status.in_(["منتهية","منتهي","expired","EXPIRED"]))) or 0,
+            "cancelled_opportunities":db.scalar(select(func.count(Opportunity.id)).where(masters,Opportunity.status.in_(["ملغاة","ملغي","CANCELLED","CANCELED"]))) or 0,
+            "possibly_removed_opportunities":db.scalar(select(func.count(Opportunity.id)).where(masters,Opportunity.status.in_(["أزيلت من المصدر","ازيلت من المصدر","REMOVED_FROM_SOURCE","DELETED_FROM_SOURCE"]))) or 0,
+            "incomplete_sources":db.scalar(select(func.count(Source.id)).where(Source.enabled.is_(True),Source.technical_health!="HEALTHY")) or 0,
+            "limited_coverage_sources":db.scalar(select(func.count(Source.id)).where(Source.enabled.is_(True),Source.coverage_status.in_(["PUBLIC_COVERAGE_LIMITED","PRIVATE_API_REQUIRED","AUTHENTICATED_SOURCE_REQUIRED","PARTIAL_OFFICIAL_COVERAGE"]))) or 0,
+            "source_errors":db.scalar(select(func.count(SourceError.id))) or 0,
+        }}
+
+@app.get("/api/admin/raw-records")
+def raw_records(x_admin_token:str|None=Header(default=None),limit:int=Query(100,ge=1,le=500)):
+    admin_auth(x_admin_token)
+    with SessionLocal() as db:
+        rows=db.scalars(select(SourceOpportunity).options(selectinload(SourceOpportunity.source)).order_by(SourceOpportunity.last_seen_at.desc()).limit(limit)).all()
+        return [{"id":r.id,"source":r.source.source_name_ar,"source_key":r.source.source_key,"title":r.source_title,"url":r.source_url,"hash":r.content_hash,"source_sector":r.source_sector,"source_activity":r.source_activity,"source_sub_activity":r.source_sub_activity,"source_subsector":r.source_subsector,"normalized_sector":r.normalized_sector,"normalized_subsector":r.normalized_subsector,"raw":r.raw_data_json,"last_seen":dt(r.last_seen_at)} for r in rows]
+
+@app.get("/api/admin/source-content")
+def source_content(source:str="ahda",x_admin_token:str|None=Header(default=None),limit:int=Query(300,ge=1,le=1000)):
+    admin_auth(x_admin_token)
+    with SessionLocal() as db:
+        source_row=db.scalar(select(Source).where(Source.source_key==source))
+        if not source_row:raise HTTPException(404,"المصدر غير موجود")
+        from .models import SourceContentItem
+        rows=db.scalars(select(SourceContentItem).where(SourceContentItem.source_id==source_row.id).order_by(SourceContentItem.extracted_at.desc()).limit(limit)).all()
+        return [{"url":r.url,"title":r.title,"publication_date":r.publication_date,"content_type":r.content_type,"description":r.extracted_description,"attachments":r.attachments_json,"keywords":r.detected_keywords_json,"fingerprint":r.fingerprint,"extracted_at":dt(r.extracted_at),"material_change":r.material_change} for r in rows]
+
+@app.get("/api/admin/duplicates")
+def duplicates(x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    with SessionLocal() as db:
+        return [{"id":d.id,"left_id":d.left_opportunity_id,"right_id":d.right_opportunity_id,"left_title":db.get(Opportunity,d.left_opportunity_id).title_ar,"right_title":db.get(Opportunity,d.right_opportunity_id).title_ar,"score":d.confidence_score,"status":d.status,"explanation":d.explanation_json or {}} for d in db.scalars(select(DuplicateCandidate).where(DuplicateCandidate.status=="PENDING")).all()]
+
+@app.get("/api/admin/location-reviews")
+def location_reviews(x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    with SessionLocal() as db:
+        rows=db.scalars(select(LocationReview).where(LocationReview.status=="PENDING").order_by(LocationReview.confidence_score.desc())).all()
+        return [{"id":r.id,"source":db.get(Source,r.source_id).source_name_ar,"title":r.title,"sector":r.sector,"location":r.source_location,"description":r.description,"latitude":r.latitude,"longitude":r.longitude,"evidence":r.evidence,"score":r.confidence_score,"reason":r.reason,"url":(db.get(SourceOpportunity,r.source_record_id).source_url if r.source_record_id else "")} for r in rows]
+
+@app.get("/api/admin/qualification-reviews")
+def qualification_reviews(x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    with SessionLocal() as db:
+        rows=db.scalars(select(QualificationReview).where(QualificationReview.status=="PENDING").order_by(QualificationReview.created_at.desc())).all()
+        return [{"id":r.id,"source":db.get(Source,r.source_id).source_name_ar,"title":r.title,"url":r.source_url,
+            "proposed_type":r.proposed_type,"reason":r.reason,"status":r.status} for r in rows]
+
+@app.post("/api/admin/location-reviews/{review_id}/{action}")
+def resolve_location_review(review_id:int,action:str,x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    if action not in ("accept","reject"):raise HTTPException(400,"الإجراء غير مدعوم")
+    with SessionLocal() as db:
+        review=db.get(LocationReview,review_id)
+        if not review:raise HTTPException(404,"طلب مراجعة الموقع غير موجود")
+        if action=="accept":
+            source=db.get(Source,review.source_id);row=db.get(SourceOpportunity,review.source_record_id) if review.source_record_id else None
+            if not row:raise HTTPException(409,"سجل المصدر غير متاح")
+            from .adapters import RawOpportunity
+            raw_json=row.raw_data_json or {};confidence=max(.85,review.confidence_score)
+            raw=RawOpportunity(external_id=row.source_opportunity_id,title=row.source_title,url=row.source_url,owner=row.source_owner,location=row.raw_location,activity=(raw_json.get("normalized_taxonomy") or {}).get("sector") or review.sector,description=raw_json.get("description") or review.description,reference=row.source_reference_number,raw={**raw_json,"location_confidence_score":confidence,"location_detection_method":"ADMIN_LOCATION_REVIEW","location_evidence":review.evidence+" | Approved by admin","qualified_location":True},location_source_filtered=True)
+            from .service import _safe_record
+            counts={"raw_count":0,"ahsa_count":0,"new_count":0,"duplicate_count":0,"update_count":0,"rejected_count":0}
+            _safe_record(db,source,raw,counts)
+        review.status="ACCEPTED" if action=="accept" else "REJECTED";db.commit();return {"ok":True,"status":review.status}
+
+@app.get("/api/admin/duplicates/merged")
+def merged_duplicates(x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    with SessionLocal() as db:
+        rows=db.scalars(select(DuplicateCandidate).where(DuplicateCandidate.status=="MERGED")).all()
+        return [{"id":d.id,"left_title":db.get(Opportunity,d.left_opportunity_id).title_ar,"right_title":db.get(Opportunity,d.right_opportunity_id).title_ar} for d in rows]
+
+@app.get("/api/admin/conflicts")
+def conflicts(x_admin_token:str|None=Header(default=None),conflict_type:str|None=None):
+    admin_auth(x_admin_token)
+    with SessionLocal() as db:
+        query=select(OpportunityConflict).where(OpportunityConflict.status=="OPEN")
+        if conflict_type: query=query.where(OpportunityConflict.conflict_type==conflict_type)
+        rows=db.scalars(query.order_by(OpportunityConflict.detected_at.desc()).limit(200)).all()
+        return [{"id":c.id,"opportunity_id":c.opportunity_id,"title":db.get(Opportunity,c.opportunity_id).title_ar,"field":c.field_name,"conflict_type":c.conflict_type,"selected":c.selected_value,"conflicting":c.conflicting_value,"source":db.get(Source,c.source_id).source_name_ar,"date":dt(c.detected_at)} for c in rows]
+
+@app.post("/api/admin/conflicts/{conflict_id}/{action}")
+def resolve_conflict(conflict_id:int,action:str,x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    if action not in ("keep","use_source"): raise HTTPException(400,"الإجراء غير مدعوم")
+    with SessionLocal() as db:
+        conflict=db.get(OpportunityConflict,conflict_id)
+        if not conflict: raise HTTPException(404,"التعارض غير موجود")
+        master=db.get(Opportunity,conflict.opportunity_id)
+        source_record=db.get(SourceOpportunity,conflict.source_record_id)
+        if action=="use_source" and master:
+            previous=getattr(master,conflict.field_name,None)
+            setattr(master,conflict.field_name,conflict.conflicting_value)
+            db.add(ChangeHistory(opportunity_id=master.id,changed_field=conflict.field_name,previous_value=str(previous or ""),new_value=conflict.conflicting_value,source_id=conflict.source_id,detected_at=datetime.now(timezone.utc)))
+            master.updated_at=datetime.now(timezone.utc);master.last_updated_at=master.updated_at
+        if master and source_record:
+            db.add(FieldProvenance(opportunity_id=master.id,field_name=conflict.field_name,selected_value=str(getattr(master,conflict.field_name)),source_id=conflict.source_id,source_record_id=source_record.id,captured_at=datetime.now(timezone.utc),confidence=.9))
+        conflict.status="RESOLVED_SOURCE" if action=="use_source" else "RESOLVED_KEEP"
+        db.commit();return {"ok":True,"status":conflict.status}
+
+@app.post("/api/admin/duplicates/{candidate_id}/{action}")
+def duplicate_action(candidate_id:int,action:str,x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    if action not in ("merge","reject","undo"): raise HTTPException(400,"الإجراء غير مدعوم")
+    with SessionLocal() as db:
+        row=db.get(DuplicateCandidate,candidate_id)
+        if not row: raise HTTPException(404,"حالة التكرار غير موجودة")
+        if action=="undo":
+            try: undo_candidate(db,row)
+            except ValueError as error: raise HTTPException(409,str(error)) from error
+        elif action=="merge":
+            try: merge_candidate(db,row)
+            except ValueError as error: raise HTTPException(409,str(error)) from error
+        else: row.status="REJECTED"
+        db.commit(); return {"ok":True,"status":row.status}
+
+@app.post("/api/admin/duplicates/{candidate_id}/undo")
+def undo_duplicate_merge(candidate_id:int,x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    with SessionLocal() as db:
+        row=db.get(DuplicateCandidate,candidate_id)
+        if not row: raise HTTPException(404,"حالة التكرار غير موجودة")
+        try: undo_candidate(db,row)
+        except ValueError as error: raise HTTPException(409,str(error)) from error
+        db.commit();return {"ok":True,"status":"UNDONE"}
+
+@app.get("/api/export.csv")
+def export_csv(q:str="",sector:str="",sector_values:str="",activity:str="",sub_activity:str="",status:str="",source:str="",owner:str="",location:str="",opportunity_type:str="",investment_model:str="",asset_facility_type:str="",subsector:str="",lifecycle:str="",period:str="all",created_after:str="",created_before:str="",deadline_after:str="",deadline_before:str="",map_ids:str=""):
+    headers=["اسم الفرصة","الجهة المالكة","القطاع","النشاط","النشاط الفرعي","القطاع الفرعي","نوع الفرصة","المدينة","الحي / الموقع","المواقع التفصيلية","مرحلة المشروع","نموذج الاستثمار","نوع الأصل أو الموقع","المساحة","القيمة الاستثمارية","مدة العقد","تاريخ النشر","آخر موعد للتقديم","الحالة","الرقم المرجعي","المصدر الرئيسي","عدد المصادر","المصادر","رابط الفرصة","الدولة","المنطقة","المحافظة","المدينة / الموقع","الحي","حالة الموقع الجغرافي"]
+    def generate():
+        with SessionLocal() as db:
+            conditions=_opportunity_filter_conditions(db,sector=sector,activity=activity,sub_activity=sub_activity,status=status,source=source,owner=owner,location=location,opportunity_type=opportunity_type,investment_model=investment_model,asset_facility_type=asset_facility_type,subsector=subsector,lifecycle=lifecycle)
+            if sector_values: conditions.append(_sector_values_filter_condition(db,sector_values))
+            if map_ids:
+                try: selected_map_ids=sorted({int(value) for value in map_ids.split(",") if value.strip()})
+                except ValueError: raise HTTPException(422,"معرّفات الخريطة غير صالحة")
+                if not selected_map_ids: raise HTTPException(422,"معرّفات الخريطة غير صالحة")
+                conditions.append(Opportunity.id.in_(selected_map_ids))
+            period_start=_period_start(period)
+            if period_start: conditions.append(Opportunity.first_seen_at>=period_start)
+            if q:
+                like=f"%{q}%"; conditions.append(or_(Opportunity.title_ar.ilike(like),Opportunity.reference_number.ilike(like),Opportunity.location_description.ilike(like),Opportunity.opportunity_owner.ilike(like)))
+            if created_after:
+                try: conditions.append(Opportunity.first_seen_at>=datetime.fromisoformat(created_after).replace(tzinfo=timezone.utc))
+                except ValueError: raise HTTPException(422,"تاريخ البداية غير صالح")
+            if created_before:
+                try: conditions.append(Opportunity.first_seen_at<datetime.fromisoformat(created_before).replace(tzinfo=timezone.utc)+timedelta(days=1))
+                except ValueError: raise HTTPException(422,"تاريخ النهاية غير صالح")
+            if deadline_after: conditions.append(Opportunity.submission_deadline>=deadline_after)
+            if deadline_before: conditions.append(Opportunity.submission_deadline<=deadline_before)
+            export_ids=db.scalars(select(Opportunity.id).where(*conditions)).all()
+            pending=_pending_location_reviews_by_master(db,export_ids)
+            source_locations=_source_location_values_by_master(db,export_ids)
+            query=select(Opportunity).where(*conditions).options(selectinload(Opportunity.source_records).selectinload(SourceOpportunity.source)).order_by(Opportunity.id).execution_options(yield_per=500)
+            rows=db.scalars(query)
+            first=io.StringIO();csv.writer(first).writerow(headers);yield "\ufeff"+first.getvalue()
+            for o in rows:
+                record_source=o.source_records[0] if o.source_records else None;details=source_fact_summary(o);geo=_opportunity_geography(db,o,pending,source_locations)
+                safe_city=geo.get("display_location") or (canonical_value("location",o.city) if geo.get("confirmed") else "غير محدد")
+                safe_location=o.location_description if geo.get("confirmed") else None
+                values=[o.title_ar,canonical_value("owner",o.opportunity_owner),canonical_value("sector",o.sector),canonical_value("activity",o.activity),canonical_value("sub_activity",o.sub_activity),o.subsector,canonical_value("opportunity_type",o.opportunity_type),safe_city,safe_location,details["locations"],details["stages"],canonical_value("investment_model",o.investment_model),asset_facility_type_display(o),o.land_area_sqm,o.investment_value,o.contract_duration_years,o.publication_date,o.submission_deadline,canonical_value("status",o.status),o.reference_number,canonical_value("publication_platform",o.primary_publication_platform),len(o.source_records)," | ".join(r.source.source_name_ar for r in o.source_records),record_source.source_url if record_source else "",geo.get("country"),geo.get("region"),geo.get("governorate"),geo.get("display_location"),geo.get("district"),geo.get("status_ar")]
+                chunk=io.StringIO();csv.writer(chunk).writerow([spreadsheet_safe(v) for v in values]);yield chunk.getvalue()
+    return StreamingResponse(generate(),media_type="text/csv; charset=utf-8",headers={"Content-Disposition":"attachment; filename=al-ahsa-opportunities.csv"})
+
+@app.get("/api/export.xlsx")
+def export_xlsx(q:str="",sector:str="",sector_values:str="",activity:str="",sub_activity:str="",status:str="",source:str="",owner:str="",location:str="",opportunity_type:str="",investment_model:str="",asset_facility_type:str="",subsector:str="",lifecycle:str="",period:str="all",created_after:str="",created_before:str="",deadline_after:str="",deadline_before:str="",map_ids:str=""):
+    with SessionLocal() as db:
+        conditions=_opportunity_filter_conditions(db,sector=sector,activity=activity,sub_activity=sub_activity,status=status,source=source,owner=owner,location=location,opportunity_type=opportunity_type,investment_model=investment_model,asset_facility_type=asset_facility_type,subsector=subsector,lifecycle=lifecycle)
+        if sector_values: conditions.append(_sector_values_filter_condition(db,sector_values))
+        if map_ids:
+            try: selected_map_ids=sorted({int(value) for value in map_ids.split(",") if value.strip()})
+            except ValueError: raise HTTPException(422,"معرّفات الخريطة غير صالحة")
+            if not selected_map_ids: raise HTTPException(422,"معرّفات الخريطة غير صالحة")
+            conditions.append(Opportunity.id.in_(selected_map_ids))
+        period_start=_period_start(period)
+        if period_start: conditions.append(Opportunity.first_seen_at>=period_start)
+        if q:
+            like=f"%{q}%"; conditions.append(or_(Opportunity.title_ar.ilike(like),Opportunity.reference_number.ilike(like),Opportunity.location_description.ilike(like),Opportunity.opportunity_owner.ilike(like)))
+        if created_after:
+            try: conditions.append(Opportunity.first_seen_at>=datetime.fromisoformat(created_after).replace(tzinfo=timezone.utc))
+            except ValueError: raise HTTPException(422,"تاريخ البداية غير صالح")
+        if created_before:
+            try: conditions.append(Opportunity.first_seen_at<datetime.fromisoformat(created_before).replace(tzinfo=timezone.utc)+timedelta(days=1))
+            except ValueError: raise HTTPException(422,"تاريخ النهاية غير صالح")
+        if deadline_after: conditions.append(Opportunity.submission_deadline>=deadline_after)
+        if deadline_before: conditions.append(Opportunity.submission_deadline<=deadline_before)
+        rows=db.scalars(select(Opportunity).where(*conditions).options(selectinload(Opportunity.source_records).selectinload(SourceOpportunity.source),selectinload(Opportunity.asset_facility_type_assignments).selectinload(OpportunityAssetFacilityType.asset_type)).order_by(Opportunity.id)).unique().all()
+        row_ids=[row.id for row in rows]
+        pending=_pending_location_reviews_by_master(db,row_ids)
+        source_locations=_source_location_values_by_master(db,row_ids)
+        geography_by_id={row.id:_opportunity_geography(db,row,pending,source_locations) for row in rows}
+        generated_at=export_timestamp()
+        workbook=build_opportunities_workbook(rows,source_fact_summary,spreadsheet_safe,generated_at,canonicalize=canonical_value,geography_for=lambda opportunity:geography_by_id.get(opportunity.id,{}))
+        applied=[("عبارة البحث",q),("الفترة",period if period not in {"", "all"} else ""),("نطاق الحالة", {"active":"نشطة","historical":"تاريخية"}.get(lifecycle,"")),("القطاع",sector),("القطاعات المجمعة","، ".join(_sector_values_display_labels(db,sector_values)) if sector_values else ""),("النشاط",activity),("النشاط الفرعي",sub_activity),("القطاع الفرعي",subsector),("الحالة",status),("المصدر",source),("الجهة المالكة",owner),("الموقع",location),("نوع الفرصة",opportunity_type),("نموذج الاستثمار",investment_model),("نوع الأصل أو الموقع",asset_facility_type),("الموعد من",deadline_after),("الموعد حتى",deadline_before)]
+        applied_text="؛ ".join(f"{label}: {value}" for label,value in applied if value)
+        metadata=workbook["معلومات التقرير"]
+        metadata["B11"]="جميع الفرص الرئيسية غير المدمجة" if not applied_text else "الفرص المطابقة للمرشحات المحددة"
+        metadata["B12"]="لا توجد مرشحات" if not applied_text else applied_text
+        output=io.BytesIO(); workbook.save(output); output.seek(0)
+        filename=f"فرص_الأحساء_{generated_at.date().isoformat()}.xlsx"
+        disposition=f"attachment; filename=al-ahsa-opportunities-{generated_at.date().isoformat()}.xlsx; filename*=UTF-8''{quote(filename)}"
+        return Response(output.getvalue(),media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",headers={"Content-Disposition":disposition})
+
+@app.get("/api/filters")
+def filters():
+    with SessionLocal() as db:
+        sectors,sector_counts,sector_ids=_canonical_option_data(db,Opportunity.sector,"sector")
+        statuses,status_counts,status_ids=_canonical_option_data(db,Opportunity.status,"status")
+        owners,owner_counts,owner_ids=_canonical_option_data(db,Opportunity.opportunity_owner,"owner")
+        locations,location_counts,location_ids,location_hierarchy=_location_option_data(db)
+        types,type_counts,type_ids=_canonical_option_data(db,Opportunity.opportunity_type,"opportunity_type")
+        activities,activity_counts,activity_ids=_canonical_option_data(db,Opportunity.activity,"activity")
+        sub_activities,sub_activity_counts,sub_activity_ids=_canonical_option_data(db,Opportunity.sub_activity,"sub_activity")
+        investment_models,investment_model_counts,investment_model_ids=_canonical_option_data(db,Opportunity.investment_model,"investment_model")
+        asset_facility_types,asset_facility_type_counts,asset_facility_type_ids=_asset_facility_type_options(db)
+        subsectors,subsector_counts,subsector_ids=_canonical_option_data(db,Opportunity.subsector,"subsector")
+        sources=[{"key":key,"name":name} for key,name in db.execute(select(Source.source_key,Source.source_name_ar).order_by(Source.priority)).all()]
+        source_counts={key:(db.scalar(select(func.count(func.distinct(SourceOpportunity.master_opportunity_id))).join(Source,Source.id==SourceOpportunity.source_id).where(Source.source_key==key,SourceOpportunity.master_opportunity_id.is_not(None),SourceOpportunity.master_opportunity_id.in_(select(Opportunity.id).where(Opportunity.merged_into_id.is_(None))))) or 0) for key,_ in db.execute(select(Source.source_key,Source.source_name_ar).order_by(Source.priority)).all()}
+        return {
+            "sectors":sectors,"statuses":statuses,"owners":owners,"sources":sources,"locations":locations,"location_hierarchy":location_hierarchy,"types":types,"activities":activities,"sub_activities":sub_activities,"investment_models":investment_models,"asset_facility_types":asset_facility_types,"subsectors":subsectors,
+            "option_counts":{"sectors":sector_counts,"statuses":status_counts,"owners":owner_counts,"sources":source_counts,"locations":location_counts,"types":type_counts,"activities":activity_counts,"sub_activities":sub_activity_counts,"investment_models":investment_model_counts,"asset_facility_types":asset_facility_type_counts,"subsectors":subsector_counts},
+            "option_ids":{
+                "sectors":sector_ids,
+                "statuses":status_ids,
+                "owners":owner_ids,
+                "locations":location_ids,
+                "types":type_ids,
+                "activities":activity_ids,
+                "sub_activities":sub_activity_ids,
+                "investment_models":investment_model_ids,
+                "asset_facility_types":asset_facility_type_ids,
+                "subsectors":subsector_ids,
+                "sources":{source["name"]:source["key"] for source in sources},
+            },
+        }
+
+def dt(value): return value.isoformat() if value else None
+def asset_facility_type_display(opportunity):
+    labels={assignment.asset_type.label_ar for assignment in getattr(opportunity,"asset_facility_type_assignments",[]) if assignment.asset_type and assignment.asset_type.active}
+    return " | ".join(sorted(labels,key=comparison_key)) if labels else ASSET_FACILITY_TYPE_MISSING_LABEL
+
+def source_fact_summary(o):
+    locations=set();stages=set();models=set();scopes=set()
+    for record in o.source_records:
+        raw=record.raw_data_json or {}
+        locations.update(str(x) for x in (raw.get("opportunity_locations") or []) if x)
+        stages.add(str(raw.get("project_stage"))) if raw.get("project_stage") else None
+        derived_model=((getattr(record, "standardized_data_json", None) or {}).get("fields") or {}).get("investment_model") or {}
+        model_label=derived_model.get("canonical_label") if derived_model.get("mapping_status") == "MAPPED" else None
+        models.add(canonical_value("investment_model", model_label)) if model_label else None
+        scopes.add(str(raw.get("location_scope"))) if raw.get("location_scope") else None
+        locations.update(place.location_name for place in record.opportunity_locations)
+    return {"locations":" | ".join(sorted(locations)),"stages":" | ".join(sorted(stages)),
+        "investment_models":" | ".join(sorted(models)),"location_scopes":" | ".join(sorted(scopes))}
+def source_json(s,count,last_job=None,multi_source_matches=0): return {"id":s.id,"key":s.source_key,"name":s.source_name_ar,"publication_platform":s.source_name_ar,"source_operator":s.organization_name,"url":s.opportunities_url,"source_type":s.source_type,"priority":s.priority,"enabled":s.enabled,"interval":s.polling_frequency_minutes,"status":s.sync_status,"technical_health":s.technical_health,"coverage_status":s.coverage_status,"coverage_notes":s.coverage_notes,"method":s.extraction_method,"last_attempt":dt(s.last_attempted_sync),"last_success":dt(s.last_successful_sync),"record_count":last_job.unique_records if last_job and last_job.unique_records is not None else (s.last_record_count if s.last_attempted_sync else count),"retained_source_record_count":count,"source_total_reported":last_job.source_total_reported if last_job else s.last_source_total_reported,"collection_completeness_percent":last_job.collection_completeness_percent if last_job else s.last_collection_completeness_percent,"pagination_complete":last_job.pagination_complete if last_job else s.last_pagination_complete,"pages_requested":last_job.pages_requested if last_job else 0,"pages_successful":last_job.pages_successful if last_job else 0,"records_received":last_job.records_received if last_job else 0,"records_parsed":last_job.records_parsed if last_job else 0,"unique_records":last_job.unique_records if last_job else count,"ahsa_records":last_job.ahsa_count if last_job else 0,"active_count":last_job.active_count if last_job else 0,"new_records":last_job.new_count if last_job else 0,"updated_records":last_job.update_count if last_job else 0,"unchanged_records":last_job.unchanged_count if last_job else 0,"duplicate_candidates":last_job.duplicate_candidates_count if last_job else 0,"merged_records":last_job.merged_records_count if last_job else 0,"multi_source_matches":multi_source_matches,"rejected_records":last_job.rejected_count if last_job else 0,"removed_records":last_job.removed_records_count if last_job else 0,"location_review_count":last_job.location_review_count if last_job else 0,"metrics":last_job.metrics_json if last_job else {},"errors":((last_job.metrics_json or {}).get("error_pages",0)+(1 if last_job and last_job.error_message else 0)) if last_job else 0,"expired_count":last_job.expired_count if last_job else 0,"duplicate_items_between_pages":last_job.duplicate_items_between_pages if last_job else 0,"notes":s.notes}
+
+def source_publishing_entity(record):
+    """Return an item-level publisher only when the source payload names one."""
+    raw=record.raw_data_json or {}
+    direct=raw.get("publishing_entity") or raw.get("publisher")
+    if record.source.source_key=="furas":
+        direct=(raw.get("attributes") or {}).get("ENTITIESNAME") or direct
+    return str(direct).strip() if direct not in (None,"") else None
+def job_json(j): return {"id":j.id,"source_id":j.source_id,"started_at":dt(j.started_at),"queued_at":dt(j.queued_at),"finished_at":dt(j.finished_at),"status":j.status,"job_state":j.job_state,"trigger_type":j.trigger_type,"worker_id":j.worker_id,"correlation_id":j.correlation_id,"attempt_number":j.attempt_number,"heartbeat_at":dt(j.heartbeat_at),"pages_scanned":j.pages_scanned,"pages_requested":j.pages_requested,"pages_successful":j.pages_successful,"source_total_reported":j.source_total_reported,"records_received":j.records_received,"records_parsed":j.records_parsed,"unique_records":j.unique_records,"collection_completeness_percent":j.collection_completeness_percent,"pagination_complete":j.pagination_complete,"active_count":j.active_count,"expired_count":j.expired_count,"duplicate_items_between_pages":j.duplicate_items_between_pages,"raw_count":j.raw_count,"ahsa_count":j.ahsa_count,"new_count":j.new_count,"duplicate_count":j.duplicate_count,"duplicate_candidates_count":j.duplicate_candidates_count,"merged_records_count":j.merged_records_count,"update_count":j.update_count,"unchanged_count":j.unchanged_count,"rejected_count":j.rejected_count,"location_review_count":j.location_review_count,"removed_records_count":j.removed_records_count,"metrics":j.metrics_json or {},"error":j.error_message}
+def opp_json(o, geography=None):
+    from .entity_resolution import lifecycle_status
+    canonical_status=canonical_value("status",o.status)
+    geography=geography or resolve_master_geography(o.city,o.district)
+    asset_types=[{"id":item.asset_type.canonical_id,"label":item.asset_type.label_ar} for item in getattr(o,"asset_facility_type_assignments",[]) if item.asset_type and item.asset_type.active]
+    unique_asset_types={item["id"]:item for item in asset_types}
+    asset_types=sorted(unique_asset_types.values(),key=lambda item:(comparison_key(item["label"]),item["id"]))
+    confirmed=bool(geography.get("confirmed"))
+    location_status_ar={"CONFIRMED":"موقع مؤكد","LOCATION_UNSPECIFIED":"الموقع غير محدد","LOCATION_REVIEW_REQUIRED":"الموقع قيد المراجعة"}.get(geography.get("status"),"الموقع غير محدد")
+    display_city=geography.get("display_location") or ((geography.get("locality") or geography.get("governorate")) if confirmed else "غير محدد")
+    sources=[{"name":r.source.source_name_ar,"publication_platform":r.source.source_name_ar,"publishing_entity":source_publishing_entity(r),"source_operator":r.source.organization_name,"url":r.source_url,"key":r.source.source_key,"title":r.source_title,"raw_location":r.raw_location,"raw_status":r.raw_status,"canonical_status":canonical_value("status",r.canonical_status),"status_review_flags":((((r.standardized_data_json or {}).get("fields") or {}).get("status") or {}).get("review_flags") or []),"project_stage":(r.raw_data_json or {}).get("project_stage"),"investment_model":((((r.standardized_data_json or {}).get("fields") or {}).get("investment_model") or {}).get("canonical_label") if (((r.standardized_data_json or {}).get("fields") or {}).get("investment_model") or {}).get("mapping_status") == "MAPPED" else None),"qualification_reason":(r.raw_data_json or {}).get("qualification_reason"),"location_scope":(r.raw_data_json or {}).get("location_scope"),"opportunity_locations":[x.location_name for x in r.opportunity_locations] or (r.raw_data_json or {}).get("opportunity_locations",[])} for r in o.source_records]
+    return {"id":o.id,"canonical_id":o.canonical_id,"title":o.title_ar,"owner":canonical_value("owner",o.opportunity_owner),"sector":canonical_value("sector",o.sector),"activity":canonical_value("activity",o.activity),"sub_activity":canonical_value("sub_activity",o.sub_activity) if o.sub_activity else None,"subsector":canonical_value("subsector",o.subsector) if o.subsector else None,"type":canonical_value("opportunity_type",o.opportunity_type),"investment_model":canonical_value("investment_model",o.investment_model),"asset_facility_types":asset_types,"asset_facility_type":(" | ".join(item["label"] for item in asset_types) if asset_types else ASSET_FACILITY_TYPE_MISSING_LABEL),"city":display_city,"location":o.location_description if confirmed else None,"geography":{**geography,"status_ar":location_status_ar},"area":o.land_area_sqm,"investment_value":o.investment_value,"duration":o.contract_duration_years,"deadline":o.submission_deadline,"status":canonical_status,"lifecycle_status":lifecycle_status(o.status),"reference":o.reference_number,"source_facts":source_fact_summary(o),"sources":sources,"source_count":len(o.source_records),"confidence":o.location_confidence_score,"first_seen":dt(o.first_seen_at),"updated_at":dt(o.last_updated_at)}

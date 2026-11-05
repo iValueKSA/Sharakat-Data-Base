@@ -1,0 +1,33 @@
+{
+  "captured_at": "2026-10-26T11:07:36.699765+00:00",
+  "read_only": true,
+  "current_masters_before_and_after": 566,
+  "source_opportunities_before_and_after": 3178,
+  "jobs_before_frontend_update": 510,
+  "jobs_after_frontend_update": 512,
+  "newly_observed_jobs": [
+    {
+      "id": 511,
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "job_state": "COMPLETED",
+      "new_count": 0,
+      "update_count": 0
+    },
+    {
+      "id": 512,
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "job_state": "COMPLETED",
+      "new_count": 0,
+      "update_count": 0
+    }
+  ],
+  "manual_source_sync_started": false,
+  "business_data_changes": 0,
+  "source_data_changes": 0,
+  "services_rebuilt_or_recreated": [
+    "local static frontend only"
+  ],
+  "api_db_worker_scheduler_restarted": false
+}

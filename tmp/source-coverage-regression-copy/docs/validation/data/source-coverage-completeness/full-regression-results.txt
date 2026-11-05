@@ -1,0 +1,9 @@
+FULL REGRESSION SUITE
+=====================
+Result: 185 passed / 0 failed
+Runtime: isolated API-container test copy with temporary SQLite database
+Live PostgreSQL: not used by the test run
+Redis: explicitly unset for isolation
+Regression ran after the no-status technical-health correction and the two associated test assertions.
+Warning: 1 existing Starlette/httpx deprecation warning; no test failures.
+No application or business-data changes were made after this regression run; subsequent review actions were read-only API/browser checks and documentation/evidence generation. Natural scheduled jobs 380 and 381 are reconciled separately.

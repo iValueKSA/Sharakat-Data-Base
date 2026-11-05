@@ -1,0 +1,165 @@
+{
+  "captured": "2026-10-20T14:09:00+03:00",
+  "enabledSources": 10,
+  "sourcesWithoutExpectedSchedule": 0,
+  "paused": false,
+  "maintenanceMode": false,
+  "sources": [
+    {
+      "key": "furas",
+      "enabled": true,
+      "intervalMinutes": 60,
+      "lastRun": "2026-10-20T14:06:32.603289+03:00",
+      "lastSuccess": "2026-10-20T14:06:43.244641+03:00",
+      "nextRun": "2026-10-20T15:06:32.603289+03:00",
+      "jobState": "COMPLETED",
+      "health": "HEALTHY",
+      "technicalHealth": "HEALTHY",
+      "coverage": "COMPLETE_PUBLIC_SOURCE"
+    },
+    {
+      "key": "alahsa-opportunities",
+      "enabled": true,
+      "intervalMinutes": 60,
+      "lastRun": "2026-10-20T14:06:32.603692+03:00",
+      "lastSuccess": "2026-10-20T14:06:40.440622+03:00",
+      "nextRun": "2026-10-20T15:06:32.603692+03:00",
+      "jobState": "COMPLETED",
+      "health": "HEALTHY",
+      "technicalHealth": "HEALTHY",
+      "coverage": "COMPLETE_PUBLIC_SOURCE"
+    },
+    {
+      "key": "ahda",
+      "enabled": true,
+      "intervalMinutes": 360,
+      "lastRun": "2026-10-20T09:02:14.78428+03:00",
+      "lastSuccess": "2026-10-19T21:47:32.877363+03:00",
+      "nextRun": "2026-10-20T15:02:14.78428+03:00",
+      "jobState": "FAILED",
+      "health": "STALE",
+      "technicalHealth": "WARNING",
+      "coverage": "COMPLETE_FOR_DEFINED_SCOPE"
+    },
+    {
+      "key": "invest-saudi",
+      "enabled": true,
+      "intervalMinutes": 360,
+      "lastRun": "2026-10-20T09:02:15.440686+03:00",
+      "lastSuccess": "2026-10-19T15:47:57.145454+03:00",
+      "nextRun": "2026-10-20T15:02:15.440686+03:00",
+      "jobState": "FAILED",
+      "health": "STALE",
+      "technicalHealth": "WARNING",
+      "coverage": "COMPLETE_PUBLIC_SOURCE"
+    },
+    {
+      "key": "kfu",
+      "enabled": true,
+      "intervalMinutes": 720,
+      "lastRun": "2026-10-20T09:47:32.507555+03:00",
+      "lastSuccess": "2026-10-20T09:47:33.695438+03:00",
+      "nextRun": "2026-10-20T21:47:32.507555+03:00",
+      "jobState": "COMPLETED",
+      "health": "HEALTHY",
+      "technicalHealth": "HEALTHY",
+      "coverage": "COMPLETE_FOR_DEFINED_SCOPE"
+    },
+    {
+      "key": "modon",
+      "enabled": true,
+      "intervalMinutes": 360,
+      "lastRun": "2026-10-20T09:02:15.90597+03:00",
+      "lastSuccess": "2026-10-12T15:26:52.808735+03:00",
+      "nextRun": "2026-10-20T15:02:15.90597+03:00",
+      "jobState": "FAILED",
+      "health": "STALE",
+      "technicalHealth": "WARNING",
+      "coverage": "PUBLIC_COVERAGE_LIMITED"
+    },
+    {
+      "key": "ncp",
+      "enabled": true,
+      "intervalMinutes": 720,
+      "lastRun": "2026-10-20T09:47:32.430371+03:00",
+      "lastSuccess": "2026-10-20T09:48:03.09999+03:00",
+      "nextRun": "2026-10-20T21:47:32.430371+03:00",
+      "jobState": "COMPLETED",
+      "health": "HEALTHY",
+      "technicalHealth": "HEALTHY",
+      "coverage": "COMPLETE_FOR_DEFINED_SCOPE"
+    },
+    {
+      "key": "nhc",
+      "enabled": true,
+      "intervalMinutes": 720,
+      "lastRun": "2026-10-20T09:47:32.509041+03:00",
+      "lastSuccess": "2026-10-12T15:35:37.998869+03:00",
+      "nextRun": "2026-10-20T21:47:32.509041+03:00",
+      "jobState": "COMPLETED_WITH_WARNINGS",
+      "health": "STALE",
+      "technicalHealth": "WARNING",
+      "coverage": "PUBLIC_COVERAGE_LIMITED"
+    },
+    {
+      "key": "pif",
+      "enabled": true,
+      "intervalMinutes": 1440,
+      "lastRun": "2026-10-19T14:26:48.39685+03:00",
+      "lastSuccess": "2026-10-19T14:27:04.392538+03:00",
+      "nextRun": "2026-10-20T14:26:48.39685+03:00",
+      "jobState": "COMPLETED",
+      "health": "HEALTHY",
+      "technicalHealth": "HEALTHY",
+      "coverage": "PUBLIC_COVERAGE_LIMITED"
+    },
+    {
+      "key": "mwan",
+      "enabled": true,
+      "intervalMinutes": 1440,
+      "lastRun": "2026-10-19T14:26:48.33932+03:00",
+      "lastSuccess": "2026-10-12T15:28:00.933181+03:00",
+      "nextRun": "2026-10-20T14:26:48.33932+03:00",
+      "jobState": "FAILED",
+      "health": "STALE",
+      "technicalHealth": "WARNING",
+      "coverage": "COMPLETE_FOR_DEFINED_SCOPE"
+    }
+  ],
+  "naturalJobs": [
+    {
+      "id": 380,
+      "source": "furas",
+      "trigger": "scheduled",
+      "status": "SUCCESS",
+      "pagesExpected": 3,
+      "pagesSuccess": 3,
+      "rawCount": 164,
+      "newCount": 0,
+      "updatedCount": 0
+    },
+    {
+      "id": 381,
+      "source": "alahsa-opportunities",
+      "trigger": "scheduled",
+      "status": "SUCCESS",
+      "pagesExpected": 12,
+      "pagesSuccess": 12,
+      "rawCount": 103,
+      "newCount": 0,
+      "updatedCount": 0
+    }
+  ],
+  "snapshotObservations": {
+    "before": 11174,
+    "after": 11187,
+    "delta": 13
+  },
+  "manualSourceSyncStarted": false,
+  "partialScanRemovalSafety": {
+    "codePathRequiresReconciliationSafeAndSuccessfulCoverage": true,
+    "testCoverage": [
+      "partial page failure does not count a missing scan or remove existing record"
+    ]
+  }
+}

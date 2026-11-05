@@ -1,0 +1,77 @@
+{
+  "full_regression_suite": {
+    "command": "python -m pytest -q --import-mode=importlib",
+    "database": "temporary SQLite in isolated project copy; production PostgreSQL not used",
+    "passed": 189,
+    "failed": 0,
+    "warnings": 1,
+    "warning": "Existing Starlette/httpx TestClient deprecation warning"
+  },
+  "focused_scenarios": [
+    {
+      "scenario": "field decision requires authenticated reviewer and nonempty note",
+      "result": "PASS"
+    },
+    {
+      "scenario": "administrator resolves a field case and receives complete atomic audit",
+      "result": "PASS"
+    },
+    {
+      "scenario": "analyst resolves a field case; analyst cannot manage users",
+      "result": "PASS"
+    },
+    {
+      "scenario": "viewer review write is denied",
+      "result": "PASS"
+    },
+    {
+      "scenario": "location acceptance updates qualification, audits, and restores exact raw payload/hash",
+      "result": "PASS"
+    },
+    {
+      "scenario": "standardization duration/investment raw values cannot be promoted while semantics are unverified",
+      "result": "PASS"
+    },
+    {
+      "scenario": "repeated logical conflict creation is idempotent; resolved recurrence links prior case",
+      "result": "PASS"
+    },
+    {
+      "scenario": "duplicate pair order is canonicalized",
+      "result": "PASS"
+    },
+    {
+      "scenario": "audit failure rolls back canonical update and review status",
+      "result": "PASS"
+    },
+    {
+      "scenario": "resolved case replay returns 409",
+      "result": "PASS"
+    },
+    {
+      "scenario": "merge/undo path retains merge audit and review links",
+      "result": "PASS"
+    },
+    {
+      "scenario": "open review API and dashboard counts reconcile",
+      "result": "PASS"
+    }
+  ],
+  "concurrent_postgres_test": {
+    "database": "temporary PostgreSQL schema on local test database",
+    "schema_created_and_dropped": true,
+    "simultaneous_responses": [
+      200,
+      409
+    ],
+    "one_canonical_decision": true,
+    "one_audit_event": true,
+    "raw_payload_preserved": true,
+    "production_rows_touched": false
+  },
+  "auto_resolution_rules": 0,
+  "auto_resolution_without_audit": 0,
+  "review_resolution_atomic": true,
+  "review_reopen_supported": true,
+  "double_resolution_conflict_safely_handled": true
+}

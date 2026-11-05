@@ -1,0 +1,233 @@
+{
+  "started_at": "2026-10-28T09:37:27.228Z",
+  "base_url": "http://localhost:8080",
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "status": "PASSED",
+      "labels": [
+        "خلال 7 أيام",
+        "8–14 يومًا",
+        "15–30 يومًا",
+        "أكثر من 30 يومًا",
+        "بدون موعد محدد"
+      ],
+      "counts": [
+        0,
+        21,
+        39,
+        44,
+        370
+      ],
+      "colors": [
+        "#378aa4",
+        "#006e61",
+        "#c39853",
+        "#7953a9",
+        "#989899"
+      ],
+      "total": 474,
+      "activeLabel": "474",
+      "direction": "rtl",
+      "scrollWidth": 1920,
+      "innerWidth": 1920,
+      "cardWidth": 1508,
+      "cardHeight": 167,
+      "allButtonsVisible": true,
+      "visible_category_labels": true,
+      "five_distinct_expected_colors": true,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "status": "PASSED",
+      "labels": [
+        "خلال 7 أيام",
+        "8–14 يومًا",
+        "15–30 يومًا",
+        "أكثر من 30 يومًا",
+        "بدون موعد محدد"
+      ],
+      "counts": [
+        0,
+        21,
+        39,
+        44,
+        370
+      ],
+      "colors": [
+        "#378aa4",
+        "#006e61",
+        "#c39853",
+        "#7953a9",
+        "#989899"
+      ],
+      "total": 474,
+      "activeLabel": "474",
+      "direction": "rtl",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "cardWidth": 1089.625,
+      "cardHeight": 167,
+      "allButtonsVisible": true,
+      "visible_category_labels": true,
+      "five_distinct_expected_colors": true,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "status": "PASSED",
+      "labels": [
+        "خلال 7 أيام",
+        "8–14 يومًا",
+        "15–30 يومًا",
+        "أكثر من 30 يومًا",
+        "بدون موعد محدد"
+      ],
+      "counts": [
+        0,
+        21,
+        39,
+        44,
+        370
+      ],
+      "colors": [
+        "#378aa4",
+        "#006e61",
+        "#c39853",
+        "#7953a9",
+        "#989899"
+      ],
+      "total": 474,
+      "activeLabel": "474",
+      "direction": "rtl",
+      "scrollWidth": 1366,
+      "innerWidth": 1366,
+      "cardWidth": 1020.0625,
+      "cardHeight": 167,
+      "allButtonsVisible": true,
+      "visible_category_labels": true,
+      "five_distinct_expected_colors": true,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "status": "PASSED",
+      "labels": [
+        "خلال 7 أيام",
+        "8–14 يومًا",
+        "15–30 يومًا",
+        "أكثر من 30 يومًا",
+        "بدون موعد محدد"
+      ],
+      "counts": [
+        0,
+        21,
+        39,
+        44,
+        370
+      ],
+      "colors": [
+        "#378aa4",
+        "#006e61",
+        "#c39853",
+        "#7953a9",
+        "#989899"
+      ],
+      "total": 474,
+      "activeLabel": "474",
+      "direction": "rtl",
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "cardWidth": 718,
+      "cardHeight": 167,
+      "allButtonsVisible": true,
+      "visible_category_labels": true,
+      "five_distinct_expected_colors": true,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "status": "PASSED",
+      "labels": [
+        "خلال 7 أيام",
+        "8–14 يومًا",
+        "15–30 يومًا",
+        "أكثر من 30 يومًا",
+        "بدون موعد محدد"
+      ],
+      "counts": [
+        0,
+        21,
+        39,
+        44,
+        370
+      ],
+      "colors": [
+        "#378aa4",
+        "#006e61",
+        "#c39853",
+        "#7953a9",
+        "#989899"
+      ],
+      "total": 474,
+      "activeLabel": "474",
+      "direction": "rtl",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "cardWidth": 366,
+      "cardHeight": 165,
+      "allButtonsVisible": true,
+      "visible_category_labels": true,
+      "five_distinct_expected_colors": true,
+      "horizontal_overflow": false
+    }
+  ],
+  "screenshots": [
+    "C:\\Sharakat Data Base\\docs\\validation\\ui\\deadline-card-full-reconciliation\\screenshots\\deadline-card-1920x1080.png",
+    "C:\\Sharakat Data Base\\docs\\validation\\ui\\deadline-card-full-reconciliation\\screenshots\\deadline-card-1366x768.png",
+    "C:\\Sharakat Data Base\\docs\\validation\\ui\\deadline-card-full-reconciliation\\screenshots\\deadline-card-390x844.png"
+  ],
+  "clickthrough": {
+    "url": "http://localhost:8080/?view=opportunities&lifecycle=active&deadline_status=without_reliable_deadline",
+    "viewVisible": true,
+    "count": "عرض 1–50 من 370 فرصة",
+    "activeFilter": "active",
+    "passed": true
+  },
+  "js_errors": [],
+  "http_errors": [],
+  "expected_auth_401": [
+    {
+      "status": 401,
+      "url": "http://localhost:8080/api/auth/me",
+      "reason": "Visitor session check; dashboard is public."
+    },
+    {
+      "status": 401,
+      "url": "http://localhost:8080/api/auth/me",
+      "reason": "Visitor session check; dashboard is public."
+    },
+    {
+      "status": 401,
+      "url": "http://localhost:8080/api/auth/me",
+      "reason": "Visitor session check; dashboard is public."
+    },
+    {
+      "status": 401,
+      "url": "http://localhost:8080/api/auth/me",
+      "reason": "Visitor session check; dashboard is public."
+    },
+    {
+      "status": 401,
+      "url": "http://localhost:8080/api/auth/me",
+      "reason": "Visitor session check; dashboard is public."
+    }
+  ],
+  "status": "PASSED"
+}

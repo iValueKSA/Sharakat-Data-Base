@@ -1,0 +1,81 @@
+{
+  "timezone": "UTC",
+  "enable_utc": true,
+  "dispatcher_policy": "One dispatcher every 60 seconds; due check is per-source polling_frequency_minutes with a 15-minute floor.",
+  "schedules": [
+    {
+      "entry": "enqueue-due-sources-every-minute",
+      "task": "app.tasks.enqueue_due_sources",
+      "schedule_seconds": 60.0,
+      "options": {
+        "queue": "maintenance"
+      }
+    },
+    {
+      "entry": "recover-stale-jobs-every-five-minutes",
+      "task": "app.tasks.recover_stale_jobs",
+      "schedule_seconds": 300.0,
+      "options": {
+        "queue": "maintenance"
+      }
+    },
+    {
+      "entry": "dispatch-alert-emails-every-minute",
+      "task": "app.tasks.dispatch_alert_emails",
+      "schedule_seconds": 60.0,
+      "options": {
+        "queue": "notifications"
+      }
+    },
+    {
+      "entry": "worker-heartbeat-every-minute",
+      "task": "app.tasks.worker_heartbeat",
+      "schedule_seconds": 60.0,
+      "options": {
+        "queue": "maintenance"
+      }
+    },
+    {
+      "entry": "daily-deadline-check",
+      "task": "app.tasks.check_deadlines",
+      "schedule_seconds": 86400.0,
+      "options": {
+        "queue": "maintenance"
+      }
+    },
+    {
+      "entry": "daily-data-quality-gates",
+      "task": "app.tasks.run_daily_data_quality",
+      "schedule_seconds": 86400.0,
+      "options": {
+        "queue": "maintenance"
+      }
+    },
+    {
+      "entry": "weekly-data-quality-gates",
+      "task": "app.tasks.run_weekly_data_quality",
+      "schedule_seconds": 604800.0,
+      "options": {
+        "queue": "maintenance"
+      }
+    },
+    {
+      "entry": "hourly-status-lifecycle-reconcile",
+      "task": "app.tasks.reconcile_status_lifecycle",
+      "schedule_seconds": 3600.0,
+      "options": {
+        "queue": "maintenance"
+      }
+    },
+    {
+      "entry": "daily-postgres-backup",
+      "task": "app.tasks.run_database_backup",
+      "schedule_seconds": 86400.0,
+      "options": {
+        "queue": "maintenance"
+      }
+    }
+  ],
+  "duplicate_beat_schedules": 0,
+  "enabled_sources_without_schedule": []
+}

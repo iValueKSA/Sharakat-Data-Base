@@ -1,0 +1,126 @@
+{
+  "acceptance": "PASS",
+  "agriculture_validation": {
+    "ambiguous": 1,
+    "correct": 0,
+    "incorrect": 0,
+    "label": "الزراعة",
+    "precision": null,
+    "predicted": 0,
+    "records": 1,
+    "sufficient_labeled_records": false
+  },
+  "ambiguous_rate": 0.608,
+  "benchmark_ambiguous": 76,
+  "benchmark_correct": 2,
+  "benchmark_incorrect": 0,
+  "benchmark_insufficient_evidence": 47,
+  "benchmark_records": 125,
+  "benchmark_uses_source_sector": false,
+  "engine_version": "ahda-sector-rules-1.0.0",
+  "exact_classification_accuracy": 1.0,
+  "false_classification_rate": 0.0,
+  "incorrect_examples": [],
+  "precision_by_sector": {
+    "sector:agriculture": {
+      "ambiguous": 1,
+      "correct": 0,
+      "incorrect": 0,
+      "label": "الزراعة",
+      "precision": null,
+      "predicted": 0,
+      "records": 1,
+      "sufficient_labeled_records": false
+    },
+    "sector:commercial": {
+      "ambiguous": 13,
+      "correct": 0,
+      "incorrect": 0,
+      "label": "تجاري",
+      "precision": null,
+      "predicted": 0,
+      "records": 39,
+      "sufficient_labeled_records": true
+    },
+    "sector:education": {
+      "ambiguous": 1,
+      "correct": 0,
+      "incorrect": 0,
+      "label": "التعليم",
+      "precision": null,
+      "predicted": 0,
+      "records": 2,
+      "sufficient_labeled_records": false
+    },
+    "sector:environment": {
+      "ambiguous": 1,
+      "correct": 0,
+      "incorrect": 0,
+      "label": "البيئة",
+      "precision": null,
+      "predicted": 0,
+      "records": 8,
+      "sufficient_labeled_records": true
+    },
+    "sector:healthcare": {
+      "ambiguous": 1,
+      "correct": 1,
+      "incorrect": 0,
+      "label": "الرعاية الصحية",
+      "precision": 1.0,
+      "predicted": 1,
+      "records": 3,
+      "sufficient_labeled_records": false
+    },
+    "sector:industrial": {
+      "ambiguous": 53,
+      "correct": 0,
+      "incorrect": 0,
+      "label": "صناعي",
+      "precision": null,
+      "predicted": 0,
+      "records": 59,
+      "sufficient_labeled_records": true
+    },
+    "sector:logistics": {
+      "ambiguous": 0,
+      "correct": 0,
+      "incorrect": 0,
+      "label": "الخدمات اللوجستية",
+      "precision": null,
+      "predicted": 0,
+      "records": 3,
+      "sufficient_labeled_records": false
+    },
+    "sector:other": {
+      "ambiguous": 6,
+      "correct": 0,
+      "incorrect": 0,
+      "label": "أخرى",
+      "precision": null,
+      "predicted": 0,
+      "records": 9,
+      "sufficient_labeled_records": true
+    },
+    "sector:tourism": {
+      "ambiguous": 0,
+      "correct": 1,
+      "incorrect": 0,
+      "label": "السياحة",
+      "precision": 1.0,
+      "predicted": 1,
+      "records": 1,
+      "sufficient_labeled_records": false
+    }
+  },
+  "tourism_validation": {
+    "ambiguous": 0,
+    "correct": 1,
+    "incorrect": 0,
+    "label": "السياحة",
+    "precision": 1.0,
+    "predicted": 1,
+    "records": 1,
+    "sufficient_labeled_records": false
+  }
+}

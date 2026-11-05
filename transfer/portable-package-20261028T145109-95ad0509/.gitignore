@@ -1,0 +1,9 @@
+.env.local
+.local-setup/
+.env.staging
+logs/
+backups/**
+!backups/.gitkeep
+Local Admin Credentials.txt
+.local-platform.pid
+.venv/

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "search_scope": ["BAT launchers", "PowerShell runtime/setup scripts", "Docker Compose files", "Dockerfiles", "application runtime code", "tests"],
+  "source_machine_path": "C:\\Sharakat Data Base",
+  "runtime_hardcoded_source_machine_path_matches": 0,
+  "classification": {
+    "MUST_REMAIN": 0,
+    "CAN_BE_RELATIVE": 0,
+    "DOCUMENTATION_ONLY": "historical references are not rewritten",
+    "TEST_ONLY": 0
+  },
+  "implementation": "New runtime scripts derive PROJECT_ROOT from $PSScriptRoot or %~dp0; Compose paths are project-relative.",
+  "verified": false,
+  "note": "Final scan is written after the implementation and isolated transfer test."
+}

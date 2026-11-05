@@ -1,0 +1,41 @@
+{
+  "pre_correction_snapshot_utc": "2026-10-20 09:27:35.377973",
+  "post_correction_snapshot_utc": "2026-10-20 09:59:32.899366",
+  "all_current_masters_screened": 292,
+  "all_unordered_master_pairs_screened": 42486,
+  "raw_broad_screen_hits": 1261,
+  "actionable_candidate_pairs": 42,
+  "actionable_decisions": {
+    "SCREENED_OUT_EXPLICIT_PARCEL_CONFLICT": 1082,
+    "SCREENED_OUT_BELOW_ACTIONABLE_IDENTITY_THRESHOLD": 137,
+    "REVIEW_REQUIRED": 10,
+    "CONFIRMED_DUPLICATE_MERGED": 16,
+    "CONFIRMED_DISTINCT": 16
+  },
+  "screen_scope_and_disposition": {
+    "SAME_SOURCE_ONLY | SCREENED_OUT_EXPLICIT_PARCEL_CONFLICT": 1077,
+    "SAME_SOURCE_ONLY | SCREENED_OUT_BELOW_ACTIONABLE_IDENTITY_THRESHOLD": 134,
+    "SAME_AND_CROSS_SOURCE | SCREENED_OUT_BELOW_ACTIONABLE_IDENTITY_THRESHOLD": 1,
+    "CROSS_SOURCE_ONLY | REVIEW_REQUIRED": 2,
+    "SAME_SOURCE_ONLY | REVIEW_REQUIRED": 8,
+    "CROSS_SOURCE_ONLY | CONFIRMED_DUPLICATE_MERGED": 16,
+    "CROSS_SOURCE_ONLY | CONFIRMED_DISTINCT": 4,
+    "SAME_AND_CROSS_SOURCE | CONFIRMED_DISTINCT": 12,
+    "SAME_AND_CROSS_SOURCE | SCREENED_OUT_EXPLICIT_PARCEL_CONFLICT": 2,
+    "CROSS_SOURCE_ONLY | SCREENED_OUT_EXPLICIT_PARCEL_CONFLICT": 3,
+    "CROSS_SOURCE_ONLY | SCREENED_OUT_BELOW_ACTIONABLE_IDENTITY_THRESHOLD": 2
+  },
+  "raw_pair_scope_counts": {
+    "same_source_only": 1219,
+    "cross_source_only": 27,
+    "same_and_cross_source": 15,
+    "scope_unresolved": 0
+  },
+  "raw_evidence_pair_counts": {
+    "same_source_evidence": 1222,
+    "cross_source_evidence": 20,
+    "both_evidence_types": 1,
+    "queue_only_or_unflagged": 20
+  },
+  "generator_summary_warning": "The analyzer summary cross_source_candidate_pairs value of 1241 is not a valid source-scope count: its code counted any TITLE_OWNER_LOCATION/TITLE_AREA_LOCATION/COORDINATES_TITLE method as cross-source regardless of evidence source. This artifact recomputes source scope from source records linked to each Master. The raw screen is separate from actionable/manual cases."
+}

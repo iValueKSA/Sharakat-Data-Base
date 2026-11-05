@@ -1,0 +1,10 @@
+{
+  "snapshot_at": "2026-10-22T07:27:01.9321234Z",
+  "requested_supersessions": 0,
+  "applied_supersessions": 0,
+  "skipped_supersessions": 0,
+  "superseded_review_ids": [],
+  "reason": "No safe logical duplicate or obsolete merged-entity review qualified for supersession.",
+  "audit_events_created": 0,
+  "deleted_review_history_rows": 0
+}

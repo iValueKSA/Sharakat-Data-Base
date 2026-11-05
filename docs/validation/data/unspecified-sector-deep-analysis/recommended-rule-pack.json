@@ -1,0 +1,344 @@
+{
+  "implemented": false,
+  "tiers": {
+    "tier_1_safe_high_impact_auto_rules": [],
+    "tier_2_review_assist_rules": [
+      {
+        "rule_key": "ANALYSIS_EXPLICIT_ALAHSA_OPPORTUNITIES_خدمي",
+        "signal_type": "source_specific_explicit_classification",
+        "source_fields": [
+          "source_sector",
+          "source_taxonomy.sector"
+        ],
+        "source": "alahsa-opportunities",
+        "match_condition": "source=alahsa-opportunities AND exact normalized value=خدمي in fields ['source_sector', 'source_taxonomy.sector']",
+        "proposed_sector_id": null,
+        "positive_evidence": {
+          "master_ids": [
+            234,
+            235,
+            238,
+            260,
+            262
+          ]
+        },
+        "negative_conditions": [
+          "official contradictory classification",
+          "do not infer sector when source value denotes activity or procurement mechanism"
+        ],
+        "support_count": 0,
+        "estimated_records_affected": 5,
+        "confidence": "LOW",
+        "decision": "REVIEW_ONLY"
+      },
+      {
+        "rule_key": "ANALYSIS_TITLE_REVIEW_مستشفي",
+        "signal_type": "compound_title_phrase",
+        "source_fields": [
+          "title_ar",
+          "normalized_title"
+        ],
+        "match_condition": "compound phrase contains مستشفى",
+        "proposed_sector_id": "sector:healthcare",
+        "positive_evidence": {
+          "unspecified_occurrences": 5
+        },
+        "negative_conditions": [
+          "title-only classification prohibited",
+          "check official taxonomy and asset contradictions"
+        ],
+        "support_count": 0,
+        "estimated_records_affected": 5,
+        "confidence": "LOW_TO_MEDIUM",
+        "decision": "REVIEW_ONLY"
+      },
+      {
+        "rule_key": "ANALYSIS_EXPLICIT_KFU_LEASE_OPPORTUNITY",
+        "signal_type": "source_specific_explicit_classification",
+        "source_fields": [
+          "source_sector"
+        ],
+        "source": "kfu",
+        "match_condition": "source=kfu AND exact normalized value=LEASE_OPPORTUNITY in fields ['source_sector']",
+        "proposed_sector_id": null,
+        "positive_evidence": {
+          "master_ids": [
+            225
+          ]
+        },
+        "negative_conditions": [
+          "official contradictory classification",
+          "do not infer sector when source value denotes activity or procurement mechanism"
+        ],
+        "support_count": 0,
+        "estimated_records_affected": 1,
+        "confidence": "LOW",
+        "decision": "REVIEW_ONLY"
+      },
+      {
+        "rule_key": "ANALYSIS_EXPLICIT_NCP_PPP_PROJECT",
+        "signal_type": "source_specific_explicit_classification",
+        "source_fields": [
+          "source_sector"
+        ],
+        "source": "ncp",
+        "match_condition": "source=ncp AND exact normalized value=PPP_PROJECT in fields ['source_sector']",
+        "proposed_sector_id": null,
+        "positive_evidence": {
+          "master_ids": [
+            228
+          ]
+        },
+        "negative_conditions": [
+          "official contradictory classification",
+          "do not infer sector when source value denotes activity or procurement mechanism"
+        ],
+        "support_count": 0,
+        "estimated_records_affected": 1,
+        "confidence": "LOW",
+        "decision": "REVIEW_ONLY"
+      },
+      {
+        "rule_key": "ANALYSIS_FURAS_AGRICULTURAL_ACTIVITY_REVIEW",
+        "signal_type": "source_activity_semantic_hint",
+        "source_fields": [
+          "source_activity"
+        ],
+        "source": "furas",
+        "match_condition": "exact normalized source_activity = الأنشطة الزراعية والحيوانية",
+        "proposed_sector_id": "sector:agriculture",
+        "positive_evidence": {
+          "master_ids": [
+            78
+          ],
+          "labeled_reference_count": 0,
+          "title_context": "palm by-products processing; agriculture versus industrial processing needs human decision"
+        },
+        "negative_conditions": [
+          "no labeled Furas control supports this raw value",
+          "processing activity may be industrial/food manufacturing rather than primary agriculture"
+        ],
+        "support_count": 0,
+        "estimated_records_affected": 1,
+        "confidence": "MEDIUM",
+        "decision": "REVIEW_ONLY"
+      },
+      {
+        "rule_key": "ANALYSIS_TITLE_REVIEW_تمور",
+        "signal_type": "compound_title_phrase",
+        "source_fields": [
+          "title_ar",
+          "normalized_title"
+        ],
+        "match_condition": "compound phrase contains تمور",
+        "proposed_sector_id": "sector:agriculture",
+        "positive_evidence": {
+          "unspecified_occurrences": 1
+        },
+        "negative_conditions": [
+          "title-only classification prohibited",
+          "check official taxonomy and asset contradictions"
+        ],
+        "support_count": 0,
+        "estimated_records_affected": 1,
+        "confidence": "LOW_TO_MEDIUM",
+        "decision": "REVIEW_ONLY"
+      },
+      {
+        "rule_key": "ANALYSIS_TITLE_REVIEW_نخيل",
+        "signal_type": "compound_title_phrase",
+        "source_fields": [
+          "title_ar",
+          "normalized_title"
+        ],
+        "match_condition": "compound phrase contains نخيل",
+        "proposed_sector_id": "sector:agriculture",
+        "positive_evidence": {
+          "unspecified_occurrences": 1
+        },
+        "negative_conditions": [
+          "title-only classification prohibited",
+          "check official taxonomy and asset contradictions"
+        ],
+        "support_count": 0,
+        "estimated_records_affected": 1,
+        "confidence": "LOW_TO_MEDIUM",
+        "decision": "REVIEW_ONLY"
+      }
+    ],
+    "tier_3_do_not_automate": [
+      {
+        "pattern": "generic lease/location/land/building/restaurant/cafe/food-retail/warehouse/parking/place-name terms",
+        "reason": "not sufficient sector evidence; false-positive risks documented in tourism/agriculture analysis"
+      }
+    ]
+  },
+  "rules": [
+    {
+      "rule_key": "ANALYSIS_EXPLICIT_ALAHSA_OPPORTUNITIES_خدمي",
+      "signal_type": "source_specific_explicit_classification",
+      "source_fields": [
+        "source_sector",
+        "source_taxonomy.sector"
+      ],
+      "source": "alahsa-opportunities",
+      "match_condition": "source=alahsa-opportunities AND exact normalized value=خدمي in fields ['source_sector', 'source_taxonomy.sector']",
+      "proposed_sector_id": null,
+      "positive_evidence": {
+        "master_ids": [
+          234,
+          235,
+          238,
+          260,
+          262
+        ]
+      },
+      "negative_conditions": [
+        "official contradictory classification",
+        "do not infer sector when source value denotes activity or procurement mechanism"
+      ],
+      "support_count": 0,
+      "estimated_records_affected": 5,
+      "confidence": "LOW",
+      "decision": "REVIEW_ONLY"
+    },
+    {
+      "rule_key": "ANALYSIS_TITLE_REVIEW_مستشفي",
+      "signal_type": "compound_title_phrase",
+      "source_fields": [
+        "title_ar",
+        "normalized_title"
+      ],
+      "match_condition": "compound phrase contains مستشفى",
+      "proposed_sector_id": "sector:healthcare",
+      "positive_evidence": {
+        "unspecified_occurrences": 5
+      },
+      "negative_conditions": [
+        "title-only classification prohibited",
+        "check official taxonomy and asset contradictions"
+      ],
+      "support_count": 0,
+      "estimated_records_affected": 5,
+      "confidence": "LOW_TO_MEDIUM",
+      "decision": "REVIEW_ONLY"
+    },
+    {
+      "rule_key": "ANALYSIS_EXPLICIT_KFU_LEASE_OPPORTUNITY",
+      "signal_type": "source_specific_explicit_classification",
+      "source_fields": [
+        "source_sector"
+      ],
+      "source": "kfu",
+      "match_condition": "source=kfu AND exact normalized value=LEASE_OPPORTUNITY in fields ['source_sector']",
+      "proposed_sector_id": null,
+      "positive_evidence": {
+        "master_ids": [
+          225
+        ]
+      },
+      "negative_conditions": [
+        "official contradictory classification",
+        "do not infer sector when source value denotes activity or procurement mechanism"
+      ],
+      "support_count": 0,
+      "estimated_records_affected": 1,
+      "confidence": "LOW",
+      "decision": "REVIEW_ONLY"
+    },
+    {
+      "rule_key": "ANALYSIS_EXPLICIT_NCP_PPP_PROJECT",
+      "signal_type": "source_specific_explicit_classification",
+      "source_fields": [
+        "source_sector"
+      ],
+      "source": "ncp",
+      "match_condition": "source=ncp AND exact normalized value=PPP_PROJECT in fields ['source_sector']",
+      "proposed_sector_id": null,
+      "positive_evidence": {
+        "master_ids": [
+          228
+        ]
+      },
+      "negative_conditions": [
+        "official contradictory classification",
+        "do not infer sector when source value denotes activity or procurement mechanism"
+      ],
+      "support_count": 0,
+      "estimated_records_affected": 1,
+      "confidence": "LOW",
+      "decision": "REVIEW_ONLY"
+    },
+    {
+      "rule_key": "ANALYSIS_FURAS_AGRICULTURAL_ACTIVITY_REVIEW",
+      "signal_type": "source_activity_semantic_hint",
+      "source_fields": [
+        "source_activity"
+      ],
+      "source": "furas",
+      "match_condition": "exact normalized source_activity = الأنشطة الزراعية والحيوانية",
+      "proposed_sector_id": "sector:agriculture",
+      "positive_evidence": {
+        "master_ids": [
+          78
+        ],
+        "labeled_reference_count": 0,
+        "title_context": "palm by-products processing; agriculture versus industrial processing needs human decision"
+      },
+      "negative_conditions": [
+        "no labeled Furas control supports this raw value",
+        "processing activity may be industrial/food manufacturing rather than primary agriculture"
+      ],
+      "support_count": 0,
+      "estimated_records_affected": 1,
+      "confidence": "MEDIUM",
+      "decision": "REVIEW_ONLY"
+    },
+    {
+      "rule_key": "ANALYSIS_TITLE_REVIEW_تمور",
+      "signal_type": "compound_title_phrase",
+      "source_fields": [
+        "title_ar",
+        "normalized_title"
+      ],
+      "match_condition": "compound phrase contains تمور",
+      "proposed_sector_id": "sector:agriculture",
+      "positive_evidence": {
+        "unspecified_occurrences": 1
+      },
+      "negative_conditions": [
+        "title-only classification prohibited",
+        "check official taxonomy and asset contradictions"
+      ],
+      "support_count": 0,
+      "estimated_records_affected": 1,
+      "confidence": "LOW_TO_MEDIUM",
+      "decision": "REVIEW_ONLY"
+    },
+    {
+      "rule_key": "ANALYSIS_TITLE_REVIEW_نخيل",
+      "signal_type": "compound_title_phrase",
+      "source_fields": [
+        "title_ar",
+        "normalized_title"
+      ],
+      "match_condition": "compound phrase contains نخيل",
+      "proposed_sector_id": "sector:agriculture",
+      "positive_evidence": {
+        "unspecified_occurrences": 1
+      },
+      "negative_conditions": [
+        "title-only classification prohibited",
+        "check official taxonomy and asset contradictions"
+      ],
+      "support_count": 0,
+      "estimated_records_affected": 1,
+      "confidence": "LOW_TO_MEDIUM",
+      "decision": "REVIEW_ONLY"
+    }
+  ],
+  "safe_automatic_candidate_count": 0,
+  "reviewable_candidate_count": 14,
+  "likely_remain_unspecified": 379,
+  "next_implementation_requires_explicit_authorization": true
+}

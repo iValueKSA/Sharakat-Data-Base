@@ -1,0 +1,280 @@
+{
+  "artifact_type": "NCP_INVESTORS_PORTAL_INTEGRATION_MANIFEST",
+  "version": 1,
+  "generated_at_utc": "2026-11-03T11:26:57Z",
+  "project": "C:\\Sharakat Data Base",
+  "environment": "local_user",
+  "compose_project": "alahsa-local",
+  "base_url": "http://localhost:8080",
+  "result": "COMPLETE",
+  "preflight": {
+    "ncp_test_root_cause": "STALE_ASSERTION",
+    "original_test_name_preserved": "test_ncp_public_archive_scope_is_separate_from_private_pipeline",
+    "public_private_scope_invariant": "PRESERVED",
+    "public_scope": [
+      "NCP English and Arabic public SharePoint News archives and public articles",
+      "Public NCP discovery pages and sitemap",
+      "Anonymous public Investors Portal config, paginated project catalog, and UUID detail endpoints"
+    ],
+    "private_or_restricted_scope": "Account-only application submission, bid-management, and restricted pipeline surfaces; not accessed or probed.",
+    "public_endpoints": [
+      "https://ncp.gov.sa/en/MediaCenter/News/Pages/default.aspx",
+      "https://ncp.gov.sa/ar/MediaCenter/News/Pages/default.aspx",
+      "https://ncp.gov.sa/en/Pages/default.aspx",
+      "https://ncp.gov.sa/en/MediaCenter/Pages/default.aspx",
+      "https://ncp.gov.sa/en/MediaCenter/DigitalLibrary/Pages/default.aspx",
+      "https://ncp.gov.sa/en/KnowledgeCenter/Pages/default.aspx",
+      "https://ncp.gov.sa/sitemap.xml",
+      "https://investors.ncp.gov.sa/home",
+      "https://investors.ncp.gov.sa/assets/config.prod.json",
+      "https://investors.ncp.gov.sa/api/v1/projects/pipeline?pageNumber=...&pageSize=...",
+      "https://investors.ncp.gov.sa/api/v1/projects/{uuid}"
+    ],
+    "authentication_used": false,
+    "private_endpoint_accessed": false,
+    "test_fix": "Expanded the existing regression test to check current anonymous public portal behavior, exact public archive surfaces, no login/auth/token route, and no authorization header."
+  },
+  "pre_ncp_regression": {
+    "passed": 684,
+    "skipped": 1,
+    "failed": 0,
+    "environment": "Isolated regression container; SQLite; no live database URL."
+  },
+  "source_baseline": {
+    "source_key": "ncp",
+    "source_name_ar": "المركز الوطني للتخصيص",
+    "current_ncp_source_rows": 45,
+    "current_ncp_linked_rows": 2,
+    "current_ncp_unlinked_rows": 43,
+    "current_distinct_linked_masters": 1,
+    "current_source_provider_id_field": "Synthetic ncp-project:<project identity hash> or ncp:<news slug>; no official portal UUID/reference in current News rows.",
+    "current_adapter_endpoints": [
+      "Paginated English NCP News SharePoint archive and public article URLs",
+      "Paginated Arabic NCP News SharePoint archive and public article URLs",
+      "https://investors.ncp.gov.sa/assets/config.prod.json",
+      "https://investors.ncp.gov.sa/api/v1/projects/pipeline",
+      "https://investors.ncp.gov.sa/api/v1/projects/{uuid}"
+    ],
+    "current_public_scope": "Public English/Arabic NCP News archive and anonymously accessible UUID-keyed Investors Portal catalog under one NCP identity.",
+    "current_parser_version": "2026.10.12-ncp-2",
+    "current_configured_sources": 13,
+    "current_masters_compared": 6632,
+    "all_source_rows_compared": 9299
+  },
+  "portal": {
+    "official_home": "https://investors.ncp.gov.sa/home",
+    "extraction_method": "Public Angular runtime config + anonymous paginated REST JSON list and public UUID detail requests.",
+    "provider_id_field": "id (UUID)",
+    "records_found": 159,
+    "reported_total": 159,
+    "provider_ids_unique": true,
+    "pagination": {
+      "page_size": 100,
+      "pages": 2,
+      "records_per_page": [100, 59],
+      "enumeration_complete": true
+    },
+    "detail_records_refreshed_during_sync": 159,
+    "isClosed_false": 159,
+    "isClosed_true": 0,
+    "isAvailableToSubmit_true": 0,
+    "authentication_used": false,
+    "restricted_endpoint_used": false,
+    "english_news_archive_complete": true,
+    "arabic_news_archive_complete": false,
+    "arabic_archive_limitation": "Public archive continuation page 12 returned no SharePoint list data (maintenance response); English archive pagination completed and portal enumeration was complete.",
+    "relationship_to_existing_ncp": "PARTIAL_OVERLAP_WITH_ADDITIONAL_UNIQUE_RECORDS"
+  },
+  "identity_comparison": {
+    "exact_id_matches": 0,
+    "portal_only_ids": 159,
+    "current_source_only_ids": 45,
+    "manual_deterministic_same_project_crosswalks": 19,
+    "title_only_authorizes_link": false,
+    "cross_catalogues_compared": [
+      "NCP News", "Furas", "Invest Saudi", "PIF", "NHC", "MODON", "MWAN", "RCJY", "RCU", "all 6,632 current Masters"
+    ],
+    "category_counts": {
+      "A_EXISTING_NCP_EXACT_MATCH": 0,
+      "B_EXISTING_NCP_DETERMINISTIC_MATCH": 19,
+      "C_NEW_UNIQUE_NCP_OPPORTUNITY": 25,
+      "D_IDENTITY_REVIEW": 56,
+      "E_HISTORICAL_OR_NONCURRENT": 59,
+      "F_NOT_QUALIFYING": 0
+    },
+    "classification_rules": {
+      "B": "Manually adjudicated project/asset identity using bilingual identity plus corroborating authority, place, or description evidence; existing NCP SourceOpportunity ID and Master link retained.",
+      "C": "Unique stable UUID, no exact ID/reference match, no generated project-identity candidate in full cross-source/current-Master comparison, and not at parent stage Closed Transaction.",
+      "D": "Project-text/title candidates only; no automatic link or Master.",
+      "E": "Explicit portal parent stage Closed Transaction; raw isClosed=false is preserved without generic lifecycle mapping."
+    }
+  },
+  "field_richness_comparison": {
+    "matched_records": 19,
+    "conflicts_for_every_field": 0,
+    "fields": {
+      "project_stage": {"current_source_coverage": 19, "portal_coverage": 19, "portal_richer": false, "conflicts": 0},
+      "status_evidence": {"current_source_coverage": 3, "portal_coverage": 19, "portal_richer": true, "conflicts": 0},
+      "authority": {"current_source_coverage": 7, "portal_coverage": 17, "portal_richer": true, "conflicts": 0},
+      "sector": {"current_source_coverage": 0, "portal_coverage": 19, "portal_richer": true, "conflicts": 0},
+      "transaction_model": {"current_source_coverage": 19, "portal_coverage": 19, "portal_richer": false, "conflicts": 0},
+      "ppp_model": {"current_source_coverage": 19, "portal_coverage": 15, "portal_richer": false, "conflicts": 0},
+      "region": {"current_source_coverage": 1, "portal_coverage": 0, "portal_richer": false, "conflicts": 0},
+      "governorate": {"current_source_coverage": 0, "portal_coverage": 0, "portal_richer": false, "conflicts": 0},
+      "city_locality_raw": {"current_source_coverage": 7, "portal_coverage": 19, "portal_richer": true, "conflicts": 0},
+      "publication_date": {"current_source_coverage": 19, "portal_coverage": 0, "portal_richer": false, "conflicts": 0},
+      "eoi_dates": {"current_source_coverage": 12, "portal_coverage": 12, "portal_richer": false, "conflicts": 0},
+      "rfq_dates": {"current_source_coverage": 5, "portal_coverage": 12, "portal_richer": true, "conflicts": 0},
+      "rfp_dates": {"current_source_coverage": 1, "portal_coverage": 6, "portal_richer": true, "conflicts": 0},
+      "stage_deadline_raw": {"current_source_coverage": 3, "portal_coverage": 18, "portal_richer": true, "conflicts": 0},
+      "documents": {"current_source_coverage": 0, "portal_coverage": 0, "portal_richer": false, "conflicts": 0},
+      "detail_url": {"current_source_coverage": 19, "portal_coverage": 19, "portal_richer": false, "conflicts": 0},
+      "description": {"current_source_coverage": 19, "portal_coverage": 19, "portal_richer": false, "conflicts": 0}
+    },
+    "date_semantics": "createdOn is not relabeled as publication date; stageStartDate remains current stage start; deadline and launch-stage EOI/RFQ/RFP dates remain stage-specific source evidence. No generic Master deadline is projected.",
+    "stage_status_rule": "EOI/RFQ/RFP/award and Closed Transaction remain procurement-stage evidence; no generic available/expired/cancelled status is inferred."
+  },
+  "architecture": {
+    "decision": "SAME_SOURCE_ENRICHMENT",
+    "one_ncp_configured_source": true,
+    "configured_source_count_change": 0,
+    "same_organization_provenance_inflated": false,
+    "portal_observations": 159,
+    "geography_or_coordinates_fabricated": false,
+    "stage_deadline_or_status_inferred": false
+  },
+  "backups": [
+    {
+      "boundary": "Before the first NCP live write",
+      "path": "C:\\Sharakat Data Base\\backups\\ncp-preflight-20261103.dump",
+      "sha256": "99A14A28FAB1ECD5FDB61684EFB4E6C9C3A096EBB3D13E7BE7F623AE0B3F7BAA",
+      "restore_test": "PASSED",
+      "restore_counts": {"all_masters": 6653, "current_masters": 6632, "source_opportunities": 9299, "configured_sources": 13, "ncp_rows": 45}
+    },
+    {
+      "boundary": "After public source capture and before Master promotion",
+      "path": "C:\\Sharakat Data Base\\backups\\ncp-pre-master-promotion-20261103.dump",
+      "sha256": "D77980B0B2EE21315AEB98C41BB3ADDF349DD615124A238AAAA80040A184AA67",
+      "restore_test": "PASSED",
+      "restore_counts": {"all_masters": 6653, "source_opportunities": 9439, "configured_sources": 13, "ncp_rows": 185}
+    },
+    {
+      "boundary": "Before sector taxonomy remediation",
+      "path": "C:\\Sharakat Data Base\\backups\\ncp-pre-sector-remediation-20261103.dump",
+      "sha256": "F4749C371022DDA54301280D1CB47721541B76820C1635864DB0BB4CF592A57F",
+      "restore_test": "PASSED",
+      "restore_counts": {"all_masters": 6678, "current_masters": 6657, "source_opportunities": 9439, "configured_sources": 13, "ncp_portal_masters": 25}
+    }
+  ],
+  "execution": {
+    "api_worker_rebuilt_from_tested_workspace": true,
+    "manual_ncp_syncs": 1,
+    "job_id": 757,
+    "job_status": "SUCCESS",
+    "job_state": "COMPLETED",
+    "trigger": "manual",
+    "portal_rows_inserted": 140,
+    "existing_ncp_source_rows_enriched": 19,
+    "generic_sync_update_count": 1,
+    "portal_observations": 159,
+    "source_rows_removed": 0,
+    "bootstrap_removals": 0,
+    "other_manual_source_syncs": 0,
+    "original_ncp_source_ids_and_master_links_preserved": 45,
+    "original_ncp_source_id_link_check": "45/45 tuples of source row ID, external ID, and Master link exactly matched the pre-sync snapshot."
+  },
+  "master_actions": {
+    "created": 25,
+    "existing_masters_newly_linked": 0,
+    "existing_linked_ncp_rows_preserved": 2,
+    "existing_linked_master_preserved": 228,
+    "new_ncp_master_ids": [6684, 6685, 6686, 6687, 6688, 6689, 6690, 6691, 6692, 6693, 6694, 6695, 6696, 6697, 6698, 6699, 6700, 6701, 6702, 6703, 6704, 6705, 6706, 6707, 6708],
+    "promotion_audit_events": 25,
+    "sector_classification_audits": 25,
+    "sector_crosswalk": {
+      "Hajj and Umrah Sector": "الحج والعمرة",
+      "Environment, Water & Agriculture Sector": "البيئة والمياه والزراعة",
+      "Municipalities and Housing Sector": "البلديات والإسكان",
+      "Zakat, Tax and Customs Sector": "الزكاة والضريبة والجمارك",
+      "Transport and Logistic Services Sector": "النقل والخدمات اللوجستية",
+      "Sports Sector": "الرياضة",
+      "Education Sector": "التعليم"
+    },
+    "location_policy": "Raw portal location text retained; administrative region/city and coordinates left unspecified unless separately verifiable.",
+    "status_policy": "Unknown unless explicitly established; stage and isAvailableToSubmit are not reinterpreted."
+  },
+  "intermediate_and_final_dq": {
+    "initial_post_promotion_dq": {
+      "fail": 4,
+      "gates": ["CURRENT_MASTER_WITH_UNSPECIFIED_SECTOR", "NEW_MASTER_WITH_UNSPECIFIED_SECTOR", "SECTOR_PIPELINE_NOT_EXECUTED", "SECTOR_DASHBOARD_COUNT_MISMATCH"],
+      "cause": "The first promotion pass had not yet mapped NCP's official macro-sector labels into the governed sector classifier."
+    },
+    "remediation": "Added exact aliases for five official NCP macro-sectors, preserved the two existing canonical sector labels, and ran the governed classifier with explicit source-sector evidence for all 25 new Masters. No gate was weakened.",
+    "final_full_dq": {
+      "run_id": "aafbd7c6e6284b379779f62ddbe81a86",
+      "pass": 127,
+      "warning": 7,
+      "fail": 0,
+      "warning_gates": ["GENERIC_SOURCE_PAGE_AS_OPPORTUNITY_ACTION", "OPEN_REVIEW_BACKLOG", "HISTORICAL_REVIEW_AUDIT_INCOMPLETE", "SOURCE_LAST_SUCCESS_TOO_OLD", "SYNC_RUNTIME_ANOMALY", "SOURCE_ABSENCE_CLASSIFICATION", "UNKNOWN_AREA_STORED_AS_ZERO"]
+    }
+  },
+  "final_state": {
+    "configured_sources": 13,
+    "source_opportunities": 9439,
+    "all_masters": 6678,
+    "current_masters": 6657,
+    "merged_masters": 21,
+    "ncp_source_rows": 185,
+    "ncp_portal_source_rows": 140,
+    "ncp_portal_observations": 159,
+    "ncp_linked_source_rows": 27,
+    "ncp_distinct_linked_masters": 26,
+    "ncp_duplicate_external_ids": 0,
+    "ncp_broken_links": 0,
+    "ncp_source_rows_removed": 0,
+    "projected_duplicate_masters": 0,
+    "projected_invalid_source_duplication": 0,
+    "projected_broken_ncp_links": 0,
+    "projected_dq_fail_after_sector_remediation": 0,
+    "rcu_source_rows": 6,
+    "rcu_masters": 6,
+    "rcjy_source_rows": 3,
+    "rcjy_masters": 3,
+    "configured_source_count_change": 0
+  },
+  "validation": {
+    "focused_ncp_tests": {"passed": 35, "failed": 0},
+    "final_full_regression": {
+      "passed": 685,
+      "skipped": 1,
+      "failed": 0,
+      "required_ncp_test": "test_ncp_public_archive_scope_is_separate_from_private_pipeline",
+      "required_ncp_test_passed": true,
+      "skip_reason": "Existing PostgreSQL advisory-lock test was skipped because the isolated regression run used SQLite; no live database was used."
+    },
+    "rcu_source_filter": "PASSED: 6",
+    "rcu_region_governorate_filter": "PASSED: Al-Madinah external ID 3 + Al Ula governorate external ID 302 returned 6",
+    "rcjy_source_filter": "PASSED: 3",
+    "api_health": 200,
+    "api_readiness": 200,
+    "postgres": "HEALTHY",
+    "redis": "HEALTHY",
+    "worker": "HEALTHY; Celery inspect ping returned pong",
+    "beat": "HEALTHY; scheduler container running",
+    "active_ncp_jobs": 0,
+    "other_manual_source_syncs": 0
+  },
+  "scope_stop": {
+    "rcu_modified": false,
+    "rcjy_modified": false,
+    "furas_manually_synced": false,
+    "taadeen_started": false,
+    "tourism_started": false,
+    "stopped_after_ncp": true
+  },
+  "artifacts": {
+    "comparison_dry_run": "NCP-INVESTORS-PORTAL-COMPARISON-DRY-RUN-20261103.json",
+    "integration_report": "NCP-INVESTORS-PORTAL-INTEGRATION-20261103.md",
+    "promotion_utility": "scripts/promote_ncp_unique_masters.py"
+  }
+}

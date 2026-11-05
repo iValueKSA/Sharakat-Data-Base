@@ -1,0 +1,85 @@
+{
+  "previous_job_id": 411,
+  "job439_id": 439,
+  "datasets": [
+    {
+      "dataset_name": null,
+      "endpoint": "https://investsaudi.sa/backend/wp-json/v3/opportunities",
+      "previous_job_count": 1771,
+      "job_439_count": 1771,
+      "delta": 0,
+      "previous_pages": 18,
+      "job_439_pages": 18,
+      "http_status": "Per-page codes not persisted; adapter raises for non-2xx and job completed.",
+      "schema_change": false,
+      "query_scope": "GET page/per_page=100; no location, date, or status request filters. Filter metadata records available API filters, not applied filters."
+    },
+    {
+      "dataset_name": null,
+      "endpoint": "https://investsaudi.sa/backend/wp-json/v3/investment-projects",
+      "previous_job_count": 338,
+      "job_439_count": 338,
+      "delta": 0,
+      "previous_pages": 4,
+      "job_439_pages": 4,
+      "http_status": "Per-page codes not persisted; adapter raises for non-2xx and job completed.",
+      "schema_change": false,
+      "query_scope": "GET page/per_page=100; no location, date, or status request filters. Filter metadata records available API filters, not applied filters."
+    },
+    {
+      "dataset_name": null,
+      "endpoint": "https://investsaudi.sa/backend/wp-json/v3/pif-opportunities",
+      "previous_job_count": 184,
+      "job_439_count": 184,
+      "delta": 0,
+      "previous_pages": 2,
+      "job_439_pages": 2,
+      "http_status": "Per-page codes not persisted; adapter raises for non-2xx and job completed.",
+      "schema_change": false,
+      "query_scope": "GET page/per_page=100; no location, date, or status request filters. Filter metadata records available API filters, not applied filters."
+    },
+    {
+      "dataset_name": null,
+      "endpoint": "https://investsaudi.sa/backend/wp-json/v3/regional-opportunities",
+      "previous_job_count": 138,
+      "job_439_count": 138,
+      "delta": 0,
+      "previous_pages": 2,
+      "job_439_pages": 2,
+      "http_status": "Per-page codes not persisted; adapter raises for non-2xx and job completed.",
+      "schema_change": false,
+      "query_scope": "GET page/per_page=100; no location, date, or status request filters. Filter metadata records available API filters, not applied filters."
+    }
+  ],
+  "previous_active_memberships": {
+    "Opportunities": 1771,
+    "Investment projects": 347,
+    "PIF opportunities": 184,
+    "Regional opportunities": 138
+  },
+  "current_active_memberships": {
+    "Investment projects": 338,
+    "Regional opportunities": 138,
+    "Opportunities": 1771,
+    "PIF opportunities": 184
+  },
+  "new_membership_deactivations": {
+    "count": 9,
+    "dataset": "Investment projects",
+    "ids": [
+      "investsaudi:55008",
+      "investsaudi:55018",
+      "investsaudi:51504",
+      "investsaudi:55015",
+      "investsaudi:51502",
+      "investsaudi:51521",
+      "investsaudi:55025",
+      "investsaudi:55016",
+      "investsaudi:51501"
+    ],
+    "evidence": "Each was absent from both complete scans, had two misses pre-439, and reached the configured third miss. Identities and raw rows remain."
+  },
+  "source_scope_changed": false,
+  "source_filter_changed": false,
+  "dataset_scope": "Same four fixed endpoints, GET, page size 100; page/per_page only."
+}

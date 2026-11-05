@@ -1,0 +1,21 @@
+{
+  "backup_file": "C:\\Sharakat Data Base\\backups\\final-readiness-post-restart\\20261026T091018Z-b62b8c91.dump",
+  "timestamp": "2026-10-26T09:10:18Z",
+  "size_bytes": 10719818,
+  "sha256": "e54abaf49d1ccfdd57428e6aa7b5d878123b71f0d151710e5613325053c61739",
+  "accepted_sha256": "e54abaf49d1ccfdd57428e6aa7b5d878123b71f0d151710e5613325053c61739",
+  "checksum_matches": true,
+  "format": "PostgreSQL custom-format dump",
+  "validation": "PASSED",
+  "isolated_restore": "PASSED",
+  "restored_core_counts": {
+    "current_masters": 566,
+    "source_opportunities": 3178,
+    "observations": 25298,
+    "reviews_total": 1187,
+    "open_reviews": 0,
+    "alembic_head": "0023_quant_commercial"
+  },
+  "isolated_environment_cleanup": "Stopped and cleaned after restore validation",
+  "restore_repeated_for_closeout": false
+}

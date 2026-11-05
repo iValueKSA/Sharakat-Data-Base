@@ -1,0 +1,9 @@
+{
+  "backup_id": "20261026T091018Z-b62b8c91",
+  "started_at": "2026-10-26T09:10:18.357405+00:00",
+  "completed_at": "2026-10-26T09:10:20.670911+00:00",
+  "size_bytes": 10719818,
+  "status": "SUCCESS",
+  "storage_location": "/backups/final-readiness-post-restart/20261026T091018Z-b62b8c91.dump",
+  "sha256": "e54abaf49d1ccfdd57428e6aa7b5d878123b71f0d151710e5613325053c61739"
+}

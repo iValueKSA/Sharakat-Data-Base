@@ -1,0 +1,217 @@
+{
+  "review_date": "2026-11-01",
+  "decision": "No candidate is verified for production Region -> Governorate use.",
+  "candidates": [
+    {
+      "operator": "General Authority for Survey and Geospatial Information (GEOSA)",
+      "dataset_name": "Geographical Names — feature type and aggregate count XLSX",
+      "official_url": "https://www.geosa.gov.sa/en/Pages/Open_data.aspx",
+      "access_method": "Public open-data catalog download; workbook inspected locally.",
+      "administrative_levels": ["feature classes include regions, governorates, centers, villages; no unit-level roster"],
+      "stable_ids": {
+        "available": false,
+        "fields": [],
+        "evidence": "Workbook provides feature-type code/class and aggregate count only; it has no individual administrative-unit rows or IDs."
+      },
+      "parent_relationships": {
+        "available": false,
+        "fields": [],
+        "evidence": "No region-governorate-city membership rows or parent IDs in the inspected workbook."
+      },
+      "geometry_available": false,
+      "dataset_version": "",
+      "effective_date": "",
+      "last_updated": "Catalog page has a 2026 web update; workbook metadata timestamps are not a dataset effective date/version.",
+      "license": "GEOSA catalog states open-data reuse is subject to the applicable dataset license and attribution; no dataset-specific license was identified in the inspected workbook.",
+      "license_url": "https://www.geosa.gov.sa/en/Pages/Open_data.aspx",
+      "reuse_allowed": false,
+      "record_counts": {
+        "feature_type_rows": 93,
+        "region_units": null,
+        "governorate_units": null,
+        "city_units": null
+      },
+      "completeness_evidence": "The XLSX is a class/count summary, not a list of geographic units; administrative completeness cannot be measured from it.",
+      "authentication_required": false,
+      "accessible_now": true,
+      "production_role": "CROSS_VALIDATION_ONLY",
+      "blocking_gaps": ["No unit-level rows", "No stable administrative IDs", "No parent IDs", "No effective dataset version", "No dataset-specific reuse evidence"]
+    },
+    {
+      "operator": "General Authority for Survey and Geospatial Information (GEOSA)",
+      "dataset_name": "Official Saudi Map (2026 product)",
+      "official_url": "https://geoportal.geosa.gov.sa/Geoportal/GeospatialOpenData/OfficialSaudiMap",
+      "access_method": "Public product page; page describes digital GeoPDF/GeoTIFF delivery on request. No structured data package requested or received.",
+      "administrative_levels": ["national boundaries", "administrative regions; product is a general topographic map"],
+      "stable_ids": {
+        "available": false,
+        "fields": [],
+        "evidence": "Public product description does not expose an administrative-unit ID table."
+      },
+      "parent_relationships": {
+        "available": false,
+        "fields": [],
+        "evidence": "No structured region-governorate-city parent relation published on the product page."
+      },
+      "geometry_available": true,
+      "dataset_version": "Product page identifies production year 2026; this is not a structured dataset version.",
+      "effective_date": "",
+      "last_updated": "",
+      "license": "No dataset-specific reuse license was established for a requested map deliverable.",
+      "license_url": "",
+      "reuse_allowed": false,
+      "record_counts": {},
+      "completeness_evidence": "Product page describes national map coverage but not a downloadable administrative-unit roster.",
+      "authentication_required": false,
+      "accessible_now": false,
+      "production_role": "BLOCKED",
+      "blocking_gaps": ["Deliverable available on request", "No structured unit register acquired", "No stable IDs or parent keys", "No dataset-specific reuse terms", "No effective date/version contract"]
+    },
+    {
+      "operator": "National Center for Archives and Records (NCAR)",
+      "dataset_name": "Unified Coding Guide for Regions, Governorates and Administrative Centers",
+      "official_url": "https://ncar.gov.sa/regions-coding",
+      "access_method": "Public webpage and linked 80-page PDF; human-readable guide, not a machine-readable download.",
+      "administrative_levels": ["region", "governorate", "administrative center", "regional capital"],
+      "stable_ids": {
+        "available": true,
+        "fields": ["region code", "governorate code", "administrative-center code"],
+        "evidence": "Guide shows 13 region codes 0001–0013 and assigns codes to governorates and centers; code persistence contract is not documented."
+      },
+      "parent_relationships": {
+        "available": true,
+        "fields": ["guide section nesting under region", "four-digit unit codes"],
+        "evidence": "PDF indexes region sections and nests governorate/center lists under each region; no machine-readable parent key is published."
+      },
+      "geometry_available": false,
+      "dataset_version": "PDF cover indicates issuance 1448; no explicit dataset version found.",
+      "effective_date": "",
+      "last_updated": "PDF file metadata indicates 2026-07-28; file metadata is not an effective date.",
+      "license": "No explicit reuse license located in the reviewed page or PDF.",
+      "license_url": "",
+      "reuse_allowed": false,
+      "record_counts": {
+        "regions": 13,
+        "governorates": null,
+        "administrative_centers": null
+      },
+      "completeness_evidence": "Guide index and code page cover 13 regions; the PDF is manually structured and does not supply a machine-readable completeness/count statement adequate for deterministic import.",
+      "authentication_required": false,
+      "accessible_now": true,
+      "production_role": "CROSS_VALIDATION_ONLY",
+      "blocking_gaps": ["No explicit reuse grant", "No clear effective/version date", "No machine-readable unit roster", "No authoritative completeness count", "Custodian's current roster/version role needs confirmation"]
+    },
+    {
+      "operator": "Ta’adeen GIS public ArcGIS service; underlying data custodian not established",
+      "dataset_name": "Common/BaseMaps MapServer — Governorates, Emirates/Regions, Cities",
+      "official_url": "https://gis.taadeen.sa/server/rest/services/Common/BaseMaps/MapServer",
+      "access_method": "Public ArcGIS REST metadata and feature queries; no authentication required for observed reads.",
+      "administrative_levels": ["region/emirate", "governorate", "city"],
+      "stable_ids": {
+        "available": true,
+        "fields": ["Governorate_Code", "Emirate_Code", "Emirate_ID", "CITY_ID", "GlobalID"],
+        "evidence": "Observed Governorate_Code was unique across 149 governorate records; Emirate_Code/Emirate_ID unique across 13 regions; CITY_ID had 3,659 distinct values for 3,661 city rows and is not fully unique in this snapshot. Stability is not contractually documented."
+      },
+      "parent_relationships": {
+        "available": false,
+        "fields": ["Emirates_Ar", "Emirates_En", "GOVERNORATE_A", "GOVERNORATE_E"],
+        "evidence": "Governorate parent is region name strings with no region ID/relationship; city governorate name matching is incomplete and no ArcGIS relationship is defined."
+      },
+      "geometry_available": true,
+      "dataset_version": "",
+      "effective_date": "",
+      "last_updated": "Governorate/city observed last-edited date 2024-10-29; region rows include later edits through 2026-05-12. These are edit timestamps, not dataset effective dates.",
+      "license": "No applicable reuse license found in layer metadata; copyrightText is blank.",
+      "license_url": "",
+      "reuse_allowed": false,
+      "record_counts": {"regions": 13, "governorates": 149, "cities": 3661},
+      "completeness_evidence": "Observed services expose national layer counts but counts conflict with GASTAT publications; no source authority or completeness statement resolves the difference.",
+      "authentication_required": false,
+      "accessible_now": true,
+      "production_role": "CROSS_VALIDATION_ONLY",
+      "blocking_gaps": ["No reuse license", "No effective version", "No explicit governorate-to-region key", "149 count conflicts with statistical totals", "City IDs not unique in observed snapshot"]
+    },
+    {
+      "operator": "National Center for Meteorology (NCM) hosted TileServer; source cited as GASTAT statistical boundaries",
+      "dataset_name": "Vector tiles: KSA_Regions, KSA_Governorates, and cities",
+      "official_url": "https://meteo.ncm.gov.sa/tileserver/",
+      "access_method": "Public TileServer catalog and TileJSON metadata.",
+      "administrative_levels": ["region", "governorate", "city", "administrative centroids/boundaries"],
+      "stable_ids": {
+        "available": true,
+        "fields": ["Region_ID", "Govern_ID", "city_id"],
+        "evidence": "Governorate TileJSON includes Govern_ID and Region_ID; region TileJSON exposes region attributes; city tiles expose city_id but uniqueness is not proven by the sampled tile statistics."
+      },
+      "parent_relationships": {
+        "available": true,
+        "fields": ["Region_ID on governorate tile features", "region_id on city features"],
+        "evidence": "Governorate tile attributes explicitly include Region_ID; cities expose region_id but no governorate parent ID."
+      },
+      "geometry_available": true,
+      "dataset_version": "TileJSON version 2",
+      "effective_date": "",
+      "last_updated": "Source field cites statistical boundaries map dated 2019-06-20; no tile dataset last-updated date found.",
+      "license": "No reuse license found in TileServer index or TileJSON metadata.",
+      "license_url": "",
+      "reuse_allowed": false,
+      "record_counts": {"regions": 13, "governorates": 149, "cities": 4581},
+      "completeness_evidence": "TileJSON reports those counts; source is a 2019 statistical boundary map. City tilestats sample values do not certify unique IDs or full administrative coverage.",
+      "authentication_required": false,
+      "accessible_now": true,
+      "production_role": "GEOMETRY_ONLY",
+      "blocking_gaps": ["No reuse license", "Historical source vintage", "No current effective date", "No governorate linkage for cities", "City ID uniqueness/completeness not established"]
+    },
+    {
+      "operator": "Saudi Post / SPL National Address API",
+      "dataset_name": "National Address lookup APIs — Regions and Cities",
+      "official_url": "https://api.address.gov.sa/regions",
+      "access_method": "Documented subscription API; authenticated requests require an access token/subscription key. No call made without credentials.",
+      "administrative_levels": ["region", "city"],
+      "stable_ids": {
+        "available": true,
+        "fields": ["Region ID", "City ID"],
+        "evidence": "Public API documentation describes IDs and Arabic/English names; persistence/version guarantees are not documented on these endpoint pages."
+      },
+      "parent_relationships": {
+        "available": true,
+        "fields": ["RegionId request parameter for city listing"],
+        "evidence": "Cities endpoint accepts RegionId=-1 to list all cities or a region-specific value; no city-to-governorate dataset is documented."
+      },
+      "geometry_available": false,
+      "dataset_version": "",
+      "effective_date": "",
+      "last_updated": "",
+      "license": "API Terms of Use apply; terms are account/API-use terms and don't establish a reusable governorate register or unrestricted data reuse.",
+      "license_url": "https://api.address.gov.sa/termsofuse",
+      "reuse_allowed": false,
+      "record_counts": {},
+      "completeness_evidence": "No authorized response was obtained; documentation describes Regions/Cities only and does not document a governorate lookup endpoint.",
+      "authentication_required": true,
+      "accessible_now": false,
+      "production_role": "BLOCKED",
+      "blocking_gaps": ["Subscription key required", "No authorized account/key available", "No governorate reference endpoint", "No effective dataset version", "Reuse scope must be confirmed"]
+    },
+    {
+      "operator": "General Authority for Statistics (GASTAT)",
+      "dataset_name": "Statistical methods/publications reporting governorate counts",
+      "official_url": "https://stats.gov.sa/en/w/methodology-and-quality-report-for-health-and-safety-at-work-statistics-2025",
+      "access_method": "Public statistical methodology pages and reports.",
+      "administrative_levels": ["statistical governorate strata/reference area", "region"],
+      "stable_ids": {"available": false, "fields": [], "evidence": "Publications report totals and statistical coverage; no versioned administrative membership IDs provided in the reviewed materials."},
+      "parent_relationships": {"available": false, "fields": [], "evidence": "No unit-level roster or explicit parent keys in the reviewed methodology publications."},
+      "geometry_available": false,
+      "dataset_version": "Product-specific publication/methodology dates only",
+      "effective_date": "",
+      "last_updated": "The 2025 Health and Safety at Work methodology states latest methodology update 2026-04-29; other products have their own publication pages.",
+      "license": "Statistical publication terms; not an administrative reference dataset license.",
+      "license_url": "https://stats.gov.sa/",
+      "reuse_allowed": false,
+      "record_counts": {"regions": 13, "governorates_strata_in_household_surveys": 150, "governorates_reference_area_in_health_safety": 151},
+      "completeness_evidence": "Counts describe different statistical products/frames; no membership lists reconcile 150 versus 151.",
+      "authentication_required": false,
+      "accessible_now": true,
+      "production_role": "CROSS_VALIDATION_ONLY",
+      "blocking_gaps": ["Count conflict unresolved", "No membership roster", "No stable unit IDs", "Statistical scope is not an administrative register"]
+    }
+  ]
+}

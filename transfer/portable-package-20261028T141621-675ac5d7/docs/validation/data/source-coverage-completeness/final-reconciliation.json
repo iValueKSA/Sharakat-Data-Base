@@ -1,0 +1,383 @@
+{
+  "review": "Source Coverage & Completeness Deep Review - final adjudication",
+  "master_reconciliation": {
+    "total_master_rows": 308,
+    "current_non_merged_masters": 287,
+    "merged_masters": 21,
+    "dashboard_total": 287,
+    "data_dashboard_global_total": 287,
+    "opportunity_api_total": 287,
+    "opportunity_api_unique_ids": 287
+  },
+  "source_registry": {
+    "configured_sources": 10,
+    "enabled_sources": 10,
+    "complete_coverage": 7,
+    "partial_coverage": 0,
+    "limited_public_coverage": 3,
+    "blocked": 0,
+    "unknown": 0,
+    "technical_health_separate_from_coverage": true,
+    "rows": [
+      {
+        "source_key": "furas",
+        "technical_health": "HEALTHY",
+        "coverage_status": "COMPLETE_PUBLIC_SOURCE",
+        "source_record_total": 177,
+        "current_source_record_count": 164,
+        "historical_source_record_count": 13,
+        "qualified_current_source_record_count": 164,
+        "unlinked_current_source_record_count": 0,
+        "pending_review_count": 98,
+        "pending_absence_confirmation_count": 0,
+        "last_successful_scan": {
+          "job_id": 380,
+          "finished_at": "2026-10-20T14:06:43.24472+03:00",
+          "trigger_type": "scheduled",
+          "pages_successful": 3,
+          "pages_requested": 3,
+          "enumerated_count": 164,
+          "accepted_al_ahsa_count": 164,
+          "active_count": 164,
+          "location_review_count": 0
+        }
+      },
+      {
+        "source_key": "alahsa-opportunities",
+        "technical_health": "HEALTHY",
+        "coverage_status": "COMPLETE_PUBLIC_SOURCE",
+        "source_record_total": 103,
+        "current_source_record_count": 103,
+        "historical_source_record_count": 0,
+        "qualified_current_source_record_count": 103,
+        "unlinked_current_source_record_count": 0,
+        "pending_review_count": 65,
+        "pending_absence_confirmation_count": 0,
+        "last_successful_scan": {
+          "job_id": 381,
+          "finished_at": "2026-10-20T14:06:40.440635+03:00",
+          "trigger_type": "scheduled",
+          "pages_successful": 12,
+          "pages_requested": 12,
+          "enumerated_count": 103,
+          "accepted_al_ahsa_count": 103,
+          "active_count": 103,
+          "location_review_count": 0
+        }
+      },
+      {
+        "source_key": "ahda",
+        "technical_health": "WARNING",
+        "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE",
+        "source_record_total": 8,
+        "current_source_record_count": 8,
+        "historical_source_record_count": 0,
+        "qualified_current_source_record_count": 8,
+        "unlinked_current_source_record_count": 0,
+        "pending_review_count": 10,
+        "pending_absence_confirmation_count": 0,
+        "last_successful_scan": {
+          "job_id": 359,
+          "finished_at": "2026-10-19T21:47:32.877377+03:00",
+          "trigger_type": "scheduled",
+          "pages_successful": 216,
+          "pages_requested": 216,
+          "enumerated_count": 215,
+          "accepted_al_ahsa_count": 8,
+          "active_count": 0,
+          "location_review_count": 0
+        }
+      },
+      {
+        "source_key": "invest-saudi",
+        "technical_health": "WARNING",
+        "coverage_status": "COMPLETE_PUBLIC_SOURCE",
+        "source_record_total": 2555,
+        "current_source_record_count": 2444,
+        "historical_source_record_count": 111,
+        "qualified_current_source_record_count": 19,
+        "unlinked_current_source_record_count": 2425,
+        "pending_review_count": 20,
+        "pending_absence_confirmation_count": 4,
+        "last_successful_scan": {
+          "job_id": 350,
+          "finished_at": "2026-10-19T15:47:57.145499+03:00",
+          "trigger_type": "scheduled",
+          "pages_successful": 26,
+          "pages_requested": 26,
+          "enumerated_count": 2444,
+          "accepted_al_ahsa_count": 8,
+          "active_count": 8,
+          "location_review_count": 16
+        }
+      },
+      {
+        "source_key": "kfu",
+        "technical_health": "HEALTHY",
+        "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE",
+        "source_record_total": 6,
+        "current_source_record_count": 5,
+        "historical_source_record_count": 1,
+        "qualified_current_source_record_count": 2,
+        "unlinked_current_source_record_count": 3,
+        "pending_review_count": 5,
+        "pending_absence_confirmation_count": 0,
+        "last_successful_scan": {
+          "job_id": 369,
+          "finished_at": "2026-10-20T09:47:33.695516+03:00",
+          "trigger_type": "scheduled",
+          "pages_successful": 1,
+          "pages_requested": 1,
+          "enumerated_count": 2,
+          "accepted_al_ahsa_count": 2,
+          "active_count": 0,
+          "location_review_count": 0
+        }
+      },
+      {
+        "source_key": "modon",
+        "technical_health": "WARNING",
+        "coverage_status": "PUBLIC_COVERAGE_LIMITED",
+        "source_record_total": 0,
+        "current_source_record_count": 0,
+        "historical_source_record_count": 0,
+        "qualified_current_source_record_count": 0,
+        "unlinked_current_source_record_count": 0,
+        "pending_review_count": 0,
+        "pending_absence_confirmation_count": 0,
+        "last_successful_scan": {
+          "job_id": 195,
+          "finished_at": "2026-10-12T15:26:52.808735+03:00",
+          "trigger_type": "manual",
+          "pages_successful": 83,
+          "pages_requested": 83,
+          "enumerated_count": 0,
+          "accepted_al_ahsa_count": 0,
+          "active_count": 0,
+          "location_review_count": 0
+        }
+      },
+      {
+        "source_key": "ncp",
+        "technical_health": "HEALTHY",
+        "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE",
+        "source_record_total": 45,
+        "current_source_record_count": 45,
+        "historical_source_record_count": 0,
+        "qualified_current_source_record_count": 2,
+        "unlinked_current_source_record_count": 43,
+        "pending_review_count": 2,
+        "pending_absence_confirmation_count": 0,
+        "last_successful_scan": {
+          "job_id": 371,
+          "finished_at": "2026-10-20T09:48:03.100006+03:00",
+          "trigger_type": "scheduled",
+          "pages_successful": 82,
+          "pages_requested": 83,
+          "enumerated_count": 46,
+          "accepted_al_ahsa_count": 1,
+          "active_count": 0,
+          "location_review_count": 0
+        }
+      },
+      {
+        "source_key": "nhc",
+        "technical_health": "WARNING",
+        "coverage_status": "PUBLIC_COVERAGE_LIMITED",
+        "source_record_total": 0,
+        "current_source_record_count": 0,
+        "historical_source_record_count": 0,
+        "qualified_current_source_record_count": 0,
+        "unlinked_current_source_record_count": 0,
+        "pending_review_count": 0,
+        "pending_absence_confirmation_count": 0,
+        "last_successful_scan": {
+          "job_id": 200,
+          "finished_at": "2026-10-12T15:35:37.998869+03:00",
+          "trigger_type": "manual",
+          "pages_successful": 6,
+          "pages_requested": 6,
+          "enumerated_count": 0,
+          "accepted_al_ahsa_count": 0,
+          "active_count": 0,
+          "location_review_count": 0
+        }
+      },
+      {
+        "source_key": "pif",
+        "technical_health": "HEALTHY",
+        "coverage_status": "PUBLIC_COVERAGE_LIMITED",
+        "source_record_total": 0,
+        "current_source_record_count": 0,
+        "historical_source_record_count": 0,
+        "qualified_current_source_record_count": 0,
+        "unlinked_current_source_record_count": 0,
+        "pending_review_count": 0,
+        "pending_absence_confirmation_count": 0,
+        "last_successful_scan": {
+          "job_id": 383,
+          "finished_at": "2026-10-20T14:27:46.097525+03:00",
+          "trigger_type": "scheduled",
+          "pages_successful": 12,
+          "pages_requested": 13,
+          "enumerated_count": 0,
+          "accepted_al_ahsa_count": 0,
+          "active_count": 0,
+          "location_review_count": 0
+        }
+      },
+      {
+        "source_key": "mwan",
+        "technical_health": "WARNING",
+        "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE",
+        "source_record_total": 5,
+        "current_source_record_count": 5,
+        "historical_source_record_count": 0,
+        "qualified_current_source_record_count": 0,
+        "unlinked_current_source_record_count": 5,
+        "pending_review_count": 0,
+        "pending_absence_confirmation_count": 0,
+        "last_successful_scan": {
+          "job_id": 199,
+          "finished_at": "2026-10-12T15:28:00.933181+03:00",
+          "trigger_type": "manual",
+          "pages_successful": 10,
+          "pages_requested": 10,
+          "enumerated_count": 6,
+          "accepted_al_ahsa_count": 0,
+          "active_count": 0,
+          "location_review_count": 0
+        }
+      }
+    ]
+  },
+  "absence_adjudication": {
+    "reviewed": 16,
+    "invest_saudi": {
+      "reviewed": 13,
+      "confirmed_removed": 9,
+      "reissued_or_replaced": 0,
+      "scope_mismatch": 0,
+      "enumeration_defect": 0,
+      "review_required": 4
+    },
+    "kfu": {
+      "reviewed": 3,
+      "confirmed_removed": 0,
+      "archived_still_official": 0,
+      "scope_mismatch": 3,
+      "enumeration_defect": 0,
+      "review_required": 0
+    },
+    "unresolved_current_source_absences": 4,
+    "unexplained_current_source_absences": 0,
+    "details": "adjudicated-source-absences.json"
+  },
+  "furas": {
+    "filters_audited": true,
+    "adapter_ids": 164,
+    "pagination_requests_expected": 3,
+    "pagination_requests_completed": 3,
+    "unique_ids": 164,
+    "pagination_gaps": 0,
+    "pagination_duplicates": 0,
+    "valid_al_ahsa_records_missed": 0,
+    "city_only": 8084,
+    "city_announced": 1941,
+    "city_deadline_announced": 164,
+    "city_deadline_no_status": 171,
+    "deadline_past_excluded_announced": 1777,
+    "deleted_status_excluded_with_current_deadline": 7,
+    "qualifying_filter_additional_exclusions": 0,
+    "coverage_status": "COMPLETE_PUBLIC_SOURCE",
+    "adapter_enumerated_ids": 164,
+    "broader_official_ids": 1941,
+    "ids_excluded_by_adapter_filters": 1777,
+    "excluded_ids_classification": "Expired announcements; no current valid Al-Ahsa records missed"
+  },
+  "modon": {
+    "public_itemized_enumeration_available": false,
+    "coverage_status": "PUBLIC_COVERAGE_LIMITED",
+    "technical_health": "WARNING",
+    "stored_source_records": 0
+  },
+  "mwan": {
+    "public_itemized_enumeration_available": true,
+    "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE",
+    "technical_health": "WARNING",
+    "stored_source_records": 5,
+    "last_success_job": 199,
+    "last_success_pages": "10/10",
+    "last_success_specific_opportunities": 5,
+    "latest_scheduled_attempt": 382,
+    "latest_attempt_status": "FAILED_TLS"
+  },
+  "linkage": {
+    "qualified_source_records": 312,
+    "with_master": 312,
+    "without_master": 0
+  },
+  "safety": {
+    "removal_requires_complete_successful_scan": true,
+    "partial_scan_can_trigger_false_removals": false,
+    "master_lifecycle_changes_due_to_source_absence": 0,
+    "source_history_preserved": true,
+    "raw_provenance_preserved": true,
+    "observation_history_preserved": true,
+    "unexplained_business_data_changes": 0,
+    "manual_source_sync_started": false,
+    "total_masters": 308,
+    "source_opportunities": 2899,
+    "observations": 11205,
+    "sync_jobs": 383,
+    "review_added_status_snapshots": 18
+  },
+  "api_reconciliation": {
+    "coverage_endpoint": "GET /api/source-coverage",
+    "source_count": 10,
+    "fields_distinguish_technical_health_coverage_status_current_historical_qualified_reviews_and_last_success": true,
+    "invest_saudi_equation": "2,444 current = 2,440 direct official current + 4 pending absence confirmations; 111 historical; 2,555 total",
+    "kfu_equation": "5 current = 2 itemized qualified listings + 3 parser scope fragments; 1 historical; 6 total",
+    "status": "PASSED"
+  },
+  "dashboard_master_reconciliation": "PASSED",
+  "csv_master_reconciliation": "PASSED",
+  "csv_rows": 287,
+  "xlsx_master_reconciliation": "PASSED",
+  "xlsx_data_rows": 287,
+  "xlsx_dimension": "A1:AF293",
+  "browser_coverage_verification": "PASSED",
+  "browser_observed_invest_saudi": "2,444 current / 111 historical / 19 linked / 4 absence confirmations pending",
+  "browser_observed_kfu": "5 current / 1 historical / 2 linked / 3 scope artifacts",
+  "full_regression_suite": "187 passed / 0 failed",
+  "full_regression_isolated_sqlite": true,
+  "live_postgres_used_by_tests": false,
+  "readiness": "ready",
+  "natural_scheduled_jobs": [
+    {
+      "business_row_delta": 0,
+      "status": "FAILED",
+      "records": 0,
+      "id": 382,
+      "pages": "0/0",
+      "observation_delta": 0,
+      "source": "mwan"
+    },
+    {
+      "business_row_delta": 0,
+      "status": "SUCCESS",
+      "records": 0,
+      "id": 383,
+      "pages": "12/13 routes",
+      "observation_delta": 0,
+      "source": "pif"
+    }
+  ],
+  "review_artifacts": {
+    "report": "FINAL-RECONCILIATION.md",
+    "matrix": "source-coverage-matrix.csv",
+    "absence_details": "adjudicated-source-absences.json",
+    "tests": "full-regression-results.txt"
+  },
+  "fixed_validation_timestamp": "2026-10-20T14:59:31+03:00"
+}

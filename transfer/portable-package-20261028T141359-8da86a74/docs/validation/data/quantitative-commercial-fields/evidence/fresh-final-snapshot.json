@@ -1,0 +1,105 @@
+{
+  "captured_at_utc": "2026-10-20T08:24:06.000000Z",
+  "standardization_engine_version": "21",
+  "counts": {
+    "masters_total": 297,
+    "masters_nonmerged": 292,
+    "masters_merged": 5,
+    "source_opportunities": 2899,
+    "observations": 11137,
+    "merge_audits": 5,
+    "masters_with_area": 274,
+    "masters_with_investment_value": 0,
+    "masters_with_currency": 0,
+    "masters_with_duration": 106,
+    "masters_with_official_reference": 177
+  },
+  "fingerprints": {
+    "master_identity": "e196d07f6e477f2add751a8d1412d4097ce43c12d29b7d1fe08f89674f5540df",
+    "quantitative_fields": "14e72c940426bb945a2eb2224b78b7d0794355980c025b15afcf07a2ad381120",
+    "source_identity_and_quantitative_raw": "0868bc66454fbf3ca3e9cefa862d00ba7fdc2158a2ac7e7bcd04ab57f8f258bb",
+    "observation_history": "617fd44eb910a0ed0d997adeac2eaaacd136052e3db189dc14060e06ad194114",
+    "merge_audits": "d22401bf296fedbeebf057a06620d70eb30d0c057afdbb4852e8ac0feb09fa91"
+  },
+  "source_changes_since_2026_10_20T10_57_58_0300": {
+    "change_history_by_field": {},
+    "observations_created": 13,
+    "new_observation_ids": [
+      11125,
+      11126,
+      11127,
+      11128,
+      11129,
+      11130,
+      11131,
+      11132,
+      11133,
+      11134,
+      11135,
+      11136,
+      11137
+    ]
+  },
+  "latest_sync_jobs": [
+    {
+      "id": 375,
+      "source_id": 2,
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "started_at": "2026-10-20 08:03:32.701858+00:00",
+      "finished_at": "2026-10-20 08:03:41.439487+00:00",
+      "records_received": 103,
+      "new_count": 0,
+      "update_count": 0,
+      "merged_records_count": 0
+    },
+    {
+      "id": 374,
+      "source_id": 1,
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "started_at": "2026-10-20 08:03:32.706472+00:00",
+      "finished_at": "2026-10-20 08:03:38.913072+00:00",
+      "records_received": 164,
+      "new_count": 0,
+      "update_count": 43,
+      "merged_records_count": 0
+    },
+    {
+      "id": 373,
+      "source_id": 1,
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "started_at": "2026-10-20 07:02:32.339043+00:00",
+      "finished_at": "2026-10-20 07:02:38.659236+00:00",
+      "records_received": 164,
+      "new_count": 0,
+      "update_count": 164,
+      "merged_records_count": 0
+    },
+    {
+      "id": 372,
+      "source_id": 2,
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "started_at": "2026-10-20 07:02:32.325472+00:00",
+      "finished_at": "2026-10-20 07:02:41.826079+00:00",
+      "records_received": 103,
+      "new_count": 0,
+      "update_count": 0,
+      "merged_records_count": 0
+    },
+    {
+      "id": 371,
+      "source_id": 7,
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "started_at": "2026-10-20 06:47:32.430328+00:00",
+      "finished_at": "2026-10-20 06:48:03.100006+00:00",
+      "records_received": 46,
+      "new_count": 0,
+      "update_count": 0,
+      "merged_records_count": 0
+    }
+  ]
+}

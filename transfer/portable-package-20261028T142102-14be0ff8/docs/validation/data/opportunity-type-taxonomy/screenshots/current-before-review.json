@@ -1,0 +1,22 @@
+{
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "direction": "rtl",
+  "opportunityTypeOptions": [
+    "كل الأنواع",
+    "فرصة منشأة تجارية",
+    "Investment",
+    "فرصة استثمارية",
+    "فرصة تأجير",
+    "مشروع شراكة",
+    "TemporaryRental",
+    "الساحات الميادين",
+    "العربات المتنقلة",
+    "المباني",
+    "أخرى",
+    "قيمة مفقودة"
+  ],
+  "horizontalOverflow": false
+}

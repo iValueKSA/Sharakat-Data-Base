@@ -1,0 +1,9 @@
+Local Compose health evidence
+Captured: 2026-10-13 Asia/Amman
+
+Result: PASS
+Compose config validation and image builds succeeded. Long-running services: PostgreSQL, Redis, API, Frontend, Worker, Scheduler. PostgreSQL and Redis health checks passed; API container health and /health/ready passed; Celery worker ping and Beat dispatch were observed.
+
+The frontend publishes 127.0.0.1:8080. PostgreSQL port 5432 and Redis port 6379 are not host-published. Stop Platform stopped every project container and preserved named volumes. Start Platform restored the same core row counts. Docker Desktop stop followed by the Start button also returned the stack to ready.
+
+Container users: API/app runtime `app`; frontend `101` (nginx-unprivileged). Runtime secrets were present in container environment and absent from API image config/history.

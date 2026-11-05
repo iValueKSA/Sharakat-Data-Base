@@ -1,0 +1,52 @@
+{
+  "manual_source_sync_started": false,
+  "capture_window": {
+    "before_snapshot_at": "2026-10-21T11:31:28+03:00",
+    "after_snapshot_at": "2026-10-21T11:31:33+03:00",
+    "note": "The two scheduled jobs below completed before both snapshots and are recorded separately from the sector/status apply. No sync job was started by this task."
+  },
+  "scheduled_jobs_observed": [
+    {
+      "id": 401,
+      "source_key": "furas",
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "job_state": "COMPLETED",
+      "started_at_utc": "2026-10-21T08:01:05.662862+00:00",
+      "finished_at_utc": "2026-10-21T08:01:16.190669+00:00",
+      "raw_count": 402,
+      "ahsa_count": 402,
+      "new_count": 0,
+      "unchanged_count": 402,
+      "removed_records_count": 13,
+      "pages_requested": 6,
+      "pages_successful": 6,
+      "pagination_complete": true
+    },
+    {
+      "id": 402,
+      "source_key": "alahsa-opportunities",
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "job_state": "COMPLETED",
+      "started_at_utc": "2026-10-21T08:02:05.523089+00:00",
+      "finished_at_utc": "2026-10-21T08:02:14.710510+00:00",
+      "raw_count": 103,
+      "ahsa_count": 103,
+      "new_count": 0,
+      "unchanged_count": 103,
+      "removed_records_count": 0,
+      "pages_requested": 12,
+      "pages_successful": 12,
+      "pagination_complete": true
+    }
+  ],
+  "before_after_reconciliation": {
+    "current_masters": {"before": 525, "after": 525, "delta": 0},
+    "source_opportunities": {"before": 3137, "after": 3137, "delta": 0},
+    "observations": {"before": 12414, "after": 12414, "delta": 0},
+    "sync_job_count": {"before": 402, "after": 402, "delta": 0},
+    "sync_job_max_id": {"before": 402, "after": 402, "delta": 0},
+    "active_sync_jobs": {"before": 0, "after": 0}
+  }
+}

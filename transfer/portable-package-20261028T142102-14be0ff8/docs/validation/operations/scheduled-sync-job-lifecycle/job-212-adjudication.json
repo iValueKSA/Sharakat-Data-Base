@@ -1,0 +1,70 @@
+{
+  "adjudicated": true,
+  "classification": "DEAD_TASK_WITH_UNFINALIZED_DB_STATUS",
+  "secondary_finding": "SUPERSEDED_BY_LATER_SUCCESSFUL_SYNC",
+  "evidence": {
+    "id": 212,
+    "source_id": 5,
+    "source_key": "kfu",
+    "created_at": "2026-10-13T07:39:10.332446+00:00",
+    "started_at": "2026-10-13T07:39:10.332446+00:00",
+    "finished_at": "2026-10-21T12:08:07.795579+00:00",
+    "updated_at": "2026-10-13T07:39:10.332446+00:00",
+    "heartbeat_at": "2026-10-13T07:39:10.332446+00:00",
+    "celery_task_id": null,
+    "attempt_number": 1,
+    "worker_id": null,
+    "status": "ABANDONED",
+    "job_state": "ABANDONED",
+    "pagination_complete": false,
+    "scan_state": "NOT_STARTED; completeness forced false during adjudication",
+    "pages_scanned": 0,
+    "pages_requested": 0,
+    "pages_successful": 0,
+    "records_received": 0,
+    "records_parsed": 0,
+    "unique_records": 0,
+    "raw_count": 0,
+    "new_count": 0,
+    "update_count": 0,
+    "removed_records_count": 0,
+    "error_message": "Reconciled from prior stale recovery: no Celery task/worker, no Redis source lock or reservation, no progress since 2026-10-13, and successful later KFU jobs through 395. No scan started; incomplete enumeration.",
+    "correlation_id": "phase1-stale-recovery",
+    "later_successful_job_ids": [
+      213,
+      227,
+      261,
+      308,
+      333,
+      358,
+      369,
+      395
+    ],
+    "latest_successful_same_source_job": {
+      "id": 395,
+      "finished_at": "2026-10-21T06:01:12.833913+00:00"
+    },
+    "partial_business_writes": {
+      "source_opportunities": 0,
+      "source_observations": 0,
+      "qualification_reviews": 0,
+      "source_content_items": 0
+    },
+    "write_window": {
+      "start": "2026-10-13T07:39:10.332446+00:00",
+      "end": "2026-10-13T08:39:10.564798+00:00",
+      "attribution": "source-specific timestamp interval; write tables do not carry sync_job_id."
+    },
+    "audit_event_count": 1,
+    "audit_event_ids": [
+      89
+    ]
+  },
+  "celery_task_exists": false,
+  "celery_task_active": false,
+  "worker_exists": true,
+  "active_lock_for_source": false,
+  "audit_event_ids": [
+    89
+  ]
+}

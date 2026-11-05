@@ -1,0 +1,10 @@
+{
+  "api_health": "{\"status\":\"ready\",\"checks\":{\"database\":\"ok\",\"redis\":\"ok\",\"worker\":\"ok\"}}",
+  "workspace_standardization_engine_version": "21",
+  "running_worker_standardization_engine_version": "21",
+  "runtimes_match": true,
+  "captured_at_utc": "2026-10-20T07:58:32.3056516Z",
+  "database_revision": "0023_quant_commercial",
+  "parity_passed": true,
+  "running_api_standardization_engine_version": "21"
+}

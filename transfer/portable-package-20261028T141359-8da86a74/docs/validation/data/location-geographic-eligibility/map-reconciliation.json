@@ -1,0 +1,24 @@
+{
+  "snapshot_at_utc": "2026-10-19T09:54:54.895Z",
+  "total_eligible_masters": 291,
+  "coordinate_records": 177,
+  "exact_source_geometry_match": 177,
+  "mapped_inside_local_reference_boundary": 176,
+  "coordinate_outside_local_reference_boundary": 1,
+  "outside_master_ids": [
+    70
+  ],
+  "coordinates_missing_both": 114,
+  "invalid_wgs84_coordinates": 0,
+  "partial_coordinate_pairs": 0,
+  "unverified_or_nonmatching_source_geometry": 0,
+  "unmapped_total": 115,
+  "point_master_id_count": 176,
+  "all_point_ids_unique": true,
+  "map_point_ids_are_master_ids": true,
+  "al_ahsa_filtered_total": 283,
+  "filtered_map_points": 176,
+  "all_filtered_point_ids_in_filter_set": true,
+  "boundary_semantics": "Local geoBoundaries/OSM reference only; not an official cadastral, planning, or legal boundary",
+  "outside_master_reason": "Furas CITY_ID=104 and title identify Salwa; retained in review; local reference polygon is not authoritative"
+}

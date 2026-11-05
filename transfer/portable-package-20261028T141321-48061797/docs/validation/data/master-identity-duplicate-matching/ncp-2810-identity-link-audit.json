@@ -1,0 +1,16 @@
+{
+  "source_record_id": 2810,
+  "source_external_id": "ncp-project:9e385e6f8fbee46cc7309a25",
+  "previous_master_id": null,
+  "current_master_id": 228,
+  "matching_linked_source_record_id": 2781,
+  "rule": "same_source_exact_article_url_and_normalized_title_v1",
+  "same_source_id": true,
+  "exact_official_url_match": true,
+  "exact_title_match": true,
+  "same_five_municipality_project_scope_including_Al_Ahsa": true,
+  "raw_payload_changed": false,
+  "source_observations_changed": false,
+  "system_event_id": 464,
+  "reversible": true
+}

@@ -1,0 +1,48 @@
+{
+  "recorded_at_local_date": "2026-10-28",
+  "quality_priority": "HIGH",
+  "aggressive_size_reduction": false,
+  "previous_local_video": {
+    "format": "WebM VP9",
+    "size_bytes": 9790340,
+    "size_mb_decimal": 9.79034,
+    "dimensions": "1920x540",
+    "duration_seconds": 22.093396,
+    "landscape_scene_count": 4,
+    "map_scene_count": 2,
+    "visual_structure": "Four landscape scenes interrupted by two animated administrative-boundary scenes."
+  },
+  "local_video": {
+    "path": "app/static/media/ahsa-investment-hero.webm",
+    "format": "WebM",
+    "mime_type": "video/webm",
+    "codec": "VP9",
+    "size_bytes": 9790136,
+    "size_mb_decimal": 9.790136,
+    "size_mib": 9.33660,
+    "dimensions": "1920x540",
+    "frame_rate_fps": 24,
+    "target_bitrate_bps": 4500000,
+    "duration_seconds": 22.131582,
+    "audio_track": false,
+    "map_scene_count": 0,
+    "distinct_landscape_scene_count": 6,
+    "replacement_scenes": [
+      "Irrigation channel through the date palms at golden hour",
+      "Palm-lined development road and illuminated low-rise district at twilight"
+    ],
+    "loop_motion": "Six distinct cinematic landscape scenes with gentle camera drift and crossfades; the final development-road scene crossfades into the opening oasis.",
+    "web_optimized": true,
+    "native_browser_loop_verified": true
+  },
+  "local_poster": {
+    "path": "app/static/media/ahsa-investment-hero-poster.webp",
+    "format": "WebP",
+    "dimensions": "1920x540",
+    "size_bytes": 243874,
+    "contains_map": false,
+    "frame": "Opening oasis-and-escarpment scene"
+  },
+  "browser_support_strategy": "Local Windows platform; VP9 WebM and WebP are served from the local frontend. Live Chrome verified finite duration, decoded 1920x540 frames, autoplay, mute, inline playback, and native loop wrap. No reference-site runtime dependency is used.",
+  "preload_strategy": "preload=none; lazy source attachment only when the Dashboard view is active and reduced-motion preference is not enabled"
+}

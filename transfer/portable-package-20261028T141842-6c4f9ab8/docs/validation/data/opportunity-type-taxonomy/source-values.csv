@@ -1,0 +1,36 @@
+﻿source_key,source_name,evidence_layer,field,observed_value,source_record_count
+furas,فرص – البوابة الموحدة للاستثمار,raw_payload,OPPORTUNITYTYPE,Investment,48
+furas,فرص – البوابة الموحدة للاستثمار,raw_payload,OPPORTUNITYTYPE,TemporaryRental,129
+furas,فرص – البوابة الموحدة للاستثمار,standardized_projection,opportunity_type,Investment,43
+furas,فرص – البوابة الموحدة للاستثمار,standardized_projection,opportunity_type,TemporaryRental,121
+furas,فرص – البوابة الموحدة للاستثمار,standardized_projection,opportunity_type,أنشطة تجارة المواد الغذائية,2
+furas,فرص – البوابة الموحدة للاستثمار,standardized_projection,opportunity_type,محلات تجارية,3
+ahda,هيئة تطوير الأحساء,raw_semantic_category,content_type,INVESTMENT_OPPORTUNITY,7
+ahda,هيئة تطوير الأحساء,standardized_projection,opportunity_type,INVESTMENT_OPPORTUNITY,7
+invest-saudi,استثمر في السعودية,standardized_projection,opportunity_type,Agriculture,71
+invest-saudi,استثمر في السعودية,standardized_projection,opportunity_type,Commercial,6
+invest-saudi,استثمر في السعودية,standardized_projection,opportunity_type,Culture,99
+invest-saudi,استثمر في السعودية,standardized_projection,opportunity_type,Education,75
+invest-saudi,استثمر في السعودية,standardized_projection,opportunity_type,Energy,55
+invest-saudi,استثمر في السعودية,standardized_projection,opportunity_type,Environment,264
+invest-saudi,استثمر في السعودية,standardized_projection,opportunity_type,Healthcare,116
+invest-saudi,استثمر في السعودية,standardized_projection,opportunity_type,Industrial,828
+invest-saudi,استثمر في السعودية,standardized_projection,opportunity_type,Logistics,107
+invest-saudi,استثمر في السعودية,standardized_projection,opportunity_type,Other,95
+invest-saudi,استثمر في السعودية,standardized_projection,opportunity_type,Real Estate,543
+invest-saudi,استثمر في السعودية,standardized_projection,opportunity_type,Real Estate & Construction,39
+invest-saudi,استثمر في السعودية,standardized_projection,opportunity_type,Technology,73
+invest-saudi,استثمر في السعودية,standardized_projection,opportunity_type,Tourism,184
+kfu,جامعة الملك فيصل,raw_payload,opportunity_type,COMMERCIAL_FACILITY_OPPORTUNITY,1
+kfu,جامعة الملك فيصل,raw_payload,opportunity_type,GENERAL_ANNOUNCEMENT,3
+kfu,جامعة الملك فيصل,raw_payload,opportunity_type,LEASE_OPPORTUNITY,2
+kfu,جامعة الملك فيصل,raw_semantic_category,content_type,COMMERCIAL_FACILITY_OPPORTUNITY,1
+kfu,جامعة الملك فيصل,raw_semantic_category,content_type,GENERAL_ANNOUNCEMENT,3
+kfu,جامعة الملك فيصل,raw_semantic_category,content_type,LEASE_OPPORTUNITY,2
+kfu,جامعة الملك فيصل,standardized_projection,opportunity_type,COMMERCIAL_FACILITY_OPPORTUNITY,1
+kfu,جامعة الملك فيصل,standardized_projection,opportunity_type,GENERAL_ANNOUNCEMENT,3
+kfu,جامعة الملك فيصل,standardized_projection,opportunity_type,LEASE_OPPORTUNITY,2
+ncp,المركز الوطني للتخصيص,raw_semantic_category,content_type,PPP_PROJECT_ANNOUNCEMENT,45
+ncp,المركز الوطني للتخصيص,standardized_projection,opportunity_type,PPP_PROJECT,45
+mwan,موان,raw_semantic_category,record_semantic_type,INVESTMENT_OPPORTUNITY,5
+mwan,موان,standardized_projection,opportunity_type,WASTE_SECTOR_INVESTMENT,5

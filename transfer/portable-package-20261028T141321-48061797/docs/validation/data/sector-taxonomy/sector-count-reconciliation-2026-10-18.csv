@@ -1,0 +1,292 @@
+﻿master_id,canonical_sector,canonical_sector_id,sector_contribution,linked_source_rows,activity_value_count
+1,تجاري,sector:commercial,1,1,1
+2,تجاري,sector:commercial,1,1,1
+3,صناعي,sector:industrial,1,1,1
+4,صناعي,sector:industrial,1,1,1
+5,صناعي,sector:industrial,1,1,1
+6,صناعي,sector:industrial,1,1,1
+7,صناعي,sector:industrial,1,1,1
+8,صناعي,sector:industrial,1,1,1
+9,صناعي,sector:industrial,1,1,1
+10,غير محدد,sector:unspecified,1,1,0
+11,غير محدد,sector:unspecified,1,1,0
+12,غير محدد,sector:unspecified,1,1,0
+13,غير محدد,sector:unspecified,1,1,0
+14,غير محدد,sector:unspecified,1,1,0
+15,غير محدد,sector:unspecified,1,1,0
+16,غير محدد,sector:unspecified,1,1,0
+17,غير محدد,sector:unspecified,1,1,0
+18,غير محدد,sector:unspecified,1,1,1
+19,غير محدد,sector:unspecified,1,1,1
+20,غير محدد,sector:unspecified,1,1,1
+21,أخرى,sector:other,1,1,0
+22,غير محدد,sector:unspecified,1,1,0
+23,غير محدد,sector:unspecified,1,1,0
+24,غير محدد,sector:unspecified,1,1,0
+25,غير محدد,sector:unspecified,1,1,0
+26,غير محدد,sector:unspecified,1,1,0
+27,غير محدد,sector:unspecified,1,1,0
+28,غير محدد,sector:unspecified,1,1,0
+29,غير محدد,sector:unspecified,1,1,0
+30,غير محدد,sector:unspecified,1,1,1
+31,غير محدد,sector:unspecified,1,1,0
+32,غير محدد,sector:unspecified,1,1,0
+33,غير محدد,sector:unspecified,1,1,0
+34,غير محدد,sector:unspecified,1,1,0
+35,غير محدد,sector:unspecified,1,1,0
+36,غير محدد,sector:unspecified,1,1,0
+37,غير محدد,sector:unspecified,1,1,0
+38,غير محدد,sector:unspecified,1,1,0
+39,غير محدد,sector:unspecified,1,1,0
+40,غير محدد,sector:unspecified,1,1,0
+41,غير محدد,sector:unspecified,1,1,0
+42,غير محدد,sector:unspecified,1,1,0
+43,غير محدد,sector:unspecified,1,1,0
+44,غير محدد,sector:unspecified,1,1,0
+45,غير محدد,sector:unspecified,1,1,0
+46,غير محدد,sector:unspecified,1,1,0
+47,غير محدد,sector:unspecified,1,1,0
+48,غير محدد,sector:unspecified,1,1,0
+49,غير محدد,sector:unspecified,1,1,0
+50,غير محدد,sector:unspecified,1,1,0
+51,غير محدد,sector:unspecified,1,1,0
+52,غير محدد,sector:unspecified,1,1,0
+53,غير محدد,sector:unspecified,1,1,0
+54,غير محدد,sector:unspecified,1,1,0
+55,غير محدد,sector:unspecified,1,1,0
+56,غير محدد,sector:unspecified,1,1,0
+57,غير محدد,sector:unspecified,1,1,0
+58,غير محدد,sector:unspecified,1,1,0
+59,غير محدد,sector:unspecified,1,1,0
+60,غير محدد,sector:unspecified,1,1,0
+61,غير محدد,sector:unspecified,1,1,0
+62,غير محدد,sector:unspecified,1,1,0
+63,غير محدد,sector:unspecified,1,1,0
+64,غير محدد,sector:unspecified,1,1,0
+65,غير محدد,sector:unspecified,1,1,0
+66,غير محدد,sector:unspecified,1,1,0
+67,غير محدد,sector:unspecified,1,1,0
+68,غير محدد,sector:unspecified,1,1,0
+69,غير محدد,sector:unspecified,1,1,0
+70,غير محدد,sector:unspecified,1,1,0
+71,غير محدد,sector:unspecified,1,1,0
+72,غير محدد,sector:unspecified,1,1,0
+73,غير محدد,sector:unspecified,1,1,0
+76,غير محدد,sector:unspecified,1,1,0
+77,غير محدد,sector:unspecified,1,1,0
+78,غير محدد,sector:unspecified,1,1,1
+79,غير محدد,sector:unspecified,1,1,0
+80,غير محدد,sector:unspecified,1,1,0
+81,غير محدد,sector:unspecified,1,1,0
+82,غير محدد,sector:unspecified,1,1,0
+83,غير محدد,sector:unspecified,1,1,0
+84,غير محدد,sector:unspecified,1,1,0
+85,غير محدد,sector:unspecified,1,1,0
+86,غير محدد,sector:unspecified,1,1,0
+87,غير محدد,sector:unspecified,1,1,0
+88,غير محدد,sector:unspecified,1,1,0
+89,غير محدد,sector:unspecified,1,1,0
+90,غير محدد,sector:unspecified,1,1,1
+91,غير محدد,sector:unspecified,1,1,1
+92,غير محدد,sector:unspecified,1,1,0
+93,غير محدد,sector:unspecified,1,1,0
+94,غير محدد,sector:unspecified,1,1,0
+95,غير محدد,sector:unspecified,1,1,0
+96,غير محدد,sector:unspecified,1,1,1
+97,غير محدد,sector:unspecified,1,1,1
+98,غير محدد,sector:unspecified,1,1,1
+99,أخرى,sector:other,1,1,1
+100,أخرى,sector:other,1,1,1
+101,أخرى,sector:other,1,1,1
+102,غير محدد,sector:unspecified,1,2,1
+103,غير محدد,sector:unspecified,1,1,1
+104,غير محدد,sector:unspecified,1,1,1
+105,غير محدد,sector:unspecified,1,1,1
+106,غير محدد,sector:unspecified,1,1,1
+107,أخرى,sector:other,1,1,1
+108,غير محدد,sector:unspecified,1,1,0
+109,غير محدد,sector:unspecified,1,1,0
+110,غير محدد,sector:unspecified,1,1,0
+111,غير محدد,sector:unspecified,1,1,0
+112,غير محدد,sector:unspecified,1,1,0
+113,غير محدد,sector:unspecified,1,1,0
+114,غير محدد,sector:unspecified,1,1,0
+115,غير محدد,sector:unspecified,1,1,0
+116,غير محدد,sector:unspecified,1,1,0
+117,غير محدد,sector:unspecified,1,1,0
+118,غير محدد,sector:unspecified,1,1,0
+119,غير محدد,sector:unspecified,1,1,0
+120,غير محدد,sector:unspecified,1,1,0
+121,غير محدد,sector:unspecified,1,1,0
+122,غير محدد,sector:unspecified,1,1,0
+123,غير محدد,sector:unspecified,1,1,0
+124,غير محدد,sector:unspecified,1,1,0
+125,غير محدد,sector:unspecified,1,1,0
+126,غير محدد,sector:unspecified,1,1,0
+127,غير محدد,sector:unspecified,1,1,0
+128,غير محدد,sector:unspecified,1,1,0
+129,غير محدد,sector:unspecified,1,1,0
+130,غير محدد,sector:unspecified,1,1,0
+131,غير محدد,sector:unspecified,1,1,0
+132,غير محدد,sector:unspecified,1,1,0
+133,غير محدد,sector:unspecified,1,1,0
+134,غير محدد,sector:unspecified,1,1,0
+136,غير محدد,sector:unspecified,1,1,0
+137,غير محدد,sector:unspecified,1,1,0
+138,غير محدد,sector:unspecified,1,1,1
+139,غير محدد,sector:unspecified,1,1,1
+141,غير محدد,sector:unspecified,1,1,1
+142,غير محدد,sector:unspecified,1,1,1
+143,صناعي,sector:industrial,1,1,1
+144,صناعي,sector:industrial,1,1,1
+145,صناعي,sector:industrial,1,1,1
+146,صناعي,sector:industrial,1,1,1
+147,صناعي,sector:industrial,1,1,1
+148,صناعي,sector:industrial,1,1,1
+149,صناعي,sector:industrial,1,1,1
+150,صناعي,sector:industrial,1,1,1
+151,صناعي,sector:industrial,1,1,1
+152,صناعي,sector:industrial,1,1,1
+153,صناعي,sector:industrial,1,1,1
+154,صناعي,sector:industrial,1,1,1
+155,صناعي,sector:industrial,1,1,1
+156,صناعي,sector:industrial,1,1,1
+157,صناعي,sector:industrial,1,1,1
+158,صناعي,sector:industrial,1,1,1
+159,صناعي,sector:industrial,1,1,1
+160,صناعي,sector:industrial,1,1,1
+161,صناعي,sector:industrial,1,1,1
+162,صناعي,sector:industrial,1,1,1
+163,تجاري,sector:commercial,1,1,1
+164,تجاري,sector:commercial,1,2,1
+165,تجاري,sector:commercial,1,1,1
+166,تجاري,sector:commercial,1,1,1
+167,تجاري,sector:commercial,1,1,1
+168,تجاري,sector:commercial,1,1,1
+169,تجاري,sector:commercial,1,1,1
+170,تجاري,sector:commercial,1,1,1
+171,تجاري,sector:commercial,1,1,1
+172,تجاري,sector:commercial,1,1,1
+173,تجاري,sector:commercial,1,1,1
+174,تجاري,sector:commercial,1,1,1
+175,تجاري,sector:commercial,1,1,1
+176,صناعي,sector:industrial,1,1,1
+177,صناعي,sector:industrial,1,1,1
+178,صناعي,sector:industrial,1,1,1
+179,صناعي,sector:industrial,1,1,1
+180,صناعي,sector:industrial,1,1,1
+181,صناعي,sector:industrial,1,1,1
+182,صناعي,sector:industrial,1,1,1
+183,صناعي,sector:industrial,1,1,1
+184,صناعي,sector:industrial,1,1,1
+185,صناعي,sector:industrial,1,1,1
+186,تجاري,sector:commercial,1,1,1
+187,تجاري,sector:commercial,1,1,1
+188,صناعي,sector:industrial,1,1,1
+189,تجاري,sector:commercial,1,1,1
+190,صناعي,sector:industrial,1,1,1
+191,تجاري,sector:commercial,1,1,1
+192,صناعي,sector:industrial,1,2,1
+193,صناعي,sector:industrial,1,2,1
+194,صناعي,sector:industrial,1,1,1
+195,صناعي,sector:industrial,1,2,1
+196,صناعي,sector:industrial,1,1,1
+197,صناعي,sector:industrial,1,1,1
+198,صناعي,sector:industrial,1,1,1
+199,صناعي,sector:industrial,1,1,1
+200,صناعي,sector:industrial,1,1,1
+201,صناعي,sector:industrial,1,1,1
+202,صناعي,sector:industrial,1,1,1
+203,صناعي,sector:industrial,1,1,1
+204,صناعي,sector:industrial,1,1,1
+205,غير محدد,sector:unspecified,1,1,0
+206,غير محدد,sector:unspecified,1,1,0
+207,غير محدد,sector:unspecified,1,1,1
+208,تجاري,sector:commercial,1,1,1
+209,تجاري,sector:commercial,1,1,1
+210,تجاري,sector:commercial,1,1,1
+211,غير محدد,sector:unspecified,1,1,0
+212,السياحة,sector:tourism,1,1,0
+213,الرعاية الصحية,sector:healthcare,1,1,0
+214,الرعاية الصحية,sector:healthcare,1,1,0
+215,الزراعة,sector:agriculture,1,1,0
+216,الرعاية الصحية,sector:healthcare,1,1,0
+217,التعليم,sector:education,1,1,0
+218,البيئة,sector:environment,1,1,1
+219,البيئة,sector:environment,1,1,1
+220,البيئة,sector:environment,1,1,1
+221,البيئة,sector:environment,1,1,1
+222,البيئة,sector:environment,1,1,1
+223,البيئة,sector:environment,1,1,1
+224,غير محدد,sector:unspecified,1,1,0
+225,غير محدد,sector:unspecified,1,1,0
+226,تجاري,sector:commercial,1,2,1
+227,أخرى,sector:other,1,1,1
+228,غير محدد,sector:unspecified,1,1,0
+230,غير محدد,sector:unspecified,1,2,1
+231,أخرى,sector:other,1,1,1
+232,أخرى,sector:other,1,1,1
+233,غير محدد,sector:unspecified,1,1,1
+234,أخرى,sector:other,1,1,1
+235,أخرى,sector:other,1,1,1
+236,غير محدد,sector:unspecified,1,1,1
+237,غير محدد,sector:unspecified,1,1,1
+238,غير محدد,sector:unspecified,1,1,1
+239,أخرى,sector:other,1,1,1
+240,أخرى,sector:other,1,1,1
+241,تجاري,sector:commercial,1,1,1
+242,غير محدد,sector:unspecified,1,1,1
+243,صناعي,sector:industrial,1,1,1
+244,غير محدد,sector:unspecified,1,1,1
+245,صناعي,sector:industrial,1,1,1
+246,غير محدد,sector:unspecified,1,1,1
+247,صناعي,sector:industrial,1,1,1
+248,غير محدد,sector:unspecified,1,1,1
+249,تجاري,sector:commercial,1,2,1
+250,صناعي,sector:industrial,1,1,1
+251,غير محدد,sector:unspecified,1,1,1
+252,تجاري,sector:commercial,1,1,1
+253,أخرى,sector:other,1,1,1
+254,تجاري,sector:commercial,1,1,1
+255,أخرى,sector:other,1,1,1
+256,تجاري,sector:commercial,1,1,1
+257,أخرى,sector:other,1,1,1
+258,غير محدد,sector:unspecified,1,1,1
+259,تجاري,sector:commercial,1,1,1
+260,أخرى,sector:other,1,1,1
+261,تجاري,sector:commercial,1,1,1
+262,أخرى,sector:other,1,1,1
+263,تجاري,sector:commercial,1,1,1
+264,تجاري,sector:commercial,1,1,1
+265,تجاري,sector:commercial,1,1,1
+266,تجاري,sector:commercial,1,1,1
+267,تجاري,sector:commercial,1,1,1
+268,تجاري,sector:commercial,1,1,1
+269,تجاري,sector:commercial,1,1,1
+270,تجاري,sector:commercial,1,1,1
+271,صناعي,sector:industrial,1,1,1
+272,صناعي,sector:industrial,1,1,1
+273,غير محدد,sector:unspecified,1,1,1
+274,غير محدد,sector:unspecified,1,1,1
+275,تجاري,sector:commercial,1,1,1
+276,غير محدد,sector:unspecified,1,1,1
+277,صناعي,sector:industrial,1,1,1
+308,غير محدد,sector:unspecified,1,1,0
+309,غير محدد,sector:unspecified,1,1,0
+310,غير محدد,sector:unspecified,1,1,0
+311,غير محدد,sector:unspecified,1,1,0
+312,غير محدد,sector:unspecified,1,1,0
+313,غير محدد,sector:unspecified,1,1,0
+314,غير محدد,sector:unspecified,1,1,0
+315,غير محدد,sector:unspecified,1,1,0
+316,غير محدد,sector:unspecified,1,1,0
+317,غير محدد,sector:unspecified,1,1,0
+318,غير محدد,sector:unspecified,1,1,0
+319,غير محدد,sector:unspecified,1,1,0
+320,غير محدد,sector:unspecified,1,1,0
+321,غير محدد,sector:unspecified,1,1,0
+322,غير محدد,sector:unspecified,1,1,0
+323,غير محدد,sector:unspecified,1,1,0
+324,غير محدد,sector:unspecified,1,1,0
+325,غير محدد,sector:unspecified,1,1,1
+326,غير محدد,sector:unspecified,1,1,0

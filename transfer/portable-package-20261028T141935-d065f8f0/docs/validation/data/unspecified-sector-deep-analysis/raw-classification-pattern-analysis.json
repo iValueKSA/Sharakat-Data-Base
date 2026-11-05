@@ -1,0 +1,214 @@
+{
+  "source_context_required": true,
+  "raw_activity_subactivity_sector_patterns": [
+    {
+      "source": "alahsa-opportunities",
+      "raw_field": "source_activity",
+      "raw_value": "خدمي",
+      "unspecified_count": 5,
+      "labeled_reference_count": 0,
+      "sector_distribution": {},
+      "dominant_sector_id": null,
+      "purity_percentage": null,
+      "sample_master_ids": [
+        234,
+        235,
+        238,
+        260,
+        262
+      ]
+    },
+    {
+      "source": "alahsa-opportunities",
+      "raw_field": "source_sector",
+      "raw_value": "خدمي",
+      "unspecified_count": 5,
+      "labeled_reference_count": 0,
+      "sector_distribution": {},
+      "dominant_sector_id": null,
+      "purity_percentage": null,
+      "sample_master_ids": [
+        234,
+        235,
+        238,
+        260,
+        262
+      ]
+    },
+    {
+      "source": "furas",
+      "raw_field": "source_activity",
+      "raw_value": "الأنشطة التجارية",
+      "unspecified_count": 4,
+      "labeled_reference_count": 18,
+      "sector_distribution": {
+        "sector:other": 5,
+        "sector:commercial": 12,
+        "sector:industrial": 1
+      },
+      "dominant_sector_id": "sector:commercial",
+      "purity_percentage": 66.67,
+      "sample_master_ids": [
+        96,
+        97,
+        234,
+        235
+      ]
+    },
+    {
+      "source": "furas",
+      "raw_field": "source_sub_activity",
+      "raw_value": "أخرى",
+      "unspecified_count": 4,
+      "labeled_reference_count": 16,
+      "sector_distribution": {
+        "sector:other": 8,
+        "sector:commercial": 4,
+        "sector:industrial": 4
+      },
+      "dominant_sector_id": "sector:other",
+      "purity_percentage": 50.0,
+      "sample_master_ids": [
+        234,
+        235,
+        260,
+        262
+      ]
+    },
+    {
+      "source": "furas",
+      "raw_field": "source_activity",
+      "raw_value": "أنشطة الصيانة والتصليح والتركيب",
+      "unspecified_count": 2,
+      "labeled_reference_count": 1,
+      "sector_distribution": {
+        "sector:other": 1
+      },
+      "dominant_sector_id": "sector:other",
+      "purity_percentage": 100.0,
+      "sample_master_ids": [
+        260,
+        262
+      ]
+    },
+    {
+      "source": "furas",
+      "raw_field": "source_sub_activity",
+      "raw_value": "منشآت تقديم الغذاء",
+      "unspecified_count": 2,
+      "labeled_reference_count": 0,
+      "sector_distribution": {},
+      "dominant_sector_id": null,
+      "purity_percentage": null,
+      "sample_master_ids": [
+        96,
+        97
+      ]
+    },
+    {
+      "source": "furas",
+      "raw_field": "source_activity",
+      "raw_value": "الأنشطة الزراعية والحيوانية",
+      "unspecified_count": 1,
+      "labeled_reference_count": 0,
+      "sector_distribution": {},
+      "dominant_sector_id": null,
+      "purity_percentage": null,
+      "sample_master_ids": [
+        78
+      ]
+    },
+    {
+      "source": "furas",
+      "raw_field": "source_sub_activity",
+      "raw_value": "أنشطة وخدمات انتاج المواد غير الغذائية",
+      "unspecified_count": 1,
+      "labeled_reference_count": 0,
+      "sector_distribution": {},
+      "dominant_sector_id": null,
+      "purity_percentage": null,
+      "sample_master_ids": [
+        78
+      ]
+    },
+    {
+      "source": "kfu",
+      "raw_field": "source_sector",
+      "raw_value": "LEASE_OPPORTUNITY",
+      "unspecified_count": 1,
+      "labeled_reference_count": 0,
+      "sector_distribution": {},
+      "dominant_sector_id": null,
+      "purity_percentage": null,
+      "sample_master_ids": [
+        225
+      ]
+    },
+    {
+      "source": "ncp",
+      "raw_field": "source_sector",
+      "raw_value": "PPP_PROJECT",
+      "unspecified_count": 1,
+      "labeled_reference_count": 0,
+      "sector_distribution": {},
+      "dominant_sector_id": null,
+      "purity_percentage": null,
+      "sample_master_ids": [
+        228
+      ]
+    }
+  ],
+  "explicit_source_evidence_unmapped_count": 7,
+  "explicit_source_evidence_unmapped_distinct_values": 3,
+  "explicit_source_evidence_unmapped_values": [
+    {
+      "source": "alahsa-opportunities",
+      "raw_fields": [
+        "source_sector",
+        "source_taxonomy.sector"
+      ],
+      "raw_value": "خدمي",
+      "count": 5,
+      "master_ids": [
+        234,
+        235,
+        238,
+        260,
+        262
+      ],
+      "proposed_canonical_sector": null,
+      "confidence": "LOW",
+      "notes": "Observed in raw source payload; current master sector remains unspecified. Proposed mappings are analysis only."
+    },
+    {
+      "source": "kfu",
+      "raw_fields": [
+        "source_sector"
+      ],
+      "raw_value": "LEASE_OPPORTUNITY",
+      "count": 1,
+      "master_ids": [
+        225
+      ],
+      "proposed_canonical_sector": null,
+      "confidence": "LOW",
+      "notes": "Observed in raw source payload; current master sector remains unspecified. Proposed mappings are analysis only."
+    },
+    {
+      "source": "ncp",
+      "raw_fields": [
+        "source_sector"
+      ],
+      "raw_value": "PPP_PROJECT",
+      "count": 1,
+      "master_ids": [
+        228
+      ],
+      "proposed_canonical_sector": null,
+      "confidence": "LOW",
+      "notes": "Observed in raw source payload; current master sector remains unspecified. Proposed mappings are analysis only."
+    }
+  ],
+  "learned_raw_mapping_minimum_support": 5,
+  "learned_raw_mapping_minimum_purity": 90
+}

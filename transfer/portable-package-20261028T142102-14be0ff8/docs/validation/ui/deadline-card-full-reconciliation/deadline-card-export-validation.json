@@ -1,0 +1,8 @@
+{
+  "api_total": 370,
+  "api_returned": 370,
+  "csv_data_rows": 370,
+  "xlsx_data_rows": 370,
+  "parity": "PASSED",
+  "notes": "XLSX unique titles are not used for count because duplicate titles can belong to distinct Masters."
+}

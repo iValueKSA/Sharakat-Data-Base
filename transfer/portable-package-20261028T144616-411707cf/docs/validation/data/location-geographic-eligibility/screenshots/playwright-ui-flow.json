@@ -1,0 +1,38 @@
+{
+  "search": "44826",
+  "detail_has_geo": true,
+  "detail_has_raw": true,
+  "pagination": "صفحة 2 من 6",
+  "responsive": [
+    {
+      "w": 1920,
+      "sw": 1920,
+      "dir": "rtl",
+      "out": 0
+    },
+    {
+      "w": 1440,
+      "sw": 1440,
+      "dir": "rtl",
+      "out": 0
+    },
+    {
+      "w": 1366,
+      "sw": 1366,
+      "dir": "rtl",
+      "out": 0
+    },
+    {
+      "w": 768,
+      "sw": 768,
+      "dir": "rtl",
+      "out": 0
+    },
+    {
+      "w": 390,
+      "sw": 390,
+      "dir": "rtl",
+      "out": 0
+    }
+  ]
+}

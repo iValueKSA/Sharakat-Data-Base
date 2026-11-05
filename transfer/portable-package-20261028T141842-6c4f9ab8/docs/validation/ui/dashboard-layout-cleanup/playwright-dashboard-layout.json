@@ -1,0 +1,377 @@
+{
+  "capturedAt": "2026-10-19T11:21:27.268Z",
+  "page": "http://localhost:8080/?view=data-dashboard",
+  "removed": {
+    "standaloneTotal": true,
+    "owner": true,
+    "geo": true,
+    "investmentModel": true,
+    "reviews": true,
+    "technicalHealthStandalone": true,
+    "unmapped": true,
+    "deadline7": true,
+    "opportunityTypes": true,
+    "timelineAdds": true,
+    "heroRetained": true
+  },
+  "remaining": {
+    "overview": true,
+    "active": true,
+    "enabledSources": true,
+    "sectorChart": true,
+    "map": true,
+    "status": true,
+    "sourceMix": true,
+    "upcoming": true,
+    "sectors": true,
+    "deadline30": true,
+    "rtl": true
+  },
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "documentWidth": 1920,
+      "bodyWidth": 1920,
+      "rootRight": 1582,
+      "rootDirection": "rtl",
+      "sections": [
+        {
+          "label": "المؤشرات التنفيذية",
+          "columns": 3,
+          "children": 3,
+          "left": 74,
+          "right": 1582,
+          "childOverflow": false
+        },
+        {
+          "label": "مؤشرات إضافية",
+          "columns": 2,
+          "children": 2,
+          "left": 74,
+          "right": 1582,
+          "childOverflow": false
+        },
+        {
+          "label": "القطاع والتوزيع الجغرافي",
+          "columns": 2,
+          "children": 2,
+          "left": 74,
+          "right": 1582,
+          "childOverflow": false
+        },
+        {
+          "label": "توزيع الحالات والمصادر والمواعيد",
+          "columns": 3,
+          "children": 3,
+          "left": 74,
+          "right": 1582,
+          "childOverflow": false
+        },
+        {
+          "label": "ترتيب الجهات وجودة البيانات",
+          "columns": 2,
+          "children": 2,
+          "left": 74,
+          "right": 1582,
+          "childOverflow": false
+        },
+        {
+          "label": "صحة المصادر والفرص الأحدث",
+          "columns": 2,
+          "children": 2,
+          "left": 74,
+          "right": 1582,
+          "childOverflow": false
+        }
+      ],
+      "mapVisible": true,
+      "sectorChartVisible": true,
+      "sourceCardVisible": true,
+      "statusCardVisible": true,
+      "upcomingVisible": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "rootRight": 1133,
+      "rootDirection": "rtl",
+      "sections": [
+        {
+          "label": "المؤشرات التنفيذية",
+          "columns": 3,
+          "children": 3,
+          "left": 43,
+          "right": 1133,
+          "childOverflow": false
+        },
+        {
+          "label": "مؤشرات إضافية",
+          "columns": 2,
+          "children": 2,
+          "left": 43,
+          "right": 1133,
+          "childOverflow": false
+        },
+        {
+          "label": "القطاع والتوزيع الجغرافي",
+          "columns": 2,
+          "children": 2,
+          "left": 43,
+          "right": 1133,
+          "childOverflow": false
+        },
+        {
+          "label": "توزيع الحالات والمصادر والمواعيد",
+          "columns": 3,
+          "children": 3,
+          "left": 43,
+          "right": 1133,
+          "childOverflow": false
+        },
+        {
+          "label": "ترتيب الجهات وجودة البيانات",
+          "columns": 2,
+          "children": 2,
+          "left": 43,
+          "right": 1133,
+          "childOverflow": false
+        },
+        {
+          "label": "صحة المصادر والفرص الأحدث",
+          "columns": 2,
+          "children": 2,
+          "left": 43,
+          "right": 1133,
+          "childOverflow": false
+        }
+      ],
+      "mapVisible": true,
+      "sectorChartVisible": true,
+      "sourceCardVisible": true,
+      "statusCardVisible": true,
+      "upcomingVisible": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "documentWidth": 1366,
+      "bodyWidth": 1366,
+      "rootRight": 1061,
+      "rootDirection": "rtl",
+      "sections": [
+        {
+          "label": "المؤشرات التنفيذية",
+          "columns": 3,
+          "children": 3,
+          "left": 41,
+          "right": 1061,
+          "childOverflow": false
+        },
+        {
+          "label": "مؤشرات إضافية",
+          "columns": 2,
+          "children": 2,
+          "left": 41,
+          "right": 1061,
+          "childOverflow": false
+        },
+        {
+          "label": "القطاع والتوزيع الجغرافي",
+          "columns": 2,
+          "children": 2,
+          "left": 41,
+          "right": 1061,
+          "childOverflow": false
+        },
+        {
+          "label": "توزيع الحالات والمصادر والمواعيد",
+          "columns": 3,
+          "children": 3,
+          "left": 41,
+          "right": 1061,
+          "childOverflow": false
+        },
+        {
+          "label": "ترتيب الجهات وجودة البيانات",
+          "columns": 2,
+          "children": 2,
+          "left": 41,
+          "right": 1061,
+          "childOverflow": false
+        },
+        {
+          "label": "صحة المصادر والفرص الأحدث",
+          "columns": 2,
+          "children": 2,
+          "left": 41,
+          "right": 1061,
+          "childOverflow": false
+        }
+      ],
+      "mapVisible": true,
+      "sectorChartVisible": true,
+      "sourceCardVisible": true,
+      "statusCardVisible": true,
+      "upcomingVisible": true
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "rootRight": 743,
+      "rootDirection": "rtl",
+      "sections": [
+        {
+          "label": "المؤشرات التنفيذية",
+          "columns": 2,
+          "children": 3,
+          "left": 25,
+          "right": 743,
+          "childOverflow": false
+        },
+        {
+          "label": "مؤشرات إضافية",
+          "columns": 2,
+          "children": 2,
+          "left": 25,
+          "right": 743,
+          "childOverflow": false
+        },
+        {
+          "label": "القطاع والتوزيع الجغرافي",
+          "columns": 2,
+          "children": 2,
+          "left": 25,
+          "right": 743,
+          "childOverflow": false
+        },
+        {
+          "label": "توزيع الحالات والمصادر والمواعيد",
+          "columns": 2,
+          "children": 3,
+          "left": 25,
+          "right": 743,
+          "childOverflow": false
+        },
+        {
+          "label": "ترتيب الجهات وجودة البيانات",
+          "columns": 1,
+          "children": 2,
+          "left": 25,
+          "right": 743,
+          "childOverflow": false
+        },
+        {
+          "label": "صحة المصادر والفرص الأحدث",
+          "columns": 2,
+          "children": 2,
+          "left": 25,
+          "right": 743,
+          "childOverflow": false
+        }
+      ],
+      "mapVisible": true,
+      "sectorChartVisible": true,
+      "sourceCardVisible": true,
+      "statusCardVisible": true,
+      "upcomingVisible": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "bodyWidth": 390,
+      "rootRight": 378,
+      "rootDirection": "rtl",
+      "sections": [
+        {
+          "label": "المؤشرات التنفيذية",
+          "columns": 1,
+          "children": 3,
+          "left": 12,
+          "right": 378,
+          "childOverflow": false
+        },
+        {
+          "label": "مؤشرات إضافية",
+          "columns": 1,
+          "children": 2,
+          "left": 12,
+          "right": 378,
+          "childOverflow": false
+        },
+        {
+          "label": "القطاع والتوزيع الجغرافي",
+          "columns": 1,
+          "children": 2,
+          "left": 12,
+          "right": 378,
+          "childOverflow": false
+        },
+        {
+          "label": "توزيع الحالات والمصادر والمواعيد",
+          "columns": 1,
+          "children": 3,
+          "left": 12,
+          "right": 378,
+          "childOverflow": false
+        },
+        {
+          "label": "ترتيب الجهات وجودة البيانات",
+          "columns": 1,
+          "children": 2,
+          "left": 12,
+          "right": 378,
+          "childOverflow": false
+        },
+        {
+          "label": "صحة المصادر والفرص الأحدث",
+          "columns": 1,
+          "children": 2,
+          "left": 12,
+          "right": 378,
+          "childOverflow": false
+        }
+      ],
+      "mapVisible": true,
+      "sectorChartVisible": true,
+      "sourceCardVisible": true,
+      "statusCardVisible": true,
+      "upcomingVisible": true
+    }
+  ],
+  "dashboardFilter": {
+    "value": "status:published"
+  },
+  "resetFilter": true,
+  "chartDrilldown": {
+    "sectorValue": "sector:unspecified",
+    "view": "opportunities"
+  },
+  "mapMode": {
+    "heat": "true",
+    "clusters": "true"
+  },
+  "mapDrilldown": {
+    "mapIds": "205",
+    "view": "opportunities"
+  },
+  "pageErrors": [],
+  "assertions": {
+    "allRemoved": true,
+    "heroRetained": true,
+    "requestedRemainingPresent": true,
+    "noHorizontalOverflow": true,
+    "noGridChildOverflow": true,
+    "allWidgetsVisible": true,
+    "filterAndResetWork": true,
+    "chartDrilldownWorks": true,
+    "mapModesWork": true,
+    "mapDrilldownWorks": true,
+    "noPageErrors": true
+  }
+}

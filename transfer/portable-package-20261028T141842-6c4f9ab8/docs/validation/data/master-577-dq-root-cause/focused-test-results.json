@@ -1,0 +1,16 @@
+{
+  "focused_command": "pytest tests/test_medium_inference_dq_root_cause.py tests/test_sector_controlled_relaxation.py -q -p no:cacheprovider --tb=short",
+  "focused_database": "isolated in-memory SQLite",
+  "focused_network": "disabled",
+  "focused_passed": 45,
+  "focused_failed": 0,
+  "focused_warnings": 2,
+  "full_regression_command": "python -m pytest -q -p no:cacheprovider --tb=short tests/",
+  "full_regression_database": "disposable SQLite in Docker",
+  "full_regression_network": "disabled",
+  "full_regression_passed": 343,
+  "full_regression_failed": 0,
+  "full_regression_warnings": 25,
+  "baseline_before_task": "330 passed / 0 failed",
+  "full_regression_rerun_required_due_to_code_change": true
+}

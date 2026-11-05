@@ -1,0 +1,136 @@
+{
+  "live_run_id": "6c650b8e66f04d50aa571ca1c0262542",
+  "live_failures": [],
+  "live_warning_samples": [
+    {
+      "gate_key": "GENERIC_SOURCE_PAGE_AS_OPPORTUNITY_ACTION",
+      "status": "WARNING",
+      "observed": 782,
+      "sample_ids": [
+        2124,
+        2117,
+        2023,
+        2078,
+        2080,
+        2114,
+        2159,
+        2160
+      ],
+      "explanation": "Generic source/listing pages are surfaced for inspection, never validated with per-request HTTP calls."
+    },
+    {
+      "gate_key": "OPEN_REVIEW_BACKLOG",
+      "status": "WARNING",
+      "observed": 577,
+      "sample_ids": [],
+      "explanation": "Nonzero unresolved-review queues are expected and do not fail data quality."
+    },
+    {
+      "gate_key": "SOURCE_ABSENCE_CLASSIFICATION",
+      "status": "WARNING",
+      "observed": {
+        "known_historical": 27,
+        "pending_confirmation": 2537,
+        "unexplained": 0
+      },
+      "sample_ids": [
+        955,
+        1102,
+        219,
+        2023,
+        2078,
+        2080,
+        2159,
+        2160
+      ],
+      "explanation": "Only completed authoritative scans advance confirmation; pending absence is warning and historical removal is retained."
+    }
+  ],
+  "warning_disposition": "Warnings reflect 782 Invest Saudi rows that use the publisher listing page, an existing 577-item open review backlog, and 2,537 source records below the source-specific absence confirmation threshold. No unexplained absence is present.",
+  "simulated_failure_samples": [
+    {
+      "gate_key": "QUALIFIED_SOURCE_WITHOUT_CURRENT_MASTER",
+      "test": "test_qualified_source_without_master_fails",
+      "sample_ids": [
+        "isolated SQLite fixture"
+      ]
+    },
+    {
+      "gate_key": "VERIFIED_OFFICIAL_REFERENCE_SPLIT",
+      "test": "test_same_verified_official_reference_split_across_current_masters_fails",
+      "sample_ids": [
+        "isolated SQLite fixture"
+      ]
+    },
+    {
+      "gate_key": "MASTER_CURRENT_WITHOUT_SOURCE",
+      "test": "test_current_master_without_source_fails",
+      "sample_ids": [
+        "isolated SQLite fixture"
+      ]
+    },
+    {
+      "gate_key": "FURAS_UNVERIFIED_DATE_PROMOTION",
+      "test": "test_furas_unverified_dates_promoted_in_projection_fail",
+      "sample_ids": [
+        "isolated SQLite fixture"
+      ]
+    },
+    {
+      "gate_key": "API_WORKER_STANDARDIZATION_PARITY",
+      "test": "test_stale_worker_standardization_heartbeat_fails",
+      "sample_ids": [
+        "isolated SQLite fixture"
+      ]
+    },
+    {
+      "gate_key": "PARTIAL_SCAN_REMOVAL_SAFETY",
+      "test": "test_incomplete_scan_with_removals_fails_and_preserves_safe_rule",
+      "sample_ids": [
+        "isolated SQLite fixture"
+      ]
+    },
+    {
+      "gate_key": "FURAS_LAST_SUCCESSFUL_SCAN_PAGINATION",
+      "test": "test_incomplete_page_missing_does_not_count_as_completed_furas_gap",
+      "sample_ids": [
+        "isolated SQLite fixture"
+      ]
+    },
+    {
+      "gate_key": "LOGICAL_DUPLICATE_OPEN_REVIEW",
+      "test": "test_duplicate_logical_review_creation_fails",
+      "sample_ids": [
+        "isolated SQLite fixture"
+      ]
+    },
+    {
+      "gate_key": "API_DASHBOARD_EXPORT_RECONCILIATION",
+      "test": "test_api_dashboard_export_count_mismatch_fails",
+      "sample_ids": [
+        "isolated SQLite fixture"
+      ]
+    },
+    {
+      "gate_key": "FURAS_TEMPORARY_RENTAL_ROUTE_REGRESSION",
+      "test": "test_broken_furas_active_route_fails",
+      "sample_ids": [
+        "isolated SQLite fixture"
+      ]
+    },
+    {
+      "gate_key": "TECHNICAL_SOURCE_ID_AS_MASTER_REFERENCE",
+      "test": "test_technical_source_id_as_official_reference_fails",
+      "sample_ids": [
+        "isolated SQLite fixture"
+      ]
+    },
+    {
+      "gate_key": "OPEN_REVIEW_ON_MERGED_MASTER",
+      "test": "test_open_review_on_merged_master_fails",
+      "sample_ids": [
+        "isolated SQLite fixture"
+      ]
+    }
+  ]
+}

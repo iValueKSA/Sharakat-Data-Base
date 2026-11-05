@@ -1,0 +1,29 @@
+{
+  "validated_at_utc": "2026-10-19T08:11:16.814559+00:00",
+  "mode": "dry_run",
+  "total_source_opportunities": 2898,
+  "eligible_masters": 291,
+  "furas_source_records_with_eligible_master": 177,
+  "furas_records_without_locationtype": 48,
+  "deterministic_asset_type_mappings": 131,
+  "unique_masters_with_asset_type": 129,
+  "max_types_per_master": 2,
+  "unmapped_source_values": [],
+  "wrong_dimension_values_found": 0,
+  "mapped_to_unspecified": 0,
+  "masters_without_defensible_value_remain_unspecified": 162,
+  "remain_review_required": 0,
+  "already_assigned_rows": 0,
+  "current_assignment_count": 0,
+  "value_counts": {
+    "أخرى": 10,
+    "الاراضي": 8,
+    "الحدائق": 23,
+    "الساحات الميادين": 5,
+    "الشواطئ والواجهات": 11,
+    "الطرق والارصفة": 4,
+    "العربات المتنقلة": 69,
+    "المباني": 1
+  },
+  "apply_inserted_rows": 0
+}

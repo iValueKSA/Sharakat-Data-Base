@@ -1,0 +1,27 @@
+{
+  "resolved_review_detail": [
+    "read-only; no reopen or undo control exposed in the workbench"
+  ],
+  "taxonomy_conflict": [
+    "keep",
+    "use_source only for a valid canonical sector target"
+  ],
+  "qualification": [
+    "accept",
+    "reject; admin only"
+  ],
+  "viewer": [],
+  "field_conflict": [
+    "keep",
+    "use_source; keep-only for guarded standardization reviews"
+  ],
+  "queue_default": "ACTIONABLE excludes SOURCE_RECHECK_REQUIRED",
+  "location": [
+    "accept",
+    "reject"
+  ],
+  "duplicate": [
+    "reject",
+    "merge after preview"
+  ]
+}

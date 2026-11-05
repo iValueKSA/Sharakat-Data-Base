@@ -1,0 +1,61 @@
+{
+  "captured_at": "2026-10-22T14:03:38+03:00",
+  "suite": "Unified timeline",
+  "status": "PASSED",
+  "mapped_scenarios": 8,
+  "pytest_result": "45 passed / 0 failed",
+  "full_regression_result": "438 passed / 0 failed",
+  "environment": "isolated synthetic SQLite; no live review mutation",
+  "suite_note": "Stable ordering and honest legacy unknown-time behavior are directly tested; timeline is exercised in the isolated reopen flow.",
+  "scenarios": [
+    {
+      "id": "TIME-01",
+      "scenario": "Unified timeline combines governed review events",
+      "status": "PASS",
+      "evidence": "test_unified_timeline_uses_stable_event_ids_for_equal_timestamps"
+    },
+    {
+      "id": "TIME-02",
+      "scenario": "Equal-time events use stable event IDs and secondary keys",
+      "status": "PASS",
+      "evidence": "test_unified_timeline_uses_stable_event_ids_for_equal_timestamps"
+    },
+    {
+      "id": "TIME-03",
+      "scenario": "Historical events without timestamps have no invented time",
+      "status": "PASS",
+      "evidence": "test_legacy_resolved_review_timeline_marks_missing_audit_without_fabrication"
+    },
+    {
+      "id": "TIME-04",
+      "scenario": "Unknown-time history is marked separately",
+      "status": "PASS",
+      "evidence": "test_legacy_resolved_review_timeline_marks_missing_audit_without_fabrication"
+    },
+    {
+      "id": "TIME-05",
+      "scenario": "Decision preview and recommendation activity can be represented",
+      "status": "PASS",
+      "evidence": "test_authoritative_source_recommendation_snapshot_and_follow_audit"
+    },
+    {
+      "id": "TIME-06",
+      "scenario": "Override and reopen are represented in the review history",
+      "status": "PASS",
+      "evidence": "test_recommendation_override_requires_reason_and_is_audited; test_reopen_preview_and_governed_reopen_preserve_resolution_history"
+    },
+    {
+      "id": "TIME-07",
+      "scenario": "Prior resolution is preserved across reopen",
+      "status": "PASS",
+      "evidence": "test_reopen_preview_and_governed_reopen_preserve_resolution_history"
+    },
+    {
+      "id": "TIME-08",
+      "scenario": "Timeline is visible in the isolated browser flow",
+      "status": "PASS",
+      "evidence": "Playwright FLOW C: reopen_preserve_and_resolve_again"
+    }
+  ],
+  "focused_suite_collected_cases": 45
+}

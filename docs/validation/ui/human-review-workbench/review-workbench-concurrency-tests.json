@@ -1,0 +1,21 @@
+{
+  "captured_at": "2026-10-22T14:03:38+03:00",
+  "version_token_required": true,
+  "missing_decision_token_rejected": true,
+  "stale_decision_token_rejected": true,
+  "stale_reopen_rejected": true,
+  "recommendation_version_checked": true,
+  "batch_atomicity": "All-or-none transaction; stale member aborts all writes",
+  "batch_idempotency": "Operation ID protected by PostgreSQL transaction advisory lock and duplicate audit/commit check",
+  "lost_update_detected": true,
+  "live_review_concurrency_mutations": 0,
+  "tests": [
+    "test_review_workbench_decision_preview_is_read_only_and_rejects_stale_version",
+    "test_reopen_requires_authorized_role_valid_status_reason_and_current_version",
+    "test_recommendation_version_rejects_changed_rule_inputs_before_decision",
+    "test_batch_commit_requires_confirmation_and_stale_member_is_atomic",
+    "test_deterministic_batch_preview_commit_has_individual_audits_and_is_idempotent"
+  ],
+  "result": "PASSED",
+  "focused_suite_collected_cases": 45
+}

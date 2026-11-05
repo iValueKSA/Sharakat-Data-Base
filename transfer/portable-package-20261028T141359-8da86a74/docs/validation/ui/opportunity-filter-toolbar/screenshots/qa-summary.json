@@ -1,0 +1,191 @@
+{
+  "baseTotal": 290,
+  "viewportChecks": [
+    {
+      "viewport": "1877x1033",
+      "pageWidth": 1877,
+      "documentWidth": 1877,
+      "pageXOffset": 0,
+      "rtl": true,
+      "toolbar": {
+        "left": 53.5,
+        "right": 1559.5,
+        "top": 211.4375,
+        "bottom": 278.4375,
+        "scroll": 1506,
+        "client": 1506,
+        "grid": "186.25px 137.969px 137.969px 137.969px 137.969px 137.969px 137.969px 137.969px 137.953px 112px",
+        "rows": 1
+      },
+      "controlCount": 10,
+      "allInside": true,
+      "reset": {
+        "text": "إعادة الضبط",
+        "left": 69.515625,
+        "right": 181.515625,
+        "width": 112,
+        "fullyInside": true,
+        "labelFits": true
+      },
+      "overlaps": 0,
+      "dropdownOpenAndAccessible": true
+    },
+    {
+      "viewport": "1920x1080",
+      "pageWidth": 1920,
+      "documentWidth": 1920,
+      "pageXOffset": 0,
+      "rtl": true,
+      "toolbar": {
+        "left": 75,
+        "right": 1581,
+        "top": 211.4375,
+        "bottom": 278.4375,
+        "scroll": 1506,
+        "client": 1506,
+        "grid": "186.25px 137.969px 137.969px 137.969px 137.969px 137.969px 137.969px 137.969px 137.953px 112px",
+        "rows": 1
+      },
+      "controlCount": 10,
+      "allInside": true,
+      "reset": {
+        "text": "إعادة الضبط",
+        "left": 91.015625,
+        "right": 203.015625,
+        "width": 112,
+        "fullyInside": true,
+        "labelFits": true
+      },
+      "overlaps": 0,
+      "dropdownOpenAndAccessible": true
+    },
+    {
+      "viewport": "1440x900",
+      "pageWidth": 1440,
+      "documentWidth": 1440,
+      "pageXOffset": 0,
+      "rtl": true,
+      "toolbar": {
+        "left": 44.1875,
+        "right": 1131.8125,
+        "top": 211.4375,
+        "bottom": 370.4375,
+        "scroll": 1088,
+        "client": 1088,
+        "grid": "257.906px 257.906px 257.906px 257.906px",
+        "rows": 3
+      },
+      "controlCount": 10,
+      "allInside": true,
+      "reset": {
+        "text": "إعادة الضبط",
+        "left": 326.09375,
+        "right": 584,
+        "width": 257.90625,
+        "fullyInside": true,
+        "labelFits": true
+      },
+      "overlaps": 0,
+      "dropdownOpenAndAccessible": true
+    },
+    {
+      "viewport": "1366x768",
+      "pageWidth": 1366,
+      "documentWidth": 1366,
+      "pageXOffset": 0,
+      "rtl": true,
+      "toolbar": {
+        "left": 41.96875,
+        "right": 1060.03125,
+        "top": 211.4375,
+        "bottom": 370.4375,
+        "scroll": 1018,
+        "client": 1018,
+        "grid": "240.516px 240.516px 240.516px 240.516px",
+        "rows": 3
+      },
+      "controlCount": 10,
+      "allInside": true,
+      "reset": {
+        "text": "إعادة الضبط",
+        "left": 306.484375,
+        "right": 547,
+        "width": 240.515625,
+        "fullyInside": true,
+        "labelFits": true
+      },
+      "overlaps": 0,
+      "dropdownOpenAndAccessible": true
+    },
+    {
+      "viewport": "768x900",
+      "pageWidth": 768,
+      "documentWidth": 768,
+      "pageXOffset": 0,
+      "rtl": true,
+      "toolbar": {
+        "left": 26,
+        "right": 742,
+        "top": 207.4375,
+        "bottom": 496.4375,
+        "scroll": 716,
+        "client": 716,
+        "grid": "344px 344px",
+        "rows": 6
+      },
+      "controlCount": 10,
+      "allInside": true,
+      "reset": {
+        "text": "إعادة الضبط",
+        "left": 36,
+        "right": 732,
+        "width": 696,
+        "fullyInside": true,
+        "labelFits": true
+      },
+      "overlaps": 0,
+      "dropdownOpenAndAccessible": true
+    },
+    {
+      "viewport": "390x844",
+      "pageWidth": 390,
+      "documentWidth": 390,
+      "pageXOffset": 0,
+      "rtl": true,
+      "toolbar": {
+        "left": 26,
+        "right": 364,
+        "top": 240.84375,
+        "bottom": 529.84375,
+        "scroll": 338,
+        "client": 338,
+        "grid": "155px 155px",
+        "rows": 6
+      },
+      "controlCount": 10,
+      "allInside": true,
+      "reset": {
+        "text": "إعادة الضبط",
+        "left": 36,
+        "right": 354,
+        "width": 318,
+        "fullyInside": true,
+        "labelFits": true
+      },
+      "overlaps": 0,
+      "dropdownOpenAndAccessible": true
+    }
+  ],
+  "regressions": {
+    "sectorFilterMatchesApi": true,
+    "resetRestoresFiltersAndTotal": true,
+    "searchReturnsRows": true,
+    "paginationChangesPage": true,
+    "csvExport": true,
+    "xlsxExport": true,
+    "opportunityDetailOpens": true
+  },
+  "errors": [],
+  "failed": [],
+  "screenshot": "docs\\validation\\ui\\opportunity-filter-toolbar\\screenshots\\opportunities-filter-toolbar-1877x1033.png"
+}

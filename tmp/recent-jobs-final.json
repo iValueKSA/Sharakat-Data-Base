@@ -1,0 +1,46 @@
+[
+  {
+    "id": 510,
+    "source_id": 2,
+    "trigger_type": "scheduled",
+    "status": "SUCCESS",
+    "job_state": "COMPLETED",
+    "started_at": "2026-10-26T10:04:24.229806+00:00",
+    "finished_at": "2026-10-26T10:05:15.254869+00:00",
+    "new_count": 0,
+    "update_count": 0
+  },
+  {
+    "id": 509,
+    "source_id": 1,
+    "trigger_type": "scheduled",
+    "status": "SUCCESS",
+    "job_state": "COMPLETED",
+    "started_at": "2026-10-26T10:04:24.150367+00:00",
+    "finished_at": "2026-10-26T10:05:01.686962+00:00",
+    "new_count": 0,
+    "update_count": 0
+  },
+  {
+    "id": 508,
+    "source_id": 1,
+    "trigger_type": "scheduled",
+    "status": "SUCCESS",
+    "job_state": "COMPLETED",
+    "started_at": "2026-10-26T09:04:02.725173+00:00",
+    "finished_at": "2026-10-26T09:04:31.491287+00:00",
+    "new_count": 0,
+    "update_count": 0
+  },
+  {
+    "id": 507,
+    "source_id": 2,
+    "trigger_type": "scheduled",
+    "status": "SUCCESS",
+    "job_state": "COMPLETED",
+    "started_at": "2026-10-26T09:04:02.801972+00:00",
+    "finished_at": "2026-10-26T09:04:42.777692+00:00",
+    "new_count": 0,
+    "update_count": 0
+  }
+]

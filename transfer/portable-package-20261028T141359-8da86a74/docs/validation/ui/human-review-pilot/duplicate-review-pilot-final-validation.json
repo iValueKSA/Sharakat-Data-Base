@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-10-25T11:50:02.7772009+03:00",
+  "sample_file": "docs/validation/ui/human-review-pilot/pilot-sample.json",
+  "cohort_file": "app\\human_review_pilot_cohort.json",
+  "sample_size": 40,
+  "duplicate_cases": 6,
+  "source_recheck_in_pilot": 0,
+  "source_recheck_required_outside_pilot": 9,
+  "cases_replaced_with_audit": 0,
+  "sample_regenerated": false,
+  "cohort_sha256": "e72cb979ebd28e18f302ffa9c1453b2b290496679b83b8ed4cef34aac6815c8c",
+  "prior_frozen_sha256": "e72cb979ebd28e18f302ffa9c1453b2b290496679b83b8ed4cef34aac6815c8c",
+  "hash_matches": true
+}

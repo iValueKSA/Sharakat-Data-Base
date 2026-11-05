@@ -1,0 +1,663 @@
+[
+  {
+    "source_row_id": 283,
+    "source_key": "invest-saudi",
+    "external_id": "investsaudi:50952",
+    "official_reference": null,
+    "normalized_reference": null,
+    "master_id": null,
+    "source_url": "https://investsaudi.sa/backend/opportunity/peri-urban-distripark-in-al-ahsa/",
+    "raw_location": "Eastern province",
+    "canonical_status": "غير محددة",
+    "record": {
+      "title": "Peri-Urban Distripark in Al-Ahsa",
+      "description": "A peri-urban distripark in Al Ahsa serving food & beverage, agriculture, agri-inputs, and regional food distribution. The zone will provide cold and dry storage, farm-gate aggregation, sorting, grading, packing, labeling, cross-docking, inventory pooling, and regional dispatch for farms, food processors, wholesalers, retailers, HORECA suppliers, and 3PL operators across Al Ahsa, Eastern Province, Riyadh, and GCC corridors.",
+      "location": "",
+      "region": "Eastern province",
+      "location_confidence_score": 0.8,
+      "location_detection_method": "DESCRIPTION_ONLY_EXPLICIT_AL_AHSA",
+      "location_evidence": "A peri-urban distripark in Al Ahsa serving food & beverage, agriculture, agri-inputs, and regional food distribution. The zone will provide cold and dry storage, farm-gate aggregation, sorting, grading, packing, labeling, cross-docking, inventory pooling, and regional dispatch for farms, food processors, wholesalers, retailers, HORECA suppliers, and 3PL operators across Al Ahsa, Eastern Province, Riyadh, and GCC corridors.",
+      "qualified_location": false,
+      "link": "https://investsaudi.sa/backend/opportunity/peri-urban-distripark-in-al-ahsa/",
+      "pdf_url": null,
+      "pdf_file": {
+        "url": null
+      },
+      "backed_by": "",
+      "opportunity_type": "",
+      "source_record_family": "opportunity",
+      "official_source_id_original": "50952",
+      "official_source_id_normalized": "50952",
+      "dataset_memberships": [
+        {
+          "dataset_name": "Opportunities",
+          "dataset_specific_metadata": {
+            "normalized_taxonomy": {
+              "sector": "الخدمات اللوجستية",
+              "subsector": null
+            },
+            "source_taxonomy": {
+              "sector": "Transport and Logistics",
+              "subsector": null
+            }
+          },
+          "endpoint": "https://investsaudi.sa/backend/wp-json/v3/opportunities"
+        }
+      ],
+      "inner_data": []
+    }
+  },
+  {
+    "source_row_id": 466,
+    "source_key": "invest-saudi",
+    "external_id": "investsaudi:44773",
+    "official_reference": null,
+    "normalized_reference": null,
+    "master_id": null,
+    "source_url": "https://investsaudi.sa/backend/opportunity/al-ahsa-national-park/",
+    "raw_location": "Eastren",
+    "canonical_status": "غير محددة",
+    "record": {
+      "title": "Al-Ahsa National Park for ecotourism assets and activities",
+      "description": "Developing an ecotourism site within Al-Ahsa National Park (e.g., camps, museum, etc.)\r\nEnvironmental services\r\nProposed investment site within Al-Ahsa National Park for ecotourism assets and activities",
+      "location": "",
+      "region": "Eastren",
+      "location_confidence_score": 0.8,
+      "location_detection_method": "DESCRIPTION_ONLY_EXPLICIT_AL_AHSA",
+      "location_evidence": "Developing an ecotourism site within Al-Ahsa National Park (e.g., camps, museum, etc.)\r\nEnvironmental services\r\nProposed investment site within Al-Ahsa National Park for ecotourism assets and activities",
+      "qualified_location": false,
+      "link": "https://investsaudi.sa/backend/opportunity/al-ahsa-national-park/",
+      "pdf_url": "https://investsaudi.sa/backend/wp-content/uploads/2026/01/Envi-004.pdf",
+      "pdf_file": {
+        "url": "https://investsaudi.sa/backend/wp-content/uploads/2026/01/Envi-004.pdf"
+      },
+      "backed_by": "",
+      "opportunity_type": "",
+      "source_record_family": "opportunity",
+      "official_source_id_original": "44773",
+      "official_source_id_normalized": "44773",
+      "dataset_memberships": [
+        {
+          "dataset_name": "Opportunities",
+          "dataset_specific_metadata": {
+            "normalized_taxonomy": {
+              "sector": "البيئة",
+              "subsector": null
+            },
+            "source_taxonomy": {
+              "sector": "Environment",
+              "subsector": null
+            }
+          },
+          "endpoint": "https://investsaudi.sa/backend/wp-json/v3/opportunities"
+        }
+      ],
+      "inner_data": []
+    }
+  },
+  {
+    "source_row_id": 601,
+    "source_key": "invest-saudi",
+    "external_id": "investsaudi:33626",
+    "official_reference": null,
+    "normalized_reference": null,
+    "master_id": null,
+    "source_url": "https://investsaudi.sa/backend/opportunity/multipurpose-venues-in-madina-al-jouf-hail-najran-and-al-ahsa/",
+    "raw_location": "Al Madinah",
+    "canonical_status": "غير محددة",
+    "record": {
+      "title": "Multipurpose venues In Madina, Al jouf, Ha’il, Najran and Al Ahsa",
+      "description": "Venue can host a variety of events of entertainment, sports, etc.",
+      "location": "",
+      "region": "Al Madinah",
+      "location_confidence_score": 0.0,
+      "location_detection_method": "NO_AL_AHSA_EVIDENCE",
+      "location_evidence": "No explicit Al-Ahsa location evidence in source location fields or description.",
+      "qualified_location": false,
+      "link": "https://investsaudi.sa/backend/opportunity/multipurpose-venues-in-madina-al-jouf-hail-najran-and-al-ahsa/",
+      "pdf_url": "https://investsaudi.sa/backend/wp-content/uploads/2025/12/ENTE1441-Multipurpose-venues-In-Madina-Al-jouf_dup1.pdf",
+      "pdf_file": {
+        "url": "https://investsaudi.sa/backend/wp-content/uploads/2025/12/ENTE1441-Multipurpose-venues-In-Madina-Al-jouf_dup1.pdf"
+      },
+      "backed_by": "",
+      "opportunity_type": "",
+      "source_record_family": "opportunity",
+      "official_source_id_original": "33626",
+      "official_source_id_normalized": "33626",
+      "dataset_memberships": [
+        {
+          "dataset_name": "Opportunities",
+          "dataset_specific_metadata": {
+            "normalized_taxonomy": {
+              "sector": "السياحة",
+              "subsector": null
+            },
+            "source_taxonomy": {
+              "sector": "Tourism",
+              "subsector": null
+            }
+          },
+          "endpoint": "https://investsaudi.sa/backend/wp-json/v3/opportunities"
+        }
+      ],
+      "inner_data": []
+    }
+  },
+  {
+    "source_row_id": 671,
+    "source_key": "invest-saudi",
+    "external_id": "investsaudi:33066",
+    "official_reference": null,
+    "normalized_reference": null,
+    "master_id": null,
+    "source_url": "https://investsaudi.sa/backend/opportunity/al-ahsa-private-international-early-years-schools/",
+    "raw_location": "",
+    "canonical_status": "غير محددة",
+    "record": {
+      "title": "Al-Ahsa Private International Early Years Schools",
+      "description": "Invest in KSA’s education sector by establishing high-quality, Private International Early Years centers in Al-Ahsa",
+      "location": "",
+      "region": "",
+      "location_confidence_score": 0.8,
+      "location_detection_method": "DESCRIPTION_ONLY_EXPLICIT_AL_AHSA",
+      "location_evidence": "Invest in KSA’s education sector by establishing high-quality, Private International Early Years centers in Al-Ahsa",
+      "qualified_location": false,
+      "link": "https://investsaudi.sa/backend/opportunity/al-ahsa-private-international-early-years-schools/",
+      "pdf_url": "https://investsaudi.sa/backend/wp-content/uploads/2025/12/EDUC0846-Al-Ahsa-Private-International-Early-Years-Schools_dup1.pdf",
+      "pdf_file": {
+        "url": "https://investsaudi.sa/backend/wp-content/uploads/2025/12/EDUC0846-Al-Ahsa-Private-International-Early-Years-Schools_dup1.pdf"
+      },
+      "backed_by": "",
+      "opportunity_type": "",
+      "source_record_family": "opportunity",
+      "official_source_id_original": "33066",
+      "official_source_id_normalized": "33066",
+      "dataset_memberships": [
+        {
+          "dataset_name": "Opportunities",
+          "dataset_specific_metadata": {
+            "normalized_taxonomy": {
+              "sector": "التعليم",
+              "subsector": null
+            },
+            "source_taxonomy": {
+              "sector": "Education",
+              "subsector": null
+            }
+          },
+          "endpoint": "https://investsaudi.sa/backend/wp-json/v3/opportunities"
+        }
+      ],
+      "inner_data": []
+    }
+  },
+  {
+    "source_row_id": 1038,
+    "source_key": "invest-saudi",
+    "external_id": "investsaudi:32289",
+    "official_reference": null,
+    "normalized_reference": null,
+    "master_id": null,
+    "source_url": "https://investsaudi.sa/backend/opportunity/al-ahsaa-independent-strategic-water-reservoir-iswr/",
+    "raw_location": "Sharqia",
+    "canonical_status": "غير محددة",
+    "record": {
+      "title": "Al Ahsaa Independent Strategic Water Reservoir (ISWR)",
+      "description": "The project consists in the development of strategic potable water reservoirs located in Al Ahsaa and SWPC intends to procure Asir ISWR using a Public-Private Partnership (PPP) Model",
+      "location": "",
+      "region": "Sharqia",
+      "location_confidence_score": 0.8,
+      "location_detection_method": "DESCRIPTION_ONLY_EXPLICIT_AL_AHSA",
+      "location_evidence": "The project consists in the development of strategic potable water reservoirs located in Al Ahsaa and SWPC intends to procure Asir ISWR using a Public-Private Partnership (PPP) Model",
+      "qualified_location": false,
+      "link": "https://investsaudi.sa/backend/opportunity/al-ahsaa-independent-strategic-water-reservoir-iswr/",
+      "pdf_url": "https://investsaudi.sa/backend/wp-content/uploads/2025/12/WATE0733-Moderate-Potential_dup1_dup1.pdf",
+      "pdf_file": {
+        "url": "https://investsaudi.sa/backend/wp-content/uploads/2025/12/WATE0733-Moderate-Potential_dup1_dup1.pdf"
+      },
+      "backed_by": "",
+      "opportunity_type": "",
+      "source_record_family": "opportunity",
+      "official_source_id_original": "32289",
+      "official_source_id_normalized": "32289",
+      "dataset_memberships": [
+        {
+          "dataset_name": "Opportunities",
+          "dataset_specific_metadata": {
+            "normalized_taxonomy": {
+              "sector": "البيئة",
+              "subsector": null
+            },
+            "source_taxonomy": {
+              "sector": "Water",
+              "subsector": null
+            }
+          },
+          "endpoint": "https://investsaudi.sa/backend/wp-json/v3/opportunities"
+        }
+      ],
+      "inner_data": []
+    }
+  },
+  {
+    "source_row_id": 1166,
+    "source_key": "invest-saudi",
+    "external_id": "investsaudi:32430",
+    "official_reference": null,
+    "normalized_reference": null,
+    "master_id": null,
+    "source_url": "https://investsaudi.sa/backend/opportunity/alahsa-intracity-bus-project/",
+    "raw_location": "Sharqia",
+    "canonical_status": "غير محددة",
+    "record": {
+      "title": "Alahsa intracity Bus Project",
+      "description": "Opportunity for best-in-class intracity bus service providers with operational excellence, improved safety standards resulting in top-class quality services for all residents, tourists and beneficiaries in Alahsa.",
+      "location": "",
+      "region": "Sharqia",
+      "location_confidence_score": 0.8,
+      "location_detection_method": "DESCRIPTION_ONLY_EXPLICIT_AL_AHSA",
+      "location_evidence": "Opportunity for best-in-class intracity bus service providers with operational excellence, improved safety standards resulting in top-class quality services for all residents, tourists and beneficiaries in Alahsa.",
+      "qualified_location": false,
+      "link": "https://investsaudi.sa/backend/opportunity/alahsa-intracity-bus-project/",
+      "pdf_url": "https://investsaudi.sa/backend/wp-content/uploads/2025/12/TRAN0205-Alahsa-intracity-Bus-Project_dup1_dup1.pdf",
+      "pdf_file": {
+        "url": "https://investsaudi.sa/backend/wp-content/uploads/2025/12/TRAN0205-Alahsa-intracity-Bus-Project_dup1_dup1.pdf"
+      },
+      "backed_by": "",
+      "opportunity_type": "",
+      "source_record_family": "opportunity",
+      "official_source_id_original": "32430",
+      "official_source_id_normalized": "32430",
+      "dataset_memberships": [
+        {
+          "dataset_name": "Opportunities",
+          "dataset_specific_metadata": {
+            "normalized_taxonomy": {
+              "sector": "الخدمات اللوجستية",
+              "subsector": null
+            },
+            "source_taxonomy": {
+              "sector": "Transport and Logistics",
+              "subsector": null
+            }
+          },
+          "endpoint": "https://investsaudi.sa/backend/wp-json/v3/opportunities"
+        }
+      ],
+      "inner_data": []
+    }
+  },
+  {
+    "source_row_id": 1167,
+    "source_key": "invest-saudi",
+    "external_id": "investsaudi:32429",
+    "official_reference": null,
+    "normalized_reference": null,
+    "master_id": null,
+    "source_url": "https://investsaudi.sa/backend/opportunity/alahsa-bus-stop-stations-project/",
+    "raw_location": "Sharqia",
+    "canonical_status": "غير محددة",
+    "record": {
+      "title": "AlAhsa Bus Stop Stations Project",
+      "description": "Opportunity for establishing bus stop stations in Al-Ahsa supporting the public transport service in the city.",
+      "location": "",
+      "region": "Sharqia",
+      "location_confidence_score": 0.8,
+      "location_detection_method": "DESCRIPTION_ONLY_EXPLICIT_AL_AHSA",
+      "location_evidence": "Opportunity for establishing bus stop stations in Al-Ahsa supporting the public transport service in the city.",
+      "qualified_location": false,
+      "link": "https://investsaudi.sa/backend/opportunity/alahsa-bus-stop-stations-project/",
+      "pdf_url": "https://investsaudi.sa/backend/wp-content/uploads/2025/12/TRAN0204-AlAhsa-Bus-Stop-Stations-Project_dup1_dup1.pdf",
+      "pdf_file": {
+        "url": "https://investsaudi.sa/backend/wp-content/uploads/2025/12/TRAN0204-AlAhsa-Bus-Stop-Stations-Project_dup1_dup1.pdf"
+      },
+      "backed_by": "",
+      "opportunity_type": "",
+      "source_record_family": "opportunity",
+      "official_source_id_original": "32429",
+      "official_source_id_normalized": "32429",
+      "dataset_memberships": [
+        {
+          "dataset_name": "Opportunities",
+          "dataset_specific_metadata": {
+            "normalized_taxonomy": {
+              "sector": "الخدمات اللوجستية",
+              "subsector": null
+            },
+            "source_taxonomy": {
+              "sector": "Transport and Logistics",
+              "subsector": null
+            }
+          },
+          "endpoint": "https://investsaudi.sa/backend/wp-json/v3/opportunities"
+        }
+      ],
+      "inner_data": []
+    }
+  },
+  {
+    "source_row_id": 2358,
+    "source_key": "invest-saudi",
+    "external_id": "investsaudi:54961",
+    "official_reference": "06-26-183737-46016",
+    "normalized_reference": "062618373746016",
+    "master_id": null,
+    "source_url": "https://investsaudi.sa/investment-opportunities",
+    "raw_location": "Municipality",
+    "canonical_status": "غير محددة",
+    "record": {
+      "title": "مزايدة تأجير موقع صراف الي بمستشفى الولادة والأطفال بالأحساء",
+      "description": "مزايدة تأجير موقع صراف الي بمستشفى الولادة والأطفال بالأحساء",
+      "location": "Municipality",
+      "region": "",
+      "municipality": "Municipality",
+      "location_confidence_score": 0.8,
+      "location_detection_method": "DESCRIPTION_ONLY_EXPLICIT_AL_AHSA",
+      "location_evidence": "مزايدة تأجير موقع صراف الي بمستشفى الولادة والأطفال بالأحساء منصة فرص مزايدة تأجير موقع صراف الي بمستشفى الولادة والأطفال بالأحساء",
+      "qualified_location": false,
+      "source_record_family": "project",
+      "official_source_id_original": "54961",
+      "official_source_id_normalized": "54961",
+      "dataset_memberships": [
+        {
+          "dataset_name": "Investment projects",
+          "dataset_specific_metadata": {
+            "normalized_taxonomy": {
+              "sector": null,
+              "subsector": null
+            },
+            "source_taxonomy": {
+              "sector": "Real Estate & Construction",
+              "subsector": "الأنشطة المالية"
+            }
+          },
+          "endpoint": "https://investsaudi.sa/backend/wp-json/v3/investment-projects"
+        }
+      ],
+      "modalData": {
+        "opportunityNumber": "06-26-183737-46016",
+        "descriptionSections": [
+          {
+            "content": "منصة فرص",
+            "title": "Competitions submission site"
+          },
+          {
+            "content": "مزايدة تأجير موقع صراف الي بمستشفى الولادة والأطفال بالأحساء",
+            "title": "Investment opportunity description"
+          }
+        ],
+        "furas_link": "https://furas.momra.gov.sa/ar/opportunity/06-26-183737-46016?type=Investment",
+        "downloadPdfLink": "https://furas.momra.gov.sa/prweb/PRAuth/anonymous_MISAAttachmentLink?QXR0YWNobWVudExpbms9TElOSy1BVFRBQ0hNRU5UIE1PTVJBLUZXLUlNU0ZXLVdPUkstRU5USVRZTUFOQUdFTUVOVCBFSU5PLTE0NDEwMjchMjAyNjA5MjhUMDg0MDQ3LjUxNiBHTVQ=",
+        "location": {
+          "latitude": null,
+          "longitude": null,
+          "neighborhood": "",
+          "siteArea": "2",
+          "siteDescription": "",
+          "street": ""
+        },
+        "contractPeriod": "5 Years"
+      }
+    }
+  },
+  {
+    "source_row_id": 2359,
+    "source_key": "invest-saudi",
+    "external_id": "investsaudi:54962",
+    "official_reference": "06-26-183737-46015",
+    "normalized_reference": "062618373746015",
+    "master_id": null,
+    "source_url": "https://investsaudi.sa/investment-opportunities",
+    "raw_location": "Municipality",
+    "canonical_status": "غير محددة",
+    "record": {
+      "title": "مزايدة تأجير موقع صراف الي بمستشفى الأمير سعود بن جلوي بالأحساء",
+      "description": "مزايدة تأجير موقع صراف الي بمستشفى الأمير سعود بن جلوي بالأحساء",
+      "location": "Municipality",
+      "region": "",
+      "municipality": "Municipality",
+      "location_confidence_score": 0.8,
+      "location_detection_method": "DESCRIPTION_ONLY_EXPLICIT_AL_AHSA",
+      "location_evidence": "مزايدة تأجير موقع صراف الي بمستشفى الأمير سعود بن جلوي بالأحساء منصة فرص مزايدة تأجير موقع صراف الي بمستشفى الأمير سعود بن جلوي بالأحساء",
+      "qualified_location": false,
+      "source_record_family": "project",
+      "official_source_id_original": "54962",
+      "official_source_id_normalized": "54962",
+      "dataset_memberships": [
+        {
+          "dataset_name": "Investment projects",
+          "dataset_specific_metadata": {
+            "normalized_taxonomy": {
+              "sector": null,
+              "subsector": null
+            },
+            "source_taxonomy": {
+              "sector": "Real Estate & Construction",
+              "subsector": "الأنشطة المالية"
+            }
+          },
+          "endpoint": "https://investsaudi.sa/backend/wp-json/v3/investment-projects"
+        }
+      ],
+      "modalData": {
+        "opportunityNumber": "06-26-183737-46015",
+        "descriptionSections": [
+          {
+            "content": "منصة فرص",
+            "title": "Competitions submission site"
+          },
+          {
+            "content": "مزايدة تأجير موقع صراف الي بمستشفى الأمير سعود بن جلوي بالأحساء",
+            "title": "Investment opportunity description"
+          }
+        ],
+        "furas_link": "https://furas.momra.gov.sa/ar/opportunity/06-26-183737-46015?type=Investment",
+        "downloadPdfLink": "https://furas.momra.gov.sa/prweb/PRAuth/anonymous_MISAAttachmentLink?QXR0YWNobWVudExpbms9TElOSy1BVFRBQ0hNRU5UIE1PTVJBLUZXLUlNU0ZXLVdPUkstRU5USVRZTUFOQUdFTUVOVCBFSU5PLTE0NDEwMjYhMjAyNjA5MjhUMDgzMTMyLjI3MiBHTVQ=",
+        "location": {
+          "latitude": null,
+          "longitude": null,
+          "neighborhood": "",
+          "siteArea": "2",
+          "siteDescription": "",
+          "street": ""
+        },
+        "contractPeriod": "5 Years"
+      }
+    }
+  },
+  {
+    "source_row_id": 2360,
+    "source_key": "invest-saudi",
+    "external_id": "investsaudi:54960",
+    "official_reference": "06-26-183737-46017",
+    "normalized_reference": "062618373746017",
+    "master_id": null,
+    "source_url": "https://investsaudi.sa/investment-opportunities",
+    "raw_location": "Municipality",
+    "canonical_status": "غير محددة",
+    "record": {
+      "title": "مزايدة تأجير موقع صراف الي بمستشفى الملك فيصل بالأحساء",
+      "description": "مزايدة تأجير موقع صراف الي بمستشفى الملك فيصل بالأحساء",
+      "location": "Municipality",
+      "region": "",
+      "municipality": "Municipality",
+      "location_confidence_score": 0.8,
+      "location_detection_method": "DESCRIPTION_ONLY_EXPLICIT_AL_AHSA",
+      "location_evidence": "مزايدة تأجير موقع صراف الي بمستشفى الملك فيصل بالأحساء منصة فرص مزايدة تأجير موقع صراف الي بمستشفى الملك فيصل بالأحساء",
+      "qualified_location": false,
+      "source_record_family": "project",
+      "official_source_id_original": "54960",
+      "official_source_id_normalized": "54960",
+      "dataset_memberships": [
+        {
+          "dataset_name": "Investment projects",
+          "dataset_specific_metadata": {
+            "normalized_taxonomy": {
+              "sector": null,
+              "subsector": null
+            },
+            "source_taxonomy": {
+              "sector": "Real Estate & Construction",
+              "subsector": "الأنشطة المالية"
+            }
+          },
+          "endpoint": "https://investsaudi.sa/backend/wp-json/v3/investment-projects"
+        }
+      ],
+      "modalData": {
+        "opportunityNumber": "06-26-183737-46017",
+        "descriptionSections": [
+          {
+            "content": "منصة فرص",
+            "title": "Competitions submission site"
+          },
+          {
+            "content": "مزايدة تأجير موقع صراف الي بمستشفى الملك فيصل بالأحساء",
+            "title": "Investment opportunity description"
+          }
+        ],
+        "furas_link": "https://furas.momra.gov.sa/ar/opportunity/06-26-183737-46017?type=Investment",
+        "downloadPdfLink": "https://furas.momra.gov.sa/prweb/PRAuth/anonymous_MISAAttachmentLink?QXR0YWNobWVudExpbms9TElOSy1BVFRBQ0hNRU5UIE1PTVJBLUZXLUlNU0ZXLVdPUkstRU5USVRZTUFOQUdFTUVOVCBFSU5PLTE0NDEwMjghMjAyNjA5MjhUMDg0ODUzLjA1NCBHTVQ=",
+        "location": {
+          "latitude": null,
+          "longitude": null,
+          "neighborhood": "",
+          "siteArea": "2",
+          "siteDescription": "",
+          "street": ""
+        },
+        "contractPeriod": "5 Years"
+      }
+    }
+  },
+  {
+    "source_row_id": 2361,
+    "source_key": "invest-saudi",
+    "external_id": "investsaudi:54959",
+    "official_reference": "06-26-183737-46018",
+    "normalized_reference": "062618373746018",
+    "master_id": null,
+    "source_url": "https://investsaudi.sa/investment-opportunities",
+    "raw_location": "Municipality",
+    "canonical_status": "غير محددة",
+    "record": {
+      "title": "مزايدة تأجير موقع صراف الي بمستشفى العمران العام بالأحساء",
+      "description": "مزايدة تأجير موقع صراف الي بمستشفى العمران العام بالأحساء",
+      "location": "Municipality",
+      "region": "",
+      "municipality": "Municipality",
+      "location_confidence_score": 0.8,
+      "location_detection_method": "DESCRIPTION_ONLY_EXPLICIT_AL_AHSA",
+      "location_evidence": "مزايدة تأجير موقع صراف الي بمستشفى العمران العام بالأحساء منصة فرص مزايدة تأجير موقع صراف الي بمستشفى العمران العام بالأحساء",
+      "qualified_location": false,
+      "source_record_family": "project",
+      "official_source_id_original": "54959",
+      "official_source_id_normalized": "54959",
+      "dataset_memberships": [
+        {
+          "dataset_name": "Investment projects",
+          "dataset_specific_metadata": {
+            "normalized_taxonomy": {
+              "sector": null,
+              "subsector": null
+            },
+            "source_taxonomy": {
+              "sector": "Real Estate & Construction",
+              "subsector": "الأنشطة المالية"
+            }
+          },
+          "endpoint": "https://investsaudi.sa/backend/wp-json/v3/investment-projects"
+        }
+      ],
+      "modalData": {
+        "opportunityNumber": "06-26-183737-46018",
+        "descriptionSections": [
+          {
+            "content": "منصة فرص",
+            "title": "Competitions submission site"
+          },
+          {
+            "content": "مزايدة تأجير موقع صراف الي بمستشفى العمران العام بالأحساء",
+            "title": "Investment opportunity description"
+          }
+        ],
+        "furas_link": "https://furas.momra.gov.sa/ar/opportunity/06-26-183737-46018?type=Investment",
+        "downloadPdfLink": "https://furas.momra.gov.sa/prweb/PRAuth/anonymous_MISAAttachmentLink?QXR0YWNobWVudExpbms9TElOSy1BVFRBQ0hNRU5UIE1PTVJBLUZXLUlNU0ZXLVdPUkstRU5USVRZTUFOQUdFTUVOVCBFSU5PLTE0NDEwMjkhMjAyNjA5MjhUMDg1NjM4LjYxOSBHTVQ=",
+        "location": {
+          "latitude": null,
+          "longitude": null,
+          "neighborhood": "",
+          "siteArea": "2",
+          "siteDescription": "",
+          "street": ""
+        },
+        "contractPeriod": "5 Years"
+      }
+    }
+  },
+  {
+    "source_row_id": 2362,
+    "source_key": "invest-saudi",
+    "external_id": "investsaudi:54958",
+    "official_reference": "06-26-183737-46019",
+    "normalized_reference": "062618373746019",
+    "master_id": null,
+    "source_url": "https://investsaudi.sa/investment-opportunities",
+    "raw_location": "Municipality",
+    "canonical_status": "غير محددة",
+    "record": {
+      "title": "مزايدة تأجير موقع صراف الي بمستشفى الصحة النفسية بالأحساء",
+      "description": "مزايدة تأجير موقع صراف الي بمستشفى الصحة النفسية بالأحساء",
+      "location": "Municipality",
+      "region": "",
+      "municipality": "Municipality",
+      "location_confidence_score": 0.8,
+      "location_detection_method": "DESCRIPTION_ONLY_EXPLICIT_AL_AHSA",
+      "location_evidence": "مزايدة تأجير موقع صراف الي بمستشفى الصحة النفسية بالأحساء منصة فرص مزايدة تأجير موقع صراف الي بمستشفى الصحة النفسية بالأحساء",
+      "qualified_location": false,
+      "source_record_family": "project",
+      "official_source_id_original": "54958",
+      "official_source_id_normalized": "54958",
+      "dataset_memberships": [
+        {
+          "dataset_name": "Investment projects",
+          "dataset_specific_metadata": {
+            "normalized_taxonomy": {
+              "sector": null,
+              "subsector": null
+            },
+            "source_taxonomy": {
+              "sector": "Real Estate & Construction",
+              "subsector": "الأنشطة المالية"
+            }
+          },
+          "endpoint": "https://investsaudi.sa/backend/wp-json/v3/investment-projects"
+        }
+      ],
+      "modalData": {
+        "opportunityNumber": "06-26-183737-46019",
+        "descriptionSections": [
+          {
+            "content": "منصة فرص",
+            "title": "Competitions submission site"
+          },
+          {
+            "content": "مزايدة تأجير موقع صراف الي بمستشفى الصحة النفسية بالأحساء",
+            "title": "Investment opportunity description"
+          }
+        ],
+        "furas_link": "https://furas.momra.gov.sa/ar/opportunity/06-26-183737-46019?type=Investment",
+        "downloadPdfLink": "https://furas.momra.gov.sa/prweb/PRAuth/anonymous_MISAAttachmentLink?QXR0YWNobWVudExpbms9TElOSy1BVFRBQ0hNRU5UIE1PTVJBLUZXLUlNU0ZXLVdPUkstRU5USVRZTUFOQUdFTUVOVCBFSU5PLTE0NDEwMzEhMjAyNjA5MjhUMDkxNDM3LjU5MCBHTVQ=",
+        "location": {
+          "latitude": null,
+          "longitude": null,
+          "neighborhood": "",
+          "siteArea": "2",
+          "siteDescription": "",
+          "street": ""
+        },
+        "contractPeriod": "5 Years"
+      }
+    }
+  }
+]

@@ -1,0 +1,36 @@
+# Controlled LIVE USER ENVIRONMENT runtime. Migrations are intentionally inert.
+services:
+  migrate:
+    image: alahsa-api:furas-snapshot-recovery-20261102
+    build: !reset null
+    command: ["python", "-c", "print('Snapshot recovery deployment: automatic migrations disabled')"]
+  api:
+    image: alahsa-api:furas-snapshot-recovery-20261102
+    build: !reset null
+    environment:
+      ENVIRONMENT: local_user
+      NATIONAL_UI_ENABLED: "false"
+      NATIONAL_MAP_ENABLED: "false"
+      NATIONAL_DASHBOARD_ENABLED: "false"
+      FURAS_NATIONAL_ENUMERATION_ENABLED: "false"
+      FURAS_NATIONAL_REMOVAL_RECONCILIATION_ENABLED: "false"
+  worker:
+    image: alahsa-worker:furas-snapshot-recovery-20261102
+    build: !reset null
+    environment:
+      ENVIRONMENT: local_user
+      NATIONAL_UI_ENABLED: "false"
+      NATIONAL_MAP_ENABLED: "false"
+      NATIONAL_DASHBOARD_ENABLED: "false"
+      FURAS_NATIONAL_ENUMERATION_ENABLED: "false"
+      FURAS_NATIONAL_REMOVAL_RECONCILIATION_ENABLED: "false"
+  scheduler:
+    image: alahsa-beat:furas-snapshot-recovery-20261102
+    build: !reset null
+    environment:
+      ENVIRONMENT: local_user
+      NATIONAL_UI_ENABLED: "false"
+      NATIONAL_MAP_ENABLED: "false"
+      NATIONAL_DASHBOARD_ENABLED: "false"
+      FURAS_NATIONAL_ENUMERATION_ENABLED: "false"
+      FURAS_NATIONAL_REMOVAL_RECONCILIATION_ENABLED: "false"

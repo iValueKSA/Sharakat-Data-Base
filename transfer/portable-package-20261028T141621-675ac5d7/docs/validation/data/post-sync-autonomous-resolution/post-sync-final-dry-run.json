@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-10-26T08:36:44.584090+00:00",
+  "rule_version": "AUTONOMOUS_REVIEW_RESOLUTION_V1",
+  "open_reviews_before": 0,
+  "human_review_required": 0,
+  "source_recheck_required": 0,
+  "counts": {
+    "masters": 566,
+    "source_opportunities": 3178,
+    "observations": 25239,
+    "active_sync_jobs": 0,
+    "sync_jobs_total": 506,
+    "sync_jobs_max_id": 506
+  },
+  "open_by_type": {},
+  "resolution_classes": {},
+  "validation": {
+    "DRY_RUN_UNRESOLVED": 0,
+    "DRY_RUN_INVALID_ACTION": 0,
+    "DRY_RUN_UNSAFE_MERGES": 0,
+    "all_decisions_classified": true,
+    "version_tokens_captured": true,
+    "no_active_sync_jobs": true
+  },
+  "invalid_actions": [],
+  "unsafe_merges": [],
+  "unclassified_review_ids": [],
+  "review_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "business_state_before": {
+    "sha256": "e36a7e679e589ddba449b0492eab098c844bab50e9bc5fd16d578f8b34fb1181",
+    "tables": {
+      "opportunities": {
+        "row_count": 587,
+        "sha256": "9aae750773dd3950103d3a3e71f5b311117920f38fecd53374566ed989cec7e9"
+      },
+      "source_opportunities": {
+        "row_count": 3178,
+        "sha256": "1d4c1435e266eb6bbddefef50a09140d528109b360302557dd4da100320ff050"
+      },
+      "source_observations": {
+        "row_count": 25239,
+        "sha256": "284092c9789dd5b9785da9abd144581bf894b4dd24f73fcda680cdaffcc993fa"
+      }
+    }
+  },
+  "expected_versions": {},
+  "decisions": [],
+  "validated": true
+}

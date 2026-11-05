@@ -1,0 +1,200 @@
+{
+  "captured_at_utc": "2026-10-19T10:58:36.336641+00:00",
+  "masters_total": 296,
+  "eligible_masters": 291,
+  "master_status_counts": {
+    "متاحة": 103,
+    "منشورة": 158,
+    "أزيلت من المصدر": 14,
+    "غير محددة": 13,
+    "منتهية": 2,
+    "حالة غير معروفة": 1
+  },
+  "active_masters": 261,
+  "historical_masters": 16,
+  "source_opportunities": 2898,
+  "observations_total": 10514,
+  "status_baseline_observations": 2911,
+  "pre_lifecycle_observations_preserved": 7603,
+  "source_records_with_prior_observation": 2555,
+  "source_records_with_multiple_prior_observations": 2524,
+  "prior_observations_with_top_level_status_evidence": 0,
+  "source_status_counts_by_source": {
+    "alahsa-opportunities": {
+      "متاحة": 103
+    },
+    "furas": {
+      "منشورة": 164,
+      "أزيلت من المصدر": 13
+    },
+    "ahda": {
+      "غير محددة": 7
+    },
+    "invest-saudi": {
+      "غير محددة": 2555
+    },
+    "kfu": {
+      "منتهية": 1,
+      "أزيلت من المصدر": 1,
+      "حالة غير معروفة": 4
+    },
+    "ncp": {
+      "منتهية": 4,
+      "حالة غير معروفة": 40,
+      "تمت الترسية": 1
+    },
+    "mwan": {
+      "منشورة": 5
+    }
+  },
+  "multi_source_masters": [
+    {
+      "master_id": 195,
+      "master_status": "متاحة",
+      "sources": [
+        {
+          "record_id": 74,
+          "source": "furas",
+          "status": "منشورة",
+          "raw_status": "Announced"
+        },
+        {
+          "record_id": 198,
+          "source": "alahsa-opportunities",
+          "status": "متاحة",
+          "raw_status": "متاحة"
+        }
+      ]
+    },
+    {
+      "master_id": 193,
+      "master_status": "متاحة",
+      "sources": [
+        {
+          "record_id": 75,
+          "source": "furas",
+          "status": "منشورة",
+          "raw_status": "Announced"
+        },
+        {
+          "record_id": 196,
+          "source": "alahsa-opportunities",
+          "status": "متاحة",
+          "raw_status": "متاحة"
+        }
+      ]
+    },
+    {
+      "master_id": 102,
+      "master_status": "منشورة",
+      "sources": [
+        {
+          "record_id": 102,
+          "source": "furas",
+          "status": "منشورة",
+          "raw_status": "Announced"
+        },
+        {
+          "record_id": 2357,
+          "source": "invest-saudi",
+          "status": "غير محددة",
+          "raw_status": null
+        }
+      ]
+    },
+    {
+      "master_id": 192,
+      "master_status": "متاحة",
+      "sources": [
+        {
+          "record_id": 135,
+          "source": "furas",
+          "status": "منشورة",
+          "raw_status": "Announced"
+        },
+        {
+          "record_id": 195,
+          "source": "alahsa-opportunities",
+          "status": "متاحة",
+          "raw_status": "متاحة"
+        }
+      ]
+    },
+    {
+      "master_id": 164,
+      "master_status": "متاحة",
+      "sources": [
+        {
+          "record_id": 140,
+          "source": "furas",
+          "status": "منشورة",
+          "raw_status": "Announced"
+        },
+        {
+          "record_id": 167,
+          "source": "alahsa-opportunities",
+          "status": "متاحة",
+          "raw_status": "متاحة"
+        }
+      ]
+    },
+    {
+      "master_id": 230,
+      "master_status": "منشورة",
+      "sources": [
+        {
+          "record_id": 2368,
+          "source": "invest-saudi",
+          "status": "غير محددة",
+          "raw_status": null
+        },
+        {
+          "record_id": 2831,
+          "source": "furas",
+          "status": "منشورة",
+          "raw_status": "Announced"
+        }
+      ]
+    },
+    {
+      "master_id": 226,
+      "master_status": "متاحة",
+      "sources": [
+        {
+          "record_id": 2778,
+          "source": "furas",
+          "status": "منشورة",
+          "raw_status": "Announced"
+        },
+        {
+          "record_id": 2780,
+          "source": "alahsa-opportunities",
+          "status": "متاحة",
+          "raw_status": "متاحة"
+        }
+      ]
+    },
+    {
+      "master_id": 249,
+      "master_status": "متاحة",
+      "sources": [
+        {
+          "record_id": 2850,
+          "source": "furas",
+          "status": "منشورة",
+          "raw_status": "Announced"
+        },
+        {
+          "record_id": 2874,
+          "source": "alahsa-opportunities",
+          "status": "متاحة",
+          "raw_status": "متاحة"
+        }
+      ]
+    }
+  ],
+  "master_projection_conflicts": [],
+  "raw_cancellation_evidence_candidates": [],
+  "cancellation_events": [],
+  "open_status_conflicts": 0
+}

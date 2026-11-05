@@ -1,0 +1,11 @@
+# Temporary worker override for exactly one manually queued Furas national scan.
+# Do not combine with normal Beat scheduling; revert to the live runtime file after.
+services:
+  worker:
+    environment:
+      ENVIRONMENT: local_user
+      NATIONAL_UI_ENABLED: "false"
+      NATIONAL_MAP_ENABLED: "false"
+      NATIONAL_DASHBOARD_ENABLED: "false"
+      FURAS_NATIONAL_ENUMERATION_ENABLED: "true"
+      FURAS_NATIONAL_REMOVAL_RECONCILIATION_ENABLED: "false"

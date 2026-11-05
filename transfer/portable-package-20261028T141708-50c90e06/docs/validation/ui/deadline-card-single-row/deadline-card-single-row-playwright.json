@@ -1,0 +1,373 @@
+{
+  "started_at": "2026-10-28T10:07:11.920Z",
+  "base_url": "http://localhost:8080",
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "status": "PASSED",
+      "rowCount": 1,
+      "title": "توزيع الفرص حسب الموعد",
+      "labels": [
+        "خلال 7 أيام",
+        "8–14 يومًا",
+        "15–30 يومًا",
+        "أكثر من 30 يومًا",
+        "بدون موعد محدد"
+      ],
+      "counts": [
+        0,
+        21,
+        39,
+        44,
+        370
+      ],
+      "colors": [
+        "#378aa4",
+        "#006e61",
+        "#c39853",
+        "#7953a9",
+        "#989899"
+      ],
+      "cardTotal": 474,
+      "activeTotal": 474,
+      "layoutMode": "grid",
+      "gridTemplateColumns": "285.391px 285.406px 285.391px 285.406px 285.391px",
+      "rowTops": [
+        935
+      ],
+      "columnWidths": [
+        285.4,
+        285.4,
+        285.4,
+        285.4,
+        285.4
+      ],
+      "columnWidthSpread": 0,
+      "barBottoms": [
+        953.5,
+        953.5,
+        953.5,
+        953.5,
+        953.5
+      ],
+      "labelHeights": [
+        22,
+        22,
+        22,
+        22,
+        22
+      ],
+      "labelClipping": false,
+      "allLabelsVisible": true,
+      "cardHeight": 104,
+      "cardWidth": 1508,
+      "rtl": true,
+      "pageOverflow": false,
+      "hostWidth": 1439,
+      "barBaselineAligned": true,
+      "equalColumns": true,
+      "labelsVisible": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "status": "PASSED",
+      "rowCount": 1,
+      "title": "توزيع الفرص حسب الموعد",
+      "labels": [
+        "خلال 7 أيام",
+        "8–14 يومًا",
+        "15–30 يومًا",
+        "أكثر من 30 يومًا",
+        "بدون موعد محدد"
+      ],
+      "counts": [
+        0,
+        21,
+        39,
+        44,
+        370
+      ],
+      "colors": [
+        "#378aa4",
+        "#006e61",
+        "#c39853",
+        "#7953a9",
+        "#989899"
+      ],
+      "cardTotal": 474,
+      "activeTotal": 474,
+      "layoutMode": "grid",
+      "gridTemplateColumns": "201.719px 201.719px 201.734px 201.719px 201.734px",
+      "rowTops": [
+        914
+      ],
+      "columnWidths": [
+        201.7,
+        201.7,
+        201.7,
+        201.7,
+        201.7
+      ],
+      "columnWidthSpread": 0,
+      "barBottoms": [
+        932.3,
+        932.3,
+        932.3,
+        932.3,
+        932.3
+      ],
+      "labelHeights": [
+        22,
+        22,
+        22,
+        22,
+        22
+      ],
+      "labelClipping": false,
+      "allLabelsVisible": true,
+      "cardHeight": 104,
+      "cardWidth": 1089.6,
+      "rtl": true,
+      "pageOverflow": false,
+      "hostWidth": 1020.6,
+      "barBaselineAligned": true,
+      "equalColumns": true,
+      "labelsVisible": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "status": "PASSED",
+      "rowCount": 1,
+      "title": "توزيع الفرص حسب الموعد",
+      "labels": [
+        "خلال 7 أيام",
+        "8–14 يومًا",
+        "15–30 يومًا",
+        "أكثر من 30 يومًا",
+        "بدون موعد محدد"
+      ],
+      "counts": [
+        0,
+        21,
+        39,
+        44,
+        370
+      ],
+      "colors": [
+        "#378aa4",
+        "#006e61",
+        "#c39853",
+        "#7953a9",
+        "#989899"
+      ],
+      "cardTotal": 474,
+      "activeTotal": 474,
+      "layoutMode": "grid",
+      "gridTemplateColumns": "187.812px 187.812px 187.812px 187.812px 187.812px",
+      "rowTops": [
+        893
+      ],
+      "columnWidths": [
+        187.8,
+        187.8,
+        187.8,
+        187.8,
+        187.8
+      ],
+      "columnWidthSpread": 0,
+      "barBottoms": [
+        910.9,
+        910.9,
+        910.9,
+        910.9,
+        910.9
+      ],
+      "labelHeights": [
+        22,
+        22,
+        22,
+        22,
+        22
+      ],
+      "labelClipping": false,
+      "allLabelsVisible": true,
+      "cardHeight": 104,
+      "cardWidth": 1020.1,
+      "rtl": true,
+      "pageOverflow": false,
+      "hostWidth": 951.1,
+      "barBaselineAligned": true,
+      "equalColumns": true,
+      "labelsVisible": true
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "status": "PASSED",
+      "rowCount": 1,
+      "title": "توزيع الفرص حسب الموعد",
+      "labels": [
+        "خلال 7 أيام",
+        "8–14 يومًا",
+        "15–30 يومًا",
+        "أكثر من 30 يومًا",
+        "بدون موعد محدد"
+      ],
+      "counts": [
+        0,
+        21,
+        39,
+        44,
+        370
+      ],
+      "colors": [
+        "#378aa4",
+        "#006e61",
+        "#c39853",
+        "#7953a9",
+        "#989899"
+      ],
+      "cardTotal": 474,
+      "activeTotal": 474,
+      "layoutMode": "grid",
+      "gridTemplateColumns": "127.391px 127.406px 127.391px 127.406px 127.406px",
+      "rowTops": [
+        958
+      ],
+      "columnWidths": [
+        127.4,
+        127.4,
+        127.4,
+        127.4,
+        127.4
+      ],
+      "columnWidthSpread": 0,
+      "barBottoms": [
+        976.4,
+        976.4,
+        976.4,
+        976.4,
+        976.4
+      ],
+      "labelHeights": [
+        22,
+        22,
+        22,
+        22,
+        22
+      ],
+      "labelClipping": false,
+      "allLabelsVisible": true,
+      "cardHeight": 104,
+      "cardWidth": 718,
+      "rtl": true,
+      "pageOverflow": false,
+      "hostWidth": 649,
+      "barBaselineAligned": true,
+      "equalColumns": true,
+      "labelsVisible": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "status": "PASSED",
+      "rowCount": 1,
+      "title": "توزيع الفرص حسب الموعد",
+      "labels": [
+        "خلال 7 أيام",
+        "8–14 يومًا",
+        "15–30 يومًا",
+        "أكثر من 30 يومًا",
+        "بدون موعد محدد"
+      ],
+      "counts": [
+        0,
+        21,
+        39,
+        44,
+        370
+      ],
+      "colors": [
+        "#378aa4",
+        "#006e61",
+        "#c39853",
+        "#7953a9",
+        "#989899"
+      ],
+      "cardTotal": 474,
+      "activeTotal": 474,
+      "layoutMode": "grid",
+      "gridTemplateColumns": "59.7969px 59.7969px 59.7969px 59.7969px 59.7969px",
+      "rowTops": [
+        1061
+      ],
+      "columnWidths": [
+        59.8,
+        59.8,
+        59.8,
+        59.8,
+        59.8
+      ],
+      "columnWidthSpread": 0,
+      "barBottoms": [
+        1078.5,
+        1078.5,
+        1078.5,
+        1078.5,
+        1078.5
+      ],
+      "labelHeights": [
+        22,
+        22,
+        22,
+        22,
+        22
+      ],
+      "labelClipping": false,
+      "allLabelsVisible": true,
+      "cardHeight": 102,
+      "cardWidth": 366,
+      "rtl": true,
+      "pageOverflow": false,
+      "hostWidth": 307,
+      "barBaselineAligned": true,
+      "equalColumns": true,
+      "labelsVisible": true
+    }
+  ],
+  "screenshots": [
+    "C:\\Sharakat Data Base\\docs\\validation\\ui\\deadline-card-single-row\\screenshots\\deadline-card-1920x1080.png",
+    "C:\\Sharakat Data Base\\docs\\validation\\ui\\deadline-card-single-row\\screenshots\\deadline-card-1440x900.png",
+    "C:\\Sharakat Data Base\\docs\\validation\\ui\\deadline-card-single-row\\screenshots\\deadline-card-1366x768.png",
+    "C:\\Sharakat Data Base\\docs\\validation\\ui\\deadline-card-single-row\\screenshots\\deadline-card-768x900.png",
+    "C:\\Sharakat Data Base\\docs\\validation\\ui\\deadline-card-single-row\\screenshots\\deadline-card-390x844.png"
+  ],
+  "js_errors": [],
+  "http_errors": [],
+  "expected_auth_401": [
+    {
+      "status": 401,
+      "url": "http://localhost:8080/api/auth/me"
+    },
+    {
+      "status": 401,
+      "url": "http://localhost:8080/api/auth/me"
+    },
+    {
+      "status": 401,
+      "url": "http://localhost:8080/api/auth/me"
+    },
+    {
+      "status": 401,
+      "url": "http://localhost:8080/api/auth/me"
+    },
+    {
+      "status": 401,
+      "url": "http://localhost:8080/api/auth/me"
+    }
+  ],
+  "status": "PASSED"
+}

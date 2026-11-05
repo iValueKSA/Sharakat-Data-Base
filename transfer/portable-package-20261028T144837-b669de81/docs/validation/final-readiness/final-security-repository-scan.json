@@ -1,0 +1,14 @@
+{
+  "plaintext_production_secret_values_found": 0,
+  "git_history_available": false,
+  "scan_scope": "application, migrations, scripts, docs, and runtime configuration definitions",
+  "excluded": [
+    ".env.local",
+    "Local Admin Credentials.txt",
+    "backups/",
+    "tmp/",
+    "environment templates",
+    "test fixtures"
+  ],
+  "notes": "The local bootstrap credential file is a gitignored first-run artifact and has been proven stale; assignment matches in source are runtime variables/generated values, not hard-coded production secrets."
+}

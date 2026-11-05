@@ -1,0 +1,9 @@
+{
+  "captured_at": "2026-10-18T09:30:57.791152+00:00",
+  "master_count": 291,
+  "master_identity_digest": "c3bba55fb7cd3e99db80ea34a829ec8beec8fd6d3ce1041516d192e6e5e821e9",
+  "source_opportunity_count": 2898,
+  "source_link_and_identity_digest": "02e092340ce597d6b3c94b8720b6204e940ae99bc82b8cef16ce82a9aa15956f",
+  "source_sector_activity_digest": "6cd20d89ae194ea6eb82d501799419501063d6a96a1332bb75c9da6dba3e5e82",
+  "raw_source_payload_digest": "714cf7751c107574758db6119f37061d3c16b232ddd371371520a46aadf331a2"
+}

@@ -1,0 +1,1006 @@
+{
+  "classifier_version": "ahda-governed-sector-classifier-1.0.0",
+  "base_engines": {
+    "controlled_relaxation": "ahda-sector-controlled-relaxation-1.0.1",
+    "phase2": "ahda-sector-phase2-1.0.0"
+  },
+  "canonical_taxonomy": {
+    "sector:agriculture": "الزراعة",
+    "sector:commercial": "تجاري",
+    "sector:culture": "الثقافة",
+    "sector:education": "التعليم",
+    "sector:energy": "الطاقة",
+    "sector:environment": "البيئة",
+    "sector:financial_services": "الخدمات المالية",
+    "sector:healthcare": "الرعاية الصحية",
+    "sector:industrial": "صناعي",
+    "sector:logistics": "الخدمات اللوجستية",
+    "sector:other": "أخرى",
+    "sector:real_estate": "العقارات والإنشاءات",
+    "sector:sports": "الرياضة",
+    "sector:technology": "التقنية والاتصالات",
+    "sector:tourism": "السياحة",
+    "sector:unspecified": "غير محدد"
+  },
+  "weights_and_decisions": {
+    "explicit_source_sector": 100,
+    "activity_exact": 90,
+    "sub_activity_exact": 96,
+    "source_activity_exact": 90,
+    "source_sub_activity_exact": 96,
+    "raw_activity_type": 84,
+    "raw_sub_activity_type": 88,
+    "primary_purpose_title": 66,
+    "primary_purpose_other_text": 45,
+    "generic_warehouse_context": 27,
+    "asset_exact": {
+      "العربات المتنقلة": {
+        "sector_id": "sector:commercial",
+        "weight": 24.0,
+        "rule_key": "ASSET_MOBILE_VENDING_CONTEXT"
+      },
+      "مستودع": {
+        "sector_id": "sector:logistics",
+        "weight": 30.0,
+        "rule_key": "ASSET_WAREHOUSE"
+      },
+      "مستودع لوجستي": {
+        "sector_id": "sector:logistics",
+        "weight": 60.0,
+        "rule_key": "ASSET_LOGISTICS_WAREHOUSE"
+      },
+      "مصنع": {
+        "sector_id": "sector:industrial",
+        "weight": 60.0,
+        "rule_key": "ASSET_FACTORY"
+      },
+      "مزرعة": {
+        "sector_id": "sector:agriculture",
+        "weight": 60.0,
+        "rule_key": "ASSET_FARM"
+      },
+      "مستشفى": {
+        "sector_id": "sector:healthcare",
+        "weight": 60.0,
+        "rule_key": "ASSET_HOSPITAL"
+      },
+      "مدرسة": {
+        "sector_id": "sector:education",
+        "weight": 60.0,
+        "rule_key": "ASSET_SCHOOL"
+      }
+    },
+    "fallback_temporary_rental": {
+      "commercial_peer_count": 28,
+      "other_alternative_peer_count": 5,
+      "commercial_weight": 28,
+      "other_weight": 5
+    },
+    "fallback_generic_investment_context": {
+      "sector_id": "sector:commercial",
+      "weight": 10
+    },
+    "deduplicate_same_signal_across_fields": true,
+    "low_confidence_label": "LOW",
+    "low_confidence_method": "FORCED_BEST_FIT",
+    "authoritative_conflict_prevents_high_confidence": true,
+    "high_confidence_margin_threshold": 18,
+    "medium_primary_purpose_min_score": 60,
+    "medium_margin_threshold": 18,
+    "accepted_medium_confidence_range": [
+      0.82,
+      0.89
+    ]
+  },
+  "governed_primary_purpose_text_rules": {
+    "sector:commercial": [
+      "مقهى",
+      "كافيه",
+      "مطعم",
+      "عربة أطعمة",
+      "عربة اطعمة",
+      "عربة اطعه",
+      "فود ترك",
+      "مبسط غذائي",
+      "بيع الأغذية والمشروبات",
+      "بيع الاغذيه والمشروبات",
+      "خدمات غذائية",
+      "بيع الألعاب والهدايا والتحف",
+      "بيع الالعاب والهدايا والتحف",
+      "مزاولة البيع",
+      "مقطورة ترويجية",
+      "كشك",
+      "بقالة",
+      "بسطة لبيع",
+      "بسطه لبيع",
+      "بسطه بيع",
+      "بيع التسالي والشاي",
+      "بيع التسالي",
+      "تجارة التجزئة",
+      "تجارة المواد الغذائية",
+      "تشاليح سيارات",
+      "تأجير موقع مقهى",
+      "تأجير مواقع مؤقته لتقديم الخدمات الغذائية",
+      "الأنشطة التجارية",
+      "مواقف سيارات للضيوف",
+      "مواقف السيارات للضيوف",
+      "فحص دوري للمركبات",
+      "مركز خدمات سيارات",
+      "مركز خدمات المركبات",
+      "سيارة آيسكريم",
+      "سيارة ايسكريم",
+      "عربة آيسكريم",
+      "عربة ايسكريم",
+      "عربه اطعمه"
+    ],
+    "sector:other": [
+      "قطار ترفيهي",
+      "ألعاب مائية",
+      "العاب مائية",
+      "ألعاب هوائية",
+      "العاب هوائية",
+      "ألعاب أطفال",
+      "العاب اطفال",
+      "ساحة ألعاب",
+      "ساحة العاب",
+      "دبابات",
+      "اسكوتر",
+      "سكوتر",
+      "زحليقة",
+      "عربات مضيئة",
+      "عربات كلاسيك",
+      "عربة نق ترددي",
+      "عربات خيل",
+      "حناطير",
+      "مستودع الألعاب المائية",
+      "أكواخ خشبية مؤقتة",
+      "amusement",
+      "entertainment attraction"
+    ],
+    "sector:tourism": [
+      "إقامة سياحية",
+      "اقامة سياحية",
+      "إيواء سياحي",
+      "ايواء سياحي",
+      "ضيافة فندقية",
+      "سكن سياحي",
+      "مبيت سياحي",
+      "المبيت في شاطئ",
+      "مبيت في شاطئ",
+      "نزل سياحي",
+      "فندق",
+      "منتجع سياحي"
+    ],
+    "sector:agriculture": [
+      "مزرعة",
+      "إنتاج زراعي",
+      "انتاج زراعي",
+      "زراعة",
+      "مشتل زراعي",
+      "نخيل لإنتاج التمور"
+    ],
+    "sector:industrial": [
+      "مصنع",
+      "منشأة صناعية",
+      "تصنيع",
+      "إنتاج صناعي",
+      "انتاج صناعي",
+      "منشأة تحويلية",
+      "معالجة المنتجات الثانوية",
+      "خط إنتاج"
+    ],
+    "sector:real_estate": [
+      "مشروع إسكان",
+      "مشروع سكني",
+      "تطوير عقاري",
+      "مبنى تجاري متعدد الانشطة",
+      "كرفانات لأغراض سكنية",
+      "كرفانات لاغراض سكنية",
+      "عربات متنقلة لأغراض سكنية",
+      "عربات متنقلة لاغراض سكنية"
+    ],
+    "sector:education": [
+      "الخدمات الرقمية للإرشاد والتوجيه المهني",
+      "للإرشاد والتوجيه المهني",
+      "خدمات رقمية للإرشاد والتوجيه المهني",
+      "الإرشاد والتوجيه المهني",
+      "خدمات تعليمية",
+      "مدرسة",
+      "مركز تدريب",
+      "جامعة",
+      "كلية"
+    ],
+    "sector:healthcare": [
+      "مستشفى",
+      "مركز طبي",
+      "عيادة طبية",
+      "خدمات طبية",
+      "رعاية صحية"
+    ],
+    "sector:logistics": [
+      "مركز لوجستي",
+      "مستودع لوجستي",
+      "خدمات الشحن",
+      "نقل البضائع"
+    ],
+    "sector:environment": [
+      "إعادة تدوير",
+      "معالجة النفايات",
+      "معالجة مياه الصرف",
+      "تدوير النفايات"
+    ],
+    "sector:energy": [
+      "طاقة شمسية",
+      "توليد الكهرباء",
+      "طاقة متجددة"
+    ],
+    "sector:culture": [
+      "متحف",
+      "مركز ثقافي",
+      "مركز تراثي"
+    ],
+    "sector:sports": [
+      "نادي رياضي",
+      "مركز رياضي",
+      "ملعب رياضي",
+      "منشأة رياضية"
+    ],
+    "sector:financial_services": [
+      "خدمات مصرفية",
+      "خدمات مالية",
+      "خدمات الصرافة",
+      "صراف آلي"
+    ],
+    "sector:technology": [
+      "خدمات تقنية المعلومات",
+      "منصة برمجية",
+      "مركز بيانات",
+      "شبكة اتصالات"
+    ]
+  },
+  "governed_exact_activity_mappings": {
+    "صناعي": "sector:industrial",
+    "تجاري": "sector:commercial",
+    "الأنشطة الزراعية والحيوانية": "sector:agriculture",
+    "الأنشطة المالية": "sector:financial_services",
+    "الأنشطة التعليمية": "sector:education",
+    "الأنشطة التجارية": "sector:commercial",
+    "الأنشطة الصناعية": "sector:industrial",
+    "أنشطة المركبات": "sector:commercial",
+    "أنشطة الصيانة والتصليح والتركيب": "sector:commercial"
+  },
+  "governed_exact_sub_activity_mappings": {
+    "أنشطة التجارة العامة": "sector:commercial",
+    "خدمات الصرافة": "sector:financial_services",
+    "أنشطة تجارة المواد الغذائية": "sector:commercial",
+    "محلات تجارية": "sector:commercial",
+    "أنشطة وخدمات انتاج المواد غير الغذائية": "sector:industrial",
+    "خدمات تعليمية أخرى": "sector:education"
+  },
+  "accepted_phase2": {
+    "exact_subactivity_pairs": {
+      "الأنشطة التجارية | أنشطة تجارة المواد الغذائية": [
+        "sector:commercial",
+        "P2_FURAS_FOOD_RETAIL_EXACT_PAIR"
+      ],
+      "الأنشطة التجارية | محلات تجارية": [
+        "sector:commercial",
+        "P2_FURAS_RETAIL_SHOPS_EXACT_PAIR"
+      ],
+      "الأنشطة المالية | خدمات الصرافة": [
+        "sector:financial_services",
+        "P2_FURAS_EXCHANGE_EXACT_PAIR"
+      ]
+    },
+    "activity_map": {
+      "صناعي": "sector:industrial",
+      "تجاري": "sector:commercial"
+    },
+    "subactivity_map": {
+      "أنشطة التجارة العامة": "sector:commercial"
+    },
+    "structured_subactivity_signals": {
+      "خدمات الصرافة": "sector:financial_services",
+      "أنشطة تجارة المواد الغذائية": "sector:commercial",
+      "محلات تجارية": "sector:commercial",
+      "أنشطة وخدمات انتاج المواد غير الغذائية": "sector:industrial"
+    },
+    "raw_source_map": {
+      "أنشطة تجارة المواد الغذائية": "sector:commercial",
+      "محلات تجارية": "sector:commercial",
+      "خدمات الصرافة": "sector:financial_services"
+    },
+    "phrase_rules": {
+      "sector:tourism": {
+        "title": [
+          "إنشاء وتشغيل فندق",
+          "إنشاء فندق",
+          "منتجع سياحي",
+          "منشأة ضيافة فندقية",
+          "tourism destination",
+          "hotel development",
+          "resort development"
+        ],
+        "support": [
+          "فندق",
+          "منتجع",
+          "ضيافة فندقية",
+          "مرفق سياحي",
+          "hotel facility",
+          "hospitality facility"
+        ]
+      },
+      "sector:agriculture": {
+        "title": [
+          "استثمار وتشغيل مزرعة",
+          "إنتاج زراعي",
+          "إنتاج التمور",
+          "فرز وتعبئة التمور",
+          "بيوت محمية زراعية",
+          "agricultural production",
+          "greenhouse farming"
+        ],
+        "support": [
+          "نشاط زراعي",
+          "مزرعة إنتاج",
+          "محاصيل زراعية",
+          "نخيل لإنتاج التمور",
+          "agricultural facility",
+          "date production"
+        ]
+      }
+    },
+    "negative_rules": [
+      {
+        "key": "P2_CAFE_RESTAURANT_NOT_TOURISM",
+        "phrase_groups": [
+          "مقهى",
+          "مطعم",
+          "مطاعم",
+          "خدمات غذائية",
+          "cafe",
+          "restaurant"
+        ],
+        "blocks_alone": [
+          "sector:tourism"
+        ]
+      },
+      {
+        "key": "P2_FOOD_RETAIL_NOT_AGRICULTURE",
+        "phrase_groups": [
+          "تموينات",
+          "ميني ماركت",
+          "متجر غذائي",
+          "تجارة المواد الغذائية",
+          "food retail",
+          "grocery store"
+        ],
+        "blocks_alone": [
+          "sector:agriculture"
+        ]
+      },
+      {
+        "key": "P2_FOOD_WAREHOUSE_NOT_AGRICULTURE",
+        "phrase_groups": [
+          "مستودع أغذية",
+          "مستودع غذائي",
+          "food warehouse"
+        ],
+        "blocks_alone": [
+          "sector:agriculture"
+        ]
+      },
+      {
+        "key": "P2_GENERIC_PLOT_NOT_REAL_ESTATE",
+        "phrase_groups": [
+          "قطعة رقم",
+          "أرض فضاء",
+          "موقع استثماري"
+        ],
+        "blocks_alone": [
+          "sector:real_estate"
+        ]
+      },
+      {
+        "key": "P2_GENERIC_BUILDING_NOT_REAL_ESTATE",
+        "phrase_groups": [
+          "مبنى",
+          "مكاتب إدارية",
+          "building"
+        ],
+        "blocks_alone": [
+          "sector:real_estate"
+        ]
+      },
+      {
+        "key": "P2_GENERIC_PARKING_NOT_TRANSPORT",
+        "phrase_groups": [
+          "مواقف سيارات",
+          "موقف سيارات",
+          "parking"
+        ],
+        "blocks_alone": [
+          "sector:logistics"
+        ]
+      },
+      {
+        "key": "P2_LOCATION_NAME_NOT_TOURISM",
+        "phrase_groups": [
+          "الأحساء",
+          "الهفوف",
+          "العمران",
+          "العيون"
+        ],
+        "blocks_alone": [
+          "sector:tourism"
+        ]
+      },
+      {
+        "key": "P2_LOCATION_NAME_NOT_AGRICULTURE",
+        "phrase_groups": [
+          "النخيل",
+          "التمور",
+          "واحة الأحساء"
+        ],
+        "blocks_alone": [
+          "sector:agriculture"
+        ]
+      },
+      {
+        "key": "P2_GENERIC_LEASE_NOT_SECTOR",
+        "phrase_groups": [
+          "تأجير",
+          "استثمار",
+          "تشغيل",
+          "lease opportunity",
+          "investment opportunity"
+        ],
+        "blocks_alone": [
+          "sector:any"
+        ]
+      }
+    ]
+  },
+  "accepted_relaxed": {
+    "title_rules": {
+      "sector:tourism": [
+        [
+          "فندق",
+          "MED_TITLE_HOTEL"
+        ],
+        [
+          "فنادق",
+          "MED_TITLE_HOTELS"
+        ],
+        [
+          "منتجع سياحي",
+          "MED_TITLE_TOURIST_RESORT"
+        ],
+        [
+          "منتجع",
+          "MED_TITLE_RESORT"
+        ],
+        [
+          "نزل سياحي",
+          "MED_TITLE_TOURIST_INN"
+        ],
+        [
+          "إيواء سياحي",
+          "MED_TITLE_TOURIST_LODGING"
+        ],
+        [
+          "tourist accommodation",
+          "MED_TITLE_TOURIST_ACCOMMODATION"
+        ],
+        [
+          "hotel development",
+          "MED_TITLE_HOTEL_DEVELOPMENT"
+        ]
+      ],
+      "sector:agriculture": [
+        [
+          "مزرعة",
+          "MED_TITLE_FARM"
+        ],
+        [
+          "مشتل",
+          "MED_TITLE_NURSERY"
+        ],
+        [
+          "مشاتل",
+          "MED_TITLE_NURSERIES"
+        ],
+        [
+          "إنتاج زراعي",
+          "MED_TITLE_AGRICULTURAL_PRODUCTION"
+        ],
+        [
+          "إنتاج التمور",
+          "MED_TITLE_DATE_PRODUCTION"
+        ],
+        [
+          "بيوت محمية زراعية",
+          "MED_TITLE_GREENHOUSE"
+        ],
+        [
+          "agricultural production",
+          "MED_TITLE_AGRICULTURAL_PRODUCTION_EN"
+        ]
+      ],
+      "sector:industrial": [
+        [
+          "مصنع",
+          "MED_TITLE_FACTORY"
+        ],
+        [
+          "مصانع",
+          "MED_TITLE_FACTORIES"
+        ],
+        [
+          "إنشاء مصنع",
+          "MED_TITLE_FACTORY_CONSTRUCTION"
+        ],
+        [
+          "خط إنتاج",
+          "MED_TITLE_PRODUCTION_LINE"
+        ],
+        [
+          "منشأة تصنيع",
+          "MED_TITLE_MANUFACTURING_FACILITY"
+        ],
+        [
+          "مصنع لل",
+          "MED_TITLE_FACTORY_FOR"
+        ],
+        [
+          "manufacturing plant",
+          "MED_TITLE_MANUFACTURING_PLANT"
+        ],
+        [
+          "factory",
+          "MED_TITLE_FACTORY_EN"
+        ]
+      ],
+      "sector:commercial": [
+        [
+          "كشك لبيع",
+          "MED_TITLE_RETAIL_KIOSK"
+        ],
+        [
+          "كشك بيع",
+          "MED_TITLE_RETAIL_KIOSK_ALT"
+        ],
+        [
+          "كشك تجاري",
+          "MED_TITLE_COMMERCIAL_KIOSK"
+        ],
+        [
+          "محلات تجارية",
+          "MED_TITLE_RETAIL_SHOPS"
+        ],
+        [
+          "متاجر عامة",
+          "MED_TITLE_GENERAL_STORES"
+        ],
+        [
+          "بيع الألعاب والهدايا والتحف",
+          "MED_TITLE_GIFT_RETAIL"
+        ],
+        [
+          "بيع الالعاب والهدايا والتحف",
+          "MED_TITLE_GIFT_RETAIL_NORMALIZED"
+        ],
+        [
+          "مبسط غذائي",
+          "MED_TITLE_FOOD_STALL"
+        ],
+        [
+          "عربة أطعمة",
+          "MED_TITLE_FOOD_CART"
+        ],
+        [
+          "عربة اطعمة",
+          "MED_TITLE_FOOD_CART_NORMALIZED"
+        ],
+        [
+          "عربات الأطعمة",
+          "MED_TITLE_FOOD_CARTS"
+        ],
+        [
+          "عربات الاطعمة",
+          "MED_TITLE_FOOD_CARTS_NORMALIZED"
+        ],
+        [
+          "عربة أطعمة متنقلة",
+          "MED_TITLE_MOBILE_FOOD_CART"
+        ],
+        [
+          "عربة اطعمه",
+          "MED_TITLE_FOOD_CART_ALT"
+        ],
+        [
+          "عربة آيسكريم",
+          "MED_TITLE_ICE_CREAM_CART"
+        ],
+        [
+          "عربة ايسكريم",
+          "MED_TITLE_ICE_CREAM_CART_ALT"
+        ],
+        [
+          "بسطة لبيع",
+          "MED_TITLE_RETAIL_STALL"
+        ],
+        [
+          "بسطه لبيع",
+          "MED_TITLE_RETAIL_STALL_NORMALIZED"
+        ],
+        [
+          "بسطه بيع",
+          "MED_TITLE_RETAIL_STALL_ALT"
+        ],
+        [
+          "لبيع التسالي والشاي",
+          "MED_TITLE_SNACK_RETAIL"
+        ],
+        [
+          "بيع التسالي والشاي",
+          "MED_TITLE_SNACK_RETAIL_ALT"
+        ],
+        [
+          "بيع الاغذيه والمشروبات",
+          "MED_TITLE_FOOD_RETAIL"
+        ],
+        [
+          "بيع الأغذية والمشروبات",
+          "MED_TITLE_FOOD_RETAIL_AR"
+        ],
+        [
+          "مزايدة تأجير موقع مقهى",
+          "MED_TITLE_CAFE_CONCESSION"
+        ],
+        [
+          "مقهى ومطعم",
+          "MED_TITLE_CAFE_RESTAURANT"
+        ]
+      ],
+      "sector:healthcare": [
+        [
+          "إنشاء وتشغيل مستشفى",
+          "MED_TITLE_HOSPITAL_BUILD_OPERATE"
+        ],
+        [
+          "إنشاء مستشفى",
+          "MED_TITLE_HOSPITAL_BUILD"
+        ],
+        [
+          "مستشفى تخصصي",
+          "MED_TITLE_SPECIALTY_HOSPITAL"
+        ],
+        [
+          "مركز طبي",
+          "MED_TITLE_MEDICAL_CENTER"
+        ],
+        [
+          "عيادة طبية",
+          "MED_TITLE_MEDICAL_CLINIC"
+        ],
+        [
+          "مختبرات سلامة الغذاء البلدية",
+          "MED_TITLE_MUNICIPAL_FOOD_SAFETY_LABS"
+        ],
+        [
+          "municipal food safety labs",
+          "MED_TITLE_MUNICIPAL_FOOD_SAFETY_LABS_EN"
+        ],
+        [
+          "healthcare center",
+          "MED_TITLE_HEALTHCARE_CENTER"
+        ],
+        [
+          "medical clinic",
+          "MED_TITLE_MEDICAL_CLINIC_EN"
+        ]
+      ],
+      "sector:education": [
+        [
+          "مدرسة أهلية",
+          "MED_TITLE_PRIVATE_SCHOOL"
+        ],
+        [
+          "إنشاء مدرسة",
+          "MED_TITLE_SCHOOL_CONSTRUCTION"
+        ],
+        [
+          "مدرسة",
+          "MED_TITLE_SCHOOL"
+        ],
+        [
+          "إنشاء جامعة",
+          "MED_TITLE_UNIVERSITY_CONSTRUCTION"
+        ],
+        [
+          "إنشاء كلية",
+          "MED_TITLE_COLLEGE_CONSTRUCTION"
+        ],
+        [
+          "مركز تدريب",
+          "MED_TITLE_TRAINING_CENTER"
+        ],
+        [
+          "معهد تدريبي",
+          "MED_TITLE_TRAINING_INSTITUTE"
+        ]
+      ],
+      "sector:logistics": [
+        [
+          "مركز لوجستي",
+          "MED_TITLE_LOGISTICS_CENTER"
+        ],
+        [
+          "مستودع لوجستي",
+          "MED_TITLE_LOGISTICS_WAREHOUSE"
+        ],
+        [
+          "مستودعات لوجستية",
+          "MED_TITLE_LOGISTICS_WAREHOUSES"
+        ],
+        [
+          "مركز توزيع",
+          "MED_TITLE_DISTRIBUTION_CENTER"
+        ],
+        [
+          "خدمات الشحن",
+          "MED_TITLE_FREIGHT_SERVICES"
+        ],
+        [
+          "نقل البضائع",
+          "MED_TITLE_FREIGHT_TRANSPORT"
+        ],
+        [
+          "logistics center",
+          "MED_TITLE_LOGISTICS_CENTER_EN"
+        ],
+        [
+          "distribution center",
+          "MED_TITLE_DISTRIBUTION_CENTER_EN"
+        ]
+      ],
+      "sector:sports": [
+        [
+          "نادي رياضي",
+          "MED_TITLE_SPORTS_CLUB"
+        ],
+        [
+          "مركز رياضي",
+          "MED_TITLE_SPORTS_CENTER"
+        ],
+        [
+          "ملعب رياضي",
+          "MED_TITLE_SPORTS_STADIUM"
+        ],
+        [
+          "منشأة رياضية",
+          "MED_TITLE_SPORTS_FACILITY"
+        ],
+        [
+          "sports club",
+          "MED_TITLE_SPORTS_CLUB_EN"
+        ],
+        [
+          "sports facility",
+          "MED_TITLE_SPORTS_FACILITY_EN"
+        ]
+      ],
+      "sector:environment": [
+        [
+          "إعادة تدوير النفايات",
+          "MED_TITLE_WASTE_RECYCLING"
+        ],
+        [
+          "محطة معالجة مياه الصرف",
+          "MED_TITLE_WASTEWATER_TREATMENT"
+        ],
+        [
+          "معالجة النفايات",
+          "MED_TITLE_WASTE_TREATMENT"
+        ],
+        [
+          "wastewater treatment plant",
+          "MED_TITLE_WASTEWATER_PLANT_EN"
+        ]
+      ],
+      "sector:energy": [
+        [
+          "محطة طاقة شمسية",
+          "MED_TITLE_SOLAR_PLANT"
+        ],
+        [
+          "توليد الكهرباء",
+          "MED_TITLE_ELECTRICITY_GENERATION"
+        ],
+        [
+          "محطة كهرباء",
+          "MED_TITLE_POWER_STATION"
+        ],
+        [
+          "renewable energy plant",
+          "MED_TITLE_RENEWABLE_ENERGY_EN"
+        ]
+      ],
+      "sector:culture": [
+        [
+          "متحف",
+          "MED_TITLE_MUSEUM"
+        ],
+        [
+          "مركز ثقافي",
+          "MED_TITLE_CULTURAL_CENTER"
+        ],
+        [
+          "مركز تراثي",
+          "MED_TITLE_HERITAGE_CENTER"
+        ],
+        [
+          "museum",
+          "MED_TITLE_MUSEUM_EN"
+        ]
+      ],
+      "sector:financial_services": [
+        [
+          "خدمات مالية",
+          "MED_TITLE_FINANCIAL_SERVICES"
+        ],
+        [
+          "خدمات مصرفية",
+          "MED_TITLE_BANKING_SERVICES"
+        ],
+        [
+          "إنشاء مصرف",
+          "MED_TITLE_BANK"
+        ],
+        [
+          "خدمات تمويلية",
+          "MED_TITLE_FINANCING_SERVICES"
+        ],
+        [
+          "insurance services",
+          "MED_TITLE_INSURANCE_EN"
+        ]
+      ],
+      "sector:technology": [
+        [
+          "مركز بيانات",
+          "MED_TITLE_DATA_CENTER"
+        ],
+        [
+          "خدمات تقنية المعلومات",
+          "MED_TITLE_IT_SERVICES"
+        ],
+        [
+          "منصة برمجية",
+          "MED_TITLE_SOFTWARE_PLATFORM"
+        ],
+        [
+          "شبكة اتصالات",
+          "MED_TITLE_TELECOM_NETWORK"
+        ],
+        [
+          "data center",
+          "MED_TITLE_DATA_CENTER_EN"
+        ],
+        [
+          "software platform",
+          "MED_TITLE_SOFTWARE_EN"
+        ]
+      ],
+      "sector:other": [
+        [
+          "قطار ترفيهي للأطفال",
+          "MED_TITLE_CHILD_ENTERTAINMENT_TRAIN"
+        ],
+        [
+          "قطار أطفال",
+          "MED_TITLE_CHILD_TRAIN"
+        ],
+        [
+          "ركن ترفيهي يشمل العاب اطفال",
+          "MED_TITLE_FAMILY_ENTERTAINMENT_CORNER"
+        ],
+        [
+          "ركن ترفيهي يشمل ألعاب أطفال",
+          "MED_TITLE_FAMILY_ENTERTAINMENT_CORNER_AR"
+        ],
+        [
+          "مركز ترفيه عائلي",
+          "MED_TITLE_FAMILY_ENTERTAINMENT_CENTER"
+        ],
+        [
+          "amusement facility",
+          "MED_TITLE_AMUSEMENT_FACILITY_EN"
+        ]
+      ]
+    },
+    "structured_rules": {
+      "activity": {
+        "الأنشطة الزراعية والحيوانية": "sector:agriculture",
+        "الأنشطة المالية": "sector:financial_services",
+        "الأنشطة التعليمية": "sector:education",
+        "الأنشطة الصناعية": "sector:industrial",
+        "صناعي": "sector:industrial",
+        "تجاري": "sector:commercial"
+      },
+      "sub_activity": {
+        "خدمات الصرافة": "sector:financial_services",
+        "خدمات تعليمية أخرى": "sector:education",
+        "محلات تجارية": "sector:commercial",
+        "أنشطة تجارة المواد الغذائية": "sector:commercial",
+        "أنشطة التجارة العامة": "sector:commercial",
+        "أنشطة وخدمات انتاج المواد غير الغذائية": "sector:industrial"
+      }
+    },
+    "asset_rules": {
+      "مستشفى": "sector:healthcare",
+      "مركز طبي": "sector:healthcare",
+      "عيادة طبية": "sector:healthcare",
+      "مدرسة": "sector:education",
+      "مصنع": "sector:industrial",
+      "مشتل زراعي": "sector:agriculture",
+      "مزرعة إنتاج": "sector:agriculture",
+      "مستودع لوجستي": "sector:logistics",
+      "مركز لوجستي": "sector:logistics",
+      "نادي رياضي": "sector:sports",
+      "ملعب رياضي": "sector:sports",
+      "مركز بيانات": "sector:technology"
+    },
+    "generic_only_phrases": [
+      "أرض",
+      "موقع",
+      "مبنى",
+      "تشغيل",
+      "استثمار",
+      "تطوير",
+      "إنشاء",
+      "تأجير",
+      "صيانة",
+      "خدمات",
+      "مشروع",
+      "مرفق",
+      "مجمع"
+    ],
+    "tourism_negatives": [
+      "مطعم",
+      "مطاعم",
+      "مقهى",
+      "كافيه",
+      "restaurant",
+      "cafe",
+      "منتزه عام",
+      "حديقة عامة"
+    ],
+    "agriculture_negatives": [
+      "تموينات",
+      "ميني ماركت",
+      "تجارة المواد الغذائية",
+      "متجر غذائي",
+      "food retail",
+      "grocery store"
+    ]
+  },
+  "source_values_excluded_from_sector_dimension": [
+    "commercial_facility_opportunity",
+    "general_announcement",
+    "investment_announcement",
+    "investment_opportunity",
+    "investment_sector_information",
+    "lease_opportunity",
+    "ppp_project",
+    "ppp_project_announcement",
+    "strategic_project",
+    "waste_sector_investment",
+    "فرصة استثمارية"
+  ],
+  "fallback_policy": {
+    "missing_evidence_to_other": false,
+    "unresolved_current_master": "single best-supported canonical sector with LOW/FORCED_BEST_FIT provenance"
+  }
+}

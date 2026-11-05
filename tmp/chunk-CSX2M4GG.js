@@ -1,0 +1,2 @@
+function m(n,e){return/other/i.test(e.name??"")||(e.nameAr??"").includes("\u0623\u062E\u0631\u0649")||n.includes("\u0623\u062E\u0631\u0649")}function b(n,e){let i=new Intl.Collator(e?"ar":"en",{sensitivity:"base",numeric:!0}),t=r=>((e?r.nameAr??r.name:r.name)??"").trim(),l=r=>r.order!=null&&r.order>0?r.order:Number.MAX_SAFE_INTEGER;return[...n].sort((r,o)=>{let u=t(r),s=t(o),a=Number(m(u,r))-Number(m(s,o));if(a!==0)return a;let c=l(r)-l(o);return c!==0?c:i.compare(u,s)})}export{b as a};
+

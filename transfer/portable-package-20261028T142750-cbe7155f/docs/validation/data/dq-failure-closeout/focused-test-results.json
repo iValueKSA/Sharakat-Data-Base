@@ -1,0 +1,27 @@
+{
+  "captured_at": "2026-10-22T10:29:59.1381271Z",
+  "environment": "isolated SQLite test container",
+  "focused_test_files": [
+    "tests/test_data_quality.py",
+    "tests/test_opportunities_search_count.py",
+    "tests/test_review_workbench.py",
+    "tests/test_reversible_merge.py",
+    "tests/test_review_queues_governance.py",
+    "tests/test_review_lifecycle_triage.py"
+  ],
+  "focused_tests_passed": 84,
+  "focused_tests_failed": 0,
+  "full_suite": "pytest tests -q",
+  "full_tests_passed": 433,
+  "full_tests_failed": 0,
+  "full_test_runtime_seconds": 39.74,
+  "full_test_warnings": 31,
+  "assertions": [
+    "Current audit boundary produces FAIL when a post-boundary closed review lacks audit.",
+    "Historical pre-boundary reviews remain warnings without invented metadata.",
+    "System lifecycle supersession is not counted as human invalid action.",
+    "KEEP_CURRENT_VALUE and arbitrary human actions are rejected without confirmed aliases.",
+    "Current master list returns one row per Master across tied timestamps, multiple sources, observations, and reviews.",
+    "Filters, pagination, merged exclusion, CSV, and XLSX preserve Master cardinality."
+  ]
+}

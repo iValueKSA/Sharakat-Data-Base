@@ -1,0 +1,173 @@
+{
+  "deterministic_mapping_count": 2,
+  "engine_version": "ahda-sector-phase2-1.0.0",
+  "mappings": [
+    {
+      "canonical_sector": "أخرى",
+      "canonical_sector_id": "sector:other",
+      "dominant_count": 1,
+      "minimum_purity_percentage": 98.0,
+      "minimum_support": 25,
+      "purity_percentage": 100.0,
+      "qualified": false,
+      "rule_key": "P2_EMPIRICAL_ACTIVITY_MIN25_PURITY98",
+      "sector_counts": {
+        "sector:other": 1
+      },
+      "source_field": "activity",
+      "source_value": "أخرى",
+      "total_labeled_records": 1
+    },
+    {
+      "canonical_sector": "أخرى",
+      "canonical_sector_id": "sector:other",
+      "dominant_count": 1,
+      "minimum_purity_percentage": 98.0,
+      "minimum_support": 25,
+      "purity_percentage": 100.0,
+      "qualified": false,
+      "rule_key": "P2_EMPIRICAL_ACTIVITY_MIN25_PURITY98",
+      "sector_counts": {
+        "sector:other": 1
+      },
+      "source_field": "activity",
+      "source_value": "أنشطة الصيانة والتصليح والتركيب",
+      "total_labeled_records": 1
+    },
+    {
+      "canonical_sector": "أخرى",
+      "canonical_sector_id": "sector:other",
+      "dominant_count": 5,
+      "minimum_purity_percentage": 98.0,
+      "minimum_support": 25,
+      "purity_percentage": 100.0,
+      "qualified": false,
+      "rule_key": "P2_EMPIRICAL_ACTIVITY_MIN25_PURITY98",
+      "sector_counts": {
+        "sector:other": 5
+      },
+      "source_field": "activity",
+      "source_value": "الأنشطة التجارية",
+      "total_labeled_records": 5
+    },
+    {
+      "canonical_sector": "أخرى",
+      "canonical_sector_id": "sector:other",
+      "dominant_count": 1,
+      "minimum_purity_percentage": 98.0,
+      "minimum_support": 25,
+      "purity_percentage": 100.0,
+      "qualified": false,
+      "rule_key": "P2_EMPIRICAL_ACTIVITY_MIN25_PURITY98",
+      "sector_counts": {
+        "sector:other": 1
+      },
+      "source_field": "activity",
+      "source_value": "الأنشطة الرياضية و الترفيهية",
+      "total_labeled_records": 1
+    },
+    {
+      "canonical_sector": "أخرى",
+      "canonical_sector_id": "sector:other",
+      "dominant_count": 1,
+      "minimum_purity_percentage": 98.0,
+      "minimum_support": 25,
+      "purity_percentage": 100.0,
+      "qualified": false,
+      "rule_key": "P2_EMPIRICAL_ACTIVITY_MIN25_PURITY98",
+      "sector_counts": {
+        "sector:other": 1
+      },
+      "source_field": "activity",
+      "source_value": "الأنشطة الصناعية",
+      "total_labeled_records": 1
+    },
+    {
+      "canonical_sector": "البيئة",
+      "canonical_sector_id": "sector:environment",
+      "dominant_count": 2,
+      "minimum_purity_percentage": 98.0,
+      "minimum_support": 25,
+      "purity_percentage": 100.0,
+      "qualified": false,
+      "rule_key": "P2_EMPIRICAL_ACTIVITY_MIN25_PURITY98",
+      "sector_counts": {
+        "sector:environment": 2
+      },
+      "source_field": "activity",
+      "source_value": "البيئة",
+      "total_labeled_records": 2
+    },
+    {
+      "canonical_sector": "التعليم",
+      "canonical_sector_id": "sector:education",
+      "dominant_count": 1,
+      "minimum_purity_percentage": 98.0,
+      "minimum_support": 25,
+      "purity_percentage": 100.0,
+      "qualified": false,
+      "rule_key": "P2_EMPIRICAL_ACTIVITY_MIN25_PURITY98",
+      "sector_counts": {
+        "sector:education": 1
+      },
+      "source_field": "activity",
+      "source_value": "التعليم",
+      "total_labeled_records": 1
+    },
+    {
+      "canonical_sector": "الخدمات اللوجستية",
+      "canonical_sector_id": "sector:logistics",
+      "dominant_count": 3,
+      "minimum_purity_percentage": 98.0,
+      "minimum_support": 25,
+      "purity_percentage": 100.0,
+      "qualified": false,
+      "rule_key": "P2_EMPIRICAL_ACTIVITY_MIN25_PURITY98",
+      "sector_counts": {
+        "sector:logistics": 3
+      },
+      "source_field": "activity",
+      "source_value": "الخدمات اللوجستية",
+      "total_labeled_records": 3
+    },
+    {
+      "canonical_sector": "تجاري",
+      "canonical_sector_id": "sector:commercial",
+      "dominant_count": 38,
+      "minimum_purity_percentage": 98.0,
+      "minimum_support": 25,
+      "purity_percentage": 100.0,
+      "qualified": true,
+      "rule_key": "P2_EMPIRICAL_ACTIVITY_MIN25_PURITY98",
+      "sector_counts": {
+        "sector:commercial": 38
+      },
+      "source_field": "activity",
+      "source_value": "تجاري",
+      "total_labeled_records": 38
+    },
+    {
+      "canonical_sector": "صناعي",
+      "canonical_sector_id": "sector:industrial",
+      "dominant_count": 59,
+      "minimum_purity_percentage": 98.0,
+      "minimum_support": 25,
+      "purity_percentage": 98.33,
+      "qualified": true,
+      "rule_key": "P2_EMPIRICAL_ACTIVITY_MIN25_PURITY98",
+      "sector_counts": {
+        "sector:commercial": 1,
+        "sector:industrial": 59
+      },
+      "source_field": "activity",
+      "source_value": "صناعي",
+      "total_labeled_records": 60
+    }
+  ],
+  "rule_threshold": {
+    "minimum_purity_percentage": 98,
+    "minimum_support": 25
+  },
+  "training_count": 125,
+  "training_scope": "current specified Masters excluding Phase 1 inference events"
+}

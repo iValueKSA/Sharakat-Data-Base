@@ -1,0 +1,103 @@
+{
+  "snapshot_before": "2026-10-22T07:10:44.435576+00:00",
+  "snapshot_after": "2026-10-22T07:26:48.944138+00:00",
+  "open_reviews_before": 582,
+  "open_reviews_after": 498,
+  "dispositions_before": {
+    "SAFE_AUTO_RESOLVE": 0,
+    "SAFE_AUTO_SUPERSEDE": 0,
+    "STALE_BECAUSE_UNDERLYING_CONDITION_NO_LONGER_EXISTS": 84,
+    "DUPLICATE_LOGICAL_REVIEW": 0,
+    "HUMAN_REVIEW_REQUIRED": 151,
+    "BLOCKED_BY_MISSING_EVIDENCE": 347,
+    "STILL_VALID_BUT_LOW_PRIORITY": 0,
+    "OTHER_EXPLAINED": 0
+  },
+  "dry_run_counts": {
+    "SAFE_AUTO_RESOLVE": 0,
+    "SAFE_AUTO_SUPERSEDE": 0,
+    "STALE_CONDITION": 84,
+    "LOGICAL_DUPLICATES": 0,
+    "HUMAN_REVIEW_REQUIRED": 151,
+    "BLOCKED_BY_MISSING_EVIDENCE": 347,
+    "STILL_VALID_LOW_PRIORITY": 0,
+    "OTHER_EXPLAINED": 0
+  },
+  "post_remediation_dispositions": {
+    "HUMAN_REVIEW_REQUIRED": 151,
+    "BLOCKED_BY_MISSING_EVIDENCE": 347
+  },
+  "counts_by_type": {
+    "conflict": {
+      "open_after": 473,
+      "human_required": 139,
+      "blocked_by_missing_evidence": 334
+    },
+    "duplicate": {
+      "open_after": 10,
+      "human_required": 10,
+      "blocked_by_missing_evidence": 0
+    },
+    "location": {
+      "open_after": 15,
+      "human_required": 2,
+      "blocked_by_missing_evidence": 13
+    }
+  },
+  "taxonomy_conflict_categories_A_to_E": {
+    "A_EXPLICIT_AUTHORITATIVE_VALUE_RESOLVES": 0,
+    "B_ACCEPTED_DETERMINISTIC_MAPPING_RESOLVES": 0,
+    "C_LATER_CANONICALIZATION_RESOLVES": 5,
+    "D_STILL_CONTRADICTORY": 41,
+    "E_MISSING_EVIDENCE_NOT_CONFLICT": 52
+  },
+  "category_reconciliation": true,
+  "logical_duplicate_open_reviews": 0,
+  "open_reviews_with_broken_entity_link": 0,
+  "open_reviews_on_merged_masters": 0,
+  "stale_open_reviews_found": 84,
+  "stale_open_reviews_remaining": 0,
+  "priority_counts_remaining_human_and_blocked": {
+    "P2_HIGH": 431,
+    "P3_MEDIUM": 67
+  },
+  "priority_counts_human_queue_only": {
+    "P2_HIGH": 86,
+    "P3_MEDIUM": 65
+  },
+  "business_counts_before": {
+    "current_masters": 526,
+    "total_masters": 547,
+    "source_opportunities": 3138,
+    "observations": 16298,
+    "merged_masters": 21,
+    "sync_jobs": 428,
+    "merge_audits": 21,
+    "audit_events": 90
+  },
+  "business_counts_after": {
+    "current_masters": 526,
+    "total_masters": 547,
+    "source_opportunities": 3138,
+    "observations": 16298,
+    "merged_masters": 21,
+    "sync_jobs": 428,
+    "merge_audits": 21,
+    "audit_events": 174
+  },
+  "business_count_deltas": {
+    "current_masters": 0,
+    "total_masters": 0,
+    "source_opportunities": 0,
+    "observations": 0,
+    "merged_masters": 0,
+    "sync_jobs": 0,
+    "merge_audits": 0,
+    "audit_events": 84
+  },
+  "open_reviews_reduction": 84,
+  "open_reviews_reduction_percent": 14.43,
+  "sync_jobs_at_start": 428,
+  "sync_jobs_after": 428,
+  "manual_source_sync_started": false
+}

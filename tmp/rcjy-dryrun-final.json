@@ -1,0 +1,243 @@
+{
+  "report_type": "RCJY_MASTER_ELIGIBILITY_DRY_RUN",
+  "as_of": "2026-11-03",
+  "project": "C:\\Sharakat Data Base",
+  "provider_id_field": "InvestmentOpportunity.Id",
+  "public_records_found": 3,
+  "public_enumeration_complete": true,
+  "provider_ids_unique": true,
+  "masters_examined": 6623,
+  "source_opportunities_examined": 9290,
+  "cross_source_sources_examined": [
+    "furas",
+    "modon",
+    "invest-saudi",
+    "ncp",
+    "nhc",
+    "pif",
+    "mwan"
+  ],
+  "cross_source_record_counts": {
+    "furas": 6546,
+    "invest-saudi": 2555,
+    "modon": 0,
+    "mwan": 7,
+    "ncp": 45,
+    "nhc": 0,
+    "pif": 0
+  },
+  "rcjy_source_rows_after_capture": 3,
+  "dispositions": {
+    "A_READY_NEW_MASTER": 3,
+    "B_MATCH_EXISTING_MASTER": 0,
+    "C_IDENTITY_REVIEW": 0,
+    "D_NOT_QUALIFYING": 0,
+    "E_HISTORICAL_OR_NONCURRENT": 0,
+    "F_SAME_SOURCE_DUPLICATE_REVIEW": 0
+  },
+  "dry_run_reconciles": true,
+  "projected_checks": {
+    "masters_without_source": 0,
+    "duplicate_identity": 0,
+    "dq_fail": 0
+  },
+  "records": [
+    {
+      "provider_id": "265",
+      "title_ar": "تصنيع وحدات مصابيح LED الصناعية والبنية التحتية",
+      "title_en": "Industrial & Infrastructure LED Lighting Fixtures",
+      "location": "Yanbu",
+      "sector": "Industrial",
+      "subsector": "Spare Part Desalination",
+      "lifecycle_classification": "CURRENT",
+      "actionability_status": "UNKNOWN",
+      "status": "unknown",
+      "coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "area_sqm": null,
+      "reference_number": null,
+      "geography_matches": [
+        {
+          "source_label": "Yanbu",
+          "matched_reference_level": "governorate",
+          "reference_external_id": "301",
+          "reference_name_en": "Yanbu",
+          "reference_name_ar": "ينبع",
+          "region_external_id": "3",
+          "region_name_en": "Al-Madinah Region",
+          "verification_method": "EXACT_CURRENT_REFERENCE_NAME_OR_ALIAS"
+        }
+      ],
+      "strong_identity_evidence": [
+        "Stable RCJY provider key InvestmentOpportunity.Id=265",
+        "Public catalog listed this row in complete 3/3 current enumeration",
+        "No exact/trusted cross-source reference, parcel/site, coordinate, or deterministic match found",
+        "Current canonical Masters inspected: 6623",
+        "Unique source row exists for this RCJY provider ID"
+      ],
+      "cross_source_candidate_matches": [],
+      "rejected_title_only_candidates": [
+        {
+          "source_key": "furas",
+          "provider_id": "02-26-007702-3",
+          "title": "تاجير مؤقت لموقع من نوع الحدائق بحي  النزهة ملعب حديقة التحلية",
+          "title_similarity": 0.5185,
+          "reason": "title similarity only; unrelated source/location/business identity, no exact reference, parcel/site or coordinates; auto_merge_safe=false"
+        },
+        {
+          "source_key": "furas",
+          "provider_id": "02-26-018704-2001",
+          "title": "تاجير مؤقت لموقع من نوع الحدائق بحي  السعيرة شتوية السعيرة",
+          "title_similarity": 0.5,
+          "reason": "title similarity only; unrelated source/location/business identity, no exact reference, parcel/site or coordinates; auto_merge_safe=false"
+        }
+      ],
+      "disposition": "A_READY_NEW_MASTER",
+      "confidence": 0.93,
+      "eligibility_limits": [
+        "Actionability is UNKNOWN; do not present as confirmed open for application",
+        "Status remains unspecified",
+        "Area, plot, detail/application URL and coordinates were not published"
+      ],
+      "projected_action": "Create a distinct national Master, keep owner and coordinates empty, link this SourceOpportunity, leave status unspecified, require manual review"
+    },
+    {
+      "provider_id": "266",
+      "title_ar": "تصنيع محولات الطاقة الكهربائية",
+      "title_en": "Electrical Transformers Manufacturing",
+      "location": "Yanbu",
+      "sector": "Industrial",
+      "subsector": "Spare Part Desalination",
+      "lifecycle_classification": "CURRENT",
+      "actionability_status": "UNKNOWN",
+      "status": "unknown",
+      "coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "area_sqm": null,
+      "reference_number": null,
+      "geography_matches": [
+        {
+          "source_label": "Yanbu",
+          "matched_reference_level": "governorate",
+          "reference_external_id": "301",
+          "reference_name_en": "Yanbu",
+          "reference_name_ar": "ينبع",
+          "region_external_id": "3",
+          "region_name_en": "Al-Madinah Region",
+          "verification_method": "EXACT_CURRENT_REFERENCE_NAME_OR_ALIAS"
+        }
+      ],
+      "strong_identity_evidence": [
+        "Stable RCJY provider key InvestmentOpportunity.Id=266",
+        "Public catalog listed this row in complete 3/3 current enumeration",
+        "No exact/trusted cross-source reference, parcel/site, coordinate, or deterministic match found",
+        "Current canonical Masters inspected: 6623",
+        "Unique source row exists for this RCJY provider ID"
+      ],
+      "cross_source_candidate_matches": [],
+      "rejected_title_only_candidates": [
+        {
+          "source_key": "furas",
+          "provider_id": "06-26-189921-69001",
+          "title": "مشتل زراعي بمحافظة القطيف بالمنطقة الشرقية",
+          "title_similarity": 0.5278,
+          "reason": "title similarity only; unrelated source/location/business identity, no exact reference, parcel/site or coordinates; auto_merge_safe=false"
+        },
+        {
+          "source_key": "furas",
+          "provider_id": "01-26-007719-5003",
+          "title": "تشغيل وصيانة دورات المياة حديقة ال بنحي",
+          "title_similarity": 0.5217,
+          "reason": "title similarity only; unrelated source/location/business identity, no exact reference, parcel/site or coordinates; auto_merge_safe=false"
+        },
+        {
+          "source_key": "furas",
+          "provider_id": "01-26-007719-5002",
+          "title": "تشغيل وصيانة دورات المياة حديقة الفيصلية",
+          "title_similarity": 0.5143,
+          "reason": "title similarity only; unrelated source/location/business identity, no exact reference, parcel/site or coordinates; auto_merge_safe=false"
+        }
+      ],
+      "disposition": "A_READY_NEW_MASTER",
+      "confidence": 0.93,
+      "eligibility_limits": [
+        "Actionability is UNKNOWN; do not present as confirmed open for application",
+        "Status remains unspecified",
+        "Area, plot, detail/application URL and coordinates were not published"
+      ],
+      "projected_action": "Create a distinct national Master, keep owner and coordinates empty, link this SourceOpportunity, leave status unspecified, require manual review"
+    },
+    {
+      "provider_id": "269",
+      "title_ar": "إنشاء وتشغيل شقق فندقية بحي النخيل",
+      "title_en": "Development and Operation of Serviced Apartments i",
+      "location": "Yanbu",
+      "sector": "Commercial",
+      "subsector": "Tourist Activities",
+      "lifecycle_classification": "CURRENT",
+      "actionability_status": "UNKNOWN",
+      "status": "unknown",
+      "coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "area_sqm": null,
+      "reference_number": null,
+      "geography_matches": [
+        {
+          "source_label": "Yanbu",
+          "matched_reference_level": "governorate",
+          "reference_external_id": "301",
+          "reference_name_en": "Yanbu",
+          "reference_name_ar": "ينبع",
+          "region_external_id": "3",
+          "region_name_en": "Al-Madinah Region",
+          "verification_method": "EXACT_CURRENT_REFERENCE_NAME_OR_ALIAS"
+        }
+      ],
+      "strong_identity_evidence": [
+        "Stable RCJY provider key InvestmentOpportunity.Id=269",
+        "Public catalog listed this row in complete 3/3 current enumeration",
+        "No exact/trusted cross-source reference, parcel/site, coordinate, or deterministic match found",
+        "Current canonical Masters inspected: 6623",
+        "Unique source row exists for this RCJY provider ID"
+      ],
+      "cross_source_candidate_matches": [],
+      "rejected_title_only_candidates": [
+        {
+          "source_key": "furas",
+          "provider_id": "01-26-009701-4",
+          "title": "انشاء و تشغيل و صيانة حديقة السلام",
+          "title_similarity": 0.6765,
+          "reason": "title similarity only; unrelated source/location/business identity, no exact reference, parcel/site or coordinates; auto_merge_safe=false"
+        },
+        {
+          "source_key": "furas",
+          "provider_id": "26-02-2193484",
+          "title": "انشاء و تشغيل و صيانة كشك حي رخية - الأنشطة التجارية - كشك - كشك",
+          "title_similarity": 0.6567,
+          "reason": "title similarity only; unrelated source/location/business identity, no exact reference, parcel/site or coordinates; auto_merge_safe=false"
+        },
+        {
+          "source_key": "furas",
+          "provider_id": "01-26-009708-7001",
+          "title": "إنشاء وتشغيل و صيانة  حديقة الفقاس",
+          "title_similarity": 0.6567,
+          "reason": "title similarity only; unrelated source/location/business identity, no exact reference, parcel/site or coordinates; auto_merge_safe=false"
+        }
+      ],
+      "disposition": "A_READY_NEW_MASTER",
+      "confidence": 0.93,
+      "eligibility_limits": [
+        "Actionability is UNKNOWN; do not present as confirmed open for application",
+        "Status remains unspecified",
+        "Area, plot, detail/application URL and coordinates were not published"
+      ],
+      "projected_action": "Create a distinct national Master, keep owner and coordinates empty, link this SourceOpportunity, leave status unspecified, require manual review"
+    }
+  ]
+}

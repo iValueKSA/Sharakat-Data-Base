@@ -1,0 +1,184 @@
+{
+  "captured_at": "2026-10-13 12:26:21 +03:00",
+  "endpoint": "local API",
+  "opportunities_total": 271,
+  "active_opportunities": 265,
+  "source_records": 2878,
+  "enabled_sources": 10,
+  "multi_source_masters": 8,
+  "pending_duplicates": 25,
+  "pending_location_reviews": 17,
+  "validation_metrics": {
+    "total_master_opportunities": 271,
+    "total_source_records": 2878,
+    "masters_with_multiple_sources": 8,
+    "duplicate_candidates_pending": 25,
+    "location_reviews_pending": 17,
+    "qualification_reviews_pending": 0,
+    "opportunity_locations": 29,
+    "missing_reference_number": 106,
+    "missing_deadline": 14,
+    "missing_area": 16,
+    "missing_owner": 0,
+    "low_location_confidence": 0,
+    "low_data_quality": 0,
+    "open_conflicts": 22,
+    "taxonomy_conflicts": 14,
+    "field_conflicts": 8,
+    "taxonomy_mappings": 110,
+    "discovered_content_items": 344,
+    "expired_opportunities": 2,
+    "possibly_removed_opportunities": 4,
+    "incomplete_sources": 1,
+    "limited_coverage_sources": 3,
+    "source_errors": 19
+  },
+  "opportunities_sha256": "09573ba6d7a2175cf6ffa0aeb9fd0e295c3231909e62146b147d4edf5d3553a7",
+  "sources_sha256": "f5c94dd6d1a4509f760d36694b5a8932b8bf9e499b09779a5611a0c00a3bdabe",
+  "pre_redesign_live_read": {
+    "captured_at": "2026-10-13 before scheduled jobs at 12:19 +03:00",
+    "opportunities_total": 265,
+    "active_opportunities": 259,
+    "source_records": 2871,
+    "multi_source_masters": 7,
+    "pending_duplicates": 20,
+    "pending_location_reviews": 17
+  },
+  "scheduled_source_updates_during_ui_work": {
+    "trigger": "automatic scheduled sync; not initiated for UI work",
+    "furas": {
+      "unchanged": 155,
+      "errors": 0,
+      "records": 155,
+      "updated": 0,
+      "job_id": 214,
+      "new": 0
+    },
+    "alahsa_platform": {
+      "unchanged": 0,
+      "errors": 0,
+      "records": 102,
+      "updated": 98,
+      "job_id": 215,
+      "new": 6
+    },
+    "net_master_change": 6,
+    "net_source_row_change": 7
+  },
+  "after_ui_validation": {
+    "captured_at": "2026-10-13 12:53:23 +03:00",
+    "opportunities_total": 271,
+    "active_opportunities": 265,
+    "source_records": 2878,
+    "enabled_sources": 10,
+    "multi_source_masters": 8,
+    "pending_duplicates": 25,
+    "pending_location_reviews": 17,
+    "qualification_reviews_pending": 0,
+    "open_conflicts": 22,
+    "taxonomy_conflicts": 14,
+    "field_conflicts": 8,
+    "filtered_search_result_count": 16,
+    "database_ready": "ready",
+    "alembic_head": "0016_source_type_text"
+  },
+  "validation": {
+    "python_tests": "105 passed",
+    "javascript_syntax": "node --check passed",
+    "browser_checks": [
+      "Dashboard live data",
+      "Search returned 16 rows",
+      "Pagination: 50 records per page across 6 pages",
+      "Opportunity detail opens",
+      "Login dialog opens without credential submission",
+      "Guest role hides privileged navigation",
+      "RTL document direction verified"
+    ],
+    "exports": {
+      "csv_rows": 272,
+      "xlsx_rows": 272,
+      "xlsx_rtl": true
+    },
+    "screenshots": "Captured and visually reviewed; see screenshots/README.md."
+  },
+  "final_sprint_validation": {
+    "captured_at": "2026-10-13",
+    "opportunities_total": 272,
+    "active_opportunities": 266,
+    "source_records": 2879,
+    "multi_source_masters": 8,
+    "pending_duplicates": 26,
+    "pending_location_reviews": 17,
+    "open_conflicts": 31,
+    "taxonomy_conflicts": 22,
+    "field_conflicts": 9,
+    "scheduled_jobs": [
+      {
+        "status": "SUCCESS",
+        "trigger": "scheduled",
+        "new": 0,
+        "id": 216,
+        "updates": 0,
+        "unchanged": 155
+      },
+      {
+        "id": 217,
+        "status": "SUCCESS",
+        "updates": 108,
+        "trigger": "scheduled",
+        "new": 1
+      }
+    ],
+    "ui_opportunity_or_review_mutations": 0,
+    "csv_rows": 272,
+    "xlsx_rows": 272,
+    "xlsx_rtl": true,
+    "pagination_pages": 6,
+    "last_page_rows": 22,
+    "known_search_results": {
+      "ahsa": 259,
+      "warehouse": 16
+    }
+  },
+  "after_ui_validationNote": "Previous 271/2878 snapshot retained as a historical checkpoint; final sprint reading is in final_sprint_validation.",
+  "brand_asset_closeout": {
+    "captured_at": "2026-10-13",
+    "opportunities_total": 272,
+    "active_opportunities": 266,
+    "source_records": 2879,
+    "enabled_sources": 10,
+    "multi_source_masters": 8,
+    "pending_duplicates": 26,
+    "pending_location_reviews": 17,
+    "python_tests": "105 passed",
+    "javascript_syntax": "node --check passed",
+    "api_readiness": "HTTP 200; database, Redis, worker ok",
+    "search_warehouse_results": 16,
+    "csv_export": {
+      "status": 200,
+      "data_rows": 272
+    },
+    "xlsx_export": {
+      "status": 200,
+      "data_rows": 272,
+      "rtl": true
+    },
+    "alembic": "0016_source_type_text (head)",
+    "start_platform": {
+      "exit_code": 0,
+      "detected_running_platform": true,
+      "opened_browser": true
+    },
+    "official_logos": {
+      "primary_sha256": "B0D9598B341FC3BAF4036CC5E695E7950434B32301FE243657633C86DE96CBFC",
+      "inverse_sha256": "061DCC269EA6FE3FED9973D6AD6B298058C08845347882ADB6D4A116FE163DCA",
+      "local_http_status": 200,
+      "svg_rendering": "PASS"
+    },
+    "ui_opportunity_or_review_mutations": 0,
+    "functional_gate": "AHDA_UI_FUNCTIONAL_REDESIGN_COMPLETE",
+    "brand_gate": "AHDA_BRAND_COMPLIANCE_COMPLETE",
+    "overall_gate": "AHDA_UI_REDESIGN_COMPLETE",
+    "open_conflicts_last_observed": "31 in the prior final-sprint validation; not re-read during logo closeout"
+  }
+}

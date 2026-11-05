@@ -1,0 +1,170 @@
+{
+  "artifact_type": "TAADEEN_SOURCE_INTEGRATION_MANIFEST",
+  "version": "1.0",
+  "generated_at_utc": "2026-11-03T12:52:44Z",
+  "project": "C:\\Sharakat Data Base",
+  "environment": "local_user",
+  "compose_project": "alahsa-local",
+  "base_url": "http://localhost:8080",
+  "result": "COMPLETE",
+  "source": {
+    "source_key": "taadeen-mining-bids",
+    "source_id": 14,
+    "enabled": true,
+    "publisher_platform": "Ta'adeen Platform",
+    "owner_or_licensing_authority": null,
+    "official_catalog_url": "https://cms.taadeen.sa/en/mining-bids",
+    "adapter": "TaadeenAdapter",
+    "extraction_method": "PUBLIC_PAGINATED_HTML_WITH_ROUND_AND_SITE_DETAIL_PAGES",
+    "current_coverage": "COMPLETE_FOR_DEFINED_SCOPE",
+    "technical_health": "HEALTHY",
+    "freshness": "FRESH",
+    "polling_frequency_minutes": 1440,
+    "source_filter_present": true,
+    "current_only_opportunity_count": 0
+  },
+  "public_scope": {
+    "catalog_pages": 4,
+    "public_round_and_plan_pages": 4,
+    "numbered_rounds": 3,
+    "site_or_belt_detail_pages": 28,
+    "total_pages_requested": 36,
+    "total_pages_successful": 36,
+    "complete": true,
+    "round_ids": [
+      "round-9",
+      "round-10",
+      "round-11",
+      "exploration-licensing-tender-rounds-preliminary-plan-2026-2027"
+    ],
+    "representation": "PARENT_WITH_SITE_CHILDREN_FOR_NUMBERED_ROUNDS",
+    "round_11_parent_count": 1,
+    "round_11_site_children": 8,
+    "round_11_parent_status": "Active",
+    "round_11_deadline": "2026-07-31",
+    "round_11_site_status": "Inactive",
+    "round_11_inactive_child_count": 8,
+    "round_11_deadline_passed_as_of": "2026-11-03",
+    "site_provider_id_strategy": "Canonical detail URL slug, namespaced by round slug where present",
+    "unique_provider_ids": true,
+    "duplicate_provider_ids": 0,
+    "source_records": 28,
+    "direct_coordinate_pairs": 0,
+    "fabricated_coordinates": 0
+  },
+  "lifecycle_and_promotion": {
+    "disposition_counts": {
+      "A_READY_NEW_MASTER": 0,
+      "B_MATCH_EXISTING_MASTER": 0,
+      "C_IDENTITY_REVIEW": 0,
+      "D_NOT_QUALIFYING": 0,
+      "E_HISTORICAL_OR_NONCURRENT": 28,
+      "F_SAME_SOURCE_DUPLICATE_REVIEW": 0
+    },
+    "current_masters_created": 0,
+    "historical_masters_created": 0,
+    "existing_masters_linked": 0,
+    "promotion_policy": "No automatic source-capture promotion; read-only eligibility and identity dry run",
+    "closed_representation": "SOURCE_ONLY",
+    "source_rows_removed": 0,
+    "bootstrap_removals": 0
+  },
+  "execution": {
+    "manual_taadeen_syncs": 1,
+    "job_id": 762,
+    "trigger": "manual",
+    "status": "SUCCESS",
+    "job_state": "COMPLETED",
+    "raw_records": 28,
+    "pages_requested": 36,
+    "pages_successful": 36,
+    "removed_records": 0,
+    "duplicate_provider_keys": 0,
+    "post_capture_data_correction": {
+      "rows_updated": 12,
+      "corrected_minerals_to_arabic_bahs": 3,
+      "minerals_cleared_when_not_published": 9,
+      "method": "offline parser correction from captured raw lines",
+      "second_sync": false
+    },
+    "other_manual_syncs_initiated_by_task": 0,
+    "scheduled_al_ahsa_job_id": 763,
+    "scheduled_job_was_manual": false,
+    "tourism_attempted": false,
+    "migrations_required": false
+  },
+  "validation": {
+    "focused_taadeen_tests": {
+      "passed": 2,
+      "skipped": 0,
+      "failed": 0,
+      "timing": "after final parser change"
+    },
+    "full_regression": {
+      "passed": 687,
+      "skipped": 1,
+      "failed": 0,
+      "timing": "before final parser-only correction"
+    },
+    "full_dq": {
+      "pass": 127,
+      "warning": 7,
+      "fail": 0,
+      "baseline_warning_count": 7,
+      "failing_gates": [],
+      "run_id": "72e03888c409441385983b6cf99b6ec8",
+      "scope": "full"
+    },
+    "api_live_status": 200,
+    "api_ready_status": 200,
+    "readiness_checks": {
+      "database": "ok",
+      "redis": "ok",
+      "worker": "ok"
+    },
+    "corrected_content_hashes_verified": "28/28"
+  },
+  "backup": {
+    "path": "backups/pre-taadeen-20261103.dump",
+    "bytes": 61900063,
+    "sha256": "5E77C7686ED24FBF4E20B9653D81B24047DEF8F5EE89D43B3E13456969B2E140",
+    "restore_test": "PASSED",
+    "isolated_postgresql_major": 16,
+    "restored_opportunities": 6678,
+    "restored_source_opportunities": 9439,
+    "restored_sources": 13
+  },
+  "protected_sources": {
+    "RCJY": {
+      "source_rows": 3,
+      "linked": 3
+    },
+    "RCU": {
+      "source_rows": 6,
+      "linked": 6
+    },
+    "NCP": {
+      "source_rows": 185,
+      "linked": 27
+    },
+    "Furas_manually_synced_by_task": false
+  },
+  "final_state": {
+    "configured_sources": 14,
+    "opportunities_total": 6678,
+    "canonical_masters": 6657,
+    "taadeen_rows": 28,
+    "taadeen_links": 0,
+    "taadeen_health": "HEALTHY",
+    "taadeen_freshness": "FRESH"
+  },
+  "artifacts": [
+    "docs/validation/deployment/nationwide-source-expansion/TAADEEN-MASTER-ELIGIBILITY-DRY-RUN-20261103.json",
+    "docs/validation/deployment/nationwide-source-expansion/TAADEEN-SOURCE-INTEGRATION-20261103.md",
+    "docs/validation/deployment/nationwide-source-expansion/TAADEEN-SOURCE-INTEGRATION-MANIFEST-20261103.json"
+  ],
+  "official_sources": [
+    "https://cms.taadeen.sa/en/mining-bids",
+    "https://cms.taadeen.sa/en/mining-bids/round-11"
+  ]
+}

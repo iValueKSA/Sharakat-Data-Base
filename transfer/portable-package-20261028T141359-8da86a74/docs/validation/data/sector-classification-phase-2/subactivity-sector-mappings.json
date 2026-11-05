@@ -1,0 +1,78 @@
+{
+  "deterministic_mapping_count": 1,
+  "engine_version": "ahda-sector-phase2-1.0.0",
+  "mappings": [
+    {
+      "canonical_sector": "أخرى",
+      "canonical_sector_id": "sector:other",
+      "dominant_count": 8,
+      "minimum_purity_percentage": 98.0,
+      "minimum_support": 8,
+      "purity_percentage": 50.0,
+      "qualified": false,
+      "rule_key": "P2_EMPIRICAL_SUB_ACTIVITY_MIN8_PURITY98",
+      "sector_counts": {
+        "sector:commercial": 4,
+        "sector:industrial": 4,
+        "sector:other": 8
+      },
+      "source_field": "sub_activity",
+      "source_value": "أخرى",
+      "total_labeled_records": 16
+    },
+    {
+      "canonical_sector": "تجاري",
+      "canonical_sector_id": "sector:commercial",
+      "dominant_count": 8,
+      "minimum_purity_percentage": 98.0,
+      "minimum_support": 8,
+      "purity_percentage": 100.0,
+      "qualified": true,
+      "rule_key": "P2_EMPIRICAL_SUB_ACTIVITY_MIN8_PURITY98",
+      "sector_counts": {
+        "sector:commercial": 8
+      },
+      "source_field": "sub_activity",
+      "source_value": "أنشطة التجارة العامة",
+      "total_labeled_records": 8
+    },
+    {
+      "canonical_sector": "صناعي",
+      "canonical_sector_id": "sector:industrial",
+      "dominant_count": 1,
+      "minimum_purity_percentage": 98.0,
+      "minimum_support": 8,
+      "purity_percentage": 100.0,
+      "qualified": false,
+      "rule_key": "P2_EMPIRICAL_SUB_ACTIVITY_MIN8_PURITY98",
+      "sector_counts": {
+        "sector:industrial": 1
+      },
+      "source_field": "sub_activity",
+      "source_value": "أنشطة و تجارة المعدات الثقيلة",
+      "total_labeled_records": 1
+    },
+    {
+      "canonical_sector": "تجاري",
+      "canonical_sector_id": "sector:commercial",
+      "dominant_count": 1,
+      "minimum_purity_percentage": 98.0,
+      "minimum_support": 8,
+      "purity_percentage": 100.0,
+      "qualified": false,
+      "rule_key": "P2_EMPIRICAL_SUB_ACTIVITY_MIN8_PURITY98",
+      "sector_counts": {
+        "sector:commercial": 1
+      },
+      "source_field": "sub_activity",
+      "source_value": "منتزه",
+      "total_labeled_records": 1
+    }
+  ],
+  "rule_threshold": {
+    "minimum_purity_percentage": 98,
+    "minimum_support": 8
+  },
+  "training_count": 125,
+  "training_scope": "current specified Masters excluding Phase 1 inference events"
+}

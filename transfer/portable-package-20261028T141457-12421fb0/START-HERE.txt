@@ -1,0 +1,23 @@
+تشغيل منصة رَصْد على هذا الكمبيوتر
+
+أول مرة فقط
+
+انقر مرتين على:
+Install Platform Requirements.bat
+
+اتبع أي نوافذ موافقة أو إعادة تشغيل من Windows. بعد اكتمال الإعداد ستفتح المنصة في المتصفح.
+
+كل مرة بعد ذلك
+
+انقر مرتين على:
+Start Platform.bat
+
+لإيقاف المنصة
+
+انقر مرتين على:
+Stop Platform.bat
+
+تبقى بيانات المنصة محفوظة عند الإيقاف. بيانات دخول المدير المحلي موجودة في:
+Local Admin Credentials.txt
+
+عند الحاجة، يعرض Platform Status.bat حالة الخدمات. يسجل المثبّت تشخيص النظام في logs\local-requirements-diagnostic.log.

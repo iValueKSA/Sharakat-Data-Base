@@ -1,0 +1,22 @@
+{
+  "current_open_review_counts": {
+    "duplicate_pending": 10,
+    "location_pending": 15,
+    "qualification_pending": 0,
+    "conflict_open_or_pending": 473,
+    "total_open": 498
+  },
+  "job439_review_creations": {
+    "location": 0,
+    "qualification": 0,
+    "duplicate_candidates": 0,
+    "field_conflicts": 0
+  },
+  "job439_review_resolutions": 0,
+  "job439_review_reopens": 0,
+  "system_review_events": [],
+  "audit_review_events": {
+    "REVIEW_EVIDENCE_ENRICHED": 7
+  },
+  "correction_changed_review_records": false
+}

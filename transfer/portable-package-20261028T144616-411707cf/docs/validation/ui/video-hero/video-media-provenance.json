@@ -1,0 +1,43 @@
+{
+  "recorded_at_local_date": "2026-10-28",
+  "reference_page": "https://alahsa-opportunities.com/opportunities/515",
+  "original_media_url": "https://alahsa-opportunities.com/video/video.mp4",
+  "original_host_domain": "alahsa-opportunities.com",
+  "original_host_relationship": "Same host as the public reference platform page; separate external CDN hostname was not observed",
+  "normal_public_request_evidence": {
+    "accessible": true,
+    "http_status": 206,
+    "content_type": "video/mp4",
+    "content_length_bytes": 128550009
+  },
+  "inspection_date": "2026-10-28",
+  "original_file_saved_locally": false,
+  "reference_poster_url": "https://alahsa-opportunities.com/images/video-poster.jpg",
+  "reference_poster_http_status": 404,
+  "media_reuse_authorization": "REQUIRES_OWNER_CONFIRMATION",
+  "local_asset_filename": "ahsa-investment-hero.webm",
+  "local_asset_path": "app/static/media/ahsa-investment-hero.webm",
+  "local_poster_filename": "ahsa-investment-hero-poster.webp",
+  "local_poster_path": "app/static/media/ahsa-investment-hero-poster.webp",
+  "local_asset_origin": "Original AI-generated promotional landscape, oasis, heritage, and development imagery. The source page video was used only for style and pacing inspiration; no frame, audio, or source media was copied.",
+  "local_asset_transformations": [
+    "Generated six distinct illustrative landscape scenes: oasis-and-escarpment opening, irrigation channel through palms, closer palm/farm oasis, heritage architecture, modern business/logistics district, and palm-lined development road",
+    "Removed both former map scenes and all map-drawing, boundary, pulse, and map-overlay content from the Hero video renderer",
+    "Composited six landscape scenes with restrained pans and crossfades into a 22.131582-second 1920x540 VP9 WebM loop",
+    "Created a 1920x540 WebP poster from the non-map opening scene",
+    "Added a versioned local media URL so the browser fetches the revised asset"
+  ],
+  "local_asset_sha256": "2bdb92251b0f4fc3f131ce375877d0095cac0aff5607668885f2bb22df521455",
+  "local_asset_bytes": 9790136,
+  "local_asset_duration_seconds": 22.131582,
+  "local_asset_dimensions": "1920x540",
+  "local_asset_codec": "VP9",
+  "local_poster_bytes": 243874,
+  "local_poster_dimensions": "1920x540",
+  "illustrative_imagery_notice": "Generated scenes are promotional illustrations, not documentary photographs of named sites or specific listed opportunities.",
+  "hero_map_visual_count": 0,
+  "poster_contains_map": false,
+  "retrieval_date": "2026-10-28",
+  "retrieval_scope": "The public reference video was inspected through the normal page request and response metadata; no reference-video copy was saved.",
+  "rights_note": "No legal ownership or permission is claimed. Obtain owner confirmation before replacing the locally generated asset with the reference platform video."
+}

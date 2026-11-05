@@ -1,0 +1,108 @@
+{
+  "captured_at": "2026-10-21T13:10:24.861885+00:00",
+  "mechanism": "app.tasks.recent_unsuccessful_sync_count plus SOURCE_FAILED / SOURCE_WARNING alert events",
+  "sources": [
+    {
+      "source": "furas",
+      "consecutive_unsuccessful_runs": 0,
+      "single_failure": "INFO for hard FAILED/BLOCKED; WARNING for warning-class outcomes",
+      "two_consecutive_failures": "WARNING",
+      "three_or_more_consecutive_unsuccessful_runs": "HIGH",
+      "age_fail": "Only when the source-specific critical threshold is exceeded",
+      "actual_latest_job_id": 416,
+      "actual_latest_job_status": "SUCCESS"
+    },
+    {
+      "source": "alahsa-opportunities",
+      "consecutive_unsuccessful_runs": 0,
+      "single_failure": "INFO for hard FAILED/BLOCKED; WARNING for warning-class outcomes",
+      "two_consecutive_failures": "WARNING",
+      "three_or_more_consecutive_unsuccessful_runs": "HIGH",
+      "age_fail": "Only when the source-specific critical threshold is exceeded",
+      "actual_latest_job_id": 417,
+      "actual_latest_job_status": "SUCCESS"
+    },
+    {
+      "source": "ahda",
+      "consecutive_unsuccessful_runs": 0,
+      "single_failure": "INFO for hard FAILED/BLOCKED; WARNING for warning-class outcomes",
+      "two_consecutive_failures": "WARNING",
+      "three_or_more_consecutive_unsuccessful_runs": "HIGH",
+      "age_fail": "Only when the source-specific critical threshold is exceeded",
+      "actual_latest_job_id": 412,
+      "actual_latest_job_status": "SUCCESS"
+    },
+    {
+      "source": "invest-saudi",
+      "consecutive_unsuccessful_runs": 0,
+      "single_failure": "INFO for hard FAILED/BLOCKED; WARNING for warning-class outcomes",
+      "two_consecutive_failures": "WARNING",
+      "three_or_more_consecutive_unsuccessful_runs": "HIGH",
+      "age_fail": "Only when the source-specific critical threshold is exceeded",
+      "actual_latest_job_id": 411,
+      "actual_latest_job_status": "SUCCESS"
+    },
+    {
+      "source": "kfu",
+      "consecutive_unsuccessful_runs": 0,
+      "single_failure": "INFO for hard FAILED/BLOCKED; WARNING for warning-class outcomes",
+      "two_consecutive_failures": "WARNING",
+      "three_or_more_consecutive_unsuccessful_runs": "HIGH",
+      "age_fail": "Only when the source-specific critical threshold is exceeded",
+      "actual_latest_job_id": 395,
+      "actual_latest_job_status": "SUCCESS"
+    },
+    {
+      "source": "modon",
+      "consecutive_unsuccessful_runs": 16,
+      "single_failure": "INFO for hard FAILED/BLOCKED; WARNING for warning-class outcomes",
+      "two_consecutive_failures": "WARNING",
+      "three_or_more_consecutive_unsuccessful_runs": "HIGH",
+      "age_fail": "Only when the source-specific critical threshold is exceeded",
+      "actual_latest_job_id": 413,
+      "actual_latest_job_status": "FAILED"
+    },
+    {
+      "source": "ncp",
+      "consecutive_unsuccessful_runs": 1,
+      "single_failure": "INFO for hard FAILED/BLOCKED; WARNING for warning-class outcomes",
+      "two_consecutive_failures": "WARNING",
+      "three_or_more_consecutive_unsuccessful_runs": "HIGH",
+      "age_fail": "Only when the source-specific critical threshold is exceeded",
+      "actual_latest_job_id": 398,
+      "actual_latest_job_status": "FAILED"
+    },
+    {
+      "source": "nhc",
+      "consecutive_unsuccessful_runs": 10,
+      "single_failure": "INFO for hard FAILED/BLOCKED; WARNING for warning-class outcomes",
+      "two_consecutive_failures": "WARNING",
+      "three_or_more_consecutive_unsuccessful_runs": "HIGH",
+      "age_fail": "Only when the source-specific critical threshold is exceeded",
+      "actual_latest_job_id": 397,
+      "actual_latest_job_status": "WARNING"
+    },
+    {
+      "source": "pif",
+      "consecutive_unsuccessful_runs": 0,
+      "single_failure": "INFO for hard FAILED/BLOCKED; WARNING for warning-class outcomes",
+      "two_consecutive_failures": "WARNING",
+      "three_or_more_consecutive_unsuccessful_runs": "HIGH",
+      "age_fail": "Only when the source-specific critical threshold is exceeded",
+      "actual_latest_job_id": 410,
+      "actual_latest_job_status": "SUCCESS"
+    },
+    {
+      "source": "mwan",
+      "consecutive_unsuccessful_runs": 8,
+      "single_failure": "INFO for hard FAILED/BLOCKED; WARNING for warning-class outcomes",
+      "two_consecutive_failures": "WARNING",
+      "three_or_more_consecutive_unsuccessful_runs": "HIGH",
+      "age_fail": "Only when the source-specific critical threshold is exceeded",
+      "actual_latest_job_id": 409,
+      "actual_latest_job_status": "FAILED"
+    }
+  ],
+  "high_severity_after_consecutive_unsuccessful_runs": 3,
+  "warning_class_runs_count_as_unsuccessful": true
+}

@@ -1,0 +1,9 @@
+Local Docker build evidence
+Captured: 2026-10-13 Asia/Amman
+
+Result: PASS
+Docker Desktop 4.95.0; Docker Engine 29.8.2; Compose v5.6.0.
+
+Built API/runtime images for API, worker, scheduler, migration, and bootstrap; built the Nginx frontend image. The runtime image installs the PostgreSQL 16 client from the official signed PGDG repository to match the PostgreSQL 16 server and produce compatible backup archives. Frontend Nginx uses Docker embedded DNS with a variable proxy target so API container IP changes after Desktop restart do not retain a stale upstream.
+
+Runtime user inspection: API services use `app`; frontend uses UID 101. The frontend is loopback-published only. PostgreSQL and Redis have no host-published ports. Runtime credentials were not found in API image configuration or history.

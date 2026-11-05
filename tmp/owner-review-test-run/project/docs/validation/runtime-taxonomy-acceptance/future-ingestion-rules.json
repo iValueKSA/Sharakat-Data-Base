@@ -1,0 +1,132 @@
+{
+  "standardization_engine_version": "16",
+  "future_rules_verified": true,
+  "checks": {
+    "sector_alias": {
+      "raw": "healthcare",
+      "normalized": "healthcare",
+      "canonical_id": "sector:healthcare",
+      "canonical_label": "الرعاية الصحية",
+      "mapping_status": "MAPPED",
+      "rule": "approved_alias_v1"
+    },
+    "activity_alias": {
+      "raw": "الأنشطة التجارية",
+      "normalized": "الانشطة التجارية",
+      "canonical_id": "activity:commercial_activities",
+      "canonical_label": "الأنشطة التجارية",
+      "mapping_status": "MAPPED",
+      "rule": "unchanged"
+    },
+    "sub_activity_alias": {
+      "raw": "انشطة التجارة العامة",
+      "normalized": "انشطة التجارة العامة",
+      "canonical_id": "sub_activity:general_trade",
+      "canonical_label": "أنشطة التجارة العامة",
+      "mapping_status": "MAPPED",
+      "rule": "approved_alias_v1"
+    },
+    "missing_activity": {
+      "raw": null,
+      "normalized": "",
+      "canonical_id": "activity:missing",
+      "canonical_label": null,
+      "mapping_status": "MISSING",
+      "rule": "preserve_missing"
+    },
+    "unknown_activity_preserved_for_review": {
+      "raw": "نشاط تجريبي غير مسجل",
+      "normalized": "نشاط تجريبي غير مسجل",
+      "canonical_id": "unmapped:activity:be6cc42ce7fadde2",
+      "canonical_label": "نشاط تجريبي غير مسجل",
+      "mapping_status": "UNMAPPED",
+      "rule": "unchanged"
+    },
+    "known_temporary_rental": {
+      "raw": "TemporaryRental",
+      "normalized": "temporaryrental",
+      "canonical_id": "opportunity_type:temporary_rental",
+      "canonical_label": "تأجير مؤقت",
+      "mapping_status": "MAPPED",
+      "rule": "approved_furas_opportunity_type_v11"
+    },
+    "unknown_opportunity_type_review": {
+      "raw": "NEW_TYPE",
+      "normalized": "new_type",
+      "canonical_id": "opportunity_type:missing",
+      "canonical_label": "غير محدد",
+      "mapping_status": "REVIEW_REQUIRED",
+      "rule": "unmapped_opportunity_type_review_v11"
+    },
+    "investment_models": {
+      "lease": {
+        "raw": "التأجير",
+        "normalized": "التاجير",
+        "canonical_id": "investment_model:lease",
+        "canonical_label": "التأجير",
+        "mapping_status": "MAPPED",
+        "rule": "canonical_investment_model_v15"
+      },
+      "eomt": {
+        "raw": "EOMT",
+        "normalized": "eomt",
+        "canonical_id": "investment_model:eomt",
+        "canonical_label": "التجهيز والتشغيل والصيانة والنقل",
+        "mapping_status": "MAPPED",
+        "rule": "source_scoped_investment_model_v15"
+      }
+    },
+    "wrong_dimension_activity_enum": {
+      "raw": "PPP_PROJECT",
+      "normalized": "ppp_project",
+      "canonical_id": "activity:missing",
+      "canonical_label": null,
+      "mapping_status": "REVIEW_REQUIRED",
+      "rule": "technical_enum_excluded_from_activity_v1"
+    },
+    "asset_facility_examples": {
+      "values_tested": [
+        "العربات المتنقلة",
+        "الحدائق",
+        "الشواطئ والواجهات",
+        "الأراضي",
+        "الساحات الميادين",
+        "الطرق والأرصفة",
+        "المباني",
+        "أخرى"
+      ],
+      "assignments": 8,
+      "multi_value_count": 2,
+      "missing": {
+        "version": "1",
+        "assignments": [],
+        "unresolved": []
+      },
+      "unknown": {
+        "version": "1",
+        "assignments": [],
+        "unresolved": [
+          {
+            "raw_value": "نوع مستقبلي",
+            "source_field": "LOCATIONTYPE"
+          }
+        ]
+      },
+      "wrong_source_enum": {
+        "version": "1",
+        "assignments": [],
+        "unresolved": []
+      },
+      "wrong_dimension_enum": {
+        "version": "1",
+        "assignments": [],
+        "unresolved": [
+          {
+            "raw_value": "PPP_PROJECT",
+            "source_field": "LOCATIONTYPE"
+          }
+        ]
+      }
+    }
+  }
+}

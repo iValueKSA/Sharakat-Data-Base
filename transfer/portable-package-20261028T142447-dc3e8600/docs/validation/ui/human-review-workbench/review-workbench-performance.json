@@ -1,0 +1,11 @@
+{
+  "captured_at": "2026-10-22T14:03:38+03:00",
+  "review_detail_api_p95_ms": 17,
+  "sample_size": 30,
+  "measurement": "Playwright page.request against updated API over isolated Docker network and SQLite; 5 warmups; 30 read-only GET requests",
+  "environment": "isolated synthetic API/frontend test containers; no live review data",
+  "previous_p95_ms": 337,
+  "p95_delta_ms": -320,
+  "threshold_ms": null,
+  "result": "Measured; no user-defined latency threshold supplied."
+}

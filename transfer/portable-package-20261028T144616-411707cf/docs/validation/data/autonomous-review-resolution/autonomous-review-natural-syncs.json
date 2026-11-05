@@ -1,0 +1,54 @@
+{
+  "manual_source_sync_started": false,
+  "active_jobs_at_dry_run": 0,
+  "active_jobs_at_apply": 0,
+  "active_jobs_at_final": 0,
+  "job_count_at_dry_run": 504,
+  "job_count_at_final": 504,
+  "jobs": [
+    {
+      "job_id": 504,
+      "source": "furas",
+      "execution": "scheduled natural job, completed before the fresh review snapshot",
+      "status": "COMPLETED",
+      "new_master_count": 0,
+      "updated_master_count": 0,
+      "unchanged_count": 396,
+      "master_delta": 0,
+      "source_opportunity_delta": 0,
+      "observation_delta": 40,
+      "latest_started_at": "2026-10-26T10:03:02.430806+03:00",
+      "latest_finished_at": "2026-10-26T10:03:19.900791+03:00",
+      "trigger_type": "scheduled",
+      "source_opportunities_first_seen_in_job_window": 0,
+      "masters_created_in_job_window": 0,
+      "observations_first_seen_in_job_window": 40,
+      "conflict_rows_created": 7,
+      "conflict_rows_resolved_as_stale_in_same_job": 7,
+      "conflict_row_ids": [
+        752,
+        753,
+        754,
+        755,
+        756,
+        757,
+        758
+      ],
+      "prior_review_ids_reopened": [
+        726,
+        728,
+        732,
+        736,
+        737,
+        740,
+        746
+      ],
+      "net_open_contribution_after_job": 0,
+      "canonical_change_history_rows": 0,
+      "stale_resolution_rule": "CURRENT_SOURCE_SECTOR_MISSING_NOT_CONFLICT_V1",
+      "net_open_review_delta": 0
+    }
+  ],
+  "jobs_after_fresh_baseline": [],
+  "note": "Job 504 completed as a scheduled run before the fresh review snapshot. It created 7 sector-conflict rows linked to prior review IDs; the same source transaction resolved all 7 as stale under CURRENT_SOURCE_SECTOR_MISSING_NOT_CONFLICT_V1. They were terminal before the snapshot, so they contribute zero to the 519 open reviews. It added 40 immutable observations, created no SourceOpportunity or Master, and recorded no canonical ChangeHistory. No source sync was manually started; no later job appeared through final reconciliation."
+}

@@ -1,0 +1,312 @@
+{
+  "review": "source coverage and completeness",
+  "fixedSnapshot": {
+    "captured": "2026-10-20T13:59:35+03:00",
+    "masters": {
+      "total": 308,
+      "currentNonMerged": 287,
+      "merged": 21
+    },
+    "sourceOpportunities": 2899,
+    "observations": 11174,
+    "syncJobs": 379
+  },
+  "afterNaturalScheduledSyncs": {
+    "captured": "2026-10-20T14:09:00+03:00",
+    "observations": 11187,
+    "syncJobs": 381,
+    "deltaObservations": 13,
+    "deltaJobs": 2,
+    "masterDelta": 0,
+    "sourceOpportunityDelta": 0,
+    "jobs": [
+      {
+        "id": 380,
+        "source": "furas",
+        "trigger": "scheduled",
+        "result": "SUCCESS",
+        "pages": "3/3",
+        "records": "164/164",
+        "newRecords": 0,
+        "updatedRecords": 0
+      },
+      {
+        "id": 381,
+        "source": "alahsa-opportunities",
+        "trigger": "scheduled",
+        "result": "SUCCESS",
+        "pages": "12/12",
+        "records": "103/103",
+        "newRecords": 0,
+        "updatedRecords": 0
+      }
+    ]
+  },
+  "counts": {
+    "qualifiedSourceRecords": 312,
+    "qualifiedWithMaster": 312,
+    "qualifiedWithoutMaster": 0,
+    "sourceRecordsWithoutMaster": 2587,
+    "duplicateExternalIds": 0,
+    "orphanSourceRecords": 0,
+    "activeRowsWithoutObservations": 0,
+    "orphanObservations": 0,
+    "investSaudiCurrentMembershipAbsences": [
+      {
+        "id": "investsaudi:52080",
+        "dataset": "Investment projects",
+        "missedChecks": 0
+      },
+      {
+        "id": "investsaudi:51540",
+        "dataset": "Investment projects",
+        "missedChecks": 0
+      },
+      {
+        "id": "investsaudi:51539",
+        "dataset": "Investment projects",
+        "missedChecks": 0
+      },
+      {
+        "id": "investsaudi:51538",
+        "dataset": "Investment projects",
+        "missedChecks": 0
+      },
+      {
+        "id": "investsaudi:51537",
+        "dataset": "Investment projects",
+        "missedChecks": 0
+      },
+      {
+        "id": "investsaudi:51536",
+        "dataset": "Investment projects",
+        "missedChecks": 0
+      },
+      {
+        "id": "investsaudi:51535",
+        "dataset": "Investment projects",
+        "missedChecks": 0
+      },
+      {
+        "id": "investsaudi:51522",
+        "dataset": "Investment projects",
+        "missedChecks": 0
+      },
+      {
+        "id": "investsaudi:51518",
+        "dataset": "Investment projects",
+        "missedChecks": 0
+      },
+      {
+        "id": "investsaudi:51517",
+        "dataset": "Investment projects",
+        "missedChecks": 0
+      },
+      {
+        "id": "investsaudi:55062",
+        "dataset": "Investment projects",
+        "missedChecks": 0
+      },
+      {
+        "id": "investsaudi:55057",
+        "dataset": "Investment projects",
+        "missedChecks": 0
+      },
+      {
+        "id": "investsaudi:55046",
+        "dataset": "Investment projects",
+        "missedChecks": 0
+      }
+    ],
+    "kfuCurrentAbsences": [
+      {
+        "id": "kfu-announcement:d20b35b7faa10dadaf813279",
+        "status": "حالة غير معروفة",
+        "missedChecks": 0
+      },
+      {
+        "id": "kfu-announcement:386b36399fd270bfa5c772e0",
+        "status": "حالة غير معروفة",
+        "missedChecks": 0
+      },
+      {
+        "id": "kfu-announcement:99442b845172484870ec5665",
+        "status": "حالة غير معروفة",
+        "missedChecks": 0
+      }
+    ]
+  },
+  "sources": [
+    {
+      "key": "furas",
+      "name": "فرص – البوابة الموحدة للاستثمار",
+      "officialCurrent": 164,
+      "enumerated": 164,
+      "platformCurrent": 164,
+      "platformHistorical": 13,
+      "platformTotal": 177,
+      "linkedSourceRows": 177,
+      "locationReviewCandidates": 0,
+      "missing": 0,
+      "unexplainedExtra": 0,
+      "technicalHealth": "HEALTHY",
+      "coverageStatus": "COMPLETE_PUBLIC_SOURCE",
+      "pagination": "3/3",
+      "limitations": "164 سجلاً جارياً مطابقاً؛ 13 سجلاً تاريخياً محفوظاً كأزيلت من المصدر."
+    },
+    {
+      "key": "alahsa-opportunities",
+      "name": "منصة الفرص الاستثمارية بالأحساء",
+      "officialCurrent": 103,
+      "enumerated": 103,
+      "platformCurrent": 103,
+      "platformHistorical": 0,
+      "platformTotal": 103,
+      "linkedSourceRows": 103,
+      "locationReviewCandidates": 0,
+      "missing": 0,
+      "unexplainedExtra": 0,
+      "technicalHealth": "HEALTHY",
+      "coverageStatus": "COMPLETE_PUBLIC_SOURCE",
+      "pagination": "12/12",
+      "limitations": "الإجمالي الرسمي 103؛ مطابقة كاملة للسجلات الفريدة."
+    },
+    {
+      "key": "ahda",
+      "name": "هيئة تطوير الأحساء",
+      "officialCurrent": 8,
+      "enumerated": 8,
+      "platformCurrent": 8,
+      "platformHistorical": 0,
+      "platformTotal": 8,
+      "linkedSourceRows": 8,
+      "locationReviewCandidates": 0,
+      "missing": 0,
+      "unexplainedExtra": 0,
+      "technicalHealth": "WARNING",
+      "coverageStatus": "COMPLETE_FOR_DEFINED_SCOPE",
+      "pagination": "215/215 صفحة محتوى + sitemap",
+      "limitations": "تم مسح 215 صفحة عامة؛ 8 فقط استوفت عقد الفرصة. آخر مهمة مجدولة فشلت بينما المسح القرائي نجح."
+    },
+    {
+      "key": "invest-saudi",
+      "name": "استثمر في السعودية",
+      "officialCurrent": 2440,
+      "enumerated": 2440,
+      "platformCurrent": 2453,
+      "platformHistorical": 102,
+      "platformTotal": 2555,
+      "linkedSourceRows": 19,
+      "locationReviewCandidates": 18,
+      "missing": 0,
+      "unexplainedExtra": 13,
+      "technicalHealth": "WARNING",
+      "coverageStatus": "COMPLETE_PUBLIC_SOURCE",
+      "pagination": "26/26 (18+4+2+2)",
+      "limitations": "13 عضوية حالية غائبة عن التعداد الرسمي الجديد؛ كلها في Investment projects، بلا missed checks بعد."
+    },
+    {
+      "key": "kfu",
+      "name": "جامعة الملك فيصل",
+      "officialCurrent": 2,
+      "enumerated": 2,
+      "platformCurrent": 5,
+      "platformHistorical": 1,
+      "platformTotal": 6,
+      "linkedSourceRows": 3,
+      "locationReviewCandidates": 0,
+      "missing": 0,
+      "unexplainedExtra": 3,
+      "technicalHealth": "HEALTHY",
+      "coverageStatus": "COMPLETE_FOR_DEFINED_SCOPE",
+      "pagination": "1/1",
+      "limitations": "التعداد الكامل الأحدث أعاد معرّفين؛ 3 سجلات محلية بحالة غير معروفة غائبة وتنتظر عتبة الإزالة."
+    },
+    {
+      "key": "ncp",
+      "name": "المركز الوطني للتخصيص",
+      "officialCurrent": 46,
+      "enumerated": 46,
+      "platformCurrent": 45,
+      "platformHistorical": 0,
+      "platformTotal": 45,
+      "linkedSourceRows": 2,
+      "locationReviewCandidates": 0,
+      "missing": 0,
+      "unexplainedExtra": 0,
+      "technicalHealth": "HEALTHY",
+      "coverageStatus": "COMPLETE_FOR_DEFINED_SCOPE",
+      "pagination": "82/83 طلباً؛ نطاق الإنجليزية مكتمل",
+      "limitations": "46 مقالة إنجليزية فُحصت؛ عنصر واحد فقط استوفى عقد الفرصة في المسح. تعذرت الصفحة النهائية للمرآة العربية؛ خط المستثمرين الأوسع خاص."
+    },
+    {
+      "key": "modon",
+      "name": "مدن",
+      "officialCurrent": null,
+      "enumerated": null,
+      "platformCurrent": 0,
+      "platformHistorical": 0,
+      "platformTotal": 0,
+      "linkedSourceRows": 0,
+      "locationReviewCandidates": 0,
+      "missing": null,
+      "unexplainedExtra": 0,
+      "technicalHealth": "WARNING",
+      "coverageStatus": "PUBLIC_COVERAGE_LIMITED",
+      "pagination": "تعذر الجلب في المسح القرائي",
+      "limitations": "لا يظهر جرد علني حيّ مفصل لإتاحة الأحساء؛ خطأ TLS منع الفحص الحالي؛ لا تُجرى إزالة."
+    },
+    {
+      "key": "nhc",
+      "name": "NHC الاستثمار",
+      "officialCurrent": null,
+      "enumerated": 0,
+      "platformCurrent": 0,
+      "platformHistorical": 0,
+      "platformTotal": 0,
+      "linkedSourceRows": 0,
+      "locationReviewCandidates": 0,
+      "missing": null,
+      "unexplainedExtra": 0,
+      "technicalHealth": "WARNING",
+      "coverageStatus": "PUBLIC_COVERAGE_LIMITED",
+      "pagination": "0/6 مسارات؛ HTTP 403",
+      "limitations": "لا يظهر مخزون مفصل عام؛ الخدمات والأراضي الموثقة تتطلب حساباً خارج النطاق."
+    },
+    {
+      "key": "pif",
+      "name": "بوابة القطاع الخاص لصندوق الاستثمارات العامة",
+      "officialCurrent": 0,
+      "enumerated": 0,
+      "platformCurrent": 0,
+      "platformHistorical": 0,
+      "platformTotal": 0,
+      "linkedSourceRows": 0,
+      "locationReviewCandidates": 0,
+      "missing": null,
+      "unexplainedExtra": 0,
+      "technicalHealth": "HEALTHY",
+      "coverageStatus": "PUBLIC_COVERAGE_LIMITED",
+      "pagination": "12/13 مساراً؛ لا صفحات قائمة بعناصر",
+      "limitations": "لا بطاقات حالية في التمثيل العام؛ لا يعني ذلك أن الكون الوطني خالٍ من الفرص."
+    },
+    {
+      "key": "mwan",
+      "name": "موان",
+      "officialCurrent": null,
+      "enumerated": null,
+      "platformCurrent": 5,
+      "platformHistorical": 0,
+      "platformTotal": 5,
+      "linkedSourceRows": 0,
+      "locationReviewCandidates": 0,
+      "missing": null,
+      "unexplainedExtra": null,
+      "technicalHealth": "WARNING",
+      "coverageStatus": "COMPLETE_FOR_DEFINED_SCOPE",
+      "pagination": "تعذر الجلب بسبب TLS",
+      "limitations": "آخر نجاح 2026-10-12؛ خمسة سجلات محفوظة؛ اكتمال الكون الحالي غير معروف حتى مسح مجدول ناجح."
+    }
+  ],
+  "disclaimer": "For itemized publisher datasets, source-row counts represent opportunities admitted by source adapters, not every page/article discovered. National source universe is not restricted to Al-Ahsa."
+}

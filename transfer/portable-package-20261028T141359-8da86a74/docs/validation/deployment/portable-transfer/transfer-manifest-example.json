@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "setup_version": "1.0.0",
+  "package_id": "<generated timestamp and random suffix>",
+  "created_at_utc": "<UTC timestamp>",
+  "package_root": ".",
+  "database_transfer_method": "LOGICAL_BACKUP_RESTORE",
+  "database_backup": {
+    "path": "transfer/database/al-ahsa-platform-<package-id>.dump",
+    "format": "PostgreSQL custom",
+    "sha256": "<64 lowercase hexadecimal characters>",
+    "validated_with": "pg_restore --list",
+    "contains_business_data_and_password_hashes": true
+  },
+  "expected_data_manifest": "expected-data-manifest.json",
+  "encrypted_secret_bundle": {
+    "path": "transfer/private/session-signing-secret.aes",
+    "content": "session signing key only",
+    "encrypted": true,
+    "plaintext_secrets_in_manifest": false
+  },
+  "excluded_source_machine_secrets": [".env.local", "Local Admin Credentials.txt"],
+  "secrets_printed_to_console": false,
+  "secrets_written_to_validation_report": false,
+  "files": []
+}

@@ -1,0 +1,3 @@
+FROM alahsa-local-beat:baseline-lifecycle-20261101
+COPY --chown=app:app beat/app/sync_lifecycle.py /app/app/sync_lifecycle.py
+COPY --chown=app:app beat/app/tasks.py /app/app/tasks.py

@@ -1,0 +1,18 @@
+Full regression suite — final owner completion verification
+Timestamp: 2026-10-19 15:20 Asia/Amman (12:20 UTC)
+Project snapshot: source files app/, tests/, scripts/, docs/ copied to /tmp/owner-regression inside alahsa-local-api-1
+Database safety: DATABASE_URL=sqlite://; REDIS_URL=; ENVIRONMENT=development. Suite ran only against isolated in-memory SQLite fixtures; the live PostgreSQL database was not used.
+Command:
+docker exec -w /tmp/owner-regression -e PYTHONPATH=/tmp/owner-regression -e DATABASE_URL=sqlite:// -e REDIS_URL= -e ENVIRONMENT=development alahsa-local-api-1 python -m pytest -q --import-mode=importlib
+
+Output:
+........................................................................ [ 45%]
+........................................................................ [ 91%]
+..............                                                           [100%]
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+158 passed, 1 warning in 5.86s

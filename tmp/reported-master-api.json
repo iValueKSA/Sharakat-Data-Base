@@ -1,0 +1,113 @@
+{
+  "id": 324,
+  "canonical_id": "AH-20261014060153-0719eb5b",
+  "title": "تاجير مؤقت لموقع من نوع الساحات الميادين بحي  الناصرية مقهى ومطعم في ساحة سوق الحرفيين",
+  "owner": "أمانة الأحساء",
+  "sector": "غير محدد",
+  "activity": "غير محدد",
+  "sub_activity": null,
+  "subsector": null,
+  "type": "تأجير مؤقت",
+  "investment_model": "غير محدد",
+  "asset_facility_types": [
+    {
+      "id": "asset_facility_type:public_square",
+      "label": "الساحات الميادين"
+    }
+  ],
+  "asset_facility_type": "الساحات الميادين",
+  "city": "الأحساء",
+  "location": "الاحساء الناصرية شارع الرفعة",
+  "geography": {
+    "status": "CONFIRMED",
+    "confirmed": true,
+    "country_id": "saudi_arabia",
+    "country": "المملكة العربية السعودية",
+    "country_code": "SA",
+    "region_id": "eastern_province",
+    "region": "المنطقة الشرقية",
+    "governorate_id": "al_ahsa_governorate",
+    "governorate": "الأحساء",
+    "locality_id": null,
+    "locality": null,
+    "district": null,
+    "reason": null,
+    "source_projection": {
+      "city": "الأحساء",
+      "district": null
+    },
+    "source_locations": [],
+    "source_geographies": [],
+    "review_required": false,
+    "status_ar": "موقع مؤكد",
+    "display_location": "الأحساء"
+  },
+  "area": 410.0,
+  "investment_value": null,
+  "duration": null,
+  "deadline": "2028-10-12",
+  "status": "منشورة",
+  "lifecycle_status": "ACTIVE",
+  "reference": "02-26-017001-58001",
+  "source_facts": {
+    "locations": "",
+    "stages": "",
+    "investment_models": "",
+    "location_scopes": ""
+  },
+  "sources": [
+    {
+      "name": "فرص – البوابة الموحدة للاستثمار",
+      "publication_platform": "فرص – البوابة الموحدة للاستثمار",
+      "publishing_entity": "وزارة الشئون البلدية والقروية",
+      "source_operator": "وزارة البلديات والإسكان والجهات الحكومية المشاركة",
+      "url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-26-017001-58001?type=TempRental",
+      "historical_url": "https://furas.momah.gov.sa/ar/opportunity/02-26-017001-58001?type=TemporaryRental",
+      "checked_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-26-017001-58001?type=TempRental",
+      "link_health": "VALID",
+      "link_checked_at": "2026-10-19T12:54:27Z",
+      "url_repaired": true,
+      "key": "furas",
+      "title": "تاجير مؤقت لموقع من نوع الساحات الميادين بحي  الناصرية مقهى ومطعم في ساحة سوق الحرفيين",
+      "raw_location": "الاحساء الناصرية شارع الرفعة",
+      "raw_status": "Announced",
+      "canonical_status": "منشورة",
+      "status_review_flags": [],
+      "project_stage": null,
+      "investment_model": null,
+      "qualification_reason": null,
+      "location_scope": null,
+      "opportunity_locations": []
+    }
+  ],
+  "source_count": 1,
+  "confidence": 1.0,
+  "first_seen": "2026-10-14T09:01:53.322624+03:00",
+  "updated_at": "2026-10-19T15:50:51.329448+03:00",
+  "changes": [
+    {
+      "field": "status",
+      "before": "Announced",
+      "after": "منشورة",
+      "date": "2026-10-19T13:34:08.181486+03:00"
+    },
+    {
+      "field": "نوع الفرصة",
+      "before": "غير محدد",
+      "after": "قيمة غير معتمدة",
+      "date": "2026-10-18T16:09:07.922321+03:00"
+    },
+    {
+      "field": "نوع الفرصة",
+      "before": "قيمة غير معتمدة",
+      "after": "غير محدد",
+      "date": "2026-10-18T15:50:13.591011+03:00"
+    },
+    {
+      "field": "sector",
+      "before": null,
+      "after": "غير محدد",
+      "date": "2026-10-18T12:30:44.195733+03:00"
+    }
+  ]
+}

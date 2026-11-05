@@ -1,0 +1,91 @@
+{
+  "validatedAt": "2026-10-19T08:38:46.823Z",
+  "direction": "rtl",
+  "viewport": {
+    "width": 1920,
+    "height": 1080,
+    "scrollWidth": 1920
+  },
+  "total": 291,
+  "options": [
+    {
+      "label": "التأجير",
+      "id": "investment_model:lease",
+      "count": 4
+    },
+    {
+      "label": "التجهيز والتشغيل والصيانة والنقل",
+      "id": "investment_model:eomt",
+      "count": 1
+    },
+    {
+      "label": "غير محدد",
+      "id": "investment_model:missing",
+      "count": 286
+    }
+  ],
+  "dashboardBuckets": [
+    {
+      "name": "غير محدد",
+      "canonical_id": "investment_model:missing",
+      "filter_value": null,
+      "count": 286
+    },
+    {
+      "name": "التأجير",
+      "canonical_id": "investment_model:lease",
+      "filter_value": "التأجير",
+      "count": 4
+    },
+    {
+      "name": "التجهيز والتشغيل والصيانة والنقل",
+      "canonical_id": "investment_model:eomt",
+      "filter_value": "التجهيز والتشغيل والصيانة والنقل",
+      "count": 1
+    }
+  ],
+  "dashboardCoverage": {
+    "total": 291,
+    "canonical": 5,
+    "unspecified": 286,
+    "review": 2,
+    "canonical_percent": 1.7
+  },
+  "queryCounts": {
+    "investment_model:lease": 4,
+    "investment_model:eomt": 1,
+    "investment_model:missing": 286
+  },
+  "exports": {
+    "investment_model:lease": {
+      "label": "التأجير",
+      "csvStatus": 200,
+      "csvRows": 4,
+      "csvHasCanonicalLabel": true,
+      "xlsxStatus": 200,
+      "xlsxSignature": "PK",
+      "xlsxBytes": 165094
+    },
+    "investment_model:eomt": {
+      "label": "التجهيز والتشغيل والصيانة والنقل",
+      "csvStatus": 200,
+      "csvRows": 1,
+      "csvHasCanonicalLabel": true,
+      "xlsxStatus": 200,
+      "xlsxSignature": "PK",
+      "xlsxBytes": 163991
+    },
+    "investment_model:missing": {
+      "label": "غير محدد",
+      "csvStatus": 200,
+      "csvRows": 286,
+      "csvHasCanonicalLabel": true,
+      "xlsxStatus": 200,
+      "xlsxSignature": "PK",
+      "xlsxBytes": 215726
+    }
+  },
+  "detailsHasCanonicalModel": true,
+  "resetWorks": true,
+  "screenshot": "investment-model-lease-filter.png"
+}

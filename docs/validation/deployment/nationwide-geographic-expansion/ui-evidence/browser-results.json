@@ -1,0 +1,444 @@
+{
+  "cases": [
+    {
+      "name": "city-reference:login-and-national-catalog",
+      "status": "PASSED",
+      "detail": "revision-specific isolated UI active; levels=region,governorate,city"
+    },
+    {
+      "name": "city-reference:default-selector-labels",
+      "status": "PASSED",
+      "detail": "Region, Governorate, and City defaults shown"
+    },
+    {
+      "name": "city-reference:dependent-region-governorate-city",
+      "status": "PASSED",
+      "detail": "Parent options constrained; changing parents cleared children"
+    },
+    {
+      "name": "city-reference:alahsa-quick-view-resolves-reference",
+      "status": "PASSED",
+      "detail": "Resolver matched test-only Arabic alias; no ID hardcoded in UI"
+    },
+    {
+      "name": "city-reference:combined-filters-search-and-unique-masters",
+      "status": "PASSED",
+      "detail": "region+sector=28; governorate+status=20; governorate+source=1; search+geo=1"
+    },
+    {
+      "name": "city-reference:pagination-url-and-filter-state",
+      "status": "PASSED",
+      "detail": "filtered total 57; URL kept region_id"
+    },
+    {
+      "name": "city-reference:reset-defaults",
+      "status": "PASSED",
+      "detail": "Geographic selectors reset to all"
+    },
+    {
+      "name": "city-reference:csv-xlsx-browser-downloads",
+      "status": "PASSED",
+      "detail": "Four CSV and four XLSX files downloaded through the filtered Opportunities UI links; API/UI totals recorded for row-count parity"
+    },
+    {
+      "name": "city-reference:sorting-preserves-filters",
+      "status": "PASSED",
+      "detail": "Title sort applied and preserved Region, Governorate, and Status URL filters"
+    },
+    {
+      "name": "city-reference:national-dashboard-master-and-scope-semantics",
+      "status": "PASSED",
+      "detail": "unique=60; source rows=61; mapped=2; nationwide=1; unspecified=1"
+    },
+    {
+      "name": "city-reference:national-map-follows-region-filter",
+      "status": "PASSED",
+      "detail": "filtered table/map Master totals=38; URL region=TEST_REGION_01"
+    },
+    {
+      "name": "city-reference:map-popup-list-and-opportunity-detail",
+      "status": "PASSED",
+      "detail": "Popup Master IDs 619; detail opened from matching table row"
+    },
+    {
+      "name": "city-reference:national-dashboard-drilldown",
+      "status": "PASSED",
+      "detail": "Region summary button opened Opportunities with TEST_REGION_01 filter"
+    },
+    {
+      "name": "city-reference:national-map-excludes-broad-scope-and-has-points",
+      "status": "PASSED",
+      "detail": "points=2; mapped Masters=3; scopes={\"NATIONWIDE\":1,\"REGION_WIDE\":1,\"UNSPECIFIED\":1,\"SPECIFIC_LOCATION\":56,\"MULTIPLE_VERIFIED_LOCATIONS\":1}"
+    },
+    {
+      "name": "city-reference:leaflet-map-renders-markers-or-clusters",
+      "status": "PASSED",
+      "detail": "markers=1; clusters=0"
+    },
+    {
+      "name": "city-reference:map-title-reflects-current-scope",
+      "status": "PASSED",
+      "detail": ""
+    },
+    {
+      "name": "city-reference:viewport-1920x1080",
+      "status": "PASSED",
+      "detail": "RTL; width 1920/1920; controls in viewport; labels do not overlap"
+    },
+    {
+      "name": "city-reference:viewport-1440x900",
+      "status": "PASSED",
+      "detail": "RTL; width 1440/1440; controls in viewport; labels do not overlap"
+    },
+    {
+      "name": "city-reference:viewport-1366x768",
+      "status": "PASSED",
+      "detail": "RTL; width 1366/1366; controls in viewport; labels do not overlap"
+    },
+    {
+      "name": "city-reference:viewport-768x900",
+      "status": "PASSED",
+      "detail": "RTL; width 768/768; controls in viewport; labels do not overlap"
+    },
+    {
+      "name": "city-reference:viewport-390x844",
+      "status": "PASSED",
+      "detail": "RTL; width 390/390; controls in viewport; labels do not overlap"
+    },
+    {
+      "name": "city-reference:opportunities-viewport-1920x1080",
+      "status": "PASSED",
+      "detail": "RTL; width 1920/1920; controls in viewport; labels do not overlap"
+    },
+    {
+      "name": "city-reference:opportunities-viewport-1440x900",
+      "status": "PASSED",
+      "detail": "RTL; width 1440/1440; controls in viewport; labels do not overlap"
+    },
+    {
+      "name": "city-reference:opportunities-viewport-1366x768",
+      "status": "PASSED",
+      "detail": "RTL; width 1366/1366; controls in viewport; labels do not overlap"
+    },
+    {
+      "name": "city-reference:opportunities-viewport-768x900",
+      "status": "PASSED",
+      "detail": "RTL; width 768/768; controls in viewport; labels do not overlap"
+    },
+    {
+      "name": "city-reference:opportunities-viewport-390x844",
+      "status": "PASSED",
+      "detail": "RTL; width 390/390; controls in viewport; labels do not overlap"
+    },
+    {
+      "name": "city-reference:viewport-map-1920x1080",
+      "status": "PASSED",
+      "detail": "map card captured at desktop viewport"
+    },
+    {
+      "name": "city-reference:viewport-map-390x844",
+      "status": "PASSED",
+      "detail": "map canvas captured"
+    },
+    {
+      "name": "no-city-reference:login-and-national-catalog",
+      "status": "PASSED",
+      "detail": "revision-specific isolated UI active; levels=region,governorate"
+    },
+    {
+      "name": "no-city-reference:default-selector-labels",
+      "status": "PASSED",
+      "detail": "Region and Governorate defaults shown; City unavailable"
+    },
+    {
+      "name": "no-city-reference:region-governorate-without-city",
+      "status": "PASSED",
+      "detail": "City hidden/disabled; Region and Governorate work"
+    },
+    {
+      "name": "no-city-reference:no-city-invalid-request-absence",
+      "status": "PASSED",
+      "detail": "No /api/geography/options?level=city request was emitted"
+    },
+    {
+      "name": "no-city-reference:combined-filters-search-and-unique-masters",
+      "status": "PASSED",
+      "detail": "region+sector=28; governorate+status=19; governorate+source=1; search+geo=1"
+    },
+    {
+      "name": "no-city-reference:pagination-url-and-filter-state",
+      "status": "PASSED",
+      "detail": "filtered total 57; URL kept region_id"
+    },
+    {
+      "name": "no-city-reference:reset-defaults",
+      "status": "PASSED",
+      "detail": "Geographic selectors reset to all"
+    },
+    {
+      "name": "no-city-reference:csv-xlsx-browser-downloads",
+      "status": "PASSED",
+      "detail": "Four CSV and four XLSX files downloaded through the filtered Opportunities UI links; API/UI totals recorded for row-count parity"
+    },
+    {
+      "name": "no-city-reference:sorting-preserves-filters",
+      "status": "PASSED",
+      "detail": "Title sort applied and preserved Region, Governorate, and Status URL filters"
+    },
+    {
+      "name": "no-city-reference:national-dashboard-master-and-scope-semantics",
+      "status": "PASSED",
+      "detail": "unique=60; source rows=61; mapped=2; nationwide=1; unspecified=1"
+    },
+    {
+      "name": "no-city-reference:national-map-follows-region-filter",
+      "status": "PASSED",
+      "detail": "filtered table/map Master totals=38; URL region=TEST_REGION_01"
+    },
+    {
+      "name": "no-city-reference:map-popup-list-and-opportunity-detail",
+      "status": "PASSED",
+      "detail": "Popup Master IDs 619; detail opened from matching table row"
+    },
+    {
+      "name": "no-city-reference:national-dashboard-drilldown",
+      "status": "PASSED",
+      "detail": "Region summary button opened Opportunities with TEST_REGION_01 filter"
+    },
+    {
+      "name": "no-city-reference:national-map-excludes-broad-scope-and-has-points",
+      "status": "PASSED",
+      "detail": "points=2; mapped Masters=3; scopes={\"NATIONWIDE\":1,\"REGION_WIDE\":1,\"UNSPECIFIED\":1,\"SPECIFIC_LOCATION\":56,\"MULTIPLE_VERIFIED_LOCATIONS\":1}"
+    },
+    {
+      "name": "no-city-reference:leaflet-map-renders-markers-or-clusters",
+      "status": "PASSED",
+      "detail": "markers=1; clusters=0"
+    },
+    {
+      "name": "no-city-reference:map-title-reflects-current-scope",
+      "status": "PASSED",
+      "detail": ""
+    },
+    {
+      "name": "no-city-reference:viewport-1920x1080",
+      "status": "PASSED",
+      "detail": "RTL; width 1920/1920; controls in viewport; labels do not overlap"
+    },
+    {
+      "name": "no-city-reference:viewport-1440x900",
+      "status": "PASSED",
+      "detail": "RTL; width 1440/1440; controls in viewport; labels do not overlap"
+    },
+    {
+      "name": "no-city-reference:viewport-1366x768",
+      "status": "PASSED",
+      "detail": "RTL; width 1366/1366; controls in viewport; labels do not overlap"
+    },
+    {
+      "name": "no-city-reference:viewport-768x900",
+      "status": "PASSED",
+      "detail": "RTL; width 768/768; controls in viewport; labels do not overlap"
+    },
+    {
+      "name": "no-city-reference:viewport-390x844",
+      "status": "PASSED",
+      "detail": "RTL; width 390/390; controls in viewport; labels do not overlap"
+    },
+    {
+      "name": "no-city-reference:opportunities-viewport-1920x1080",
+      "status": "PASSED",
+      "detail": "RTL; width 1920/1920; controls in viewport; labels do not overlap"
+    },
+    {
+      "name": "no-city-reference:opportunities-viewport-1440x900",
+      "status": "PASSED",
+      "detail": "RTL; width 1440/1440; controls in viewport; labels do not overlap"
+    },
+    {
+      "name": "no-city-reference:opportunities-viewport-1366x768",
+      "status": "PASSED",
+      "detail": "RTL; width 1366/1366; controls in viewport; labels do not overlap"
+    },
+    {
+      "name": "no-city-reference:opportunities-viewport-768x900",
+      "status": "PASSED",
+      "detail": "RTL; width 768/768; controls in viewport; labels do not overlap"
+    },
+    {
+      "name": "no-city-reference:opportunities-viewport-390x844",
+      "status": "PASSED",
+      "detail": "RTL; width 390/390; controls in viewport; labels do not overlap"
+    },
+    {
+      "name": "no-city-reference:viewport-map-1920x1080",
+      "status": "PASSED",
+      "detail": "map card captured at desktop viewport"
+    },
+    {
+      "name": "no-city-reference:viewport-map-390x844",
+      "status": "PASSED",
+      "detail": "map canvas captured"
+    }
+  ],
+  "errors": [],
+  "http5xx": [],
+  "screenshots": [
+    "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\city-reference-dashboard-1920x1080.png",
+    "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\city-reference-dashboard-1366x768.png",
+    "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\city-reference-dashboard-390x844.png",
+    "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\city-reference-opportunities-1920x1080.png",
+    "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\city-reference-opportunities-1440x900.png",
+    "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\city-reference-opportunities-1366x768.png",
+    "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\city-reference-opportunities-768x900.png",
+    "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\city-reference-opportunities-390x844.png",
+    "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\city-reference-map-1920x1080.png",
+    "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\city-reference-map-390x844.png",
+    "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\no-city-reference-dashboard-1920x1080.png",
+    "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\no-city-reference-dashboard-1366x768.png",
+    "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\no-city-reference-dashboard-390x844.png",
+    "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\no-city-reference-opportunities-1920x1080.png",
+    "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\no-city-reference-opportunities-1440x900.png",
+    "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\no-city-reference-opportunities-1366x768.png",
+    "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\no-city-reference-opportunities-768x900.png",
+    "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\no-city-reference-opportunities-390x844.png",
+    "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\no-city-reference-map-1920x1080.png",
+    "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\no-city-reference-map-390x844.png"
+  ],
+  "exports": [
+    {
+      "variant": "city-reference",
+      "filter": "region",
+      "uiTotal": 57,
+      "apiTotal": 57,
+      "csvPath": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\city-reference-export-region.csv",
+      "xlsxPath": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\city-reference-export-region.xlsx"
+    },
+    {
+      "variant": "city-reference",
+      "filter": "governorate",
+      "uiTotal": 29,
+      "apiTotal": 29,
+      "csvPath": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\city-reference-export-governorate.csv",
+      "xlsxPath": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\city-reference-export-governorate.xlsx"
+    },
+    {
+      "variant": "city-reference",
+      "filter": "region-sector",
+      "uiTotal": 28,
+      "apiTotal": 28,
+      "csvPath": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\city-reference-export-region-sector.csv",
+      "xlsxPath": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\city-reference-export-region-sector.xlsx"
+    },
+    {
+      "variant": "city-reference",
+      "filter": "governorate-status",
+      "uiTotal": 20,
+      "apiTotal": 20,
+      "csvPath": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\city-reference-export-governorate-status.csv",
+      "xlsxPath": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\city-reference-export-governorate-status.xlsx"
+    },
+    {
+      "variant": "no-city-reference",
+      "filter": "region",
+      "uiTotal": 57,
+      "apiTotal": 57,
+      "csvPath": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\no-city-reference-export-region.csv",
+      "xlsxPath": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\no-city-reference-export-region.xlsx"
+    },
+    {
+      "variant": "no-city-reference",
+      "filter": "governorate",
+      "uiTotal": 28,
+      "apiTotal": 28,
+      "csvPath": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\no-city-reference-export-governorate.csv",
+      "xlsxPath": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\no-city-reference-export-governorate.xlsx"
+    },
+    {
+      "variant": "no-city-reference",
+      "filter": "region-sector",
+      "uiTotal": 28,
+      "apiTotal": 28,
+      "csvPath": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\no-city-reference-export-region-sector.csv",
+      "xlsxPath": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\no-city-reference-export-region-sector.xlsx"
+    },
+    {
+      "variant": "no-city-reference",
+      "filter": "governorate-status",
+      "uiTotal": 19,
+      "apiTotal": 19,
+      "csvPath": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\no-city-reference-export-governorate-status.csv",
+      "xlsxPath": "C:\\Sharakat Data Base\\docs\\validation\\deployment\\nationwide-geographic-expansion\\ui-evidence\\no-city-reference-export-governorate-status.xlsx"
+    }
+  ],
+  "observations": {
+    "city-reference:map-render": {
+      "mapMarkers": 1,
+      "clusters": 0
+    },
+    "city-reference:map-title": "خريطة الفرص الوطنية",
+    "1920x1080": {
+      "rtl": true,
+      "width": 1920,
+      "documentWidth": 1920,
+      "overflow": false,
+      "filterPanel": "#tableNationalGeoFilters",
+      "visibleControls": true,
+      "noTextOverlap": true,
+      "mapWidth": 0,
+      "chartCount": 5
+    },
+    "1440x900": {
+      "rtl": true,
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": false,
+      "filterPanel": "#tableNationalGeoFilters",
+      "visibleControls": true,
+      "noTextOverlap": true,
+      "mapWidth": 0,
+      "chartCount": 5
+    },
+    "1366x768": {
+      "rtl": true,
+      "width": 1366,
+      "documentWidth": 1366,
+      "overflow": false,
+      "filterPanel": "#tableNationalGeoFilters",
+      "visibleControls": true,
+      "noTextOverlap": true,
+      "mapWidth": 0,
+      "chartCount": 5
+    },
+    "768x900": {
+      "rtl": true,
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": false,
+      "filterPanel": "#tableNationalGeoFilters",
+      "visibleControls": true,
+      "noTextOverlap": true,
+      "mapWidth": 0,
+      "chartCount": 5
+    },
+    "390x844": {
+      "rtl": true,
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": false,
+      "filterPanel": "#tableNationalGeoFilters",
+      "visibleControls": true,
+      "noTextOverlap": true,
+      "mapWidth": 0,
+      "chartCount": 5
+    },
+    "no-city-reference:map-render": {
+      "mapMarkers": 1,
+      "clusters": 0
+    },
+    "no-city-reference:map-title": "خريطة الفرص الوطنية"
+  },
+  "expectedAuth401": 2,
+  "errorCount": 0,
+  "http5xxCount": 0
+}

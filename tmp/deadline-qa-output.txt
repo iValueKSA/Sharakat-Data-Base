@@ -1,0 +1,24 @@
+{
+  "api": {
+    "date": "2026-10-14",
+    "total": 289,
+    "active": 283,
+    "historical": 6,
+    "deadline30": 111,
+    "buckets": {
+      "7d": 43,
+      "8_14d": 25,
+      "15_30d": 43,
+      "over_30d": 158
+    }
+  },
+  "kpi": {
+    "url": "http://localhost:8080/?view=opportunities&lifecycle=active&deadline_after=2026-10-14&deadline_before=2026-11-13",
+    "count": "عرض 1–50 من 111 فرصة"
+  },
+  "bucket": {
+    "url": "http://localhost:8080/?view=opportunities&lifecycle=active&deadline_after=2026-10-14&deadline_before=2026-10-21",
+    "count": "عرض 1–43 من 43 فرصة"
+  },
+  "failures": []
+}

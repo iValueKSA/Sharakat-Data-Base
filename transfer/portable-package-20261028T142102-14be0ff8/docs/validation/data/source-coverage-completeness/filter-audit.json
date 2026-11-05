@@ -1,0 +1,142 @@
+{
+  "captured": "2026-10-20T14:18:03+03:00",
+  "sources": [
+    {
+      "source": "furas",
+      "filters": [
+        {
+          "name": "CITY_ID IN 11 configured Al-Ahsa city IDs",
+          "classification": "REQUIRED_SCOPE_FILTER",
+          "review": "city list previously verified in public layer"
+        },
+        {
+          "name": "OPPORTUNITYACTIVESTATUS=Announced",
+          "classification": "ACTIVE_LISTING_FILTER",
+          "review": "matches current announced status"
+        },
+        {
+          "name": "LASTRFPSELLDATE >= local today",
+          "classification": "POTENTIAL_OVER_RESTRICTIVE_DATE_FILTER",
+          "review": "can exclude records with a past/missing sale deadline; variants could not be counted because configured ArcGIS host DNS failed during audit"
+        },
+        {
+          "name": "QualifyingOpportunity=0",
+          "classification": "UNRESOLVED_ENUM_FILTER",
+          "review": "field semantics/count with values 0 and 1 not verified in this audit"
+        }
+      ],
+      "pagination": "ID-list full enumeration then batches of 100; 164/164 complete",
+      "status": "INCOMPLETE_FILTER_SEMANTICS"
+    },
+    {
+      "source": "invest-saudi",
+      "filters": [
+        {
+          "name": "dataset endpoint and page index",
+          "classification": "SAFE",
+          "review": "no Al-Ahsa restriction during collection; national rows preserved"
+        },
+        {
+          "name": "location qualification",
+          "classification": "SAFE_SCREEN_AFTER_COLLECTION",
+          "review": "structured and explicit evidence accepted; text-only candidates retained for review"
+        }
+      ],
+      "status": "PASS_ENUMERATION"
+    },
+    {
+      "source": "alahsa-opportunities",
+      "filters": [
+        {
+          "name": "public listing category/page arguments",
+          "classification": "PUBLIC_LISTING_ENUMERATION",
+          "review": "reported total 103 reconciled"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "source": "ahda",
+      "filters": [
+        {
+          "name": "sitemap/page type and opportunity semantic checks",
+          "classification": "DEFINED_SCOPE",
+          "review": "8/215 pages qualify; no page errors"
+        }
+      ],
+      "status": "PASS_DEFINED_SCOPE"
+    },
+    {
+      "source": "ncp",
+      "filters": [
+        {
+          "name": "English news archive",
+          "classification": "CANONICAL_PUBLIC_SCOPE",
+          "review": "46 articles; Arabic mirror supplementary and latest final page has maintenance response"
+        },
+        {
+          "name": "private investor API",
+          "classification": "EXCLUDED",
+          "review": "private RFC1918 origin not requested"
+        }
+      ],
+      "status": "PASS_DEFINED_SCOPE_WITH_LIMIT"
+    },
+    {
+      "source": "kfu",
+      "filters": [
+        {
+          "name": "public announcement listing and opportunity semantics",
+          "classification": "DEFINED_SCOPE",
+          "review": "latest successful scan returned 2 IDs; 3 local rows await missing threshold"
+        }
+      ],
+      "status": "RECONCILIATION_OPEN"
+    },
+    {
+      "source": "nhc",
+      "filters": [
+        {
+          "name": "unauthenticated public routes",
+          "classification": "SAFE",
+          "review": "6/6 return 403; no access control bypass"
+        }
+      ],
+      "status": "LIMITED_PUBLIC_ACCESS"
+    },
+    {
+      "source": "pif",
+      "filters": [
+        {
+          "name": "discoverable public routes and sitemap",
+          "classification": "SAFE",
+          "review": "no guessed filters, no private endpoints, no index-only ingestion"
+        }
+      ],
+      "status": "LIMITED_PUBLIC_INVENTORY"
+    },
+    {
+      "source": "modon",
+      "filters": [
+        {
+          "name": "public catalog/reference scope",
+          "classification": "LIMITED",
+          "review": "no complete live availability roster; current request TLS failed"
+        }
+      ],
+      "status": "CURRENT_FETCH_UNAVAILABLE"
+    },
+    {
+      "source": "mwan",
+      "filters": [
+        {
+          "name": "published investment project scope",
+          "classification": "DEFINED_SCOPE",
+          "review": "current fetch TLS failed; last success Oct 12"
+        }
+      ],
+      "status": "CURRENT_FETCH_UNAVAILABLE"
+    }
+  ],
+  "note": "An unresolved Furas filter contract prevents a complete claim that filter-related false negatives have been ruled out."
+}

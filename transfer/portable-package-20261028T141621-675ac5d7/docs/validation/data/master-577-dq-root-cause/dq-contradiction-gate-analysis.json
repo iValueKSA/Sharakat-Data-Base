@@ -1,0 +1,23 @@
+{
+  "gate_key": "P2_MEDIUM_INFERENCE_WITH_STRONG_CONTRADICTION",
+  "domain": "TAXONOMY",
+  "before_condition": "classification_origin == INFERRED_RULE_MEDIUM AND (negative_evidence OR float(confidence_margin OR 0) < 3.0)",
+  "null_handling": "NULL/absent confidence_margin becomes 0.0 through (value or 0), then is treated as contradiction.",
+  "top_score_handling": "Ignored",
+  "second_score_handling": "Ignored",
+  "missing_competing_sector_handling": "Not checked",
+  "single_signal_rules": "False-fail when margin omitted/null",
+  "deterministic_single_sector_rules": "False-fail when margin omitted/null",
+  "dq_gate_null_handling": "NULL -> 0 -> margin below 3",
+  "dq_gate_can_false_fail_on_missing_margin_before": true,
+  "corrected_condition": "Fail only when classifier negative_evidence exists, a competing-sector signal is explicitly strong, or a distinct second_sector_id exists and its actual/reconstructed scored margin is below 3. Weak mentions and missing margin alone are not contradictions.",
+  "provenance_gate": "MEDIUM_INFERENCE_PROVENANCE_INTEGRITY",
+  "provenance_invariant": "Require core provenance; require scores/margin only when a distinct competing sector is recorded. Legacy v1.0.0 single-candidate medium rows infer NOT_APPLICABLE from the engine apply contract.",
+  "contradiction_gate_only_tests_contradiction": true,
+  "dq_gate_can_false_fail_on_missing_margin_after": false,
+  "changes": [
+    "app/data_quality.py: separate contradiction evidence from provenance integrity",
+    "app/sector_inference_relaxed.py: represent single-candidate margin as NOT_APPLICABLE and bump engine version",
+    "app/service.py: persist score and margin applicability provenance when an inference is applied"
+  ]
+}

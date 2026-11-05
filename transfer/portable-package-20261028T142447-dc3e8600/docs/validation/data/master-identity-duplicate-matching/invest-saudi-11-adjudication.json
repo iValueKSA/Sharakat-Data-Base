@@ -1,0 +1,534 @@
+{
+  "reviewed_at_utc": "2026-10-20 10:17:13.956362",
+  "candidate_count": 11,
+  "classification_counts": {
+    "A_OPPORTUNITY_LOCATION_CONFIRMED_AL_AHSA": 11,
+    "B_MULTI_LOCATION_INCLUDES_AL_AHSA": 0,
+    "C_MENTION_ONLY_NOT_PROJECT_LOCATION": 0,
+    "D_INSUFFICIENT_EVIDENCE_REVIEW": 0
+  },
+  "records": [
+    {
+      "source_opportunity_row_id": 283,
+      "source_key": "invest-saudi",
+      "source_external_id": "investsaudi:50952",
+      "official_invest_saudi_id": "50952",
+      "official_reference": null,
+      "master_id": 328,
+      "title": "Peri-Urban Distripark in Al-Ahsa",
+      "full_raw_description": "A peri-urban distripark in Al Ahsa serving food & beverage, agriculture, agri-inputs, and regional food distribution. The zone will provide cold and dry storage, farm-gate aggregation, sorting, grading, packing, labeling, cross-docking, inventory pooling, and regional dispatch for farms, food processors, wholesalers, retailers, HORECA suppliers, and 3PL operators across Al Ahsa, Eastern Province, Riyadh, and GCC corridors.",
+      "raw_location": "Eastern province",
+      "structured_location": "",
+      "city": null,
+      "governorate": null,
+      "region": "Eastern province",
+      "coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "owner": "وزارة الاستثمار",
+      "publisher": "Invest Saudi / Ministry of Investment source listing",
+      "source_url": "https://investsaudi.sa/backend/opportunity/peri-urban-distripark-in-al-ahsa/",
+      "brochure": {
+        "url": null,
+        "summary": "No linked brochure; adjudication relies on official title and full description."
+      },
+      "prior_location_review_id": 1,
+      "classification": "A. OPPORTUNITY_LOCATION_CONFIRMED_AL_AHSA",
+      "decision_evidence": "Official title and full description place the peri-urban distripark facility in Al-Ahsa. Eastern Province/Riyadh/GCC describes service corridors, not alternate sites. No brochure was supplied.",
+      "previously_unqualified_reason": "Previously persisted as qualified_location=false with DESCRIPTION_ONLY_EXPLICIT_AL_AHSA and a generic verify-site review reason.",
+      "matching_result": "No exact official reference or same-site identity match in the current Master set; title similarity alone was not used. New Master created by existing admin location-review acceptance workflow.",
+      "final_qualified_location": true,
+      "final_location_detection_method": "ADMIN_LOCATION_REVIEW",
+      "original_raw_facts_preserved": true,
+      "raw_admin_fields_changed": [
+        "location_confidence_score",
+        "location_detection_method",
+        "location_evidence",
+        "qualified_location"
+      ]
+    },
+    {
+      "source_opportunity_row_id": 466,
+      "source_key": "invest-saudi",
+      "source_external_id": "investsaudi:44773",
+      "official_invest_saudi_id": "44773",
+      "official_reference": null,
+      "master_id": 329,
+      "title": "Al-Ahsa National Park for ecotourism assets and activities",
+      "full_raw_description": "Developing an ecotourism site within Al-Ahsa National Park (e.g., camps, museum, etc.)\r\nEnvironmental services\r\nProposed investment site within Al-Ahsa National Park for ecotourism assets and activities",
+      "raw_location": "Eastren",
+      "structured_location": "",
+      "city": null,
+      "governorate": null,
+      "region": "Eastren",
+      "coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "owner": "وزارة الاستثمار",
+      "publisher": "Invest Saudi / Ministry of Investment source listing",
+      "source_url": "https://investsaudi.sa/backend/opportunity/al-ahsa-national-park/",
+      "brochure": {
+        "file": "tmp/pdfs/envi-004.pdf",
+        "summary": "Location (Region): Al-Ahsa Governorate, Eastern Region; proposed site within Al-Ahsa National Park."
+      },
+      "prior_location_review_id": 2,
+      "classification": "A. OPPORTUNITY_LOCATION_CONFIRMED_AL_AHSA",
+      "decision_evidence": "The source description places the proposed ecotourism asset inside Al-Ahsa National Park. Official Envi-004 brochure identifies Location (Region): Al-Ahsa Governorate, Eastern Region and describes the existing on-site park/vegetation.",
+      "previously_unqualified_reason": "Previously persisted as qualified_location=false with DESCRIPTION_ONLY_EXPLICIT_AL_AHSA and a generic verify-site review reason.",
+      "matching_result": "No exact official reference or same-site identity match in the current Master set; title similarity alone was not used. New Master created by existing admin location-review acceptance workflow.",
+      "final_qualified_location": true,
+      "final_location_detection_method": "ADMIN_LOCATION_REVIEW",
+      "original_raw_facts_preserved": true,
+      "raw_admin_fields_changed": [
+        "location_confidence_score",
+        "location_detection_method",
+        "location_evidence",
+        "qualified_location"
+      ]
+    },
+    {
+      "source_opportunity_row_id": 671,
+      "source_key": "invest-saudi",
+      "source_external_id": "investsaudi:33066",
+      "official_invest_saudi_id": "33066",
+      "official_reference": null,
+      "master_id": 330,
+      "title": "Al-Ahsa Private International Early Years Schools",
+      "full_raw_description": "Invest in KSA’s education sector by establishing high-quality, Private International Early Years centers in Al-Ahsa",
+      "raw_location": "",
+      "structured_location": "",
+      "city": null,
+      "governorate": null,
+      "region": "",
+      "coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "owner": "وزارة الاستثمار",
+      "publisher": "Invest Saudi / Ministry of Investment source listing",
+      "source_url": "https://investsaudi.sa/backend/opportunity/al-ahsa-private-international-early-years-schools/",
+      "brochure": {
+        "file": "tmp/pdfs/early-years.pdf",
+        "summary": "Title matches; body is a generic placeholder and adds no location evidence."
+      },
+      "prior_location_review_id": 5,
+      "classification": "A. OPPORTUNITY_LOCATION_CONFIRMED_AL_AHSA",
+      "decision_evidence": "Official title and description propose establishing private international early-years centers in Al-Ahsa. The brochure title matches, but its body is a generic template and is not relied on for geographic evidence.",
+      "previously_unqualified_reason": "Previously persisted as qualified_location=false with DESCRIPTION_ONLY_EXPLICIT_AL_AHSA and a generic verify-site review reason.",
+      "matching_result": "No exact official reference or same-site identity match in the current Master set; title similarity alone was not used. New Master created by existing admin location-review acceptance workflow.",
+      "final_qualified_location": true,
+      "final_location_detection_method": "ADMIN_LOCATION_REVIEW",
+      "original_raw_facts_preserved": true,
+      "raw_admin_fields_changed": [
+        "location_confidence_score",
+        "location_detection_method",
+        "location_evidence",
+        "qualified_location"
+      ]
+    },
+    {
+      "source_opportunity_row_id": 1038,
+      "source_key": "invest-saudi",
+      "source_external_id": "investsaudi:32289",
+      "official_invest_saudi_id": "32289",
+      "official_reference": null,
+      "master_id": 331,
+      "title": "Al Ahsaa Independent Strategic Water Reservoir (ISWR)",
+      "full_raw_description": "The project consists in the development of strategic potable water reservoirs located in Al Ahsaa and SWPC intends to procure Asir ISWR using a Public-Private Partnership (PPP) Model",
+      "raw_location": "Sharqia",
+      "structured_location": "",
+      "city": null,
+      "governorate": null,
+      "region": "Sharqia",
+      "coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "owner": "وزارة الاستثمار",
+      "publisher": "Invest Saudi / Ministry of Investment source listing",
+      "source_url": "https://investsaudi.sa/backend/opportunity/al-ahsaa-independent-strategic-water-reservoir-iswr/",
+      "brochure": {
+        "file": "tmp/pdfs/iswr.pdf",
+        "summary": "Extracted text contains only the opportunity title; no additional location facts."
+      },
+      "prior_location_review_id": 9,
+      "classification": "A. OPPORTUNITY_LOCATION_CONFIRMED_AL_AHSA",
+      "decision_evidence": "Official title identifies Al-Ahsaa ISWR and description says the potable-water reservoirs are located in Al-Ahsaa; the separate Asir ISWR clause names another procurement. Structured region is Sharqia. Brochure is title-only and not relied on for geography.",
+      "previously_unqualified_reason": "Previously persisted as qualified_location=false with DESCRIPTION_ONLY_EXPLICIT_AL_AHSA and a generic verify-site review reason.",
+      "matching_result": "No exact official reference or same-site identity match in the current Master set; title similarity alone was not used. New Master created by existing admin location-review acceptance workflow.",
+      "final_qualified_location": true,
+      "final_location_detection_method": "ADMIN_LOCATION_REVIEW",
+      "original_raw_facts_preserved": true,
+      "raw_admin_fields_changed": [
+        "location_confidence_score",
+        "location_detection_method",
+        "location_evidence",
+        "qualified_location"
+      ]
+    },
+    {
+      "source_opportunity_row_id": 1166,
+      "source_key": "invest-saudi",
+      "source_external_id": "investsaudi:32430",
+      "official_invest_saudi_id": "32430",
+      "official_reference": null,
+      "master_id": 332,
+      "title": "Alahsa intracity Bus Project",
+      "full_raw_description": "Opportunity for best-in-class intracity bus service providers with operational excellence, improved safety standards resulting in top-class quality services for all residents, tourists and beneficiaries in Alahsa.",
+      "raw_location": "Sharqia",
+      "structured_location": "",
+      "city": null,
+      "governorate": null,
+      "region": "Sharqia",
+      "coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "owner": "وزارة الاستثمار",
+      "publisher": "Invest Saudi / Ministry of Investment source listing",
+      "source_url": "https://investsaudi.sa/backend/opportunity/alahsa-intracity-bus-project/",
+      "brochure": {
+        "file": "tmp/pdfs/bus-project.pdf",
+        "summary": "Title matches; body is a generic placeholder and adds no location evidence."
+      },
+      "prior_location_review_id": 10,
+      "classification": "A. OPPORTUNITY_LOCATION_CONFIRMED_AL_AHSA",
+      "decision_evidence": "Official title identifies the Alahsa intracity bus project and description scopes service to residents, tourists, and beneficiaries in Alahsa. Brochure title matches, but body is a generic template and is not relied on for geography.",
+      "previously_unqualified_reason": "Previously persisted as qualified_location=false with DESCRIPTION_ONLY_EXPLICIT_AL_AHSA and a generic verify-site review reason.",
+      "matching_result": "No exact official reference or same-site identity match in the current Master set; title similarity alone was not used. New Master created by existing admin location-review acceptance workflow.",
+      "final_qualified_location": true,
+      "final_location_detection_method": "ADMIN_LOCATION_REVIEW",
+      "original_raw_facts_preserved": true,
+      "raw_admin_fields_changed": [
+        "location_confidence_score",
+        "location_detection_method",
+        "location_evidence",
+        "qualified_location"
+      ]
+    },
+    {
+      "source_opportunity_row_id": 1167,
+      "source_key": "invest-saudi",
+      "source_external_id": "investsaudi:32429",
+      "official_invest_saudi_id": "32429",
+      "official_reference": null,
+      "master_id": 333,
+      "title": "AlAhsa Bus Stop Stations Project",
+      "full_raw_description": "Opportunity for establishing bus stop stations in Al-Ahsa supporting the public transport service in the city.",
+      "raw_location": "Sharqia",
+      "structured_location": "",
+      "city": null,
+      "governorate": null,
+      "region": "Sharqia",
+      "coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "owner": "وزارة الاستثمار",
+      "publisher": "Invest Saudi / Ministry of Investment source listing",
+      "source_url": "https://investsaudi.sa/backend/opportunity/alahsa-bus-stop-stations-project/",
+      "brochure": {
+        "file": "tmp/pdfs/bus-stations.pdf",
+        "summary": "Title matches; body is a generic placeholder and adds no location evidence."
+      },
+      "prior_location_review_id": 11,
+      "classification": "A. OPPORTUNITY_LOCATION_CONFIRMED_AL_AHSA",
+      "decision_evidence": "Official title identifies AlAhsa bus-stop stations and description proposes stations in Al-Ahsa supporting transit in the city. Brochure title matches, but body is a generic template and is not relied on for geography.",
+      "previously_unqualified_reason": "Previously persisted as qualified_location=false with DESCRIPTION_ONLY_EXPLICIT_AL_AHSA and a generic verify-site review reason.",
+      "matching_result": "No exact official reference or same-site identity match in the current Master set; title similarity alone was not used. New Master created by existing admin location-review acceptance workflow.",
+      "final_qualified_location": true,
+      "final_location_detection_method": "ADMIN_LOCATION_REVIEW",
+      "original_raw_facts_preserved": true,
+      "raw_admin_fields_changed": [
+        "location_confidence_score",
+        "location_detection_method",
+        "location_evidence",
+        "qualified_location"
+      ]
+    },
+    {
+      "source_opportunity_row_id": 2358,
+      "source_key": "invest-saudi",
+      "source_external_id": "investsaudi:54961",
+      "official_invest_saudi_id": "54961",
+      "official_reference": "06-26-183737-46016",
+      "master_id": 334,
+      "title": "مزايدة تأجير موقع صراف الي بمستشفى الولادة والأطفال بالأحساء",
+      "full_raw_description": "مزايدة تأجير موقع صراف الي بمستشفى الولادة والأطفال بالأحساء",
+      "raw_location": "Municipality",
+      "structured_location": {
+        "latitude": null,
+        "longitude": null,
+        "neighborhood": "",
+        "siteArea": "2",
+        "siteDescription": "",
+        "street": ""
+      },
+      "city": null,
+      "governorate": null,
+      "region": "",
+      "coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "owner": "Municipality",
+      "publisher": "Invest Saudi / Ministry of Investment source listing",
+      "source_url": "https://investsaudi.sa/investment-opportunities",
+      "brochure": {
+        "url": null,
+        "summary": "No linked brochure; adjudication relies on official title and full description."
+      },
+      "prior_location_review_id": 12,
+      "classification": "A. OPPORTUNITY_LOCATION_CONFIRMED_AL_AHSA",
+      "decision_evidence": "Official opportunity title/description names Al-Ahsa Maternity and Children's Hospital as the ATM lease site. Source payload contains Furas opportunity 06-26-183737-46016 and its Furas link. No coordinates; siteArea=2 has no unit. No matching current Master/reference.",
+      "previously_unqualified_reason": "Previously persisted as qualified_location=false with DESCRIPTION_ONLY_EXPLICIT_AL_AHSA and a generic verify-site review reason.",
+      "matching_result": "No exact official reference or same-site identity match in the current Master set; title similarity alone was not used. New Master created by existing admin location-review acceptance workflow.",
+      "final_qualified_location": true,
+      "final_location_detection_method": "ADMIN_LOCATION_REVIEW",
+      "original_raw_facts_preserved": true,
+      "raw_admin_fields_changed": [
+        "location_confidence_score",
+        "location_detection_method",
+        "location_evidence",
+        "qualified_location"
+      ]
+    },
+    {
+      "source_opportunity_row_id": 2359,
+      "source_key": "invest-saudi",
+      "source_external_id": "investsaudi:54962",
+      "official_invest_saudi_id": "54962",
+      "official_reference": "06-26-183737-46015",
+      "master_id": 335,
+      "title": "مزايدة تأجير موقع صراف الي بمستشفى الأمير سعود بن جلوي بالأحساء",
+      "full_raw_description": "مزايدة تأجير موقع صراف الي بمستشفى الأمير سعود بن جلوي بالأحساء",
+      "raw_location": "Municipality",
+      "structured_location": {
+        "latitude": null,
+        "longitude": null,
+        "neighborhood": "",
+        "siteArea": "2",
+        "siteDescription": "",
+        "street": ""
+      },
+      "city": null,
+      "governorate": null,
+      "region": "",
+      "coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "owner": "Municipality",
+      "publisher": "Invest Saudi / Ministry of Investment source listing",
+      "source_url": "https://investsaudi.sa/investment-opportunities",
+      "brochure": {
+        "url": null,
+        "summary": "No linked brochure; adjudication relies on official title and full description."
+      },
+      "prior_location_review_id": 13,
+      "classification": "A. OPPORTUNITY_LOCATION_CONFIRMED_AL_AHSA",
+      "decision_evidence": "Official opportunity title/description names Prince Saud bin Jalawi Hospital in Al-Ahsa as the ATM lease site. Source payload contains Furas opportunity 06-26-183737-46015 and its Furas link. No coordinates; siteArea=2 has no unit. No matching current Master/reference.",
+      "previously_unqualified_reason": "Previously persisted as qualified_location=false with DESCRIPTION_ONLY_EXPLICIT_AL_AHSA and a generic verify-site review reason.",
+      "matching_result": "No exact official reference or same-site identity match in the current Master set; title similarity alone was not used. New Master created by existing admin location-review acceptance workflow.",
+      "final_qualified_location": true,
+      "final_location_detection_method": "ADMIN_LOCATION_REVIEW",
+      "original_raw_facts_preserved": true,
+      "raw_admin_fields_changed": [
+        "location_confidence_score",
+        "location_detection_method",
+        "location_evidence",
+        "qualified_location"
+      ]
+    },
+    {
+      "source_opportunity_row_id": 2360,
+      "source_key": "invest-saudi",
+      "source_external_id": "investsaudi:54960",
+      "official_invest_saudi_id": "54960",
+      "official_reference": "06-26-183737-46017",
+      "master_id": 336,
+      "title": "مزايدة تأجير موقع صراف الي بمستشفى الملك فيصل بالأحساء",
+      "full_raw_description": "مزايدة تأجير موقع صراف الي بمستشفى الملك فيصل بالأحساء",
+      "raw_location": "Municipality",
+      "structured_location": {
+        "latitude": null,
+        "longitude": null,
+        "neighborhood": "",
+        "siteArea": "2",
+        "siteDescription": "",
+        "street": ""
+      },
+      "city": null,
+      "governorate": null,
+      "region": "",
+      "coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "owner": "Municipality",
+      "publisher": "Invest Saudi / Ministry of Investment source listing",
+      "source_url": "https://investsaudi.sa/investment-opportunities",
+      "brochure": {
+        "url": null,
+        "summary": "No linked brochure; adjudication relies on official title and full description."
+      },
+      "prior_location_review_id": 14,
+      "classification": "A. OPPORTUNITY_LOCATION_CONFIRMED_AL_AHSA",
+      "decision_evidence": "Official opportunity title/description names King Faisal Hospital in Al-Ahsa as the ATM lease site. Source payload contains Furas opportunity 06-26-183737-46017 and its Furas link. No coordinates; siteArea=2 has no unit. No matching current Master/reference.",
+      "previously_unqualified_reason": "Previously persisted as qualified_location=false with DESCRIPTION_ONLY_EXPLICIT_AL_AHSA and a generic verify-site review reason.",
+      "matching_result": "No exact official reference or same-site identity match in the current Master set; title similarity alone was not used. New Master created by existing admin location-review acceptance workflow.",
+      "final_qualified_location": true,
+      "final_location_detection_method": "ADMIN_LOCATION_REVIEW",
+      "original_raw_facts_preserved": true,
+      "raw_admin_fields_changed": [
+        "location_confidence_score",
+        "location_detection_method",
+        "location_evidence",
+        "qualified_location"
+      ]
+    },
+    {
+      "source_opportunity_row_id": 2361,
+      "source_key": "invest-saudi",
+      "source_external_id": "investsaudi:54959",
+      "official_invest_saudi_id": "54959",
+      "official_reference": "06-26-183737-46018",
+      "master_id": 337,
+      "title": "مزايدة تأجير موقع صراف الي بمستشفى العمران العام بالأحساء",
+      "full_raw_description": "مزايدة تأجير موقع صراف الي بمستشفى العمران العام بالأحساء",
+      "raw_location": "Municipality",
+      "structured_location": {
+        "latitude": null,
+        "longitude": null,
+        "neighborhood": "",
+        "siteArea": "2",
+        "siteDescription": "",
+        "street": ""
+      },
+      "city": null,
+      "governorate": null,
+      "region": "",
+      "coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "owner": "Municipality",
+      "publisher": "Invest Saudi / Ministry of Investment source listing",
+      "source_url": "https://investsaudi.sa/investment-opportunities",
+      "brochure": {
+        "url": null,
+        "summary": "No linked brochure; adjudication relies on official title and full description."
+      },
+      "prior_location_review_id": 15,
+      "classification": "A. OPPORTUNITY_LOCATION_CONFIRMED_AL_AHSA",
+      "decision_evidence": "Official opportunity title/description names Al-Omran General Hospital in Al-Ahsa as the ATM lease site. Source payload contains Furas opportunity 06-26-183737-46018 and its Furas link. No coordinates; siteArea=2 has no unit. No matching current Master/reference.",
+      "previously_unqualified_reason": "Previously persisted as qualified_location=false with DESCRIPTION_ONLY_EXPLICIT_AL_AHSA and a generic verify-site review reason.",
+      "matching_result": "No exact official reference or same-site identity match in the current Master set; title similarity alone was not used. New Master created by existing admin location-review acceptance workflow.",
+      "final_qualified_location": true,
+      "final_location_detection_method": "ADMIN_LOCATION_REVIEW",
+      "original_raw_facts_preserved": true,
+      "raw_admin_fields_changed": [
+        "location_confidence_score",
+        "location_detection_method",
+        "location_evidence",
+        "qualified_location"
+      ]
+    },
+    {
+      "source_opportunity_row_id": 2362,
+      "source_key": "invest-saudi",
+      "source_external_id": "investsaudi:54958",
+      "official_invest_saudi_id": "54958",
+      "official_reference": "06-26-183737-46019",
+      "master_id": 338,
+      "title": "مزايدة تأجير موقع صراف الي بمستشفى الصحة النفسية بالأحساء",
+      "full_raw_description": "مزايدة تأجير موقع صراف الي بمستشفى الصحة النفسية بالأحساء",
+      "raw_location": "Municipality",
+      "structured_location": {
+        "latitude": null,
+        "longitude": null,
+        "neighborhood": "",
+        "siteArea": "2",
+        "siteDescription": "",
+        "street": ""
+      },
+      "city": null,
+      "governorate": null,
+      "region": "",
+      "coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "owner": "Municipality",
+      "publisher": "Invest Saudi / Ministry of Investment source listing",
+      "source_url": "https://investsaudi.sa/investment-opportunities",
+      "brochure": {
+        "url": null,
+        "summary": "No linked brochure; adjudication relies on official title and full description."
+      },
+      "prior_location_review_id": 16,
+      "classification": "A. OPPORTUNITY_LOCATION_CONFIRMED_AL_AHSA",
+      "decision_evidence": "Official opportunity title/description names the Mental Health Hospital in Al-Ahsa as the ATM lease site. Source payload contains Furas opportunity 06-26-183737-46019 and its Furas link. No coordinates; siteArea=2 has no unit. No matching current Master/reference.",
+      "previously_unqualified_reason": "Previously persisted as qualified_location=false with DESCRIPTION_ONLY_EXPLICIT_AL_AHSA and a generic verify-site review reason.",
+      "matching_result": "No exact official reference or same-site identity match in the current Master set; title similarity alone was not used. New Master created by existing admin location-review acceptance workflow.",
+      "final_qualified_location": true,
+      "final_location_detection_method": "ADMIN_LOCATION_REVIEW",
+      "original_raw_facts_preserved": true,
+      "raw_admin_fields_changed": [
+        "location_confidence_score",
+        "location_detection_method",
+        "location_evidence",
+        "qualified_location"
+      ]
+    }
+  ],
+  "additional_invest_saudi_text_match_601": {
+    "source_record_id": 601,
+    "classification": "D_INSUFFICIENT_EVIDENCE_REVIEW",
+    "qualified_location": false,
+    "master_id": null,
+    "review_id": 26,
+    "status": "PENDING",
+    "reason": "Structured location conflicts with a multi-city title; verify a project/site in Al-Ahsa.",
+    "evidence": "INSUFFICIENT_EVIDENCE_REVIEW. The title lists Al-Ahsa among several city venues, but the structured region is Al Madinah and the referenced PDF is a generic placeholder with no populated location or opportunity details. Do not infer an Al-Ahsa asset from the city list alone."
+  },
+  "pre_existing_invest_saudi_unlinked_location_reviews_outside_the_11": [
+    {
+      "review_id": 3,
+      "source_record_id": 517,
+      "source_opportunity_id": "investsaudi:33104",
+      "source_title": "Date Experience in Al Hasa",
+      "source_key": "invest-saudi"
+    },
+    {
+      "review_id": 4,
+      "source_record_id": 524,
+      "source_opportunity_id": "investsaudi:32303",
+      "source_title": "Activation of Al-Uqair Port Heritage Site",
+      "source_key": "invest-saudi"
+    },
+    {
+      "review_id": 6,
+      "source_record_id": 896,
+      "source_opportunity_id": "investsaudi:32630",
+      "source_title": "Ras Al Khair – Khafji – Hafr Al Batin transmission line project water transmission system (WTS)",
+      "source_key": "invest-saudi"
+    },
+    {
+      "review_id": 7,
+      "source_record_id": 897,
+      "source_opportunity_id": "investsaudi:33668",
+      "source_title": "Tabuk – Al Ula transmission line project water transmission system (WTS)",
+      "source_key": "invest-saudi"
+    },
+    {
+      "review_id": 8,
+      "source_record_id": 898,
+      "source_opportunity_id": "investsaudi:33022",
+      "source_title": "Shuqaiq (SHQ) – Jazan (JAZ) phase 4 transmission line project water transmission system (WTS)",
+      "source_key": "invest-saudi"
+    }
+  ]
+}

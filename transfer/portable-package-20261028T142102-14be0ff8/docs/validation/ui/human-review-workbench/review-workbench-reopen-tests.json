@@ -1,0 +1,73 @@
+{
+  "captured_at": "2026-10-22T14:03:38+03:00",
+  "suite": "Governed reopen",
+  "status": "PASSED",
+  "mapped_scenarios": 10,
+  "pytest_result": "45 passed / 0 failed",
+  "full_regression_result": "438 passed / 0 failed",
+  "environment": "isolated synthetic SQLite; no live review mutation",
+  "suite_note": "Coverage references from the focused workbench suite; browser flow confirms reopen and re-resolution end to end.",
+  "scenarios": [
+    {
+      "id": "REOPEN-01",
+      "scenario": "Resolved reviews expose reopen preview when eligible",
+      "status": "PASS",
+      "evidence": "test_reopen_preview_and_governed_reopen_preserve_resolution_history"
+    },
+    {
+      "id": "REOPEN-02",
+      "scenario": "Reopen preview includes current version and prior decision context",
+      "status": "PASS",
+      "evidence": "test_reopen_preview_and_governed_reopen_preserve_resolution_history"
+    },
+    {
+      "id": "REOPEN-03",
+      "scenario": "Missing legacy actor/time/reason is stated without fabrication",
+      "status": "PASS",
+      "evidence": "test_legacy_resolved_review_timeline_marks_missing_audit_without_fabrication"
+    },
+    {
+      "id": "REOPEN-04",
+      "scenario": "Approved reopen reason is required",
+      "status": "PASS",
+      "evidence": "test_reopen_rejects_missing_or_unapproved_reason_without_mutating_status"
+    },
+    {
+      "id": "REOPEN-05",
+      "scenario": "Optional analyst note is preserved when provided",
+      "status": "PASS",
+      "evidence": "test_reopen_preview_and_governed_reopen_preserve_resolution_history"
+    },
+    {
+      "id": "REOPEN-06",
+      "scenario": "Missing version token is rejected",
+      "status": "PASS",
+      "evidence": "test_reopen_requires_authorized_role_valid_status_reason_and_current_version"
+    },
+    {
+      "id": "REOPEN-07",
+      "scenario": "Stale version token is rejected",
+      "status": "PASS",
+      "evidence": "test_reopen_requires_authorized_role_valid_status_reason_and_current_version"
+    },
+    {
+      "id": "REOPEN-08",
+      "scenario": "Already reopened or non-resolved review cannot be reopened",
+      "status": "PASS",
+      "evidence": "test_reopen_requires_authorized_role_valid_status_reason_and_current_version"
+    },
+    {
+      "id": "REOPEN-09",
+      "scenario": "Reopen audit carries actor, role, reason, version and previous reference",
+      "status": "PASS",
+      "evidence": "test_reopen_preview_and_governed_reopen_preserve_resolution_history"
+    },
+    {
+      "id": "REOPEN-10",
+      "scenario": "Previous decision remains in history after reopen and subsequent resolution",
+      "status": "PASS",
+      "evidence": "Playwright FLOW C: reopen_preserve_and_resolve_again"
+    }
+  ],
+  "focused_suite_collected_cases": 45
+}

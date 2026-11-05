@@ -1,0 +1,1216 @@
+{
+  "generated_at": "2026-10-26T14:02:42.232843+03:00",
+  "as_of_date": "2026-10-26",
+  "global_total": 566,
+  "filters": {
+    "period": "all",
+    "status": "",
+    "sector": "",
+    "activity": "",
+    "sub_activity": "",
+    "source": "",
+    "owner": "",
+    "location": "",
+    "opportunity_type": "",
+    "investment_model": "",
+    "asset_facility_type": "",
+    "subsector": "",
+    "lifecycle": ""
+  },
+  "options": {
+    "sectors": [
+      "البيئة",
+      "التعليم",
+      "الخدمات اللوجستية",
+      "الخدمات المالية",
+      "الرعاية الصحية",
+      "الرياضة",
+      "الزراعة",
+      "السياحة",
+      "العقارات والإنشاءات",
+      "تجاري",
+      "صناعي",
+      "أخرى"
+    ],
+    "statuses": [
+      "أزيلت من المصدر",
+      "حالة غير معروفة",
+      "غير محددة",
+      "متاحة",
+      "منتهية"
+    ],
+    "sources": [
+      {
+        "key": "furas",
+        "name": "فرص – البوابة الموحدة للاستثمار"
+      },
+      {
+        "key": "alahsa-opportunities",
+        "name": "منصة الفرص الاستثمارية بالأحساء"
+      },
+      {
+        "key": "ahda",
+        "name": "هيئة تطوير الأحساء"
+      },
+      {
+        "key": "invest-saudi",
+        "name": "استثمر في السعودية"
+      },
+      {
+        "key": "kfu",
+        "name": "جامعة الملك فيصل"
+      },
+      {
+        "key": "modon",
+        "name": "مدن"
+      },
+      {
+        "key": "ncp",
+        "name": "المركز الوطني للتخصيص"
+      },
+      {
+        "key": "nhc",
+        "name": "NHC الاستثمار"
+      },
+      {
+        "key": "pif",
+        "name": "بوابة القطاع الخاص لصندوق الاستثمارات العامة"
+      },
+      {
+        "key": "mwan",
+        "name": "موان"
+      },
+      {
+        "key": "waha-development",
+        "name": "شركة واحة للتنمية والتطوير"
+      }
+    ],
+    "owners": [
+      "Municipality",
+      "أمانة الأحساء",
+      "جامعة الملك فيصل",
+      "وزارة الاستثمار",
+      "وزارة البيئة والمياه والزراعة",
+      "وزارة الحرس الوطني",
+      "غير محدد"
+    ],
+    "locations": [
+      "الأحساء",
+      "الجرن",
+      "الجفر",
+      "العقير",
+      "العمران",
+      "العيون",
+      "الهفوف",
+      "سلوى"
+    ],
+    "location_hierarchy": [
+      {
+        "id": "saudi_arabia",
+        "label": "المملكة العربية السعودية",
+        "parent_id": null,
+        "level": "country"
+      },
+      {
+        "id": "eastern_province",
+        "label": "المنطقة الشرقية",
+        "parent_id": "saudi_arabia",
+        "level": "region"
+      },
+      {
+        "id": "al_ahsa_governorate",
+        "label": "الأحساء",
+        "parent_id": "eastern_province",
+        "level": "governorate",
+        "count": 565
+      },
+      {
+        "id": "al_ahsa_locality:jarn",
+        "label": "الجرن",
+        "parent_id": "al_ahsa_governorate",
+        "level": "locality",
+        "count": 2
+      },
+      {
+        "id": "al_ahsa_locality:jafr",
+        "label": "الجفر",
+        "parent_id": "al_ahsa_governorate",
+        "level": "locality",
+        "count": 1
+      },
+      {
+        "id": "al_ahsa_locality:uqair",
+        "label": "العقير",
+        "parent_id": "al_ahsa_governorate",
+        "level": "locality",
+        "count": 13
+      },
+      {
+        "id": "al_ahsa_locality:omran",
+        "label": "العمران",
+        "parent_id": "al_ahsa_governorate",
+        "level": "locality",
+        "count": 3
+      },
+      {
+        "id": "al_ahsa_locality:oyoun",
+        "label": "العيون",
+        "parent_id": "al_ahsa_governorate",
+        "level": "locality",
+        "count": 8
+      },
+      {
+        "id": "al_ahsa_locality:hofuf",
+        "label": "الهفوف",
+        "parent_id": "al_ahsa_governorate",
+        "level": "locality",
+        "count": 3
+      },
+      {
+        "id": "al_ahsa_locality:salwa",
+        "label": "سلوى",
+        "parent_id": "al_ahsa_governorate",
+        "level": "locality",
+        "count": 1
+      }
+    ],
+    "types": [
+      "تأجير مؤقت",
+      "غير محدد"
+    ],
+    "activities": [
+      "Real Estate & Construction",
+      "الأنشطة التجارية",
+      "الأنشطة التعليمية",
+      "الأنشطة الرياضية والترفيهية",
+      "الأنشطة الزراعية والحيوانية",
+      "الأنشطة الصناعية",
+      "الأنشطة المالية",
+      "البيئة",
+      "التعليم",
+      "الخدمات اللوجستية",
+      "أنشطة الصيانة والتصليح والتركيب",
+      "أنشطة المركبات",
+      "تجاري",
+      "خدمي",
+      "صناعي",
+      "أخرى",
+      "غير محدد"
+    ],
+    "sub_activities": [
+      "أنشطة التجارة العامة",
+      "أنشطة تجارة المواد الغذائية",
+      "أنشطة و تجارة المعدات الثقيلة",
+      "أنشطة وخدمات انتاج المواد غير الغذائية",
+      "خدمات الصرافة",
+      "خدمات تعليمية أخرى",
+      "محلات تجارية",
+      "منتزه",
+      "منشآت تقديم الغذاء",
+      "أخرى",
+      "قيمة مفقودة"
+    ],
+    "investment_models": [
+      "التأجير",
+      "التجهيز والتشغيل والصيانة والنقل",
+      "غير محدد"
+    ],
+    "asset_facility_types": [
+      "أخرى",
+      "الاراضي",
+      "الحدائق",
+      "الساحات الميادين",
+      "الشواطئ والواجهات",
+      "الطرق والارصفة",
+      "العربات المتنقلة",
+      "المباني",
+      "غير محدد"
+    ],
+    "subsectors": [
+      "قيمة مفقودة"
+    ]
+  },
+  "option_ids": {
+    "sectors": {
+      "الخدمات اللوجستية": "sector:logistics",
+      "العقارات والإنشاءات": "sector:real_estate",
+      "صناعي": "sector:industrial",
+      "الخدمات المالية": "sector:financial_services",
+      "أخرى": "sector:other",
+      "الرياضة": "sector:sports",
+      "الزراعة": "sector:agriculture",
+      "الرعاية الصحية": "sector:healthcare",
+      "البيئة": "sector:environment",
+      "السياحة": "sector:tourism",
+      "التعليم": "sector:education",
+      "تجاري": "sector:commercial"
+    },
+    "statuses": {
+      "متاحة": "status:available",
+      "منتهية": "status:expired",
+      "أزيلت من المصدر": "status:removed_from_source",
+      "حالة غير معروفة": "status:unknown",
+      "غير محددة": "status:missing"
+    },
+    "owners": {
+      "أمانة الأحساء": "al_ahsa_municipality",
+      "غير محدد": "owner:missing",
+      "جامعة الملك فيصل": "unmapped:owner:b841f5b3e39dcfc7",
+      "وزارة الاستثمار": "unmapped:owner:be60a7eb25b3ea44",
+      "Municipality": "unmapped:owner:cb92ea2794cd117c",
+      "وزارة الحرس الوطني": "unmapped:owner:b64c21869b8223bf",
+      "وزارة البيئة والمياه والزراعة": "unmapped:owner:b78c8c267cf0c18f"
+    },
+    "locations": {
+      "العمران": "al_ahsa_locality:omran",
+      "العقير": "al_ahsa_locality:uqair",
+      "العيون": "al_ahsa_locality:oyoun",
+      "الجرن": "al_ahsa_locality:jarn",
+      "الهفوف": "al_ahsa_locality:hofuf",
+      "سلوى": "al_ahsa_locality:salwa",
+      "الجفر": "al_ahsa_locality:jafr",
+      "الأحساء": "al_ahsa_governorate"
+    },
+    "types": {
+      "تأجير مؤقت": "opportunity_type:temporary_rental",
+      "غير محدد": "opportunity_type:missing"
+    },
+    "activities": {
+      "الأنشطة الرياضية والترفيهية": "activity:sports_recreation",
+      "أخرى": "activity:other",
+      "أنشطة الصيانة والتصليح والتركيب": "activity:maintenance_repair_installation",
+      "غير محدد": "activity:missing",
+      "الأنشطة المالية": "activity:financial_activities",
+      "أنشطة المركبات": "unmapped:activity:56d55a59a03e7303",
+      "الأنشطة التعليمية": "activity:educational_activities",
+      "الأنشطة الزراعية والحيوانية": "activity:agriculture_livestock",
+      "الأنشطة التجارية": "activity:commercial_activities",
+      "صناعي": "activity:industrial",
+      "الأنشطة الصناعية": "activity:industrial_activities",
+      "البيئة": "unmapped:activity:0ceb7b2fb3f5836e",
+      "التعليم": "unmapped:activity:44f22ec8e6a990aa",
+      "تجاري": "activity:commercial",
+      "Real Estate & Construction": "unmapped:activity:e7c4a23546f747fa",
+      "خدمي": "activity:service",
+      "الخدمات اللوجستية": "unmapped:activity:ebed8fdca644ffde"
+    },
+    "sub_activities": {
+      "محلات تجارية": "sub_activity:retail_shops",
+      "أنشطة تجارة المواد الغذائية": "sub_activity:food_trade",
+      "خدمات الصرافة": "sub_activity:money_exchange",
+      "أنشطة التجارة العامة": "sub_activity:general_trade",
+      "منتزه": "sub_activity:park",
+      "أنشطة و تجارة المعدات الثقيلة": "sub_activity:heavy_equipment_trade",
+      "أخرى": "sub_activity:other",
+      "أنشطة وخدمات انتاج المواد غير الغذائية": "sub_activity:non_food_production_services",
+      "قيمة مفقودة": "sub_activity:missing",
+      "خدمات تعليمية أخرى": "sub_activity:other_educational_services",
+      "منشآت تقديم الغذاء": "sub_activity:food_service_facilities"
+    },
+    "investment_models": {
+      "غير محدد": "investment_model:missing",
+      "التجهيز والتشغيل والصيانة والنقل": "investment_model:eomt",
+      "التأجير": "investment_model:lease"
+    },
+    "asset_facility_types": {
+      "أخرى": "asset_facility_type:other",
+      "الاراضي": "asset_facility_type:land",
+      "الحدائق": "asset_facility_type:public_park",
+      "الساحات الميادين": "asset_facility_type:public_square",
+      "الشواطئ والواجهات": "asset_facility_type:waterfront",
+      "الطرق والارصفة": "asset_facility_type:road_sidewalk",
+      "العربات المتنقلة": "asset_facility_type:mobile_vending_site",
+      "المباني": "asset_facility_type:building",
+      "غير محدد": "asset_facility_type:missing"
+    },
+    "subsectors": {
+      "قيمة مفقودة": "subsector:missing"
+    },
+    "sources": {
+      "فرص – البوابة الموحدة للاستثمار": "furas",
+      "منصة الفرص الاستثمارية بالأحساء": "alahsa-opportunities",
+      "هيئة تطوير الأحساء": "ahda",
+      "استثمر في السعودية": "invest-saudi",
+      "جامعة الملك فيصل": "kfu",
+      "مدن": "modon",
+      "المركز الوطني للتخصيص": "ncp",
+      "NHC الاستثمار": "nhc",
+      "بوابة القطاع الخاص لصندوق الاستثمارات العامة": "pif",
+      "موان": "mwan",
+      "شركة واحة للتنمية والتطوير": "waha-development"
+    }
+  },
+  "kpis": {
+    "total": 566,
+    "active": 481,
+    "new_30d": 566,
+    "historical": 59,
+    "sources": 6,
+    "enabled_sources": 10,
+    "deadline_30d": 60,
+    "multi_source": 24,
+    "multi_source_percent": 4.2
+  },
+  "by_sector": [
+    {
+      "name": "تجاري",
+      "canonical_id": "sector:commercial",
+      "filter_value": "تجاري",
+      "count": 433
+    },
+    {
+      "name": "صناعي",
+      "canonical_id": "sector:industrial",
+      "filter_value": "صناعي",
+      "count": 60
+    },
+    {
+      "name": "أخرى",
+      "canonical_id": "sector:other",
+      "filter_value": "أخرى",
+      "count": 34
+    },
+    {
+      "name": "العقارات والإنشاءات",
+      "canonical_id": "sector:real_estate",
+      "filter_value": "العقارات والإنشاءات",
+      "count": 9
+    },
+    {
+      "name": "البيئة",
+      "canonical_id": "sector:environment",
+      "filter_value": "البيئة",
+      "count": 8
+    },
+    {
+      "name": "الخدمات اللوجستية",
+      "canonical_id": "sector:logistics",
+      "filter_value": "الخدمات اللوجستية",
+      "count": 5
+    },
+    {
+      "name": "الخدمات المالية",
+      "canonical_id": "sector:financial_services",
+      "filter_value": "الخدمات المالية",
+      "count": 5
+    },
+    {
+      "name": "التعليم",
+      "canonical_id": "sector:education",
+      "filter_value": "التعليم",
+      "count": 4
+    },
+    {
+      "name": "الرعاية الصحية",
+      "canonical_id": "sector:healthcare",
+      "filter_value": "الرعاية الصحية",
+      "count": 4
+    },
+    {
+      "name": "السياحة",
+      "canonical_id": "sector:tourism",
+      "filter_value": "السياحة",
+      "count": 2
+    },
+    {
+      "name": "الرياضة",
+      "canonical_id": "sector:sports",
+      "filter_value": "الرياضة",
+      "count": 1
+    },
+    {
+      "name": "الزراعة",
+      "canonical_id": "sector:agriculture",
+      "filter_value": "الزراعة",
+      "count": 1
+    }
+  ],
+  "by_status": [
+    {
+      "name": "متاحة",
+      "canonical_id": "status:available",
+      "filter_value": "متاحة",
+      "count": 481
+    },
+    {
+      "name": "أزيلت من المصدر",
+      "canonical_id": "status:removed_from_source",
+      "filter_value": "أزيلت من المصدر",
+      "count": 57
+    },
+    {
+      "name": "غير محددة",
+      "canonical_id": "status:missing",
+      "filter_value": null,
+      "count": 25
+    },
+    {
+      "name": "منتهية",
+      "canonical_id": "status:expired",
+      "filter_value": "منتهية",
+      "count": 2
+    },
+    {
+      "name": "حالة غير معروفة",
+      "canonical_id": "status:unknown",
+      "filter_value": "حالة غير معروفة",
+      "count": 1
+    }
+  ],
+  "by_activity": [
+    {
+      "name": "غير محدد",
+      "canonical_id": "activity:missing",
+      "filter_value": null,
+      "count": 384
+    },
+    {
+      "name": "صناعي",
+      "canonical_id": "activity:industrial",
+      "filter_value": "صناعي",
+      "count": 60
+    },
+    {
+      "name": "تجاري",
+      "canonical_id": "activity:commercial",
+      "filter_value": "تجاري",
+      "count": 57
+    },
+    {
+      "name": "الأنشطة التجارية",
+      "canonical_id": "activity:commercial_activities",
+      "filter_value": "الأنشطة التجارية",
+      "count": 34
+    },
+    {
+      "name": "الأنشطة المالية",
+      "canonical_id": "activity:financial_activities",
+      "filter_value": "الأنشطة المالية",
+      "count": 6
+    },
+    {
+      "name": "خدمي",
+      "canonical_id": "activity:service",
+      "filter_value": "خدمي",
+      "count": 6
+    },
+    {
+      "name": "Real Estate & Construction",
+      "canonical_id": "unmapped:activity:e7c4a23546f747fa",
+      "filter_value": "Real Estate & Construction",
+      "count": 5
+    },
+    {
+      "name": "الخدمات اللوجستية",
+      "canonical_id": "unmapped:activity:ebed8fdca644ffde",
+      "filter_value": "الخدمات اللوجستية",
+      "count": 3
+    },
+    {
+      "name": "الأنشطة الرياضية والترفيهية",
+      "canonical_id": "activity:sports_recreation",
+      "filter_value": "الأنشطة الرياضية والترفيهية",
+      "count": 2
+    },
+    {
+      "name": "البيئة",
+      "canonical_id": "unmapped:activity:0ceb7b2fb3f5836e",
+      "filter_value": "البيئة",
+      "count": 2
+    },
+    {
+      "name": "أخرى",
+      "canonical_id": "activity:other",
+      "filter_value": "أخرى",
+      "count": 1
+    },
+    {
+      "name": "الأنشطة التعليمية",
+      "canonical_id": "activity:educational_activities",
+      "filter_value": "الأنشطة التعليمية",
+      "count": 1
+    },
+    {
+      "name": "الأنشطة الزراعية والحيوانية",
+      "canonical_id": "activity:agriculture_livestock",
+      "filter_value": "الأنشطة الزراعية والحيوانية",
+      "count": 1
+    },
+    {
+      "name": "الأنشطة الصناعية",
+      "canonical_id": "activity:industrial_activities",
+      "filter_value": "الأنشطة الصناعية",
+      "count": 1
+    },
+    {
+      "name": "التعليم",
+      "canonical_id": "unmapped:activity:44f22ec8e6a990aa",
+      "filter_value": "التعليم",
+      "count": 1
+    },
+    {
+      "name": "أنشطة الصيانة والتصليح والتركيب",
+      "canonical_id": "activity:maintenance_repair_installation",
+      "filter_value": "أنشطة الصيانة والتصليح والتركيب",
+      "count": 1
+    },
+    {
+      "name": "أنشطة المركبات",
+      "canonical_id": "unmapped:activity:56d55a59a03e7303",
+      "filter_value": "أنشطة المركبات",
+      "count": 1
+    }
+  ],
+  "by_sub_activity": [
+    {
+      "name": "قيمة مفقودة",
+      "canonical_id": "sub_activity:missing",
+      "filter_value": null,
+      "count": 497
+    },
+    {
+      "name": "أخرى",
+      "canonical_id": "sub_activity:other",
+      "filter_value": "أخرى",
+      "count": 34
+    },
+    {
+      "name": "أنشطة التجارة العامة",
+      "canonical_id": "sub_activity:general_trade",
+      "filter_value": "أنشطة التجارة العامة",
+      "count": 14
+    },
+    {
+      "name": "خدمات الصرافة",
+      "canonical_id": "sub_activity:money_exchange",
+      "filter_value": "خدمات الصرافة",
+      "count": 6
+    },
+    {
+      "name": "أنشطة تجارة المواد الغذائية",
+      "canonical_id": "sub_activity:food_trade",
+      "filter_value": "أنشطة تجارة المواد الغذائية",
+      "count": 5
+    },
+    {
+      "name": "محلات تجارية",
+      "canonical_id": "sub_activity:retail_shops",
+      "filter_value": "محلات تجارية",
+      "count": 3
+    },
+    {
+      "name": "منشآت تقديم الغذاء",
+      "canonical_id": "sub_activity:food_service_facilities",
+      "filter_value": "منشآت تقديم الغذاء",
+      "count": 3
+    },
+    {
+      "name": "أنشطة و تجارة المعدات الثقيلة",
+      "canonical_id": "sub_activity:heavy_equipment_trade",
+      "filter_value": "أنشطة و تجارة المعدات الثقيلة",
+      "count": 1
+    },
+    {
+      "name": "أنشطة وخدمات انتاج المواد غير الغذائية",
+      "canonical_id": "sub_activity:non_food_production_services",
+      "filter_value": "أنشطة وخدمات انتاج المواد غير الغذائية",
+      "count": 1
+    },
+    {
+      "name": "خدمات تعليمية أخرى",
+      "canonical_id": "sub_activity:other_educational_services",
+      "filter_value": "خدمات تعليمية أخرى",
+      "count": 1
+    },
+    {
+      "name": "منتزه",
+      "canonical_id": "sub_activity:park",
+      "filter_value": "منتزه",
+      "count": 1
+    }
+  ],
+  "by_type": [
+    {
+      "name": "تأجير مؤقت",
+      "canonical_id": "opportunity_type:temporary_rental",
+      "filter_value": "تأجير مؤقت",
+      "count": 367
+    },
+    {
+      "name": "غير محدد",
+      "canonical_id": "opportunity_type:missing",
+      "filter_value": null,
+      "count": 199
+    }
+  ],
+  "by_investment_model": [
+    {
+      "name": "غير محدد",
+      "canonical_id": "investment_model:missing",
+      "filter_value": null,
+      "count": 556
+    },
+    {
+      "name": "التأجير",
+      "canonical_id": "investment_model:lease",
+      "filter_value": "التأجير",
+      "count": 9
+    },
+    {
+      "name": "التجهيز والتشغيل والصيانة والنقل",
+      "canonical_id": "investment_model:eomt",
+      "filter_value": "التجهيز والتشغيل والصيانة والنقل",
+      "count": 1
+    }
+  ],
+  "investment_model_coverage": {
+    "total": 566,
+    "canonical": 10,
+    "unspecified": 556,
+    "review": 0,
+    "canonical_percent": 1.8
+  },
+  "by_source": [
+    {
+      "key": "furas",
+      "name": "فرص – البوابة الموحدة للاستثمار",
+      "count": 436,
+      "share_percent": 77.0
+    },
+    {
+      "key": "alahsa-opportunities",
+      "name": "منصة الفرص الاستثمارية بالأحساء",
+      "count": 123,
+      "share_percent": 21.7
+    },
+    {
+      "key": "invest-saudi",
+      "name": "استثمر في السعودية",
+      "count": 19,
+      "share_percent": 3.4
+    },
+    {
+      "key": "ahda",
+      "name": "هيئة تطوير الأحساء",
+      "count": 8,
+      "share_percent": 1.4
+    },
+    {
+      "key": "kfu",
+      "name": "جامعة الملك فيصل",
+      "count": 3,
+      "share_percent": 0.5
+    },
+    {
+      "key": "ncp",
+      "name": "المركز الوطني للتخصيص",
+      "count": 1,
+      "share_percent": 0.2
+    },
+    {
+      "key": "modon",
+      "name": "مدن",
+      "count": 0,
+      "share_percent": 0.0
+    },
+    {
+      "key": "nhc",
+      "name": "NHC الاستثمار",
+      "count": 0,
+      "share_percent": 0.0
+    },
+    {
+      "key": "pif",
+      "name": "بوابة القطاع الخاص لصندوق الاستثمارات العامة",
+      "count": 0,
+      "share_percent": 0.0
+    },
+    {
+      "key": "mwan",
+      "name": "موان",
+      "count": 0,
+      "share_percent": 0.0
+    }
+  ],
+  "by_owner": [
+    {
+      "name": "أمانة الأحساء",
+      "canonical_id": "al_ahsa_municipality",
+      "filter_value": "أمانة الأحساء",
+      "count": 434
+    },
+    {
+      "name": "غير محدد",
+      "canonical_id": "owner:missing",
+      "filter_value": null,
+      "count": 116
+    },
+    {
+      "name": "وزارة الاستثمار",
+      "canonical_id": "unmapped:owner:be60a7eb25b3ea44",
+      "filter_value": "وزارة الاستثمار",
+      "count": 6
+    },
+    {
+      "name": "Municipality",
+      "canonical_id": "unmapped:owner:cb92ea2794cd117c",
+      "filter_value": "Municipality",
+      "count": 5
+    },
+    {
+      "name": "جامعة الملك فيصل",
+      "canonical_id": "unmapped:owner:b841f5b3e39dcfc7",
+      "filter_value": "جامعة الملك فيصل",
+      "count": 3
+    },
+    {
+      "name": "وزارة البيئة والمياه والزراعة",
+      "canonical_id": "unmapped:owner:b78c8c267cf0c18f",
+      "filter_value": "وزارة البيئة والمياه والزراعة",
+      "count": 1
+    },
+    {
+      "name": "وزارة الحرس الوطني",
+      "canonical_id": "unmapped:owner:b64c21869b8223bf",
+      "filter_value": "وزارة الحرس الوطني",
+      "count": 1
+    }
+  ],
+  "by_location": [
+    {
+      "name": "الأحساء",
+      "canonical_id": "al_ahsa_governorate",
+      "filter_value": "الأحساء",
+      "count": 534
+    },
+    {
+      "name": "العقير",
+      "canonical_id": "al_ahsa_locality:uqair",
+      "filter_value": "العقير",
+      "count": 13
+    },
+    {
+      "name": "العيون",
+      "canonical_id": "al_ahsa_locality:oyoun",
+      "filter_value": "العيون",
+      "count": 8
+    },
+    {
+      "name": "العمران",
+      "canonical_id": "al_ahsa_locality:omran",
+      "filter_value": "العمران",
+      "count": 3
+    },
+    {
+      "name": "الهفوف",
+      "canonical_id": "al_ahsa_locality:hofuf",
+      "filter_value": "الهفوف",
+      "count": 3
+    },
+    {
+      "name": "الجرن",
+      "canonical_id": "al_ahsa_locality:jarn",
+      "filter_value": "الجرن",
+      "count": 2
+    },
+    {
+      "name": "الجفر",
+      "canonical_id": "al_ahsa_locality:jafr",
+      "filter_value": "الجفر",
+      "count": 1
+    },
+    {
+      "name": "سلوى",
+      "canonical_id": "al_ahsa_locality:salwa",
+      "filter_value": "سلوى",
+      "count": 1
+    }
+  ],
+  "timeline": [
+    {
+      "month": "2026-10",
+      "start_date": "2026-10-01",
+      "end_date": "2026-10-31",
+      "count": 566
+    }
+  ],
+  "deadlines": [
+    {
+      "id": 176,
+      "title": "أنشاء وتشغيل و صيانة القطعة رقم 59/2ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانة",
+      "owner": null,
+      "deadline": "2026-11-09",
+      "days_remaining": 14,
+      "source": "منصة الفرص الاستثمارية بالأحساء"
+    },
+    {
+      "id": 177,
+      "title": "أنشاء وتشغيل و صيانة القطعة رقم 59/1ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+      "owner": null,
+      "deadline": "2026-11-09",
+      "days_remaining": 14,
+      "source": "منصة الفرص الاستثمارية بالأحساء"
+    },
+    {
+      "id": 178,
+      "title": "أنشاء وتشغيل و صيانة القطعة رقم 57/2ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانة",
+      "owner": null,
+      "deadline": "2026-11-09",
+      "days_remaining": 14,
+      "source": "منصة الفرص الاستثمارية بالأحساء"
+    },
+    {
+      "id": 179,
+      "title": "أنشاء وتشغيل و صيانة القطعة رقم 57/1ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانة",
+      "owner": null,
+      "deadline": "2026-11-09",
+      "days_remaining": 14,
+      "source": "منصة الفرص الاستثمارية بالأحساء"
+    },
+    {
+      "id": 180,
+      "title": "أنشاء وتشغيل و صيانة القطعة رقم 55/2ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانة",
+      "owner": null,
+      "deadline": "2026-11-09",
+      "days_remaining": 14,
+      "source": "منصة الفرص الاستثمارية بالأحساء"
+    },
+    {
+      "id": 181,
+      "title": "أنشاء وتشغيل و صيانة القطعة رقم 55/1ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+      "owner": null,
+      "deadline": "2026-11-09",
+      "days_remaining": 14,
+      "source": "منصة الفرص الاستثمارية بالأحساء"
+    },
+    {
+      "id": 182,
+      "title": "أنشاء وتشغيل و صيانة القطعة رقم 53/2ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانة",
+      "owner": null,
+      "deadline": "2026-11-09",
+      "days_remaining": 14,
+      "source": "منصة الفرص الاستثمارية بالأحساء"
+    },
+    {
+      "id": 183,
+      "title": "أنشاء وتشغيل و صيانة القطعة رقم 53/1ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانة",
+      "owner": null,
+      "deadline": "2026-11-09",
+      "days_remaining": 14,
+      "source": "منصة الفرص الاستثمارية بالأحساء"
+    }
+  ],
+  "deadline_buckets": [
+    {
+      "key": "7d",
+      "label": "خلال 7 أيام",
+      "count": 0
+    },
+    {
+      "key": "8_14d",
+      "label": "8–14 يومًا",
+      "count": 10
+    },
+    {
+      "key": "15_30d",
+      "label": "15–30 يومًا",
+      "count": 50
+    },
+    {
+      "key": "over_30d",
+      "label": "أكثر من 30 يومًا",
+      "count": 44
+    }
+  ],
+  "deadline_trend": [
+    {
+      "month": "2026-11",
+      "start_date": "2026-11-01",
+      "end_date": "2026-11-30",
+      "count": 60
+    },
+    {
+      "month": "2026-12",
+      "start_date": "2026-12-01",
+      "end_date": "2026-12-31",
+      "count": 44
+    }
+  ],
+  "multi_source_examples": [
+    {
+      "id": 164,
+      "title": "انشاء وتشغيل وصيانة مستودع غاز  بالمخطط رقم (14/53) بمدينة الجرن بنشاط بيع وتوزيع أسطوانات الغاز",
+      "owner": "أمانة الأحساء"
+    },
+    {
+      "id": 163,
+      "title": "انشاء وتشغيل وصيانة مجمع تجاري متعدد الأنشطة للقطعة رقم 5 بالمخطط رقم 19/149 مثلث القرى الشرقية",
+      "owner": "أمانة الأحساء"
+    },
+    {
+      "id": 226,
+      "title": "انشاء و تشغيل و صيانة حديقة بحي الامراء بالمخطط رقم 416 4 بمدينة الهفوف - أنشطة المرافق العامة - منتزه - حديقة",
+      "owner": "أمانة الأحساء"
+    },
+    {
+      "id": 242,
+      "title": "انشاء و تشغيل و صيانة كشك درايف ثرو  DRIVE THRO  رقم  1  طريق الامير عبدالله بن جلوي بمدينة المبرز - الأنشطة التجارية - أنشطة التجارة العامة - عام",
+      "owner": "أمانة الأحساء"
+    }
+  ],
+  "recent_opportunities": [
+    {
+      "id": 185,
+      "title": "أنشاء وتشغيل و صيانة القطعة رقم 51/1ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانة",
+      "owner": null,
+      "sector": "صناعي",
+      "status": "متاحة",
+      "deadline": "2026-11-09"
+    },
+    {
+      "id": 184,
+      "title": "أنشاء وتشغيل و صيانة القطعة رقم 51/2ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانة",
+      "owner": null,
+      "sector": "صناعي",
+      "status": "متاحة",
+      "deadline": "2026-11-09"
+    },
+    {
+      "id": 183,
+      "title": "أنشاء وتشغيل و صيانة القطعة رقم 53/1ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانة",
+      "owner": null,
+      "sector": "صناعي",
+      "status": "متاحة",
+      "deadline": "2026-11-09"
+    },
+    {
+      "id": 182,
+      "title": "أنشاء وتشغيل و صيانة القطعة رقم 53/2ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانة",
+      "owner": null,
+      "sector": "صناعي",
+      "status": "متاحة",
+      "deadline": "2026-11-09"
+    },
+    {
+      "id": 181,
+      "title": "أنشاء وتشغيل و صيانة القطعة رقم 55/1ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانه",
+      "owner": null,
+      "sector": "صناعي",
+      "status": "متاحة",
+      "deadline": "2026-11-09"
+    },
+    {
+      "id": 180,
+      "title": "أنشاء وتشغيل و صيانة القطعة رقم 55/2ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانة",
+      "owner": null,
+      "sector": "صناعي",
+      "status": "متاحة",
+      "deadline": "2026-11-09"
+    },
+    {
+      "id": 179,
+      "title": "أنشاء وتشغيل و صيانة القطعة رقم 57/1ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانة",
+      "owner": null,
+      "sector": "صناعي",
+      "status": "متاحة",
+      "deadline": "2026-11-09"
+    },
+    {
+      "id": 178,
+      "title": "أنشاء وتشغيل و صيانة القطعة رقم 57/2ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانة",
+      "owner": null,
+      "sector": "صناعي",
+      "status": "متاحة",
+      "deadline": "2026-11-09"
+    }
+  ],
+  "source_health": [
+    {
+      "status": "HEALTHY",
+      "count": 7
+    },
+    {
+      "status": "WARNING",
+      "count": 3
+    }
+  ],
+  "source_coverage": [
+    {
+      "status": "COMPLETE_FOR_DEFINED_SCOPE",
+      "count": 4
+    },
+    {
+      "status": "COMPLETE_PUBLIC_SOURCE",
+      "count": 3
+    },
+    {
+      "status": "PUBLIC_COVERAGE_LIMITED",
+      "count": 3
+    }
+  ],
+  "sources": [
+    {
+      "key": "furas",
+      "name": "فرص – البوابة الموحدة للاستثمار",
+      "health": "HEALTHY",
+      "coverage": "COMPLETE_PUBLIC_SOURCE",
+      "last_successful_sync": "2026-10-26T13:04:51.920498+03:00"
+    },
+    {
+      "key": "alahsa-opportunities",
+      "name": "منصة الفرص الاستثمارية بالأحساء",
+      "health": "HEALTHY",
+      "coverage": "COMPLETE_PUBLIC_SOURCE",
+      "last_successful_sync": "2026-10-26T13:05:05.733327+03:00"
+    },
+    {
+      "key": "ahda",
+      "name": "هيئة تطوير الأحساء",
+      "health": "HEALTHY",
+      "coverage": "COMPLETE_FOR_DEFINED_SCOPE",
+      "last_successful_sync": "2026-10-26T09:48:28.76976+03:00"
+    },
+    {
+      "key": "invest-saudi",
+      "name": "استثمر في السعودية",
+      "health": "HEALTHY",
+      "coverage": "COMPLETE_PUBLIC_SOURCE",
+      "last_successful_sync": "2026-10-26T09:49:46.321815+03:00"
+    },
+    {
+      "key": "kfu",
+      "name": "جامعة الملك فيصل",
+      "health": "HEALTHY",
+      "coverage": "COMPLETE_FOR_DEFINED_SCOPE",
+      "last_successful_sync": "2026-10-26T09:02:00.850555+03:00"
+    },
+    {
+      "key": "modon",
+      "name": "مدن",
+      "health": "WARNING",
+      "coverage": "PUBLIC_COVERAGE_LIMITED",
+      "last_successful_sync": "2026-10-12T15:26:52.808735+03:00"
+    },
+    {
+      "key": "ncp",
+      "name": "المركز الوطني للتخصيص",
+      "health": "HEALTHY",
+      "coverage": "COMPLETE_FOR_DEFINED_SCOPE",
+      "last_successful_sync": "2026-10-26T09:48:48.005986+03:00"
+    },
+    {
+      "key": "nhc",
+      "name": "NHC الاستثمار",
+      "health": "WARNING",
+      "coverage": "PUBLIC_COVERAGE_LIMITED",
+      "last_successful_sync": "2026-10-12T15:35:37.998869+03:00"
+    },
+    {
+      "key": "pif",
+      "name": "بوابة القطاع الخاص لصندوق الاستثمارات العامة",
+      "health": "HEALTHY",
+      "coverage": "PUBLIC_COVERAGE_LIMITED",
+      "last_successful_sync": "2026-10-25T16:10:03.130584+03:00"
+    },
+    {
+      "key": "mwan",
+      "name": "موان",
+      "health": "WARNING",
+      "coverage": "COMPLETE_FOR_DEFINED_SCOPE",
+      "last_successful_sync": "2026-10-12T15:28:00.933181+03:00"
+    }
+  ],
+  "data_quality": {
+    "pending_duplicates": 0,
+    "pending_locations": 0,
+    "open_taxonomy_conflicts": 0,
+    "open_field_conflicts": 0
+  },
+  "completeness": [
+    {
+      "key": "owner",
+      "label": "الجهة المالكة",
+      "count": 450,
+      "total": 566,
+      "percent": 79.5
+    },
+    {
+      "key": "sector",
+      "label": "القطاع",
+      "count": 566,
+      "total": 566,
+      "percent": 100.0
+    },
+    {
+      "key": "location",
+      "label": "تفاصيل الموقع",
+      "count": 543,
+      "total": 566,
+      "percent": 95.9
+    },
+    {
+      "key": "deadline",
+      "label": "الموعد النهائي",
+      "count": 125,
+      "total": 566,
+      "percent": 22.1
+    },
+    {
+      "key": "reference",
+      "label": "الرقم المرجعي",
+      "count": 441,
+      "total": 566,
+      "percent": 77.9
+    },
+    {
+      "key": "area",
+      "label": "المساحة",
+      "count": 526,
+      "total": 566,
+      "percent": 92.9
+    }
+  ],
+  "area_by_sector": [
+    {
+      "name": "أخرى",
+      "area_sqm": 859842.34,
+      "count": 34
+    },
+    {
+      "name": "تجاري",
+      "area_sqm": 808522.63,
+      "count": 419
+    },
+    {
+      "name": "صناعي",
+      "area_sqm": 499068.14,
+      "count": 60
+    },
+    {
+      "name": "السياحة",
+      "area_sqm": 50000.0,
+      "count": 1
+    },
+    {
+      "name": "التعليم",
+      "area_sqm": 45000.0,
+      "count": 1
+    },
+    {
+      "name": "العقارات والإنشاءات",
+      "area_sqm": 10162.0,
+      "count": 4
+    },
+    {
+      "name": "الرياضة",
+      "area_sqm": 2964.0,
+      "count": 1
+    },
+    {
+      "name": "الخدمات اللوجستية",
+      "area_sqm": 705.75,
+      "count": 1
+    }
+  ],
+  "latest_source_update": "2026-10-26T13:05:05.733327+03:00"
+}

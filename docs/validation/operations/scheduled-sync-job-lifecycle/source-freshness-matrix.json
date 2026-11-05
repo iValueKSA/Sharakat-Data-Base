@@ -1,0 +1,226 @@
+{
+  "captured_at": "2026-10-21T12:30:27.504828+00:00",
+  "sources": [
+    {
+      "source_id": 1,
+      "source_key": "furas",
+      "enabled": true,
+      "sync_mode": "structured_opportunity_platform",
+      "expected_schedule": {
+        "dispatcher": "app.tasks.enqueue_due_sources",
+        "dispatcher_seconds": 60,
+        "source_interval_minutes": 60,
+        "minimum_interval_minutes": 15,
+        "scheduled": true
+      },
+      "last_attempt": "2026-10-21T12:05:05.578293+00:00",
+      "last_success": "2026-10-21T12:05:18.543346+00:00",
+      "last_successful_job_id": 414,
+      "last_complete_successful_scan": "2026-10-21T12:05:18.543372+00:00",
+      "last_complete_successful_scan_job_id": 414,
+      "age_since_success_minutes": 25.1,
+      "freshness_status": "FRESH",
+      "technical_health": "HEALTHY",
+      "coverage_status": "COMPLETE_PUBLIC_SOURCE"
+    },
+    {
+      "source_id": 2,
+      "source_key": "alahsa-opportunities",
+      "enabled": true,
+      "sync_mode": "local_opportunity_platform",
+      "expected_schedule": {
+        "dispatcher": "app.tasks.enqueue_due_sources",
+        "dispatcher_seconds": 60,
+        "source_interval_minutes": 60,
+        "minimum_interval_minutes": 15,
+        "scheduled": true
+      },
+      "last_attempt": "2026-10-21T12:05:05.592226+00:00",
+      "last_success": "2026-10-21T12:05:20.282508+00:00",
+      "last_successful_job_id": 415,
+      "last_complete_successful_scan": "2026-10-21T12:05:20.282524+00:00",
+      "last_complete_successful_scan_job_id": 415,
+      "age_since_success_minutes": 25.1,
+      "freshness_status": "FRESH",
+      "technical_health": "HEALTHY",
+      "coverage_status": "COMPLETE_PUBLIC_SOURCE"
+    },
+    {
+      "source_id": 3,
+      "source_key": "ahda",
+      "enabled": true,
+      "sync_mode": "unstructured_opportunity_publisher",
+      "expected_schedule": {
+        "dispatcher": "app.tasks.enqueue_due_sources",
+        "dispatcher_seconds": 60,
+        "source_interval_minutes": 360,
+        "minimum_interval_minutes": 15,
+        "scheduled": true
+      },
+      "last_attempt": "2026-10-21T12:01:06.294491+00:00",
+      "last_success": "2026-10-21T12:01:37.973560+00:00",
+      "last_successful_job_id": 412,
+      "last_complete_successful_scan": "2026-10-21T12:01:37.973580+00:00",
+      "last_complete_successful_scan_job_id": 412,
+      "age_since_success_minutes": 28.8,
+      "freshness_status": "FRESH",
+      "technical_health": "HEALTHY",
+      "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE"
+    },
+    {
+      "source_id": 4,
+      "source_key": "invest-saudi",
+      "enabled": true,
+      "sync_mode": "national_opportunity_platform",
+      "expected_schedule": {
+        "dispatcher": "app.tasks.enqueue_due_sources",
+        "dispatcher_seconds": 60,
+        "source_interval_minutes": 360,
+        "minimum_interval_minutes": 15,
+        "scheduled": true
+      },
+      "last_attempt": "2026-10-21T12:01:06.191772+00:00",
+      "last_success": "2026-10-21T12:02:39.153597+00:00",
+      "last_successful_job_id": 411,
+      "last_complete_successful_scan": "2026-10-21T12:02:39.153637+00:00",
+      "last_complete_successful_scan_job_id": 411,
+      "age_since_success_minutes": 27.8,
+      "freshness_status": "FRESH",
+      "technical_health": "HEALTHY",
+      "coverage_status": "COMPLETE_PUBLIC_SOURCE"
+    },
+    {
+      "source_id": 5,
+      "source_key": "kfu",
+      "enabled": true,
+      "sync_mode": "announcement_driven_local_source",
+      "expected_schedule": {
+        "dispatcher": "app.tasks.enqueue_due_sources",
+        "dispatcher_seconds": 60,
+        "source_interval_minutes": 720,
+        "minimum_interval_minutes": 15,
+        "scheduled": true
+      },
+      "last_attempt": "2026-10-21T06:01:06.511668+00:00",
+      "last_success": "2026-10-21T06:01:12.833866+00:00",
+      "last_successful_job_id": 395,
+      "last_complete_successful_scan": "2026-10-21T06:01:12.833913+00:00",
+      "last_complete_successful_scan_job_id": 395,
+      "age_since_success_minutes": 389.2,
+      "freshness_status": "FRESH",
+      "technical_health": "HEALTHY",
+      "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE"
+    },
+    {
+      "source_id": 6,
+      "source_key": "modon",
+      "enabled": true,
+      "sync_mode": "industrial_spatial_opportunity_source",
+      "expected_schedule": {
+        "dispatcher": "app.tasks.enqueue_due_sources",
+        "dispatcher_seconds": 60,
+        "source_interval_minutes": 360,
+        "minimum_interval_minutes": 15,
+        "scheduled": true
+      },
+      "last_attempt": "2026-10-21T12:02:05.582309+00:00",
+      "last_success": "2026-10-12T12:26:52.808735+00:00",
+      "last_successful_job_id": 195,
+      "last_complete_successful_scan": null,
+      "last_complete_successful_scan_job_id": null,
+      "age_since_success_minutes": 12963.6,
+      "freshness_status": "STALE",
+      "technical_health": "WARNING",
+      "coverage_status": "PUBLIC_COVERAGE_LIMITED"
+    },
+    {
+      "source_id": 7,
+      "source_key": "ncp",
+      "enabled": true,
+      "sync_mode": "ppp_privatisation_pipeline_source",
+      "expected_schedule": {
+        "dispatcher": "app.tasks.enqueue_due_sources",
+        "dispatcher_seconds": 60,
+        "source_interval_minutes": 720,
+        "minimum_interval_minutes": 15,
+        "scheduled": true
+      },
+      "last_attempt": "2026-10-21T06:01:16.215982+00:00",
+      "last_success": "2026-10-20T06:48:03.099990+00:00",
+      "last_successful_job_id": 371,
+      "last_complete_successful_scan": "2026-10-20T06:48:03.100006+00:00",
+      "last_complete_successful_scan_job_id": 371,
+      "age_since_success_minutes": 1782.4,
+      "freshness_status": "STALE",
+      "technical_health": "WARNING",
+      "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE"
+    },
+    {
+      "source_id": 8,
+      "source_key": "nhc",
+      "enabled": true,
+      "sync_mode": "real_estate_investment_and_partnership_source",
+      "expected_schedule": {
+        "dispatcher": "app.tasks.enqueue_due_sources",
+        "dispatcher_seconds": 60,
+        "source_interval_minutes": 720,
+        "minimum_interval_minutes": 15,
+        "scheduled": true
+      },
+      "last_attempt": "2026-10-21T06:01:14.760737+00:00",
+      "last_success": "2026-10-12T12:35:37.998869+00:00",
+      "last_successful_job_id": 200,
+      "last_complete_successful_scan": "2026-10-12T12:35:37.998869+00:00",
+      "last_complete_successful_scan_job_id": 200,
+      "age_since_success_minutes": 12954.8,
+      "freshness_status": "STALE",
+      "technical_health": "WARNING",
+      "coverage_status": "PUBLIC_COVERAGE_LIMITED"
+    },
+    {
+      "source_id": 9,
+      "source_key": "pif",
+      "enabled": true,
+      "sync_mode": "national_value_chain_investment_source",
+      "expected_schedule": {
+        "dispatcher": "app.tasks.enqueue_due_sources",
+        "dispatcher_seconds": 60,
+        "source_interval_minutes": 1440,
+        "minimum_interval_minutes": 15,
+        "scheduled": true
+      },
+      "last_attempt": "2026-10-21T11:28:06.149829+00:00",
+      "last_success": "2026-10-21T11:28:21.005659+00:00",
+      "last_successful_job_id": 410,
+      "last_complete_successful_scan": "2026-10-21T11:28:21.005677+00:00",
+      "last_complete_successful_scan_job_id": 410,
+      "age_since_success_minutes": 62.1,
+      "freshness_status": "FRESH",
+      "technical_health": "HEALTHY",
+      "coverage_status": "PUBLIC_COVERAGE_LIMITED"
+    },
+    {
+      "source_id": 10,
+      "source_key": "mwan",
+      "enabled": true,
+      "sync_mode": "waste_sector_investment_source",
+      "expected_schedule": {
+        "dispatcher": "app.tasks.enqueue_due_sources",
+        "dispatcher_seconds": 60,
+        "source_interval_minutes": 1440,
+        "minimum_interval_minutes": 15,
+        "scheduled": true
+      },
+      "last_attempt": "2026-10-21T11:28:05.547178+00:00",
+      "last_success": "2026-10-12T12:28:00.933181+00:00",
+      "last_successful_job_id": 199,
+      "last_complete_successful_scan": "2026-10-12T12:28:00.933181+00:00",
+      "last_complete_successful_scan_job_id": 199,
+      "age_since_success_minutes": 12962.4,
+      "freshness_status": "STALE",
+      "technical_health": "WARNING",
+      "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE"
+    }
+  ],
+  "unexplained_enabled_sources_without_schedule": []
+}

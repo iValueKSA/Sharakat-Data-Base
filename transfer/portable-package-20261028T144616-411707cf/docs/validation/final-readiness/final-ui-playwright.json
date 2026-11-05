@@ -1,0 +1,536 @@
+{
+  "captured_at": "2026-10-26T09:29:29.150924+00:00",
+  "authentication_context": "anonymous; no credentials submitted",
+  "public_routes": [],
+  "screenshots": [
+    "docs\\validation\\final-readiness\\screenshots\\login-1440x900.png",
+    "docs\\validation\\final-readiness\\screenshots\\overview-1920x1080.png",
+    "docs\\validation\\final-readiness\\screenshots\\data-dashboard-1920x1080.png",
+    "docs\\validation\\final-readiness\\screenshots\\opportunities-1920x1080.png",
+    "docs\\validation\\final-readiness\\screenshots\\opportunity-detail-1920x1080.png",
+    "docs\\validation\\final-readiness\\screenshots\\sources-1920x1080.png",
+    "docs\\validation\\final-readiness\\screenshots\\overview-1440x900.png",
+    "docs\\validation\\final-readiness\\screenshots\\data-dashboard-1440x900.png",
+    "docs\\validation\\final-readiness\\screenshots\\opportunities-1440x900.png",
+    "docs\\validation\\final-readiness\\screenshots\\opportunity-detail-1440x900.png",
+    "docs\\validation\\final-readiness\\screenshots\\sources-1440x900.png",
+    "docs\\validation\\final-readiness\\screenshots\\overview-1366x768.png",
+    "docs\\validation\\final-readiness\\screenshots\\data-dashboard-1366x768.png",
+    "docs\\validation\\final-readiness\\screenshots\\opportunities-1366x768.png",
+    "docs\\validation\\final-readiness\\screenshots\\opportunity-detail-1366x768.png",
+    "docs\\validation\\final-readiness\\screenshots\\sources-1366x768.png",
+    "docs\\validation\\final-readiness\\screenshots\\overview-768x900.png",
+    "docs\\validation\\final-readiness\\screenshots\\data-dashboard-768x900.png",
+    "docs\\validation\\final-readiness\\screenshots\\opportunities-768x900.png",
+    "docs\\validation\\final-readiness\\screenshots\\opportunity-detail-768x900.png",
+    "docs\\validation\\final-readiness\\screenshots\\sources-768x900.png",
+    "docs\\validation\\final-readiness\\screenshots\\overview-390x844.png",
+    "docs\\validation\\final-readiness\\screenshots\\data-dashboard-390x844.png",
+    "docs\\validation\\final-readiness\\screenshots\\opportunities-390x844.png",
+    "docs\\validation\\final-readiness\\screenshots\\opportunity-detail-390x844.png",
+    "docs\\validation\\final-readiness\\screenshots\\sources-390x844.png"
+  ],
+  "viewport_results": [
+    {
+      "viewport": "1920x1080",
+      "screens": {
+        "overview": {
+          "visible": true,
+          "rtl": true,
+          "horizontal_overflow": false,
+          "clipped_primary_controls": 0,
+          "clipped_controls": [],
+          "western_digits": true,
+          "page_text_sample": "ذكاء استثماري للأحساء\nمشهد الفرص\nأوضح من أي وقت\n\nقاعدة موحدة للفرص الرسمية في الأحساء، تربط كل إعلان بمصدره وتتابع التغيّرات أولًا بأول.\n\nاستكشف الفرص\n←\nالمصادر",
+          "rendered_record_count": "—",
+          "visible_buttons_labeled": true,
+          "unlabeled_buttons": []
+        },
+        "data-dashboard": {
+          "visible": true,
+          "rtl": true,
+          "horizontal_overflow": false,
+          "clipped_primary_controls": 0,
+          "clipped_controls": [],
+          "western_digits": true,
+          "page_text_sample": "ذكاء استثماري للأحساء\nلوحة الفرص الاستثمارية\n\nمؤشرات موحدة للفرص المنشورة، الجهات، المواعيد والتغطية الجغرافية.\n\nآخر مزامنة مصدر: 2026/10/26 · 12:04 م\nتصدير CSV",
+          "rendered_record_count": "566",
+          "visible_buttons_labeled": true,
+          "unlabeled_buttons": []
+        },
+        "opportunities": {
+          "visible": true,
+          "rtl": true,
+          "horizontal_overflow": false,
+          "clipped_primary_controls": 0,
+          "clipped_controls": [],
+          "western_digits": true,
+          "page_text_sample": "قاعدة الفرص الموحدة\nالفرص الاستثمارية\n\nراجع الفرص وابحث فيها مع الاحتفاظ برابط كل سجل إلى مصدره الأصلي.\n\nتصدير CSV\n↓\nتصدير Excel\n↓\n⌕\nكل القطاعات\nالبيئة\nالتعليم\n",
+          "rendered_record_count": "عرض 1–50 من 566 فرصة",
+          "visible_buttons_labeled": true,
+          "unlabeled_buttons": []
+        },
+        "opportunity_detail": {
+          "visible": true
+        },
+        "sources": {
+          "visible": true,
+          "rtl": true,
+          "horizontal_overflow": false,
+          "clipped_primary_controls": 0,
+          "clipped_controls": [],
+          "western_digits": true,
+          "page_text_sample": "سجل الناشرين الرسميين\nالمصادر الرسمية\n\nحالة الاتصال وتغطية كل مصدر كما يعلنها الرصد.\n\nتغطية عامة مكتملة\nمكتمل للنطاق المحدد\nتغطية عامة محدودة\nفرص – البوابة المو",
+          "rendered_record_count": 11,
+          "visible_buttons_labeled": true,
+          "unlabeled_buttons": []
+        }
+      }
+    },
+    {
+      "viewport": "1440x900",
+      "screens": {
+        "overview": {
+          "visible": true,
+          "rtl": true,
+          "horizontal_overflow": false,
+          "clipped_primary_controls": 0,
+          "clipped_controls": [],
+          "western_digits": true,
+          "page_text_sample": "ذكاء استثماري للأحساء\nمشهد الفرص\nأوضح من أي وقت\n\nقاعدة موحدة للفرص الرسمية في الأحساء، تربط كل إعلان بمصدره وتتابع التغيّرات أولًا بأول.\n\nاستكشف الفرص\n←\nالمصادر",
+          "rendered_record_count": "—",
+          "visible_buttons_labeled": true,
+          "unlabeled_buttons": []
+        },
+        "data-dashboard": {
+          "visible": true,
+          "rtl": true,
+          "horizontal_overflow": false,
+          "clipped_primary_controls": 0,
+          "clipped_controls": [],
+          "western_digits": true,
+          "page_text_sample": "ذكاء استثماري للأحساء\nلوحة الفرص الاستثمارية\n\nمؤشرات موحدة للفرص المنشورة، الجهات، المواعيد والتغطية الجغرافية.\n\nآخر مزامنة مصدر: 2026/10/26 · 12:04 م\nتصدير CSV",
+          "rendered_record_count": "566",
+          "visible_buttons_labeled": true,
+          "unlabeled_buttons": []
+        },
+        "opportunities": {
+          "visible": true,
+          "rtl": true,
+          "horizontal_overflow": false,
+          "clipped_primary_controls": 0,
+          "clipped_controls": [],
+          "western_digits": true,
+          "page_text_sample": "قاعدة الفرص الموحدة\nالفرص الاستثمارية\n\nراجع الفرص وابحث فيها مع الاحتفاظ برابط كل سجل إلى مصدره الأصلي.\n\nتصدير CSV\n↓\nتصدير Excel\n↓\n⌕\nكل القطاعات\nالبيئة\nالتعليم\n",
+          "rendered_record_count": "عرض 1–50 من 566 فرصة",
+          "visible_buttons_labeled": true,
+          "unlabeled_buttons": []
+        },
+        "opportunity_detail": {
+          "visible": true
+        },
+        "sources": {
+          "visible": true,
+          "rtl": true,
+          "horizontal_overflow": false,
+          "clipped_primary_controls": 0,
+          "clipped_controls": [],
+          "western_digits": true,
+          "page_text_sample": "سجل الناشرين الرسميين\nالمصادر الرسمية\n\nحالة الاتصال وتغطية كل مصدر كما يعلنها الرصد.\n\nتغطية عامة مكتملة\nمكتمل للنطاق المحدد\nتغطية عامة محدودة\nفرص – البوابة المو",
+          "rendered_record_count": 11,
+          "visible_buttons_labeled": true,
+          "unlabeled_buttons": []
+        }
+      }
+    },
+    {
+      "viewport": "1366x768",
+      "screens": {
+        "overview": {
+          "visible": true,
+          "rtl": true,
+          "horizontal_overflow": false,
+          "clipped_primary_controls": 0,
+          "clipped_controls": [],
+          "western_digits": true,
+          "page_text_sample": "ذكاء استثماري للأحساء\nمشهد الفرص\nأوضح من أي وقت\n\nقاعدة موحدة للفرص الرسمية في الأحساء، تربط كل إعلان بمصدره وتتابع التغيّرات أولًا بأول.\n\nاستكشف الفرص\n←\nالمصادر",
+          "rendered_record_count": "—",
+          "visible_buttons_labeled": true,
+          "unlabeled_buttons": []
+        },
+        "data-dashboard": {
+          "visible": true,
+          "rtl": true,
+          "horizontal_overflow": false,
+          "clipped_primary_controls": 0,
+          "clipped_controls": [],
+          "western_digits": true,
+          "page_text_sample": "ذكاء استثماري للأحساء\nلوحة الفرص الاستثمارية\n\nمؤشرات موحدة للفرص المنشورة، الجهات، المواعيد والتغطية الجغرافية.\n\nآخر مزامنة مصدر: 2026/10/26 · 12:04 م\nتصدير CSV",
+          "rendered_record_count": "566",
+          "visible_buttons_labeled": true,
+          "unlabeled_buttons": []
+        },
+        "opportunities": {
+          "visible": true,
+          "rtl": true,
+          "horizontal_overflow": false,
+          "clipped_primary_controls": 0,
+          "clipped_controls": [],
+          "western_digits": true,
+          "page_text_sample": "قاعدة الفرص الموحدة\nالفرص الاستثمارية\n\nراجع الفرص وابحث فيها مع الاحتفاظ برابط كل سجل إلى مصدره الأصلي.\n\nتصدير CSV\n↓\nتصدير Excel\n↓\n⌕\nكل القطاعات\nالبيئة\nالتعليم\n",
+          "rendered_record_count": "عرض 1–50 من 566 فرصة",
+          "visible_buttons_labeled": true,
+          "unlabeled_buttons": []
+        },
+        "opportunity_detail": {
+          "visible": true
+        },
+        "sources": {
+          "visible": true,
+          "rtl": true,
+          "horizontal_overflow": false,
+          "clipped_primary_controls": 0,
+          "clipped_controls": [],
+          "western_digits": true,
+          "page_text_sample": "سجل الناشرين الرسميين\nالمصادر الرسمية\n\nحالة الاتصال وتغطية كل مصدر كما يعلنها الرصد.\n\nتغطية عامة مكتملة\nمكتمل للنطاق المحدد\nتغطية عامة محدودة\nفرص – البوابة المو",
+          "rendered_record_count": 11,
+          "visible_buttons_labeled": true,
+          "unlabeled_buttons": []
+        }
+      }
+    },
+    {
+      "viewport": "768x900",
+      "screens": {
+        "overview": {
+          "visible": true,
+          "rtl": true,
+          "horizontal_overflow": false,
+          "clipped_primary_controls": 0,
+          "clipped_controls": [],
+          "western_digits": true,
+          "page_text_sample": "ذكاء استثماري للأحساء\nمشهد الفرص\nأوضح من أي وقت\n\nقاعدة موحدة للفرص الرسمية في الأحساء، تربط كل إعلان بمصدره وتتابع التغيّرات أولًا بأول.\n\nاستكشف الفرص\n←\nالمصادر",
+          "rendered_record_count": "—",
+          "visible_buttons_labeled": true,
+          "unlabeled_buttons": []
+        },
+        "data-dashboard": {
+          "visible": true,
+          "rtl": true,
+          "horizontal_overflow": false,
+          "clipped_primary_controls": 0,
+          "clipped_controls": [],
+          "western_digits": true,
+          "page_text_sample": "ذكاء استثماري للأحساء\nلوحة الفرص الاستثمارية\n\nمؤشرات موحدة للفرص المنشورة، الجهات، المواعيد والتغطية الجغرافية.\n\nآخر مزامنة مصدر: 2026/10/26 · 12:04 م\nتصدير CSV",
+          "rendered_record_count": "566",
+          "visible_buttons_labeled": true,
+          "unlabeled_buttons": []
+        },
+        "opportunities": {
+          "visible": true,
+          "rtl": true,
+          "horizontal_overflow": false,
+          "clipped_primary_controls": 0,
+          "clipped_controls": [],
+          "western_digits": true,
+          "page_text_sample": "قاعدة الفرص الموحدة\nالفرص الاستثمارية\n\nراجع الفرص وابحث فيها مع الاحتفاظ برابط كل سجل إلى مصدره الأصلي.\n\nتصدير CSV\n↓\nتصدير Excel\n↓\n⌕\nكل القطاعات\nالبيئة\nالتعليم\n",
+          "rendered_record_count": "عرض 1–50 من 566 فرصة",
+          "visible_buttons_labeled": true,
+          "unlabeled_buttons": []
+        },
+        "opportunity_detail": {
+          "visible": true
+        },
+        "sources": {
+          "visible": true,
+          "rtl": true,
+          "horizontal_overflow": false,
+          "clipped_primary_controls": 0,
+          "clipped_controls": [],
+          "western_digits": true,
+          "page_text_sample": "سجل الناشرين الرسميين\nالمصادر الرسمية\n\nحالة الاتصال وتغطية كل مصدر كما يعلنها الرصد.\n\nتغطية عامة مكتملة\nمكتمل للنطاق المحدد\nتغطية عامة محدودة\nفرص – البوابة المو",
+          "rendered_record_count": 11,
+          "visible_buttons_labeled": true,
+          "unlabeled_buttons": []
+        }
+      }
+    },
+    {
+      "viewport": "390x844",
+      "screens": {
+        "overview": {
+          "visible": true,
+          "rtl": true,
+          "horizontal_overflow": false,
+          "clipped_primary_controls": 0,
+          "clipped_controls": [],
+          "western_digits": true,
+          "page_text_sample": "ذكاء استثماري للأحساء\nمشهد الفرص\nأوضح من أي وقت\n\nقاعدة موحدة للفرص الرسمية في الأحساء، تربط كل إعلان بمصدره وتتابع التغيّرات أولًا بأول.\n\nاستكشف الفرص\n←\nالمصادر",
+          "rendered_record_count": "—",
+          "visible_buttons_labeled": true,
+          "unlabeled_buttons": []
+        },
+        "data-dashboard": {
+          "visible": true,
+          "rtl": true,
+          "horizontal_overflow": false,
+          "clipped_primary_controls": 0,
+          "clipped_controls": [],
+          "western_digits": true,
+          "page_text_sample": "ذكاء استثماري للأحساء\nلوحة الفرص الاستثمارية\n\nمؤشرات موحدة للفرص المنشورة، الجهات، المواعيد والتغطية الجغرافية.\n\nآخر مزامنة مصدر: 2026/10/26 · 12:04 م\nتصدير CSV",
+          "rendered_record_count": "566",
+          "visible_buttons_labeled": true,
+          "unlabeled_buttons": []
+        },
+        "opportunities": {
+          "visible": true,
+          "rtl": true,
+          "horizontal_overflow": false,
+          "clipped_primary_controls": 0,
+          "clipped_controls": [],
+          "western_digits": true,
+          "page_text_sample": "قاعدة الفرص الموحدة\nالفرص الاستثمارية\n\nراجع الفرص وابحث فيها مع الاحتفاظ برابط كل سجل إلى مصدره الأصلي.\n\nتصدير CSV\n↓\nتصدير Excel\n↓\n⌕\nكل القطاعات\nالبيئة\nالتعليم\n",
+          "rendered_record_count": "عرض 1–50 من 566 فرصة",
+          "visible_buttons_labeled": true,
+          "unlabeled_buttons": []
+        },
+        "opportunity_detail": {
+          "visible": true
+        },
+        "sources": {
+          "visible": true,
+          "rtl": true,
+          "horizontal_overflow": false,
+          "clipped_primary_controls": 0,
+          "clipped_controls": [],
+          "western_digits": true,
+          "page_text_sample": "سجل الناشرين الرسميين\nالمصادر الرسمية\n\nحالة الاتصال وتغطية كل مصدر كما يعلنها الرصد.\n\nتغطية عامة مكتملة\nمكتمل للنطاق المحدد\nتغطية عامة محدودة\nفرص – البوابة المو",
+          "rendered_record_count": 11,
+          "visible_buttons_labeled": true,
+          "unlabeled_buttons": []
+        }
+      }
+    }
+  ],
+  "javascript_errors": [],
+  "expected_guest_401_console_events": [
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+  ],
+  "http_5xx": [],
+  "failed_requests": [],
+  "api_reconciliation": {
+    "database_current_masters": 566,
+    "api_total": 566,
+    "dashboard_total": 566,
+    "legacy_dashboard_total": 566,
+    "legacy_dashboard_keys": [
+      "total",
+      "unique_master_opportunities",
+      "source_listings_collected",
+      "multi_source_opportunities",
+      "active",
+      "new_today",
+      "enabled_sources",
+      "pending_duplicates",
+      "pending_location_reviews",
+      "pending_conflicts",
+      "pending_qualification_reviews",
+      "pending_review_total",
+      "sectors",
+      "recent_jobs"
+    ],
+    "paginated_rows": 566,
+    "unique_ids": 566,
+    "duplicate_rows": 0,
+    "missing_rows": 0,
+    "geography_counts": {
+      "total": 566,
+      "coordinate_records": 436,
+      "exact_mapped": 435,
+      "locality_mapped": 0,
+      "missing_coordinates": 130,
+      "outside_boundary": 1,
+      "unverified_coordinates": 0,
+      "unmapped": 131
+    },
+    "map_point_count": 433,
+    "unique_map_masters": 435,
+    "map_master_duplication": 0
+  },
+  "export_reconciliation": {
+    "csv_status": 200,
+    "csv_rows": 566,
+    "csv_header": "﻿اسم الفرصة,الجهة المالكة,القطاع,النشاط,النشاط الفرعي,القطاع الفرعي,نوع الفرصة,المدينة,الحي / الموقع,المواقع التفصيلية,مرحلة المشروع,نموذج الاستثمار,نوع الأصل أو الموقع,المساحة (م²),القيمة الاستثمارية,العملة,مدة العقد (سنة),تاريخ النشر,آخر موعد للتقديم,الحالة,الرقم المرجعي الرسمي,معرّفات المصدر التقنية,المصدر الرئيسي,عدد المصادر,المصادر,رابط الفرصة,الدولة,المنطقة,المحافظة,المدينة / الموقع,الحي,حالة الموقع الجغرافي",
+    "csv_has_arabic": true,
+    "csv_western_digits": true,
+    "xlsx_status": 200,
+    "xlsx_bytes": 282105,
+    "xlsx_rows": 566,
+    "csv_matches_api": true,
+    "xlsx_matches_api": true
+  },
+  "accessibility": {
+    "login": {
+      "dialog_open": true,
+      "focus_inside": true,
+      "all_inputs_labeled": true,
+      "visible_button_labels": [
+        "دخول"
+      ]
+    }
+  },
+  "admin_workbench": {
+    "live_playwright_capture": "PASSED",
+    "route": "/?view=review",
+    "open_queue_empty_state": "لا توجد حالات تطابق المرشحات.",
+    "open_reviews": 0,
+    "resolved_history_filter_accessible": true,
+    "resolved_history_records_returned": 1000,
+    "screenshots": [
+      "docs/validation/final-readiness/screenshots/review-workbench-1920x1080.png",
+      "docs/validation/final-readiness/screenshots/review-workbench-1440x900.png",
+      "docs/validation/final-readiness/screenshots/review-workbench-1366x768.png",
+      "docs/validation/final-readiness/screenshots/review-workbench-768x900.png",
+      "docs/validation/final-readiness/screenshots/review-workbench-390x844.png"
+    ]
+  },
+  "api_statuses": {
+    "first": 200,
+    "dashboard": 200,
+    "legacy_dashboard": 200,
+    "filters": 200,
+    "geography": 200,
+    "sources": 200,
+    "coverage": 200
+  },
+  "ui_summary": {
+    "rtl_all_public_viewports": true,
+    "no_horizontal_overflow_all_public_viewports": true,
+    "zero_clipped_primary_controls": true,
+    "western_digits": true,
+    "javascript_console_errors": 0,
+    "http_5xx_count": 0
+  },
+  "final_workbench_closeout": {
+    "captured_at": "2026-10-26T09:29:29.150924+00:00",
+    "method": "Fresh isolated headless Edge/Playwright context; actual login flow through the local UI",
+    "route_loaded": true,
+    "open_review_count": 0,
+    "empty_state_text": "لا توجد حالات تطابق المرشحات.",
+    "zero_backlog_empty_state": true,
+    "filters_visible_and_usable": true,
+    "resolved_history_filter_accessible": true,
+    "resolved_history_api_status": 200,
+    "resolved_history_records_returned": 1000,
+    "resolved_review_history_accessible": true,
+    "rtl": true,
+    "western_digits": true,
+    "horizontal_page_overflow": false,
+    "clipped_primary_controls": 0,
+    "overlapping_text": 0,
+    "overlapping_text_visual_assessment": "No overlap visible in the five captured screenshots",
+    "javascript_console_errors": 0,
+    "expected_anonymous_auth_probe_401": 2,
+    "unexpected_http_5xx": 0,
+    "review_state_mutation_requests": 0,
+    "recommendation_shown_audit_events_from_visual_history_access": 1,
+    "business_mutation_requests": 0,
+    "ui_logout_completed": true,
+    "ui_session_after_logout_http_status": 401,
+    "viewport_results": [
+      {
+        "viewport": "1920x1080",
+        "passed": true,
+        "width": 1920,
+        "height": 1080,
+        "pageOverflow": false,
+        "clippedControls": 0,
+        "rtl": true,
+        "westernDigits": true,
+        "emptyStateVisible": true,
+        "resolvedFilterAccessible": true,
+        "navVisible": true
+      },
+      {
+        "viewport": "1440x900",
+        "passed": true,
+        "width": 1440,
+        "height": 900,
+        "pageOverflow": false,
+        "clippedControls": 0,
+        "rtl": true,
+        "westernDigits": true,
+        "emptyStateVisible": true,
+        "resolvedFilterAccessible": true,
+        "navVisible": true
+      },
+      {
+        "viewport": "1366x768",
+        "passed": true,
+        "width": 1366,
+        "height": 768,
+        "pageOverflow": false,
+        "clippedControls": 0,
+        "rtl": true,
+        "westernDigits": true,
+        "emptyStateVisible": true,
+        "resolvedFilterAccessible": true,
+        "navVisible": true
+      },
+      {
+        "viewport": "768x900",
+        "passed": true,
+        "width": 768,
+        "height": 900,
+        "pageOverflow": false,
+        "clippedControls": 0,
+        "rtl": true,
+        "westernDigits": true,
+        "emptyStateVisible": true,
+        "resolvedFilterAccessible": true,
+        "navVisible": true
+      },
+      {
+        "viewport": "390x844",
+        "passed": true,
+        "width": 390,
+        "height": 844,
+        "pageOverflow": false,
+        "clippedControls": 0,
+        "rtl": true,
+        "westernDigits": true,
+        "emptyStateVisible": true,
+        "resolvedFilterAccessible": true,
+        "navVisible": true
+      }
+    ],
+    "screenshots": [
+      "C:/Sharakat Data Base/docs/validation/final-readiness/screenshots/review-workbench-1920x1080.png",
+      "C:/Sharakat Data Base/docs/validation/final-readiness/screenshots/review-workbench-1440x900.png",
+      "C:/Sharakat Data Base/docs/validation/final-readiness/screenshots/review-workbench-1366x768.png",
+      "C:/Sharakat Data Base/docs/validation/final-readiness/screenshots/review-workbench-768x900.png",
+      "C:/Sharakat Data Base/docs/validation/final-readiness/screenshots/review-workbench-390x844.png"
+    ],
+    "passed": true
+  }
+}

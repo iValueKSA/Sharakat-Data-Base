@@ -1,0 +1,37 @@
+{
+  "snapshot_at": "2026-10-22T07:42:21.338046+00:00",
+  "unused_raw_fields_discovered": 0,
+  "inspected_candidates": [
+    {
+      "source": "furas",
+      "raw_field": "attributes.DURATION",
+      "meaning": "numeric duration-like source value; unit and contract semantics unverified",
+      "review_types_helped": [
+        "STANDARDIZATION_REVIEW:contract_duration_years"
+      ],
+      "safe_to_use_deterministically": false,
+      "already_exposed_in_review": true
+    },
+    {
+      "source": "invest-saudi",
+      "raw_field": "investmentSize",
+      "meaning": "literal zero; currency and amount/sentinel semantics unknown",
+      "review_types_helped": [
+        "STANDARDIZATION_REVIEW:investment_value"
+      ],
+      "safe_to_use_deterministically": false,
+      "already_exposed_in_review": true
+    },
+    {
+      "source": "invest-saudi",
+      "raw_field": "modalData.opportunityNumber",
+      "meaning": "exact Furas reference link used to establish entity identity and locality",
+      "review_types_helped": [
+        "LOCATION_REVIEW"
+      ],
+      "safe_to_use_deterministically": true,
+      "already_used_by_current_link_enrichment": true
+    }
+  ],
+  "finding": "No additional unmapped field safely resolves a currently blocked canonical field; candidate fields are already represented or do not answer the blocked question."
+}

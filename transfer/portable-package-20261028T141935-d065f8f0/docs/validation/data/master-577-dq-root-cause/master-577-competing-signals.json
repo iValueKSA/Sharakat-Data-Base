@@ -1,0 +1,17 @@
+{
+  "master_id": 577,
+  "competing_sector_signals": [
+    {
+      "field": "title",
+      "strength": "NONE",
+      "value": "مستشفى (within \"مقهى مستشفى العمران العام\")",
+      "weight": 0.0,
+      "semantic_justification": "The exact healthcare phrase is explicitly excluded by the classifier when used as the cafe location/destination. It does not describe the investment activity.",
+      "competing_sector": "Healthcare"
+    }
+  ],
+  "source_sector_conflict": false,
+  "negative_evidence": [],
+  "strong_contradiction_exists": false,
+  "adjudication": "The opportunity is a cafe concession, with source activity/sub-activity aligned to commercial food service. No strong evidence points to another economic sector."
+}

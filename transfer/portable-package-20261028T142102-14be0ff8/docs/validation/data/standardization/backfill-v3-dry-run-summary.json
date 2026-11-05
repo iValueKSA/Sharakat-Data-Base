@@ -1,0 +1,16 @@
+{
+  "mode": "READ_ONLY_DRY_RUN",
+  "standardization_version": "3",
+  "batch_size": 200,
+  "master_rows_modified": 0,
+  "raw_source_values_modified": 0,
+  "review_decisions_modified": 0,
+  "summary": {
+    "records_would_update": 2896,
+    "field_entries_would_write": 62857,
+    "approved_alias_matches": 716,
+    "unmapped_fields": 13658,
+    "validation_issues": 0
+  },
+  "projection_change_rows": 5760
+}

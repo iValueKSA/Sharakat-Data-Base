@@ -1,0 +1,148 @@
+{
+  "api": {
+    "total": 289,
+    "active": 283,
+    "sources": 10,
+    "sectors": 20,
+    "statuses": 6,
+    "owners": 7,
+    "types": 20,
+    "timeline": 1,
+    "exactMapped": 175,
+    "unmapped": 114
+  },
+  "after": {
+    "total": 289,
+    "active": 283,
+    "sources": 10
+  },
+  "viewportChecks": [
+    {
+      "viewport": "1920x1080",
+      "documentWidth": 1920,
+      "rtl": true,
+      "visible": true,
+      "total": "٢٨٩",
+      "charts": {
+        "columns": 2,
+        "donut": 1,
+        "timeSeries": 0,
+        "limitedHistoryIndicator": 1,
+        "rank": 7
+      },
+      "mapHeight": 325,
+      "overflowingCards": [],
+      "narrowTextOverflows": []
+    },
+    {
+      "viewport": "1440x900",
+      "documentWidth": 1440,
+      "rtl": true,
+      "visible": true,
+      "total": "٢٨٩",
+      "charts": {
+        "columns": 2,
+        "donut": 1,
+        "timeSeries": 0,
+        "limitedHistoryIndicator": 1,
+        "rank": 7
+      },
+      "mapHeight": 300,
+      "overflowingCards": [],
+      "narrowTextOverflows": []
+    },
+    {
+      "viewport": "1366x768",
+      "documentWidth": 1366,
+      "rtl": true,
+      "visible": true,
+      "total": "٢٨٩",
+      "charts": {
+        "columns": 2,
+        "donut": 1,
+        "timeSeries": 0,
+        "limitedHistoryIndicator": 1,
+        "rank": 7
+      },
+      "mapHeight": 300,
+      "overflowingCards": [],
+      "narrowTextOverflows": []
+    },
+    {
+      "viewport": "768x900",
+      "documentWidth": 768,
+      "rtl": true,
+      "visible": true,
+      "total": "٢٨٩",
+      "charts": {
+        "columns": 2,
+        "donut": 1,
+        "timeSeries": 0,
+        "limitedHistoryIndicator": 1,
+        "rank": 7
+      },
+      "mapHeight": 310,
+      "overflowingCards": [],
+      "narrowTextOverflows": []
+    },
+    {
+      "viewport": "390x844",
+      "documentWidth": 390,
+      "rtl": true,
+      "visible": true,
+      "total": "٢٨٩",
+      "charts": {
+        "columns": 2,
+        "donut": 1,
+        "timeSeries": 0,
+        "limitedHistoryIndicator": 1,
+        "rank": 7
+      },
+      "mapHeight": 290,
+      "overflowingCards": [],
+      "narrowTextOverflows": []
+    }
+  ],
+  "functional": {
+    "sectorFilterMatchesApi": true,
+    "sectorFilterMapMatchesApi": true,
+    "sectorFilterUpdatedUrl": true,
+    "resetRestoredTotal": true,
+    "statusDonutDrilldown": true,
+    "ownerDrilldown": true,
+    "heatMapToggle": true,
+    "clusterToggle": true,
+    "mapPopup": true,
+    "mapPopupDrilldown": true,
+    "opportunityDetail": true,
+    "csvExport": true,
+    "xlsxExport": true,
+    "route_opportunities": true,
+    "route_sources": true,
+    "guestAdminHidden": true,
+    "loginDialogAvailable": true,
+    "localLogin": true,
+    "adminRouteVisibleAfterLogin": true,
+    "route_review": true,
+    "route_alerts": true,
+    "route_admin": true,
+    "opportunityPagination": true,
+    "opportunitySearch": true,
+    "opportunityListDetail": true,
+    "dashboardNavigationItem": true
+  },
+  "errors": [],
+  "failed": [],
+  "screenshots": [
+    "docs\\validation\\ui\\tabler-ahda-dashboard-rebuild\\screenshots\\dashboard-1920x1080-full.png",
+    "docs\\validation\\ui\\tabler-ahda-dashboard-rebuild\\screenshots\\dashboard-desktop-first-1920x1080.png",
+    "docs\\validation\\ui\\tabler-ahda-dashboard-rebuild\\screenshots\\dashboard-charts-and-map-1920x1080.png",
+    "docs\\validation\\ui\\tabler-ahda-dashboard-rebuild\\screenshots\\dashboard-map-1920x1080.png",
+    "docs\\validation\\ui\\tabler-ahda-dashboard-rebuild\\screenshots\\dashboard-1440x900-full.png",
+    "docs\\validation\\ui\\tabler-ahda-dashboard-rebuild\\screenshots\\dashboard-1366x768-full.png",
+    "docs\\validation\\ui\\tabler-ahda-dashboard-rebuild\\screenshots\\dashboard-768x900-full.png",
+    "docs\\validation\\ui\\tabler-ahda-dashboard-rebuild\\screenshots\\dashboard-390x844-full.png",
+    "docs\\validation\\ui\\tabler-ahda-dashboard-rebuild\\screenshots\\dashboard-mobile-first-390x844.png",
+    "docs\\validation\\ui\\tabler-ahda-dashboard-rebuild\\screenshots\\dashboard-desktop-first-1440x900.png"
+  ]
+}

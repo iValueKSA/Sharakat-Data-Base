@@ -1,0 +1,3593 @@
+{
+  "correction_count": 177,
+  "corrections": [
+    {
+      "master_id": 10,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 10,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-22-017001-1013",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-06",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 11,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 11,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-22-017001-1012",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-06",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 12,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 12,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-22-017001-1027",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-13",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 13,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 13,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-22-017001-1008",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-06",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 14,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 14,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-23-017001-10002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-06",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 15,
+      "before_status": "REMOVED_FROM_SOURCE",
+      "after_status": "أزيلت من المصدر",
+      "evidence_source_records": [
+        {
+          "source_record_id": 15,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-23-017001-14002",
+          "raw_status": "Announced",
+          "canonical_source_status": "أزيلت من المصدر",
+          "raw_deadline": "2027-12-01",
+          "missing_successful_checks": 8,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 16,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 16,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-24-017001-21002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-03-03",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 17,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 17,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-24-017001-28001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-10-16",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 18,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 18,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-24-017001-38001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-06-26",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 19,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 19,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-2002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-06-26",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 20,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 20,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-2003",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-06-26",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 21,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 21,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-3039",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-06-26",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 22,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 22,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-6002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-03-03",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 23,
+      "before_status": "REMOVED_FROM_SOURCE",
+      "after_status": "أزيلت من المصدر",
+      "evidence_source_records": [
+        {
+          "source_record_id": 23,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-7001",
+          "raw_status": "Deleted",
+          "canonical_source_status": "أزيلت من المصدر",
+          "raw_deadline": "2027-03-03",
+          "missing_successful_checks": 62,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 24,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 24,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-19002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-13",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 25,
+      "before_status": "REMOVED_FROM_SOURCE",
+      "after_status": "أزيلت من المصدر",
+      "evidence_source_records": [
+        {
+          "source_record_id": 25,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-22001",
+          "raw_status": "Announced",
+          "canonical_source_status": "أزيلت من المصدر",
+          "raw_deadline": "2027-02-28",
+          "missing_successful_checks": 8,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 26,
+      "before_status": "REMOVED_FROM_SOURCE",
+      "after_status": "أزيلت من المصدر",
+      "evidence_source_records": [
+        {
+          "source_record_id": 26,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-36002",
+          "raw_status": "Deleted",
+          "canonical_source_status": "أزيلت من المصدر",
+          "raw_deadline": "2027-02-17",
+          "missing_successful_checks": 62,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 27,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 27,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-36001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-06",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 28,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 28,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-38003",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-09-17",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 29,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 29,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-43001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-06-26",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 30,
+      "before_status": "REMOVED_FROM_SOURCE",
+      "after_status": "أزيلت من المصدر",
+      "evidence_source_records": [
+        {
+          "source_record_id": 30,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "25-09-1976186",
+          "raw_status": "Announced",
+          "canonical_source_status": "أزيلت من المصدر",
+          "raw_deadline": "2026-10-15",
+          "missing_successful_checks": 12,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 31,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 31,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-59007",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-06",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 32,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 32,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-63005",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-21",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 33,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 33,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-63003",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-21",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 34,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 34,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-63004",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-21",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 35,
+      "before_status": "REMOVED_FROM_SOURCE",
+      "after_status": "أزيلت من المصدر",
+      "evidence_source_records": [
+        {
+          "source_record_id": 35,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-64001",
+          "raw_status": "Announced",
+          "canonical_source_status": "أزيلت من المصدر",
+          "raw_deadline": "2026-10-15",
+          "missing_successful_checks": 12,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 36,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 36,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-65001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-21",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 37,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 37,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-65002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-21",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 38,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 38,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-66001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-21",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 39,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 39,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-66002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-21",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 40,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 40,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-66006",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-21",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 41,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 41,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-66009",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-21",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 42,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 42,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-66003",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-21",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 43,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 43,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-66008",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-21",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 44,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 44,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-66010",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-21",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 45,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 45,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-66011",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-21",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 46,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 46,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-66012",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-22",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 47,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 47,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-67001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-06",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 48,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 48,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-69002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-23",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 49,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 49,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-68001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-23",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 50,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 50,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-69003",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-23",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 51,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 51,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-71001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-27",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 52,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 52,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-71004",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-27",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 53,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 53,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-71005",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-27",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 54,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 54,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-72001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-06-26",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 55,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 55,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-73001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-06",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 56,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 56,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-75001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-04",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 57,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 57,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-77001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-04",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 58,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 58,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-77003",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-04",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 59,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 59,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-77004",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-04",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 60,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 60,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-77002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-04",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 61,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 61,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-77005",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-04",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 62,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 62,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-77006",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-10-13",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 63,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 63,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-81001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-12-11",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 64,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 64,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-83001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-12-11",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 65,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 65,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-84002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-12-08",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 66,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 66,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-85001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-12-11",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 67,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 67,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-86001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-01-01",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 68,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 68,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-89001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-01-01",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 69,
+      "before_status": "REMOVED_FROM_SOURCE",
+      "after_status": "أزيلت من المصدر",
+      "evidence_source_records": [
+        {
+          "source_record_id": 69,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-1",
+          "raw_status": "Deleted",
+          "canonical_source_status": "أزيلت من المصدر",
+          "raw_deadline": "2027-01-16",
+          "missing_successful_checks": 62,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 70,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 70,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017704-1001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-02-09",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 71,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 71,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-9001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-03-03",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 72,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 72,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-12003",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-06-30",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 73,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 73,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-22001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-07-02",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 76,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 76,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-24002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-06-26",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 77,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 77,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-24003",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-06-26",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 78,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 78,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "06-26-189921-64005",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-01",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 79,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 79,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-32004",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-06-26",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 80,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 80,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-32006",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-06-26",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 81,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 81,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-34001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-08-07",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 82,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 82,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-36001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-08-07",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 83,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 83,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-37001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-08-07",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 84,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 84,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-37002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-08-07",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 85,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 85,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-43001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-09-28",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 86,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 86,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-44001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-08-28",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 87,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 87,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-44004",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-08-28",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 88,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 88,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-44005",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-08-28",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 89,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 89,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-44006",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-08-28",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 90,
+      "before_status": "REMOVED_FROM_SOURCE",
+      "after_status": "أزيلت من المصدر",
+      "evidence_source_records": [
+        {
+          "source_record_id": 90,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "26-09-2422346",
+          "raw_status": "Announced",
+          "canonical_source_status": "أزيلت من المصدر",
+          "raw_deadline": "2026-10-15",
+          "missing_successful_checks": 12,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 91,
+      "before_status": "REMOVED_FROM_SOURCE",
+      "after_status": "أزيلت من المصدر",
+      "evidence_source_records": [
+        {
+          "source_record_id": 91,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "26-09-2422553",
+          "raw_status": "Announced",
+          "canonical_source_status": "أزيلت من المصدر",
+          "raw_deadline": "2026-10-14",
+          "missing_successful_checks": 20,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 92,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 92,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-47002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-09-15",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 93,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 93,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-48003",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-09-17",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 94,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 94,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-49002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-09-17",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 95,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 95,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-49003",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-09-17",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 96,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 96,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "06-26-183737-49004",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-28",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 97,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 97,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "26-09-2439514",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-28",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 98,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 98,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "06-26-183737-49005",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-28",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 99,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 99,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "06-26-183737-49007",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-28",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 100,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 100,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "26-09-2439570",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-28",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 101,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 101,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "06-26-183737-49009",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-28",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 102,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 102,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "06-26-183737-46013",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-28",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        },
+        {
+          "source_record_id": 2357,
+          "source_id": 4,
+          "source_key": "invest-saudi",
+          "external_id": "investsaudi:54963",
+          "raw_status": null,
+          "canonical_source_status": "غير محددة",
+          "raw_deadline": null,
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 103,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 103,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "26-09-2439658",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-28",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 104,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 104,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "26-09-2439662",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-28",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 105,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 105,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "26-09-2439674",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-28",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 106,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 106,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "06-26-187795-34003",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-30",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 107,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 107,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "01-26-017001-39029",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-09",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 108,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 108,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-22-017001-1024",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-13",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 109,
+      "before_status": "REMOVED_FROM_SOURCE",
+      "after_status": "أزيلت من المصدر",
+      "evidence_source_records": [
+        {
+          "source_record_id": 109,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-23-017001-14003",
+          "raw_status": "Announced",
+          "canonical_source_status": "أزيلت من المصدر",
+          "raw_deadline": "2027-12-01",
+          "missing_successful_checks": 8,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 110,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 110,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-24-017001-21001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-03-03",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 111,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 111,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-63002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-21",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 112,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 112,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-65003",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-21",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 113,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 113,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-66004",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-21",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 114,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 114,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-66005",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-21",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 115,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 115,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-66007",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-21",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 116,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 116,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-69001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-23",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 117,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 117,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-68002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-27",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 118,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 118,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-71003",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-27",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 119,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 119,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-70001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-27",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 120,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 120,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-71002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-27",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 121,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 121,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-73002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-06",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 122,
+      "before_status": "REMOVED_FROM_SOURCE",
+      "after_status": "أزيلت من المصدر",
+      "evidence_source_records": [
+        {
+          "source_record_id": 122,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-77007",
+          "raw_status": "Deleted",
+          "canonical_source_status": "أزيلت من المصدر",
+          "raw_deadline": "2026-11-04",
+          "missing_successful_checks": 62,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 123,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 123,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-83002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-12-11",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 124,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 124,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-86002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-01-01",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 125,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 125,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-86003",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-01-01",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 126,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 126,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-5001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-02-18",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 127,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 127,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-8001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-03-09",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 128,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 128,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-9002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-03-03",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 129,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 129,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-23001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-01-31",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 130,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 130,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-24005",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-06-26",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 131,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 131,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-32002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-06-26",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 132,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 132,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-32005",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-06-26",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 133,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 133,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-32007",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-08-17",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 134,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 134,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-39001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-08-17",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 136,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 136,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-44003",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-08-28",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 137,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 137,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-45001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-09-17",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 138,
+      "before_status": "REMOVED_FROM_SOURCE",
+      "after_status": "أزيلت من المصدر",
+      "evidence_source_records": [
+        {
+          "source_record_id": 138,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "26-09-2422468",
+          "raw_status": "Announced",
+          "canonical_source_status": "أزيلت من المصدر",
+          "raw_deadline": "2026-10-14",
+          "missing_successful_checks": 20,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 139,
+      "before_status": "REMOVED_FROM_SOURCE",
+      "after_status": "أزيلت من المصدر",
+      "evidence_source_records": [
+        {
+          "source_record_id": 139,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "26-09-2422527",
+          "raw_status": "Announced",
+          "canonical_source_status": "أزيلت من المصدر",
+          "raw_deadline": "2026-10-15",
+          "missing_successful_checks": 12,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": "2026-10-19T10:47:54.794074+00:00"
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 141,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 141,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "26-09-2439653",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-28",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 142,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 142,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "26-09-2439686",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-28",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 205,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 208,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "03-21-017001-76",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-12-30",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 206,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 209,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-24-017001-8001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-06",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 207,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 210,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-23-017001-1001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-07-03",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 224,
+      "before_status": "EXPIRED",
+      "after_status": "منتهية",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2773,
+          "source_id": 5,
+          "source_key": "kfu",
+          "external_id": "kfu-announcement:0d11721853f11a8fcd75be5e",
+          "raw_status": "EXPIRED",
+          "canonical_source_status": "منتهية",
+          "raw_deadline": "2025-01-22",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 225,
+      "before_status": "REMOVED_FROM_SOURCE",
+      "after_status": "أزيلت من المصدر",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2774,
+          "source_id": 5,
+          "source_key": "kfu",
+          "external_id": "kfu-announcement:7e98c5dfb12b0a6d09f4c349",
+          "raw_status": "UNKNOWN",
+          "canonical_source_status": "أزيلت من المصدر",
+          "raw_deadline": null,
+          "missing_successful_checks": 3,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": "2026-10-19T06:46:30.299073+00:00"
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 226,
+      "before_status": "Announced",
+      "after_status": "متاحة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2778,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "01-26-017001-40002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-12-15",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        },
+        {
+          "source_record_id": 2780,
+          "source_id": 2,
+          "source_key": "alahsa-opportunities",
+          "external_id": "515",
+          "raw_status": "متاحة",
+          "canonical_source_status": "متاحة",
+          "raw_deadline": "2026-12-15",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 227,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2779,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "06-26-185611-16001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-12-14",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 228,
+      "before_status": "EXPIRED",
+      "after_status": "منتهية",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2781,
+          "source_id": 7,
+          "source_key": "ncp",
+          "external_id": "ncp:foodsafetylabs",
+          "raw_status": "EXPIRED",
+          "canonical_source_status": "منتهية",
+          "raw_deadline": "2026-04-15",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 230,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2368,
+          "source_id": 4,
+          "source_key": "invest-saudi",
+          "external_id": "investsaudi:54952",
+          "raw_status": null,
+          "canonical_source_status": "غير محددة",
+          "raw_deadline": null,
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        },
+        {
+          "source_record_id": 2831,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "06-26-183737-49010",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-10-28",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 231,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2832,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "01-26-017001-14003",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-12-14",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 232,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2833,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "01-26-017001-14007",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-12-14",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 233,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2834,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "01-26-017001-23001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-12-14",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 234,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2835,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "01-26-017001-26003",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-12-16",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 235,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2836,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "01-26-017001-26004",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-12-16",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 237,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2838,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "01-26-017001-30001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-12-14",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 239,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2840,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "01-26-017001-34002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-12-14",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 240,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2841,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "01-26-017001-34005",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-12-14",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 242,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2843,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "01-26-017001-41001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-16",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 244,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2845,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "01-26-017001-40001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-12-14",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 246,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2847,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "01-26-017001-41002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-16",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 248,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2849,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "01-26-017001-41005",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-16",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 249,
+      "before_status": "Announced",
+      "after_status": "متاحة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2850,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "01-26-017001-41008",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-12-16",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        },
+        {
+          "source_record_id": 2874,
+          "source_id": 2,
+          "source_key": "alahsa-opportunities",
+          "external_id": "541",
+          "raw_status": "متاحة",
+          "canonical_source_status": "متاحة",
+          "raw_deadline": "2026-12-16",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 251,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2852,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "01-26-017001-41004",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-16",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 253,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2854,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "01-26-017001-1",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-12-14",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 255,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2856,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "01-26-017001-26002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-12-16",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 257,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2858,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "01-26-017001-34011",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-12-21",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 258,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2859,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "01-26-017001-41003",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-16",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 260,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2861,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "01-26-017001-41006",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-12-16",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 262,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2863,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "01-26-017001-41007",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-12-16",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 308,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2910,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-24-017001-32025",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-10-13",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 309,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2911,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-24-017001-33041",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-10-13",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 310,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2912,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-24-017001-33034",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-10-13",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 311,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2913,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-57014",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-10-13",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 312,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2914,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-41001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-10-13",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 313,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2915,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-41002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-10-13",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 314,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2916,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-41005",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-10-13",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 315,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2917,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-53001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-09-30",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 316,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2918,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-54002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-09-30",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 317,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2919,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-54003",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-09-30",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 318,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2920,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-59002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-10-13",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 319,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2921,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-24-017001-32002",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-10-13",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 320,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2922,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-25-017001-57001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-10-13",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 321,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2923,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-41003",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-10-13",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 322,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2924,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-41004",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-10-13",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 323,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2925,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-54001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2027-09-30",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 324,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2926,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "02-26-017001-58001",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2028-10-12",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 325,
+      "before_status": "Announced",
+      "after_status": "منشورة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2927,
+          "source_id": 1,
+          "source_key": "furas",
+          "external_id": "06-26-18115-20003",
+          "raw_status": "Announced",
+          "canonical_source_status": "منشورة",
+          "raw_deadline": "2026-11-22",
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    },
+    {
+      "master_id": 326,
+      "before_status": "Unknown",
+      "after_status": "حالة غير معروفة",
+      "evidence_source_records": [
+        {
+          "source_record_id": 2928,
+          "source_id": 5,
+          "source_key": "kfu",
+          "external_id": "kfu-announcement:0aac035af08807f4f1755ee5",
+          "raw_status": "UNKNOWN",
+          "canonical_source_status": "حالة غير معروفة",
+          "raw_deadline": null,
+          "missing_successful_checks": 0,
+          "missing_confirmation_threshold": 3,
+          "last_missing_at": null
+        }
+      ],
+      "reason": "Master projection corrected to deterministic source-aware lifecycle aggregation; raw evidence preserved."
+    }
+  ]
+}

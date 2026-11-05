@@ -1,0 +1,16 @@
+{
+  "previous_job_id": 411,
+  "previous_unique_official_ids": 2431,
+  "job439_unique_official_ids": 2431,
+  "intersection": 2431,
+  "previous_only": 0,
+  "job439_only": 0,
+  "previous_only_ids": [],
+  "job439_only_ids": [],
+  "official_id_extraction_changed": false,
+  "parser_version_previous": null,
+  "parser_version_job439": null,
+  "normalization": "id, else slug, else link; trim; numeric strings normalized to decimal integer; other IDs casefold; prefix investsaudi: .",
+  "missing_official_ids": 0,
+  "duplicate_source_rows": 0
+}

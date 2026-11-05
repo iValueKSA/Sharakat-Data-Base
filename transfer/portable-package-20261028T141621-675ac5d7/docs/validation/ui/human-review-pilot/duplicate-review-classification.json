@@ -1,0 +1,179 @@
+{
+  "audit_timestamp": "2026-10-25T08:12:28.442527+00:00",
+  "open_duplicate_reviews_before": 10,
+  "counts": {
+    "exact_deterministic_duplicates": 0,
+    "near_duplicates_with_real_differences": 10,
+    "same_source_ambiguous": 8,
+    "cross_source_ambiguous": 2,
+    "false_positive_reviews": 0,
+    "insufficient_evidence": 0,
+    "deterministic_auto_resolved": 0,
+    "invalid_reviews_closed": 0,
+    "remaining_human_duplicate_reviews": 10,
+    "identical_looking_review_without_explanation": 0,
+    "deterministic_duplicate_left_for_human_review": 0
+  },
+  "interpretation": "Each candidate has one ambiguity class (same-source or cross-source); near_duplicate_with_real_difference is an overlapping evidence characteristic.",
+  "reviews": [
+    {
+      "review_id": 32,
+      "master_ids": [
+        155,
+        156
+      ],
+      "classification": "SAME_SOURCE_AMBIGUOUS",
+      "same_source": true,
+      "near_duplicate_with_real_difference": true,
+      "meaningful_difference_count": 2,
+      "trigger_rule": "SAME_SOURCE_TITLE_PLOT_PLAN_SCREEN",
+      "why_review_created": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "why_not_auto_resolved": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "auto_resolution_allowed": false
+    },
+    {
+      "review_id": 33,
+      "master_ids": [
+        155,
+        159
+      ],
+      "classification": "SAME_SOURCE_AMBIGUOUS",
+      "same_source": true,
+      "near_duplicate_with_real_difference": true,
+      "meaningful_difference_count": 2,
+      "trigger_rule": "SAME_SOURCE_TITLE_PLOT_PLAN_SCREEN",
+      "why_review_created": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "why_not_auto_resolved": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "auto_resolution_allowed": false
+    },
+    {
+      "review_id": 34,
+      "master_ids": [
+        156,
+        159
+      ],
+      "classification": "SAME_SOURCE_AMBIGUOUS",
+      "same_source": true,
+      "near_duplicate_with_real_difference": true,
+      "meaningful_difference_count": 2,
+      "trigger_rule": "SAME_SOURCE_TITLE_PLOT_PLAN_SCREEN",
+      "why_review_created": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "why_not_auto_resolved": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "auto_resolution_allowed": false
+    },
+    {
+      "review_id": 35,
+      "master_ids": [
+        157,
+        160
+      ],
+      "classification": "SAME_SOURCE_AMBIGUOUS",
+      "same_source": true,
+      "near_duplicate_with_real_difference": true,
+      "meaningful_difference_count": 2,
+      "trigger_rule": "SAME_SOURCE_TITLE_PLOT_PLAN_SCREEN",
+      "why_review_created": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "why_not_auto_resolved": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "auto_resolution_allowed": false
+    },
+    {
+      "review_id": 36,
+      "master_ids": [
+        158,
+        161
+      ],
+      "classification": "SAME_SOURCE_AMBIGUOUS",
+      "same_source": true,
+      "near_duplicate_with_real_difference": true,
+      "meaningful_difference_count": 2,
+      "trigger_rule": "SAME_SOURCE_TITLE_PLOT_PLAN_SCREEN",
+      "why_review_created": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "why_not_auto_resolved": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "auto_resolution_allowed": false
+    },
+    {
+      "review_id": 37,
+      "master_ids": [
+        163,
+        254
+      ],
+      "classification": "SAME_SOURCE_AMBIGUOUS",
+      "same_source": true,
+      "near_duplicate_with_real_difference": true,
+      "meaningful_difference_count": 17,
+      "trigger_rule": "SAME_SOURCE_TITLE_PLOT_PLAN_SCREEN",
+      "why_review_created": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "why_not_auto_resolved": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "auto_resolution_allowed": false
+    },
+    {
+      "review_id": 38,
+      "master_ids": [
+        197,
+        198
+      ],
+      "classification": "SAME_SOURCE_AMBIGUOUS",
+      "same_source": true,
+      "near_duplicate_with_real_difference": true,
+      "meaningful_difference_count": 2,
+      "trigger_rule": "SAME_SOURCE_TITLE_PLOT_PLAN_SCREEN",
+      "why_review_created": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "why_not_auto_resolved": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "auto_resolution_allowed": false
+    },
+    {
+      "review_id": 39,
+      "master_ids": [
+        263,
+        264
+      ],
+      "classification": "SAME_SOURCE_AMBIGUOUS",
+      "same_source": true,
+      "near_duplicate_with_real_difference": true,
+      "meaningful_difference_count": 2,
+      "trigger_rule": "SAME_SOURCE_TITLE_PLOT_PLAN_SCREEN",
+      "why_review_created": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "why_not_auto_resolved": "Same-source listings can be reissues or distinct tenders; identical title plus matching plot/plan is not sufficient to merge without source detail/publication-history evidence.",
+      "auto_resolution_allowed": false
+    },
+    {
+      "review_id": 46,
+      "master_ids": [
+        107,
+        186
+      ],
+      "classification": "CROSS_SOURCE_AMBIGUOUS",
+      "same_source": false,
+      "near_duplicate_with_real_difference": true,
+      "meaningful_difference_count": 29,
+      "trigger_rule": "broad-title-area-location-screen",
+      "why_review_created": "Furas and Al-Ahsa listings both describe a 15 m² smart-gym kiosk on a King Faisal University promenade and have highly similar titles. Al-Ahsa has no official reference or owner, and its location is only Hawfuf while Furas includes a more specific street. Keep separate pending source-detail confirmation.",
+      "why_not_auto_resolved": "Furas and Al-Ahsa listings both describe a 15 m² smart-gym kiosk on a King Faisal University promenade and have highly similar titles. Al-Ahsa has no official reference or owner, and its location is only Hawfuf while Furas includes a more specific street. Keep separate pending source-detail confirmation.",
+      "auto_resolution_allowed": false
+    },
+    {
+      "review_id": 47,
+      "master_ids": [
+        107,
+        187
+      ],
+      "classification": "CROSS_SOURCE_AMBIGUOUS",
+      "same_source": false,
+      "near_duplicate_with_real_difference": true,
+      "meaningful_difference_count": 28,
+      "trigger_rule": "broad-title-area-location-screen",
+      "why_review_created": "Furas lists a 15 m² smart-gym kiosk on a King Faisal University walkway; the Al-Ahsa listing says Diyar Al-Ahsa promenade opposite the university. The shared area and nearby locality are insufficient to establish the same exact site; keep separate pending source-detail confirmation.",
+      "why_not_auto_resolved": "Furas lists a 15 m² smart-gym kiosk on a King Faisal University walkway; the Al-Ahsa listing says Diyar Al-Ahsa promenade opposite the university. The shared area and nearby locality are insufficient to establish the same exact site; keep separate pending source-detail confirmation.",
+      "auto_resolution_allowed": false
+    }
+  ],
+  "automatic_actions": {
+    "merged": 0,
+    "rejected": 0,
+    "closed": 0,
+    "reason": "All open candidates remain ambiguous under existing identity governance; no deterministic resolution was authorized."
+  },
+  "business_data_changed": false,
+  "review_data_changed": false,
+  "manual_source_sync_started": false
+}

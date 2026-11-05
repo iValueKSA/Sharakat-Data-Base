@@ -1,0 +1,15 @@
+{
+  "post_fix_guard": true,
+  "completeness": "Four expected endpoints, endpoint names, GET, page size, request parameters, completeness, success-page counts, no unexpected empty pages.",
+  "population_guard": "Compares per-dataset totals and third-miss ID-set removal candidates to up to five comparable successful scans. Allowance=max(one 100-row API page, 3*MAD).",
+  "large_removal_confirmation": "A first scan with excessive third-miss candidates is held and audited. A second complete scan may proceed only when endpoint scope signatures and exact candidate source-record IDs match the held scan.",
+  "empty_or_partial_dataset": "Blocks all reconciliation if prior population was nonzero and current endpoint is empty, failed, incomplete, or scope differs.",
+  "source_presence": "Invest Saudi seen IDs use all raw_candidates regardless of Al-Ahsa qualification.",
+  "per_record_confirmation": "Three consecutive complete successful misses remain required. Dataset membership comparison stays endpoint-scoped.",
+  "partial_dataset_can_trigger_removal": false,
+  "mass_removal_confirmation_required": true,
+  "dataset_scoped_removal_comparison": true,
+  "source_removal_equals_cancellation": false,
+  "focused_tests": "36 passed / 0 failed",
+  "full_regression": "474 passed / 0 failed"
+}

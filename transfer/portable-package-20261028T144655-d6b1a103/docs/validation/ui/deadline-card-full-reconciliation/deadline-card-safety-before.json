@@ -1,0 +1,15 @@
+{
+  "captured_at": "2026-10-28T09:34:48.001699+00:00",
+  "master_rows": 587,
+  "current_masters": 566,
+  "source_rows": 3180,
+  "reviews": 1187,
+  "merges": 21,
+  "sync_job_count": 568,
+  "active_job_ids": [],
+  "master_business_sha256": "5e90b3ad86ea41f161588a215bd7dfcf6a21a1adc69d659a9503e94aad5bd676",
+  "source_opportunities_sha256": "a08c44995c7d04fb86226d4f0205d29e232fe5889aa0590991b30e2bfcc913a8",
+  "raw_dates_sha256": "c98b485e71c41e2a2fd2cbdc8a6d6cc7b46c648451aa4d4c7e37bfd89018034c",
+  "canonical_deadlines_sha256": "ccf8b60bfc409bbbbf4c9d98e0dbd90d0a1aa9ac93c496558999c4654311f3f2",
+  "review_state_sha256": "77b372551f54c2d79f9d2977854123dbd47313813d61d0953e96b5b539164401"
+}

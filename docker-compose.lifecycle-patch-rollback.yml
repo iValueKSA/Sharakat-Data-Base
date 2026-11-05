@@ -1,0 +1,14 @@
+services:
+  migrate:
+    image: alahsa-local-api:baseline-lifecycle-20261101
+    build: !reset null
+    command: ["python", "-c", "print('Lifecycle patch rollback: schema migrations intentionally disabled')"]
+  api:
+    image: alahsa-local-api:baseline-lifecycle-20261101
+    build: !reset null
+  worker:
+    image: alahsa-local-worker:baseline-lifecycle-20261101
+    build: !reset null
+  scheduler:
+    image: alahsa-local-beat:baseline-lifecycle-20261101
+    build: !reset null

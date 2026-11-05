@@ -1,0 +1,394 @@
+{
+  "audit_events_in_window": 7,
+  "event_types": {
+    "REVIEW_STALE_CONDITION_RESOLVED": 7
+  },
+  "stale_review_resolution_count": 7,
+  "stale_review_decisions": [
+    {
+      "id": "752",
+      "before": {
+        "status": "OPEN",
+        "master_id": 588,
+        "field": "sector",
+        "selected_value": "غير محدد",
+        "conflicting_value": "P2_SINGLE_UNCORROBORATED_SIGNAL"
+      },
+      "after": {
+        "status": "RESOLVED_CANONICAL",
+        "decision": "STALE_CONDITION_RESOLVED",
+        "reason": "Underlying conflict no longer reproduces in the current linked source projection.",
+        "evidence": {
+          "rule": "CURRENT_SOURCE_SECTOR_MISSING_NOT_CONFLICT_V1",
+          "source_key": "furas",
+          "source_record_id": 3179,
+          "current_source_field": {
+            "raw": null,
+            "normalized": "",
+            "canonical_id": "sector:unspecified",
+            "canonical_label": "غير محدد",
+            "mapping_status": "MISSING",
+            "rule": "preserve_missing"
+          },
+          "current_raw_owner": "أمانة محافظة الأحساء",
+          "current_raw_location": "الاحساء البدرية محمد الزبرقان",
+          "current_source_sector": null,
+          "current_canonical_value": null,
+          "original_selected_value": "غير محدد",
+          "original_conflicting_value": "P2_SINGLE_UNCORROBORATED_SIGNAL"
+        }
+      },
+      "metadata": {
+        "actor": "SYSTEM",
+        "rule": "CURRENT_SOURCE_SECTOR_MISSING_NOT_CONFLICT_V1",
+        "review_audit_version": "1",
+        "resolved_at": "2026-10-26T10:03:05.563834+03:00"
+      }
+    },
+    {
+      "id": "753",
+      "before": {
+        "status": "OPEN",
+        "master_id": 590,
+        "field": "sector",
+        "selected_value": "غير محدد",
+        "conflicting_value": "P2_SINGLE_UNCORROBORATED_SIGNAL"
+      },
+      "after": {
+        "status": "RESOLVED_CANONICAL",
+        "decision": "STALE_CONDITION_RESOLVED",
+        "reason": "Underlying conflict no longer reproduces in the current linked source projection.",
+        "evidence": {
+          "rule": "CURRENT_SOURCE_SECTOR_MISSING_NOT_CONFLICT_V1",
+          "source_key": "furas",
+          "source_record_id": 3181,
+          "current_source_field": {
+            "raw": null,
+            "normalized": "",
+            "canonical_id": "sector:unspecified",
+            "canonical_label": "غير محدد",
+            "mapping_status": "MISSING",
+            "rule": "preserve_missing"
+          },
+          "current_raw_owner": "أمانة محافظة الأحساء",
+          "current_raw_location": "الاحساء البدرية المرصد",
+          "current_source_sector": null,
+          "current_canonical_value": null,
+          "original_selected_value": "غير محدد",
+          "original_conflicting_value": "P2_SINGLE_UNCORROBORATED_SIGNAL"
+        }
+      },
+      "metadata": {
+        "actor": "SYSTEM",
+        "rule": "CURRENT_SOURCE_SECTOR_MISSING_NOT_CONFLICT_V1",
+        "review_audit_version": "1",
+        "resolved_at": "2026-10-26T10:03:05.633781+03:00"
+      }
+    },
+    {
+      "id": "754",
+      "before": {
+        "status": "OPEN",
+        "master_id": 595,
+        "field": "sector",
+        "selected_value": "غير محدد",
+        "conflicting_value": "P2_SINGLE_UNCORROBORATED_SIGNAL"
+      },
+      "after": {
+        "status": "RESOLVED_CANONICAL",
+        "decision": "STALE_CONDITION_RESOLVED",
+        "reason": "Underlying conflict no longer reproduces in the current linked source projection.",
+        "evidence": {
+          "rule": "CURRENT_SOURCE_SECTOR_MISSING_NOT_CONFLICT_V1",
+          "source_key": "furas",
+          "source_record_id": 3186,
+          "current_source_field": {
+            "raw": null,
+            "normalized": "",
+            "canonical_id": "sector:unspecified",
+            "canonical_label": "غير محدد",
+            "mapping_status": "MISSING",
+            "rule": "preserve_missing"
+          },
+          "current_raw_owner": "أمانة محافظة الأحساء",
+          "current_raw_location": "الاحساء الصفا الرابع شارع أبو أيوب الأنصاري",
+          "current_source_sector": null,
+          "current_canonical_value": null,
+          "original_selected_value": "غير محدد",
+          "original_conflicting_value": "P2_SINGLE_UNCORROBORATED_SIGNAL"
+        }
+      },
+      "metadata": {
+        "actor": "SYSTEM",
+        "rule": "CURRENT_SOURCE_SECTOR_MISSING_NOT_CONFLICT_V1",
+        "review_audit_version": "1",
+        "resolved_at": "2026-10-26T10:03:07.999038+03:00"
+      }
+    },
+    {
+      "id": "755",
+      "before": {
+        "status": "OPEN",
+        "master_id": 600,
+        "field": "sector",
+        "selected_value": "غير محدد",
+        "conflicting_value": "P2_SINGLE_UNCORROBORATED_SIGNAL"
+      },
+      "after": {
+        "status": "RESOLVED_CANONICAL",
+        "decision": "STALE_CONDITION_RESOLVED",
+        "reason": "Underlying conflict no longer reproduces in the current linked source projection.",
+        "evidence": {
+          "rule": "CURRENT_SOURCE_SECTOR_MISSING_NOT_CONFLICT_V1",
+          "source_key": "furas",
+          "source_record_id": 3191,
+          "current_source_field": {
+            "raw": null,
+            "normalized": "",
+            "canonical_id": "sector:unspecified",
+            "canonical_label": "غير محدد",
+            "mapping_status": "MISSING",
+            "rule": "preserve_missing"
+          },
+          "current_raw_owner": "أمانة محافظة الأحساء",
+          "current_raw_location": "الاحساء القدس عبد الله بن عبد الرحمن سراج",
+          "current_source_sector": null,
+          "current_canonical_value": null,
+          "original_selected_value": "غير محدد",
+          "original_conflicting_value": "P2_SINGLE_UNCORROBORATED_SIGNAL"
+        }
+      },
+      "metadata": {
+        "actor": "SYSTEM",
+        "rule": "CURRENT_SOURCE_SECTOR_MISSING_NOT_CONFLICT_V1",
+        "review_audit_version": "1",
+        "resolved_at": "2026-10-26T10:03:08.712659+03:00"
+      }
+    },
+    {
+      "id": "756",
+      "before": {
+        "status": "OPEN",
+        "master_id": 78,
+        "field": "sector",
+        "selected_value": "غير محدد",
+        "conflicting_value": "P2_CONFLICTING_SECTOR_SIGNALS"
+      },
+      "after": {
+        "status": "RESOLVED_CANONICAL",
+        "decision": "STALE_CONDITION_RESOLVED",
+        "reason": "Underlying conflict no longer reproduces in the current linked source projection.",
+        "evidence": {
+          "rule": "CURRENT_SOURCE_SECTOR_MISSING_NOT_CONFLICT_V1",
+          "source_key": "furas",
+          "source_record_id": 78,
+          "current_source_field": {
+            "raw": null,
+            "normalized": "",
+            "canonical_id": "sector:unspecified",
+            "canonical_label": "غير محدد",
+            "mapping_status": "MISSING",
+            "rule": "preserve_missing"
+          },
+          "current_raw_owner": "وزارة البيئة والمياه والزراعة",
+          "current_raw_location": "الاحساء الامير سلمان بن محمد بن سعود بن فيصل",
+          "current_source_sector": null,
+          "current_canonical_value": "غير محدد",
+          "original_selected_value": "غير محدد",
+          "original_conflicting_value": "P2_CONFLICTING_SECTOR_SIGNALS"
+        }
+      },
+      "metadata": {
+        "actor": "SYSTEM",
+        "rule": "CURRENT_SOURCE_SECTOR_MISSING_NOT_CONFLICT_V1",
+        "review_audit_version": "1",
+        "resolved_at": "2026-10-26T10:03:08.746021+03:00"
+      }
+    },
+    {
+      "id": "757",
+      "before": {
+        "status": "OPEN",
+        "master_id": 604,
+        "field": "sector",
+        "selected_value": "غير محدد",
+        "conflicting_value": "P2_SINGLE_UNCORROBORATED_SIGNAL"
+      },
+      "after": {
+        "status": "RESOLVED_CANONICAL",
+        "decision": "STALE_CONDITION_RESOLVED",
+        "reason": "Underlying conflict no longer reproduces in the current linked source projection.",
+        "evidence": {
+          "rule": "CURRENT_SOURCE_SECTOR_MISSING_NOT_CONFLICT_V1",
+          "source_key": "furas",
+          "source_record_id": 3195,
+          "current_source_field": {
+            "raw": null,
+            "normalized": "",
+            "canonical_id": "sector:unspecified",
+            "canonical_label": "غير محدد",
+            "mapping_status": "MISSING",
+            "rule": "preserve_missing"
+          },
+          "current_raw_owner": "أمانة محافظة الأحساء",
+          "current_raw_location": "الاحساء البدرية حيان بن وبره المزني",
+          "current_source_sector": null,
+          "current_canonical_value": null,
+          "original_selected_value": "غير محدد",
+          "original_conflicting_value": "P2_SINGLE_UNCORROBORATED_SIGNAL"
+        }
+      },
+      "metadata": {
+        "actor": "SYSTEM",
+        "rule": "CURRENT_SOURCE_SECTOR_MISSING_NOT_CONFLICT_V1",
+        "review_audit_version": "1",
+        "resolved_at": "2026-10-26T10:03:12.146965+03:00"
+      }
+    },
+    {
+      "id": "758",
+      "before": {
+        "status": "OPEN",
+        "master_id": 612,
+        "field": "sector",
+        "selected_value": "غير محدد",
+        "conflicting_value": "P2_SINGLE_UNCORROBORATED_SIGNAL"
+      },
+      "after": {
+        "status": "RESOLVED_CANONICAL",
+        "decision": "STALE_CONDITION_RESOLVED",
+        "reason": "Underlying conflict no longer reproduces in the current linked source projection.",
+        "evidence": {
+          "rule": "CURRENT_SOURCE_SECTOR_MISSING_NOT_CONFLICT_V1",
+          "source_key": "furas",
+          "source_record_id": 3203,
+          "current_source_field": {
+            "raw": null,
+            "normalized": "",
+            "canonical_id": "sector:unspecified",
+            "canonical_label": "غير محدد",
+            "mapping_status": "MISSING",
+            "rule": "preserve_missing"
+          },
+          "current_raw_owner": "أمانة محافظة الأحساء",
+          "current_raw_location": "الاحساء البدرية المرامية",
+          "current_source_sector": null,
+          "current_canonical_value": null,
+          "original_selected_value": "غير محدد",
+          "original_conflicting_value": "P2_SINGLE_UNCORROBORATED_SIGNAL"
+        }
+      },
+      "metadata": {
+        "actor": "SYSTEM",
+        "rule": "CURRENT_SOURCE_SECTOR_MISSING_NOT_CONFLICT_V1",
+        "review_audit_version": "1",
+        "resolved_at": "2026-10-26T10:03:15.376801+03:00"
+      }
+    }
+  ],
+  "change_history_count": 0,
+  "change_history_by_field": {},
+  "system_events": [
+    {
+      "type": "REVIEW_REOPENED",
+      "payload": {
+        "review_type": "opportunity_conflict",
+        "prior_review_id": 726,
+        "master_id": 588,
+        "field": "sector",
+        "source_record_id": 3179
+      }
+    },
+    {
+      "type": "REVIEW_REOPENED",
+      "payload": {
+        "review_type": "opportunity_conflict",
+        "prior_review_id": 728,
+        "master_id": 590,
+        "field": "sector",
+        "source_record_id": 3181
+      }
+    },
+    {
+      "type": "REVIEW_REOPENED",
+      "payload": {
+        "review_type": "opportunity_conflict",
+        "prior_review_id": 732,
+        "master_id": 595,
+        "field": "sector",
+        "source_record_id": 3186
+      }
+    },
+    {
+      "type": "REVIEW_REOPENED",
+      "payload": {
+        "review_type": "opportunity_conflict",
+        "prior_review_id": 736,
+        "master_id": 600,
+        "field": "sector",
+        "source_record_id": 3191
+      }
+    },
+    {
+      "type": "REVIEW_REOPENED",
+      "payload": {
+        "review_type": "opportunity_conflict",
+        "prior_review_id": 737,
+        "master_id": 78,
+        "field": "sector",
+        "source_record_id": 78
+      }
+    },
+    {
+      "type": "REVIEW_REOPENED",
+      "payload": {
+        "review_type": "opportunity_conflict",
+        "prior_review_id": 740,
+        "master_id": 604,
+        "field": "sector",
+        "source_record_id": 3195
+      }
+    },
+    {
+      "type": "REVIEW_REOPENED",
+      "payload": {
+        "review_type": "opportunity_conflict",
+        "prior_review_id": 746,
+        "master_id": 612,
+        "field": "sector",
+        "source_record_id": 3203
+      }
+    }
+  ],
+  "summary": {
+    "source": "furas",
+    "trigger_type": "scheduled",
+    "observation_delta": 40,
+    "source_opportunity_delta": 0,
+    "master_created": 0,
+    "review_rows_created": 7,
+    "review_rows_resolved_same_job": 7,
+    "review_row_ids": [
+      752,
+      753,
+      754,
+      755,
+      756,
+      757,
+      758
+    ],
+    "prior_review_ids": [
+      726,
+      728,
+      732,
+      736,
+      737,
+      740,
+      746
+    ],
+    "net_open_contribution_after_job": 0,
+    "canonical_changes": 0,
+    "resolved_by": "SYSTEM stale-conflict re-evaluation",
+    "rule": "CURRENT_SOURCE_SECTOR_MISSING_NOT_CONFLICT_V1"
+  }
+}

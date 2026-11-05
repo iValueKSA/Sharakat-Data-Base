@@ -1,0 +1,16 @@
+{
+  "captured_at": "2026-10-21T10:38:37+03:00",
+  "url": "http://localhost:8080/?view=admin",
+  "auth": "Test-only admin identity stub; DQ/API content came from the running local application.",
+  "checks": {
+    "viewport_sizes": ["1920x1080", "1440x900", "1366x768", "768x900", "390x844"],
+    "rtl": true,
+    "document_and_body_width_match_viewport": true,
+    "horizontal_overflow": false,
+    "page_errors": 0,
+    "latest_status_at_capture": {"pass": 45, "warning": 3, "fail": 0}
+  },
+  "result": "PASSED",
+  "screenshot": "admin-dq-status-1920x1080.png"
+}
+

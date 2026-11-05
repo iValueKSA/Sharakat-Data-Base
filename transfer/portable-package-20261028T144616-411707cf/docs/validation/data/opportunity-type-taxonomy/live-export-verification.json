@@ -1,0 +1,18 @@
+{
+  "opportunity_type:temporary_rental": {
+    "label": "تأجير مؤقت",
+    "expected_count": 129,
+    "csv_rows": 129,
+    "xlsx_rows": 129,
+    "csv_labels_match": true,
+    "xlsx_labels_match": true
+  },
+  "opportunity_type:missing": {
+    "label": "غير محدد",
+    "expected_count": 162,
+    "csv_rows": 162,
+    "xlsx_rows": 162,
+    "csv_labels_match": true,
+    "xlsx_labels_match": true
+  }
+}

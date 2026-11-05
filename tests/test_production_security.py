@@ -1,0 +1,306 @@
+from datetime import datetime, timezone
+
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+from sqlalchemy.pool import StaticPool
+from fastapi.testclient import TestClient
+
+from app import main, security
+from app.models import Base, User, Opportunity, OpportunityConflict, SourceOpportunity
+from app.security import hash_password, verify_password
+from app import tasks
+from app.models import Source, SyncJob
+from types import SimpleNamespace
+
+
+def client_with_users(monkeypatch):
+    # Isolate auth throttling between TestClient instances; this in-memory
+    # limiter is process-wide and otherwise leaks earlier tests' attempts.
+    security._login_attempts.clear()
+    engine=create_engine("sqlite://",connect_args={"check_same_thread":False},poolclass=StaticPool)
+    Base.metadata.create_all(engine)
+    sessions=sessionmaker(bind=engine,expire_on_commit=False)
+    monkeypatch.setattr(main,"SessionLocal",sessions)
+    monkeypatch.setattr(security,"SessionLocal",sessions)
+    with sessions() as db:
+        for role in ("admin","analyst","viewer"):
+            db.add(User(email=f"{role}@example.test",display_name=role,role=role,password_hash=hash_password("Correct-Horse-Battery-7!"),is_active=True))
+        db.commit()
+    monkeypatch.setenv("ENVIRONMENT","test")
+    return TestClient(main.app),engine
+
+
+def test_scrypt_password_hash_is_salted_and_verified():
+    first=hash_password("Correct-Horse-Battery-7!")
+    second=hash_password("Correct-Horse-Battery-7!")
+    assert first.startswith("scrypt$") and first!=second
+    assert verify_password("Correct-Horse-Battery-7!",first)
+    assert not verify_password("wrong",first)
+
+
+def test_production_proxy_trust_requires_explicit_addresses():
+    assert main.validate_forwarded_allow_ips(" 172.31.240.10, 10.0.0.5/32 ")=="172.31.240.10,10.0.0.5/32"
+    import pytest
+    with pytest.raises(RuntimeError,match="explicit trusted proxy"):
+        main.validate_forwarded_allow_ips("*")
+    with pytest.raises(RuntimeError,match="explicit trusted proxy"):
+        main.validate_forwarded_allow_ips("  ")
+
+
+def test_login_cookie_and_role_authorization(monkeypatch):
+    client,engine=client_with_users(monkeypatch)
+    try:
+        login=client.post("/api/auth/login",json={"email":"viewer@example.test","password":"Correct-Horse-Battery-7!"})
+        assert login.status_code==200
+        assert login.cookies.get("alahsa_session")
+        assert login.headers.get("set-cookie").lower().find("httponly")>=0
+        assert "samesite=lax" in login.headers.get("set-cookie").lower()
+        assert client.get("/api/auth/me").json()["user"]["role"]=="viewer"
+        assert client.get("/api/admin/users").status_code==403
+        assert client.post("/api/admin/conflicts/999/keep",json={"note":"This viewer decision should be denied."}).status_code==403
+        assert client.post("/api/auth/logout").status_code==200
+        assert client.get("/api/auth/me").status_code==401
+    finally:
+        client.close();engine.dispose()
+
+
+def test_analyst_can_review_but_cannot_manage_users(monkeypatch):
+    client,engine=client_with_users(monkeypatch)
+    try:
+        sessions=sessionmaker(bind=engine,expire_on_commit=False);now=datetime.now(timezone.utc)
+        with sessions() as db:
+            source=Source(source_key="review-fixture",source_name_ar="مصدر مراجعة",organization_name="fixture",
+                base_url="https://example.test",opportunities_url="https://example.test",priority=1)
+            db.add(source);db.flush()
+            master=Opportunity(canonical_id="ANALYST-REVIEW",title_ar="اختبار محلل",normalized_title="اختبار محلل",
+                primary_publication_platform="مصدر مراجعة",city="الأحساء",status="منشورة",location_confidence_score=.9,
+                location_detection_method="fixture",location_evidence="fixture",data_quality_score=.9,manual_review_required=False,
+                first_seen_at=now,last_seen_at=now,last_updated_at=now,created_at=now,updated_at=now)
+            db.add(master);db.flush()
+            record=SourceOpportunity(source_id=source.id,master_opportunity_id=master.id,source_opportunity_id="analyst-1",
+                source_title=master.title_ar,normalized_source_title=master.title_ar,source_url="https://example.test/1",
+                canonical_status="منشورة",raw_data_json={"fixture":True},raw_dates={},first_seen_at=now,last_seen_at=now,
+                content_hash="d"*64,parser_version="fixture")
+            db.add(record);db.flush()
+            conflict=OpportunityConflict(opportunity_id=master.id,field_name="sector",conflict_type="FIELD_VALUE_CONFLICT",
+                selected_value="تجاري",conflicting_value="صناعي",source_id=source.id,source_record_id=record.id,
+                detected_at=now,status="OPEN")
+            db.add(conflict);db.commit();conflict_id=conflict.id
+        assert client.post("/api/auth/login",json={"email":"analyst@example.test","password":"Correct-Horse-Battery-7!"}).status_code==200
+        assert client.get("/api/admin/duplicates").status_code==200
+        detail=client.get(f"/api/admin/review-workbench/field_conflict/{conflict_id}").json()
+        assert client.post(f"/api/admin/conflicts/{conflict_id}/keep",json={"note":"Analyst reviewed the source and retains the current canonical value.","version_token":detail["version_token"]}).status_code==200
+        assert client.get("/api/admin/users").status_code==403
+    finally:
+        client.close();engine.dispose()
+
+
+def test_login_rejects_unexpected_fields(monkeypatch):
+    client,engine=client_with_users(monkeypatch)
+    try:
+        response=client.post("/api/auth/login",json={"email":"admin@example.test","password":"Correct-Horse-Battery-7!","role":"admin"})
+        assert response.status_code==422
+    finally:
+        client.close();engine.dispose()
+
+
+def test_change_password_is_available_to_each_role_and_rotates_session(monkeypatch):
+    from app.models import AuditEvent, UserSession
+    old_password="Correct-Horse-Battery-7!"
+    new_password="Ahsa-Private-Change-2026!"
+    for role in ("admin","analyst","viewer"):
+        client,engine=client_with_users(monkeypatch)
+        other_session=TestClient(main.app)
+        new_login_client=TestClient(main.app)
+        try:
+            assert client.post("/api/auth/login",json={"email":f"{role}@example.test","password":old_password}).status_code==200
+            assert other_session.post("/api/auth/login",json={"email":f"{role}@example.test","password":old_password}).status_code==200
+            prior_cookie=client.cookies.get("alahsa_session")
+            changed=client.post("/api/auth/change-password",json={"current_password":old_password,"new_password":new_password,"confirm_new_password":new_password})
+            assert changed.status_code==200
+            rotated_cookie=client.cookies.get("alahsa_session")
+            assert rotated_cookie and rotated_cookie!=prior_cookie
+            assert client.get("/api/auth/me").status_code==200
+            assert other_session.get("/api/auth/me").status_code==401
+            assert client.post("/api/auth/login",json={"email":f"{role}@example.test","password":old_password}).status_code==401
+            with sessionmaker(bind=engine,expire_on_commit=False)() as db:
+                user_id=db.query(User).filter_by(email=f"{role}@example.test").one().id
+                assert db.query(UserSession).filter_by(user_id=user_id).count()==1
+            assert new_login_client.post("/api/auth/login",json={"email":f"{role}@example.test","password":new_password}).status_code==200
+            with sessionmaker(bind=engine,expire_on_commit=False)() as db:
+                user=db.query(User).filter_by(email=f"{role}@example.test").one()
+                assert user.password_hash!=new_password
+                assert verify_password(new_password,user.password_hash)
+                assert not verify_password(old_password,user.password_hash)
+                assert db.query(UserSession).filter_by(user_id=user.id).count()==2
+                event=db.query(AuditEvent).filter_by(user_id=user.id,event_type="PASSWORD_CHANGED").one()
+                audit_payload=str((event.before_json,event.after_json,event.request_metadata))
+                assert old_password not in audit_payload and new_password not in audit_payload and user.password_hash not in audit_payload
+                assert event.request_metadata.get("ip")
+        finally:
+            new_login_client.close();other_session.close();client.close();engine.dispose()
+
+
+def test_change_password_requires_authentication_and_current_password(monkeypatch):
+    from app.models import AuditEvent
+    client,engine=client_with_users(monkeypatch)
+    try:
+        payload={"current_password":"wrong-current-password","new_password":"Ahsa-Private-Change-2026!","confirm_new_password":"Ahsa-Private-Change-2026!"}
+        assert client.post("/api/auth/change-password",json=payload).status_code==401
+        assert client.post("/api/auth/login",json={"email":"admin@example.test","password":"Correct-Horse-Battery-7!"}).status_code==200
+        with sessionmaker(bind=engine,expire_on_commit=False)() as db:
+            user=db.query(User).filter_by(email="admin@example.test").one();before=user.password_hash
+        response=client.post("/api/auth/change-password",json=payload)
+        assert response.status_code==401 and response.json()["detail"]=="كلمة المرور الحالية غير صحيحة"
+        with sessionmaker(bind=engine,expire_on_commit=False)() as db:
+            assert db.query(User).filter_by(email="admin@example.test").one().password_hash==before
+            event=db.query(AuditEvent).filter_by(event_type="PASSWORD_CHANGE_FAILED").one()
+            assert "wrong-current-password" not in str((event.before_json,event.after_json,event.request_metadata))
+    finally:
+        client.close();engine.dispose()
+
+
+def test_change_password_rejects_mismatch_weak_reuse_and_cross_user_target(monkeypatch):
+    client,engine=client_with_users(monkeypatch)
+    try:
+        assert client.post("/api/auth/login",json={"email":"admin@example.test","password":"Correct-Horse-Battery-7!"}).status_code==200
+        base={"current_password":"Correct-Horse-Battery-7!","new_password":"Ahsa-Private-Change-2026!","confirm_new_password":"Ahsa-Private-Change-2026!"}
+        for payload,message in [
+            ({**base,"confirm_new_password":"Other-Private-Password-2026!"},"كلمتا المرور غير متطابقتين"),
+            ({**base,"new_password":"password1234","confirm_new_password":"password1234"},"كلمة المرور الجديدة لا تستوفي متطلبات الأمان"),
+            ({**base,"new_password":base["current_password"],"confirm_new_password":base["current_password"]},"اختر كلمة مرور جديدة تختلف عن الحالية"),
+            ({**base,"user_id":2},None),
+        ]:
+            response=client.post("/api/auth/change-password",json=payload)
+            assert response.status_code==(422 if message is None else 400)
+            if message is None:
+                assert "Correct-Horse-Battery-7!" not in response.text and "Ahsa-Private-Change-2026!" not in response.text
+            if message is not None:assert response.json()["detail"]==message
+        with sessionmaker(bind=engine,expire_on_commit=False)() as db:
+            assert verify_password("Correct-Horse-Battery-7!",db.query(User).filter_by(email="admin@example.test").one().password_hash)
+    finally:
+        client.close();engine.dispose()
+
+
+def test_change_password_rate_limit_and_existing_csrf_cookie_protection(monkeypatch):
+    client,engine=client_with_users(monkeypatch)
+    try:
+        assert client.post("/api/auth/login",json={"email":"viewer@example.test","password":"Correct-Horse-Battery-7!"}).status_code==200
+        payload={"current_password":"Correct-Horse-Battery-7!","new_password":"Ahsa-Private-Change-2026!","confirm_new_password":"Ahsa-Private-Change-2026!"}
+        monkeypatch.setattr(main,"allow_login_attempt",lambda *args,**kwargs:False)
+        response=client.post("/api/auth/change-password",json=payload)
+        assert response.status_code==429
+        with sessionmaker(bind=engine,expire_on_commit=False)() as db:
+            assert verify_password("Correct-Horse-Battery-7!",db.query(User).filter_by(email="viewer@example.test").one().password_hash)
+    finally:
+        client.close();engine.dispose()
+
+
+def test_change_password_screen_is_arabic_rtl_and_has_attached_labels(monkeypatch):
+    client,engine=client_with_users(monkeypatch)
+    try:
+        page=client.get("/")
+        assert page.status_code==200
+        html=page.text
+        assert 'lang="ar" dir="rtl"' in html
+        assert 'aria-label="الحساب الشخصي"' in html
+        for text in ("كلمة المرور الحالية","كلمة المرور الجديدة","تأكيد كلمة المرور الجديدة","حفظ كلمة المرور الجديدة","إلغاء"):
+            assert text in html
+        assert 'for="currentPassword"' in html and 'for="newPassword"' in html and 'for="confirmNewPassword"' in html
+    finally:
+        client.close();engine.dispose()
+
+
+def test_redis_reservation_skips_duplicate_source_sync(monkeypatch):
+    engine=create_engine("sqlite://",connect_args={"check_same_thread":False},poolclass=StaticPool)
+    Base.metadata.create_all(engine)
+    sessions=sessionmaker(bind=engine,expire_on_commit=False)
+    monkeypatch.setattr(tasks,"SessionLocal",sessions)
+    source_data=__import__("app.service",fromlist=["DEFAULT_SOURCES"]).DEFAULT_SOURCES[0]
+    with sessions() as db:
+        db.add(Source(**source_data,enabled=True));db.commit()
+    class FakeRedis:
+        occupied=set()
+        def set(self,key,value,nx=False,ex=None):
+            if nx and key in self.occupied:return False
+            self.occupied.add(key);return True
+    fake=FakeRedis();sent=[]
+    monkeypatch.setattr(tasks,"redis_client",lambda:fake)
+    monkeypatch.setattr(tasks.celery_app,"send_task",lambda *args,**kwargs:(sent.append((args,kwargs)) or SimpleNamespace(id="task-1")))
+    try:
+        first=tasks.enqueue_source("furas","manual","corr-1")
+        second=tasks.enqueue_source("furas","manual","corr-2")
+        assert first["status"]=="QUEUED" and first["job_id"]
+        assert second["status"]=="SKIPPED_ALREADY_RUNNING"
+        assert len(sent)==1
+        with sessions() as db:
+            job=db.get(SyncJob,first["job_id"])
+            assert job.job_state=="QUEUED" and job.trigger_type=="manual" and job.correlation_id=="corr-1"
+    finally:
+        engine.dispose()
+
+
+def test_retry_backoff_is_bounded_and_jittered(monkeypatch):
+    monkeypatch.setattr(tasks.random,"randint",lambda low,high:high)
+    assert [tasks.retry_delay(i) for i in range(4)]==[90,330,930,3630]
+
+
+def test_deadline_alerts_are_configurable_deduplicated_and_skip_expired(monkeypatch):
+    from datetime import date, datetime, timedelta, timezone
+    from app.models import Opportunity, AlertEvent
+
+    engine=create_engine("sqlite://",connect_args={"check_same_thread":False},poolclass=StaticPool)
+    Base.metadata.create_all(engine)
+    sessions=sessionmaker(bind=engine,expire_on_commit=False)
+    monkeypatch.setattr(tasks,"SessionLocal",sessions)
+    monkeypatch.setenv("DEADLINE_ALERT_DAYS","14,3")
+    now=datetime.now(timezone.utc)
+
+    def opportunity(identifier, deadline, status="متاحة"):
+        return Opportunity(canonical_id=identifier,title_ar=identifier,normalized_title=identifier,
+            primary_publication_platform="Test",submission_deadline=deadline,status=status,
+            first_seen_at=now,last_seen_at=now,last_updated_at=now,created_at=now,updated_at=now)
+
+    with sessions() as db:
+        db.add_all([
+            opportunity("two-weeks",(date.today()+timedelta(days=14)).isoformat()),
+            opportunity("three-days",(date.today()+timedelta(days=3)).isoformat()),
+            opportunity("expired",(date.today()-timedelta(days=1)).isoformat()),
+            opportunity("cancelled",(date.today()+timedelta(days=14)).isoformat(),"CANCELLED"),
+        ])
+        db.commit()
+
+    try:
+        assert tasks.check_deadlines()=={"created":2,"thresholds":[3,14]}
+        assert tasks.check_deadlines()=={"created":0,"thresholds":[3,14]}
+        with sessions() as db:
+            alerts=db.query(AlertEvent).all()
+            assert len(alerts)==2
+            assert {alert.payload["days_remaining"] for alert in alerts}=={3,14}
+    finally:
+        engine.dispose()
+
+
+def test_date_only_deadline_remaining_days_keeps_today_actionable():
+    from datetime import date, timedelta
+    from app.tasks import deadline_days_left
+    today = date(2026, 10, 21)
+    assert deadline_days_left(today.isoformat(), today) == 0
+    assert deadline_days_left((today - timedelta(days=1)).isoformat(), today) is None
+    assert deadline_days_left((today + timedelta(days=1)).isoformat(), today) == 1
+    assert deadline_days_left("2026-10-20T22:30:00Z", today) == 0
+    assert deadline_days_left("2026-10-21T00:30:00", today) is None
+
+
+def test_health_metrics_and_streamed_exports(monkeypatch):
+    client,engine=client_with_users(monkeypatch)
+    try:
+        assert client.get("/health/live").json()["status"]=="ok"
+        assert client.get("/health/ready").json()["status"]=="ready"
+        assert "api_requests_total" in client.get("/metrics").text
+        assert client.get("/api/export.csv").status_code==200
+        assert client.get("/api/export.xlsx").status_code==200
+        assert main.spreadsheet_safe("=1+1")=="'=1+1"
+        assert main.spreadsheet_safe(-125)==-125
+    finally:
+        client.close();engine.dispose()

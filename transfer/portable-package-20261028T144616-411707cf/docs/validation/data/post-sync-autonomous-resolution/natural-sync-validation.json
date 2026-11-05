@@ -1,0 +1,13 @@
+{
+  "captured_at": "2026-10-26T08:29:53.6090754Z",
+  "manual_source_sync_started": false,
+  "natural_sync_during_task": false,
+  "last_sync_job_id": 506,
+  "sync_jobs_total": 506,
+  "active_sync_jobs": 0,
+  "conclusion": "No scheduled source scan occurred during the implementation window. The pipeline was validated with isolated integration tests; no waiting or manual sync was used.",
+  "integrated_scenario": {
+    "same_values_new_observation": "0 actionable reviews",
+    "material_source_value_change": "review generated, SYSTEM resolver executed, audited conservative terminal result"
+  }
+}

@@ -1,0 +1,350 @@
+{
+  "current_masters": 566,
+  "database_counts": {
+    "sector:logistics": 5,
+    "sector:environment": 8,
+    "sector:other": 34,
+    "sector:commercial": 433,
+    "sector:real_estate": 9,
+    "sector:education": 4,
+    "sector:sports": 1,
+    "sector:industrial": 60,
+    "sector:healthcare": 4,
+    "sector:financial_services": 5,
+    "sector:tourism": 2,
+    "sector:agriculture": 1
+  },
+  "dashboard_total": 566,
+  "dashboard_sector_counts": {
+    "sector:commercial": 433,
+    "sector:industrial": 60,
+    "sector:other": 34,
+    "sector:real_estate": 9,
+    "sector:environment": 8,
+    "sector:logistics": 5,
+    "sector:financial_services": 5,
+    "sector:education": 4,
+    "sector:healthcare": 4,
+    "sector:tourism": 2,
+    "sector:sports": 1,
+    "sector:agriculture": 1
+  },
+  "api_sector_filters": {
+    "sector:commercial": {
+      "total": 433,
+      "rows": 433,
+      "canonical_labels": [
+        "تجاري"
+      ],
+      "expected_label": "تجاري",
+      "exact": true
+    },
+    "sector:industrial": {
+      "total": 60,
+      "rows": 60,
+      "canonical_labels": [
+        "صناعي"
+      ],
+      "expected_label": "صناعي",
+      "exact": true
+    },
+    "sector:other": {
+      "total": 34,
+      "rows": 34,
+      "canonical_labels": [
+        "أخرى"
+      ],
+      "expected_label": "أخرى",
+      "exact": true
+    },
+    "sector:real_estate": {
+      "total": 9,
+      "rows": 9,
+      "canonical_labels": [
+        "العقارات والإنشاءات"
+      ],
+      "expected_label": "العقارات والإنشاءات",
+      "exact": true
+    },
+    "sector:environment": {
+      "total": 8,
+      "rows": 8,
+      "canonical_labels": [
+        "البيئة"
+      ],
+      "expected_label": "البيئة",
+      "exact": true
+    },
+    "sector:logistics": {
+      "total": 5,
+      "rows": 5,
+      "canonical_labels": [
+        "الخدمات اللوجستية"
+      ],
+      "expected_label": "الخدمات اللوجستية",
+      "exact": true
+    },
+    "sector:financial_services": {
+      "total": 5,
+      "rows": 5,
+      "canonical_labels": [
+        "الخدمات المالية"
+      ],
+      "expected_label": "الخدمات المالية",
+      "exact": true
+    },
+    "sector:education": {
+      "total": 4,
+      "rows": 4,
+      "canonical_labels": [
+        "التعليم"
+      ],
+      "expected_label": "التعليم",
+      "exact": true
+    },
+    "sector:healthcare": {
+      "total": 4,
+      "rows": 4,
+      "canonical_labels": [
+        "الرعاية الصحية"
+      ],
+      "expected_label": "الرعاية الصحية",
+      "exact": true
+    },
+    "sector:tourism": {
+      "total": 2,
+      "rows": 2,
+      "canonical_labels": [
+        "السياحة"
+      ],
+      "expected_label": "السياحة",
+      "exact": true
+    },
+    "sector:sports": {
+      "total": 1,
+      "rows": 1,
+      "canonical_labels": [
+        "الرياضة"
+      ],
+      "expected_label": "الرياضة",
+      "exact": true
+    },
+    "sector:agriculture": {
+      "total": 1,
+      "rows": 1,
+      "canonical_labels": [
+        "الزراعة"
+      ],
+      "expected_label": "الزراعة",
+      "exact": true
+    }
+  },
+  "csv": {
+    "rows": 566,
+    "sector_header": "القطاع",
+    "counts": {
+      "sector:commercial": 433,
+      "sector:industrial": 60,
+      "sector:other": 34,
+      "sector:real_estate": 9,
+      "sector:tourism": 2,
+      "sector:financial_services": 5,
+      "sector:education": 4,
+      "sector:healthcare": 4,
+      "sector:agriculture": 1,
+      "sector:environment": 8,
+      "sector:logistics": 5,
+      "sector:sports": 1
+    },
+    "matches_database": true
+  },
+  "xlsx": {
+    "rows": 566,
+    "header_row": 6,
+    "sector_column": 3,
+    "counts": {
+      "sector:commercial": 433,
+      "sector:industrial": 60,
+      "sector:other": 34,
+      "sector:real_estate": 9,
+      "sector:tourism": 2,
+      "sector:financial_services": 5,
+      "sector:education": 4,
+      "sector:healthcare": 4,
+      "sector:agriculture": 1,
+      "sector:environment": 8,
+      "sector:logistics": 5,
+      "sector:sports": 1
+    },
+    "matches_database": true
+  },
+  "dashboard_sector_total": 566,
+  "all_match": true,
+  "playwright": {
+    "status": "PASSED",
+    "total_masters": 566,
+    "sector_bucket_sum": 566,
+    "unspecified_visible_count": 0,
+    "tooltip": {
+      "visible": true,
+      "text": "تجاري\n433 فرصة\n76.5% من النتائج"
+    },
+    "click_through": {
+      "filter": "sector:commercial",
+      "count": "عرض 1–50 من 433 فرصة",
+      "labels": [
+        "تجاري"
+      ],
+      "passed": true
+    },
+    "viewport_checks": [
+      {
+        "width": 1920,
+        "height": 1080,
+        "doc": 1920,
+        "body": 1920,
+        "dir": "rtl",
+        "chartWidth": 706,
+        "barCount": 9,
+        "represented": [
+          "sector:commercial",
+          "sector:industrial",
+          "sector:other",
+          "sector:education",
+          "sector:healthcare",
+          "sector:sports",
+          "sector:real_estate",
+          "sector:environment",
+          "sector:logistics",
+          "sector:financial_services",
+          "sector:tourism",
+          "sector:agriculture"
+        ],
+        "unspecified": false,
+        "chartLabel": "القطاعات: 566 فرصة",
+        "rtl": true,
+        "horizontal_overflow": false,
+        "unspecified_count": 0,
+        "screenshot": "screenshots/dashboard-1920x1080.png"
+      },
+      {
+        "width": 1440,
+        "height": 900,
+        "doc": 1440,
+        "body": 1440,
+        "dir": "rtl",
+        "chartWidth": 501,
+        "barCount": 9,
+        "represented": [
+          "sector:commercial",
+          "sector:industrial",
+          "sector:other",
+          "sector:education",
+          "sector:healthcare",
+          "sector:sports",
+          "sector:real_estate",
+          "sector:environment",
+          "sector:logistics",
+          "sector:financial_services",
+          "sector:tourism",
+          "sector:agriculture"
+        ],
+        "unspecified": false,
+        "chartLabel": "القطاعات: 566 فرصة",
+        "rtl": true,
+        "horizontal_overflow": false,
+        "unspecified_count": 0,
+        "screenshot": "screenshots/dashboard-1440x900.png"
+      },
+      {
+        "width": 1366,
+        "height": 768,
+        "doc": 1366,
+        "body": 1366,
+        "dir": "rtl",
+        "chartWidth": 466,
+        "barCount": 9,
+        "represented": [
+          "sector:commercial",
+          "sector:industrial",
+          "sector:other",
+          "sector:education",
+          "sector:healthcare",
+          "sector:sports",
+          "sector:real_estate",
+          "sector:environment",
+          "sector:logistics",
+          "sector:financial_services",
+          "sector:tourism",
+          "sector:agriculture"
+        ],
+        "unspecified": false,
+        "chartLabel": "القطاعات: 566 فرصة",
+        "rtl": true,
+        "horizontal_overflow": false,
+        "unspecified_count": 0,
+        "screenshot": "screenshots/dashboard-1366x768.png"
+      },
+      {
+        "width": 768,
+        "height": 900,
+        "doc": 768,
+        "body": 768,
+        "dir": "rtl",
+        "chartWidth": 318,
+        "barCount": 9,
+        "represented": [
+          "sector:commercial",
+          "sector:industrial",
+          "sector:other",
+          "sector:education",
+          "sector:healthcare",
+          "sector:sports",
+          "sector:real_estate",
+          "sector:environment",
+          "sector:logistics",
+          "sector:financial_services",
+          "sector:tourism",
+          "sector:agriculture"
+        ],
+        "unspecified": false,
+        "chartLabel": "القطاعات: 566 فرصة",
+        "rtl": true,
+        "horizontal_overflow": false,
+        "unspecified_count": 0,
+        "screenshot": "screenshots/dashboard-768x900.png"
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "doc": 390,
+        "body": 390,
+        "dir": "rtl",
+        "chartWidth": 338,
+        "barCount": 9,
+        "represented": [
+          "sector:commercial",
+          "sector:industrial",
+          "sector:other",
+          "sector:education",
+          "sector:healthcare",
+          "sector:sports",
+          "sector:real_estate",
+          "sector:environment",
+          "sector:logistics",
+          "sector:financial_services",
+          "sector:tourism",
+          "sector:agriculture"
+        ],
+        "unspecified": false,
+        "chartLabel": "القطاعات: 566 فرصة",
+        "rtl": true,
+        "horizontal_overflow": false,
+        "unspecified_count": 0,
+        "screenshot": "screenshots/dashboard-390x844.png"
+      }
+    ],
+    "javascript_errors": 0,
+    "http_5xx": 0
+  }
+}

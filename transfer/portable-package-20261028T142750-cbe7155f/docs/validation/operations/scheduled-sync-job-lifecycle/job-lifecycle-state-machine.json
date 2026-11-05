@@ -1,0 +1,290 @@
+{
+  "job_state_values": [
+    "QUEUED",
+    "RUNNING",
+    "RETRYING",
+    "COMPLETED",
+    "COMPLETED_WITH_WARNINGS",
+    "FAILED",
+    "ABANDONED",
+    "CANCELLED",
+    "SKIPPED_ALREADY_RUNNING"
+  ],
+  "status_values": [
+    "QUEUED",
+    "RUNNING",
+    "RETRYING",
+    "SUCCESS",
+    "PARSER_WARNING",
+    "INCOMPLETE_COLLECTION_WARNING",
+    "WARNING",
+    "FAILED",
+    "BLOCKED",
+    "ABANDONED",
+    "CANCELLED",
+    "SKIPPED_ALREADY_RUNNING"
+  ],
+  "observed_job_state_values": [
+    "ABANDONED",
+    "COMPLETED",
+    "COMPLETED_WITH_WARNINGS",
+    "FAILED"
+  ],
+  "observed_status_values": [
+    "ABANDONED",
+    "BLOCKED",
+    "FAILED",
+    "INCOMPLETE_COLLECTION_WARNING",
+    "PARSER_WARNING",
+    "SUCCESS",
+    "WARNING"
+  ],
+  "legal_transitions": [
+    "QUEUED -> RUNNING -> COMPLETED",
+    "QUEUED -> RUNNING -> COMPLETED_WITH_WARNINGS",
+    "QUEUED -> RUNNING -> FAILED",
+    "QUEUED -> RUNNING -> RETRYING -> RUNNING -> terminal",
+    "QUEUED -> CANCELLED",
+    "RUNNING/RETRYING -> ABANDONED after stale recovery",
+    "QUEUED -> SKIPPED_ALREADY_RUNNING"
+  ],
+  "terminal_states": [
+    "COMPLETED",
+    "COMPLETED_WITH_WARNINGS",
+    "FAILED",
+    "ABANDONED",
+    "CANCELLED",
+    "SKIPPED_ALREADY_RUNNING"
+  ],
+  "state_consistency_rule": "status RUNNING iff job_state RUNNING; active states have no finished_at; terminal states have finished_at.",
+  "illegal_job_state_record_ids": [],
+  "illegal_job_state_records_remaining": 0,
+  "source_model": "app.models.SyncJob / source_sync_jobs",
+  "status_schema_type": "String(40), not a database enum",
+  "status_field_values": [
+    "QUEUED",
+    "RUNNING",
+    "RETRYING",
+    "SUCCESS",
+    "PARSER_WARNING",
+    "INCOMPLETE_COLLECTION_WARNING",
+    "WARNING",
+    "FAILED",
+    "BLOCKED",
+    "ABANDONED",
+    "CANCELLED",
+    "SKIPPED_ALREADY_RUNNING"
+  ],
+  "job_state_field_values": [
+    "QUEUED",
+    "RUNNING",
+    "RETRYING",
+    "COMPLETED",
+    "COMPLETED_WITH_WARNINGS",
+    "FAILED",
+    "ABANDONED",
+    "CANCELLED",
+    "SKIPPED_ALREADY_RUNNING"
+  ],
+  "stale_recovery": {
+    "task": "app.tasks.recover_stale_jobs",
+    "beat_interval_seconds": 300,
+    "source_specific_runtime_thresholds": {
+      "furas": {
+        "successful_job_count": 82,
+        "median_seconds": 5.077,
+        "p95_seconds": 19.558,
+        "maximum_seconds": 253.894,
+        "stale_threshold_seconds": 2400,
+        "threshold_basis": "history",
+        "recent_failure_durations_seconds": [
+          10.432,
+          11.309,
+          7086.481,
+          8.476,
+          4.061
+        ],
+        "recent_failure_job_ids": [
+          220,
+          224,
+          267,
+          316,
+          364
+        ]
+      },
+      "alahsa-opportunities": {
+        "successful_job_count": 70,
+        "median_seconds": 7.268,
+        "p95_seconds": 32.828,
+        "maximum_seconds": 195.46,
+        "stale_threshold_seconds": 2400,
+        "threshold_basis": "history",
+        "recent_failure_durations_seconds": [
+          4.66,
+          9.131,
+          4.928,
+          4.49,
+          3.174
+        ],
+        "recent_failure_job_ids": [
+          279,
+          284,
+          286,
+          297,
+          365
+        ]
+      },
+      "ahda": {
+        "successful_job_count": 33,
+        "median_seconds": 28.475,
+        "p95_seconds": 175.222,
+        "maximum_seconds": 3399.773,
+        "stale_threshold_seconds": 6800,
+        "threshold_basis": "history",
+        "recent_failure_durations_seconds": [
+          0.829,
+          0.435,
+          0.094,
+          0.462
+        ],
+        "recent_failure_job_ids": [
+          203,
+          268,
+          298,
+          366
+        ]
+      },
+      "invest-saudi": {
+        "successful_job_count": 38,
+        "median_seconds": 48.537,
+        "p95_seconds": 108.52,
+        "maximum_seconds": 123.759,
+        "stale_threshold_seconds": 2400,
+        "threshold_basis": "history",
+        "recent_failure_durations_seconds": [
+          19.472,
+          0.455,
+          0.184,
+          59.39,
+          0.269
+        ],
+        "recent_failure_job_ids": [
+          229,
+          265,
+          294,
+          360,
+          367
+        ]
+      },
+      "kfu": {
+        "successful_job_count": 29,
+        "median_seconds": 0.752,
+        "p95_seconds": 6.277,
+        "maximum_seconds": 6.322,
+        "stale_threshold_seconds": 2400,
+        "threshold_basis": "history",
+        "recent_failure_durations_seconds": [
+          2.262,
+          0.513
+        ],
+        "recent_failure_job_ids": [
+          272,
+          295
+        ]
+      },
+      "modon": {
+        "successful_job_count": 13,
+        "median_seconds": 7.331,
+        "p95_seconds": 14.37,
+        "maximum_seconds": 14.37,
+        "stale_threshold_seconds": 2400,
+        "threshold_basis": "history",
+        "recent_failure_durations_seconds": [
+          0.326,
+          0.468,
+          0.166,
+          1.701,
+          0.378
+        ],
+        "recent_failure_job_ids": [
+          361,
+          368,
+          386,
+          396,
+          413
+        ]
+      },
+      "ncp": {
+        "successful_job_count": 21,
+        "median_seconds": 29.191,
+        "p95_seconds": 36.229,
+        "maximum_seconds": 39.306,
+        "stale_threshold_seconds": 2400,
+        "threshold_basis": "history",
+        "recent_failure_durations_seconds": [
+          9.283,
+          26.417,
+          0.89,
+          101.806
+        ],
+        "recent_failure_job_ids": [
+          79,
+          207,
+          274,
+          398
+        ]
+      },
+      "nhc": {
+        "successful_job_count": 8,
+        "median_seconds": 5.998,
+        "p95_seconds": 7.346,
+        "maximum_seconds": 7.346,
+        "stale_threshold_seconds": 2400,
+        "threshold_basis": "history",
+        "recent_failure_durations_seconds": [
+          0.797
+        ],
+        "recent_failure_job_ids": [
+          129
+        ]
+      },
+      "pif": {
+        "successful_job_count": 9,
+        "median_seconds": 13.503,
+        "p95_seconds": 15.996,
+        "maximum_seconds": 15.996,
+        "stale_threshold_seconds": 2400,
+        "threshold_basis": "history",
+        "recent_failure_durations_seconds": [],
+        "recent_failure_job_ids": []
+      },
+      "mwan": {
+        "successful_job_count": 8,
+        "median_seconds": 16.251,
+        "p95_seconds": 20.206,
+        "maximum_seconds": 20.206,
+        "stale_threshold_seconds": 2400,
+        "threshold_basis": "history",
+        "recent_failure_durations_seconds": [
+          0.057,
+          0.655,
+          0.687,
+          0.488,
+          0.598
+        ],
+        "recent_failure_job_ids": [
+          300,
+          320,
+          345,
+          382,
+          409
+        ]
+      }
+    },
+    "requires_old_heartbeat_or_start_time": true,
+    "requires_absence_from_active_reserved_scheduled": true,
+    "requires_absent_source_lock": true,
+    "startup_hook": false,
+    "periodic_recovery": true
+  }
+}

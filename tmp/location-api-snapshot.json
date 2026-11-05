@@ -1,0 +1,62 @@
+{
+  "snapshot_utc": "2026-10-19T08:50:20.6704303Z",
+  "dashboard_total": null,
+  "api_total": 291,
+  "returned": 291,
+  "geography": {
+    "total": 291,
+    "coordinate_records": 177,
+    "exact_mapped": 176,
+    "locality_mapped": 0,
+    "missing_coordinates": 114,
+    "outside_boundary": 1,
+    "unverified_coordinates": 0,
+    "unmapped": 115
+  },
+  "preview": [
+    {
+      "id": 204,
+      "title": "إنشاء وتشغيل و صيانة القطعة رقم 47/1ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانة",
+      "city": "الأحساء",
+      "location": "الاحساء",
+      "confidence": 1.0,
+      "source_count": 1,
+      "sources": [
+        {
+          "name": "منصة الفرص الاستثمارية بالأحساء",
+          "url": "https://alahsa-opportunities.com/opportunities/431",
+          "key": "alahsa-opportunities",
+          "title": "إنشاء وتشغيل و صيانة القطعة رقم 47/1ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانة",
+          "raw_status": "متاحة",
+          "project_stage": null,
+          "investment_model": null,
+          "qualification_reason": null,
+          "location_scope": null,
+          "opportunity_locations": []
+        }
+      ]
+    },
+    {
+      "id": 203,
+      "title": "إنشاء وتشغيل و صيانة القطعة رقم 47/2ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانة",
+      "city": "الأحساء",
+      "location": "الاحساء",
+      "confidence": 1.0,
+      "source_count": 1,
+      "sources": [
+        {
+          "name": "منصة الفرص الاستثمارية بالأحساء",
+          "url": "https://alahsa-opportunities.com/opportunities/432",
+          "key": "alahsa-opportunities",
+          "title": "إنشاء وتشغيل و صيانة القطعة رقم 47/2ت لنشاط صناعات خفيفة و متوسطة أو ورشة بالمخطط رقم 1082/4 بمصانع الطابوق والخرسانة",
+          "raw_status": "متاحة",
+          "project_stage": null,
+          "investment_model": null,
+          "qualification_reason": null,
+          "location_scope": null,
+          "opportunity_locations": []
+        }
+      ]
+    }
+  ]
+}

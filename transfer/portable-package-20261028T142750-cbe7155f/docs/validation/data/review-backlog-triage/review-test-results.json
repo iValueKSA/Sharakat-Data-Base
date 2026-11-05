@@ -1,0 +1,30 @@
+{
+  "focused_review_suite": {
+    "result": "PASSED",
+    "passed": 109,
+    "failed": 0,
+    "warnings": 25,
+    "files": [
+      "test_review_lifecycle_triage.py",
+      "test_review_queues_governance.py",
+      "test_reversible_merge.py",
+      "test_data_quality.py",
+      "test_entity_resolution.py",
+      "test_ingestion.py",
+      "test_location_geography.py",
+      "test_production_security.py",
+      "test_standardization_engine.py",
+      "test_status_lifecycle.py"
+    ],
+    "network": "disabled"
+  },
+  "full_regression": {
+    "result": "PASSED",
+    "passed": 350,
+    "failed": 0,
+    "warnings": 27,
+    "scope": "tests",
+    "network": "disabled",
+    "runtime_seconds": 24.15
+  }
+}

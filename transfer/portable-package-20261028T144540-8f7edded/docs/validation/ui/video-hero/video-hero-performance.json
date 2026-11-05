@@ -1,0 +1,38 @@
+{
+  "measured_at_local_date": "2026-10-28",
+  "method": "Playwright Chromium against the live local Dashboard, measuring dashboard data readiness, First Contentful Paint, first decoded video frame, asset SHA-256, and screen response behavior.",
+  "before_revision": {
+    "dashboard_data_ready_ms": 1134,
+    "first_contentful_paint_ms": 920,
+    "video_first_decoded_frame_after_navigation_ms": 2264,
+    "video_bytes": 9790340,
+    "duration_seconds": 22.093396,
+    "map_scene_count": 2,
+    "source": "Previous accepted live premium Hero validation immediately before map removal."
+  },
+  "after_revision": {
+    "route": "http://localhost:8080/?view=data-dashboard",
+    "dashboard_data_ready_ms": 1164,
+    "first_contentful_paint_ms": 860,
+    "video_first_decoded_frame_after_navigation_ms": 2657.6,
+    "dashboard_api_total": 566,
+    "dashboard_api_deadline_30d": 60,
+    "video_url": "/static/media/ahsa-investment-hero.webm?v=hero-no-map-v1",
+    "video_bytes": 9790136,
+    "video_sha256": "2bdb92251b0f4fc3f131ce375877d0095cac0aff5607668885f2bb22df521455",
+    "duration_seconds": 22.131582,
+    "dimensions": "1920x540",
+    "reference_host_requests": 0,
+    "source": "Final live Playwright run on the revised asset; video decoded, played, and wrapped at the native loop boundary."
+  },
+  "comparison": {
+    "dashboard_data_ready_delta_ms": 30,
+    "first_contentful_paint_delta_ms": -60,
+    "first_video_frame_delta_ms": 393.6,
+    "interpretation": "The revised video is nearly the same size as its previous local version. The Dashboard remains usable and paints before the video frame; data readiness and paint timings remain in the same range. These are individual local runs and vary with cache and machine load.",
+    "acceptable_for_local_platform_use": true
+  },
+  "preload_strategy": "preload=none; source attached lazily only when the Dashboard is active and reduced-motion preference is not enabled. A local opening-scene poster is displayed before playback.",
+  "video_hosting_strategy": "LOCAL",
+  "runtime_reference_dependency": false
+}

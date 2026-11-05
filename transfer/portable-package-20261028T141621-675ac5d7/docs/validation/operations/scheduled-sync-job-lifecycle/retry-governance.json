@@ -1,0 +1,38 @@
+{
+  "max_retries": 4,
+  "backoff_seconds": [
+    60,
+    300,
+    900,
+    3600
+  ],
+  "jitter_seconds": [
+    0,
+    30
+  ],
+  "retryable_result_failures": [
+    "timeouts",
+    "connection resets/errors",
+    "HTTP 429",
+    "HTTP 5xx",
+    "temporary DNS resolution failures"
+  ],
+  "permanent_result_failures": [
+    "HTTP 401/403/404",
+    "parser/structure changes",
+    "validation",
+    "invalid credentials",
+    "configuration errors"
+  ],
+  "retryable_unhandled_exceptions": [
+    "timeouts",
+    "connection errors",
+    "transient OS network errors",
+    "SQLAlchemy OperationalError/InterfaceError",
+    "connection-invalidated DBAPI errors"
+  ],
+  "unclassified_or_permanent_exceptions_retry": false,
+  "unbounded_retries": false,
+  "lineage": "Same SyncJob and Celery task retry ID; correlation_id retained, attempt_number increments.",
+  "reservation_token": "Stored in job metrics and passed unchanged through Celery retries; owner-checked release."
+}

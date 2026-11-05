@@ -1,0 +1,52 @@
+{
+  "officialCurrentIdsMissingFromPlatform": 0,
+  "confirmedOmissionsFixed": 0,
+  "unexplainedMissingOfficialRecords": 0,
+  "bySource": [
+    {
+      "source": "furas",
+      "missingIds": []
+    },
+    {
+      "source": "alahsa-opportunities",
+      "missingIds": []
+    },
+    {
+      "source": "ahda",
+      "missingQualifiedItems": []
+    },
+    {
+      "source": "invest-saudi",
+      "missingOfficialIds": []
+    },
+    {
+      "source": "kfu",
+      "missingEnumeratedIds": []
+    },
+    {
+      "source": "ncp",
+      "missingQualifiedItems": [],
+      "note": "news archive items are filtered by opportunity criteria; only one current item qualified this sweep"
+    },
+    {
+      "source": "modon",
+      "missingIds": null,
+      "reason": "no public itemized Al-Ahsa inventory/current read unavailable"
+    },
+    {
+      "source": "nhc",
+      "missingIds": null,
+      "reason": "no public itemized inventory and public routes returned 403"
+    },
+    {
+      "source": "pif",
+      "missingIds": null,
+      "reason": "current itemized population not exposed on public routes"
+    },
+    {
+      "source": "mwan",
+      "missingIds": null,
+      "reason": "current official enumeration blocked by TLS; last success Oct 12"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "fixed_snapshot_before_correction_utc": "2026-10-20T06:54:58.38359Z",
+  "final_validation_snapshot_local": "2026-10-20T10:15:49.411282+03:00",
+  "scheduled_jobs_after_pre_correction_snapshot": [
+    {
+      "id": 372,
+      "source_key": "alahsa-opportunities",
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "raw_count": 103,
+      "update_count": 0,
+      "new_count": 0
+    },
+    {
+      "id": 373,
+      "source_key": "furas",
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "raw_count": 164,
+      "update_count": 164,
+      "new_count": 0
+    }
+  ],
+  "manual_source_sync_started": false,
+  "observations_before": 10947,
+  "observations_after": 11124,
+  "observation_delta": 177,
+  "new_observations": {
+    "source_key": "furas",
+    "dataset_name": "source-record-status-snapshot",
+    "count": 177
+  },
+  "furas_source_rows": 177,
+  "historical_raw_payloads_compared": 177,
+  "furas_source_payload_refreshes_in_job_373": 164,
+  "furas_date_attribute_changes": 0,
+  "furas_canonical_source_status_changes": 0,
+  "master_identity_fingerprint_unchanged": true,
+  "source_link_fingerprint_unchanged": true,
+  "historical_observations_deleted_or_edited": 0,
+  "note": "Furas raw payload fingerprint differs after the natural scheduled refresh; the pre-refresh raw snapshots remain in SourceObservation. Date attributes and canonical source statuses compared unchanged.",
+  "standardization_metadata_repaired_after_sync": 177,
+  "standardization_metadata_embedded_version": "20",
+  "metadata_repair_changed_raw_payload": false
+}

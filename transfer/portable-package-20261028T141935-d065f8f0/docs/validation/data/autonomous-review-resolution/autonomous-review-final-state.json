@@ -1,0 +1,58 @@
+{
+  "captured_at": "2026-10-26T10:37:20.433443+03:00",
+  "open_reviews_by_type": {
+    "duplicate": 0,
+    "location": 0,
+    "qualification": 0,
+    "field_and_taxonomy_conflict": 0
+  },
+  "open_reviews_total": 0,
+  "business_state": {
+    "sha256": "5b49c491c8841a4b1396471869aefcdcfe830aef0941fb56f0afaefdbb96acc2",
+    "tables": {
+      "opportunities": {
+        "row_count": 587,
+        "sha256": "0e373da0a46f0c27396d91c60c985ee9c7d037c7a56ea4a8fca9144e972ff582"
+      },
+      "source_opportunities": {
+        "row_count": 3178,
+        "sha256": "251f19446e09c1ab359be5ec5ed4749e23f9f193baaa2fd69709c8dd4ed69453"
+      },
+      "source_observations": {
+        "row_count": 25180,
+        "sha256": "6d0766001f77f44cd873884d651ae9c71247572496eabb69aa2c1b94fd2ec97e"
+      }
+    }
+  },
+  "masters": {
+    "current": 566,
+    "unique_ids": 566
+  },
+  "sync_jobs": {
+    "total": 504,
+    "active": 0,
+    "latest_id": 504,
+    "latest_status": "SUCCESS",
+    "latest_job_state": "COMPLETED",
+    "latest_trigger_type": "scheduled"
+  },
+  "pilot_status": "SUPERSEDED_BY_AUTONOMOUS_RESOLUTION",
+  "business_state_matches_dry_run_before": true,
+  "decision_ledger_validation": {
+    "dry_run_validated": true,
+    "decision_count": 519,
+    "unique_review_type_id_pairs": 519,
+    "duplicate_pairs": 0,
+    "unclassified_reviews": 0,
+    "resolution_class_total": 519.0,
+    "confidence_distribution": [
+      "CONSERVATIVE=518",
+      "HIGH=1"
+    ],
+    "invalid_confidence_count": 0,
+    "missing_required_decision_fields": 0,
+    "invalid_action_count": 0,
+    "business_mutation_decisions": 0,
+    "version_tokens": 519
+  }
+}

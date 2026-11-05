@@ -1,0 +1,28 @@
+{
+  "captured_at": "2026-10-26T08:29:53.5959205Z",
+  "reviews_before": 386,
+  "job_505_open": 7,
+  "job_506_open": 379,
+  "job_506_created_total": 390,
+  "job_506_stale_closed_before_backlog_snapshot": 11,
+  "classification": {
+    "identical_prior_resolved": 381,
+    "newly_detected_phase2_taxonomy": 5
+  },
+  "applied": {
+    "resolved": 386,
+    "no_change": 385,
+    "canonical_changes": 0,
+    "superseded": 1,
+    "merges": 0
+  },
+  "reviews_after": 0,
+  "current_business_fingerprint_before": "e36a7e679e589ddba449b0492eab098c844bab50e9bc5fd16d578f8b34fb1181",
+  "current_business_fingerprint_after": "e36a7e679e589ddba449b0492eab098c844bab50e9bc5fd16d578f8b34fb1181",
+  "business_fingerprint_unchanged": true,
+  "source_rows_deleted": 0,
+  "canonical_changes": 0,
+  "merges": 0,
+  "superseded": 1,
+  "manual_sync_started": false
+}

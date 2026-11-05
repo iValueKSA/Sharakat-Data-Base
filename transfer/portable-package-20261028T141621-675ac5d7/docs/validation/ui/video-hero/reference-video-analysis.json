@@ -1,0 +1,60 @@
+{
+  "inspected_at_local_date": "2026-10-28",
+  "reference_page": "https://alahsa-opportunities.com/opportunities/515",
+  "inspection_method": "Live Chromium DOM, computed styles, and network response inspection after the page rendered",
+  "reference_hero_type": "HTML5 <video> inside section.hero-section; not an iframe or CSS background video",
+  "reference_hero_implementation": {
+    "hero_selector": "section.hero-section",
+    "video_container_selector": "div.hero-video-container",
+    "overlay_selector": "div.hero-overlay",
+    "content_selector": "div.hero-content",
+    "video_class": "hero-video"
+  },
+  "reference_video_element": {
+    "html_attributes": ["autoplay", "muted", "loop", "playsinline", "poster"],
+    "autoplay": true,
+    "loop": true,
+    "muted": true,
+    "playsinline": true,
+    "preload": "metadata",
+    "observed_paused": false,
+    "observed_ready_state": 4
+  },
+  "reference_video_url": "https://alahsa-opportunities.com/video/video.mp4",
+  "reference_video_format": "MP4",
+  "reference_video_mime_type": "video/mp4",
+  "reference_video_host": "alahsa-opportunities.com",
+  "reference_video_same_origin_as_page": true,
+  "reference_video_content_length_bytes": 128550009,
+  "reference_video_size_mb_decimal": 128.550009,
+  "reference_video_size_mib": 122.595,
+  "reference_video_response": {
+    "status": 206,
+    "content_range": "bytes 0-128550008/128550009",
+    "access_method": "Normal public page media request; no authentication, signed URL bypass, or access-control bypass"
+  },
+  "reference_video_dimensions": {"width": 1920, "height": 1080},
+  "reference_video_duration_seconds": 157.29,
+  "reference_video_poster_url": "https://alahsa-opportunities.com/images/video-poster.jpg",
+  "reference_video_poster_status": 404,
+  "reference_video_playinline": true,
+  "host_assessment": "The video URL uses the same host as the referenced Al-Ahsa Investment Opportunities platform. The observed response was served through Cloudflare; no separate media/CDN hostname was present in the media URL. This inspection does not establish that the host is an AHDA/Amanah government domain.",
+  "public_video_accessible": true,
+  "media_reuse_authorization": "REQUIRES_OWNER_CONFIRMATION",
+  "official_reference_media_copied_to_project": false,
+  "reference_style_characteristics": {
+    "pacing": "Unhurried cinematic cuts with place imagery held long enough to read; the observed sequence moves between people/heritage, geographic animation, landscapes, and development imagery.",
+    "mood": "Warm, aspirational, and polished, with sunset and golden-hour colors.",
+    "sense_of_place": "Uses local landscape, architecture, and geography as the principal identity cues.",
+    "hierarchy": "Large white Arabic headline, brief supporting copy, and a clear call to action sit over the moving image.",
+    "overlay_style": "A dark translucent gradient keeps copy readable while leaving the main image visible.",
+    "promotional_tone": "Presents the location as a destination for investment and development rather than as a generic dashboard texture.",
+    "implementation_inspiration_only": true
+  },
+  "local_reference_frames": [
+    "tmp/video-reference-review/reference-frame-1-t2s.png",
+    "tmp/video-reference-review/reference-frame-2-t25s.png",
+    "tmp/video-reference-review/reference-frame-3-t55s.png",
+    "tmp/video-reference-review/reference-frame-4-t90s.png"
+  ]
+}

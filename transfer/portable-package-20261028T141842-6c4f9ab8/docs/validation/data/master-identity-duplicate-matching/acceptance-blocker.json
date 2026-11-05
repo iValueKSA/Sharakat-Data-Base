@@ -1,0 +1,62 @@
+{
+  "review_status": "COMPLETE",
+  "acceptance_rule": "Current Masters have source records; every eligible/confirmed Al-Ahsa source record links to one current Master; non-qualified national/general source rows may remain unlinked.",
+  "total_source_opportunities": 2899,
+  "source_records_with_current_master": 312,
+  "source_records_without_current_master": 2587,
+  "eligible_source_records": 312,
+  "eligible_source_records_without_current_master": 0,
+  "unlinked_source_records_pending_location_eligibility_review": 6,
+  "non_qualified_source_records_without_master": 2581,
+  "literal_qualified_location_true": 19,
+  "literal_qualified_location_true_unlinked": 0,
+  "strict_all_sourceopportunities_current_master_gate": "REMOVED_SEMANTICALLY_INCORRECT",
+  "unlinked_location_eligibility_reviews": [
+    {
+      "source_record_id": 517,
+      "external_id": "investsaudi:33104",
+      "status": "PENDING",
+      "qualified": false
+    },
+    {
+      "source_record_id": 524,
+      "external_id": "investsaudi:32303",
+      "status": "PENDING",
+      "qualified": false
+    },
+    {
+      "source_record_id": 601,
+      "external_id": "investsaudi:33626",
+      "status": "PENDING",
+      "qualified": false
+    },
+    {
+      "source_record_id": 896,
+      "external_id": "investsaudi:32630",
+      "status": "PENDING",
+      "qualified": false
+    },
+    {
+      "source_record_id": 897,
+      "external_id": "investsaudi:33668",
+      "status": "PENDING",
+      "qualified": false
+    },
+    {
+      "source_record_id": 898,
+      "external_id": "investsaudi:33022",
+      "status": "PENDING",
+      "qualified": false
+    }
+  ],
+  "remaining_targeted_review": {
+    "source_record_id": 601,
+    "qualified": false,
+    "status": "PENDING",
+    "reason": "insufficient evidence due multi-city title versus structured Al Madinah location"
+  },
+  "reason": "All target-qualified records are linked. Remaining national/general records without Al-Ahsa opportunity geography are intentionally source-only.",
+  "data_changes_to_address_blocker": 12,
+  "unexplained_business_data_changes": 0,
+  "evidence_artifact": "invest-saudi-11-adjudication.json"
+}

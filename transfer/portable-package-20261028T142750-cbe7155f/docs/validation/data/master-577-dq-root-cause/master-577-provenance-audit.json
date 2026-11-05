@@ -1,0 +1,37 @@
+{
+  "master_id": 577,
+  "event_id": 531,
+  "event_type": "SECTOR_CONTROLLED_RELAXATION_APPLIED",
+  "event_timestamp": "2026-10-21T13:05:14.162695Z",
+  "stored_fields": {
+    "engine_version": "ahda-sector-controlled-relaxation-1.0.0",
+    "rule_keys": [
+      "MED_TITLE_CAFE_CONCESSION"
+    ],
+    "confidence": 0.852,
+    "rule_key": "MED_TITLE_CAFE_CONCESSION",
+    "origin": "INFERRED_RULE_MEDIUM",
+    "positive_evidence": "present",
+    "negative_evidence": [],
+    "inference_timestamp": "present",
+    "evidence_fields": [
+      "title"
+    ]
+  },
+  "omitted_fields": [
+    "confidence_margin",
+    "top_sector_id",
+    "top_score",
+    "second_sector_id",
+    "second_score",
+    "confidence_level"
+  ],
+  "margin_existed_in_classifier_output": true,
+  "margin_semantically_required_for_this_classification": false,
+  "margin_expected_for_this_rule": false,
+  "margin_missing_reason": "The event serializer in app/service.py copied only core fields and dropped optional score fields. The classifier supplied a single-sector result; its legacy score-minus-zero value was not a competing-sector margin. This is an application serialization omission, not a database migration loss.",
+  "medium_provenance_complete": true,
+  "classification_valid": true,
+  "primary_root_cause": "DQ_GATE_NULL_HANDLING_BUG",
+  "secondary_contributor": "provenance serializer omitted optional score fields; no decision-critical provenance was lost because margin was not applicable"
+}

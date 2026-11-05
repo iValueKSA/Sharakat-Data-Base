@@ -1,0 +1,249 @@
+{
+  "decision_policy": "Strong compound title phrase plus independent asset or non-duplicate description phrase; never title alone.",
+  "engine_version": "ahda-sector-phase2-1.0.0",
+  "fields_collapsed": [
+    "title_ar and normalized_title",
+    "title repeated as short_description",
+    "duplicate short/full descriptions"
+  ],
+  "phrases": [
+    {
+      "group": "title",
+      "labeled_title_support": 0,
+      "phrase": "إنشاء وتشغيل فندق",
+      "rule_key": "P2_PHRASE_TOURISM_TITLE",
+      "sector": "sector:tourism",
+      "sector_id": "sector:tourism",
+      "supporting_master_ids": []
+    },
+    {
+      "group": "title",
+      "labeled_title_support": 0,
+      "phrase": "إنشاء فندق",
+      "rule_key": "P2_PHRASE_TOURISM_TITLE",
+      "sector": "sector:tourism",
+      "sector_id": "sector:tourism",
+      "supporting_master_ids": []
+    },
+    {
+      "group": "title",
+      "labeled_title_support": 1,
+      "phrase": "منتجع سياحي",
+      "rule_key": "P2_PHRASE_TOURISM_TITLE",
+      "sector": "sector:tourism",
+      "sector_id": "sector:tourism",
+      "supporting_master_ids": [
+        189
+      ]
+    },
+    {
+      "group": "title",
+      "labeled_title_support": 0,
+      "phrase": "منشأة ضيافة فندقية",
+      "rule_key": "P2_PHRASE_TOURISM_TITLE",
+      "sector": "sector:tourism",
+      "sector_id": "sector:tourism",
+      "supporting_master_ids": []
+    },
+    {
+      "group": "title",
+      "labeled_title_support": 0,
+      "phrase": "tourism destination",
+      "rule_key": "P2_PHRASE_TOURISM_TITLE",
+      "sector": "sector:tourism",
+      "sector_id": "sector:tourism",
+      "supporting_master_ids": []
+    },
+    {
+      "group": "title",
+      "labeled_title_support": 0,
+      "phrase": "hotel development",
+      "rule_key": "P2_PHRASE_TOURISM_TITLE",
+      "sector": "sector:tourism",
+      "sector_id": "sector:tourism",
+      "supporting_master_ids": []
+    },
+    {
+      "group": "title",
+      "labeled_title_support": 0,
+      "phrase": "resort development",
+      "rule_key": "P2_PHRASE_TOURISM_TITLE",
+      "sector": "sector:tourism",
+      "sector_id": "sector:tourism",
+      "supporting_master_ids": []
+    },
+    {
+      "group": "support",
+      "labeled_title_support": 0,
+      "phrase": "فندق",
+      "rule_key": "P2_PHRASE_TOURISM_SUPPORT",
+      "sector": "sector:tourism",
+      "sector_id": "sector:tourism",
+      "supporting_master_ids": []
+    },
+    {
+      "group": "support",
+      "labeled_title_support": 1,
+      "phrase": "منتجع",
+      "rule_key": "P2_PHRASE_TOURISM_SUPPORT",
+      "sector": "sector:tourism",
+      "sector_id": "sector:tourism",
+      "supporting_master_ids": [
+        189
+      ]
+    },
+    {
+      "group": "support",
+      "labeled_title_support": 0,
+      "phrase": "ضيافة فندقية",
+      "rule_key": "P2_PHRASE_TOURISM_SUPPORT",
+      "sector": "sector:tourism",
+      "sector_id": "sector:tourism",
+      "supporting_master_ids": []
+    },
+    {
+      "group": "support",
+      "labeled_title_support": 0,
+      "phrase": "مرفق سياحي",
+      "rule_key": "P2_PHRASE_TOURISM_SUPPORT",
+      "sector": "sector:tourism",
+      "sector_id": "sector:tourism",
+      "supporting_master_ids": []
+    },
+    {
+      "group": "support",
+      "labeled_title_support": 0,
+      "phrase": "hotel facility",
+      "rule_key": "P2_PHRASE_TOURISM_SUPPORT",
+      "sector": "sector:tourism",
+      "sector_id": "sector:tourism",
+      "supporting_master_ids": []
+    },
+    {
+      "group": "support",
+      "labeled_title_support": 0,
+      "phrase": "hospitality facility",
+      "rule_key": "P2_PHRASE_TOURISM_SUPPORT",
+      "sector": "sector:tourism",
+      "sector_id": "sector:tourism",
+      "supporting_master_ids": []
+    },
+    {
+      "group": "title",
+      "labeled_title_support": 0,
+      "phrase": "استثمار وتشغيل مزرعة",
+      "rule_key": "P2_PHRASE_AGRICULTURE_TITLE",
+      "sector": "sector:agriculture",
+      "sector_id": "sector:agriculture",
+      "supporting_master_ids": []
+    },
+    {
+      "group": "title",
+      "labeled_title_support": 0,
+      "phrase": "إنتاج زراعي",
+      "rule_key": "P2_PHRASE_AGRICULTURE_TITLE",
+      "sector": "sector:agriculture",
+      "sector_id": "sector:agriculture",
+      "supporting_master_ids": []
+    },
+    {
+      "group": "title",
+      "labeled_title_support": 0,
+      "phrase": "إنتاج التمور",
+      "rule_key": "P2_PHRASE_AGRICULTURE_TITLE",
+      "sector": "sector:agriculture",
+      "sector_id": "sector:agriculture",
+      "supporting_master_ids": []
+    },
+    {
+      "group": "title",
+      "labeled_title_support": 0,
+      "phrase": "فرز وتعبئة التمور",
+      "rule_key": "P2_PHRASE_AGRICULTURE_TITLE",
+      "sector": "sector:agriculture",
+      "sector_id": "sector:agriculture",
+      "supporting_master_ids": []
+    },
+    {
+      "group": "title",
+      "labeled_title_support": 0,
+      "phrase": "بيوت محمية زراعية",
+      "rule_key": "P2_PHRASE_AGRICULTURE_TITLE",
+      "sector": "sector:agriculture",
+      "sector_id": "sector:agriculture",
+      "supporting_master_ids": []
+    },
+    {
+      "group": "title",
+      "labeled_title_support": 0,
+      "phrase": "agricultural production",
+      "rule_key": "P2_PHRASE_AGRICULTURE_TITLE",
+      "sector": "sector:agriculture",
+      "sector_id": "sector:agriculture",
+      "supporting_master_ids": []
+    },
+    {
+      "group": "title",
+      "labeled_title_support": 0,
+      "phrase": "greenhouse farming",
+      "rule_key": "P2_PHRASE_AGRICULTURE_TITLE",
+      "sector": "sector:agriculture",
+      "sector_id": "sector:agriculture",
+      "supporting_master_ids": []
+    },
+    {
+      "group": "support",
+      "labeled_title_support": 0,
+      "phrase": "نشاط زراعي",
+      "rule_key": "P2_PHRASE_AGRICULTURE_SUPPORT",
+      "sector": "sector:agriculture",
+      "sector_id": "sector:agriculture",
+      "supporting_master_ids": []
+    },
+    {
+      "group": "support",
+      "labeled_title_support": 0,
+      "phrase": "مزرعة إنتاج",
+      "rule_key": "P2_PHRASE_AGRICULTURE_SUPPORT",
+      "sector": "sector:agriculture",
+      "sector_id": "sector:agriculture",
+      "supporting_master_ids": []
+    },
+    {
+      "group": "support",
+      "labeled_title_support": 0,
+      "phrase": "محاصيل زراعية",
+      "rule_key": "P2_PHRASE_AGRICULTURE_SUPPORT",
+      "sector": "sector:agriculture",
+      "sector_id": "sector:agriculture",
+      "supporting_master_ids": []
+    },
+    {
+      "group": "support",
+      "labeled_title_support": 0,
+      "phrase": "نخيل لإنتاج التمور",
+      "rule_key": "P2_PHRASE_AGRICULTURE_SUPPORT",
+      "sector": "sector:agriculture",
+      "sector_id": "sector:agriculture",
+      "supporting_master_ids": []
+    },
+    {
+      "group": "support",
+      "labeled_title_support": 0,
+      "phrase": "agricultural facility",
+      "rule_key": "P2_PHRASE_AGRICULTURE_SUPPORT",
+      "sector": "sector:agriculture",
+      "sector_id": "sector:agriculture",
+      "supporting_master_ids": []
+    },
+    {
+      "group": "support",
+      "labeled_title_support": 0,
+      "phrase": "date production",
+      "rule_key": "P2_PHRASE_AGRICULTURE_SUPPORT",
+      "sector": "sector:agriculture",
+      "sector_id": "sector:agriculture",
+      "supporting_master_ids": []
+    }
+  ]
+}

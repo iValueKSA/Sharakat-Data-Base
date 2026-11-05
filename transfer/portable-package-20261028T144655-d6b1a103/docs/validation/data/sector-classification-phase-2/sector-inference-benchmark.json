@@ -1,0 +1,3942 @@
+{
+  "agriculture_precision": "NOT_ENOUGH_DATA",
+  "benchmark_correct": 1,
+  "benchmark_high_confidence": 1,
+  "benchmark_incorrect": 0,
+  "benchmark_precision_percentage": 100.0,
+  "benchmark_total": 135,
+  "by_predicted_sector": {
+    "sector:commercial": 1
+  },
+  "engine_version": "ahda-sector-phase2-1.0.0",
+  "method": "Each Master held out individually; canonical sector and official source sectors hidden; empirical maps recomputed without held-out ID; Phase 1 inferred labels excluded from training.",
+  "records": [
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 1,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 2,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 3,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 4,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 5,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 6,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 7,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 8,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 9,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:other",
+      "holdout": "leave-one-Master-out",
+      "master_id": 21,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:other",
+      "holdout": "leave-one-Master-out",
+      "master_id": 99,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الأحساء"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:other",
+      "holdout": "leave-one-Master-out",
+      "master_id": 100,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الأحساء"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:other",
+      "holdout": "leave-one-Master-out",
+      "master_id": 101,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الأحساء",
+              "العمران"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:real_estate",
+      "holdout": "leave-one-Master-out",
+      "master_id": 102,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:education",
+      "holdout": "leave-one-Master-out",
+      "master_id": 106,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:real_estate"
+            ],
+            "phrases": [
+              "مبنى"
+            ],
+            "rule_key": "P2_GENERIC_BUILDING_NOT_REAL_ESTATE"
+          },
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الهفوف"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "استثمار"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:other",
+      "holdout": "leave-one-Master-out",
+      "master_id": 107,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تشغيل"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 143,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 144,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 145,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 146,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 147,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 148,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 149,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 150,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 151,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 152,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 153,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 154,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 155,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 156,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 157,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 158,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 159,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 160,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 161,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 162,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 163,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 164,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 165,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 166,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 167,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 168,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 169,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 170,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 171,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 172,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 173,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 174,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 175,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 176,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 177,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 178,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 179,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 180,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 181,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 182,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 183,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 184,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 185,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 186,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 187,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 188,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 189,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 190,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 191,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 192,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 193,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 194,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 195,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 196,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 197,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 198,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 199,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 200,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 201,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 202,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 203,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 204,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 208,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 209,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 210,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:tourism",
+      "holdout": "leave-one-Master-out",
+      "master_id": 212,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الأحساء"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير",
+              "استثمار"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:healthcare",
+      "holdout": "leave-one-Master-out",
+      "master_id": 213,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الأحساء"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "استثمار",
+              "تشغيل"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:healthcare",
+      "holdout": "leave-one-Master-out",
+      "master_id": 214,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الأحساء"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "استثمار"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:agriculture",
+      "holdout": "leave-one-Master-out",
+      "master_id": 215,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الأحساء"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:agriculture"
+            ],
+            "phrases": [
+              "التمور"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_AGRICULTURE"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "استثمار"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:healthcare",
+      "holdout": "leave-one-Master-out",
+      "master_id": 216,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الأحساء"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "استثمار"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:education",
+      "holdout": "leave-one-Master-out",
+      "master_id": 217,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الأحساء"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "استثمار"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:environment",
+      "holdout": "leave-one-Master-out",
+      "master_id": 218,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:environment",
+      "holdout": "leave-one-Master-out",
+      "master_id": 219,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:environment",
+      "holdout": "leave-one-Master-out",
+      "master_id": 220,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:environment",
+      "holdout": "leave-one-Master-out",
+      "master_id": 221,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:environment",
+      "holdout": "leave-one-Master-out",
+      "master_id": 222,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:environment",
+      "holdout": "leave-one-Master-out",
+      "master_id": 223,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 226,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:other",
+      "holdout": "leave-one-Master-out",
+      "master_id": 227,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الأحساء"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "استثمار",
+              "تشغيل"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:real_estate",
+      "holdout": "leave-one-Master-out",
+      "master_id": 230,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 231,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:other",
+      "holdout": "leave-one-Master-out",
+      "master_id": 232,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:real_estate"
+            ],
+            "phrases": [
+              "قطعة رقم"
+            ],
+            "rule_key": "P2_GENERIC_PLOT_NOT_REAL_ESTATE"
+          },
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "العيون"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تشغيل"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 237,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 239,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 240,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 241,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 242,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 245,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 246,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 248,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 249,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 250,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 251,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 253,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 254,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:other",
+      "holdout": "leave-one-Master-out",
+      "master_id": 255,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:real_estate"
+            ],
+            "phrases": [
+              "قطعة رقم"
+            ],
+            "rule_key": "P2_GENERIC_PLOT_NOT_REAL_ESTATE"
+          },
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "العيون"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تشغيل"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 256,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:other",
+      "holdout": "leave-one-Master-out",
+      "master_id": 257,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:real_estate"
+            ],
+            "phrases": [
+              "مكاتب إدارية"
+            ],
+            "rule_key": "P2_GENERIC_BUILDING_NOT_REAL_ESTATE"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تشغيل"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 258,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 259,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 263,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 264,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 271,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 272,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 275,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:industrial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 277,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:commercial",
+      "holdout": "leave-one-Master-out",
+      "master_id": 325,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "HIGH_CONFIDENCE",
+        "classification_origin": "INFERRED_RULE",
+        "confidence": 0.97,
+        "confidence_margin": 1.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:agriculture"
+            ],
+            "phrases": [
+              "تجارة المواد الغذائية"
+            ],
+            "rule_key": "P2_FOOD_RETAIL_NOT_AGRICULTURE"
+          },
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الأحساء"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تأجير"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [
+          {
+            "field": "sub_activity",
+            "rule_key": "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+            "value": "أنشطة تجارة المواد الغذائية"
+          },
+          {
+            "activity": "الأنشطة التجارية",
+            "field": "activity+sub_activity",
+            "rule_key": "P2_FURAS_FOOD_RETAIL_EXACT_PAIR",
+            "sub_activity": "أنشطة تجارة المواد الغذائية"
+          }
+        ],
+        "rule_key": "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL",
+        "rule_keys": [
+          "P2_EXACT_STRUCTURED_OR_INDEPENDENT_MULTI_SIGNAL",
+          "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+          "P2_FURAS_FOOD_RETAIL_EXACT_PAIR"
+        ],
+        "sector": "تجاري",
+        "sector_id": "sector:commercial",
+        "total_score": 97.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:logistics",
+      "holdout": "leave-one-Master-out",
+      "master_id": 327,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "INSUFFICIENT_EVIDENCE",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الأحساء"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "استثمار",
+              "تشغيل"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [],
+        "rule_key": "P2_INSUFFICIENT_EVIDENCE",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:logistics",
+      "holdout": "leave-one-Master-out",
+      "master_id": 328,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:environment",
+      "holdout": "leave-one-Master-out",
+      "master_id": 329,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:education",
+      "holdout": "leave-one-Master-out",
+      "master_id": 330,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:environment",
+      "holdout": "leave-one-Master-out",
+      "master_id": 331,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:logistics",
+      "holdout": "leave-one-Master-out",
+      "master_id": 332,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:logistics",
+      "holdout": "leave-one-Master-out",
+      "master_id": 333,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:real_estate",
+      "holdout": "leave-one-Master-out",
+      "master_id": 334,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:real_estate",
+      "holdout": "leave-one-Master-out",
+      "master_id": 335,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:real_estate",
+      "holdout": "leave-one-Master-out",
+      "master_id": 336,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:real_estate",
+      "holdout": "leave-one-Master-out",
+      "master_id": 337,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    },
+    {
+      "hidden_sector_id": "sector:real_estate",
+      "holdout": "leave-one-Master-out",
+      "master_id": 338,
+      "official_source_sector_hidden": true,
+      "phase1_inference_excluded_from_training": true,
+      "prediction": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "availability_only": true,
+            "field": "official_source_sector",
+            "value": "hidden"
+          }
+        ],
+        "rule_key": "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION",
+        "rule_keys": [
+          "P2_HIDDEN_OFFICIAL_SOURCE_SECTOR_REQUIRES_ADJUDICATION"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      }
+    }
+  ],
+  "tourism_precision": "NOT_ENOUGH_DATA"
+}

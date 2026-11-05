@@ -1,0 +1,528 @@
+{
+  "started_at": "2026-10-26T11:06:53.348Z",
+  "finished_at": "2026-10-26T11:07:05.796Z",
+  "card_title": "مواعيد خلال 30 يوماً",
+  "categories": [
+    {
+      "key": "7d",
+      "meaning": "خلال 7 أيام",
+      "display_label": "خلال 7 أيام",
+      "color": "rgb(55, 138, 164)",
+      "count": 0
+    },
+    {
+      "key": "8_14d",
+      "meaning": "8–14 يومًا",
+      "display_label": "8–14 يومًا",
+      "color": "rgb(0, 110, 97)",
+      "count": 10
+    },
+    {
+      "key": "15_30d",
+      "meaning": "15–30 يومًا",
+      "display_label": "15–30 يومًا",
+      "color": "rgb(195, 152, 83)",
+      "count": 50
+    },
+    {
+      "key": "over_30d",
+      "meaning": "أكثر من 30 يومًا",
+      "display_label": "أكثر من 30 يومًا",
+      "color": "rgb(121, 83, 169)",
+      "count": 44
+    }
+  ],
+  "values_before": [
+    0,
+    10,
+    50,
+    44
+  ],
+  "values_after": [
+    0,
+    10,
+    50,
+    44
+  ],
+  "values_changed": false,
+  "tooltip_category_mapping": "CORRECT",
+  "four_bars_visible": true,
+  "four_labels_visible": true,
+  "four_distinct_colors": true,
+  "label_overlap": false,
+  "label_clipping": false,
+  "horizontal_page_overflow": false,
+  "rtl": true,
+  "western_digits": "0-9",
+  "zero_values_rendered": true,
+  "viewport_results": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "docScrollWidth": 1920,
+      "bodyScrollWidth": 1920,
+      "rtl": true,
+      "card": {
+        "left": 74,
+        "right": 822.5,
+        "width": 748.5,
+        "height": 118.34375
+      },
+      "entries": [
+        {
+          "key": "7d",
+          "label": "خلال 7 أيام",
+          "labelVisible": true,
+          "labelRect": {
+            "left": 599.875,
+            "right": 765.5,
+            "top": 465.09375,
+            "bottom": 490.09375,
+            "width": 165.625,
+            "height": 25,
+            "scrollWidth": 166,
+            "scrollHeight": 25
+          },
+          "color": "rgb(55, 138, 164)",
+          "barHeight": 4,
+          "barVisible": true
+        },
+        {
+          "key": "8_14d",
+          "label": "8–14 يومًا",
+          "labelVisible": true,
+          "labelRect": {
+            "left": 429.25,
+            "right": 594.875,
+            "top": 465.09375,
+            "bottom": 490.09375,
+            "width": 165.625,
+            "height": 25,
+            "scrollWidth": 166,
+            "scrollHeight": 25
+          },
+          "color": "rgb(0, 110, 97)",
+          "barHeight": 4.796875,
+          "barVisible": true
+        },
+        {
+          "key": "15_30d",
+          "label": "15–30 يومًا",
+          "labelVisible": true,
+          "labelRect": {
+            "left": 258.625,
+            "right": 424.25,
+            "top": 465.09375,
+            "bottom": 490.09375,
+            "width": 165.625,
+            "height": 25,
+            "scrollWidth": 166,
+            "scrollHeight": 25
+          },
+          "color": "rgb(195, 152, 83)",
+          "barHeight": 24,
+          "barVisible": true
+        },
+        {
+          "key": "over_30d",
+          "label": "أكثر من 30 يومًا",
+          "labelVisible": true,
+          "labelRect": {
+            "left": 88,
+            "right": 253.625,
+            "top": 465.09375,
+            "bottom": 490.09375,
+            "width": 165.625,
+            "height": 25,
+            "scrollWidth": 166,
+            "scrollHeight": 25
+          },
+          "color": "rgb(121, 83, 169)",
+          "barHeight": 21.109375,
+          "barVisible": true
+        }
+      ],
+      "labelOverlap": false,
+      "barCount": 4,
+      "labelCount": 4,
+      "distinctColors": 4,
+      "labelClipping": false,
+      "screenshot": "screenshots/deadline-card-1920x1080.png"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "docScrollWidth": 1440,
+      "bodyScrollWidth": 1440,
+      "rtl": true,
+      "card": {
+        "left": 43.1875,
+        "right": 582.5,
+        "width": 539.3125,
+        "height": 118.34375
+      },
+      "entries": [
+        {
+          "key": "7d",
+          "label": "خلال 7 أيام",
+          "labelVisible": true,
+          "labelRect": {
+            "left": 412.171875,
+            "right": 525.5,
+            "top": 465.09375,
+            "bottom": 490.09375,
+            "width": 113.328125,
+            "height": 25,
+            "scrollWidth": 113,
+            "scrollHeight": 25
+          },
+          "color": "rgb(55, 138, 164)",
+          "barHeight": 4,
+          "barVisible": true
+        },
+        {
+          "key": "8_14d",
+          "label": "8–14 يومًا",
+          "labelVisible": true,
+          "labelRect": {
+            "left": 293.84375,
+            "right": 407.171875,
+            "top": 465.09375,
+            "bottom": 490.09375,
+            "width": 113.328125,
+            "height": 25,
+            "scrollWidth": 113,
+            "scrollHeight": 25
+          },
+          "color": "rgb(0, 110, 97)",
+          "barHeight": 4.796875,
+          "barVisible": true
+        },
+        {
+          "key": "15_30d",
+          "label": "15–30 يومًا",
+          "labelVisible": true,
+          "labelRect": {
+            "left": 175.515625,
+            "right": 288.84375,
+            "top": 465.09375,
+            "bottom": 490.09375,
+            "width": 113.328125,
+            "height": 25,
+            "scrollWidth": 113,
+            "scrollHeight": 25
+          },
+          "color": "rgb(195, 152, 83)",
+          "barHeight": 24,
+          "barVisible": true
+        },
+        {
+          "key": "over_30d",
+          "label": "أكثر من 30 يومًا",
+          "labelVisible": true,
+          "labelRect": {
+            "left": 57.1875,
+            "right": 170.515625,
+            "top": 465.09375,
+            "bottom": 490.09375,
+            "width": 113.328125,
+            "height": 25,
+            "scrollWidth": 113,
+            "scrollHeight": 25
+          },
+          "color": "rgb(121, 83, 169)",
+          "barHeight": 21.109375,
+          "barVisible": true
+        }
+      ],
+      "labelOverlap": false,
+      "barCount": 4,
+      "labelCount": 4,
+      "distinctColors": 4,
+      "labelClipping": false,
+      "screenshot": "screenshots/deadline-card-1440x900.png"
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "docScrollWidth": 1366,
+      "bodyScrollWidth": 1366,
+      "rtl": true,
+      "card": {
+        "left": 40.96875,
+        "right": 545.5,
+        "width": 504.53125,
+        "height": 118.34375
+      },
+      "entries": [
+        {
+          "key": "7d",
+          "label": "خلال 7 أيام",
+          "labelVisible": true,
+          "labelRect": {
+            "left": 383.875,
+            "right": 488.5,
+            "top": 463.671875,
+            "bottom": 488.671875,
+            "width": 104.625,
+            "height": 25,
+            "scrollWidth": 105,
+            "scrollHeight": 25
+          },
+          "color": "rgb(55, 138, 164)",
+          "barHeight": 4,
+          "barVisible": true
+        },
+        {
+          "key": "8_14d",
+          "label": "8–14 يومًا",
+          "labelVisible": true,
+          "labelRect": {
+            "left": 274.234375,
+            "right": 378.875,
+            "top": 463.671875,
+            "bottom": 488.671875,
+            "width": 104.640625,
+            "height": 25,
+            "scrollWidth": 105,
+            "scrollHeight": 25
+          },
+          "color": "rgb(0, 110, 97)",
+          "barHeight": 4.796875,
+          "barVisible": true
+        },
+        {
+          "key": "15_30d",
+          "label": "15–30 يومًا",
+          "labelVisible": true,
+          "labelRect": {
+            "left": 164.609375,
+            "right": 269.234375,
+            "top": 463.671875,
+            "bottom": 488.671875,
+            "width": 104.625,
+            "height": 25,
+            "scrollWidth": 105,
+            "scrollHeight": 25
+          },
+          "color": "rgb(195, 152, 83)",
+          "barHeight": 24,
+          "barVisible": true
+        },
+        {
+          "key": "over_30d",
+          "label": "أكثر من 30 يومًا",
+          "labelVisible": true,
+          "labelRect": {
+            "left": 54.96875,
+            "right": 159.609375,
+            "top": 463.671875,
+            "bottom": 488.671875,
+            "width": 104.640625,
+            "height": 25,
+            "scrollWidth": 105,
+            "scrollHeight": 25
+          },
+          "color": "rgb(121, 83, 169)",
+          "barHeight": 21.109375,
+          "barVisible": true
+        }
+      ],
+      "labelOverlap": false,
+      "barCount": 4,
+      "labelCount": 4,
+      "distinctColors": 4,
+      "labelClipping": false,
+      "screenshot": "screenshots/deadline-card-1366x768.png"
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "docScrollWidth": 768,
+      "bodyScrollWidth": 768,
+      "rtl": true,
+      "card": {
+        "left": 25,
+        "right": 378.5,
+        "width": 353.5,
+        "height": 118.34375
+      },
+      "entries": [
+        {
+          "key": "7d",
+          "label": "خلال 7 أيام",
+          "labelVisible": true,
+          "labelRect": {
+            "left": 254.625,
+            "right": 321.5,
+            "top": 606.1875,
+            "bottom": 631.1875,
+            "width": 66.875,
+            "height": 25,
+            "scrollWidth": 67,
+            "scrollHeight": 25
+          },
+          "color": "rgb(55, 138, 164)",
+          "barHeight": 4,
+          "barVisible": true
+        },
+        {
+          "key": "8_14d",
+          "label": "8–14 يومًا",
+          "labelVisible": true,
+          "labelRect": {
+            "left": 182.75,
+            "right": 249.625,
+            "top": 606.1875,
+            "bottom": 631.1875,
+            "width": 66.875,
+            "height": 25,
+            "scrollWidth": 67,
+            "scrollHeight": 25
+          },
+          "color": "rgb(0, 110, 97)",
+          "barHeight": 4.796875,
+          "barVisible": true
+        },
+        {
+          "key": "15_30d",
+          "label": "15–30 يومًا",
+          "labelVisible": true,
+          "labelRect": {
+            "left": 110.875,
+            "right": 177.75,
+            "top": 606.1875,
+            "bottom": 631.1875,
+            "width": 66.875,
+            "height": 25,
+            "scrollWidth": 67,
+            "scrollHeight": 25
+          },
+          "color": "rgb(195, 152, 83)",
+          "barHeight": 24,
+          "barVisible": true
+        },
+        {
+          "key": "over_30d",
+          "label": "أكثر من 30 يومًا",
+          "labelVisible": true,
+          "labelRect": {
+            "left": 39,
+            "right": 105.875,
+            "top": 606.1875,
+            "bottom": 631.1875,
+            "width": 66.875,
+            "height": 25,
+            "scrollWidth": 67,
+            "scrollHeight": 25
+          },
+          "color": "rgb(121, 83, 169)",
+          "barHeight": 21.109375,
+          "barVisible": true
+        }
+      ],
+      "labelOverlap": false,
+      "barCount": 4,
+      "labelCount": 4,
+      "distinctColors": 4,
+      "labelClipping": false,
+      "screenshot": "screenshots/deadline-card-768x900.png"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "docScrollWidth": 390,
+      "bodyScrollWidth": 390,
+      "rtl": true,
+      "card": {
+        "left": 12,
+        "right": 378,
+        "width": 366,
+        "height": 118.34375
+      },
+      "entries": [
+        {
+          "key": "7d",
+          "label": "خلال 7 أيام",
+          "labelVisible": true,
+          "labelRect": {
+            "left": 251,
+            "right": 321,
+            "top": 837.265625,
+            "bottom": 862.265625,
+            "width": 70,
+            "height": 25,
+            "scrollWidth": 70,
+            "scrollHeight": 25
+          },
+          "color": "rgb(55, 138, 164)",
+          "barHeight": 4,
+          "barVisible": true
+        },
+        {
+          "key": "8_14d",
+          "label": "8–14 يومًا",
+          "labelVisible": true,
+          "labelRect": {
+            "left": 176,
+            "right": 246,
+            "top": 837.265625,
+            "bottom": 862.265625,
+            "width": 70,
+            "height": 25,
+            "scrollWidth": 70,
+            "scrollHeight": 25
+          },
+          "color": "rgb(0, 110, 97)",
+          "barHeight": 4.796875,
+          "barVisible": true
+        },
+        {
+          "key": "15_30d",
+          "label": "15–30 يومًا",
+          "labelVisible": true,
+          "labelRect": {
+            "left": 101,
+            "right": 171,
+            "top": 837.265625,
+            "bottom": 862.265625,
+            "width": 70,
+            "height": 25,
+            "scrollWidth": 70,
+            "scrollHeight": 25
+          },
+          "color": "rgb(195, 152, 83)",
+          "barHeight": 24,
+          "barVisible": true
+        },
+        {
+          "key": "over_30d",
+          "label": "أكثر من 30 يومًا",
+          "labelVisible": true,
+          "labelRect": {
+            "left": 26,
+            "right": 96,
+            "top": 837.265625,
+            "bottom": 862.265625,
+            "width": 70,
+            "height": 25,
+            "scrollWidth": 70,
+            "scrollHeight": 25
+          },
+          "color": "rgb(121, 83, 169)",
+          "barHeight": 21.109375,
+          "barVisible": true
+        }
+      ],
+      "labelOverlap": false,
+      "barCount": 4,
+      "labelCount": 4,
+      "distinctColors": 4,
+      "labelClipping": false,
+      "screenshot": "screenshots/deadline-card-390x844.png"
+    }
+  ],
+  "javascript_errors": [],
+  "http_5xx": [],
+  "status": "PASSED"
+}

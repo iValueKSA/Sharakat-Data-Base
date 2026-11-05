@@ -1,0 +1,88 @@
+{
+  "captured_at": "2026-10-22 12:39:44.041324+00:00",
+  "fixed_live_snapshot": {
+    "total_masters": 547,
+    "current_masters": 526,
+    "merged_masters": 21,
+    "source_opportunities_total": 3138,
+    "invest_saudi_source_opportunities": 2555,
+    "invest_saudi_lifecycle_after_correction": {
+      "أزيلت من المصدر": 124,
+      "غير محددة": 2431
+    },
+    "invest_saudi_linkage_state": {
+      "unlinked": 2536,
+      "linked_to_current_master": 19,
+      "linked_to_merged_master": 0
+    },
+    "observations_total_after_correction": 21538,
+    "reviews_open": {
+      "duplicate_pending": 10,
+      "location_pending": 15,
+      "qualification_pending": 0,
+      "conflict_open_or_pending": 473,
+      "total_open": 498
+    },
+    "sync_jobs_total": 443,
+    "invest_saudi_source_state": {
+      "technical_health": "HEALTHY",
+      "coverage_status": "COMPLETE_PUBLIC_SOURCE",
+      "freshness_status": "HEALTHY",
+      "last_successful_sync": "2026-10-22 12:03:25.553138+00:00"
+    }
+  },
+  "job_439": {
+    "job_id": 439,
+    "source": "استثمر في السعودية",
+    "status": "SUCCESS",
+    "job_state": "COMPLETED",
+    "trigger_type": "scheduled",
+    "created_at": "not stored; queued_at is earliest persisted time",
+    "queued_at": "2026-10-22 12:01:09.005461+00:00",
+    "started_at": "2026-10-22 12:01:09.186402+00:00",
+    "completed_at": "2026-10-22 12:03:25.553162+00:00",
+    "duration_seconds": 136.36676,
+    "task_id": "84da562d-eaa0-4f7a-b5ef-f453cf6d8881",
+    "correlation_id": "5659faf477da4ddfb8e1e0299334121e",
+    "worker": "dd94af8a1408:9",
+    "attempt": 1,
+    "scan_complete": true,
+    "pages_requested": 26,
+    "pages_succeeded": 26,
+    "raw_records_enumerated": 2431,
+    "parsed": 2431,
+    "unique_official_ids": 2431,
+    "source_total_reported": 2431,
+    "created": 0,
+    "updated": 0,
+    "unchanged": 8,
+    "removed_reported": 2423,
+    "rejected": 2407,
+    "active": 8,
+    "location_review_count": 16,
+    "observations_added_in_job_window": 2547,
+    "review_creations": {
+      "location": 0,
+      "qualification": 0,
+      "duplicate_candidates": 0,
+      "field_conflicts": 0
+    },
+    "error": null,
+    "retry_metadata": {
+      "attempt": 1,
+      "retry_count": "not persisted separately",
+      "error": null
+    },
+    "metrics": {
+      "newly_removed_from_current_source_snapshot": 9,
+      "removed_from_current_source_snapshot": 124,
+      "historical_missing_from_current_snapshot": 124,
+      "source_opportunities_created": 0,
+      "source_opportunities_updated": 0,
+      "parser_version": null,
+      "duplicate_endpoint_memberships": 0
+    }
+  },
+  "services_ready": true,
+  "manual_source_sync_started": false
+}

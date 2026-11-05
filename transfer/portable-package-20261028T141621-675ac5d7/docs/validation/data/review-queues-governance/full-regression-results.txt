@@ -1,0 +1,11 @@
+Full regression suite — review queues & resolution governance
+
+Command: python -m pytest -q --import-mode=importlib
+Execution: isolated project copy in a Docker API container, DATABASE_URL=sqlite://, REDIS_URL unset, ENVIRONMENT=development. The live PostgreSQL database was not used by pytest.
+Result: 189 passed / 0 failed
+Warning: one existing Starlette/httpx TestClient deprecation warning.
+
+Post-correction full-suite run completed 2026-10-20. Separate PostgreSQL concurrency check used a temporary schema and dropped it after [200, 409] resolution race verification.
+
+Focused rerun after exact duplicate review supersede: 12 passed / 0 failed (review governance + production security).
+Full suite rerun after status metadata correction: 189 passed / 0 failed, 1 existing deprecation warning; temporary SQLite in isolated project copy; live PostgreSQL not used.

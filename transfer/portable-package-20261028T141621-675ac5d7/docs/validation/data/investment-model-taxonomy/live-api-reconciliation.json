@@ -1,0 +1,110 @@
+{
+  "validated_at_utc": "2026-10-19T08:07:51.631484+00:00",
+  "standardization_engine_version": "16",
+  "base_url": "http://frontend:8080",
+  "models": {
+    "investment_model:lease": {
+      "label": "التأجير",
+      "count": 4,
+      "list": 4,
+      "list_total": 4,
+      "dashboard": 4,
+      "csv": 4,
+      "xlsx": 4,
+      "consistent": true
+    },
+    "investment_model:eomt": {
+      "label": "التجهيز والتشغيل والصيانة والنقل",
+      "count": 1,
+      "list": 1,
+      "list_total": 1,
+      "dashboard": 1,
+      "csv": 1,
+      "xlsx": 1,
+      "consistent": true
+    },
+    "investment_model:missing": {
+      "label": "غير محدد",
+      "count": 286,
+      "list": 286,
+      "list_total": 286,
+      "dashboard": 286,
+      "csv": 286,
+      "xlsx": 286,
+      "consistent": true
+    }
+  },
+  "sub_activity_general_trade": {
+    "canonical_id": "sub_activity:general_trade",
+    "list": 8,
+    "csv": 8,
+    "xlsx": 8,
+    "consistent": true
+  },
+  "combined_filters": {
+    "sector": {
+      "option": "غير محدد",
+      "count": 4,
+      "list": 4,
+      "csv": 4,
+      "xlsx": 4,
+      "consistent": true
+    },
+    "activity": {
+      "option": "غير محدد",
+      "count": 2,
+      "list": 2,
+      "csv": 2,
+      "xlsx": 2,
+      "consistent": true
+    },
+    "sub_activity": {
+      "option": "أنشطة تجارة المواد الغذائية",
+      "count": 1,
+      "list": 1,
+      "csv": 1,
+      "xlsx": 1,
+      "consistent": true
+    },
+    "opportunity_type": {
+      "option": "غير محدد",
+      "count": 4,
+      "list": 4,
+      "csv": 4,
+      "xlsx": 4,
+      "consistent": true
+    },
+    "status": {
+      "option": "Announced",
+      "count": 2,
+      "list": 2,
+      "csv": 2,
+      "xlsx": 2,
+      "consistent": true
+    },
+    "owner": {
+      "option": "أمانة الأحساء",
+      "count": 2,
+      "list": 2,
+      "csv": 2,
+      "xlsx": 2,
+      "consistent": true
+    },
+    "source": {
+      "option": "فرص – البوابة الموحدة للاستثمار",
+      "count": 2,
+      "list": 2,
+      "csv": 2,
+      "xlsx": 2,
+      "consistent": true
+    },
+    "location": {
+      "option": "الأحساء",
+      "count": 4,
+      "list": 4,
+      "csv": 4,
+      "xlsx": 4,
+      "consistent": true
+    }
+  }
+}

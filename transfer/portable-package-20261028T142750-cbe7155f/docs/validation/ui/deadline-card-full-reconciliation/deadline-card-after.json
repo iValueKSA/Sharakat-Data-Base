@@ -1,0 +1,50 @@
+{
+  "captured_at": "2026-10-28T09:35:56.436119+00:00",
+  "as_of_date": "2026-10-28",
+  "active_opportunities": 474,
+  "deadline_buckets": [
+    {
+      "key": "7d",
+      "label": "خلال 7 أيام",
+      "color": "#378AA4",
+      "count": 0
+    },
+    {
+      "key": "8_14d",
+      "label": "8–14 يومًا",
+      "color": "#006E61",
+      "count": 21
+    },
+    {
+      "key": "15_30d",
+      "label": "15–30 يومًا",
+      "color": "#C39853",
+      "count": 39
+    },
+    {
+      "key": "over_30d",
+      "label": "أكثر من 30 يومًا",
+      "color": "#7953A9",
+      "count": 44
+    },
+    {
+      "key": "no_deadline",
+      "label": "بدون موعد محدد",
+      "color": "#989899",
+      "count": 370
+    }
+  ],
+  "deadline_distribution_total": 474,
+  "sum_of_deadline_buckets": 474,
+  "card_total_equals_active": true,
+  "five_distinct_colors": true,
+  "active_status_set": [
+    "متاحة",
+    "Announced",
+    "ANNOUNCED",
+    "PUBLISHED",
+    "AVAILABLE",
+    "ACTIVE",
+    "منشورة"
+  ]
+}

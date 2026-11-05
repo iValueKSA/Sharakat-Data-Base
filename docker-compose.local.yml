@@ -1,0 +1,66 @@
+services:
+  api:
+    volumes:
+      - ./backups:/backups
+    environment:
+      ENVIRONMENT: local_user
+      PUBLIC_BASE_URL: ${PUBLIC_BASE_URL:-http://localhost:8080}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:8080,http://127.0.0.1:8080}
+      NATIONAL_UI_ENABLED: "true"
+      NATIONAL_DASHBOARD_ENABLED: "true"
+      NATIONAL_MAP_ENABLED: "true"
+      BOOTSTRAP_ADMIN_EMAIL: ${BOOTSTRAP_ADMIN_EMAIL:?Local Admin email is required}
+      BOOTSTRAP_ADMIN_PASSWORD: ${BOOTSTRAP_ADMIN_PASSWORD:?Local Admin password is required}
+      RCU_SCHEDULED_SYNC_ENABLED: ${RCU_SCHEDULED_SYNC_ENABLED:-false}
+    depends_on:
+      local-bootstrap:
+        condition: service_completed_successfully
+  worker:
+    volumes:
+      - ./backups:/backups
+    environment:
+      ENVIRONMENT: local_user
+      LOCAL_SETUP_MARKER: ${LOCAL_SETUP_MARKER:-local_setup_state}
+      RCU_SCHEDULED_SYNC_ENABLED: ${RCU_SCHEDULED_SYNC_ENABLED:-false}
+    depends_on:
+      local-bootstrap:
+        condition: service_completed_successfully
+  scheduler:
+    environment:
+      ENVIRONMENT: local_user
+      RCU_SCHEDULED_SYNC_ENABLED: ${RCU_SCHEDULED_SYNC_ENABLED:-false}
+    depends_on:
+      local-bootstrap:
+        condition: service_completed_successfully
+  migrate:
+    environment:
+      ENVIRONMENT: local_user
+  db:
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:?Local PostgreSQL database is required}
+      POSTGRES_USER: ${POSTGRES_USER:?Local PostgreSQL user is required}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Local PostgreSQL password is required}
+  redis:
+    environment:
+      REDIS_PASSWORD: ${REDIS_PASSWORD:?Local Redis password is required}
+  local-bootstrap:
+    build: .
+    command: ["python", "scripts/local_database_setup.py"]
+    environment:
+      ENVIRONMENT: local_user
+      DATABASE_URL: ${DATABASE_URL:?Local PostgreSQL URL is required}
+      LOCAL_SQLITE_PATH: /source-data/al-ahsa-live.db
+      LOCAL_EXPECTED_DATABASE: ${POSTGRES_DB:?Local PostgreSQL database is required}
+      LOCAL_SETUP_MARKER: local_setup_state
+      BACKUP_DIR: /backups
+      BOOTSTRAP_ADMIN_EMAIL: ${BOOTSTRAP_ADMIN_EMAIL:?Local Admin email is required}
+      BOOTSTRAP_ADMIN_PASSWORD: ${BOOTSTRAP_ADMIN_PASSWORD:?Local Admin password is required}
+    volumes:
+      - ./data:/source-data:ro
+      - ./backups:/backups
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      db:
+        condition: service_healthy
+

@@ -1,0 +1,49 @@
+{
+  "reported_removed": 2423,
+  "counted_source_ids": 2423,
+  "counted_official_ids": 2423,
+  "already_false_removed_before_job439_and_recounted": 2423,
+  "actual_net_transitions": 0,
+  "previously_present_then_removed": 0,
+  "noncomparable_scope": 0,
+  "missing_official_id": 0,
+  "duplicate_source_rows": 0,
+  "rows_not_seen_in_job439": 0,
+  "rows_seen_in_previous_complete_job": 2423,
+  "pre439_target_status": {
+    "أزيلت من المصدر": 2423
+  },
+  "post_remediation_target_status": {
+    "غير محددة": 2423
+  },
+  "raw_status": {
+    "None": 2423
+  },
+  "qualified_location": {
+    "False": 2423
+  },
+  "dataset_distribution": {
+    "Opportunities": 1765,
+    "Investment projects": 336,
+    "PIF opportunities": 184,
+    "Regional opportunities": 138
+  },
+  "family_distribution": {
+    "opportunity": 1765,
+    "project": 336,
+    "pif": 184,
+    "regional": 138
+  },
+  "location_method_distribution": {
+    "NO_AL_AHSA_EVIDENCE": 2060,
+    "EASTERN_PROVINCE_ONLY": 347,
+    "DESCRIPTION_ONLY_EXPLICIT_AL_AHSA": 16
+  },
+  "national_unlinked": 2412,
+  "al_ahsa_qualified": 0,
+  "linked_to_current_master": 11,
+  "proven_false_removals": 2423,
+  "potential_false_removals": 0,
+  "valid_removals_in_reported_counter": 0,
+  "valid_membership_deactivations_outside_counter": 9
+}

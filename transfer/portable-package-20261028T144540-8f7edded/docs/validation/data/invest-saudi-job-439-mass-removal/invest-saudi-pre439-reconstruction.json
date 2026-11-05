@@ -1,0 +1,31 @@
+{
+  "confidence": "HIGH for pre-run row/lifecycle values in verified dump; scan identities reconstructed from Job 411 last_seen interval.",
+  "backup": {
+    "created_at": "2026-10-22T07:40:05.486297+00:00",
+    "path": "backups/20261022T074005Z-55451748.dump",
+    "sha256": "d43bc8cb9883a63368caaf8f0191dd0ff134e70d5e038b0675c6176e16fc45d6"
+  },
+  "previous_complete_job_id": 411,
+  "previous_complete_job_finished_at": "2026-10-21 12:02:39.153637+00:00",
+  "source_rows_before_job": 2555,
+  "previous_job_present_unique_ids": 2431,
+  "historical_not_seen_ids": 124,
+  "pre_job_removed_lifecycle_rows": 2547,
+  "lifecycle_distribution": {
+    "أزيلت من المصدر": 2547,
+    "غير محددة": 8
+  },
+  "missing_checks_distribution": {
+    "3": 2534,
+    "0": 8,
+    "6": 9,
+    "4": 4
+  },
+  "target_2423_pre_state_distribution": {
+    "أزيلت من المصدر": 2423
+  },
+  "target_2423_pre_missing_checks": {
+    "3": 2423
+  },
+  "limitation": "The dump preceded Job 439 by 4h21m; no exact snapshot at Job 439 start. It preserves exact 2555 row identities and prior lifecycle."
+}

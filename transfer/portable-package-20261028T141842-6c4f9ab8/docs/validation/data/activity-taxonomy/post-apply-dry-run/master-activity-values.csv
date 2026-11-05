@@ -1,0 +1,13 @@
+﻿raw_activity,normalized_activity,canonical_id,count,current_dimension,notes
+,,activity:missing,145,Master.activity,Missing Activity
+صناعي,صناعي,activity:industrial,60,Master.activity,Source-specific values require projection review
+تجاري,تجاري,activity:commercial,38,Master.activity,Source-specific values require projection review
+الأنشطة التجارية,الأنشطة التجارية,activity:commercial_activities,27,Master.activity,Source-specific values require projection review
+الأنشطة المالية,الأنشطة المالية,activity:financial_activities,6,Master.activity,Source-specific values require projection review
+خدمي,خدمي,activity:service,5,Master.activity,Source-specific values require projection review
+أنشطة الصيانة والتصليح والتركيب,أنشطة الصيانة والتصليح والتركيب,activity:maintenance_repair_installation,3,Master.activity,Source-specific values require projection review
+الأنشطة الصناعية,الأنشطة الصناعية,activity:industrial_activities,3,Master.activity,Source-specific values require projection review
+أخرى,أخرى,activity:other,1,Master.activity,Source-specific values require projection review
+الأنشطة التعليمية,الأنشطة التعليمية,activity:educational_activities,1,Master.activity,Source-specific values require projection review
+الأنشطة الرياضية و الترفيهية,الأنشطة الرياضية و الترفيهية,activity:sports_recreation,1,Master.activity,Source-specific values require projection review
+الأنشطة الزراعية والحيوانية,الأنشطة الزراعية والحيوانية,activity:agriculture_livestock,1,Master.activity,Source-specific values require projection review

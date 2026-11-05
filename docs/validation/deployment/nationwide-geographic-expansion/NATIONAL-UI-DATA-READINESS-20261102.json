@@ -1,0 +1,312 @@
+{
+  "artifact": "NATIONAL-UI-DATA-READINESS-20261102",
+  "generated_at_utc": "2026-11-02T11:12:00Z",
+  "status": "COMPLETE",
+  "environment": {
+    "name": "local_user",
+    "live_ui_url": "http://localhost:8080",
+    "evidence_mode": "READ_ONLY_VALIDATION",
+    "alembic_head": "0025_source_geographic_coverage",
+    "compose_project": "alahsa-local"
+  },
+  "backup": {
+    "restore_test": "PASSED",
+    "path": "backups/20261102T094506Z-pre-national-data-remediation.dump",
+    "timestamp_utc": "2026-11-02T09:45:06Z",
+    "bytes": 29471162,
+    "sha256": "4c438751374584293f9015b86b9d9dbc088e6a313151015fdf13d9001817b29e",
+    "isolated_postgresql": "16"
+  },
+  "canonical_population": {
+    "current_masters": 6623,
+    "furas_unlinked_deferred": 53,
+    "all_saudi_filter": 6623,
+    "master_link_changes": 0,
+    "furas_rows": 6546,
+    "reconciles": true,
+    "furas_linked": 6493,
+    "masters_created": 0,
+    "source_opportunities": 9290
+  },
+  "geography_reference": {
+    "regions": 13,
+    "synthetic_records": 0,
+    "evidence_files": [
+      "docs/validation/deployment/nationwide-geographic-expansion/evidence/taadeen-regions-20261102.geojson",
+      "docs/validation/deployment/nationwide-geographic-expansion/evidence/taadeen-governorates-20261102.geojson",
+      "docs/validation/deployment/nationwide-geographic-expansion/evidence/saudi-administrative-reference-20261102.json"
+    ],
+    "unassigned_furas_region": 54,
+    "cities": 0,
+    "authority": "Saudi Ministry of Industry and Mineral Resources Taadeen public GIS",
+    "master_with_city": 0,
+    "sha256": "ec0f22308cc4b6960c5c39aad416f7d7dafa5c13d5b2c7afd56a13f9dc634b8b",
+    "source": "PUBLIC_OFFICIAL",
+    "master_with_governorate": 3110,
+    "governorates": 149,
+    "scope_counts": {
+      "MULTIPLE_VERIFIED_LOCATIONS": 0,
+      "REGION_WIDE": 0,
+      "NATIONWIDE": 0,
+      "UNSPECIFIED": 566,
+      "SPECIFIC_LOCATION": 6057
+    },
+    "master_with_region": 6439,
+    "deterministic_matching_only": true,
+    "service": "https://gis.taadeen.sa/server/rest/services/Common/BaseMaps/MapServer",
+    "version": "taadeen-public-gis-20261102-v3",
+    "country": 1
+  },
+  "filters": {
+    "invalid_region_http_status": 422,
+    "governorate_http_status": 200,
+    "region_option_count": 13,
+    "eastern_governorate_options": 12,
+    "region_http_status": 200,
+    "saudi_location_total": 6623,
+    "nationwide_total": 0,
+    "ahsa_governorate_501_total": 518,
+    "eastern_region_5_total": 975,
+    "unspecified_total": 566,
+    "sa_country_id_total": 6623,
+    "riyadh_region_1_total": 800,
+    "city_filter": "UNAVAILABLE_NO_CITY_REFERENCE"
+  },
+  "alahsa_quick_view": {
+    "current_masters": 518,
+    "title_only_matching": false,
+    "canonical_governorate_id": "501",
+    "false_positives": 0,
+    "false_negatives": 0,
+    "exact_master_id_set_match": true
+  },
+  "exports": {
+    "cases": [
+      {
+        "xlsx": 6623,
+        "name": "all_saudi",
+        "csv": 6623,
+        "api": 6623
+      },
+      {
+        "xlsx": 518,
+        "name": "alahsa",
+        "csv": 518,
+        "api": 518
+      },
+      {
+        "xlsx": 975,
+        "name": "eastern_region",
+        "csv": 975,
+        "api": 975
+      },
+      {
+        "xlsx": 800,
+        "name": "riyadh_region",
+        "csv": 800,
+        "api": 800
+      },
+      {
+        "xlsx": 518,
+        "name": "governorate_501",
+        "csv": 518,
+        "api": 518
+      },
+      {
+        "xlsx": 566,
+        "name": "unspecified",
+        "csv": 566,
+        "api": 566
+      },
+      {
+        "xlsx": 0,
+        "name": "nationwide",
+        "csv": 0,
+        "api": 0
+      }
+    ],
+    "status": "PASSED",
+    "xlsx_data_rows_counted_after_five_preamble_rows_and_header": true
+  },
+  "pagination": {
+    "stable_sort_repeat": true,
+    "national_total": 6623,
+    "distinct_ids": 6623,
+    "page_size": 500,
+    "search_plus_governorate_total": 58,
+    "ids_returned": 6623,
+    "search_plus_governorate_http_status": 200,
+    "status": "PASSED",
+    "pages": 14,
+    "isolated_ui_filter_reset": "PASSED"
+  },
+  "dashboard": {
+    "scope_counts": {
+      "MULTIPLE_VERIFIED_LOCATIONS": 0,
+      "REGION_WIDE": 0,
+      "NATIONWIDE": 0,
+      "UNSPECIFIED": 566,
+      "SPECIFIC_LOCATION": 6057
+    },
+    "active": 6517,
+    "unique_master_total": 6623,
+    "source_dimension_count": 10,
+    "status": "PASSED",
+    "governorates_reported": 149,
+    "region_memberships": [
+      {
+        "count": 800,
+        "name_ar": "منطقة الرياض",
+        "id": "1"
+      },
+      {
+        "count": 319,
+        "name_ar": "منطقة مكة المكرمة",
+        "id": "2"
+      },
+      {
+        "count": 449,
+        "name_ar": "منطقة المدينة المنورة",
+        "id": "3"
+      },
+      {
+        "count": 731,
+        "name_ar": "منطقة القصيم",
+        "id": "4"
+      },
+      {
+        "count": 975,
+        "name_ar": "المنطقة الشرقية",
+        "id": "5"
+      },
+      {
+        "count": 1140,
+        "name_ar": "منطقة عسير",
+        "id": "6"
+      },
+      {
+        "count": 114,
+        "name_ar": "منطقة تبوك",
+        "id": "7"
+      },
+      {
+        "count": 451,
+        "name_ar": "منطقة حائل",
+        "id": "8"
+      },
+      {
+        "count": 218,
+        "name_ar": "منطقة الحدود الشمالية",
+        "id": "9"
+      },
+      {
+        "count": 379,
+        "name_ar": "منطقة جازان",
+        "id": "10"
+      },
+      {
+        "count": 464,
+        "name_ar": "منطقة نجران",
+        "id": "11"
+      },
+      {
+        "count": 165,
+        "name_ar": "منطقة الباحة",
+        "id": "12"
+      },
+      {
+        "count": 234,
+        "name_ar": "منطقة الجوف",
+        "id": "13"
+      }
+    ],
+    "unmapped_unique_masters": 734,
+    "sector_dimension_count": 13,
+    "historical": 85,
+    "mapped_unique_masters": 5889,
+    "sector_count_sum": 6623,
+    "source_memberships_non_additive": true
+  },
+  "coordinates": {
+    "isolated_map_api": "PASSED_READ_ONLY_TESTCLIENT",
+    "map_eligible_verified_markers": 5889,
+    "map_list_master_total": 6623,
+    "clustering_browser_evidence": "PASSED",
+    "current_masters_without_coordinates": 130,
+    "outside_saudi_review": 181,
+    "invalid_furas": 0,
+    "national_extent": true,
+    "fabricated": 0,
+    "coordinate_bearing_unverified": 181,
+    "map_point_groups": 5847,
+    "boundary": "Official Saudi region polygons",
+    "direct_furas_evaluated": 6493,
+    "detail_navigation_browser_evidence": "PASSED",
+    "verified_in_saudi": 6312,
+    "no_furas_coordinate": 0,
+    "broad_or_outside_excluded_from_markers": 604,
+    "invalid_current_coordinates": 0,
+    "map_unmapped_remain_in_list": 734,
+    "distinct_furas_points": 6448,
+    "identity_mismatch": 0,
+    "repeated_coordinate_rows": 45,
+    "current_masters_verified_provenance": 6312,
+    "master_coordinate_mismatch": 0
+  },
+  "invest_saudi_conflicts": {
+    "rule": "SOURCE_SCOPED_REMOVAL_WITH_LIVE_LINKED_SUPPORT_V1",
+    "source_history_preserved": true,
+    "remaining": 0,
+    "before": 4,
+    "resolved": 4
+  },
+  "data_quality": {
+    "scope": "full",
+    "fail": 0,
+    "pass": 129,
+    "read_only_business_data": true,
+    "warning": 5
+  },
+  "scheduler": {
+    "manual_furas_syncs": 0,
+    "legacy_fallback": "DISABLED",
+    "pause_restored": true,
+    "removals_enabled": false,
+    "all_manual_source_syncs": 0,
+    "when_enabled": "NATIONAL",
+    "pause_original_state": "MISSING",
+    "national_flag_live": false
+  },
+  "tests": {
+    "redis": "Disabled",
+    "warnings": 42,
+    "passed": 663,
+    "skipped": 1,
+    "focused_and_full_regression": "PASSED",
+    "database": "Isolated SQLite",
+    "collection_duplicate_copy_issue": "Resolved with --ignore=tests/tests"
+  },
+  "isolated_ui": {
+    "current_static_script_http_status": 200,
+    "current_orthographic_alias_match": "PASSED",
+    "status": "PASSED",
+    "checks": 56,
+    "caveat": "Browser checks use isolated synthetic test Masters; live API/export data was validated separately.",
+    "viewport_sizes": [
+      "1920x1080",
+      "1440x900",
+      "1366x768",
+      "768x900",
+      "390x844"
+    ],
+    "evidence": "docs/validation/deployment/nationwide-geographic-expansion/NATIONAL-UI-BROWSER-VALIDATION-20261101.md"
+  },
+  "readiness": {
+    "national_ui": "READY",
+    "national_ui_enabled_live": false,
+    "national_dashboard_enabled_live": false,
+    "national_map": "READY",
+    "national_map_enabled_live": false
+  },
+  "report": "docs/validation/deployment/nationwide-geographic-expansion/NATIONAL-DATA-READINESS-REMEDIATION-20261102.md"
+}

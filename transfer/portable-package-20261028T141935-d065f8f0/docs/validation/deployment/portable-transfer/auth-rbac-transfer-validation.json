@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "admin_account_present_after_transfer": null,
+  "rbac_role_counts_match": null,
+  "rbac_fingerprint_match": null,
+  "passwords_or_hashes_printed": false,
+  "admin_password_reset": false
+}

@@ -1,0 +1,30 @@
+{
+  "analysis_snapshot_at": "2026-10-21T09:27:58.139091+00:00",
+  "post_analysis_read_only_check_at": "2026-10-21T09:34:17.383608+00:00",
+  "manual_sync_started": false,
+  "natural_scheduled_sync_detected": false,
+  "baseline_sync_job_count": 404,
+  "baseline_max_sync_job_id": 404,
+  "final_sync_job_count": 404,
+  "final_max_sync_job_id": 404,
+  "active_sync_jobs_at_final_check": [],
+  "jobs_during_analysis": [],
+  "deltas_between_frozen_snapshot_and_final_read_only_check": {
+    "current_masters": 0,
+    "specified_masters": 0,
+    "unspecified_masters": 0,
+    "source_opportunity_rows_total": 0,
+    "source_opportunity_rows_linked_to_current_masters": 0,
+    "observations": 0,
+    "open_sector_reviews": 0,
+    "open_reviews_total": 0
+  },
+  "fingerprints_unchanged": {
+    "master_identity": true,
+    "specified_sector_values": true,
+    "linked_source_identity": true,
+    "raw_source_provenance": true,
+    "observation_history": true
+  },
+  "interpretation": "No job IDs were created after the frozen analysis snapshot; no scheduled sync occurred during the analysis interval. The live read-only snapshot agrees with the frozen counts and fingerprints."
+}

@@ -1,0 +1,16 @@
+{
+  "classifier_version": "ahda-governed-sector-classifier-1.0.0",
+  "base_relaxed_engine": "ahda-sector-controlled-relaxation-1.0.1",
+  "base_phase2_engine": "ahda-sector-phase2-1.0.0",
+  "version_status": "implemented_and_live",
+  "classification_layers": [
+    "explicit_source_evidence",
+    "accepted_deterministic_rules",
+    "multi_field_primary_purpose",
+    "forced_best_fit"
+  ],
+  "low_confidence_method": "FORCED_BEST_FIT",
+  "low_confidence_is_source_fact": false,
+  "raw_source_sector_mutations": 0,
+  "inference_audit": "ChangeHistory per sector change + SystemEvent per classified master and pipeline completion marker"
+}

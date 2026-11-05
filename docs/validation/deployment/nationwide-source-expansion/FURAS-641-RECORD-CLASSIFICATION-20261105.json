@@ -1,0 +1,36 @@
+{
+  "generated_at_utc": "2026-11-05T07:40:47.4526320Z",
+  "classification_status": "PARTIAL_BLOCKED_MISSING_ORIGINAL_MEMBER_MANIFEST",
+  "original_population": {
+    "captured_records": 6511,
+    "exact_existing_source_matches": 5870,
+    "unresolved_provider_ids": 641,
+    "membership_sha256": "f4f3e137bb97b4e2957263fed5b2fc8aebf373333c0d0d91d07cbe94c7a7aed6",
+    "original_unmatched_provider_id_list": null,
+    "per_record_evidence_saved": false
+  },
+  "primary_classification_counts": {
+    "GENUINELY_NEW_PROVIDER_ID": null,
+    "EXISTING_FURAS_SOURCE_WITH_KEY_MISMATCH": null,
+    "EXISTING_HISTORICAL_FURAS_SOURCE": null,
+    "EXISTING_SOURCE_WITH_DOCUMENTED_ALIAS": null,
+    "PROVIDER_ID_COLLISION_OR_REUSE": null,
+    "INVALID_OR_MISSING_PROVIDER_ID": null,
+    "INCOMPLETE_CAPTURE_OR_PAGINATION_ARTIFACT": null,
+    "IDENTITY_REVIEW_REQUIRED": null,
+    "OTHER_EXPLAINED_CASE": null
+  },
+  "classified_records_total": 0,
+  "unexplained_omissions": 641,
+  "reason": "The original capture retained aggregate counts and an OBJECTID membership digest but did not persist the 6,511 IDs, raw payloads, or the 641-member difference. A cryptographic digest cannot reconstruct the member list. The official endpoint no longer serves that historic snapshot; historicMoment requests returned current membership. Do not substitute the later 678-member repeat set.",
+  "current_repeat_population": {
+    "captured": 6548,
+    "exact_matches": 5870,
+    "unmatched": 678,
+    "of_unmatched_same_objectid_and_exact_title_candidates": 346,
+    "candidates_are_not_approved_aliases": true,
+    "unmatched_classification": "IDENTITY_REVIEW_REQUIRED"
+  },
+  "classification_records": [],
+  "next_required_evidence": "Recover the original 6,511 raw capture or exact provider-ID manifest from the operator/archive. Then join each original unmatched ID to current and historical SourceOpportunity rows, alias governance, checkpoint 694, and Master links."
+}

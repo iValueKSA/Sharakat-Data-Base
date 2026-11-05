@@ -1,0 +1,48 @@
+{
+  "business_data_changes_from_this_fix": 0,
+  "reviews_resolved_from_this_fix": 0,
+  "reviews_reopened_from_this_fix": 0,
+  "manual_source_sync_started": false,
+  "database_snapshot_after": {
+    "opportunities": 547,
+    "source_opportunities": 3138,
+    "source_observations": 23587,
+    "duplicate_candidates": {
+      "PENDING": 10,
+      "MERGED": 21,
+      "REJECTED": 16
+    },
+    "merge_audits": 21,
+    "audit_reopen_events_total": 0,
+    "sync_jobs": 475,
+    "active_sync_jobs": 0
+  },
+  "scheduled_jobs_observed": [
+    {
+      "id": 474,
+      "source": "furas",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "new_count": 0,
+      "update_count": 0,
+      "unchanged_count": 376
+    },
+    {
+      "id": 475,
+      "source": "alahsa-opportunities",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "new_count": 0,
+      "update_count": 0,
+      "unchanged_count": 84
+    }
+  ],
+  "pilot_events_for_frozen_cohort": {
+    "PILOT_STARTED": 2,
+    "CASE_OUTCOME": 0,
+    "CASE_REOPENED": 0,
+    "PHASE_A_REVIEWED": 0
+  },
+  "source_observation_count_delta_since_previous_snapshot": 59,
+  "interpretation": "Two successful scheduler-triggered jobs captured source observations; both reported zero new and zero updated business records. They were not triggered by this task."
+}

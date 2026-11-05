@@ -1,0 +1,683 @@
+{
+  "all_review_candidates_already_open": true,
+  "count": 6,
+  "duplicate_sector_reviews_created": 0,
+  "existing_open_review_master_ids": [
+    18,
+    19,
+    20,
+    30,
+    78,
+    90,
+    91,
+    96,
+    97,
+    98,
+    102,
+    103,
+    104,
+    105,
+    106,
+    138,
+    139,
+    141,
+    142,
+    163,
+    164,
+    192,
+    193,
+    195,
+    207,
+    211,
+    224,
+    225,
+    226,
+    228,
+    230,
+    231,
+    234,
+    235,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    246,
+    248,
+    249,
+    251,
+    253,
+    258,
+    260,
+    262,
+    325,
+    326
+  ],
+  "records": [
+    {
+      "activity": "الأنشطة الزراعية والحيوانية",
+      "assets": [],
+      "canonical_id": "AH-20261011105650-5c629472",
+      "current_sector": "غير محدد",
+      "descriptions": {
+        "full": "منشأة تحويلية للمنتجات الثانوية للنخيل بمحافظة الأحساء بالمنطقة الشرقية",
+        "short": "منشأة تحويلية للمنتجات الثانوية للنخيل بمحافظة الأحساء بالمنطقة الشرقية"
+      },
+      "has_open_sector_review": true,
+      "master_id": 78,
+      "result": {
+        "candidates": [
+          "sector:agriculture",
+          "sector:industrial"
+        ],
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "الأحساء"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          }
+        ],
+        "positive_evidence": [
+          {
+            "field": "activity",
+            "rule_key": "P2_CURATED_AGRICULTURAL_ACTIVITY_SIGNAL",
+            "value": "الأنشطة الزراعية والحيوانية"
+          },
+          {
+            "field": "sub_activity",
+            "rule_key": "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL",
+            "value": "أنشطة وخدمات انتاج المواد غير الغذائية"
+          }
+        ],
+        "rule_key": "P2_CONFLICTING_SECTOR_SIGNALS",
+        "rule_keys": [
+          "P2_CONFLICTING_SECTOR_SIGNALS",
+          "P2_CURATED_AGRICULTURAL_ACTIVITY_SIGNAL",
+          "P2_EXACT_SUBACTIVITY_SEMANTIC_SIGNAL"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "source_raw_classifications": [
+        {
+          "raw_signal_fields": [
+            {
+              "path": "raw.attributes.OPPORTUNITYID",
+              "value": "06-26-189921-64005"
+            },
+            {
+              "path": "raw.attributes.OPPORTUNITYDESCRIPTION",
+              "value": "منشأة تحويلية للمنتجات الثانوية للنخيل بمحافظة الأحساء بالمنطقة الشرقية"
+            },
+            {
+              "path": "raw.attributes.OPPORTUNITYTYPEID",
+              "value": "01"
+            },
+            {
+              "path": "raw.attributes.ACTIVITYTYPEID",
+              "value": "108"
+            },
+            {
+              "path": "raw.attributes.OPPORTUNITYACTIVESTATUS",
+              "value": "Announced"
+            },
+            {
+              "path": "raw.attributes.OPPORTUNITYTYPE",
+              "value": "Investment"
+            },
+            {
+              "path": "raw.attributes.ACTIVITYTYPE",
+              "value": "الأنشطة الزراعية والحيوانية"
+            },
+            {
+              "path": "raw.attributes.SUBACTIVITYTYPEID",
+              "value": "66"
+            },
+            {
+              "path": "raw.attributes.SUBACTIVITYTYPE",
+              "value": "أنشطة وخدمات انتاج المواد غير الغذائية"
+            },
+            {
+              "path": "raw.attributes.QUALIFYINGOPPORTUNITY",
+              "value": "0"
+            },
+            {
+              "path": "raw.attributes.ISINVESTMENTCENTER",
+              "value": "0"
+            }
+          ],
+          "source_activity": "الأنشطة الزراعية والحيوانية",
+          "source_key": "furas",
+          "source_record_id": 78,
+          "source_sector": null,
+          "source_sub_activity": "أنشطة وخدمات انتاج المواد غير الغذائية"
+        }
+      ],
+      "sub_activity": "أنشطة وخدمات انتاج المواد غير الغذائية",
+      "title_ar": "منشأة تحويلية للمنتجات الثانوية للنخيل بمحافظة الأحساء بالمنطقة الشرقية"
+    },
+    {
+      "activity": "خدمي",
+      "assets": [],
+      "canonical_id": "AH-20261013081930-1536fb18",
+      "current_sector": "غير محدد",
+      "descriptions": {
+        "full": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 484بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+        "short": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 484بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع"
+      },
+      "has_open_sector_review": true,
+      "master_id": 234,
+      "result": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "field": "source_activity",
+            "value": "الأنشطة التجارية"
+          },
+          {
+            "field": "source_activity",
+            "value": "خدمي"
+          },
+          {
+            "field": "source_sub_activity",
+            "value": "أخرى"
+          }
+        ],
+        "rule_key": "P2_CONFLICTING_SOURCE_TAXONOMY",
+        "rule_keys": [
+          "P2_CONFLICTING_SOURCE_TAXONOMY"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "source_raw_classifications": [
+        {
+          "raw_signal_fields": [
+            {
+              "path": "raw.attributes.OPPORTUNITYID",
+              "value": "01-26-017001-26003"
+            },
+            {
+              "path": "raw.attributes.OPPORTUNITYDESCRIPTION",
+              "value": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 484بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع"
+            },
+            {
+              "path": "raw.attributes.OPPORTUNITYTYPEID",
+              "value": "01"
+            },
+            {
+              "path": "raw.attributes.ACTIVITYTYPEID",
+              "value": "101"
+            },
+            {
+              "path": "raw.attributes.OPPORTUNITYACTIVESTATUS",
+              "value": "Announced"
+            },
+            {
+              "path": "raw.attributes.OPPORTUNITYTYPE",
+              "value": "Investment"
+            },
+            {
+              "path": "raw.attributes.ACTIVITYTYPE",
+              "value": "الأنشطة التجارية"
+            },
+            {
+              "path": "raw.attributes.SUBACTIVITYTYPEID",
+              "value": "141"
+            },
+            {
+              "path": "raw.attributes.SUBACTIVITYTYPE",
+              "value": "أخرى"
+            },
+            {
+              "path": "raw.attributes.QUALIFYINGOPPORTUNITY",
+              "value": "0"
+            },
+            {
+              "path": "raw.attributes.ISINVESTMENTCENTER",
+              "value": "0"
+            }
+          ],
+          "source_activity": "الأنشطة التجارية",
+          "source_key": "furas",
+          "source_record_id": 2835,
+          "source_sector": null,
+          "source_sub_activity": "أخرى"
+        },
+        {
+          "raw_signal_fields": [
+            {
+              "path": "raw.source_taxonomy.sector",
+              "value": "خدمي"
+            }
+          ],
+          "source_activity": "خدمي",
+          "source_key": "alahsa-opportunities",
+          "source_record_id": 2837,
+          "source_sector": "خدمي",
+          "source_sub_activity": null
+        }
+      ],
+      "sub_activity": "أخرى",
+      "title_ar": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 484بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع"
+    },
+    {
+      "activity": "خدمي",
+      "assets": [],
+      "canonical_id": "AH-20261013081930-860c39b7",
+      "current_sector": "غير محدد",
+      "descriptions": {
+        "full": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 485بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+        "short": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 485بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع"
+      },
+      "has_open_sector_review": true,
+      "master_id": 235,
+      "result": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "field": "source_activity",
+            "value": "الأنشطة التجارية"
+          },
+          {
+            "field": "source_activity",
+            "value": "خدمي"
+          },
+          {
+            "field": "source_sub_activity",
+            "value": "أخرى"
+          }
+        ],
+        "rule_key": "P2_CONFLICTING_SOURCE_TAXONOMY",
+        "rule_keys": [
+          "P2_CONFLICTING_SOURCE_TAXONOMY"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "source_raw_classifications": [
+        {
+          "raw_signal_fields": [
+            {
+              "path": "raw.attributes.OPPORTUNITYID",
+              "value": "01-26-017001-26004"
+            },
+            {
+              "path": "raw.attributes.OPPORTUNITYDESCRIPTION",
+              "value": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 485بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع"
+            },
+            {
+              "path": "raw.attributes.OPPORTUNITYTYPEID",
+              "value": "01"
+            },
+            {
+              "path": "raw.attributes.ACTIVITYTYPEID",
+              "value": "101"
+            },
+            {
+              "path": "raw.attributes.OPPORTUNITYACTIVESTATUS",
+              "value": "Announced"
+            },
+            {
+              "path": "raw.attributes.OPPORTUNITYTYPE",
+              "value": "Investment"
+            },
+            {
+              "path": "raw.attributes.ACTIVITYTYPE",
+              "value": "الأنشطة التجارية"
+            },
+            {
+              "path": "raw.attributes.SUBACTIVITYTYPEID",
+              "value": "141"
+            },
+            {
+              "path": "raw.attributes.SUBACTIVITYTYPE",
+              "value": "أخرى"
+            },
+            {
+              "path": "raw.attributes.QUALIFYINGOPPORTUNITY",
+              "value": "0"
+            },
+            {
+              "path": "raw.attributes.ISINVESTMENTCENTER",
+              "value": "0"
+            }
+          ],
+          "source_activity": "الأنشطة التجارية",
+          "source_key": "furas",
+          "source_record_id": 2836,
+          "source_sector": null,
+          "source_sub_activity": "أخرى"
+        },
+        {
+          "raw_signal_fields": [
+            {
+              "path": "raw.source_taxonomy.sector",
+              "value": "خدمي"
+            }
+          ],
+          "source_activity": "خدمي",
+          "source_key": "alahsa-opportunities",
+          "source_record_id": 2878,
+          "source_sector": "خدمي",
+          "source_sub_activity": null
+        }
+      ],
+      "sub_activity": "أخرى",
+      "title_ar": "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 485بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع"
+    },
+    {
+      "activity": "خدمي",
+      "assets": [],
+      "canonical_id": "AH-20261013081932-e651f5bc",
+      "current_sector": "غير محدد",
+      "descriptions": {
+        "full": "إنشاء وتشغيل وصيانة مستودع بالقطعة رقم 483بالمخطط رقم 14/16 بصناعية العيون",
+        "short": "إنشاء وتشغيل وصيانة مستودع بالقطعة رقم 483بالمخطط رقم 14/16 بصناعية العيون"
+      },
+      "has_open_sector_review": true,
+      "master_id": 238,
+      "result": {
+        "candidates": [],
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [
+          {
+            "blocks_alone": [
+              "sector:real_estate"
+            ],
+            "phrases": [
+              "قطعة رقم"
+            ],
+            "rule_key": "P2_GENERIC_PLOT_NOT_REAL_ESTATE"
+          },
+          {
+            "blocks_alone": [
+              "sector:tourism"
+            ],
+            "phrases": [
+              "العيون"
+            ],
+            "rule_key": "P2_LOCATION_NAME_NOT_TOURISM"
+          },
+          {
+            "blocks_alone": [
+              "sector:any"
+            ],
+            "phrases": [
+              "تشغيل"
+            ],
+            "rule_key": "P2_GENERIC_LEASE_NOT_SECTOR"
+          }
+        ],
+        "positive_evidence": [
+          {
+            "field": "source_sector",
+            "source_key": "alahsa-opportunities",
+            "value": "خدمي"
+          }
+        ],
+        "rule_key": "MED_UNMAPPED_SOURCE_CLASSIFICATION_REVIEW",
+        "rule_keys": [
+          "P2_INSUFFICIENT_EVIDENCE"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "source_raw_classifications": [
+        {
+          "raw_signal_fields": [
+            {
+              "path": "raw.source_taxonomy.sector",
+              "value": "خدمي"
+            }
+          ],
+          "source_activity": "خدمي",
+          "source_key": "alahsa-opportunities",
+          "source_record_id": 2839,
+          "source_sector": "خدمي",
+          "source_sub_activity": null
+        }
+      ],
+      "sub_activity": null,
+      "title_ar": "إنشاء وتشغيل وصيانة مستودع بالقطعة رقم 483بالمخطط رقم 14/16 بصناعية العيون"
+    },
+    {
+      "activity": "خدمي",
+      "assets": [],
+      "canonical_id": "AH-20261013081940-db8a3002",
+      "current_sector": "غير محدد",
+      "descriptions": {
+        "full": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+        "short": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف"
+      },
+      "has_open_sector_review": true,
+      "master_id": 260,
+      "result": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "field": "source_activity",
+            "value": "أنشطة الصيانة والتصليح والتركيب"
+          },
+          {
+            "field": "source_activity",
+            "value": "خدمي"
+          },
+          {
+            "field": "source_sub_activity",
+            "value": "أخرى"
+          }
+        ],
+        "rule_key": "P2_CONFLICTING_SOURCE_TAXONOMY",
+        "rule_keys": [
+          "P2_CONFLICTING_SOURCE_TAXONOMY"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "source_raw_classifications": [
+        {
+          "raw_signal_fields": [
+            {
+              "path": "raw.attributes.OPPORTUNITYID",
+              "value": "01-26-017001-41006"
+            },
+            {
+              "path": "raw.attributes.OPPORTUNITYDESCRIPTION",
+              "value": "انشاء و تشغيل و صيانة القطعة رقم 60 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف - أنشطة الصيانة والتصليح والتركيب - تشاليح سيارات - معمل"
+            },
+            {
+              "path": "raw.attributes.OPPORTUNITYTYPEID",
+              "value": "01"
+            },
+            {
+              "path": "raw.attributes.ACTIVITYTYPEID",
+              "value": "113"
+            },
+            {
+              "path": "raw.attributes.OPPORTUNITYACTIVESTATUS",
+              "value": "Announced"
+            },
+            {
+              "path": "raw.attributes.OPPORTUNITYTYPE",
+              "value": "Investment"
+            },
+            {
+              "path": "raw.attributes.ACTIVITYTYPE",
+              "value": "أنشطة الصيانة والتصليح والتركيب"
+            },
+            {
+              "path": "raw.attributes.SUBACTIVITYTYPEID",
+              "value": "153"
+            },
+            {
+              "path": "raw.attributes.SUBACTIVITYTYPE",
+              "value": "أخرى"
+            },
+            {
+              "path": "raw.attributes.QUALIFYINGOPPORTUNITY",
+              "value": "0"
+            },
+            {
+              "path": "raw.attributes.ISINVESTMENTCENTER",
+              "value": "0"
+            }
+          ],
+          "source_activity": "أنشطة الصيانة والتصليح والتركيب",
+          "source_key": "furas",
+          "source_record_id": 2861,
+          "source_sector": null,
+          "source_sub_activity": "أخرى"
+        },
+        {
+          "raw_signal_fields": [
+            {
+              "path": "raw.source_taxonomy.sector",
+              "value": "خدمي"
+            }
+          ],
+          "source_activity": "خدمي",
+          "source_key": "alahsa-opportunities",
+          "source_record_id": 2876,
+          "source_sector": "خدمي",
+          "source_sub_activity": null
+        }
+      ],
+      "sub_activity": "أخرى",
+      "title_ar": "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف"
+    },
+    {
+      "activity": "خدمي",
+      "assets": [],
+      "canonical_id": "AH-20261013081941-ab3ee3ee",
+      "current_sector": "غير محدد",
+      "descriptions": {
+        "full": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+        "short": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف"
+      },
+      "has_open_sector_review": true,
+      "master_id": 262,
+      "result": {
+        "classification": "REVIEW_REQUIRED",
+        "confidence": 0.0,
+        "confidence_margin": 0.0,
+        "negative_evidence": [],
+        "positive_evidence": [
+          {
+            "field": "source_activity",
+            "value": "أنشطة الصيانة والتصليح والتركيب"
+          },
+          {
+            "field": "source_activity",
+            "value": "خدمي"
+          },
+          {
+            "field": "source_sub_activity",
+            "value": "أخرى"
+          }
+        ],
+        "rule_key": "P2_CONFLICTING_SOURCE_TAXONOMY",
+        "rule_keys": [
+          "P2_CONFLICTING_SOURCE_TAXONOMY"
+        ],
+        "sector": "غير محدد",
+        "sector_id": "sector:unspecified",
+        "total_score": 0.0
+      },
+      "source_raw_classifications": [
+        {
+          "raw_signal_fields": [
+            {
+              "path": "raw.attributes.OPPORTUNITYID",
+              "value": "01-26-017001-41007"
+            },
+            {
+              "path": "raw.attributes.OPPORTUNITYDESCRIPTION",
+              "value": "انشاء و تشغيل و صيانة القطعة رقم 67  1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف - أنشطة الصيانة والتصليح والتركيب - تشاليح سيارات - معمل"
+            },
+            {
+              "path": "raw.attributes.OPPORTUNITYTYPEID",
+              "value": "01"
+            },
+            {
+              "path": "raw.attributes.ACTIVITYTYPEID",
+              "value": "113"
+            },
+            {
+              "path": "raw.attributes.OPPORTUNITYACTIVESTATUS",
+              "value": "Announced"
+            },
+            {
+              "path": "raw.attributes.OPPORTUNITYTYPE",
+              "value": "Investment"
+            },
+            {
+              "path": "raw.attributes.ACTIVITYTYPE",
+              "value": "أنشطة الصيانة والتصليح والتركيب"
+            },
+            {
+              "path": "raw.attributes.SUBACTIVITYTYPEID",
+              "value": "153"
+            },
+            {
+              "path": "raw.attributes.SUBACTIVITYTYPE",
+              "value": "أخرى"
+            },
+            {
+              "path": "raw.attributes.QUALIFYINGOPPORTUNITY",
+              "value": "0"
+            },
+            {
+              "path": "raw.attributes.ISINVESTMENTCENTER",
+              "value": "0"
+            }
+          ],
+          "source_activity": "أنشطة الصيانة والتصليح والتركيب",
+          "source_key": "furas",
+          "source_record_id": 2863,
+          "source_sector": null,
+          "source_sub_activity": "أخرى"
+        },
+        {
+          "raw_signal_fields": [
+            {
+              "path": "raw.source_taxonomy.sector",
+              "value": "خدمي"
+            }
+          ],
+          "source_activity": "خدمي",
+          "source_key": "alahsa-opportunities",
+          "source_record_id": 2875,
+          "source_sector": "خدمي",
+          "source_sub_activity": null
+        }
+      ],
+      "sub_activity": "أخرى",
+      "title_ar": "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "active_masters": 275,
+  "captured_at_utc": "2026-10-19T08:43:19.330908+00:00",
+  "change_history_count": 1012,
+  "eligible_masters": 291,
+  "fingerprints": {
+    "change_history": {
+      "count": 1012,
+      "sha256": "2430b76ddeaa56bc0c7776b68adcadc3ab9eb3fa111d1f381abebebf2eb96ba5"
+    },
+    "master_identities": {
+      "count": 296,
+      "sha256": "cb0466885a0f0d01eab59a902964f60d1dc95d57caf8cdb918d3e1002e3b6ba6"
+    },
+    "open_qualification_reviews": {
+      "count": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "open_taxonomy_conflicts": {
+      "count": 96,
+      "sha256": "48bdd88d3a76655577bf36d88310816b4a52fdea2eb5581bf66ea0cc664f05fc"
+    },
+    "source_observation_identities": {
+      "count": 7603,
+      "sha256": "d7f6f95ec38e756d93731be459e73b5856ab599c14d93a2c86ca69a82f790224"
+    },
+    "source_observation_raw_payloads": {
+      "count": 7603,
+      "sha256": "f3b7b89e0034539df635dc577604c932e2acb7691f859cbeb44306acf8f563b6"
+    },
+    "source_opportunity_links": {
+      "count": 2898,
+      "sha256": "beb3c1d08c9b259d679452a7bdd1d2f38b63ae50963163524b0df8ae12a772b7"
+    },
+    "source_raw_payloads": {
+      "count": 2898,
+      "sha256": "86f1b647de4ebc2cc0185f8f1f3da8637d9acf2a6d2bf5cb90aed033187dc4b3"
+    }
+  },
+  "historical_masters": 16,
+  "observation_count": 7603,
+  "open_qualification_reviews": 0,
+  "open_review_counts_by_dimension": {
+    "activity": 20,
+    "investment_model": 2,
+    "land_area_sqm": 1,
+    "location_description": 4,
+    "opportunity_owner": 3,
+    "opportunity_type": 14,
+    "sector": 48,
+    "status": 1,
+    "sub_activity": 1,
+    "title_ar": 2
+  },
+  "source_opportunity_count": 2898,
+  "standardization_engine_version": "16",
+  "total_masters": 296
+}

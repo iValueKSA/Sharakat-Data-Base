@@ -1,0 +1,11 @@
+﻿source,source_records,linked_records,records_with_activity,records_without_top_level_activity,records_with_sub_activity,records_with_only_sub_activity,records_with_canonical_activity,wrong_dimension_values,unresolved_or_missing,coverage_note
+ahda,7,7,0,7,0,0,0,7,0,Each source record is counted once by row state; Activity and Sub-Activity presence can overlap. Explicit enums/asset types are reported separately as wrong-dimension evidence.
+alahsa-opportunities,103,103,103,0,0,0,103,0,0,Each source record is counted once by row state; Activity and Sub-Activity presence can overlap. Explicit enums/asset types are reported separately as wrong-dimension evidence.
+furas,177,177,49,128,48,0,49,4,124,Each source record is counted once by row state; Activity and Sub-Activity presence can overlap. Explicit enums/asset types are reported separately as wrong-dimension evidence.
+invest-saudi,2555,8,462,2093,462,0,341,0,2093,Each source record is counted once by row state; Activity and Sub-Activity presence can overlap. Explicit enums/asset types are reported separately as wrong-dimension evidence.
+kfu,6,3,0,6,0,0,0,6,0,Each source record is counted once by row state; Activity and Sub-Activity presence can overlap. Explicit enums/asset types are reported separately as wrong-dimension evidence.
+modon,0,0,0,0,0,0,0,0,0,Each source record is counted once by row state; Activity and Sub-Activity presence can overlap. Explicit enums/asset types are reported separately as wrong-dimension evidence.
+mwan,5,0,0,5,0,0,0,5,0,Each source record is counted once by row state; Activity and Sub-Activity presence can overlap. Explicit enums/asset types are reported separately as wrong-dimension evidence.
+ncp,45,1,0,45,0,0,0,0,45,Each source record is counted once by row state; Activity and Sub-Activity presence can overlap. Explicit enums/asset types are reported separately as wrong-dimension evidence.
+nhc,0,0,0,0,0,0,0,0,0,Each source record is counted once by row state; Activity and Sub-Activity presence can overlap. Explicit enums/asset types are reported separately as wrong-dimension evidence.
+pif,0,0,0,0,0,0,0,0,0,Each source record is counted once by row state; Activity and Sub-Activity presence can overlap. Explicit enums/asset types are reported separately as wrong-dimension evidence.

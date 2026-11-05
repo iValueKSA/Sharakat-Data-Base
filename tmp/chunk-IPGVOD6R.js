@@ -1,0 +1,2 @@
+import{a}from"./chunk-5VTE5X2J.js";import{aa as n,ya as s}from"./chunk-ITNMMGU5.js";var o=class t extends a{getSummary(){return this.get("sector-dashboard/summary")}getStages(e){let r=this.buildParams(e);return this.get("sector-dashboard/stages",r)}getStageDetail(e){return this.get(`sector-dashboard/stages/${e}`)}static \u0275fac=(()=>{let e;return function(i){return(e||(e=s(t)))(i||t)}})();static \u0275prov=n({token:t,factory:t.\u0275fac,providedIn:"root"})};export{o as a};
+

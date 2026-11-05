@@ -1,0 +1,55 @@
+{
+  "scope": "full",
+  "counts": {
+    "pass": 128,
+    "warning": 5,
+    "fail": 0
+  },
+  "gates_evaluated": 133,
+  "deadline_gates": [
+    {
+      "gate_key": "ACTIVE_MASTER_NOT_IN_DEADLINE_DISTRIBUTION",
+      "domain": "DEADLINE_DISTRIBUTION",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "ACTIVE_MASTER_IN_MULTIPLE_DEADLINE_BUCKETS",
+      "domain": "DEADLINE_DISTRIBUTION",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "DEADLINE_CARD_TOTAL_MISMATCH",
+      "domain": "DEADLINE_DISTRIBUTION",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "NO_DEADLINE_BUCKET_FILTER_MISMATCH",
+      "domain": "DEADLINE_DISTRIBUTION",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "The active no-reliable-deadline filter must return exactly the fifth dashboard bucket.",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    }
+  ]
+}

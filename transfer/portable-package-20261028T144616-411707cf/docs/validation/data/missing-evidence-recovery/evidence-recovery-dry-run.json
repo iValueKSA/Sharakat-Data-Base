@@ -1,0 +1,60 @@
+{
+  "snapshot_at": "2026-10-22T07:42:21.338046+00:00",
+  "blocked_reviews_before": 347,
+  "classifications": {
+    "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED": 337,
+    "SOURCE_RECHECK_REQUIRED": 9,
+    "WRONG_BLOCKED_CLASSIFICATION": 1
+  },
+  "by_type": {
+    "STANDARDIZATION_REVIEW": {
+      "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED": 332,
+      "SOURCE_RECHECK_REQUIRED": 2
+    },
+    "LOCATION_REVIEW": {
+      "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED": 5,
+      "WRONG_BLOCKED_CLASSIFICATION": 1,
+      "SOURCE_RECHECK_REQUIRED": 7
+    }
+  },
+  "by_subtype": {
+    "STANDARDIZATION_REVIEW:contract_duration_years": {
+      "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED": 332
+    },
+    "STANDARDIZATION_REVIEW:investment_value": {
+      "SOURCE_RECHECK_REQUIRED": 2
+    },
+    "LOCATION_REVIEW": {
+      "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED": 5,
+      "WRONG_BLOCKED_CLASSIFICATION": 1,
+      "SOURCE_RECHECK_REQUIRED": 7
+    }
+  },
+  "by_source": {
+    "furas": {
+      "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED": 332
+    },
+    "invest-saudi": {
+      "SOURCE_RECHECK_REQUIRED": 2,
+      "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED": 5,
+      "WRONG_BLOCKED_CLASSIFICATION": 1
+    },
+    "ahda": {
+      "SOURCE_RECHECK_REQUIRED": 7
+    }
+  },
+  "by_field": {
+    "contract_duration_years": {
+      "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED": 332
+    },
+    "investment_value": {
+      "SOURCE_RECHECK_REQUIRED": 2
+    },
+    "location": {
+      "EVIDENCE_RECOVERED_BUT_HUMAN_REVIEW_REQUIRED": 5,
+      "WRONG_BLOCKED_CLASSIFICATION": 1,
+      "SOURCE_RECHECK_REQUIRED": 7
+    }
+  },
+  "reconciliation_passed": true
+}

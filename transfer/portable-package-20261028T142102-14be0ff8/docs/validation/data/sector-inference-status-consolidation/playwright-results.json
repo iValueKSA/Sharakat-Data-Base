@@ -1,0 +1,214 @@
+{
+  "started_at": "2026-10-21T08:35:20.2Z",
+  "base_url": "http://localhost:8080",
+  "viewport_sizes": [
+    [
+      1920,
+      1080
+    ],
+    [
+      1440,
+      900
+    ],
+    [
+      1366,
+      768
+    ],
+    [
+      768,
+      900
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "scenarios": {
+    "status": {
+      "filters": [
+        "أزيلت من المصدر",
+        "حالة غير معروفة",
+        "غير محددة",
+        "قيد مراجعة الحالة",
+        "متاحة",
+        "منتهية"
+      ],
+      "available_filter_id": "status:available",
+      "available_count": 464,
+      "status_bucket_sum": 525,
+      "dashboard_total": 525,
+      "published_bucket_count": 0,
+      "legacy_published_filter_total": 464,
+      "available_badges": [
+        "متاحة"
+      ],
+      "available_badge_rows_checked": 50,
+      "table_count": "عرض 1–50 من 464 فرصة"
+    },
+    "sector:tourism": {
+      "label": "السياحة",
+      "count": 1,
+      "list_count": 1,
+      "filter_exact": true,
+      "chart_click_filter": {
+        "selected_filter": "sector:tourism",
+        "expected_count": 1,
+        "table_count": "عرض 1–1 من 1 فرصة",
+        "first_page_rows": 1,
+        "exact_sector_rows": true
+      }
+    },
+    "sector:agriculture": {
+      "label": "الزراعة",
+      "count": 1,
+      "list_count": 1,
+      "filter_exact": true,
+      "chart_click_filter": {
+        "selected_filter": "sector:agriculture",
+        "expected_count": 1,
+        "table_count": "عرض 1–1 من 1 فرصة",
+        "first_page_rows": 1,
+        "exact_sector_rows": true
+      }
+    },
+    "status_chart_labels": [
+      "متاحة\n464",
+      "غير محددة\n25",
+      "منتهية\n18",
+      "أزيلت من المصدر\n14",
+      "قيد مراجعة الحالة\n3",
+      "حالة غير معروفة\n1"
+    ],
+    "sector_dashboard_buckets": {
+      "tourism_separate": true,
+      "agriculture_separate": true,
+      "tourism_count": 1,
+      "agriculture_count": 1
+    }
+  },
+  "errors": [],
+  "viewport_checks": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "horizontal_overflow": false,
+      "rtl": true,
+      "western_digits": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "horizontal_overflow": false,
+      "rtl": true,
+      "western_digits": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "horizontal_overflow": false,
+      "rtl": true,
+      "western_digits": true
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "horizontal_overflow": false,
+      "rtl": true,
+      "western_digits": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "horizontal_overflow": false,
+      "rtl": true,
+      "western_digits": true
+    }
+  ],
+  "finished_at": "2026-10-21T08:35:30.822Z",
+  "result": "PASS",
+  "export_reconciliation": {
+    "status_buckets": {
+      "أزيلت من المصدر": {
+        "canonical_id": "status:removed_from_source",
+        "api": 14,
+        "dashboard": 14,
+        "csv": 14,
+        "xlsx": 14,
+        "csv_label_match": true,
+        "xlsx_label_match": true
+      },
+      "حالة غير معروفة": {
+        "canonical_id": "status:unknown",
+        "api": 1,
+        "dashboard": 1,
+        "csv": 1,
+        "xlsx": 1,
+        "csv_label_match": true,
+        "xlsx_label_match": true
+      },
+      "غير محددة": {
+        "canonical_id": "status:missing",
+        "api": 25,
+        "dashboard": 25,
+        "csv": 25,
+        "xlsx": 25,
+        "csv_label_match": true,
+        "xlsx_label_match": true
+      },
+      "قيد مراجعة الحالة": {
+        "canonical_id": "status:review",
+        "api": 3,
+        "dashboard": 3,
+        "csv": 3,
+        "xlsx": 3,
+        "csv_label_match": true,
+        "xlsx_label_match": true
+      },
+      "متاحة": {
+        "canonical_id": "status:available",
+        "api": 464,
+        "dashboard": 464,
+        "csv": 464,
+        "xlsx": 464,
+        "csv_label_match": true,
+        "xlsx_label_match": true
+      },
+      "منتهية": {
+        "canonical_id": "status:expired",
+        "api": 18,
+        "dashboard": 18,
+        "csv": 18,
+        "xlsx": 18,
+        "csv_label_match": true,
+        "xlsx_label_match": true
+      }
+    },
+    "sectors": {
+      "sector:tourism": {
+        "label": "السياحة",
+        "api": 1,
+        "dashboard": 1,
+        "csv": 1,
+        "xlsx": 1,
+        "labels_match": true
+      },
+      "sector:agriculture": {
+        "label": "الزراعة",
+        "api": 1,
+        "dashboard": 1,
+        "csv": 1,
+        "xlsx": 1,
+        "labels_match": true
+      }
+    },
+    "status_bucket_sum": 525,
+    "dashboard_total": 525,
+    "reconciled": true,
+    "legacy_published_filter": {
+      "total": 464,
+      "available_total": 464,
+      "same_results": true,
+      "canonical_id": "status:available"
+    }
+  }
+}

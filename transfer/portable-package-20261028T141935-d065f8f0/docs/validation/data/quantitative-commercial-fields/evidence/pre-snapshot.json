@@ -1,0 +1,448 @@
+{
+  "captured_at_utc": "2026-10-20T07:26:41.146205+00:00",
+  "total_master_rows": 297,
+  "non_merged_masters": 292,
+  "merged_masters": 5,
+  "source_opportunities": 2899,
+  "observations": 11124,
+  "sources": [
+    {
+      "id": 1,
+      "source_key": "furas",
+      "name_ar": "فرص – البوابة الموحدة للاستثمار",
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "id": 2,
+      "source_key": "alahsa-opportunities",
+      "name_ar": "منصة الفرص الاستثمارية بالأحساء",
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "id": 3,
+      "source_key": "ahda",
+      "name_ar": "هيئة تطوير الأحساء",
+      "enabled": true,
+      "priority": 3
+    },
+    {
+      "id": 4,
+      "source_key": "invest-saudi",
+      "name_ar": "استثمر في السعودية",
+      "enabled": true,
+      "priority": 4
+    },
+    {
+      "id": 5,
+      "source_key": "kfu",
+      "name_ar": "جامعة الملك فيصل",
+      "enabled": true,
+      "priority": 5
+    },
+    {
+      "id": 6,
+      "source_key": "modon",
+      "name_ar": "مدن",
+      "enabled": true,
+      "priority": 6
+    },
+    {
+      "id": 7,
+      "source_key": "ncp",
+      "name_ar": "المركز الوطني للتخصيص",
+      "enabled": true,
+      "priority": 7
+    },
+    {
+      "id": 8,
+      "source_key": "nhc",
+      "name_ar": "NHC الاستثمار",
+      "enabled": true,
+      "priority": 8
+    },
+    {
+      "id": 9,
+      "source_key": "pif",
+      "name_ar": "بوابة القطاع الخاص لصندوق الاستثمارات العامة",
+      "enabled": true,
+      "priority": 9
+    },
+    {
+      "id": 10,
+      "source_key": "mwan",
+      "name_ar": "موان",
+      "enabled": true,
+      "priority": 10
+    }
+  ],
+  "latest_sync_jobs": [
+    {
+      "id": 373,
+      "source_key": "furas",
+      "started_at": "2026-10-20 07:02:32.339043+00:00",
+      "finished_at": "2026-10-20 07:02:38.659236+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "raw_count": 164,
+      "new_count": 0,
+      "update_count": 164,
+      "records_received": 164
+    },
+    {
+      "id": 372,
+      "source_key": "alahsa-opportunities",
+      "started_at": "2026-10-20 07:02:32.325472+00:00",
+      "finished_at": "2026-10-20 07:02:41.826079+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "raw_count": 103,
+      "new_count": 0,
+      "update_count": 0,
+      "records_received": 103
+    },
+    {
+      "id": 371,
+      "source_key": "ncp",
+      "started_at": "2026-10-20 06:47:32.430328+00:00",
+      "finished_at": "2026-10-20 06:48:03.100006+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "raw_count": 45,
+      "new_count": 0,
+      "update_count": 0,
+      "records_received": 46
+    },
+    {
+      "id": 370,
+      "source_key": "nhc",
+      "started_at": "2026-10-20 06:47:32.508952+00:00",
+      "finished_at": "2026-10-20 06:47:36.230836+00:00",
+      "status": "WARNING",
+      "trigger_type": "scheduled",
+      "raw_count": 0,
+      "new_count": 0,
+      "update_count": 0,
+      "records_received": 0
+    },
+    {
+      "id": 369,
+      "source_key": "kfu",
+      "started_at": "2026-10-20 06:47:32.507473+00:00",
+      "finished_at": "2026-10-20 06:47:33.695516+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "raw_count": 2,
+      "new_count": 0,
+      "update_count": 0,
+      "records_received": 2
+    },
+    {
+      "id": 368,
+      "source_key": "modon",
+      "started_at": "2026-10-20 06:02:15.905908+00:00",
+      "finished_at": "2026-10-20 06:02:16.374250+00:00",
+      "status": "FAILED",
+      "trigger_type": "scheduled",
+      "raw_count": 0,
+      "new_count": 0,
+      "update_count": 0,
+      "records_received": 0
+    },
+    {
+      "id": 367,
+      "source_key": "invest-saudi",
+      "started_at": "2026-10-20 06:02:15.440603+00:00",
+      "finished_at": "2026-10-20 06:02:15.709625+00:00",
+      "status": "FAILED",
+      "trigger_type": "scheduled",
+      "raw_count": 0,
+      "new_count": 0,
+      "update_count": 0,
+      "records_received": 0
+    },
+    {
+      "id": 366,
+      "source_key": "ahda",
+      "started_at": "2026-10-20 06:02:14.784018+00:00",
+      "finished_at": "2026-10-20 06:02:15.245839+00:00",
+      "status": "FAILED",
+      "trigger_type": "scheduled",
+      "raw_count": 0,
+      "new_count": 0,
+      "update_count": 0,
+      "records_received": 0
+    },
+    {
+      "id": 365,
+      "source_key": "alahsa-opportunities",
+      "started_at": "2026-10-20 06:02:14.817862+00:00",
+      "finished_at": "2026-10-20 06:02:17.991565+00:00",
+      "status": "FAILED",
+      "trigger_type": "scheduled",
+      "raw_count": 0,
+      "new_count": 0,
+      "update_count": 0,
+      "records_received": 0
+    },
+    {
+      "id": 364,
+      "source_key": "furas",
+      "started_at": "2026-10-20 06:02:14.901570+00:00",
+      "finished_at": "2026-10-20 06:02:18.962384+00:00",
+      "status": "FAILED",
+      "trigger_type": "scheduled",
+      "raw_count": 0,
+      "new_count": 0,
+      "update_count": 0,
+      "records_received": 0
+    },
+    {
+      "id": 363,
+      "source_key": "ncp",
+      "started_at": "2026-10-19 18:46:53.397873+00:00",
+      "finished_at": "2026-10-19 18:47:32.704100+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "raw_count": 45,
+      "new_count": 0,
+      "update_count": 1,
+      "records_received": 46
+    },
+    {
+      "id": 362,
+      "source_key": "nhc",
+      "started_at": "2026-10-19 18:46:53.019464+00:00",
+      "finished_at": "2026-10-19 18:46:56.049449+00:00",
+      "status": "WARNING",
+      "trigger_type": "scheduled",
+      "raw_count": 0,
+      "new_count": 0,
+      "update_count": 0,
+      "records_received": 0
+    },
+    {
+      "id": 361,
+      "source_key": "modon",
+      "started_at": "2026-10-19 18:46:52.610873+00:00",
+      "finished_at": "2026-10-19 18:46:52.936589+00:00",
+      "status": "FAILED",
+      "trigger_type": "scheduled",
+      "raw_count": 0,
+      "new_count": 0,
+      "update_count": 0,
+      "records_received": 0
+    },
+    {
+      "id": 360,
+      "source_key": "invest-saudi",
+      "started_at": "2026-10-19 18:46:53.215845+00:00",
+      "finished_at": "2026-10-19 18:47:52.605850+00:00",
+      "status": "FAILED",
+      "trigger_type": "scheduled",
+      "raw_count": 0,
+      "new_count": 0,
+      "update_count": 0,
+      "records_received": 0
+    },
+    {
+      "id": 359,
+      "source_key": "ahda",
+      "started_at": "2026-10-19 18:46:52.670556+00:00",
+      "finished_at": "2026-10-19 18:47:32.877377+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "raw_count": 215,
+      "new_count": 0,
+      "update_count": 2,
+      "records_received": 215
+    },
+    {
+      "id": 358,
+      "source_key": "kfu",
+      "started_at": "2026-10-19 18:46:52.628328+00:00",
+      "finished_at": "2026-10-19 18:46:53.372191+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "raw_count": 2,
+      "new_count": 0,
+      "update_count": 2,
+      "records_received": 2
+    },
+    {
+      "id": 357,
+      "source_key": "alahsa-opportunities",
+      "started_at": "2026-10-19 18:20:52.840293+00:00",
+      "finished_at": "2026-10-19 18:21:03.113150+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "raw_count": 103,
+      "new_count": 0,
+      "update_count": 0,
+      "records_received": 103
+    },
+    {
+      "id": 356,
+      "source_key": "furas",
+      "started_at": "2026-10-19 18:20:52.598431+00:00",
+      "finished_at": "2026-10-19 18:21:00.669895+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "raw_count": 164,
+      "new_count": 0,
+      "update_count": 0,
+      "records_received": 164
+    },
+    {
+      "id": 355,
+      "source_key": "alahsa-opportunities",
+      "started_at": "2026-10-19 17:19:54.289485+00:00",
+      "finished_at": "2026-10-19 17:20:11.361670+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "raw_count": 103,
+      "new_count": 0,
+      "update_count": 0,
+      "records_received": 103
+    },
+    {
+      "id": 354,
+      "source_key": "furas",
+      "started_at": "2026-10-19 17:19:54.450760+00:00",
+      "finished_at": "2026-10-19 17:20:09.175751+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "raw_count": 164,
+      "new_count": 0,
+      "update_count": 164,
+      "records_received": 164
+    },
+    {
+      "id": 353,
+      "source_key": "alahsa-opportunities",
+      "started_at": "2026-10-19 12:50:46.131057+00:00",
+      "finished_at": "2026-10-19 12:50:53.000242+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "raw_count": 103,
+      "new_count": 0,
+      "update_count": 0,
+      "records_received": 103
+    },
+    {
+      "id": 352,
+      "source_key": "furas",
+      "started_at": "2026-10-19 12:50:46.124725+00:00",
+      "finished_at": "2026-10-19 12:50:51.693973+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "raw_count": 164,
+      "new_count": 0,
+      "update_count": 0,
+      "records_received": 164
+    },
+    {
+      "id": 351,
+      "source_key": "modon",
+      "started_at": "2026-10-19 12:46:47.648575+00:00",
+      "finished_at": "2026-10-19 12:46:48.071618+00:00",
+      "status": "FAILED",
+      "trigger_type": "scheduled",
+      "raw_count": 0,
+      "new_count": 0,
+      "update_count": 0,
+      "records_received": 0
+    },
+    {
+      "id": 350,
+      "source_key": "invest-saudi",
+      "started_at": "2026-10-19 12:46:46.665048+00:00",
+      "finished_at": "2026-10-19 12:47:57.145499+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "raw_count": 2444,
+      "new_count": 0,
+      "update_count": 8,
+      "records_received": 2444
+    },
+    {
+      "id": 349,
+      "source_key": "ahda",
+      "started_at": "2026-10-19 12:46:46.417370+00:00",
+      "finished_at": "2026-10-19 12:47:13.527401+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "raw_count": 215,
+      "new_count": 1,
+      "update_count": 7,
+      "records_received": 215
+    },
+    {
+      "id": 348,
+      "source_key": "alahsa-opportunities",
+      "started_at": "2026-10-19 11:49:46.283999+00:00",
+      "finished_at": "2026-10-19 11:50:10.636526+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "raw_count": 103,
+      "new_count": 0,
+      "update_count": 103,
+      "records_received": 103
+    },
+    {
+      "id": 347,
+      "source_key": "furas",
+      "started_at": "2026-10-19 11:49:46.267886+00:00",
+      "finished_at": "2026-10-19 11:49:51.410814+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "raw_count": 164,
+      "new_count": 0,
+      "update_count": 0,
+      "records_received": 164
+    },
+    {
+      "id": 346,
+      "source_key": "pif",
+      "started_at": "2026-10-19 11:26:48.396791+00:00",
+      "finished_at": "2026-10-19 11:27:04.392558+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "raw_count": 0,
+      "new_count": 0,
+      "update_count": 0,
+      "records_received": 0
+    },
+    {
+      "id": 345,
+      "source_key": "mwan",
+      "started_at": "2026-10-19 11:26:48.339214+00:00",
+      "finished_at": "2026-10-19 11:26:49.025933+00:00",
+      "status": "FAILED",
+      "trigger_type": "scheduled",
+      "raw_count": 0,
+      "new_count": 0,
+      "update_count": 0,
+      "records_received": 0
+    },
+    {
+      "id": 344,
+      "source_key": "alahsa-opportunities",
+      "started_at": "2026-10-19 10:48:48.335129+00:00",
+      "finished_at": "2026-10-19 10:48:56.918534+00:00",
+      "status": "SUCCESS",
+      "trigger_type": "scheduled",
+      "raw_count": 103,
+      "new_count": 0,
+      "update_count": 0,
+      "records_received": 103
+    }
+  ],
+  "fingerprints": {
+    "master_identity_sha256": "49354c79fb7dfcb335b155a73bc6b6203bbfe77a29b96174886a06c14e638dc7",
+    "source_link_sha256": "adc16830e15cf3806bf422d46c24ab95b13a49ea34dbd558ef7801766d047bb6",
+    "raw_quantitative_provenance_sha256": "07d9d614d836b226ab9b9c88e8e88a55881f6755ec13f8e097665712c5f85ade",
+    "canonical_quantitative_fields_sha256": "cd59159fbeb12c87edd2f8e1db4d18a918b9469b3ec7d4c47273ab0a310af818"
+  }
+}

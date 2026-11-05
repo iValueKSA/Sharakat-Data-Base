@@ -1,0 +1,158 @@
+{
+  "run_id": "9bc8919ebd70482e8cc329251172b385",
+  "started_at": "2026-10-21T08:32:40.917763+00:00",
+  "completed_at": "2026-10-21T08:32:50.355470+00:00",
+  "scope": "weekly",
+  "read_only_business_data": true,
+  "snapshot": {
+    "total_master_rows": 546,
+    "current_masters": 525,
+    "merged_masters": 21,
+    "source_opportunities": 3137,
+    "source_opportunities_linked_to_current_masters": 525,
+    "observations": 12414,
+    "configured_sources": 10,
+    "enabled_sources": 10,
+    "open_reviews": 577,
+    "standardization_engine_version": "21",
+    "alembic_heads": [
+      "0023_quant_commercial"
+    ],
+    "expected_alembic_heads": [
+      "0023_quant_commercial"
+    ]
+  },
+  "counts": {
+    "pass": 52,
+    "warning": 2,
+    "fail": 0
+  },
+  "gates_evaluated": 54,
+  "failed_gates": [],
+  "warning_gates": [
+    {
+      "gate_key": "GENERIC_SOURCE_PAGE_AS_OPPORTUNITY_ACTION",
+      "domain": "SOURCE_LINKS",
+      "severity": "WARNING",
+      "cadence": "full",
+      "status": "WARNING",
+      "message": "782 records have only a generic official source page; generic URLs exposed as original-opportunity actions: 0.",
+      "observed": 782,
+      "expected": 0,
+      "sample_ids": [
+        2124,
+        2117,
+        2023,
+        2078,
+        2080,
+        2114,
+        2159,
+        2160
+      ]
+    },
+    {
+      "gate_key": "OPEN_REVIEW_BACKLOG",
+      "domain": "REVIEW_QUEUES",
+      "severity": "WARNING",
+      "cadence": "full",
+      "status": "WARNING",
+      "message": "Nonzero unresolved-review queues are expected and do not fail data quality.",
+      "observed": 577,
+      "expected": {
+        "threshold": 0
+      },
+      "sample_ids": []
+    }
+  ],
+  "new_rule_gates": {
+    "OTHER_IS_NOT_UNSPECIFIED": {
+      "gate_key": "OTHER_IS_NOT_UNSPECIFIED",
+      "domain": "TAXONOMY",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": {
+        "activity": true,
+        "sector": true
+      },
+      "expected": {
+        "activity": true,
+        "sector": true
+      },
+      "sample_ids": []
+    },
+    "CANONICAL_CURRENT_PUBLISHED_RECORDS": {
+      "gate_key": "CANONICAL_CURRENT_PUBLISHED_RECORDS",
+      "domain": "STATUS_LIFECYCLE",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    "USER_FACING_PUBLISHED_STATUS_BUCKET": {
+      "gate_key": "USER_FACING_PUBLISHED_STATUS_BUCKET",
+      "domain": "STATUS_LIFECYCLE",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    "TOURISM_AND_AGRICULTURE_CANONICAL_SECTORS": {
+      "gate_key": "TOURISM_AND_AGRICULTURE_CANONICAL_SECTORS",
+      "domain": "TAXONOMY",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": [
+        "sector:agriculture",
+        "sector:tourism"
+      ],
+      "expected": [
+        "sector:agriculture",
+        "sector:tourism"
+      ],
+      "sample_ids": []
+    },
+    "SOURCE_EXPLICIT_SECTOR_OVERRIDDEN_BY_INFERENCE": {
+      "gate_key": "SOURCE_EXPLICIT_SECTOR_OVERRIDDEN_BY_INFERENCE",
+      "domain": "TAXONOMY",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    "FORCED_LOW_CONFIDENCE_SECTOR_CLASSIFICATIONS": {
+      "gate_key": "FORCED_LOW_CONFIDENCE_SECTOR_CLASSIFICATIONS",
+      "domain": "TAXONOMY",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    "INFERRED_SECTOR_WITHOUT_TRACEABLE_EVIDENCE": {
+      "gate_key": "INFERRED_SECTOR_WITHOUT_TRACEABLE_EVIDENCE",
+      "domain": "TAXONOMY",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    }
+  }
+}

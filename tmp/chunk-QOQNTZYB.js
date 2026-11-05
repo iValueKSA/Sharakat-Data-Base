@@ -1,0 +1,2 @@
+import{a as c}from"./chunk-VDQHAPR4.js";import{db as o,fa as a}from"./chunk-ITNMMGU5.js";var g=class i{langService=a(c);transform(n,r="name"){let e=n;return e?this.resolve(e,r):""}resolve(n,r){if(!n)return"";let e=`${r}Ar`,u=`${r}En`,f=this.langService.currentLang()==="ar",t=n[e]||"",s=n[u]||"";return f?t||s:s||t}static \u0275fac=function(r){return new(r||i)};static \u0275pipe=o({name:"bilingual",type:i,pure:!1})};export{g as a};
+

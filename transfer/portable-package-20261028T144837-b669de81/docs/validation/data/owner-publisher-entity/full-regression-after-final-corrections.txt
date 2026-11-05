@@ -1,0 +1,11 @@
+Full regression run after final owner corrections
+Date: 2026-10-19
+
+Command:
+docker exec -w /tmp/owner-review-final-regression -e DATABASE_URL=sqlite:// -e REDIS_URL= -e ENVIRONMENT=development alahsa-local-api-1 python -m pytest -q
+
+Result: 158 passed, 0 failed, 1 existing warning; completed in 7.43 seconds.
+
+Warning: Starlette deprecation notice that `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+
+The suite used isolated in-memory SQLite fixtures and did not mutate the live PostgreSQL business database. The live final database was separately reconciled; API, exports and Playwright were rechecked after the suite.

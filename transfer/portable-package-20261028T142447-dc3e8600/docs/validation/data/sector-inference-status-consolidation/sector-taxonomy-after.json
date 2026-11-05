@@ -1,0 +1,321 @@
+{
+  "aggregation_and_filtering": {
+    "aggregation": "SQL groups scalar Master Opportunity.sector through canonical identity.",
+    "filter": "Canonical sector IDs are expanded to their exact raw Master values.",
+    "other_and_unspecified": "sector:other and sector:unspecified remain separate.",
+    "tourism_and_agriculture_chart_policy": "Keep both populated canonical buckets visible and independently clickable."
+  },
+  "canonical_sectors": [
+    {
+      "aliases": [
+        "Environment",
+        "Recycling",
+        "Water",
+        "environment",
+        "البيئة",
+        "المياه"
+      ],
+      "canonical_id": "sector:environment",
+      "current_master_count": 8,
+      "key": "environment",
+      "label_ar": "البيئة"
+    },
+    {
+      "aliases": [
+        "Tourism",
+        "tourism",
+        "السياحة"
+      ],
+      "canonical_id": "sector:tourism",
+      "current_master_count": 1,
+      "key": "tourism",
+      "label_ar": "السياحة"
+    },
+    {
+      "aliases": [
+        "Agriculture",
+        "Agriculture and Food Processing",
+        "agriculture",
+        "الزراعة"
+      ],
+      "canonical_id": "sector:agriculture",
+      "current_master_count": 1,
+      "key": "agriculture",
+      "label_ar": "الزراعة"
+    },
+    {
+      "aliases": [
+        "Biotechnology and Pharma",
+        "Healthcare",
+        "Healthcare and Medical Devices",
+        "healthcare",
+        "الرعاية الصحية"
+      ],
+      "canonical_id": "sector:healthcare",
+      "current_master_count": 3,
+      "key": "healthcare",
+      "label_ar": "الرعاية الصحية"
+    },
+    {
+      "aliases": [
+        "Education",
+        "education",
+        "التعليم"
+      ],
+      "canonical_id": "sector:education",
+      "current_master_count": 3,
+      "key": "education",
+      "label_ar": "التعليم"
+    },
+    {
+      "aliases": [
+        "Logistics",
+        "Transport and Logistics",
+        "logistics",
+        "الخدمات اللوجستية"
+      ],
+      "canonical_id": "sector:logistics",
+      "current_master_count": 4,
+      "key": "logistics",
+      "label_ar": "الخدمات اللوجستية"
+    },
+    {
+      "aliases": [
+        "Industrial",
+        "Machinery and Equipment",
+        "Manufacturing",
+        "Mining and Metals",
+        "Petrochemical and Convention industries",
+        "industrial",
+        "صناعي"
+      ],
+      "canonical_id": "sector:industrial",
+      "current_master_count": 59,
+      "key": "industrial",
+      "label_ar": "صناعي"
+    },
+    {
+      "aliases": [
+        "Commercial",
+        "commercial",
+        "تجاري"
+      ],
+      "canonical_id": "sector:commercial",
+      "current_master_count": 40,
+      "key": "commercial",
+      "label_ar": "تجاري"
+    },
+    {
+      "aliases": [
+        "Real Estate",
+        "Real Estate & Construction",
+        "real_estate",
+        "العقارات",
+        "العقارات والإنشاءات"
+      ],
+      "canonical_id": "sector:real_estate",
+      "current_master_count": 7,
+      "key": "real_estate",
+      "label_ar": "العقارات والإنشاءات"
+    },
+    {
+      "aliases": [
+        "Energy",
+        "PV Factory",
+        "energy",
+        "الطاقة"
+      ],
+      "canonical_id": "sector:energy",
+      "current_master_count": 0,
+      "key": "energy",
+      "label_ar": "الطاقة"
+    },
+    {
+      "aliases": [
+        "Culture",
+        "Media",
+        "culture",
+        "الثقافة"
+      ],
+      "canonical_id": "sector:culture",
+      "current_master_count": 0,
+      "key": "culture",
+      "label_ar": "الثقافة"
+    },
+    {
+      "aliases": [
+        "Sports",
+        "sports",
+        "الرياضة"
+      ],
+      "canonical_id": "sector:sports",
+      "current_master_count": 0,
+      "key": "sports",
+      "label_ar": "الرياضة"
+    },
+    {
+      "aliases": [
+        "Financial Services",
+        "financial_services",
+        "الخدمات المالية"
+      ],
+      "canonical_id": "sector:financial_services",
+      "current_master_count": 0,
+      "key": "financial_services",
+      "label_ar": "الخدمات المالية"
+    },
+    {
+      "aliases": [
+        "Defense and Space",
+        "Information and Communication Technology",
+        "technology",
+        "التقنية والاتصالات"
+      ],
+      "canonical_id": "sector:technology",
+      "current_master_count": 0,
+      "key": "technology",
+      "label_ar": "التقنية والاتصالات"
+    },
+    {
+      "aliases": [
+        "Other",
+        "Others",
+        "other",
+        "أخرى",
+        "بقية القطاعات"
+      ],
+      "canonical_id": "sector:other",
+      "current_master_count": 9,
+      "key": "other",
+      "label_ar": "أخرى"
+    },
+    {
+      "aliases": [
+        "blank",
+        "null",
+        "unspecified",
+        "غير محدد",
+        "غير مصنف",
+        "قيمة مفقودة"
+      ],
+      "canonical_id": "sector:unspecified",
+      "current_master_count": 390,
+      "key": "unspecified",
+      "label_ar": "غير محدد"
+    }
+  ],
+  "normalization_rules": {
+    "canonical_labels_and_ids": "Exact, field scoped registry matching with Arabic text normalization.",
+    "other_aliases": [
+      "other",
+      "others",
+      "اخرى",
+      "اخري",
+      "بقية القطاعات",
+      "غير ذلك"
+    ],
+    "source_sector_aliases": {
+      "sector:agriculture": [
+        "Agriculture",
+        "Agriculture and Food Processing"
+      ],
+      "sector:commercial": [
+        "Commercial"
+      ],
+      "sector:culture": [
+        "Culture",
+        "Media"
+      ],
+      "sector:education": [
+        "Education"
+      ],
+      "sector:energy": [
+        "Energy",
+        "PV Factory"
+      ],
+      "sector:environment": [
+        "Environment",
+        "Recycling",
+        "Water",
+        "المياه"
+      ],
+      "sector:financial_services": [
+        "Financial Services"
+      ],
+      "sector:healthcare": [
+        "Healthcare",
+        "Healthcare and Medical Devices",
+        "Biotechnology and Pharma"
+      ],
+      "sector:industrial": [
+        "Industrial",
+        "Manufacturing",
+        "Machinery and Equipment",
+        "Mining and Metals",
+        "Petrochemical and Convention industries"
+      ],
+      "sector:logistics": [
+        "Logistics",
+        "Transport and Logistics"
+      ],
+      "sector:other": [
+        "Other",
+        "Others",
+        "بقية القطاعات"
+      ],
+      "sector:real_estate": [
+        "Real Estate & Construction",
+        "Real Estate",
+        "العقارات"
+      ],
+      "sector:sports": [
+        "Sports"
+      ],
+      "sector:technology": [
+        "Information and Communication Technology",
+        "Defense and Space"
+      ],
+      "sector:tourism": [
+        "Tourism"
+      ],
+      "sector:unspecified": [
+        "غير مصنف",
+        "قيمة مفقودة",
+        "null",
+        "blank"
+      ]
+    },
+    "unknown_nonempty_sector": "Unmapped sector candidates stay review required; no substring normalization.",
+    "unspecified_aliases": [
+      "غير محدد",
+      "غير مصنف",
+      "قيمة مفقودة"
+    ],
+    "wrong_dimension_values": [
+      "commercial_facility_opportunity",
+      "general_announcement",
+      "investment_announcement",
+      "investment_opportunity",
+      "investment_sector_information",
+      "lease_opportunity",
+      "ppp_project",
+      "ppp_project_announcement",
+      "strategic_project",
+      "waste_sector_investment",
+      "فرصة استثمارية"
+    ]
+  },
+  "review_handling": {
+    "conflict_type": "TAXONOMY_CONFLICT",
+    "existing_open_sector_reviews": "reused; no duplicates inserted",
+    "field_name": "sector",
+    "idempotency": "one open sector conflict per Master and evidence pair",
+    "table": "opportunity_data_conflicts"
+  },
+  "sector_review_reason_keys": [
+    "CONFLICTING_OFFICIAL_SOURCE_SECTORS",
+    "UNMAPPED_EXPLICIT_OFFICIAL_SECTOR",
+    "CONFLICTING_SECTOR_SIGNALS",
+    "SINGLE_UNCORROBORATED_SECTOR_SIGNAL"
+  ]
+}

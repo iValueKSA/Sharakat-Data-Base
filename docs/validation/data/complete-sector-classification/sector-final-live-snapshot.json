@@ -1,0 +1,78 @@
+{
+  "read_only": true,
+  "total_master_rows": 587,
+  "current_masters": 566,
+  "current_sector_counts": {
+    "أخرى": 34,
+    "البيئة": 8,
+    "التعليم": 4,
+    "الخدمات اللوجستية": 5,
+    "الخدمات المالية": 5,
+    "الرعاية الصحية": 4,
+    "الرياضة": 1,
+    "الزراعة": 1,
+    "السياحة": 2,
+    "العقارات والإنشاءات": 9,
+    "تجاري": 433,
+    "صناعي": 60
+  },
+  "source_opportunities": 3178,
+  "sync_job_count": 510,
+  "sync_job_max_id": 510,
+  "sync_job_states": {
+    "ABANDONED": 3,
+    "COMPLETED": 385,
+    "COMPLETED_WITH_WARNINGS": 43,
+    "FAILED": 78,
+    "SKIPPED_ALREADY_RUNNING": 1
+  },
+  "active_sync_jobs": 0,
+  "open_sector_conflicts": 0,
+  "sector_change_history_rows": 632,
+  "latest_jobs": [
+    {
+      "id": 510,
+      "source_id": 2,
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "job_state": "COMPLETED",
+      "started_at": "2026-10-26T10:04:24.229806+00:00",
+      "finished_at": "2026-10-26T10:05:15.254869+00:00",
+      "new_count": 0,
+      "update_count": 0
+    },
+    {
+      "id": 509,
+      "source_id": 1,
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "job_state": "COMPLETED",
+      "started_at": "2026-10-26T10:04:24.150367+00:00",
+      "finished_at": "2026-10-26T10:05:01.686962+00:00",
+      "new_count": 0,
+      "update_count": 0
+    },
+    {
+      "id": 508,
+      "source_id": 1,
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "job_state": "COMPLETED",
+      "started_at": "2026-10-26T09:04:02.725173+00:00",
+      "finished_at": "2026-10-26T09:04:31.491287+00:00",
+      "new_count": 0,
+      "update_count": 0
+    },
+    {
+      "id": 507,
+      "source_id": 2,
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "job_state": "COMPLETED",
+      "started_at": "2026-10-26T09:04:02.801972+00:00",
+      "finished_at": "2026-10-26T09:04:42.777692+00:00",
+      "new_count": 0,
+      "update_count": 0
+    }
+  ]
+}

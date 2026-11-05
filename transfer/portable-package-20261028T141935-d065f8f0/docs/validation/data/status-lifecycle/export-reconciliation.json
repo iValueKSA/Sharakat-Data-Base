@@ -1,0 +1,56 @@
+{
+  "validated_at_utc": "2026-10-19T10:58:20.572381+00:00",
+  "base_url": "http://127.0.0.1:8000",
+  "statuses": {
+    "أزيلت من المصدر": {
+      "canonical_id": "status:removed_from_source",
+      "list": 14,
+      "dashboard": 14,
+      "csv": 14,
+      "xlsx": 14,
+      "status_labels_match": true
+    },
+    "حالة غير معروفة": {
+      "canonical_id": "status:unknown",
+      "list": 1,
+      "dashboard": 1,
+      "csv": 1,
+      "xlsx": 1,
+      "status_labels_match": true
+    },
+    "غير محددة": {
+      "canonical_id": "status:missing",
+      "list": 13,
+      "dashboard": 13,
+      "csv": 13,
+      "xlsx": 13,
+      "status_labels_match": true
+    },
+    "متاحة": {
+      "canonical_id": "status:available",
+      "list": 103,
+      "dashboard": 103,
+      "csv": 103,
+      "xlsx": 103,
+      "status_labels_match": true
+    },
+    "منتهية": {
+      "canonical_id": "status:expired",
+      "list": 2,
+      "dashboard": 2,
+      "csv": 2,
+      "xlsx": 2,
+      "status_labels_match": true
+    },
+    "منشورة": {
+      "canonical_id": "status:published",
+      "list": 158,
+      "dashboard": 158,
+      "csv": 158,
+      "xlsx": 158,
+      "status_labels_match": true
+    }
+  },
+  "total": 291,
+  "all_status_buckets_reconcile": true
+}

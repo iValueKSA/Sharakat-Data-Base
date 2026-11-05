@@ -1,0 +1,64 @@
+{
+  "training_scope": "current specified Masters excluding Phase 1/Phase 2 inference provenance",
+  "minimum_support": 25,
+  "minimum_purity": 98,
+  "groups": [
+    {
+      "activity": "خدمي",
+      "unspecified_count": 5,
+      "labeled_reference_count": 0,
+      "labeled_sector_distribution": {},
+      "dominant_sector_id": null,
+      "purity_percentage": null,
+      "sample_titles": [
+        "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 484بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+        "انشاء و تشغيل و صيانة مستودع بالقطعة رقم 485بالمخطط رقم 14 16 بصناعية العيون - الأنشطة التجارية - مستودع - مستودع",
+        "إنشاء وتشغيل وصيانة مستودع بالقطعة رقم 483بالمخطط رقم 14/16 بصناعية العيون",
+        "إنشاء وتشغيل وصيانة القطعة رقم60المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف",
+        "إنشاء وتشغيل وصيانة القطعة رقم 67/1 المخطط رقم 518    4 بتشاليح المطيوي بنشاط تشاليح سيارات بمدينة الهفوف"
+      ],
+      "sample_master_ids": [
+        234,
+        235,
+        238,
+        260,
+        262
+      ],
+      "analysis_group": "MISSING_REFERENCE"
+    },
+    {
+      "activity": "الأنشطة التجارية",
+      "unspecified_count": 2,
+      "labeled_reference_count": 5,
+      "labeled_sector_distribution": {
+        "sector:other": 5
+      },
+      "dominant_sector_id": "sector:other",
+      "purity_percentage": 100.0,
+      "sample_titles": [
+        "مزايدة تأجير موقع مقهى مستشفى الصحة النفسية بالأحساء مزايدة تأجير موقع مقهى مستشفى الصحة النفسية بالأحساء - الأنشطة التجارية - منشآت تقديم الغذاء - مقهى",
+        "مزايدة تأجير موقع مقهى مستشفى العمران العام بالأحساء مزايدة تأجير موقع مقهى مستشفى العمران العام بالأحساء - الأنشطة التجارية - منشآت تقديم الغذاء - مقهى"
+      ],
+      "sample_master_ids": [
+        96,
+        97
+      ],
+      "analysis_group": "LOW_SAMPLE_OR_SINGLE_SECTOR_REFERENCE"
+    },
+    {
+      "activity": "الأنشطة الزراعية والحيوانية",
+      "unspecified_count": 1,
+      "labeled_reference_count": 0,
+      "labeled_sector_distribution": {},
+      "dominant_sector_id": null,
+      "purity_percentage": null,
+      "sample_titles": [
+        "منشأة تحويلية للمنتجات الثانوية للنخيل بمحافظة الأحساء بالمنطقة الشرقية"
+      ],
+      "sample_master_ids": [
+        78
+      ],
+      "analysis_group": "MISSING_REFERENCE"
+    }
+  ]
+}

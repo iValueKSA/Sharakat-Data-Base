@@ -1,0 +1,107 @@
+{
+  "adapter_changes_made": false,
+  "sources": [
+    {
+      "source": "furas",
+      "current_classification_data_quality": "LOW: 373 unspecified Masters; 0 raw sector/category fields and 7 raw activity/subactivity fields across this population; dominant fields are temporary-rental and asset/location types.",
+      "missing_useful_fields": [
+        "source taxonomy/industry classification",
+        "structured activity and sub-activity for temporary lease opportunities"
+      ],
+      "available_but_unused_fields": [
+        "raw.attributes.ACTIVITYTYPE",
+        "raw.attributes.ACTIVITYTYPEID",
+        "raw.attributes.OPPORTUNITYTYPE",
+        "raw.attributes.OPPORTUNITYTYPEID",
+        "raw.attributes.SUBACTIVITYTYPE",
+        "raw.attributes.SUBACTIVITYTYPEID"
+      ],
+      "recommended_adapter_mapping_change": "Inspect existing official Furas payload fields that classify activity; expose only stable sector/category fields after comparing labeled examples and preserving raw payload."
+    },
+    {
+      "source": "alahsa-opportunities",
+      "current_classification_data_quality": "5 unspecified of 103 current Masters; raw sector=5, raw activity=5, raw sub-activity=0, raw category=0 Masters.",
+      "missing_useful_fields": [
+        "validated sector/category mapping where raw values are generic or unmapped"
+      ],
+      "available_but_unused_fields": [],
+      "recommended_adapter_mapping_change": "Review the source-specific classification field inventory and map only stable, explicit source values; no adapter change was made."
+    },
+    {
+      "source": "kfu",
+      "current_classification_data_quality": "3 unspecified of 3 current Masters; raw sector=1, raw activity=0, raw sub-activity=0, raw category=0 Masters.",
+      "missing_useful_fields": [
+        "validated sector/category mapping where raw values are generic or unmapped"
+      ],
+      "available_but_unused_fields": [
+        "raw.opportunity_type"
+      ],
+      "recommended_adapter_mapping_change": "Review the source-specific classification field inventory and map only stable, explicit source values; no adapter change was made."
+    },
+    {
+      "source": "ahda",
+      "current_classification_data_quality": "1 unspecified of 8 current Masters; raw sector=0, raw activity=0, raw sub-activity=0, raw category=0 Masters.",
+      "missing_useful_fields": [
+        "validated sector/category mapping where raw values are generic or unmapped"
+      ],
+      "available_but_unused_fields": [],
+      "recommended_adapter_mapping_change": "Review the source-specific classification field inventory and map only stable, explicit source values; no adapter change was made."
+    },
+    {
+      "source": "ncp",
+      "current_classification_data_quality": "1 unspecified of 1 current Masters; raw sector=1, raw activity=0, raw sub-activity=0, raw category=0 Masters.",
+      "missing_useful_fields": [
+        "validated sector/category mapping where raw values are generic or unmapped"
+      ],
+      "available_but_unused_fields": [
+        "raw.opportunity_type"
+      ],
+      "recommended_adapter_mapping_change": "Review the source-specific classification field inventory and map only stable, explicit source values; no adapter change was made."
+    },
+    {
+      "source": "invest-saudi",
+      "current_classification_data_quality": "0 unspecified of 19 current Masters; raw sector=0, raw activity=0, raw sub-activity=0, raw category=0 Masters.",
+      "missing_useful_fields": [
+        "validated sector/category mapping where raw values are generic or unmapped"
+      ],
+      "available_but_unused_fields": [],
+      "recommended_adapter_mapping_change": "Review the source-specific classification field inventory and map only stable, explicit source values; no adapter change was made."
+    },
+    {
+      "source": "modon",
+      "current_classification_data_quality": "0 unspecified of 0 current Masters; raw sector=0, raw activity=0, raw sub-activity=0, raw category=0 Masters.",
+      "missing_useful_fields": [
+        "validated sector/category mapping where raw values are generic or unmapped"
+      ],
+      "available_but_unused_fields": [],
+      "recommended_adapter_mapping_change": "Review the source-specific classification field inventory and map only stable, explicit source values; no adapter change was made."
+    },
+    {
+      "source": "mwan",
+      "current_classification_data_quality": "0 unspecified of 0 current Masters; raw sector=0, raw activity=0, raw sub-activity=0, raw category=0 Masters.",
+      "missing_useful_fields": [
+        "validated sector/category mapping where raw values are generic or unmapped"
+      ],
+      "available_but_unused_fields": [],
+      "recommended_adapter_mapping_change": "Review the source-specific classification field inventory and map only stable, explicit source values; no adapter change was made."
+    },
+    {
+      "source": "nhc",
+      "current_classification_data_quality": "0 unspecified of 0 current Masters; raw sector=0, raw activity=0, raw sub-activity=0, raw category=0 Masters.",
+      "missing_useful_fields": [
+        "validated sector/category mapping where raw values are generic or unmapped"
+      ],
+      "available_but_unused_fields": [],
+      "recommended_adapter_mapping_change": "Review the source-specific classification field inventory and map only stable, explicit source values; no adapter change was made."
+    },
+    {
+      "source": "pif",
+      "current_classification_data_quality": "0 unspecified of 0 current Masters; raw sector=0, raw activity=0, raw sub-activity=0, raw category=0 Masters.",
+      "missing_useful_fields": [
+        "validated sector/category mapping where raw values are generic or unmapped"
+      ],
+      "available_but_unused_fields": [],
+      "recommended_adapter_mapping_change": "Review the source-specific classification field inventory and map only stable, explicit source values; no adapter change was made."
+    }
+  ]
+}

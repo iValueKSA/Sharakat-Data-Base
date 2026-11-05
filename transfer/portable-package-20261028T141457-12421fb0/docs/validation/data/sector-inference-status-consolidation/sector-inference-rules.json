@@ -1,0 +1,230 @@
+{
+  "agreement_rules": [
+    "Exact reviewed sub-activity mapping may qualify at high confidence.",
+    "Otherwise require a structured activity/sub-activity/asset signal and a matching text signal, or two independent text fields.",
+    "Repeated or near-identical short/full descriptions count once.",
+    "Conflicting candidate sectors remain review required.",
+    "A single sector-specific text signal remains review required; generic terms alone are not mapped."
+  ],
+  "benchmark_gate": "No false high-confidence predictions on the known-sector holdout. Source sector fields are withheld from benchmark inputs.",
+  "confidence_bands": {
+    "HIGH_CONFIDENCE": ">=0.90 and accepted benchmark",
+    "INSUFFICIENT_EVIDENCE": "no useful sector evidence",
+    "REVIEW_REQUIRED": "plausible but uncorroborated, conflicting, or unmapped explicit evidence"
+  },
+  "deterministic_sub_activity_rules": {
+    "أنشطة تجارة المواد الغذائية": {
+      "rule_key": "SUB_ACTIVITY_EXACT_FOOD_RETAIL",
+      "sector_id": "sector:commercial"
+    },
+    "أنشطة وخدمات انتاج المواد غير الغذائية": {
+      "rule_key": "SUB_ACTIVITY_EXACT_NONFOOD_PRODUCTION",
+      "sector_id": "sector:industrial"
+    },
+    "خدمات الصرافة": {
+      "rule_key": "SUB_ACTIVITY_EXACT_EXCHANGE",
+      "sector_id": "sector:financial_services"
+    },
+    "خدمات تعليمية أخرى": {
+      "rule_key": "SUB_ACTIVITY_EXACT_EDUCATIONAL_SERVICES",
+      "sector_id": "sector:education"
+    },
+    "محلات تجارية": {
+      "rule_key": "SUB_ACTIVITY_EXACT_RETAIL_SHOPS",
+      "sector_id": "sector:commercial"
+    }
+  },
+  "engine_version": "ahda-sector-rules-1.0.0",
+  "exact_activity_sector_support": {
+    "Real Estate & Construction": "sector:real_estate",
+    "الأنشطة التعليمية": "sector:education",
+    "الأنشطة الزراعية والحيوانية": "sector:agriculture",
+    "الأنشطة المالية": "sector:financial_services"
+  },
+  "inference_priority": [
+    "source_explicit_sector",
+    "sub_activity",
+    "activity",
+    "title",
+    "asset_facility_type",
+    "short_description",
+    "full_description",
+    "subsector"
+  ],
+  "provenance_fields": [
+    "rule_key",
+    "evidence_fields",
+    "confidence",
+    "inference_timestamp",
+    "engine_version",
+    "classification_origin"
+  ],
+  "source_sector_policy": "A mapped official source sector is authoritative. Multiple mapped sectors or an unmapped explicit value remain review required. Known wrong-dimension source values are not treated as sector evidence.",
+  "title_description_asset_signal_terms": {
+    "sector:agriculture": [
+      "مزرعة",
+      "مزارع",
+      "نخيل",
+      "نخلة",
+      "تمور",
+      "التمور",
+      "فرز وتعبئة التمور",
+      "إنتاج زراعي",
+      "مشاتل",
+      "مشتل",
+      "بيوت محمية",
+      "محاصيل زراعية",
+      "ري زراعي",
+      "date palm",
+      "agricultural production",
+      "greenhouse agriculture",
+      "nursery"
+    ],
+    "sector:commercial": [
+      "تموينات",
+      "محلات تجارية",
+      "متجر تجاري",
+      "تجارة التجزئة",
+      "مكائن بيع ذاتي",
+      "جهاز بيع ذاتي",
+      "retail store",
+      "commercial shop"
+    ],
+    "sector:culture": [
+      "متحف",
+      "مركز ثقافي",
+      "ترميم موقع أثري",
+      "مركز تراثي",
+      "مرافق ثقافية",
+      "museum",
+      "cultural center",
+      "heritage center"
+    ],
+    "sector:education": [
+      "تعليم",
+      "تعليمي",
+      "مركز تدريب",
+      "مراكز التدريب",
+      "تعليم مهني",
+      "تعليم تقني",
+      "educational services",
+      "training center",
+      "vocational education"
+    ],
+    "sector:energy": [
+      "محطة طاقة شمسية",
+      "توليد الكهرباء",
+      "الطاقة المتجددة",
+      "محطة كهرباء",
+      "طاقة شمسية",
+      "solar power plant",
+      "electricity generation",
+      "renewable energy"
+    ],
+    "sector:environment": [
+      "إعادة تدوير",
+      "تدوير النفايات",
+      "معالجة مياه الصرف",
+      "معالجة النفايات",
+      "محطة معالجة المياه",
+      "waste recycling",
+      "wastewater treatment",
+      "water treatment plant"
+    ],
+    "sector:financial_services": [
+      "صراف آلي",
+      "صراف الي",
+      "خدمات الصرافة",
+      "خدمات مصرفية",
+      "بنك تجاري",
+      "financial services",
+      "atm machine",
+      "banking services"
+    ],
+    "sector:healthcare": [
+      "مستشفى",
+      "مستشفيات",
+      "مركز صحي",
+      "مراكز صحية",
+      "عيادة طبية",
+      "رعاية صحية",
+      "خدمات طبية",
+      "خدمات صحية",
+      "medical services",
+      "healthcare center",
+      "hospital",
+      "medical clinic"
+    ],
+    "sector:industrial": [
+      "مصنع",
+      "مصانع",
+      "تصنيع",
+      "خط إنتاج",
+      "إنتاج صناعي",
+      "منشأة صناعية",
+      "manufacturing plant",
+      "factory",
+      "production line"
+    ],
+    "sector:logistics": [
+      "مستودع",
+      "مستودعات",
+      "مركز لوجستي",
+      "نقل البضائع",
+      "خدمات الشحن",
+      "مناولة البضائع",
+      "logistics center",
+      "freight transport",
+      "warehouse facility"
+    ],
+    "sector:real_estate": [
+      "تطوير عقاري",
+      "مشروع إسكان",
+      "مشروع سكني",
+      "تطوير عقارات",
+      "عقارات وإنشاءات",
+      "real estate development",
+      "housing development",
+      "residential development"
+    ],
+    "sector:sports": [
+      "منشأة رياضية",
+      "مركز رياضي",
+      "مدينة رياضية",
+      "ملعب رياضي",
+      "نادي رياضي",
+      "sports facility",
+      "sports center",
+      "stadium",
+      "fitness center"
+    ],
+    "sector:technology": [
+      "مركز بيانات",
+      "خدمات تقنية المعلومات",
+      "اتصالات وتقنية المعلومات",
+      "شبكة اتصالات",
+      "برمجيات",
+      "منصة رقمية",
+      "data center",
+      "software platform",
+      "telecommunications network"
+    ],
+    "sector:tourism": [
+      "فندق",
+      "فنادق",
+      "منتجع",
+      "منتجعات",
+      "نزل سياحي",
+      "إقامة سياحية",
+      "مرافق سياحية",
+      "وجهة سياحية",
+      "قرية سياحية",
+      "ضيافة فندقية",
+      "hotel",
+      "hotels",
+      "resort",
+      "tourist accommodation",
+      "hospitality facility"
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "group_count": 3,
+  "semantic_groups": [
+    {
+      "pattern_key": "sector:healthcare:مستشفى",
+      "count": 5,
+      "sample_master_ids": [
+        65,
+        87,
+        96,
+        97,
+        136
+      ],
+      "sample_titles": [
+        "تاجير مؤقت لموقع من نوع الطرق والارصفة بحي  قرطبة,قرطبة استئجار كشك على رصيف الواقع بالقرب من مستشفى الأمير سعود بن جلوي بحي قرطبة",
+        "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  السلمانية الثالث السلمانية بالقرب من مستشفى الملك فهد (2)",
+        "مزايدة تأجير موقع مقهى مستشفى الصحة النفسية بالأحساء مزايدة تأجير موقع مقهى مستشفى الصحة النفسية بالأحساء - الأنشطة التجارية - منشآت تقديم الغذاء - مقهى",
+        "مزايدة تأجير موقع مقهى مستشفى العمران العام بالأحساء مزايدة تأجير موقع مقهى مستشفى العمران العام بالأحساء - الأنشطة التجارية - منشآت تقديم الغذاء - مقهى",
+        "تاجير مؤقت لموقع من نوع العربات المتنقلة بحي  السلمانية الثالث السلمانية بالقرب من مستشفى الملك فهد"
+      ],
+      "likely_sector_id": "sector:healthcare",
+      "confidence": "LOW",
+      "resolution_status": "CONTEXTUAL_OR_WEAK_MENTION; not counted as title-resolvable",
+      "conflicts": "The phrase describes a nearby hospital, a venue at a hospital, a place name, or a processed palm product rather than establishing the opportunity sector.",
+      "why_missed": "The title token is present, but the current offer purpose and structured evidence do not confirm that sector. Human context review is required."
+    },
+    {
+      "pattern_key": "sector:agriculture:تمور",
+      "count": 1,
+      "sample_master_ids": [
+        54
+      ],
+      "sample_titles": [
+        "تاجير مؤقت لموقع من نوع أخرى بحي  حي مدينة التمور فحص دوري للمركبات"
+      ],
+      "likely_sector_id": "sector:agriculture",
+      "confidence": "LOW",
+      "resolution_status": "CONTEXTUAL_OR_WEAK_MENTION; not counted as title-resolvable",
+      "conflicts": "The phrase describes a nearby hospital, a venue at a hospital, a place name, or a processed palm product rather than establishing the opportunity sector.",
+      "why_missed": "The title token is present, but the current offer purpose and structured evidence do not confirm that sector. Human context review is required."
+    },
+    {
+      "pattern_key": "sector:agriculture:نخيل",
+      "count": 1,
+      "sample_master_ids": [
+        78
+      ],
+      "sample_titles": [
+        "منشأة تحويلية للمنتجات الثانوية للنخيل بمحافظة الأحساء بالمنطقة الشرقية"
+      ],
+      "likely_sector_id": "sector:agriculture",
+      "confidence": "LOW",
+      "resolution_status": "CONTEXTUAL_OR_WEAK_MENTION; not counted as title-resolvable",
+      "conflicts": "The phrase describes a nearby hospital, a venue at a hospital, a place name, or a processed palm product rather than establishing the opportunity sector.",
+      "why_missed": "The title token is present, but the current offer purpose and structured evidence do not confirm that sector. Human context review is required."
+    }
+  ]
+}

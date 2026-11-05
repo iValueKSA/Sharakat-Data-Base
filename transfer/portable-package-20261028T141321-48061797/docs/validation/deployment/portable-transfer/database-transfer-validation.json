@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "database_transfer_method": "LOGICAL_BACKUP_RESTORE",
+  "backup_path": null,
+  "backup_sha256": null,
+  "backup_archive_validation": null,
+  "source_snapshot": null,
+  "isolated_restored_snapshot": null,
+  "current_masters_match": null,
+  "source_opportunities_match": null,
+  "reviews_match": null,
+  "review_history_preserved": null,
+  "audit_history_preserved": null,
+  "merge_lineage_preserved": null
+}

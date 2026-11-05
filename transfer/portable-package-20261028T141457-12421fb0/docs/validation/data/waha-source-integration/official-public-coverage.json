@@ -1,0 +1,144 @@
+{
+  "captured_at_utc": "2026-10-26T10:59:47.8660023+03:00",
+  "official_base_url": "https://waha.sa/",
+  "pages": [
+    {
+      "http_status": 200,
+      "url": "https://waha.sa/invest.html",
+      "finding": "Generic investment themes and investor registration/deal-flow path."
+    },
+    {
+      "http_status": 200,
+      "url": "https://waha.sa/opportunities.html",
+      "finding": "Current opportunities page displays No Opportunities Available; no active itemized offers."
+    },
+    {
+      "http_status": 200,
+      "url": "https://waha.sa/map.html",
+      "finding": "Visible page says Coming Soon; its public location API is directly referenced by page JavaScript."
+    },
+    {
+      "http_status": 200,
+      "url": "https://waha.sa/projects.html",
+      "finding": "Project portfolio page loads a public paginated PHP API; case-study portfolio, not offers."
+    }
+  ],
+  "public_api": {
+    "computed_status_available_count": 58,
+    "features": 58,
+    "records_with_opportunity_id": 0,
+    "interpretation": "Location inventory only: no offer/terms/detail links/opportunity IDs. Raw source status includes invested locations while computed status says available for all 58, so do not infer active opportunity status.",
+    "location_type_counts": {
+      "project": 9,
+      "land_parcel": 49
+    },
+    "url": "https://waha.sa/api/locations.php?action=geojson_map",
+    "records_with_detail_url": 0,
+    "records_with_title": 58,
+    "http_status": 200,
+    "sha256": "0f1b76aed55b805d059d1e4fd895702e48636f6b17aa607de914bc1ac5ea89c9",
+    "records_with_coordinates": 58,
+    "records_with_area": 58,
+    "content_type": "application/json",
+    "source_status_counts": {
+      "vacant": 48,
+      "invested": 9,
+      "blank": 1
+    }
+  },
+  "public_project_api": {
+    "unique_project_ids": [
+      "10",
+      "11",
+      "12",
+      "13",
+      "2",
+      "9"
+    ],
+    "sections": [
+      {
+        "section": "featured",
+        "count": 5,
+        "reported_total": 5,
+        "pages": 1,
+        "has_more": false,
+        "opportunity_id_count": 0
+      },
+      {
+        "section": "upcoming",
+        "count": 0,
+        "reported_total": 0,
+        "pages": 0,
+        "has_more": false,
+        "opportunity_id_count": 0
+      },
+      {
+        "section": "under_development",
+        "count": 6,
+        "reported_total": 6,
+        "pages": 1,
+        "has_more": false,
+        "opportunity_id_count": 0
+      },
+      {
+        "section": "completed",
+        "count": 0,
+        "reported_total": 0,
+        "pages": 0,
+        "has_more": false,
+        "opportunity_id_count": 0
+      }
+    ],
+    "base_url": "https://waha.sa/api/projects.php?action=public_list",
+    "interpretation": "Project portfolio/case-study records, not opportunities. There are six unique API records; one explicitly labelled Test Project is excluded from the five real named projects. All opportunity_id values are null.",
+    "records_with_opportunity_id": 0,
+    "unique_project_count": 6,
+    "unique_project_api_record_count": 6,
+    "probable_test_fixture_count": 1,
+    "actual_public_named_project_count": 5,
+    "named_project_records": [
+      {
+        "name_en": "Petroway",
+        "id": "9",
+        "name_ar": "بتروواي"
+      },
+      {
+        "name_en": "Circle K",
+        "id": "10",
+        "name_ar": "سيركل كي"
+      },
+      {
+        "name_en": "APSCO",
+        "id": "11",
+        "name_ar": "أبسكو"
+      },
+      {
+        "name_en": "Petro Al Mohit",
+        "id": "12",
+        "name_ar": "بترو المحيط"
+      },
+      {
+        "name_en": "Fuel Way",
+        "id": "13",
+        "name_ar": "فيول واي"
+      }
+    ],
+    "excluded_test_fixture": {
+      "name_en": "Test Project",
+      "id": "2",
+      "name_ar": "مشروع تجريبي"
+    }
+  },
+  "legacy_static_geojson": {
+    "features": 84,
+    "url": "https://waha.sa/assets/data/Waha_clean.json",
+    "interpretation": "Legacy map asset conflicts with the public API population of 58 and is not used as current location count."
+  },
+  "classification": {
+    "public_projects": 5,
+    "public_itemized_opportunities": 0,
+    "public_investment_locations": 58,
+    "public_coverage_type": "PUBLIC_INVESTMENT_LOCATIONS_AND_PROJECT_PORTFOLIO; NO_PUBLIC_ITEMIZED_OPPORTUNITIES",
+    "capture_mode": "Audited location snapshot only; no SourceOpportunity/Master imports."
+  }
+}

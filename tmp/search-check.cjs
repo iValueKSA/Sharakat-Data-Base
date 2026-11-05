@@ -1,0 +1,1 @@
+(async()=>{for(const q of ['44826']){const r=await fetch('http://localhost:8080/api/opportunities?q='+q+'&limit=500');const j=await r.json();console.log(q,j.total,j.items.slice(0,4).map(x=>({id:x.id,ref:x.reference,title:x.title.slice(0,60)})))}})()

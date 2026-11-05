@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "status": "NOT_RUN",
+  "project_path_is_different": null,
+  "isolated_compose_project": null,
+  "restore": null,
+  "application_routes": {},
+  "hero_media": null,
+  "mwan_tls": null,
+  "source_sync_started": false,
+  "note": "This record is replaced with measured results after the isolated transfer simulation."
+}

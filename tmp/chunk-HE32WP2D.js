@@ -1,0 +1,2 @@
+import{a as i}from"./chunk-5VTE5X2J.js";import{aa as r,ya as s}from"./chunk-ITNMMGU5.js";var a=class e extends i{getInbox(t){let n=this.buildParams(t);return this.get("workflow/inbox",n)}getInboxCount(){return this.get("workflow/inbox/count")}getTaskHeader(t){return this.get(`workflow/tasks/${t}`)}getTaskPreview(t){return this.get(`workflow/tasks/${t}/submission-preview`)}static \u0275fac=(()=>{let t;return function(o){return(t||(t=s(e)))(o||e)}})();static \u0275prov=r({token:e,factory:e.\u0275fac,providedIn:"root"})};export{a};
+

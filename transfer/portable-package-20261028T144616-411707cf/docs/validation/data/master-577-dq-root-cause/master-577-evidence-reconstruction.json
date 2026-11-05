@@ -1,0 +1,92 @@
+{
+  "master_id": 577,
+  "current_sector": "تجاري",
+  "engine_version": "ahda-sector-controlled-relaxation-1.0.0 at classification time",
+  "classification_rule": "MED_TITLE_CAFE_CONCESSION",
+  "classifier_outcome": "MEDIUM_CONFIDENCE; one supported sector; no competing sector",
+  "signals": [
+    {
+      "used_by_classifier": true,
+      "rule_key": "MED_TITLE_CAFE_CONCESSION",
+      "weight": 4.0,
+      "raw_value": "مزايدة تأجير موقع مقهى مستشفى العمران العام بالأحساء مزايدة تأجير موقع مقهى مستشفى العمران العام بالأحساء - الأنشطة التجارية - منشآت تقديم الغذاء - مقهى",
+      "independent_signal": true,
+      "normalized_value": "مزايدة تاجير موقع مقهى مستشفى العمران العام بالاحساء مزايدة تاجير موقع مقهى مستشفى العمران العام بالاحساء الانشطة التجارية منشات تقديم الغذاء مقهى",
+      "field": "title_ar",
+      "proposed_sector": "تجاري"
+    },
+    {
+      "proposed_sector": "تجاري (semantic corroboration only)",
+      "normalized_value": "الانشطة التجارية",
+      "weight": 0.0,
+      "raw_value": "الأنشطة التجارية",
+      "rule_key": null,
+      "reason": "No exact STRUCTURED_RULES match for this value.",
+      "independent_signal": false,
+      "used_by_classifier": false,
+      "field": "activity"
+    },
+    {
+      "proposed_sector": "تجاري (semantic corroboration only)",
+      "normalized_value": "منشات تقديم الغذاء",
+      "weight": 0.0,
+      "raw_value": "منشآت تقديم الغذاء",
+      "rule_key": null,
+      "reason": "No exact STRUCTURED_RULES match for this value.",
+      "independent_signal": false,
+      "used_by_classifier": false,
+      "field": "sub_activity"
+    },
+    {
+      "used_by_classifier": false,
+      "rule_key": null,
+      "weight": 0.0,
+      "raw_value": null,
+      "independent_signal": false,
+      "normalized_value": null,
+      "field": "asset_facility_type",
+      "proposed_sector": null
+    },
+    {
+      "used_by_classifier": false,
+      "rule_key": null,
+      "weight": 0.0,
+      "raw_value": null,
+      "independent_signal": false,
+      "normalized_value": null,
+      "field": "source_sector",
+      "proposed_sector": null
+    },
+    {
+      "proposed_sector": "commercial phrase duplicates title",
+      "normalized_value": "same normalized text as title",
+      "weight": 0.0,
+      "raw_value": "مزايدة تأجير موقع مقهى مستشفى العمران العام بالأحساء مزايدة تأجير موقع مقهى مستشفى العمران العام بالأحساء - الأنشطة التجارية - منشآت تقديم الغذاء - مقهى",
+      "rule_key": null,
+      "reason": "Deduplicated against title by _dedup_text_fields.",
+      "independent_signal": false,
+      "used_by_classifier": false,
+      "field": "description"
+    },
+    {
+      "proposed_sector": "Healthcare candidate token suppressed",
+      "normalized_value": "مستشفى",
+      "weight": 0.0,
+      "raw_value": "مستشفى",
+      "rule_key": null,
+      "reason": "Classifier explicitly suppresses hospital as a destination phrase in \"مقهى مستشفى\".",
+      "independent_signal": false,
+      "used_by_classifier": false,
+      "field": "other"
+    }
+  ],
+  "reconstructed_scores": {
+    "basis": "Single scored title signal; the classifier only auto-applies a medium decision with one supported sector. No synthetic margin was written.",
+    "top_sector_id": "sector:commercial",
+    "second_sector_id": null,
+    "confidence_margin_applicability": "NOT_APPLICABLE",
+    "confidence_margin": null,
+    "second_score": null,
+    "top_score": 4.0
+  }
+}

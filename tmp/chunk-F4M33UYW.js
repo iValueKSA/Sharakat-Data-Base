@@ -1,0 +1,2 @@
+import{a as o}from"./chunk-5VTE5X2J.js";import{b as s}from"./chunk-KSSR4VSH.js";import{aa as i,ya as a}from"./chunk-ITNMMGU5.js";var g=class n extends o{getPublished(t){let r=new s;return t&&(r=r.set("category",t)),this.get("faqs",r)}getByProject(t,r){let e=new s().set("projectId",t);return r&&(e=e.set("category",r)),this.get("faqs",e)}static \u0275fac=(()=>{let t;return function(e){return(t||(t=a(n)))(e||n)}})();static \u0275prov=i({token:n,factory:n.\u0275fac,providedIn:"root"})};export{g as a};
+

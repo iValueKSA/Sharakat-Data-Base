@@ -1,0 +1,31 @@
+{
+  "pre_deploy_utc": "2026-10-19T10:13:50.515439Z",
+  "post_deploy_utc": "2026-10-19T10:19:13.764588Z",
+  "counts_unchanged": true,
+  "count_comparisons": {
+    "masters_with_coordinates": true,
+    "pending_location_reviews": true,
+    "masters_total": true,
+    "opportunity_location_rows": true,
+    "masters_merged": true,
+    "source_opportunities": true,
+    "change_history": true,
+    "masters_eligible_nonmerged": true,
+    "coordinates_partial": true,
+    "coordinates_invalid_wgs84": true,
+    "source_observations": true,
+    "coordinates_missing_both": true
+  },
+  "fingerprints_unchanged": true,
+  "fingerprint_comparisons": {
+    "master_identities_sha256": true,
+    "master_source_links_sha256": true,
+    "raw_source_payloads_sha256": true,
+    "raw_observation_payloads_sha256": true
+  },
+  "business_data_changes": 0,
+  "master_identities_preserved": true,
+  "source_links_preserved": true,
+  "raw_provenance_preserved": true,
+  "manual_source_sync_started": false
+}

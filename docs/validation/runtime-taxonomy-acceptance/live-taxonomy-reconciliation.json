@@ -1,0 +1,30 @@
+{
+  "validated_at_utc": "2026-10-19T08:42:47.192458+00:00",
+  "eligible_masters": 291,
+  "investment_models": {
+    "investment_model:lease": {"label": "التأجير", "filter": 4, "list": 4, "dashboard": 4, "csv": 4, "xlsx": 4},
+    "investment_model:eomt": {"label": "التجهيز والتشغيل والصيانة والنقل", "filter": 1, "list": 1, "dashboard": 1, "csv": 1, "xlsx": 1},
+    "investment_model:missing": {"label": "غير محدد", "filter": 286, "list": 286, "dashboard": 286, "csv": 286, "xlsx": 286}
+  },
+  "opportunity_types": {
+    "opportunity_type:temporary_rental": {"label": "تأجير مؤقت", "list": 129, "csv": 129, "xlsx": 129},
+    "opportunity_type:missing": {"label": "غير محدد", "list": 162, "csv": 162, "xlsx": 162}
+  },
+  "sub_activity_general_trade": {"id": "sub_activity:general_trade", "list": 8, "csv": 8, "xlsx": 8},
+  "asset_facility_type": {
+    "assignments": 131,
+    "unique_masters": 129,
+    "unspecified_masters": 162,
+    "option_counts_match_api_csv_xlsx": true,
+    "dashboard_visual_justified": false,
+    "multi_value_delimiter": " | ",
+    "unfiltered_rows": 291,
+    "unfiltered_unique_master_ids": 291,
+    "multi_type_masters": [
+      {"id": 121, "reference": "02-25-017001-73002", "types": ["الساحات الميادين", "الطرق والارصفة"]},
+      {"id": 55, "reference": "02-25-017001-73001", "types": ["الساحات الميادين", "الطرق والارصفة"]}
+    ]
+  },
+  "business_data_changes_caused_by_runtime_refresh": 0,
+  "raw_provenance_preserved": true
+}

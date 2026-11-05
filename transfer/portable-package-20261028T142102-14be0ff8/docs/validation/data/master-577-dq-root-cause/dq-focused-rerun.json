@@ -1,0 +1,43 @@
+{
+  "captured_at": "2026-10-22T07:05:06.889630Z",
+  "scope": "fast",
+  "trigger": "master577-focused-closeout-final",
+  "read_only": true,
+  "persist": false,
+  "total_dq_gates": 37,
+  "pass": 37,
+  "warning": 0,
+  "fail": 0,
+  "contradiction_gate": "PASS",
+  "contradiction_gate_observed": 0,
+  "contradiction_gate_expected": 0,
+  "provenance_gate": "PASS",
+  "provenance_gate_observed": 0,
+  "provenance_gate_expected": 0,
+  "all_failing_gates": [],
+  "unrelated_dq_failures_modified": 0,
+  "protected_counts_before": {
+    "opportunities": 547,
+    "system_events": 547,
+    "opportunity_merge_audit": 21,
+    "source_opportunities": 3138,
+    "source_observations": 16298
+  },
+  "protected_counts_after": {
+    "opportunities": 547,
+    "system_events": 547,
+    "opportunity_merge_audit": 21,
+    "source_opportunities": 3138,
+    "source_observations": 16298
+  },
+  "protected_counts_unchanged": true,
+  "prior_stored_automatic_run": {
+    "captured_at": "2026-10-22T06:49:32.751388Z",
+    "note": "Parity failure was absent in this focused rerun after worker startup published engine v21. No unrelated DQ logic or data was edited.",
+    "initial_failures": [
+      "P2_MEDIUM_INFERENCE_WITH_STRONG_CONTRADICTION",
+      "API_WORKER_STANDARDIZATION_PARITY"
+    ],
+    "job_id": 422
+  }
+}

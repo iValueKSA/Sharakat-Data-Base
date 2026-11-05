@@ -1,0 +1,200 @@
+{
+  "validated_at_utc": "2026-10-19T09:59:26.317Z",
+  "rtl": true,
+  "western_digits": true,
+  "location_option": {
+    "id": "al_ahsa_governorate",
+    "label": "الأحساء"
+  },
+  "opportunities_filter_count": "عرض 1–50 من 283 فرصة",
+  "filter_toolbar_controls": [
+    {
+      "id": "LABEL",
+      "left": 1390,
+      "right": 1565,
+      "width": 175
+    },
+    {
+      "id": "sectorFilter",
+      "left": 1259,
+      "right": 1382,
+      "width": 123
+    },
+    {
+      "id": "activityFilter",
+      "left": 1128,
+      "right": 1251,
+      "width": 123
+    },
+    {
+      "id": "subActivityFilter",
+      "left": 997,
+      "right": 1120,
+      "width": 123
+    },
+    {
+      "id": "subsectorFilter",
+      "left": 866,
+      "right": 989,
+      "width": 123
+    },
+    {
+      "id": "statusFilter",
+      "left": 735,
+      "right": 858,
+      "width": 123
+    },
+    {
+      "id": "lifecycleFilter",
+      "left": 604,
+      "right": 727,
+      "width": 123
+    },
+    {
+      "id": "ownerFilter",
+      "left": 473,
+      "right": 596,
+      "width": 123
+    },
+    {
+      "id": "sourceFilter",
+      "left": 342,
+      "right": 465,
+      "width": 123
+    },
+    {
+      "id": "locationFilter",
+      "left": 211,
+      "right": 334,
+      "width": 123
+    },
+    {
+      "id": "typeFilter",
+      "left": 91,
+      "right": 203,
+      "width": 112
+    },
+    {
+      "id": "investmentModelFilter",
+      "left": 1390,
+      "right": 1565,
+      "width": 175
+    },
+    {
+      "id": "assetFacilityTypeFilter",
+      "left": 1259,
+      "right": 1382,
+      "width": 123
+    },
+    {
+      "id": "resetFilters",
+      "left": 1128,
+      "right": 1251,
+      "width": 123
+    }
+  ],
+  "search_44826_rows": 1,
+  "details": {
+    "has_geography_status": true,
+    "has_raw_source_location": true,
+    "has_evidence": true,
+    "searched_reference": "44826",
+    "result_count": 1
+  },
+  "pagination": {
+    "summary": "صفحة 2 من 6",
+    "count": "عرض 51–100 من 283 فرصة"
+  },
+  "reset_count": "عرض 1–50 من 291 فرصة",
+  "map": {
+    "stats": "ضمن النتائج\n291\nنقاط موثقة\n176\nبدون إحداثيات\n114\nخارج الحد المحلي\n1\nغير مثبتة بالمصدر\n0\nغير ممثلة\n115",
+    "list_transition": {
+      "ids": "205",
+      "url": "http://localhost:8080/?view=opportunities&map_ids=205",
+      "count": "عرض 1–1 من 1 فرصة"
+    }
+  },
+  "exports": {
+    "csv": {
+      "status": 200,
+      "content_type": "text/csv; charset=utf-8",
+      "records": 283,
+      "href": "/api/export.csv?location=al_ahsa_governorate"
+    },
+    "xlsx": {
+      "status": 200,
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "bytes": 226016,
+      "data_rows": 283,
+      "href": "/api/export.xlsx?location=al_ahsa_governorate"
+    }
+  },
+  "responsive": [
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "document_scroll_width": 1920,
+      "toolbar_scroll_width": 1506,
+      "toolbar_client_width": 1506,
+      "controls": 14,
+      "controls_outside": [],
+      "direction": "rtl"
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "document_scroll_width": 1440,
+      "toolbar_scroll_width": 1088,
+      "toolbar_client_width": 1088,
+      "controls": 14,
+      "controls_outside": [],
+      "direction": "rtl"
+    },
+    {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "document_scroll_width": 1366,
+      "toolbar_scroll_width": 1018,
+      "toolbar_client_width": 1018,
+      "controls": 14,
+      "controls_outside": [],
+      "direction": "rtl"
+    },
+    {
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "document_scroll_width": 768,
+      "toolbar_scroll_width": 716,
+      "toolbar_client_width": 716,
+      "controls": 14,
+      "controls_outside": [],
+      "direction": "rtl"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "document_scroll_width": 390,
+      "toolbar_scroll_width": 338,
+      "toolbar_client_width": 338,
+      "controls": 14,
+      "controls_outside": [],
+      "direction": "rtl"
+    }
+  ],
+  "failures": [],
+  "review_screen": {
+    "exposed_to_current_role": false,
+    "required_role": "admin,analyst",
+    "queue_reviewed_read_only": true
+  }
+}

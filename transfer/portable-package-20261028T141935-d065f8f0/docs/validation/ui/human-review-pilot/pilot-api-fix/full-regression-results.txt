@@ -1,0 +1,4 @@
+Pilot summary API contract — full isolated regression
+Command: docker run --rm --network none --mount workspace:readonly --workdir /workspace --entrypoint sh alahsa-local-api:duplicate-review-quality -c 'PYTHONPATH=/workspace DATABASE_URL=sqlite:////tmp/pilot-full-regression-final.db REDIS_URL= ENVIRONMENT=development python -m pytest -q -p no:cacheprovider tests/'
+Result: 501 passed / 0 failed (33 existing dependency deprecation warnings)
+Database: disposable SQLite; live PostgreSQL and Redis were not used by tests.

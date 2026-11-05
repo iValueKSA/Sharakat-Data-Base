@@ -1,0 +1,26 @@
+{
+  "captured_at": "2026-10-21T12:30:27.504828+00:00",
+  "database_active_jobs": [],
+  "db_running_without_live_task": [],
+  "live_sync_tasks_without_db_job": [],
+  "duplicate_running_jobs_by_source": {},
+  "celery": {
+    "status": "AVAILABLE",
+    "views": {
+      "active": {
+        "celery@924fa244e8c7": 0
+      },
+      "reserved": {
+        "celery@924fa244e8c7": 0
+      },
+      "scheduled": {
+        "celery@924fa244e8c7": 0
+      }
+    },
+    "tasks": [],
+    "task_ids": [],
+    "source_keys": []
+  },
+  "redis_source_sync_queue_depth": 0,
+  "all_reconciliations_clear": true
+}

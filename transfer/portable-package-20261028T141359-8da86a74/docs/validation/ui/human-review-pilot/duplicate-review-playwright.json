@@ -1,0 +1,342 @@
+{
+  "status": "PASSED",
+  "cases": [
+    {
+      "review_id": 32,
+      "expected_case": "same-source ambiguous",
+      "source_relation": "same-source",
+      "status": "OPEN"
+    },
+    {
+      "review_id": 46,
+      "expected_case": "cross-source ambiguous",
+      "source_relation": "cross-source",
+      "status": "OPEN"
+    },
+    {
+      "review_id": 34,
+      "expected_case": "frozen pilot duplicate",
+      "source_relation": "same-source",
+      "status": "OPEN"
+    }
+  ],
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "difference_panel_visible": true,
+      "meaningful_difference_count": 2,
+      "human_reason_visible": true,
+      "matches_expander_visible": true,
+      "matching_fields_expanded": true,
+      "matching_field_count": 21,
+      "action_labels": [
+        "ليستا نفس الفرصة",
+        "نفس الفرصة — دمج",
+        "غير محسوم / إبقاء للمراجعة"
+      ],
+      "review_id": 32,
+      "expected_case": "same-source ambiguous",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "difference_panel_visible": true,
+      "meaningful_difference_count": 2,
+      "human_reason_visible": true,
+      "matches_expander_visible": true,
+      "matching_fields_expanded": true,
+      "matching_field_count": 21,
+      "action_labels": [
+        "ليستا نفس الفرصة",
+        "نفس الفرصة — دمج",
+        "غير محسوم / إبقاء للمراجعة"
+      ],
+      "review_id": 32,
+      "expected_case": "same-source ambiguous",
+      "passed": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "difference_panel_visible": true,
+      "meaningful_difference_count": 2,
+      "human_reason_visible": true,
+      "matches_expander_visible": true,
+      "matching_fields_expanded": true,
+      "matching_field_count": 21,
+      "action_labels": [
+        "ليستا نفس الفرصة",
+        "نفس الفرصة — دمج",
+        "غير محسوم / إبقاء للمراجعة"
+      ],
+      "review_id": 32,
+      "expected_case": "same-source ambiguous",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "difference_panel_visible": true,
+      "meaningful_difference_count": 2,
+      "human_reason_visible": true,
+      "matches_expander_visible": true,
+      "matching_fields_expanded": true,
+      "matching_field_count": 21,
+      "action_labels": [
+        "ليستا نفس الفرصة",
+        "نفس الفرصة — دمج",
+        "غير محسوم / إبقاء للمراجعة"
+      ],
+      "review_id": 32,
+      "expected_case": "same-source ambiguous",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "difference_panel_visible": true,
+      "meaningful_difference_count": 2,
+      "human_reason_visible": true,
+      "matches_expander_visible": true,
+      "matching_fields_expanded": true,
+      "matching_field_count": 21,
+      "action_labels": [
+        "ليستا نفس الفرصة",
+        "نفس الفرصة — دمج",
+        "غير محسوم / إبقاء للمراجعة"
+      ],
+      "review_id": 32,
+      "expected_case": "same-source ambiguous",
+      "passed": true
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "difference_panel_visible": true,
+      "meaningful_difference_count": 30,
+      "human_reason_visible": true,
+      "matches_expander_visible": true,
+      "matching_fields_expanded": true,
+      "matching_field_count": 1,
+      "action_labels": [
+        "ليستا نفس الفرصة",
+        "نفس الفرصة — دمج",
+        "غير محسوم / إبقاء للمراجعة"
+      ],
+      "review_id": 46,
+      "expected_case": "cross-source ambiguous",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "difference_panel_visible": true,
+      "meaningful_difference_count": 30,
+      "human_reason_visible": true,
+      "matches_expander_visible": true,
+      "matching_fields_expanded": true,
+      "matching_field_count": 1,
+      "action_labels": [
+        "ليستا نفس الفرصة",
+        "نفس الفرصة — دمج",
+        "غير محسوم / إبقاء للمراجعة"
+      ],
+      "review_id": 46,
+      "expected_case": "cross-source ambiguous",
+      "passed": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "difference_panel_visible": true,
+      "meaningful_difference_count": 30,
+      "human_reason_visible": true,
+      "matches_expander_visible": true,
+      "matching_fields_expanded": true,
+      "matching_field_count": 1,
+      "action_labels": [
+        "ليستا نفس الفرصة",
+        "نفس الفرصة — دمج",
+        "غير محسوم / إبقاء للمراجعة"
+      ],
+      "review_id": 46,
+      "expected_case": "cross-source ambiguous",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "difference_panel_visible": true,
+      "meaningful_difference_count": 30,
+      "human_reason_visible": true,
+      "matches_expander_visible": true,
+      "matching_fields_expanded": true,
+      "matching_field_count": 1,
+      "action_labels": [
+        "ليستا نفس الفرصة",
+        "نفس الفرصة — دمج",
+        "غير محسوم / إبقاء للمراجعة"
+      ],
+      "review_id": 46,
+      "expected_case": "cross-source ambiguous",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "difference_panel_visible": true,
+      "meaningful_difference_count": 30,
+      "human_reason_visible": true,
+      "matches_expander_visible": true,
+      "matching_fields_expanded": true,
+      "matching_field_count": 1,
+      "action_labels": [
+        "ليستا نفس الفرصة",
+        "نفس الفرصة — دمج",
+        "غير محسوم / إبقاء للمراجعة"
+      ],
+      "review_id": 46,
+      "expected_case": "cross-source ambiguous",
+      "passed": true
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "difference_panel_visible": true,
+      "meaningful_difference_count": 2,
+      "human_reason_visible": true,
+      "matches_expander_visible": true,
+      "matching_fields_expanded": true,
+      "matching_field_count": 21,
+      "action_labels": [
+        "ليستا نفس الفرصة",
+        "نفس الفرصة — دمج",
+        "غير محسوم / إبقاء للمراجعة"
+      ],
+      "review_id": 34,
+      "expected_case": "frozen pilot duplicate",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "difference_panel_visible": true,
+      "meaningful_difference_count": 2,
+      "human_reason_visible": true,
+      "matches_expander_visible": true,
+      "matching_fields_expanded": true,
+      "matching_field_count": 21,
+      "action_labels": [
+        "ليستا نفس الفرصة",
+        "نفس الفرصة — دمج",
+        "غير محسوم / إبقاء للمراجعة"
+      ],
+      "review_id": 34,
+      "expected_case": "frozen pilot duplicate",
+      "passed": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "difference_panel_visible": true,
+      "meaningful_difference_count": 2,
+      "human_reason_visible": true,
+      "matches_expander_visible": true,
+      "matching_fields_expanded": true,
+      "matching_field_count": 21,
+      "action_labels": [
+        "ليستا نفس الفرصة",
+        "نفس الفرصة — دمج",
+        "غير محسوم / إبقاء للمراجعة"
+      ],
+      "review_id": 34,
+      "expected_case": "frozen pilot duplicate",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "difference_panel_visible": true,
+      "meaningful_difference_count": 2,
+      "human_reason_visible": true,
+      "matches_expander_visible": true,
+      "matching_fields_expanded": true,
+      "matching_field_count": 21,
+      "action_labels": [
+        "ليستا نفس الفرصة",
+        "نفس الفرصة — دمج",
+        "غير محسوم / إبقاء للمراجعة"
+      ],
+      "review_id": 34,
+      "expected_case": "frozen pilot duplicate",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "rtl": true,
+      "horizontal_overflow": false,
+      "difference_panel_visible": true,
+      "meaningful_difference_count": 2,
+      "human_reason_visible": true,
+      "matches_expander_visible": true,
+      "matching_fields_expanded": true,
+      "matching_field_count": 21,
+      "action_labels": [
+        "ليستا نفس الفرصة",
+        "نفس الفرصة — دمج",
+        "غير محسوم / إبقاء للمراجعة"
+      ],
+      "review_id": 34,
+      "expected_case": "frozen pilot duplicate",
+      "passed": true
+    }
+  ],
+  "javascript_errors": [],
+  "api_write_requests_blocked": [
+    {
+      "method": "POST",
+      "url": "http://localhost:8080/api/admin/review-workbench/duplicate/32/recommendation-shown?version_token=669c584ec75d09783e6ead9ceab3992b1012248f3929db145ad462e0b4bf5966"
+    },
+    {
+      "method": "POST",
+      "url": "http://localhost:8080/api/admin/review-workbench/duplicate/46/recommendation-shown?version_token=0024f9d71248da58aff31d2efe3ee32753efcc51c09a527ee38115adba019341"
+    },
+    {
+      "method": "POST",
+      "url": "http://localhost:8080/api/admin/review-workbench/duplicate/34/recommendation-shown?version_token=d1e8827e29610bec3b9546b44da0f6c848a40a8fe9f68cf74b662493abe0b8a1"
+    }
+  ],
+  "unexpected_api_write_requests": [],
+  "decisions_submitted": 0
+}

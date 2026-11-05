@@ -1,0 +1,13 @@
+{
+  "lock_key_format": "source-sync:{source_id}",
+  "reservation_key_format": "source-sync-enqueued:{source_id}",
+  "owner": "random per-task token; Redis release uses compare-and-delete Lua",
+  "ttl_seconds": 2400,
+  "renewal": "Not needed within task hard limit; TTL exceeds hard limit by 600 seconds.",
+  "acquisition": "SET NX EX",
+  "per_source": true,
+  "locks": [],
+  "orphaned_lock_count": 0,
+  "owner_validated_on_release": true,
+  "all_enabled_sources_source_specific": true
+}

@@ -1,0 +1,183 @@
+{
+  "captured_at": "2026-10-21T12:30:42.637240+00:00",
+  "scope": "full",
+  "gates_evaluated": 65,
+  "counts": {
+    "pass": 61,
+    "warning": 4,
+    "fail": 0
+  },
+  "sync_gates": [
+    {
+      "gate_key": "PARTIAL_SCAN_REMOVAL_SAFETY",
+      "domain": "PARTIAL_SCAN_SAFETY",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "SYNC_JOB_STATE_CONSISTENCY",
+      "domain": "SYNC_JOB_LIFECYCLE",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "Status, job_state, and finished_at must agree with the recorded lifecycle.",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "STALE_RUNNING_SYNC_JOBS",
+      "domain": "SYNC_JOB_LIVENESS",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "Source-specific stale thresholds use three times p95 and twice the observed maximum after at least eight successful runs, with hard-limit and sparse-history floors.",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "STALE_RETRYING_SYNC_JOBS",
+      "domain": "SYNC_JOB_LIVENESS",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "A retrying job without a recent attempt beyond its source-specific stale threshold requires reconciliation.",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "MULTIPLE_RUNNING_JOBS_SAME_SOURCE",
+      "domain": "SYNC_JOB_CONCURRENCY",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "Source-specific reservation and lock controls permit at most one running job per source.",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "DB_RUNNING_WITHOUT_LIVE_TASK",
+      "domain": "SYNC_JOB_RECONCILIATION",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "A DB RUNNING job must map to a live Celery task or source lock; broker/Redis inspection failures are warnings.",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "ORPHANED_SYNC_LOCKS",
+      "domain": "SYNC_JOB_LOCKING",
+      "severity": "FAIL",
+      "cadence": "fast",
+      "status": "PASS",
+      "message": "A source lock without a live source task or queued/running job is orphaned.",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "ENABLED_SOURCE_WITH_UNEXPLAINED_NO_SCHEDULE",
+      "domain": "SYNC_SCHEDULER",
+      "severity": "FAIL",
+      "cadence": "full",
+      "status": "PASS",
+      "message": "Enabled sources with an implemented adapter are covered by the one-minute due-source dispatcher.",
+      "observed": 0,
+      "expected": 0,
+      "sample_ids": []
+    },
+    {
+      "gate_key": "SOURCE_LAST_SUCCESS_TOO_OLD",
+      "domain": "SOURCE_FRESHNESS",
+      "severity": "WARNING",
+      "cadence": "full",
+      "status": "WARNING",
+      "message": "Freshness aging is a warning so public-source coverage limits remain separate from technical health.",
+      "observed": 4,
+      "expected": 0,
+      "sample_ids": [
+        6,
+        7,
+        8,
+        10
+      ]
+    },
+    {
+      "gate_key": "SYNC_RUNTIME_ANOMALY",
+      "domain": "SYNC_RUNTIME",
+      "severity": "WARNING",
+      "cadence": "full",
+      "status": "WARNING",
+      "message": "Completed source runtimes above three times the historical p95 or the hard task limit are surfaced for inspection.",
+      "observed": 1,
+      "expected": 0,
+      "sample_ids": [
+        393
+      ]
+    }
+  ],
+  "live_sync_task_inspection": {
+    "status": "AVAILABLE",
+    "views": {
+      "active": {
+        "celery@924fa244e8c7": 0
+      },
+      "reserved": {
+        "celery@924fa244e8c7": 0
+      },
+      "scheduled": {
+        "celery@924fa244e8c7": 0
+      }
+    },
+    "tasks": [],
+    "task_ids": [],
+    "source_keys": []
+  },
+  "redis_lock_snapshot": {
+    "status": "AVAILABLE",
+    "source_sync_queue_depth": 0,
+    "locks": [],
+    "orphaned_lock_count": 0
+  },
+  "manual_source_sync_started": false,
+  "natural_scheduled_jobs_since_baseline": [
+    {
+      "id": 414,
+      "source_key": "furas",
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "job_state": "COMPLETED",
+      "started_at": "2026-10-21T12:05:05.578265+00:00",
+      "finished_at": "2026-10-21T12:05:18.543372+00:00",
+      "task_id": "4cca3631-ac6d-4c85-98fa-86ed8e3a89a1",
+      "pagination_complete": true,
+      "raw_count": 402,
+      "new_count": 0,
+      "update_count": 0
+    },
+    {
+      "id": 415,
+      "source_key": "alahsa-opportunities",
+      "trigger_type": "scheduled",
+      "status": "SUCCESS",
+      "job_state": "COMPLETED",
+      "started_at": "2026-10-21T12:05:05.592202+00:00",
+      "finished_at": "2026-10-21T12:05:20.282524+00:00",
+      "task_id": "d37415cc-228b-4e0a-a732-9334e7fdc45c",
+      "pagination_complete": true,
+      "raw_count": 84,
+      "new_count": 0,
+      "update_count": 84
+    }
+  ]
+}

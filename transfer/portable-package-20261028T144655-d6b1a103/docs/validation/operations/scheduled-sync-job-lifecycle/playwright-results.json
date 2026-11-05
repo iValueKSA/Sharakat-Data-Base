@@ -1,0 +1,49 @@
+{
+  "verified_at": "2026-10-21T12:19:23.391Z",
+  "browser": "Microsoft Edge via Playwright",
+  "url": "http://localhost:8080/?view=activity",
+  "auth": "Test-only admin identity stub; sync-job row fixture",
+  "checks": {
+    "actual_jobs": {
+      "api_status": "TEST_FIXTURE",
+      "job_count": 1,
+      "fields_present": true,
+      "headers": [
+        "المصدر",
+        "بدأ في",
+        "اكتمل في",
+        "الحالة",
+        "المحاولة",
+        "صفحات",
+        "سجلات خام",
+        "فرص الأحساء",
+        "جديدة",
+        "تغييرات",
+        "تنبيه أو خطأ"
+      ],
+      "first_row_cells": [
+        "جامعة الملك فيصل",
+        "2026/10/13 · 10:39 ص",
+        "2026/10/21 · 3:08 م\nالمدة غير متاحة",
+        "توقف بعد انقطاع العامل",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "Recovered after worker loss; no source scan began."
+      ],
+      "direction": "rtl",
+      "viewport_width": 1920,
+      "document_width": 1920,
+      "body_width": 1920
+    },
+    "rtl": true,
+    "no_document_horizontal_overflow": true,
+    "recovery_indicator_fixture": true,
+    "page_errors": []
+  },
+  "screenshot": "C:\\Sharakat Data Base\\docs\\validation\\operations\\scheduled-sync-job-lifecycle\\admin-job-lifecycle-1920x1080.png",
+  "status": "PASSED"
+}

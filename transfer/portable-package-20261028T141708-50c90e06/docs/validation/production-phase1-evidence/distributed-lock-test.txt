@@ -1,0 +1,10 @@
+Local Redis/Celery source lock evidence
+Captured: 2026-10-13 Asia/Amman
+
+Result: PASS
+
+Two concurrent calls to enqueue_source("kfu") used the real Redis reservation and Celery worker. One returned QUEUED (job 211, task ef57a9b5-83e9-4897-9acd-bc725e815839); the other returned SKIPPED_ALREADY_RUNNING. The accepted sync succeeded with 0 new and 0 updated records. The temporary dispatch barrier was in the API test process only.
+
+A synthetic KFU RUNNING job with an old heartbeat was processed by app.tasks.recover_stale_jobs. The stale row became ABANDONED; its queued retry completed successfully with 0 new and 0 updated records. No other stale jobs were present before the probe.
+
+Worker interruption was separately tested on a temporary queue and task that touched Redis only: killing the task child with SIGKILL caused Celery's late-ack worker to redeliver the same task ID. Attempt 2 completed successfully. The isolated worker container and temporary task module were removed afterward. No source database records were touched by this process-kill probe.

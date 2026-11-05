@@ -1,0 +1,57 @@
+{
+  "captured_at": "2026-10-21T13:10:24.861885+00:00",
+  "sources": [
+    {
+      "source": "modon",
+      "freshness_status": "STALE",
+      "original_warning_valid": true,
+      "classification": "ADAPTER_FAILURE",
+      "technical_health": "WARNING",
+      "coverage_status": "PUBLIC_COVERAGE_LIMITED",
+      "latest_failure": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "age_minutes": 13003.6,
+      "threshold_minutes": 10080,
+      "basis": "public_scope_verification",
+      "reason": "Qualifying successful verification is overdue; latest attempt/failure and coverage are reported separately."
+    },
+    {
+      "source": "ncp",
+      "freshness_status": "AGING",
+      "original_warning_valid": true,
+      "classification": "TRUE_STALE_SOURCE",
+      "technical_health": "WARNING",
+      "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE",
+      "latest_failure": "",
+      "age_minutes": 1822.9,
+      "threshold_minutes": 1440,
+      "basis": "complete_scan",
+      "reason": "Qualifying successful verification is overdue; latest attempt/failure and coverage are reported separately."
+    },
+    {
+      "source": "nhc",
+      "freshness_status": "STALE",
+      "original_warning_valid": true,
+      "classification": "ADAPTER_FAILURE",
+      "technical_health": "WARNING",
+      "coverage_status": "PUBLIC_COVERAGE_LIMITED",
+      "latest_failure": null,
+      "age_minutes": 12994.9,
+      "threshold_minutes": 10080,
+      "basis": "public_scope_verification",
+      "reason": "Qualifying successful verification is overdue; latest attempt/failure and coverage are reported separately."
+    },
+    {
+      "source": "mwan",
+      "freshness_status": "AGING",
+      "original_warning_valid": true,
+      "classification": "ADAPTER_FAILURE",
+      "technical_health": "WARNING",
+      "coverage_status": "COMPLETE_FOR_DEFINED_SCOPE",
+      "latest_failure": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
+      "age_minutes": 13002.7,
+      "threshold_minutes": 2880,
+      "basis": "complete_scan",
+      "reason": "Qualifying successful verification is overdue; latest attempt/failure and coverage are reported separately."
+    }
+  ]
+}

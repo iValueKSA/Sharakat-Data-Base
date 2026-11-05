@@ -1,0 +1,52 @@
+{
+  "baseline_label": "ALAHSA_PLATFORM_BASELINE_2026_10",
+  "baseline_timestamp": "2026-10-26T09:29:29.150924+00:00",
+  "source_control_revision": null,
+  "source_control_note": "No Git repository metadata is available in this checkout; use the deterministic code fingerprint.",
+  "code_fingerprint_sha256": "3c9ea148509d0a8fb86c02c9ed85cc50b0510a7592317883ee50f2f02547a549",
+  "code_fingerprint_files": 127,
+  "application_or_migration_code_changed_during_closeout": false,
+  "alembic_head": [
+    "0023_quant_commercial"
+  ],
+  "database_dialect": "postgresql",
+  "docker_versions": {
+    "docker_engine": "29.8.2",
+    "docker_compose": "5.6.0",
+    "postgres": "16.15",
+    "redis": "Redis server v=7.4.11 sha=00000000:0 malloc=jemalloc-5.3.0 bits=64 build=40ff01a501d8e4b6",
+    "api_image": "alahsa-local-api"
+  },
+  "counts": {
+    "total_masters": 587,
+    "current_masters": 566,
+    "unique_current_master_ids": 566,
+    "merged_masters": 21,
+    "source_opportunities": 3178,
+    "observations": 25298,
+    "reviews_total": 1187,
+    "open_reviews": 0,
+    "sync_jobs": 508,
+    "active_sync_jobs": 0,
+    "configured_sources": 11,
+    "enabled_sources": 10
+  },
+  "dq": {
+    "gates": 121,
+    "pass": 117,
+    "warning": 4,
+    "fail": 0,
+    "reused_run_id": "0c2c6b571df64b14b0d5d59f5d06db1b"
+  },
+  "regression": {
+    "passed": 536,
+    "failed": 0,
+    "suite": "full isolated regression",
+    "completed_before_this_closeout": true
+  },
+  "backup": {
+    "file": "C:\\Sharakat Data Base\\backups\\final-readiness-post-restart\\20261026T091018Z-b62b8c91.dump",
+    "sha256": "e54abaf49d1ccfdd57428e6aa7b5d878123b71f0d151710e5613325053c61739",
+    "restore_test": "PASSED"
+  }
+}

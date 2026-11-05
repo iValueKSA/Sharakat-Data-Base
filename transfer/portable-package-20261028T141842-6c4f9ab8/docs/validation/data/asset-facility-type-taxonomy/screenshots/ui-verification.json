@@ -1,0 +1,27 @@
+{
+  "validated_at": "2026-10-19T08:38:42.148Z",
+  "viewport": {
+    "width": 1920,
+    "scrollWidth": 1920
+  },
+  "direction": "rtl",
+  "options": [
+    "كل أنواع الأصول والمواقع",
+    "أخرى",
+    "الاراضي",
+    "الحدائق",
+    "الساحات الميادين",
+    "الشواطئ والواجهات",
+    "الطرق والارصفة",
+    "العربات المتنقلة",
+    "المباني",
+    "غير محدد"
+  ],
+  "selected_option": "asset_facility_type:building",
+  "list_contains_type": true,
+  "details_contains_type": true,
+  "csv_filter_link": "/api/export.csv?asset_facility_type=asset_facility_type%3Abuilding",
+  "xlsx_filter_link": "/api/export.xlsx?asset_facility_type=asset_facility_type%3Abuilding",
+  "reset_restores_291": true,
+  "screenshot": "asset-facility-type-building.png"
+}

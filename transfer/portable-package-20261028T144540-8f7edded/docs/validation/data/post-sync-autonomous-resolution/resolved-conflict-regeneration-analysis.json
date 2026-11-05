@@ -1,0 +1,388 @@
+{
+  "captured_at": "2026-10-26T08:29:53.5794305Z",
+  "source_jobs": {
+    "505": {
+      "status": "SUCCESS",
+      "source": "alahsa-opportunities"
+    },
+    "506": {
+      "status": "SUCCESS",
+      "source": "furas"
+    }
+  },
+  "review_population_open_before_resolution": 386,
+  "exclusive_classification_counts": {
+    "A_IDENTICAL_CONFLICT_ALREADY_RESOLVED": 381,
+    "B_NEW_OBSERVATION_SAME_VALUE_NO_NEW_EVIDENCE": 0,
+    "C_LEGITIMATE_NEW_SOURCE_VALUE": 0,
+    "D_LEGITIMATE_CHANGED_SOURCE_VALUE": 0,
+    "E_CANONICAL_VALUE_CHANGED_SINCE_PREVIOUS_RESOLUTION": 0,
+    "F_REVIEW_GENERATOR_IDEMPOTENCY_DEFECT": 0,
+    "G_REVIEW_FINGERPRINT_DEFECT": 0,
+    "H_OTHER_EXPLAINED": 5
+  },
+  "diagnostic_idempotency_defects": 381,
+  "diagnostic_review_fingerprint_defects": 0,
+  "job_505": {
+    "created_open_reviews": 7,
+    "identical_prior_resolutions": 2,
+    "newly_detected_phase2_taxonomy_conflicts": 5,
+    "fields": "sector",
+    "trigger": "Four cross-source activity/sub-activity disagreements; one unmapped source classification. Phase 2 exposed pre-existing evidence; no canonical value was changed."
+  },
+  "job_506": {
+    "review_rows_created": 390,
+    "left_open_at_backlog_snapshot": 379,
+    "stale_rows_closed_during_source_projection": 11,
+    "breakdown_open": {
+      "FIELD_VALUE_CONFLICT": 23,
+      "STANDARDIZATION_REVIEW": 336,
+      "TAXONOMY_CONFLICT": 20
+    },
+    "identical_prior_resolutions": 379,
+    "trigger": "The sync walked existing Furas source records and regenerated stored field, guarded standardization, and taxonomy conflicts after prior terminal decisions. Its conflict generator deduplicated only currently OPEN exact rows."
+  },
+  "new_observation_trigger": {
+    "source_observations_before": 25180,
+    "source_observations_after": 25239,
+    "increase": 59,
+    "linked_review_records_with_observation_timestamp_in_job_window": 0,
+    "interpretation": "No linked observation candidate among the 386 review records has first_seen_at or last_seen_at inside its job interval. Review generation reevaluated existing source projections; a new Observation row was not required to regenerate the logical conflict. The 59 observations are retained as job-level context and were not modified."
+  },
+  "five_phase2_cases": [
+    {
+      "review_id": 1150,
+      "master_id": 262,
+      "source_opportunity_id": "540",
+      "trigger_rule": "apply_sector_phase2_after_ingestion:P2_CONFLICTING_SOURCE_TAXONOMY",
+      "evidence": [
+        {
+          "source_record_id": 2863,
+          "source_opportunity_id": "01-26-017001-41007",
+          "source_key": "furas",
+          "source_sector": null,
+          "source_activity": "أنشطة الصيانة والتصليح والتركيب",
+          "source_sub_activity": "أخرى",
+          "standardized_sector": {
+            "raw": null,
+            "normalized": "",
+            "canonical_id": "sector:unspecified",
+            "canonical_label": "غير محدد",
+            "mapping_status": "MISSING",
+            "rule": "preserve_missing"
+          },
+          "standardized_activity": {
+            "raw": "أنشطة الصيانة والتصليح والتركيب",
+            "normalized": "انشطة الصيانة والتصليح والتركيب",
+            "canonical_id": "activity:maintenance_repair_installation",
+            "canonical_label": "أنشطة الصيانة والتصليح والتركيب",
+            "mapping_status": "MAPPED",
+            "rule": "unchanged"
+          },
+          "standardized_sub_activity": {
+            "raw": "أخرى",
+            "normalized": "اخرى",
+            "canonical_id": "sub_activity:other",
+            "canonical_label": "أخرى",
+            "mapping_status": "MAPPED",
+            "rule": "unchanged"
+          }
+        },
+        {
+          "source_record_id": 2875,
+          "source_opportunity_id": "540",
+          "source_key": "alahsa-opportunities",
+          "source_sector": "خدمي",
+          "source_activity": "خدمي",
+          "source_sub_activity": null,
+          "standardized_sector": {
+            "raw": null,
+            "normalized": "",
+            "canonical_id": "sector:unspecified",
+            "canonical_label": "غير محدد",
+            "mapping_status": "MISSING",
+            "rule": "preserve_missing"
+          },
+          "standardized_activity": {
+            "raw": "خدمي",
+            "normalized": "خدمي",
+            "canonical_id": "activity:service",
+            "canonical_label": "خدمي",
+            "mapping_status": "MAPPED",
+            "rule": "unchanged"
+          },
+          "standardized_sub_activity": {
+            "raw": null,
+            "normalized": "",
+            "canonical_id": "sub_activity:missing",
+            "canonical_label": null,
+            "mapping_status": "MISSING",
+            "rule": "preserve_missing"
+          }
+        }
+      ],
+      "resolution": "RESOLVED_KEEP; no canonical change"
+    },
+    {
+      "review_id": 1151,
+      "master_id": 260,
+      "source_opportunity_id": "538",
+      "trigger_rule": "apply_sector_phase2_after_ingestion:P2_CONFLICTING_SOURCE_TAXONOMY",
+      "evidence": [
+        {
+          "source_record_id": 2861,
+          "source_opportunity_id": "01-26-017001-41006",
+          "source_key": "furas",
+          "source_sector": null,
+          "source_activity": "أنشطة الصيانة والتصليح والتركيب",
+          "source_sub_activity": "أخرى",
+          "standardized_sector": {
+            "raw": null,
+            "normalized": "",
+            "canonical_id": "sector:unspecified",
+            "canonical_label": "غير محدد",
+            "mapping_status": "MISSING",
+            "rule": "preserve_missing"
+          },
+          "standardized_activity": {
+            "raw": "أنشطة الصيانة والتصليح والتركيب",
+            "normalized": "انشطة الصيانة والتصليح والتركيب",
+            "canonical_id": "activity:maintenance_repair_installation",
+            "canonical_label": "أنشطة الصيانة والتصليح والتركيب",
+            "mapping_status": "MAPPED",
+            "rule": "unchanged"
+          },
+          "standardized_sub_activity": {
+            "raw": "أخرى",
+            "normalized": "اخرى",
+            "canonical_id": "sub_activity:other",
+            "canonical_label": "أخرى",
+            "mapping_status": "MAPPED",
+            "rule": "unchanged"
+          }
+        },
+        {
+          "source_record_id": 2876,
+          "source_opportunity_id": "538",
+          "source_key": "alahsa-opportunities",
+          "source_sector": "خدمي",
+          "source_activity": "خدمي",
+          "source_sub_activity": null,
+          "standardized_sector": {
+            "raw": null,
+            "normalized": "",
+            "canonical_id": "sector:unspecified",
+            "canonical_label": "غير محدد",
+            "mapping_status": "MISSING",
+            "rule": "preserve_missing"
+          },
+          "standardized_activity": {
+            "raw": "خدمي",
+            "normalized": "خدمي",
+            "canonical_id": "activity:service",
+            "canonical_label": "خدمي",
+            "mapping_status": "MAPPED",
+            "rule": "unchanged"
+          },
+          "standardized_sub_activity": {
+            "raw": null,
+            "normalized": "",
+            "canonical_id": "sub_activity:missing",
+            "canonical_label": null,
+            "mapping_status": "MISSING",
+            "rule": "preserve_missing"
+          }
+        }
+      ],
+      "resolution": "RESOLVED_KEEP; no canonical change"
+    },
+    {
+      "review_id": 1153,
+      "master_id": 235,
+      "source_opportunity_id": "536",
+      "trigger_rule": "apply_sector_phase2_after_ingestion:P2_CONFLICTING_SOURCE_TAXONOMY",
+      "evidence": [
+        {
+          "source_record_id": 2836,
+          "source_opportunity_id": "01-26-017001-26004",
+          "source_key": "furas",
+          "source_sector": null,
+          "source_activity": "الأنشطة التجارية",
+          "source_sub_activity": "أخرى",
+          "standardized_sector": {
+            "raw": null,
+            "normalized": "",
+            "canonical_id": "sector:unspecified",
+            "canonical_label": "غير محدد",
+            "mapping_status": "MISSING",
+            "rule": "preserve_missing"
+          },
+          "standardized_activity": {
+            "raw": "الأنشطة التجارية",
+            "normalized": "الانشطة التجارية",
+            "canonical_id": "activity:commercial_activities",
+            "canonical_label": "الأنشطة التجارية",
+            "mapping_status": "MAPPED",
+            "rule": "unchanged"
+          },
+          "standardized_sub_activity": {
+            "raw": "أخرى",
+            "normalized": "اخرى",
+            "canonical_id": "sub_activity:other",
+            "canonical_label": "أخرى",
+            "mapping_status": "MAPPED",
+            "rule": "unchanged"
+          }
+        },
+        {
+          "source_record_id": 2878,
+          "source_opportunity_id": "536",
+          "source_key": "alahsa-opportunities",
+          "source_sector": "خدمي",
+          "source_activity": "خدمي",
+          "source_sub_activity": null,
+          "standardized_sector": {
+            "raw": null,
+            "normalized": "",
+            "canonical_id": "sector:unspecified",
+            "canonical_label": "غير محدد",
+            "mapping_status": "MISSING",
+            "rule": "preserve_missing"
+          },
+          "standardized_activity": {
+            "raw": "خدمي",
+            "normalized": "خدمي",
+            "canonical_id": "activity:service",
+            "canonical_label": "خدمي",
+            "mapping_status": "MAPPED",
+            "rule": "unchanged"
+          },
+          "standardized_sub_activity": {
+            "raw": null,
+            "normalized": "",
+            "canonical_id": "sub_activity:missing",
+            "canonical_label": null,
+            "mapping_status": "MISSING",
+            "rule": "preserve_missing"
+          }
+        }
+      ],
+      "resolution": "RESOLVED_KEEP; no canonical change"
+    },
+    {
+      "review_id": 1154,
+      "master_id": 234,
+      "source_opportunity_id": "535",
+      "trigger_rule": "apply_sector_phase2_after_ingestion:P2_CONFLICTING_SOURCE_TAXONOMY",
+      "evidence": [
+        {
+          "source_record_id": 2835,
+          "source_opportunity_id": "01-26-017001-26003",
+          "source_key": "furas",
+          "source_sector": null,
+          "source_activity": "الأنشطة التجارية",
+          "source_sub_activity": "أخرى",
+          "standardized_sector": {
+            "raw": null,
+            "normalized": "",
+            "canonical_id": "sector:unspecified",
+            "canonical_label": "غير محدد",
+            "mapping_status": "MISSING",
+            "rule": "preserve_missing"
+          },
+          "standardized_activity": {
+            "raw": "الأنشطة التجارية",
+            "normalized": "الانشطة التجارية",
+            "canonical_id": "activity:commercial_activities",
+            "canonical_label": "الأنشطة التجارية",
+            "mapping_status": "MAPPED",
+            "rule": "unchanged"
+          },
+          "standardized_sub_activity": {
+            "raw": "أخرى",
+            "normalized": "اخرى",
+            "canonical_id": "sub_activity:other",
+            "canonical_label": "أخرى",
+            "mapping_status": "MAPPED",
+            "rule": "unchanged"
+          }
+        },
+        {
+          "source_record_id": 2837,
+          "source_opportunity_id": "535",
+          "source_key": "alahsa-opportunities",
+          "source_sector": "خدمي",
+          "source_activity": "خدمي",
+          "source_sub_activity": null,
+          "standardized_sector": {
+            "raw": null,
+            "normalized": "",
+            "canonical_id": "sector:unspecified",
+            "canonical_label": "غير محدد",
+            "mapping_status": "MISSING",
+            "rule": "preserve_missing"
+          },
+          "standardized_activity": {
+            "raw": "خدمي",
+            "normalized": "خدمي",
+            "canonical_id": "activity:service",
+            "canonical_label": "خدمي",
+            "mapping_status": "MAPPED",
+            "rule": "unchanged"
+          },
+          "standardized_sub_activity": {
+            "raw": null,
+            "normalized": "",
+            "canonical_id": "sub_activity:missing",
+            "canonical_label": null,
+            "mapping_status": "MISSING",
+            "rule": "preserve_missing"
+          }
+        }
+      ],
+      "resolution": "RESOLVED_KEEP; no canonical change"
+    },
+    {
+      "review_id": 1155,
+      "master_id": 238,
+      "source_opportunity_id": "534",
+      "trigger_rule": "apply_sector_phase2_after_ingestion:MED_UNMAPPED_SOURCE_CLASSIFICATION_REVIEW",
+      "evidence": [
+        {
+          "source_record_id": 2839,
+          "source_opportunity_id": "534",
+          "source_key": "alahsa-opportunities",
+          "source_sector": "خدمي",
+          "source_activity": "خدمي",
+          "source_sub_activity": null,
+          "standardized_sector": {
+            "raw": null,
+            "normalized": "",
+            "canonical_id": "sector:unspecified",
+            "canonical_label": "غير محدد",
+            "mapping_status": "MISSING",
+            "rule": "preserve_missing"
+          },
+          "standardized_activity": {
+            "raw": "خدمي",
+            "normalized": "خدمي",
+            "canonical_id": "activity:service",
+            "canonical_label": "خدمي",
+            "mapping_status": "MAPPED",
+            "rule": "unchanged"
+          },
+          "standardized_sub_activity": {
+            "raw": null,
+            "normalized": "",
+            "canonical_id": "sub_activity:missing",
+            "canonical_label": null,
+            "mapping_status": "MISSING",
+            "rule": "preserve_missing"
+          }
+        }
+      ],
+      "resolution": "RESOLVED_KEEP; no canonical change"
+    }
+  ],
+  "observation_and_job_artifact": "jobs-505-506-review-root-cause.json"
+}
