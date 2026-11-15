@@ -17,7 +17,10 @@ from .database import init_db, SessionLocal, engine
 from .models import Source, Opportunity, SourceOpportunity, SourceObservation, OpportunityLocation, QualificationReview, ChangeHistory, SyncJob, SourceError, DuplicateCandidate, OpportunityConflict, FieldProvenance, SystemEvent, MergeAudit, LocationReview, TaxonomyMapping, SourceContentItem, SourceLimitation, ModonLocation, NcpProjectEvent, User, UserSession, AlertEvent, SystemSetting, AuditEvent, AssetFacilityType, OpportunityAssetFacilityType, SourceOpportunityDatasetMembership, GeographicReferenceDataset, GeographicReferenceUnit, SourceGeographicCoverage
 from .service import seed_sources, sync_source, scheduler_loop
 from .adapters import ADAPTERS, LOCATION_ACCEPTANCE_THRESHOLD
-from .excel_export import build_opportunities_workbook, export_timestamp
+from .excel_export import build_opportunities_workbook, build_opportunities_workbook_write_only, export_timestamp
+from .export_storage import (ExportCapacityBusy, ExportFileTooLarge, ExportStorageUnavailable,
+    LimitedFileWriter, TemporaryExportFileResponse, acquire_export_slot, create_export_directory,
+    release_export_slot, remove_export_directory, MAX_XLSX_EXPORT_BYTES, MIN_FREE_DISK_BYTES)
 from .merge import merge_candidate, undo_candidate
 from .duplicate_review import compare_duplicate_candidate
 from .security import SESSION_COOKIE, SESSION_HOURS, allow_login_attempt, allow_rate, audit, hash_password, new_session, session_digest, user_for_session, utcnow, verify_password
@@ -325,7 +328,30 @@ def _confirmed_location_master_ids(db):
     return confirmed
 
 
-def _opportunity_geography(db,o,pending=None,source_locations_by_master=None):
+def _export_geographic_reference_cache(db, opportunities_or_reference_ids):
+    """Load the small reference subset used by an export in bounded queries."""
+    values=list(opportunities_or_reference_ids)
+    reference_ids={
+        getattr(value,"geography_reference_unit_id",value)
+        for value in values
+        if getattr(value,"geography_reference_unit_id",value) is not None
+    }
+    if not reference_ids:
+        return {},{}
+    units={unit.id:unit for unit in db.scalars(select(GeographicReferenceUnit).where(
+        GeographicReferenceUnit.id.in_(reference_ids))).all()}
+    parent_ids={unit.parent_id for unit in units.values() if unit.parent_id}
+    if parent_ids:
+        units.update({unit.id:unit for unit in db.scalars(select(GeographicReferenceUnit).where(
+            GeographicReferenceUnit.id.in_(parent_ids))).all()})
+    dataset_ids={unit.dataset_id for unit in units.values()}
+    datasets={dataset.id:dataset for dataset in db.scalars(select(GeographicReferenceDataset).where(
+        GeographicReferenceDataset.id.in_(dataset_ids))).all()} if dataset_ids else {}
+    return units,datasets
+
+
+def _opportunity_geography(db,o,pending=None,source_locations_by_master=None,
+                            reference_units=None,reference_datasets=None):
     pending=pending if pending is not None else _pending_location_reviews_by_master(db,[o.id])
     reason=pending.get(o.id)
     status=None
@@ -336,8 +362,10 @@ def _opportunity_geography(db,o,pending=None,source_locations_by_master=None):
     elif float(o.location_confidence_score or 0)<LOCATION_ACCEPTANCE_THRESHOLD:
         status="LOCATION_REVIEW_REQUIRED";reason="درجة ثقة تحديد الموقع أقل من حد القبول الحالي."
     geo=resolve_master_geography(o.city,o.district,status=status,reason=reason)
-    reference_unit=db.get(GeographicReferenceUnit,o.geography_reference_unit_id) if o.geography_reference_unit_id else None
-    reference_dataset=db.get(GeographicReferenceDataset,reference_unit.dataset_id) if reference_unit else None
+    reference_unit=(reference_units.get(o.geography_reference_unit_id) if reference_units is not None
+                    else db.get(GeographicReferenceUnit,o.geography_reference_unit_id)) if o.geography_reference_unit_id else None
+    reference_dataset=(reference_datasets.get(reference_unit.dataset_id) if reference_datasets is not None
+                       else db.get(GeographicReferenceDataset,reference_unit.dataset_id)) if reference_unit else None
     evidence=o.geography_evidence_json if isinstance(o.geography_evidence_json,dict) else {}
     evidence_matches=bool(
         not reason
@@ -364,7 +392,8 @@ def _opportunity_geography(db,o,pending=None,source_locations_by_master=None):
     )
     if evidence_matches:
         governorate_identity=canonical_geography_identity(reference_unit.name_ar)
-        parent_unit=db.get(GeographicReferenceUnit,reference_unit.parent_id) if reference_unit.parent_id else None
+        parent_unit=((reference_units.get(reference_unit.parent_id) if reference_units is not None
+                      else db.get(GeographicReferenceUnit,reference_unit.parent_id)) if reference_unit.parent_id else None)
         region_identity=canonical_geography_identity(parent_unit.name_ar) if parent_unit else None
         governorate_id=governorate_identity["id"] if governorate_identity else reference_unit.external_id
         governorate_label=governorate_identity["label"] if governorate_identity else reference_unit.name_ar
@@ -786,7 +815,10 @@ async def security_and_correlation(request:Request,call_next):
 
 def admin_auth(token:str|None):
     identity=request_context.get().get("user")
-    protected=os.getenv("ENVIRONMENT",os.getenv("ENV","development")).lower() in ("production","staging")
+    # local_user is the persistent operational install, not a trusted implicit
+    # identity. Keep its session/RBAC boundary fail-closed while retaining the
+    # development/test admin-token fallback.
+    protected=os.getenv("ENVIRONMENT",os.getenv("ENV","development")).lower() in ("production","staging","local_user")
     path=request_context.get().get("path","")
     if identity:
         if identity.get("role")=="admin": return identity
@@ -3159,14 +3191,22 @@ def export_csv(q:str="",sector:str="",sector_values:str="",activity:str="",sub_a
                 except ValueError: raise HTTPException(422,"تاريخ النهاية غير صالح")
             if deadline_after: conditions.append(Opportunity.submission_deadline>=deadline_after)
             if deadline_before: conditions.append(Opportunity.submission_deadline<=deadline_before)
-            export_ids=db.scalars(select(Opportunity.id).where(*conditions)).all()
+            export_rows=db.execute(select(Opportunity.id,Opportunity.geography_reference_unit_id).where(*conditions)).all()
+            export_ids=[row.id for row in export_rows]
             pending=_pending_location_reviews_by_master(db,export_ids)
             source_locations=_source_location_values_by_master(db,export_ids)
-            query=select(Opportunity).where(*conditions).options(selectinload(Opportunity.source_records).selectinload(SourceOpportunity.source)).order_by(Opportunity.id).execution_options(yield_per=500)
+            reference_units,reference_datasets=_export_geographic_reference_cache(
+                db,[row.geography_reference_unit_id for row in export_rows])
+            query=select(Opportunity).where(*conditions).options(
+                selectinload(Opportunity.source_records).selectinload(SourceOpportunity.source),
+                selectinload(Opportunity.source_records).selectinload(SourceOpportunity.opportunity_locations),
+                selectinload(Opportunity.asset_facility_type_assignments).selectinload(OpportunityAssetFacilityType.asset_type),
+            ).order_by(Opportunity.id).execution_options(yield_per=500)
             rows=db.scalars(query)
             first=io.StringIO();csv.writer(first).writerow(headers);yield "\ufeff"+first.getvalue()
             for o in rows:
-                details=source_fact_summary(o);geo=_opportunity_geography(db,o,pending,source_locations)
+                details=source_fact_summary(o);geo=_opportunity_geography(
+                    db,o,pending,source_locations,reference_units,reference_datasets)
                 safe_city=geo.get("display_location") or (canonical_value("location",o.city) if geo.get("confirmed") else "غير محدد")
                 safe_location=o.location_description if geo.get("confirmed") else None
                 source_link=resolve_preferred_source_link(o.source_records)
@@ -3177,41 +3217,95 @@ def export_csv(q:str="",sector:str="",sector_values:str="",activity:str="",sub_a
 
 @app.get("/api/export.xlsx")
 def export_xlsx(q:str="",sector:str="",sector_values:str="",activity:str="",sub_activity:str="",status:str="",source:str="",owner:str="",location:str="",opportunity_type:str="",investment_model:str="",asset_facility_type:str="",subsector:str="",lifecycle:str="",country_id:str="",region_id:str="",governorate_id:str="",city_id:str="",geographic_scope:str="",period:str="all",created_after:str="",created_before:str="",deadline_after:str="",deadline_before:str="",deadline_status:str="",map_ids:str=""):
-    with SessionLocal() as db:
-        conditions=_opportunity_filter_conditions(db,q=q,sector=sector,activity=activity,sub_activity=sub_activity,status=status,source=source,owner=owner,location=location,opportunity_type=opportunity_type,investment_model=investment_model,asset_facility_type=asset_facility_type,subsector=subsector,lifecycle=lifecycle,country_id=country_id,region_id=region_id,governorate_id=governorate_id,city_id=city_id,geographic_scope=geographic_scope)
-        if deadline_status: conditions.extend(_deadline_status_conditions(db,deadline_status))
-        if sector_values: conditions.append(_sector_values_filter_condition(db,sector_values))
-        if map_ids:
-            try: selected_map_ids=sorted({int(value) for value in map_ids.split(",") if value.strip()})
-            except ValueError: raise HTTPException(422,"معرّفات الخريطة غير صالحة")
-            if not selected_map_ids: raise HTTPException(422,"معرّفات الخريطة غير صالحة")
-            conditions.append(Opportunity.id.in_(selected_map_ids))
-        period_start=_period_start(period)
-        if period_start: conditions.append(Opportunity.first_seen_at>=period_start)
-        if created_after:
-            try: conditions.append(Opportunity.first_seen_at>=datetime.fromisoformat(created_after).replace(tzinfo=timezone.utc))
-            except ValueError: raise HTTPException(422,"تاريخ البداية غير صالح")
-        if created_before:
-            try: conditions.append(Opportunity.first_seen_at<datetime.fromisoformat(created_before).replace(tzinfo=timezone.utc)+timedelta(days=1))
-            except ValueError: raise HTTPException(422,"تاريخ النهاية غير صالح")
-        if deadline_after: conditions.append(Opportunity.submission_deadline>=deadline_after)
-        if deadline_before: conditions.append(Opportunity.submission_deadline<=deadline_before)
-        rows=db.scalars(select(Opportunity).where(*conditions).options(selectinload(Opportunity.source_records).selectinload(SourceOpportunity.source),selectinload(Opportunity.asset_facility_type_assignments).selectinload(OpportunityAssetFacilityType.asset_type)).order_by(Opportunity.id)).unique().all()
-        row_ids=[row.id for row in rows]
-        pending=_pending_location_reviews_by_master(db,row_ids)
-        source_locations=_source_location_values_by_master(db,row_ids)
-        geography_by_id={row.id:_opportunity_geography(db,row,pending,source_locations) for row in rows}
-        generated_at=export_timestamp()
-        workbook=build_opportunities_workbook(rows,source_fact_summary,spreadsheet_safe,generated_at,canonicalize=canonical_value,geography_for=lambda opportunity:geography_by_id.get(opportunity.id,{}))
-        applied=[("عبارة البحث",q),("الفترة",period if period not in {"", "all"} else ""),("نطاق الحالة", {"active":"نشطة","historical":"تاريخية"}.get(lifecycle,"")),("حالة الموعد", {"without_reliable_deadline":"بدون موعد محدد"}.get(deadline_status,"")),("القطاع",sector),("القطاعات المجمعة","، ".join(_sector_values_display_labels(db,sector_values)) if sector_values else ""),("النشاط",activity),("النشاط الفرعي",sub_activity),("القطاع الفرعي",subsector),("الحالة",status),("المصدر",source),("الجهة المالكة",owner),("الموقع",location),("نوع الفرصة",opportunity_type),("نموذج الاستثمار",investment_model),("نوع الأصل أو الموقع",asset_facility_type),("الموعد من",deadline_after),("الموعد حتى",deadline_before)]
-        applied_text="؛ ".join(f"{label}: {value}" for label,value in applied if value)
-        metadata=workbook["معلومات التقرير"]
-        metadata["B11"]="جميع الفرص الرئيسية غير المدمجة" if not applied_text else "الفرص المطابقة للمرشحات المحددة"
-        metadata["B12"]="لا توجد مرشحات" if not applied_text else applied_text
-        output=io.BytesIO(); workbook.save(output); output.seek(0)
+    try:
+        acquire_export_slot()
+    except ExportCapacityBusy:
+        raise HTTPException(429,"يوجد تصدير XLSX قيد المعالجة؛ أعد المحاولة بعد قليل.",headers={"Retry-After":"30"})
+
+    export_directory=None
+    output_fd=None
+    response_owns_slot=False
+    try:
+        with SessionLocal() as db:
+            if db.get_bind().dialect.name == "postgresql":
+                db.connection(execution_options={"isolation_level":"REPEATABLE READ"})
+                db.execute(text("SET TRANSACTION READ ONLY"))
+            conditions=_opportunity_filter_conditions(db,q=q,sector=sector,activity=activity,sub_activity=sub_activity,status=status,source=source,owner=owner,location=location,opportunity_type=opportunity_type,investment_model=investment_model,asset_facility_type=asset_facility_type,subsector=subsector,lifecycle=lifecycle,country_id=country_id,region_id=region_id,governorate_id=governorate_id,city_id=city_id,geographic_scope=geographic_scope)
+            if deadline_status: conditions.extend(_deadline_status_conditions(db,deadline_status))
+            if sector_values: conditions.append(_sector_values_filter_condition(db,sector_values))
+            if map_ids:
+                try: selected_map_ids=sorted({int(value) for value in map_ids.split(",") if value.strip()})
+                except ValueError: raise HTTPException(422,"معرّفات الخريطة غير صالحة")
+                if not selected_map_ids: raise HTTPException(422,"معرّفات الخريطة غير صالحة")
+                conditions.append(Opportunity.id.in_(selected_map_ids))
+            period_start=_period_start(period)
+            if period_start: conditions.append(Opportunity.first_seen_at>=period_start)
+            if created_after:
+                try: conditions.append(Opportunity.first_seen_at>=datetime.fromisoformat(created_after).replace(tzinfo=timezone.utc))
+                except ValueError: raise HTTPException(422,"تاريخ البداية غير صالح")
+            if created_before:
+                try: conditions.append(Opportunity.first_seen_at<datetime.fromisoformat(created_before).replace(tzinfo=timezone.utc)+timedelta(days=1))
+                except ValueError: raise HTTPException(422,"تاريخ النهاية غير صالح")
+            if deadline_after: conditions.append(Opportunity.submission_deadline>=deadline_after)
+            if deadline_before: conditions.append(Opportunity.submission_deadline<=deadline_before)
+
+            opportunity_count=int(db.scalar(select(func.count(Opportunity.id)).where(*conditions)) or 0)
+            estimated_bytes=min(MAX_XLSX_EXPORT_BYTES,
+                                max(MIN_FREE_DISK_BYTES,opportunity_count*16*1024))
+            export_directory=create_export_directory(estimated_bytes)
+            output_path=export_directory/"opportunities.xlsx"
+            output_fd=os.open(output_path,os.O_CREAT|os.O_EXCL|os.O_RDWR,0o600)
+            generated_at=export_timestamp()
+            applied=[("عبارة البحث",q),("الفترة",period if period not in {"", "all"} else ""),("نطاق الحالة", {"active":"نشطة","historical":"تاريخية"}.get(lifecycle,"")),("حالة الموعد", {"without_reliable_deadline":"بدون موعد محدد"}.get(deadline_status,"")),("القطاع",sector),("القطاعات المجمعة","، ".join(_sector_values_display_labels(db,sector_values)) if sector_values else ""),("النشاط",activity),("النشاط الفرعي",sub_activity),("القطاع الفرعي",subsector),("الحالة",status),("المصدر",source),("الجهة المالكة",owner),("الموقع",location),("نوع الفرصة",opportunity_type),("نموذج الاستثمار",investment_model),("نوع الأصل أو الموقع",asset_facility_type),("الموعد من",deadline_after),("الموعد حتى",deadline_before)]
+            applied_text="؛ ".join(f"{label}: {value}" for label,value in applied if value)
+            query=select(Opportunity).where(*conditions).options(
+                selectinload(Opportunity.source_records).selectinload(SourceOpportunity.source),
+                selectinload(Opportunity.source_records).selectinload(SourceOpportunity.opportunity_locations),
+                selectinload(Opportunity.asset_facility_type_assignments).selectinload(OpportunityAssetFacilityType.asset_type),
+            ).order_by(Opportunity.id).execution_options(yield_per=500)
+
+            def export_rows():
+                rows=db.scalars(query)
+                for batch in rows.partitions(500):
+                    row_ids=[row.id for row in batch]
+                    pending=_pending_location_reviews_by_master(db,row_ids)
+                    source_locations=_source_location_values_by_master(db,row_ids)
+                    reference_units,reference_datasets=_export_geographic_reference_cache(
+                        db,[row.geography_reference_unit_id for row in batch])
+                    for row in batch:
+                        row._xlsx_export_geography=_opportunity_geography(
+                            db,row,pending,source_locations,reference_units,reference_datasets)
+                        yield row
+
+            with os.fdopen(output_fd,"w+b") as output_file:
+                output_fd=None
+                build_opportunities_workbook_write_only(
+                    LimitedFileWriter(output_file),export_rows(),opportunity_count,
+                    source_fact_summary,spreadsheet_safe,generated_at,canonicalize=canonical_value,
+                    geography_for=lambda opportunity:getattr(opportunity,"_xlsx_export_geography",{}),
+                    applied_filters_text=applied_text,scratch_directory=export_directory)
+
         filename=f"فرص_الأحساء_{generated_at.date().isoformat()}.xlsx"
         disposition=f"attachment; filename=al-ahsa-opportunities-{generated_at.date().isoformat()}.xlsx; filename*=UTF-8''{quote(filename)}"
-        return Response(output.getvalue(),media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",headers={"Content-Disposition":disposition})
+        response=TemporaryExportFileResponse(
+            output_path,export_directory,media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            headers={"Content-Disposition":disposition})
+        response_owns_slot=True
+        return response
+    except ExportFileTooLarge:
+        raise HTTPException(507,"تعذر إنشاء ملف التصدير ضمن حد التخزين المؤقت المسموح.")
+    except ExportStorageUnavailable:
+        raise HTTPException(507,"مساحة التصدير المؤقت غير متاحة أو غير كافية.")
+    except OSError:
+        raise HTTPException(507,"تعذر كتابة ملف التصدير المؤقت.")
+    finally:
+        if not response_owns_slot:
+            if output_fd is not None:
+                try: os.close(output_fd)
+                except OSError: pass
+            if export_directory is not None:
+                remove_export_directory(export_directory)
+            release_export_slot()
 
 @app.get("/api/filters")
 def filters():

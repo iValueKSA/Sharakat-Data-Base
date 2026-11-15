@@ -51,6 +51,20 @@ const roleLabel = role => ({ admin: "مسؤول", analyst: "محلل", viewer: "
 const coverageLabel = value => ({ COMPLETE_PUBLIC_SOURCE: "مكتمل عبر المصدر العام", COMPLETE_FOR_DEFINED_SCOPE: "مكتمل ضمن النطاق المحدد", PUBLIC_COVERAGE_LIMITED: "تغطية البيانات العامة محدودة", PRIVATE_API_REQUIRED: "تتطلب صلاحية خاصة", AUTHENTICATED_SOURCE_REQUIRED: "يتطلب تسجيل دخول", PARTIAL_OFFICIAL_COVERAGE: "تغطية رسمية جزئية" }[value] || value || "تغطية غير محددة");
 const sectorNames = { INVESTMENT_OPPORTUNITY: "فرصة استثمارية", COMMERCIAL_FACILITY_OPPORTUNITY: "فرصة منشأة تجارية", LEASE_OPPORTUNITY: "فرصة تأجير", PPP_PROJECT: "مشروع شراكة", Environment: "البيئة", ENVIRONMENT: "البيئة", Tourism: "السياحة", TOURISM: "السياحة", Agriculture: "الزراعة", AGRICULTURE: "الزراعة", Healthcare: "الرعاية الصحية", HEALTHCARE: "الرعاية الصحية", Education: "التعليم", EDUCATION: "التعليم", Logistics: "الخدمات اللوجستية", LOGISTICS: "الخدمات اللوجستية", Industrial: "صناعي", INDUSTRIAL: "صناعي", Commercial: "تجاري", COMMERCIAL: "تجاري", Unclassified: "غير مصنف", UNCLASSIFIED: "غير مصنف" };
 const sectorLabel = value => sectorNames[value] || value || "غير مصنف";
+const sectorIconNames = Object.freeze({
+  "البلديات والإسكان":"building", "العقارات والإنشاءات":"building", "INVESTMENT_OPPORTUNITY":"building",
+  "البيئة":"leaf", "البيئة والمياه والزراعة":"sprout", "الزراعة":"sprout", "Agriculture":"sprout", "AGRICULTURE":"sprout",
+  "التعليم":"graduation", "Education":"graduation", "EDUCATION":"graduation", "الثقافة":"book",
+  "الحج والعمرة":"landmark", "السياحة":"hotel", "Tourism":"hotel", "TOURISM":"hotel",
+  "الخدمات اللوجستية":"truck", "النقل والخدمات اللوجستية":"truck", "Logistics":"truck", "LOGISTICS":"truck",
+  "الخدمات المالية":"finance", "الرعاية الصحية":"health", "Healthcare":"health", "HEALTHCARE":"health",
+  "الرياضة":"trophy", "الزكاة والضريبة والجمارك":"receipt", "تجاري":"store", "Commercial":"store", "COMMERCIAL":"store", "COMMERCIAL_FACILITY_OPPORTUNITY":"store",
+  "صناعي":"factory", "Industrial":"factory", "INDUSTRIAL":"factory"
+});
+function sectorIconMarkup(value) {
+  const icon = sectorIconNames[value] || sectorIconNames[sectorLabel(value)] || "briefcase";
+  return `<svg class="ui-icon sector-icon" aria-hidden="true" focusable="false"><use href="#sector-icon-${icon}"></use></svg>`;
+}
 const opportunityTypeNames = { "غير محدد": "غير محدد", "أخرى": "أخرى" };
 const opportunityTypeLabel = value => opportunityTypeNames[value] || "غير محدد";
 function toast(message) { const el = $("toast"); el.textContent = message; el.classList.add("show"); clearTimeout(window.toastTimer); window.toastTimer = setTimeout(() => el.classList.remove("show"), 3600); }
@@ -206,7 +220,7 @@ function closeMobileSidebar() {
 }
 document.addEventListener("keydown", event => { if (event.key === "Escape" && $("sidebar").classList.contains("is-open")) closeMobileSidebar(); });
 $("brand")?.addEventListener("click", event => { event.preventDefault(); view("overview"); });
-$("openSources").onclick = () => view("sources");
+if ($("openSources")) $("openSources").onclick = () => view("sources");
 $("userButton").onclick = async () => {
   if (!state.user) { await promptLogin(); return; }
   const menu = $("accountMenu"), opening = menu.hidden;
@@ -307,6 +321,7 @@ const dashFilterFields = [
   ["region_id", "dashRegionFilter", "المنطقة"], ["governorate_id", "dashGovernorateFilter", "المحافظة"]
 ];
 const dashNum = value => Number(value || 0).toLocaleString("en-US-u-nu-latn");
+let dashboardLoadSequence = 0;
 const optionId = (dimension, label) => state.filterOptionIds?.[dimension]?.[label] || label;
 function restoreFilterValue(select, value, dimension) {
   if (!value) return;
@@ -348,6 +363,7 @@ function updateDashboardExportLinks() {
   for (const [id, format] of [["dashExportCsv", "csv"], ["dashExportXlsx", "xlsx"]]) $(id).href = `/api/export.${format}${query.size ? `?${query}` : ""}`;
 }
 async function loadDataDashboard() {
+  const requestSequence = ++dashboardLoadSequence;
   $("dataDashboardError").hidden = true;
   $("view-data-dashboard").setAttribute("aria-busy", "true");
   if (!state.lastDashboardData) document.dispatchEvent(new CustomEvent("ahda:data-dashboard:loading"));
@@ -359,7 +375,10 @@ async function loadDataDashboard() {
       fillSelect("dashActivity", filters.activities || [], "كل الأنشطة", value => value, label => optionId("activities", label)); fillSelect("dashSubActivity", filters.sub_activities || [], "كل الأنشطة الفرعية", value => value, label => optionId("sub_activities", label));
       fillSelect("dashSource", filters.sources, "كل المصادر", item => item.name, item => item.key);
       fillSelect("dashOwner", filters.owners, "كل الجهات", value => value, label => optionId("owners", label)); fillSelect("dashLocation", filters.locations, "جميع المدن", value => value, label => optionId("locations", label)); fillSelect("dashType", filters.types, "كل الأنواع", opportunityTypeLabel, label => optionId("types", label)); fillSelect("dashInvestmentModel", filters.investment_models || [], "كل نماذج الاستثمار", value => value, label => optionId("investment_models", label)); fillSelect("dashAssetFacilityType", filters.asset_facility_types || [], "كل أنواع الأصول والمواقع", value => value, label => optionId("asset_facility_types", label)); fillSelect("dashSubsector", filters.subsectors || [], "كل القطاعات الفرعية", value => value, label => optionId("subsectors", label));
-      if (window.NationalGeographyUI) state.dashGeo = await window.NationalGeographyUI.init("dash", () => loadDataDashboard());
+      if (window.NationalGeographyUI) {
+        state.dashGeoInitPromise ||= window.NationalGeographyUI.init("dash", () => loadDataDashboard());
+        state.dashGeo = await state.dashGeoInitPromise;
+      }
       const params = new URLSearchParams(location.search);
       for (const [key, id] of dashFilterFields) if (params.has(key)) {
         if (key === "q") $(id).value = params.get(key);
@@ -369,9 +388,13 @@ async function loadDataDashboard() {
     }
     state.dataFilters = readDashFilters(); updateDashUrl();
     const query = new URLSearchParams(state.dataFilters);
-    const data = await api(`/api/data-dashboard?${query}`); renderDataDashboard(data);
-  } catch (error) { $("dataDashboardError").hidden = false; $("dataDashboardError").innerHTML = '<div><b>تعذر تحميل بيانات اللوحة.</b><span>تحقق من الاتصال ثم أعد المحاولة.</span></div><button class="button button-quiet" id="dashRetry" type="button">إعادة المحاولة</button>'; $("dashRetry").onclick = loadDataDashboard; if (!state.lastDashboardData) document.dispatchEvent(new CustomEvent("ahda:data-dashboard:error")); }
-  finally { $("view-data-dashboard").setAttribute("aria-busy", "false"); }
+    const data = await api(`/api/data-dashboard?${query}`);
+    if (requestSequence === dashboardLoadSequence) renderDataDashboard(data);
+  } catch (error) {
+    if (requestSequence !== dashboardLoadSequence) return;
+    $("dataDashboardError").hidden = false; $("dataDashboardError").innerHTML = '<div><b>تعذر تحميل بيانات اللوحة.</b><span>تحقق من الاتصال ثم أعد المحاولة.</span></div><button class="button button-quiet" id="dashRetry" type="button">إعادة المحاولة</button>'; $("dashRetry").onclick = loadDataDashboard; if (!state.lastDashboardData) document.dispatchEvent(new CustomEvent("ahda:data-dashboard:error"));
+  }
+  finally { if (requestSequence === dashboardLoadSequence) $("view-data-dashboard").setAttribute("aria-busy", "false"); }
 }
 function goToOpportunities(extra = {}) {
   const params = new URLSearchParams(); params.set("view", "opportunities");
@@ -437,7 +460,7 @@ async function loadOpportunities() {
     const pageSize = 50;
     const sectorValue = $("sectorFilter").value === aggregatedOtherSectorValue ? "" : $("sectorFilter").value;
     const params = new URLSearchParams(location.search); state.sortBy = params.get("sort_by") || ""; state.sortOrder = params.get("sort_order") === "asc" ? "asc" : "desc";
-    document.querySelectorAll("#view-opportunities [data-sort-key]").forEach(button=>{const active=button.dataset.sortKey===state.sortBy;button.textContent=button.dataset.sortLabel+(active?` ${state.sortOrder==="asc"?"↑":"↓"}`:"");button.closest("th")?.toggleAttribute("aria-sort",active);if(active)button.closest("th").setAttribute("aria-sort",state.sortOrder==="asc"?"ascending":"descending");});
+    document.querySelectorAll("#view-opportunities [data-sort-key]").forEach(button=>{const active=button.dataset.sortKey===state.sortBy;button.textContent=button.dataset.sortLabel+(active?` ${state.sortOrder==="asc"?"↑":"↓"}`:"");button.toggleAttribute("aria-sort",active);if(active)button.setAttribute("aria-sort",state.sortOrder==="asc"?"ascending":"descending");});
     const query = new URLSearchParams({ q: $("searchInput").value, sector: sectorValue, activity: $("activityFilter").value, sub_activity: $("subActivityFilter").value, subsector: $("subsectorFilter").value, status: $("statusFilter").value, owner: $("ownerFilter").value, source: $("sourceFilter").value, location: $("locationFilter").value, opportunity_type: $("typeFilter").value, investment_model: $("investmentModelFilter").value, asset_facility_type: $("assetFacilityTypeFilter").value, lifecycle: $("lifecycleFilter").value, limit: String(pageSize), offset: String(state.opportunityPage * pageSize) });
     if (state.sortBy) { query.set("sort_by", state.sortBy); query.set("sort_order", state.sortOrder); }
     if (state.tableGeo?.enabled) for (const [key, value] of Object.entries(state.tableGeo.read())) if (value) query.set(key, value);
@@ -451,8 +474,27 @@ async function loadOpportunities() {
     $("emptyTable").classList.toggle("show", !state.items.length);
     const groupedSectorActive = urlParams.has("sector_values");
     $("opportunityRows").innerHTML = state.items.map(item => {
-      const cell = (column, content) => `<td data-column="${column}">${content}</td>`;
-    return `<tr>${cell("opportunity", `<strong>${safe(item.title)}</strong><small>${safe(item.reference || item.canonical_id)}</small>${geographyStatusMarkup(item)}`)}${cell("owner", safe(item.owner || "—"))}${cell("sector", safe(sectorLabel(item.sector)))}${cell("activity", safe(item.activity || "غير محدد"))}${cell("sub_activity", safe(item.sub_activity || "—"))}${cell("asset_facility_type", safe(item.asset_facility_type || "غير محدد"))}${cell("area", item.area ? Number(item.area).toLocaleString("en-US") + " م²" : "—")}${cell("deadline", safe(item.deadline || "غير محدد"))}${cell("status", `<span class="tag ${/منته|ملغ|تمت الترسية|أزيلت من المصدر|expired|cancel/i.test(item.status || "") ? "pending" : ""}">${safe(statusLabel(item.status))}</span>`)}${cell("sources", `<span class="source-pill">${Number(item.source_count || 0).toLocaleString("en-US-u-nu-latn")} مصادر</span>`)}${cell("action", `<button type="button" class="row-action" data-detail="${item.id}" aria-label="عرض تفاصيل الفرصة">↗</button>`)}</tr>`;
+      const sector = sectorLabel(item.sector), title = safe(item.title), status = statusLabel(item.status);
+      const field = (key, label, value) => `<div class="opportunity-field" data-column="${key}"><span>${label}</span><b>${value}</b></div>`;
+      const area = item.area !== null && item.area !== undefined && item.area !== "" ? `${Number(item.area).toLocaleString("en-US")} ${safe(item.area_unit || "م²")}` : "—";
+      const statusTone = /منته|ملغ|تمت الترسية|أزيلت من المصدر|expired|cancel/i.test(item.status || "") ? " is-inactive" : " is-active";
+      return `<article class="opportunity-card" role="listitem" data-opportunity-card="${safe(item.id)}">
+        <div class="opportunity-sector-icon" aria-hidden="true">${sectorIconMarkup(item.sector)}</div>
+        <div class="opportunity-card-main">
+          <header class="opportunity-card-heading"><div class="opportunity-card-title" data-column="opportunity"><h3>${title}</h3><small>${safe(item.reference || item.canonical_id || "—")}</small>${geographyStatusMarkup(item)}</div><span class="tag opportunity-sector-tag" data-column="sector">${safe(sector)}</span></header>
+          <div class="opportunity-card-fields">
+            ${field("owner","الجهة المالكة",safe(item.owner || "—"))}
+            ${field("activity","النشاط",safe(item.activity || "غير محدد"))}
+            ${field("sub_activity","النشاط الفرعي",safe(item.sub_activity || "—"))}
+            ${field("asset_facility_type","نوع الأصل أو الموقع",safe(item.asset_facility_type || "غير محدد"))}
+            ${field("area","المساحة",area)}
+            ${field("deadline","آخر موعد",safe(item.deadline || "غير محدد"))}
+            <div class="opportunity-field" data-column="status"><span>الحالة</span><b><span class="tag opportunity-status${statusTone}">${safe(status)}</span></b></div>
+            <div class="opportunity-field" data-column="sources"><span>المصادر</span><b><span class="source-pill">${Number(item.source_count || 0).toLocaleString("en-US-u-nu-latn")} مصادر</span></b></div>
+          </div>
+        </div>
+        <div class="opportunity-card-action" data-column="action"><button type="button" class="row-action" data-detail="${safe(item.id)}" aria-label="عرض تفاصيل: ${title}">عرض التفاصيل <span aria-hidden="true">↗</span></button></div>
+      </article>`;
     }).join(""); bindDetailButtons();
     $("activeFilters").innerHTML = [$("searchInput").value && `بحث: ${safe($("searchInput").value)}`, state.tableGeo?.enabled && state.tableGeo.selectedLabel?.() && `المنطقة: ${safe(state.tableGeo.selectedLabel())}`, state.tableGeo?.enabled && state.tableGeo.selectedGovernorateLabel?.() && `المحافظة: ${safe(state.tableGeo.selectedGovernorateLabel())}`, groupedSectorActive ? "القطاع: أخرى (تشمل بقية القطاعات)" : $("sectorFilter").value && safe($("sectorFilter").selectedOptions[0]?.textContent), $("activityFilter").value && safe($("activityFilter").selectedOptions[0]?.textContent), $("subActivityFilter").value && safe($("subActivityFilter").selectedOptions[0]?.textContent), $("subsectorFilter").value && safe($("subsectorFilter").selectedOptions[0]?.textContent), $("statusFilter").value && safe($("statusFilter").selectedOptions[0]?.textContent), $("lifecycleFilter").value && safe($("lifecycleFilter").selectedOptions[0]?.textContent), $("ownerFilter").value && safe($("ownerFilter").selectedOptions[0]?.textContent), $("sourceFilter").value && safe($("sourceFilter").selectedOptions[0]?.textContent), $("locationFilter").value && safe($("locationFilter").selectedOptions[0]?.textContent), $("typeFilter").value && safe($("typeFilter").selectedOptions[0]?.textContent), $("investmentModelFilter").value && safe($("investmentModelFilter").selectedOptions[0]?.textContent), $("assetFacilityTypeFilter").value && safe($("assetFacilityTypeFilter").selectedOptions[0]?.textContent), urlParams.get("period") && `الفترة: ${safe(urlParams.get("period"))}`, urlParams.get("deadline_after") && `موعد من ${safe(urlParams.get("deadline_after"))}`, urlParams.get("deadline_before") && `موعد حتى ${safe(urlParams.get("deadline_before"))}`, urlParams.get("deadline_status") === "without_reliable_deadline" && "الموعد: بدون موعد محدد"].filter(Boolean).map(value => `<span class="filter-chip">${value}</span>`).join("");
   } catch (error) { toast(error.message); }
@@ -809,14 +851,14 @@ document.querySelectorAll("#view-opportunities [data-sort-key]").forEach(button 
   const key=button.dataset.sortKey;
   state.sortOrder=state.sortBy===key?(state.sortOrder==="asc"?"desc":"asc"):"asc";
   state.sortBy=key; state.opportunityPage=0; updateOpportunityUrl(); loadOpportunities();
-  document.querySelectorAll("#view-opportunities th[data-column]").forEach(th=>th.removeAttribute("aria-sort"));
-  button.closest("th")?.setAttribute("aria-sort",state.sortOrder==="asc"?"ascending":"descending");
+  document.querySelectorAll("#view-opportunities [data-sort-key]").forEach(button=>button.removeAttribute("aria-sort"));
+  button.setAttribute("aria-sort",state.sortOrder==="asc"?"ascending":"descending");
   button.setAttribute("aria-label",`${button.dataset.sortLabel} · ${state.sortOrder==="asc"?"تصاعدي":"تنازلي"}`);
   button.textContent=`${button.dataset.sortLabel} ${state.sortOrder==="asc"?"↑":"↓"}`;
 }));
 $("previousPage").onclick = () => { if (state.opportunityPage > 0) { state.opportunityPage--; loadOpportunities(); } };
 $("nextPage").onclick = () => { state.opportunityPage++; loadOpportunities(); };
-$("resetFilters").onclick = async () => { $("searchInput").value = ""; for (const id of ["sectorFilter","activityFilter","subActivityFilter","subsectorFilter","statusFilter","lifecycleFilter","ownerFilter","sourceFilter","locationFilter","typeFilter","investmentModelFilter","assetFacilityTypeFilter"]) $(id).value = ""; if (state.tableGeo?.enabled) await state.tableGeo.reset(); state.sortBy="";state.sortOrder="desc";document.querySelectorAll("#view-opportunities [data-sort-key]").forEach(button=>button.textContent=button.dataset.sortLabel);document.querySelectorAll("#view-opportunities th[data-column]").forEach(th=>th.removeAttribute("aria-sort"));state.opportunityPage = 0; state.opportunityFiltersInitialized = true; history.replaceState(null,"",`${location.pathname}?view=opportunities`); loadOpportunities(); };
+$("resetFilters").onclick = async () => { $("searchInput").value = ""; for (const id of ["sectorFilter","activityFilter","subActivityFilter","subsectorFilter","statusFilter","lifecycleFilter","ownerFilter","sourceFilter","locationFilter","typeFilter","investmentModelFilter","assetFacilityTypeFilter"]) $(id).value = ""; if (state.tableGeo?.enabled) await state.tableGeo.reset(); state.sortBy="";state.sortOrder="desc";document.querySelectorAll("#view-opportunities [data-sort-key]").forEach(button=>button.textContent=button.dataset.sortLabel);document.querySelectorAll("#view-opportunities [data-sort-key]").forEach(button=>button.removeAttribute("aria-sort"));state.opportunityPage = 0; state.opportunityFiltersInitialized = true; history.replaceState(null,"",`${location.pathname}?view=opportunities`); loadOpportunities(); };
 $("alertStatus").onchange = loadAlerts; $("adminRefresh").onclick = loadAdmin;
 $("dqRunNow").onclick = async () => { const button=$("dqRunNow");button.disabled=true;button.textContent="جارٍ الفحص…";try{await api("/api/admin/data-quality/run?scope=full",{method:"POST"});toast("اكتمل فحص جودة البيانات");await loadAdmin();}catch(error){toast(error.message);}finally{button.disabled=false;button.textContent="تشغيل فحص كامل";} };
 document.querySelectorAll("[data-operation]").forEach(button => button.onclick = async () => { const action = button.dataset.operation; if (!window.confirm(action === "pause-schedules" ? "إيقاف جداول المزامنة لجميع المصادر؟" : "استئناف جداول المزامنة لجميع المصادر؟")) return; try { await api(`/api/admin/operations/${action}`, { method: "POST" }); toast("تم تحديث حالة الجداول"); loadAdmin(); } catch (error) { toast(error.message); } });

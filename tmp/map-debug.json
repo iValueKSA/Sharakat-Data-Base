@@ -1,0 +1,33 @@
+{
+  "responses": [
+    {
+      "console": "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+    }
+  ],
+  "states": [
+    {
+      "visible": true,
+      "title": "خريطة فرص الأحساء",
+      "loading": false,
+      "busy": null,
+      "children": 0,
+      "tiles": [],
+      "clusters": 0,
+      "markers": 0,
+      "notice": "",
+      "stats": "جارٍ احتساب التغطية…"
+    },
+    {
+      "visible": true,
+      "title": "خريطة فرص الأحساء",
+      "loading": true,
+      "busy": "true",
+      "children": 0,
+      "tiles": [],
+      "clusters": 0,
+      "markers": 0,
+      "notice": "جارٍ تحميل المواقع الجغرافية…",
+      "stats": "جارٍ احتساب التغطية…"
+    }
+  ]
+}

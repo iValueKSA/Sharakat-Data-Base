@@ -1,7 +1,9 @@
 services:
   api:
     volumes:
-      - ./backups:/backups
+      - type: bind
+        source: ${LOCAL_BACKUP_PATH:-./backups}
+        target: /backups
     environment:
       ENVIRONMENT: local_user
       PUBLIC_BASE_URL: ${PUBLIC_BASE_URL:-http://localhost:8080}
@@ -17,7 +19,9 @@ services:
         condition: service_completed_successfully
   worker:
     volumes:
-      - ./backups:/backups
+      - type: bind
+        source: ${LOCAL_BACKUP_PATH:-./backups}
+        target: /backups
     environment:
       ENVIRONMENT: local_user
       LOCAL_SETUP_MARKER: ${LOCAL_SETUP_MARKER:-local_setup_state}
@@ -57,7 +61,9 @@ services:
       BOOTSTRAP_ADMIN_PASSWORD: ${BOOTSTRAP_ADMIN_PASSWORD:?Local Admin password is required}
     volumes:
       - ./data:/source-data:ro
-      - ./backups:/backups
+      - type: bind
+        source: ${LOCAL_BACKUP_PATH:-./backups}
+        target: /backups
     depends_on:
       migrate:
         condition: service_completed_successfully

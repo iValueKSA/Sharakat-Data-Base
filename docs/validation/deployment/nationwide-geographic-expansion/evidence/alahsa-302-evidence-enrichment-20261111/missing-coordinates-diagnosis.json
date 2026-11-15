@@ -1,0 +1,13 @@
+{
+  "endpoint": "GET /api/data-dashboard/geography?governorate_id=501",
+  "observed_definition_in_live_API": "missing_coordinates = total - mapped_count (same complement semantics as unmapped); mapped means accepted verified coordinates returned by the current map eligibility pipeline, not literal SQL latitude/longitude NULL.",
+  "al_ahsa_records": 518,
+  "records_with_non_null_latitude_and_longitude": 518,
+  "records_with_null_latitude_or_longitude": 0,
+  "current_api_missing_coordinates": 373,
+  "current_api_unmapped": 373,
+  "current_api_exact_mapped": 145,
+  "simulated_api_missing_coordinates": 71,
+  "simulated_api_exact_mapped": 447,
+  "interpretation": "The 373 value is an eligibility/unmapped count, not a count of absent database coordinates. Among these 518 rows all have stored coordinates, including the 302 candidates. The 302 remain unmapped because their current scope is UNSPECIFIED and the actual API helper returns no point for that broad/unknown scope."
+}

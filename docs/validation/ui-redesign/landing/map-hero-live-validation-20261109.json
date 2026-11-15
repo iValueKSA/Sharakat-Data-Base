@@ -1,0 +1,67 @@
+{
+  "url": "http://localhost:8080/",
+  "chrome": "Chrome/157.0.8103.38",
+  "screenshots": [
+    "C:\\Users\\QusaiAbdElhalim\\OneDrive - iValue\\Desktop\\الشراكات - الأحساء\\Sharakat-Data-Base\\docs\\validation\\ui-redesign\\landing\\map-hero-first-screen-desktop-1440x900-20261109.png",
+    "C:\\Users\\QusaiAbdElhalim\\OneDrive - iValue\\Desktop\\الشراكات - الأحساء\\Sharakat-Data-Base\\docs\\validation\\ui-redesign\\landing\\map-hero-13-regions-title-connections-1440x900-20261109.png",
+    "C:\\Users\\QusaiAbdElhalim\\OneDrive - iValue\\Desktop\\الشراكات - الأحساء\\Sharakat-Data-Base\\docs\\validation\\ui-redesign\\landing\\map-hero-first-screen-mobile-390x844-20261109.png",
+    "C:\\Users\\QusaiAbdElhalim\\OneDrive - iValue\\Desktop\\الشراكات - الأحساء\\Sharakat-Data-Base\\docs\\validation\\ui-redesign\\landing\\map-hero-transition-to-existing-overview-1440x900-20261109.png"
+  ],
+  "viewports": {
+    "desktop": {
+      "width": 1440,
+      "height": 900,
+      "documentWidth": 1425,
+      "horizontalOverflow": false,
+      "heroHeight": 836,
+      "heroTop": 64,
+      "heroBottom": 900,
+      "title": "منصة الفرص الاستثمارية",
+      "oldContentBelow": true,
+      "landingSections": 0,
+      "ahdaFontLoaded": true
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "horizontalOverflow": false,
+      "heroHeight": 784,
+      "heroTop": 60,
+      "heroBottom": 844,
+      "title": "منصة الفرص الاستثمارية",
+      "oldContentBelow": true,
+      "landingSections": 0,
+      "ahdaFontLoaded": true
+    },
+    "tablet": {
+      "width": 768,
+      "height": 900,
+      "documentWidth": 768,
+      "horizontalOverflow": false,
+      "heroHeight": 836,
+      "heroTop": 64,
+      "heroBottom": 900,
+      "title": "منصة الفرص الاستثمارية",
+      "oldContentBelow": true,
+      "landingSections": 0,
+      "ahdaFontLoaded": true,
+      "exactScreenHeight": true
+    }
+  },
+  "errors": {
+    "console": [],
+    "exceptions": [],
+    "failed": [],
+    "auth401": "Unauthenticated guest /api/auth/me response only"
+  },
+  "svg": {
+    "pinCount": 13,
+    "regionLeaderCount": 13,
+    "refStyle": true
+  },
+  "transition": {
+    "heroBottom": 224,
+    "lowerHeadingVisible": true
+  }
+}

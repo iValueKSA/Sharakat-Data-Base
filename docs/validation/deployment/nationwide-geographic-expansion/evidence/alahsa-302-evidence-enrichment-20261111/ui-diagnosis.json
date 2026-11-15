@@ -1,0 +1,26 @@
+{
+  "captured_at_utc": "2026-11-11T10:15:36.295267+00:00",
+  "live_filter_options_endpoint": "GET /api/geography/filter-options",
+  "catalog_endpoint": "GET /api/geography/catalog",
+  "reference_ready": true,
+  "available_selector_levels": [
+    "region",
+    "governorate"
+  ],
+  "filter_options_dataset_version": "taadeen-public-gis-20261102-v3",
+  "region_options": 13,
+  "governorate_options": 149,
+  "alahsa_option": {
+    "id": "501",
+    "name_ar": "الاحساء",
+    "display_name_ar": "الأحساء",
+    "unique_masters": 518,
+    "parent_id": "5"
+  },
+  "browser_observation": "Fresh guest dashboard: governorate dropdown initially disabled; selected Eastern Region; region filter applied and dashboard/map data updated, but governorate dropdown remained disabled in accessible UI state although options were populated (including Al-Ahsa). No authentication required to reproduce.",
+  "served_frontend_js_sha256": "61a437f847afcb4d7867d286021f25431be5344babce966ed619c94e29a8478f",
+  "served_js_uses_filter_options_api": true,
+  "served_js_contains_governorate_disabled_assignment": "governorate.disabled = !region.value",
+  "diagnosis": "The catalog and live options endpoint are ready and contain governorates; the normal UI remains unable to select a governorate after a region selection. This is a frontend state/UI defect or runtime asset discrepancy, not missing geography catalog or authentication. No frontend code changed.",
+  "alahsa_selectable_via_normal_ui": false
+}

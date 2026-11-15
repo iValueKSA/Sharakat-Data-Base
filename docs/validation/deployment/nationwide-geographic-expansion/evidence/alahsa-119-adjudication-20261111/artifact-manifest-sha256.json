@@ -1,0 +1,42 @@
+[
+  {
+    "sha256": "4b5c9b2785d3c1aa2556cc2277d63f6282cd99aa980d8824595d0b5d4b6fd32a",
+    "file": "ALAHSA-119-AUTOMATED-GEOGRAPHIC-ADJUDICATION-20261111.md",
+    "bytes": 10028
+  },
+  {
+    "sha256": "28a73f98b21f1a66784e9da8226b68fbfbe0dd3b5e69595d7685b3fb55160930",
+    "file": "alahsa-119-geographic-adjudication.csv",
+    "bytes": 468352
+  },
+  {
+    "sha256": "4340a4fdda3dbbb32acbac1986a6bec0083ee8d8f975fc6e0cd570d455554230",
+    "file": "official-furas-targeted-features.json",
+    "bytes": 165234
+  },
+  {
+    "sha256": "165e394dce13cf67ed1b083dbc8b84cb92e41bb1842e0430835f914190f0c7e6",
+    "file": "official-furas-detail-page-checks.json",
+    "bytes": 1266
+  },
+  {
+    "sha256": "6612187a729d23e6003e53b6916d2f38b462b86082324dc56bd1af73a05954bf",
+    "file": "live-api-baseline.json",
+    "bytes": 747
+  },
+  {
+    "sha256": "2d0c8bf9597548246e905e1cf3936e39d34fa3e53f3430da6237eb2f1faa0ef1",
+    "file": "isolated-api-eligibility-simulation.json",
+    "bytes": 761
+  },
+  {
+    "sha256": "cbc84893c000afeb5e0b8f7ed4290193d7a179a5fc19356f61ba3ffce9a893d0",
+    "file": "focused-regression-results.json",
+    "bytes": 1739
+  },
+  {
+    "sha256": "5d2ea1c8e9e4c711d298f44909f5dea93e30b8a7e478b04489604a193adc3658",
+    "file": "adjudication-summary.json",
+    "bytes": 1168
+  }
+]

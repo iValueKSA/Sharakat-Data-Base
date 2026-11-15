@@ -1,0 +1,26 @@
+{
+  "captured_at_utc": "2026-11-11T10:44:47.5290262Z",
+  "checks": {
+    "register_unique": true,
+    "approved_rows": true,
+    "simulated_pass": true,
+    "exact_source_filter_set": true,
+    "official_features": true,
+    "live_rows": true,
+    "source_admin_geometry_identity_checks": true,
+    "excluded_set_check": true,
+    "prewrite_master_counts": true,
+    "current_scope_unspecified": true
+  },
+  "passed": true,
+  "candidate_count": 302,
+  "official_features": 302,
+  "live_rows": 302,
+  "bad_records": [],
+  "excluded_overlap_count": 0,
+  "prior_118_overlap_count": 0,
+  "prior_27_overlap_count": 0,
+  "master_64_overlap_count": 0,
+  "source_observations_at_prewrite": 57621,
+  "source_opportunities_at_prewrite": 9470
+}

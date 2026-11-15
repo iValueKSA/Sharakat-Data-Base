@@ -1,7 +1,9 @@
 from datetime import datetime, timezone
-from sqlalchemy import create_engine, select, func
+from collections import defaultdict
+import copy, json, re
+from sqlalchemy import create_engine, select, func, event
 from sqlalchemy.orm import Session
-from app.models import Base, Source, Opportunity, SourceOpportunity, SourceObservation, ChangeHistory, DuplicateCandidate, AlertEvent, SyncJob
+from app.models import Base, Source, Opportunity, SourceOpportunity, SourceObservation, ChangeHistory, DuplicateCandidate, AlertEvent, SyncJob, AssetFacilityType, AssetFacilityTypeAlias, OpportunityAssetFacilityType
 from app.adapters import InvestSaudiAdapter, RawOpportunity
 from app.service import _safe_record, reconcile_missing_records
 from app.normalization import normalize_reference
@@ -36,6 +38,91 @@ def test_unverified_reference_string_is_reviewed_not_auto_linked():
     assert db.scalar(select(func.count(SourceOpportunity.id)))==2
     assert db.scalar(select(func.count(DuplicateCandidate.id)).where(DuplicateCandidate.status=="PENDING"))==1
     db.close();engine.dispose()
+
+
+def test_furas_identical_replay_is_write_idempotent_and_real_changes_still_apply(monkeypatch):
+    monkeypatch.setattr("app.geography_flags.flag_enabled",lambda _name:False)
+    engine,db,sources=setup_db();source=sources[0]
+    asset_ids={"building":"asset_facility_type:building","land":"asset_facility_type:land",
+        "park":"asset_facility_type:public_park","square":"asset_facility_type:public_square"}
+    asset_values={"building":"fixture-building","land":"fixture-land","park":"fixture-park","square":"fixture-square"}
+    for key,label in asset_ids.items():
+        db.add(AssetFacilityType(canonical_id=label,label_ar=f"test-{key}",active=True))
+        db.add(AssetFacilityTypeAlias(source_key="furas",source_field="LOCATIONTYPE",
+            source_value=asset_values[key],canonical_id=label))
+    db.commit()
+    initial_values=[asset_values[k] for k in ("building","land","park")]
+    original=RawOpportunity("furas-idempotency-fixture","فرصة اختبار أصلية","https://example.test/furas-fixture",
+        location="الأحساء",area_text="5000",deadline="2026-12-01",status="Announced",
+        description="وصف أصلي قابل للمقارنة",latitude=24.10,longitude=49.60,
+        raw={"attributes":{"LOCATIONTYPE":json.dumps(initial_values,ensure_ascii=False)},
+             "location_confidence_score":0.95,"location_detection_method":"ADMIN_LOCATION_REVIEW",
+             "location_evidence":"approved isolated fixture; identity-linked source record"})
+    _safe_record(db,source,original,defaultdict(int),allow_master_creation=True)
+    db.commit()
+    record=db.scalar(select(SourceOpportunity).where(SourceOpportunity.source_opportunity_id==original.external_id))
+    master=db.get(Opportunity,record.master_opportunity_id)
+    before_assignments={row.canonical_id:row.id for row in db.scalars(select(OpportunityAssetFacilityType).where(
+        OpportunityAssetFacilityType.source_record_id==record.id)).all()}
+    assert set(before_assignments)=={asset_ids[k] for k in ("building","land","park")}
+
+    statements=[]
+    def capture(_conn,_cursor,statement,_params,_context,_many):
+        match=re.match(r"\s*(INSERT\s+INTO|UPDATE|DELETE\s+FROM)\s+[\"`]?([\w.]+)",statement,re.I)
+        if match:
+            statements.append((match.group(1).split()[0].upper(),match.group(2).split(".")[-1].strip('"`'),statement,_params))
+    event.listen(engine,"before_cursor_execute",capture)
+    try:
+        _safe_record(db,source,original,defaultdict(int),allow_master_creation=True)
+        db.commit()
+        assert statements==[]
+
+        changed=copy.deepcopy(original)
+        changed.title="فرصة اختبار بعد التحديث"
+        changed.description="وصف محدث يثبت استمرار التحديثات الحقيقية"
+        changed.deadline="2027-01-15"
+        changed.status="Closed"
+        changed.location="الأحساء - موقع موثق جديد"
+        changed.latitude=24.25;changed.longitude=49.75
+        changed.raw["attributes"]["LOCATIONTYPE"]=json.dumps(
+            [asset_values["building"],asset_values["land"],asset_values["square"]],ensure_ascii=False)
+        statements.clear()
+        _safe_record(db,source,changed,defaultdict(int),allow_master_creation=True)
+        db.commit()
+        db.refresh(record);db.refresh(master)
+        assert record.source_title==changed.title
+        assert record.raw_dates=={"deadline":changed.deadline}
+        assert master.title_ar==changed.title
+        assert master.short_description==changed.description
+        assert master.full_description==changed.description
+        assert master.submission_deadline==changed.deadline
+        assert master.status!=original.status
+        assert master.latitude==changed.latitude and master.longitude==changed.longitude
+        assert {row.canonical_id for row in db.scalars(select(OpportunityAssetFacilityType).where(
+            OpportunityAssetFacilityType.source_record_id==record.id)).all()}=={
+                asset_ids["building"],asset_ids["land"],asset_ids["square"]}
+        after_assignments={row.canonical_id:row.id for row in db.scalars(select(OpportunityAssetFacilityType).where(
+            OpportunityAssetFacilityType.source_record_id==record.id)).all()}
+        assert all(after_assignments[key]==before_assignments[key] for key in (asset_ids["building"],asset_ids["land"]))
+        assert any(row.changed_field=="asset_facility_type" for row in db.scalars(select(ChangeHistory).where(
+            ChangeHistory.opportunity_id==master.id)).all())
+        assert statements # material change generated actual SQL writes
+
+        statements.clear()
+        _safe_record(db,source,changed,defaultdict(int),allow_master_creation=True)
+        db.commit()
+        # A first no-material-change review reevaluation is operational
+        # telemetry; it occurs once after the new conflict evidence exists.
+        business_writes=[item for item in statements if item[1]!="system_events"]
+        assert business_writes==[]
+        assert all(item[3][0]=="SYSTEM_REEVALUATION" for item in statements)
+        statements.clear()
+        _safe_record(db,source,changed,defaultdict(int),allow_master_creation=True)
+        db.commit()
+        assert statements==[]
+    finally:
+        event.remove(engine,"before_cursor_execute",capture)
+        db.close();engine.dispose()
 
 def test_future_sync_canonicalizes_master_but_preserves_source_owner_status_and_payload():
     engine,db,sources=setup_db()

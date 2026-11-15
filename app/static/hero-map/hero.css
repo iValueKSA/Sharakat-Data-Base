@@ -1,0 +1,39 @@
+/* Isolated adaptation of the supplied KingdomStage visual; original scene and media remain the source of the map appearance. */
+.map-hero-runtime{position:relative;isolation:isolate;width:100%;height:100%;min-height:inherit;overflow:hidden;background:#0B1420;direction:ltr}
+.reference-stage{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.reference-stage .l-stage-media{position:absolute;inset:0;opacity:1}
+.reference-stage .l-stage-media-frame,.reference-stage .l-stage-media-frame>picture{position:absolute;inset:0;display:block}
+.reference-stage .l-stage-still,.reference-stage .l-stage-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 30%}
+.reference-stage .l-stage-video{opacity:0}
+.reference-stage .l-stage-video[data-state="playing"]{opacity:1}
+.reference-stage-scene{position:absolute;inset:0;direction:ltr}
+.reference-stage-scene>div{position:absolute!important;inset:0!important}
+.reference-vignette{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(11,20,32,.46),transparent 19%),radial-gradient(130% 95% at 50% 48%,transparent 57%,rgba(7,14,24,.78) 100%);pointer-events:none}
+.map-hero-connections{position:absolute;inset:0;width:100%;height:100%;z-index:3;overflow:visible;pointer-events:none}
+.map-connection-path{fill:none;stroke:rgba(40,224,214,.39);stroke-width:1;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;filter:drop-shadow(0 0 2px rgba(47,240,226,.25));animation:reference-connection-draw 2.7s cubic-bezier(.22,.72,.24,1) forwards}
+.map-connection-path:nth-of-type(2n){animation-delay:.13s;stroke:rgba(40,224,214,.34)}
+.map-region-pin-anchor{overflow:visible}
+.map-region-pin{opacity:0;transform-box:fill-box;transform-origin:50% 100%;animation:reference-pin-enter .65s ease-out forwards;filter:drop-shadow(0 0 4px rgba(47,240,226,.55))}
+.map-region-pin-anchor:nth-of-type(2n) .map-region-pin{animation-delay:.14s}
+.map-pin-halo,.map-pin-ring{vector-effect:non-scaling-stroke}
+.map-pin-halo{fill:rgba(47,240,226,.12);stroke:rgba(47,240,226,.40);stroke-width:2;transform-box:fill-box;transform-origin:50% 100%;animation:reference-pin-breathe 3.8s ease-in-out infinite}
+.map-pin-ring{fill:#0B1420;fill-opacity:.88;stroke:#2FF0E2;stroke-width:1.25}
+.map-pin-core{fill:#E6FFFC;stroke:rgba(40,224,214,.72);stroke-width:.55;vector-effect:non-scaling-stroke}
+.map-convergence-point{fill:#E6FFFC;stroke:#2FF0E2;stroke-width:1;filter:drop-shadow(0 0 4px rgba(47,240,226,.7));vector-effect:non-scaling-stroke}
+.map-hero-city-label{display:none;fill:#eafffc;font-family:"Ahda Text",Tahoma,Arial,sans-serif;font-size:12px;font-weight:700;paint-order:stroke;stroke:#060a0e;stroke-width:2.5px;stroke-linejoin:round;filter:drop-shadow(0 0 5px rgba(22,224,210,.85));user-select:none}
+.map-hero-runtime[data-renderer="static"] .map-hero-city-label{display:block}
+.map-hero-title{position:absolute;z-index:5;top:clamp(18px,4.3vh,44px);left:50%;margin:0;transform:translateX(-50%);padding:0 10px;color:#EAFDFC;background:transparent;font-family:"Ahda Text",Tahoma,Arial,sans-serif;font-size:clamp(22px,2.35vw,34px);font-weight:700;line-height:1.4;text-align:center;white-space:nowrap;text-shadow:0 2px 14px rgba(0,0,0,.7),0 0 24px rgba(40,224,214,.16)}
+.l-stage-static{position:absolute;top:22%;left:50%;width:min(82vw,1100px);height:61%;transform:translateX(-50%);perspective:1200px}
+.l-stage-static-map{width:100%;height:100%;overflow:visible;transform:rotateX(46deg);filter:drop-shadow(0 18px 24px rgba(0,0,0,.55))}
+.l-stage-static-survey{fill:none;stroke:rgba(95,169,180,.22);stroke-width:1}
+.l-stage-static-province{fill:#0e1c29;stroke:rgba(40,224,214,.5);stroke-width:1}
+.l-stage-static-city{fill:#28E0D6}
+.l-map-label{display:block;color:#eafffc;font-family:"Ahda Text",Tahoma,Arial,sans-serif;font-size:12px;font-weight:700;white-space:nowrap;user-select:none;text-shadow:0 0 6px #060a0e,0 0 9px rgba(22,224,210,.85),0 0 18px rgba(22,224,210,.5)}
+@keyframes reference-connection-draw{to{stroke-dashoffset:0}}
+@keyframes reference-pin-enter{from{opacity:0;transform:scale(.72)}to{opacity:1;transform:scale(1)}}
+@keyframes reference-pin-breathe{0%,100%{opacity:.55;transform:scale(.88)}50%{opacity:1;transform:scale(1.16)}}
+@media(max-width:1023.98px){.reference-stage .l-stage-still,.reference-stage .l-stage-video{object-position:50% 50%}.map-hero-title{top:20px;font-size:clamp(19px,5vw,25px)}.l-stage-static{top:34%;left:50%;width:124%;height:46%}.map-connection-path{stroke-width:.9}.map-region-pin{scale:.88}}
+@media(prefers-reduced-motion:reduce){.map-connection-path{animation-duration:.01ms;animation-delay:0s;stroke-dashoffset:0}.map-region-pin{animation-duration:.01ms;animation-delay:0s;opacity:1}.map-pin-halo{animation:none;opacity:.8}}
+.map-hero-runtime[data-reference="true"] .map-hero-connections,.map-hero-runtime[data-reference="true"] .map-hero-title{display:none}
+
+.map-hero{position:relative;min-height:calc(100vh - 64px);min-height:calc(100svh - 64px);overflow:hidden;isolation:isolate;background:#0B1420}.map-hero-runtime-mount{position:absolute;inset:0}.content:has(> #view-overview.visible){width:100%;max-width:none;padding:0}#view-overview.visible{display:block;animation:none}#view-overview>.overview-existing-content{padding:30px clamp(18px,3vw,46px) 56px}@media(max-width:680px){.map-hero{min-height:calc(100svh - 60px)}}

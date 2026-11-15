@@ -1,0 +1,30 @@
+{
+  "candidates_evaluated": 119,
+  "automatically_approved": 118,
+  "held_for_review": 1,
+  "approved_with_coordinate_preservation": 118,
+  "approved_with_administrative_evidence": 118,
+  "boundary_uncertainty_cases": "0 candidate-specific retained-reference conflicts; independent GEOSA polygon validation unavailable for all 119",
+  "identity_conflicts": 0,
+  "coordinate_conflicts": 0,
+  "held_master_ids": [
+    64
+  ],
+  "current_map_eligible_count": 27,
+  "current_total": 518,
+  "simulated_additional_map_eligible": 118,
+  "simulated_total_map_eligible": 145,
+  "simulated_api_point_groups": 144,
+  "live_api_master_ids_baseline": 27,
+  "official_live_gis_features": 118,
+  "official_exact_detail_page_fallback": [
+    "26-09-2439514"
+  ],
+  "source_identity_or_coordinate_conflicts": 0,
+  "existing_manual_review_or_open_conflicts": 0,
+  "geography_assignment_mismatches": 0,
+  "production_data_mutations": 0,
+  "production_deployment_performed": false,
+  "suspected_coordinate_placeholder_cases": 1,
+  "other_governorate_regression": "NONE; scope-only proposal leaves governorate 501 and parent region 5 assignments unchanged"
+}

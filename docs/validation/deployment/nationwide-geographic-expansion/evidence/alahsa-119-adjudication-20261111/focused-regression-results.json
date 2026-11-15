@@ -1,0 +1,55 @@
+{
+  "candidate_selection": {
+    "actual": 119,
+    "all_current_scope_unspecified": true,
+    "all_nonmerged": "confirmed in prior targeted live read-only query",
+    "expected": 119,
+    "unique_masters": 119,
+    "source_master_coordinate_matches": 119,
+    "source_identity_matches": 119
+  },
+  "official_evidence": {
+    "targeted_furas_gis_features": 118,
+    "coordinate_transformation": "none",
+    "gis_layer_wkid": 4326,
+    "gis_geometry_coordinate_mismatches": 0,
+    "master_64_suspected_coarse_coordinate_held": 1,
+    "exact_live_detail_page_fallback": 1,
+    "current_features_within_reviewed_city_id_set": 118
+  },
+  "review_and_geography": {
+    "independent_GEOSA_polygon_validation": "unavailable; not claimed",
+    "manual_or_open_reviews": 0,
+    "candidate_parent_region5_matches": 119,
+    "masters_with_existing_field_conflicts": 10,
+    "candidate_gov501_reference_matches": 119,
+    "retained_polygon_conflicts": 0,
+    "existing_conflict_statuses": [
+      "RESOLVED",
+      "RESOLVED_KEEP"
+    ]
+  },
+  "actual_live_api_baseline": {
+    "API_master_ids": 27,
+    "eligible_masters": 27,
+    "point_groups": 26,
+    "total": 518
+  },
+  "actual_API_builder_simulation": {
+    "additional_approved_ids": 118,
+    "all_existing_27_preserved": true,
+    "approved_coordinate_collisions_with_existing_points": [],
+    "duplicate_candidate_coordinates": 0,
+    "held_id_64_excluded": true,
+    "map_eligible_masters": 145,
+    "point_groups": 144,
+    "total": 518
+  },
+  "negative_guards": {
+    "boundary_conflict": true,
+    "broad_scopes_rejected": true,
+    "coordinate_mismatch": true,
+    "identity_mismatch": true
+  },
+  "production_data_mutations": 0
+}

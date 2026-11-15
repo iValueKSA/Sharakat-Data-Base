@@ -1,0 +1,15 @@
+{
+  "base": "http://localhost:8081/",
+  "pages": {
+    "sources": {
+      "cards": 14,
+      "modal_visible": false
+    },
+    "opportunity_detail": {
+      "visible": true,
+      "fields": 21,
+      "closed": true
+    }
+  },
+  "errors": []
+}

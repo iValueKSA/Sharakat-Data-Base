@@ -1,0 +1,56 @@
+{
+  "captured_at_utc": "2026-11-11T09:56:22.2990143Z",
+  "official_source": "Balady public investment opportunity map",
+  "config_url": "https://gisapps.balady.gov.sa/opportunities/assets/config.json",
+  "layer_url": "https://gisOppertunities.momra.gov.sa/arcgis/rest/services/GISProjects/InvestmentView/MapServer/0",
+  "layer_name": "InvestmentP",
+  "query_mode": "exact OPPORTUNITYID IN batched queries; only the 302 register references; 20 IDs per request; one-second interval",
+  "requested_candidate_count": 302,
+  "batch_count": 16,
+  "returned_feature_count": 302,
+  "unique_official_provider_ids": 302,
+  "official_admin_attributes_exact_match_count": 302,
+  "official_geometry_matches_stored_coordinates_count": 302,
+  "features_with_geometry": 302,
+  "zero_zero_geometries": 0,
+  "spatial_reference_epsg_4326": true,
+  "current_scope_and_parentage_matches": 302,
+  "source_identity_matches": 302,
+  "no_open_conflict_review_or_merge": 302,
+  "saved_region_containment_pass": true,
+  "admin_region_combinations": [
+    {
+      "amana": "أمانة الاحساء",
+      "region_id": "005",
+      "count": 4
+    },
+    {
+      "amana": "أمانة محافظة الأحساء",
+      "region_id": "005",
+      "count": 298
+    }
+  ],
+  "city_id_counts": {
+    "005020001": 287,
+    "005011001": 8,
+    "9": 5,
+    "1945": 1,
+    "1315": 1
+  },
+  "geosa_polygon_verification": "NOT_PERFORMED",
+  "checks": {
+    "302_unique_register_rows": true,
+    "302_unique_target_references": true,
+    "exactly_one_official_feature_each": true,
+    "exactly_one_live_furas_source_each": true,
+    "official_admin_attributes_exact_match": true,
+    "official_coordinates_match_stored_source_and_master": true,
+    "all_features_have_geometry_no_null_island": true,
+    "official_layer_epsg_4326": true,
+    "all_current_scope_and_hierarchy_match": true,
+    "source_identity_exact": true,
+    "no_open_conflict_review_or_merge": true,
+    "all_saved_region_boundary_containment_pass": true
+  },
+  "passed": true
+}

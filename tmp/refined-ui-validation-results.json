@@ -1,0 +1,281 @@
+{
+  "base": "http://127.0.0.1:8081/",
+  "screenshots": [
+    "docs\\validation\\ui-redesign\\16-overview-light-cards-desktop.png",
+    "docs\\validation\\ui-redesign\\17-national-dashboard-light-cards-desktop.png",
+    "docs\\validation\\ui-redesign\\20-national-map-alidade-smooth-desktop.png",
+    "docs\\validation\\ui-redesign\\18-opportunities-horizontal-cards-desktop.png",
+    "docs\\validation\\ui-redesign\\19-opportunities-horizontal-cards-mobile-390px.png",
+    "docs\\validation\\ui-redesign\\21-sources-light-cards-desktop.png"
+  ],
+  "api": [
+    {
+      "path": "/api/auth/me",
+      "status": 401,
+      "query": ""
+    },
+    {
+      "path": "/api/dashboard",
+      "status": 200,
+      "query": ""
+    },
+    {
+      "path": "/api/filters",
+      "status": 200,
+      "query": ""
+    },
+    {
+      "path": "/api/geography/catalog",
+      "status": 200,
+      "query": ""
+    },
+    {
+      "path": "/api/geography/filter-options",
+      "status": 200,
+      "query": ""
+    },
+    {
+      "path": "/api/data-dashboard",
+      "status": 200,
+      "query": ""
+    },
+    {
+      "path": "/api/geography/catalog",
+      "status": 200,
+      "query": ""
+    },
+    {
+      "path": "/api/data-dashboard/geography",
+      "status": 200,
+      "query": ""
+    },
+    {
+      "path": "/api/opportunities",
+      "status": 200,
+      "query": "?limit=300"
+    },
+    {
+      "path": "/api/filters",
+      "status": 200,
+      "query": ""
+    },
+    {
+      "path": "/api/data-dashboard",
+      "status": 200,
+      "query": ""
+    },
+    {
+      "path": "/api/data-dashboard",
+      "status": 200,
+      "query": "?region_id=1"
+    },
+    {
+      "path": "/api/sources",
+      "status": 200,
+      "query": ""
+    },
+    {
+      "path": "/api/data-dashboard/geography-summary",
+      "status": 200,
+      "query": ""
+    },
+    {
+      "path": "/api/geography/catalog",
+      "status": 200,
+      "query": ""
+    },
+    {
+      "path": "/api/data-dashboard",
+      "status": 200,
+      "query": "?region_id=1&governorate_id=107"
+    },
+    {
+      "path": "/api/geography/filter-options",
+      "status": 200,
+      "query": ""
+    },
+    {
+      "path": "/api/data-dashboard/geography",
+      "status": 200,
+      "query": ""
+    },
+    {
+      "path": "/api/geography/catalog",
+      "status": 200,
+      "query": ""
+    },
+    {
+      "path": "/api/source-coverage",
+      "status": 200,
+      "query": ""
+    },
+    {
+      "path": "/api/opportunities",
+      "status": 200,
+      "query": "?q=&sector=&activity=&sub_activity=&subsector=&status=&owner=&source=&location=&opportunity_type=&investment_model=&asset_facility_type=&lifecycle=&limit=50&offset=0"
+    },
+    {
+      "path": "/api/geography/catalog",
+      "status": 200,
+      "query": ""
+    },
+    {
+      "path": "/api/data-dashboard/geography",
+      "status": 200,
+      "query": ""
+    },
+    {
+      "path": "/api/data-dashboard/geography-summary",
+      "status": 200,
+      "query": ""
+    },
+    {
+      "path": "/api/opportunities",
+      "status": 200,
+      "query": "?q=&sector=&activity=&sub_activity=&subsector=&status=&owner=&source=&location=&opportunity_type=&investment_model=&asset_facility_type=&lifecycle=&limit=50&offset=0&sort_by=title&sort_order=asc"
+    },
+    {
+      "path": "/api/opportunities",
+      "status": 200,
+      "query": "?q=&sector=&activity=&sub_activity=&subsector=&status=&owner=&source=&location=&opportunity_type=&investment_model=&asset_facility_type=&lifecycle=&limit=50&offset=0"
+    },
+    {
+      "path": "/api/data-dashboard/geography-summary",
+      "status": 200,
+      "query": ""
+    },
+    {
+      "path": "/api/geography/catalog",
+      "status": 200,
+      "query": ""
+    },
+    {
+      "path": "/api/data-dashboard/geography",
+      "status": 200,
+      "query": ""
+    },
+    {
+      "path": "/api/opportunities/175",
+      "status": 200,
+      "query": ""
+    },
+    {
+      "path": "/api/opportunities",
+      "status": 200,
+      "query": "?q=&sector=&activity=&sub_activity=&subsector=&status=&owner=&source=&location=&opportunity_type=&investment_model=&asset_facility_type=&lifecycle=&limit=50&offset=0&sort_by=title&sort_order=asc"
+    },
+    {
+      "path": "/api/opportunities",
+      "status": 200,
+      "query": "?q=%D8%A7%D9%86%D8%B4%D8%A7%D8%A1+%D9%88+%D8%AA%D8%B4%D8%BA%D9%8A&sector=&activity=&sub_activity=&subsector=&status=&owner=&source=&location=&opportunity_type=&investment_model=&asset_facility_type=&lifecycle=&limit=50&offset=0"
+    },
+    {
+      "path": "/api/sources",
+      "status": 200,
+      "query": ""
+    },
+    {
+      "path": "/api/opportunities",
+      "status": 200,
+      "query": "?q=&sector=&activity=&sub_activity=&subsector=&status=&owner=&source=&location=&opportunity_type=&investment_model=&asset_facility_type=&lifecycle=&limit=50&offset=50&sort_by=title&sort_order=asc"
+    },
+    {
+      "path": "/api/data-dashboard/geography-summary",
+      "status": 200,
+      "query": ""
+    },
+    {
+      "path": "/api/source-coverage",
+      "status": 200,
+      "query": ""
+    }
+  ],
+  "tiles": [
+    {
+      "status": 200,
+      "url": "https://tiles.stadiamaps.com/tiles/alidade_smooth/10/636/440.png"
+    }
+  ],
+  "console_errors": [],
+  "page_errors": [],
+  "checks": {
+    "shell": {
+      "background": "rgb(7, 8, 13)",
+      "dir": "rtl",
+      "font": "\"Ahda Text\", Tahoma, Arial, sans-serif",
+      "theme": true
+    },
+    "overviewCard": {
+      "background": "rgb(232, 237, 245)",
+      "color": "rgb(23, 34, 53)"
+    },
+    "dashboardCard": {
+      "background": "rgb(232, 237, 245)",
+      "color": "rgb(23, 34, 53)"
+    },
+    "dashboardTileImages": {
+      "total": 0,
+      "loaded": 0,
+      "dimensions": null
+    },
+    "map": {
+      "title": "خريطة فرص الأحساء",
+      "description": "الإحداثيات المطابقة لسجل المصدر والحد المحلي فقط.",
+      "loadedTiles": 0,
+      "clusters": 0,
+      "markers": 0,
+      "canvas": [
+        520,
+        268
+      ]
+    },
+    "heatMode": "false",
+    "regionOptions": 13,
+    "regionClusters": 0,
+    "governorateOptions": 15,
+    "governorateClusters": 0,
+    "opportunities": {
+      "count": 50,
+      "columns": [
+        "action",
+        "activity",
+        "area",
+        "asset_facility_type",
+        "deadline",
+        "opportunity",
+        "owner",
+        "sector",
+        "sources",
+        "status",
+        "sub_activity"
+      ],
+      "title": "انشاء و تشغيل و صيانة ثلاثة جسور للمشاة مع استثمار حقوق التسمية والرعاية والدعاية والإعلان ( 1 )",
+      "sector": "تجاري",
+      "icon": "#sector-icon-store",
+      "cardBg": "rgba(0, 0, 0, 0)",
+      "layout": "1057.62px"
+    },
+    "searchCount": 50,
+    "sort": "ascending",
+    "pagination": {
+      "first": "175",
+      "next": "175",
+      "summary": "صفحة 1 من 134"
+    },
+    "detailsOpen": false,
+    "mobile": {
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": false,
+      "listColumns": "334px",
+      "cardColumns": "38px 261px",
+      "fields": "127.5px 127.5px",
+      "count": 50
+    },
+    "sources": {
+      "count": 14,
+      "background": "rgb(232, 237, 245)"
+    }
+  },
+  "finished": "2026-11-09T15:50:23.333Z"
+}

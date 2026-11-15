@@ -1,0 +1,21 @@
+{
+  "master_total": 6680,
+  "held_master_64": {
+    "scope": "UNSPECIFIED",
+    "canonical_id": "AH-20261011105649-4174ff7d",
+    "merged_into_id": null
+  },
+  "merged_masters": 21,
+  "captured_at_utc": "2026-11-11T12:28:03.536204+03:00",
+  "alahsa_nonmerged": 518,
+  "alias_audit_rows": 75,
+  "non_merged_masters": 6659,
+  "source_observations": 57581,
+  "furas_active_aliases": 75,
+  "source_opportunities": 9470,
+  "scope_distribution_nonmerged": {
+    "NULL": 2,
+    "UNSPECIFIED": 473,
+    "SPECIFIC_LOCATION": 6184
+  }
+}

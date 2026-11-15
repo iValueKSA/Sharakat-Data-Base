@@ -1,0 +1,764 @@
+{
+  "schema": "furas-current-identity-state-v1",
+  "captured_at_utc": "2026-11-10T08:44:32.8004794Z",
+  "source": "alahsa-local-api-1 using a PostgreSQL transaction explicitly set READ ONLY",
+  "transaction_read_only": "on",
+  "furas_source_id": 1,
+  "rows": [
+    {
+      "id": 3960,
+      "source_id": 1,
+      "master_opportunity_id": 1367,
+      "source_opportunity_id": "25-10-1998507"
+    },
+    {
+      "id": 3961,
+      "source_id": 1,
+      "master_opportunity_id": 1368,
+      "source_opportunity_id": "25-10-1998626"
+    },
+    {
+      "id": 3962,
+      "source_id": 1,
+      "master_opportunity_id": 1369,
+      "source_opportunity_id": "25-10-1998655"
+    },
+    {
+      "id": 3963,
+      "source_id": 1,
+      "master_opportunity_id": 1370,
+      "source_opportunity_id": "25-10-1998689"
+    },
+    {
+      "id": 3970,
+      "source_id": 1,
+      "master_opportunity_id": 1377,
+      "source_opportunity_id": "25-10-2000510"
+    },
+    {
+      "id": 3984,
+      "source_id": 1,
+      "master_opportunity_id": 1391,
+      "source_opportunity_id": "25-10-2002590"
+    },
+    {
+      "id": 3988,
+      "source_id": 1,
+      "master_opportunity_id": 1395,
+      "source_opportunity_id": "25-10-2002535"
+    },
+    {
+      "id": 4005,
+      "source_id": 1,
+      "master_opportunity_id": 1412,
+      "source_opportunity_id": "25-10-2005099"
+    },
+    {
+      "id": 4006,
+      "source_id": 1,
+      "master_opportunity_id": 1413,
+      "source_opportunity_id": "25-10-2005151"
+    },
+    {
+      "id": 4008,
+      "source_id": 1,
+      "master_opportunity_id": 1415,
+      "source_opportunity_id": "25-10-2005285"
+    },
+    {
+      "id": 4014,
+      "source_id": 1,
+      "master_opportunity_id": 1421,
+      "source_opportunity_id": "25-10-2007084"
+    },
+    {
+      "id": 6316,
+      "source_id": 1,
+      "master_opportunity_id": 3690,
+      "source_opportunity_id": "26-08-2395213"
+    },
+    {
+      "id": 6359,
+      "source_id": 1,
+      "master_opportunity_id": 3732,
+      "source_opportunity_id": "26-08-2400602"
+    },
+    {
+      "id": 6360,
+      "source_id": 1,
+      "master_opportunity_id": 3733,
+      "source_opportunity_id": "26-08-2400616"
+    },
+    {
+      "id": 6361,
+      "source_id": 1,
+      "master_opportunity_id": 3734,
+      "source_opportunity_id": "26-08-2400619"
+    },
+    {
+      "id": 6362,
+      "source_id": 1,
+      "master_opportunity_id": 3735,
+      "source_opportunity_id": "26-08-2400624"
+    },
+    {
+      "id": 6447,
+      "source_id": 1,
+      "master_opportunity_id": 3820,
+      "source_opportunity_id": "26-08-2406345"
+    },
+    {
+      "id": 6453,
+      "source_id": 1,
+      "master_opportunity_id": 3826,
+      "source_opportunity_id": "26-08-2406366"
+    },
+    {
+      "id": 6470,
+      "source_id": 1,
+      "master_opportunity_id": 3843,
+      "source_opportunity_id": "26-08-2406499"
+    },
+    {
+      "id": 6596,
+      "source_id": 1,
+      "master_opportunity_id": 3968,
+      "source_opportunity_id": "26-08-2411231"
+    },
+    {
+      "id": 6793,
+      "source_id": 1,
+      "master_opportunity_id": 4164,
+      "source_opportunity_id": "26-08-2414618"
+    },
+    {
+      "id": 6869,
+      "source_id": 1,
+      "master_opportunity_id": 4239,
+      "source_opportunity_id": "26-09-2416393"
+    },
+    {
+      "id": 6873,
+      "source_id": 1,
+      "master_opportunity_id": 4243,
+      "source_opportunity_id": "26-09-2416429"
+    },
+    {
+      "id": 6888,
+      "source_id": 1,
+      "master_opportunity_id": 4258,
+      "source_opportunity_id": "26-09-2416967"
+    },
+    {
+      "id": 6899,
+      "source_id": 1,
+      "master_opportunity_id": 4269,
+      "source_opportunity_id": "26-09-2416766"
+    },
+    {
+      "id": 6952,
+      "source_id": 1,
+      "master_opportunity_id": 4322,
+      "source_opportunity_id": "26-09-2418193"
+    },
+    {
+      "id": 7186,
+      "source_id": 1,
+      "master_opportunity_id": 4556,
+      "source_opportunity_id": "26-09-2422528"
+    },
+    {
+      "id": 7189,
+      "source_id": 1,
+      "master_opportunity_id": 4559,
+      "source_opportunity_id": "26-09-2422597"
+    },
+    {
+      "id": 7193,
+      "source_id": 1,
+      "master_opportunity_id": 4563,
+      "source_opportunity_id": "26-09-2422647"
+    },
+    {
+      "id": 7195,
+      "source_id": 1,
+      "master_opportunity_id": 4565,
+      "source_opportunity_id": "26-09-2422565"
+    },
+    {
+      "id": 7201,
+      "source_id": 1,
+      "master_opportunity_id": 4571,
+      "source_opportunity_id": "26-09-2422747"
+    },
+    {
+      "id": 7232,
+      "source_id": 1,
+      "master_opportunity_id": 4602,
+      "source_opportunity_id": "26-09-2424070"
+    },
+    {
+      "id": 7233,
+      "source_id": 1,
+      "master_opportunity_id": 4603,
+      "source_opportunity_id": "26-09-2424099"
+    },
+    {
+      "id": 7239,
+      "source_id": 1,
+      "master_opportunity_id": 4609,
+      "source_opportunity_id": "26-09-2423976"
+    },
+    {
+      "id": 7242,
+      "source_id": 1,
+      "master_opportunity_id": 4612,
+      "source_opportunity_id": "26-09-2424003"
+    },
+    {
+      "id": 7244,
+      "source_id": 1,
+      "master_opportunity_id": 4614,
+      "source_opportunity_id": "26-09-2424060"
+    },
+    {
+      "id": 7245,
+      "source_id": 1,
+      "master_opportunity_id": 4615,
+      "source_opportunity_id": "26-09-2424032"
+    },
+    {
+      "id": 7295,
+      "source_id": 1,
+      "master_opportunity_id": 4665,
+      "source_opportunity_id": "26-09-2426202"
+    },
+    {
+      "id": 7296,
+      "source_id": 1,
+      "master_opportunity_id": 4666,
+      "source_opportunity_id": "26-09-2426101"
+    },
+    {
+      "id": 7298,
+      "source_id": 1,
+      "master_opportunity_id": 4668,
+      "source_opportunity_id": "26-09-2426248"
+    },
+    {
+      "id": 7366,
+      "source_id": 1,
+      "master_opportunity_id": 4736,
+      "source_opportunity_id": "26-09-2430779"
+    },
+    {
+      "id": 7370,
+      "source_id": 1,
+      "master_opportunity_id": 4740,
+      "source_opportunity_id": "26-09-2430790"
+    },
+    {
+      "id": 7372,
+      "source_id": 1,
+      "master_opportunity_id": 4742,
+      "source_opportunity_id": "26-09-2430808"
+    },
+    {
+      "id": 7378,
+      "source_id": 1,
+      "master_opportunity_id": 4748,
+      "source_opportunity_id": "26-09-2430732"
+    },
+    {
+      "id": 7418,
+      "source_id": 1,
+      "master_opportunity_id": 4787,
+      "source_opportunity_id": "26-09-2432671"
+    },
+    {
+      "id": 7455,
+      "source_id": 1,
+      "master_opportunity_id": 4824,
+      "source_opportunity_id": "26-09-2433211"
+    },
+    {
+      "id": 7509,
+      "source_id": 1,
+      "master_opportunity_id": 4878,
+      "source_opportunity_id": "26-09-2434133"
+    },
+    {
+      "id": 7511,
+      "source_id": 1,
+      "master_opportunity_id": 4880,
+      "source_opportunity_id": "26-09-2434152"
+    },
+    {
+      "id": 7512,
+      "source_id": 1,
+      "master_opportunity_id": 4881,
+      "source_opportunity_id": "26-09-2434159"
+    },
+    {
+      "id": 7513,
+      "source_id": 1,
+      "master_opportunity_id": 4882,
+      "source_opportunity_id": "26-09-2434167"
+    },
+    {
+      "id": 7514,
+      "source_id": 1,
+      "master_opportunity_id": 4883,
+      "source_opportunity_id": "26-09-2434170"
+    },
+    {
+      "id": 7518,
+      "source_id": 1,
+      "master_opportunity_id": 4887,
+      "source_opportunity_id": "26-09-2434190"
+    },
+    {
+      "id": 7145,
+      "source_id": 1,
+      "master_opportunity_id": 4515,
+      "source_opportunity_id": "26-09-2420488"
+    },
+    {
+      "id": 7726,
+      "source_id": 1,
+      "master_opportunity_id": 5095,
+      "source_opportunity_id": "26-09-2438504"
+    },
+    {
+      "id": 7735,
+      "source_id": 1,
+      "master_opportunity_id": 5104,
+      "source_opportunity_id": "26-09-2438672"
+    },
+    {
+      "id": 7755,
+      "source_id": 1,
+      "master_opportunity_id": 5124,
+      "source_opportunity_id": "26-09-2439102"
+    },
+    {
+      "id": 7761,
+      "source_id": 1,
+      "master_opportunity_id": 5130,
+      "source_opportunity_id": "26-09-2439334"
+    },
+    {
+      "id": 7784,
+      "source_id": 1,
+      "master_opportunity_id": 5153,
+      "source_opportunity_id": "26-09-2439072"
+    },
+    {
+      "id": 7805,
+      "source_id": 1,
+      "master_opportunity_id": 5174,
+      "source_opportunity_id": "26-09-2440664"
+    },
+    {
+      "id": 7806,
+      "source_id": 1,
+      "master_opportunity_id": 5175,
+      "source_opportunity_id": "26-09-2440683"
+    },
+    {
+      "id": 7891,
+      "source_id": 1,
+      "master_opportunity_id": 5254,
+      "source_opportunity_id": "26-09-2445236"
+    },
+    {
+      "id": 7923,
+      "source_id": 1,
+      "master_opportunity_id": 5285,
+      "source_opportunity_id": "26-09-2447924"
+    },
+    {
+      "id": 7925,
+      "source_id": 1,
+      "master_opportunity_id": 5287,
+      "source_opportunity_id": "26-09-2447966"
+    },
+    {
+      "id": 7929,
+      "source_id": 1,
+      "master_opportunity_id": 5291,
+      "source_opportunity_id": "26-09-2448043"
+    },
+    {
+      "id": 6920,
+      "source_id": 1,
+      "master_opportunity_id": 4290,
+      "source_opportunity_id": "26-09-2417085"
+    },
+    {
+      "id": 8035,
+      "source_id": 1,
+      "master_opportunity_id": 5396,
+      "source_opportunity_id": "26-09-2450730"
+    },
+    {
+      "id": 8037,
+      "source_id": 1,
+      "master_opportunity_id": 5398,
+      "source_opportunity_id": "26-09-2450751"
+    },
+    {
+      "id": 8109,
+      "source_id": 1,
+      "master_opportunity_id": 5470,
+      "source_opportunity_id": "26-09-2453599"
+    },
+    {
+      "id": 8111,
+      "source_id": 1,
+      "master_opportunity_id": 5472,
+      "source_opportunity_id": "26-09-2453609"
+    },
+    {
+      "id": 8177,
+      "source_id": 1,
+      "master_opportunity_id": 5538,
+      "source_opportunity_id": "26-10-2455522"
+    },
+    {
+      "id": 8180,
+      "source_id": 1,
+      "master_opportunity_id": 5541,
+      "source_opportunity_id": "26-10-2455534"
+    },
+    {
+      "id": 6955,
+      "source_id": 1,
+      "master_opportunity_id": 4325,
+      "source_opportunity_id": "26-09-2418206"
+    },
+    {
+      "id": 6965,
+      "source_id": 1,
+      "master_opportunity_id": 4335,
+      "source_opportunity_id": "26-09-2418313"
+    },
+    {
+      "id": 7246,
+      "source_id": 1,
+      "master_opportunity_id": 4616,
+      "source_opportunity_id": "26-09-2424309"
+    },
+    {
+      "id": 4011,
+      "source_id": 1,
+      "master_opportunity_id": 1418,
+      "source_opportunity_id": "25-10-2007186"
+    }
+  ],
+  "masters": [
+    {
+      "id": 1367,
+      "merged_into_id": null
+    },
+    {
+      "id": 1368,
+      "merged_into_id": null
+    },
+    {
+      "id": 1369,
+      "merged_into_id": null
+    },
+    {
+      "id": 1370,
+      "merged_into_id": null
+    },
+    {
+      "id": 1377,
+      "merged_into_id": null
+    },
+    {
+      "id": 1391,
+      "merged_into_id": null
+    },
+    {
+      "id": 1395,
+      "merged_into_id": null
+    },
+    {
+      "id": 1412,
+      "merged_into_id": null
+    },
+    {
+      "id": 1413,
+      "merged_into_id": null
+    },
+    {
+      "id": 1415,
+      "merged_into_id": null
+    },
+    {
+      "id": 1418,
+      "merged_into_id": null
+    },
+    {
+      "id": 1421,
+      "merged_into_id": null
+    },
+    {
+      "id": 3690,
+      "merged_into_id": null
+    },
+    {
+      "id": 3732,
+      "merged_into_id": null
+    },
+    {
+      "id": 3733,
+      "merged_into_id": null
+    },
+    {
+      "id": 3734,
+      "merged_into_id": null
+    },
+    {
+      "id": 3735,
+      "merged_into_id": null
+    },
+    {
+      "id": 3820,
+      "merged_into_id": null
+    },
+    {
+      "id": 3826,
+      "merged_into_id": null
+    },
+    {
+      "id": 3843,
+      "merged_into_id": null
+    },
+    {
+      "id": 3968,
+      "merged_into_id": null
+    },
+    {
+      "id": 4164,
+      "merged_into_id": null
+    },
+    {
+      "id": 4239,
+      "merged_into_id": null
+    },
+    {
+      "id": 4243,
+      "merged_into_id": null
+    },
+    {
+      "id": 4258,
+      "merged_into_id": null
+    },
+    {
+      "id": 4269,
+      "merged_into_id": null
+    },
+    {
+      "id": 4290,
+      "merged_into_id": null
+    },
+    {
+      "id": 4322,
+      "merged_into_id": null
+    },
+    {
+      "id": 4325,
+      "merged_into_id": null
+    },
+    {
+      "id": 4335,
+      "merged_into_id": null
+    },
+    {
+      "id": 4515,
+      "merged_into_id": null
+    },
+    {
+      "id": 4556,
+      "merged_into_id": null
+    },
+    {
+      "id": 4559,
+      "merged_into_id": null
+    },
+    {
+      "id": 4563,
+      "merged_into_id": null
+    },
+    {
+      "id": 4565,
+      "merged_into_id": null
+    },
+    {
+      "id": 4571,
+      "merged_into_id": null
+    },
+    {
+      "id": 4602,
+      "merged_into_id": null
+    },
+    {
+      "id": 4603,
+      "merged_into_id": null
+    },
+    {
+      "id": 4609,
+      "merged_into_id": null
+    },
+    {
+      "id": 4612,
+      "merged_into_id": null
+    },
+    {
+      "id": 4614,
+      "merged_into_id": null
+    },
+    {
+      "id": 4615,
+      "merged_into_id": null
+    },
+    {
+      "id": 4616,
+      "merged_into_id": null
+    },
+    {
+      "id": 4665,
+      "merged_into_id": null
+    },
+    {
+      "id": 4666,
+      "merged_into_id": null
+    },
+    {
+      "id": 4668,
+      "merged_into_id": null
+    },
+    {
+      "id": 4736,
+      "merged_into_id": null
+    },
+    {
+      "id": 4740,
+      "merged_into_id": null
+    },
+    {
+      "id": 4742,
+      "merged_into_id": null
+    },
+    {
+      "id": 4748,
+      "merged_into_id": null
+    },
+    {
+      "id": 4787,
+      "merged_into_id": null
+    },
+    {
+      "id": 4824,
+      "merged_into_id": null
+    },
+    {
+      "id": 4878,
+      "merged_into_id": null
+    },
+    {
+      "id": 4880,
+      "merged_into_id": null
+    },
+    {
+      "id": 4881,
+      "merged_into_id": null
+    },
+    {
+      "id": 4882,
+      "merged_into_id": null
+    },
+    {
+      "id": 4883,
+      "merged_into_id": null
+    },
+    {
+      "id": 4887,
+      "merged_into_id": null
+    },
+    {
+      "id": 5095,
+      "merged_into_id": null
+    },
+    {
+      "id": 5104,
+      "merged_into_id": null
+    },
+    {
+      "id": 5124,
+      "merged_into_id": null
+    },
+    {
+      "id": 5130,
+      "merged_into_id": null
+    },
+    {
+      "id": 5153,
+      "merged_into_id": null
+    },
+    {
+      "id": 5174,
+      "merged_into_id": null
+    },
+    {
+      "id": 5175,
+      "merged_into_id": null
+    },
+    {
+      "id": 5254,
+      "merged_into_id": null
+    },
+    {
+      "id": 5285,
+      "merged_into_id": null
+    },
+    {
+      "id": 5287,
+      "merged_into_id": null
+    },
+    {
+      "id": 5291,
+      "merged_into_id": null
+    },
+    {
+      "id": 5396,
+      "merged_into_id": null
+    },
+    {
+      "id": 5398,
+      "merged_into_id": null
+    },
+    {
+      "id": 5470,
+      "merged_into_id": null
+    },
+    {
+      "id": 5472,
+      "merged_into_id": null
+    },
+    {
+      "id": 5538,
+      "merged_into_id": null
+    },
+    {
+      "id": 5541,
+      "merged_into_id": null
+    }
+  ],
+  "identity_mapping_tables": [],
+  "enumeration_enabled": false,
+  "removals_enabled": false
+}

@@ -1,0 +1,42 @@
+{
+  "enabled": true,
+  "complete": true,
+  "reference_ready": true,
+  "readiness_reasons": [],
+  "available_selector_levels": [
+    "region",
+    "governorate"
+  ],
+  "candidate_selector_levels": [
+    "region",
+    "governorate"
+  ],
+  "national_ui_enabled": true,
+  "national_map_enabled": true,
+  "national_dashboard_enabled": true,
+  "status": "READY",
+  "datasets": [
+    {
+      "dataset_key": "saudi_administrative_units",
+      "version": "taadeen-public-gis-20261102-v3",
+      "effective_date": "2026-11-02",
+      "operator": "Codex remediation, verified public GIS snapshot",
+      "source_url": "https://gis.taadeen.sa/server/rest/services/Common/BaseMaps/MapServer/3",
+      "license_name": "Publicly accessible official government GIS service; explicit license not asserted",
+      "content_sha256": "ec0f22308cc4b6960c5c39aad416f7d7dafa5c13d5b2c7afd56a13f9dc634b8b",
+      "coverage_by_level": {
+        "city": false,
+        "governorate": true,
+        "region": true,
+        "country": true
+      },
+      "counts_by_level": {
+        "country": 1,
+        "region": 13,
+        "governorate": 149,
+        "city": 0
+      },
+      "is_current": true
+    }
+  ]
+}

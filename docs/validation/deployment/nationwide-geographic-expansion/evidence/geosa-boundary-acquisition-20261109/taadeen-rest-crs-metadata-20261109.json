@@ -1,0 +1,303 @@
+{
+  "captured_at_utc": "2026-11-09T18:08:35.708Z",
+  "read_only": true,
+  "service": "https://gis.taadeen.sa/server/rest/services/Common/BaseMaps/MapServer",
+  "service_metadata": {
+    "http_status": 200,
+    "currentVersion": 11.5,
+    "spatialReference": {
+      "wkid": 4204,
+      "latestWkid": 4204,
+      "xyTolerance": 8.982799339438477e-9,
+      "zTolerance": 0.001,
+      "mTolerance": 0.001,
+      "falseX": -400,
+      "falseY": -400,
+      "xyUnits": 999999999.9999999,
+      "falseZ": -100000,
+      "zUnits": 10000,
+      "falseM": -100000,
+      "mUnits": 10000
+    },
+    "layers": [
+      {
+        "id": 2,
+        "name": "Governorates",
+        "parentLayerId": -1,
+        "defaultVisibility": true,
+        "subLayerIds": null,
+        "minScale": 0,
+        "maxScale": 0,
+        "type": "Feature Layer",
+        "geometryType": "esriGeometryPolygon",
+        "supportsDynamicLegends": true
+      },
+      {
+        "id": 3,
+        "name": "Emirates",
+        "parentLayerId": -1,
+        "defaultVisibility": true,
+        "subLayerIds": null,
+        "minScale": 0,
+        "maxScale": 0,
+        "type": "Feature Layer",
+        "geometryType": "esriGeometryPolygon",
+        "supportsDynamicLegends": true
+      }
+    ]
+  },
+  "layers": [
+    {
+      "id": 2,
+      "http_status": 200,
+      "name": "Governorates",
+      "description": "",
+      "spatialReference": {
+        "wkid": 4204,
+        "latestWkid": 4204,
+        "xyTolerance": 8.982799339438477e-9,
+        "zTolerance": 0.001,
+        "mTolerance": 0.001,
+        "falseX": -400,
+        "falseY": -400,
+        "xyUnits": 999999999.9999999,
+        "falseZ": -100000,
+        "zUnits": 10000,
+        "falseM": -100000,
+        "mUnits": 10000
+      },
+      "extentSpatialReference": {
+        "wkid": 4204,
+        "latestWkid": 4204,
+        "xyTolerance": 8.982799339438477e-9,
+        "zTolerance": 0.001,
+        "mTolerance": 0.001,
+        "falseX": -400,
+        "falseY": -400,
+        "xyUnits": 999999999.9999999,
+        "falseZ": -100000,
+        "zUnits": 10000,
+        "falseM": -100000,
+        "mUnits": 10000
+      },
+      "fields": [
+        {
+          "name": "OBJECTID_1",
+          "alias": "OBJECTID_1",
+          "type": "esriFieldTypeOID"
+        },
+        {
+          "name": "Name_Ar",
+          "alias": "المحافظة بالعربية",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "Name_En",
+          "alias": "المحافظة الإنجليزية",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "Emirates_Ar",
+          "alias": "الامارة بالعربية",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "Emirates_En",
+          "alias": "الامارة الإنجليزية",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "Governorate_Code",
+          "alias": "رمز المحافظة",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "Comments",
+          "alias": "Comments",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "FC_SOURCE",
+          "alias": "FC_SOURCE",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "GlobalID",
+          "alias": "GlobalID",
+          "type": "esriFieldTypeGlobalID"
+        },
+        {
+          "name": "created_user",
+          "alias": "created_user",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "created_date",
+          "alias": "created_date",
+          "type": "esriFieldTypeDate"
+        },
+        {
+          "name": "last_edited_user",
+          "alias": "last_edited_user",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "last_edited_date",
+          "alias": "last_edited_date",
+          "type": "esriFieldTypeDate"
+        },
+        {
+          "name": "Shape",
+          "alias": "Shape",
+          "type": "esriFieldTypeGeometry"
+        },
+        {
+          "name": "Shape.STArea()",
+          "alias": "Shape.STArea()",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "name": "Shape.STLength()",
+          "alias": "Shape.STLength()",
+          "type": "esriFieldTypeDouble"
+        }
+      ],
+      "advancedQueryCapabilities": {
+        "supportsQueryWithDatumTransformation": true
+      },
+      "capabilities": "Map,Query,Data",
+      "datumTransformations": null
+    },
+    {
+      "id": 3,
+      "http_status": 200,
+      "name": "Emirates",
+      "description": "",
+      "spatialReference": {
+        "wkid": 4204,
+        "latestWkid": 4204,
+        "xyTolerance": 8.982799339438477e-9,
+        "zTolerance": 0.001,
+        "mTolerance": 0.001,
+        "falseX": -400,
+        "falseY": -400,
+        "xyUnits": 999999999.9999999,
+        "falseZ": -100000,
+        "zUnits": 10000,
+        "falseM": -100000,
+        "mUnits": 10000
+      },
+      "extentSpatialReference": {
+        "wkid": 4204,
+        "latestWkid": 4204,
+        "xyTolerance": 8.982799339438477e-9,
+        "zTolerance": 0.001,
+        "mTolerance": 0.001,
+        "falseX": -400,
+        "falseY": -400,
+        "xyUnits": 999999999.9999999,
+        "falseZ": -100000,
+        "zUnits": 10000,
+        "falseM": -100000,
+        "mUnits": 10000
+      },
+      "fields": [
+        {
+          "name": "OBJECTID",
+          "alias": "OBJECTID",
+          "type": "esriFieldTypeOID"
+        },
+        {
+          "name": "Emirate_ID",
+          "alias": "معرف الامارة",
+          "type": "esriFieldTypeInteger"
+        },
+        {
+          "name": "Name_Ar",
+          "alias": "الامارة بالعربية",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "Name_En",
+          "alias": "الامارة الإنجليزية",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "Capital_Ar",
+          "alias": "عاصمة بالعربية",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "Capital_En",
+          "alias": "عاصمة الإنجليزية",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "Population",
+          "alias": "سكان",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "name": "Emirate_Code",
+          "alias": "رمز الإمارة",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "name": "Comments",
+          "alias": "ملاحظات",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "FC_SOURCE",
+          "alias": "FC_SOURCE",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "GlobalID",
+          "alias": "GlobalID",
+          "type": "esriFieldTypeGlobalID"
+        },
+        {
+          "name": "created_user",
+          "alias": "created_user",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "created_date",
+          "alias": "created_date",
+          "type": "esriFieldTypeDate"
+        },
+        {
+          "name": "last_edited_user",
+          "alias": "last_edited_user",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "last_edited_date",
+          "alias": "last_edited_date",
+          "type": "esriFieldTypeDate"
+        },
+        {
+          "name": "Shape",
+          "alias": "Shape",
+          "type": "esriFieldTypeGeometry"
+        },
+        {
+          "name": "Shape.STArea()",
+          "alias": "Shape.STArea()",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "name": "Shape.STLength()",
+          "alias": "Shape.STLength()",
+          "type": "esriFieldTypeDouble"
+        }
+      ],
+      "advancedQueryCapabilities": {
+        "supportsQueryWithDatumTransformation": true
+      },
+      "capabilities": "Map,Query,Data",
+      "datumTransformations": null
+    }
+  ]
+}

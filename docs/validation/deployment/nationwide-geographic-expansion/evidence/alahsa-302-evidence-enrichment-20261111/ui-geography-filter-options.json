@@ -1,0 +1,1128 @@
+{
+  "regions": [
+    {
+      "id": "5",
+      "name_ar": "المنطقة الشرقية",
+      "display_name_ar": "المنطقة الشرقية",
+      "unique_masters": 975
+    },
+    {
+      "id": "12",
+      "name_ar": "منطقة الباحة",
+      "display_name_ar": "منطقة الباحة",
+      "unique_masters": 165
+    },
+    {
+      "id": "13",
+      "name_ar": "منطقة الجوف",
+      "display_name_ar": "منطقة الجوف",
+      "unique_masters": 234
+    },
+    {
+      "id": "9",
+      "name_ar": "منطقة الحدود الشمالية",
+      "display_name_ar": "منطقة الحدود الشمالية",
+      "unique_masters": 218
+    },
+    {
+      "id": "1",
+      "name_ar": "منطقة الرياض",
+      "display_name_ar": "منطقة الرياض",
+      "unique_masters": 800
+    },
+    {
+      "id": "4",
+      "name_ar": "منطقة القصيم",
+      "display_name_ar": "منطقة القصيم",
+      "unique_masters": 731
+    },
+    {
+      "id": "3",
+      "name_ar": "منطقة المدينة المنورة",
+      "display_name_ar": "منطقة المدينة المنورة",
+      "unique_masters": 458
+    },
+    {
+      "id": "7",
+      "name_ar": "منطقة تبوك",
+      "display_name_ar": "منطقة تبوك",
+      "unique_masters": 114
+    },
+    {
+      "id": "10",
+      "name_ar": "منطقة جازان",
+      "display_name_ar": "منطقة جازان",
+      "unique_masters": 379
+    },
+    {
+      "id": "8",
+      "name_ar": "منطقة حائل",
+      "display_name_ar": "منطقة حائل",
+      "unique_masters": 451
+    },
+    {
+      "id": "6",
+      "name_ar": "منطقة عسير",
+      "display_name_ar": "منطقة عسير",
+      "unique_masters": 1140
+    },
+    {
+      "id": "2",
+      "name_ar": "منطقة مكة المكرمة",
+      "display_name_ar": "منطقة مكة المكرمة",
+      "unique_masters": 319
+    },
+    {
+      "id": "11",
+      "name_ar": "منطقة نجران",
+      "display_name_ar": "منطقة نجران",
+      "unique_masters": 464
+    }
+  ],
+  "governorates": [
+    {
+      "id": "216",
+      "name_ar": "أضم",
+      "display_name_ar": "أضم",
+      "unique_masters": 0,
+      "parent_id": "2"
+    },
+    {
+      "id": "600",
+      "name_ar": "ابها (مقر الإمارة)",
+      "display_name_ar": "ابها (مقر الإمارة)",
+      "unique_masters": 0,
+      "parent_id": "6"
+    },
+    {
+      "id": "1002",
+      "name_ar": "ابو عريش",
+      "display_name_ar": "ابو عريش",
+      "unique_masters": 0,
+      "parent_id": "10"
+    },
+    {
+      "id": "1010",
+      "name_ar": "احد المسارحه",
+      "display_name_ar": "احد المسارحه",
+      "unique_masters": 0,
+      "parent_id": "10"
+    },
+    {
+      "id": "608",
+      "name_ar": "احد رفيده",
+      "display_name_ar": "احد رفيده",
+      "unique_masters": 0,
+      "parent_id": "6"
+    },
+    {
+      "id": "406",
+      "name_ar": "الأسياح",
+      "display_name_ar": "الأسياح",
+      "unique_masters": 12,
+      "parent_id": "4"
+    },
+    {
+      "id": "501",
+      "name_ar": "الاحساء",
+      "display_name_ar": "الأحساء",
+      "unique_masters": 518,
+      "parent_id": "5"
+    },
+    {
+      "id": "107",
+      "name_ar": "الافلاج",
+      "display_name_ar": "الافلاج",
+      "unique_masters": 9,
+      "parent_id": "1"
+    },
+    {
+      "id": "1200",
+      "name_ar": "الباحة (مقرالامارة)",
+      "display_name_ar": "الباحة (مقرالامارة)",
+      "unique_masters": 0,
+      "parent_id": "12"
+    },
+    {
+      "id": "405",
+      "name_ar": "البدائع",
+      "display_name_ar": "البدائع",
+      "unique_masters": 15,
+      "parent_id": "4"
+    },
+    {
+      "id": "706",
+      "name_ar": "البدع",
+      "display_name_ar": "البدع",
+      "unique_masters": 0,
+      "parent_id": "7"
+    },
+    {
+      "id": "613",
+      "name_ar": "البرك",
+      "display_name_ar": "البرك",
+      "unique_masters": 66,
+      "parent_id": "6"
+    },
+    {
+      "id": "404",
+      "name_ar": "البكيريه",
+      "display_name_ar": "البكيريه",
+      "unique_masters": 0,
+      "parent_id": "4"
+    },
+    {
+      "id": "503",
+      "name_ar": "الجبيل",
+      "display_name_ar": "الجبيل",
+      "unique_masters": 15,
+      "parent_id": "5"
+    },
+    {
+      "id": "206",
+      "name_ar": "الجموم",
+      "display_name_ar": "الجموم",
+      "unique_masters": 9,
+      "parent_id": "2"
+    },
+    {
+      "id": "807",
+      "name_ar": "الحائط",
+      "display_name_ar": "الحائط",
+      "unique_masters": 2,
+      "parent_id": "8"
+    },
+    {
+      "id": "1209",
+      "name_ar": "الحجرة",
+      "display_name_ar": "الحجرة",
+      "unique_masters": 0,
+      "parent_id": "12"
+    },
+    {
+      "id": "1004",
+      "name_ar": "الحرث",
+      "display_name_ar": "الحرث",
+      "unique_masters": 14,
+      "parent_id": "10"
+    },
+    {
+      "id": "616",
+      "name_ar": "الحرجه",
+      "display_name_ar": "الحرجه",
+      "unique_masters": 0,
+      "parent_id": "6"
+    },
+    {
+      "id": "118",
+      "name_ar": "الحريق",
+      "display_name_ar": "الحريق",
+      "unique_masters": 0,
+      "parent_id": "1"
+    },
+    {
+      "id": "306",
+      "name_ar": "الحناكيه",
+      "display_name_ar": "الحناكيه",
+      "unique_masters": 0,
+      "parent_id": "3"
+    },
+    {
+      "id": "505",
+      "name_ar": "الخبر",
+      "display_name_ar": "الخبر",
+      "unique_masters": 0,
+      "parent_id": "5"
+    },
+    {
+      "id": "102",
+      "name_ar": "الخرج",
+      "display_name_ar": "الخرج",
+      "unique_masters": 171,
+      "parent_id": "1"
+    },
+    {
+      "id": "209",
+      "name_ar": "الخرمة",
+      "display_name_ar": "الخرمة",
+      "unique_masters": 0,
+      "parent_id": "2"
+    },
+    {
+      "id": "506",
+      "name_ar": "الخفجي",
+      "display_name_ar": "الخفجي",
+      "unique_masters": 28,
+      "parent_id": "5"
+    },
+    {
+      "id": "1009",
+      "name_ar": "الدائر",
+      "display_name_ar": "الدائر",
+      "unique_masters": 0,
+      "parent_id": "10"
+    },
+    {
+      "id": "1013",
+      "name_ar": "الدرب",
+      "display_name_ar": "الدرب",
+      "unique_masters": 29,
+      "parent_id": "10"
+    },
+    {
+      "id": "101",
+      "name_ar": "الدرعيه",
+      "display_name_ar": "الدرعيه",
+      "unique_masters": 0,
+      "parent_id": "1"
+    },
+    {
+      "id": "121",
+      "name_ar": "الدلم",
+      "display_name_ar": "الدلم",
+      "unique_masters": 12,
+      "parent_id": "1"
+    },
+    {
+      "id": "500",
+      "name_ar": "الدمام (مقرالامارة)",
+      "display_name_ar": "الدمام (مقرالامارة)",
+      "unique_masters": 0,
+      "parent_id": "5"
+    },
+    {
+      "id": "103",
+      "name_ar": "الدوادمى",
+      "display_name_ar": "الدوادمى",
+      "unique_masters": 52,
+      "parent_id": "1"
+    },
+    {
+      "id": "402",
+      "name_ar": "الرس",
+      "display_name_ar": "الرس",
+      "unique_masters": 334,
+      "parent_id": "4"
+    },
+    {
+      "id": "100",
+      "name_ar": "الرياض (مقر الامارة)",
+      "display_name_ar": "الرياض (مقر الامارة)",
+      "unique_masters": 0,
+      "parent_id": "1"
+    },
+    {
+      "id": "1006",
+      "name_ar": "الريث",
+      "display_name_ar": "الريث",
+      "unique_masters": 8,
+      "parent_id": "10"
+    },
+    {
+      "id": "122",
+      "name_ar": "الرين",
+      "display_name_ar": "الرين",
+      "unique_masters": 1,
+      "parent_id": "1"
+    },
+    {
+      "id": "108",
+      "name_ar": "الزلفى",
+      "display_name_ar": "الزلفى",
+      "unique_masters": 18,
+      "parent_id": "1"
+    },
+    {
+      "id": "112",
+      "name_ar": "السليل",
+      "display_name_ar": "السليل",
+      "unique_masters": 10,
+      "parent_id": "1"
+    },
+    {
+      "id": "808",
+      "name_ar": "السليمي",
+      "display_name_ar": "السليمي",
+      "unique_masters": 19,
+      "parent_id": "8"
+    },
+    {
+      "id": "410",
+      "name_ar": "الشماسيه",
+      "display_name_ar": "الشماسيه",
+      "unique_masters": 0,
+      "parent_id": "4"
+    },
+    {
+      "id": "804",
+      "name_ar": "الشملى",
+      "display_name_ar": "الشملى",
+      "unique_masters": 17,
+      "parent_id": "8"
+    },
+    {
+      "id": "803",
+      "name_ar": "الشنان",
+      "display_name_ar": "الشنان",
+      "unique_masters": 11,
+      "parent_id": "8"
+    },
+    {
+      "id": "202",
+      "name_ar": "الطائف",
+      "display_name_ar": "الطائف",
+      "unique_masters": 69,
+      "parent_id": "2"
+    },
+    {
+      "id": "1014",
+      "name_ar": "الطوال",
+      "display_name_ar": "الطوال",
+      "unique_masters": 0,
+      "parent_id": "10"
+    },
+    {
+      "id": "1012",
+      "name_ar": "العارضه",
+      "display_name_ar": "العارضه",
+      "unique_masters": 0,
+      "parent_id": "10"
+    },
+    {
+      "id": "511",
+      "name_ar": "العديد",
+      "display_name_ar": "العديد",
+      "unique_masters": 0,
+      "parent_id": "5"
+    },
+    {
+      "id": "215",
+      "name_ar": "العرضيات",
+      "display_name_ar": "العرضيات",
+      "unique_masters": 0,
+      "parent_id": "2"
+    },
+    {
+      "id": "1204",
+      "name_ar": "العقيق",
+      "display_name_ar": "العقيق",
+      "unique_masters": 18,
+      "parent_id": "12"
+    },
+    {
+      "id": "302",
+      "name_ar": "العلا",
+      "display_name_ar": "العلا",
+      "unique_masters": 6,
+      "parent_id": "3"
+    },
+    {
+      "id": "903",
+      "name_ar": "العويقيله",
+      "display_name_ar": "العويقيله",
+      "unique_masters": 0,
+      "parent_id": "9"
+    },
+    {
+      "id": "1011",
+      "name_ar": "العيدابى",
+      "display_name_ar": "العيدابى",
+      "unique_masters": 28,
+      "parent_id": "10"
+    },
+    {
+      "id": "308",
+      "name_ar": "العيص",
+      "display_name_ar": "العيص",
+      "unique_masters": 0,
+      "parent_id": "3"
+    },
+    {
+      "id": "119",
+      "name_ar": "الغاط",
+      "display_name_ar": "الغاط",
+      "unique_masters": 9,
+      "parent_id": "1"
+    },
+    {
+      "id": "802",
+      "name_ar": "الغزاله",
+      "display_name_ar": "الغزاله",
+      "unique_masters": 0,
+      "parent_id": "8"
+    },
+    {
+      "id": "1206",
+      "name_ar": "القرى",
+      "display_name_ar": "القرى",
+      "unique_masters": 8,
+      "parent_id": "12"
+    },
+    {
+      "id": "1301",
+      "name_ar": "القريات",
+      "display_name_ar": "القريات",
+      "unique_masters": 15,
+      "parent_id": "13"
+    },
+    {
+      "id": "504",
+      "name_ar": "القطيف",
+      "display_name_ar": "القطيف",
+      "unique_masters": 235,
+      "parent_id": "5"
+    },
+    {
+      "id": "203",
+      "name_ar": "القنفذه",
+      "display_name_ar": "القنفذه",
+      "unique_masters": 0,
+      "parent_id": "2"
+    },
+    {
+      "id": "105",
+      "name_ar": "القويعيه",
+      "display_name_ar": "القويعيه",
+      "unique_masters": 0,
+      "parent_id": "1"
+    },
+    {
+      "id": "208",
+      "name_ar": "الكامل",
+      "display_name_ar": "الكامل",
+      "unique_masters": 0,
+      "parent_id": "2"
+    },
+    {
+      "id": "204",
+      "name_ar": "الليث",
+      "display_name_ar": "الليث",
+      "unique_masters": 0,
+      "parent_id": "2"
+    },
+    {
+      "id": "611",
+      "name_ar": "المجارده",
+      "display_name_ar": "المجارده",
+      "unique_masters": 0,
+      "parent_id": "6"
+    },
+    {
+      "id": "104",
+      "name_ar": "المجمعه",
+      "display_name_ar": "المجمعه",
+      "unique_masters": 25,
+      "parent_id": "1"
+    },
+    {
+      "id": "1203",
+      "name_ar": "المخواه",
+      "display_name_ar": "المخواه",
+      "unique_masters": 0,
+      "parent_id": "12"
+    },
+    {
+      "id": "300",
+      "name_ar": "المدينة المنورة (مقر الامارة)",
+      "display_name_ar": "المدينة المنورة (مقر الامارة)",
+      "unique_masters": 0,
+      "parent_id": "3"
+    },
+    {
+      "id": "403",
+      "name_ar": "المذنب",
+      "display_name_ar": "المذنب",
+      "unique_masters": 63,
+      "parent_id": "4"
+    },
+    {
+      "id": "114",
+      "name_ar": "المزاحميه",
+      "display_name_ar": "المزاحميه",
+      "unique_masters": 0,
+      "parent_id": "1"
+    },
+    {
+      "id": "1202",
+      "name_ar": "المندق",
+      "display_name_ar": "المندق",
+      "unique_masters": 15,
+      "parent_id": "12"
+    },
+    {
+      "id": "303",
+      "name_ar": "المهد",
+      "display_name_ar": "المهد",
+      "unique_masters": 1,
+      "parent_id": "3"
+    },
+    {
+      "id": "213",
+      "name_ar": "المويه",
+      "display_name_ar": "المويه",
+      "unique_masters": 0,
+      "parent_id": "2"
+    },
+    {
+      "id": "407",
+      "name_ar": "النبهانيه",
+      "display_name_ar": "النبهانيه",
+      "unique_masters": 0,
+      "parent_id": "4"
+    },
+    {
+      "id": "509",
+      "name_ar": "النعيريه",
+      "display_name_ar": "النعيريه",
+      "unique_masters": 0,
+      "parent_id": "5"
+    },
+    {
+      "id": "603",
+      "name_ar": "النماص",
+      "display_name_ar": "النماص",
+      "unique_masters": 42,
+      "parent_id": "6"
+    },
+    {
+      "id": "701",
+      "name_ar": "الوجه",
+      "display_name_ar": "الوجه",
+      "unique_masters": 0,
+      "parent_id": "7"
+    },
+    {
+      "id": "704",
+      "name_ar": "املج",
+      "display_name_ar": "املج",
+      "unique_masters": 1,
+      "parent_id": "7"
+    },
+    {
+      "id": "614",
+      "name_ar": "بارق",
+      "display_name_ar": "بارق",
+      "unique_masters": 32,
+      "parent_id": "6"
+    },
+    {
+      "id": "610",
+      "name_ar": "بالقرن",
+      "display_name_ar": "بالقرن",
+      "unique_masters": 37,
+      "parent_id": "6"
+    },
+    {
+      "id": "212",
+      "name_ar": "بحرة",
+      "display_name_ar": "بحرة",
+      "unique_masters": 0,
+      "parent_id": "2"
+    },
+    {
+      "id": "304",
+      "name_ar": "بدر",
+      "display_name_ar": "بدر",
+      "unique_masters": 21,
+      "parent_id": "3"
+    },
+    {
+      "id": "1103",
+      "name_ar": "بدر الجنوب",
+      "display_name_ar": "بدر الجنوب",
+      "unique_masters": 14,
+      "parent_id": "11"
+    },
+    {
+      "id": "400",
+      "name_ar": "بريده (مقرالامارة)",
+      "display_name_ar": "بريده (مقرالامارة)",
+      "unique_masters": 0,
+      "parent_id": "4"
+    },
+    {
+      "id": "801",
+      "name_ar": "بقعاء",
+      "display_name_ar": "بقعاء",
+      "unique_masters": 19,
+      "parent_id": "8"
+    },
+    {
+      "id": "508",
+      "name_ar": "بقيق",
+      "display_name_ar": "بقيق",
+      "unique_masters": 0,
+      "parent_id": "5"
+    },
+    {
+      "id": "1201",
+      "name_ar": "بلجرشي",
+      "display_name_ar": "بلجرشي",
+      "unique_masters": 38,
+      "parent_id": "12"
+    },
+    {
+      "id": "1207",
+      "name_ar": "بني حسن",
+      "display_name_ar": "بني حسن",
+      "unique_masters": 1,
+      "parent_id": "12"
+    },
+    {
+      "id": "1007",
+      "name_ar": "بيش",
+      "display_name_ar": "بيش",
+      "unique_masters": 16,
+      "parent_id": "10"
+    },
+    {
+      "id": "602",
+      "name_ar": "بيشه",
+      "display_name_ar": "بيشه",
+      "unique_masters": 1,
+      "parent_id": "6"
+    },
+    {
+      "id": "700",
+      "name_ar": "تبوك (مقرالامارة)",
+      "display_name_ar": "تبوك (مقرالامارة)",
+      "unique_masters": 0,
+      "parent_id": "7"
+    },
+    {
+      "id": "606",
+      "name_ar": "تثليث",
+      "display_name_ar": "تثليث",
+      "unique_masters": 2,
+      "parent_id": "6"
+    },
+    {
+      "id": "211",
+      "name_ar": "تربه",
+      "display_name_ar": "تربه",
+      "unique_masters": 0,
+      "parent_id": "2"
+    },
+    {
+      "id": "615",
+      "name_ar": "تنومة",
+      "display_name_ar": "تنومة",
+      "unique_masters": 32,
+      "parent_id": "6"
+    },
+    {
+      "id": "703",
+      "name_ar": "تيماء",
+      "display_name_ar": "تيماء",
+      "unique_masters": 15,
+      "parent_id": "7"
+    },
+    {
+      "id": "116",
+      "name_ar": "ثادق",
+      "display_name_ar": "ثادق",
+      "unique_masters": 42,
+      "parent_id": "1"
+    },
+    {
+      "id": "1105",
+      "name_ar": "ثار",
+      "display_name_ar": "ثار",
+      "unique_masters": 13,
+      "parent_id": "11"
+    },
+    {
+      "id": "1000",
+      "name_ar": "جازان (مقر الامارة)",
+      "display_name_ar": "جازان (مقر الامارة)",
+      "unique_masters": 0,
+      "parent_id": "10"
+    },
+    {
+      "id": "201",
+      "name_ar": "جدة",
+      "display_name_ar": "جدة",
+      "unique_masters": 156,
+      "parent_id": "2"
+    },
+    {
+      "id": "800",
+      "name_ar": "حائل(مقر الامارة)",
+      "display_name_ar": "حائل(مقر الامارة)",
+      "unique_masters": 0,
+      "parent_id": "8"
+    },
+    {
+      "id": "1102",
+      "name_ar": "حبونا",
+      "display_name_ar": "حبونا",
+      "unique_masters": 57,
+      "parent_id": "11"
+    },
+    {
+      "id": "117",
+      "name_ar": "حريملاء",
+      "display_name_ar": "حريملاء",
+      "unique_masters": 17,
+      "parent_id": "1"
+    },
+    {
+      "id": "502",
+      "name_ar": "حفر الباطن",
+      "display_name_ar": "حفر الباطن",
+      "unique_masters": 37,
+      "parent_id": "5"
+    },
+    {
+      "id": "705",
+      "name_ar": "حقل",
+      "display_name_ar": "حقل",
+      "unique_masters": 0,
+      "parent_id": "7"
+    },
+    {
+      "id": "110",
+      "name_ar": "حوطه بنى تميم",
+      "display_name_ar": "حوطه بنى تميم",
+      "unique_masters": 0,
+      "parent_id": "1"
+    },
+    {
+      "id": "1106",
+      "name_ar": "خباش",
+      "display_name_ar": "خباش",
+      "unique_masters": 0,
+      "parent_id": "11"
+    },
+    {
+      "id": "207",
+      "name_ar": "خليص",
+      "display_name_ar": "خليص",
+      "unique_masters": 0,
+      "parent_id": "2"
+    },
+    {
+      "id": "601",
+      "name_ar": "خميس  مشيط",
+      "display_name_ar": "خميس  مشيط",
+      "unique_masters": 45,
+      "parent_id": "6"
+    },
+    {
+      "id": "305",
+      "name_ar": "خيبر",
+      "display_name_ar": "خيبر",
+      "unique_masters": 0,
+      "parent_id": "3"
+    },
+    {
+      "id": "1302",
+      "name_ar": "دومة الجندل",
+      "display_name_ar": "دومة الجندل",
+      "unique_masters": 135,
+      "parent_id": "13"
+    },
+    {
+      "id": "507",
+      "name_ar": "رأس تنوره",
+      "display_name_ar": "رأس تنوره",
+      "unique_masters": 0,
+      "parent_id": "5"
+    },
+    {
+      "id": "205",
+      "name_ar": "رابغ",
+      "display_name_ar": "رابغ",
+      "unique_masters": 0,
+      "parent_id": "2"
+    },
+    {
+      "id": "607",
+      "name_ar": "رجال المع",
+      "display_name_ar": "رجال المع",
+      "unique_masters": 12,
+      "parent_id": "6"
+    },
+    {
+      "id": "901",
+      "name_ar": "رفحاء",
+      "display_name_ar": "رفحاء",
+      "unique_masters": 45,
+      "parent_id": "9"
+    },
+    {
+      "id": "115",
+      "name_ar": "رماح",
+      "display_name_ar": "رماح",
+      "unique_masters": 2,
+      "parent_id": "1"
+    },
+    {
+      "id": "210",
+      "name_ar": "رنيه",
+      "display_name_ar": "رنيه",
+      "unique_masters": 0,
+      "parent_id": "2"
+    },
+    {
+      "id": "409",
+      "name_ar": "رياض الخبراء",
+      "display_name_ar": "رياض الخبراء",
+      "unique_masters": 15,
+      "parent_id": "4"
+    },
+    {
+      "id": "605",
+      "name_ar": "سراة عبيده",
+      "display_name_ar": "سراة عبيده",
+      "unique_masters": 0,
+      "parent_id": "6"
+    },
+    {
+      "id": "1300",
+      "name_ar": "سكاكا (مقر الامارة)",
+      "display_name_ar": "سكاكا (مقر الامارة)",
+      "unique_masters": 0,
+      "parent_id": "13"
+    },
+    {
+      "id": "806",
+      "name_ar": "سميراء",
+      "display_name_ar": "سميراء",
+      "unique_masters": 15,
+      "parent_id": "8"
+    },
+    {
+      "id": "1101",
+      "name_ar": "شروره",
+      "display_name_ar": "شروره",
+      "unique_masters": 0,
+      "parent_id": "11"
+    },
+    {
+      "id": "109",
+      "name_ar": "شقراء",
+      "display_name_ar": "شقراء",
+      "unique_masters": 1,
+      "parent_id": "1"
+    },
+    {
+      "id": "1003",
+      "name_ar": "صامطة",
+      "display_name_ar": "صامطة",
+      "unique_masters": 17,
+      "parent_id": "10"
+    },
+    {
+      "id": "1001",
+      "name_ar": "صبياء",
+      "display_name_ar": "صبياء",
+      "unique_masters": 19,
+      "parent_id": "10"
+    },
+    {
+      "id": "702",
+      "name_ar": "ضباء",
+      "display_name_ar": "ضباء",
+      "unique_masters": 0,
+      "parent_id": "7"
+    },
+    {
+      "id": "113",
+      "name_ar": "ضرما",
+      "display_name_ar": "ضرما",
+      "unique_masters": 0,
+      "parent_id": "1"
+    },
+    {
+      "id": "412",
+      "name_ar": "ضريه",
+      "display_name_ar": "ضريه",
+      "unique_masters": 0,
+      "parent_id": "4"
+    },
+    {
+      "id": "1005",
+      "name_ar": "ضمد",
+      "display_name_ar": "ضمد",
+      "unique_masters": 14,
+      "parent_id": "10"
+    },
+    {
+      "id": "1303",
+      "name_ar": "طبرجل",
+      "display_name_ar": "طبرجل",
+      "unique_masters": 28,
+      "parent_id": "13"
+    },
+    {
+      "id": "612",
+      "name_ar": "طريب",
+      "display_name_ar": "طريب",
+      "unique_masters": 7,
+      "parent_id": "6"
+    },
+    {
+      "id": "902",
+      "name_ar": "طريف",
+      "display_name_ar": "طريف",
+      "unique_masters": 42,
+      "parent_id": "9"
+    },
+    {
+      "id": "609",
+      "name_ar": "ظهران الجنوب",
+      "display_name_ar": "ظهران الجنوب",
+      "unique_masters": 46,
+      "parent_id": "6"
+    },
+    {
+      "id": "900",
+      "name_ar": "عرعر (مقر الامارة)",
+      "display_name_ar": "عرعر (مقر الامارة)",
+      "unique_masters": 10,
+      "parent_id": "9"
+    },
+    {
+      "id": "111",
+      "name_ar": "عفيف",
+      "display_name_ar": "عفيف",
+      "unique_masters": 34,
+      "parent_id": "1"
+    },
+    {
+      "id": "411",
+      "name_ar": "عقلة الصقور",
+      "display_name_ar": "عقلة الصقور",
+      "unique_masters": 3,
+      "parent_id": "4"
+    },
+    {
+      "id": "401",
+      "name_ar": "عنيزه",
+      "display_name_ar": "عنيزه",
+      "unique_masters": 0,
+      "parent_id": "4"
+    },
+    {
+      "id": "408",
+      "name_ar": "عيون الجواء",
+      "display_name_ar": "عيون الجواء",
+      "unique_masters": 6,
+      "parent_id": "4"
+    },
+    {
+      "id": "1008",
+      "name_ar": "فرسان",
+      "display_name_ar": "فرسان",
+      "unique_masters": 2,
+      "parent_id": "10"
+    },
+    {
+      "id": "1208",
+      "name_ar": "فرعة غامد الزناد",
+      "display_name_ar": "فرعة غامد الزناد",
+      "unique_masters": 0,
+      "parent_id": "12"
+    },
+    {
+      "id": "1016",
+      "name_ar": "فيفا",
+      "display_name_ar": "فيفا",
+      "unique_masters": 0,
+      "parent_id": "10"
+    },
+    {
+      "id": "510",
+      "name_ar": "قريه العليا",
+      "display_name_ar": "قريه العليا",
+      "unique_masters": 0,
+      "parent_id": "5"
+    },
+    {
+      "id": "1205",
+      "name_ar": "قلوه",
+      "display_name_ar": "قلوه",
+      "unique_masters": 0,
+      "parent_id": "12"
+    },
+    {
+      "id": "604",
+      "name_ar": "محايل",
+      "display_name_ar": "محايل",
+      "unique_masters": 0,
+      "parent_id": "6"
+    },
+    {
+      "id": "120",
+      "name_ar": "مرات",
+      "display_name_ar": "مرات",
+      "unique_masters": 0,
+      "parent_id": "1"
+    },
+    {
+      "id": "200",
+      "name_ar": "مكة المكرمة (مقر الإمارة)",
+      "display_name_ar": "مكة المكرمة (مقر الإمارة)",
+      "unique_masters": 0,
+      "parent_id": "2"
+    },
+    {
+      "id": "805",
+      "name_ar": "موقق",
+      "display_name_ar": "موقق",
+      "unique_masters": 71,
+      "parent_id": "8"
+    },
+    {
+      "id": "214",
+      "name_ar": "ميسان",
+      "display_name_ar": "ميسان",
+      "unique_masters": 0,
+      "parent_id": "2"
+    },
+    {
+      "id": "1100",
+      "name_ar": "نجران (مقر الامارة)",
+      "display_name_ar": "نجران (مقر الامارة)",
+      "unique_masters": 0,
+      "parent_id": "11"
+    },
+    {
+      "id": "1015",
+      "name_ar": "هروب",
+      "display_name_ar": "هروب",
+      "unique_masters": 3,
+      "parent_id": "10"
+    },
+    {
+      "id": "106",
+      "name_ar": "وادى الدواسر",
+      "display_name_ar": "وادى الدواسر",
+      "unique_masters": 13,
+      "parent_id": "1"
+    },
+    {
+      "id": "307",
+      "name_ar": "وادي الفرع",
+      "display_name_ar": "وادي الفرع",
+      "unique_masters": 7,
+      "parent_id": "3"
+    },
+    {
+      "id": "1104",
+      "name_ar": "يدمه",
+      "display_name_ar": "يدمه",
+      "unique_masters": 1,
+      "parent_id": "11"
+    },
+    {
+      "id": "301",
+      "name_ar": "ينبع",
+      "display_name_ar": "ينبع",
+      "unique_masters": 71,
+      "parent_id": "3"
+    }
+  ],
+  "dataset_version": "taadeen-public-gis-20261102-v3"
+}
