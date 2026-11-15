@@ -1,0 +1,44 @@
+psql:/tmp/apply-approved-302.sql:376: ERROR:  operator does not exist: json = jsonb
+LINE 30:     OR (so.raw_data_json->'attributes'->'AMANA') IS DISTINCT...
+                                                          ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+QUERY:  SELECT count(*)             FROM _approved_302 a
+ LEFT JOIN opportunities o ON o.id=a.master_id
+ LEFT JOIN geographic_reference_units g ON g.id=o.geography_reference_unit_id
+ LEFT JOIN geographic_reference_units pg ON pg.id=g.parent_id
+ LEFT JOIN source_opportunities so ON so.id=a.source_row_id
+ LEFT JOIN sources s ON s.id=so.source_id
+ WHERE o.id IS NULL OR o.merged_into_id IS NOT NULL
+    OR o.canonical_id IS DISTINCT FROM a.canonical_id
+    OR o.geographic_scope IS DISTINCT FROM 'UNSPECIFIED'
+    OR o.manual_review_required IS TRUE
+    OR o.latitude IS DISTINCT FROM a.latitude OR o.longitude IS DISTINCT FROM a.longitude
+    OR g.level IS DISTINCT FROM 'governorate' OR g.external_id IS DISTINCT FROM '501' OR pg.external_id IS DISTINCT FROM '5'
+    OR so.id IS NULL OR s.source_key IS DISTINCT FROM 'furas'
+    OR so.master_opportunity_id IS DISTINCT FROM a.master_id
+    OR so.source_opportunity_id IS DISTINCT FROM a.provider_id
+    OR so.source_url IS DISTINCT FROM a.source_url
+    OR so.raw_data_json->'attributes'->>'OPPORTUNITYID' IS DISTINCT FROM a.provider_id
+    OR (so.raw_data_json->'geometry'->>'y')::double precision IS DISTINCT FROM a.latitude
+    OR (so.raw_data_json->'geometry'->>'x')::double precision IS DISTINCT FROM a.longitude
+    OR o.coordinate_provenance_json->>'verified' IS DISTINCT FROM 'true'
+    OR o.coordinate_provenance_json->>'verification_method' IS DISTINCT FROM 'DIRECT_SOURCE_COORDINATE'
+    OR o.coordinate_provenance_json->>'source_record_identity_matches' IS DISTINCT FROM 'true'
+    OR (o.coordinate_provenance_json->>'source_record_id')::integer IS DISTINCT FROM a.source_row_id
+    OR o.coordinate_provenance_json->>'source_opportunity_id' IS DISTINCT FROM a.provider_id
+    OR (o.coordinate_provenance_json->>'source_latitude')::double precision IS DISTINCT FROM a.latitude
+    OR (o.coordinate_provenance_json->>'source_longitude')::double precision IS DISTINCT FROM a.longitude
+    OR o.coordinate_provenance_json#>>'{boundary_validation,status}' IS DISTINCT FROM 'VERIFIED_IN_SAUDI'
+    OR o.coordinate_provenance_json#>>'{boundary_validation,method}' IS DISTINCT FROM 'POINT_IN_OFFICIAL_REGION_POLYGON'
+    OR abs(a.official_x-a.longitude)>1e-7 OR abs(a.official_y-a.latitude)>1e-7
+    OR (so.raw_data_json->'attributes'->'AMANA') IS DISTINCT FROM (a.official_attributes->'AMANA')
+    OR (so.raw_data_json->'attributes'->'BALADYA') IS DISTINCT FROM (a.official_attributes->'BALADYA')
+    OR (so.raw_data_json->'attributes'->'CITY_ID') IS DISTINCT FROM (a.official_attributes->'CITY_ID')
+    OR (so.raw_data_json->'attributes'->'CITYNAME') IS DISTINCT FROM (a.official_attributes->'CITYNAME')
+    OR (so.raw_data_json->'attributes'->'REGION_ID') IS DISTINCT FROM (a.official_attributes->'REGION_ID')
+    OR (so.raw_data_json->'attributes'->'REGIONNAME') IS DISTINCT FROM (a.official_attributes->'REGIONNAME')
+    OR (SELECT count(*) FROM source_opportunities s2 JOIN sources ss2 ON ss2.id=s2.source_id WHERE s2.master_opportunity_id=a.master_id AND ss2.source_key='furas') <> 1
+    OR (SELECT count(*) FROM source_opportunities sx JOIN sources ssx ON ssx.id=sx.source_id WHERE ssx.source_key='furas' AND sx.source_opportunity_id=a.provider_id) <> 1
+    OR EXISTS (SELECT 1 FROM opportunity_data_conflicts c WHERE c.opportunity_id=a.master_id AND c.status IN ('OPEN','PENDING'))
+    OR EXISTS (SELECT 1 FROM location_reviews lr WHERE lr.source_record_id=a.source_row_id AND lr.status IN ('OPEN','PENDING'))
+CONTEXT:  PL/pgSQL function inline_code_block line 8 at SQL statement

@@ -1622,10 +1622,19 @@ def evaluate_data_quality(db: Session, *, scope: str = "full", trigger: str = "m
             csv_count = max(0, sum(1 for _ in csv.reader(io.StringIO(csv_body.decode("utf-8-sig")))) - 1)
             xlsx_response = api.export_xlsx()
             from openpyxl import load_workbook
-            workbook = load_workbook(io.BytesIO(xlsx_response.body), read_only=True, data_only=True)
-            xlsx_sheet = workbook["الفرص الاستثمارية"]
-            xlsx_count = max(0, xlsx_sheet.max_row - 6)
-            workbook.close()
+            try:
+                response_path = getattr(xlsx_response, "path", None)
+                workbook = load_workbook(response_path if response_path else io.BytesIO(xlsx_response.body),
+                                         read_only=True, data_only=True)
+                try:
+                    xlsx_sheet = workbook["الفرص الاستثمارية"]
+                    xlsx_count = max(0, xlsx_sheet.max_row - 6)
+                finally:
+                    workbook.close()
+            finally:
+                cleanup_export = getattr(xlsx_response, "cleanup_export_file", None)
+                if callable(cleanup_export):
+                    cleanup_export()
             counts = {"api_list":api_total,"dashboard":dashboard_total,"data_dashboard":data_dashboard_total,
                       "csv":csv_count,"xlsx":xlsx_count,"database_current_masters":current_count}
             mismatch = len(set(counts.values())) != 1

@@ -1,11 +1,12 @@
 from datetime import datetime, timezone
-from sqlalchemy import Boolean, CheckConstraint, DateTime, Float, ForeignKey, Integer, JSON, String, Text, UniqueConstraint
+from sqlalchemy import Boolean, CheckConstraint, DateTime, Float, ForeignKey, ForeignKeyConstraint, Integer, JSON, String, Text, UniqueConstraint
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 
 class Base(DeclarativeBase): pass
 
 class Source(Base):
     __tablename__ = "sources"
+    __table_args__ = (UniqueConstraint("id", "source_key", name="uq_source_id_key_namespace"),)
     id: Mapped[int] = mapped_column(primary_key=True)
     source_key: Mapped[str] = mapped_column(String(80), unique=True, index=True)
     source_name_ar: Mapped[str] = mapped_column(String(200))
@@ -117,7 +118,12 @@ class OpportunityAssetFacilityType(Base):
 
 class SourceOpportunity(Base):
     __tablename__ = "source_opportunities"
-    __table_args__ = (UniqueConstraint("source_id", "source_opportunity_id", name="uq_source_external_id"),)
+    __table_args__ = (
+        UniqueConstraint("source_id", "source_opportunity_id", name="uq_source_external_id"),
+        # Composite target key lets identity crosswalk rows enforce that their
+        # SourceOpportunity belongs to the same source namespace as the alias.
+        UniqueConstraint("id", "source_id", name="uq_source_opportunity_id_source_namespace"),
+    )
     id: Mapped[int] = mapped_column(primary_key=True)
     source_id: Mapped[int] = mapped_column(ForeignKey("sources.id"), index=True)
     master_opportunity_id: Mapped[int | None] = mapped_column(ForeignKey("opportunities.id"), index=True, nullable=True)
@@ -154,6 +160,63 @@ class SourceOpportunity(Base):
     master: Mapped[Opportunity | None] = relationship(back_populates="source_records")
     source: Mapped[Source] = relationship()
     opportunity_locations: Mapped[list["OpportunityLocation"]] = relationship(back_populates="source_opportunity")
+
+
+class SourceIdentityAlias(Base):
+    """Approved alternate provider keys that preserve a canonical source row."""
+    __tablename__ = "source_identity_aliases"
+    __table_args__ = (
+        UniqueConstraint("source_id", "alias_provider_id", name="uq_source_identity_alias_provider"),
+        ForeignKeyConstraint(
+            ["source_id", "source_namespace"], ["sources.id", "sources.source_key"],
+            ondelete="RESTRICT", name="fk_source_identity_alias_namespace"),
+        ForeignKeyConstraint(
+            ["target_source_opportunity_id", "source_id"],
+            ["source_opportunities.id", "source_opportunities.source_id"],
+            ondelete="RESTRICT", name="fk_source_identity_alias_target_namespace"),
+        CheckConstraint("alias_provider_id <> canonical_source_key", name="ck_source_identity_alias_not_canonical_key"),
+        CheckConstraint("status IN ('ACTIVE','INACTIVE')", name="ck_source_identity_alias_status"),
+    )
+    id: Mapped[int] = mapped_column(primary_key=True)
+    source_id: Mapped[int] = mapped_column(ForeignKey("sources.id", ondelete="RESTRICT"), nullable=False, index=True)
+    source_namespace: Mapped[str] = mapped_column(String(80), nullable=False)
+    alias_provider_id: Mapped[str] = mapped_column(String(200), nullable=False)
+    target_source_opportunity_id: Mapped[int] = mapped_column(Integer, nullable=False, index=True)
+    canonical_source_key: Mapped[str] = mapped_column(String(200), nullable=False)
+    expected_master_opportunity_id: Mapped[int | None] = mapped_column(ForeignKey("opportunities.id", ondelete="RESTRICT"), nullable=True, index=True)
+    evidence_reference_json: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
+    approval_artifact_reference: Mapped[str] = mapped_column(String(1200), nullable=False)
+    approval_artifact_sha256: Mapped[str] = mapped_column(String(64), nullable=False)
+    approval_decision_fingerprint: Mapped[str] = mapped_column(String(64), nullable=False)
+    approval_method: Mapped[str] = mapped_column(String(100), nullable=False)
+    approval_authority: Mapped[str] = mapped_column(String(120), nullable=False)
+    approval_timestamp: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+    application_timestamp: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+    application_batch_id: Mapped[str] = mapped_column(String(100), nullable=False)
+    status: Mapped[str] = mapped_column(String(20), nullable=False, default="ACTIVE", index=True)
+    deactivated_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    deactivation_reason: Mapped[str | None] = mapped_column(Text, nullable=True)
+    audit_metadata_json: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+
+
+class SourceIdentityAliasAudit(Base):
+    """Append-only application/deactivation history for source identity aliases."""
+    __tablename__ = "source_identity_alias_audits"
+    __table_args__ = (
+        UniqueConstraint("alias_id", "action", "application_batch_id", name="uq_source_identity_alias_audit_action_batch"),
+        CheckConstraint("action IN ('APPLIED','ROLLED_BACK')", name="ck_source_identity_alias_audit_action"),
+    )
+    id: Mapped[int] = mapped_column(primary_key=True)
+    alias_id: Mapped[int] = mapped_column(ForeignKey("source_identity_aliases.id", ondelete="RESTRICT"), nullable=False, index=True)
+    action: Mapped[str] = mapped_column(String(20), nullable=False)
+    application_batch_id: Mapped[str] = mapped_column(String(100), nullable=False)
+    actor: Mapped[str] = mapped_column(String(120), nullable=False)
+    occurred_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+    before_json: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
+    after_json: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
+    reason: Mapped[str | None] = mapped_column(Text, nullable=True)
+    evidence_reference: Mapped[str | None] = mapped_column(String(1200), nullable=True)
 
 class OpportunityLocation(Base):
     """Source-preserved place names for projects covering one or several cities."""

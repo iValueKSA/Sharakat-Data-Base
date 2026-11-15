@@ -1,0 +1,890 @@
+{
+  "captured_at_utc": "2026-11-11T09:31:32.2464478Z",
+  "endpoint": "GET http://localhost:8080/api/data-dashboard/geography?governorate_id=501",
+  "map_scope": "NATIONAL",
+  "total_masters": 518,
+  "exact_mapped": 145,
+  "api_unique_master_ids": 145,
+  "approved_ids_returned": 118,
+  "prior_27_ids_preserved": 27,
+  "held_master_64_excluded": true,
+  "all_approved_coordinates_match": true,
+  "max_coordinate_delta_degrees": 4.9999989926163835E-08,
+  "coordinate_tolerance_degrees": 1E-06,
+  "duplicate_master_ids": 0,
+  "unexpected_ids": 0,
+  "other_governorate_records": 0,
+  "failures": [],
+  "returned_points": [
+    {
+      "master_id": 18,
+      "latitude": 25.473132,
+      "longitude": 49.641599,
+      "point_count": 1
+    },
+    {
+      "master_id": 19,
+      "latitude": 25.476485,
+      "longitude": 49.640687,
+      "point_count": 1
+    },
+    {
+      "master_id": 20,
+      "latitude": 25.476097,
+      "longitude": 49.640537,
+      "point_count": 1
+    },
+    {
+      "master_id": 21,
+      "latitude": 25.473542,
+      "longitude": 49.6345,
+      "point_count": 1
+    },
+    {
+      "master_id": 22,
+      "latitude": 25.4273536,
+      "longitude": 49.6990169,
+      "point_count": 1
+    },
+    {
+      "master_id": 23,
+      "latitude": 25.4269805,
+      "longitude": 49.6980049,
+      "point_count": 1
+    },
+    {
+      "master_id": 25,
+      "latitude": 25.7277853,
+      "longitude": 50.1665123,
+      "point_count": 1
+    },
+    {
+      "master_id": 26,
+      "latitude": 25.3262531,
+      "longitude": 49.559566,
+      "point_count": 1
+    },
+    {
+      "master_id": 27,
+      "latitude": 25.3264656,
+      "longitude": 49.5605856,
+      "point_count": 1
+    },
+    {
+      "master_id": 28,
+      "latitude": 25.3136455,
+      "longitude": 49.5876085,
+      "point_count": 1
+    },
+    {
+      "master_id": 29,
+      "latitude": 25.4720376,
+      "longitude": 49.633671,
+      "point_count": 1
+    },
+    {
+      "master_id": 31,
+      "latitude": 25.313974,
+      "longitude": 49.5870171,
+      "point_count": 1
+    },
+    {
+      "master_id": 32,
+      "latitude": 25.2883359,
+      "longitude": 49.525001,
+      "point_count": 1
+    },
+    {
+      "master_id": 33,
+      "latitude": 25.2934021,
+      "longitude": 49.5184357,
+      "point_count": 1
+    },
+    {
+      "master_id": 34,
+      "latitude": 25.2883687,
+      "longitude": 49.5222632,
+      "point_count": 1
+    },
+    {
+      "master_id": 35,
+      "latitude": 25.2845727,
+      "longitude": 49.5204715,
+      "point_count": 1
+    },
+    {
+      "master_id": 36,
+      "latitude": 25.2899857,
+      "longitude": 49.5186556,
+      "point_count": 1
+    },
+    {
+      "master_id": 37,
+      "latitude": 25.2877737,
+      "longitude": 49.5159157,
+      "point_count": 1
+    },
+    {
+      "master_id": 38,
+      "latitude": 25.2878579,
+      "longitude": 49.5166151,
+      "point_count": 1
+    },
+    {
+      "master_id": 39,
+      "latitude": 25.2914358,
+      "longitude": 49.5091461,
+      "point_count": 1
+    },
+    {
+      "master_id": 40,
+      "latitude": 25.2882996,
+      "longitude": 49.5172374,
+      "point_count": 1
+    },
+    {
+      "master_id": 41,
+      "latitude": 25.288142,
+      "longitude": 49.5220084,
+      "point_count": 1
+    },
+    {
+      "master_id": 42,
+      "latitude": 25.2877267,
+      "longitude": 49.5158158,
+      "point_count": 1
+    },
+    {
+      "master_id": 43,
+      "latitude": 25.2881705,
+      "longitude": 49.5181574,
+      "point_count": 1
+    },
+    {
+      "master_id": 44,
+      "latitude": 25.2879977,
+      "longitude": 49.5220251,
+      "point_count": 1
+    },
+    {
+      "master_id": 45,
+      "latitude": 25.28782,
+      "longitude": 49.5158379,
+      "point_count": 1
+    },
+    {
+      "master_id": 46,
+      "latitude": 25.2884172,
+      "longitude": 49.5207229,
+      "point_count": 1
+    },
+    {
+      "master_id": 47,
+      "latitude": 25.4692871,
+      "longitude": 49.634987,
+      "point_count": 1
+    },
+    {
+      "master_id": 48,
+      "latitude": 25.288333,
+      "longitude": 49.5238738,
+      "point_count": 1
+    },
+    {
+      "master_id": 49,
+      "latitude": 25.2916579,
+      "longitude": 49.5090042,
+      "point_count": 1
+    },
+    {
+      "master_id": 50,
+      "latitude": 25.2870137,
+      "longitude": 49.5149314,
+      "point_count": 1
+    },
+    {
+      "master_id": 51,
+      "latitude": 25.2884252,
+      "longitude": 49.5186047,
+      "point_count": 1
+    },
+    {
+      "master_id": 52,
+      "latitude": 25.2874965,
+      "longitude": 49.5154641,
+      "point_count": 1
+    },
+    {
+      "master_id": 53,
+      "latitude": 25.2873244,
+      "longitude": 49.5153802,
+      "point_count": 1
+    },
+    {
+      "master_id": 54,
+      "latitude": 25.375359,
+      "longitude": 49.7715008,
+      "point_count": 1
+    },
+    {
+      "master_id": 55,
+      "latitude": 25.6057764,
+      "longitude": 49.5463484,
+      "point_count": 1
+    },
+    {
+      "master_id": 56,
+      "latitude": 25.2925034,
+      "longitude": 49.5185175,
+      "point_count": 1
+    },
+    {
+      "master_id": 57,
+      "latitude": 25.2896704,
+      "longitude": 49.5113667,
+      "point_count": 1
+    },
+    {
+      "master_id": 58,
+      "latitude": 25.2876042,
+      "longitude": 49.5126595,
+      "point_count": 1
+    },
+    {
+      "master_id": 59,
+      "latitude": 25.293182,
+      "longitude": 49.5188662,
+      "point_count": 1
+    },
+    {
+      "master_id": 60,
+      "latitude": 25.2949038,
+      "longitude": 49.5185134,
+      "point_count": 1
+    },
+    {
+      "master_id": 61,
+      "latitude": 25.2932984,
+      "longitude": 49.5187589,
+      "point_count": 1
+    },
+    {
+      "master_id": 62,
+      "latitude": 25.2874829,
+      "longitude": 49.5154812,
+      "point_count": 1
+    },
+    {
+      "master_id": 63,
+      "latitude": 25.4630237,
+      "longitude": 49.6377778,
+      "point_count": 1
+    },
+    {
+      "master_id": 65,
+      "latitude": 25.4578408,
+      "longitude": 49.551881,
+      "point_count": 1
+    },
+    {
+      "master_id": 66,
+      "latitude": 25.3510548,
+      "longitude": 49.568162,
+      "point_count": 1
+    },
+    {
+      "master_id": 67,
+      "latitude": 25.4751528,
+      "longitude": 49.6399969,
+      "point_count": 1
+    },
+    {
+      "master_id": 68,
+      "latitude": 25.4757096,
+      "longitude": 49.6402826,
+      "point_count": 1
+    },
+    {
+      "master_id": 69,
+      "latitude": 25.353706,
+      "longitude": 49.5452135,
+      "point_count": 1
+    },
+    {
+      "master_id": 71,
+      "latitude": 25.3266911,
+      "longitude": 49.5615745,
+      "point_count": 1
+    },
+    {
+      "master_id": 72,
+      "latitude": 25.4162979,
+      "longitude": 49.7165631,
+      "point_count": 1
+    },
+    {
+      "master_id": 73,
+      "latitude": 25.395777,
+      "longitude": 49.597732,
+      "point_count": 1
+    },
+    {
+      "master_id": 76,
+      "latitude": 25.4719618,
+      "longitude": 49.6342913,
+      "point_count": 1
+    },
+    {
+      "master_id": 77,
+      "latitude": 25.4759514,
+      "longitude": 49.6403261,
+      "point_count": 1
+    },
+    {
+      "master_id": 79,
+      "latitude": 25.3681152,
+      "longitude": 49.544545,
+      "point_count": 1
+    },
+    {
+      "master_id": 80,
+      "latitude": 25.3691839,
+      "longitude": 49.5451803,
+      "point_count": 1
+    },
+    {
+      "master_id": 81,
+      "latitude": 25.4726197,
+      "longitude": 49.6346782,
+      "point_count": 1
+    },
+    {
+      "master_id": 82,
+      "latitude": 25.2718953,
+      "longitude": 49.5772846,
+      "point_count": 1
+    },
+    {
+      "master_id": 83,
+      "latitude": 25.3261282,
+      "longitude": 49.5647596,
+      "point_count": 1
+    },
+    {
+      "master_id": 84,
+      "latitude": 25.3565084,
+      "longitude": 49.632803,
+      "point_count": 1
+    },
+    {
+      "master_id": 85,
+      "latitude": 25.437713,
+      "longitude": 49.6658137,
+      "point_count": 1
+    },
+    {
+      "master_id": 86,
+      "latitude": 25.3265892,
+      "longitude": 49.5608903,
+      "point_count": 1
+    },
+    {
+      "master_id": 87,
+      "latitude": 25.3582489,
+      "longitude": 49.5589097,
+      "point_count": 1
+    },
+    {
+      "master_id": 88,
+      "latitude": 25.3267616,
+      "longitude": 49.561508,
+      "point_count": 1
+    },
+    {
+      "master_id": 89,
+      "latitude": 25.3691816,
+      "longitude": 49.5450816,
+      "point_count": 1
+    },
+    {
+      "master_id": 90,
+      "latitude": 25.4510008,
+      "longitude": 49.5192982,
+      "point_count": 1
+    },
+    {
+      "master_id": 91,
+      "latitude": 25.4517908,
+      "longitude": 49.5293613,
+      "point_count": 1
+    },
+    {
+      "master_id": 92,
+      "latitude": 25.401864,
+      "longitude": 49.599179,
+      "point_count": 1
+    },
+    {
+      "master_id": 93,
+      "latitude": 25.3690786,
+      "longitude": 49.5450424,
+      "point_count": 1
+    },
+    {
+      "master_id": 94,
+      "latitude": 25.3465126,
+      "longitude": 49.6038491,
+      "point_count": 1
+    },
+    {
+      "master_id": 95,
+      "latitude": 25.3462743,
+      "longitude": 49.6045287,
+      "point_count": 1
+    },
+    {
+      "master_id": 96,
+      "latitude": 25.3064491,
+      "longitude": 49.5675144,
+      "point_count": 1
+    },
+    {
+      "master_id": 97,
+      "latitude": 25.4203935,
+      "longitude": 49.742579,
+      "point_count": 1
+    },
+    {
+      "master_id": 98,
+      "latitude": 25.4565376,
+      "longitude": 49.5524294,
+      "point_count": 1
+    },
+    {
+      "master_id": 99,
+      "latitude": 25.4087595,
+      "longitude": 49.5587952,
+      "point_count": 1
+    },
+    {
+      "master_id": 100,
+      "latitude": 25.4570528,
+      "longitude": 49.5529993,
+      "point_count": 1
+    },
+    {
+      "master_id": 101,
+      "latitude": 25.420582,
+      "longitude": 49.7424054,
+      "point_count": 1
+    },
+    {
+      "master_id": 102,
+      "latitude": 25.3584179,
+      "longitude": 49.560769,
+      "point_count": 1
+    },
+    {
+      "master_id": 103,
+      "latitude": 25.4091097,
+      "longitude": 49.5589801,
+      "point_count": 1
+    },
+    {
+      "master_id": 104,
+      "latitude": 25.3881918,
+      "longitude": 49.5956329,
+      "point_count": 1
+    },
+    {
+      "master_id": 105,
+      "latitude": 25.4204647,
+      "longitude": 49.7427071,
+      "point_count": 1
+    },
+    {
+      "master_id": 106,
+      "latitude": 25.360761,
+      "longitude": 49.5986063,
+      "point_count": 1
+    },
+    {
+      "master_id": 107,
+      "latitude": 25.32926,
+      "longitude": 49.60475,
+      "point_count": 1
+    },
+    {
+      "master_id": 111,
+      "latitude": 25.287312,
+      "longitude": 49.5153444,
+      "point_count": 1
+    },
+    {
+      "master_id": 112,
+      "latitude": 25.2865165,
+      "longitude": 49.5137277,
+      "point_count": 1
+    },
+    {
+      "master_id": 113,
+      "latitude": 25.2885221,
+      "longitude": 49.5189775,
+      "point_count": 1
+    },
+    {
+      "master_id": 114,
+      "latitude": 25.2907812,
+      "longitude": 49.5103153,
+      "point_count": 1
+    },
+    {
+      "master_id": 115,
+      "latitude": 25.2910522,
+      "longitude": 49.5186221,
+      "point_count": 1
+    },
+    {
+      "master_id": 116,
+      "latitude": 25.2925248,
+      "longitude": 49.5187991,
+      "point_count": 1
+    },
+    {
+      "master_id": 117,
+      "latitude": 25.2881426,
+      "longitude": 49.5227527,
+      "point_count": 1
+    },
+    {
+      "master_id": 118,
+      "latitude": 25.2896378,
+      "longitude": 49.518576,
+      "point_count": 1
+    },
+    {
+      "master_id": 119,
+      "latitude": 25.2875779,
+      "longitude": 49.5160417,
+      "point_count": 1
+    },
+    {
+      "master_id": 120,
+      "latitude": 25.2864176,
+      "longitude": 49.5143059,
+      "point_count": 1
+    },
+    {
+      "master_id": 121,
+      "latitude": 25.6060973,
+      "longitude": 49.5463084,
+      "point_count": 1
+    },
+    {
+      "master_id": 122,
+      "latitude": 25.2874296,
+      "longitude": 49.5153149,
+      "point_count": 1
+    },
+    {
+      "master_id": 123,
+      "latitude": 25.4720515,
+      "longitude": 49.6339624,
+      "point_count": 1
+    },
+    {
+      "master_id": 124,
+      "latitude": 25.475091,
+      "longitude": 49.6397139,
+      "point_count": 1
+    },
+    {
+      "master_id": 125,
+      "latitude": 25.4752696,
+      "longitude": 49.6400707,
+      "point_count": 1
+    },
+    {
+      "master_id": 126,
+      "latitude": 25.3688417,
+      "longitude": 49.592782,
+      "point_count": 1
+    },
+    {
+      "master_id": 127,
+      "latitude": 25.3648113,
+      "longitude": 49.7269112,
+      "point_count": 1
+    },
+    {
+      "master_id": 128,
+      "latitude": 25.326502,
+      "longitude": 49.5605177,
+      "point_count": 1
+    },
+    {
+      "master_id": 129,
+      "latitude": 25.390006,
+      "longitude": 49.563316,
+      "point_count": 1
+    },
+    {
+      "master_id": 130,
+      "latitude": 25.4730889,
+      "longitude": 49.6380451,
+      "point_count": 1
+    },
+    {
+      "master_id": 131,
+      "latitude": 25.3691981,
+      "longitude": 49.5452163,
+      "point_count": 1
+    },
+    {
+      "master_id": 132,
+      "latitude": 25.3686515,
+      "longitude": 49.5448422,
+      "point_count": 1
+    },
+    {
+      "master_id": 133,
+      "latitude": 25.3463803,
+      "longitude": 49.6042178,
+      "point_count": 1
+    },
+    {
+      "master_id": 134,
+      "latitude": 25.3520791,
+      "longitude": 49.5681241,
+      "point_count": 1
+    },
+    {
+      "master_id": 136,
+      "latitude": 25.3574277,
+      "longitude": 49.5588793,
+      "point_count": 1
+    },
+    {
+      "master_id": 137,
+      "latitude": 25.4269749,
+      "longitude": 49.6968894,
+      "point_count": 1
+    },
+    {
+      "master_id": 138,
+      "latitude": 25.4523172,
+      "longitude": 49.5196342,
+      "point_count": 1
+    },
+    {
+      "master_id": 139,
+      "latitude": 25.448426,
+      "longitude": 49.5159076,
+      "point_count": 1
+    },
+    {
+      "master_id": 141,
+      "latitude": 25.4570766,
+      "longitude": 49.5533861,
+      "point_count": 1
+    },
+    {
+      "master_id": 142,
+      "latitude": 25.3068093,
+      "longitude": 49.5675648,
+      "point_count": 1
+    },
+    {
+      "master_id": 163,
+      "latitude": 25.390822,
+      "longitude": 49.662414,
+      "point_count": 1
+    },
+    {
+      "master_id": 164,
+      "latitude": 25.526516,
+      "longitude": 49.60361,
+      "point_count": 1
+    },
+    {
+      "master_id": 192,
+      "latitude": 25.548998,
+      "longitude": 49.685095,
+      "point_count": 1
+    },
+    {
+      "master_id": 193,
+      "latitude": 25.634749,
+      "longitude": 49.544749,
+      "point_count": 1
+    },
+    {
+      "master_id": 195,
+      "latitude": 25.635184,
+      "longitude": 49.543832,
+      "point_count": 1
+    },
+    {
+      "master_id": 1373,
+      "latitude": 25.2939926,
+      "longitude": 49.5186476,
+      "point_count": 1
+    },
+    {
+      "master_id": 1462,
+      "latitude": 25.5204381,
+      "longitude": 49.6104505,
+      "point_count": 1
+    },
+    {
+      "master_id": 1500,
+      "latitude": 25.0,
+      "longitude": 49.0,
+      "point_count": 1
+    },
+    {
+      "master_id": 1585,
+      "latitude": 25.721175,
+      "longitude": 50.171476,
+      "point_count": 1
+    },
+    {
+      "master_id": 1586,
+      "latitude": 25.719979,
+      "longitude": 50.172497,
+      "point_count": 1
+    },
+    {
+      "master_id": 1587,
+      "latitude": 25.719181,
+      "longitude": 50.172941,
+      "point_count": 1
+    },
+    {
+      "master_id": 2344,
+      "latitude": 25.272396,
+      "longitude": 49.821311,
+      "point_count": 1
+    },
+    {
+      "master_id": 3252,
+      "latitude": 25.635694,
+      "longitude": 49.552194,
+      "point_count": 1
+    },
+    {
+      "master_id": 3269,
+      "latitude": 25.24952,
+      "longitude": 49.829569,
+      "point_count": 1
+    },
+    {
+      "master_id": 4355,
+      "latitude": 25.268162,
+      "longitude": 49.822123,
+      "point_count": 1
+    },
+    {
+      "master_id": 4356,
+      "latitude": 25.266707,
+      "longitude": 49.821973,
+      "point_count": 1
+    },
+    {
+      "master_id": 4368,
+      "latitude": 25.264852,
+      "longitude": 49.821867,
+      "point_count": 1
+    },
+    {
+      "master_id": 4496,
+      "latitude": 25.271036,
+      "longitude": 49.829708,
+      "point_count": 1
+    },
+    {
+      "master_id": 4644,
+      "latitude": 25.2605326,
+      "longitude": 49.8220556,
+      "point_count": 1
+    },
+    {
+      "master_id": 4659,
+      "latitude": 25.2716608,
+      "longitude": 49.8245074,
+      "point_count": 1
+    },
+    {
+      "master_id": 4965,
+      "latitude": 25.261003,
+      "longitude": 49.821119,
+      "point_count": 1
+    },
+    {
+      "master_id": 4968,
+      "latitude": 25.265626,
+      "longitude": 49.82168,
+      "point_count": 2
+    },
+    {
+      "master_id": 4987,
+      "latitude": 25.265626,
+      "longitude": 49.82168,
+      "point_count": 2
+    },
+    {
+      "master_id": 5006,
+      "latitude": 25.263592,
+      "longitude": 49.821065,
+      "point_count": 1
+    },
+    {
+      "master_id": 5051,
+      "latitude": 25.249629,
+      "longitude": 49.810917,
+      "point_count": 1
+    },
+    {
+      "master_id": 5088,
+      "latitude": 25.25221,
+      "longitude": 49.812487,
+      "point_count": 1
+    },
+    {
+      "master_id": 5340,
+      "latitude": 24.1419728,
+      "longitude": 51.567834,
+      "point_count": 1
+    },
+    {
+      "master_id": 5996,
+      "latitude": 23.2935397,
+      "longitude": 48.9662709,
+      "point_count": 1
+    },
+    {
+      "master_id": 6380,
+      "latitude": 24.2068395,
+      "longitude": 51.4693123,
+      "point_count": 1
+    },
+    {
+      "master_id": 6637,
+      "latitude": 24.723004,
+      "longitude": 50.7035,
+      "point_count": 1
+    },
+    {
+      "master_id": 6652,
+      "latitude": 24.62393,
+      "longitude": 50.79205,
+      "point_count": 1
+    },
+    {
+      "master_id": 6657,
+      "latitude": 24.724069,
+      "longitude": 50.702903,
+      "point_count": 1
+    }
+  ]
+}

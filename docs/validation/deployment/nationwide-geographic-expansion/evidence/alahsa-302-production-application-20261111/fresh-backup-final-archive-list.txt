@@ -1,0 +1,428 @@
+;
+; Archive created at 2026-11-11 10:46:46 UTC
+;     dbname: sharakat_local
+;     TOC Entries: 417
+;     Compression: gzip
+;     Dump Version: 1.15-0
+;     Format: CUSTOM
+;     Integer: 4 bytes
+;     Offset: 8 bytes
+;     Dumped from database version: 16.15
+;     Dumped by pg_dump version: 16.15
+;
+;
+; Selected TOC Entries:
+;
+2; 3079 16903 EXTENSION - pg_trgm 
+4075; 0 0 COMMENT - EXTENSION pg_trgm 
+278; 1259 16894 TABLE public alembic_version sharakat_local
+259; 1259 16689 TABLE public alert_events sharakat_local
+258; 1259 16688 SEQUENCE public alert_events_id_seq sharakat_local
+4076; 0 0 SEQUENCE OWNED BY public alert_events_id_seq sharakat_local
+282; 1259 71778 TABLE public asset_facility_type_aliases sharakat_local
+281; 1259 71777 SEQUENCE public asset_facility_type_aliases_id_seq sharakat_local
+4077; 0 0 SEQUENCE OWNED BY public asset_facility_type_aliases_id_seq sharakat_local
+280; 1259 71769 TABLE public asset_facility_types sharakat_local
+257; 1259 16672 TABLE public audit_events sharakat_local
+256; 1259 16671 SEQUENCE public audit_events_id_seq sharakat_local
+4078; 0 0 SEQUENCE OWNED BY public audit_events_id_seq sharakat_local
+249; 1259 16595 TABLE public duplicate_candidates sharakat_local
+248; 1259 16594 SEQUENCE public duplicate_candidates_id_seq sharakat_local
+4079; 0 0 SEQUENCE OWNED BY public duplicate_candidates_id_seq sharakat_local
+286; 1259 102760 TABLE public geographic_reference_datasets sharakat_local
+285; 1259 102759 SEQUENCE public geographic_reference_datasets_id_seq sharakat_local
+4080; 0 0 SEQUENCE OWNED BY public geographic_reference_datasets_id_seq sharakat_local
+288; 1259 102778 TABLE public geographic_reference_units sharakat_local
+287; 1259 102777 SEQUENCE public geographic_reference_units_id_seq sharakat_local
+4081; 0 0 SEQUENCE OWNED BY public geographic_reference_units_id_seq sharakat_local
+279; 1259 18783 TABLE public local_setup_state sharakat_local
+273; 1259 16823 TABLE public location_reviews sharakat_local
+272; 1259 16822 SEQUENCE public location_reviews_id_seq sharakat_local
+4082; 0 0 SEQUENCE OWNED BY public location_reviews_id_seq sharakat_local
+225; 1259 16415 TABLE public modon_locations sharakat_local
+224; 1259 16414 SEQUENCE public modon_locations_id_seq sharakat_local
+4083; 0 0 SEQUENCE OWNED BY public modon_locations_id_seq sharakat_local
+271; 1259 16806 TABLE public ncp_project_events sharakat_local
+270; 1259 16805 SEQUENCE public ncp_project_events_id_seq sharakat_local
+4084; 0 0 SEQUENCE OWNED BY public ncp_project_events_id_seq sharakat_local
+223; 1259 16396 TABLE public opportunities sharakat_local
+222; 1259 16395 SEQUENCE public opportunities_id_seq sharakat_local
+4085; 0 0 SEQUENCE OWNED BY public opportunities_id_seq sharakat_local
+284; 1259 71796 TABLE public opportunity_asset_facility_types sharakat_local
+283; 1259 71795 SEQUENCE public opportunity_asset_facility_types_id_seq sharakat_local
+4086; 0 0 SEQUENCE OWNED BY public opportunity_asset_facility_types_id_seq sharakat_local
+243; 1259 16542 TABLE public opportunity_change_history sharakat_local
+242; 1259 16541 SEQUENCE public opportunity_change_history_id_seq sharakat_local
+4087; 0 0 SEQUENCE OWNED BY public opportunity_change_history_id_seq sharakat_local
+277; 1259 16870 TABLE public opportunity_data_conflicts sharakat_local
+276; 1259 16869 SEQUENCE public opportunity_data_conflicts_id_seq sharakat_local
+4088; 0 0 SEQUENCE OWNED BY public opportunity_data_conflicts_id_seq sharakat_local
+251; 1259 16616 TABLE public opportunity_documents sharakat_local
+250; 1259 16615 SEQUENCE public opportunity_documents_id_seq sharakat_local
+4089; 0 0 SEQUENCE OWNED BY public opportunity_documents_id_seq sharakat_local
+275; 1259 16845 TABLE public opportunity_field_provenance sharakat_local
+274; 1259 16844 SEQUENCE public opportunity_field_provenance_id_seq sharakat_local
+4090; 0 0 SEQUENCE OWNED BY public opportunity_field_provenance_id_seq sharakat_local
+261; 1259 16714 TABLE public opportunity_locations sharakat_local
+260; 1259 16713 SEQUENCE public opportunity_locations_id_seq sharakat_local
+4091; 0 0 SEQUENCE OWNED BY public opportunity_locations_id_seq sharakat_local
+253; 1259 16636 TABLE public opportunity_merge_audit sharakat_local
+252; 1259 16635 SEQUENCE public opportunity_merge_audit_id_seq sharakat_local
+4092; 0 0 SEQUENCE OWNED BY public opportunity_merge_audit_id_seq sharakat_local
+229; 1259 16438 TABLE public organization_aliases sharakat_local
+228; 1259 16437 SEQUENCE public organization_aliases_id_seq sharakat_local
+4093; 0 0 SEQUENCE OWNED BY public organization_aliases_id_seq sharakat_local
+263; 1259 16731 TABLE public qualification_reviews sharakat_local
+262; 1259 16730 SEQUENCE public qualification_reviews_id_seq sharakat_local
+4094; 0 0 SEQUENCE OWNED BY public qualification_reviews_id_seq sharakat_local
+239; 1259 16508 TABLE public source_content_items sharakat_local
+238; 1259 16507 SEQUENCE public source_content_items_id_seq sharakat_local
+4095; 0 0 SEQUENCE OWNED BY public source_content_items_id_seq sharakat_local
+247; 1259 16580 TABLE public source_errors sharakat_local
+246; 1259 16579 SEQUENCE public source_errors_id_seq sharakat_local
+4096; 0 0 SEQUENCE OWNED BY public source_errors_id_seq sharakat_local
+290; 1259 102817 TABLE public source_geographic_coverage sharakat_local
+289; 1259 102816 SEQUENCE public source_geographic_coverage_id_seq sharakat_local
+4097; 0 0 SEQUENCE OWNED BY public source_geographic_coverage_id_seq sharakat_local
+294; 1259 179299 TABLE public source_identity_alias_audits sharakat_local
+293; 1259 179298 SEQUENCE public source_identity_alias_audits_id_seq sharakat_local
+4098; 0 0 SEQUENCE OWNED BY public source_identity_alias_audits_id_seq sharakat_local
+292; 1259 179259 TABLE public source_identity_aliases sharakat_local
+291; 1259 179258 SEQUENCE public source_identity_aliases_id_seq sharakat_local
+4099; 0 0 SEQUENCE OWNED BY public source_identity_aliases_id_seq sharakat_local
+241; 1259 16525 TABLE public source_limitations sharakat_local
+240; 1259 16524 SEQUENCE public source_limitations_id_seq sharakat_local
+4100; 0 0 SEQUENCE OWNED BY public source_limitations_id_seq sharakat_local
+267; 1259 16770 TABLE public source_observations sharakat_local
+266; 1259 16769 SEQUENCE public source_observations_id_seq sharakat_local
+4101; 0 0 SEQUENCE OWNED BY public source_observations_id_seq sharakat_local
+237; 1259 16482 TABLE public source_opportunities sharakat_local
+236; 1259 16481 SEQUENCE public source_opportunities_id_seq sharakat_local
+4102; 0 0 SEQUENCE OWNED BY public source_opportunities_id_seq sharakat_local
+265; 1259 16753 TABLE public source_opportunity_dataset_memberships sharakat_local
+264; 1259 16752 SEQUENCE public source_opportunity_dataset_memberships_id_seq sharakat_local
+4103; 0 0 SEQUENCE OWNED BY public source_opportunity_dataset_memberships_id_seq sharakat_local
+269; 1259 16789 TABLE public source_opportunity_taxonomies sharakat_local
+268; 1259 16788 SEQUENCE public source_opportunity_taxonomies_id_seq sharakat_local
+4104; 0 0 SEQUENCE OWNED BY public source_opportunity_taxonomies_id_seq sharakat_local
+245; 1259 16562 TABLE public source_sync_jobs sharakat_local
+244; 1259 16561 SEQUENCE public source_sync_jobs_id_seq sharakat_local
+4105; 0 0 SEQUENCE OWNED BY public source_sync_jobs_id_seq sharakat_local
+221; 1259 16386 TABLE public sources sharakat_local
+220; 1259 16385 SEQUENCE public sources_id_seq sharakat_local
+4106; 0 0 SEQUENCE OWNED BY public sources_id_seq sharakat_local
+231; 1259 16450 TABLE public system_events sharakat_local
+230; 1259 16449 SEQUENCE public system_events_id_seq sharakat_local
+4107; 0 0 SEQUENCE OWNED BY public system_events_id_seq sharakat_local
+233; 1259 16460 TABLE public system_settings sharakat_local
+232; 1259 16459 SEQUENCE public system_settings_id_seq sharakat_local
+4108; 0 0 SEQUENCE OWNED BY public system_settings_id_seq sharakat_local
+227; 1259 16426 TABLE public taxonomy_mappings sharakat_local
+226; 1259 16425 SEQUENCE public taxonomy_mappings_id_seq sharakat_local
+4109; 0 0 SEQUENCE OWNED BY public taxonomy_mappings_id_seq sharakat_local
+255; 1259 16657 TABLE public user_sessions sharakat_local
+254; 1259 16656 SEQUENCE public user_sessions_id_seq sharakat_local
+4110; 0 0 SEQUENCE OWNED BY public user_sessions_id_seq sharakat_local
+235; 1259 16471 TABLE public users sharakat_local
+234; 1259 16470 SEQUENCE public users_id_seq sharakat_local
+4111; 0 0 SEQUENCE OWNED BY public users_id_seq sharakat_local
+3563; 2604 16692 DEFAULT public alert_events id sharakat_local
+3574; 2604 71781 DEFAULT public asset_facility_type_aliases id sharakat_local
+3562; 2604 16675 DEFAULT public audit_events id sharakat_local
+3558; 2604 16598 DEFAULT public duplicate_candidates id sharakat_local
+3576; 2604 102763 DEFAULT public geographic_reference_datasets id sharakat_local
+3582; 2604 102781 DEFAULT public geographic_reference_units id sharakat_local
+3570; 2604 16826 DEFAULT public location_reviews id sharakat_local
+3543; 2604 16418 DEFAULT public modon_locations id sharakat_local
+3569; 2604 16809 DEFAULT public ncp_project_events id sharakat_local
+3542; 2604 16399 DEFAULT public opportunities id sharakat_local
+3575; 2604 71799 DEFAULT public opportunity_asset_facility_types id sharakat_local
+3555; 2604 16545 DEFAULT public opportunity_change_history id sharakat_local
+3572; 2604 16873 DEFAULT public opportunity_data_conflicts id sharakat_local
+3559; 2604 16619 DEFAULT public opportunity_documents id sharakat_local
+3571; 2604 16848 DEFAULT public opportunity_field_provenance id sharakat_local
+3564; 2604 16717 DEFAULT public opportunity_locations id sharakat_local
+3560; 2604 16639 DEFAULT public opportunity_merge_audit id sharakat_local
+3545; 2604 16441 DEFAULT public organization_aliases id sharakat_local
+3565; 2604 16734 DEFAULT public qualification_reviews id sharakat_local
+3553; 2604 16511 DEFAULT public source_content_items id sharakat_local
+3557; 2604 16583 DEFAULT public source_errors id sharakat_local
+3585; 2604 102820 DEFAULT public source_geographic_coverage id sharakat_local
+3591; 2604 179302 DEFAULT public source_identity_alias_audits id sharakat_local
+3587; 2604 179262 DEFAULT public source_identity_aliases id sharakat_local
+3554; 2604 16528 DEFAULT public source_limitations id sharakat_local
+3567; 2604 16773 DEFAULT public source_observations id sharakat_local
+3549; 2604 16485 DEFAULT public source_opportunities id sharakat_local
+3566; 2604 16756 DEFAULT public source_opportunity_dataset_memberships id sharakat_local
+3568; 2604 16792 DEFAULT public source_opportunity_taxonomies id sharakat_local
+3556; 2604 16565 DEFAULT public source_sync_jobs id sharakat_local
+3541; 2604 16389 DEFAULT public sources id sharakat_local
+3546; 2604 16453 DEFAULT public system_events id sharakat_local
+3547; 2604 16463 DEFAULT public system_settings id sharakat_local
+3544; 2604 16429 DEFAULT public taxonomy_mappings id sharakat_local
+3561; 2604 16660 DEFAULT public user_sessions id sharakat_local
+3548; 2604 16474 DEFAULT public users id sharakat_local
+4052; 0 16894 TABLE DATA public alembic_version sharakat_local
+4033; 0 16689 TABLE DATA public alert_events sharakat_local
+4056; 0 71778 TABLE DATA public asset_facility_type_aliases sharakat_local
+4054; 0 71769 TABLE DATA public asset_facility_types sharakat_local
+4031; 0 16672 TABLE DATA public audit_events sharakat_local
+4023; 0 16595 TABLE DATA public duplicate_candidates sharakat_local
+4060; 0 102760 TABLE DATA public geographic_reference_datasets sharakat_local
+4062; 0 102778 TABLE DATA public geographic_reference_units sharakat_local
+4053; 0 18783 TABLE DATA public local_setup_state sharakat_local
+4047; 0 16823 TABLE DATA public location_reviews sharakat_local
+3999; 0 16415 TABLE DATA public modon_locations sharakat_local
+4045; 0 16806 TABLE DATA public ncp_project_events sharakat_local
+3997; 0 16396 TABLE DATA public opportunities sharakat_local
+4058; 0 71796 TABLE DATA public opportunity_asset_facility_types sharakat_local
+4017; 0 16542 TABLE DATA public opportunity_change_history sharakat_local
+4051; 0 16870 TABLE DATA public opportunity_data_conflicts sharakat_local
+4025; 0 16616 TABLE DATA public opportunity_documents sharakat_local
+4049; 0 16845 TABLE DATA public opportunity_field_provenance sharakat_local
+4035; 0 16714 TABLE DATA public opportunity_locations sharakat_local
+4027; 0 16636 TABLE DATA public opportunity_merge_audit sharakat_local
+4003; 0 16438 TABLE DATA public organization_aliases sharakat_local
+4037; 0 16731 TABLE DATA public qualification_reviews sharakat_local
+4013; 0 16508 TABLE DATA public source_content_items sharakat_local
+4021; 0 16580 TABLE DATA public source_errors sharakat_local
+4064; 0 102817 TABLE DATA public source_geographic_coverage sharakat_local
+4068; 0 179299 TABLE DATA public source_identity_alias_audits sharakat_local
+4066; 0 179259 TABLE DATA public source_identity_aliases sharakat_local
+4015; 0 16525 TABLE DATA public source_limitations sharakat_local
+4041; 0 16770 TABLE DATA public source_observations sharakat_local
+4011; 0 16482 TABLE DATA public source_opportunities sharakat_local
+4039; 0 16753 TABLE DATA public source_opportunity_dataset_memberships sharakat_local
+4043; 0 16789 TABLE DATA public source_opportunity_taxonomies sharakat_local
+4019; 0 16562 TABLE DATA public source_sync_jobs sharakat_local
+3995; 0 16386 TABLE DATA public sources sharakat_local
+4005; 0 16450 TABLE DATA public system_events sharakat_local
+4007; 0 16460 TABLE DATA public system_settings sharakat_local
+4001; 0 16426 TABLE DATA public taxonomy_mappings sharakat_local
+4029; 0 16657 TABLE DATA public user_sessions sharakat_local
+4009; 0 16471 TABLE DATA public users sharakat_local
+4112; 0 0 SEQUENCE SET public alert_events_id_seq sharakat_local
+4113; 0 0 SEQUENCE SET public asset_facility_type_aliases_id_seq sharakat_local
+4114; 0 0 SEQUENCE SET public audit_events_id_seq sharakat_local
+4115; 0 0 SEQUENCE SET public duplicate_candidates_id_seq sharakat_local
+4116; 0 0 SEQUENCE SET public geographic_reference_datasets_id_seq sharakat_local
+4117; 0 0 SEQUENCE SET public geographic_reference_units_id_seq sharakat_local
+4118; 0 0 SEQUENCE SET public location_reviews_id_seq sharakat_local
+4119; 0 0 SEQUENCE SET public modon_locations_id_seq sharakat_local
+4120; 0 0 SEQUENCE SET public ncp_project_events_id_seq sharakat_local
+4121; 0 0 SEQUENCE SET public opportunities_id_seq sharakat_local
+4122; 0 0 SEQUENCE SET public opportunity_asset_facility_types_id_seq sharakat_local
+4123; 0 0 SEQUENCE SET public opportunity_change_history_id_seq sharakat_local
+4124; 0 0 SEQUENCE SET public opportunity_data_conflicts_id_seq sharakat_local
+4125; 0 0 SEQUENCE SET public opportunity_documents_id_seq sharakat_local
+4126; 0 0 SEQUENCE SET public opportunity_field_provenance_id_seq sharakat_local
+4127; 0 0 SEQUENCE SET public opportunity_locations_id_seq sharakat_local
+4128; 0 0 SEQUENCE SET public opportunity_merge_audit_id_seq sharakat_local
+4129; 0 0 SEQUENCE SET public organization_aliases_id_seq sharakat_local
+4130; 0 0 SEQUENCE SET public qualification_reviews_id_seq sharakat_local
+4131; 0 0 SEQUENCE SET public source_content_items_id_seq sharakat_local
+4132; 0 0 SEQUENCE SET public source_errors_id_seq sharakat_local
+4133; 0 0 SEQUENCE SET public source_geographic_coverage_id_seq sharakat_local
+4134; 0 0 SEQUENCE SET public source_identity_alias_audits_id_seq sharakat_local
+4135; 0 0 SEQUENCE SET public source_identity_aliases_id_seq sharakat_local
+4136; 0 0 SEQUENCE SET public source_limitations_id_seq sharakat_local
+4137; 0 0 SEQUENCE SET public source_observations_id_seq sharakat_local
+4138; 0 0 SEQUENCE SET public source_opportunities_id_seq sharakat_local
+4139; 0 0 SEQUENCE SET public source_opportunity_dataset_memberships_id_seq sharakat_local
+4140; 0 0 SEQUENCE SET public source_opportunity_taxonomies_id_seq sharakat_local
+4141; 0 0 SEQUENCE SET public source_sync_jobs_id_seq sharakat_local
+4142; 0 0 SEQUENCE SET public sources_id_seq sharakat_local
+4143; 0 0 SEQUENCE SET public system_events_id_seq sharakat_local
+4144; 0 0 SEQUENCE SET public system_settings_id_seq sharakat_local
+4145; 0 0 SEQUENCE SET public taxonomy_mappings_id_seq sharakat_local
+4146; 0 0 SEQUENCE SET public user_sessions_id_seq sharakat_local
+4147; 0 0 SEQUENCE SET public users_id_seq sharakat_local
+3700; 2606 16696 CONSTRAINT public alert_events alert_events_pkey sharakat_local
+3758; 2606 71785 CONSTRAINT public asset_facility_type_aliases asset_facility_type_aliases_pkey sharakat_local
+3754; 2606 71776 CONSTRAINT public asset_facility_types asset_facility_types_label_ar_key sharakat_local
+3756; 2606 71774 CONSTRAINT public asset_facility_types asset_facility_types_pkey sharakat_local
+3695; 2606 16679 CONSTRAINT public audit_events audit_events_pkey sharakat_local
+3679; 2606 16602 CONSTRAINT public duplicate_candidates duplicate_candidates_pkey sharakat_local
+3771; 2606 102772 CONSTRAINT public geographic_reference_datasets geographic_reference_datasets_pkey sharakat_local
+3777; 2606 102787 CONSTRAINT public geographic_reference_units geographic_reference_units_pkey sharakat_local
+3752; 2606 18789 CONSTRAINT public local_setup_state local_setup_state_pkey sharakat_local
+3742; 2606 16830 CONSTRAINT public location_reviews location_reviews_pkey sharakat_local
+3619; 2606 16422 CONSTRAINT public modon_locations modon_locations_pkey sharakat_local
+3737; 2606 16813 CONSTRAINT public ncp_project_events ncp_project_events_pkey sharakat_local
+3617; 2606 16403 CONSTRAINT public opportunities opportunities_pkey sharakat_local
+3767; 2606 71803 CONSTRAINT public opportunity_asset_facility_types opportunity_asset_facility_types_pkey sharakat_local
+3668; 2606 16549 CONSTRAINT public opportunity_change_history opportunity_change_history_pkey sharakat_local
+3750; 2606 16877 CONSTRAINT public opportunity_data_conflicts opportunity_data_conflicts_pkey sharakat_local
+3684; 2606 16623 CONSTRAINT public opportunity_documents opportunity_documents_pkey sharakat_local
+3747; 2606 16852 CONSTRAINT public opportunity_field_provenance opportunity_field_provenance_pkey sharakat_local
+3710; 2606 16721 CONSTRAINT public opportunity_locations opportunity_locations_pkey sharakat_local
+3688; 2606 16643 CONSTRAINT public opportunity_merge_audit opportunity_merge_audit_pkey sharakat_local
+3629; 2606 16447 CONSTRAINT public organization_aliases organization_aliases_alias_key sharakat_local
+3631; 2606 16445 CONSTRAINT public organization_aliases organization_aliases_pkey sharakat_local
+3715; 2606 16738 CONSTRAINT public qualification_reviews qualification_reviews_pkey sharakat_local
+3658; 2606 16515 CONSTRAINT public source_content_items source_content_items_pkey sharakat_local
+3677; 2606 16587 CONSTRAINT public source_errors source_errors_pkey sharakat_local
+3786; 2606 102826 CONSTRAINT public source_geographic_coverage source_geographic_coverage_pkey sharakat_local
+3799; 2606 179309 CONSTRAINT public source_identity_alias_audits source_identity_alias_audits_pkey sharakat_local
+3794; 2606 179271 CONSTRAINT public source_identity_aliases source_identity_aliases_pkey sharakat_local
+3663; 2606 16532 CONSTRAINT public source_limitations source_limitations_pkey sharakat_local
+3727; 2606 16777 CONSTRAINT public source_observations source_observations_pkey sharakat_local
+3651; 2606 16489 CONSTRAINT public source_opportunities source_opportunities_pkey sharakat_local
+3720; 2606 16760 CONSTRAINT public source_opportunity_dataset_memberships source_opportunity_dataset_memberships_pkey sharakat_local
+3732; 2606 16796 CONSTRAINT public source_opportunity_taxonomies source_opportunity_taxonomies_pkey sharakat_local
+3674; 2606 16569 CONSTRAINT public source_sync_jobs source_sync_jobs_pkey sharakat_local
+3601; 2606 16393 CONSTRAINT public sources sources_pkey sharakat_local
+3634; 2606 16457 CONSTRAINT public system_events system_events_pkey sharakat_local
+3636; 2606 16469 CONSTRAINT public system_settings system_settings_key_key sharakat_local
+3638; 2606 16467 CONSTRAINT public system_settings system_settings_pkey sharakat_local
+3624; 2606 16433 CONSTRAINT public taxonomy_mappings taxonomy_mappings_pkey sharakat_local
+3762; 2606 71787 CONSTRAINT public asset_facility_type_aliases uq_asset_type_alias_source_field_value sharakat_local
+3775; 2606 102774 CONSTRAINT public geographic_reference_datasets uq_geography_dataset_version sharakat_local
+3782; 2606 102789 CONSTRAINT public geographic_reference_units uq_geography_unit_dataset_level_id sharakat_local
+3744; 2606 16832 CONSTRAINT public location_reviews uq_location_review_source_external sharakat_local
+3769; 2606 71805 CONSTRAINT public opportunity_asset_facility_types uq_master_asset_type_source sharakat_local
+3621; 2606 16424 CONSTRAINT public modon_locations uq_modon_location_source_identifier sharakat_local
+3739; 2606 16815 CONSTRAINT public ncp_project_events uq_ncp_project_event_source sharakat_local
+3712; 2606 16723 CONSTRAINT public opportunity_locations uq_opportunity_location_source_name sharakat_local
+3717; 2606 16740 CONSTRAINT public qualification_reviews uq_qualification_review_source_external sharakat_local
+3660; 2606 16517 CONSTRAINT public source_content_items uq_source_content_key sharakat_local
+3722; 2606 16762 CONSTRAINT public source_opportunity_dataset_memberships uq_source_dataset_membership sharakat_local
+3653; 2606 16491 CONSTRAINT public source_opportunities uq_source_external_id sharakat_local
+3788; 2606 102828 CONSTRAINT public source_geographic_coverage uq_source_geographic_coverage_unit sharakat_local
+3603; 2606 179255 CONSTRAINT public sources uq_source_id_key_namespace sharakat_local
+3801; 2606 179311 CONSTRAINT public source_identity_alias_audits uq_source_identity_alias_audit_action_batch sharakat_local
+3796; 2606 179273 CONSTRAINT public source_identity_aliases uq_source_identity_alias_provider sharakat_local
+3665; 2606 16534 CONSTRAINT public source_limitations uq_source_limitation_evidence sharakat_local
+3729; 2606 16779 CONSTRAINT public source_observations uq_source_observation_version sharakat_local
+3655; 2606 179257 CONSTRAINT public source_opportunities uq_source_opportunity_id_source_namespace sharakat_local
+3734; 2606 16798 CONSTRAINT public source_opportunity_taxonomies uq_source_taxonomy_membership sharakat_local
+3626; 2606 16435 CONSTRAINT public taxonomy_mappings uq_taxonomy_source_value sharakat_local
+3693; 2606 16662 CONSTRAINT public user_sessions user_sessions_pkey sharakat_local
+3640; 2606 16480 CONSTRAINT public users users_email_key sharakat_local
+3642; 2606 16478 CONSTRAINT public users users_pkey sharakat_local
+3701; 1259 16710 INDEX public ix_alert_events_created_at sharakat_local
+3702; 1259 16707 INDEX public ix_alert_events_event_type sharakat_local
+3703; 1259 16708 INDEX public ix_alert_events_fingerprint sharakat_local
+3704; 1259 16709 INDEX public ix_alert_events_severity sharakat_local
+3705; 1259 16711 INDEX public ix_alert_events_source_id sharakat_local
+3706; 1259 16712 INDEX public ix_alert_events_status sharakat_local
+3759; 1259 71794 INDEX public ix_asset_facility_type_aliases_canonical_id sharakat_local
+3760; 1259 71793 INDEX public ix_asset_facility_type_aliases_source_key sharakat_local
+3696; 1259 16687 INDEX public ix_audit_events_created_at sharakat_local
+3697; 1259 16685 INDEX public ix_audit_events_event_type sharakat_local
+3698; 1259 16686 INDEX public ix_audit_events_user_id sharakat_local
+3680; 1259 16613 INDEX public ix_duplicate_candidates_left_opportunity_id sharakat_local
+3681; 1259 16614 INDEX public ix_duplicate_candidates_right_opportunity_id sharakat_local
+3772; 1259 102775 INDEX public ix_geographic_reference_datasets_dataset_key sharakat_local
+3773; 1259 102776 INDEX public ix_geographic_reference_datasets_is_current sharakat_local
+3778; 1259 102800 INDEX public ix_geographic_reference_units_dataset_id sharakat_local
+3779; 1259 102801 INDEX public ix_geographic_reference_units_level sharakat_local
+3780; 1259 102802 INDEX public ix_geographic_reference_units_parent_id sharakat_local
+3740; 1259 16843 INDEX public ix_location_reviews_source_id sharakat_local
+3735; 1259 16821 INDEX public ix_ncp_project_events_project_source_opportunity_id sharakat_local
+3604; 1259 16411 INDEX public ix_opportunities_canonical_id sharakat_local
+3605; 1259 16900 INDEX public ix_opportunities_created_at_prod sharakat_local
+3606; 1259 102809 INDEX public ix_opportunities_geography_reference_unit_id sharakat_local
+3607; 1259 16409 INDEX public ix_opportunities_merged_into_id sharakat_local
+3608; 1259 16413 INDEX public ix_opportunities_normalized_title sharakat_local
+3609; 1259 16410 INDEX public ix_opportunities_reference_number sharakat_local
+3610; 1259 16412 INDEX public ix_opportunities_reference_number_normalized sharakat_local
+3611; 1259 16898 INDEX public ix_opportunities_sector_prod sharakat_local
+3612; 1259 16897 INDEX public ix_opportunities_status_prod sharakat_local
+3613; 1259 16899 INDEX public ix_opportunities_submission_deadline_prod sharakat_local
+3614; 1259 16984 INDEX public ix_opportunities_title_trgm sharakat_local
+3615; 1259 16901 INDEX public ix_opportunities_updated_at_prod sharakat_local
+3763; 1259 71822 INDEX public ix_opportunity_asset_facility_types_canonical_id sharakat_local
+3764; 1259 71821 INDEX public ix_opportunity_asset_facility_types_opportunity_id sharakat_local
+3765; 1259 71823 INDEX public ix_opportunity_asset_facility_types_source_record_id sharakat_local
+3666; 1259 16560 INDEX public ix_opportunity_change_history_opportunity_id sharakat_local
+3748; 1259 16893 INDEX public ix_opportunity_data_conflicts_opportunity_id sharakat_local
+3682; 1259 16634 INDEX public ix_opportunity_documents_opportunity_id sharakat_local
+3745; 1259 16868 INDEX public ix_opportunity_field_provenance_opportunity_id sharakat_local
+3707; 1259 102815 INDEX public ix_opportunity_locations_geography_reference_unit_id sharakat_local
+3708; 1259 16729 INDEX public ix_opportunity_locations_source_opportunity_id sharakat_local
+3685; 1259 16654 INDEX public ix_opportunity_merge_audit_merged_opportunity_id sharakat_local
+3686; 1259 16655 INDEX public ix_opportunity_merge_audit_target_opportunity_id sharakat_local
+3627; 1259 16448 INDEX public ix_organization_aliases_organization_id sharakat_local
+3713; 1259 16751 INDEX public ix_qualification_reviews_source_id sharakat_local
+3656; 1259 16523 INDEX public ix_source_content_items_source_id sharakat_local
+3675; 1259 16593 INDEX public ix_source_errors_source_id sharakat_local
+3783; 1259 102840 INDEX public ix_source_geographic_coverage_geographic_reference_unit_id sharakat_local
+3784; 1259 102839 INDEX public ix_source_geographic_coverage_source_id sharakat_local
+3797; 1259 179317 INDEX public ix_source_identity_alias_audits_alias_id sharakat_local
+3789; 1259 179296 INDEX public ix_source_identity_aliases_expected_master_opportunity_id sharakat_local
+3790; 1259 179294 INDEX public ix_source_identity_aliases_source_id sharakat_local
+3791; 1259 179297 INDEX public ix_source_identity_aliases_status sharakat_local
+3792; 1259 179295 INDEX public ix_source_identity_aliases_target_source_opportunity_id sharakat_local
+3661; 1259 16540 INDEX public ix_source_limitations_source_id sharakat_local
+3723; 1259 16786 INDEX public ix_source_observations_content_hash sharakat_local
+3724; 1259 16785 INDEX public ix_source_observations_official_source_id_normalized sharakat_local
+3725; 1259 16787 INDEX public ix_source_observations_source_opportunity_id sharakat_local
+3643; 1259 72130 INDEX public ix_source_opportunities_canonical_status sharakat_local
+3644; 1259 16503 INDEX public ix_source_opportunities_master_opportunity_id sharakat_local
+3645; 1259 16502 INDEX public ix_source_opportunities_official_source_id_normalized sharakat_local
+3646; 1259 16506 INDEX public ix_source_opportunities_official_source_id_original sharakat_local
+3647; 1259 16505 INDEX public ix_source_opportunities_source_id sharakat_local
+3648; 1259 16902 INDEX public ix_source_opportunities_source_opportunity_id_prod sharakat_local
+3649; 1259 16504 INDEX public ix_source_opportunities_source_reference_number_normalized sharakat_local
+3718; 1259 16768 INDEX public ix_source_opportunity_dataset_memberships_source_opportunity_id sharakat_local
+3730; 1259 16804 INDEX public ix_source_opportunity_taxonomies_source_opportunity_id sharakat_local
+3669; 1259 16575 INDEX public ix_source_sync_jobs_celery_task_id sharakat_local
+3670; 1259 16576 INDEX public ix_source_sync_jobs_correlation_id sharakat_local
+3671; 1259 16578 INDEX public ix_source_sync_jobs_job_state sharakat_local
+3672; 1259 16577 INDEX public ix_source_sync_jobs_source_id sharakat_local
+3599; 1259 16394 INDEX public ix_sources_source_key sharakat_local
+3632; 1259 16458 INDEX public ix_system_events_event_type sharakat_local
+3622; 1259 16436 INDEX public ix_taxonomy_mappings_source_key sharakat_local
+3689; 1259 16669 INDEX public ix_user_sessions_expires_at sharakat_local
+3690; 1259 16668 INDEX public ix_user_sessions_token_hash sharakat_local
+3691; 1259 16670 INDEX public ix_user_sessions_user_id sharakat_local
+3820; 2606 16702 FK CONSTRAINT public alert_events alert_events_acknowledged_by_fkey sharakat_local
+3821; 2606 16697 FK CONSTRAINT public alert_events alert_events_source_id_fkey sharakat_local
+3838; 2606 71788 FK CONSTRAINT public asset_facility_type_aliases asset_facility_type_aliases_canonical_id_fkey sharakat_local
+3819; 2606 16680 FK CONSTRAINT public audit_events audit_events_user_id_fkey sharakat_local
+3812; 2606 16603 FK CONSTRAINT public duplicate_candidates duplicate_candidates_left_opportunity_id_fkey sharakat_local
+3813; 2606 16608 FK CONSTRAINT public duplicate_candidates duplicate_candidates_right_opportunity_id_fkey sharakat_local
+3802; 2606 102804 FK CONSTRAINT public opportunities fk_opportunities_geography_reference_unit sharakat_local
+3822; 2606 102810 FK CONSTRAINT public opportunity_locations fk_opportunity_locations_geography_reference_unit sharakat_local
+3846; 2606 179274 FK CONSTRAINT public source_identity_aliases fk_source_identity_alias_namespace sharakat_local
+3847; 2606 179279 FK CONSTRAINT public source_identity_aliases fk_source_identity_alias_target_namespace sharakat_local
+3842; 2606 102790 FK CONSTRAINT public geographic_reference_units geographic_reference_units_dataset_id_fkey sharakat_local
+3843; 2606 102795 FK CONSTRAINT public geographic_reference_units geographic_reference_units_parent_id_fkey sharakat_local
+3830; 2606 16833 FK CONSTRAINT public location_reviews location_reviews_source_id_fkey sharakat_local
+3831; 2606 16838 FK CONSTRAINT public location_reviews location_reviews_source_record_id_fkey sharakat_local
+3829; 2606 16816 FK CONSTRAINT public ncp_project_events ncp_project_events_project_source_opportunity_id_fkey sharakat_local
+3803; 2606 16404 FK CONSTRAINT public opportunities opportunities_merged_into_id_fkey sharakat_local
+3839; 2606 71811 FK CONSTRAINT public opportunity_asset_facility_types opportunity_asset_facility_types_canonical_id_fkey sharakat_local
+3840; 2606 71806 FK CONSTRAINT public opportunity_asset_facility_types opportunity_asset_facility_types_opportunity_id_fkey sharakat_local
+3841; 2606 71816 FK CONSTRAINT public opportunity_asset_facility_types opportunity_asset_facility_types_source_record_id_fkey sharakat_local
+3808; 2606 16550 FK CONSTRAINT public opportunity_change_history opportunity_change_history_opportunity_id_fkey sharakat_local
+3809; 2606 16555 FK CONSTRAINT public opportunity_change_history opportunity_change_history_source_id_fkey sharakat_local
+3835; 2606 16878 FK CONSTRAINT public opportunity_data_conflicts opportunity_data_conflicts_opportunity_id_fkey sharakat_local
+3836; 2606 16883 FK CONSTRAINT public opportunity_data_conflicts opportunity_data_conflicts_source_id_fkey sharakat_local
+3837; 2606 16888 FK CONSTRAINT public opportunity_data_conflicts opportunity_data_conflicts_source_record_id_fkey sharakat_local
+3814; 2606 16624 FK CONSTRAINT public opportunity_documents opportunity_documents_opportunity_id_fkey sharakat_local
+3815; 2606 16629 FK CONSTRAINT public opportunity_documents opportunity_documents_source_id_fkey sharakat_local
+3832; 2606 16853 FK CONSTRAINT public opportunity_field_provenance opportunity_field_provenance_opportunity_id_fkey sharakat_local
+3833; 2606 16858 FK CONSTRAINT public opportunity_field_provenance opportunity_field_provenance_source_id_fkey sharakat_local
+3834; 2606 16863 FK CONSTRAINT public opportunity_field_provenance opportunity_field_provenance_source_record_id_fkey sharakat_local
+3823; 2606 16724 FK CONSTRAINT public opportunity_locations opportunity_locations_source_opportunity_id_fkey sharakat_local
+3816; 2606 16644 FK CONSTRAINT public opportunity_merge_audit opportunity_merge_audit_merged_opportunity_id_fkey sharakat_local
+3817; 2606 16649 FK CONSTRAINT public opportunity_merge_audit opportunity_merge_audit_target_opportunity_id_fkey sharakat_local
+3824; 2606 16741 FK CONSTRAINT public qualification_reviews qualification_reviews_source_id_fkey sharakat_local
+3825; 2606 16746 FK CONSTRAINT public qualification_reviews qualification_reviews_source_record_id_fkey sharakat_local
+3806; 2606 16518 FK CONSTRAINT public source_content_items source_content_items_source_id_fkey sharakat_local
+3811; 2606 16588 FK CONSTRAINT public source_errors source_errors_source_id_fkey sharakat_local
+3844; 2606 102834 FK CONSTRAINT public source_geographic_coverage source_geographic_coverage_geographic_reference_unit_id_fkey sharakat_local
+3845; 2606 102829 FK CONSTRAINT public source_geographic_coverage source_geographic_coverage_source_id_fkey sharakat_local
+3850; 2606 179312 FK CONSTRAINT public source_identity_alias_audits source_identity_alias_audits_alias_id_fkey sharakat_local
+3848; 2606 179289 FK CONSTRAINT public source_identity_aliases source_identity_aliases_expected_master_opportunity_id_fkey sharakat_local
+3849; 2606 179284 FK CONSTRAINT public source_identity_aliases source_identity_aliases_source_id_fkey sharakat_local
+3807; 2606 16535 FK CONSTRAINT public source_limitations source_limitations_source_id_fkey sharakat_local
+3827; 2606 16780 FK CONSTRAINT public source_observations source_observations_source_opportunity_id_fkey sharakat_local
+3804; 2606 16497 FK CONSTRAINT public source_opportunities source_opportunities_master_opportunity_id_fkey sharakat_local
+3805; 2606 16492 FK CONSTRAINT public source_opportunities source_opportunities_source_id_fkey sharakat_local
+3826; 2606 16763 FK CONSTRAINT public source_opportunity_dataset_memberships source_opportunity_dataset_membershi_source_opportunity_id_fkey sharakat_local
+3828; 2606 16799 FK CONSTRAINT public source_opportunity_taxonomies source_opportunity_taxonomies_source_opportunity_id_fkey sharakat_local
+3810; 2606 16570 FK CONSTRAINT public source_sync_jobs source_sync_jobs_source_id_fkey sharakat_local
+3818; 2606 16663 FK CONSTRAINT public user_sessions user_sessions_user_id_fkey sharakat_local

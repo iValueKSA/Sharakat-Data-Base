@@ -1,0 +1,16 @@
+{
+  "captured_at_utc": "2026-11-11T09:34:17.0823595Z",
+  "url": "http://localhost:8080/?view=data-dashboard",
+  "verification": "Visual, non-mutating",
+  "dashboard_data_rendered": true,
+  "region_filter": "Eastern Region (region_id=5)",
+  "filtered_opportunities": 975,
+  "verified_map_points": 495,
+  "map_tiles_rendered": true,
+  "leaflet_attribution_present": true,
+  "cluster_marker_interaction": "Clicked a cluster; map zoomed and split into smaller clusters",
+  "visible_rendering_or_clustering_errors": false,
+  "browser_console_log_inspected": false,
+  "governorate_dropdown": "Disabled in dashboard during this view; no frontend changes made",
+  "direct_al_ahsa_api": "GET /api/data-dashboard/geography?governorate_id=501 returned all 145 expected Masters"
+}

@@ -22,6 +22,7 @@ from .furas_checkpoint import StaleFurasCheckpoint
 from .source_links import source_url_history_observation
 from .review_lifecycle import reevaluate_open_conflicts
 from .review_evidence import re_evaluate_review_evidence
+from .source_identity_aliases import resolve_source_identity
 from .sector_inference_phase2 import SECTOR_LABELS_BY_ID
 from .sector_inference_relaxed import ENGINE_VERSION as SECTOR_P2_ENGINE_VERSION
 from .sector_classification import ENGINE_VERSION as GOVERNED_SECTOR_ENGINE_VERSION, classify_governed, evidence_fingerprint
@@ -29,6 +30,25 @@ from .sector_inference import GENERIC_OR_WRONG_DIMENSION
 from .standardization import canonical_id as sector_canonical_id
 
 NOW=lambda: datetime.now(timezone.utc)
+
+def _assign_if_changed(record, field_name, value):
+    """Assign a normalized business value only when its effective value differs."""
+    if getattr(record,field_name)==value:
+        return False
+    setattr(record,field_name,value)
+    return True
+
+def _has_changes(record, field_names):
+    from sqlalchemy import inspect as sqlalchemy_inspect
+    state=sqlalchemy_inspect(record)
+    return any(state.attrs[name].history.has_changes() for name in field_names)
+
+SOURCE_BUSINESS_FIELDS=("master_opportunity_id","source_reference_number","source_reference_number_normalized",
+    "source_title","normalized_source_title","source_url","source_owner","source_sector","source_activity",
+    "source_sub_activity","source_subsector","normalized_sector","normalized_subsector","raw_location","raw_area",
+    "raw_dates","raw_status","canonical_status","raw_data_json","standardized_data_json",
+    "standardization_version","content_hash","parser_version","missing_successful_checks","last_missing_at")
+
 def classify_http_health(status_code):
     # A failed fetch without an HTTP response (DNS, TLS, connect, or parser
     # transport errors) is not a successful health check. Keep it at WARNING.
@@ -481,14 +501,18 @@ def queue_conflict_idempotently(db, *, opportunity_id:int, field_name:str, confl
         prior_fingerprint=stored_fingerprint or legacy_fingerprint
         if prior_fingerprint!=fingerprint:
             continue
-        reevaluation_exists=False
-        for event in db.scalars(select(SystemEvent).where(SystemEvent.event_type=="SYSTEM_REEVALUATION")
-                                .order_by(SystemEvent.id.desc()).limit(2000)).all():
-            payload=event.payload or {}
-            if (payload.get("review_fingerprint")==fingerprint
-                    and payload.get("job_id")==db.info.get("sync_job_id")):
-                reevaluation_exists=True
-                break
+        job_id=db.info.get("sync_job_id")
+        prior_reevaluation=select(SystemEvent.id).where(
+            SystemEvent.event_type=="SYSTEM_REEVALUATION",
+            SystemEvent.payload["review_fingerprint"].as_string()==fingerprint)
+        if job_id is None:
+            # Compare the extracted scalar: JSON null is not SQL NULL in
+            # PostgreSQL, so testing the JSON expression itself misses prior
+            # job-less replay events and creates another event every time.
+            prior_reevaluation=prior_reevaluation.where(SystemEvent.payload["job_id"].as_string().is_(None))
+        else:
+            prior_reevaluation=prior_reevaluation.where(SystemEvent.payload["job_id"].as_integer()==int(job_id))
+        reevaluation_exists=db.scalar(prior_reevaluation.limit(1)) is not None
         if not reevaluation_exists:
             observation=db.scalar(select(SourceObservation).where(
                 SourceObservation.source_opportunity_id==source_record_id).order_by(SourceObservation.id.desc()).limit(1))
@@ -653,6 +677,19 @@ def apply_sector_phase2_after_ingestion(db:Session, master:Opportunity, *, sourc
                 "inference_timestamp":detected_at.isoformat()}]}))
 
 def _safe_record(db,source,raw,counts,owner_alias_registry=None,allow_master_creation=True):
+    identity=None
+    if source.source_key=="furas":
+        from .geography_flags import flag_enabled
+        if flag_enabled("FURAS_NATIONAL_ENUMERATION_ENABLED"):
+            from .furas_identity_quarantine import resolve_or_quarantine_furas_national
+            identity,quarantine=resolve_or_quarantine_furas_national(db,source,raw)
+            if quarantine is not None:
+                counts["raw_count"]=counts.get("raw_count",0)+1
+                counts["identity_quarantined_count"]=counts.get("identity_quarantined_count",0)+1
+                reason=quarantine["quarantine_reason"]
+                reason_count_key=f"identity_quarantine_reason_{reason}"
+                counts[reason_count_key]=counts.get(reason_count_key,0)+1
+                return quarantine
     master_owner=raw.owner
     owner_alias=None
     if raw.owner:
@@ -714,14 +751,30 @@ def _safe_record(db,source,raw,counts,owner_alias_registry=None,allow_master_cre
     counts["standardization_issues"]=counts.get("standardization_issues",0)+len(standardization.get("issues",[]))
     updates_before=counts.get("update_count",0)
     normalized_ref=normalize_reference(raw.reference)
-    old=db.scalar(select(SourceOpportunity).where(SourceOpportunity.source_id==source.id,SourceOpportunity.source_opportunity_id==raw.external_id))
+    if identity is None:
+        identity=resolve_source_identity(db,source,raw.external_id)
+    old=identity.record
     counts["raw_count"]+=1
+    if identity.status=="ALIAS":
+        # Resolving an alias is intentionally lookup-only. Do not rewrite the
+        # canonical source key, observations, lifecycle, geography, reviews,
+        # or an already-linked Master from this ingestion pass.
+        counts["alias_resolved_count"]=counts.get("alias_resolved_count",0)+1
+        counts["unchanged_count"]=counts.get("unchanged_count",0)+1
+        return old
     if not values["relevant"]:
         counts["rejected_count"]+=1
         if old:
-            old.last_seen_at=NOW(); old.content_hash=raw.content_hash; old.raw_data_json=raw.raw or {};old.raw_status=raw.status;old.raw_dates={"deadline":raw.deadline};old.canonical_status=canonical_status
-            old.standardized_data_json=standardization;old.standardization_version=STANDARDIZATION_VERSION
+            _assign_if_changed(old,"content_hash",raw.content_hash)
+            _assign_if_changed(old,"raw_data_json",raw.raw or {})
+            _assign_if_changed(old,"raw_status",raw.status)
+            _assign_if_changed(old,"raw_dates",{"deadline":raw.deadline})
+            _assign_if_changed(old,"canonical_status",canonical_status)
+            _assign_if_changed(old,"standardized_data_json",standardization)
+            _assign_if_changed(old,"standardization_version",STANDARDIZATION_VERSION)
             store_source_taxonomy(old,raw,source.source_key)
+            if _has_changes(old,SOURCE_BUSINESS_FIELDS):
+                old.last_seen_at=NOW()
             store_status_observation(db,source,old,raw)
         else:
             now=NOW()
@@ -798,6 +851,7 @@ def _safe_record(db,source,raw,counts,owner_alias_registry=None,allow_master_cre
                 possible_candidate=(candidate,score,features)
     now=NOW()
     conflicts=[]
+    master_business_changed=False
     for flag in status_flags:
         if flag in {"AMBIGUOUS_RAW_STATUS","AMBIGUOUS_BOOLEAN_STATUS","INVALID_DEADLINE","STATUS_DEADLINE_CONFLICT"}:
             field="submission_deadline" if flag=="INVALID_DEADLINE" else "status"
@@ -819,15 +873,27 @@ def _safe_record(db,source,raw,counts,owner_alias_registry=None,allow_master_cre
         # Master creation to a later governed promotion phase. Exact safe
         # matches to an existing Master are still allowed above.
         if old:
-            changed=old.content_hash!=raw.content_hash
-            old.source_title=raw.title;old.normalized_source_title=values["normalized_title"]
-            old.source_reference_number=raw.reference;old.source_reference_number_normalized=normalized_ref
-            old.source_url=raw.url;old.source_owner=raw.owner;old.raw_location=raw.location;old.raw_area=raw.area_text
-            old.raw_dates={"deadline":raw.deadline};old.raw_status=raw.status;old.canonical_status=canonical_status
-            old.raw_data_json=raw.raw or {};old.standardized_data_json=standardization
-            old.standardization_version=STANDARDIZATION_VERSION;old.content_hash=raw.content_hash
-            old.last_seen_at=now;old.missing_successful_checks=0;old.last_missing_at=None
+            _assign_if_changed(old,"source_title",raw.title)
+            _assign_if_changed(old,"normalized_source_title",values["normalized_title"])
+            _assign_if_changed(old,"source_reference_number",raw.reference)
+            _assign_if_changed(old,"source_reference_number_normalized",normalized_ref)
+            _assign_if_changed(old,"source_url",raw.url)
+            _assign_if_changed(old,"source_owner",raw.owner)
+            _assign_if_changed(old,"raw_location",raw.location)
+            _assign_if_changed(old,"raw_area",raw.area_text)
+            _assign_if_changed(old,"raw_dates",{"deadline":raw.deadline})
+            _assign_if_changed(old,"raw_status",raw.status)
+            _assign_if_changed(old,"canonical_status",canonical_status)
+            _assign_if_changed(old,"raw_data_json",raw.raw or {})
+            _assign_if_changed(old,"standardized_data_json",standardization)
+            _assign_if_changed(old,"standardization_version",STANDARDIZATION_VERSION)
+            _assign_if_changed(old,"content_hash",raw.content_hash)
+            _assign_if_changed(old,"missing_successful_checks",0)
+            _assign_if_changed(old,"last_missing_at",None)
             store_source_taxonomy(old,raw,source.source_key)
+            changed=_has_changes(old,SOURCE_BUSINESS_FIELDS)
+            if changed:
+                old.last_seen_at=now
             counts["update_count" if changed else "unchanged_count"]+=1
             record=old
         else:
@@ -868,20 +934,20 @@ def _safe_record(db,source,raw,counts,owner_alias_registry=None,allow_master_cre
         if old is None:
             counts["duplicate_count"]+=1
             counts["merged_records_count"]=counts.get("merged_records_count",0)+1
-        master.last_seen_at=now
         # Source city fields can name a governorate, an urban locality, or a
         # municipality-level area. The master city is intentionally normalized
         # to Al-Ahsa, so comparing those labels as competing city values creates
         # false conflict rows. Detailed source locations remain in provenance.
-        for key in ("title_ar","reference_number","opportunity_owner","land_area_sqm","sector","activity","sub_activity","opportunity_type","investment_model","contract_duration_years","submission_deadline","location_description","short_description","latitude","longitude","publication_date"):
+        for key in ("title_ar","reference_number","opportunity_owner","land_area_sqm","sector","activity","sub_activity","opportunity_type","investment_model","contract_duration_years","submission_deadline","location_description","short_description","full_description","latitude","longitude","publication_date"):
             new=values.get(key)
-            if new is not None and getattr(master,key)!=new:
+            field_changed=new is not None and getattr(master,key)!=new
+            if field_changed:
                 previous=getattr(master,key)
                 same_source_value = not old or old.source_title == raw.title
                 if same_source_value and values_equivalent(key,previous,new):
                     continue
                 if not previous:
-                    setattr(master,key,new)
+                    master_business_changed=_assign_if_changed(master,key,new) or master_business_changed
                     if key=="reference_number": master.reference_number_normalized=normalize_reference(new)
                 else:
                     provenance=db.scalars(select(FieldProvenance).where(FieldProvenance.opportunity_id==master.id,FieldProvenance.field_name==key)).all()
@@ -897,21 +963,34 @@ def _safe_record(db,source,raw,counts,owner_alias_registry=None,allow_master_cre
                         continue
                     db.add(ChangeHistory(opportunity_id=master.id,changed_field=key,previous_value=str(previous),new_value=str(new),source_id=source.id,detected_at=now))
                     if key=="reference_number": master.reference_number_normalized=normalize_reference(new)
-                    counts["update_count"]+=1; setattr(master,key,new)
-            if key in ("submission_deadline","status","investment_value","location_description","latitude","longitude"):
+                    counts["update_count"]+=1
+                    master_business_changed=_assign_if_changed(master,key,new) or master_business_changed
+            if key=="reference_number" and master.reference_number==new and new is not None:
+                master_business_changed=_assign_if_changed(master,"reference_number_normalized",normalize_reference(new)) or master_business_changed
+            if field_changed and key in ("submission_deadline","status","investment_value","location_description","latitude","longitude"):
                 event="DEADLINE_CHANGED" if key=="submission_deadline" else "OPPORTUNITY_UPDATED"
                 _alert(db,event,"INFO",master,source,raw,hashlib.sha256(f"{key}:{new}".encode()).hexdigest())
-        master.last_updated_at=now; master.updated_at=now
+        if master_business_changed:
+            master.last_updated_at=now; master.updated_at=now
     if old:
         previous_source_status=old.canonical_status
-        old.master_opportunity_id=master.id; old.last_seen_at=now;old.missing_successful_checks=0;old.last_missing_at=None
-        old.source_reference_number=raw.reference
-        old.source_reference_number_normalized=normalized_ref
+        _assign_if_changed(old,"master_opportunity_id",master.id)
+        _assign_if_changed(old,"missing_successful_checks",0)
+        _assign_if_changed(old,"last_missing_at",None)
+        _assign_if_changed(old,"source_reference_number",raw.reference)
+        _assign_if_changed(old,"source_reference_number_normalized",normalized_ref)
         url_history=source_url_history_observation(old,raw.url,now)
         if url_history:db.add(SourceObservation(**url_history))
-        old.source_title=raw.title;old.normalized_source_title=values["normalized_title"];old.source_url=raw.url
-        old.source_owner=raw.owner;old.raw_location=raw.location;old.raw_area=raw.area_text;old.raw_status=raw.status;old.canonical_status=canonical_status
-        old.standardized_data_json=standardization;old.standardization_version=STANDARDIZATION_VERSION
+        _assign_if_changed(old,"source_title",raw.title)
+        _assign_if_changed(old,"normalized_source_title",values["normalized_title"])
+        _assign_if_changed(old,"source_url",raw.url)
+        _assign_if_changed(old,"source_owner",raw.owner)
+        _assign_if_changed(old,"raw_location",raw.location)
+        _assign_if_changed(old,"raw_area",raw.area_text)
+        _assign_if_changed(old,"raw_status",raw.status)
+        _assign_if_changed(old,"canonical_status",canonical_status)
+        _assign_if_changed(old,"standardized_data_json",standardization)
+        _assign_if_changed(old,"standardization_version",STANDARDIZATION_VERSION)
         if previous_source_status!=canonical_status:
             db.add(ChangeHistory(opportunity_id=master.id,changed_field="source_status",previous_value=previous_source_status,
                 new_value=canonical_status,source_id=source.id,detected_at=now))
@@ -920,11 +999,15 @@ def _safe_record(db,source,raw,counts,owner_alias_registry=None,allow_master_cre
             new_documents=(raw.raw or {}).get("documents",[])
             if old_documents!=new_documents:
                 db.add(ChangeHistory(opportunity_id=master.id,changed_field="documents",previous_value=str(old_documents),new_value=str(new_documents),source_id=source.id,detected_at=now))
-            old.content_hash=raw.content_hash; old.raw_data_json=raw.raw or {}; old.raw_dates={"deadline":raw.deadline}
+            _assign_if_changed(old,"content_hash",raw.content_hash)
+            _assign_if_changed(old,"raw_data_json",raw.raw or {})
+            _assign_if_changed(old,"raw_dates",{"deadline":raw.deadline})
             counts["update_count"]+=1
         record=old
         store_source_taxonomy(record,raw,source.source_key)
-        for field in ("title_ar","reference_number","opportunity_owner","land_area_sqm","sector","activity","sub_activity","investment_model","contract_duration_years","submission_deadline","status","location_description","short_description","latitude","longitude","publication_date"):
+        if _has_changes(record,SOURCE_BUSINESS_FIELDS):
+            record.last_seen_at=now
+        for field in ("title_ar","reference_number","opportunity_owner","land_area_sqm","sector","activity","sub_activity","opportunity_type","investment_model","contract_duration_years","submission_deadline","status","location_description","short_description","full_description","latitude","longitude","publication_date"):
             incoming=values.get(field); selected=getattr(master,field,None)
             if selected is None or incoming is None or str(selected)!=str(incoming): continue
             existing=db.scalar(select(FieldProvenance.id).where(FieldProvenance.opportunity_id==master.id,FieldProvenance.field_name==field,
@@ -937,7 +1020,7 @@ def _safe_record(db,source,raw,counts,owner_alias_registry=None,allow_master_cre
             standardization_version=STANDARDIZATION_VERSION,first_seen_at=now,last_seen_at=now,content_hash=raw.content_hash,parser_version=PARSER_VERSION)
         store_source_taxonomy(record,raw,source.source_key)
         db.add(record); db.flush()
-        for field in ("title_ar","reference_number","opportunity_owner","land_area_sqm","sector","activity","sub_activity","investment_model","contract_duration_years","submission_deadline","status","location_description","short_description","latitude","longitude","publication_date"):
+        for field in ("title_ar","reference_number","opportunity_owner","land_area_sqm","sector","activity","sub_activity","opportunity_type","investment_model","contract_duration_years","submission_deadline","status","location_description","short_description","full_description","latitude","longitude","publication_date"):
             incoming=values.get(field); selected=getattr(master,field,None)
             if selected is not None and incoming is not None and str(selected)==str(incoming):
                 db.add(FieldProvenance(opportunity_id=master.id,field_name=field,selected_value=str(selected),source_id=source.id,source_record_id=record.id,captured_at=now,confidence=values["location_confidence_score"]))
@@ -954,6 +1037,14 @@ def _safe_record(db,source,raw,counts,owner_alias_registry=None,allow_master_cre
         master.last_updated_at=now;master.updated_at=now
         db.add(ChangeHistory(opportunity_id=master.id,changed_field="status",previous_value=previous_status,
             new_value=projected_status,source_id=source.id,detected_at=now))
+        if record.canonical_status==projected_status:
+            existing_status_provenance=db.scalar(select(FieldProvenance.id).where(
+                FieldProvenance.opportunity_id==master.id,FieldProvenance.field_name=="status",
+                FieldProvenance.source_record_id==record.id,FieldProvenance.selected_value==str(projected_status)))
+            if not existing_status_provenance:
+                db.add(FieldProvenance(opportunity_id=master.id,field_name="status",selected_value=str(projected_status),
+                    source_id=source.id,source_record_id=record.id,captured_at=now,
+                    confidence=values["location_confidence_score"]))
     if projection_flags:
         conflicting=" | ".join(sorted(set(linked_states)))
         exists=db.scalar(select(OpportunityConflict.id).where(OpportunityConflict.opportunity_id==master.id,
@@ -983,17 +1074,28 @@ def _safe_record(db,source,raw,counts,owner_alias_registry=None,allow_master_cre
             conflict_type="STANDARDIZATION_REVIEW",selected_value=str(master.investment_value or ""),
             conflicting_value=str(investment_size),source_id=source.id,source_record_id=record.id,detected_at=now)
     prior_asset_assignments=db.scalars(select(OpportunityAssetFacilityType).where(OpportunityAssetFacilityType.source_record_id==record.id)).all()
-    prior_asset_ids={item.canonical_id for item in prior_asset_assignments}
+    prior_by_id={item.canonical_id:item for item in prior_asset_assignments}
+    prior_asset_ids=set(prior_by_id)
     incoming_asset_assignments=asset_type_projection.get("assignments",[])
-    incoming_asset_ids={item["canonical_id"] for item in incoming_asset_assignments}
+    incoming_by_id={item["canonical_id"]:item for item in incoming_asset_assignments}
+    incoming_asset_ids=set(incoming_by_id)
     if prior_asset_ids!=incoming_asset_ids:
         def labels(ids):
             from .asset_facility_types import ASSET_FACILITY_TYPE_LABELS
             return " | ".join(sorted((ASSET_FACILITY_TYPE_LABELS.get(value,value) for value in ids),key=comparison_key)) or "غير محدد"
         db.add(ChangeHistory(opportunity_id=master.id,changed_field="asset_facility_type",previous_value=labels(prior_asset_ids),new_value=labels(incoming_asset_ids),source_id=source.id,detected_at=now))
-    db.execute(delete(OpportunityAssetFacilityType).where(OpportunityAssetFacilityType.source_record_id==record.id))
-    for assignment in incoming_asset_assignments:
-        db.add(OpportunityAssetFacilityType(opportunity_id=master.id,canonical_id=assignment["canonical_id"],source_record_id=record.id,raw_value=assignment["raw_value"]))
+    removed_ids=prior_asset_ids-incoming_asset_ids
+    if removed_ids:
+        db.execute(delete(OpportunityAssetFacilityType).where(
+            OpportunityAssetFacilityType.source_record_id==record.id,
+            OpportunityAssetFacilityType.canonical_id.in_(removed_ids)))
+    for canonical_id,assignment in incoming_by_id.items():
+        prior=prior_by_id.get(canonical_id)
+        if prior is None:
+            db.add(OpportunityAssetFacilityType(opportunity_id=master.id,canonical_id=canonical_id,
+                source_record_id=record.id,raw_value=assignment["raw_value"]))
+        else:
+            _assign_if_changed(prior,"raw_value",assignment["raw_value"])
     for item in asset_type_projection.get("unresolved",[]):
         conflicts.append(("asset_facility_type","غير محدد",str(item["raw_value"])))
     db.flush()
@@ -1153,6 +1255,7 @@ async def _sync_furas_checkpointed(db:Session,source:Source,job:SyncJob,counts:d
                 acquire_sync_ingestion_lock(db)
                 inserted=int(checkpoint.get("source_rows_inserted_total",0))
                 updated=int(checkpoint.get("source_rows_updated_total",0))
+                quarantined=int(checkpoint.get("quarantined_records_total",0))
                 for raw in batch_records:
                     raw.raw=dict(raw.raw or {})
                     raw.raw["checkpoint_provenance"]={"scan_run_id":checkpoint["scan_run_id"],
@@ -1162,8 +1265,11 @@ async def _sync_furas_checkpointed(db:Session,source:Source,job:SyncJob,counts:d
                     previous_row=db.scalar(select(SourceOpportunity).where(SourceOpportunity.source_id==source.id,
                         SourceOpportunity.source_opportunity_id==raw.external_id))
                     previous_hash=previous_row.content_hash if previous_row else None
-                    _safe_record(db,source,raw,counts,owner_alias_registry=owner_alias_registry,
+                    record_result=_safe_record(db,source,raw,counts,owner_alias_registry=owner_alias_registry,
                         allow_master_creation=False)
+                    if isinstance(record_result,dict) and record_result.get("decision")=="QUARANTINE":
+                        quarantined+=1
+                        continue
                     if previous_row is None:inserted+=1
                     elif previous_hash!=raw.content_hash:updated+=1
                 if checkpoint.get("last_error"):
@@ -1173,6 +1279,7 @@ async def _sync_furas_checkpointed(db:Session,source:Source,job:SyncJob,counts:d
                 checkpoint["job_id"]=job.id
                 checkpoint["source_rows_inserted_total"]=inserted
                 checkpoint["source_rows_updated_total"]=updated
+                checkpoint["quarantined_records_total"]=quarantined
                 checkpoint["master_rows_created_total"]=0
                 checkpoint["terminal_status"]="RUNNING"
                 checkpoint["removal_reconciliation_allowed"]=False
@@ -1386,7 +1493,7 @@ async def sync_source(source_key:str,queued_job_id:int|None=None,*,defer_failure
                 setattr(job,field,0)
         source.sync_status="RUNNING"; source.last_attempted_sync=NOW(); db.info["sync_job_id"]=job.id; db.commit()
         counts={"pages_scanned":0,"raw_count":0,"ahsa_count":0,"new_count":0,"duplicate_count":0,"update_count":0,"unchanged_count":0,"rejected_count":0,"duplicate_candidates_count":0,"merged_records_count":0,"removed_records_count":0,"location_review_count":0,
-            "standardization_records_processed":0,"standardization_fields_changed":0,"standardization_aliases_matched":0,"standardization_unmapped_values":0,"standardization_issues":0}
+            "alias_resolved_count":0,"standardization_records_processed":0,"standardization_fields_changed":0,"standardization_aliases_matched":0,"standardization_unmapped_values":0,"standardization_issues":0}
         try:
             if source_key=="furas" and adapter_cls is FurasAdapter:
                 return await _sync_furas_checkpointed(db,source,job,counts,stop_after_batches=furas_stop_after_batches)

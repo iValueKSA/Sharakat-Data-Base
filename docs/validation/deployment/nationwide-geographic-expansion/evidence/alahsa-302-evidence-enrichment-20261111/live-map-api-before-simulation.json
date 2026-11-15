@@ -1,0 +1,1318 @@
+{
+  "captured_at_utc": "2026-11-11T10:05:41.3396083Z",
+  "endpoint": "GET http://localhost:8080/api/data-dashboard/geography?governorate_id=501",
+  "map_scope": "NATIONAL",
+  "counts": {
+    "total": 518,
+    "coordinate_records": 145,
+    "exact_mapped": 145,
+    "locality_mapped": 0,
+    "missing_coordinates": 373,
+    "outside_boundary": 0,
+    "unverified_coordinates": 373,
+    "unmapped": 373
+  },
+  "unique_master_ids": [
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    25,
+    26,
+    27,
+    28,
+    29,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    71,
+    72,
+    73,
+    76,
+    77,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    136,
+    137,
+    138,
+    139,
+    141,
+    142,
+    163,
+    164,
+    192,
+    193,
+    195,
+    1373,
+    1462,
+    1500,
+    1585,
+    1586,
+    1587,
+    2344,
+    3252,
+    3269,
+    4355,
+    4356,
+    4368,
+    4496,
+    4644,
+    4659,
+    4965,
+    4968,
+    4987,
+    5006,
+    5051,
+    5088,
+    5340,
+    5996,
+    6380,
+    6637,
+    6652,
+    6657
+  ],
+  "points": [
+    {
+      "latitude": 23.2935397,
+      "longitude": 48.9662709,
+      "count": 1,
+      "ids": [
+        5996
+      ]
+    },
+    {
+      "latitude": 24.1419728,
+      "longitude": 51.567834,
+      "count": 1,
+      "ids": [
+        5340
+      ]
+    },
+    {
+      "latitude": 24.2068395,
+      "longitude": 51.4693123,
+      "count": 1,
+      "ids": [
+        6380
+      ]
+    },
+    {
+      "latitude": 24.62393,
+      "longitude": 50.79205,
+      "count": 1,
+      "ids": [
+        6652
+      ]
+    },
+    {
+      "latitude": 24.723004,
+      "longitude": 50.7035,
+      "count": 1,
+      "ids": [
+        6637
+      ]
+    },
+    {
+      "latitude": 24.724069,
+      "longitude": 50.702903,
+      "count": 1,
+      "ids": [
+        6657
+      ]
+    },
+    {
+      "latitude": 25.0,
+      "longitude": 49.0,
+      "count": 1,
+      "ids": [
+        1500
+      ]
+    },
+    {
+      "latitude": 25.24952,
+      "longitude": 49.829569,
+      "count": 1,
+      "ids": [
+        3269
+      ]
+    },
+    {
+      "latitude": 25.249629,
+      "longitude": 49.810917,
+      "count": 1,
+      "ids": [
+        5051
+      ]
+    },
+    {
+      "latitude": 25.25221,
+      "longitude": 49.812487,
+      "count": 1,
+      "ids": [
+        5088
+      ]
+    },
+    {
+      "latitude": 25.2605326,
+      "longitude": 49.8220556,
+      "count": 1,
+      "ids": [
+        4644
+      ]
+    },
+    {
+      "latitude": 25.261003,
+      "longitude": 49.821119,
+      "count": 1,
+      "ids": [
+        4965
+      ]
+    },
+    {
+      "latitude": 25.263592,
+      "longitude": 49.821065,
+      "count": 1,
+      "ids": [
+        5006
+      ]
+    },
+    {
+      "latitude": 25.264852,
+      "longitude": 49.821867,
+      "count": 1,
+      "ids": [
+        4368
+      ]
+    },
+    {
+      "latitude": 25.265626,
+      "longitude": 49.82168,
+      "count": 2,
+      "ids": [
+        4968,
+        4987
+      ]
+    },
+    {
+      "latitude": 25.266707,
+      "longitude": 49.821973,
+      "count": 1,
+      "ids": [
+        4356
+      ]
+    },
+    {
+      "latitude": 25.268162,
+      "longitude": 49.822123,
+      "count": 1,
+      "ids": [
+        4355
+      ]
+    },
+    {
+      "latitude": 25.271036,
+      "longitude": 49.829708,
+      "count": 1,
+      "ids": [
+        4496
+      ]
+    },
+    {
+      "latitude": 25.2716608,
+      "longitude": 49.8245074,
+      "count": 1,
+      "ids": [
+        4659
+      ]
+    },
+    {
+      "latitude": 25.2718953,
+      "longitude": 49.5772846,
+      "count": 1,
+      "ids": [
+        82
+      ]
+    },
+    {
+      "latitude": 25.272396,
+      "longitude": 49.821311,
+      "count": 1,
+      "ids": [
+        2344
+      ]
+    },
+    {
+      "latitude": 25.2845727,
+      "longitude": 49.5204715,
+      "count": 1,
+      "ids": [
+        35
+      ]
+    },
+    {
+      "latitude": 25.2864176,
+      "longitude": 49.5143059,
+      "count": 1,
+      "ids": [
+        120
+      ]
+    },
+    {
+      "latitude": 25.2865165,
+      "longitude": 49.5137277,
+      "count": 1,
+      "ids": [
+        112
+      ]
+    },
+    {
+      "latitude": 25.2870137,
+      "longitude": 49.5149314,
+      "count": 1,
+      "ids": [
+        50
+      ]
+    },
+    {
+      "latitude": 25.287312,
+      "longitude": 49.5153444,
+      "count": 1,
+      "ids": [
+        111
+      ]
+    },
+    {
+      "latitude": 25.2873244,
+      "longitude": 49.5153802,
+      "count": 1,
+      "ids": [
+        53
+      ]
+    },
+    {
+      "latitude": 25.2874296,
+      "longitude": 49.5153149,
+      "count": 1,
+      "ids": [
+        122
+      ]
+    },
+    {
+      "latitude": 25.2874829,
+      "longitude": 49.5154812,
+      "count": 1,
+      "ids": [
+        62
+      ]
+    },
+    {
+      "latitude": 25.2874965,
+      "longitude": 49.5154641,
+      "count": 1,
+      "ids": [
+        52
+      ]
+    },
+    {
+      "latitude": 25.2875779,
+      "longitude": 49.5160417,
+      "count": 1,
+      "ids": [
+        119
+      ]
+    },
+    {
+      "latitude": 25.2876042,
+      "longitude": 49.5126595,
+      "count": 1,
+      "ids": [
+        58
+      ]
+    },
+    {
+      "latitude": 25.2877267,
+      "longitude": 49.5158158,
+      "count": 1,
+      "ids": [
+        42
+      ]
+    },
+    {
+      "latitude": 25.2877737,
+      "longitude": 49.5159157,
+      "count": 1,
+      "ids": [
+        37
+      ]
+    },
+    {
+      "latitude": 25.28782,
+      "longitude": 49.5158379,
+      "count": 1,
+      "ids": [
+        45
+      ]
+    },
+    {
+      "latitude": 25.2878579,
+      "longitude": 49.5166151,
+      "count": 1,
+      "ids": [
+        38
+      ]
+    },
+    {
+      "latitude": 25.2879977,
+      "longitude": 49.5220251,
+      "count": 1,
+      "ids": [
+        44
+      ]
+    },
+    {
+      "latitude": 25.288142,
+      "longitude": 49.5220084,
+      "count": 1,
+      "ids": [
+        41
+      ]
+    },
+    {
+      "latitude": 25.2881426,
+      "longitude": 49.5227527,
+      "count": 1,
+      "ids": [
+        117
+      ]
+    },
+    {
+      "latitude": 25.2881705,
+      "longitude": 49.5181574,
+      "count": 1,
+      "ids": [
+        43
+      ]
+    },
+    {
+      "latitude": 25.2882996,
+      "longitude": 49.5172374,
+      "count": 1,
+      "ids": [
+        40
+      ]
+    },
+    {
+      "latitude": 25.288333,
+      "longitude": 49.5238738,
+      "count": 1,
+      "ids": [
+        48
+      ]
+    },
+    {
+      "latitude": 25.2883359,
+      "longitude": 49.525001,
+      "count": 1,
+      "ids": [
+        32
+      ]
+    },
+    {
+      "latitude": 25.2883687,
+      "longitude": 49.5222632,
+      "count": 1,
+      "ids": [
+        34
+      ]
+    },
+    {
+      "latitude": 25.2884172,
+      "longitude": 49.5207229,
+      "count": 1,
+      "ids": [
+        46
+      ]
+    },
+    {
+      "latitude": 25.2884252,
+      "longitude": 49.5186047,
+      "count": 1,
+      "ids": [
+        51
+      ]
+    },
+    {
+      "latitude": 25.2885221,
+      "longitude": 49.5189775,
+      "count": 1,
+      "ids": [
+        113
+      ]
+    },
+    {
+      "latitude": 25.2896378,
+      "longitude": 49.518576,
+      "count": 1,
+      "ids": [
+        118
+      ]
+    },
+    {
+      "latitude": 25.2896704,
+      "longitude": 49.5113667,
+      "count": 1,
+      "ids": [
+        57
+      ]
+    },
+    {
+      "latitude": 25.2899857,
+      "longitude": 49.5186556,
+      "count": 1,
+      "ids": [
+        36
+      ]
+    },
+    {
+      "latitude": 25.2907812,
+      "longitude": 49.5103153,
+      "count": 1,
+      "ids": [
+        114
+      ]
+    },
+    {
+      "latitude": 25.2910522,
+      "longitude": 49.5186221,
+      "count": 1,
+      "ids": [
+        115
+      ]
+    },
+    {
+      "latitude": 25.2914358,
+      "longitude": 49.5091461,
+      "count": 1,
+      "ids": [
+        39
+      ]
+    },
+    {
+      "latitude": 25.2916579,
+      "longitude": 49.5090042,
+      "count": 1,
+      "ids": [
+        49
+      ]
+    },
+    {
+      "latitude": 25.2925034,
+      "longitude": 49.5185175,
+      "count": 1,
+      "ids": [
+        56
+      ]
+    },
+    {
+      "latitude": 25.2925248,
+      "longitude": 49.5187991,
+      "count": 1,
+      "ids": [
+        116
+      ]
+    },
+    {
+      "latitude": 25.293182,
+      "longitude": 49.5188662,
+      "count": 1,
+      "ids": [
+        59
+      ]
+    },
+    {
+      "latitude": 25.2932984,
+      "longitude": 49.5187589,
+      "count": 1,
+      "ids": [
+        61
+      ]
+    },
+    {
+      "latitude": 25.2934021,
+      "longitude": 49.5184357,
+      "count": 1,
+      "ids": [
+        33
+      ]
+    },
+    {
+      "latitude": 25.2939926,
+      "longitude": 49.5186476,
+      "count": 1,
+      "ids": [
+        1373
+      ]
+    },
+    {
+      "latitude": 25.2949038,
+      "longitude": 49.5185134,
+      "count": 1,
+      "ids": [
+        60
+      ]
+    },
+    {
+      "latitude": 25.3064491,
+      "longitude": 49.5675144,
+      "count": 1,
+      "ids": [
+        96
+      ]
+    },
+    {
+      "latitude": 25.3068093,
+      "longitude": 49.5675648,
+      "count": 1,
+      "ids": [
+        142
+      ]
+    },
+    {
+      "latitude": 25.3136455,
+      "longitude": 49.5876085,
+      "count": 1,
+      "ids": [
+        28
+      ]
+    },
+    {
+      "latitude": 25.313974,
+      "longitude": 49.5870171,
+      "count": 1,
+      "ids": [
+        31
+      ]
+    },
+    {
+      "latitude": 25.3261282,
+      "longitude": 49.5647596,
+      "count": 1,
+      "ids": [
+        83
+      ]
+    },
+    {
+      "latitude": 25.3262531,
+      "longitude": 49.559566,
+      "count": 1,
+      "ids": [
+        26
+      ]
+    },
+    {
+      "latitude": 25.3264656,
+      "longitude": 49.5605856,
+      "count": 1,
+      "ids": [
+        27
+      ]
+    },
+    {
+      "latitude": 25.326502,
+      "longitude": 49.5605177,
+      "count": 1,
+      "ids": [
+        128
+      ]
+    },
+    {
+      "latitude": 25.3265892,
+      "longitude": 49.5608903,
+      "count": 1,
+      "ids": [
+        86
+      ]
+    },
+    {
+      "latitude": 25.3266911,
+      "longitude": 49.5615745,
+      "count": 1,
+      "ids": [
+        71
+      ]
+    },
+    {
+      "latitude": 25.3267616,
+      "longitude": 49.561508,
+      "count": 1,
+      "ids": [
+        88
+      ]
+    },
+    {
+      "latitude": 25.32926,
+      "longitude": 49.60475,
+      "count": 1,
+      "ids": [
+        107
+      ]
+    },
+    {
+      "latitude": 25.3462743,
+      "longitude": 49.6045287,
+      "count": 1,
+      "ids": [
+        95
+      ]
+    },
+    {
+      "latitude": 25.3463803,
+      "longitude": 49.6042178,
+      "count": 1,
+      "ids": [
+        133
+      ]
+    },
+    {
+      "latitude": 25.3465126,
+      "longitude": 49.6038491,
+      "count": 1,
+      "ids": [
+        94
+      ]
+    },
+    {
+      "latitude": 25.3510548,
+      "longitude": 49.568162,
+      "count": 1,
+      "ids": [
+        66
+      ]
+    },
+    {
+      "latitude": 25.3520791,
+      "longitude": 49.5681241,
+      "count": 1,
+      "ids": [
+        134
+      ]
+    },
+    {
+      "latitude": 25.353706,
+      "longitude": 49.5452135,
+      "count": 1,
+      "ids": [
+        69
+      ]
+    },
+    {
+      "latitude": 25.3565084,
+      "longitude": 49.632803,
+      "count": 1,
+      "ids": [
+        84
+      ]
+    },
+    {
+      "latitude": 25.3574277,
+      "longitude": 49.5588793,
+      "count": 1,
+      "ids": [
+        136
+      ]
+    },
+    {
+      "latitude": 25.3582489,
+      "longitude": 49.5589097,
+      "count": 1,
+      "ids": [
+        87
+      ]
+    },
+    {
+      "latitude": 25.3584179,
+      "longitude": 49.560769,
+      "count": 1,
+      "ids": [
+        102
+      ]
+    },
+    {
+      "latitude": 25.360761,
+      "longitude": 49.5986063,
+      "count": 1,
+      "ids": [
+        106
+      ]
+    },
+    {
+      "latitude": 25.3648113,
+      "longitude": 49.7269112,
+      "count": 1,
+      "ids": [
+        127
+      ]
+    },
+    {
+      "latitude": 25.3681152,
+      "longitude": 49.544545,
+      "count": 1,
+      "ids": [
+        79
+      ]
+    },
+    {
+      "latitude": 25.3686515,
+      "longitude": 49.5448422,
+      "count": 1,
+      "ids": [
+        132
+      ]
+    },
+    {
+      "latitude": 25.3688417,
+      "longitude": 49.592782,
+      "count": 1,
+      "ids": [
+        126
+      ]
+    },
+    {
+      "latitude": 25.3690786,
+      "longitude": 49.5450424,
+      "count": 1,
+      "ids": [
+        93
+      ]
+    },
+    {
+      "latitude": 25.3691816,
+      "longitude": 49.5450816,
+      "count": 1,
+      "ids": [
+        89
+      ]
+    },
+    {
+      "latitude": 25.3691839,
+      "longitude": 49.5451803,
+      "count": 1,
+      "ids": [
+        80
+      ]
+    },
+    {
+      "latitude": 25.3691981,
+      "longitude": 49.5452163,
+      "count": 1,
+      "ids": [
+        131
+      ]
+    },
+    {
+      "latitude": 25.375359,
+      "longitude": 49.7715008,
+      "count": 1,
+      "ids": [
+        54
+      ]
+    },
+    {
+      "latitude": 25.3881918,
+      "longitude": 49.5956329,
+      "count": 1,
+      "ids": [
+        104
+      ]
+    },
+    {
+      "latitude": 25.390006,
+      "longitude": 49.563316,
+      "count": 1,
+      "ids": [
+        129
+      ]
+    },
+    {
+      "latitude": 25.390822,
+      "longitude": 49.662414,
+      "count": 1,
+      "ids": [
+        163
+      ]
+    },
+    {
+      "latitude": 25.395777,
+      "longitude": 49.597732,
+      "count": 1,
+      "ids": [
+        73
+      ]
+    },
+    {
+      "latitude": 25.401864,
+      "longitude": 49.599179,
+      "count": 1,
+      "ids": [
+        92
+      ]
+    },
+    {
+      "latitude": 25.4087595,
+      "longitude": 49.5587952,
+      "count": 1,
+      "ids": [
+        99
+      ]
+    },
+    {
+      "latitude": 25.4091097,
+      "longitude": 49.5589801,
+      "count": 1,
+      "ids": [
+        103
+      ]
+    },
+    {
+      "latitude": 25.4162979,
+      "longitude": 49.7165631,
+      "count": 1,
+      "ids": [
+        72
+      ]
+    },
+    {
+      "latitude": 25.4203935,
+      "longitude": 49.742579,
+      "count": 1,
+      "ids": [
+        97
+      ]
+    },
+    {
+      "latitude": 25.4204647,
+      "longitude": 49.7427071,
+      "count": 1,
+      "ids": [
+        105
+      ]
+    },
+    {
+      "latitude": 25.420582,
+      "longitude": 49.7424054,
+      "count": 1,
+      "ids": [
+        101
+      ]
+    },
+    {
+      "latitude": 25.4269749,
+      "longitude": 49.6968894,
+      "count": 1,
+      "ids": [
+        137
+      ]
+    },
+    {
+      "latitude": 25.4269805,
+      "longitude": 49.6980049,
+      "count": 1,
+      "ids": [
+        23
+      ]
+    },
+    {
+      "latitude": 25.4273536,
+      "longitude": 49.6990169,
+      "count": 1,
+      "ids": [
+        22
+      ]
+    },
+    {
+      "latitude": 25.437713,
+      "longitude": 49.6658137,
+      "count": 1,
+      "ids": [
+        85
+      ]
+    },
+    {
+      "latitude": 25.448426,
+      "longitude": 49.5159076,
+      "count": 1,
+      "ids": [
+        139
+      ]
+    },
+    {
+      "latitude": 25.4510008,
+      "longitude": 49.5192982,
+      "count": 1,
+      "ids": [
+        90
+      ]
+    },
+    {
+      "latitude": 25.4517908,
+      "longitude": 49.5293613,
+      "count": 1,
+      "ids": [
+        91
+      ]
+    },
+    {
+      "latitude": 25.4523172,
+      "longitude": 49.5196342,
+      "count": 1,
+      "ids": [
+        138
+      ]
+    },
+    {
+      "latitude": 25.4565376,
+      "longitude": 49.5524294,
+      "count": 1,
+      "ids": [
+        98
+      ]
+    },
+    {
+      "latitude": 25.4570528,
+      "longitude": 49.5529993,
+      "count": 1,
+      "ids": [
+        100
+      ]
+    },
+    {
+      "latitude": 25.4570766,
+      "longitude": 49.5533861,
+      "count": 1,
+      "ids": [
+        141
+      ]
+    },
+    {
+      "latitude": 25.4578408,
+      "longitude": 49.551881,
+      "count": 1,
+      "ids": [
+        65
+      ]
+    },
+    {
+      "latitude": 25.4630237,
+      "longitude": 49.6377778,
+      "count": 1,
+      "ids": [
+        63
+      ]
+    },
+    {
+      "latitude": 25.4692871,
+      "longitude": 49.634987,
+      "count": 1,
+      "ids": [
+        47
+      ]
+    },
+    {
+      "latitude": 25.4719618,
+      "longitude": 49.6342913,
+      "count": 1,
+      "ids": [
+        76
+      ]
+    },
+    {
+      "latitude": 25.4720376,
+      "longitude": 49.633671,
+      "count": 1,
+      "ids": [
+        29
+      ]
+    },
+    {
+      "latitude": 25.4720515,
+      "longitude": 49.6339624,
+      "count": 1,
+      "ids": [
+        123
+      ]
+    },
+    {
+      "latitude": 25.4726197,
+      "longitude": 49.6346782,
+      "count": 1,
+      "ids": [
+        81
+      ]
+    },
+    {
+      "latitude": 25.4730889,
+      "longitude": 49.6380451,
+      "count": 1,
+      "ids": [
+        130
+      ]
+    },
+    {
+      "latitude": 25.473132,
+      "longitude": 49.641599,
+      "count": 1,
+      "ids": [
+        18
+      ]
+    },
+    {
+      "latitude": 25.473542,
+      "longitude": 49.6345,
+      "count": 1,
+      "ids": [
+        21
+      ]
+    },
+    {
+      "latitude": 25.475091,
+      "longitude": 49.6397139,
+      "count": 1,
+      "ids": [
+        124
+      ]
+    },
+    {
+      "latitude": 25.4751528,
+      "longitude": 49.6399969,
+      "count": 1,
+      "ids": [
+        67
+      ]
+    },
+    {
+      "latitude": 25.4752696,
+      "longitude": 49.6400707,
+      "count": 1,
+      "ids": [
+        125
+      ]
+    },
+    {
+      "latitude": 25.4757096,
+      "longitude": 49.6402826,
+      "count": 1,
+      "ids": [
+        68
+      ]
+    },
+    {
+      "latitude": 25.4759514,
+      "longitude": 49.6403261,
+      "count": 1,
+      "ids": [
+        77
+      ]
+    },
+    {
+      "latitude": 25.476097,
+      "longitude": 49.640537,
+      "count": 1,
+      "ids": [
+        20
+      ]
+    },
+    {
+      "latitude": 25.476485,
+      "longitude": 49.640687,
+      "count": 1,
+      "ids": [
+        19
+      ]
+    },
+    {
+      "latitude": 25.5204381,
+      "longitude": 49.6104505,
+      "count": 1,
+      "ids": [
+        1462
+      ]
+    },
+    {
+      "latitude": 25.526516,
+      "longitude": 49.60361,
+      "count": 1,
+      "ids": [
+        164
+      ]
+    },
+    {
+      "latitude": 25.548998,
+      "longitude": 49.685095,
+      "count": 1,
+      "ids": [
+        192
+      ]
+    },
+    {
+      "latitude": 25.6057764,
+      "longitude": 49.5463484,
+      "count": 1,
+      "ids": [
+        55
+      ]
+    },
+    {
+      "latitude": 25.6060973,
+      "longitude": 49.5463084,
+      "count": 1,
+      "ids": [
+        121
+      ]
+    },
+    {
+      "latitude": 25.634749,
+      "longitude": 49.544749,
+      "count": 1,
+      "ids": [
+        193
+      ]
+    },
+    {
+      "latitude": 25.635184,
+      "longitude": 49.543832,
+      "count": 1,
+      "ids": [
+        195
+      ]
+    },
+    {
+      "latitude": 25.635694,
+      "longitude": 49.552194,
+      "count": 1,
+      "ids": [
+        3252
+      ]
+    },
+    {
+      "latitude": 25.719181,
+      "longitude": 50.172941,
+      "count": 1,
+      "ids": [
+        1587
+      ]
+    },
+    {
+      "latitude": 25.719979,
+      "longitude": 50.172497,
+      "count": 1,
+      "ids": [
+        1586
+      ]
+    },
+    {
+      "latitude": 25.721175,
+      "longitude": 50.171476,
+      "count": 1,
+      "ids": [
+        1585
+      ]
+    },
+    {
+      "latitude": 25.7277853,
+      "longitude": 50.1665123,
+      "count": 1,
+      "ids": [
+        25
+      ]
+    }
+  ],
+  "dataset_version": "taadeen-public-gis-20261102-v3"
+}

@@ -1,5 +1,4 @@
-﻿$script:LocalProjectRoot = Split-Path -Parent $PSScriptRoot
-$script:LocalConfigPath = Join-Path $script:LocalProjectRoot '.env.local'
+$script:LocalProjectRoot = Split-Path -Parent $PSScriptRoot
 $script:InstallationStatePath = Join-Path $script:LocalProjectRoot '.installation-state.json'
 $script:InstallationState = $null
 if (Test-Path -LiteralPath $script:InstallationStatePath) {
@@ -9,8 +8,10 @@ $script:IsPortableInstallation = $script:InstallationState -and $script:Installa
 $script:LocalProjectName = if ($script:IsPortableInstallation -and $script:InstallationState.composeProjectName) { [string]$script:InstallationState.composeProjectName } else { 'alahsa-local' }
 $localAppDataName = if ($script:IsPortableInstallation) { Join-Path 'Sharakat Data Base' $script:LocalProjectName } else { 'Sharakat Data Base' }
 $script:LocalAppData = Join-Path $env:LOCALAPPDATA $localAppDataName
-$script:LocalConfigBackup = Join-Path $script:LocalAppData '.env.local'
-$script:LocalCredentialsPath = Join-Path $script:LocalProjectRoot 'Local Admin Credentials.txt'
+$script:LocalConfigPath = if ($script:IsPortableInstallation) { Join-Path $script:LocalProjectRoot '.env.local' } else { Join-Path $script:LocalAppData '.env.local' }
+$script:LocalBackupPath = if ($script:IsPortableInstallation) { Join-Path $script:LocalProjectRoot 'backups' } else { Join-Path $script:LocalAppData 'backups' }
+$script:LocalConfigBackup = if ($script:IsPortableInstallation) { Join-Path $script:LocalAppData '.env.local' } else { Join-Path $script:LocalAppData '.env.local.backup' }
+$script:LocalCredentialsPath = if ($script:IsPortableInstallation) { Join-Path $script:LocalProjectRoot 'Local Admin Credentials.txt' } else { Join-Path $script:LocalAppData 'Local Admin Credentials.txt' }
 $script:LocalCredentialsBackup = Join-Path $script:LocalAppData 'Local Admin Credentials.txt'
 $script:LocalBaseUrl = if ($script:IsPortableInstallation -and $script:InstallationState.baseUrl) { [string]$script:InstallationState.baseUrl } else { 'http://localhost:8080' }
 $script:PortableComposePath = Join-Path $script:LocalProjectRoot 'docker-compose.portable.yml'
@@ -97,7 +98,7 @@ function Get-ComposePrefix {
     if ($script:IsPortableInstallation) {
         return @('compose', '--env-file', '.env.local', '-f', 'docker-compose.yml', '-f', 'docker-compose.portable.yml', '-p', $script:LocalProjectName)
     }
-    return @('compose', '--env-file', '.env.local', '-f', 'docker-compose.yml', '-f', 'docker-compose.local.yml', '-p', $script:LocalProjectName)
+    return @('compose', '--env-file', $script:LocalConfigPath, '-f', 'docker-compose.yml', '-f', 'docker-compose.local.yml', '-p', $script:LocalProjectName)
 }
 
 function Invoke-LocalCompose([string[]]$Arguments, [switch]$AllowFailure) {
@@ -121,21 +122,32 @@ function Get-LocalEnvValue([string]$Name) {
     return $line.Substring($Name.Length + 1)
 }
 
+function Set-LocalBackupPathValue([string]$Content) {
+    if ($script:IsPortableInstallation) { return $Content }
+    $hostPath = $script:LocalBackupPath.Replace('\', '/')
+    $line = 'LOCAL_BACKUP_PATH="{0}"' -f $hostPath
+    $content = [regex]::Replace($Content, '(?m)^LOCAL_BACKUP_PATH=.*(?:\r?\n|$)', '')
+    return $content.TrimEnd() + "`r`n" + $line + "`r`n"
+}
 function Ensure-LocalConfig {
     if (Test-Path -LiteralPath $script:LocalConfigPath) {
-        $content = [IO.File]::ReadAllText($script:LocalConfigPath)
+        $content = Set-LocalBackupPathValue ([IO.File]::ReadAllText($script:LocalConfigPath))
         Set-PrivateFile -Path $script:LocalConfigPath -Content $content
         Set-PrivateFile -Path $script:LocalConfigBackup -Content $content
         if (-not (Test-Path -LiteralPath $script:LocalCredentialsPath) -and (Test-Path -LiteralPath $script:LocalCredentialsBackup)) {
             Set-PrivateFile -Path $script:LocalCredentialsPath -Content ([IO.File]::ReadAllText($script:LocalCredentialsBackup))
         }
+        if (-not (Test-Path -LiteralPath $script:LocalBackupPath)) { New-Item -ItemType Directory -Path $script:LocalBackupPath -Force | Out-Null }
         return
     }
     if (Test-Path -LiteralPath $script:LocalConfigBackup) {
-        Set-PrivateFile -Path $script:LocalConfigPath -Content ([IO.File]::ReadAllText($script:LocalConfigBackup))
+        $content = Set-LocalBackupPathValue ([IO.File]::ReadAllText($script:LocalConfigBackup))
+        Set-PrivateFile -Path $script:LocalConfigPath -Content $content
+        Set-PrivateFile -Path $script:LocalConfigBackup -Content $content
         if (-not (Test-Path -LiteralPath $script:LocalCredentialsPath) -and (Test-Path -LiteralPath $script:LocalCredentialsBackup)) {
             Set-PrivateFile -Path $script:LocalCredentialsPath -Content ([IO.File]::ReadAllText($script:LocalCredentialsBackup))
         }
+        if (-not (Test-Path -LiteralPath $script:LocalBackupPath)) { New-Item -ItemType Directory -Path $script:LocalBackupPath -Force | Out-Null }
         Write-LocalLog 'Restored private local settings from this Windows account.'
         return
     }
@@ -174,6 +186,7 @@ function Ensure-LocalConfig {
         'LOCAL_SETUP_MARKER=local_setup_state'
     )
     $content = ($lines -join "`r`n") + "`r`n"
+    $content = Set-LocalBackupPathValue $content
     Set-PrivateFile -Path $script:LocalConfigPath -Content $content
     Set-PrivateFile -Path $script:LocalConfigBackup -Content $content
     $credentials = @"

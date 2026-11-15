@@ -1,0 +1,50 @@
+{
+  "captured_at_utc": "2026-11-11T11:02:57.008654+00:00",
+  "mode": "API_VERIFICATION_AFTER_EXACT_TRANSACTION_SQL_ON_ISOLATED_RESTORED_SNAPSHOT",
+  "checks": {
+    "national_http_200": true,
+    "alahsa_http_200": true,
+    "national_total_6309": true,
+    "alahsa_total_447": true,
+    "all_302_present_national": true,
+    "all_302_present_alahsa": true,
+    "old_145_preserved_alahsa": true,
+    "national_ids_unique": true,
+    "alahsa_ids_unique": true,
+    "national_preflight_other_governorates_unchanged": true
+  },
+  "passed": true,
+  "national": {
+    "http_status": 200,
+    "counts": {
+      "total": 6659,
+      "coordinate_records": 6309,
+      "exact_mapped": 6309,
+      "locality_mapped": 0,
+      "missing_coordinates": 350,
+      "outside_boundary": 0,
+      "unverified_coordinates": 184,
+      "unmapped": 350
+    },
+    "flat_ids": 6309,
+    "unique_ids": 6309,
+    "added_vs_preflight": 302
+  },
+  "alahsa": {
+    "http_status": 200,
+    "counts": {
+      "total": 518,
+      "coordinate_records": 447,
+      "exact_mapped": 447,
+      "locality_mapped": 0,
+      "missing_coordinates": 71,
+      "outside_boundary": 0,
+      "unverified_coordinates": 71,
+      "unmapped": 71
+    },
+    "flat_ids": 447,
+    "unique_ids": 447,
+    "added_vs_live_baseline": 302
+  },
+  "target_count": 302
+}

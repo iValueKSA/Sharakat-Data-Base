@@ -1,0 +1,3 @@
+psql:/tmp/apply-approved-302.sql:377: ERROR:  syntax error at or near "PERFORM"
+LINE 1: PERFORM 1;
+        ^

@@ -3,42 +3,6 @@
   const root = $("view-data-dashboard");
   if (!root) return;
 
-  const hero = root.querySelector(".rd-video-hero");
-  const heroVideo = $("dataDashboardHeroVideo");
-  const heroSource = heroVideo?.querySelector("source[data-src]");
-  const reducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)");
-  if (hero && heroVideo && heroSource) {
-    const showPoster = () => hero.classList.remove("is-playing");
-    const updateHeroPlayback = () => {
-      const dashboardActive = root.classList.contains("visible");
-      if (!dashboardActive || reducedMotion?.matches || document.visibilityState === "hidden") {
-        heroVideo.autoplay = false;
-        heroVideo.pause();
-        showPoster();
-        return;
-      }
-      hero.classList.remove("is-failed");
-      heroVideo.autoplay = true;
-      if (!heroSource.getAttribute("src")) {
-        heroSource.src = heroSource.dataset.src;
-        heroVideo.load();
-      }
-      heroVideo.play().catch(() => showPoster());
-    };
-    heroVideo.addEventListener("playing", () => {
-      if (!reducedMotion?.matches && root.classList.contains("visible")) hero.classList.add("is-playing");
-    });
-    heroVideo.addEventListener("error", () => {
-      hero.classList.add("is-failed");
-      showPoster();
-    });
-    if (reducedMotion?.addEventListener) reducedMotion.addEventListener("change", updateHeroPlayback);
-    else reducedMotion?.addListener?.(updateHeroPlayback);
-    document.addEventListener("visibilitychange", updateHeroPlayback);
-    new MutationObserver(updateHeroPlayback).observe(root, { attributes: true, attributeFilter: ["class"] });
-    updateHeroPlayback();
-  }
-
   const colors = ["#006e61", "#378aa4", "#c39853", "#124e5c", "#9b7a5a", "#989899"];
   const sectorColors = {
     "sector:unspecified": "#989899",
@@ -305,9 +269,15 @@
     const bounds = window.L.latLngBounds(locations.map((point) => [Number(point.latitude), Number(point.longitude)]));
     map.fitBounds(bounds, { padding: [30, 30], maxZoom: 10 });
   }
-  function mapNotice(message) { const host = $("rdMapNotice"); host.textContent = message; host.hidden = !message; }
+  function mapNotice(message, state = "error") {
+    const host = $("rdMapNotice");
+    host.textContent = message;
+    host.hidden = !message;
+    if (message) host.dataset.state = state;
+    else delete host.dataset.state;
+  }
   function renderMapStats(counts, scope) {
-    const items = [["ضمن النتائج", counts.total], ["نقاط موثقة", counts.exact_mapped], ["بدون إحداثيات", counts.missing_coordinates],
+    const items = [["ضمن النتائج", counts.total], ["نقاط موثقة", counts.exact_mapped], ["بدون إحداثيات موثقة", counts.missing_coordinates],
       ...(scope === "NATIONAL" ? [] : [["خارج الحد المحلي", counts.outside_boundary]]),
       ["غير مثبتة بالمصدر", counts.unverified_coordinates], ["غير ممثلة", counts.unmapped]];
     $("rdGeoStats").innerHTML = items.map(([title, value], index) => `<span class="${index === 1 ? "is-primary" : ""}"><small>${title}</small><b>${n(value)}</b></span>`).join("");
@@ -329,9 +299,10 @@
       if (!window.L) throw new Error("تعذر تحميل مكتبة الخريطة المحلية.");
       map = window.L.map("rdOpportunityMap", { zoomControl: false, scrollWheelZoom: false, preferCanvas: true }).setView(scope === "NATIONAL" ? [24, 45] : mapCenter, scope === "NATIONAL" ? 5 : 9);
       window.L.control.zoom({ position: "topright" }).addTo(map);
-      const tiles = window.L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a> contributors' });
+      const tiles = window.L.tileLayer("https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png", { maxZoom: 20, attribution: '&copy; <a href="https://stadiamaps.com/attribution/" target="_blank" rel="noreferrer">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank" rel="noreferrer">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a>' });
       tiles.on("tileerror", () => mapNotice("تعذر تحميل خريطة الأساس؛ ستبقى الحدود والنقاط المحلية متاحة.")); tiles.addTo(map);
-      clusterLayer = window.L.markerClusterGroup({ showCoverageOnHover: false, spiderfyOnMaxZoom: true, maxClusterRadius: 46, iconCreateFunction: (cluster) => {
+      clusterLayer = window.L.markerClusterGroup({ showCoverageOnHover: false, spiderfyOnMaxZoom: true, maxClusterRadius: 46,
+        chunkedLoading: true, chunkInterval: 180, chunkDelay: 35, iconCreateFunction: (cluster) => {
         const count = cluster.getAllChildMarkers().reduce((value, marker) => value + Number(marker.options.opportunityCount || 1), 0);
         return window.L.divIcon({ html: `<span class="rd-cluster-count">${n(count)}</span>`, className: "rd-cluster-icon", iconSize: window.L.point(42, 42) });
       } }).addTo(map);
@@ -361,27 +332,41 @@
   function drawMap(data) {
     if (!map || !clusterLayer) return;
     clusterLayer.clearLayers(); heatLayer?.remove();
-    const values = [];
+    const values = [], markers = [];
     for (const point of data.points || []) {
       const marker = window.L.marker([point.latitude, point.longitude], {
         title: `${point.location}: ${n(point.count)} فرص`, opportunityCount: point.count,
         icon: window.L.divIcon({ html: '<span class="rd-map-dot"></span>', className: "rd-marker-icon", iconSize: [20, 20], iconAnchor: [10, 10] }),
       });
-      marker.bindPopup(pointPopup(point), { maxWidth: 250 }); clusterLayer.addLayer(marker);
+      marker.bindPopup(pointPopup(point), { maxWidth: 250 }); markers.push(marker);
       values.push([point.latitude, point.longitude, Math.max(1, Number(point.count || 1))]);
     }
+    clusterLayer.addLayers(markers);
     heatLayer = window.L.heatLayer(values, { radius: 30, blur: 23, maxZoom: 12, max: Math.max(1, ...values.map((point) => point[2])), gradient: { .25: "#c39853", .55: "#378aa4", .82: "#006e61", 1: "#124e5c" } });
     updateMapMode(); focusMappedExtent(data.points);
     setTimeout(() => map?.invalidateSize({ pan: false }), 60);
   }
+  let mapLoadSequence = 0;
   async function loadMap(filters) {
+    const sequence = ++mapLoadSequence;
     const query = new URLSearchParams(filters || {});
+    const canvas = $("rdOpportunityMap");
+    canvas.classList.add("is-loading"); canvas.setAttribute("aria-busy", "true");
+    mapNotice("جارٍ تحميل المواقع الجغرافية…", "loading");
     try {
       const response = await fetch(`/api/data-dashboard/geography?${query}`, { credentials: "same-origin" });
       if (!response.ok) throw new Error("تعذر تحميل بيانات الخريطة.");
-      currentMapData = await response.json(); renderMapStats(currentMapData.counts, currentMapData.map_scope); renderMapHeading(currentMapData);
-      await ensureMap(currentMapData.map_scope); drawMap(currentMapData); mapNotice("");
-    } catch (error) { mapNotice(error.message || "تعذر تحميل بيانات الخريطة؛ أعد تحميل اللوحة."); }
+      const data = await response.json();
+      if (sequence !== mapLoadSequence) return;
+      currentMapData = data; renderMapStats(data.counts, data.map_scope); renderMapHeading(data);
+      await ensureMap(data.map_scope);
+      if (sequence !== mapLoadSequence) return;
+      drawMap(data); mapNotice("");
+    } catch (error) {
+      if (sequence === mapLoadSequence) mapNotice(error.message || "تعذر تحميل بيانات الخريطة؛ أعد تحميل اللوحة.");
+    } finally {
+      if (sequence === mapLoadSequence) { canvas.classList.remove("is-loading"); canvas.setAttribute("aria-busy", "false"); }
+    }
   }
 
   function render(data, filters) {
@@ -412,27 +397,6 @@
   document.addEventListener("ahda:data-dashboard", (event) => {
     const { data, filters } = event.detail || {};
     if (data) render(data, filters);
-    if (data) loadNationalGeoSummary(filters || {});
-  });
-  async function loadNationalGeoSummary(filters) {
-    const panel = $("nationalGeoSummary"), host = $("nationalGeoSummaryValues");
-    if (!panel || !host) return;
-    try {
-      const catalogResponse = await fetch("/api/geography/catalog", { credentials: "same-origin" });
-      const catalog = catalogResponse.ok ? await catalogResponse.json() : {};
-      if (catalog.national_dashboard_enabled !== true) { panel.hidden = true; return; }
-      const query = new URLSearchParams(filters);
-      const response = await fetch(`/api/data-dashboard/geography-summary?${query}`, { credentials: "same-origin" });
-      if (!response.ok) { panel.hidden = true; return; }
-      const result = await response.json();
-      const rows = [...(result.by_region || []), ...(result.by_governorate || [])];
-      host.innerHTML = `<p>${n(result.unique_master_total)} فرصة رئيسية فريدة · ${n(result.mapped_unique_masters)} موثقة الإحداثيات · ${n(result.scope_counts?.NATIONWIDE)} بنطاق وطني · ${n(result.unspecified_unique_masters)} غير محددة الموقع</p><div class="national-geo-bars">${rows.map(item => `<button type="button" data-national-geo-filter="${item.region_id ? "governorate" : "region"}" data-national-geo-id="${esc(item.id)}"><b>${esc(item.name_ar)}</b><small>${n(item.unique_masters)} فرصة رئيسية</small></button>`).join("")}</div>`;
-      panel.hidden = false;
-    } catch { panel.hidden = true; }
-  }
-  $("nationalGeoSummaryValues")?.addEventListener("click", (event) => {
-    const button = event.target.closest("[data-national-geo-filter]");
-    if (button) window.goToOpportunities?.({ [`${button.dataset.nationalGeoFilter}_id`]: button.dataset.nationalGeoId });
   });
   root.addEventListener("click", (event) => {
     const mode = event.target.closest("[data-rd-map-mode]");

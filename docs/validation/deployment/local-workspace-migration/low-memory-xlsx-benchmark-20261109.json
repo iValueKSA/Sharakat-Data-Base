@@ -1,0 +1,43 @@
+{
+  "run_date": "2026-11-09",
+  "workspace": "C:\\Users\\QusaiAbdElhalim\\OneDrive - iValue\\Desktop\\الشراكات - الأحساء\\Sharakat-Data-Base",
+  "isolation": {
+    "runtime": "disposable Docker container",
+    "network": "none",
+    "project_mount": "read-only",
+    "database": "disposable SQLite in /tmp",
+    "memory_limit_mib": 512,
+    "memory_swap_limit_mib": 512,
+    "synthetic_rows": true
+  },
+  "fixture": "Same deterministic seeder and data shape for both paths: one unique opportunity, source opportunity, and source location per row, plus a shared geographic reference hierarchy.",
+  "normal_in_memory_baseline": [
+    {"opportunities": 1, "rows_in_main_sheet": 7, "queries": 10, "end_to_end_seconds": 0.0569, "rss_peak_delta_mib": 0.41, "xlsx_bytes": 164039, "integrity": "PASS"},
+    {"opportunities": 100, "rows_in_main_sheet": 106, "queries": 10, "end_to_end_seconds": 0.1994, "rss_peak_delta_mib": 1.41, "xlsx_bytes": 178617, "integrity": "PASS"},
+    {"opportunities": 1000, "rows_in_main_sheet": 1006, "queries": 13, "end_to_end_seconds": 1.6192, "rss_peak_delta_mib": 18.68, "xlsx_bytes": 304095, "integrity": "PASS"},
+    {"opportunities": 3000, "rows_in_main_sheet": 3006, "queries": 25, "end_to_end_seconds": 4.9756, "rss_peak_delta_mib": 52.82, "xlsx_bytes": 579967, "integrity": "PASS"},
+    {"opportunities": 6000, "rows_in_main_sheet": 6006, "queries": 43, "end_to_end_seconds": 10.2024, "rss_peak_delta_mib": 89.13, "rss_peak_mib": 269.36, "sampled_container_memory_current_max_mib": 264.62, "xlsx_bytes": 993227, "integrity": "PASS"}
+  ],
+  "write_only_file_backed_optimized": [
+    {"opportunities": 1, "rows_in_main_sheet": 7, "queries": 11, "end_to_end_seconds": 0.0772, "rss_peak_delta_mib": 1.34, "xlsx_bytes": 164011, "temporary_disk_peak_bytes": 164011, "integrity": "PASS", "cleanup": "PASS"},
+    {"opportunities": 100, "rows_in_main_sheet": 106, "queries": 11, "end_to_end_seconds": 0.2483, "rss_peak_delta_mib": 1.88, "xlsx_bytes": 178592, "temporary_disk_peak_bytes": 284369, "integrity": "PASS", "cleanup": "PASS"},
+    {"opportunities": 1000, "rows_in_main_sheet": 1006, "queries": 20, "end_to_end_seconds": 1.8772, "rss_peak_delta_mib": 6.70, "xlsx_bytes": 304069, "temporary_disk_peak_bytes": 2791096, "integrity": "PASS", "cleanup": "PASS"},
+    {"opportunities": 3000, "rows_in_main_sheet": 3006, "queries": 56, "end_to_end_seconds": 5.8510, "rss_peak_delta_mib": 3.39, "xlsx_bytes": 579944, "temporary_disk_peak_bytes": 9179899, "integrity": "PASS", "cleanup": "PASS"},
+    {"opportunities": 6000, "rows_in_main_sheet": 6006, "queries": 110, "database_seconds": 0.0189, "end_to_end_seconds": 10.5889, "response_stream_seconds": 0.0062, "rss_peak_delta_mib": 9.09, "rss_peak_mib": 124.84, "sampled_container_memory_current_max_mib": 126.50, "xlsx_bytes": 993202, "streamed_response_bytes": 993202, "temporary_disk_peak_bytes": 17965304, "integrity": "PASS", "cleanup": "PASS"}
+  ],
+  "separate_tracemalloc_run_6000": {
+    "opportunities": 6000,
+    "python_allocation_peak_mib": 17.44,
+    "process_rss_peak_delta_mib": 33.89,
+    "sampled_container_memory_current_max_mib": 140.84,
+    "traced_end_to_end_seconds": 35.8987,
+    "note": "Tracemalloc materially slowed execution; timing is not used for baseline comparison."
+  },
+  "acceptance": {
+    "same_fixture_ab_comparison": true,
+    "six_thousand_row_speed_delta_percent": 3.8,
+    "six_thousand_row_process_rss_delta_reduction_percent": 89.8,
+    "production_deployment_performed": false,
+    "full_national_acceptance": "PENDING"
+  }
+}

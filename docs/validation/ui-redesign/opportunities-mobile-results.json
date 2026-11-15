@@ -1,0 +1,16 @@
+{
+  "base": "http://localhost:8081/?view=opportunities",
+  "pages": {
+    "opportunities": {
+      "rows": 50,
+      "viewport": 390,
+      "document_width": 390,
+      "modal_hidden": true,
+      "table_wrap": {
+        "clientWidth": 338,
+        "scrollWidth": 845
+      }
+    }
+  },
+  "errors": []
+}

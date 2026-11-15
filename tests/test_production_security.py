@@ -64,6 +64,68 @@ def test_login_cookie_and_role_authorization(monkeypatch):
         client.close();engine.dispose()
 
 
+def test_local_user_admin_routes_fail_closed_for_anonymous_and_viewer(monkeypatch):
+    client,engine=client_with_users(monkeypatch)
+    try:
+        monkeypatch.setenv("ENVIRONMENT","local_user")
+        assert client.get("/api/auth/me").status_code==401
+        assert client.get("/api/admin/users").status_code==401
+        assert client.post("/api/admin/users",json={
+            "email":"new@example.test","display_name":"New user","role":"viewer",
+            "password":"Private-Test-Password-2026!",
+        }).status_code==401
+
+        assert client.post("/api/auth/login",json={
+            "email":"viewer@example.test","password":"Correct-Horse-Battery-7!",
+        }).status_code==200
+        assert client.get("/api/admin/users").status_code==403
+        assert client.post("/api/admin/users",json={
+            "email":"new@example.test","display_name":"New user","role":"viewer",
+            "password":"Private-Test-Password-2026!",
+        }).status_code==403
+        client.post("/api/auth/logout")
+
+        assert client.post("/api/auth/login",json={
+            "email":"admin@example.test","password":"Correct-Horse-Battery-7!",
+        }).status_code==200
+        assert client.get("/api/admin/users").status_code==200
+        with sessionmaker(bind=engine,expire_on_commit=False)() as db:
+            assert db.query(User).count()==3
+    finally:
+        client.close();engine.dispose()
+
+
+def test_exports_are_available_to_anonymous_admin_and_viewer(monkeypatch):
+    import io
+    from openpyxl import load_workbook
+
+    client,engine=client_with_users(monkeypatch)
+    try:
+        # Export access is read-only and follows the loopback opportunity-view
+        # policy; verify authenticated roles in the persistent local mode too.
+        monkeypatch.setenv("ENVIRONMENT","local_user")
+        for role in (None,"admin","viewer"):
+            if role:
+                assert client.post("/api/auth/login",json={
+                    "email":f"{role}@example.test","password":"Correct-Horse-Battery-7!",
+                }).status_code==200
+            csv_response=client.get("/api/export.csv")
+            xlsx_response=client.get("/api/export.xlsx")
+            assert csv_response.status_code==200
+            assert csv_response.headers["content-type"].startswith("text/csv")
+            assert csv_response.content.startswith(b"\xef\xbb\xbf")
+            assert xlsx_response.status_code==200
+            assert xlsx_response.headers["content-type"].startswith(
+                "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+            workbook=load_workbook(io.BytesIO(xlsx_response.content),read_only=True)
+            assert "الفرص الاستثمارية" in workbook.sheetnames
+            workbook.close()
+            if role:
+                client.post("/api/auth/logout")
+    finally:
+        client.close();engine.dispose()
+
+
 def test_analyst_can_review_but_cannot_manage_users(monkeypatch):
     client,engine=client_with_users(monkeypatch)
     try:

@@ -1,0 +1,165 @@
+{
+  "base": "http://localhost:8081/",
+  "responses": [
+    {
+      "url": "/api/auth/me",
+      "status": 401,
+      "type": "fetch"
+    }
+  ],
+  "requests": [
+    {
+      "url": "/",
+      "type": "document"
+    },
+    {
+      "url": "/static/styles.css",
+      "type": "stylesheet"
+    },
+    {
+      "url": "/static/data-dashboard.css",
+      "type": "stylesheet"
+    },
+    {
+      "url": "/static/ui-theme.css",
+      "type": "stylesheet"
+    },
+    {
+      "url": "/static/vendor/leaflet-1.9.4/leaflet.css",
+      "type": "stylesheet"
+    },
+    {
+      "url": "/static/vendor/leaflet-markercluster-1.5.3/MarkerCluster.css",
+      "type": "stylesheet"
+    },
+    {
+      "url": "/static/vendor/leaflet-markercluster-1.5.3/MarkerCluster.Default.css",
+      "type": "stylesheet"
+    },
+    {
+      "url": "/static/brand/ahda-logo-inverse.svg",
+      "type": "image"
+    },
+    {
+      "url": "/static/brand/ahda-logo-primary.svg",
+      "type": "image"
+    },
+    {
+      "url": "/static/vendor/leaflet-1.9.4/leaflet.js",
+      "type": "script"
+    },
+    {
+      "url": "/static/vendor/leaflet-markercluster-1.5.3/leaflet.markercluster.js",
+      "type": "script"
+    },
+    {
+      "url": "/static/vendor/leaflet-heat-0.2.0/leaflet-heat.js",
+      "type": "script"
+    },
+    {
+      "url": "/static/national-geography.js",
+      "type": "script"
+    },
+    {
+      "url": "/static/app.js",
+      "type": "script"
+    },
+    {
+      "url": "/static/data-dashboard.js",
+      "type": "script"
+    },
+    {
+      "url": "/static/ui-interactions.js",
+      "type": "script"
+    },
+    {
+      "url": "/api/auth/me",
+      "type": "fetch"
+    },
+    {
+      "url": "/static/fonts/AhdaText-Bold.ttf",
+      "type": "font"
+    },
+    {
+      "url": "/static/fonts/AhdaText-Regular.ttf",
+      "type": "font"
+    },
+    {
+      "url": "/api/dashboard",
+      "type": "fetch"
+    },
+    {
+      "url": "/api/opportunities",
+      "type": "fetch"
+    }
+  ],
+  "console_errors": [
+    {
+      "text": "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+      "location": {
+        "url": "http://localhost:8081/api/auth/me",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": {
+        "url": "http://localhost:8081/favicon.ico",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "page_errors": [],
+  "static_views": {
+    "review": {
+      "present": true,
+      "heading": "طابور المراجعات —",
+      "panels": 8,
+      "buttons": 10,
+      "inputs": 18,
+      "roleRestricted": true,
+      "rootDisplay": "none",
+      "panelBackground": "rgba(0, 0, 0, 0)",
+      "panelBorderRadius": "18px"
+    },
+    "alerts": {
+      "present": true,
+      "heading": "التنبيهات",
+      "panels": 1,
+      "buttons": 0,
+      "inputs": 1,
+      "roleRestricted": true,
+      "rootDisplay": "none",
+      "panelBackground": "rgba(0, 0, 0, 0)",
+      "panelBorderRadius": "0px"
+    },
+    "activity": {
+      "present": true,
+      "heading": "نشاط المزامنة",
+      "panels": 1,
+      "buttons": 0,
+      "inputs": 0,
+      "roleRestricted": true,
+      "rootDisplay": "none",
+      "panelBackground": "rgba(0, 0, 0, 0)",
+      "panelBorderRadius": "18px"
+    },
+    "admin": {
+      "present": true,
+      "heading": "الإدارة",
+      "panels": 4,
+      "buttons": 5,
+      "inputs": 4,
+      "roleRestricted": true,
+      "rootDisplay": "none",
+      "panelBackground": "rgba(0, 0, 0, 0)",
+      "panelBorderRadius": "18px"
+    }
+  }
+}

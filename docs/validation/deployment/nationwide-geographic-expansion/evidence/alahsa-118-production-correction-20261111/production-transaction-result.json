@@ -1,0 +1,21 @@
+{
+  "status": "COMMITTED",
+  "transaction_id": 7902,
+  "isolation": "serializable",
+  "updated_rows": 118,
+  "commit_confirmed": true,
+  "guardrails": {
+    "other_excluded_masters_unchanged": 372,
+    "approved_target_count": 118,
+    "source_rows_unchanged": 118,
+    "non_scope_master_fields_unchanged": 118,
+    "source_observation_counts_unchanged": 118,
+    "held_master_64_unchanged": true
+  },
+  "approval_artifact_sha256": "28a73f98b21f1a66784e9da8226b68fbfbe0dd3b5e69595d7685b3fb55160930",
+  "backup_file": "C:\\Users\\QusaiAbdElhalim\\AppData\\Local\\Sharakat Data Base\\backups\\20261111T090820Z-alahsa-118-pre-scope.dump",
+  "backup_sha256": "3d67e3bcb175440a913279400f739e52508eb90426a29e40225754323b9a0633",
+  "services_restarted": 0,
+  "source_sync_triggered": false,
+  "completed_at_utc": "2026-11-11T09:28:10.5619273Z"
+}

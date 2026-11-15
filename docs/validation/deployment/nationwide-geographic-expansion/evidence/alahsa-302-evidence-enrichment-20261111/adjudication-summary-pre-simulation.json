@@ -1,0 +1,19 @@
+{
+  "candidate_count": 302,
+  "live_revalidated_count": 302,
+  "official_feature_count": 302,
+  "unique_official_provider_ids": 302,
+  "official_feature_duplicates": 0,
+  "exact_provider_matches": 302,
+  "official_admin_evidence_verified": 302,
+  "official_geometry_matches": 302,
+  "coordinate_mismatches": 0,
+  "open_conflicts": 0,
+  "open_reviews": 0,
+  "saved_boundary_containment": 302,
+  "approved": 302,
+  "held": 0,
+  "failure_reasons": [],
+  "geosa_boundary_verification": "NOT_PERFORMED",
+  "source": "Official Balady public InvestmentP MapServer via the proxy published in current Balady config.json; exact OPPORTUNITYID batch queries"
+}

@@ -1,0 +1,449 @@
+{
+  "started_at": "2026-11-09T14:09:57.148Z",
+  "base": "http://localhost:8081/?view=data-dashboard",
+  "responses": [
+    {
+      "url": "/?view=data-dashboard",
+      "status": 200,
+      "duration_ms": 3
+    },
+    {
+      "url": "/static/styles.css?v=change-password-v1",
+      "status": 200,
+      "duration_ms": 5
+    },
+    {
+      "url": "/static/ui-theme.css?v=platform-dark-bento-v1",
+      "status": 200,
+      "duration_ms": 10
+    },
+    {
+      "url": "/static/vendor/leaflet-1.9.4/leaflet.css",
+      "status": 200,
+      "duration_ms": 11
+    },
+    {
+      "url": "/static/data-dashboard.css?v=14-dashboard-layout-cleanup",
+      "status": 200,
+      "duration_ms": 11
+    },
+    {
+      "url": "/static/vendor/leaflet-markercluster-1.5.3/MarkerCluster.css",
+      "status": 200,
+      "duration_ms": 11
+    },
+    {
+      "url": "/static/vendor/leaflet-markercluster-1.5.3/MarkerCluster.Default.css",
+      "status": 200,
+      "duration_ms": 12
+    },
+    {
+      "url": "/static/brand/ahda-logo-primary.svg",
+      "status": 200,
+      "duration_ms": 12
+    },
+    {
+      "url": "/static/brand/ahda-logo-inverse.svg",
+      "status": 200,
+      "duration_ms": 16
+    },
+    {
+      "url": "/static/vendor/leaflet-heat-0.2.0/leaflet-heat.js",
+      "status": 200,
+      "duration_ms": 15
+    },
+    {
+      "url": "/static/national-geography.js?v=13-region-filter-v1",
+      "status": 200,
+      "duration_ms": 16
+    },
+    {
+      "url": "/static/ui-interactions.js?v=platform-dark-bento-v2",
+      "status": 200,
+      "duration_ms": 16
+    },
+    {
+      "url": "/static/vendor/leaflet-markercluster-1.5.3/leaflet.markercluster.js",
+      "status": 200,
+      "duration_ms": 17
+    },
+    {
+      "url": "/static/data-dashboard.js?v=map-chunked-v1",
+      "status": 200,
+      "duration_ms": 16
+    },
+    {
+      "url": "/static/app.js?v=13-region-filter-v1",
+      "status": 200,
+      "duration_ms": 16
+    },
+    {
+      "url": "/static/vendor/leaflet-1.9.4/leaflet.js",
+      "status": 200,
+      "duration_ms": 17
+    },
+    {
+      "url": "/static/fonts/AhdaText-Bold.ttf",
+      "status": 200,
+      "duration_ms": 18
+    },
+    {
+      "url": "/static/fonts/AhdaText-Regular.ttf",
+      "status": 200,
+      "duration_ms": 19
+    },
+    {
+      "url": "/api/auth/me",
+      "status": 401,
+      "duration_ms": 117
+    },
+    {
+      "url": "/api/filters",
+      "status": 200,
+      "duration_ms": 276
+    },
+    {
+      "url": "/api/geography/catalog",
+      "status": 200,
+      "duration_ms": 2833
+    },
+    {
+      "url": "/api/geography/filter-options",
+      "status": 200,
+      "duration_ms": 2041
+    },
+    {
+      "url": "/api/data-dashboard",
+      "status": 200,
+      "duration_ms": 565,
+      "end_epoch": 1794233403081
+    },
+    {
+      "url": "/static/source-logos/ahda.svg",
+      "status": 200,
+      "duration_ms": 18
+    },
+    {
+      "url": "/static/source-logos/invest-saudi.png",
+      "status": 200,
+      "duration_ms": 18
+    },
+    {
+      "url": "/static/source-logos/ncp.svg",
+      "status": 200,
+      "duration_ms": 20
+    },
+    {
+      "url": "/static/source-logos/furas.svg",
+      "status": 200,
+      "duration_ms": 23
+    },
+    {
+      "url": "/static/source-logos/kfu.webp",
+      "status": 200,
+      "duration_ms": 23
+    },
+    {
+      "url": "/api/geography/catalog",
+      "status": 200,
+      "duration_ms": 5291
+    },
+    {
+      "url": "/api/data-dashboard/geography",
+      "status": 200,
+      "duration_ms": 7304,
+      "end_epoch": 1794233410399,
+      "payload": {
+        "map_scope": "NATIONAL",
+        "points": 5847
+      }
+    },
+    {
+      "url": "/4/9/6.png",
+      "status": 200,
+      "duration_ms": 166
+    },
+    {
+      "url": "/4/10/6.png",
+      "status": 200,
+      "duration_ms": 182
+    },
+    {
+      "url": "/4/9/7.png",
+      "status": 200,
+      "duration_ms": 229
+    },
+    {
+      "url": "/4/10/7.png",
+      "status": 200,
+      "duration_ms": 243
+    },
+    {
+      "url": "/4/8/6.png",
+      "status": 200,
+      "duration_ms": 85
+    },
+    {
+      "url": "/4/8/7.png",
+      "status": 200,
+      "duration_ms": 86
+    },
+    {
+      "url": "/api/data-dashboard/geography-summary",
+      "status": 200,
+      "duration_ms": 3148
+    },
+    {
+      "url": "/7/78/52.png",
+      "status": 200,
+      "duration_ms": 75
+    },
+    {
+      "url": "/7/77/52.png",
+      "status": 200,
+      "duration_ms": 76
+    },
+    {
+      "url": "/7/78/51.png",
+      "status": 200,
+      "duration_ms": 79
+    },
+    {
+      "url": "/7/79/52.png",
+      "status": 200,
+      "duration_ms": 79
+    },
+    {
+      "url": "/7/78/53.png",
+      "status": 200,
+      "duration_ms": 80
+    },
+    {
+      "url": "/7/77/51.png",
+      "status": 200,
+      "duration_ms": 81
+    },
+    {
+      "url": "/7/79/51.png",
+      "status": 200,
+      "duration_ms": 81
+    },
+    {
+      "url": "/7/77/53.png",
+      "status": 200,
+      "duration_ms": 83
+    },
+    {
+      "url": "/7/79/53.png",
+      "status": 200,
+      "duration_ms": 83
+    },
+    {
+      "url": "/api/data-dashboard?region_id=1",
+      "status": 200,
+      "duration_ms": 1889,
+      "end_epoch": 1794233414737
+    },
+    {
+      "url": "/api/geography/catalog",
+      "status": 200,
+      "duration_ms": 5148
+    },
+    {
+      "url": "/api/data-dashboard/geography?region_id=1",
+      "status": 200,
+      "duration_ms": 7865,
+      "end_epoch": 1794233422609,
+      "payload": {
+        "map_scope": "NATIONAL",
+        "points": 800
+      }
+    },
+    {
+      "url": "/7/80/55.png",
+      "status": 200,
+      "duration_ms": 87
+    },
+    {
+      "url": "/7/80/54.png",
+      "status": 200,
+      "duration_ms": 92
+    },
+    {
+      "url": "/7/79/54.png",
+      "status": 200,
+      "duration_ms": 93
+    },
+    {
+      "url": "/7/81/54.png",
+      "status": 200,
+      "duration_ms": 93
+    },
+    {
+      "url": "/7/79/55.png",
+      "status": 200,
+      "duration_ms": 93
+    },
+    {
+      "url": "/7/81/55.png",
+      "status": 200,
+      "duration_ms": 93
+    },
+    {
+      "url": "/5/19/13.png",
+      "status": 200,
+      "duration_ms": 75
+    },
+    {
+      "url": "/5/20/13.png",
+      "status": 200,
+      "duration_ms": 80
+    },
+    {
+      "url": "/5/21/13.png",
+      "status": 200,
+      "duration_ms": 85
+    },
+    {
+      "url": "/5/18/14.png",
+      "status": 200,
+      "duration_ms": 85
+    },
+    {
+      "url": "/5/19/14.png",
+      "status": 200,
+      "duration_ms": 101
+    },
+    {
+      "url": "/5/20/14.png",
+      "status": 200,
+      "duration_ms": 101
+    },
+    {
+      "url": "/5/18/13.png",
+      "status": 200,
+      "duration_ms": 101
+    },
+    {
+      "url": "/5/21/14.png",
+      "status": 200,
+      "duration_ms": 102
+    }
+  ],
+  "console_errors": [
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "page_errors": [],
+  "request_failures": [
+    {
+      "url": "/5/19/13.png",
+      "reason": "net::ERR_ABORTED"
+    },
+    {
+      "url": "/5/20/13.png",
+      "reason": "net::ERR_ABORTED"
+    },
+    {
+      "url": "/5/19/14.png",
+      "reason": "net::ERR_ABORTED"
+    },
+    {
+      "url": "/5/20/14.png",
+      "reason": "net::ERR_ABORTED"
+    },
+    {
+      "url": "/5/18/13.png",
+      "reason": "net::ERR_ABORTED"
+    },
+    {
+      "url": "/5/21/13.png",
+      "reason": "net::ERR_ABORTED"
+    },
+    {
+      "url": "/5/18/14.png",
+      "reason": "net::ERR_ABORTED"
+    },
+    {
+      "url": "/5/21/14.png",
+      "reason": "net::ERR_ABORTED"
+    }
+  ],
+  "metrics": {
+    "timeOrigin": 1794233397155.2,
+    "events": [
+      {
+        "kind": "dashboard_visible",
+        "ms": 211
+      },
+      {
+        "kind": "dashboard_dom_ready",
+        "ms": 5979
+      },
+      {
+        "kind": "map_initialized",
+        "ms": 13388
+      },
+      {
+        "kind": "first_map_markers",
+        "ms": 13388,
+        "clusters": 26,
+        "markers": 1
+      },
+      {
+        "kind": "map_markers_stable",
+        "ms": 14821,
+        "clusters": 9,
+        "markers": 0
+      }
+    ],
+    "dashboardStart": 210.59999999997672,
+    "dashboardReady": 5979.20000000007,
+    "dashboardTotal": "6,657",
+    "mapInitialized": 13388.400000000023,
+    "firstMarker": 13388.400000000023,
+    "firstMarkerCounts": {
+      "clusters": 26,
+      "markers": 1
+    },
+    "markersStable": 14820.70000000007,
+    "stableCounts": {
+      "clusters": 9,
+      "markers": 0
+    },
+    "relative": {
+      "dashboard_after_visible_ms": 5769,
+      "map_init_after_visible_ms": 13178,
+      "marker_first_after_map_init_ms": 0,
+      "marker_stable_after_first_ms": 1432,
+      "marker_stable_after_map_init_ms": 1432
+    }
+  },
+  "map_state": {
+    "map_initialized": true,
+    "cluster_icons": 9,
+    "marker_icons": 0,
+    "tiles_loaded": 6,
+    "region_options": 14
+  },
+  "cluster_interaction": {
+    "before": 9,
+    "after": 30,
+    "clicked": true
+  },
+  "region_filter_status": 200,
+  "filtered_map": {
+    "region": "1",
+    "governorate_enabled": true,
+    "cluster_icons": 4,
+    "marker_icons": 0
+  },
+  "failed_http_responses": [
+    {
+      "url": "/api/auth/me",
+      "status": 401,
+      "duration_ms": 117
+    }
+  ],
+  "finished_at": "2026-11-09T14:10:23.123Z"
+}

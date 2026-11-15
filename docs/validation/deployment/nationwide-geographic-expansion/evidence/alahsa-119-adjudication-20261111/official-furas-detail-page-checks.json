@@ -1,0 +1,32 @@
+[
+  {
+    "map_embedded_coordinates": [
+      {
+        "map_iframe_url": "https://gisapps.balady.gov.sa/investmentlocator/locViewer.html",
+        "latitude": "25.420393514",
+        "longitude": "49.742578994"
+      }
+    ],
+    "provider_reference": "26-09-2439514",
+    "http_status": 200,
+    "official_page_title": "تأجير مقهى مستشفى العمران",
+    "captured_at_utc": "2026-11-11T08:42:37.1989942Z",
+    "contains_provider_reference": true,
+    "url": "https://furas.momah.gov.sa/index.php/ar/opportunity/26-09-2439514?type=Investment"
+  },
+  {
+    "map_embedded_coordinates": [
+      {
+        "map_iframe_url": "https://gisapps.balady.gov.sa/investmentlocator/locViewer.html",
+        "latitude": "25",
+        "longitude": "49"
+      }
+    ],
+    "provider_reference": "02-25-017001-83001",
+    "http_status": 200,
+    "official_page_title": "تاجير مؤقت لموقع من نوع الحدائق بحي منتزه جبل الشعبة - منطقة G - موقف 63 الزحليقة الملونة",
+    "captured_at_utc": "2026-11-11T08:42:38.2864495Z",
+    "contains_provider_reference": true,
+    "url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-25-017001-83001?type=TempRental"
+  }
+]

@@ -27,6 +27,13 @@
         return Number.isFinite(ai) && Number.isFinite(bi) ? ai - bi : String(a.id).localeCompare(String(b.id));
       });
       const governorates = (options.governorates || []).filter(item => Number(item.unique_masters) > 0);
+      const regionsById = new Map(regions.map(item => [String(item.id), item]));
+      const governoratesByRegion = new Map();
+      for (const item of governorates) {
+        const parentId = String(item.parent_id || "");
+        if (!governoratesByRegion.has(parentId)) governoratesByRegion.set(parentId, []);
+        governoratesByRegion.get(parentId).push(item);
+      }
       const ahsa = governorates.find(item => placeKey(cleanName(item.display_name_ar || item.name_ar)) === placeKey("الأحساء"));
       const cityOptions = [...city.options].slice(1).map(item => ({ id: item.value, label: item.textContent }));
       const params = new URLSearchParams(location.search);
@@ -34,11 +41,16 @@
       const initialRegion = params.get("region_id") || "";
       const initialGovernorate = params.get("governorate_id") || "";
       if (regions.some(item => String(item.id) === initialRegion)) region.value = initialRegion;
-      async function updateGovernorates(selected = "") {
-        const choices = region.value ? governorates.filter(item => String(item.parent_id) === region.value) : [];
+      function updateGovernorates(selected = "") {
+        const regionId = String(region.value || "");
+        const choices = regionsById.has(regionId) ? (governoratesByRegion.get(regionId) || []) : [];
         governorate.innerHTML = option("", "جميع المحافظات") + choices.map(item => option(item.id, cleanName(item.display_name_ar || item.name_ar))).join("");
-        governorate.disabled = !region.value;
-        if (choices.some(item => String(item.id) === selected)) governorate.value = selected;
+        const selectedIsValid = choices.some(item => String(item.id) === String(selected));
+        governorate.value = selectedIsValid ? String(selected) : "";
+        const unavailable = !regionId || !regionsById.has(regionId) || choices.length === 0;
+        governorate.disabled = unavailable;
+        governorate.setAttribute("aria-disabled", String(unavailable));
+        return choices;
       }
       function updateCities(selected = "") {
         const available = ahsa && governorate.value === String(ahsa.id) ? cityOptions : [];
@@ -46,11 +58,13 @@
         city.disabled = available.length === 0;
         if (available.some(item => item.id === selected)) city.value = selected;
       }
-      await updateGovernorates(initialGovernorate);
+      updateGovernorates(initialGovernorate);
       updateCities(params.get("location") || "");
       panel.hidden = false;
-      region.addEventListener("change", async () => {
-        await updateGovernorates(); updateCities(); onChange();
+      region.addEventListener("change", () => {
+        updateGovernorates();
+        updateCities();
+        onChange();
       });
       governorate.addEventListener("change", () => { updateCities(); onChange(); });
       city.addEventListener("change", onChange);
@@ -59,7 +73,7 @@
         read: () => ({ region_id: region.value, governorate_id: governorate.value }),
         selectedLabel: () => region.value ? (region.selectedOptions[0]?.textContent || "") : "",
         selectedGovernorateLabel: () => governorate.value ? (governorate.selectedOptions[0]?.textContent || "") : "",
-        async reset() { region.value = ""; await updateGovernorates(); updateCities(); }
+        async reset() { region.value = ""; updateGovernorates(); updateCities(); }
       };
     } catch {
       region.disabled = true; governorate.disabled = true;
