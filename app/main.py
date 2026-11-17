@@ -1495,7 +1495,18 @@ def opportunities(q:str="",sector:str="",sector_values:str="",activity:str="",su
 
 @app.get("/api/data-dashboard/geography")
 def data_dashboard_geography(q:str="",period:str="all",status:str="",sector:str="",activity:str="",sub_activity:str="",source:str="",owner:str="",location:str="",opportunity_type:str="",investment_model:str="",asset_facility_type:str="",subsector:str="",lifecycle:str="",country_id:str="",region_id:str="",governorate_id:str="",city_id:str="",geographic_scope:str=""):
-    """Keep the existing local map unless an explicitly gated national map is ready."""
+    """Keep the existing map eligibility and expose literal coordinate coverage.
+
+    ``missing_coordinates`` is retained as a legacy field: the national payload
+    still returns ``total - exact_mapped`` and the local payload retains its
+    original ``total - coordinate_records`` formula. New consumers should use
+    ``exact_mapped`` for map-eligible Masters, ``unmapped`` for map-ineligible
+    Masters, ``truly_missing_coordinates`` for records with no complete
+    coordinate pair stored on the Master or in its coordinate provenance, and
+    ``coordinates_present_but_not_map_eligible`` for complete pairs excluded
+    by the existing map eligibility checks. ``coordinate_records`` also keeps
+    its legacy path-specific definition.
+    """
     period_start=_period_start(period)
     geometry=_alahsa_boundary_geometry()
     with SessionLocal() as db:
@@ -1545,8 +1556,10 @@ def data_dashboard_geography(q:str="",period:str="all",status:str="",sector:str=
                 "sector":canonical_value("sector",items[0].sector),
             })
         mapped_count=sum(len(point["ids"]) for point in points)
+        eligible_ids={master_id for point in points for master_id in point["ids"]}
+        coordinate_metrics=_geographic_coordinate_metrics(masters,eligible_ids)
         return {"map_scope":"AL_AHSA","boundary":{"name":"محافظة الأحساء","source":"geoBoundaries / OpenStreetMap","license":"CC BY-SA 2.0"},
-            "counts":{"total":total,"coordinate_records":coordinate_count,"exact_mapped":mapped_count,"locality_mapped":0,"missing_coordinates":missing_count,"outside_boundary":boundary_excluded,"unverified_coordinates":unverified,"unmapped":total-mapped_count},
+            "counts":{"total":total,"coordinate_records":coordinate_count,"exact_mapped":mapped_count,"locality_mapped":0,"missing_coordinates":missing_count,"outside_boundary":boundary_excluded,"unverified_coordinates":unverified,"unmapped":total-mapped_count,**coordinate_metrics},
             "points":points,"coordinate_precision":"مصدرية مباشرة WGS84؛ تطابق هندسة سجل Furas الخام، 7 منازل عشرية في العرض"}
 
 @app.get("/api/geography/catalog")
@@ -1701,13 +1714,51 @@ def _national_map_payload(db,conditions,readiness):
             "location":canonical_value("location",items[0].district or items[0].city),
             "sector":canonical_value("sector",items[0].sector)})
     total=len(rows);mapped=len(mapped_masters)
+    coordinate_metrics=_geographic_coordinate_metrics(rows,mapped_masters)
     return {"map_scope":"NATIONAL","boundary":None,
         "counts":{"total":total,"coordinate_records":mapped,"exact_mapped":mapped,
             "locality_mapped":0,"missing_coordinates":total-mapped,"outside_boundary":0,
             "unverified_coordinates":sum(1 for row in rows if (row.latitude is not None or row.longitude is not None)
-                and not _verified_coordinate_points(row)),"unmapped":total-mapped},
+                and not _verified_coordinate_points(row)),"unmapped":total-mapped,**coordinate_metrics},
         "points":points,"coordinate_precision":"Only verified source coordinates are returned; broad scopes and unknown locations have no marker.",
         "dataset_version":readiness.get("dataset_version")}
+
+
+def _geographic_coordinate_metrics(rows,eligible_master_ids):
+    """Calculate literal coordinate presence separately from map eligibility.
+
+    ``rows`` is already restricted to current, non-merged Masters by the map
+    endpoint's normal filter conditions. A pair is missing if either member
+    is absent from both the Master coordinate columns and stored coordinate
+    provenance/location pairs. Existing ``exact_mapped`` and ``unmapped``
+    remain the compatible counts for eligible and ineligible records.
+    """
+    eligible_ids=set(eligible_master_ids)
+    def pair_present(latitude,longitude):
+        return all(value is not None and str(value).strip() for value in (latitude,longitude))
+    def has_stored_pair(row):
+        if pair_present(row.latitude,row.longitude):
+            return True
+        provenance=getattr(row,"coordinate_provenance_json",None)
+        if not isinstance(provenance,dict):
+            return False
+        if pair_present(provenance.get("source_latitude"),provenance.get("source_longitude")):
+            return True
+        locations=provenance.get("locations")
+        return isinstance(locations,list) and any(
+            isinstance(location,dict) and pair_present(location.get("latitude"),location.get("longitude"))
+            for location in locations
+        )
+    return {
+        "truly_missing_coordinates":sum(
+            1 for row in rows if not has_stored_pair(row)
+        ),
+        "coordinates_present_but_not_map_eligible":sum(
+            1 for row in rows
+            if has_stored_pair(row)
+            and row.id not in eligible_ids
+        ),
+    }
 
 
 @app.get("/api/data-dashboard/geography-summary")

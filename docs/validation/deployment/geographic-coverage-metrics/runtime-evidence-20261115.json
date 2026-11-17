@@ -1,0 +1,156 @@
+{
+  "deployment_status": "GEOGRAPHIC_METRIC_CORRECTION=DEPLOYED_AND_VERIFIED",
+  "deployment_date": "2026-11-15",
+  "compose_project": "alahsa-local",
+  "compose_files": [
+    "docker-compose.yml",
+    "docker-compose.local.yml"
+  ],
+  "deployment_command": "docker compose --env-file <private .env.local> -f docker-compose.yml -f docker-compose.local.yml -p alahsa-local up -d --no-deps --no-build --force-recreate api frontend",
+  "api_image_before": "sha256:1536c3e3229684fd2feee62aa3bf896c2b3d35d1bf585522abed3d7d6d62a59a",
+  "api_image_after": "sha256:0063b9161c8529d882e8bec878b17fee78c73d63a70a207f24c915c47eb036ca",
+  "frontend_image_before": "sha256:09be96dfe2a9834fd5df3997cd3a2534f32cf291accc3122aab4e9cdce4e5e6e",
+  "frontend_image_after": "sha256:24835b8fde13d543348b70e9655754caae5e6fe183072dddfee3425712335a31",
+  "deployed_files": [
+    {
+      "path": "/app/app/main.py",
+      "sha256": "0FD75CC67B6D5A96F9F88C2B51016F380CD21AD93A2360F416D4895930843EF6"
+    },
+    {
+      "path": "/usr/share/nginx/html/static/data-dashboard.js",
+      "sha256": "BBC7845B4D66DE2096B5B00981A60B661A9642324110B4553D3FB246ABD7CB06"
+    }
+  ],
+  "preserved_assets": [
+    {
+      "path": "/usr/share/nginx/html/static/app.js",
+      "sha256": "0F6B6B83170ABACB85B51874F21584DC909B996F8AF2F48096DB1940D2A7EABC"
+    },
+    {
+      "path": "/usr/share/nginx/html/static/national-geography.js",
+      "sha256": "0AACC95241636C6E0689125A8A6E4BE71A53B0819BD09A77B5BE72FFBFE09B25"
+    }
+  ],
+  "rollback_root": "C:\\Users\\QusaiAbdElhalim\\AppData\\Local\\Sharakat Data Base\\deployments\\geo-metric-20261115-125421",
+  "rollback_api_tag": "alahsa-local-api:pre-geographic-metric-20261115",
+  "rollback_frontend_tag": "alahsa-local-frontend:pre-geographic-metric-20261115",
+  "rollback_executed": false,
+  "metrics": [
+    {
+      "scope": "national",
+      "total": 6659,
+      "eligible": 6309,
+      "ineligible": 350,
+      "truly_missing": 166,
+      "coordinates_present_ineligible": 184,
+      "legacy_missing": 350,
+      "id_set_preserved": true,
+      "ids": null
+    },
+    {
+      "scope": "alahsa-501",
+      "total": 518,
+      "eligible": 447,
+      "ineligible": 71,
+      "truly_missing": 0,
+      "coordinates_present_ineligible": 71,
+      "legacy_missing": 71,
+      "id_set_preserved": true,
+      "ids": null
+    },
+    {
+      "scope": "eastern-503",
+      "total": 15,
+      "eligible": 15,
+      "ineligible": 0,
+      "truly_missing": 0,
+      "coordinates_present_ineligible": 0,
+      "legacy_missing": 0,
+      "id_set_preserved": true,
+      "ids": 15
+    },
+    {
+      "scope": "riyadh-107",
+      "total": 9,
+      "eligible": 9,
+      "ineligible": 0,
+      "truly_missing": 0,
+      "coordinates_present_ineligible": 0,
+      "legacy_missing": 0,
+      "id_set_preserved": true,
+      "ids": 9
+    },
+    {
+      "scope": "region-5",
+      "total": 975,
+      "eligible": 797,
+      "ineligible": 178,
+      "truly_missing": 0,
+      "coordinates_present_ineligible": 178,
+      "legacy_missing": 178,
+      "id_set_preserved": "NOT_BASELINED",
+      "ids": 797
+    }
+  ],
+  "security": {
+    "isolated_security_test_result": "PASS",
+    "anonymous_auth_me": 401,
+    "anonymous_admin_users": 401
+  },
+  "database": {
+    "current_masters": 6659,
+    "furas_active_aliases": 75,
+    "production_mutations": 0,
+    "source_opportunity_rows": 9470,
+    "furas_batches": 1,
+    "master_rows": 6680,
+    "alembic_revision": "0026_source_identity_aliases",
+    "merged_masters": 21,
+    "furas_applied_audits": 75
+  },
+  "browser": {
+    "screenshot": "docs/validation/deployment/geographic-coverage-metrics/live-dashboard-al-ahsa-20261115.png",
+    "heat_toggle": "PASS",
+    "cookies_before_navigation": 0,
+    "cluster_expansion": "PASS",
+    "stale_response_test": "PASS",
+    "governorate_selector": "PASS",
+    "map_tiles_loaded": 9,
+    "labels_correct": true,
+    "opportunity_detail_navigation": "PASS",
+    "font": "Ahda Text loaded",
+    "fresh_context": true,
+    "rtl": "rtl",
+    "console": "Only expected anonymous auth 401; no JS exceptions"
+  },
+  "services": {
+    "furas_removals": "DISABLED",
+    "rcu_scheduled_sync": "DISABLED",
+    "worker_ping": "PONG",
+    "unchanged": [
+      "worker",
+      "scheduler",
+      "db",
+      "redis"
+    ],
+    "furas_enumeration": "DISABLED",
+    "recreated": [
+      "api",
+      "frontend"
+    ],
+    "source_sync": false,
+    "migration_run": false
+  },
+  "alahsa_identity_sets": {
+    "total_id_count": 518,
+    "population_equal_accepted_snapshot": true,
+    "eligible_before": 447,
+    "eligible_after": 447,
+    "eligible_ids_equal": true,
+    "excluded_before": 71,
+    "excluded_after": 71,
+    "excluded_ids_equal": true,
+    "excluded_ids_sha256": "2E2514CD2BA74E0F6A555182154D920894A4A7BBF4F4673396EA8E3D93E20CFA",
+    "evidence_path": "C:\\Users\\QusaiAbdElhalim\\AppData\\Local\\Sharakat Data Base\\deployments\\geo-metric-20261115-125421\\alahsa-id-set-reconciliation-postdeploy.json"
+  }
+}

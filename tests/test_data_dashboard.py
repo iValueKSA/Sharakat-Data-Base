@@ -10,7 +10,8 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
 from app import main
-from app.models import Base, DuplicateCandidate, LocationReview, Opportunity, OpportunityConflict, Source, SourceOpportunity
+from app.models import (Base, DuplicateCandidate, GeographicReferenceDataset, GeographicReferenceUnit,
+    LocationReview, Opportunity, OpportunityConflict, Source, SourceOpportunity)
 
 
 def test_data_dashboard_aggregates_distinct_masters_and_exposes_scoped_filters(monkeypatch):
@@ -187,7 +188,8 @@ def test_geography_maps_only_source_verified_points_inside_local_boundary(monkey
         response = client.get("/api/data-dashboard/geography")
         assert response.status_code == 200, response.text
         data = response.json()
-        assert data["counts"] == {"total":4,"coordinate_records":3,"exact_mapped":1,"locality_mapped":0,"missing_coordinates":1,"outside_boundary":1,"unverified_coordinates":1,"unmapped":3}
+        assert data["counts"] == {"total":4,"coordinate_records":3,"exact_mapped":1,"locality_mapped":0,"missing_coordinates":1,"outside_boundary":1,"unverified_coordinates":1,"unmapped":3,
+            "truly_missing_coordinates":1,"coordinates_present_but_not_map_eligible":2}
         assert data["points"][0]["ids"] == [inside_id]
         assert outside_id not in data["points"][0]["ids"]
         filtered = client.get("/api/data-dashboard/geography", params={"sector":"sector:missing"})
@@ -197,6 +199,119 @@ def test_geography_maps_only_source_verified_points_inside_local_boundary(monkey
         map_export = client.get("/api/export.csv", params={"map_ids":str(inside_id)})
         assert map_export.status_code == 200 and len(map_export.content.decode("utf-8-sig").splitlines()) == 2
         assert client.get("/api/opportunities", params={"map_ids":"invalid"}).status_code == 422
+    finally:
+        client.close(); test_engine.dispose()
+
+
+def test_national_geography_metrics_separate_missing_and_ineligible_pairs(monkeypatch):
+    test_engine = create_engine("sqlite://", connect_args={"check_same_thread": False}, poolclass=StaticPool)
+    Base.metadata.create_all(test_engine)
+    factory = sessionmaker(bind=test_engine, expire_on_commit=False)
+    monkeypatch.setattr(main, "SessionLocal", factory)
+    monkeypatch.setattr(main, "engine", test_engine)
+    now = datetime.now(timezone.utc)
+    common = dict(primary_publication_platform="fixture", first_seen_at=now, last_seen_at=now,
+        last_updated_at=now, created_at=now, updated_at=now, status="Announced",
+        location_confidence_score=.9, location_detection_method="fixture", location_evidence="fixture",
+        data_quality_score=.8, manual_review_required=False)
+    provenance = {
+        "verified": True, "verification_method": "DIRECT_SOURCE_COORDINATE",
+        "source_record_identity_matches": True, "source_record_id": "fixture:1",
+        "source_opportunity_id": "fixture-1", "source_url": "https://fixture.test/opportunity/1",
+        "source_latitude": 25.38, "source_longitude": 49.6,
+        "boundary_validation": {"status": "VERIFIED_IN_SAUDI", "method": "POINT_IN_OFFICIAL_REGION_POLYGON"},
+    }
+    with factory() as db:
+        dataset = GeographicReferenceDataset(dataset_key="metrics-fixture", version="metrics-v1",
+            operator="test", source_url="https://fixture.test/geography", content_sha256="b" * 64,
+            is_current=True, created_at=now, imported_at=now,
+            coverage_json={"region": True, "governorate": True, "city": False})
+        db.add(dataset); db.flush()
+        riyadh_region = GeographicReferenceUnit(dataset_id=dataset.id, level="region", external_id="1",
+            name_ar="منطقة الرياض")
+        eastern_region = GeographicReferenceUnit(dataset_id=dataset.id, level="region", external_id="5",
+            name_ar="المنطقة الشرقية")
+        db.add_all([riyadh_region, eastern_region]); db.flush()
+        riyadh_governorate = GeographicReferenceUnit(dataset_id=dataset.id, level="governorate", external_id="107",
+            parent_id=riyadh_region.id, parent_external_id="1", name_ar="الرياض")
+        ahsa_governorate = GeographicReferenceUnit(dataset_id=dataset.id, level="governorate", external_id="501",
+            parent_id=eastern_region.id, parent_external_id="5", name_ar="الأحساء")
+        db.add_all([riyadh_governorate, ahsa_governorate]); db.flush()
+        eligible = Opportunity(canonical_id="METRIC-ELIGIBLE", title_ar="مؤهلة", normalized_title="مؤهلة",
+            latitude=25.38, longitude=49.6, geographic_scope="SPECIFIC_LOCATION", geography_reference_unit_id=ahsa_governorate.id,
+            coordinate_provenance_json=provenance, **common)
+        unspecified = Opportunity(canonical_id="METRIC-UNSPECIFIED", title_ar="نطاق غير محدد", normalized_title="نطاق غير محدد",
+            latitude=25.4, longitude=49.7, geographic_scope="UNSPECIFIED", geography_reference_unit_id=ahsa_governorate.id,
+            coordinate_provenance_json=provenance, **common)
+        conflict_provenance = {**provenance, "boundary_validation": {"status": "CONFLICT", "method": "POINT_IN_OFFICIAL_REGION_POLYGON"}}
+        boundary_conflict = Opportunity(canonical_id="METRIC-BOUNDARY-CONFLICT", title_ar="تعارض حدود", normalized_title="تعارض حدود",
+            latitude=25.41, longitude=49.71, geographic_scope="SPECIFIC_LOCATION", geography_reference_unit_id=ahsa_governorate.id,
+            coordinate_provenance_json=conflict_provenance, **common)
+        region_wide = Opportunity(canonical_id="METRIC-REGION-WIDE", title_ar="نطاق منطقة", normalized_title="نطاق منطقة",
+            latitude=25.42, longitude=49.72, geographic_scope="REGION_WIDE", geography_reference_unit_id=riyadh_governorate.id,
+            coordinate_provenance_json=provenance, **common)
+        no_pair = Opportunity(canonical_id="METRIC-NO-PAIR", title_ar="بلا زوج إحداثيات", normalized_title="بلا زوج إحداثيات",
+            latitude=None, longitude=None, geographic_scope="SPECIFIC_LOCATION", geography_reference_unit_id=ahsa_governorate.id,
+            coordinate_provenance_json={}, **common)
+        partial_pair = Opportunity(canonical_id="METRIC-PARTIAL-PAIR", title_ar="زوج إحداثيات ناقص", normalized_title="زوج إحداثيات ناقص",
+            latitude=25.43, longitude=None, geographic_scope="SPECIFIC_LOCATION", geography_reference_unit_id=ahsa_governorate.id,
+            coordinate_provenance_json={}, **common)
+        db.add_all([eligible, unspecified, boundary_conflict, region_wide, no_pair, partial_pair]); db.flush()
+        merged = Opportunity(canonical_id="METRIC-MERGED", title_ar="سجل مدمج", normalized_title="سجل مدمج",
+            merged_into_id=eligible.id, latitude=25.38, longitude=49.6, geographic_scope="SPECIFIC_LOCATION",
+            geography_reference_unit_id=ahsa_governorate.id,
+            coordinate_provenance_json=provenance, **common)
+        db.add(merged); db.commit()
+        eligible_id = eligible.id
+        dataset_id = dataset.id
+
+    readiness = {"ready": True, "dataset_version": "fixture-v1"}
+    readiness["counts_by_level"] = {"region": 2, "governorate": 2, "city": 0}
+    features = {"national_map_enabled": True}
+    monkeypatch.setattr(main, "_geographic_reference_readiness", lambda db: (db.get(GeographicReferenceDataset, dataset_id), readiness))
+    monkeypatch.setattr(main, "_geographic_feature_state", lambda _db: (readiness, features))
+    client = TestClient(main.app)
+    try:
+        response = client.get("/api/data-dashboard/geography")
+        assert response.status_code == 200, response.text
+        data = response.json()
+        counts = data["counts"]
+        assert counts["total"] == 6  # merged Master is excluded
+        assert counts["exact_mapped"] == 1
+        assert counts["unmapped"] == 5
+        assert counts["truly_missing_coordinates"] == 2  # NULL pair and partial pair
+        assert counts["coordinates_present_but_not_map_eligible"] == 3
+        assert counts["exact_mapped"] + counts["unmapped"] == counts["total"]
+        assert counts["truly_missing_coordinates"] + counts["coordinates_present_but_not_map_eligible"] == counts["unmapped"]
+        assert counts["missing_coordinates"] == 5  # legacy complement retained
+        assert counts["coordinate_records"] == 1  # legacy national meaning retained
+        assert [master_id for point in data["points"] for master_id in point["ids"]] == [eligible_id]
+
+        unspecified = client.get("/api/data-dashboard/geography", params={"geographic_scope": "UNSPECIFIED"}).json()
+        assert unspecified["counts"]["total"] == 1
+        assert unspecified["counts"]["exact_mapped"] == 0
+        assert unspecified["counts"]["unmapped"] == 1
+        assert unspecified["counts"]["truly_missing_coordinates"] == 0
+        assert unspecified["counts"]["coordinates_present_but_not_map_eligible"] == 1
+        assert unspecified["points"] == []
+
+        for params in ({"region_id": "5"}, {"region_id": "5", "governorate_id": "501"}):
+            filtered = client.get("/api/data-dashboard/geography", params=params)
+            assert filtered.status_code == 200, filtered.text
+            filtered_data = filtered.json()
+            assert filtered_data["counts"]["total"] == 5
+            assert filtered_data["counts"]["exact_mapped"] == 1
+            assert filtered_data["counts"]["unmapped"] == 4
+            assert filtered_data["counts"]["truly_missing_coordinates"] == 2
+            assert filtered_data["counts"]["coordinates_present_but_not_map_eligible"] == 2
+            assert [master_id for point in filtered_data["points"] for master_id in point["ids"]] == [eligible_id]
+
+        riyadh = client.get("/api/data-dashboard/geography", params={"region_id": "1", "governorate_id": "107"}).json()
+        assert riyadh["counts"]["total"] == 1
+        assert riyadh["counts"]["exact_mapped"] == 0
+        assert riyadh["counts"]["unmapped"] == 1
+        assert riyadh["counts"]["coordinates_present_but_not_map_eligible"] == 1
+        assert riyadh["points"] == []
     finally:
         client.close(); test_engine.dispose()
 

@@ -277,9 +277,11 @@
     else delete host.dataset.state;
   }
   function renderMapStats(counts, scope) {
-    const items = [["ضمن النتائج", counts.total], ["نقاط موثقة", counts.exact_mapped], ["بدون إحداثيات موثقة", counts.missing_coordinates],
-      ...(scope === "NATIONAL" ? [] : [["خارج الحد المحلي", counts.outside_boundary]]),
-      ["غير مثبتة بالمصدر", counts.unverified_coordinates], ["غير ممثلة", counts.unmapped]];
+    const items = [["ضمن النتائج", counts.total],
+      ["فرص مؤهلة للظهور على الخريطة", counts.exact_mapped],
+      ["فرص غير مؤهلة للظهور على الخريطة", counts.unmapped],
+      ["فرص بدون إحداثيات", counts.truly_missing_coordinates],
+      ["فرص لديها إحداثيات غير معتمدة جغرافيًا", counts.coordinates_present_but_not_map_eligible]];
     $("rdGeoStats").innerHTML = items.map(([title, value], index) => `<span class="${index === 1 ? "is-primary" : ""}"><small>${title}</small><b>${n(value)}</b></span>`).join("");
   }
   function renderMapHeading(data) {
