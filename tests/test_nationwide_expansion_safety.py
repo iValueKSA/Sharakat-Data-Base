@@ -15,7 +15,7 @@ from app.database import Base
 from app.geographic_references import (canonical_dataset_digest, import_reference_dataset,
                                        resolve_reference_alias, rollback_reference_import, validate_reference_payload)
 from app.geography_flags import geographic_feature_state
-from app.models import GeographicReferenceDataset, GeographicReferenceUnit, Opportunity, Source, SourceOpportunity, SyncJob
+from app.models import GeographicReferenceDataset, GeographicReferenceUnit, Opportunity, Source, SourceObservation, SourceOpportunity, SyncJob
 from app.furas_checkpoint import (StaleFurasCheckpoint, advance_checkpoint, new_checkpoint,
     acquire_resume_lock, release_resume_lock, snapshot_identity, validate_checkpoint_lifecycle, validate_resume,
     checkpoint_is_resumable, append_failure_diagnostic)
@@ -418,7 +418,13 @@ def test_sync_source_interrupts_after_commit_then_resumes_without_duplicates_or_
         assert checkpoint["terminal_status"]=="RUNNING" and checkpoint["removal_reconciliation_allowed"] is False
         assert failed.metrics_json["furas_failure"]["failure_stage"]=="SOURCE_CAPTURE_OR_FINALIZATION"
         assert checkpoint_is_resumable(checkpoint) is True
-        assert db.scalar(select(func.count(SourceOpportunity.id)).where(SourceOpportunity.source_id==source_id))==101
+        first_page_rows=db.scalars(select(SourceOpportunity).where(SourceOpportunity.source_id==source_id)).all()
+        assert [row.source_opportunity_id for row in first_page_rows]==["LOCAL-ABSENT"]
+        assert checkpoint["last_committed_offset"]==100
+        assert checkpoint["unique_source_ids_seen"]==100
+        assert checkpoint["source_rows_inserted_total"]==0
+        assert checkpoint["quarantined_records_total"]==100
+        assert db.scalar(select(func.count(SourceObservation.id)))==0
         assert db.scalar(select(func.count(Opportunity.id)))==0
     monkeypatch.setattr(FurasAdapter,"fetch",original)
     second=asyncio.run(sync_service.sync_source("furas"))
@@ -429,7 +435,11 @@ def test_sync_source_interrupts_after_commit_then_resumes_without_duplicates_or_
         final=jobs[-1].metrics_json["furas_checkpoint"]
         ids=db.scalars(select(SourceOpportunity.source_opportunity_id).where(SourceOpportunity.source_id==source_id)).all()
         assert jobs[0].job_state=="COMPLETED" and jobs[1].job_state=="FAILED" and jobs[-1].job_state=="COMPLETED"
-        assert len(ids)==len(set(ids))==121
+        assert ids==["LOCAL-ABSENT"]
+        assert final["unique_source_ids_seen"]==120
+        assert len(final["processed_source_ids"])==len(set(final["processed_source_ids"]))==120
+        assert final["source_rows_inserted_total"]==0
+        assert final["quarantined_records_total"]==120
         assert final["last_committed_offset"]==120 and final["enumeration_complete"] is True
         assert final["removal_reconciliation_allowed"] is False
         assert jobs[-1].metrics_json["first_national_bootstrap"] is True
@@ -439,6 +449,7 @@ def test_sync_source_interrupts_after_commit_then_resumes_without_duplicates_or_
         assert old_row is not None and old_row.missing_successful_checks==0
         assert final["scan_run_id"]==checkpoint["scan_run_id"]
         assert db.scalar(select(func.count(Opportunity.id)))==0
+        assert db.scalar(select(func.count(SourceObservation.id)))==0
         assert jobs[-1].removed_records_count==0
     engine.dispose()
 
@@ -494,12 +505,22 @@ def test_sync_source_failure_before_first_commit_replays_the_uncommitted_page(mo
         failed=db.scalar(select(SyncJob).order_by(SyncJob.id.desc()).limit(1))
         assert not (failed.metrics_json or {}).get("furas_checkpoint")
         assert db.scalar(select(func.count(SourceOpportunity.id)).where(SourceOpportunity.source_id==source_id))==0
+        assert db.scalar(select(func.count(SourceObservation.id)))==0
+        assert db.scalar(select(func.count(Opportunity.id)))==0
     monkeypatch.setattr(sync_service,"_safe_record",original)
     replay=asyncio.run(sync_service.sync_source("furas"))
     assert replay["status"]=="SUCCESS"
     with Session(engine) as db:
-        assert db.scalar(select(func.count(SourceOpportunity.id)).where(SourceOpportunity.source_id==source_id))==120
+        assert db.scalar(select(func.count(SourceOpportunity.id)).where(SourceOpportunity.source_id==source_id))==0
         assert db.scalar(select(func.count(Opportunity.id)))==0
+        assert db.scalar(select(func.count(SourceObservation.id)))==0
+        completed=db.scalar(select(SyncJob).order_by(SyncJob.id.desc()).limit(1))
+        checkpoint=completed.metrics_json["furas_checkpoint"]
+        assert checkpoint["last_committed_offset"]==120 and checkpoint["enumeration_complete"] is True
+        assert checkpoint["unique_source_ids_seen"]==120
+        assert len(checkpoint["processed_source_ids"])==len(set(checkpoint["processed_source_ids"]))==120
+        assert checkpoint["source_rows_inserted_total"]==0
+        assert checkpoint["quarantined_records_total"]==120
     engine.dispose()
 
 

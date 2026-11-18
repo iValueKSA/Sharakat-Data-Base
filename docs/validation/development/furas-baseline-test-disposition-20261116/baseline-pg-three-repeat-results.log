@@ -1,0 +1,198 @@
+BASELINE-REPEAT--TEST-A
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_ test_sync_source_interrupts_after_commit_then_resumes_without_duplicates_or_masters _
+/harness/test_nationwide_expansion_safety_pg.py:421: in test_sync_source_interrupts_after_commit_then_resumes_without_duplicates_or_masters
+    assert db.scalar(select(func.count(SourceOpportunity.id)).where(SourceOpportunity.source_id==source_id))==101
+E   assert 1 == 101
+E    +  where 1 = scalar(<sqlalchemy.sql.selectable.Select object at 0x7bda1ad90cb0>)
+E    +    where scalar = <sqlalchemy.orm.session.Session object at 0x7bda1ad57b00>.scalar
+E    +    and   <sqlalchemy.sql.selectable.Select object at 0x7bda1ad90cb0> = where(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7bda1e634360> == 1)
+E    +      where where = <sqlalchemy.sql.selectable.Select object at 0x7bda1ad90fe0>.where
+E    +        where <sqlalchemy.sql.selectable.Select object at 0x7bda1ad90fe0> = select(<sqlalchemy.sql.functions.count at 0x7bda1ad91b50; count>)
+E    +          where <sqlalchemy.sql.functions.count at 0x7bda1ad91b50; count> = <sqlalchemy.sql.functions._FunctionGenerator object at 0x7bda1e8e55b0>(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7bda1e6342c0>)
+E    +            where <sqlalchemy.sql.functions._FunctionGenerator object at 0x7bda1e8e55b0> = func.count
+E    +            and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7bda1e6342c0> = SourceOpportunity.id
+E    +      and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7bda1e634360> = SourceOpportunity.source_id
+=============================== warnings summary ===============================
+../usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+../usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:487
+  /usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:487: PytestCacheWarning: could not create cache path /harness/.pytest_cache/v/cache/nodeids: [Errno 30] Read-only file system: '/harness/pytest-cache-files-tnfr_che'
+    config.cache.set("cache/nodeids", sorted(str(n) for n in self.cached_nodeids))
+
+../usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:439
+  /usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:439: PytestCacheWarning: could not create cache path /harness/.pytest_cache/v/cache/lastfailed: [Errno 30] Read-only file system: '/harness/pytest-cache-files-kgexd7fh'
+    config.cache.set("cache/lastfailed", current_lastfailed)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../harness/test_nationwide_expansion_safety_pg.py::test_sync_source_interrupts_after_commit_then_resumes_without_duplicates_or_masters
+1 failed, 3 warnings in 4.02s
+BASELINE-REPEAT--TEST-B
+F                                                                        [100%]
+=================================== FAILURES ===================================
+__ test_sync_source_failure_before_first_commit_replays_the_uncommitted_page ___
+/harness/test_nationwide_expansion_safety_pg.py:501: in test_sync_source_failure_before_first_commit_replays_the_uncommitted_page
+    assert db.scalar(select(func.count(SourceOpportunity.id)).where(SourceOpportunity.source_id==source_id))==120
+E   assert 0 == 120
+E    +  where 0 = scalar(<sqlalchemy.sql.selectable.Select object at 0x7946da393920>)
+E    +    where scalar = <sqlalchemy.orm.session.Session object at 0x7946dab6ec60>.scalar
+E    +    and   <sqlalchemy.sql.selectable.Select object at 0x7946da393920> = where(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7946ddc0c360> == 1)
+E    +      where where = <sqlalchemy.sql.selectable.Select object at 0x7946da35b680>.where
+E    +        where <sqlalchemy.sql.selectable.Select object at 0x7946da35b680> = select(<sqlalchemy.sql.functions.count at 0x7946dc3b3590; count>)
+E    +          where <sqlalchemy.sql.functions.count at 0x7946dc3b3590; count> = <sqlalchemy.sql.functions._FunctionGenerator object at 0x7946da7facf0>(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7946ddc0c2c0>)
+E    +            where <sqlalchemy.sql.functions._FunctionGenerator object at 0x7946da7facf0> = func.count
+E    +            and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7946ddc0c2c0> = SourceOpportunity.id
+E    +      and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7946ddc0c360> = SourceOpportunity.source_id
+=============================== warnings summary ===============================
+../usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+../usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:487
+  /usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:487: PytestCacheWarning: could not create cache path /harness/.pytest_cache/v/cache/nodeids: [Errno 30] Read-only file system: '/harness/pytest-cache-files-4dyek1vm'
+    config.cache.set("cache/nodeids", sorted(str(n) for n in self.cached_nodeids))
+
+../usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:439
+  /usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:439: PytestCacheWarning: could not create cache path /harness/.pytest_cache/v/cache/lastfailed: [Errno 30] Read-only file system: '/harness/pytest-cache-files-ce9v0mgs'
+    config.cache.set("cache/lastfailed", current_lastfailed)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../harness/test_nationwide_expansion_safety_pg.py::test_sync_source_failure_before_first_commit_replays_the_uncommitted_page
+1 failed, 3 warnings in 4.34s
+BASELINE-REPEAT--TEST-A
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_ test_sync_source_interrupts_after_commit_then_resumes_without_duplicates_or_masters _
+/harness/test_nationwide_expansion_safety_pg.py:421: in test_sync_source_interrupts_after_commit_then_resumes_without_duplicates_or_masters
+    assert db.scalar(select(func.count(SourceOpportunity.id)).where(SourceOpportunity.source_id==source_id))==101
+E   assert 1 == 101
+E    +  where 1 = scalar(<sqlalchemy.sql.selectable.Select object at 0x77e41d301190>)
+E    +    where scalar = <sqlalchemy.orm.session.Session object at 0x77e41df4d6a0>.scalar
+E    +    and   <sqlalchemy.sql.selectable.Select object at 0x77e41d301190> = where(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x77e420d24360> == 1)
+E    +      where where = <sqlalchemy.sql.selectable.Select object at 0x77e41d3010a0>.where
+E    +        where <sqlalchemy.sql.selectable.Select object at 0x77e41d3010a0> = select(<sqlalchemy.sql.functions.count at 0x77e41d7b8200; count>)
+E    +          where <sqlalchemy.sql.functions.count at 0x77e41d7b8200; count> = <sqlalchemy.sql.functions._FunctionGenerator object at 0x77e41df4c8f0>(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x77e420d242c0>)
+E    +            where <sqlalchemy.sql.functions._FunctionGenerator object at 0x77e41df4c8f0> = func.count
+E    +            and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x77e420d242c0> = SourceOpportunity.id
+E    +      and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x77e420d24360> = SourceOpportunity.source_id
+=============================== warnings summary ===============================
+../usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+../usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:487
+  /usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:487: PytestCacheWarning: could not create cache path /harness/.pytest_cache/v/cache/nodeids: [Errno 30] Read-only file system: '/harness/pytest-cache-files-9yb093cn'
+    config.cache.set("cache/nodeids", sorted(str(n) for n in self.cached_nodeids))
+
+../usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:439
+  /usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:439: PytestCacheWarning: could not create cache path /harness/.pytest_cache/v/cache/lastfailed: [Errno 30] Read-only file system: '/harness/pytest-cache-files-zw3qpi30'
+    config.cache.set("cache/lastfailed", current_lastfailed)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../harness/test_nationwide_expansion_safety_pg.py::test_sync_source_interrupts_after_commit_then_resumes_without_duplicates_or_masters
+1 failed, 3 warnings in 4.13s
+BASELINE-REPEAT--TEST-B
+F                                                                        [100%]
+=================================== FAILURES ===================================
+__ test_sync_source_failure_before_first_commit_replays_the_uncommitted_page ___
+/harness/test_nationwide_expansion_safety_pg.py:501: in test_sync_source_failure_before_first_commit_replays_the_uncommitted_page
+    assert db.scalar(select(func.count(SourceOpportunity.id)).where(SourceOpportunity.source_id==source_id))==120
+E   assert 0 == 120
+E    +  where 0 = scalar(<sqlalchemy.sql.selectable.Select object at 0x7c78d81a9760>)
+E    +    where scalar = <sqlalchemy.orm.session.Session object at 0x7c78d8173770>.scalar
+E    +    and   <sqlalchemy.sql.selectable.Select object at 0x7c78d81a9760> = where(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7c78db73c360> == 1)
+E    +      where where = <sqlalchemy.sql.selectable.Select object at 0x7c78d8173980>.where
+E    +        where <sqlalchemy.sql.selectable.Select object at 0x7c78d8173980> = select(<sqlalchemy.sql.functions.count at 0x7c78d81735c0; count>)
+E    +          where <sqlalchemy.sql.functions.count at 0x7c78d81735c0; count> = <sqlalchemy.sql.functions._FunctionGenerator object at 0x7c78d8964770>(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7c78db73c2c0>)
+E    +            where <sqlalchemy.sql.functions._FunctionGenerator object at 0x7c78d8964770> = func.count
+E    +            and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7c78db73c2c0> = SourceOpportunity.id
+E    +      and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7c78db73c360> = SourceOpportunity.source_id
+=============================== warnings summary ===============================
+../usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+../usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:487
+  /usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:487: PytestCacheWarning: could not create cache path /harness/.pytest_cache/v/cache/nodeids: [Errno 30] Read-only file system: '/harness/pytest-cache-files-koz_q4lg'
+    config.cache.set("cache/nodeids", sorted(str(n) for n in self.cached_nodeids))
+
+../usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:439
+  /usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:439: PytestCacheWarning: could not create cache path /harness/.pytest_cache/v/cache/lastfailed: [Errno 30] Read-only file system: '/harness/pytest-cache-files-fn4hrz3u'
+    config.cache.set("cache/lastfailed", current_lastfailed)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../harness/test_nationwide_expansion_safety_pg.py::test_sync_source_failure_before_first_commit_replays_the_uncommitted_page
+1 failed, 3 warnings in 4.27s
+BASELINE-REPEAT--TEST-A
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_ test_sync_source_interrupts_after_commit_then_resumes_without_duplicates_or_masters _
+/harness/test_nationwide_expansion_safety_pg.py:421: in test_sync_source_interrupts_after_commit_then_resumes_without_duplicates_or_masters
+    assert db.scalar(select(func.count(SourceOpportunity.id)).where(SourceOpportunity.source_id==source_id))==101
+E   assert 1 == 101
+E    +  where 1 = scalar(<sqlalchemy.sql.selectable.Select object at 0x76c371d12e70>)
+E    +    where scalar = <sqlalchemy.orm.session.Session object at 0x76c371533d10>.scalar
+E    +    and   <sqlalchemy.sql.selectable.Select object at 0x76c371d12e70> = where(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x76c37477c360> == 1)
+E    +      where where = <sqlalchemy.sql.selectable.Select object at 0x76c3715b4110>.where
+E    +        where <sqlalchemy.sql.selectable.Select object at 0x76c3715b4110> = select(<sqlalchemy.sql.functions.count at 0x76c3715b4b60; count>)
+E    +          where <sqlalchemy.sql.functions.count at 0x76c3715b4b60; count> = <sqlalchemy.sql.functions._FunctionGenerator object at 0x76c3715667b0>(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x76c37477c2c0>)
+E    +            where <sqlalchemy.sql.functions._FunctionGenerator object at 0x76c3715667b0> = func.count
+E    +            and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x76c37477c2c0> = SourceOpportunity.id
+E    +      and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x76c37477c360> = SourceOpportunity.source_id
+=============================== warnings summary ===============================
+../usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+../usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:487
+  /usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:487: PytestCacheWarning: could not create cache path /harness/.pytest_cache/v/cache/nodeids: [Errno 30] Read-only file system: '/harness/pytest-cache-files-zst_0duz'
+    config.cache.set("cache/nodeids", sorted(str(n) for n in self.cached_nodeids))
+
+../usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:439
+  /usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:439: PytestCacheWarning: could not create cache path /harness/.pytest_cache/v/cache/lastfailed: [Errno 30] Read-only file system: '/harness/pytest-cache-files-fa9s5hvk'
+    config.cache.set("cache/lastfailed", current_lastfailed)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../harness/test_nationwide_expansion_safety_pg.py::test_sync_source_interrupts_after_commit_then_resumes_without_duplicates_or_masters
+1 failed, 3 warnings in 3.72s
+BASELINE-REPEAT--TEST-B
+F                                                                        [100%]
+=================================== FAILURES ===================================
+__ test_sync_source_failure_before_first_commit_replays_the_uncommitted_page ___
+/harness/test_nationwide_expansion_safety_pg.py:501: in test_sync_source_failure_before_first_commit_replays_the_uncommitted_page
+    assert db.scalar(select(func.count(SourceOpportunity.id)).where(SourceOpportunity.source_id==source_id))==120
+E   assert 0 == 120
+E    +  where 0 = scalar(<sqlalchemy.sql.selectable.Select object at 0x71133c193a40>)
+E    +    where scalar = <sqlalchemy.orm.session.Session object at 0x71133c94e330>.scalar
+E    +    and   <sqlalchemy.sql.selectable.Select object at 0x71133c193a40> = where(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x71133f7e8360> == 1)
+E    +      where where = <sqlalchemy.sql.selectable.Select object at 0x71133c15f740>.where
+E    +        where <sqlalchemy.sql.selectable.Select object at 0x71133c15f740> = select(<sqlalchemy.sql.functions.count at 0x71133de2f1a0; count>)
+E    +          where <sqlalchemy.sql.functions.count at 0x71133de2f1a0; count> = <sqlalchemy.sql.functions._FunctionGenerator object at 0x71133f9b5130>(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x71133f7e82c0>)
+E    +            where <sqlalchemy.sql.functions._FunctionGenerator object at 0x71133f9b5130> = func.count
+E    +            and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x71133f7e82c0> = SourceOpportunity.id
+E    +      and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x71133f7e8360> = SourceOpportunity.source_id
+=============================== warnings summary ===============================
+../usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+../usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:487
+  /usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:487: PytestCacheWarning: could not create cache path /harness/.pytest_cache/v/cache/nodeids: [Errno 30] Read-only file system: '/harness/pytest-cache-files-evaue0ix'
+    config.cache.set("cache/nodeids", sorted(str(n) for n in self.cached_nodeids))
+
+../usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:439
+  /usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:439: PytestCacheWarning: could not create cache path /harness/.pytest_cache/v/cache/lastfailed: [Errno 30] Read-only file system: '/harness/pytest-cache-files-gmt1im70'
+    config.cache.set("cache/lastfailed", current_lastfailed)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../harness/test_nationwide_expansion_safety_pg.py::test_sync_source_failure_before_first_commit_replays_the_uncommitted_page
+1 failed, 3 warnings in 4.06s

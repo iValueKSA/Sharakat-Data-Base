@@ -1,5 +1,5 @@
 from datetime import datetime, timezone
-from sqlalchemy import Boolean, CheckConstraint, DateTime, Float, ForeignKey, ForeignKeyConstraint, Integer, JSON, String, Text, UniqueConstraint
+from sqlalchemy import Boolean, CheckConstraint, DateTime, Float, ForeignKey, ForeignKeyConstraint, Index, Integer, JSON, Numeric, String, Text, UniqueConstraint, text
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 
 class Base(DeclarativeBase): pass
@@ -523,13 +523,154 @@ class FieldProvenance(Base):
 
 class OpportunityDocument(Base):
     __tablename__ = "opportunity_documents"
+    __table_args__ = (
+        ForeignKeyConstraint(
+            ["source_opportunity_id", "source_id"],
+            ["source_opportunities.id", "source_opportunities.source_id"],
+            ondelete="RESTRICT", name="fk_opportunity_document_source_namespace"),
+        ForeignKeyConstraint(
+            ["supersedes_document_id"], ["opportunity_documents.id"],
+            ondelete="RESTRICT", name="fk_opportunity_document_supersedes"),
+        CheckConstraint("document_version >= 1", name="ck_opportunity_document_version_positive"),
+        CheckConstraint("booklet_price_amount IS NULL OR booklet_price_amount >= 0", name="ck_opportunity_document_price_nonnegative"),
+        CheckConstraint("publication_status IN ('DRAFT','APPROVED','REVOKED')", name="ck_opportunity_document_publication_status"),
+        CheckConstraint("access_status IN ('PUBLIC_DIRECT_DOWNLOAD','PUBLIC_SOURCE_PAGE','LOGIN_REQUIRED','PAYMENT_REQUIRED_FOR_DOCUMENT','RESTRICTED','UNKNOWN','UNAVAILABLE')", name="ck_opportunity_document_access_status"),
+        CheckConstraint("rights_status IN ('DIRECT_LINK_APPROVED','SOURCE_PAGE_LINK_ONLY','RESTRICTED','UNVERIFIED')", name="ck_opportunity_document_rights_status"),
+        CheckConstraint("participation_requirement IN ('PURCHASE_REQUIRED_FOR_PARTICIPATION','PURCHASE_NOT_REQUIRED_CONFIRMED','UNKNOWN')", name="ck_opportunity_document_participation_status"),
+        CheckConstraint("link_verification_status IN ('VERIFIED_PUBLIC','VERIFIED_SOURCE_PAGE','UNVERIFIED','UNAVAILABLE')", name="ck_opportunity_document_link_status"),
+        CheckConstraint("document_category IS NULL OR document_category IN ('TERMS_AND_CONDITIONS_BOOKLET','TENDER_SPECIFICATIONS','DRAFT_CONTRACT','SITE_MAP','TECHNICAL_ATTACHMENT','INVESTMENT_BROCHURE','GENERAL_ATTACHMENT','UNKNOWN_DOCUMENT_TYPE')", name="ck_opportunity_document_category"),
+        CheckConstraint("publication_status <> 'APPROVED' OR (source_opportunity_id IS NOT NULL AND source_opportunity_url IS NOT NULL AND rights_status IN ('DIRECT_LINK_APPROVED','SOURCE_PAGE_LINK_ONLY') AND access_status NOT IN ('RESTRICTED','UNAVAILABLE','UNKNOWN') AND (access_status <> 'LOGIN_REQUIRED' OR authentication_required IS TRUE) AND (access_status <> 'PAYMENT_REQUIRED_FOR_DOCUMENT' OR payment_required_for_document IS TRUE) AND ((rights_status = 'DIRECT_LINK_APPROVED' AND access_status = 'PUBLIC_DIRECT_DOWNLOAD' AND link_verification_status = 'VERIFIED_PUBLIC' AND authentication_required IS FALSE AND payment_required_for_document IS FALSE) OR (rights_status = 'SOURCE_PAGE_LINK_ONLY' AND link_verification_status = 'VERIFIED_SOURCE_PAGE')))", name="ck_opportunity_document_approved_gate"),
+        CheckConstraint("booklet_price_amount IS NULL OR currency IS NOT NULL", name="ck_opportunity_document_price_currency_pair"),
+        Index("uq_opportunity_document_source_dedupe_version", "source_opportunity_id", "deduplication_key", "document_version", unique=True,
+              postgresql_where=text("source_opportunity_id IS NOT NULL AND deduplication_key IS NOT NULL"),
+              sqlite_where=text("source_opportunity_id IS NOT NULL AND deduplication_key IS NOT NULL")),
+    )
     id: Mapped[int] = mapped_column(primary_key=True)
     opportunity_id: Mapped[int] = mapped_column(ForeignKey("opportunities.id"), index=True)
     source_id: Mapped[int] = mapped_column(ForeignKey("sources.id"))
+    source_opportunity_id: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    official_provider_document_id: Mapped[str | None] = mapped_column(String(500), nullable=True)
+    official_purchase_url: Mapped[str | None] = mapped_column(String(1200), nullable=True)
+    purchase_url_verified: Mapped[bool | None] = mapped_column(Boolean, nullable=True)
     title: Mapped[str] = mapped_column(String(500))
     url: Mapped[str] = mapped_column(String(1200))
     document_type: Mapped[str | None] = mapped_column(String(100))
+    document_category: Mapped[str | None] = mapped_column(String(50), nullable=True)
     first_seen_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))
+    source_opportunity_url: Mapped[str | None] = mapped_column(String(1200), nullable=True)
+    access_status: Mapped[str] = mapped_column(String(40), nullable=False, default="UNKNOWN")
+    rights_status: Mapped[str] = mapped_column(String(40), nullable=False, default="UNVERIFIED")
+    authentication_required: Mapped[bool | None] = mapped_column(Boolean, nullable=True)
+    payment_required_for_document: Mapped[bool | None] = mapped_column(Boolean, nullable=True)
+    participation_requirement: Mapped[str] = mapped_column(String(50), nullable=False, default="UNKNOWN")
+    booklet_price_amount: Mapped[float | None] = mapped_column(Numeric(14, 2), nullable=True)
+    currency: Mapped[str | None] = mapped_column(String(3), nullable=True)
+    link_verification_status: Mapped[str] = mapped_column(String(40), nullable=False, default="UNVERIFIED")
+    last_verified_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    source_provenance_json: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
+    document_version: Mapped[int] = mapped_column(Integer, nullable=False, default=1)
+    deduplication_key: Mapped[str | None] = mapped_column(String(64), nullable=True)
+    supersedes_document_id: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    publication_status: Mapped[str] = mapped_column(String(20), nullable=False, default="DRAFT")
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=lambda: datetime.now(timezone.utc))
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc))
+
+class DocumentCollectionRun(Base):
+    """Durable, resumable execution record for the isolated document collector."""
+    __tablename__ = "document_collection_runs"
+    __table_args__ = (
+        CheckConstraint("status IN ('RUNNING','COMPLETED','PARTIAL','FAILED','CANCELLED')", name="ck_doc_collection_run_status"),
+    )
+    id: Mapped[int] = mapped_column(primary_key=True)
+    source_id: Mapped[int] = mapped_column(ForeignKey("sources.id"), index=True)
+    source_key: Mapped[str] = mapped_column(String(80), index=True)
+    scope: Mapped[str] = mapped_column(String(40), default="ALLOWLIST")
+    status: Mapped[str] = mapped_column(String(20), default="RUNNING", index=True)
+    requested_count: Mapped[int] = mapped_column(Integer, default=0)
+    processed_count: Mapped[int] = mapped_column(Integer, default=0)
+    discovered_count: Mapped[int] = mapped_column(Integer, default=0)
+    verified_count: Mapped[int] = mapped_column(Integer, default=0)
+    ready_count: Mapped[int] = mapped_column(Integer, default=0)
+    review_count: Mapped[int] = mapped_column(Integer, default=0)
+    rejected_count: Mapped[int] = mapped_column(Integer, default=0)
+    duplicate_count: Mapped[int] = mapped_column(Integer, default=0)
+    temporary_failure_count: Mapped[int] = mapped_column(Integer, default=0)
+    checkpoint_json: Mapped[dict] = mapped_column(JSON, default=dict)
+    summary_json: Mapped[dict] = mapped_column(JSON, default=dict)
+    error_summary: Mapped[str | None] = mapped_column(Text, nullable=True)
+    started_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
+    finished_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+
+class DocumentCandidate(Base):
+    """Private staging row; it is deliberately not part of public opportunity_documents."""
+    __tablename__ = "document_collection_candidates"
+    __table_args__ = (
+        UniqueConstraint("source_opportunity_id", "identity_key", "document_version", name="uq_doc_candidate_source_identity_version"),
+        CheckConstraint("verification_status IN ('DISCOVERED','EXTRACTED','IDENTITY_VERIFIED','ACCESS_VERIFIED','NEEDS_REVIEW','READY_FOR_APPROVAL','RESTRICTED','TEMPORARILY_UNREACHABLE','CHANGED','WITHDRAWAL_PROPOSED')", name="ck_doc_candidate_verification_status"),
+        CheckConstraint("review_status IN ('PENDING','APPROVED','REJECTED')", name="ck_doc_candidate_review_status"),
+        Index("ix_doc_candidate_review_status", "review_status", "verification_status"),
+    )
+    id: Mapped[int] = mapped_column(primary_key=True)
+    run_id: Mapped[int] = mapped_column(ForeignKey("document_collection_runs.id", ondelete="RESTRICT"), index=True)
+    source_id: Mapped[int] = mapped_column(ForeignKey("sources.id", ondelete="RESTRICT"), index=True)
+    source_opportunity_id: Mapped[int] = mapped_column(ForeignKey("source_opportunities.id", ondelete="RESTRICT"), index=True)
+    opportunity_id: Mapped[int | None] = mapped_column(ForeignKey("opportunities.id", ondelete="RESTRICT"), nullable=True, index=True)
+    provider_opportunity_id: Mapped[str] = mapped_column(String(200), index=True)
+    source_document_id: Mapped[str | None] = mapped_column(String(500), nullable=True)
+    identity_key: Mapped[str] = mapped_column(String(64))
+    document_version: Mapped[int] = mapped_column(Integer, default=1)
+    original_title: Mapped[str] = mapped_column(String(500))
+    document_type: Mapped[str | None] = mapped_column(String(100), nullable=True)
+    document_category: Mapped[str] = mapped_column(String(50))
+    document_scope: Mapped[str] = mapped_column(String(30), default="OPPORTUNITY")
+    url: Mapped[str | None] = mapped_column(String(1200), nullable=True)
+    source_opportunity_url: Mapped[str] = mapped_column(String(1200))
+    official_purchase_url: Mapped[str | None] = mapped_column(String(1200), nullable=True)
+    purchase_url_verified: Mapped[bool | None] = mapped_column(Boolean, nullable=True)
+    access_status: Mapped[str] = mapped_column(String(40), default="UNKNOWN")
+    rights_status: Mapped[str] = mapped_column(String(40), default="UNVERIFIED")
+    participation_requirement: Mapped[str] = mapped_column(String(50), default="UNKNOWN")
+    authentication_required: Mapped[bool | None] = mapped_column(Boolean, nullable=True)
+    payment_required_for_document: Mapped[bool | None] = mapped_column(Boolean, nullable=True)
+    link_verification_status: Mapped[str] = mapped_column(String(40), default="UNVERIFIED")
+    verification_status: Mapped[str] = mapped_column(String(40), default="DISCOVERED", index=True)
+    review_status: Mapped[str] = mapped_column(String(20), default="PENDING", index=True)
+    raw_amount: Mapped[float | None] = mapped_column(Numeric(14, 2), nullable=True)
+    raw_currency: Mapped[str | None] = mapped_column(String(20), nullable=True)
+    verified_amount: Mapped[float | None] = mapped_column(Numeric(14, 2), nullable=True)
+    verified_currency: Mapped[str | None] = mapped_column(String(3), nullable=True)
+    publicly_displayable_price: Mapped[bool] = mapped_column(Boolean, default=False)
+    evidence_json: Mapped[dict] = mapped_column(JSON, default=dict)
+    provenance_json: Mapped[dict] = mapped_column(JSON, default=dict)
+    missing_evidence_json: Mapped[list] = mapped_column(JSON, default=list)
+    source_payload_sha256: Mapped[str] = mapped_column(String(64))
+    parser_version: Mapped[str] = mapped_column(String(80))
+    collector_version: Mapped[str] = mapped_column(String(80))
+    last_verified_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    last_seen_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
+    failure_count: Mapped[int] = mapped_column(Integer, default=0)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc))
+
+class DocumentVerificationEvent(Base):
+    """Append-only application-level record of extraction, refresh and review evidence."""
+    __tablename__ = "document_verification_events"
+    __table_args__ = (
+        Index("ix_doc_verification_candidate_created", "candidate_id", "created_at"),
+    )
+    id: Mapped[int] = mapped_column(primary_key=True)
+    run_id: Mapped[int | None] = mapped_column(ForeignKey("document_collection_runs.id", ondelete="RESTRICT"), nullable=True, index=True)
+    candidate_id: Mapped[int | None] = mapped_column(ForeignKey("document_collection_candidates.id", ondelete="RESTRICT"), nullable=True, index=True)
+    source_id: Mapped[int] = mapped_column(ForeignKey("sources.id", ondelete="RESTRICT"), index=True)
+    source_opportunity_id: Mapped[int] = mapped_column(ForeignKey("source_opportunities.id", ondelete="RESTRICT"), index=True)
+    event_type: Mapped[str] = mapped_column(String(50), index=True)
+    outcome: Mapped[str] = mapped_column(String(50))
+    evidence_json: Mapped[dict] = mapped_column(JSON, default=dict)
+    before_sha256: Mapped[str | None] = mapped_column(String(64), nullable=True)
+    after_sha256: Mapped[str | None] = mapped_column(String(64), nullable=True)
+    parser_version: Mapped[str] = mapped_column(String(80))
+    collector_version: Mapped[str] = mapped_column(String(80))
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc), index=True)
 
 class SystemEvent(Base):
     __tablename__ = "system_events"

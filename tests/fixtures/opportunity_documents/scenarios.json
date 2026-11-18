@@ -1,0 +1,18 @@
+{
+  "synthetic_only": true,
+  "source_host": "https://source.example.invalid",
+  "scenarios": [
+    {"id": "A", "name": "public downloadable booklet with unknown/no price", "access_status": "PUBLIC_DIRECT_DOWNLOAD", "rights_status": "DIRECT_LINK_APPROVED", "price": null, "currency": null, "publication_status": "APPROVED", "expected_action": "تحميل الكراسة"},
+    {"id": "B", "name": "public booklet, purchase required for participation", "access_status": "PUBLIC_DIRECT_DOWNLOAD", "rights_status": "DIRECT_LINK_APPROVED", "participation_requirement": "PURCHASE_REQUIRED_FOR_PARTICIPATION", "price": 300, "currency": "SAR", "publication_status": "APPROVED", "expected_notice": "يلزم شراء الكراسة للتقديم على المنافسة"},
+    {"id": "C", "name": "login required", "access_status": "LOGIN_REQUIRED", "rights_status": "SOURCE_PAGE_LINK_ONLY", "publication_status": "APPROVED", "expected_action": "يلزم تسجيل الدخول لدى المصدر"},
+    {"id": "D", "name": "payment required for document", "access_status": "PAYMENT_REQUIRED_FOR_DOCUMENT", "rights_status": "SOURCE_PAGE_LINK_ONLY", "publication_status": "APPROVED", "expected_action": "الحصول على الكراسة من المصدر الرسمي"},
+    {"id": "E", "name": "restricted confidential document", "access_status": "RESTRICTED", "rights_status": "RESTRICTED", "publication_status": "DRAFT", "expected_api_documents": 0},
+    {"id": "F", "name": "unverified linking rights; must remain unpublished", "access_status": "PUBLIC_SOURCE_PAGE", "rights_status": "UNVERIFIED", "link_verification_status": "UNVERIFIED", "publication_status": "DRAFT", "expected_api_documents": 0},
+    {"id": "G", "name": "opportunity with no verified documents", "publication_status": "DRAFT", "expected_empty_message": "لم تتوفر كراسة موثقة لهذه الفرصة عبر المنصة حتى الآن."},
+    {"id": "H", "name": "multiple documents from one source", "document_count": 2},
+    {"id": "I", "name": "multiple source opportunities associated with one Master", "master_count": 1, "source_opportunity_count": 2},
+    {"id": "J", "name": "association conflict", "expected_api_documents": 0},
+    {"id": "K", "name": "duplicate document reference", "same_source_version_duplicate": true, "expected_unique_documents": 1},
+    {"id": "L", "name": "incorrect or unsafe external URL", "unsafe_urls": ["javascript:alert(1)", "http://127.0.0.1/admin", "http://192.168.1.10/", "https://[::1]/", "https://source.example.invalid:8443/document.pdf", "https://source.example.invalid/document.pdf?access%5Ftoken=secret", "https://source.example.invalid/document.pdf?api_key=secret", "https://source.example.invalid/document.pdf#access_token=secret", "https://evil.example.invalid/document.pdf"], "expected_api_documents": 0}
+  ]
+}

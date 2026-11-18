@@ -1,0 +1,111 @@
+FF                                                                       [100%]
+=================================== FAILURES ===================================
+_ test_sync_source_interrupts_after_commit_then_resumes_without_duplicates_or_masters _
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7c2cf291b920>
+
+    def test_sync_source_interrupts_after_commit_then_resumes_without_duplicates_or_masters(monkeypatch):
+        from sqlalchemy.orm import sessionmaker
+        engine=make_db();factory=sessionmaker(engine,expire_on_commit=False)
+        with Session(engine) as db:
+            source=make_source(db);source_id=source.id
+            prior=make_job(db,source,FURAS_LOCAL_SCOPE,status="SUCCESS",pagination_complete=True)
+            prior.job_state="COMPLETED"
+            now=datetime.now(timezone.utc)
+            db.add(SourceOpportunity(source_id=source.id,source_opportunity_id="LOCAL-ABSENT",
+                source_title="Existing local source row",normalized_source_title="existing local source row",
+                source_url="https://furas.test/local-absent",canonical_status="غير محددة",
+                raw_data_json={},standardized_data_json={},first_seen_at=now,last_seen_at=now,
+                content_hash="a"*64,parser_version="test",missing_successful_checks=0))
+            db.commit()
+        features=[fake_feature(i,"9" if i%2 else "OTHER") for i in range(1,121)]
+        client=FakePagedFurasClient(features);monkeypatch.setattr(sync_service,"SessionLocal",factory)
+        monkeypatch.setattr(sync_service.httpx,"AsyncClient",lambda *args,**kwargs:FakeAsyncClientContext(client))
+        monkeypatch.setenv("FURAS_NATIONAL_ENUMERATION_ENABLED","true")
+        monkeypatch.setattr("app.data_quality.evaluate_data_quality",lambda *args,**kwargs:{"run_id":1,"counts":{"pass":1,"warning":0,"fail":0},"failed_gates":[]})
+        original=FurasAdapter.fetch
+        async def stop_after_first(self,client,**kwargs):
+            kwargs["stop_after_batches"]=1
+            return await original(self,client,**kwargs)
+        monkeypatch.setattr(FurasAdapter,"fetch",stop_after_first)
+        first=asyncio.run(sync_service.sync_source("furas"))
+        assert first["status"]=="FAILED"
+        with Session(engine) as db:
+            failed=db.scalar(select(SyncJob).order_by(SyncJob.id.desc()).limit(1))
+            assert "furas_checkpoint" in failed.metrics_json, (first,failed.metrics_json)
+            checkpoint=failed.metrics_json["furas_checkpoint"]
+            assert checkpoint["last_committed_offset"]==100 and checkpoint["last_committed_page"]==1
+            assert checkpoint["terminal_status"]=="RUNNING" and checkpoint["removal_reconciliation_allowed"] is False
+            assert failed.metrics_json["furas_failure"]["failure_stage"]=="SOURCE_CAPTURE_OR_FINALIZATION"
+            assert checkpoint_is_resumable(checkpoint) is True
+>           assert db.scalar(select(func.count(SourceOpportunity.id)).where(SourceOpportunity.source_id==source_id))==101
+E           assert 1 == 101
+E            +  where 1 = scalar(<sqlalchemy.sql.selectable.Select object at 0x7c2cf0b115e0>)
+E            +    where scalar = <sqlalchemy.orm.session.Session object at 0x7c2cf2948740>.scalar
+E            +    and   <sqlalchemy.sql.selectable.Select object at 0x7c2cf0b115e0> = where(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7c2cf419c360> == 1)
+E            +      where where = <sqlalchemy.sql.selectable.Select object at 0x7c2cf0b12390>.where
+E            +        where <sqlalchemy.sql.selectable.Select object at 0x7c2cf0b12390> = select(<sqlalchemy.sql.functions.count at 0x7c2cf1784d70; count>)
+E            +          where <sqlalchemy.sql.functions.count at 0x7c2cf1784d70; count> = <sqlalchemy.sql.functions._FunctionGenerator object at 0x7c2cf1785c40>(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7c2cf419c2c0>)
+E            +            where <sqlalchemy.sql.functions._FunctionGenerator object at 0x7c2cf1785c40> = func.count
+E            +            and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7c2cf419c2c0> = SourceOpportunity.id
+E            +      and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7c2cf419c360> = SourceOpportunity.source_id
+
+/harness/test_nationwide_expansion_safety_pg.py:421: AssertionError
+__ test_sync_source_failure_before_first_commit_replays_the_uncommitted_page ___
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7c2cf0b10170>
+
+    def test_sync_source_failure_before_first_commit_replays_the_uncommitted_page(monkeypatch):
+        from sqlalchemy.orm import sessionmaker
+        engine=make_db();factory=sessionmaker(engine,expire_on_commit=False)
+        with Session(engine) as db:
+            source=make_source(db);db.commit();source_id=source.id
+        client=FakePagedFurasClient([fake_feature(i,"OTHER") for i in range(1,121)])
+        monkeypatch.setattr(sync_service,"SessionLocal",factory)
+        monkeypatch.setattr(sync_service.httpx,"AsyncClient",lambda *args,**kwargs:FakeAsyncClientContext(client))
+        monkeypatch.setenv("FURAS_NATIONAL_ENUMERATION_ENABLED","true")
+        monkeypatch.setattr("app.data_quality.evaluate_data_quality",lambda *args,**kwargs:{"run_id":2,"counts":{"pass":1,"warning":0,"fail":0},"failed_gates":[]})
+        original=sync_service._safe_record
+        def fail_before_commit(*args,**kwargs):raise RuntimeError("simulated failure before batch commit")
+        monkeypatch.setattr(sync_service,"_safe_record",fail_before_commit)
+        first=asyncio.run(sync_service.sync_source("furas"))
+        assert first["status"]=="FAILED"
+        with Session(engine) as db:
+            failed=db.scalar(select(SyncJob).order_by(SyncJob.id.desc()).limit(1))
+            assert not (failed.metrics_json or {}).get("furas_checkpoint")
+            assert db.scalar(select(func.count(SourceOpportunity.id)).where(SourceOpportunity.source_id==source_id))==0
+        monkeypatch.setattr(sync_service,"_safe_record",original)
+        replay=asyncio.run(sync_service.sync_source("furas"))
+        assert replay["status"]=="SUCCESS"
+        with Session(engine) as db:
+>           assert db.scalar(select(func.count(SourceOpportunity.id)).where(SourceOpportunity.source_id==source_id))==120
+E           assert 0 == 120
+E            +  where 0 = scalar(<sqlalchemy.sql.selectable.Select object at 0x7c2cf0b6ff50>)
+E            +    where scalar = <sqlalchemy.orm.session.Session object at 0x7c2cf0b143b0>.scalar
+E            +    and   <sqlalchemy.sql.selectable.Select object at 0x7c2cf0b6ff50> = where(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7c2cf419c360> == 1)
+E            +      where where = <sqlalchemy.sql.selectable.Select object at 0x7c2cf0b6cda0>.where
+E            +        where <sqlalchemy.sql.selectable.Select object at 0x7c2cf0b6cda0> = select(<sqlalchemy.sql.functions.count at 0x7c2cf0b16150; count>)
+E            +          where <sqlalchemy.sql.functions.count at 0x7c2cf0b16150; count> = <sqlalchemy.sql.functions._FunctionGenerator object at 0x7c2cf0f73260>(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7c2cf419c2c0>)
+E            +            where <sqlalchemy.sql.functions._FunctionGenerator object at 0x7c2cf0f73260> = func.count
+E            +            and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7c2cf419c2c0> = SourceOpportunity.id
+E            +      and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7c2cf419c360> = SourceOpportunity.source_id
+
+/harness/test_nationwide_expansion_safety_pg.py:501: AssertionError
+=============================== warnings summary ===============================
+../usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+../usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:487
+  /usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:487: PytestCacheWarning: could not create cache path /harness/.pytest_cache/v/cache/nodeids: [Errno 30] Read-only file system: '/harness/pytest-cache-files-03bqq5pl'
+    config.cache.set("cache/nodeids", sorted(str(n) for n in self.cached_nodeids))
+
+../usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:439
+  /usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:439: PytestCacheWarning: could not create cache path /harness/.pytest_cache/v/cache/lastfailed: [Errno 30] Read-only file system: '/harness/pytest-cache-files-g6bh22zj'
+    config.cache.set("cache/lastfailed", current_lastfailed)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../harness/test_nationwide_expansion_safety_pg.py::test_sync_source_interrupts_after_commit_then_resumes_without_duplicates_or_masters
+FAILED ../harness/test_nationwide_expansion_safety_pg.py::test_sync_source_failure_before_first_commit_replays_the_uncommitted_page
+2 failed, 3 warnings in 4.50s

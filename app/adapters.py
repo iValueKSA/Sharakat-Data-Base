@@ -712,13 +712,41 @@ class KfuAdapter(BaseSourceAdapter):
     """King Faisal University investment announcements, separate from procurement notices."""
     key="kfu"
     url="https://www.kfu.edu.sa/ar/Departments/Investment/Documents/Newdesign/اعلانات-الإدارة.html"
-    parser_version="2026.10.12-kfu-1"
+    parser_version="2026.11.16-kfu-2"
     procurement_terms=("توريد","منافسة","مناقصة","procurement","supply tender")
     lease_terms=("تأجير","إيجار","lease","rent")
     operating_terms=("تشغيل","إدارة وتشغيل","operation","operate")
     commercial_terms=("مطاعم","متاجر","مجمع تجاري","مواقع تجارية","commercial complex","shops","restaurants")
 
     def __init__(self): self.metrics={};self.content_items=[];self.diagnostics=[]
+
+    @staticmethod
+    def _top_level_notice_panels(soup):
+        """Return only outer notice containers; nested accordion wrappers are not notices."""
+        panels=[]
+        for panel in soup.select("li.AccordionPanel"):
+            if panel.find_parent("li",class_="AccordionPanel") is None:
+                panels.append(panel)
+        return panels
+
+    @staticmethod
+    def _document_reference(anchor, listing_url):
+        href=urljoin(listing_url,anchor.get("href",""))
+        if not re.search(r"\.(?:pdf|docx?|xlsx?)(?:[?#]|$)",urlparse(href).path,re.I):
+            return None
+        return {"filename":anchor.get_text(" ",strip=True) or href.rsplit("/",1)[-1],"url":href,
+            "type":urlparse(href).path.rsplit(".",1)[-1].lower(),"downloaded":False,"checksum":None,
+            "association_status":"EXACT_NOTICE_PANEL_LINK","provenance":"anchor is contained by one top-level KFU notice panel"}
+
+    @staticmethod
+    def _is_application_link(href):
+        return bool(re.search(r"(?:forms\.google\.com|docs\.google\.com/forms|نموذج|تقديم|apply)",href,re.I))
+
+    @staticmethod
+    def _notice_title(block):
+        # Keep the historic title derivation stable because provider identity is
+        # intentionally derived from this normalized title on existing KFU rows.
+        return re.split(r"(?:موعد التقديم|موعد نهاية|قيمة الكراسة|مميزات الفرصة|الشروط|للاستفسار)",block,maxsplit=1)[0].strip(" •*-:،")[:350]
 
     @classmethod
     def classify(cls,title,body):
@@ -745,33 +773,52 @@ class KfuAdapter(BaseSourceAdapter):
         response=await client.get(self.url,headers=headers);response.raise_for_status()
         soup=BeautifulSoup(response.text,"html.parser")
         page_text=re.sub(r"\s+"," ",(soup.select_one("main") or soup.body or soup).get_text(" ",strip=True))
-        links=[]
-        for a in soup.select("a[href]"):
-            href=urljoin(self.url,a.get("href",""));label=a.get_text(" ",strip=True) or href.rsplit("/",1)[-1]
-            if re.search(r"\.(?:pdf|docx?|xlsx?)(?:\?|$)",href,re.I):
-                links.append({"filename":label,"url":href,"type":href.split("?")[0].rsplit(".",1)[-1].lower(),"downloaded":False,"checksum":None})
+        panels=self._top_level_notice_panels(soup)
         candidates=[]
-        for panel in soup.select("li.AccordionPanel"):
-            text=re.sub(r"\s+"," ",panel.get_text(" ",strip=True))
-            if 25<=len(text)<=9000 and re.search(r"(?:\d{4}/\d{1,2}/\d{1,2}|كراسة|تأجير|مزايدة|فرصة استثمارية|منافسة)",text,re.I):candidates.append(text)
-        if not candidates:
-            text_nodes=soup.find_all(string=re.compile(r"(?:مزايدة|فرصة استثمارية|تأجير|مناقصة|طرح)",re.I))
-            for node in text_nodes:
-                current=node.parent
-                for _ in range(6):
-                    if not current or current.name in ("body","html"):break
-                    text=re.sub(r"\s+"," ",current.get_text(" ",strip=True))
-                    if "AccordionPanel" in (current.get("class") or []) and 25<=len(text)<=9000:
-                        candidates.append(text);break
-                    current=current.parent
-        # The page may contain nested wrappers for one notice; deduplicate by title and
-        # keep the largest matching text block so deadline and asset evidence survive.
-        unique=[]
-        for block in sorted(candidates,key=len,reverse=True):
-            title=re.split(r"(?:موعد التقديم|موعد نهاية|قيمة الكراسة|مميزات الفرصة|الشروط|للاستفسار)",block,maxsplit=1)[0].strip(" •*-:،")[:350]
-            if title and not any(normalize_arabic(title)==normalize_arabic(x[0]) for x in unique):unique.append((title,block))
-        records=[]
-        for index,(title,body) in enumerate(unique):
+        for panel in panels:
+            block=re.sub(r"\s+"," ",panel.get_text(" ",strip=True))
+            if 25<=len(block)<=9000 and re.search(r"(?:\d{4}/\d{1,2}/\d{1,2}|كراسة|تأجير|مزايدة|فرصة استثمارية|منافسة)",block,re.I):
+                title=self._notice_title(block)
+                if title:candidates.append((panel,title,block))
+
+        # Repeated exact document URLs across notices have no unambiguous owner.
+        # Keep them only as listing-level evidence and fail collection completeness.
+        notice_refs=[];document_panels={};ambiguous_urls=set();identity_keys={}
+        application_links_by_panel={}
+        for panel,title,block in candidates:
+            identity_key=normalize_arabic(title)
+            identity_keys.setdefault(identity_key,[]).append(panel)
+            docs=[];apps=[];seen_docs=set()
+            for anchor in panel.select("a[href]"):
+                href=urljoin(self.url,anchor.get("href",""))
+                doc=self._document_reference(anchor,self.url)
+                if doc:
+                    if doc["url"] not in seen_docs:
+                        docs.append(doc);seen_docs.add(doc["url"])
+                    document_panels.setdefault(doc["url"],set()).add(id(panel))
+                elif self._is_application_link(href):
+                    apps.append({"label":anchor.get_text(" ",strip=True) or href,"url":href,
+                        "association_status":"EXACT_NOTICE_PANEL_LINK"})
+            notice_refs.append((panel,title,block,docs))
+            application_links_by_panel[id(panel)]=apps
+        ambiguous_urls={url for url,panel_ids in document_panels.items() if len(panel_ids)>1}
+        unresolved_docs=[];records=[];unique=[];collision_count=0
+        for panel,title,body,docs in notice_refs:
+            item_docs=[]
+            for doc in docs:
+                if doc["url"] in ambiguous_urls:
+                    unresolved_docs.append({**doc,"association_status":"AMBIGUOUS_REPEATED_ACROSS_NOTICES",
+                        "provenance":"same document URL occurs in more than one notice panel"})
+                else:item_docs.append(doc)
+            identity_key=normalize_arabic(title)
+            if len(identity_keys[identity_key])>1:
+                collision_count+=1
+                for doc in item_docs:
+                    unresolved_docs.append({**doc,"association_status":"UNRESOLVED_NOTICE_IDENTITY_COLLISION",
+                        "provenance":"duplicate normalized notice title without a stable official identifier"})
+                continue
+            unique.append((title,body))
+            application_links=application_links_by_panel[id(panel)]
             kind,asset_evidence,reason=self.classify(title,body)
             deadline_match=re.search(r"(?:موعد نهاية تقديم العطاء|آخر موعد|آخر موعد للتقديم|deadline)[^0-9]{0,60}(\d{4}[/-]\d{1,2}[/-]\d{1,2})",body,re.I)
             deadline=deadline_match.group(1).replace("/","-") if deadline_match else None
@@ -781,11 +828,15 @@ class KfuAdapter(BaseSourceAdapter):
             if asset_evidence and not campus: reason="الأصل التجاري محتمل لكن موقعه الجامعي غير محدد في الإعلان؛ يحتاج تحققاً جغرافياً."
             if not asset_evidence: reason += " لم يُنشأ سجل فرصة رئيسي لهذا المحتوى."
             external_id="kfu-announcement:"+hashlib.sha256((self.url+"\n"+normalize_arabic(title)).encode()).hexdigest()[:24]
-            item={"url":"","source_listing_url":self.url,"title":title,"publication_date":None,"content_type":kind,"raw_text":body,
-                "extracted_description":body[:2500],"attachments":links,"detected_keywords":[],"parser_version":self.parser_version,
-                "fingerprint":hashlib.sha256((body+json.dumps(links,ensure_ascii=False,sort_keys=True)).encode()).hexdigest(),"qualified":qualified,"qualification_reason":reason,
-                "qualification_review_required":bool(not qualified and kind=="COMMERCIAL_FACILITY_OPPORTUNITY")}
-            self.content_items.append(item)
+            provenance={"source_url_scope":"LISTING_ONLY_NO_ITEM_URL","source_listing_url":self.url,
+                "item_specific_url":None,"item_specific_url_available":False,
+                "association_method":"TOP_LEVEL_ACCORDION_PANEL_CONTAINMENT","official_notice_identifier_available":False}
+            item={"url":"","source_listing_url":self.url,"source_url_provenance":provenance,
+                "title":title,"publication_date":None,"content_type":kind,"raw_text":body,
+                "extracted_description":body[:2500],"attachments":item_docs,"application_links":application_links,
+                "detected_keywords":[],"parser_version":self.parser_version,
+                "fingerprint":hashlib.sha256((body+json.dumps(item_docs,ensure_ascii=False,sort_keys=True)+json.dumps(application_links,ensure_ascii=False,sort_keys=True)).encode()).hexdigest(),
+                "qualified":qualified,"qualification_reason":reason}
             raw=RawOpportunity(external_id=external_id,title=title,url="",owner="جامعة الملك فيصل",location="جامعة الملك فيصل، الأحساء" if campus else None,
                 deadline=deadline,status=status,description=body[:2500],raw={**item,"official_source_id":external_id,
                     "source_owner":"جامعة الملك فيصل","project_owner":"جامعة الملك فيصل","opportunity_type":kind,"qualification_reason":reason,
@@ -795,18 +846,41 @@ class KfuAdapter(BaseSourceAdapter):
                     "location_evidence":"Announcement names King Faisal University campus facilities in Al-Ahsa." if qualified else None,
                     "location_confidence_score":0.98 if qualified else 0.0},location_source_filtered=qualified)
             records.append(raw)
-        if not self.content_items:
-            # Keep the listing itself as a discovered content record; an empty parse is not
-            # treated as an empty opportunity snapshot.
-            self.content_items=[{"url":self.url,"title":soup.title.get_text(" ",strip=True) if soup.title else "KFU investment announcements",
-                "content_type":"GENERAL_ANNOUNCEMENT","raw_text":page_text,"extracted_description":page_text[:2500],"attachments":links,
-                "detected_keywords":[],"parser_version":self.parser_version,"fingerprint":hashlib.sha256(page_text.encode()).hexdigest()}]
-        self.metrics={"source_total_reported":len(unique),"pages_requested":1,"pages_successful":1,"records_received":len(unique),
-            "records_parsed":len(unique),"unique_records":len(unique),"qualified_opportunities":sum(bool(x.raw.get("qualified")) for x in records),
-            "rejected_content":sum(not bool(x.raw.get("qualified")) for x in records),"pagination_complete":True,
-            "source_collection_complete":True,"listing_url":self.url,"attachments":len(links),
+
+        # Page-wide links outside any notice cannot be attributed to a particular
+        # opportunity. Keep only as listing evidence, never on a SourceOpportunity.
+        listing_docs=[]
+        for anchor in soup.select("a[href]"):
+            if anchor.find_parent("li",class_="AccordionPanel") is not None:continue
+            doc=self._document_reference(anchor,self.url)
+            if doc:
+                doc["association_status"]="UNASSIGNED_LISTING_REFERENCE"
+                doc["provenance"]="link occurs outside every top-level notice panel"
+                listing_docs.append(doc)
+        listing_docs.extend(unresolved_docs)
+        # Preserve stable order while suppressing duplicate listing evidence URLs/statuses.
+        deduped_listing=[];listing_seen=set()
+        for ref in listing_docs:
+            key=(ref.get("url"),ref.get("association_status"))
+            if key not in listing_seen:deduped_listing.append(ref);listing_seen.add(key)
+        content_title=soup.title.get_text(" ",strip=True) if soup.title else "KFU investment announcements"
+        content_fingerprint=hashlib.sha256((page_text+json.dumps(deduped_listing,ensure_ascii=False,sort_keys=True)).encode()).hexdigest()
+        self.content_items=[{"url":self.url,"title":content_title,"content_type":"GENERAL_ANNOUNCEMENT","raw_text":page_text,
+            "extracted_description":page_text[:2500],"attachments":deduped_listing,"detected_keywords":[],
+            "parser_version":self.parser_version,"fingerprint":content_fingerprint}]
+        complete=bool(panels) and collision_count==0 and not ambiguous_urls and len(candidates)==len(unique)
+        self.metrics={"source_total_reported":len(candidates),"pages_requested":1,"pages_successful":1,"records_received":len(candidates),
+            "records_parsed":len(records),"unique_records":len(records),"qualified_opportunities":sum(bool(x.raw.get("qualified")) for x in records),
+            "rejected_content":sum(not bool(x.raw.get("qualified")) for x in records),"pagination_complete":complete,
+            "source_collection_complete":complete,"listing_url":self.url,"attachments":sum(len(x.raw.get("attachments",[])) for x in records),
+            "item_scoped_attachment_count":sum(len(x.raw.get("attachments",[])) for x in records),
+            "unassigned_page_attachment_count":sum(x.get("association_status")=="UNASSIGNED_LISTING_REFERENCE" for x in deduped_listing),
+            "ambiguous_attachment_count":len(ambiguous_urls),"notice_identity_collision_count":collision_count,
             "expired_count":sum(1 for x in records if x.status=="EXPIRED"),"unknown_status_count":sum(1 for x in records if x.status=="UNKNOWN"),"parser_version":self.parser_version}
-        self.diagnostics.append(f"Parsed {len(unique)} announcement entries from KFU's official investment announcement page.")
+        if not panels:self.diagnostics.append("No top-level KFU notice containers were found; parser failed closed and emitted no opportunity records.")
+        if ambiguous_urls:self.diagnostics.append(f"{len(ambiguous_urls)} repeated document URL(s) remain unassigned because multiple notice panels contain them.")
+        if collision_count:self.diagnostics.append(f"{collision_count} notice(s) with duplicate normalized titles were omitted because no stable official identifier was available.")
+        self.diagnostics.append(f"Parsed {len(records)} uniquely identified notices from KFU's official listing page; item-specific detail URLs are not exposed by this structure.")
         return records,1
 
 

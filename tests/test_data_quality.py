@@ -4,7 +4,7 @@ import sys
 import types
 
 import pytest
-from sqlalchemy import create_engine, select
+from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
@@ -12,7 +12,7 @@ from app.models import (Base, AlertEvent, AuditEvent, DuplicateCandidate, Locati
     OpportunityConflict, QualificationReview, Source, SourceObservation, SourceOpportunity,
     SourceOpportunityDatasetMembership, SystemEvent, SyncJob)
 from app.data_quality import evaluate_data_quality, _source_absence_classification, _exclusive_map_partition_counts
-from app.main import _geographic_coordinate_metrics, _national_map_payload, _verified_coordinate_points
+from app.main import _national_map_payload, _verified_coordinate_points
 from app.furas_checkpoint import FURAS_NATIONAL_SCOPE, new_checkpoint, snapshot_identity
 
 
@@ -119,14 +119,10 @@ def test_national_map_partition_is_master_unique_and_keeps_coordinate_locations(
     payload=_national_map_payload(dq_db,[Opportunity.merged_into_id.is_(None)],{})
     counts=payload["counts"]
     partition=_exclusive_map_partition_counts(counts)
-    eligible_ids={ident for point in payload["points"] for ident in point["ids"]}
-    coordinate_metrics=_geographic_coordinate_metrics(
-        dq_db.scalars(select(Opportunity).where(Opportunity.merged_into_id.is_(None))).all(), eligible_ids)
     assert counts["total"]==6
     assert counts["exact_mapped"]==3
     assert counts["unverified_coordinates"]==2
     assert counts["missing_coordinates"]==3
-    assert coordinate_metrics=={"truly_missing_coordinates":1,"coordinates_present_but_not_map_eligible":2}
     assert partition["categories"]=={"inside_exact":3,"outside_boundary":0,
         "unverified_coordinates":2,"missing_coordinates":1}
     assert partition["partition_total"]==6 and partition["valid"] is True

@@ -1,0 +1,17 @@
+{
+  "pilot_id": "furas-document-collection-phase2-review-3188-20261118",
+  "source_key": "furas",
+  "mode": "EXPLICIT_EXISTING_SOURCE_OPPORTUNITY_ALLOWLIST",
+  "created_from": "Production SELECT snapshot; no production writes",
+  "records": [
+    {
+      "source_opportunity_id": 3188,
+      "provider_opportunity_id": "01-26-017001-42008",
+      "master_opportunity_id": 597,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-42008?type=Investment",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": true
+    }
+  ]
+}

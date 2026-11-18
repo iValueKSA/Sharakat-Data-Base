@@ -159,16 +159,32 @@ def test_concurrent_replay_of_same_known_furas_record_is_write_idempotent():
     try:
         with factory() as db:
             source=db.scalar(select(Source).where(Source.source_key=="furas"))
-            existing=db.scalar(select(SourceOpportunity).where(SourceOpportunity.source_id==source.id,
-                SourceOpportunity.master_opportunity_id.is_not(None)).order_by(SourceOpportunity.id).limit(1))
-            provider_id=existing.source_opportunity_id
-        raw=next(item for item in records if str(item.external_id)==provider_id)
+            existing_rows=db.scalars(select(SourceOpportunity).where(SourceOpportunity.source_id==source.id,
+                SourceOpportunity.master_opportunity_id.is_not(None)).order_by(SourceOpportunity.id)).all()
+        raw_by_id={str(item.external_id):item for item in records}
+
+        # Bring one bounded existing record in the disposable restore to the
+        # saved capture before measuring duplicate replay writes. The restore
+        # can be newer than this offline manifest; that first reconciliation
+        # is setup, not part of the concurrency assertion. This is deliberately
+        # one known record, never a replay of the national manifest.
+        existing=next((row for row in existing_rows if row.source_opportunity_id in raw_by_id),None)
+        assert existing is not None, "No captured Furas record matches an existing linked test row"
+        raw=copy.deepcopy(raw_by_id[existing.source_opportunity_id])
         raw.raw=dict(raw.raw or {})
         raw.raw["checkpoint_provenance"]={"scan_run_id":capture_run_id,"enumeration_scope":"SAUDI_NATIONAL_V1",
             "scope_fingerprint":raw.raw.get("scope_fingerprint") or "offline-replay",
             "source_object_id":(raw.raw.get("attributes") or {}).get("OBJECTID")}
         raw.raw["capture_identifier"]=capture_identifier
-        raw.raw["capture_record_sha256"]=capture_hashes.get(provider_id)
+        raw.raw["capture_record_sha256"]=capture_hashes.get(existing.source_opportunity_id)
+        with patch("app.geography_flags.flag_enabled",side_effect=lambda name:False), \
+                patch("app.status_lifecycle.local_today",return_value=date(2026,11,5)):
+            with factory() as db:
+                source=db.scalar(select(Source).where(Source.source_key=="furas"))
+                with db.begin_nested():
+                    _safe_record(db,source,raw,defaultdict(int),allow_master_creation=False)
+                    db.flush()
+                db.commit()
 
         statements=[]
         def capture(_connection,_cursor,statement,_parameters,_context,_executemany):
@@ -186,7 +202,7 @@ def test_concurrent_replay_of_same_known_furas_record_is_write_idempotent():
                 db.commit()
                 return outcome.id if outcome is not None else existing.id
         try:
-            with patch("app.geography_flags.flag_enabled",side_effect=lambda name:name=="FURAS_NATIONAL_ENUMERATION_ENABLED"), \
+            with patch("app.geography_flags.flag_enabled",side_effect=lambda name:False), \
                     patch("app.status_lifecycle.local_today",return_value=date(2026,11,5)):
                 with ThreadPoolExecutor(max_workers=2) as executor:
                     outcomes=list(executor.map(lambda _index:process_once(),range(2)))

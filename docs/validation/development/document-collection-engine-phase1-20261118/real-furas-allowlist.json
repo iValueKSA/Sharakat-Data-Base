@@ -1,0 +1,233 @@
+{
+  "pilot_id": "furas-doc-collection-phase1-20261118",
+  "source_key": "furas",
+  "mode": "EXPLICIT_EXISTING_SOURCE_OPPORTUNITY_ALLOWLIST",
+  "created_from": "Production SELECT snapshot; no production writes",
+  "records": [
+    {
+      "source_opportunity_id": 3188,
+      "provider_opportunity_id": "01-26-017001-42008",
+      "master_opportunity_id": 597,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-42008?type=Investment",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": true
+    },
+    {
+      "source_opportunity_id": 18,
+      "provider_opportunity_id": "02-24-017001-38001",
+      "master_opportunity_id": 18,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-24-017001-38001?type=TempRental",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": false
+    },
+    {
+      "source_opportunity_id": 19,
+      "provider_opportunity_id": "02-25-017001-2002",
+      "master_opportunity_id": 19,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-25-017001-2002?type=TempRental",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": false
+    },
+    {
+      "source_opportunity_id": 20,
+      "provider_opportunity_id": "02-25-017001-2003",
+      "master_opportunity_id": 20,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-25-017001-2003?type=TempRental",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": false
+    },
+    {
+      "source_opportunity_id": 21,
+      "provider_opportunity_id": "02-25-017001-3039",
+      "master_opportunity_id": 21,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-25-017001-3039?type=TempRental",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": false
+    },
+    {
+      "source_opportunity_id": 26,
+      "provider_opportunity_id": "02-25-017001-36002",
+      "master_opportunity_id": 26,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/opportunity/02-25-017001-36002?type=TemporaryRental",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": false
+    },
+    {
+      "source_opportunity_id": 27,
+      "provider_opportunity_id": "02-25-017001-36001",
+      "master_opportunity_id": 27,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-25-017001-36001?type=TempRental",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": false
+    },
+    {
+      "source_opportunity_id": 28,
+      "provider_opportunity_id": "02-25-017001-38003",
+      "master_opportunity_id": 28,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-25-017001-38003?type=TempRental",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": false
+    },
+    {
+      "source_opportunity_id": 29,
+      "provider_opportunity_id": "02-25-017001-43001",
+      "master_opportunity_id": 29,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-25-017001-43001?type=TempRental",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": false
+    },
+    {
+      "source_opportunity_id": 30,
+      "provider_opportunity_id": "25-09-1976186",
+      "master_opportunity_id": 30,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/ar/opportunity/25-09-1976186?type=Investment",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": false
+    },
+    {
+      "source_opportunity_id": 31,
+      "provider_opportunity_id": "02-25-017001-59007",
+      "master_opportunity_id": 31,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-25-017001-59007?type=TempRental",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": false
+    },
+    {
+      "source_opportunity_id": 32,
+      "provider_opportunity_id": "02-25-017001-63005",
+      "master_opportunity_id": 32,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-25-017001-63005?type=TempRental",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": false
+    },
+    {
+      "source_opportunity_id": 33,
+      "provider_opportunity_id": "02-25-017001-63003",
+      "master_opportunity_id": 33,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-25-017001-63003?type=TempRental",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": false
+    },
+    {
+      "source_opportunity_id": 34,
+      "provider_opportunity_id": "02-25-017001-63004",
+      "master_opportunity_id": 34,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-25-017001-63004?type=TempRental",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": false
+    },
+    {
+      "source_opportunity_id": 35,
+      "provider_opportunity_id": "02-25-017001-64001",
+      "master_opportunity_id": 35,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/ar/opportunity/02-25-017001-64001?type=TemporaryRental",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": false
+    },
+    {
+      "source_opportunity_id": 36,
+      "provider_opportunity_id": "02-25-017001-65001",
+      "master_opportunity_id": 36,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-25-017001-65001?type=TempRental",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": false
+    },
+    {
+      "source_opportunity_id": 37,
+      "provider_opportunity_id": "02-25-017001-65002",
+      "master_opportunity_id": 37,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-25-017001-65002?type=TempRental",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": false
+    },
+    {
+      "source_opportunity_id": 38,
+      "provider_opportunity_id": "02-25-017001-66001",
+      "master_opportunity_id": 38,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-25-017001-66001?type=TempRental",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": false
+    },
+    {
+      "source_opportunity_id": 39,
+      "provider_opportunity_id": "02-25-017001-66002",
+      "master_opportunity_id": 39,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-25-017001-66002?type=TempRental",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": false
+    },
+    {
+      "source_opportunity_id": 40,
+      "provider_opportunity_id": "02-25-017001-66006",
+      "master_opportunity_id": 40,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-25-017001-66006?type=TempRental",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": false
+    },
+    {
+      "source_opportunity_id": 41,
+      "provider_opportunity_id": "02-25-017001-66009",
+      "master_opportunity_id": 41,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-25-017001-66009?type=TempRental",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": false
+    },
+    {
+      "source_opportunity_id": 42,
+      "provider_opportunity_id": "02-25-017001-66003",
+      "master_opportunity_id": 42,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-25-017001-66003?type=TempRental",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": false
+    },
+    {
+      "source_opportunity_id": 43,
+      "provider_opportunity_id": "02-25-017001-66008",
+      "master_opportunity_id": 43,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-25-017001-66008?type=TempRental",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": false
+    },
+    {
+      "source_opportunity_id": 44,
+      "provider_opportunity_id": "02-25-017001-66010",
+      "master_opportunity_id": 44,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-25-017001-66010?type=TempRental",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": false
+    },
+    {
+      "source_opportunity_id": 45,
+      "provider_opportunity_id": "02-25-017001-66011",
+      "master_opportunity_id": 45,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-25-017001-66011?type=TempRental",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": false
+    }
+  ]
+}

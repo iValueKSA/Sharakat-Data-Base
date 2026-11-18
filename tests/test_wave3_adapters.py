@@ -50,11 +50,14 @@ def test_kfu_listing_metadata_records_attachments_without_downloading():
             records, _ = await adapter.fetch(client)
         return adapter, records
     adapter, records = asyncio.run(run())
-    assert len(records) >= 2
+    assert len(records) == 2
     eligible = [r for r in records if r.raw.get("qualified")]
     assert eligible and eligible[0].raw["attachments"][0]["downloaded"] is False
     assert eligible[0].url==""
     assert eligible[0].raw["source_listing_url"]==KfuAdapter.url
+    assert eligible[0].raw["source_url_provenance"]["item_specific_url_available"] is False
+    assert len(eligible[0].raw["attachments"]) == 1
+    assert len(adapter.content_items) == 1
     assert any(r.deadline == "2026-12-15" and r.raw["deadline_evidence"] == "explicit announcement date" for r in records)
     assert all(r.raw.get("qualification_review_required") is False for r in records)
     assert adapter.metrics["source_collection_complete"] is True

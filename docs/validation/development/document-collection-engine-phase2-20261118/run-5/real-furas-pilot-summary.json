@@ -1,0 +1,145 @@
+{
+  "pilot_id": "furas-document-collection-phase2-review-3188-20261118",
+  "run_id": 5,
+  "run_status": "COMPLETED",
+  "source_key": "furas",
+  "requested_opportunities": 1,
+  "processed_opportunities": 1,
+  "documents_discovered": 2,
+  "candidates_staged": 1,
+  "verified_candidates": 1,
+  "ready_for_approval": 1,
+  "review_required": 0,
+  "duplicates_prevented": 1,
+  "temporary_failures": 0,
+  "failed_records": [],
+  "document_categories": {
+    "DRAFT_CONTRACT": 1
+  },
+  "direct_link_outcomes": {
+    "TEMPORARY_FAILURE": 1
+  },
+  "verified_amount_count": 0,
+  "raw_price_evidence_count": 1,
+  "verified_currency_count": 0,
+  "public_price_count": 0,
+  "candidate_source_ids": [
+    3188
+  ],
+  "candidate_master_ids": [
+    597
+  ],
+  "opportunity_document_row_count": 1,
+  "published_document_1_present": true,
+  "published_document_1_sha256": "2c46ba8597e8179dd956043257beb04799099253959c517b5756fcef5c6f59c2",
+  "source_capabilities": [
+    {
+      "source_key": "ahda",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    },
+    {
+      "source_key": "alahsa-opportunities",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    },
+    {
+      "source_key": "furas",
+      "status": "IMPLEMENTED",
+      "adapter": "FurasDocumentAdapter",
+      "capabilities": [
+        "discovery",
+        "booklet",
+        "draft_contract",
+        "application_form",
+        "additional_attachments",
+        "purchase_requirement",
+        "page_fallback",
+        "gis_price_evidence",
+        "lifecycle_evidence"
+      ],
+      "note": "Official opportunity detail page; allowlisted existing records only."
+    },
+    {
+      "source_key": "invest-saudi",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    },
+    {
+      "source_key": "kfu",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    },
+    {
+      "source_key": "modon",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    },
+    {
+      "source_key": "mwan",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    },
+    {
+      "source_key": "ncp",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    },
+    {
+      "source_key": "nhc",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    },
+    {
+      "source_key": "pif",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    },
+    {
+      "source_key": "rcjy-investment-opportunities",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    },
+    {
+      "source_key": "rcu-investment-opportunities",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    },
+    {
+      "source_key": "taadeen-mining-bids",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    },
+    {
+      "source_key": "waha-development",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    }
+  ]
+}

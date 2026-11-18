@@ -457,3 +457,24 @@ tbody tr:hover { background: rgba(129,140,248,.085); }
   .opportunity-card-action .row-action { width:100%;min-height:38px;padding:8px 12px;font-size:10px; }
   #view-opportunities .filter-bar { align-items:stretch; }
 }
+
+/* Opportunity document cards follow the existing dark RTL detail modal. */
+.opportunity-documents{margin:20px 0;padding:18px;border:1px solid var(--ui-line);border-radius:var(--radius-card);background:linear-gradient(145deg,rgba(22,26,43,.92),rgba(11,13,21,.96));color:var(--ui-text)}
+.opportunity-documents>header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.opportunity-documents h3{margin:2px 0 0;color:var(--ui-text);font-size:15px}
+.opportunity-document-list{display:grid;grid-template-columns:1fr;gap:10px}
+.opportunity-document-card{padding:14px;border:1px solid var(--ui-line);border-radius:12px;background:rgba(7,8,13,.55)}
+.document-card-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.document-card-heading b{display:block;color:var(--ui-text);font-size:13px}
+.document-card-heading small,.document-verification{display:block;margin-top:5px;color:var(--ui-muted);font-size:10px}
+.document-verified-badge{flex:none;padding:4px 8px;border:1px solid rgba(52,211,153,.35);border-radius:999px;color:var(--ui-emerald);font-size:9px}
+.document-price,.document-participation,.document-access-note{display:flex;justify-content:space-between;gap:12px;margin:10px 0;padding:8px 10px;border-radius:8px;background:rgba(251,191,36,.08);color:var(--ui-amber);font-size:11px}
+.document-price small{color:var(--ui-muted)}
+.document-price b{font-size:12px}
+.document-access-note{background:rgba(34,211,238,.07);color:var(--ui-cyan)}
+.documents-empty-state{margin:0;padding:12px;border:1px dashed var(--ui-line);border-radius:9px;color:var(--ui-muted);font-size:12px;line-height:1.8}
+.document-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.document-action{display:inline-flex;align-items:center;justify-content:center;min-height:34px;padding:7px 11px;border:1px solid var(--ui-line);border-radius:8px;color:var(--ui-text);font-size:10px;text-decoration:none;transition:background .15s ease,border-color .15s ease}
+.document-action:hover{border-color:var(--ui-cyan);background:rgba(34,211,238,.08)}
+.document-action-primary{border-color:rgba(129,140,248,.35);background:rgba(129,140,248,.13);color:#c7d2fe}
+@media(max-width:620px){.opportunity-documents{padding:13px}.document-actions{display:grid;grid-template-columns:1fr}.document-action{width:100%}.document-card-heading{gap:8px}}

@@ -809,10 +809,86 @@ async function syncOne(key, button) {
 async function syncAll() { try { const sources = state.sources.filter(source => source.enabled); for (const source of sources) await syncOne(source.key); await loadDashboard(); } catch (error) { toast(error.message); } }
 async function toggleSource(button) { const enabled = button.dataset.enabled !== "true"; if (!window.confirm(enabled ? "تأكيد تفعيل هذا المصدر؟" : "تأكيد إيقاف هذا المصدر؟")) return; try { await api(`/api/admin/sources/${button.dataset.toggle}?enabled=${enabled}&confirm=true`, { method: "PATCH" }); await loadSources(); toast(enabled ? "تم تفعيل المصدر" : "تم إيقاف المصدر"); } catch (error) { toast(error.message); } }
 function date(value) { return formatDateTimeLatin(value); }
+function safeExternalHref(value) {
+  try {
+    const url = new URL(value);
+    const host = url.hostname.toLowerCase().replace(/\.$/, "");
+    if (!["http:", "https:"].includes(url.protocol) || url.username || url.password) return "";
+    if (url.port && url.port !== (url.protocol === "http:" ? "80" : "443")) return "";
+    if (/^(?:localhost|.*\.localhost|.*\.local|.*\.internal|.*\.test)$/.test(host)) return "";
+    if (/^(?:0|10|127|169\.254|192\.168)\./.test(host)) return "";
+    const ipv4 = host.match(/^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$/);
+    if (ipv4) {
+      const octets = ipv4.slice(1).map(Number);
+      if (octets.some(value => value > 255) || octets[0] === 0 || octets[0] === 10 || octets[0] === 127
+          || (octets[0] === 169 && octets[1] === 254) || (octets[0] === 172 && octets[1] >= 16 && octets[1] <= 31)
+          || (octets[0] === 192 && octets[1] === 168) || (octets[0] === 100 && octets[1] >= 64 && octets[1] <= 127)) return "";
+    }
+    if (/^(?:\[)?(?:::1|::|fc[0-9a-f:]*|fd[0-9a-f:]*|fe[89ab][0-9a-f:]*)\]?$/.test(host)) return "";
+    const sensitiveQueryKeys = new Set(["access_token", "access-token", "accesskeyid", "api-key", "api_key", "apikey", "auth", "authorization", "client_secret", "credential", "jwt", "key",
+      "oauth_token", "secret", "session", "sessionid", "signature", "sig", "token", "x-amz-credential", "x-amz-signature",
+      "x-amz-security-token", "x-goog-credential", "x-goog-signature"]);
+    for (const [key] of url.searchParams) if (sensitiveQueryKeys.has(key.toLowerCase())) return "";
+    for (const [key] of new URLSearchParams(url.hash.slice(1))) if (sensitiveQueryKeys.has(key.toLowerCase())) return "";
+    return url.href;
+  }
+  catch { return ""; }
+}
+function documentCategoryLabel(category) {
+  return ({ TERMS_AND_CONDITIONS_BOOKLET: "كراسة الشروط والمواصفات", TENDER_SPECIFICATIONS: "مواصفات المنافسة", DRAFT_CONTRACT: "مسودة عقد", SITE_MAP: "خريطة الموقع", TECHNICAL_ATTACHMENT: "مرفق فني", INVESTMENT_BROCHURE: "كتيب استثماري", GENERAL_ATTACHMENT: "مرفق عام", UNKNOWN_DOCUMENT_TYPE: "نوع المستند غير محدد" })[category] || "نوع المستند غير محدد";
+}
+function renderOpportunityDocuments(item) {
+  const documents = Array.isArray(item.documents) ? item.documents : [];
+  const externalLink = (url, label, kind = "quiet") => {
+    const href = safeExternalHref(url);
+    return href ? `<a class="document-action document-action-${kind}" href="${safe(href)}" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">${safe(label)}</a>` : "";
+  };
+  if (!documents.length) return "";
+  const cards = documents.map(document => {
+    const title = safe(document.title || "مستند رسمي");
+    const source = safe(document.source_name || "المصدر الرسمي");
+    const category = documentCategoryLabel(document.document_category);
+    const price = document.booklet_price_amount !== null && document.booklet_price_amount !== undefined && document.currency
+      ? `<p class="document-price"><small>سعر الكراسة</small><b dir="ltr">${safe(Number(document.booklet_price_amount).toLocaleString("en-US"))} ${safe(document.currency)}</b></p>` : "";
+    const directDownloadUnavailable = document.direct_download_status === "UNAVAILABLE"
+      && document.document_category === "TERMS_AND_CONDITIONS_BOOKLET"
+      && document.rights_status === "SOURCE_PAGE_LINK_ONLY";
+    const directDownloadNote = directDownloadUnavailable
+      ? `<p class="document-access-note" role="note">رابط تحميل الكراسة غير متاح حاليًا</p>` : "";
+    const participation = document.participation_requirement === "PURCHASE_REQUIRED_FOR_PARTICIPATION"
+      ? `<p class="document-participation" role="note">يلزم شراء الكراسة للتقديم على المنافسة</p>`
+      : document.participation_requirement === "PURCHASE_NOT_REQUIRED_CONFIRMED"
+        ? `<p class="document-access-note">لا يلزم شراء الكراسة للتقديم وفق التحقق المسجل.</p>` : "";
+    const actions = [];
+    const link = safeExternalHref(document.link_url);
+    if (link) {
+      if (document.rights_status === "DIRECT_LINK_APPROVED" && document.access_status === "PUBLIC_DIRECT_DOWNLOAD" && document.link_verification_status === "VERIFIED_PUBLIC") {
+        const label = document.document_category === "TERMS_AND_CONDITIONS_BOOKLET" ? "تحميل الكراسة" : "عرض المستند";
+        actions.push(externalLink(link, label, "primary"));
+      } else if (document.access_status === "LOGIN_REQUIRED") {
+        actions.push(externalLink(link, "يلزم تسجيل الدخول لدى المصدر"));
+      } else if (document.access_status === "PAYMENT_REQUIRED_FOR_DOCUMENT") {
+        actions.push(externalLink(link, "الحصول على الكراسة من المصدر الرسمي"));
+      } else if (document.rights_status === "SOURCE_PAGE_LINK_ONLY" && document.access_status === "PUBLIC_SOURCE_PAGE") {
+        actions.push(externalLink(link, directDownloadUnavailable ? "عرض الفرصة لدى المصدر الرسمي" : "زيارة المصدر الرسمي"));
+      } else {
+        actions.push(externalLink(link, "زيارة المصدر الرسمي"));
+      }
+    }
+    const purchase = document.official_purchase_url && (document.participation_requirement === "PURCHASE_REQUIRED_FOR_PARTICIPATION"
+      || document.access_status === "PAYMENT_REQUIRED_FOR_DOCUMENT")
+      ? externalLink(document.official_purchase_url, "شراء الكراسة عبر المصدر الرسمي", "primary") : "";
+    if (purchase) actions.push(purchase);
+    const lastVerified = document.last_verified_at ? `آخر تحقق: ${safe(date(document.last_verified_at))}` : "حالة التحقق: موثق في السجل";
+    return `<article class="opportunity-document-card"><div class="document-card-heading"><div><b>${title}</b><small>${safe(category)} · ${source}</small></div><span class="document-verified-badge">موثق</span></div>${price}${directDownloadNote}${participation}<small class="document-verification">${lastVerified}</small>${actions.length ? `<div class="document-actions">${actions.join("")}</div>` : ""}</article>`;
+  }).join("");
+  return `<section class="opportunity-documents" aria-labelledby="opportunityDocumentsTitle"><header><div><span class="section-kicker">المستندات والمصادر</span><h3 id="opportunityDocumentsTitle">مستندات الفرصة الاستثمارية</h3></div></header><div class="opportunity-document-list">${cards}</div></section>`;
+}
 async function showDetail(id) {
   try {
     const item = await api(`/api/opportunities/${id}`);
-  $("modalBody").innerHTML = `<div class="detail-head"><div class="eyebrow">${safe(item.canonical_id)}</div><h2 id="modalTitle">${safe(item.title)}</h2><p>الجهة المالكة: ${safe(item.owner || "غير محددة")} · الحالة الموحدة: ${safe(statusLabel(item.status))}</p></div><div class="detail-grid">${[["القطاع", item.sector], ["النشاط", item.activity], ["النشاط الفرعي", item.sub_activity], ["نوع الفرصة", item.type], ["نموذج الاستثمار", item.investment_model], ["نوع الأصل أو الموقع", item.asset_facility_type || "غير محدد"], ["الدولة", item.geography?.country], ["المنطقة", item.geography?.region], ["المحافظة", item.geography?.governorate], ["المدينة / الموقع", item.geography?.locality || (item.geography?.confirmed ? item.geography?.governorate : item.geography?.status_ar)], ["الحي", item.geography?.district], ["حالة الموقع الجغرافي", item.geography?.status_ar], ["سبب المراجعة", item.geography?.reason], ["وصف الموقع", item.location], ["المساحة", item.area !== null && item.area !== undefined ? Number(item.area).toLocaleString("en-US") + " " + (item.area_unit || "م²") : null], ["القيمة الاستثمارية", item.investment_value !== null && item.investment_value !== undefined ? Number(item.investment_value).toLocaleString("en-US") + (item.currency ? " " + item.currency : "") : null], ["مدة العقد", item.duration !== null && item.duration !== undefined ? item.duration + " " + (item.duration_unit === "year" ? "سنة" : item.duration_unit) : null], ["آخر موعد للتقديم", item.deadline || "غير محدد"], ["الرقم المرجعي", item.reference], ["مستوى ثقة الموقع", Math.round((item.confidence || 0) * 100) + "٪"], ["عدد المصادر", item.source_count]].map(([label, value]) => `<div class="detail-field"><small>${label}</small><b>${safe(value === null || value === undefined || value === "" ? "غير منشور" : value)}</b></div>`).join("")}</div><div class="detail-sources"><h3>النشر حسب المصدر</h3>${(item.sources || []).map(source => `<article>${sourceAnnouncementMarkup(source)}<small class="source-location-evidence">جهة النشر: ${safe(source.publishing_entity || "غير محددة في سجل المصدر")} · مشغل المنصة: ${safe(source.source_operator || "غير محدد")}</small>${source.source_external_id ? `<small class="source-location-evidence">معرّف المصدر التقني: ${safe(source.source_external_id)}</small>` : ""}<small class="source-location-evidence">الحالة المعيارية: ${safe(statusLabel(source.canonical_status))} · النص الخام: ${safe(source.raw_status || "غير محدد")}</small>${source.status_review_flags?.length ? `<small class="source-location-evidence">تنبيه مراجعة: ${safe(source.status_review_flags.join("، "))}</small>` : ""}${source.raw_location ? `<small class="source-location-evidence">الموقع كما ورد: ${safe(source.raw_location)}</small>` : ""}</article>`).join("") || "—"}</div><div class="detail-changes"><h3>سجل التغييرات</h3>${item.changes?.length ? item.changes.map(change => `<p>${safe(change.field)}: ${safe(change.before || "—")} ← ${safe(change.after || "—")} · ${date(change.date)}</p>`).join("") : "<p>لا توجد تغييرات مسجلة.</p>"}</div>`;
+  const documentsMarkup = renderOpportunityDocuments(item);
+  $("modalBody").innerHTML = `<div class="detail-head"><div class="eyebrow">${safe(item.canonical_id)}</div><h2 id="modalTitle">${safe(item.title)}</h2><p>الجهة المالكة: ${safe(item.owner || "غير محددة")} · الحالة الموحدة: ${safe(statusLabel(item.status))}</p></div><div class="detail-grid">${[["القطاع", item.sector], ["النشاط", item.activity], ["النشاط الفرعي", item.sub_activity], ["نوع الفرصة", item.type], ["نموذج الاستثمار", item.investment_model], ["نوع الأصل أو الموقع", item.asset_facility_type || "غير محدد"], ["الدولة", item.geography?.country], ["المنطقة", item.geography?.region], ["المحافظة", item.geography?.governorate], ["المدينة / الموقع", item.geography?.locality || (item.geography?.confirmed ? item.geography?.governorate : item.geography?.status_ar)], ["الحي", item.geography?.district], ["حالة الموقع الجغرافي", item.geography?.status_ar], ["سبب المراجعة", item.geography?.reason], ["وصف الموقع", item.location], ["المساحة", item.area !== null && item.area !== undefined ? Number(item.area).toLocaleString("en-US") + " " + (item.area_unit || "م²") : null], ["القيمة الاستثمارية", item.investment_value !== null && item.investment_value !== undefined ? Number(item.investment_value).toLocaleString("en-US") + (item.currency ? " " + item.currency : "") : null], ["مدة العقد", item.duration !== null && item.duration !== undefined ? item.duration + " " + (item.duration_unit === "year" ? "سنة" : item.duration_unit) : null], ["آخر موعد للتقديم", item.deadline || "غير محدد"], ["الرقم المرجعي", item.reference], ["مستوى ثقة الموقع", Math.round((item.confidence || 0) * 100) + "٪"], ["عدد المصادر", item.source_count]].map(([label, value]) => `<div class="detail-field"><small>${label}</small><b>${safe(value === null || value === undefined || value === "" ? "غير منشور" : value)}</b></div>`).join("")}</div>${documentsMarkup}<div class="detail-sources"><h3>النشر حسب المصدر</h3>${(item.sources || []).map(source => `<article>${sourceAnnouncementMarkup(source)}<small class="source-location-evidence">جهة النشر: ${safe(source.publishing_entity || "غير محددة في سجل المصدر")} · مشغل المنصة: ${safe(source.source_operator || "غير محدد")}</small>${source.source_external_id ? `<small class="source-location-evidence">معرّف المصدر التقني: ${safe(source.source_external_id)}</small>` : ""}<small class="source-location-evidence">الحالة المعيارية: ${safe(statusLabel(source.canonical_status))} · النص الخام: ${safe(source.raw_status || "غير محدد")}</small>${source.status_review_flags?.length ? `<small class="source-location-evidence">تنبيه مراجعة: ${safe(source.status_review_flags.join("، "))}</small>` : ""}${source.raw_location ? `<small class="source-location-evidence">الموقع كما ورد: ${safe(source.raw_location)}</small>` : ""}</article>`).join("") || "—"}</div><div class="detail-changes"><h3>سجل التغييرات</h3>${item.changes?.length ? item.changes.map(change => `<p>${safe(change.field)}: ${safe(change.before || "—")} ← ${safe(change.after || "—")} · ${date(change.date)}</p>`).join("") : "<p>لا توجد تغييرات مسجلة.</p>"}</div>`;
     $("modal").classList.add("show"); $("modal").setAttribute("aria-hidden", "false"); $("modalClose").focus();
   } catch (error) { toast(error.message); }
 }
@@ -878,7 +954,4 @@ async function initialize() {
   else if (!initialView) await loadDashboard();
 }
 initialize();
-
-
-
 

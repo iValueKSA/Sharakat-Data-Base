@@ -1,0 +1,31 @@
+{
+  "backup_path": "C:\\Users\\QusaiAbdElhalim\\AppData\\Local\\Sharakat Data Base\\backups\\kfu-2928-correction-20261116T120200Z.dump",
+  "timestamp_utc": "2026-11-16T12:02:45Z",
+  "size_bytes": 67578296,
+  "sha256": "90dfbb8a6dff1d2773c9aa65daa3ad1db299ed62c66990f1b0ff2b077ad79a64",
+  "database_version": "PostgreSQL 16.15",
+  "pg_dump_version": "pg_dump 16.15",
+  "custom_archive_toc_entries": 433,
+  "archive_readability": "PASS",
+  "isolated_restore": "PASS",
+  "isolated_restore_container": "kfu-correction-snapshot-pg-20261116",
+  "isolated_database": "kfu_snapshot",
+  "isolated_schema_head": "0027_opportunity_documents_mvp",
+  "restored_counts": {
+    "masters": 6680,
+    "source_observations": 61006,
+    "source_opportunities": 9470,
+    "kfu_content_items": 7,
+    "documents": 0,
+    "sync_jobs": 960
+  },
+  "target_record_present": true,
+  "target_provider_id": "kfu-announcement:0aac035af08807f4f1755ee5",
+  "target_master_id": 326,
+  "before_metadata_sha256": "68f51907427a1491004d9d673e17208bfd6c03decb44d916e10f56463adc5ab7",
+  "original_source_observations_preserved": true,
+  "master_relationships_verified": {
+    "2774": 225,
+    "2928": 326
+  }
+}

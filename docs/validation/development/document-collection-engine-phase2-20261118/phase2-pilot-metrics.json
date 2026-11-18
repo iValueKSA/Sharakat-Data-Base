@@ -1,0 +1,52 @@
+{
+  "pilot_id": "furas-document-collection-phase1-20261118",
+  "initial_unique_opportunities": 25,
+  "initial_outcomes": {
+    "completed": 6,
+    "temporary_failure": 17,
+    "http_404_source_pages": 2
+  },
+  "final_latest_opportunity_outcomes": {
+    "completed": 6,
+    "temporary_failure": 17,
+    "http_404_source_pages": 2
+  },
+  "unique_opportunities_reprocessed": 6,
+  "processing_attempts_across_retries": 20,
+  "reprocessed_source_opportunity_ids": [
+    3188,
+    41,
+    42,
+    43,
+    44,
+    45
+  ],
+  "initial_unique_document_references": 10,
+  "initial_unique_candidates": 9,
+  "initial_duplicate_against_published_document_1": 1,
+  "new_candidate_identities": 0,
+  "new_ready_candidates": 0,
+  "total_ready_for_approval": 1,
+  "review_required": 8,
+  "rejected": 0,
+  "direct_attachment_outcomes": {
+    "temporary_failure": 6,
+    "listing_redirect": 3,
+    "confirmed_direct_download": 0
+  },
+  "raw_price_evidence": 9,
+  "verified_amounts": 0,
+  "verified_currencies": 0,
+  "public_prices": 0,
+  "current_candidates": {
+    "total": 9,
+    "ready": 1,
+    "needs_review": 8,
+    "temporarily_unreachable": 0,
+    "rejected": 0
+  },
+  "published_documents": 1,
+  "document_1_sha256": "2c46ba8597e8179dd956043257beb04799099253959c517b5756fcef5c6f59c2",
+  "production_mutations": 0,
+  "production_deployment": "NONE"
+}

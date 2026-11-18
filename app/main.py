@@ -14,7 +14,7 @@ from fastapi.staticfiles import StaticFiles
 from sqlalchemy import select, func, or_, and_, case, exists, text, inspect as sa_inspect
 from sqlalchemy.orm import selectinload
 from .database import init_db, SessionLocal, engine
-from .models import Source, Opportunity, SourceOpportunity, SourceObservation, OpportunityLocation, QualificationReview, ChangeHistory, SyncJob, SourceError, DuplicateCandidate, OpportunityConflict, FieldProvenance, SystemEvent, MergeAudit, LocationReview, TaxonomyMapping, SourceContentItem, SourceLimitation, ModonLocation, NcpProjectEvent, User, UserSession, AlertEvent, SystemSetting, AuditEvent, AssetFacilityType, OpportunityAssetFacilityType, SourceOpportunityDatasetMembership, GeographicReferenceDataset, GeographicReferenceUnit, SourceGeographicCoverage
+from .models import Source, Opportunity, OpportunityDocument, SourceOpportunity, SourceObservation, OpportunityLocation, QualificationReview, ChangeHistory, SyncJob, SourceError, DuplicateCandidate, OpportunityConflict, FieldProvenance, SystemEvent, MergeAudit, LocationReview, TaxonomyMapping, SourceContentItem, SourceLimitation, ModonLocation, NcpProjectEvent, User, UserSession, AlertEvent, SystemSetting, AuditEvent, AssetFacilityType, OpportunityAssetFacilityType, SourceOpportunityDatasetMembership, GeographicReferenceDataset, GeographicReferenceUnit, SourceGeographicCoverage
 from .service import seed_sources, sync_source, scheduler_loop
 from .adapters import ADAPTERS, LOCATION_ACCEPTANCE_THRESHOLD
 from .excel_export import build_opportunities_workbook, build_opportunities_workbook_write_only, export_timestamp
@@ -34,6 +34,11 @@ from .status_lifecycle import local_today
 from .rcu_review_safety import rcu_conflict_source_value_is_promotable
 from .deadline_distribution import ACTIVE_OPPORTUNITY_STATUSES, DEADLINE_BUCKETS, classify_deadline_population
 from .source_links import resolve_preferred_source_link, resolve_source_link
+from .documents import document_json, official_source_pages
+from .models import DocumentCandidate, DocumentCollectionRun, DocumentVerificationEvent
+from .document_collection.config import feature_flags as document_collection_feature_flags
+from .document_collection.engine import approve_candidate as approve_staged_document_candidate, reject_candidate as reject_staged_document_candidate
+from .document_collection.registry import capability_matrix as document_capability_matrix
 from .review_lifecycle import reevaluate_open_conflicts
 from .data_quality import evaluate_data_quality, latest_data_quality_run, data_quality_history
 from contextvars import ContextVar
@@ -48,6 +53,10 @@ _request_seconds=0.0
 
 DATA_DIR=os.getenv("DATA_DIR","data")
 PILOT_COHORT_PATH=Path(__file__).with_name("human_review_pilot_cohort.json")
+
+class DocumentCandidateReviewPayload(BaseModel):
+    model_config=ConfigDict(extra="forbid")
+    reason:str=Field(min_length=8,max_length=1000)
 
 def _load_human_review_pilot_cohort():
     try:
@@ -823,6 +832,7 @@ def admin_auth(token:str|None):
     if identity:
         if identity.get("role")=="admin": return identity
         review_path=(path.startswith("/api/admin/review-queue") or path.startswith("/api/admin/review-workbench")
+                     or path.startswith("/api/admin/document-collection")
                      or path=="/api/admin/validation-report"
                      or path in ("/api/admin/location-reviews","/api/admin/conflicts","/api/admin/duplicates")
                      or any(part in path for part in ("/location-reviews/","/conflicts/","/duplicates/")))
@@ -844,6 +854,121 @@ def review_write_auth(token:str|None):
     if not expected or token!=expected:
         raise HTTPException(401,"Authentication required for review decisions")
     return {"id":None,"role":"admin_token","display_name":"Configured admin token"}
+
+
+def _document_candidate_response(candidate:DocumentCandidate, source:Source|None=None, master:Opportunity|None=None):
+    return {"id":candidate.id,"run_id":candidate.run_id,"source_id":candidate.source_id,
+        "source_key":source.source_key if source else None,"source_name":source.source_name_ar if source else None,
+        "source_opportunity_id":candidate.source_opportunity_id,"provider_opportunity_id":candidate.provider_opportunity_id,
+        "opportunity_id":candidate.opportunity_id,"master_canonical_id":master.canonical_id if master else None,
+        "source_document_id":candidate.source_document_id,"document_version":candidate.document_version,
+        "title":candidate.original_title,"document_type":candidate.document_type,
+        "document_category":candidate.document_category,"document_scope":candidate.document_scope,
+        "url":candidate.url,"source_opportunity_url":candidate.source_opportunity_url,
+        "official_purchase_url":candidate.official_purchase_url,"purchase_url_verified":candidate.purchase_url_verified,
+        "access_status":candidate.access_status,"rights_status":candidate.rights_status,
+        "participation_requirement":candidate.participation_requirement,
+        "authentication_required":candidate.authentication_required,
+        "payment_required_for_document":candidate.payment_required_for_document,
+        "link_verification_status":candidate.link_verification_status,
+        "verification_status":candidate.verification_status,"review_status":candidate.review_status,
+        "raw_amount":float(candidate.raw_amount) if candidate.raw_amount is not None else None,
+        "raw_currency":candidate.raw_currency,
+        "verified_amount":float(candidate.verified_amount) if candidate.verified_amount is not None else None,
+        "verified_currency":candidate.verified_currency,"publicly_displayable_price":candidate.publicly_displayable_price,
+        "evidence":candidate.evidence_json,"provenance":candidate.provenance_json,
+        "missing_evidence":candidate.missing_evidence_json,"source_payload_sha256":candidate.source_payload_sha256,
+        "parser_version":candidate.parser_version,"collector_version":candidate.collector_version,
+        "last_verified_at":dt(candidate.last_verified_at),"last_seen_at":dt(candidate.last_seen_at),
+        "failure_count":candidate.failure_count}
+
+
+@app.get("/api/admin/document-collection/capabilities")
+def document_collection_capabilities(x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    with SessionLocal() as db:
+        keys=[value for (value,) in db.execute(select(Source.source_key).order_by(Source.source_key)).all()]
+    flags=document_collection_feature_flags()
+    return {"scheduling_configured":False,
+        "flags":{"engine":flags.engine,"manual_collection":flags.manual_collection,
+            "scheduled_collection":flags.scheduled_collection,"candidate_staging":flags.candidate_staging,
+            "automatic_approval":flags.automatic_approval,"automatic_publication":flags.automatic_publication},
+        "capabilities":document_capability_matrix(keys)}
+
+
+@app.get("/api/admin/document-collection/candidates")
+def document_collection_candidates(verification_status:str|None=None,review_status:str|None=None,
+                                  source_key:str|None=None,limit:int=Query(50,ge=1,le=200),
+                                  offset:int=Query(0,ge=0),x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    allowed_verification={"DISCOVERED","EXTRACTED","IDENTITY_VERIFIED","ACCESS_VERIFIED","NEEDS_REVIEW",
+        "READY_FOR_APPROVAL","RESTRICTED","TEMPORARILY_UNREACHABLE","CHANGED","WITHDRAWAL_PROPOSED"}
+    if verification_status and verification_status not in allowed_verification:
+        raise HTTPException(422,"Unsupported verification status")
+    if review_status and review_status not in {"PENDING","APPROVED","REJECTED"}:
+        raise HTTPException(422,"Unsupported review status")
+    with SessionLocal() as db:
+        query=select(DocumentCandidate).join(Source,Source.id==DocumentCandidate.source_id)
+        if verification_status:query=query.where(DocumentCandidate.verification_status==verification_status)
+        if review_status:query=query.where(DocumentCandidate.review_status==review_status)
+        if source_key:query=query.where(Source.source_key==source_key)
+        total=db.scalar(select(func.count()).select_from(query.order_by(None).subquery())) or 0
+        candidates=db.scalars(query.order_by(DocumentCandidate.updated_at.desc(),DocumentCandidate.id.desc()).offset(offset).limit(limit)).all()
+        items=[_document_candidate_response(candidate,db.get(Source,candidate.source_id),
+            db.get(Opportunity,candidate.opportunity_id) if candidate.opportunity_id else None) for candidate in candidates]
+        return {"items":items,"total":total,"limit":limit,"offset":offset}
+
+
+@app.get("/api/admin/document-collection/candidates/{candidate_id}/history")
+def document_collection_candidate_history(candidate_id:int,x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    with SessionLocal() as db:
+        if db.get(DocumentCandidate,candidate_id) is None:raise HTTPException(404,"Document candidate not found")
+        events=db.scalars(select(DocumentVerificationEvent).where(
+            DocumentVerificationEvent.candidate_id==candidate_id).order_by(DocumentVerificationEvent.created_at,
+                DocumentVerificationEvent.id)).all()
+        return {"candidate_id":candidate_id,"events":[{"id":event.id,"run_id":event.run_id,
+            "event_type":event.event_type,"outcome":event.outcome,"evidence":event.evidence_json,
+            "before_sha256":event.before_sha256,"after_sha256":event.after_sha256,
+            "parser_version":event.parser_version,"collector_version":event.collector_version,
+            "created_at":dt(event.created_at)} for event in events]}
+
+
+@app.get("/api/admin/document-collection/runs/{run_id}")
+def document_collection_run(run_id:int,x_admin_token:str|None=Header(default=None)):
+    admin_auth(x_admin_token)
+    with SessionLocal() as db:
+        run=db.get(DocumentCollectionRun,run_id)
+        if run is None:raise HTTPException(404,"Document collection run not found")
+        return {"run_id":run.id,"source_key":run.source_key,"scope":run.scope,"status":run.status,
+            "requested":run.requested_count,"processed":run.processed_count,"discovered":run.discovered_count,
+            "verified":run.verified_count,"ready_for_approval":run.ready_count,"review_required":run.review_count,
+            "rejected":run.rejected_count,"duplicates_prevented":run.duplicate_count,
+            "temporary_failures":run.temporary_failure_count,"checkpoint":run.checkpoint_json,
+            "summary":run.summary_json,"error_summary":run.error_summary,
+            "started_at":dt(run.started_at),"finished_at":dt(run.finished_at)}
+
+
+@app.post("/api/admin/document-collection/candidates/{candidate_id}/approve")
+def approve_document_collection_candidate(candidate_id:int,payload:DocumentCandidateReviewPayload,
+                                           x_admin_token:str|None=Header(default=None)):
+    identity=review_write_auth(x_admin_token)
+    try:
+        return approve_staged_document_candidate(candidate_id,actor_id=(identity or {}).get("id"),
+            actor_role=(identity or {}).get("role","admin_token"),reason=payload.reason)
+    except LookupError as exc:raise HTTPException(404,str(exc)) from exc
+    except ValueError as exc:raise HTTPException(409,str(exc)) from exc
+
+
+@app.post("/api/admin/document-collection/candidates/{candidate_id}/reject")
+def reject_document_collection_candidate(candidate_id:int,payload:DocumentCandidateReviewPayload,
+                                         x_admin_token:str|None=Header(default=None)):
+    identity=review_write_auth(x_admin_token)
+    try:
+        return reject_staged_document_candidate(candidate_id,actor_id=(identity or {}).get("id"),
+            actor_role=(identity or {}).get("role","admin_token"),reason=payload.reason)
+    except LookupError as exc:raise HTTPException(404,str(exc)) from exc
+    except ValueError as exc:raise HTTPException(409,str(exc)) from exc
 
 def _review_audit(db, *, decision:str, entity_type:str, entity_id:int, note:str,
                   before:dict, after:dict, evidence:dict, identity:dict|None):
@@ -1495,18 +1620,7 @@ def opportunities(q:str="",sector:str="",sector_values:str="",activity:str="",su
 
 @app.get("/api/data-dashboard/geography")
 def data_dashboard_geography(q:str="",period:str="all",status:str="",sector:str="",activity:str="",sub_activity:str="",source:str="",owner:str="",location:str="",opportunity_type:str="",investment_model:str="",asset_facility_type:str="",subsector:str="",lifecycle:str="",country_id:str="",region_id:str="",governorate_id:str="",city_id:str="",geographic_scope:str=""):
-    """Keep the existing map eligibility and expose literal coordinate coverage.
-
-    ``missing_coordinates`` is retained as a legacy field: the national payload
-    still returns ``total - exact_mapped`` and the local payload retains its
-    original ``total - coordinate_records`` formula. New consumers should use
-    ``exact_mapped`` for map-eligible Masters, ``unmapped`` for map-ineligible
-    Masters, ``truly_missing_coordinates`` for records with no complete
-    coordinate pair stored on the Master or in its coordinate provenance, and
-    ``coordinates_present_but_not_map_eligible`` for complete pairs excluded
-    by the existing map eligibility checks. ``coordinate_records`` also keeps
-    its legacy path-specific definition.
-    """
+    """Keep the existing local map unless an explicitly gated national map is ready."""
     period_start=_period_start(period)
     geometry=_alahsa_boundary_geometry()
     with SessionLocal() as db:
@@ -1849,6 +1963,37 @@ def source_geographic_coverage_matrix():
                         if (source.id,region.id) in status_by_key else "NOT_ASSESSED"}
                     for region in regions]} for source in sources]}
 
+def _verified_opportunity_documents(db, opportunity):
+    """Return reviewed documents only through their exact source publication."""
+    rows = db.execute(
+        select(OpportunityDocument, SourceOpportunity, Source)
+        .join(SourceOpportunity, and_(
+            OpportunityDocument.source_opportunity_id == SourceOpportunity.id,
+            OpportunityDocument.source_id == SourceOpportunity.source_id,
+        ))
+        .join(Source, Source.id == SourceOpportunity.source_id)
+        .where(
+            OpportunityDocument.opportunity_id == opportunity.id,
+            SourceOpportunity.master_opportunity_id == opportunity.id,
+            OpportunityDocument.publication_status == "APPROVED",
+        )
+        .order_by(Source.source_key, SourceOpportunity.id, OpportunityDocument.deduplication_key,
+                  OpportunityDocument.document_version.desc(), OpportunityDocument.id.desc())
+    ).all()
+    documents = []
+    seen_document_identities = set()
+    for document, source_opportunity, source in rows:
+        identity = (source_opportunity.id, document.deduplication_key) if document.deduplication_key else ("row", document.id)
+        if identity in seen_document_identities:
+            continue
+        seen_document_identities.add(identity)
+        serialized = document_json(document, source_opportunity, source)
+        if serialized:
+            documents.append(serialized)
+    return documents
+
+
+
 @app.get("/api/opportunities/{opportunity_id}")
 def opportunity_detail(opportunity_id:int):
     with SessionLocal() as db:
@@ -1856,6 +2001,8 @@ def opportunity_detail(opportunity_id:int):
         if not item: raise HTTPException(404,"الفرصة غير موجودة")
         changes=db.scalars(select(ChangeHistory).where(ChangeHistory.opportunity_id==item.id).order_by(ChangeHistory.detected_at.desc())).all()
         data=opp_json(item,_opportunity_geography(db,item))
+        data["documents"] = _verified_opportunity_documents(db, item)
+        data["document_source_pages"] = official_source_pages(item.source_records)
         data["changes"]=[{
             "field": "نوع الفرصة" if c.changed_field == "opportunity_type" else "نموذج الاستثمار" if c.changed_field == "investment_model" else c.changed_field,
             "before": ("قيمة غير معتمدة" if c.previous_value is not None else OPPORTUNITY_TYPE_UNSPECIFIED_LABEL)

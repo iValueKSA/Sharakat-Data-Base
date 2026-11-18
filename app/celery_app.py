@@ -6,7 +6,7 @@ from celery.signals import worker_ready, worker_shutdown
 from kombu import Queue
 
 redis_url=os.getenv("REDIS_URL","redis://redis:6379/0")
-celery_app=Celery("alahsa",broker=redis_url,backend=redis_url,include=["app.tasks"])
+celery_app=Celery("alahsa",broker=redis_url,backend=redis_url,include=["app.tasks","app.document_collection.tasks"])
 _worker_heartbeat_stop=threading.Event()
 _worker_heartbeat_thread=None
 
@@ -57,8 +57,13 @@ worker_shutdown.connect(clear_worker_ready_heartbeat,weak=False)
 _transfer_test_mode=os.getenv("PORTABLE_TRANSFER_TEST_MODE", "0").lower() in ("1", "true", "yes")
 celery_app.conf.update(
     task_default_queue="source_sync",
-    task_queues=tuple(Queue(name) for name in ("source_sync","document_processing","exports","notifications","maintenance")),
-    task_routes={"app.tasks.sync_source_task":{"queue":"source_sync"},"app.tasks.recover_stale_jobs":{"queue":"maintenance"},"app.tasks.run_database_backup":{"queue":"maintenance"},"app.tasks.dispatch_alert_emails":{"queue":"notifications"},"app.tasks.worker_heartbeat":{"queue":"maintenance"},"app.tasks.check_deadlines":{"queue":"maintenance"},"app.tasks.run_daily_data_quality":{"queue":"maintenance"},"app.tasks.run_weekly_data_quality":{"queue":"maintenance"}},
+    task_queues=tuple(Queue(name) for name in ("source_sync","document_processing","document_collection","exports","notifications","maintenance")),
+    task_routes={"app.tasks.sync_source_task":{"queue":"source_sync"},"app.tasks.recover_stale_jobs":{"queue":"maintenance"},"app.tasks.run_database_backup":{"queue":"maintenance"},"app.tasks.dispatch_alert_emails":{"queue":"notifications"},"app.tasks.worker_heartbeat":{"queue":"maintenance"},"app.tasks.check_deadlines":{"queue":"maintenance"},"app.tasks.run_daily_data_quality":{"queue":"maintenance"},"app.tasks.run_weekly_data_quality":{"queue":"maintenance"},
+                 "app.document_collection.tasks.collect_source_opportunity":{"queue":"document_collection"},
+                 "app.document_collection.tasks.collect_allowlisted_batch":{"queue":"document_collection"},
+                 "app.document_collection.tasks.refresh_candidate":{"queue":"document_collection"},
+                 "app.document_collection.tasks.retry_verification":{"queue":"document_collection"},
+                 "app.document_collection.tasks.summarize_run":{"queue":"document_collection"}},
     task_acks_late=True,
     task_reject_on_worker_lost=True,
     worker_prefetch_multiplier=1,

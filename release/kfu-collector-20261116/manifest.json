@@ -1,0 +1,22 @@
+{
+  "release_candidate": "KFU worker parser provenance candidate",
+  "prepared_utc_date": "2026-11-16",
+  "status": "ISOLATED_CANDIDATE_NOT_DEPLOYED",
+  "production_worker_container": "alahsa-local-worker-1",
+  "production_worker_image_id": "sha256:d6d5f9d0dbf912a35250b4865337cae89f3f34ece8bc2727ebc3c8d71df341aa",
+  "base_image": "alahsa-local-worker@sha256:d6d5f9d0dbf912a35250b4865337cae89f3f34ece8bc2727ebc3c8d71df341aa",
+  "candidate_tag": "alahsa-local-worker:kfu-provenance-candidate-20261116",
+  "candidate_image_id_and_manifest_digest": "sha256:b8191dd075d7fe4cc7ec2542cfefe5bdc46f9a634dfe5c5cf338ed4b4d46c08a",
+  "copied_source": "app/adapters.py",
+  "copied_source_sha256": "e64519ebe36c193a8446a413f8a31137dada6d306924c9003c90e208ef0023bc",
+  "parser_version": "2026.11.16-kfu-2",
+  "services_in_scope_for_future_deployment": ["worker"],
+  "services_rebuilt_or_restarted": [],
+  "deployment_performed": false,
+  "production_mutations": 0,
+  "tests": {
+    "candidate_worker_relevant_suite": "104 passed, 2 skipped",
+    "kfu_specific_subset": "36 passed",
+    "documents_api_and_postgresql_migration_gates": "7 passed against disposable PostgreSQL"
+  }
+}

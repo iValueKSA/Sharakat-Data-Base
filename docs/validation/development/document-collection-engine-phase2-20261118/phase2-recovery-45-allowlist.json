@@ -1,0 +1,17 @@
+{
+  "pilot_id": "furas-document-collection-phase2-recovery-45-20261118",
+  "source_key": "furas",
+  "mode": "EXPLICIT_EXISTING_SOURCE_OPPORTUNITY_ALLOWLIST",
+  "created_from": "Production SELECT snapshot; no production writes",
+  "records": [
+    {
+      "source_opportunity_id": 45,
+      "provider_opportunity_id": "02-25-017001-66011",
+      "master_opportunity_id": 45,
+      "master_city": "الأحساء",
+      "source_opportunity_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/02-25-017001-66011?type=TempRental",
+      "source_document_or_price_evidence": true,
+      "published_reference_case": false
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+CANDIDATE-REPEAT-A
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_ test_sync_source_interrupts_after_commit_then_resumes_without_duplicates_or_masters _
+/harness/test_nationwide_expansion_safety_pg.py:421: in test_sync_source_interrupts_after_commit_then_resumes_without_duplicates_or_masters
+    assert db.scalar(select(func.count(SourceOpportunity.id)).where(SourceOpportunity.source_id==source_id))==101
+E   assert 1 == 101
+E    +  where 1 = scalar(<sqlalchemy.sql.selectable.Select object at 0x7e42d37384d0>)
+E    +    where scalar = <sqlalchemy.orm.session.Session object at 0x7e42d376e8d0>.scalar
+E    +    and   <sqlalchemy.sql.selectable.Select object at 0x7e42d37384d0> = where(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7e42d614f6a0> == 1)
+E    +      where where = <sqlalchemy.sql.selectable.Select object at 0x7e42d3738590>.where
+E    +        where <sqlalchemy.sql.selectable.Select object at 0x7e42d3738590> = select(<sqlalchemy.sql.functions.count at 0x7e42d37553d0; count>)
+E    +          where <sqlalchemy.sql.functions.count at 0x7e42d37553d0; count> = <sqlalchemy.sql.functions._FunctionGenerator object at 0x7e42d2f67bc0>(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7e42d614f600>)
+E    +            where <sqlalchemy.sql.functions._FunctionGenerator object at 0x7e42d2f67bc0> = func.count
+E    +            and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7e42d614f600> = SourceOpportunity.id
+E    +      and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7e42d614f6a0> = SourceOpportunity.source_id
+=============================== warnings summary ===============================
+../usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../harness/test_nationwide_expansion_safety_pg.py::test_sync_source_interrupts_after_commit_then_resumes_without_duplicates_or_masters
+1 failed, 1 warning in 3.46s
+CANDIDATE-REPEAT-B
+F                                                                        [100%]
+=================================== FAILURES ===================================
+__ test_sync_source_failure_before_first_commit_replays_the_uncommitted_page ___
+/harness/test_nationwide_expansion_safety_pg.py:501: in test_sync_source_failure_before_first_commit_replays_the_uncommitted_page
+    assert db.scalar(select(func.count(SourceOpportunity.id)).where(SourceOpportunity.source_id==source_id))==120
+E   assert 0 == 120
+E    +  where 0 = scalar(<sqlalchemy.sql.selectable.Select object at 0x7ba885992900>)
+E    +    where scalar = <sqlalchemy.orm.session.Session object at 0x7ba885992a50>.scalar
+E    +    and   <sqlalchemy.sql.selectable.Select object at 0x7ba885992900> = where(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7ba888e276a0> == 1)
+E    +      where where = <sqlalchemy.sql.selectable.Select object at 0x7ba885992930>.where
+E    +        where <sqlalchemy.sql.selectable.Select object at 0x7ba885992930> = select(<sqlalchemy.sql.functions.count at 0x7ba8861154c0; count>)
+E    +          where <sqlalchemy.sql.functions.count at 0x7ba8861154c0; count> = <sqlalchemy.sql.functions._FunctionGenerator object at 0x7ba885933d10>(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7ba888e27600>)
+E    +            where <sqlalchemy.sql.functions._FunctionGenerator object at 0x7ba885933d10> = func.count
+E    +            and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7ba888e27600> = SourceOpportunity.id
+E    +      and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7ba888e276a0> = SourceOpportunity.source_id
+=============================== warnings summary ===============================
+../usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../harness/test_nationwide_expansion_safety_pg.py::test_sync_source_failure_before_first_commit_replays_the_uncommitted_page
+1 failed, 1 warning in 3.67s
+CANDIDATE-REPEAT-A
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_ test_sync_source_interrupts_after_commit_then_resumes_without_duplicates_or_masters _
+/harness/test_nationwide_expansion_safety_pg.py:421: in test_sync_source_interrupts_after_commit_then_resumes_without_duplicates_or_masters
+    assert db.scalar(select(func.count(SourceOpportunity.id)).where(SourceOpportunity.source_id==source_id))==101
+E   assert 1 == 101
+E    +  where 1 = scalar(<sqlalchemy.sql.selectable.Select object at 0x70103d5ad8e0>)
+E    +    where scalar = <sqlalchemy.orm.session.Session object at 0x70103ddaa0c0>.scalar
+E    +    and   <sqlalchemy.sql.selectable.Select object at 0x70103d5ad8e0> = where(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7010407b36a0> == 1)
+E    +      where where = <sqlalchemy.sql.selectable.Select object at 0x70103d5ac9b0>.where
+E    +        where <sqlalchemy.sql.selectable.Select object at 0x70103d5ac9b0> = select(<sqlalchemy.sql.functions.count at 0x70103d5ad010; count>)
+E    +          where <sqlalchemy.sql.functions.count at 0x70103d5ad010; count> = <sqlalchemy.sql.functions._FunctionGenerator object at 0x70103d57fe00>(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7010407b3600>)
+E    +            where <sqlalchemy.sql.functions._FunctionGenerator object at 0x70103d57fe00> = func.count
+E    +            and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7010407b3600> = SourceOpportunity.id
+E    +      and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7010407b36a0> = SourceOpportunity.source_id
+=============================== warnings summary ===============================
+../usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../harness/test_nationwide_expansion_safety_pg.py::test_sync_source_interrupts_after_commit_then_resumes_without_duplicates_or_masters
+1 failed, 1 warning in 3.44s
+CANDIDATE-REPEAT-B
+F                                                                        [100%]
+=================================== FAILURES ===================================
+__ test_sync_source_failure_before_first_commit_replays_the_uncommitted_page ___
+/harness/test_nationwide_expansion_safety_pg.py:501: in test_sync_source_failure_before_first_commit_replays_the_uncommitted_page
+    assert db.scalar(select(func.count(SourceOpportunity.id)).where(SourceOpportunity.source_id==source_id))==120
+E   assert 0 == 120
+E    +  where 0 = scalar(<sqlalchemy.sql.selectable.Select object at 0x7144a01e7e30>)
+E    +    where scalar = <sqlalchemy.orm.session.Session object at 0x7144a01e7fb0>.scalar
+E    +    and   <sqlalchemy.sql.selectable.Select object at 0x7144a01e7e30> = where(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7144a364b6a0> == 1)
+E    +      where where = <sqlalchemy.sql.selectable.Select object at 0x7144a01e7ec0>.where
+E    +        where <sqlalchemy.sql.selectable.Select object at 0x7144a01e7ec0> = select(<sqlalchemy.sql.functions.count at 0x7144a01e7f50; count>)
+E    +          where <sqlalchemy.sql.functions.count at 0x7144a01e7f50; count> = <sqlalchemy.sql.functions._FunctionGenerator object at 0x7144a01e7650>(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7144a364b600>)
+E    +            where <sqlalchemy.sql.functions._FunctionGenerator object at 0x7144a01e7650> = func.count
+E    +            and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7144a364b600> = SourceOpportunity.id
+E    +      and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7144a364b6a0> = SourceOpportunity.source_id
+=============================== warnings summary ===============================
+../usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../harness/test_nationwide_expansion_safety_pg.py::test_sync_source_failure_before_first_commit_replays_the_uncommitted_page
+1 failed, 1 warning in 3.37s
+CANDIDATE-REPEAT-A
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_ test_sync_source_interrupts_after_commit_then_resumes_without_duplicates_or_masters _
+/harness/test_nationwide_expansion_safety_pg.py:421: in test_sync_source_interrupts_after_commit_then_resumes_without_duplicates_or_masters
+    assert db.scalar(select(func.count(SourceOpportunity.id)).where(SourceOpportunity.source_id==source_id))==101
+E   assert 1 == 101
+E    +  where 1 = scalar(<sqlalchemy.sql.selectable.Select object at 0x74767d1385f0>)
+E    +    where scalar = <sqlalchemy.orm.session.Session object at 0x74767d1553d0>.scalar
+E    +    and   <sqlalchemy.sql.selectable.Select object at 0x74767d1385f0> = where(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x74767fe6b6a0> == 1)
+E    +      where where = <sqlalchemy.sql.selectable.Select object at 0x74767d138320>.where
+E    +        where <sqlalchemy.sql.selectable.Select object at 0x74767d138320> = select(<sqlalchemy.sql.functions.count at 0x74767d1382c0; count>)
+E    +          where <sqlalchemy.sql.functions.count at 0x74767d1382c0; count> = <sqlalchemy.sql.functions._FunctionGenerator object at 0x74767e56afc0>(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x74767fe6b600>)
+E    +            where <sqlalchemy.sql.functions._FunctionGenerator object at 0x74767e56afc0> = func.count
+E    +            and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x74767fe6b600> = SourceOpportunity.id
+E    +      and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x74767fe6b6a0> = SourceOpportunity.source_id
+=============================== warnings summary ===============================
+../usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../harness/test_nationwide_expansion_safety_pg.py::test_sync_source_interrupts_after_commit_then_resumes_without_duplicates_or_masters
+1 failed, 1 warning in 3.26s
+CANDIDATE-REPEAT-B
+F                                                                        [100%]
+=================================== FAILURES ===================================
+__ test_sync_source_failure_before_first_commit_replays_the_uncommitted_page ___
+/harness/test_nationwide_expansion_safety_pg.py:501: in test_sync_source_failure_before_first_commit_replays_the_uncommitted_page
+    assert db.scalar(select(func.count(SourceOpportunity.id)).where(SourceOpportunity.source_id==source_id))==120
+E   assert 0 == 120
+E    +  where 0 = scalar(<sqlalchemy.sql.selectable.Select object at 0x7403bbde7e90>)
+E    +    where scalar = <sqlalchemy.orm.session.Session object at 0x7403bbde4440>.scalar
+E    +    and   <sqlalchemy.sql.selectable.Select object at 0x7403bbde7e90> = where(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7403bf2b76a0> == 1)
+E    +      where where = <sqlalchemy.sql.selectable.Select object at 0x7403bbde7f20>.where
+E    +        where <sqlalchemy.sql.selectable.Select object at 0x7403bbde7f20> = select(<sqlalchemy.sql.functions.count at 0x7403bbde7f80; count>)
+E    +          where <sqlalchemy.sql.functions.count at 0x7403bbde7f80; count> = <sqlalchemy.sql.functions._FunctionGenerator object at 0x7403bbde40b0>(<sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7403bf2b7600>)
+E    +            where <sqlalchemy.sql.functions._FunctionGenerator object at 0x7403bbde40b0> = func.count
+E    +            and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7403bf2b7600> = SourceOpportunity.id
+E    +      and   <sqlalchemy.orm.attributes.InstrumentedAttribute object at 0x7403bf2b76a0> = SourceOpportunity.source_id
+=============================== warnings summary ===============================
+../usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /usr/local/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../harness/test_nationwide_expansion_safety_pg.py::test_sync_source_failure_before_first_commit_replays_the_uncommitted_page
+1 failed, 1 warning in 3.32s

@@ -1,0 +1,43 @@
+[
+  {
+    "candidate_id": 1,
+    "source_key": "furas",
+    "source_opportunity_id": 3188,
+    "provider_opportunity_id": "01-26-017001-42008",
+    "master_opportunity_id": 597,
+    "master_city": "الأحساء",
+    "source_document_id": "270741922",
+    "title": "تحميل",
+    "document_type": "DRAFT_CONTRACT",
+    "document_category": "DRAFT_CONTRACT",
+    "document_scope": "OPPORTUNITY",
+    "official_document_url": "https://furas.momah.gov.sa/opportunity/attachment/01-26-017001-42008/270741922/مسودة العقد/pdf",
+    "display_fallback_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-42008?type=Investment",
+    "source_opportunity_url": "https://furas.momah.gov.sa/index.php/ar/opportunity/01-26-017001-42008?type=Investment",
+    "direct_verification_outcome": "TEMPORARY_FAILURE",
+    "access_status": "PUBLIC_SOURCE_PAGE",
+    "rights_status": "SOURCE_PAGE_LINK_ONLY",
+    "link_verification_status": "VERIFIED_SOURCE_PAGE",
+    "verification_status": "READY_FOR_APPROVAL",
+    "review_status": "PENDING",
+    "participation_requirement": "PURCHASE_REQUIRED_FOR_PARTICIPATION",
+    "authentication_required": false,
+    "payment_required_for_document": null,
+    "raw_amount": null,
+    "raw_currency": null,
+    "raw_price_evidence": "1500",
+    "raw_price_field": "RFPPRICE",
+    "verified_amount": null,
+    "verified_currency": null,
+    "price_verification": "PAGE_LABEL_AMOUNT_MISMATCH",
+    "currency_evidence": null,
+    "publicly_displayable_price": false,
+    "purchase_url": null,
+    "purchase_url_verified": null,
+    "missing_evidence": [
+      "DIRECT_DOWNLOAD_TEMPORARY_FAILURE"
+    ],
+    "last_verified_at": "2026-11-18T11:54:11.251538+00:00",
+    "source_payload_sha256": "f2f117ae4ad85b7d7bec5155ef83613265ee6ceea34d0d129441b7e73a25badc"
+  }
+]

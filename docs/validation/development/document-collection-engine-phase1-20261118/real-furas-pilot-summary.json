@@ -1,0 +1,291 @@
+{
+  "pilot_id": "furas-doc-collection-phase1-20261118",
+  "run_id": 1,
+  "run_status": "PARTIAL",
+  "source_key": "furas",
+  "requested_opportunities": 25,
+  "processed_opportunities": 25,
+  "documents_discovered": 10,
+  "candidates_staged": 9,
+  "verified_candidates": 1,
+  "ready_for_approval": 1,
+  "review_required": 8,
+  "duplicates_prevented": 1,
+  "temporary_failures": 17,
+  "failed_records": [
+    {
+      "source_opportunity_id": 18,
+      "provider_opportunity_id": "02-24-017001-38001",
+      "status": "TEMPORARY_FAILURE",
+      "candidate_ids": [],
+      "discovered": 0
+    },
+    {
+      "source_opportunity_id": 19,
+      "provider_opportunity_id": "02-25-017001-2002",
+      "status": "TEMPORARY_FAILURE",
+      "candidate_ids": [],
+      "discovered": 0
+    },
+    {
+      "source_opportunity_id": 20,
+      "provider_opportunity_id": "02-25-017001-2003",
+      "status": "TEMPORARY_FAILURE",
+      "candidate_ids": [],
+      "discovered": 0
+    },
+    {
+      "source_opportunity_id": 21,
+      "provider_opportunity_id": "02-25-017001-3039",
+      "status": "TEMPORARY_FAILURE",
+      "candidate_ids": [],
+      "discovered": 0
+    },
+    {
+      "source_opportunity_id": 26,
+      "provider_opportunity_id": "02-25-017001-36002",
+      "status": "NOT_FOUND",
+      "candidate_ids": [],
+      "discovered": 0
+    },
+    {
+      "source_opportunity_id": 27,
+      "provider_opportunity_id": "02-25-017001-36001",
+      "status": "TEMPORARY_FAILURE",
+      "candidate_ids": [],
+      "discovered": 0
+    },
+    {
+      "source_opportunity_id": 28,
+      "provider_opportunity_id": "02-25-017001-38003",
+      "status": "TEMPORARY_FAILURE",
+      "candidate_ids": [],
+      "discovered": 0
+    },
+    {
+      "source_opportunity_id": 29,
+      "provider_opportunity_id": "02-25-017001-43001",
+      "status": "TEMPORARY_FAILURE",
+      "candidate_ids": [],
+      "discovered": 0
+    },
+    {
+      "source_opportunity_id": 30,
+      "provider_opportunity_id": "25-09-1976186",
+      "status": "TEMPORARY_FAILURE",
+      "candidate_ids": [],
+      "discovered": 0
+    },
+    {
+      "source_opportunity_id": 31,
+      "provider_opportunity_id": "02-25-017001-59007",
+      "status": "TEMPORARY_FAILURE",
+      "candidate_ids": [],
+      "discovered": 0
+    },
+    {
+      "source_opportunity_id": 32,
+      "provider_opportunity_id": "02-25-017001-63005",
+      "status": "TEMPORARY_FAILURE",
+      "candidate_ids": [],
+      "discovered": 0
+    },
+    {
+      "source_opportunity_id": 33,
+      "provider_opportunity_id": "02-25-017001-63003",
+      "status": "TEMPORARY_FAILURE",
+      "candidate_ids": [],
+      "discovered": 0
+    },
+    {
+      "source_opportunity_id": 34,
+      "provider_opportunity_id": "02-25-017001-63004",
+      "status": "TEMPORARY_FAILURE",
+      "candidate_ids": [],
+      "discovered": 0
+    },
+    {
+      "source_opportunity_id": 35,
+      "provider_opportunity_id": "02-25-017001-64001",
+      "status": "NOT_FOUND",
+      "candidate_ids": [],
+      "discovered": 0
+    },
+    {
+      "source_opportunity_id": 36,
+      "provider_opportunity_id": "02-25-017001-65001",
+      "status": "TEMPORARY_FAILURE",
+      "candidate_ids": [],
+      "discovered": 0
+    },
+    {
+      "source_opportunity_id": 37,
+      "provider_opportunity_id": "02-25-017001-65002",
+      "status": "TEMPORARY_FAILURE",
+      "candidate_ids": [],
+      "discovered": 0
+    },
+    {
+      "source_opportunity_id": 38,
+      "provider_opportunity_id": "02-25-017001-66001",
+      "status": "TEMPORARY_FAILURE",
+      "candidate_ids": [],
+      "discovered": 0
+    },
+    {
+      "source_opportunity_id": 39,
+      "provider_opportunity_id": "02-25-017001-66002",
+      "status": "TEMPORARY_FAILURE",
+      "candidate_ids": [],
+      "discovered": 0
+    },
+    {
+      "source_opportunity_id": 40,
+      "provider_opportunity_id": "02-25-017001-66006",
+      "status": "TEMPORARY_FAILURE",
+      "candidate_ids": [],
+      "discovered": 0
+    }
+  ],
+  "document_categories": {
+    "UNKNOWN_DOCUMENT_TYPE": 8,
+    "DRAFT_CONTRACT": 1
+  },
+  "direct_link_outcomes": {
+    "TEMPORARY_FAILURE": 6,
+    "LISTING_REDIRECT": 3
+  },
+  "verified_amount_count": 0,
+  "raw_price_evidence_count": 9,
+  "verified_currency_count": 0,
+  "public_price_count": 0,
+  "candidate_source_ids": [
+    41,
+    42,
+    43,
+    44,
+    45,
+    3188
+  ],
+  "candidate_master_ids": [
+    41,
+    42,
+    43,
+    44,
+    45,
+    597
+  ],
+  "opportunity_document_row_count": 1,
+  "published_document_1_present": true,
+  "published_document_1_sha256": "2c46ba8597e8179dd956043257beb04799099253959c517b5756fcef5c6f59c2",
+  "source_capabilities": [
+    {
+      "source_key": "ahda",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    },
+    {
+      "source_key": "alahsa-opportunities",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    },
+    {
+      "source_key": "furas",
+      "status": "IMPLEMENTED",
+      "adapter": "FurasDocumentAdapter",
+      "capabilities": [
+        "discovery",
+        "booklet",
+        "draft_contract",
+        "application_form",
+        "additional_attachments",
+        "purchase_requirement",
+        "page_fallback",
+        "gis_price_evidence",
+        "lifecycle_evidence"
+      ],
+      "note": "Official opportunity detail page; allowlisted existing records only."
+    },
+    {
+      "source_key": "invest-saudi",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    },
+    {
+      "source_key": "kfu",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    },
+    {
+      "source_key": "modon",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    },
+    {
+      "source_key": "mwan",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    },
+    {
+      "source_key": "ncp",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    },
+    {
+      "source_key": "nhc",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    },
+    {
+      "source_key": "pif",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    },
+    {
+      "source_key": "rcjy-investment-opportunities",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    },
+    {
+      "source_key": "rcu-investment-opportunities",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    },
+    {
+      "source_key": "taadeen-mining-bids",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    },
+    {
+      "source_key": "waha-development",
+      "status": "NOT_CONFIGURED",
+      "adapter": null,
+      "capabilities": [],
+      "note": "No document adapter is configured; no document results are synthesized."
+    }
+  ]
+}

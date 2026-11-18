@@ -12,6 +12,10 @@ The first run requires Docker Desktop to be installed. The launcher starts it wh
 
 Requirements: Python 3.12+.
 
+## Development source of truth
+
+The only authorized source checkout for development, implementation, tests, migrations, and release preparation is this official project directory: `C:\Users\QusaiAbdElhalim\OneDrive - iValue\Desktop\الشراكات - الأحساء\Sharakat-Data-Base`. Run source-based commands from this directory. Isolated containers and disposable test databases are permitted, but mount or copy source only from this directory. Do not create another source checkout or worktree. See [the single-source-of-truth and retirement record](docs/development/SINGLE-SOURCE-OF-TRUTH.md).
+
 ```powershell
 py -3.12 -m venv .venv
 .\.venv\Scripts\Activate.ps1
