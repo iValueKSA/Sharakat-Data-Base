@@ -3,6 +3,13 @@ import re
 import struct
 import json
 
+import pytest
+
+# The dashboard video hero was removed from the UI in commit 80680e2 ("v2",
+# 2026-11-15); these checks describe that removed section. Kept (not deleted)
+# so they can be re-enabled if the hero returns.
+pytestmark = pytest.mark.skip(reason="dashboard video hero was removed from the UI in 80680e2")
+
 
 ROOT = Path(__file__).resolve().parents[1]
 STATIC = ROOT / "app" / "static"

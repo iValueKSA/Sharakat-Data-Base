@@ -126,7 +126,9 @@ def test_furas_identical_replay_is_write_idempotent_and_real_changes_still_apply
 
 def test_future_sync_canonicalizes_master_but_preserves_source_owner_status_and_payload():
     engine,db,sources=setup_db()
-    source_raw=raw("canonical-future","فرصة تشغيل منشأة بالأحساء",owner="أمانة محافظة الأحساء",status="UNKNOWN",raw_payload={"source_owner":"أمانة محافظة الأحساء","source_marker":"unchanged"})
+    # Far-future deadline: with UNKNOWN status the lifecycle must stay "unknown";
+    # the shared fixture date (2026-11-17) has passed and would correctly read as ended.
+    source_raw=raw("canonical-future","فرصة تشغيل منشأة بالأحساء",owner="أمانة محافظة الأحساء",status="UNKNOWN",deadline="2099-12-31",raw_payload={"source_owner":"أمانة محافظة الأحساء","source_marker":"unchanged"})
     source_raw.activity="اخرى"
     original_fingerprint=source_raw.content_hash
     collect(db,sources[0],source_raw)

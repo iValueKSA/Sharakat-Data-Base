@@ -22,6 +22,10 @@ NOW = datetime(2026, 11, 15, tzinfo=timezone.utc)
 @pytest.fixture
 def isolated_documents_db(monkeypatch):
     database_url = os.getenv("DOCUMENTS_TEST_DATABASE_URL", "")
+    if not database_url:
+        # These tests DROP the public schema, so they only run against the
+        # dedicated disposable database; skip (don't fail) when none is configured.
+        pytest.skip("DOCUMENTS_TEST_DATABASE_URL not set (needs the disposable documents-mvp-pg-test PostgreSQL)")
     parsed = urlparse(database_url)
     if (parsed.hostname != "documents-mvp-pg-test" or parsed.username != "documents_test"
             or parsed.path != "/documents_mvp_test" or os.getenv("DATABASE_URL") != database_url):

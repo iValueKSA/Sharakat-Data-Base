@@ -166,7 +166,13 @@ def init_cluster(settings: Settings, bin_dir: Path, log=print) -> None:
     if pgdata.exists() and any(pgdata.iterdir()):
         raise PostgresError(f"{pgdata} exists and is not empty but is not a PostgreSQL cluster; refusing to touch it.")
     log("Initialising the private PostgreSQL cluster")
-    pgdata.mkdir(parents=True, exist_ok=True)
+    # Let initdb create the directory itself. When the installer runs elevated
+    # (Administrator on Windows), initdb drops to a restricted token; a directory
+    # pre-created with the full admin token can then be unreadable to it, and
+    # initdb fails with "could not create directory ...: File exists".
+    if pgdata.exists():
+        pgdata.rmdir()                     # empty leftover from an earlier attempt
+    pgdata.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.NamedTemporaryFile("w", delete=False, encoding="utf-8", suffix=".pw") as pwfile:
         pwfile.write(settings.get("POSTGRES_SUPERUSER_PASSWORD"))
         pw_path = pwfile.name
