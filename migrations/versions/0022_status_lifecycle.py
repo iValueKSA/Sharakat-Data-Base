@@ -13,9 +13,16 @@ depends_on = None
 
 
 def upgrade():
-    op.add_column("source_opportunities", sa.Column("canonical_status", sa.String(80), nullable=False,
-        server_default="غير محددة"))
-    op.create_index("ix_source_opportunities_canonical_status", "source_opportunities", ["canonical_status"])
+    # Guarded like 0014-0021: a clean install builds the current schema first
+    # (migrations/env.py), so the column and index may already exist.
+    inspector = sa.inspect(op.get_bind())
+    columns = {column["name"] for column in inspector.get_columns("source_opportunities")}
+    indexes = {index["name"] for index in inspector.get_indexes("source_opportunities")}
+    if "canonical_status" not in columns:
+        op.add_column("source_opportunities", sa.Column("canonical_status", sa.String(80), nullable=False,
+            server_default="غير محددة"))
+    if "ix_source_opportunities_canonical_status" not in indexes:
+        op.create_index("ix_source_opportunities_canonical_status", "source_opportunities", ["canonical_status"])
     from app.models import ChangeHistory, Opportunity, Source, SourceOpportunity, SourceObservation
     from app.status_lifecycle import canonical_source_status, aggregate_master_status
 

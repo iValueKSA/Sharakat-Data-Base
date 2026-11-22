@@ -11,7 +11,7 @@ def backup_postgres() -> dict:
     if not database_url.startswith(("postgresql://","postgresql+psycopg://")):
         raise RuntimeError("PostgreSQL backup requires a PostgreSQL DATABASE_URL")
     url=make_url(database_url)
-    directory=Path(os.getenv("BACKUP_DIR","/backups"));directory.mkdir(parents=True,exist_ok=True)
+    directory=Path(os.getenv("BACKUP_DIR","backups"));directory.mkdir(parents=True,exist_ok=True)
     started=datetime.now(timezone.utc);backup_id=started.strftime("%Y%m%dT%H%M%SZ")+"-"+uuid.uuid4().hex[:8]
     output=directory/f"{backup_id}.dump";metadata=directory/f"{backup_id}.json"
     env=os.environ.copy()

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Linux/macOS entry point: ./sharakat.sh install | start | stop | status | verify | doctor | backup ...
+exec bash "$(dirname "$0")/scripts/native/bootstrap.sh" "$@"

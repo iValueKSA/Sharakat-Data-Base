@@ -2,7 +2,7 @@
 
 ## Objectives and backup scope
 
-Initial objectives are RPO at most 24 hours and RTO at most 4 hours. Celery Beat requests a daily `pg_dump` custom-format backup. Each artifact has a JSON manifest with backup ID, UTC start/completion, bytes, location, and SHA-256. Defaults retain 7 daily, 4 weekly, and 3 monthly restore points. Backups are written to `/backups`; mount this to encrypted durable storage with access controls and off-host replication before production use. Do not treat a local Docker volume as disaster recovery.
+Initial objectives are RPO at most 24 hours and RTO at most 4 hours. Celery Beat requests a daily `pg_dump` custom-format backup. Each artifact has a JSON manifest with backup ID, UTC start/completion, bytes, location, and SHA-256. Defaults retain 7 daily, 4 weekly, and 3 monthly restore points. Backups are written to `BACKUP_DIR` (`/var/lib/sharakat/backups` on servers, `<home>/backups` for the [native runtime](native-runtime.md)). Before production use, put it on encrypted durable storage with access controls and off-host replication. A backup folder on the same disk is not disaster recovery.
 
 ## Verify and restore
 

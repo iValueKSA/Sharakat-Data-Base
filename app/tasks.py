@@ -57,7 +57,7 @@ def deadline_days_left(value: str | None, today: date | None = None) -> int | No
 
 def redis_client():
     import redis
-    return redis.Redis.from_url(os.getenv("REDIS_URL", "redis://redis:6379/0"), decode_responses=True)
+    return redis.Redis.from_url(os.getenv("REDIS_URL", "redis://127.0.0.1:6379/0"), decode_responses=True)
 
 
 def emit_alert(event_type: str, severity: str, payload: dict, source_id: int | None = None):

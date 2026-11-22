@@ -5,7 +5,7 @@ from celery import Celery
 from celery.signals import worker_ready, worker_shutdown
 from kombu import Queue
 
-redis_url=os.getenv("REDIS_URL","redis://redis:6379/0")
+redis_url=os.getenv("REDIS_URL","redis://127.0.0.1:6379/0")
 celery_app=Celery("alahsa",broker=redis_url,backend=redis_url,include=["app.tasks","app.document_collection.tasks"])
 _worker_heartbeat_stop=threading.Event()
 _worker_heartbeat_thread=None
@@ -55,6 +55,13 @@ def clear_worker_ready_heartbeat(sender=None, **kwargs):
 worker_ready.connect(start_worker_ready_heartbeat,weak=False)
 worker_shutdown.connect(clear_worker_ready_heartbeat,weak=False)
 _transfer_test_mode=os.getenv("PORTABLE_TRANSFER_TEST_MODE", "0").lower() in ("1", "true", "yes")
+if os.getenv("CELERY_DISABLE_QUEUE_EXPIRY", "").lower() in ("1", "true", "yes"):
+    # Set by the native runtime when the broker is Garnet (Windows). With
+    # x-expires on the pidbox/event queues, kombu refreshes binding tables with
+    # a Lua script in a MULTI/EXEC pipeline, which never returns on Garnet and
+    # hangs worker start-up (mingle) and every control broadcast. Without an
+    # expiry the reply queues are simply kept; nothing else changes.
+    celery_app.conf.update(control_queue_expires=None, event_queue_expires=None)
 celery_app.conf.update(
     task_default_queue="source_sync",
     task_queues=tuple(Queue(name) for name in ("source_sync","document_processing","document_collection","exports","notifications","maintenance")),

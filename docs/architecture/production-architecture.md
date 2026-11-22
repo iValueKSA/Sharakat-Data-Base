@@ -47,7 +47,7 @@ The API owns authentication, authorization, audit records, operational controls,
 
 ## Deployment boundary
 
-The production reference is containerized API, worker, and scheduler services behind an HTTPS proxy, with private PostgreSQL and Redis services or managed equivalents. TLS terminates at a cloud load balancer with managed certificates or at Nginx/Traefik with automated ACME renewal; the edge redirects HTTP to HTTPS. Certificate keys remain in the proxy/secret store. The proxy forwards `X-Forwarded-For` and `X-Forwarded-Proto` only over the private service network. Staging uses distinct database, Redis, and secrets. Migrations run as a deployment step and halt rollout on failure. The local Compose file is a reference environment, not a substitute for managed backups, secret storage, TLS termination, alert delivery, or infrastructure monitoring.
+The production reference runs the API, worker and scheduler as native systemd services (`deploy/systemd`, [deployment runbook](../runbooks/deployment.md)) behind an HTTPS proxy, with private PostgreSQL and Redis services or managed equivalents. TLS terminates at a cloud load balancer with managed certificates or at Nginx/Traefik with automated ACME renewal; the edge redirects HTTP to HTTPS. Certificate keys remain in the proxy/secret store. The proxy forwards `X-Forwarded-For` and `X-Forwarded-Proto` only over the private service network. Staging uses distinct database, Redis, and secrets. Migrations run as a deployment step and halt rollout on failure. The [native runtime](../runbooks/native-runtime.md) for workstations is a convenience environment, not a substitute for managed backups, secret storage, TLS termination, alert delivery or infrastructure monitoring.
 
 ## Production guarantees and limits
 

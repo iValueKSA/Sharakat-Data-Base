@@ -1,0 +1,20 @@
+# One-shot schema migration. API, worker and scheduler require it, so a failed
+# migration stops the rollout (replaces the Compose `migrate` service).
+[Unit]
+Description=Sharakat platform - database migrations
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+User=sharakat
+Group=sharakat
+WorkingDirectory=/opt/sharakat/current
+EnvironmentFile=/etc/sharakat/platform.env
+ExecStart=/opt/sharakat/venv/bin/python -m alembic upgrade head
+# Refuse to continue if the migration graph has more than one head.
+ExecStartPost=/bin/sh -c 'test "$(/opt/sharakat/venv/bin/python -m alembic heads | wc -l)" -eq 1'
+
+[Install]
+WantedBy=multi-user.target

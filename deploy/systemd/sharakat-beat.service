@@ -1,0 +1,26 @@
+# Celery Beat. Run exactly ONE instance per environment (the Redis lease also
+# guards against duplicate dispatch, but a second Beat is never intended).
+[Unit]
+Description=Sharakat platform - Celery Beat scheduler
+Requires=sharakat-migrate.service
+After=sharakat-migrate.service network-online.target
+Wants=network-online.target
+
+[Service]
+User=sharakat
+Group=sharakat
+WorkingDirectory=/opt/sharakat/current
+EnvironmentFile=/etc/sharakat/platform.env
+ExecStartPre=/bin/rm -f /var/lib/sharakat/run/celerybeat.pid
+ExecStart=/opt/sharakat/venv/bin/python -m celery -A app.celery_app:celery_app beat --loglevel=INFO \
+    --schedule /var/lib/sharakat/run/celerybeat-schedule --pidfile /var/lib/sharakat/run/celerybeat.pid
+Restart=always
+RestartSec=5
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/var/lib/sharakat
+
+[Install]
+WantedBy=multi-user.target

@@ -44,6 +44,7 @@ from .data_quality import evaluate_data_quality, latest_data_quality_run, data_q
 from contextvars import ContextVar
 from datetime import timedelta
 from pathlib import Path
+from .paths import STATIC_DIR, INDEX_HTML
 
 logger=logging.getLogger("app")
 request_context: ContextVar[dict] = ContextVar("request_context", default={})
@@ -744,6 +745,9 @@ async def lifespan(app:FastAPI):
         raise RuntimeError("Staging and production require PostgreSQL via DATABASE_URL")
     if protected and not os.getenv("SECRET_KEY"):
         raise RuntimeError("Staging and production require an externally supplied SECRET_KEY")
+    if environment=="local_user" and not os.getenv("SECRET_KEY"):
+        # Without it, sessions would be signed with the public development constant.
+        raise RuntimeError("local_user requires SECRET_KEY; run the platform installer to generate one")
     if protected and not os.getenv("REDIS_URL"):
         raise RuntimeError("Staging and production require Redis for jobs and distributed locks")
     if protected:
@@ -769,7 +773,7 @@ async def lifespan(app:FastAPI):
     if task: task.cancel()
 
 app=FastAPI(title="Al-Ahsa Investment Opportunities Intelligence Platform",version="0.1.0",lifespan=lifespan)
-app.mount("/static",StaticFiles(directory="app/static"),name="static")
+app.mount("/static",StaticFiles(directory=STATIC_DIR),name="static")
 allowed_origins=[x.strip() for x in os.getenv("CORS_ORIGINS","").split(",") if x.strip()]
 if allowed_origins: app.add_middleware(CORSMiddleware,allow_origins=allowed_origins,allow_credentials=True,allow_methods=["GET","POST","PATCH","PUT","DELETE"],allow_headers=["Content-Type","X-Request-ID"])
 
@@ -794,6 +798,14 @@ async def security_and_correlation(request:Request,call_next):
     context_token=request_context.set({"correlation_id":correlation_id,"user":identity,"path":request.url.path,"method":request.method})
     started=time.perf_counter();status=500
     try:
+        body_limit=os.getenv("MAX_REQUEST_BODY_BYTES","")
+        if body_limit.isdigit():
+            # Same limit nginx enforced (client_max_body_size) when it fronted the API.
+            try: declared=int(request.headers.get("content-length") or 0)
+            except ValueError: declared=0
+            if declared>int(body_limit):
+                status=413
+                return Response(content='{"detail":"Request body too large"}',media_type="application/json",status_code=413)
         protected=request.url.path.startswith("/api/admin/") and request.method in ("POST","PATCH","PUT","DELETE") or request.url.path.startswith("/api/export.")
         if protected:
             address=request.client.host if request.client else "unknown"
@@ -1225,7 +1237,7 @@ def auth_me():
     return {"user":identity}
 
 @app.get("/")
-def home(): return FileResponse("app/static/index.html")
+def home(): return FileResponse(INDEX_HTML)
 
 @app.get("/api/health")
 def health(): return {"status":"ok","time":datetime.now(timezone.utc).isoformat()}
@@ -1301,7 +1313,7 @@ def system_status(x_admin_token:str|None=Header(default=None)):
             result["scheduler"]="ok" if last_tick else "unknown"
             result["workers"]="ok" if next(client.scan_iter(match="worker:heartbeat:*",count=1),None) else "stale"
         except Exception:result["redis"]="error"
-    backups=os.getenv("BACKUP_DIR","/backups")
+    backups=os.getenv("BACKUP_DIR","backups")
     attachment_dir=__import__("pathlib").Path(os.getenv("ATTACHMENT_DIR","data/attachments"))
     if attachment_dir.exists():
         try:result["attachments_size_bytes"]=sum(item.stat().st_size for item in attachment_dir.rglob("*") if item.is_file())

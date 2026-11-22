@@ -1,2 +1,5 @@
 /app/static/source-logos/*.svg text eol=lf
 /app/certificates/*.pem text eol=lf
+
+*.sh text eol=lf
+*.command text eol=lf

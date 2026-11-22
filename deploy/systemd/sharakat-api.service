@@ -1,0 +1,25 @@
+# FastAPI API + static UI, behind the HTTPS reverse proxy (deploy/nginx.conf).
+[Unit]
+Description=Sharakat platform - API and UI
+Requires=sharakat-migrate.service
+After=sharakat-migrate.service network-online.target
+Wants=network-online.target
+
+[Service]
+User=sharakat
+Group=sharakat
+WorkingDirectory=/opt/sharakat/current
+EnvironmentFile=/etc/sharakat/platform.env
+# Loopback only; the proxy on the same host is the only trusted forwarder.
+ExecStart=/opt/sharakat/venv/bin/python -m uvicorn app.main:app --host 127.0.0.1 --port 8000 \
+    --proxy-headers --forwarded-allow-ips ${FORWARDED_ALLOW_IPS} --timeout-graceful-shutdown 30
+Restart=always
+RestartSec=5
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/var/lib/sharakat
+
+[Install]
+WantedBy=multi-user.target

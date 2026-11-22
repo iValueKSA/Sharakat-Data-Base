@@ -17,6 +17,9 @@ depends_on = None
 
 
 def upgrade():
+    # Schema-only revision; already present on a clean install (migrations/env.py).
+    if sa.inspect(op.get_bind()).has_table("document_collection_runs"):
+        return
     op.create_table(
         "document_collection_runs",
         sa.Column("id", sa.Integer(), primary_key=True),

@@ -1,0 +1,27 @@
+# Celery worker: source sync, maintenance (incl. daily pg_dump backup), notifications.
+[Unit]
+Description=Sharakat platform - Celery worker
+Requires=sharakat-migrate.service
+After=sharakat-migrate.service network-online.target
+Wants=network-online.target
+
+[Service]
+User=sharakat
+Group=sharakat
+WorkingDirectory=/opt/sharakat/current
+EnvironmentFile=/etc/sharakat/platform.env
+ExecStart=/opt/sharakat/venv/bin/python -m celery -A app.celery_app:celery_app worker --loglevel=INFO \
+    --queues=source_sync,maintenance,notifications --concurrency=4 -n sharakat-worker@%%H
+# Warm shutdown: running jobs finish (late acks keep interrupted ones recoverable).
+KillSignal=SIGTERM
+TimeoutStopSec=120
+Restart=always
+RestartSec=5
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/var/lib/sharakat
+
+[Install]
+WantedBy=multi-user.target

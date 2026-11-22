@@ -53,6 +53,8 @@ def _ensure_private_root() -> Path:
         raise ExportStorageUnavailable from exc
     if not stat.S_ISDIR(info.st_mode) or stat.S_ISLNK(info.st_mode):
         raise ExportStorageUnavailable
+    if os.name == "nt":
+        return _windows_private_root(info)
     if hasattr(os, "geteuid") and info.st_uid != os.geteuid():
         raise ExportStorageUnavailable
     try:
@@ -64,6 +66,22 @@ def _ensure_private_root() -> Path:
         raise ExportStorageUnavailable
     if stat.S_IMODE(info.st_mode) & 0o077:
         raise ExportStorageUnavailable
+    return EXPORT_TEMP_ROOT
+
+
+def _windows_private_root(info: os.stat_result) -> Path:
+    """Windows has no POSIX mode bits: chmod only toggles read-only and every
+    directory reports 0o777. Privacy comes from the per-user temp directory's
+    ACL, so require the root to be a real directory (not a junction or other
+    reparse point) inside that per-user temp directory."""
+    reparse = getattr(stat, "FILE_ATTRIBUTE_REPARSE_POINT", 0x400)
+    if getattr(info, "st_file_attributes", 0) & reparse:
+        raise ExportStorageUnavailable
+    try:
+        if not EXPORT_TEMP_ROOT.resolve().is_relative_to(Path(tempfile.gettempdir()).resolve()):
+            raise ExportStorageUnavailable
+    except OSError as exc:
+        raise ExportStorageUnavailable from exc
     return EXPORT_TEMP_ROOT
 
 

@@ -1,23 +1,23 @@
-تشغيل منصة رَصْد على هذا الكمبيوتر
+تشغيل منصة رَصْد على هذا الكمبيوتر (Windows / macOS / Linux) — لا يحتاج Docker
 
 أول مرة فقط
+  Windows: انقر مرتين على  Install Platform Requirements.bat
+  macOS:   انقر مرتين على  Install Platform.command
+  Linux:   bash sharakat.sh install
 
-انقر مرتين على:
-Install Platform Requirements.bat
-
-اتبع أي نوافذ موافقة أو إعادة تشغيل من Windows. بعد اكتمال الإعداد ستفتح المنصة في المتصفح.
+يثبّت الإعداد Python وPostgreSQL وخادم Redis لحسابك فقط، ثم يستعيد آخر حزمة نقل
+(أو يستورد قاعدة SQLite القديمة)، ويفتح المنصة في المتصفح.
 
 كل مرة بعد ذلك
-
-انقر مرتين على:
-Start Platform.bat
+  Windows: Start Platform.bat      macOS: Start Platform.command      Linux: bash sharakat.sh start
 
 لإيقاف المنصة
-
-انقر مرتين على:
-Stop Platform.bat
+  Windows: Stop Platform.bat       macOS: Stop Platform.command       Linux: bash sharakat.sh stop
 
 تبقى بيانات المنصة محفوظة عند الإيقاف. بيانات دخول المدير المحلي موجودة في:
 Local Admin Credentials.txt
+(إذا استعدت بيانات من جهاز آخر، ادخل بحسابات ذلك الجهاز.)
 
-عند الحاجة، يعرض Platform Status.bat حالة الخدمات. يسجل المثبّت تشخيص النظام في logs\local-requirements-diagnostic.log.
+Platform Status.bat يعرض حالة الخدمات، وVerify Installation.bat يتحقق من سلامة التثبيت.
+السجلات في مجلد logs داخل:  %LOCALAPPDATA%\Sharakat   (macOS: ~/Library/Application Support/Sharakat)
+التفاصيل التقنية: docs/runbooks/native-runtime.md

@@ -75,7 +75,8 @@ def main() -> int:
         return f"workers={len(nodes)}"
 
     def check_api(path: str) -> str:
-        base = os.getenv("API_BASE_URL", "http://api:8000").rstrip("/")
+        # sharakat-api.service listens on loopback port 8000 (deploy/systemd).
+        base = os.getenv("API_BASE_URL", "http://127.0.0.1:8000").rstrip("/")
         with urlopen(f"{base}{path}", timeout=5) as response:
             if response.status != 200:
                 raise RuntimeError(f"HTTP {response.status}")

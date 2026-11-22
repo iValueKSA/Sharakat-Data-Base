@@ -82,7 +82,7 @@ def import_local_data() -> dict:
 
     engine = create_engine(url, pool_pre_ping=True, connect_args={"connect_timeout": 5})
     marker = os.getenv("LOCAL_SETUP_MARKER", "local_setup_state")
-    sqlite_name = os.getenv("LOCAL_SQLITE_PATH", "/source-data/al-ahsa-live.db")
+    sqlite_name = os.getenv("LOCAL_SQLITE_PATH", str(Path(__file__).resolve().parents[1] / "data" / "al-ahsa-live.db"))
     source_path = Path(sqlite_name)
     source_exists = source_path.is_file()
     backup = None
@@ -133,7 +133,7 @@ def import_local_data() -> dict:
             raise RuntimeError("Target database must be migrated to 0016_source_type_text before import")
 
         if source_exists:
-            backup = _sqlite_backup(source_path, Path(os.getenv("BACKUP_DIR", "/backups")))
+            backup = _sqlite_backup(source_path, Path(os.getenv("BACKUP_DIR", "backups")))
 
         row_counts: dict[str, int] = {}
         pending_self_refs: list[tuple[str, str, int, int]] = []

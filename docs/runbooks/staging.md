@@ -1,13 +1,32 @@
 # Staging environment
 
-Use `docker-compose.yml` with a separate `.env.staging` supplied by the secret manager and a distinct Compose project (`alahsa-staging`). Compose prefixes named volumes with the project name, so staging PostgreSQL, Redis, and backup volumes stay separate from production. Set independent DB/Redis URLs, `STAGING_DATABASE_NAME`, bootstrap account, SMTP destination, HTTPS public URL, and CORS origin. Keep staging credentials and backup artifacts separate; never point staging at production data. Staging may run controlled public-source reads, but disable automatic sync until source review and the operator's live-read window are agreed. Run migrations and the deployment smoke test before enabling schedules.
+Staging uses the same native topology as production ([deployment.md](deployment.md)) on its own server or VM.
+Its `/etc/sharakat/platform.env` comes from the secret manager with `ENVIRONMENT=staging`. Staging must have its
+own PostgreSQL database, Redis, bootstrap account, SMTP destination, HTTPS public URL, CORS origin and backup
+storage. Set `STAGING_DATABASE_NAME` to the staging database name. Never point staging at production data.
+Staging may run controlled public-source reads, but disable automatic sync until the source review and the
+operator's live-read window are agreed. Run the migrations and the deployment smoke test before enabling
+schedules.
 
-The frontend proxy is pinned to `172.31.240.10` on the default `172.31.240.0/24` Compose network. If `COMPOSE_NETWORK_SUBNET` changes, update `FORWARDED_ALLOW_IPS` to the frontend proxy address. Never use wildcard forwarded-header trust.
+`FORWARDED_ALLOW_IPS` must name the proxy exactly (`127.0.0.1` when nginx runs on the same host). Never trust
+forwarded headers from a wildcard.
 
-After migrations and all containers are healthy, run the read-only smoke check from the API container:
+Once `sharakat-migrate` has succeeded and the API, worker and Beat units are active, run the read-only smoke
+check from the release directory:
 
-```powershell
-docker compose exec api python scripts/verify_production_stack.py
+```bash
+cd /opt/sharakat/current
+sudo -u sharakat env $(cat /etc/sharakat/platform.env | xargs) /opt/sharakat/venv/bin/python scripts/verify_production_stack.py
 ```
 
-The script refuses to run unless `ENVIRONMENT=staging`, `DATABASE_URL` is PostgreSQL, and its database name exactly matches `STAGING_DATABASE_NAME`. It checks the Alembic revision, PostgreSQL connectivity, Redis connectivity and recent Beat tick, Celery worker response, and API live/readiness endpoints. It does not dispatch source jobs, write database rows, or perform destructive operations. Save its output in the production Phase 1 evidence directory.
+The script refuses to run unless `ENVIRONMENT=staging`, `DATABASE_URL` is PostgreSQL, and its database name
+matches `STAGING_DATABASE_NAME` exactly. It checks:
+
+* the Alembic revision
+* PostgreSQL connectivity
+* Redis connectivity and a recent Beat tick
+* that a Celery worker responds
+* the API live and readiness endpoints
+
+It doesn't dispatch source jobs, write database rows or perform destructive operations. Save its output in the
+production Phase 1 evidence directory.

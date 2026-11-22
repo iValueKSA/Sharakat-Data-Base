@@ -1,7 +1,24 @@
 # ADR: Production deployment boundary
 
-**Status:** Accepted reference deployment
+**Status:** Accepted. Revised 2026-11-22: native systemd services replace the Docker Compose reference.
 
-Run the API, frontend, source workers, scheduler, PostgreSQL, and Redis as separate logical services. Alembic runs in a one-shot migration service and blocks API/worker rollout on failure. The API image is multi-stage and non-root. PostgreSQL and Redis have no published host ports. The frontend binds only to loopback for an external HTTPS reverse proxy or cloud load balancer to terminate TLS. Production startup rejects SQLite, missing Redis/secret configuration, wildcard CORS, and a non-HTTPS public base URL. Production secrets are injected at runtime and excluded from Docker build context.
+Run the API, source workers, scheduler, PostgreSQL and Redis as separate logical services:
 
-Compose is a reference deployment. Production TLS certificates, managed PostgreSQL/Redis availability, secret manager integration, encrypted off-host backups, and infrastructure monitoring are operator/platform responsibilities.
+* **Application services:** native systemd units (`deploy/systemd`) under a dedicated non-root `sharakat` account,
+  with `NoNewPrivileges`, `ProtectSystem=strict` and write access only to `/var/lib/sharakat`.
+* **Migrations:** Alembic runs in a one-shot migration unit that the API, worker and Beat units require, so a failed
+  migration blocks the rollout.
+* **Network exposure:** PostgreSQL and Redis are reachable only on the private network. The API binds to loopback
+  behind an nginx HTTPS edge (`deploy/nginx.conf`), which is the only public listener.
+* **Startup guards:** production startup rejects SQLite, missing Redis or secret configuration, wildcard CORS or
+  trusted proxies, and a non-HTTPS public base URL.
+* **Secrets:** injected at runtime through `/etc/sharakat/platform.env` from the secret manager, never committed.
+
+Releases are immutable directories under `/opt/sharakat/releases`. `current` is a symlink, so a rollback is a symlink
+switch plus a service restart.
+
+The operator or platform is responsible for production TLS certificates, managed PostgreSQL and Redis availability,
+secret manager integration, encrypted off-host backups and infrastructure monitoring.
+
+Docker is no longer part of any supported path. Workstation installs use the native runtime; see
+[cross-platform-assessment.md](cross-platform-assessment.md).

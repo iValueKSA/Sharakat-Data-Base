@@ -9,6 +9,9 @@ depends_on = None
 
 
 def upgrade():
+    # Schema-only revision; already present on a clean install (migrations/env.py).
+    if sa.inspect(op.get_bind()).has_table("source_geographic_coverage"):
+        return
     op.create_table(
         "source_geographic_coverage",
         sa.Column("id", sa.Integer(), primary_key=True),

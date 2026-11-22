@@ -9,6 +9,12 @@ depends_on = None
 
 
 def upgrade():
+    # A clean install builds the current schema first (migrations/env.py); this
+    # revision is schema-only, so there is nothing left to do in that case.
+    inspector = sa.inspect(op.get_bind())
+    if inspector.has_table("geographic_reference_datasets") and "geographic_scope" in {
+            column["name"] for column in inspector.get_columns("opportunities")}:
+        return
     op.create_table(
         "geographic_reference_datasets",
         sa.Column("id", sa.Integer(), primary_key=True),

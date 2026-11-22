@@ -14,7 +14,9 @@ def test_private_export_directory_permissions_limits_and_stale_cleanup(tmp_path,
     second_directory = export_storage.create_export_directory(10)
     assert directory.parent == root
     assert second_directory != directory
-    assert directory.stat().st_mode & 0o777 == 0o700
+    import os
+    if os.name != "nt":  # Windows has no POSIX mode bits; privacy comes from the per-user temp ACL
+        assert directory.stat().st_mode & 0o777 == 0o700
 
     stale = root / "request-stale"
     stale.mkdir(mode=0o700)

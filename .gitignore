@@ -7,3 +7,15 @@ backups/**
 Local Admin Credentials.txt
 .local-platform.pid
 .venv/
+
+# Generated artefacts (transfer packages, scratch runs) — never commit
+transfer/
+tmp/
+tmp-*.json
+tmpmap-*.json
+__pycache__/
+*.py[cod]
+.pytest_cache/
+# Native runtime state (SHARAKAT_HOME when kept inside the project)
+.sharakat/
+.claude/settings.local.json

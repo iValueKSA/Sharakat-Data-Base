@@ -1,0 +1,7 @@
+# `systemctl start|stop|restart sharakat.target` controls the whole platform.
+[Unit]
+Description=Sharakat platform (API, worker, scheduler)
+Wants=sharakat-migrate.service sharakat-api.service sharakat-worker.service sharakat-beat.service
+
+[Install]
+WantedBy=multi-user.target
